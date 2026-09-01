@@ -26,7 +26,9 @@ project's recorded conclusions, not because they can be audited here.
 - [6. Stage 3 — Relearning attacks](#6-stage-3--relearning-attacks)
 - [Measurement caveats](#measurement-caveats)
 - [Open work](#open-work)
+- [Lessons — pitfalls this project already hit](#lessons--pitfalls-this-project-already-hit)
 - [Artifact index](#artifact-index)
+- [Figures](#figures)
 - [Missing artifacts](#missing-artifacts)
 
 ---
@@ -253,7 +255,7 @@ From `data/phase2/results/task2_summary.json` (`verified`):
 
 This is the strongest selection score in that table, and it is **training-free**.
 Any new method should be compared against it first
-([README § Step 4](../README.md#step-4--validate-scientifically)). Note the caveat
+([README § Adding your own method](../README.md#adding-your-own-method)). Note the caveat
 in [Measurement caveats](#measurement-caveats): this HVUE drop was measured on
 the pilot-scale protocol, not the 44-task suite, so it is not directly
 comparable to the table in section 1.
@@ -842,6 +844,73 @@ schemas, and SHA-256 hashes are recorded in
 `data/phase2/full_benchmarks_lora_optimized_s600/manifest_audit.json`.
 
 ---
+
+## Lessons — pitfalls this project already hit
+
+Each of these cost real GPU time here. They are cheap to avoid.
+
+1. **Trusting probe AUROC as the outcome.** Layers 0-2 probe at 0.86-0.87 with
+   near-zero causal patching effect. Linear separability is not the model's
+   mechanism. A *fixed* probe can also be defeated by rotating the representation
+   without removing the information — always refit (`--fresh-probe`) and report
+   `separability = max(AUC, 1-AUC)`.
+2. **Intervening on a single layer.** Single-layer patching left final-token loss
+   unchanged to four decimals at every layer: the model reconstructs the feature
+   downstream. Cover the whole causal span.
+3. **A weak shortcut baseline.** Capped training samples, a narrow `C` grid, or
+   truncating the baseline to the model's context window all inflate apparent
+   model headroom.
+4. **Random splits.** All four target studies looked positive on `random` and
+   failed under the intended held-out protocol.
+5. **A retain set of only in-domain negatives.** If retain carries no
+   general-genomics rows, "retain preserved" says nothing about GUE. Run
+   `verify_retain`.
+6. **Perplexity as the retain metric.** GD kept PPL near baseline in some configs
+   while GUE performance fell. PPL is a diagnostic.
+7. **Reporting point estimates.** A 0.0057 forget drop with CI
+   `[-0.0064, +0.0185]` is zero.
+8. **Single-family tasks with no taxonomy metadata.** Two HVUE Caliciviridae
+   tasks had to be excluded because no family-held-out check is definable.
+9. **Uncommitted result artifacts.** Several numbers in this document have no
+   checked-in source file and are marked `unverified`. Commit the summary
+   JSON/CSV with the claim.
+10. **Renaming an objective without renaming the method.** `unlearn_gd.py` was
+    rewritten from cross-entropy gradient difference to a probe-guided
+    representation objective while keeping the filename, the sweep key `gd`, and
+    `method: gradient_difference` in metadata. Published numbers silently stopped
+    being reproducible. If you change what a method computes, change its identity
+    too — filename, method key, and the `method` / `loss_type` fields.
+
+### Worked example — acceptance gates for the Coronaviridae target
+
+A concrete gate design, for reuse on a new target:
+
+- Report fixed **and** fresh probe AUROC as `separability = max(AUC, 1-AUC)`.
+- Initial gate: max fresh separability below 0.60 on the target layers.
+- Formal linear gate: max fresh separability at or below 0.55 on layers 0-12,
+  then full-layer confirmation.
+- Retain gate: GUE mean AUROC delta at or above -0.05, with per-task and
+  worst-task deltas reported.
+- Recovery gate: fixed-budget LoRA recovery stays below HVUE Coronaviridae
+  AUROC 0.70.
+
+## Figures
+
+Every checked-in figure, what it shows, and what regenerates it.
+
+| Figure | Shows | Generator |
+|:--|:--|:--|
+| `figures/full_benchmark_tradeoff.png` | forget vs retain frontier, 44-task suite | `tools/plot_full_benchmark_results.py` |
+| `figures/full_benchmark_target_vs_retain.png` | per-checkpoint target drop against GUE cost | `tools/plot_full_benchmark_results.py` |
+| `figures/full_benchmark_selection_score.png` | selection score ranking | `tools/plot_full_benchmark_results.py` |
+| `figures/patching_analysis.png` | per-layer causal patching effect vs probe AUROC ([§4b](#4b-activation-patching--causal-layers)) | `phase1/plot_patching.py` |
+| `figures/phase2_results.png` | Stage 2 internal diagnostics ([§3](#3-stage-2--internal-diagnostics)) | `phase2/plot_results.py` |
+| `figures/phase3_results.png` | relearning-attack recovery — **no checked-in table backs this** ([§6](#6-stage-3--relearning-attacks)) | `phase3/plot_results.py` |
+| `figures/meeting_phase1_refseq_target.png` | viral-vs-plasmid pilot probe curve ([§4a](#4a-viral-vs-plasmid-pilot-probes)) | `tools/plot_meeting_visualizations.py` |
+| `figures/meeting_phase2_refseq_sweep.png` | RefSeq-target Stage 2 sweep overview | `tools/plot_meeting_visualizations.py` |
+| `figures/standalone_exp3_prefilter_dose_response.png` | standalone Experiment 3 prefilter dose response | `phase2/run_standalone_prefilter.py` |
+| `figures/standalone_exp3_prefilter_task_delta_heatmap.png` | per-task deltas for the same prefilter | `phase2/run_standalone_prefilter.py` |
+| `docs/assets/probe_metrics.png` | layer-wise probe metrics ([§4a](#4a-viral-vs-plasmid-pilot-probes)) | `phase1/plot_metrics.py` |
 
 ## Missing artifacts
 
