@@ -589,8 +589,7 @@ forget/retain point (section 1), attack robustness was never the binding
 constraint — but it must be measured before any removal claim.
 
 Related in-flight work recorded in
-[../logs/](../logs/): `experiment3_host_tropism_relearning_*` runs (July-August
-2026) via [../phase2/run_experiment3_host_tropism_relearning.py](../phase2/run_experiment3_host_tropism_relearning.py)
+`experiment3_host_tropism_relearning_*` runs (July-August 2026) via [../phase2/run_experiment3_host_tropism_relearning.py](../phase2/run_experiment3_host_tropism_relearning.py)
 and [../phase2/experiment3_artifact_retention.py](../phase2/experiment3_artifact_retention.py).
 Logs only — treat as unfinished.
 
@@ -830,7 +829,6 @@ Checked-in result artifacts, by directory:
 | `data/phase2/evomil_qualification/` | 2 | registry + asset provenance only |
 | `results/` | 3 | compact top-level tables |
 | `figures/` | 10 | published figures |
-| `logs/` | ~120 | historical run logs (provenance, not results) |
 
 Per-run files: `meta.json` (config + provenance), `log.json` (training history),
 `eval_auroc.csv`, `eval_ppl.json`, `eval_representation.csv`,

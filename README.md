@@ -231,8 +231,8 @@ Each `run.sh` lists its own variables at the top.
 
 *Historical note:* archived results were produced on another host under a conda
 environment named `UT-p1` at `/home/teacher1/miniconda3/envs/UT-p1/bin/python`.
-That path survives only inside archived `logs/` and some checked-in result JSON
-provenance. No executable code path references it.
+That path survives only inside some checked-in result JSON provenance. No
+executable code path references it.
 
 ### 3. Base model weights
 
@@ -590,6 +590,10 @@ negatives:
 ```bash
 bash phase2/run.sh verify_retain     # -> data/phase2/splits/retain_audit.json
 ```
+
+If the audit reports no general-genomics rows, add them with
+[phase2/build_gue_augmented_retain.py](phase2/build_gue_augmented_retain.py)
+before training anything.
 
 ### 2b. The five methods
 
@@ -1389,8 +1393,6 @@ docs/RESULTS.md  the evidence record
 results/         compact top-level result tables
 figures/         published figures
 data/phase2/     checked-in result artifacts (90 unlearning runs)
-logs/            historical run logs — provenance, not canonical results
-outputs/         generated reports and decks
 ```
 
 ### Key modules
@@ -1413,6 +1415,13 @@ outputs/         generated reports and decks
 | [phase2/signed_bootstrap.py](phase2/signed_bootstrap.py) | paired grouped bootstrap |
 | [phase2/downstream_reaudit.py](phase2/downstream_reaudit.py) | downstream-first re-audit |
 | [phase3/attack_sft.py](phase3/attack_sft.py) · [phase3/attack_lora.py](phase3/attack_lora.py) | relearning attacks |
+| [phase2/build_gue_augmented_retain.py](phase2/build_gue_augmented_retain.py) | adds GUE rows to the retain split — needed for `verify_retain` to pass |
+| [phase2/aggregate_lora_kmer_comparison.py](phase2/aggregate_lora_kmer_comparison.py) | model-vs-k-mer comparison table |
+| [phase2/eval_benchmarks_full_ft.py](phase2/eval_benchmarks_full_ft.py) | full fine-tuning entry point for the downstream evaluator |
+| [phase2/plot_results.py](phase2/plot_results.py) | Phase 2 internal diagnostic plots |
+| [phase2/analyze_lora_subspace_stage1.py](phase2/analyze_lora_subspace_stage1.py) | Stage 1 LoRA-subspace analysis |
+| [phase2/run_standalone_prefilter.py](phase2/run_standalone_prefilter.py) | standalone Experiment 3 prefilter (produced the `standalone_exp3_*` figures) |
+| [phase2/prepare_vgue_from_vir2vec.py](phase2/prepare_vgue_from_vir2vec.py) | vGUE integration scaffold (open work) |
 
 ---
 
