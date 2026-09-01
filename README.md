@@ -9,10 +9,6 @@ Two documents, no more. This one is how to run and extend the pipeline.
 `verified` / `unverified` provenance label per number, plus the lessons and open
 work.
 
-**Taking this over?** [Read this first](#read-this-first) →
-[Quickstart](#quickstart) → [Retargeting](#retargeting). That is enough for a
-first run.
-
 ---
 
 ## Read this first
