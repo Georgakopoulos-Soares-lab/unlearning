@@ -29,11 +29,15 @@ The repository gives you four things:
 
 ## Contents
 
+**Taking this over?** Read [Read this first](#read-this-first), then
+[Quickstart](#quickstart), then
+[Point it at your model and target](#point-it-at-your-model-and-target). That is
+enough to get a first run going.
+
 - [Read this first](#read-this-first)
-- [Activations or weights?](#activations-or-weights)
 - [Architecture](#architecture)
 - [Quickstart](#quickstart)
-- [Stage 0 — Benchmark qualification](#stage-0--benchmark-qualification)
+- [Point it at your model and target](#point-it-at-your-model-and-target)
 - [Stage 1 — Localization](#stage-1--localization)
 - [Stage 2 — Unlearning](#stage-2--unlearning)
 - [Stage 2b — Evaluation](#stage-2b--evaluation)
@@ -45,6 +49,7 @@ The repository gives you four things:
 - [Adding your own method](#adding-your-own-method)
 - [Repository layout](#repository-layout)
 - [Known limitations](#known-limitations)
+- [Appendix — validating a target task](#appendix--validating-a-target-task)
 
 ---
 
@@ -70,57 +75,10 @@ composition rather than the other training objectives. See
 [Known limitations](#known-limitations).
 
 Taken together: **the measurement discipline is the durable contribution.** If
-you are adding a method, run the Stage 0 gate on your target first. It is far
+you are adding a method, sanity-check your target against a conventional
+baseline first ([appendix](#appendix--validating-a-target-task)). It is far
 cheaper than discovering afterwards that a 3-mer baseline explains your
 benchmark.
-
----
-
-## Activations or weights?
-
-Worth being explicit about, because the distinction drives what "removal" even
-means here.
-
-**The thing you remove is always weights. The thing you measure is almost always
-activations.**
-
-| Stage | Reads | Modifies |
-|:--|:--|:--|
-| Stage 1 probes | **activations** — mean-pooled hidden states per layer (`next_norm`: the next block's `pre_norm`, or final `model.norm` for the last layer) | nothing; probes are external scikit-learn models |
-| Stage 1 activation patching | **activations** — swapped between a positive and a negative sequence at one layer | nothing; inference-time intervention only |
-| Stage 2 `gd` | **logits** — next-token cross-entropy | **weights** |
-| Stage 2 `rmu` | **activations** at the target layers | **weights** |
-| Stage 2 `probe_guided`, `probe_repr` | **activations** at the probe layers | **weights** |
-| Stage 2 `probe_nullspace` | probe directions derived from activations | **weights** — closed-form projection of residual-writer modules |
-| `eval_unlearn.py` | **activations** (per-layer probe AUROC) + **logits** (forget/retain perplexity) | nothing |
-| `eval_benchmarks.py` | **activations** — mean-pooled final normalized states feed a task head | **weights**, temporarily: fresh LoRA adapters + head, discarded after |
-| Stage 3 attacks | **logits** (CE) to train, **activations** (probe AUROC) to measure | **weights**, to test recoverability |
-
-Three consequences that matter:
-
-- **Layer selection is activation-derived but weight-applied.**
-  `localized_layers.json` names blocks whose *weights* receive gradient, chosen
-  by a causal analysis of *activations*. Stage 1 found these disagree: layers 0-2
-  have the highest probe AUROC (0.870) and near-zero causal patching effect
-  (0.0002). Selecting intervention targets by probe salience would have targeted
-  the wrong weights.
-- **The downstream evaluator adapts weights, so it is not a pure read.** It
-  trains fresh LoRA adapters, which means a checkpoint can look erased under a
-  frozen probe and still be recoverable by the evaluator's own adaptation. That
-  is exactly the distinction encoded in `SUCCESS_LANGUAGE` in
-  [phase2/next_steps_common.py](phase2/next_steps_common.py): `frozen_readout`
-  ("tested frozen linear readouts did not exceed k-mer") versus
-  `weight_capability` ("excess capability became accessible only after
-  supervised weight adaptation"). Only the first is a readout claim; only the
-  second speaks to whether the capability is still in the weights.
-- **A fixed probe can be defeated without removing information.** Rotating the
-  representation moves it off a frozen probe's decision boundary while leaving
-  the information linearly decodable by a *refit* probe. Always pass
-  `--fresh-probe`, and treat frozen-probe AUROC as a diagnostic only.
-
-**So: to decide what to remove, use activations (Stage 1 causal patching). To
-decide whether removal worked, use downstream behaviour with fresh adaptation,
-not frozen activations.**
 
 ---
 
@@ -130,14 +88,6 @@ Four stages. Each writes artifacts the next consumes, so stages run, resume and
 audit independently.
 
 ```
-                    ┌──────────────────────────────────────────────┐
-  Stage 0           │  BENCHMARK QUALIFICATION  (gate)             │
-  qualify the       │  Does the model beat the strongest           │
-  target first      │  non-foundation baseline at all?             │
-                    │  phase2/*_qualification.py                   │
-                    └───────────────────┬──────────────────────────┘
-                                        │ pass → worth unlearning
-                                        ▼
   Stage 1           ┌──────────────────────────────────────────────┐
   find where the    │  LOCALIZATION                                │
   capability lives  │  dataset → layer-wise linear probes →        │
@@ -166,6 +116,11 @@ audit independently.
 The `random` condition in Stage 2 is a load-bearing negative control: it updates
 the same number of parameters in non-causal layers. If your method forgets as
 well in `random` as in `localized`, you are measuring generic damage.
+
+Ahead of Stage 1 there is an optional gate: confirming your target capability is
+genuinely the model's and not reproducible by a conventional baseline. If your
+target is already chosen, skip it — otherwise see
+[Appendix — validating a target task](#appendix--validating-a-target-task).
 
 ---
 
@@ -263,185 +218,63 @@ bash phase3/run.sh all                  # relearning attacks
 
 ---
 
-## Stage 0 — Benchmark qualification
+## Point it at your model and target
 
-**Run this before Stage 1.** It is the cheapest stage and the one that would have
-saved the most time here.
+Everything below is written against Evo-1 and a viral host-tropism / Coronaviridae
+target, because that is what was run. Retargeting is three edits, not a rewrite.
 
-> A benchmark **qualifies** only if the foundation model shows **reproducible,
-> model-specific predictive headroom** over the **strongest reasonable
-> non-foundation baseline**, under the **intended out-of-distribution
-> evaluation**.
+### A different genomic language model
 
-Every clause is load-bearing:
+Three touchpoints are model-specific:
 
-| Clause | Rules out |
+| File | What to change |
 |:--|:--|
-| reproducible | a single lucky seed |
-| model-specific | headroom any supervised head on any representation would get |
-| strongest reasonable | a strawman baseline (capped samples, narrow grid, wrong features) |
-| non-foundation | comparing two foundation models to each other |
-| intended OOD evaluation | a random split when the question is held-out families or positions |
+| [phase1/utils.py](phase1/utils.py) | `load_local_checkpoint` (safetensors + StripedHyena config), `read_manifest`, `pad_batch`. Return a model whose blocks are indexable as `model.blocks[i]` and the rest of the pipeline works unchanged. |
+| [phase2/utils.py](phase2/utils.py) | `PROBE_LAYERS` (currently `range(0,11)`), `RANDOM_LAYER_POOL` (`range(11,31)`), `DEFAULT_LOCALIZED_LAYERS`. Adjust to your depth. |
+| [phase2/lora_utils.py](phase2/lora_utils.py) | `inject_lora_all_blocks` and `PooledEvoClassifier` (mean-pooled final normalized states + linear head). |
 
-### Protocol
+Two constants you must re-derive rather than inherit:
 
-```
- 1. Candidate screen    many tasks, cheap frozen-representation probes
- 2. Strong baselines    best conventional method for THIS task, FULL training split
- 3. Strict split        taxonomy / position / cluster held out, not random
- 4. Fresh adaptation    train the model-side head from scratch, multiple seeds
- 5. Paired bootstrap    delta = model - baseline, grouped, 95% CI + sign probs
- 6. Decision            QUALIFIED / UNQUALIFIED / NOT RESOLVED, with artifacts
-```
+- **The trustworthy layer range.** Evo-1 is restricted to layers 0-10 because its
+  activation norms diverge by ~7 orders of magnitude in bfloat16 above that. Run
+  [phase1/diagnose_features.py](phase1/diagnose_features.py) on your model and
+  read the per-layer norms before trusting any probe.
+- **`RANDOM_LAYER_POOL` must stay disjoint from your causal layers**, or the
+  negative control is not a control.
 
-**Step 2 is where candidates die.** In all four completed studies the apparent
-headroom from step 1 did not survive step 2 or 3. Every step must emit a
-committed artifact; several numbers in this repository's own history are marked
-`unverified` in [docs/RESULTS.md](docs/RESULTS.md) precisely because they were not.
+The tokenizer is already a parameter: `phase2.utils.tokenize_batch` takes it as an
+argument, so swapping `CharLevelTokenizer` for another is a substitution.
 
-### Choosing the comparator
+### A different target capability
 
-| Task type | Strong comparator | Implementation |
-|:--|:--|:--|
-| DNA sequence classification | k-mer logistic regression (k=1..4, binary or TF-IDF), GC + length | [phase2/eval_kmer_baseline.py](phase2/eval_kmer_baseline.py), [phase1/baseline_gc_1gram.py](phase1/baseline_gc_1gram.py) |
-| Protein family / host assignment | BLASTp; HMMER as a sanity floor | [phase2/phistruct_qualification.py](phase2/phistruct_qualification.py) |
-| Proteome-level classification | AA 3-mer TF-IDF, proteome composition | [phase2/evomil_esm1b_qualification.py](phase2/evomil_esm1b_qualification.py) |
-| Mutation-effect prediction | evolutionary predictors (VESPA, VESPAl, S2F_MSA) | [phase2/proteingym_esm2_qualification.py](phase2/proteingym_esm2_qualification.py) |
-| Anything with taxonomic labels | taxonomy-only predictor (label frequency per family/genus) | [phase2/report_taxonomy_shortcut.py](phase2/report_taxonomy_shortcut.py) |
+You need one CSV in the target-manifest schema
+(`id,label,split,sequence,source,length`, `label=1` = forget). Point Stage 1 at it:
 
 ```bash
-python phase2/eval_kmer_baseline.py \
-  --benchmark-manifest data/benchmarks/hvue_gue_manifest.csv \
-  --task-filter hvue_human_host_tropism \
-  --out-csv data/phase2/kmer_baselines/kmer_metrics.csv \
-  --kmer-min 1 --kmer-max 4 --kmer-binary \
-  --c-grid 0.001,0.01,0.1,1,10,100 --max-iter 2000
+TARGET_ROOT=data/family_targets/<your_target> \
+TARGET_FAMILY=<YourFamily> \
+bash phase1/run.sh all
 ```
 
-Three ways a baseline gets accidentally weakened, all inflating apparent model
-headroom:
+That produces the probes and `localized_layers.json` that Stage 2 consumes. If
+your target is not a taxonomic family, write the manifest yourself and skip
+straight to `phase1/run.sh probes` and `phase1/run.sh patching`.
 
-1. **Capping training samples.** Fit on the *full* training split.
-2. **A narrow regularization grid.** Wide `C` grid, selected on validation.
-3. **Matching the model's context window.** The subtle one. Truncating to 512
-   tokens handicaps a method that could read the whole sequence. On HVUE host
-   tropism the *matched-input* k-mer baseline scores 0.8555 AUROC, the
-   *full-sequence* baseline 0.8930 — and Evo 0.8911. The model leads by +0.036
-   against the handicapped baseline and is level-or-behind against the fair one.
-   **Report both.**
+### A first end-to-end run
 
-### Choosing the split
-
-| Split | Confound removed | Use when |
-|:--|:--|:--|
-| `random` | none | learnability sanity check only — **never** for the decision |
-| `taxonomy` (family/genus/species held out) | train/test overlap at a rank | the question is unseen taxa |
-| `homology` / cluster held out | near-duplicate and similarity leakage | homologues are abundant |
-| `position` held out | position-specific memorization | mutation-effect prediction |
-| `within_group` | between-group taxonomic shortcut | labels correlate with taxonomy |
-
-Tooling: [phase2/eval_taxonomy_heldout.py](phase2/eval_taxonomy_heldout.py),
-[phase2/check_split_validity.py](phase2/check_split_validity.py),
-[phase2/summarize_controlled_splits.py](phase2/summarize_controlled_splits.py),
-[phase1/check_leakage.py](phase1/check_leakage.py).
-
-Two traps:
-
-- **Missing metadata makes the check undefinable.** Two HVUE Caliciviridae tasks
-  ship with only `sequence,label` and are already single-family, so no
-  family-held-out split exists even in principle. They were excluded (111,071
-  rows). Check for taxonomy columns *before* selecting a task.
-- **A group key is not the rank you think.** A split on `virus_tax_id` is
-  species-like holdout, **not** family-held-out.
-  [phase2/prepare_hiyata_host_tropism.py](phase2/prepare_hiyata_host_tropism.py)
-  was adopted specifically because `hiyata/Virus-Host-Genomes` carries `family`
-  and `genus`.
-
-### Statistics
-
-Report an interval, not a point estimate. Use
-[phase2/signed_bootstrap.py](phase2/signed_bootstrap.py), which keeps
-`delta = model − baseline` sign-consistent across call sites — a sign flip
-silently inverts a conclusion.
-
-- **Paired** — resample the same units for model and baseline.
-- **Grouped** — resample at the leakage unit, not the row. PHIStruct resamples
-  by `phage_id`, not by RBP.
-- **Report invalid replicates.** PHIStruct discarded 5,778 of 15,778 attempts
-  (resample missing a host class). Dropping them silently understates uncertainty.
-- **Report both tails**, `P(delta > 0)` and `P(delta < 0)`.
-- **Check macro-average fragility.** PHIStruct per-genus support ranges 1-159
-  queries, so macro-F1 is tiny-class dominated; the audit also reports macro-F1
-  excluding tiny classes (-0.0276 vs -0.0204 — same sign, larger magnitude).
-
-The helper is DataFrame-oriented; see
-[phase2/phistruct_failure_audit_evomil_controller.py](phase2/phistruct_failure_audit_evomil_controller.py)
-for a complete working call.
-
-```python
-from sklearn.metrics import f1_score
-from phase2.signed_bootstrap import paired_grouped_prediction_bootstrap
-
-samples, summary = paired_grouped_prediction_bootstrap(
-    rows,                                  # pd.DataFrame, one row per unit
-    group_col="phage_id",                  # the leakage unit, NOT the row
-    true_col="host_label",
-    model_pred_col="saprot_pred",
-    baseline_pred_col="blastp_pred",
-    labels=HOST_LABELS,
-    scorer=lambda y_true, y_pred, labels: f1_score(
-        y_true, y_pred, labels=labels, average="macro", zero_division=0
-    ),
-    n_valid=10_000, max_attempts=20_000, seed=42,
-    model_score_key="saprot_macro_f1",
-    baseline_score_key="blastp_macro_f1",
-    delta_key="delta_saprot_minus_blast",
-    bootstrap_unit="phage_id",
-    invalid_reason="bootstrap sample missing at least one host class",
-)
+```bash
+bash phase1/run.sh all                 # probes + causal layers for your target
+bash phase2/run.sh splits              # forget/retain CSVs
+bash phase2/run.sh verify_retain       # retain must contain general-genomics rows
+bash phase2/run.sh probe_nullspace     # training-free baseline — do this FIRST
+bash phase2/run.sh gd                  # then a trained method
+bash phase2/run.sh eval                # internal diagnostics
+bash phase2/run.sh benchmark_pilot     # cheap downstream ranking
 ```
 
-Why this matters concretely: in the headline unlearning result a forget drop of
-**0.0057** carries a 95% CI of **[-0.0064, +0.0185]**. As a point estimate it
-reads as a small success; with the interval it is zero.
-
-### Status vocabulary
-
-Use these exact strings so results stay greppable.
-
-| Status | Meaning |
-|:--|:--|
-| `QUALIFIED` | reproducible model-specific headroom under the strict split; proceed to Stage 1 |
-| `UNQUALIFIED` | a strong baseline matches or beats the model; do not unlearn this target |
-| `NO_QUALIFYING_HEADROOM` | as above, with the finding that no seed beat the baseline |
-| `<NAME>_FAILURE_NOT_STATISTICALLY_RESOLVED` | the model may lead, but the CI spans zero |
-| `IN_PROGRESS` | running; **must not be reported as a result** |
-
-Record the status, the strongest comparator, the observed delta and the CI. That
-quadruple is the citable result. Then add the row to
-[docs/RESULTS.md](docs/RESULTS.md).
-
-### Why all four failed
-
-Worth internalizing, because it predicts the next candidate:
-
-1. **Composition carries more signal than expected.** Viral host tropism,
-   pathogenicity and phage host range all correlate strongly with nucleotide or
-   amino-acid composition; a 3-mer or 4-mer captures most of it.
-2. **Homology is a very strong protein baseline.** BLASTp reached 0.475 macro-F1
-   on 7-way phage host prediction with a 0.994 hit rate.
-3. **Evolutionary information is already in the public baselines.** VESPA /
-   S2F_MSA use MSAs directly. A PLM's advantage is *not needing* an MSA — a cost
-   argument, not a headroom argument.
-4. **Random-split gains are leakage.** Each study's advantage vanished under
-   taxonomy, cluster or position holdout.
-5. **Seed instability.** Where headroom survived to fresh adaptation, it was not
-   reproducible across seeds.
-
-Prefer targets not reducible to composition or homology, where the foundation
-model has a mechanistic reason to lead.
-
----
+Run `probe_nullspace` before anything trained. It is closed-form, takes minutes,
+and in the archived results it scored better than every gradient method — so it
+is the number your method has to beat.
 
 ## Stage 1 — Localization
 
@@ -491,8 +324,9 @@ python phase1/baseline_gc_1gram.py --manifest <m> --out-dir <root>/baselines --f
 python phase1/baseline_gc_1gram.py --manifest <m> --out-dir <root>/baselines --feature kmer --kmer-max 4 --kmer-binary
 ```
 
-If these match the probes, the "capability" is sequence composition. Go back to
-Stage 0.
+If these match the probes, the "capability" is sequence composition rather than
+anything model-specific — see the
+[appendix](#appendix--validating-a-target-task).
 
 ### 1c. Layer-wise probes
 
@@ -1026,7 +860,7 @@ were force-added. Everything a stage *reads* must be rebuilt locally.
 | `data/host_tropism/`, `data/host_tropism_hiyata/` | `phase1/build_host_tropism_dataset.py`, `phase2/prepare_hiyata_host_tropism.py` | host-tropism target |
 | `data/phase2/splits/` | `bash phase2/run.sh splits` | all Stage 2 training |
 | `data/benchmarks/` | `bash phase2/run.sh prepare_benchmarks` | Stage 2b |
-| `data/phase2/kmer_baselines/` | `phase2/eval_kmer_baseline.py` | Stage 0 and split validity |
+| `data/phase2/kmer_baselines/` | `phase2/eval_kmer_baseline.py` | split validity and baseline comparison |
 | `./evo-1-8k-base/` | external download | everything |
 
 Check state before launching anything expensive:
@@ -1280,20 +1114,22 @@ anything.
    runs the random condition moved probe AUROC by +0.002 — that is what a
    working control looks like.
 3. **Use fresh probes, conclude from downstream.** `--fresh-probe`, then
-   `eval_benchmarks.py`. See [Activations or weights?](#activations-or-weights).
+   `eval_benchmarks.py`. A *fixed* probe can be defeated by rotating the
+   representation without removing the information, so it is not evidence on its
+   own.
 4. **Report intervals and survive attack.** Use the bootstrap CIs, then
    `bash phase3/run_attacks.sh` at the adversary-optimal LR.
 
 ### Extending to protein language models
 
-There is no PLM unlearning path yet — the PLM work here is Stage 0 qualification
+There is no PLM unlearning path yet — the PLM work here is target-validation
 only (ESM2, ESM-1b, SaProt).
 
 Reusable as-is (model-agnostic): [signed_bootstrap.py](phase2/signed_bootstrap.py),
 [run_metadata.py](phase2/run_metadata.py), [checkpoint_io.py](phase2/checkpoint_io.py),
 [next_steps_common.py](phase2/next_steps_common.py),
-[check_split_validity.py](phase2/check_split_validity.py), and the Stage 0
-protocol.
+[check_split_validity.py](phase2/check_split_validity.py), and the
+target-validation protocol in the [appendix](#appendix--validating-a-target-task).
 
 Must be replaced:
 
@@ -1336,7 +1172,7 @@ Code:
 
 Science:
 
-- [ ] target passed the Stage 0 gate
+- [ ] target checked against a conventional baseline ([appendix](#appendix--validating-a-target-task))
 - [ ] k-mer / composition baseline on the **full** training split, both truncated
       and full-sequence
 - [ ] beats `project_probe_nullspace.py`
@@ -1383,8 +1219,8 @@ Each cost real GPU time here.
 
 ```text
 phase1/          Stage 1 — datasets, layer-wise probes, activation patching
-phase2/          Stage 0 + 2 — unlearning methods, evaluation, qualification
-                 controllers, sweep drivers, audits
+phase2/          Stage 2 — unlearning methods, evaluation, sweep drivers,
+                 audits, and the target-qualification controllers
   sweep_configs/   declarative sweep definitions (JSON)
 phase3/          Stage 3 — SFT and LoRA relearning attacks
 tests/           regression suite (142 tests, no GPU required)
@@ -1458,6 +1294,95 @@ data/phase2/     checked-in result artifacts (90 unlearning runs)
 - **Layers 11+ of Evo-1 are numerically unreliable** in bfloat16 (activation
   norms diverge by ~7 orders of magnitude). Probing and intervention are
   restricted to layers 0-10.
+
+---
+
+## Appendix — validating a target task
+
+Only relevant if you are *choosing* a target. If your task is already decided,
+skip this.
+
+The point: an unlearning result is only meaningful if the capability being
+removed is genuinely the model's. If a k-mer count, a GC fraction, a BLAST hit or
+an evolutionary predictor already matches the model on your benchmark, then the
+measured "removal" is dominated by whatever else the intervention broke.
+
+> A target **qualifies** only if the model shows reproducible, model-specific
+> headroom over the **strongest reasonable non-foundation baseline**, under the
+> **intended out-of-distribution evaluation**.
+
+Four targets were put through this here — HVUE/Evo, ProteinGym/ESM2,
+PHIStruct/SaProt, EvoMIL/ESM-1b — and **all four failed**. Full numbers in
+[docs/RESULTS.md](docs/RESULTS.md#5-stage-0--benchmark-qualification).
+
+### Pick the right comparator
+
+| Task type | Strong comparator | Implementation |
+|:--|:--|:--|
+| DNA sequence classification | k-mer logistic regression (k=1..4), GC + length | [phase2/eval_kmer_baseline.py](phase2/eval_kmer_baseline.py), [phase1/baseline_gc_1gram.py](phase1/baseline_gc_1gram.py) |
+| Protein family / host assignment | BLASTp, with HMMER as a sanity floor | [phase2/phistruct_qualification.py](phase2/phistruct_qualification.py) |
+| Proteome-level classification | AA 3-mer TF-IDF, proteome composition | [phase2/evomil_esm1b_qualification.py](phase2/evomil_esm1b_qualification.py) |
+| Mutation-effect prediction | evolutionary predictors (VESPA, VESPAl, S2F_MSA) | [phase2/proteingym_esm2_qualification.py](phase2/proteingym_esm2_qualification.py) |
+| Anything with taxonomic labels | taxonomy-only predictor (label frequency per family/genus) | [phase2/report_taxonomy_shortcut.py](phase2/report_taxonomy_shortcut.py) |
+
+```bash
+python phase2/eval_kmer_baseline.py \
+  --benchmark-manifest <your manifest> --task-filter <your task> \
+  --out-csv data/phase2/kmer_baselines/<task>.csv \
+  --kmer-min 1 --kmer-max 4 --kmer-binary \
+  --c-grid 0.001,0.01,0.1,1,10,100 --max-iter 2000
+```
+
+Three ways a baseline gets accidentally weakened, all of which manufacture
+apparent model headroom:
+
+1. **Capping training samples.** Fit on the *full* training split.
+2. **A narrow regularization grid.** Wide `C` grid, selected on validation.
+3. **Truncating the baseline to the model's context window.** The subtle one, and
+   the one that decided the HVUE verdict: the *matched-input* k-mer baseline
+   scores 0.8555 AUROC, the *full-sequence* baseline 0.8930 — and Evo 0.8911. The
+   model leads by +0.036 against the handicapped baseline and is level-or-behind
+   against the fair one. **Report both.**
+
+### Use a strict split, and report an interval
+
+Random splits leak; all four studies looked positive on `random` and failed under
+the intended protocol. Use taxonomy-, cluster- or position-held-out splits
+([phase2/eval_taxonomy_heldout.py](phase2/eval_taxonomy_heldout.py),
+[phase2/check_split_validity.py](phase2/check_split_validity.py)). Two traps: a
+split on `virus_tax_id` is species-like holdout, **not** family-held-out; and a
+single-family task with no taxonomy columns admits no held-out check at all.
+
+Report a paired, grouped bootstrap interval, not a point estimate — use
+[phase2/signed_bootstrap.py](phase2/signed_bootstrap.py), which keeps
+`delta = model − baseline` sign-consistent, resamples at the leakage unit rather
+than the row, and reports invalid replicates. Why it matters: the headline
+unlearning result's forget drop of **0.0057** carries a 95% CI of
+**[-0.0064, +0.0185]** — a small success as a point estimate, zero with the
+interval.
+
+Record the decision as one of `QUALIFIED`, `UNQUALIFIED`,
+`NO_QUALIFYING_HEADROOM`, `<NAME>_FAILURE_NOT_STATISTICALLY_RESOLVED`, or
+`IN_PROGRESS` (never reportable), together with the comparator, the observed
+delta and the CI, and commit the summary JSON alongside it.
+
+### Why all four failed
+
+Predicts what will happen to the next candidate:
+
+1. **Composition carries more signal than expected** — viral host tropism,
+   pathogenicity and phage host range all correlate strongly with nucleotide or
+   amino-acid composition.
+2. **Homology is a very strong protein baseline** — BLASTp reached 0.475 macro-F1
+   on 7-way phage host prediction at a 0.994 hit rate.
+3. **Evolutionary information is already in the public baselines** — a PLM's
+   advantage is *not needing* an MSA, which is a cost argument, not headroom.
+4. **Random-split gains are leakage.**
+5. **Seed instability** — headroom that survived to fresh adaptation was not
+   reproducible across seeds.
+
+Prefer targets not reducible to composition or homology, where the model has a
+mechanistic reason to lead.
 
 ---
 

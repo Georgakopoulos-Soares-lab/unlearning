@@ -389,7 +389,7 @@ Full analysis: [§4 Stage 1](#4-stage-1--localization).
 ## 5. Stage 0 — Benchmark qualification
 
 Four completed studies. **All negative.** Protocol and decision rules:
-[README § Stage 0](../README.md#stage-0--benchmark-qualification). Task-level guidance:
+[README appendix](../README.md#appendix--validating-a-target-task). Task-level guidance:
 [§5 code entrypoints](#per-task-code-entrypoints).
 
 | Benchmark | Model | Final status | Strongest comparator | Provenance |
