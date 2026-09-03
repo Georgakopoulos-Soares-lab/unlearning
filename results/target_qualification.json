@@ -1,0 +1,1480 @@
+[
+  {
+    "task": "lncrna.g_max",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.5116,
+    "model_sd": 0.0317,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.3653,
+    "baseline_sd": 0.0564,
+    "baseline_seeds": 5,
+    "n_baselines": 2,
+    "excess": 0.1463,
+    "gate": 0.1294,
+    "ratio": 1.13,
+    "recoverability": 0.714,
+    "significant": true,
+    "removal_meaningful": true,
+    "verdict": "QUALIFIED",
+    "notes": "ratio is near the line -- gate on a paired bootstrap over saved predictions, not seed SD alone",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.3653
+      },
+      {
+        "arm": "kmer",
+        "score": 0.1431
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.5116,
+        "sd": 0.0317,
+        "n_seeds": 3,
+        "excess": 0.1463,
+        "ratio": 1.13
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.4278,
+        "sd": 0.0232,
+        "n_seeds": 3,
+        "excess": 0.0625,
+        "ratio": 0.51
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.4112,
+        "sd": 0.0406,
+        "n_seeds": 3,
+        "excess": 0.0459,
+        "ratio": 0.33
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.3701,
+        "sd": 0.0224,
+        "n_seeds": 3,
+        "excess": 0.0048,
+        "ratio": 0.04
+      }
+    ]
+  },
+  {
+    "task": "phage_fragments",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.9196,
+    "model_sd": 0.0049,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.8413,
+    "baseline_sd": 0.0128,
+    "baseline_seeds": 5,
+    "n_baselines": 2,
+    "excess": 0.0783,
+    "gate": 0.0274,
+    "ratio": 2.86,
+    "recoverability": 0.9149,
+    "significant": true,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_COSMETIC",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.8413
+      },
+      {
+        "arm": "kmer",
+        "score": 0.629
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.9196,
+        "sd": 0.0049,
+        "n_seeds": 3,
+        "excess": 0.0783,
+        "ratio": 2.86
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.8221,
+        "sd": 0.0077,
+        "n_seeds": 3,
+        "excess": -0.0192,
+        "ratio": -0.64
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.8074,
+        "sd": 0.0055,
+        "n_seeds": 3,
+        "excess": -0.0339,
+        "ratio": -1.22
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.7162,
+        "sd": 0.0092,
+        "n_seeds": 3,
+        "excess": -0.1251,
+        "ratio": -3.97
+      }
+    ]
+  },
+  {
+    "task": "iDHS-EL_DNase_I",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.7054,
+    "model_sd": 0.0045,
+    "model_seeds": 3,
+    "binding_baseline": "kmer",
+    "baseline_score": 0.6411,
+    "baseline_sd": null,
+    "baseline_seeds": null,
+    "n_baselines": 2,
+    "excess": 0.0643,
+    "gate": 0.009,
+    "ratio": 7.14,
+    "recoverability": 0.9088,
+    "significant": true,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_COSMETIC",
+    "notes": "binding baseline 'kmer' has no seed SD, so the gate uses only the model's spread and the ratio is an OVER-estimate; confirm with a paired bootstrap over saved predictions",
+    "all_baselines": [
+      {
+        "arm": "kmer",
+        "score": 0.6411
+      },
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.59
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.7054,
+        "sd": 0.0045,
+        "n_seeds": 3,
+        "excess": 0.0643,
+        "ratio": 7.14
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.6638,
+        "sd": 0.0223,
+        "n_seeds": 3,
+        "excess": 0.0227,
+        "ratio": 0.51
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.6632,
+        "sd": 0.018,
+        "n_seeds": 3,
+        "excess": 0.0221,
+        "ratio": 0.61
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.595,
+        "sd": 0.0448,
+        "n_seeds": 3,
+        "excess": -0.0461,
+        "ratio": -0.51
+      },
+      {
+        "arm": "evo1_lora",
+        "score": 0.5644,
+        "sd": 0.0688,
+        "n_seeds": 3,
+        "excess": -0.0767,
+        "ratio": -0.56
+      },
+      {
+        "arm": "evo1_probe",
+        "score": 0.1355,
+        "sd": 0.1658,
+        "n_seeds": 3,
+        "excess": -0.5056,
+        "ratio": -1.52
+      }
+    ]
+  },
+  {
+    "task": "NT_promoter_all",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.9557,
+    "model_sd": 0.0021,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.9245,
+    "baseline_sd": 0.0014,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0312,
+    "gate": 0.005,
+    "ratio": 6.18,
+    "recoverability": 0.9674,
+    "significant": true,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_COSMETIC",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.9245
+      },
+      {
+        "arm": "kmer",
+        "score": 0.8227
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.9557,
+        "sd": 0.0021,
+        "n_seeds": 3,
+        "excess": 0.0312,
+        "ratio": 6.18
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.9396,
+        "sd": 0.0031,
+        "n_seeds": 3,
+        "excess": 0.0151,
+        "ratio": 2.22
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.9304,
+        "sd": 0.0035,
+        "n_seeds": 3,
+        "excess": 0.0059,
+        "ratio": 0.78
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.9178,
+        "sd": 0.0014,
+        "n_seeds": 3,
+        "excess": -0.0067,
+        "ratio": -1.69
+      }
+    ]
+  },
+  {
+    "task": "NT_H3K36me3",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.6582,
+    "model_sd": 0.0041,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.629,
+    "baseline_sd": 0.006,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0292,
+    "gate": 0.0145,
+    "ratio": 2.01,
+    "recoverability": 0.9556,
+    "significant": true,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_COSMETIC",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.629
+      },
+      {
+        "arm": "kmer",
+        "score": 0.4055
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.6582,
+        "sd": 0.0041,
+        "n_seeds": 3,
+        "excess": 0.0292,
+        "ratio": 2.01
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.6209,
+        "sd": 0.0069,
+        "n_seeds": 3,
+        "excess": -0.0081,
+        "ratio": -0.44
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.5252,
+        "sd": 0.007,
+        "n_seeds": 3,
+        "excess": -0.1038,
+        "ratio": -5.63
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.4978,
+        "sd": 0.0109,
+        "n_seeds": 3,
+        "excess": -0.1312,
+        "ratio": -5.27
+      }
+    ]
+  },
+  {
+    "task": "GB_coding_vs_intergenomic_seqs",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.9113,
+    "model_sd": 0.0016,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.8869,
+    "baseline_sd": 0.0016,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0244,
+    "gate": 0.0045,
+    "ratio": 5.39,
+    "recoverability": 0.9732,
+    "significant": true,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_COSMETIC",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.8869
+      },
+      {
+        "arm": "kmer",
+        "score": 0.762
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.9113,
+        "sd": 0.0016,
+        "n_seeds": 3,
+        "excess": 0.0244,
+        "ratio": 5.39
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.903,
+        "sd": 0.003,
+        "n_seeds": 3,
+        "excess": 0.0161,
+        "ratio": 2.37
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.8735,
+        "sd": 0.0008,
+        "n_seeds": 3,
+        "excess": -0.0134,
+        "ratio": -3.75
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.8306,
+        "sd": 0.008,
+        "n_seeds": 3,
+        "excess": -0.0563,
+        "ratio": -3.45
+      }
+    ]
+  },
+  {
+    "task": "GB_human_or_worm",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.955,
+    "model_sd": 0.0005,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.9342,
+    "baseline_sd": 0.002,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0208,
+    "gate": 0.0041,
+    "ratio": 5.04,
+    "recoverability": 0.9782,
+    "significant": true,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_COSMETIC",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.9342
+      },
+      {
+        "arm": "kmer",
+        "score": 0.8819
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.955,
+        "sd": 0.0005,
+        "n_seeds": 3,
+        "excess": 0.0208,
+        "ratio": 5.04
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.9522,
+        "sd": 0.0014,
+        "n_seeds": 3,
+        "excess": 0.018,
+        "ratio": 3.69
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.9454,
+        "sd": 0.0009,
+        "n_seeds": 3,
+        "excess": 0.0112,
+        "ratio": 2.55
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.9265,
+        "sd": 0.0014,
+        "n_seeds": 3,
+        "excess": -0.0077,
+        "ratio": -1.58
+      },
+      {
+        "arm": "evo1_lora",
+        "score": 0.9046,
+        "sd": 0.0071,
+        "n_seeds": 3,
+        "excess": -0.0296,
+        "ratio": -2.01
+      },
+      {
+        "arm": "evo1_probe",
+        "score": 0.2783,
+        "sd": 0.0258,
+        "n_seeds": 3,
+        "excess": -0.6559,
+        "ratio": -12.67
+      }
+    ]
+  },
+  {
+    "task": "NT_revised_splice_sites_acceptors",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.9656,
+    "model_sd": 0.0061,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.9514,
+    "baseline_sd": 0.0028,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0142,
+    "gate": 0.0134,
+    "ratio": 1.06,
+    "recoverability": 0.9853,
+    "significant": true,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_COSMETIC",
+    "notes": "ratio is near the line -- gate on a paired bootstrap over saved predictions, not seed SD alone",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.9514
+      },
+      {
+        "arm": "kmer",
+        "score": 0.3977
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.9656,
+        "sd": 0.0061,
+        "n_seeds": 3,
+        "excess": 0.0142,
+        "ratio": 1.06
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.8182,
+        "sd": 0.0072,
+        "n_seeds": 3,
+        "excess": -0.1332,
+        "ratio": -8.62
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.7935,
+        "sd": 0.009,
+        "n_seeds": 3,
+        "excess": -0.1579,
+        "ratio": -8.38
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.7899,
+        "sd": 0.0112,
+        "n_seeds": 3,
+        "excess": -0.1615,
+        "ratio": -6.99
+      }
+    ]
+  },
+  {
+    "task": "mouse_0",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.6359,
+    "model_sd": 0.0222,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.5935,
+    "baseline_sd": 0.0134,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0424,
+    "gate": 0.0519,
+    "ratio": 0.82,
+    "recoverability": 0.9333,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "ratio is near the line -- gate on a paired bootstrap over saved predictions, not seed SD alone",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.5935
+      },
+      {
+        "arm": "kmer",
+        "score": 0.4617
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.6359,
+        "sd": 0.0222,
+        "n_seeds": 3,
+        "excess": 0.0424,
+        "ratio": 0.82
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.6086,
+        "sd": 0.0107,
+        "n_seeds": 3,
+        "excess": 0.0151,
+        "ratio": 0.44
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.5361,
+        "sd": 0.0294,
+        "n_seeds": 3,
+        "excess": -0.0574,
+        "ratio": -0.89
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.5256,
+        "sd": 0.0297,
+        "n_seeds": 3,
+        "excess": -0.0679,
+        "ratio": -1.04
+      }
+    ]
+  },
+  {
+    "task": "NT_H3",
+    "metric": "mcc",
+    "model_arm": "evo1_lora",
+    "model_score": 0.804,
+    "model_sd": 0.0139,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.7833,
+    "baseline_sd": 0.0185,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0207,
+    "gate": 0.0463,
+    "ratio": 0.45,
+    "recoverability": 0.9743,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.7833
+      },
+      {
+        "arm": "kmer",
+        "score": 0.6564
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "evo1_lora",
+        "score": 0.804,
+        "sd": 0.0139,
+        "n_seeds": 3,
+        "excess": 0.0207,
+        "ratio": 0.45
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.8021,
+        "sd": 0.0133,
+        "n_seeds": 3,
+        "excess": 0.0188,
+        "ratio": 0.41
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.7937,
+        "sd": 0.0159,
+        "n_seeds": 3,
+        "excess": 0.0104,
+        "ratio": 0.21
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.7779,
+        "sd": 0.024,
+        "n_seeds": 3,
+        "excess": -0.0054,
+        "ratio": -0.09
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.7577,
+        "sd": 0.0115,
+        "n_seeds": 3,
+        "excess": -0.0256,
+        "ratio": -0.59
+      },
+      {
+        "arm": "evo1_probe",
+        "score": 0.5418,
+        "sd": 0.0211,
+        "n_seeds": 3,
+        "excess": -0.2415,
+        "ratio": -4.3
+      }
+    ]
+  },
+  {
+    "task": "human_tf_0",
+    "metric": "mcc",
+    "model_arm": "gena_lm",
+    "model_score": 0.6809,
+    "model_sd": 0.0064,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.6727,
+    "baseline_sd": 0.0034,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0082,
+    "gate": 0.0145,
+    "ratio": 0.57,
+    "recoverability": 0.988,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.6727
+      },
+      {
+        "arm": "kmer",
+        "score": 0.6085
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "gena_lm",
+        "score": 0.6809,
+        "sd": 0.0064,
+        "n_seeds": 3,
+        "excess": 0.0082,
+        "ratio": 0.57
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.6776,
+        "sd": 0.0263,
+        "n_seeds": 3,
+        "excess": 0.0049,
+        "ratio": 0.09
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.6761,
+        "sd": 0.0179,
+        "n_seeds": 3,
+        "excess": 0.0034,
+        "ratio": 0.09
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.6644,
+        "sd": 0.0089,
+        "n_seeds": 3,
+        "excess": -0.0083,
+        "ratio": -0.44
+      }
+    ]
+  },
+  {
+    "task": "NT_enhancers",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.555,
+    "model_sd": 0.0162,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.5539,
+    "baseline_sd": 0.0476,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": 0.0011,
+    "gate": 0.1006,
+    "ratio": 0.01,
+    "recoverability": 0.998,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.5539
+      },
+      {
+        "arm": "kmer",
+        "score": 0.4214
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.555,
+        "sd": 0.0162,
+        "n_seeds": 3,
+        "excess": 0.0011,
+        "ratio": 0.01
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.5457,
+        "sd": 0.0124,
+        "n_seeds": 3,
+        "excess": -0.0082,
+        "ratio": -0.08
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.514,
+        "sd": 0.0421,
+        "n_seeds": 3,
+        "excess": -0.0399,
+        "ratio": -0.31
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.4408,
+        "sd": 0.0145,
+        "n_seeds": 3,
+        "excess": -0.1131,
+        "ratio": -1.14
+      }
+    ]
+  },
+  {
+    "task": "GB_human_ensembl_regulatory",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.9082,
+    "model_sd": 0.0032,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.9097,
+    "baseline_sd": 0.0003,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.0015,
+    "gate": 0.0064,
+    "ratio": -0.23,
+    "recoverability": 1.0017,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.9097
+      },
+      {
+        "arm": "kmer",
+        "score": 0.3891
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.9082,
+        "sd": 0.0032,
+        "n_seeds": 3,
+        "excess": -0.0015,
+        "ratio": -0.23
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.8623,
+        "sd": 0.0033,
+        "n_seeds": 3,
+        "excess": -0.0474,
+        "ratio": -7.15
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.8168,
+        "sd": 0.005,
+        "n_seeds": 3,
+        "excess": -0.0929,
+        "ratio": -9.27
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.7847,
+        "sd": 0.0086,
+        "n_seeds": 3,
+        "excess": -0.125,
+        "ratio": -7.26
+      }
+    ]
+  },
+  {
+    "task": "NT_H3K4me1",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.5467,
+    "model_sd": 0.004,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.5497,
+    "baseline_sd": 0.0023,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.003,
+    "gate": 0.0092,
+    "ratio": -0.33,
+    "recoverability": 1.0055,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.5497
+      },
+      {
+        "arm": "kmer",
+        "score": 0.3058
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.5467,
+        "sd": 0.004,
+        "n_seeds": 3,
+        "excess": -0.003,
+        "ratio": -0.33
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.5036,
+        "sd": 0.0054,
+        "n_seeds": 3,
+        "excess": -0.0461,
+        "ratio": -3.93
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.4424,
+        "sd": 0.0067,
+        "n_seeds": 3,
+        "excess": -0.1073,
+        "ratio": -7.57
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.4083,
+        "sd": 0.0102,
+        "n_seeds": 3,
+        "excess": -0.1414,
+        "ratio": -6.76
+      }
+    ]
+  },
+  {
+    "task": "NT_H4",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.7939,
+    "model_sd": 0.0036,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.7974,
+    "baseline_sd": 0.0077,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.0035,
+    "gate": 0.017,
+    "ratio": -0.21,
+    "recoverability": 1.0044,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.7974
+      },
+      {
+        "arm": "kmer",
+        "score": 0.6873
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.7939,
+        "sd": 0.0036,
+        "n_seeds": 3,
+        "excess": -0.0035,
+        "ratio": -0.21
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.7939,
+        "sd": 0.0095,
+        "n_seeds": 3,
+        "excess": -0.0035,
+        "ratio": -0.14
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.7837,
+        "sd": 0.0071,
+        "n_seeds": 3,
+        "excess": -0.0137,
+        "ratio": -0.65
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.7623,
+        "sd": 0.0193,
+        "n_seeds": 3,
+        "excess": -0.0351,
+        "ratio": -0.84
+      }
+    ]
+  },
+  {
+    "task": "deep4mc_A.thaliana_4mC",
+    "metric": "mcc",
+    "model_arm": "hyenadna",
+    "model_score": 0.6477,
+    "model_sd": 0.0012,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.6607,
+    "baseline_sd": 0.0034,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.013,
+    "gate": 0.0072,
+    "ratio": -1.8,
+    "recoverability": 1.0201,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.6607
+      },
+      {
+        "arm": "kmer",
+        "score": 0.2061
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "hyenadna",
+        "score": 0.6477,
+        "sd": 0.0012,
+        "n_seeds": 3,
+        "excess": -0.013,
+        "ratio": -1.8
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.6406,
+        "sd": 0.0011,
+        "n_seeds": 3,
+        "excess": -0.0201,
+        "ratio": -2.81
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.5475,
+        "sd": 0.0087,
+        "n_seeds": 3,
+        "excess": -0.1132,
+        "ratio": -6.06
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.3652,
+        "sd": 0.0336,
+        "n_seeds": 3,
+        "excess": -0.2955,
+        "ratio": -4.37
+      }
+    ]
+  },
+  {
+    "task": "NT_H3K79me3",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.6662,
+    "model_sd": 0.0196,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.706,
+    "baseline_sd": 0.009,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.0398,
+    "gate": 0.0431,
+    "ratio": -0.92,
+    "recoverability": 1.0597,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.706
+      },
+      {
+        "arm": "kmer",
+        "score": 0.5338
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.6662,
+        "sd": 0.0196,
+        "n_seeds": 3,
+        "excess": -0.0398,
+        "ratio": -0.92
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.6213,
+        "sd": 0.0078,
+        "n_seeds": 3,
+        "excess": -0.0847,
+        "ratio": -3.56
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.6043,
+        "sd": 0.0032,
+        "n_seeds": 3,
+        "excess": -0.1017,
+        "ratio": -5.32
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.5988,
+        "sd": 0.0196,
+        "n_seeds": 3,
+        "excess": -0.1072,
+        "ratio": -2.49
+      }
+    ]
+  },
+  {
+    "task": "NT_H3K9ac",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.5832,
+    "model_sd": 0.0068,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.6303,
+    "baseline_sd": 0.02,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.0471,
+    "gate": 0.0422,
+    "ratio": -1.11,
+    "recoverability": 1.0808,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.6303
+      },
+      {
+        "arm": "kmer",
+        "score": 0.3909
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.5832,
+        "sd": 0.0068,
+        "n_seeds": 3,
+        "excess": -0.0471,
+        "ratio": -1.11
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.5661,
+        "sd": 0.0215,
+        "n_seeds": 3,
+        "excess": -0.0642,
+        "ratio": -1.09
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.5192,
+        "sd": 0.018,
+        "n_seeds": 3,
+        "excess": -0.1111,
+        "ratio": -2.06
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.4798,
+        "sd": 0.011,
+        "n_seeds": 3,
+        "excess": -0.1505,
+        "ratio": -3.3
+      }
+    ]
+  },
+  {
+    "task": "NT_H4ac",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.5413,
+    "model_sd": 0.0046,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.5938,
+    "baseline_sd": 0.0301,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.0525,
+    "gate": 0.0609,
+    "ratio": -0.86,
+    "recoverability": 1.097,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.5938
+      },
+      {
+        "arm": "kmer",
+        "score": 0.2905
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.5413,
+        "sd": 0.0046,
+        "n_seeds": 3,
+        "excess": -0.0525,
+        "ratio": -0.86
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.523,
+        "sd": 0.0139,
+        "n_seeds": 3,
+        "excess": -0.0708,
+        "ratio": -1.07
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.4805,
+        "sd": 0.0159,
+        "n_seeds": 3,
+        "excess": -0.1133,
+        "ratio": -1.66
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.3737,
+        "sd": 0.0193,
+        "n_seeds": 3,
+        "excess": -0.2201,
+        "ratio": -3.08
+      }
+    ]
+  },
+  {
+    "task": "NT_H3K14ac",
+    "metric": "mcc",
+    "model_arm": "nt_v2_500m",
+    "model_score": 0.5416,
+    "model_sd": 0.0143,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.5957,
+    "baseline_sd": 0.0074,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.0541,
+    "gate": 0.0322,
+    "ratio": -1.68,
+    "recoverability": 1.0999,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.5957
+      },
+      {
+        "arm": "kmer",
+        "score": 0.3007
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.5416,
+        "sd": 0.0143,
+        "n_seeds": 3,
+        "excess": -0.0541,
+        "ratio": -1.68
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.5351,
+        "sd": 0.0063,
+        "n_seeds": 3,
+        "excess": -0.0606,
+        "ratio": -3.12
+      },
+      {
+        "arm": "dnabert2",
+        "score": 0.4252,
+        "sd": 0.351,
+        "n_seeds": 3,
+        "excess": -0.1705,
+        "ratio": -0.24
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.4226,
+        "sd": 0.0205,
+        "n_seeds": 3,
+        "excess": -0.1731,
+        "ratio": -3.97
+      }
+    ]
+  },
+  {
+    "task": "NT_H3K4me3",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.483,
+    "model_sd": 0.0029,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.5617,
+    "baseline_sd": 0.0278,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.0787,
+    "gate": 0.0559,
+    "ratio": -1.41,
+    "recoverability": 1.1629,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.5617
+      },
+      {
+        "arm": "kmer",
+        "score": 0.2054
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.483,
+        "sd": 0.0029,
+        "n_seeds": 3,
+        "excess": -0.0787,
+        "ratio": -1.41
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.452,
+        "sd": 0.0146,
+        "n_seeds": 3,
+        "excess": -0.1097,
+        "ratio": -1.75
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.4385,
+        "sd": 0.0029,
+        "n_seeds": 3,
+        "excess": -0.1232,
+        "ratio": -2.2
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.3017,
+        "sd": 0.0157,
+        "n_seeds": 3,
+        "excess": -0.26,
+        "ratio": -4.07
+      }
+    ]
+  },
+  {
+    "task": "NT_H3K4me2",
+    "metric": "mcc",
+    "model_arm": "dnabert2",
+    "model_score": 0.4172,
+    "model_sd": 0.048,
+    "model_seeds": 3,
+    "binding_baseline": "cnn_ceiling",
+    "baseline_score": 0.5409,
+    "baseline_sd": 0.0128,
+    "baseline_seeds": 3,
+    "n_baselines": 2,
+    "excess": -0.1237,
+    "gate": 0.0994,
+    "ratio": -1.25,
+    "recoverability": 1.2965,
+    "significant": false,
+    "removal_meaningful": false,
+    "verdict": "NOT_QUALIFIED_NO_EXCESS",
+    "notes": "",
+    "all_baselines": [
+      {
+        "arm": "cnn_ceiling",
+        "score": 0.5409
+      },
+      {
+        "arm": "kmer",
+        "score": 0.2708
+      }
+    ],
+    "per_model": [
+      {
+        "arm": "dnabert2",
+        "score": 0.4172,
+        "sd": 0.048,
+        "n_seeds": 3,
+        "excess": -0.1237,
+        "ratio": -1.25
+      },
+      {
+        "arm": "gena_lm",
+        "score": 0.4135,
+        "sd": 0.0124,
+        "n_seeds": 3,
+        "excess": -0.1274,
+        "ratio": -3.57
+      },
+      {
+        "arm": "nt_v2_500m",
+        "score": 0.3446,
+        "sd": 0.0167,
+        "n_seeds": 3,
+        "excess": -0.1963,
+        "ratio": -4.66
+      },
+      {
+        "arm": "hyenadna",
+        "score": 0.2761,
+        "sd": 0.0041,
+        "n_seeds": 3,
+        "excess": -0.2648,
+        "ratio": -9.85
+      }
+    ]
+  }
+]

@@ -4,10 +4,11 @@ A pipeline for **targeted capability unlearning in genomic language models**,
 built on Evo-1: locate where a capability lives, remove it, measure the collateral
 damage, and try to attack the removal.
 
-Two documents, no more. This one is how to run and extend the pipeline.
+Three documents, no more. This one is how to run and extend the pipeline.
 [docs/RESULTS.md](docs/RESULTS.md) is the evidence record — every result, with a
 `verified` / `unverified` provenance label per number, plus the lessons and open
-work.
+work. [docs/TARGET_SELECTION.md](docs/TARGET_SELECTION.md) is which task to
+unlearn and which to avoid; read it before Stage 1.
 
 ---
 
@@ -19,18 +20,30 @@ Three findings shape any work built on this.
    checked-in runs, target removal and general genomic capability trade roughly
    one-for-one. Best forgetting cost 0.144 GUE AUROC; the run that preserved GUE
    forgot 0.006, with a CI straddling zero.
-2. **None of the four target capabilities qualified.** A k-mer, composition,
-   BLASTp or evolutionary baseline matched or beat the model on every one. So the
-   Stage 2 numbers describe removing something the model does not distinctly
-   possess — the single biggest caveat in this repository.
+2. **No target capability qualified — and a 27-task search did not rescue it.** A
+   k-mer, composition, BLASTp or evolutionary baseline matched or beat the model on
+   all four original targets. A later systematic audit across regulatory elements,
+   histone modification, methylation, species discrimination, coding/non-coding and
+   viral tasks found **one usable target out of 27**, and **Evo-1 — the model this
+   pipeline unlearns — shows no significant excess on any task tested**
+   ([docs/TARGET_SELECTION.md](docs/TARGET_SELECTION.md)). So the Stage 2
+   numbers describe removing something the model does not distinctly possess — the
+   single biggest caveat in this repository. Two things drive it: a properly *tuned
+   CNN*, not a k-mer model, is the binding baseline on 21 of 22 tasks; on the five tasks
+   where a real excess survives, a baseline still recovers 95–98% of the capability after
+   a perfect removal; and only 4 of 14 splits survive a homology-filtered re-scoring.
+   Where an excess does exist it is **model-specific in the narrowest sense**: on the one
+   usable target, NT-v2-500M is +0.078 over the tuned CNN while DNABERT-2, GENA-LM and
+   HyenaDNA are all *below* it (−0.019, −0.125, −0.034), and Evo-1 shows nothing.
 3. **The training-free baseline won.** `probe_nullspace` — a closed-form
    projection, no gradient steps — had the best selection score of anything
    tried. Run it first; it is the number your method must beat.
 
-Practical consequences, in order: validate your target against a conventional
-baseline ([appendix](#appendix--validating-a-target-task)); always evaluate with
-refit probes and downstream tasks, never a frozen probe alone; always report
-bootstrap intervals.
+Practical consequences, in order: audit the split before you train anything
+([`audit_split_homology.py`](phase2/audit_split_homology.py)); validate your target
+against a conventional baseline **including a tuned CNN**
+([appendix](#appendix--validating-a-target-task)); always evaluate with refit probes
+and downstream tasks, never a frozen probe alone; always report bootstrap intervals.
 
 ---
 
@@ -540,36 +553,75 @@ model's. If a k-mer count, GC fraction, BLAST hit or evolutionary predictor
 already matches the model, the measured "removal" is dominated by whatever else
 the intervention broke.
 
-> A target **qualifies** only if the model shows reproducible, model-specific
-> headroom over the **strongest reasonable non-foundation baseline**, under the
-> **intended out-of-distribution evaluation**.
+> A target **qualifies** only if **both** hold, under the **intended
+> out-of-distribution evaluation**:
+>
+> 1. the model shows reproducible, model-specific headroom over the **strongest
+>    reasonable non-foundation baseline** — `excess > 2·√(sd²_model + sd²_baseline)`;
+> 2. **removal would matter** — `recoverability = max(baselines) / model` is low.
+
+Criterion 2 is not redundant. Six audited tasks pass criterion 1 and are still
+useless: erase `promoter_all`'s +0.031 MCC perfectly and a from-scratch CNN still
+scores 0.9245 against the model's 0.9557, i.e. **96.7% of the capability survives**.
+"Unlearning succeeded" and "capability denied" come apart completely. Score both
+criteria with [`score_target_qualification.py`](phase2/score_target_qualification.py).
 
 Four targets were tested here — HVUE/Evo, ProteinGym/ESM2, PHIStruct/SaProt,
 EvoMIL/ESM-1b — and **all four failed**
-([RESULTS.md §5](docs/RESULTS.md#5-stage-0--benchmark-qualification)).
+([RESULTS.md §5](docs/RESULTS.md#5-stage-0--benchmark-qualification)). A later
+27-task audit found no comfortably qualifying target either; the ranked candidate
+list and the reasons each class of task fails are in
+[docs/TARGET_SELECTION.md](docs/TARGET_SELECTION.md).
 
 **Pick the right comparator.**
 
 | Task type | Comparator | Implementation |
 |:--|:--|:--|
 | DNA classification | k-mer logistic regression (k=1..4), GC + length | [eval_kmer_baseline.py](phase2/eval_kmer_baseline.py), [baseline_gc_1gram.py](phase1/baseline_gc_1gram.py) |
+| DNA classification | **tuned CNN — binding baseline on 21 of 22 audited tasks** | [baseline_cnn_ceiling.py](phase2/baseline_cnn_ceiling.py) |
+| any — split soundness | homology-filtered re-scoring of every arm (hurdle H3) | [rescore_filtered.py](phase2/rescore_filtered.py) |
 | Protein family / host | BLASTp, HMMER as sanity floor | [phistruct_qualification.py](phase2/phistruct_qualification.py) |
 | Proteome-level | AA 3-mer TF-IDF, composition | [evomil_esm1b_qualification.py](phase2/evomil_esm1b_qualification.py) |
 | Mutation effect | VESPA, VESPAl, S2F_MSA | [proteingym_esm2_qualification.py](phase2/proteingym_esm2_qualification.py) |
 | Taxonomic labels | taxonomy-only predictor | [report_taxonomy_shortcut.py](phase2/report_taxonomy_shortcut.py) |
 
-Three ways a baseline gets weakened, all inflating apparent headroom: capping
+Six ways a baseline gets weakened, all inflating apparent headroom: capping
 training samples (fit on the **full** split); a narrow `C` grid; and — the one
 that decided the HVUE verdict — **truncating the baseline to the model's context
 window.** Matched-input k-mer scores 0.8555 AUROC, full-sequence 0.8930, Evo
 0.8911. The model leads by +0.036 against the handicapped baseline and is
 level-or-behind against the fair one. Report both.
 
-**Use a strict split.** Random splits leak; all four studies looked positive on
-`random` and failed under the intended protocol. Use taxonomy-, cluster- or
-position-held-out (`eval_taxonomy_heldout.py`, `check_split_validity.py`). Note a
-split on `virus_tax_id` is species-like holdout, **not** family-held-out; and a
-single-family task with no taxonomy columns admits no held-out check at all.
+Three more, from the 27-task audit:
+
+- **Omitting the CNN.** A tuned CNN was the binding baseline on **21 of 22** tasks;
+  k-mer bound on exactly one (`iDHS-EL_DNase_I`, 0.6411 vs CNN 0.5900). Qualifying
+  against composition alone over-estimates headroom by **0.10–0.66 MCC**.
+- **Sweeping capacity but not receptive field.** On 600 bp splice, a ResNet at 9.44M
+  parameters and 89 bp receptive field scores 0.336 MCC; a U-Net at 0.26M parameters
+  with global receptive field scores 0.951 — **+0.62 MCC at 36× fewer parameters.**
+  Kernel size and dilation base move receptive field at near-zero parameter cost.
+- **Early stopping that truncates seeds.** On `phage_fragments` a 3-seed refit under
+  patience-6 read 0.8185 ± 0.0533 and **failed** the gate; a converged 5-seed refit
+  read 0.8413 ± 0.0128 and **passed**. Same experiment, opposite verdict. If seeds
+  disagree by more than a few points, raise `min_epochs` before trusting the spread.
+
+**Use a strict split, and audit it at the sequence level.** Random splits leak; all
+four studies looked positive on `random` and failed under the intended protocol. Use
+taxonomy-, cluster- or position-held-out (`eval_taxonomy_heldout.py`,
+`check_split_validity.py`). Note a split on `virus_tax_id` is species-like holdout,
+**not** family-held-out; and a single-family task with no taxonomy columns admits no
+held-out check at all.
+
+Label-level checks are not enough — run
+[`audit_split_homology.py`](phase2/audit_split_homology.py), which looks at sequences.
+A published split is not a clean one: the original NT `enhancers` task has **100 of 400
+test rows verbatim in train, all of them one class** of a balanced 200/200 test set, so
+half the positives are memorisable and none of the negatives are. Dropping them costs
+every architecture 0.17–0.21 MCC. HVUE's official splits are **91–99.9% homologous on
+6 of 7 tasks with 0.00% exact duplicates** — deduplicated on the wrong axis. And use
+`easy-search`, not `easy-cluster`, for leakage: the latter needs 90% *bidirectional*
+coverage and caught **0 of 150** half-overlap pairs.
 
 **Report an interval.** Use [signed_bootstrap.py](phase2/signed_bootstrap.py) —
 paired, resampled at the leakage unit rather than the row, sign-consistent
