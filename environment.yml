@@ -3,14 +3,20 @@
 #   conda env create -f environment.yml
 #   conda activate unlearning
 #
-# Then install the two packages that are not on PyPI/conda. Evo-1 and its
-# StripedHyena backbone are published as source repositories:
-#
-#   pip install git+https://github.com/evo-design/evo.git
-#
-# which pulls in `stripedhyena`. Verify the import stack with:
+# This file now installs the Evo-1 package from source through pip, which pulls
+# in `stripedhyena`. Verify the import stack with:
 #
 #   python -c "import torch, evo, stripedhyena, safetensors, sklearn; print('ok')"
+#
+# Evo2/Vortex inference helpers are included as pip dependencies. If installing
+# `evo2` fails because of FlashAttention / TransformerEngine on your cluster,
+# install those CUDA-specific wheels first using the cluster's recommended
+# module stack, then rerun the pip section.
+#
+# BioNeMo Evo2 LoRA/full fine-tuning is intentionally NOT installed here. NVIDIA
+# BioNeMo Recipes should live in a separate cluster environment, because the
+# Megatron/NeMo stack has stricter Python/CUDA/container assumptions. See:
+#   phase2_evo2/BIONEMO_HVUE.md
 #
 # `env_test.py` is a heavier end-to-end smoke test: it additionally requires the
 # downloaded Evo-1-8k-base weights in ./evo-1-8k-base and a CUDA device.
@@ -46,3 +52,10 @@ dependencies:
       - safetensors>=0.4
       - huggingface_hub>=0.20
       - datasets>=2.14
+      # Evo-1 package and StripedHyena backbone.
+      - git+https://github.com/evo-design/evo.git
+      # Evo2 / Vortex inference package used by phase1_evo2 and phase2_evo2.
+      # For 7B models, install FlashAttention first if your cluster requires a
+      # locally matched wheel:
+      #   pip install flash-attn==2.8.0.post2 --no-build-isolation
+      - evo2
