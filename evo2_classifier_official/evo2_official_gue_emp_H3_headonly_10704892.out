@@ -1,0 +1,309 @@
+GPU: NVIDIA H200
+
+======================================================================
+Configuration Summary (Non-Default Values vs Megatron Core)
+======================================================================
+
+[optimizer] Non-default values (vs Mcore OptimizerConfig):
+  adam_beta2: 0.95  (Mcore default: 0.999)
+  bf16: True  (Mcore default: False)
+  fp8_recipe: 'tensorwise'  (Mcore default: None)
+  lr: 0.0003  (Mcore default: None)
+  min_lr: 3e-05  (Mcore default: None)
+  params_dtype: torch.bfloat16  (Mcore default: torch.float32)
+  use_distributed_optimizer: True  (Mcore default: False)
+  weight_decay: 0.0  (Mcore default: 0.01)
+
+[ddp] Non-default values (vs Mcore DistributedDataParallelConfig):
+  check_for_nan_in_grad: True  (Mcore default: False)
+  grad_reduce_in_fp32: True  (Mcore default: False)
+  use_distributed_optimizer: True  (Mcore default: False)
+
+[model] Non-default values (vs Mcore TransformerConfig):
+  add_bias_linear: False  (Mcore default: True)
+  apply_rope_fusion: True  (Mcore default: False)
+  attention_backend: <AttnBackend.flash: 1>  (Mcore default: <AttnBackend.auto: 5>)
+  attention_dropout: 0.0  (Mcore default: 0.1)
+  autocast_dtype: torch.bfloat16  (Mcore default: None)
+  bf16: True  (Mcore default: False)
+  bias_activation_fusion: True  (Mcore default: False)
+  cuda_graph_modules: []  (Mcore default: 'full')
+  embedding_init_method_std: 0.02  (Mcore default: None)
+  expert_tensor_parallel_size: 1  (Mcore default: None)
+  ffn_hidden_size: 5120  (Mcore default: None)
+  fp8_recipe: 'tensorwise'  (Mcore default: 'delayed')
+  gated_linear_unit: True  (Mcore default: False)
+  hidden_dropout: 0.0  (Mcore default: 0.1)
+  hidden_size: 1920  (Mcore default: 0)
+  inference_cuda_graph_scope: <InferenceCudaGraphScope.none: 1>  (Mcore default: None)
+  kv_channels: 128  (Mcore default: None)
+  layernorm_epsilon: 1e-06  (Mcore default: 1e-05)
+  microbatch_group_size_per_vp_stage: 1  (Mcore default: None)
+  normalization: 'RMSNorm'  (Mcore default: 'LayerNorm')
+  num_attention_heads: 15  (Mcore default: 0)
+  num_layers: 25  (Mcore default: 0)
+  num_layers_at_end_in_bf16: 0  (Mcore default: 1)
+  num_layers_at_start_in_bf16: 0  (Mcore default: 1)
+  num_query_groups: 15  (Mcore default: None)
+  params_dtype: torch.bfloat16  (Mcore default: torch.float32)
+  pipeline_dtype: torch.bfloat16  (Mcore default: None)
+  recompute_modules: ['core_attn']  (Mcore default: None)
+
+----------------------------------------------------------------------
+Other Configuration Values:
+----------------------------------------------------------------------
+
+[train]:
+  check_optimizer_step_success: True
+  decrease_batch_size_if_needed: False
+  empty_unused_memory_level: 0
+  eval_interval: 10
+  eval_iters: 12
+  exit_signal: <Signals.SIGTERM: 15>
+  exit_signal_handler: False
+  exit_signal_handler_for_dataloader: False
+  exit_signal_handler_for_training: False
+  global_batch_size: 64
+  iterations_to_skip: []
+  manual_gc: False
+  manual_gc_eval: True
+  manual_gc_interval: 0
+  micro_batch_size: 16
+  skip_sync_grad_norm_across_mp: False
+  train_iters: 200
+
+[validation]:
+  eval_global_batch_size: 64
+  eval_interval: 10
+  eval_iters: 12
+  eval_micro_batch_size: 16
+  full_validation: False
+  multiple_validation_sets: False
+  skip_train: False
+  test_mode: False
+
+[scheduler]:
+  end_weight_decay: 0.033
+  lr_decay_iters: 180
+  lr_decay_steps: 11520
+  lr_decay_style: 'cosine'
+  lr_warmup_init: 0.0
+  lr_warmup_iters: 20
+  lr_warmup_samples: 0
+  lr_warmup_steps: 1280
+  lr_wsd_decay_iters: 180
+  lr_wsd_decay_style: 'minus_sqrt'
+  override_opt_param_scheduler: True
+  start_weight_decay: 0.033
+  use_checkpoint_opt_param_scheduler: False
+  wd_incr_steps: 12800
+  weight_decay_incr_style: 'constant'
+  wsd_decay_steps: 11520
+
+[dataset]:
+  data_sharding: False
+  dataloader_type: 'cyclic'
+  drop_last: True
+  num_workers: 0
+  persistent_workers: False
+  pin_memory: True
+  seq_length: 500
+  test_jsonl: '/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_H3/test.jsonl'
+  tokenizer_path: '/projects/MENTISLab/bionemo-framework/recipes/evo2_megatron/tokenizers/nucleotide_fast_tokenizer_512'
+  train_jsonl: '/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_H3/train.jsonl'
+  val_jsonl: '/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_H3/dev.jsonl'
+
+[checkpoint]:
+  async_ckpt_cpu_priority: 10
+  async_ckpt_io_priority: 3
+  async_ckpt_use_cpu_shm: False
+  async_save: False
+  async_strategy: 'mcore'
+  async_write_results_mp_mode: 'fork'
+  auto_detect_ckpt_format: False
+  ckpt_assume_constant_structure: False
+  ckpt_convert_update_legacy_dist_opt_format: False
+  ckpt_format: 'torch_dist'
+  ckpt_fully_parallel_load_exchange_algo: 'broadcast'
+  ckpt_fully_parallel_load_process_group: 'dp'
+  ckpt_fully_parallel_save_process_group: 'dp'
+  ckpt_load_validate_sharding_integrity: True
+  dist_ckpt_optim_fully_reshardable: False
+  dist_ckpt_save_pre_mcore_014: False
+  dist_ckpt_strictness: 'ignore_all'
+  dist_ckpt_workers: 1
+  distrib_optim_fully_reshardable_mem_efficient: False
+  exit_on_missing_checkpoint: False
+  finetune: True
+  fully_parallel_load: True
+  fully_parallel_save: True
+  load: '/projects/MENTISLab/unlearning/results/evo2_official_gue/emp_H3/head_only/checkpoints'
+  load_main_params_from_ckpt: False
+  load_optim: True
+  load_rng: True
+  most_recent_k: -1
+  non_persistent_local_ckpt_algo: 'fully_parallel'
+  pretrained_checkpoint: '/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge'
+  replication: False
+  replication_factor: 2
+  save: '/projects/MENTISLab/unlearning/results/evo2_official_gue/emp_H3/head_only/checkpoints'
+  save_interval: 100
+  save_optim: True
+  save_rng: True
+  save_tokenizer_assets: True
+  storage_writers_per_rank: 1
+  strict_fsdp_dtensor_load: False
+  use_checkpoint_args: False
+  use_mp_args_from_checkpoint_args: False
+  use_persistent_ckpt_worker: True
+  use_tokenizer_model_from_checkpoint_args: True
+  verify_integrity: False
+
+[logger]:
+  barrier_with_L1_time: True
+  filter_warnings: True
+  log_device_memory_used: False
+  log_energy: False
+  log_interval: 10
+  log_l2_norm_grad_to_tensorboard: False
+  log_loss_scale_to_tensorboard: True
+  log_max_attention_logit: False
+  log_memory_to_tensorboard: False
+  log_num_zeros_in_grad: False
+  log_params_norm: False
+  log_progress: True
+  log_runtime_to_tensorboard: False
+  log_throughput: False
+  log_throughput_to_tensorboard: True
+  log_timers_to_tensorboard: False
+  log_validation_ppl_to_tensorboard: False
+  log_world_size_to_tensorboard: False
+  logging_level: 20
+  mlflow_log_artifacts: True
+  runtime_time_unit: 'hours'
+  set_level_for_all_loggers: False
+  skip_train_metrics_log: False
+  tensorboard_dir: '/projects/MENTISLab/unlearning/results/evo2_official_gue/emp_H3/head_only/tb_logs'
+  tensorboard_log_interval: 1
+  tensorboard_queue_size: 1000
+  throughput_window_size: 20
+  timing_log_level: 0
+  timing_log_option: 'minmax'
+  wandb_entity: ''
+  wandb_exp_name: 'head_only'
+  wandb_project: ''
+  wandb_save_dir: ''
+
+[tokenizer]:
+  force_system_message: False
+  hf_tokenizer_kwargs: {}
+  make_vocab_size_divisible_by: 1
+  null_tokenizer_pad_id: -1
+  pad_vocab_size: False
+  rank: 0
+  sp_tokenizer_kwargs: {}
+  tensor_model_parallel_size: 1
+  tiktoken_num_special_tokens: 1000
+  tokenizer_hf_no_include_special_tokens: False
+  tokenizer_hf_no_use_fast: False
+  tokenizer_model: '/projects/MENTISLab/bionemo-framework/recipes/evo2_megatron/tokenizers/nucleotide_fast_tokenizer_512'
+  tokenizer_sentencepiece_ignore_extra_whitespaces: True
+  tokenizer_sentencepiece_legacy: False
+  tokenizer_type: 'HuggingFaceTokenizer'
+  trust_remote_code: False
+  vocab_extra_ids: 0
+
+[rng]:
+  data_parallel_random_init: False
+  inference_rng_tracker: False
+  seed: 1234
+  te_rng_tracker: False
+
+======================================================================
+> initializing torch distributed ...
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+> initialized tensor model parallel with size 1
+> initialized pipeline model parallel with size 1
+> setting random seeds to 1234 ...
+> compiling dataset index builder ...
+>>> done with dataset index builder. Compilation time: 0.001 seconds
+time to initialize megatron (seconds): 11.569
+[after megatron is initialized] datetime: 2026-09-30 10:25:26 
+[after tokenizer is built] datetime: 2026-09-30 10:25:26 
+Registered PEFT pre-wrap hook
+ > padded vocab (size: 512) with 0 dummy tokens (new size: 512)
+Applying PEFT pre-wrap hook...
+Loading base model weights from: /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge
+Broadcasting TrainState from rank 0 to all 1 ranks
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge/iter_0000001.
+Broadcasting config from rank 0 to all 1 ranks
+sharded_state_dict metadata loaded from the checkpoint: {'singleton_local_shards': False, 'distrib_optim_sharding_type': 'dp_reshardable', 'chained_optim_avoid_prefix': True}
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge/iter_0000001.
+ loading distributed checkpoint from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge at iteration 1
+Warning: Exception during strict loading: Error(s) in loading state_dict for HyenaForSequenceClassification:
+	Missing key(s) in state_dict: "decoder.layers.0.mixer.dense_projection._extra_state", "decoder.layers.0.mixer.dense._extra_state", "decoder.layers.0.mlp.linear_fc1._extra_state", "decoder.layers.0.mlp.linear_fc2._extra_state", "decoder.layers.1.mixer.dense_projection._extra_state", "decoder.layers.1.mixer.dense._extra_state", "decoder.layers.1.mlp.linear_fc1._extra_state", "decoder.layers.1.mlp.linear_fc2._extra_state", "decoder.layers.2.mixer.dense_projection._extra_state", "decoder.layers.2.mixer.dense._extra_state", "decoder.layers.2.mlp.linear_fc1._extra_state", "decoder.layers.2.mlp.linear_fc2._extra_state", "decoder.layers.3.self_attention.linear_proj._extra_state", "decoder.layers.3.self_attention.linear_qkv._extra_state", "decoder.layers.3.mlp.linear_fc1._extra_state", "decoder.layers.3.mlp.linear_fc2._extra_state", "decoder.layers.4.mixer.dense_projection._extra_state", "decoder.layers.4.mixer.dense._extra_state", "decoder.layers.4.mlp.linear_fc1._extra_state", "decoder.layers.4.mlp.linear_fc2._extra_state", "decoder.layers.5.mixer.dense_projection._extra_state", "decoder.layers.5.mixer.dense._extra_state", "decoder.layers.5.mlp.linear_fc1._extra_state", "decoder.layers.5.mlp.linear_fc2._extra_state", "decoder.layers.6.mixer.dense_projection._extra_state", "decoder.layers.6.mixer.dense._extra_state", "decoder.layers.6.mlp.linear_fc1._extra_state", "decoder.layers.6.mlp.linear_fc2._extra_state", "decoder.layers.7.mixer.dense_projection._extra_state", "decoder.layers.7.mixer.dense._extra_state", "decoder.layers.7.mlp.linear_fc1._extra_state", "decoder.layers.7.mlp.linear_fc2._extra_state", "decoder.layers.8.mixer.dense_projection._extra_state", "decoder.layers.8.mixer.dense._extra_state", "decoder.layers.8.mlp.linear_fc1._extra_state", "decoder.layers.8.mlp.linear_fc2._extra_state", "decoder.layers.9.mixer.dense_projection._extra_state", "decoder.layers.9.mixer.dense._extra_state", "decoder.layers.9.mlp.linear_fc1._extra_state", "decoder.layers.9.mlp.linear_fc2._extra_state", "decoder.layers.10.self_attention.linear_proj._extra_state", "decoder.layers.10.self_attention.linear_qkv._extra_state", "decoder.layers.10.mlp.linear_fc1._extra_state", "decoder.layers.10.mlp.linear_fc2._extra_state", "decoder.layers.11.mixer.dense_projection._extra_state", "decoder.layers.11.mixer.dense._extra_state", "decoder.layers.11.mlp.linear_fc1._extra_state", "decoder.layers.11.mlp.linear_fc2._extra_state", "decoder.layers.12.mixer.dense_projection._extra_state", "decoder.layers.12.mixer.dense._extra_state", "decoder.layers.12.mlp.linear_fc1._extra_state", "decoder.layers.12.mlp.linear_fc2._extra_state", "decoder.layers.13.mixer.dense_projection._extra_state", "decoder.layers.13.mixer.dense._extra_state", "decoder.layers.13.mlp.linear_fc1._extra_state", "decoder.layers.13.mlp.linear_fc2._extra_state", "decoder.layers.14.mixer.dense_projection._extra_state", "decoder.layers.14.mixer.dense._extra_state", "decoder.layers.14.mlp.linear_fc1._extra_state", "decoder.layers.14.mlp.linear_fc2._extra_state", "decoder.layers.15.mixer.dense_projection._extra_state", "decoder.layers.15.mixer.dense._extra_state", "decoder.layers.15.mlp.linear_fc1._extra_state", "decoder.layers.15.mlp.linear_fc2._extra_state", "decoder.layers.16.mixer.dense_projection._extra_state", "decoder.layers.16.mixer.dense._extra_state", "decoder.layers.16.mlp.linear_fc1._extra_state", "decoder.layers.16.mlp.linear_fc2._extra_state", "decoder.layers.17.self_attention.linear_proj._extra_state", "decoder.layers.17.self_attention.linear_qkv._extra_state", "decoder.layers.17.mlp.linear_fc1._extra_state", "decoder.layers.17.mlp.linear_fc2._extra_state", "decoder.layers.18.mixer.dense_projection._extra_state", "decoder.layers.18.mixer.dense._extra_state", "decoder.layers.18.mlp.linear_fc1._extra_state", "decoder.layers.18.mlp.linear_fc2._extra_state", "decoder.layers.19.mixer.dense_projection._extra_state", "decoder.layers.19.mixer.dense._extra_state", "decoder.layers.19.mlp.linear_fc1._extra_state", "decoder.layers.19.mlp.linear_fc2._extra_state", "decoder.layers.20.mixer.dense_projection._extra_state", "decoder.layers.20.mixer.dense._extra_state", "decoder.layers.20.mlp.linear_fc1._extra_state", "decoder.layers.20.mlp.linear_fc2._extra_state", "decoder.layers.21.mixer.dense_projection._extra_state", "decoder.layers.21.mixer.dense._extra_state", "decoder.layers.21.mlp.linear_fc1._extra_state", "decoder.layers.21.mlp.linear_fc2._extra_state", "decoder.layers.22.mixer.dense_projection._extra_state", "decoder.layers.22.mixer.dense._extra_state", "decoder.layers.22.mlp.linear_fc1._extra_state", "decoder.layers.22.mlp.linear_fc2._extra_state", "decoder.layers.23.mixer.dense_projection._extra_state", "decoder.layers.23.mixer.dense._extra_state", "decoder.layers.23.mlp.linear_fc1._extra_state", "decoder.layers.23.mlp.linear_fc2._extra_state", "decoder.layers.24.self_attention.linear_proj._extra_state", "decoder.layers.24.self_attention.linear_qkv._extra_state", "decoder.layers.24.mlp.linear_fc1._extra_state", "decoder.layers.24.mlp.linear_fc2._extra_state", "decoder.final_norm._extra_state", "classification_head.0.weight", "classification_head.0.bias", "classification_head.1.weight", "classification_head.1.bias", "classification_head.4.weight", "classification_head.4.bias". 
+Non-extra-state mismatched keys: ['classification_head.0.weight', 'classification_head.0.bias', 'classification_head.1.weight', 'classification_head.1.bias', 'classification_head.4.weight', 'classification_head.4.bias']
+ checkpoint version 3.0
+  successfully loaded checkpoint from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge [ t 0/1, p 0/1 ] at iteration 0
+Applying PEFT transformation...
+PEFT Statistics:
+  Total parameters: 1,111,900,802
+  Trainable parameters: 3,696,002
+  Trainable percentage: 0.33%
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 1111900802
+[after model, optimizer, and learning rate scheduler are built] datetime: 2026-09-30 10:25:31 
+Broadcasting TrainState from rank 0 to all 1 ranks
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/results/evo2_official_gue/emp_H3/head_only/checkpoints/iter_0000200.
+Broadcasting config from rank 0 to all 1 ranks
+sharded_state_dict metadata loaded from the checkpoint: {'distrib_optim_sharding_type': 'dp_reshardable', 'singleton_local_shards': False, 'chained_optim_avoid_prefix': True}
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/results/evo2_official_gue/emp_H3/head_only/checkpoints/iter_0000200.
+ loading distributed checkpoint from /projects/MENTISLab/unlearning/results/evo2_official_gue/emp_H3/head_only/checkpoints at iteration 200
+Broadcasting TrainState from rank 0 to all 1 ranks
+ checkpoint version 3.0
+  successfully loaded checkpoint from /projects/MENTISLab/unlearning/results/evo2_official_gue/emp_H3/head_only/checkpoints [ t 0/1, p 0/1 ] at iteration 200
+> setting tensorboard ...
+> building train, validation, and test datasets ...
+ > datasets target sizes (minimum size):
+    train:      12800
+    validation: 16128
+    test:       768
+[after dataloaders are built] datetime: 2026-09-30 10:25:37 
+done with setup ...
+Setting rerun_state_machine.current_iteration to 200...
+Starting training loop at iteration 200
+Deleting CUDA graphs
+[after training is done] datetime: 2026-09-30 10:25:38 
+Evaluating on 768 samples
+Evaluating iter 1/12
+Evaluating iter 2/12
+Evaluating iter 3/12
+Evaluating iter 4/12
+Evaluating iter 5/12
+Evaluating iter 6/12
+Evaluating iter 7/12
+Evaluating iter 8/12
+Evaluating iter 9/12
+Evaluating iter 10/12
+Evaluating iter 11/12
+Evaluating iter 12/12
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 200 on validation set | ce loss value: 5.712414E-01 | ce loss PPL: 1.770464E+00 | accuracy value: 7.031250E-01 | accuracy PPL: 2.020056E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Evaluating on 768 samples
+Evaluating iter 1/12
+Evaluating iter 2/12
+Evaluating iter 3/12
+Evaluating iter 4/12
+Evaluating iter 5/12
+Evaluating iter 6/12
+Evaluating iter 7/12
+Evaluating iter 8/12
+Evaluating iter 9/12
+Evaluating iter 10/12
+Evaluating iter 11/12
+Evaluating iter 12/12
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 200 on test set | ce loss value: 5.626277E-01 | ce loss PPL: 1.755279E+00 | accuracy value: 7.226562E-01 | accuracy PPL: 2.059898E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

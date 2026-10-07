@@ -1,0 +1,63 @@
+# Conda environment for the genomic capability-unlearning pipeline.
+#
+#   conda env create -f environment.yml
+#   conda activate unlearning
+#
+# This file now installs the Evo-1 package from source through pip, which pulls
+# in `stripedhyena`. Verify the import stack with:
+#
+#   python -c "import torch, evo, stripedhyena, safetensors, sklearn; print('ok')"
+#
+# Evo2/Vortex inference helpers are included as pip dependencies. If installing
+# `evo2` fails because of FlashAttention / TransformerEngine on your cluster,
+# install those CUDA-specific wheels first using the cluster's recommended
+# module stack, then rerun the pip section.
+#
+# BioNeMo Evo2 LoRA/full fine-tuning is intentionally NOT installed here. NVIDIA
+# BioNeMo Recipes should live in a separate cluster environment, because the
+# Megatron/NeMo stack has stricter Python/CUDA/container assumptions. See:
+#   phase2_evo2/BIONEMO_HVUE.md
+#
+# `env_test.py` is a heavier end-to-end smoke test: it additionally requires the
+# downloaded Evo-1-8k-base weights in ./evo-1-8k-base and a CUDA device.
+#
+# The historical runs in this repository were produced with a conda environment
+# named `UT-p1` on the original host. Any environment satisfying this file works;
+# point the pipeline at it with $PROJECT_PYTHON (see README.md, Quickstart).
+name: unlearning
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy>=1.24
+  - pandas>=2.0
+  - scikit-learn>=1.3
+  - scipy>=1.10
+  - matplotlib>=3.7
+  - pyyaml>=6.0
+  - joblib>=1.3
+  - threadpoolctl>=3.1
+  - tqdm>=4.65
+  - requests>=2.28
+  - pytest>=7.4
+  # Non-Python tools used by the protein-LM qualification controllers. Drop
+  # these two lines if you only need the Phase 1-3 unlearning pipeline.
+  - blast>=2.14
+  - hmmer>=3.3
+  - pip:
+      # Install the CUDA build that matches your driver; the CPU wheel works for
+      # everything except the GPU training and evaluation stages.
+      - torch>=2.1
+      - safetensors>=0.4
+      - huggingface_hub>=0.20
+      - datasets>=2.14
+      - transformers>=4.30
+      - einops>=0.6
+      # Evo-1 package and StripedHyena backbone.
+      - git+https://github.com/evo-design/evo.git
+      # Evo2 / Vortex inference package used by phase1_evo2 and phase2_evo2.
+      # For 7B models, install FlashAttention first if your cluster requires a
+      # locally matched wheel:
+      #   pip install flash-attn==2.8.0.post2 --no-build-isolation
+      - evo2
