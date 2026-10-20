@@ -1,0 +1,130 @@
+Continue the existing Evo2 pilot through audit remediation, saved-result verification, and recovery handoff. Implement the authorized fixes and complete the work; do not stop after proposing a plan.
+
+The original three-task pilot is complete. Preserve its scientific measurements and execution history. The removed 11:15 AM and 11:45 AM ET deadlines remain removed. Existing resource budgets and approval controls remain in force.
+
+CONTEXT
+
+Repository: https://github.com/Georgakopoulos-Soares-lab/unlearning
+Only authorized writable remote branch: experiments-ashay
+Worktree: /workspace/wt-eval-pilot
+Python: /workspace/venvs/evo2-pilot/bin/python
+
+Original GPU-run source:
+3d3da6bce62a19819a59ba063c11d9a3ac082a70
+
+Previously verified delivery:
+7ad2ec73a12e7cb455e1ae6a5eed128cd9eb53b3
+
+Original run:
+/workspace/meeting-artifacts/evo2-20261020T1437/
+
+Existing recovery archive:
+/workspace/meeting-artifacts/evo2-20261020T1437-recovery-7ad2ec7.tar.gz
+
+Existing checksum:
+/workspace/meeting-artifacts/evo2-20261020T1437-recovery-7ad2ec7.tar.gz.sha256
+
+An external code audit reproduced 13 passing pilot tests and five inherited evaluator tests, confirmed the reported checkpoint checksum against official metadata, and found three robustness failures described below. Treat those findings as hypotheses to reproduce and resolve, not instructions to alter results.
+
+1. PRESERVE THE ORIGINAL EVIDENCE FIRST
+
+Inspect current processes, Git status, staged changes, branch/remote identity, packaging outputs, and available disk space. Preserve active work and unrelated changes.
+
+Verify the existing recovery archive against its own checksum, check archive integrity, and inspect its inventory. Confirm it includes the selected manifest, data/model/run/smoke provenance, per-example losses, features, probe coefficients, completion records, configurations, execution logs, and source recovery information.
+
+Do not overwrite the original archive or original run files. Perform repairs and validation against a separate audit copy or with a separate output directory. Record original artifact hashes and confirm they remain unchanged.
+
+Do not rerun smoke or pilot against the original directory. Do not reset any cumulative budget.
+
+2. REPRODUCE AND FIX THE THREE FINDINGS
+
+A. Failed resume overwrites provenance.
+
+In benign_pilot/run.py, provenance() writes run_manifest.json before main() compares it with smoke_provenance.json. A source mismatch therefore fails after replacing the original execution record.
+
+Fix this so compatibility checks happen before modifying execution provenance. Preserve the original run manifest and record attempted resumes separately. Keep the original inference source commit distinct from the newer verification/delivery commit. Do not bypass mismatched cache keys or rewrite old hashes to make them agree.
+
+Add a regression test proving that a rejected resume leaves the original provenance unchanged.
+
+B. Artifact validation can succeed with zero probes.
+
+In scripts/validate_benign_pilot_results.py, probes=[] can produce checks=[] and all_passed=true.
+
+Require the expected configured tasks and layers, exactly one selected probe per task/layer, complete candidate coverage, correct feature dimensions and record counts, and matching IDs, task fields, splits, and labels wherever recorded. Reject missing, duplicated, unexpected, malformed, or nonfinite required artifacts.
+
+Recompute provenance associations rather than merely comparing two stored cache-key strings. Use explicit exceptions for required validation checks. Send validation output to a separate audit directory.
+
+Add regression tests showing that missing probes, missing layers, inconsistent record alignment, and invalid provenance cannot pass.
+
+C. Detected train/dev overlap does not affect eligibility.
+
+Data preparation records exact/reverse-complement cross-split overlaps, but the runner can proceed without flagging affected results.
+
+Introduce an explicit eligibility gate before scoring. By default, skip/block compromised tasks and continue clean eligible tasks. Preserve official splits; do not silently remove or resample examples. Any explicitly permitted diagnostic exception must remain visibly qualified in every report.
+
+Add a regression test with known duplicate train/dev sequences. Verify that it cannot produce an ordinary unqualified completion.
+
+3. VERIFY THE ACTUAL SAVED RESULTS
+
+Use the existing saved artifacts. Do not launch new backbone training, unlearning, test-set evaluation, or a replacement experiment.
+
+For each of H3, promoter, and splice:
+
+- Verify selected IDs, sequence hashes, normalization, lengths, class counts, train/dev assignment, and exact/RC overlap counts.
+- Independently calculate loss totals and valid-token totals using code that does not call the producer’s aggregate() function. Report train and dev NLL separately and verify perplexity.
+- Reconstruct both saved classifiers and independently recompute their dev AUROCs.
+- Refit the scaler and selected classifier from saved training features using the recorded settings. Compare predictions and scores; report numerical differences honestly.
+- Check all 18 recorded candidate rows and their six selections against the documented selection rule.
+
+Do not change labels, samples, hyperparameters, or outputs to recover the expected scores. If something disagrees, preserve both versions, identify the discrepancy, and qualify affected claims.
+
+Distinguish saved-artifact consistency from independent reproduction of GPU feature extraction. Do not claim the latter unless it actually occurs.
+
+4. STRENGTHEN MODEL IDENTITY AND DOCUMENT INTEGRATION
+
+Enforce the expected original checkpoint checksum before inference:
+
+8ffba7d0e6445a8f2c92d9ff1c4e772c7f73ca9179f5e0c699b8b0ca1b966f64
+
+It corresponds to arcinstitute/evo2_1b_base at:
+2279e1df422c991037470302360edd40d0d2ea1e
+
+Verify backend provenance against the recorded pinned source. Architecture compatibility and a revision string alone are insufficient proof of weight identity.
+
+State precisely which team code this evaluator reuses or adapts. Preserve the limitation that BioNeMo/GradDiff checkpoint compatibility has not been established. Do not silently substitute a model or build a new training pipeline.
+
+5. TEST, REVIEW, COMMIT, AND PUSH
+
+Run the relevant existing tests, new regression tests, and actual saved-artifact validation. Stop optional testing once the identified risks are resolved.
+
+Write an audit addendum recording findings, fixes, commands, outcomes, remaining limitations, and whether any reported metric changed. Keep historical measurements distinguishable from later verification.
+
+Inspect the entire staged index before committing. Stage only task-related source, tests, and small documentation. Keep raw datasets, model weights, environments, credentials, and large result artifacts out of Git.
+
+Fetch and review the remote branch before pushing. Preserve others’ work; no force push. Push only:
+
+git push origin HEAD:refs/heads/experiments-ashay
+
+Verify that the remote head equals the intended delivery commit.
+
+6. COMPLETE THE RECOVERY HANDOFF
+
+Preserve the original archive. Create a separately named updated recovery package containing the audit evidence and source recovery, with an explicit inventory and checksum. Verify it locally.
+
+Use only an off-Pod destination already explicitly authorized in this session. If none exists, finish all independent work and provide exact download instructions for the archive and checksum. Do not upload to an arbitrary service or claim that another copy on the same Pod is an off-Pod backup.
+
+Make checksum verification portable to my Mac, using the downloaded archive’s basename and shasum -a 256 -c. The checksum beginning 581ba5a belongs to the GUE dataset archive, not the recovery archive.
+
+Do not terminate the Pod automatically.
+
+FINAL HANDOFF
+
+Give me:
+- Each audit finding: reproduced, fixed, tested, or blocked.
+- Actual reconstructed AUROC and train/dev NLL results.
+- Any changed or qualified scientific claim.
+- Original execution commit, new delivery commit, and verified remote head.
+- Exact archive/checksum paths and off-Pod backup status.
+- A short, plain-English meeting update and the specific decisions needed from Sayyed/Aris.
+
+Continue through completion without routine reconfirmation. If an operation is genuinely blocked, identify it precisely and continue independent permitted work.

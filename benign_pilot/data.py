@@ -50,6 +50,40 @@ def overlap_report(rows):
     return report
 
 
+def task_eligibility(rows, metadata):
+    """Fail closed on missing audits or selected exact/RC train/dev overlap."""
+    reasons = []
+    recorded = metadata.get('overlap', {})
+    for field in ['full_sequence','sequence']:
+        for kind in ['exact','reverse_complement_canonical']:
+            key = f'{field}_{kind}'
+            count = recorded.get(key,{}).get('cross_split_groups')
+            if type(count) is not int or count < 0:
+                reasons.append(f'Missing or malformed cross-split overlap audit: {key}')
+            elif count:
+                reasons.append(f'{key}: {count} cross-split groups')
+    # Recompute scored-prefix checks; never rely solely on a stored eligibility flag.
+    complement = str.maketrans('ACGTN','TGCAN')
+    for canonical in [False,True]:
+        groups = defaultdict(set)
+        for row in rows:
+            sequence = row['sequence']
+            key = min(sequence,sequence.translate(complement)[::-1]) if canonical else sequence
+            groups[key].add(row['split'])
+        count = sum(len(splits)>1 for splits in groups.values())
+        if count:
+            reasons.append(f'Recomputed scored-prefix {"exact/RC" if canonical else "exact"}: {count} cross-split groups')
+    return dict(eligible=not reasons,status='ELIGIBLE' if not reasons else 'BLOCKED_OVERLAP_OR_MISSING_AUDIT',
+                reasons=reasons,policy='Preserve official splits; block compromised tasks without resampling',
+                scope='Selected full sequences and scored prefixes; not a homology audit')
+
+
+def eligibility_for_run(config, run, rows):
+    metadata = json.loads((Path(run)/'data_provenance.json').read_text())
+    return {task:task_eligibility([r for r in rows if r['task']==task],metadata.get(task,{}))
+            for task in config['tasks']}
+
+
 def prepare(config, archive, run_dir):
     run_dir = Path(run_dir)
     manifests, metadata = [], {}
@@ -87,6 +121,7 @@ def prepare(config, archive, run_dir):
                                ambiguous_bases_scored=sequence.count('N'), dataset_source=config['data_source_revision'])
                     selected_rows.append(row)
             task_meta['overlap'] = overlap_report(selected_rows)
+            task_meta['eligibility'] = task_eligibility(selected_rows,task_meta)
             metadata[task] = task_meta
             for row in selected_rows:
                 row.pop('full_sequence')

@@ -14,13 +14,15 @@ import subprocess
 import sys
 import time
 import traceback
+import uuid
 
 import numpy as np
 import torch
 
-from .data import digest, prepare
+from .data import digest, prepare, eligibility_for_run
 from .metrics import aggregate, causal_nll, masked_pool
 from .probes import fit_probes
+from .identity import MODEL_REVISION, checkpoint_identity, backend_identity, cache_key, execution_provenance
 
 
 def atomic(path, value):
@@ -42,6 +44,8 @@ def guard(config):
         raise RuntimeError('Unexpected origin identity')
     if config['model_name'] != 'evo2_1b_base' or config['model_repo'] != 'arcinstitute/evo2_1b_base':
         raise ValueError('Original Evo2-1B only')
+    if config['model_revision'] != MODEL_REVISION:
+        raise ValueError('Pinned original Evo2-1B revision required')
     if config['max_length'] != 512 or config['batch_size'] != 1:
         raise ValueError('Pilot uses the fixed maximum-512-prefix protocol at batch size 1')
 
@@ -81,22 +85,21 @@ def sha_file(path):
 
 
 def provenance(config, run, checkpoint):
-    import evo2
-    import vortex
-    paths = list(Path('benign_pilot').glob('*.py')) + [Path('configs/benign_pilot.json'), Path('scripts/run_benign_pilot.sh')]
+    checkpoint_hash = checkpoint_identity(checkpoint)
+    backend_files = backend_identity()
+    paths = list(Path('benign_pilot').glob('*.py')) + [Path('configs/benign_pilot.json'), Path('configs/evo2_backend_identity.json'), Path('scripts/run_benign_pilot.sh')]
     config_text = json.dumps(config, sort_keys=True)
     value = dict(config=config, config_sha256=digest(config_text),
                  manifest_sha256=sha_file(run/'subset_manifest.jsonl'), source_commit=git('rev-parse', 'HEAD'),
-                 source_hashes={str(p): sha_file(p) for p in paths}, checkpoint_sha256=sha_file(checkpoint),
+                 source_hashes={str(p): sha_file(p) for p in paths}, checkpoint_sha256=checkpoint_hash,
                  packages={name: importlib.metadata.version(name) for name in ['torch','numpy','scikit-learn','evo2','vtx','transformer_engine','flash-attn']},
-                 backend_files={str(p): sha_file(p) for root in [Path(evo2.__file__).parent, Path(vortex.__file__).parent] for p in root.rglob('*.py')},
+                 backend_files=backend_files,
                  python=sys.version, cuda=torch.version.cuda, cudnn=torch.backends.cudnn.version(),
                  device=torch.cuda.get_device_name(), compute_capability=torch.cuda.get_device_capability(),
                  seeds=dict(python=42, numpy=42, torch=42),
                  deterministic=dict(algorithms=torch.are_deterministic_algorithms_enabled(), cudnn_benchmark=torch.backends.cudnn.benchmark,
                                     cudnn_deterministic=torch.backends.cudnn.deterministic),
                  precision=config['precision'], pooling='mean of nucleotide positions, no BOS, padding excluded')
-    atomic(run/'run_manifest.json', value)
     return value
 
 
@@ -116,7 +119,22 @@ def verify_checkpoint_tensors(expected, state, tied_embeddings):
     return dict(tensor_missing=missing, tensor_extra=extra, shape_mismatch=mismatch, verified_aliases=aliases)
 
 
+def prepare_execution_context(config,run,checkpoint,stage):
+    try:
+        candidate = provenance(config,run,checkpoint)
+    except Exception as exc:
+        attempts = run/'resume_attempts'
+        attempts.mkdir(parents=True,exist_ok=True)
+        atomic(attempts/(uuid.uuid4().hex+'.json'),dict(stage=stage,accepted=False,
+            utc=datetime.now(timezone.utc).isoformat(),rejection=f'{type(exc).__name__}: {exc}',
+            original_execution_manifest_sha256=sha_file(run/'run_manifest.json') if (run/'run_manifest.json').exists() else None))
+        raise
+    return execution_provenance(run,candidate,stage)
+
+
 def load_model(config, run, checkpoint):
+    checkpoint_identity(checkpoint)
+    backend_identity()
     from evo2 import Evo2
     import pkgutil
     import yaml
@@ -216,12 +234,18 @@ def smoke(config, run, model, rows):
 
 
 def pilot(config, run, model, rows, context):
+    eligibility = eligibility_for_run(config,run,rows)
+    atomic(run/'eligibility.json',eligibility)
+    blocked = []
     for task in config['tasks']:
+        if not eligibility[task]['eligible']:
+            blocked.append(task)
+            print(f'BLOCKED {task}: {eligibility[task]["reasons"]}',flush=True)
+            continue
         selected = [row for row in rows if row['task'] == task]
         task_dir = run/task
         task_dir.mkdir(exist_ok=True)
-        key = digest(json.dumps(dict(manifest=context['manifest_sha256'], config=context['config_sha256'],
-                                   checkpoint=context['checkpoint_sha256'], source=context['source_hashes'], packages=context['packages'], backend=context['backend_files']), sort_keys=True))
+        key = cache_key(context)
         cache = task_dir/'features.npz'
         complete = task_dir/'complete.json'
         if complete.exists():
@@ -269,16 +293,19 @@ def pilot(config, run, model, rows, context):
                 probe_rows.append(dict(task=task, layer=name, **candidate, selected=i==best,
                                        train_count=int((splits=='train').sum()), validation_count=int((splits=='validation').sum())))
         atomic(task_dir/'probe_results.json', probe_rows)
-        result = dict(task=task, cache_key=key, nll={s:aggregate([r for r in scores if r['split']==s]) for s in ['train','validation']},
+        result = dict(task=task, cache_key=key, eligibility=eligibility[task], nll={s:aggregate([r for r in scores if r['split']==s]) for s in ['train','validation']},
                       probes=probe_rows, validation_selected=True)
         atomic(complete, result)
         report(config,run)
         print(json.dumps(result), flush=True)
         status(run, 'pilot', task=task, samples_completed=len(scores), next_action='next core task or report')
+    return blocked
 
 
 def report(config, run):
-    results = [json.loads(p.read_text()) for p in run.glob('gue_*/complete.json')]
+    rows = [json.loads(line) for line in (run/'subset_manifest.jsonl').read_text().splitlines()]
+    eligibility = eligibility_for_run(config,run,rows)
+    results = [json.loads(p.read_text()) for p in run.glob('gue_*/complete.json') if p.parent.name in eligibility and eligibility[p.parent.name]['eligible']]
     lines = ['# Frozen original Evo2-1B GUE pilot', '', 'Validation-selected engineering evidence; no forgetting or retention claims.', '',
              '| Task | Layer | Selected C | Validation AUROC | Validation corpus NLL |', '|---|---|---:|---:|---:|']
     csv_rows, metrics, timings = [], [], []
@@ -304,6 +331,8 @@ def report(config, run):
               'Exact/RC overlap checks cover selected records only, not homology or forget/retain overlap. See data_provenance.json.',
               'No test contents were opened or scored. No backbone weights were trained.',
               'OFF-POD BACKUP PENDING. Verify the recovery download before stopping the Pod; experiment timeouts do not stop rental billing.', '']
+    for task,value in eligibility.items():
+        lines.append(f'Eligibility {task}: {value["status"]}; reasons={value["reasons"]}.')
     (run/'SUMMARY.md').write_text('\n'.join(lines))
 
 
@@ -319,6 +348,17 @@ def main():
     guard(config)
     run = Path(args.run_dir)
     run.mkdir(parents=True, exist_ok=True)
+    context = None
+    eligible_rows = None
+    if args.stage in ['smoke','pilot']:
+        # An incompatible resume must not modify config, status or execution history.
+        context = prepare_execution_context(config,run,args.checkpoint,args.stage)
+        rows = [json.loads(line) for line in (run/'subset_manifest.jsonl').read_text().splitlines()]
+        eligibility = eligibility_for_run(config,run,rows)
+        atomic(run/'eligibility.json',eligibility)
+        eligible_rows = [row for row in rows if eligibility[row['task']]['eligible']]
+        if not eligible_rows:
+            raise ValueError('No eligible task: overlap/missing-audit gate blocks GPU scoring')
     saved_config=run/'config.json'
     if saved_config.exists() and json.loads(saved_config.read_text()) != config:
         previous = json.loads(saved_config.read_text())
@@ -347,23 +387,21 @@ def main():
             report(config,run)
         else:
             rows = [json.loads(line) for line in (run/'subset_manifest.jsonl').read_text().splitlines()]
-            context = provenance(config, run, args.checkpoint)
             started=time.perf_counter()
             model=load_model(config,run,args.checkpoint)
             atomic(run/'model_load_timing.json',dict(seconds=time.perf_counter()-started))
             if args.stage == 'smoke':
-                smoke(config,run,model,rows)
+                smoke(config,run,model,eligible_rows)
                 atomic(run/'smoke_provenance.json', context)
             else:
                 smoke_path=run/'model_smoke_results.json'
                 if not smoke_path.exists():
                     raise RuntimeError('Complete smoke stage first')
-                previous = json.loads((run/'smoke_provenance.json').read_text())
-                for key in ['manifest_sha256','config_sha256','checkpoint_sha256','source_hashes','packages','backend_files']:
-                    if previous[key] != context[key]:
-                        raise ValueError(f'Smoke provenance mismatch: {key}')
-                pilot(config,run,model,rows,context)
+                blocked = pilot(config,run,model,rows,context)
                 report(config,run)
+                if blocked:
+                    status(run,'pilot_partial',failures=[f'Blocked ineligible tasks: {blocked}'],next_action='Review eligibility; official splits retained')
+                    return 2
         status(run,args.stage+'_complete')
     except BaseException as exc:
         status(run,'failed' if not isinstance(exc,(InterruptedError,TimeoutError)) else 'interrupted', failures=[repr(exc)], next_action='inspect log and retained partial outputs')
@@ -373,4 +411,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())

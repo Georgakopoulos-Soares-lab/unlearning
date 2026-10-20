@@ -1,5 +1,36 @@
 # Frozen original Evo2-1B GUE pilot
 
+Audit remediation and historical saved-result verification are documented in
+[audit_v2_addendum.md](audit_v2_addendum.md). The original GPU measurements
+remain associated with `3d3da6bce62a19819a59ba063c11d9a3ac082a70`, rather than
+the later validation/delivery commit. Do not rerun GPU stages in that original
+directory or rewrite its manifests to match newer source.
+
+The current validator is read-only and requires a separate output directory:
+
+```bash
+/workspace/venvs/evo2-pilot/bin/python scripts/validate_benign_pilot_results.py \
+  /workspace/meeting-artifacts/evo2-20261020T1437 \
+  --output-dir /workspace/meeting-artifacts/<new-audit-output> \
+  --archive /workspace/data/gue/GUE.zip \
+  --expected-source-commit 3d3da6bce62a19819a59ba063c11d9a3ac082a70
+```
+
+It checks all configured tasks/layers, source associations, all 18 candidates,
+six selected classifiers, official train/dev records, and actual feature shapes.
+Loss accounting does not call the producer's aggregation function. All candidate
+classifiers are refitted on saved training features using the recorded settings.
+Saved feature files lack embedded row IDs/labels; their order is associated through
+the fixed manifest, producer source and recomputed cache key. This is saved-artifact
+verification, not an independent reproduction of GPU feature extraction.
+
+Future inference enforces the exact original weight SHA256 before model loading
+and fingerprints the backend against the pinned official source/wheel. Resume
+attempts are written separately and cannot replace an existing execution manifest.
+Tasks with selected train/dev exact or RC overlap are blocked without changing
+official splits, and clean eligible tasks can continue. No diagnostic override
+is provided. These robustness changes do not revise the historical measurements.
+
 Only `experiments-ashay` is writable. Run from its existing worktree:
 `/workspace/wt-eval-pilot`. The original checkout `/workspace/unlearning`
 remains on clean `main`. No new unlearning or backbone training is included.
