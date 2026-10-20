@@ -54,6 +54,8 @@ def status(run, stage, **kwargs):
     if stage in ['failed', 'interrupted'] and (run/'status.json').exists():
         previous = json.loads((run/'status.json').read_text())
         value.update({k: previous[k] for k in ['task','samples_completed','log_path']})
+    if stage.endswith('_complete'):
+        value['samples_completed'] = sum(sum(v['n_examples'] for v in json.loads(p.read_text())['nll'].values()) for p in run.glob('gue_*/complete.json'))
     atomic(run/'status.json', value)
     completed = sorted(p.parent.name for p in run.glob('gue_*/complete.json'))
     (run/'PROGRESS.md').write_text(f"Stage: {stage}\nUTC: {value['utc']}\nCompleted tasks: {completed}\nTask: {value['task']}\nSamples: {value['samples_completed']}\nFailures: {value['failures']}\n")
@@ -291,7 +293,7 @@ def report(config, run):
     for name, content in [('baseline_probe_results.csv',csv_rows), ('throughput_memory.csv',timings)]:
         if content:
             with (run/name).open('w') as f:
-                writer=csv.DictWriter(f, fieldnames=list(content[0]))
+                writer=csv.DictWriter(f, fieldnames=list(content[0]), lineterminator='\n')
                 writer.writeheader()
                 writer.writerows(content)
     (run/'per_example_metrics.jsonl').write_text('\n'.join(metrics)+ ('\n' if metrics else ''))
