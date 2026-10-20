@@ -1,5 +1,10 @@
 # Frozen original Evo2-1B GUE pilot
 
+Start with [final_pilot_closeout.md](final_pilot_closeout.md) for the authoritative
+results, evidence-to-claim mapping, scientific limits, next-comparison decisions
+and exact recovery/download instructions. It distinguishes the original GPU
+execution from later verification and final documentation delivery.
+
 Audit remediation and historical saved-result verification are documented in
 [audit_v2_addendum.md](audit_v2_addendum.md). The original GPU measurements
 remain associated with `3d3da6bce62a19819a59ba063c11d9a3ac082a70`, rather than
