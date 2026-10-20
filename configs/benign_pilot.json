@@ -1,0 +1,29 @@
+{
+  "model_name": "evo2_1b_base",
+  "model_repo": "arcinstitute/evo2_1b_base",
+  "model_revision": "2279e1df422c991037470302360edd40d0d2ea1e",
+  "evo2_revision": "53f195997257c56c00e5ef8d33a54f5baad143a6",
+  "protocol": "maximum-512-nucleotide-prefix-no-bos-v1",
+  "normalization": "uppercase, remove whitespace, map IUPAC ambiguity to N; reject other characters",
+  "max_length": 512,
+  "seed": 42,
+  "train_size": 256,
+  "validation_size": 128,
+  "batch_size": 1,
+  "layers": ["blocks.7", "blocks.15"],
+  "precision": "upstream original FP8 input projections, checkpoint dtypes otherwise unchanged",
+  "data_url": "https://drive.google.com/uc?id=1uOrwlf07qGQuruXqGXWMpPn8avBoW7T-",
+  "data_source_revision": "MAGICS-LAB/DNABERT_2@f25bed9ee20db966dff39e5c1571249d04e36404",
+  "data_archive_sha256": "581ba5a69843769f4cbc34470e2fe970f8ee371280914bd66574af01ee60cd79",
+  "label_schemas": {
+    "gue_emp_h3": [0, 1],
+    "gue_prom_300_all": [0, 1],
+    "gue_splice_reconstructed": [0, 1, 2]
+  },
+  "experiment_cutoff_utc": "2026-10-20T15:15:00+00:00",
+  "tasks": {
+    "gue_emp_h3": "EMP/H3",
+    "gue_prom_300_all": "prom/prom_300_all",
+    "gue_splice_reconstructed": "splice/reconstructed"
+  }
+}
