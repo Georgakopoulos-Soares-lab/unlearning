@@ -1,0 +1,5 @@
+I repaired three bugs that could replace execution provenance, accept incomplete saved results, or report tasks with train/dev overlap.
+I verified all 1,152 examples and six saved classifiers, refitted all 18 candidate probes, and passed 41 tests.
+The train/dev NLLs and AUROCs are unchanged, and selected refits match the saved scalers, coefficients and predictions exactly.
+This verifies saved artifacts, while independent GPU feature extraction and BioNeMo/GradDiff checkpoint compatibility remain unverified.
+Sayyed/Aris should confirm the canonical reference/backend, provide compatible checkpoints and qualified forget/retain training manifests, define biological groups, and agree on preservation criteria before unlearning comparisons.

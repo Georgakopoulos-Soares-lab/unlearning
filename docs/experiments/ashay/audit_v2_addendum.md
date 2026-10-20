@@ -10,11 +10,13 @@ The original three-task scientific measurements and execution files are preserve
 | B: empty probe lists return success | Yes, all_passed=true with zero checks | Require all three tasks, both layers, all 18 candidates and exactly six selections; validate file schemas, dimensions, IDs, splits, labels and finite values; recompute provenance associations and all scores | Missing probes/layers/tasks, duplicate selections/candidates, misaligned records, wrong labels, invalid provenance, equally wrong stored cache keys, nonfinite/misdimensioned features and empty task configuration are rejected |
 | C: overlap does not affect eligibility | Yes, synthetic exact/RC-overlapping train/dev data received an ordinary completion | Gate before GPU scoring; block compromised tasks without resampling; continue clean eligible tasks; report blocked eligibility explicitly | Known duplicate train/dev sequences cannot create ordinary completion; existing unqualified completion is excluded from reporting; a separate clean task continues |
 
+Final review also reproduced a finite classifier-intercept shift that leaves AUROC unchanged while changing probabilities. Nonzero refit differences are now explicitly qualified, cannot pass unqualified validation, and retain both saved/refit probabilities, coefficients, intercepts and scaler states. The actual pilot has zero such differences.
+
 All required production validator checks use explicit exceptions. No diagnostic overlap override is provided. Official splits are retained; no examples, labels, layers or hyperparameters were changed to recover a score.
 
 ## Actual saved-result verification
 
-Original source: `3d3da6bce62a19819a59ba063c11d9a3ac082a70`. Previously verified delivery: `7ad2ec73a12e7cb455e1ae6a5eed128cd9eb53b3`. New verification/delivery provenance is recorded separately in the audit handoff; old execution hashes are not rewritten to match newer source.
+Original source: `3d3da6bce62a19819a59ba063c11d9a3ac082a70`. Previously verified delivery: `7ad2ec73a12e7cb455e1ae6a5eed128cd9eb53b3`. Clean CPU verification source is `a7c26226747558e2f7dde98f8565abec9cf9a16b`. New delivery provenance is recorded separately in the audit handoff; old execution hashes are not rewritten to match newer source.
 
 | Task | Train NLL | Dev NLL | Dev AUROC blocks.7 | Dev AUROC blocks.15 |
 |---|---:|---:|---:|---:|
@@ -32,7 +34,7 @@ The NPZ feature matrices are finite and have the required 384 by 1920 shape per 
 
 ## Model and backend identity
 
-The expected original checkpoint SHA256 is enforced before model loading: `8ffba7d0e6445a8f2c92d9ff1c4e772c7f73ca9179f5e0c699b8b0ca1b966f64`, for arcinstitute/evo2_1b_base@2279e1df422c991037470302360edd40d0d2ea1e. The installed file was verified without model inference. Wrong bytes fail before optional model imports.
+The expected original checkpoint SHA256 is enforced before model loading: `8ffba7d0e6445a8f2c92d9ff1c4e772c7f73ca9179f5e0c699b8b0ca1b966f64`, for arcinstitute/evo2_1b_base@2279e1df422c991037470302360edd40d0d2ea1e. The installed file was verified without model inference, and the exact SHA256 was independently confirmed against official Hugging Face LFS metadata at the pinned revision. Wrong bytes fail before optional model imports.
 
 All 219 recorded backend Python source files match both the installed files and the pinned official Evo2 source / hash-verified Vortex 1.1.0 wheel. The original, installed and pinned official 1B architecture YAML hashes agree; future inference checks this configuration fingerprint too. Evo2 source is pinned to 53f195997257c56c00e5ef8d33a54f5baad143a6; pinned source fingerprints and the Vortex wheel checksum are committed in configs/evo2_backend_identity.json. The eight historical evaluator/config/runner source hashes were checked against Git objects at the original execution commit.
 
@@ -40,7 +42,7 @@ Team integration is deliberately narrow: the train-only StandardScaler, balanced
 
 ## Tests, commands and preservation
 
-Baseline: 13 pilot tests and all five inherited evaluator tests passed (18 total). Remediation regression and release results are stored in the separate audit directory. The final suite covers all three findings plus original numerical correctness. No optional broad test expansion, environment reinstallation, backbone training, unlearning, replacement GPU experiment or additional rented resource was used. The GPU budget remains 277.054459 / 7200 seconds; no reset occurred.
+Baseline: 13 pilot tests and all five inherited evaluator tests passed (18 total). The complete remediation suite passes 41 tests (28.20 seconds), including 23 new audit regressions and all five inherited evaluator tests; logs are stored in the separate audit directory. The final suite covers all three findings plus original numerical correctness. No optional broad test expansion, environment reinstallation, backbone training, unlearning, replacement GPU experiment or additional rented resource was used. The GPU budget remains 277.054459 / 7200 seconds; no reset occurred.
 
 Commands:
 

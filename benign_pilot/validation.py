@@ -118,7 +118,7 @@ def validate_saved(run,archive,source_root=None,expected_source_commit=None):
     require(contract.get('config_sha256')==trusted['model_config_sha256'] and text_sha(json.dumps(contract['config'],sort_keys=True))==trusted['model_config_sha256'],'Recorded architecture differs from pinned official configuration')
     require({p.name for p in run.glob('gue_*') if p.is_dir()}==set(TASKS),'Missing/unexpected task artifact directories')
     checks,losses,candidate_checks,all_metrics,all_candidates=[],{},[],[],[]
-    discrepancies=[]
+    discrepancies=[];qualifications=[]
     for task in TASKS:
         directory=run/task;complete=read_json(directory/'complete.json')
         require(complete.get('task')==task and complete.get('validation_selected') is True,f'Completion task/selection mismatch: {task}')
@@ -175,8 +175,16 @@ def validate_saved(run,archive,source_root=None,expected_source_commit=None):
                     discrepancies.append(f'Candidate refit AUROC differs: {task}/{layer}/C={candidate["C"]}: {delta}')
                 if candidate['selected']:
                     selected_refit=dict(refit_auroc=refit_score,maximum_probability_difference=float(np.max(np.abs(refit_prob-probabilities))),maximum_coefficient_difference=float(np.max(np.abs(refit.coef_-saved['coef']))),
+                        maximum_intercept_difference=float(np.max(np.abs(refit.intercept_-saved['intercept']))),
                         maximum_scaler_mean_difference=float(np.max(np.abs(fresh_scaler.mean_-saved['mean']))),maximum_scaler_scale_difference=float(np.max(np.abs(fresh_scaler.scale_-saved['scale']))),
                         predicted_labels_equal=bool(np.array_equal(refit.predict(x_dev),classifier.predict(scaler.transform(features[layer][dev])))))
+                    if any(value!=0 for name,value in selected_refit.items() if name.startswith('maximum_')) or not selected_refit['predicted_labels_equal']:
+                        qualifications.append(f'Saved/refit numerical disagreement: {task}/{layer}; no acceptance tolerance was invented')
+                        selected_refit.update(saved_probabilities=probabilities.tolist(),refit_probabilities=refit_prob.tolist(),
+                            saved_coefficients=saved['coef'].tolist(),refit_coefficients=refit.coef_.tolist(),
+                            saved_intercepts=saved['intercept'].tolist(),refit_intercepts=refit.intercept_.tolist(),
+                            saved_scaler_mean=saved['mean'].tolist(),refit_scaler_mean=fresh_scaler.mean_.tolist(),
+                            saved_scaler_scale=saved['scale'].tolist(),refit_scaler_scale=fresh_scaler.scale_.tolist())
             checks.append(dict(task=task,layer=layer,selected_C=chosen['C'],recorded_auroc=chosen['validation_auroc'],reconstructed_auroc=score,exact_auroc_match=score==chosen['validation_auroc'],refit=selected_refit))
     require(len(checks)==6 and len(candidate_checks)==18,'Incomplete six-probe/18-candidate verification')
     combined=read_jsonl(run/'per_example_metrics.jsonl');combined_ids=[r.get('id') for r in combined]
@@ -193,7 +201,7 @@ def validate_saved(run,archive,source_root=None,expected_source_commit=None):
         require(int(row['train_count'])==expected['train_count'] and int(row['validation_count'])==expected['validation_count'],'Combined candidate record-count mismatch')
         require(row.get('auroc_definition')==expected['auroc_definition'] and row.get('positive_class')==('' if expected['positive_class'] is None else str(expected['positive_class'])) and row.get('positive_column')==('' if expected['positive_column'] is None else str(expected['positive_column'])),'Combined candidate class/definition mismatch')
         require(ast.literal_eval(row['warnings'])==expected['warnings'],'Combined candidate warning mismatch')
-    return dict(all_passed=not discrepancies,structural_checks_passed=True,scientific_discrepancies=discrepancies,samples_verified=len(manifest),inference_source_commit=context['source_commit'],data=data,losses=losses,checks=checks,candidate_checks=candidate_checks,
+    return dict(all_passed=not discrepancies and not qualifications,structural_checks_passed=True,scientific_discrepancies=discrepancies,refit_qualifications=qualifications,samples_verified=len(manifest),inference_source_commit=context['source_commit'],data=data,losses=losses,checks=checks,candidate_checks=candidate_checks,
                 limitations=['Saved-artifact consistency and CPU classifier refits only; GPU feature extraction was not independently reproduced.',
                 'Original feature NPZs contain no row IDs/labels; association uses manifest order, producer source and recomputed keys, not independently regenerated embeddings.',
                 'Validation-selected small pilot; BioNeMo/GradDiff checkpoint compatibility is not established.'])

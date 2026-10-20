@@ -224,6 +224,21 @@ def test_independent_losses_does_not_call_producer(monkeypatch):
     assert independent_losses([dict(nll_sum=2.,n_tokens=1),dict(nll_sum=4.,n_tokens=3)])['corpus_nll']==1.5
 
 
+def test_finite_classifier_disagreement_is_qualified(saved_fixture,tmp_path):
+    original,archive=saved_fixture;directory=tmp_path/'shifted';shutil.copytree(original,directory)
+    path=directory/'gue_emp_h3/blocks.7.probe.npz'
+    with np.load(path,allow_pickle=False) as source:values={key:source[key].copy() for key in source.files}
+    values['intercept']+=2.
+    np.savez(path,**values)
+    with threadpool_limits(limits=4):result=validate_saved(directory,archive)
+    assert not result['all_passed']
+    assert result['refit_qualifications']
+    check=next(row for row in result['checks'] if row['task']=='gue_emp_h3' and row['layer']=='blocks.7')
+    assert check['exact_auroc_match']  # AUROC alone cannot detect this corruption.
+    assert check['refit']['maximum_probability_difference']>0
+    assert 'saved_probabilities' in check['refit'] and 'refit_probabilities' in check['refit']
+
+
 def test_validator_requires_separate_output_directory(tmp_path):
     spec=importlib.util.spec_from_file_location('validator',Path(__file__).resolve().parents[1]/'scripts/validate_benign_pilot_results.py')
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
