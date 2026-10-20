@@ -126,3 +126,28 @@ def test_runner_rejects_other_branches_and_wrong_model(monkeypatch):
     monkeypatch.setattr(run, 'git', lambda *args: 'experiments-ashay' if args[0]=='branch' else 'https://github.com/Georgakopoulos-Soares-lab/unlearning.git')
     with pytest.raises(ValueError, match='Original Evo2-1B'):
         run.guard(dict(model_name='evo2_7b_base'))
+
+
+def test_checkpoint_allows_only_verified_tied_alias():
+    from benign_pilot.run import verify_checkpoint_tensors
+    embedding = torch.tensor([[1.,2.],[3.,4.]])
+    expected={'embedding_layer.weight':embedding}
+    state={**expected,'unembed.weight':embedding.clone()}
+    assert verify_checkpoint_tensors(expected,state,True)['verified_aliases']
+    with pytest.raises(ValueError):
+        verify_checkpoint_tensors(expected,state,False)
+    with pytest.raises(ValueError,match='not an exact'):
+        verify_checkpoint_tensors(expected,{**expected,'unembed.weight':embedding+1},True)
+    with pytest.raises(ValueError,match='missing='):
+        verify_checkpoint_tensors(expected,{},True)
+
+
+def test_gpu_budget_accumulates_across_attempts(tmp_path):
+    from datetime import datetime, timezone, timedelta
+    from benign_pilot.budget import update
+    path=tmp_path/'budget.json'
+    start=datetime(2026,10,20,15,0,tzinfo=timezone.utc)
+    assert update('begin',path,start) == 7200
+    assert update('finish',path,start+timedelta(seconds=90)) == 7110
+    assert update('begin',path,start+timedelta(seconds=120)) == 7110
+    assert update('finish',path,start+timedelta(seconds=150)) == 7080

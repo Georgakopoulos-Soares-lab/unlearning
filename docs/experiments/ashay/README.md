@@ -50,8 +50,11 @@ bash scripts/run_benign_pilot.sh pilot "$RUN"
 bash scripts/run_benign_pilot.sh report "$RUN"
 ```
 
-The experiment cutoff is explicit in the config and launcher. Any later run
-requires a consciously updated deadline and new run directory. The launcher
+The user removed the original clock deadlines while preserving the cumulative
+compute budgets. The launcher records GPU-job time across attempts in
+`/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json`, including the failed
+first smoke attempt. A changed scientific configuration requires a new run
+directory. The launcher
 locks GPU execution and propagates failures through `tee`. Completed task
 caches require matching manifest, model, source, package and backend hashes.
 Partial JSONL metrics survive interruptions; incomplete feature extraction

@@ -64,7 +64,7 @@ def status(run, stage, **kwargs):
         f"Stage: {stage}; completed tasks: {completed}.\n"
         'Inspect status.json, stage logs, run_manifest.json, smoke_provenance.json and task completion keys before resuming.\n'
         f'Command: cd /workspace/wt-eval-pilot && bash scripts/run_benign_pilot.sh <stage> {run}\n'
-        'Experiment cutoff: 2026-10-20 15:15 UTC; report deadline 15:45 UTC.\n'
+        'User removed absolute clock deadlines; preserve the cumulative GPU-job budget ledger.\n'
         'Environment troubleshooting budget is cumulative: inspect environment_setup.md before any further installation.\n'
         'Downloads are already cached under /workspace/models and /workspace/data; do not redownload.\n'
         'Missing external audit/handoff files are a documented limitation. OFF-POD BACKUP PENDING.\n')
@@ -98,6 +98,22 @@ def provenance(config, run, checkpoint):
     return value
 
 
+def verify_checkpoint_tensors(expected, state, tied_embeddings):
+    missing = [k for k, v in expected.items() if isinstance(v, torch.Tensor) and k not in state]
+    extra = [k for k, v in state.items() if isinstance(v, torch.Tensor) and k not in expected]
+    mismatch = [k for k in expected.keys() & state.keys() if isinstance(expected[k], torch.Tensor) and isinstance(state[k], torch.Tensor) and expected[k].shape != state[k].shape]
+    aliases = {}
+    if 'unembed.weight' in extra and tied_embeddings:
+        source = state.get('embedding_layer.weight')
+        if source is None or not torch.equal(source, state['unembed.weight']):
+            raise ValueError('Extra output embedding is not an exact tied-weight alias')
+        aliases['unembed.weight'] = 'embedding_layer.weight (bitwise equal checkpoint tensors)'
+        extra.remove('unembed.weight')
+    if missing or extra or mismatch:
+        raise ValueError(f'Checkpoint tensor mismatch: missing={missing}, extra={extra}, shapes={mismatch}')
+    return dict(tensor_missing=missing, tensor_extra=extra, shape_mismatch=mismatch, verified_aliases=aliases)
+
+
 def load_model(config, run, checkpoint):
     from evo2 import Evo2
     import pkgutil
@@ -109,11 +125,7 @@ def load_model(config, run, checkpoint):
     model.model.eval().requires_grad_(False)
     expected = model.model.state_dict()
     state = torch.load(checkpoint, map_location='cpu', mmap=True, weights_only=True)
-    missing = [k for k, v in expected.items() if isinstance(v, torch.Tensor) and k not in state]
-    extra = [k for k, v in state.items() if isinstance(v, torch.Tensor) and k not in expected]
-    mismatch = [k for k in expected.keys() & state.keys() if isinstance(expected[k], torch.Tensor) and isinstance(state[k], torch.Tensor) and expected[k].shape != state[k].shape]
-    if missing or extra or mismatch:
-        raise ValueError(f'Checkpoint tensor mismatch: missing={missing}, extra={extra}, shapes={mismatch}')
+    audit = verify_checkpoint_tensors(expected,state,recipe['tie_embeddings'])
     if model.tokenizer.tokenize('ACGTN') != list(b'ACGTN'):
         raise ValueError('Unexpected character tokenizer')
     for name in config['layers']:
@@ -122,7 +134,8 @@ def load_model(config, run, checkpoint):
            parameter_count=sum(p.numel() for p in model.model.parameters()),
            parameter_shapes={k:list(p.shape) for k,p in model.model.named_parameters()},
            layers=config['layers'], indexing='zero-based block outputs: 8th and 16th of 25',
-           tensor_missing=missing, tensor_extra=extra, shape_mismatch=mismatch,
+           **audit,
+           extra_non_tensor_metadata=[k for k in state if k not in expected and not isinstance(state[k],torch.Tensor)],
            tokenizer='Vortex CharLevelTokenizer(512); ASCII bytes; pad=1/eos=0; no BOS/EOS added',
            dtype_counts=dict(__import__('collections').Counter(str(p.dtype) for p in model.model.parameters()))))
     del state
@@ -201,7 +214,6 @@ def smoke(config, run, model, rows):
 
 
 def pilot(config, run, model, rows, context):
-    cutoff = datetime.fromisoformat(config['experiment_cutoff_utc'])
     for task in config['tasks']:
         selected = [row for row in rows if row['task'] == task]
         task_dir = run/task
@@ -229,8 +241,6 @@ def pilot(config, run, model, rows, context):
             started = time.perf_counter()
             with (task_dir/'per_example_metrics.partial.jsonl').open('w') as f:
                 for i, row in enumerate(selected):
-                    if datetime.now(timezone.utc) >= cutoff:
-                        raise TimeoutError('Experiment cutoff reached; partial metrics retained')
                     batch_scores, batch_features = infer(model, [row], config['layers'])
                     scores.extend(batch_scores)
                     for name in features:
@@ -309,7 +319,12 @@ def main():
     run.mkdir(parents=True, exist_ok=True)
     saved_config=run/'config.json'
     if saved_config.exists() and json.loads(saved_config.read_text()) != config:
-        raise ValueError('Saved configuration mismatch; use a new run directory')
+        previous = json.loads(saved_config.read_text())
+        operational = {'experiment_cutoff_utc','gpu_budget_seconds'}
+        if {k:v for k,v in previous.items() if k not in operational} != {k:v for k,v in config.items() if k not in operational}:
+            raise ValueError('Saved scientific configuration mismatch; use a new run directory')
+        atomic(run/'config_before_deadline_update.json',previous)
+        atomic(run/'runtime_policy_change.json',dict(reason='User explicitly removed clock deadlines; cumulative budgets unchanged',previous=previous,current=config))
     atomic(saved_config, config)
     status(run,args.stage)
     def interrupted(signum, frame):
@@ -329,8 +344,6 @@ def main():
         elif args.stage == 'report':
             report(config,run)
         else:
-            if datetime.now(timezone.utc) >= datetime.fromisoformat(config['experiment_cutoff_utc']):
-                raise TimeoutError('Experiment cutoff has passed')
             rows = [json.loads(line) for line in (run/'subset_manifest.jsonl').read_text().splitlines()]
             context = provenance(config, run, args.checkpoint)
             started=time.perf_counter()
