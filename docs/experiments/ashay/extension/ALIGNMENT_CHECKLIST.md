@@ -11,4 +11,4 @@
 - Corrected GradDiff Step2: BLOCKED; no immutable corrected checkpoint/parent/tokenizer/loader/conversion/training-exposure handoff supplied. Fixed and refit readouts/paired base-post NLL contrasts NOT_RUN.
 - Broader retain training, unlearning/backbone/LoRA training and hazardous forget-task classification: NOT_RUN, outside current authorization.
 - Official test contents unopened and unscored. No messages sent. No Pod shutdown/hardware changes.
-- Source only on experiments-ashay-benign-v2; final remote verification recorded separately. Recovery new supplement distinct from old verified private HF backup; absent local HF authentication blocks new upload until secure terminal login.
+- Source only on experiments-ashay-benign-v2; final remote verification recorded separately. Recovery new supplement distinct from old verified private HF backup; the extension supplement is now uploaded to the existing private HF dataset at54832ea5536cb6ce519fb280b36dcd4cd9422cd6 and verified by fresh forced download/checksums; see BACKUP_VERIFICATION.json.
