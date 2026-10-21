@@ -16,7 +16,7 @@ def sha(path):
 def main():
     if PACKAGE.exists():raise FileExistsError('Preserve existing recovery archive; use a new version')
     snapshot=RUN/'source_snapshot';snapshot.mkdir(exist_ok=True)
-    paths=[Path('AGENTS.md'),*Path('benign_pilot').glob('*.py'),Path('configs/benign_extension.json'),Path('configs/evo2_backend_identity.json'),Path('requirements-pilot.txt'),Path('scripts/report_benign_extension.py'),Path('scripts/diagnose_extension_shuffle.py'),Path('scripts/package_benign_extension.py'),Path('tests/test_benign_extension.py'),*Path('docs/experiments/ashay/extension').glob('*')]
+    paths=[Path('AGENTS.md'),*Path('benign_pilot').glob('*.py'),Path('configs/benign_extension.json'),Path('configs/evo2_backend_identity.json'),Path('requirements-pilot.txt'),Path('scripts/report_benign_extension.py'),Path('scripts/diagnose_extension_shuffle.py'),Path('scripts/package_benign_extension.py'),Path('scripts/fit_completed_extension.py'),Path('scripts/verify_benign_extension.py'),Path('tests/test_benign_extension.py'),*Path('docs/experiments/ashay/extension').glob('*')]
     for path in paths:
         if not path.is_file():continue
         target=snapshot/path;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,target)
