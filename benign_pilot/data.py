@@ -115,7 +115,7 @@ def prepare(config, archive, run_dir):
                     sequence = full[:config['max_length']]
                     row = dict(task=task, split=split, id=record.get('id') or f'{task}:{filename}:{index}',
                                original_row_index=index, label=labels[index], sequence=sequence, full_sequence=full,
-                               full_sequence_sha256=digest(full), scored_prefix_sha256=digest(sequence),
+                               full_sequence_sha256=digest(full), full_sequence_rc_sha256=digest(min(full, full.translate(str.maketrans('ACGTN','TGCAN'))[::-1])), scored_prefix_sha256=digest(sequence),
                                original_length=len(full), scored_length=len(sequence), truncated=len(full)>len(sequence),
                                group_id=record.get('group') or record.get('group_id') or None,
                                ambiguous_bases_scored=sequence.count('N'), dataset_source=config['data_source_revision'])
