@@ -1,0 +1,1878 @@
+GPU: NVIDIA H200
+
+======================================================================
+Configuration Summary (Non-Default Values vs Megatron Core)
+======================================================================
+
+[optimizer] Non-default values (vs Mcore OptimizerConfig):
+  adam_beta2: 0.95  (Mcore default: 0.999)
+  bf16: True  (Mcore default: False)
+  fp8_recipe: 'tensorwise'  (Mcore default: None)
+  lr: 0.0003  (Mcore default: None)
+  min_lr: 3e-05  (Mcore default: None)
+  params_dtype: torch.bfloat16  (Mcore default: torch.float32)
+  use_distributed_optimizer: True  (Mcore default: False)
+  weight_decay: 0.0  (Mcore default: 0.01)
+
+[ddp] Non-default values (vs Mcore DistributedDataParallelConfig):
+  check_for_nan_in_grad: True  (Mcore default: False)
+  grad_reduce_in_fp32: True  (Mcore default: False)
+  use_distributed_optimizer: True  (Mcore default: False)
+
+[model] Non-default values (vs Mcore TransformerConfig):
+  add_bias_linear: False  (Mcore default: True)
+  apply_rope_fusion: True  (Mcore default: False)
+  attention_backend: <AttnBackend.flash: 1>  (Mcore default: <AttnBackend.auto: 5>)
+  attention_dropout: 0.0  (Mcore default: 0.1)
+  autocast_dtype: torch.bfloat16  (Mcore default: None)
+  bf16: True  (Mcore default: False)
+  bias_activation_fusion: True  (Mcore default: False)
+  cuda_graph_modules: []  (Mcore default: 'full')
+  embedding_init_method_std: 0.02  (Mcore default: None)
+  expert_tensor_parallel_size: 1  (Mcore default: None)
+  ffn_hidden_size: 5120  (Mcore default: None)
+  fp8_recipe: 'tensorwise'  (Mcore default: 'delayed')
+  gated_linear_unit: True  (Mcore default: False)
+  hidden_dropout: 0.0  (Mcore default: 0.1)
+  hidden_size: 1920  (Mcore default: 0)
+  inference_cuda_graph_scope: <InferenceCudaGraphScope.none: 1>  (Mcore default: None)
+  kv_channels: 128  (Mcore default: None)
+  layernorm_epsilon: 1e-06  (Mcore default: 1e-05)
+  microbatch_group_size_per_vp_stage: 1  (Mcore default: None)
+  normalization: 'RMSNorm'  (Mcore default: 'LayerNorm')
+  num_attention_heads: 15  (Mcore default: 0)
+  num_layers: 25  (Mcore default: 0)
+  num_layers_at_end_in_bf16: 0  (Mcore default: 1)
+  num_layers_at_start_in_bf16: 0  (Mcore default: 1)
+  num_query_groups: 15  (Mcore default: None)
+  params_dtype: torch.bfloat16  (Mcore default: torch.float32)
+  pipeline_dtype: torch.bfloat16  (Mcore default: None)
+  recompute_modules: ['core_attn']  (Mcore default: None)
+
+----------------------------------------------------------------------
+Other Configuration Values:
+----------------------------------------------------------------------
+
+[train]:
+  check_optimizer_step_success: True
+  decrease_batch_size_if_needed: False
+  empty_unused_memory_level: 0
+  eval_interval: 100
+  eval_iters: 701
+  exit_signal: <Signals.SIGTERM: 15>
+  exit_signal_handler: False
+  exit_signal_handler_for_dataloader: False
+  exit_signal_handler_for_training: False
+  global_batch_size: 64
+  iterations_to_skip: []
+  manual_gc: False
+  manual_gc_eval: True
+  manual_gc_interval: 0
+  micro_batch_size: 16
+  skip_sync_grad_norm_across_mp: False
+  train_iters: 750
+
+[validation]:
+  eval_global_batch_size: 64
+  eval_interval: 100
+  eval_iters: 701
+  eval_micro_batch_size: 16
+  full_validation: False
+  multiple_validation_sets: False
+  skip_train: False
+  test_mode: False
+
+[scheduler]:
+  end_weight_decay: 0.033
+  lr_decay_iters: 650
+  lr_decay_steps: 41600
+  lr_decay_style: 'cosine'
+  lr_warmup_init: 0.0
+  lr_warmup_iters: 100
+  lr_warmup_samples: 0
+  lr_warmup_steps: 6400
+  lr_wsd_decay_iters: 650
+  lr_wsd_decay_style: 'minus_sqrt'
+  override_opt_param_scheduler: True
+  start_weight_decay: 0.033
+  use_checkpoint_opt_param_scheduler: False
+  wd_incr_steps: 48000
+  weight_decay_incr_style: 'constant'
+  wsd_decay_steps: 41600
+
+[dataset]:
+  data_sharding: False
+  dataloader_type: 'cyclic'
+  drop_last: True
+  num_workers: 0
+  persistent_workers: False
+  pin_memory: True
+  seq_length: 1000
+  test_jsonl: '/projects/MENTISLab/unlearning/data/evo2/HVUE_v2/test.jsonl'
+  tokenizer_path: '/projects/MENTISLab/bionemo-framework/recipes/evo2_megatron/tokenizers/nucleotide_fast_tokenizer_512'
+  train_jsonl: '/projects/MENTISLab/unlearning/data/evo2/HVUE_v2/train.jsonl'
+  val_jsonl: '/projects/MENTISLab/unlearning/data/evo2/HVUE_v2/val.jsonl'
+
+[checkpoint]:
+  async_ckpt_cpu_priority: 10
+  async_ckpt_io_priority: 3
+  async_ckpt_use_cpu_shm: False
+  async_save: False
+  async_strategy: 'mcore'
+  async_write_results_mp_mode: 'fork'
+  auto_detect_ckpt_format: False
+  ckpt_assume_constant_structure: False
+  ckpt_convert_update_legacy_dist_opt_format: False
+  ckpt_format: 'torch_dist'
+  ckpt_fully_parallel_load_exchange_algo: 'broadcast'
+  ckpt_fully_parallel_load_process_group: 'dp'
+  ckpt_fully_parallel_save_process_group: 'dp'
+  ckpt_load_validate_sharding_integrity: True
+  dist_ckpt_optim_fully_reshardable: False
+  dist_ckpt_save_pre_mcore_014: False
+  dist_ckpt_strictness: 'ignore_all'
+  dist_ckpt_workers: 1
+  distrib_optim_fully_reshardable_mem_efficient: False
+  exit_on_missing_checkpoint: False
+  finetune: True
+  fully_parallel_load: True
+  fully_parallel_save: True
+  load: '/projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints'
+  load_main_params_from_ckpt: False
+  load_optim: True
+  load_rng: True
+  most_recent_k: -1
+  non_persistent_local_ckpt_algo: 'fully_parallel'
+  pretrained_checkpoint: '/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge'
+  replication: False
+  replication_factor: 2
+  save: '/projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints'
+  save_interval: 100
+  save_optim: True
+  save_rng: True
+  save_tokenizer_assets: True
+  storage_writers_per_rank: 1
+  strict_fsdp_dtensor_load: False
+  use_checkpoint_args: False
+  use_mp_args_from_checkpoint_args: False
+  use_persistent_ckpt_worker: True
+  use_tokenizer_model_from_checkpoint_args: True
+  verify_integrity: False
+
+[logger]:
+  barrier_with_L1_time: True
+  filter_warnings: True
+  log_device_memory_used: False
+  log_energy: False
+  log_interval: 10
+  log_l2_norm_grad_to_tensorboard: False
+  log_loss_scale_to_tensorboard: True
+  log_max_attention_logit: False
+  log_memory_to_tensorboard: False
+  log_num_zeros_in_grad: False
+  log_params_norm: False
+  log_progress: True
+  log_runtime_to_tensorboard: False
+  log_throughput: False
+  log_throughput_to_tensorboard: True
+  log_timers_to_tensorboard: False
+  log_validation_ppl_to_tensorboard: False
+  log_world_size_to_tensorboard: False
+  logging_level: 20
+  mlflow_log_artifacts: True
+  runtime_time_unit: 'hours'
+  set_level_for_all_loggers: False
+  skip_train_metrics_log: False
+  tensorboard_dir: '/projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/tb_logs'
+  tensorboard_log_interval: 1
+  tensorboard_queue_size: 1000
+  throughput_window_size: 20
+  timing_log_level: 0
+  timing_log_option: 'minmax'
+  wandb_entity: ''
+  wandb_exp_name: 'pooled_last_layer'
+  wandb_project: ''
+  wandb_save_dir: ''
+
+[tokenizer]:
+  force_system_message: False
+  hf_tokenizer_kwargs: {}
+  make_vocab_size_divisible_by: 1
+  null_tokenizer_pad_id: -1
+  pad_vocab_size: False
+  rank: 0
+  sp_tokenizer_kwargs: {}
+  tensor_model_parallel_size: 1
+  tiktoken_num_special_tokens: 1000
+  tokenizer_hf_no_include_special_tokens: False
+  tokenizer_hf_no_use_fast: False
+  tokenizer_model: '/projects/MENTISLab/bionemo-framework/recipes/evo2_megatron/tokenizers/nucleotide_fast_tokenizer_512'
+  tokenizer_sentencepiece_ignore_extra_whitespaces: True
+  tokenizer_sentencepiece_legacy: False
+  tokenizer_type: 'HuggingFaceTokenizer'
+  trust_remote_code: False
+  vocab_extra_ids: 0
+
+[rng]:
+  data_parallel_random_init: False
+  inference_rng_tracker: False
+  seed: 1234
+  te_rng_tracker: False
+
+======================================================================
+> initializing torch distributed ...
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+> initialized tensor model parallel with size 1
+> initialized pipeline model parallel with size 1
+> setting random seeds to 1234 ...
+> compiling dataset index builder ...
+>>> done with dataset index builder. Compilation time: 0.002 seconds
+time to initialize megatron (seconds): 22.476
+[after megatron is initialized] datetime: 2026-10-20 18:00:39 
+[after tokenizer is built] datetime: 2026-10-20 18:00:39 
+Registered PEFT pre-wrap hook
+ > padded vocab (size: 512) with 0 dummy tokens (new size: 512)
+Applying PEFT pre-wrap hook...
+Loading base model weights from: /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge
+Broadcasting TrainState from rank 0 to all 1 ranks
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge/iter_0000001.
+Broadcasting config from rank 0 to all 1 ranks
+sharded_state_dict metadata loaded from the checkpoint: {'singleton_local_shards': False, 'distrib_optim_sharding_type': 'dp_reshardable', 'chained_optim_avoid_prefix': True}
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge/iter_0000001.
+ loading distributed checkpoint from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge at iteration 1
+Warning: Exception during strict loading: Error(s) in loading state_dict for HyenaForSequenceClassification:
+	Missing key(s) in state_dict: "decoder.layers.0.mixer.dense_projection._extra_state", "decoder.layers.0.mixer.dense._extra_state", "decoder.layers.0.mlp.linear_fc1._extra_state", "decoder.layers.0.mlp.linear_fc2._extra_state", "decoder.layers.1.mixer.dense_projection._extra_state", "decoder.layers.1.mixer.dense._extra_state", "decoder.layers.1.mlp.linear_fc1._extra_state", "decoder.layers.1.mlp.linear_fc2._extra_state", "decoder.layers.2.mixer.dense_projection._extra_state", "decoder.layers.2.mixer.dense._extra_state", "decoder.layers.2.mlp.linear_fc1._extra_state", "decoder.layers.2.mlp.linear_fc2._extra_state", "decoder.layers.3.self_attention.linear_proj._extra_state", "decoder.layers.3.self_attention.linear_qkv._extra_state", "decoder.layers.3.mlp.linear_fc1._extra_state", "decoder.layers.3.mlp.linear_fc2._extra_state", "decoder.layers.4.mixer.dense_projection._extra_state", "decoder.layers.4.mixer.dense._extra_state", "decoder.layers.4.mlp.linear_fc1._extra_state", "decoder.layers.4.mlp.linear_fc2._extra_state", "decoder.layers.5.mixer.dense_projection._extra_state", "decoder.layers.5.mixer.dense._extra_state", "decoder.layers.5.mlp.linear_fc1._extra_state", "decoder.layers.5.mlp.linear_fc2._extra_state", "decoder.layers.6.mixer.dense_projection._extra_state", "decoder.layers.6.mixer.dense._extra_state", "decoder.layers.6.mlp.linear_fc1._extra_state", "decoder.layers.6.mlp.linear_fc2._extra_state", "decoder.layers.7.mixer.dense_projection._extra_state", "decoder.layers.7.mixer.dense._extra_state", "decoder.layers.7.mlp.linear_fc1._extra_state", "decoder.layers.7.mlp.linear_fc2._extra_state", "decoder.layers.8.mixer.dense_projection._extra_state", "decoder.layers.8.mixer.dense._extra_state", "decoder.layers.8.mlp.linear_fc1._extra_state", "decoder.layers.8.mlp.linear_fc2._extra_state", "decoder.layers.9.mixer.dense_projection._extra_state", "decoder.layers.9.mixer.dense._extra_state", "decoder.layers.9.mlp.linear_fc1._extra_state", "decoder.layers.9.mlp.linear_fc2._extra_state", "decoder.layers.10.self_attention.linear_proj._extra_state", "decoder.layers.10.self_attention.linear_qkv._extra_state", "decoder.layers.10.mlp.linear_fc1._extra_state", "decoder.layers.10.mlp.linear_fc2._extra_state", "decoder.layers.11.mixer.dense_projection._extra_state", "decoder.layers.11.mixer.dense._extra_state", "decoder.layers.11.mlp.linear_fc1._extra_state", "decoder.layers.11.mlp.linear_fc2._extra_state", "decoder.layers.12.mixer.dense_projection._extra_state", "decoder.layers.12.mixer.dense._extra_state", "decoder.layers.12.mlp.linear_fc1._extra_state", "decoder.layers.12.mlp.linear_fc2._extra_state", "decoder.layers.13.mixer.dense_projection._extra_state", "decoder.layers.13.mixer.dense._extra_state", "decoder.layers.13.mlp.linear_fc1._extra_state", "decoder.layers.13.mlp.linear_fc2._extra_state", "decoder.layers.14.mixer.dense_projection._extra_state", "decoder.layers.14.mixer.dense._extra_state", "decoder.layers.14.mlp.linear_fc1._extra_state", "decoder.layers.14.mlp.linear_fc2._extra_state", "decoder.layers.15.mixer.dense_projection._extra_state", "decoder.layers.15.mixer.dense._extra_state", "decoder.layers.15.mlp.linear_fc1._extra_state", "decoder.layers.15.mlp.linear_fc2._extra_state", "decoder.layers.16.mixer.dense_projection._extra_state", "decoder.layers.16.mixer.dense._extra_state", "decoder.layers.16.mlp.linear_fc1._extra_state", "decoder.layers.16.mlp.linear_fc2._extra_state", "decoder.layers.17.self_attention.linear_proj._extra_state", "decoder.layers.17.self_attention.linear_qkv._extra_state", "decoder.layers.17.mlp.linear_fc1._extra_state", "decoder.layers.17.mlp.linear_fc2._extra_state", "decoder.layers.18.mixer.dense_projection._extra_state", "decoder.layers.18.mixer.dense._extra_state", "decoder.layers.18.mlp.linear_fc1._extra_state", "decoder.layers.18.mlp.linear_fc2._extra_state", "decoder.layers.19.mixer.dense_projection._extra_state", "decoder.layers.19.mixer.dense._extra_state", "decoder.layers.19.mlp.linear_fc1._extra_state", "decoder.layers.19.mlp.linear_fc2._extra_state", "decoder.layers.20.mixer.dense_projection._extra_state", "decoder.layers.20.mixer.dense._extra_state", "decoder.layers.20.mlp.linear_fc1._extra_state", "decoder.layers.20.mlp.linear_fc2._extra_state", "decoder.layers.21.mixer.dense_projection._extra_state", "decoder.layers.21.mixer.dense._extra_state", "decoder.layers.21.mlp.linear_fc1._extra_state", "decoder.layers.21.mlp.linear_fc2._extra_state", "decoder.layers.22.mixer.dense_projection._extra_state", "decoder.layers.22.mixer.dense._extra_state", "decoder.layers.22.mlp.linear_fc1._extra_state", "decoder.layers.22.mlp.linear_fc2._extra_state", "decoder.layers.23.mixer.dense_projection._extra_state", "decoder.layers.23.mixer.dense._extra_state", "decoder.layers.23.mlp.linear_fc1._extra_state", "decoder.layers.23.mlp.linear_fc2._extra_state", "decoder.layers.24.self_attention.linear_proj._extra_state", "decoder.layers.24.self_attention.linear_qkv._extra_state", "decoder.layers.24.mlp.linear_fc1._extra_state", "decoder.layers.24.mlp.linear_fc2._extra_state", "decoder.final_norm._extra_state", "classification_head.0.weight", "classification_head.0.bias", "classification_head.1.weight", "classification_head.1.bias", "classification_head.4.weight", "classification_head.4.bias". 
+Non-extra-state mismatched keys: ['classification_head.0.weight', 'classification_head.0.bias', 'classification_head.1.weight', 'classification_head.1.bias', 'classification_head.4.weight', 'classification_head.4.bias']
+ checkpoint version 3.0
+  successfully loaded checkpoint from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge [ t 0/1, p 0/1 ] at iteration 0
+Applying PEFT transformation...
+PEFT Statistics:
+  Total parameters: 1,111,900,802
+  Trainable parameters: 3,696,002
+  Trainable percentage: 0.33%
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 1111900802
+[after model, optimizer, and learning rate scheduler are built] datetime: 2026-10-20 18:00:41 
+> setting tensorboard ...
+> building train, validation, and test datasets ...
+ > datasets target sizes (minimum size):
+    train:      48000
+    validation: 358912
+    test:       44864
+[after dataloaders are built] datetime: 2026-10-20 18:05:44 
+done with setup ...
+Setting rerun_state_machine.current_iteration to 0...
+Starting training loop at iteration 0
+Step Time : 2.02s GPU utilization: 2332.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:05] iteration       10/     750 | consumed samples:          640 | elapsed time per iteration (ms): 2022.9 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 1.044355E+00 | accuracy: 2.734375E-01 | loss scale: 1.0 | grad norm: 9.914 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Number of dense and embedding parameters in billions: 0.86
+Total number of parameters in billions: 0.86
+Number of dense and embedding parameters in most loaded shard in billions: 0.8613
+Theoretical memory footprints: weight and optimizer=14785.86 MB
+[Rank 0] (after 10 iterations) memory (GB) | mem-allocated-gigabytes: 2.4225 | mem-active-gigabytes: 2.4225 | mem-inactive-gigabytes: 0.19263 | mem-reserved-gigabytes: 5.8469 | mem-max-allocated-gigabytes: 4.3525 | mem-max-active-gigabytes: 4.3525 | mem-max-inactive-gigabytes: 1.6798 | mem-max-reserved-gigabytes: 5.8469 | mem-alloc-retires: 0 | mem-allocated-count: 295
+Step Time : 0.50s GPU utilization: 9464.6MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:10] iteration       20/     750 | consumed samples:         1280 | elapsed time per iteration (ms): 498.6 | learning rate: 6.000000E-05 | global batch size:    64 | ce loss: 2.221319E-01 | accuracy: 9.390625E-01 | loss scale: 1.0 | grad norm: 2.389 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9458.1MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:15] iteration       30/     750 | consumed samples:         1920 | elapsed time per iteration (ms): 498.9 | learning rate: 9.000000E-05 | global batch size:    64 | ce loss: 2.138065E-01 | accuracy: 9.531250E-01 | loss scale: 1.0 | grad norm: 3.834 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9449.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:20] iteration       40/     750 | consumed samples:         2560 | elapsed time per iteration (ms): 499.4 | learning rate: 1.200000E-04 | global batch size:    64 | ce loss: 2.623138E-01 | accuracy: 9.375000E-01 | loss scale: 1.0 | grad norm: 0.755 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9445.3MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:25] iteration       50/     750 | consumed samples:         3200 | elapsed time per iteration (ms): 499.6 | learning rate: 1.500000E-04 | global batch size:    64 | ce loss: 1.810060E-01 | accuracy: 9.593750E-01 | loss scale: 1.0 | grad norm: 0.759 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9428.4MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:30] iteration       60/     750 | consumed samples:         3840 | elapsed time per iteration (ms): 500.5 | learning rate: 1.800000E-04 | global batch size:    64 | ce loss: 3.275738E-01 | accuracy: 9.343750E-01 | loss scale: 1.0 | grad norm: 9.900 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9419.4MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:35] iteration       70/     750 | consumed samples:         4480 | elapsed time per iteration (ms): 501.0 | learning rate: 2.100000E-04 | global batch size:    64 | ce loss: 2.795918E-01 | accuracy: 9.390625E-01 | loss scale: 1.0 | grad norm: 3.471 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9397.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:40] iteration       80/     750 | consumed samples:         5120 | elapsed time per iteration (ms): 502.2 | learning rate: 2.400000E-04 | global batch size:    64 | ce loss: 1.964093E-01 | accuracy: 9.546875E-01 | loss scale: 1.0 | grad norm: 4.161 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9398.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:45] iteration       90/     750 | consumed samples:         5760 | elapsed time per iteration (ms): 502.1 | learning rate: 2.700000E-04 | global batch size:    64 | ce loss: 2.931534E-01 | accuracy: 9.250000E-01 | loss scale: 1.0 | grad norm: 2.957 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9402.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:06:50] iteration      100/     750 | consumed samples:         6400 | elapsed time per iteration (ms): 501.9 | learning rate: 3.000000E-04 | global batch size:    64 | ce loss: 2.072229E-01 | accuracy: 9.500000E-01 | loss scale: 1.0 | grad norm: 1.269 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 100 | ce loss value: 2.756616E-01 | ce loss PPL: 1.317402E+00 | accuracy value: 9.241263E-01 | accuracy PPL: 2.519666E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     100 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     100 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Step Time : 0.50s GPU utilization: 9445.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:07] iteration      110/     750 | consumed samples:         7040 | elapsed time per iteration (ms): 499.6 | learning rate: 2.997798E-04 | global batch size:    64 | ce loss: 2.034193E-01 | accuracy: 9.500000E-01 | loss scale: 1.0 | grad norm: 0.831 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9450.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:12] iteration      120/     750 | consumed samples:         7680 | elapsed time per iteration (ms): 499.3 | learning rate: 2.991200E-04 | global batch size:    64 | ce loss: 2.073861E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 4.112 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9433.1MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:17] iteration      130/     750 | consumed samples:         8320 | elapsed time per iteration (ms): 500.3 | learning rate: 2.980228E-04 | global batch size:    64 | ce loss: 1.797682E-01 | accuracy: 9.625000E-01 | loss scale: 1.0 | grad norm: 2.935 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9460.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:22] iteration      140/     750 | consumed samples:         8960 | elapsed time per iteration (ms): 498.8 | learning rate: 2.964916E-04 | global batch size:    64 | ce loss: 2.182159E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 2.317 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9442.7MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:27] iteration      150/     750 | consumed samples:         9600 | elapsed time per iteration (ms): 499.7 | learning rate: 2.945316E-04 | global batch size:    64 | ce loss: 2.106757E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 0.754 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9436.4MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:32] iteration      160/     750 | consumed samples:        10240 | elapsed time per iteration (ms): 500.1 | learning rate: 2.921490E-04 | global batch size:    64 | ce loss: 2.490993E-01 | accuracy: 9.406250E-01 | loss scale: 1.0 | grad norm: 1.001 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9438.6MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:37] iteration      170/     750 | consumed samples:        10880 | elapsed time per iteration (ms): 500.0 | learning rate: 2.893517E-04 | global batch size:    64 | ce loss: 2.370126E-01 | accuracy: 9.390625E-01 | loss scale: 1.0 | grad norm: 1.661 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9428.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:42] iteration      180/     750 | consumed samples:        11520 | elapsed time per iteration (ms): 500.5 | learning rate: 2.861488E-04 | global batch size:    64 | ce loss: 2.025588E-01 | accuracy: 9.531250E-01 | loss scale: 1.0 | grad norm: 2.155 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9427.1MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:47] iteration      190/     750 | consumed samples:        12160 | elapsed time per iteration (ms): 500.6 | learning rate: 2.825507E-04 | global batch size:    64 | ce loss: 2.163393E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 0.803 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9414.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:16:52] iteration      200/     750 | consumed samples:        12800 | elapsed time per iteration (ms): 501.2 | learning rate: 2.785692E-04 | global batch size:    64 | ce loss: 2.159595E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 1.714 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 200 | ce loss value: 2.619947E-01 | ce loss PPL: 1.299520E+00 | accuracy value: 9.241709E-01 | accuracy PPL: 2.519778E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     200 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     200 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Step Time : 0.50s GPU utilization: 9492.6MODEL_TFLOP/s/GPU
+ [2026-10-20 18:22:49] iteration      210/     750 | consumed samples:        13440 | elapsed time per iteration (ms): 497.1 | learning rate: 2.742173E-04 | global batch size:    64 | ce loss: 1.849142E-01 | accuracy: 9.546875E-01 | loss scale: 1.0 | grad norm: 0.923 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9449.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:22:54] iteration      220/     750 | consumed samples:        14080 | elapsed time per iteration (ms): 499.4 | learning rate: 2.695091E-04 | global batch size:    64 | ce loss: 1.693220E-01 | accuracy: 9.593750E-01 | loss scale: 1.0 | grad norm: 2.937 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9448.4MODEL_TFLOP/s/GPU
+ [2026-10-20 18:22:59] iteration      230/     750 | consumed samples:        14720 | elapsed time per iteration (ms): 499.4 | learning rate: 2.644600E-04 | global batch size:    64 | ce loss: 1.948431E-01 | accuracy: 9.500000E-01 | loss scale: 1.0 | grad norm: 1.348 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9458.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:23:03] iteration      240/     750 | consumed samples:        15360 | elapsed time per iteration (ms): 498.9 | learning rate: 2.590866E-04 | global batch size:    64 | ce loss: 2.235540E-01 | accuracy: 9.390625E-01 | loss scale: 1.0 | grad norm: 1.277 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9453.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:23:08] iteration      250/     750 | consumed samples:        16000 | elapsed time per iteration (ms): 499.2 | learning rate: 2.534062E-04 | global batch size:    64 | ce loss: 2.287665E-01 | accuracy: 9.375000E-01 | loss scale: 1.0 | grad norm: 1.580 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 1.15s GPU utilization: 4095.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:23:20] iteration      260/     750 | consumed samples:        16640 | elapsed time per iteration (ms): 1152.3 | learning rate: 2.474375E-04 | global batch size:    64 | ce loss: 1.777153E-01 | accuracy: 9.562500E-01 | loss scale: 1.0 | grad norm: 0.424 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 1.43s GPU utilization: 3298.3MODEL_TFLOP/s/GPU
+ [2026-10-20 18:23:35] iteration      270/     750 | consumed samples:        17280 | elapsed time per iteration (ms): 1430.7 | learning rate: 2.411998E-04 | global batch size:    64 | ce loss: 2.394473E-01 | accuracy: 9.359375E-01 | loss scale: 1.0 | grad norm: 1.954 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 2.82s GPU utilization: 1673.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:24:03] iteration      280/     750 | consumed samples:        17920 | elapsed time per iteration (ms): 2819.8 | learning rate: 2.347137E-04 | global batch size:    64 | ce loss: 1.919152E-01 | accuracy: 9.593750E-01 | loss scale: 1.0 | grad norm: 0.461 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 3.50s GPU utilization: 1350.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:24:38] iteration      290/     750 | consumed samples:        18560 | elapsed time per iteration (ms): 3495.1 | learning rate: 2.280001E-04 | global batch size:    64 | ce loss: 2.289139E-01 | accuracy: 9.406250E-01 | loss scale: 1.0 | grad norm: 1.674 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 5.08s GPU utilization: 929.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:25:29] iteration      300/     750 | consumed samples:        19200 | elapsed time per iteration (ms): 5078.6 | learning rate: 2.210810E-04 | global batch size:    64 | ce loss: 1.819003E-01 | accuracy: 9.546875E-01 | loss scale: 1.0 | grad norm: 0.963 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 300 | ce loss value: 2.628813E-01 | ce loss PPL: 1.300672E+00 | accuracy value: 9.241040E-01 | accuracy PPL: 2.519610E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     300 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     300 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Step Time : 0.53s GPU utilization: 8982.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:24] iteration      310/     750 | consumed samples:        19840 | elapsed time per iteration (ms): 525.4 | learning rate: 2.139790E-04 | global batch size:    64 | ce loss: 1.989027E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 2.101 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9436.6MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:29] iteration      320/     750 | consumed samples:        20480 | elapsed time per iteration (ms): 500.1 | learning rate: 2.067173E-04 | global batch size:    64 | ce loss: 1.892354E-01 | accuracy: 9.515625E-01 | loss scale: 1.0 | grad norm: 0.725 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9431.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:34] iteration      330/     750 | consumed samples:        21120 | elapsed time per iteration (ms): 500.3 | learning rate: 1.993195E-04 | global batch size:    64 | ce loss: 1.913800E-01 | accuracy: 9.546875E-01 | loss scale: 1.0 | grad norm: 0.638 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9426.6MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:39] iteration      340/     750 | consumed samples:        21760 | elapsed time per iteration (ms): 500.6 | learning rate: 1.918097E-04 | global batch size:    64 | ce loss: 2.062331E-01 | accuracy: 9.421875E-01 | loss scale: 1.0 | grad norm: 1.763 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9416.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:44] iteration      350/     750 | consumed samples:        22400 | elapsed time per iteration (ms): 501.1 | learning rate: 1.842125E-04 | global batch size:    64 | ce loss: 2.547059E-01 | accuracy: 9.281250E-01 | loss scale: 1.0 | grad norm: 0.536 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9421.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:49] iteration      360/     750 | consumed samples:        23040 | elapsed time per iteration (ms): 500.9 | learning rate: 1.765526E-04 | global batch size:    64 | ce loss: 2.019527E-01 | accuracy: 9.468750E-01 | loss scale: 1.0 | grad norm: 0.797 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9428.7MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:54] iteration      370/     750 | consumed samples:        23680 | elapsed time per iteration (ms): 500.5 | learning rate: 1.688551E-04 | global batch size:    64 | ce loss: 2.144259E-01 | accuracy: 9.421875E-01 | loss scale: 1.0 | grad norm: 1.315 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9432.7MODEL_TFLOP/s/GPU
+ [2026-10-20 18:31:59] iteration      380/     750 | consumed samples:        24320 | elapsed time per iteration (ms): 500.3 | learning rate: 1.611449E-04 | global batch size:    64 | ce loss: 2.197775E-01 | accuracy: 9.437500E-01 | loss scale: 1.0 | grad norm: 5.019 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9432.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:32:04] iteration      390/     750 | consumed samples:        24960 | elapsed time per iteration (ms): 500.3 | learning rate: 1.534474E-04 | global batch size:    64 | ce loss: 2.324701E-01 | accuracy: 9.390625E-01 | loss scale: 1.0 | grad norm: 0.990 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 3.04s GPU utilization: 1553.3MODEL_TFLOP/s/GPU
+ [2026-10-20 18:32:34] iteration      400/     750 | consumed samples:        25600 | elapsed time per iteration (ms): 3038.0 | learning rate: 1.457875E-04 | global batch size:    64 | ce loss: 1.923642E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 1.170 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 400 | ce loss value: 2.579972E-01 | ce loss PPL: 1.294335E+00 | accuracy value: 9.241040E-01 | accuracy PPL: 2.519610E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     400 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     400 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Step Time : 0.52s GPU utilization: 9004.1MODEL_TFLOP/s/GPU
+ [2026-10-20 18:38:31] iteration      410/     750 | consumed samples:        26240 | elapsed time per iteration (ms): 524.1 | learning rate: 1.381903E-04 | global batch size:    64 | ce loss: 1.794784E-01 | accuracy: 9.562500E-01 | loss scale: 1.0 | grad norm: 0.476 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9400.3MODEL_TFLOP/s/GPU
+ [2026-10-20 18:38:36] iteration      420/     750 | consumed samples:        26880 | elapsed time per iteration (ms): 502.0 | learning rate: 1.306805E-04 | global batch size:    64 | ce loss: 1.920065E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 1.374 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9403.4MODEL_TFLOP/s/GPU
+ [2026-10-20 18:38:41] iteration      430/     750 | consumed samples:        27520 | elapsed time per iteration (ms): 501.8 | learning rate: 1.232827E-04 | global batch size:    64 | ce loss: 2.023551E-01 | accuracy: 9.500000E-01 | loss scale: 1.0 | grad norm: 0.361 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9398.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:38:46] iteration      440/     750 | consumed samples:        28160 | elapsed time per iteration (ms): 502.1 | learning rate: 1.160210E-04 | global batch size:    64 | ce loss: 2.303710E-01 | accuracy: 9.359375E-01 | loss scale: 1.0 | grad norm: 0.606 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9392.3MODEL_TFLOP/s/GPU
+ [2026-10-20 18:38:51] iteration      450/     750 | consumed samples:        28800 | elapsed time per iteration (ms): 502.4 | learning rate: 1.089190E-04 | global batch size:    64 | ce loss: 2.154599E-01 | accuracy: 9.359375E-01 | loss scale: 1.0 | grad norm: 1.267 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9396.1MODEL_TFLOP/s/GPU
+ [2026-10-20 18:38:56] iteration      460/     750 | consumed samples:        29440 | elapsed time per iteration (ms): 502.2 | learning rate: 1.019999E-04 | global batch size:    64 | ce loss: 2.126786E-01 | accuracy: 9.421875E-01 | loss scale: 1.0 | grad norm: 0.715 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 3.18s GPU utilization: 1484.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:39:28] iteration      470/     750 | consumed samples:        30080 | elapsed time per iteration (ms): 3178.9 | learning rate: 9.528634E-05 | global batch size:    64 | ce loss: 1.788678E-01 | accuracy: 9.515625E-01 | loss scale: 1.0 | grad norm: 0.393 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 3.48s GPU utilization: 1357.4MODEL_TFLOP/s/GPU
+ [2026-10-20 18:40:03] iteration      480/     750 | consumed samples:        30720 | elapsed time per iteration (ms): 3476.5 | learning rate: 8.880017E-05 | global batch size:    64 | ce loss: 2.117143E-01 | accuracy: 9.437500E-01 | loss scale: 1.0 | grad norm: 1.959 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.57s GPU utilization: 8217.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:40:08] iteration      490/     750 | consumed samples:        31360 | elapsed time per iteration (ms): 574.3 | learning rate: 8.256254E-05 | global batch size:    64 | ce loss: 1.835057E-01 | accuracy: 9.531250E-01 | loss scale: 1.0 | grad norm: 0.537 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.56s GPU utilization: 8443.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:40:14] iteration      500/     750 | consumed samples:        32000 | elapsed time per iteration (ms): 558.9 | learning rate: 7.659380E-05 | global batch size:    64 | ce loss: 1.649394E-01 | accuracy: 9.578125E-01 | loss scale: 1.0 | grad norm: 0.786 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 500 | ce loss value: 2.694786E-01 | ce loss PPL: 1.309282E+00 | accuracy value: 9.241931E-01 | accuracy PPL: 2.519834E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     500 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     500 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Step Time : 0.51s GPU utilization: 9172.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:11] iteration      510/     750 | consumed samples:        32640 | elapsed time per iteration (ms): 514.4 | learning rate: 7.091343E-05 | global batch size:    64 | ce loss: 2.146880E-01 | accuracy: 9.437500E-01 | loss scale: 1.0 | grad norm: 0.428 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9403.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:16] iteration      520/     750 | consumed samples:        33280 | elapsed time per iteration (ms): 501.8 | learning rate: 6.553995E-05 | global batch size:    64 | ce loss: 1.656719E-01 | accuracy: 9.562500E-01 | loss scale: 1.0 | grad norm: 0.841 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9421.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:21] iteration      530/     750 | consumed samples:        33920 | elapsed time per iteration (ms): 500.9 | learning rate: 6.049088E-05 | global batch size:    64 | ce loss: 2.376305E-01 | accuracy: 9.359375E-01 | loss scale: 1.0 | grad norm: 1.836 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9419.1MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:26] iteration      540/     750 | consumed samples:        34560 | elapsed time per iteration (ms): 501.0 | learning rate: 5.578270E-05 | global batch size:    64 | ce loss: 1.774869E-01 | accuracy: 9.562500E-01 | loss scale: 1.0 | grad norm: 1.187 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9417.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:31] iteration      550/     750 | consumed samples:        35200 | elapsed time per iteration (ms): 501.1 | learning rate: 5.143077E-05 | global batch size:    64 | ce loss: 2.175849E-01 | accuracy: 9.406250E-01 | loss scale: 1.0 | grad norm: 0.925 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9404.7MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:36] iteration      560/     750 | consumed samples:        35840 | elapsed time per iteration (ms): 501.8 | learning rate: 4.744928E-05 | global batch size:    64 | ce loss: 2.204272E-01 | accuracy: 9.406250E-01 | loss scale: 1.0 | grad norm: 0.429 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9405.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:41] iteration      570/     750 | consumed samples:        36480 | elapsed time per iteration (ms): 501.7 | learning rate: 4.385121E-05 | global batch size:    64 | ce loss: 2.002265E-01 | accuracy: 9.453125E-01 | loss scale: 1.0 | grad norm: 0.800 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9420.8MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:46] iteration      580/     750 | consumed samples:        37120 | elapsed time per iteration (ms): 500.9 | learning rate: 4.064831E-05 | global batch size:    64 | ce loss: 2.003879E-01 | accuracy: 9.468750E-01 | loss scale: 1.0 | grad norm: 1.073 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9399.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:51] iteration      590/     750 | consumed samples:        37760 | elapsed time per iteration (ms): 502.1 | learning rate: 3.785101E-05 | global batch size:    64 | ce loss: 1.908852E-01 | accuracy: 9.484375E-01 | loss scale: 1.0 | grad norm: 1.302 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9409.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:46:56] iteration      600/     750 | consumed samples:        38400 | elapsed time per iteration (ms): 501.5 | learning rate: 3.546845E-05 | global batch size:    64 | ce loss: 1.917499E-01 | accuracy: 9.500000E-01 | loss scale: 1.0 | grad norm: 1.894 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 600 | ce loss value: 2.493127E-01 | ce loss PPL: 1.283143E+00 | accuracy value: 9.242377E-01 | accuracy PPL: 2.519946E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     600 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     600 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Step Time : 0.50s GPU utilization: 9435.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:52:52] iteration      610/     750 | consumed samples:        39040 | elapsed time per iteration (ms): 500.1 | learning rate: 3.350839E-05 | global batch size:    64 | ce loss: 1.874107E-01 | accuracy: 9.515625E-01 | loss scale: 1.0 | grad norm: 1.067 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9448.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:52:57] iteration      620/     750 | consumed samples:        39680 | elapsed time per iteration (ms): 499.4 | learning rate: 3.197723E-05 | global batch size:    64 | ce loss: 2.153600E-01 | accuracy: 9.390625E-01 | loss scale: 1.0 | grad norm: 0.939 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9447.4MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:02] iteration      630/     750 | consumed samples:        40320 | elapsed time per iteration (ms): 499.5 | learning rate: 3.087996E-05 | global batch size:    64 | ce loss: 1.636649E-01 | accuracy: 9.562500E-01 | loss scale: 1.0 | grad norm: 0.361 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9444.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:07] iteration      640/     750 | consumed samples:        40960 | elapsed time per iteration (ms): 499.7 | learning rate: 3.022017E-05 | global batch size:    64 | ce loss: 2.416100E-01 | accuracy: 9.281250E-01 | loss scale: 1.0 | grad norm: 1.072 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9451.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:12] iteration      650/     750 | consumed samples:        41600 | elapsed time per iteration (ms): 499.3 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 2.210223E-01 | accuracy: 9.343750E-01 | loss scale: 1.0 | grad norm: 0.446 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9442.3MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:17] iteration      660/     750 | consumed samples:        42240 | elapsed time per iteration (ms): 499.8 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 2.024520E-01 | accuracy: 9.453125E-01 | loss scale: 1.0 | grad norm: 0.583 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9443.3MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:22] iteration      670/     750 | consumed samples:        42880 | elapsed time per iteration (ms): 499.7 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 1.887274E-01 | accuracy: 9.468750E-01 | loss scale: 1.0 | grad norm: 0.605 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9443.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:27] iteration      680/     750 | consumed samples:        43520 | elapsed time per iteration (ms): 499.7 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 2.362608E-01 | accuracy: 9.312500E-01 | loss scale: 1.0 | grad norm: 0.634 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9461.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:32] iteration      690/     750 | consumed samples:        44160 | elapsed time per iteration (ms): 498.7 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 1.834423E-01 | accuracy: 9.531250E-01 | loss scale: 1.0 | grad norm: 1.350 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9424.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:53:37] iteration      700/     750 | consumed samples:        44800 | elapsed time per iteration (ms): 500.7 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 2.206018E-01 | accuracy: 9.375000E-01 | loss scale: 1.0 | grad norm: 3.631 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 700 | ce loss value: 2.518288E-01 | ce loss PPL: 1.286376E+00 | accuracy value: 9.240817E-01 | accuracy PPL: 2.519553E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     700 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     700 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Step Time : 0.50s GPU utilization: 9426.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:59:34] iteration      710/     750 | consumed samples:        45440 | elapsed time per iteration (ms): 500.6 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 1.692366E-01 | accuracy: 9.609375E-01 | loss scale: 1.0 | grad norm: 0.534 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9415.9MODEL_TFLOP/s/GPU
+ [2026-10-20 18:59:39] iteration      720/     750 | consumed samples:        46080 | elapsed time per iteration (ms): 501.2 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 2.157311E-01 | accuracy: 9.390625E-01 | loss scale: 1.0 | grad norm: 0.827 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9414.2MODEL_TFLOP/s/GPU
+ [2026-10-20 18:59:44] iteration      730/     750 | consumed samples:        46720 | elapsed time per iteration (ms): 501.3 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 1.948179E-01 | accuracy: 9.468750E-01 | loss scale: 1.0 | grad norm: 1.782 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9402.0MODEL_TFLOP/s/GPU
+ [2026-10-20 18:59:49] iteration      740/     750 | consumed samples:        47360 | elapsed time per iteration (ms): 501.9 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 1.932998E-01 | accuracy: 9.500000E-01 | loss scale: 1.0 | grad norm: 1.648 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.50s GPU utilization: 9404.5MODEL_TFLOP/s/GPU
+ [2026-10-20 18:59:54] iteration      750/     750 | consumed samples:        48000 | elapsed time per iteration (ms): 501.8 | learning rate: 3.000000E-05 | global batch size:    64 | ce loss: 2.010067E-01 | accuracy: 9.437500E-01 | loss scale: 1.0 | grad norm: 0.937 | number of skipped iterations:   0 | number of nan iterations:   0 |
+saving checkpoint at iteration     750 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     750 to /projects/MENTISLab/unlearning/results/evo2_official/base_hvue/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Deleting CUDA graphs
+[after training is done] datetime: 2026-10-20 18:59:54 
+Evaluating on 44864 samples
+Evaluating iter 1/701
+Evaluating iter 2/701
+Evaluating iter 3/701
+Evaluating iter 4/701
+Evaluating iter 5/701
+Evaluating iter 6/701
+Evaluating iter 7/701
+Evaluating iter 8/701
+Evaluating iter 9/701
+Evaluating iter 10/701
+Evaluating iter 11/701
+Evaluating iter 12/701
+Evaluating iter 13/701
+Evaluating iter 14/701
+Evaluating iter 15/701
+Evaluating iter 16/701
+Evaluating iter 17/701
+Evaluating iter 18/701
+Evaluating iter 19/701
+Evaluating iter 20/701
+Evaluating iter 21/701
+Evaluating iter 22/701
+Evaluating iter 23/701
+Evaluating iter 24/701
+Evaluating iter 25/701
+Evaluating iter 26/701
+Evaluating iter 27/701
+Evaluating iter 28/701
+Evaluating iter 29/701
+Evaluating iter 30/701
+Evaluating iter 31/701
+Evaluating iter 32/701
+Evaluating iter 33/701
+Evaluating iter 34/701
+Evaluating iter 35/701
+Evaluating iter 36/701
+Evaluating iter 37/701
+Evaluating iter 38/701
+Evaluating iter 39/701
+Evaluating iter 40/701
+Evaluating iter 41/701
+Evaluating iter 42/701
+Evaluating iter 43/701
+Evaluating iter 44/701
+Evaluating iter 45/701
+Evaluating iter 46/701
+Evaluating iter 47/701
+Evaluating iter 48/701
+Evaluating iter 49/701
+Evaluating iter 50/701
+Evaluating iter 51/701
+Evaluating iter 52/701
+Evaluating iter 53/701
+Evaluating iter 54/701
+Evaluating iter 55/701
+Evaluating iter 56/701
+Evaluating iter 57/701
+Evaluating iter 58/701
+Evaluating iter 59/701
+Evaluating iter 60/701
+Evaluating iter 61/701
+Evaluating iter 62/701
+Evaluating iter 63/701
+Evaluating iter 64/701
+Evaluating iter 65/701
+Evaluating iter 66/701
+Evaluating iter 67/701
+Evaluating iter 68/701
+Evaluating iter 69/701
+Evaluating iter 70/701
+Evaluating iter 71/701
+Evaluating iter 72/701
+Evaluating iter 73/701
+Evaluating iter 74/701
+Evaluating iter 75/701
+Evaluating iter 76/701
+Evaluating iter 77/701
+Evaluating iter 78/701
+Evaluating iter 79/701
+Evaluating iter 80/701
+Evaluating iter 81/701
+Evaluating iter 82/701
+Evaluating iter 83/701
+Evaluating iter 84/701
+Evaluating iter 85/701
+Evaluating iter 86/701
+Evaluating iter 87/701
+Evaluating iter 88/701
+Evaluating iter 89/701
+Evaluating iter 90/701
+Evaluating iter 91/701
+Evaluating iter 92/701
+Evaluating iter 93/701
+Evaluating iter 94/701
+Evaluating iter 95/701
+Evaluating iter 96/701
+Evaluating iter 97/701
+Evaluating iter 98/701
+Evaluating iter 99/701
+Evaluating iter 100/701
+Evaluating iter 101/701
+Evaluating iter 102/701
+Evaluating iter 103/701
+Evaluating iter 104/701
+Evaluating iter 105/701
+Evaluating iter 106/701
+Evaluating iter 107/701
+Evaluating iter 108/701
+Evaluating iter 109/701
+Evaluating iter 110/701
+Evaluating iter 111/701
+Evaluating iter 112/701
+Evaluating iter 113/701
+Evaluating iter 114/701
+Evaluating iter 115/701
+Evaluating iter 116/701
+Evaluating iter 117/701
+Evaluating iter 118/701
+Evaluating iter 119/701
+Evaluating iter 120/701
+Evaluating iter 121/701
+Evaluating iter 122/701
+Evaluating iter 123/701
+Evaluating iter 124/701
+Evaluating iter 125/701
+Evaluating iter 126/701
+Evaluating iter 127/701
+Evaluating iter 128/701
+Evaluating iter 129/701
+Evaluating iter 130/701
+Evaluating iter 131/701
+Evaluating iter 132/701
+Evaluating iter 133/701
+Evaluating iter 134/701
+Evaluating iter 135/701
+Evaluating iter 136/701
+Evaluating iter 137/701
+Evaluating iter 138/701
+Evaluating iter 139/701
+Evaluating iter 140/701
+Evaluating iter 141/701
+Evaluating iter 142/701
+Evaluating iter 143/701
+Evaluating iter 144/701
+Evaluating iter 145/701
+Evaluating iter 146/701
+Evaluating iter 147/701
+Evaluating iter 148/701
+Evaluating iter 149/701
+Evaluating iter 150/701
+Evaluating iter 151/701
+Evaluating iter 152/701
+Evaluating iter 153/701
+Evaluating iter 154/701
+Evaluating iter 155/701
+Evaluating iter 156/701
+Evaluating iter 157/701
+Evaluating iter 158/701
+Evaluating iter 159/701
+Evaluating iter 160/701
+Evaluating iter 161/701
+Evaluating iter 162/701
+Evaluating iter 163/701
+Evaluating iter 164/701
+Evaluating iter 165/701
+Evaluating iter 166/701
+Evaluating iter 167/701
+Evaluating iter 168/701
+Evaluating iter 169/701
+Evaluating iter 170/701
+Evaluating iter 171/701
+Evaluating iter 172/701
+Evaluating iter 173/701
+Evaluating iter 174/701
+Evaluating iter 175/701
+Evaluating iter 176/701
+Evaluating iter 177/701
+Evaluating iter 178/701
+Evaluating iter 179/701
+Evaluating iter 180/701
+Evaluating iter 181/701
+Evaluating iter 182/701
+Evaluating iter 183/701
+Evaluating iter 184/701
+Evaluating iter 185/701
+Evaluating iter 186/701
+Evaluating iter 187/701
+Evaluating iter 188/701
+Evaluating iter 189/701
+Evaluating iter 190/701
+Evaluating iter 191/701
+Evaluating iter 192/701
+Evaluating iter 193/701
+Evaluating iter 194/701
+Evaluating iter 195/701
+Evaluating iter 196/701
+Evaluating iter 197/701
+Evaluating iter 198/701
+Evaluating iter 199/701
+Evaluating iter 200/701
+Evaluating iter 201/701
+Evaluating iter 202/701
+Evaluating iter 203/701
+Evaluating iter 204/701
+Evaluating iter 205/701
+Evaluating iter 206/701
+Evaluating iter 207/701
+Evaluating iter 208/701
+Evaluating iter 209/701
+Evaluating iter 210/701
+Evaluating iter 211/701
+Evaluating iter 212/701
+Evaluating iter 213/701
+Evaluating iter 214/701
+Evaluating iter 215/701
+Evaluating iter 216/701
+Evaluating iter 217/701
+Evaluating iter 218/701
+Evaluating iter 219/701
+Evaluating iter 220/701
+Evaluating iter 221/701
+Evaluating iter 222/701
+Evaluating iter 223/701
+Evaluating iter 224/701
+Evaluating iter 225/701
+Evaluating iter 226/701
+Evaluating iter 227/701
+Evaluating iter 228/701
+Evaluating iter 229/701
+Evaluating iter 230/701
+Evaluating iter 231/701
+Evaluating iter 232/701
+Evaluating iter 233/701
+Evaluating iter 234/701
+Evaluating iter 235/701
+Evaluating iter 236/701
+Evaluating iter 237/701
+Evaluating iter 238/701
+Evaluating iter 239/701
+Evaluating iter 240/701
+Evaluating iter 241/701
+Evaluating iter 242/701
+Evaluating iter 243/701
+Evaluating iter 244/701
+Evaluating iter 245/701
+Evaluating iter 246/701
+Evaluating iter 247/701
+Evaluating iter 248/701
+Evaluating iter 249/701
+Evaluating iter 250/701
+Evaluating iter 251/701
+Evaluating iter 252/701
+Evaluating iter 253/701
+Evaluating iter 254/701
+Evaluating iter 255/701
+Evaluating iter 256/701
+Evaluating iter 257/701
+Evaluating iter 258/701
+Evaluating iter 259/701
+Evaluating iter 260/701
+Evaluating iter 261/701
+Evaluating iter 262/701
+Evaluating iter 263/701
+Evaluating iter 264/701
+Evaluating iter 265/701
+Evaluating iter 266/701
+Evaluating iter 267/701
+Evaluating iter 268/701
+Evaluating iter 269/701
+Evaluating iter 270/701
+Evaluating iter 271/701
+Evaluating iter 272/701
+Evaluating iter 273/701
+Evaluating iter 274/701
+Evaluating iter 275/701
+Evaluating iter 276/701
+Evaluating iter 277/701
+Evaluating iter 278/701
+Evaluating iter 279/701
+Evaluating iter 280/701
+Evaluating iter 281/701
+Evaluating iter 282/701
+Evaluating iter 283/701
+Evaluating iter 284/701
+Evaluating iter 285/701
+Evaluating iter 286/701
+Evaluating iter 287/701
+Evaluating iter 288/701
+Evaluating iter 289/701
+Evaluating iter 290/701
+Evaluating iter 291/701
+Evaluating iter 292/701
+Evaluating iter 293/701
+Evaluating iter 294/701
+Evaluating iter 295/701
+Evaluating iter 296/701
+Evaluating iter 297/701
+Evaluating iter 298/701
+Evaluating iter 299/701
+Evaluating iter 300/701
+Evaluating iter 301/701
+Evaluating iter 302/701
+Evaluating iter 303/701
+Evaluating iter 304/701
+Evaluating iter 305/701
+Evaluating iter 306/701
+Evaluating iter 307/701
+Evaluating iter 308/701
+Evaluating iter 309/701
+Evaluating iter 310/701
+Evaluating iter 311/701
+Evaluating iter 312/701
+Evaluating iter 313/701
+Evaluating iter 314/701
+Evaluating iter 315/701
+Evaluating iter 316/701
+Evaluating iter 317/701
+Evaluating iter 318/701
+Evaluating iter 319/701
+Evaluating iter 320/701
+Evaluating iter 321/701
+Evaluating iter 322/701
+Evaluating iter 323/701
+Evaluating iter 324/701
+Evaluating iter 325/701
+Evaluating iter 326/701
+Evaluating iter 327/701
+Evaluating iter 328/701
+Evaluating iter 329/701
+Evaluating iter 330/701
+Evaluating iter 331/701
+Evaluating iter 332/701
+Evaluating iter 333/701
+Evaluating iter 334/701
+Evaluating iter 335/701
+Evaluating iter 336/701
+Evaluating iter 337/701
+Evaluating iter 338/701
+Evaluating iter 339/701
+Evaluating iter 340/701
+Evaluating iter 341/701
+Evaluating iter 342/701
+Evaluating iter 343/701
+Evaluating iter 344/701
+Evaluating iter 345/701
+Evaluating iter 346/701
+Evaluating iter 347/701
+Evaluating iter 348/701
+Evaluating iter 349/701
+Evaluating iter 350/701
+Evaluating iter 351/701
+Evaluating iter 352/701
+Evaluating iter 353/701
+Evaluating iter 354/701
+Evaluating iter 355/701
+Evaluating iter 356/701
+Evaluating iter 357/701
+Evaluating iter 358/701
+Evaluating iter 359/701
+Evaluating iter 360/701
+Evaluating iter 361/701
+Evaluating iter 362/701
+Evaluating iter 363/701
+Evaluating iter 364/701
+Evaluating iter 365/701
+Evaluating iter 366/701
+Evaluating iter 367/701
+Evaluating iter 368/701
+Evaluating iter 369/701
+Evaluating iter 370/701
+Evaluating iter 371/701
+Evaluating iter 372/701
+Evaluating iter 373/701
+Evaluating iter 374/701
+Evaluating iter 375/701
+Evaluating iter 376/701
+Evaluating iter 377/701
+Evaluating iter 378/701
+Evaluating iter 379/701
+Evaluating iter 380/701
+Evaluating iter 381/701
+Evaluating iter 382/701
+Evaluating iter 383/701
+Evaluating iter 384/701
+Evaluating iter 385/701
+Evaluating iter 386/701
+Evaluating iter 387/701
+Evaluating iter 388/701
+Evaluating iter 389/701
+Evaluating iter 390/701
+Evaluating iter 391/701
+Evaluating iter 392/701
+Evaluating iter 393/701
+Evaluating iter 394/701
+Evaluating iter 395/701
+Evaluating iter 396/701
+Evaluating iter 397/701
+Evaluating iter 398/701
+Evaluating iter 399/701
+Evaluating iter 400/701
+Evaluating iter 401/701
+Evaluating iter 402/701
+Evaluating iter 403/701
+Evaluating iter 404/701
+Evaluating iter 405/701
+Evaluating iter 406/701
+Evaluating iter 407/701
+Evaluating iter 408/701
+Evaluating iter 409/701
+Evaluating iter 410/701
+Evaluating iter 411/701
+Evaluating iter 412/701
+Evaluating iter 413/701
+Evaluating iter 414/701
+Evaluating iter 415/701
+Evaluating iter 416/701
+Evaluating iter 417/701
+Evaluating iter 418/701
+Evaluating iter 419/701
+Evaluating iter 420/701
+Evaluating iter 421/701
+Evaluating iter 422/701
+Evaluating iter 423/701
+Evaluating iter 424/701
+Evaluating iter 425/701
+Evaluating iter 426/701
+Evaluating iter 427/701
+Evaluating iter 428/701
+Evaluating iter 429/701
+Evaluating iter 430/701
+Evaluating iter 431/701
+Evaluating iter 432/701
+Evaluating iter 433/701
+Evaluating iter 434/701
+Evaluating iter 435/701
+Evaluating iter 436/701
+Evaluating iter 437/701
+Evaluating iter 438/701
+Evaluating iter 439/701
+Evaluating iter 440/701
+Evaluating iter 441/701
+Evaluating iter 442/701
+Evaluating iter 443/701
+Evaluating iter 444/701
+Evaluating iter 445/701
+Evaluating iter 446/701
+Evaluating iter 447/701
+Evaluating iter 448/701
+Evaluating iter 449/701
+Evaluating iter 450/701
+Evaluating iter 451/701
+Evaluating iter 452/701
+Evaluating iter 453/701
+Evaluating iter 454/701
+Evaluating iter 455/701
+Evaluating iter 456/701
+Evaluating iter 457/701
+Evaluating iter 458/701
+Evaluating iter 459/701
+Evaluating iter 460/701
+Evaluating iter 461/701
+Evaluating iter 462/701
+Evaluating iter 463/701
+Evaluating iter 464/701
+Evaluating iter 465/701
+Evaluating iter 466/701
+Evaluating iter 467/701
+Evaluating iter 468/701
+Evaluating iter 469/701
+Evaluating iter 470/701
+Evaluating iter 471/701
+Evaluating iter 472/701
+Evaluating iter 473/701
+Evaluating iter 474/701
+Evaluating iter 475/701
+Evaluating iter 476/701
+Evaluating iter 477/701
+Evaluating iter 478/701
+Evaluating iter 479/701
+Evaluating iter 480/701
+Evaluating iter 481/701
+Evaluating iter 482/701
+Evaluating iter 483/701
+Evaluating iter 484/701
+Evaluating iter 485/701
+Evaluating iter 486/701
+Evaluating iter 487/701
+Evaluating iter 488/701
+Evaluating iter 489/701
+Evaluating iter 490/701
+Evaluating iter 491/701
+Evaluating iter 492/701
+Evaluating iter 493/701
+Evaluating iter 494/701
+Evaluating iter 495/701
+Evaluating iter 496/701
+Evaluating iter 497/701
+Evaluating iter 498/701
+Evaluating iter 499/701
+Evaluating iter 500/701
+Evaluating iter 501/701
+Evaluating iter 502/701
+Evaluating iter 503/701
+Evaluating iter 504/701
+Evaluating iter 505/701
+Evaluating iter 506/701
+Evaluating iter 507/701
+Evaluating iter 508/701
+Evaluating iter 509/701
+Evaluating iter 510/701
+Evaluating iter 511/701
+Evaluating iter 512/701
+Evaluating iter 513/701
+Evaluating iter 514/701
+Evaluating iter 515/701
+Evaluating iter 516/701
+Evaluating iter 517/701
+Evaluating iter 518/701
+Evaluating iter 519/701
+Evaluating iter 520/701
+Evaluating iter 521/701
+Evaluating iter 522/701
+Evaluating iter 523/701
+Evaluating iter 524/701
+Evaluating iter 525/701
+Evaluating iter 526/701
+Evaluating iter 527/701
+Evaluating iter 528/701
+Evaluating iter 529/701
+Evaluating iter 530/701
+Evaluating iter 531/701
+Evaluating iter 532/701
+Evaluating iter 533/701
+Evaluating iter 534/701
+Evaluating iter 535/701
+Evaluating iter 536/701
+Evaluating iter 537/701
+Evaluating iter 538/701
+Evaluating iter 539/701
+Evaluating iter 540/701
+Evaluating iter 541/701
+Evaluating iter 542/701
+Evaluating iter 543/701
+Evaluating iter 544/701
+Evaluating iter 545/701
+Evaluating iter 546/701
+Evaluating iter 547/701
+Evaluating iter 548/701
+Evaluating iter 549/701
+Evaluating iter 550/701
+Evaluating iter 551/701
+Evaluating iter 552/701
+Evaluating iter 553/701
+Evaluating iter 554/701
+Evaluating iter 555/701
+Evaluating iter 556/701
+Evaluating iter 557/701
+Evaluating iter 558/701
+Evaluating iter 559/701
+Evaluating iter 560/701
+Evaluating iter 561/701
+Evaluating iter 562/701
+Evaluating iter 563/701
+Evaluating iter 564/701
+Evaluating iter 565/701
+Evaluating iter 566/701
+Evaluating iter 567/701
+Evaluating iter 568/701
+Evaluating iter 569/701
+Evaluating iter 570/701
+Evaluating iter 571/701
+Evaluating iter 572/701
+Evaluating iter 573/701
+Evaluating iter 574/701
+Evaluating iter 575/701
+Evaluating iter 576/701
+Evaluating iter 577/701
+Evaluating iter 578/701
+Evaluating iter 579/701
+Evaluating iter 580/701
+Evaluating iter 581/701
+Evaluating iter 582/701
+Evaluating iter 583/701
+Evaluating iter 584/701
+Evaluating iter 585/701
+Evaluating iter 586/701
+Evaluating iter 587/701
+Evaluating iter 588/701
+Evaluating iter 589/701
+Evaluating iter 590/701
+Evaluating iter 591/701
+Evaluating iter 592/701
+Evaluating iter 593/701
+Evaluating iter 594/701
+Evaluating iter 595/701
+Evaluating iter 596/701
+Evaluating iter 597/701
+Evaluating iter 598/701
+Evaluating iter 599/701
+Evaluating iter 600/701
+Evaluating iter 601/701
+Evaluating iter 602/701
+Evaluating iter 603/701
+Evaluating iter 604/701
+Evaluating iter 605/701
+Evaluating iter 606/701
+Evaluating iter 607/701
+Evaluating iter 608/701
+Evaluating iter 609/701
+Evaluating iter 610/701
+Evaluating iter 611/701
+Evaluating iter 612/701
+Evaluating iter 613/701
+Evaluating iter 614/701
+Evaluating iter 615/701
+Evaluating iter 616/701
+Evaluating iter 617/701
+Evaluating iter 618/701
+Evaluating iter 619/701
+Evaluating iter 620/701
+Evaluating iter 621/701
+Evaluating iter 622/701
+Evaluating iter 623/701
+Evaluating iter 624/701
+Evaluating iter 625/701
+Evaluating iter 626/701
+Evaluating iter 627/701
+Evaluating iter 628/701
+Evaluating iter 629/701
+Evaluating iter 630/701
+Evaluating iter 631/701
+Evaluating iter 632/701
+Evaluating iter 633/701
+Evaluating iter 634/701
+Evaluating iter 635/701
+Evaluating iter 636/701
+Evaluating iter 637/701
+Evaluating iter 638/701
+Evaluating iter 639/701
+Evaluating iter 640/701
+Evaluating iter 641/701
+Evaluating iter 642/701
+Evaluating iter 643/701
+Evaluating iter 644/701
+Evaluating iter 645/701
+Evaluating iter 646/701
+Evaluating iter 647/701
+Evaluating iter 648/701
+Evaluating iter 649/701
+Evaluating iter 650/701
+Evaluating iter 651/701
+Evaluating iter 652/701
+Evaluating iter 653/701
+Evaluating iter 654/701
+Evaluating iter 655/701
+Evaluating iter 656/701
+Evaluating iter 657/701
+Evaluating iter 658/701
+Evaluating iter 659/701
+Evaluating iter 660/701
+Evaluating iter 661/701
+Evaluating iter 662/701
+Evaluating iter 663/701
+Evaluating iter 664/701
+Evaluating iter 665/701
+Evaluating iter 666/701
+Evaluating iter 667/701
+Evaluating iter 668/701
+Evaluating iter 669/701
+Evaluating iter 670/701
+Evaluating iter 671/701
+Evaluating iter 672/701
+Evaluating iter 673/701
+Evaluating iter 674/701
+Evaluating iter 675/701
+Evaluating iter 676/701
+Evaluating iter 677/701
+Evaluating iter 678/701
+Evaluating iter 679/701
+Evaluating iter 680/701
+Evaluating iter 681/701
+Evaluating iter 682/701
+Evaluating iter 683/701
+Evaluating iter 684/701
+Evaluating iter 685/701
+Evaluating iter 686/701
+Evaluating iter 687/701
+Evaluating iter 688/701
+Evaluating iter 689/701
+Evaluating iter 690/701
+Evaluating iter 691/701
+Evaluating iter 692/701
+Evaluating iter 693/701
+Evaluating iter 694/701
+Evaluating iter 695/701
+Evaluating iter 696/701
+Evaluating iter 697/701
+Evaluating iter 698/701
+Evaluating iter 699/701
+Evaluating iter 700/701
+Evaluating iter 701/701
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 750 on validation set | ce loss value: 2.497741E-01 | ce loss PPL: 1.283735E+00 | accuracy value: 9.239925E-01 | accuracy PPL: 2.519329E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Evaluating on 44864 samples
+Evaluating iter 1/701
+Evaluating iter 2/701
+Evaluating iter 3/701
+Evaluating iter 4/701
+Evaluating iter 5/701
+Evaluating iter 6/701
+Evaluating iter 7/701
+Evaluating iter 8/701
+Evaluating iter 9/701
+Evaluating iter 10/701
+Evaluating iter 11/701
+Evaluating iter 12/701
+Evaluating iter 13/701
+Evaluating iter 14/701
+Evaluating iter 15/701
+Evaluating iter 16/701
+Evaluating iter 17/701
+Evaluating iter 18/701
+Evaluating iter 19/701
+Evaluating iter 20/701
+Evaluating iter 21/701
+Evaluating iter 22/701
+Evaluating iter 23/701
+Evaluating iter 24/701
+Evaluating iter 25/701
+Evaluating iter 26/701
+Evaluating iter 27/701
+Evaluating iter 28/701
+Evaluating iter 29/701
+Evaluating iter 30/701
+Evaluating iter 31/701
+Evaluating iter 32/701
+Evaluating iter 33/701
+Evaluating iter 34/701
+Evaluating iter 35/701
+Evaluating iter 36/701
+Evaluating iter 37/701
+Evaluating iter 38/701
+Evaluating iter 39/701
+Evaluating iter 40/701
+Evaluating iter 41/701
+Evaluating iter 42/701
+Evaluating iter 43/701
+Evaluating iter 44/701
+Evaluating iter 45/701
+Evaluating iter 46/701
+Evaluating iter 47/701
+Evaluating iter 48/701
+Evaluating iter 49/701
+Evaluating iter 50/701
+Evaluating iter 51/701
+Evaluating iter 52/701
+Evaluating iter 53/701
+Evaluating iter 54/701
+Evaluating iter 55/701
+Evaluating iter 56/701
+Evaluating iter 57/701
+Evaluating iter 58/701
+Evaluating iter 59/701
+Evaluating iter 60/701
+Evaluating iter 61/701
+Evaluating iter 62/701
+Evaluating iter 63/701
+Evaluating iter 64/701
+Evaluating iter 65/701
+Evaluating iter 66/701
+Evaluating iter 67/701
+Evaluating iter 68/701
+Evaluating iter 69/701
+Evaluating iter 70/701
+Evaluating iter 71/701
+Evaluating iter 72/701
+Evaluating iter 73/701
+Evaluating iter 74/701
+Evaluating iter 75/701
+Evaluating iter 76/701
+Evaluating iter 77/701
+Evaluating iter 78/701
+Evaluating iter 79/701
+Evaluating iter 80/701
+Evaluating iter 81/701
+Evaluating iter 82/701
+Evaluating iter 83/701
+Evaluating iter 84/701
+Evaluating iter 85/701
+Evaluating iter 86/701
+Evaluating iter 87/701
+Evaluating iter 88/701
+Evaluating iter 89/701
+Evaluating iter 90/701
+Evaluating iter 91/701
+Evaluating iter 92/701
+Evaluating iter 93/701
+Evaluating iter 94/701
+Evaluating iter 95/701
+Evaluating iter 96/701
+Evaluating iter 97/701
+Evaluating iter 98/701
+Evaluating iter 99/701
+Evaluating iter 100/701
+Evaluating iter 101/701
+Evaluating iter 102/701
+Evaluating iter 103/701
+Evaluating iter 104/701
+Evaluating iter 105/701
+Evaluating iter 106/701
+Evaluating iter 107/701
+Evaluating iter 108/701
+Evaluating iter 109/701
+Evaluating iter 110/701
+Evaluating iter 111/701
+Evaluating iter 112/701
+Evaluating iter 113/701
+Evaluating iter 114/701
+Evaluating iter 115/701
+Evaluating iter 116/701
+Evaluating iter 117/701
+Evaluating iter 118/701
+Evaluating iter 119/701
+Evaluating iter 120/701
+Evaluating iter 121/701
+Evaluating iter 122/701
+Evaluating iter 123/701
+Evaluating iter 124/701
+Evaluating iter 125/701
+Evaluating iter 126/701
+Evaluating iter 127/701
+Evaluating iter 128/701
+Evaluating iter 129/701
+Evaluating iter 130/701
+Evaluating iter 131/701
+Evaluating iter 132/701
+Evaluating iter 133/701
+Evaluating iter 134/701
+Evaluating iter 135/701
+Evaluating iter 136/701
+Evaluating iter 137/701
+Evaluating iter 138/701
+Evaluating iter 139/701
+Evaluating iter 140/701
+Evaluating iter 141/701
+Evaluating iter 142/701
+Evaluating iter 143/701
+Evaluating iter 144/701
+Evaluating iter 145/701
+Evaluating iter 146/701
+Evaluating iter 147/701
+Evaluating iter 148/701
+Evaluating iter 149/701
+Evaluating iter 150/701
+Evaluating iter 151/701
+Evaluating iter 152/701
+Evaluating iter 153/701
+Evaluating iter 154/701
+Evaluating iter 155/701
+Evaluating iter 156/701
+Evaluating iter 157/701
+Evaluating iter 158/701
+Evaluating iter 159/701
+Evaluating iter 160/701
+Evaluating iter 161/701
+Evaluating iter 162/701
+Evaluating iter 163/701
+Evaluating iter 164/701
+Evaluating iter 165/701
+Evaluating iter 166/701
+Evaluating iter 167/701
+Evaluating iter 168/701
+Evaluating iter 169/701
+Evaluating iter 170/701
+Evaluating iter 171/701
+Evaluating iter 172/701
+Evaluating iter 173/701
+Evaluating iter 174/701
+Evaluating iter 175/701
+Evaluating iter 176/701
+Evaluating iter 177/701
+Evaluating iter 178/701
+Evaluating iter 179/701
+Evaluating iter 180/701
+Evaluating iter 181/701
+Evaluating iter 182/701
+Evaluating iter 183/701
+Evaluating iter 184/701
+Evaluating iter 185/701
+Evaluating iter 186/701
+Evaluating iter 187/701
+Evaluating iter 188/701
+Evaluating iter 189/701
+Evaluating iter 190/701
+Evaluating iter 191/701
+Evaluating iter 192/701
+Evaluating iter 193/701
+Evaluating iter 194/701
+Evaluating iter 195/701
+Evaluating iter 196/701
+Evaluating iter 197/701
+Evaluating iter 198/701
+Evaluating iter 199/701
+Evaluating iter 200/701
+Evaluating iter 201/701
+Evaluating iter 202/701
+Evaluating iter 203/701
+Evaluating iter 204/701
+Evaluating iter 205/701
+Evaluating iter 206/701
+Evaluating iter 207/701
+Evaluating iter 208/701
+Evaluating iter 209/701
+Evaluating iter 210/701
+Evaluating iter 211/701
+Evaluating iter 212/701
+Evaluating iter 213/701
+Evaluating iter 214/701
+Evaluating iter 215/701
+Evaluating iter 216/701
+Evaluating iter 217/701
+Evaluating iter 218/701
+Evaluating iter 219/701
+Evaluating iter 220/701
+Evaluating iter 221/701
+Evaluating iter 222/701
+Evaluating iter 223/701
+Evaluating iter 224/701
+Evaluating iter 225/701
+Evaluating iter 226/701
+Evaluating iter 227/701
+Evaluating iter 228/701
+Evaluating iter 229/701
+Evaluating iter 230/701
+Evaluating iter 231/701
+Evaluating iter 232/701
+Evaluating iter 233/701
+Evaluating iter 234/701
+Evaluating iter 235/701
+Evaluating iter 236/701
+Evaluating iter 237/701
+Evaluating iter 238/701
+Evaluating iter 239/701
+Evaluating iter 240/701
+Evaluating iter 241/701
+Evaluating iter 242/701
+Evaluating iter 243/701
+Evaluating iter 244/701
+Evaluating iter 245/701
+Evaluating iter 246/701
+Evaluating iter 247/701
+Evaluating iter 248/701
+Evaluating iter 249/701
+Evaluating iter 250/701
+Evaluating iter 251/701
+Evaluating iter 252/701
+Evaluating iter 253/701
+Evaluating iter 254/701
+Evaluating iter 255/701
+Evaluating iter 256/701
+Evaluating iter 257/701
+Evaluating iter 258/701
+Evaluating iter 259/701
+Evaluating iter 260/701
+Evaluating iter 261/701
+Evaluating iter 262/701
+Evaluating iter 263/701
+Evaluating iter 264/701
+Evaluating iter 265/701
+Evaluating iter 266/701
+Evaluating iter 267/701
+Evaluating iter 268/701
+Evaluating iter 269/701
+Evaluating iter 270/701
+Evaluating iter 271/701
+Evaluating iter 272/701
+Evaluating iter 273/701
+Evaluating iter 274/701
+Evaluating iter 275/701
+Evaluating iter 276/701
+Evaluating iter 277/701
+Evaluating iter 278/701
+Evaluating iter 279/701
+Evaluating iter 280/701
+Evaluating iter 281/701
+Evaluating iter 282/701
+Evaluating iter 283/701
+Evaluating iter 284/701
+Evaluating iter 285/701
+Evaluating iter 286/701
+Evaluating iter 287/701
+Evaluating iter 288/701
+Evaluating iter 289/701
+Evaluating iter 290/701
+Evaluating iter 291/701
+Evaluating iter 292/701
+Evaluating iter 293/701
+Evaluating iter 294/701
+Evaluating iter 295/701
+Evaluating iter 296/701
+Evaluating iter 297/701
+Evaluating iter 298/701
+Evaluating iter 299/701
+Evaluating iter 300/701
+Evaluating iter 301/701
+Evaluating iter 302/701
+Evaluating iter 303/701
+Evaluating iter 304/701
+Evaluating iter 305/701
+Evaluating iter 306/701
+Evaluating iter 307/701
+Evaluating iter 308/701
+Evaluating iter 309/701
+Evaluating iter 310/701
+Evaluating iter 311/701
+Evaluating iter 312/701
+Evaluating iter 313/701
+Evaluating iter 314/701
+Evaluating iter 315/701
+Evaluating iter 316/701
+Evaluating iter 317/701
+Evaluating iter 318/701
+Evaluating iter 319/701
+Evaluating iter 320/701
+Evaluating iter 321/701
+Evaluating iter 322/701
+Evaluating iter 323/701
+Evaluating iter 324/701
+Evaluating iter 325/701
+Evaluating iter 326/701
+Evaluating iter 327/701
+Evaluating iter 328/701
+Evaluating iter 329/701
+Evaluating iter 330/701
+Evaluating iter 331/701
+Evaluating iter 332/701
+Evaluating iter 333/701
+Evaluating iter 334/701
+Evaluating iter 335/701
+Evaluating iter 336/701
+Evaluating iter 337/701
+Evaluating iter 338/701
+Evaluating iter 339/701
+Evaluating iter 340/701
+Evaluating iter 341/701
+Evaluating iter 342/701
+Evaluating iter 343/701
+Evaluating iter 344/701
+Evaluating iter 345/701
+Evaluating iter 346/701
+Evaluating iter 347/701
+Evaluating iter 348/701
+Evaluating iter 349/701
+Evaluating iter 350/701
+Evaluating iter 351/701
+Evaluating iter 352/701
+Evaluating iter 353/701
+Evaluating iter 354/701
+Evaluating iter 355/701
+Evaluating iter 356/701
+Evaluating iter 357/701
+Evaluating iter 358/701
+Evaluating iter 359/701
+Evaluating iter 360/701
+Evaluating iter 361/701
+Evaluating iter 362/701
+Evaluating iter 363/701
+Evaluating iter 364/701
+Evaluating iter 365/701
+Evaluating iter 366/701
+Evaluating iter 367/701
+Evaluating iter 368/701
+Evaluating iter 369/701
+Evaluating iter 370/701
+Evaluating iter 371/701
+Evaluating iter 372/701
+Evaluating iter 373/701
+Evaluating iter 374/701
+Evaluating iter 375/701
+Evaluating iter 376/701
+Evaluating iter 377/701
+Evaluating iter 378/701
+Evaluating iter 379/701
+Evaluating iter 380/701
+Evaluating iter 381/701
+Evaluating iter 382/701
+Evaluating iter 383/701
+Evaluating iter 384/701
+Evaluating iter 385/701
+Evaluating iter 386/701
+Evaluating iter 387/701
+Evaluating iter 388/701
+Evaluating iter 389/701
+Evaluating iter 390/701
+Evaluating iter 391/701
+Evaluating iter 392/701
+Evaluating iter 393/701
+Evaluating iter 394/701
+Evaluating iter 395/701
+Evaluating iter 396/701
+Evaluating iter 397/701
+Evaluating iter 398/701
+Evaluating iter 399/701
+Evaluating iter 400/701
+Evaluating iter 401/701
+Evaluating iter 402/701
+Evaluating iter 403/701
+Evaluating iter 404/701
+Evaluating iter 405/701
+Evaluating iter 406/701
+Evaluating iter 407/701
+Evaluating iter 408/701
+Evaluating iter 409/701
+Evaluating iter 410/701
+Evaluating iter 411/701
+Evaluating iter 412/701
+Evaluating iter 413/701
+Evaluating iter 414/701
+Evaluating iter 415/701
+Evaluating iter 416/701
+Evaluating iter 417/701
+Evaluating iter 418/701
+Evaluating iter 419/701
+Evaluating iter 420/701
+Evaluating iter 421/701
+Evaluating iter 422/701
+Evaluating iter 423/701
+Evaluating iter 424/701
+Evaluating iter 425/701
+Evaluating iter 426/701
+Evaluating iter 427/701
+Evaluating iter 428/701
+Evaluating iter 429/701
+Evaluating iter 430/701
+Evaluating iter 431/701
+Evaluating iter 432/701
+Evaluating iter 433/701
+Evaluating iter 434/701
+Evaluating iter 435/701
+Evaluating iter 436/701
+Evaluating iter 437/701
+Evaluating iter 438/701
+Evaluating iter 439/701
+Evaluating iter 440/701
+Evaluating iter 441/701
+Evaluating iter 442/701
+Evaluating iter 443/701
+Evaluating iter 444/701
+Evaluating iter 445/701
+Evaluating iter 446/701
+Evaluating iter 447/701
+Evaluating iter 448/701
+Evaluating iter 449/701
+Evaluating iter 450/701
+Evaluating iter 451/701
+Evaluating iter 452/701
+Evaluating iter 453/701
+Evaluating iter 454/701
+Evaluating iter 455/701
+Evaluating iter 456/701
+Evaluating iter 457/701
+Evaluating iter 458/701
+Evaluating iter 459/701
+Evaluating iter 460/701
+Evaluating iter 461/701
+Evaluating iter 462/701
+Evaluating iter 463/701
+Evaluating iter 464/701
+Evaluating iter 465/701
+Evaluating iter 466/701
+Evaluating iter 467/701
+Evaluating iter 468/701
+Evaluating iter 469/701
+Evaluating iter 470/701
+Evaluating iter 471/701
+Evaluating iter 472/701
+Evaluating iter 473/701
+Evaluating iter 474/701
+Evaluating iter 475/701
+Evaluating iter 476/701
+Evaluating iter 477/701
+Evaluating iter 478/701
+Evaluating iter 479/701
+Evaluating iter 480/701
+Evaluating iter 481/701
+Evaluating iter 482/701
+Evaluating iter 483/701
+Evaluating iter 484/701
+Evaluating iter 485/701
+Evaluating iter 486/701
+Evaluating iter 487/701
+Evaluating iter 488/701
+Evaluating iter 489/701
+Evaluating iter 490/701
+Evaluating iter 491/701
+Evaluating iter 492/701
+Evaluating iter 493/701
+Evaluating iter 494/701
+Evaluating iter 495/701
+Evaluating iter 496/701
+Evaluating iter 497/701
+Evaluating iter 498/701
+Evaluating iter 499/701
+Evaluating iter 500/701
+Evaluating iter 501/701
+Evaluating iter 502/701
+Evaluating iter 503/701
+Evaluating iter 504/701
+Evaluating iter 505/701
+Evaluating iter 506/701
+Evaluating iter 507/701
+Evaluating iter 508/701
+Evaluating iter 509/701
+Evaluating iter 510/701
+Evaluating iter 511/701
+Evaluating iter 512/701
+Evaluating iter 513/701
+Evaluating iter 514/701
+Evaluating iter 515/701
+Evaluating iter 516/701
+Evaluating iter 517/701
+Evaluating iter 518/701
+Evaluating iter 519/701
+Evaluating iter 520/701
+Evaluating iter 521/701
+Evaluating iter 522/701
+Evaluating iter 523/701
+Evaluating iter 524/701
+Evaluating iter 525/701
+Evaluating iter 526/701
+Evaluating iter 527/701
+Evaluating iter 528/701
+Evaluating iter 529/701
+Evaluating iter 530/701
+Evaluating iter 531/701
+Evaluating iter 532/701
+Evaluating iter 533/701
+Evaluating iter 534/701
+Evaluating iter 535/701
+Evaluating iter 536/701
+Evaluating iter 537/701
+Evaluating iter 538/701
+Evaluating iter 539/701
+Evaluating iter 540/701
+Evaluating iter 541/701
+Evaluating iter 542/701
+Evaluating iter 543/701
+Evaluating iter 544/701
+Evaluating iter 545/701
+Evaluating iter 546/701
+Evaluating iter 547/701
+Evaluating iter 548/701
+Evaluating iter 549/701
+Evaluating iter 550/701
+Evaluating iter 551/701
+Evaluating iter 552/701
+Evaluating iter 553/701
+Evaluating iter 554/701
+Evaluating iter 555/701
+Evaluating iter 556/701
+Evaluating iter 557/701
+Evaluating iter 558/701
+Evaluating iter 559/701
+Evaluating iter 560/701
+Evaluating iter 561/701
+Evaluating iter 562/701
+Evaluating iter 563/701
+Evaluating iter 564/701
+Evaluating iter 565/701
+Evaluating iter 566/701
+Evaluating iter 567/701
+Evaluating iter 568/701
+Evaluating iter 569/701
+Evaluating iter 570/701
+Evaluating iter 571/701
+Evaluating iter 572/701
+Evaluating iter 573/701
+Evaluating iter 574/701
+Evaluating iter 575/701
+Evaluating iter 576/701
+Evaluating iter 577/701
+Evaluating iter 578/701
+Evaluating iter 579/701
+Evaluating iter 580/701
+Evaluating iter 581/701
+Evaluating iter 582/701
+Evaluating iter 583/701
+Evaluating iter 584/701
+Evaluating iter 585/701
+Evaluating iter 586/701
+Evaluating iter 587/701
+Evaluating iter 588/701
+Evaluating iter 589/701
+Evaluating iter 590/701
+Evaluating iter 591/701
+Evaluating iter 592/701
+Evaluating iter 593/701
+Evaluating iter 594/701
+Evaluating iter 595/701
+Evaluating iter 596/701
+Evaluating iter 597/701
+Evaluating iter 598/701
+Evaluating iter 599/701
+Evaluating iter 600/701
+Evaluating iter 601/701
+Evaluating iter 602/701
+Evaluating iter 603/701
+Evaluating iter 604/701
+Evaluating iter 605/701
+Evaluating iter 606/701
+Evaluating iter 607/701
+Evaluating iter 608/701
+Evaluating iter 609/701
+Evaluating iter 610/701
+Evaluating iter 611/701
+Evaluating iter 612/701
+Evaluating iter 613/701
+Evaluating iter 614/701
+Evaluating iter 615/701
+Evaluating iter 616/701
+Evaluating iter 617/701
+Evaluating iter 618/701
+Evaluating iter 619/701
+Evaluating iter 620/701
+Evaluating iter 621/701
+Evaluating iter 622/701
+Evaluating iter 623/701
+Evaluating iter 624/701
+Evaluating iter 625/701
+Evaluating iter 626/701
+Evaluating iter 627/701
+Evaluating iter 628/701
+Evaluating iter 629/701
+Evaluating iter 630/701
+Evaluating iter 631/701
+Evaluating iter 632/701
+Evaluating iter 633/701
+Evaluating iter 634/701
+Evaluating iter 635/701
+Evaluating iter 636/701
+Evaluating iter 637/701
+Evaluating iter 638/701
+Evaluating iter 639/701
+Evaluating iter 640/701
+Evaluating iter 641/701
+Evaluating iter 642/701
+Evaluating iter 643/701
+Evaluating iter 644/701
+Evaluating iter 645/701
+Evaluating iter 646/701
+Evaluating iter 647/701
+Evaluating iter 648/701
+Evaluating iter 649/701
+Evaluating iter 650/701
+Evaluating iter 651/701
+Evaluating iter 652/701
+Evaluating iter 653/701
+Evaluating iter 654/701
+Evaluating iter 655/701
+Evaluating iter 656/701
+Evaluating iter 657/701
+Evaluating iter 658/701
+Evaluating iter 659/701
+Evaluating iter 660/701
+Evaluating iter 661/701
+Evaluating iter 662/701
+Evaluating iter 663/701
+Evaluating iter 664/701
+Evaluating iter 665/701
+Evaluating iter 666/701
+Evaluating iter 667/701
+Evaluating iter 668/701
+Evaluating iter 669/701
+Evaluating iter 670/701
+Evaluating iter 671/701
+Evaluating iter 672/701
+Evaluating iter 673/701
+Evaluating iter 674/701
+Evaluating iter 675/701
+Evaluating iter 676/701
+Evaluating iter 677/701
+Evaluating iter 678/701
+Evaluating iter 679/701
+Evaluating iter 680/701
+Evaluating iter 681/701
+Evaluating iter 682/701
+Evaluating iter 683/701
+Evaluating iter 684/701
+Evaluating iter 685/701
+Evaluating iter 686/701
+Evaluating iter 687/701
+Evaluating iter 688/701
+Evaluating iter 689/701
+Evaluating iter 690/701
+Evaluating iter 691/701
+Evaluating iter 692/701
+Evaluating iter 693/701
+Evaluating iter 694/701
+Evaluating iter 695/701
+Evaluating iter 696/701
+Evaluating iter 697/701
+Evaluating iter 698/701
+Evaluating iter 699/701
+Evaluating iter 700/701
+Evaluating iter 701/701
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 750 on test set | ce loss value: 1.421584E-01 | ce loss PPL: 1.152759E+00 | accuracy value: 9.652728E-01 | accuracy PPL: 2.625504E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

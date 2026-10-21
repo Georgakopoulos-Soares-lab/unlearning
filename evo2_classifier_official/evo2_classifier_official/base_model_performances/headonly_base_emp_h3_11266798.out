@@ -1,0 +1,382 @@
+GPU: NVIDIA H200
+
+======================================================================
+Configuration Summary (Non-Default Values vs Megatron Core)
+======================================================================
+
+[optimizer] Non-default values (vs Mcore OptimizerConfig):
+  adam_beta2: 0.95  (Mcore default: 0.999)
+  bf16: True  (Mcore default: False)
+  fp8_recipe: 'tensorwise'  (Mcore default: None)
+  lr: 0.001  (Mcore default: None)
+  min_lr: 0.0001  (Mcore default: None)
+  params_dtype: torch.bfloat16  (Mcore default: torch.float32)
+  use_distributed_optimizer: True  (Mcore default: False)
+  weight_decay: 0.0  (Mcore default: 0.01)
+
+[ddp] Non-default values (vs Mcore DistributedDataParallelConfig):
+  check_for_nan_in_grad: True  (Mcore default: False)
+  grad_reduce_in_fp32: True  (Mcore default: False)
+  use_distributed_optimizer: True  (Mcore default: False)
+
+[model] Non-default values (vs Mcore TransformerConfig):
+  add_bias_linear: False  (Mcore default: True)
+  apply_rope_fusion: True  (Mcore default: False)
+  attention_backend: <AttnBackend.flash: 1>  (Mcore default: <AttnBackend.auto: 5>)
+  attention_dropout: 0.0  (Mcore default: 0.1)
+  autocast_dtype: torch.bfloat16  (Mcore default: None)
+  bf16: True  (Mcore default: False)
+  bias_activation_fusion: True  (Mcore default: False)
+  cuda_graph_modules: []  (Mcore default: 'full')
+  embedding_init_method_std: 0.02  (Mcore default: None)
+  expert_tensor_parallel_size: 1  (Mcore default: None)
+  ffn_hidden_size: 5120  (Mcore default: None)
+  fp8_recipe: 'tensorwise'  (Mcore default: 'delayed')
+  gated_linear_unit: True  (Mcore default: False)
+  hidden_dropout: 0.0  (Mcore default: 0.1)
+  hidden_size: 1920  (Mcore default: 0)
+  inference_cuda_graph_scope: <InferenceCudaGraphScope.none: 1>  (Mcore default: None)
+  kv_channels: 128  (Mcore default: None)
+  layernorm_epsilon: 1e-06  (Mcore default: 1e-05)
+  microbatch_group_size_per_vp_stage: 1  (Mcore default: None)
+  normalization: 'RMSNorm'  (Mcore default: 'LayerNorm')
+  num_attention_heads: 15  (Mcore default: 0)
+  num_layers: 25  (Mcore default: 0)
+  num_layers_at_end_in_bf16: 0  (Mcore default: 1)
+  num_layers_at_start_in_bf16: 0  (Mcore default: 1)
+  num_query_groups: 15  (Mcore default: None)
+  params_dtype: torch.bfloat16  (Mcore default: torch.float32)
+  pipeline_dtype: torch.bfloat16  (Mcore default: None)
+  recompute_modules: ['core_attn']  (Mcore default: None)
+
+----------------------------------------------------------------------
+Other Configuration Values:
+----------------------------------------------------------------------
+
+[train]:
+  check_optimizer_step_success: True
+  decrease_batch_size_if_needed: False
+  empty_unused_memory_level: 0
+  eval_interval: 50
+  eval_iters: 10
+  exit_signal: <Signals.SIGTERM: 15>
+  exit_signal_handler: False
+  exit_signal_handler_for_dataloader: False
+  exit_signal_handler_for_training: False
+  global_batch_size: 8
+  iterations_to_skip: []
+  manual_gc: False
+  manual_gc_eval: True
+  manual_gc_interval: 0
+  micro_batch_size: 2
+  skip_sync_grad_norm_across_mp: False
+  train_iters: 300
+
+[validation]:
+  eval_global_batch_size: 8
+  eval_interval: 50
+  eval_iters: 10
+  eval_micro_batch_size: 2
+  full_validation: False
+  multiple_validation_sets: False
+  skip_train: False
+  test_mode: False
+
+[scheduler]:
+  end_weight_decay: 0.033
+  lr_decay_iters: 280
+  lr_decay_steps: 2240
+  lr_decay_style: 'cosine'
+  lr_warmup_init: 0.0
+  lr_warmup_iters: 20
+  lr_warmup_samples: 0
+  lr_warmup_steps: 160
+  lr_wsd_decay_iters: 280
+  lr_wsd_decay_style: 'minus_sqrt'
+  override_opt_param_scheduler: True
+  start_weight_decay: 0.033
+  use_checkpoint_opt_param_scheduler: False
+  wd_incr_steps: 2400
+  weight_decay_incr_style: 'constant'
+  wsd_decay_steps: 2240
+
+[dataset]:
+  data_sharding: False
+  dataloader_type: 'cyclic'
+  drop_last: True
+  num_workers: 0
+  persistent_workers: False
+  pin_memory: True
+  seq_length: 1000
+  test_jsonl: '/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_H3/test.jsonl'
+  tokenizer_path: '/projects/MENTISLab/bionemo-framework/recipes/evo2_megatron/tokenizers/nucleotide_fast_tokenizer_512'
+  train_jsonl: '/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_H3/train.jsonl'
+  val_jsonl: '/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_H3/dev.jsonl'
+
+[checkpoint]:
+  async_ckpt_cpu_priority: 10
+  async_ckpt_io_priority: 3
+  async_ckpt_use_cpu_shm: False
+  async_save: False
+  async_strategy: 'mcore'
+  async_write_results_mp_mode: 'fork'
+  auto_detect_ckpt_format: False
+  ckpt_assume_constant_structure: False
+  ckpt_convert_update_legacy_dist_opt_format: False
+  ckpt_format: 'torch_dist'
+  ckpt_fully_parallel_load_exchange_algo: 'broadcast'
+  ckpt_fully_parallel_load_process_group: 'dp'
+  ckpt_fully_parallel_save_process_group: 'dp'
+  ckpt_load_validate_sharding_integrity: True
+  dist_ckpt_optim_fully_reshardable: False
+  dist_ckpt_save_pre_mcore_014: False
+  dist_ckpt_strictness: 'ignore_all'
+  dist_ckpt_workers: 1
+  distrib_optim_fully_reshardable_mem_efficient: False
+  exit_on_missing_checkpoint: False
+  finetune: True
+  fully_parallel_load: True
+  fully_parallel_save: True
+  load: '/projects/MENTISLab/unlearning/results/evo2_official/base_emp_h3/pooled_last_layer/checkpoints'
+  load_main_params_from_ckpt: False
+  load_optim: True
+  load_rng: True
+  most_recent_k: -1
+  non_persistent_local_ckpt_algo: 'fully_parallel'
+  pretrained_checkpoint: '/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge'
+  replication: False
+  replication_factor: 2
+  save: '/projects/MENTISLab/unlearning/results/evo2_official/base_emp_h3/pooled_last_layer/checkpoints'
+  save_interval: 300
+  save_optim: True
+  save_rng: True
+  save_tokenizer_assets: True
+  storage_writers_per_rank: 1
+  strict_fsdp_dtensor_load: False
+  use_checkpoint_args: False
+  use_mp_args_from_checkpoint_args: False
+  use_persistent_ckpt_worker: True
+  use_tokenizer_model_from_checkpoint_args: True
+  verify_integrity: False
+
+[logger]:
+  barrier_with_L1_time: True
+  filter_warnings: True
+  log_device_memory_used: False
+  log_energy: False
+  log_interval: 10
+  log_l2_norm_grad_to_tensorboard: False
+  log_loss_scale_to_tensorboard: True
+  log_max_attention_logit: False
+  log_memory_to_tensorboard: False
+  log_num_zeros_in_grad: False
+  log_params_norm: False
+  log_progress: True
+  log_runtime_to_tensorboard: False
+  log_throughput: False
+  log_throughput_to_tensorboard: True
+  log_timers_to_tensorboard: False
+  log_validation_ppl_to_tensorboard: False
+  log_world_size_to_tensorboard: False
+  logging_level: 20
+  mlflow_log_artifacts: True
+  runtime_time_unit: 'hours'
+  set_level_for_all_loggers: False
+  skip_train_metrics_log: False
+  tensorboard_dir: '/projects/MENTISLab/unlearning/results/evo2_official/base_emp_h3/pooled_last_layer/tb_logs'
+  tensorboard_log_interval: 1
+  tensorboard_queue_size: 1000
+  throughput_window_size: 20
+  timing_log_level: 0
+  timing_log_option: 'minmax'
+  wandb_entity: ''
+  wandb_exp_name: 'pooled_last_layer'
+  wandb_project: ''
+  wandb_save_dir: ''
+
+[tokenizer]:
+  force_system_message: False
+  hf_tokenizer_kwargs: {}
+  make_vocab_size_divisible_by: 1
+  null_tokenizer_pad_id: -1
+  pad_vocab_size: False
+  rank: 0
+  sp_tokenizer_kwargs: {}
+  tensor_model_parallel_size: 1
+  tiktoken_num_special_tokens: 1000
+  tokenizer_hf_no_include_special_tokens: False
+  tokenizer_hf_no_use_fast: False
+  tokenizer_model: '/projects/MENTISLab/bionemo-framework/recipes/evo2_megatron/tokenizers/nucleotide_fast_tokenizer_512'
+  tokenizer_sentencepiece_ignore_extra_whitespaces: True
+  tokenizer_sentencepiece_legacy: False
+  tokenizer_type: 'HuggingFaceTokenizer'
+  trust_remote_code: False
+  vocab_extra_ids: 0
+
+[rng]:
+  data_parallel_random_init: False
+  inference_rng_tracker: False
+  seed: 1234
+  te_rng_tracker: False
+
+======================================================================
+> initializing torch distributed ...
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+[Gloo] Rank 0 is connected to 0 peer ranks. Expected number of connected peer ranks is : 0
+> initialized tensor model parallel with size 1
+> initialized pipeline model parallel with size 1
+> setting random seeds to 1234 ...
+> compiling dataset index builder ...
+>>> done with dataset index builder. Compilation time: 0.006 seconds
+time to initialize megatron (seconds): 21.625
+[after megatron is initialized] datetime: 2026-10-20 17:20:35 
+[after tokenizer is built] datetime: 2026-10-20 17:20:35 
+Registered PEFT pre-wrap hook
+ > padded vocab (size: 512) with 0 dummy tokens (new size: 512)
+Applying PEFT pre-wrap hook...
+Loading base model weights from: /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge
+Broadcasting TrainState from rank 0 to all 1 ranks
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge/iter_0000001.
+Broadcasting config from rank 0 to all 1 ranks
+sharded_state_dict metadata loaded from the checkpoint: {'singleton_local_shards': False, 'distrib_optim_sharding_type': 'dp_reshardable', 'chained_optim_avoid_prefix': True}
+ Auto-detected checkpoint format as 'torch_dist' from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge/iter_0000001.
+ loading distributed checkpoint from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge at iteration 1
+Warning: Exception during strict loading: Error(s) in loading state_dict for HyenaForSequenceClassification:
+	Missing key(s) in state_dict: "decoder.layers.0.mixer.dense_projection._extra_state", "decoder.layers.0.mixer.dense._extra_state", "decoder.layers.0.mlp.linear_fc1._extra_state", "decoder.layers.0.mlp.linear_fc2._extra_state", "decoder.layers.1.mixer.dense_projection._extra_state", "decoder.layers.1.mixer.dense._extra_state", "decoder.layers.1.mlp.linear_fc1._extra_state", "decoder.layers.1.mlp.linear_fc2._extra_state", "decoder.layers.2.mixer.dense_projection._extra_state", "decoder.layers.2.mixer.dense._extra_state", "decoder.layers.2.mlp.linear_fc1._extra_state", "decoder.layers.2.mlp.linear_fc2._extra_state", "decoder.layers.3.self_attention.linear_proj._extra_state", "decoder.layers.3.self_attention.linear_qkv._extra_state", "decoder.layers.3.mlp.linear_fc1._extra_state", "decoder.layers.3.mlp.linear_fc2._extra_state", "decoder.layers.4.mixer.dense_projection._extra_state", "decoder.layers.4.mixer.dense._extra_state", "decoder.layers.4.mlp.linear_fc1._extra_state", "decoder.layers.4.mlp.linear_fc2._extra_state", "decoder.layers.5.mixer.dense_projection._extra_state", "decoder.layers.5.mixer.dense._extra_state", "decoder.layers.5.mlp.linear_fc1._extra_state", "decoder.layers.5.mlp.linear_fc2._extra_state", "decoder.layers.6.mixer.dense_projection._extra_state", "decoder.layers.6.mixer.dense._extra_state", "decoder.layers.6.mlp.linear_fc1._extra_state", "decoder.layers.6.mlp.linear_fc2._extra_state", "decoder.layers.7.mixer.dense_projection._extra_state", "decoder.layers.7.mixer.dense._extra_state", "decoder.layers.7.mlp.linear_fc1._extra_state", "decoder.layers.7.mlp.linear_fc2._extra_state", "decoder.layers.8.mixer.dense_projection._extra_state", "decoder.layers.8.mixer.dense._extra_state", "decoder.layers.8.mlp.linear_fc1._extra_state", "decoder.layers.8.mlp.linear_fc2._extra_state", "decoder.layers.9.mixer.dense_projection._extra_state", "decoder.layers.9.mixer.dense._extra_state", "decoder.layers.9.mlp.linear_fc1._extra_state", "decoder.layers.9.mlp.linear_fc2._extra_state", "decoder.layers.10.self_attention.linear_proj._extra_state", "decoder.layers.10.self_attention.linear_qkv._extra_state", "decoder.layers.10.mlp.linear_fc1._extra_state", "decoder.layers.10.mlp.linear_fc2._extra_state", "decoder.layers.11.mixer.dense_projection._extra_state", "decoder.layers.11.mixer.dense._extra_state", "decoder.layers.11.mlp.linear_fc1._extra_state", "decoder.layers.11.mlp.linear_fc2._extra_state", "decoder.layers.12.mixer.dense_projection._extra_state", "decoder.layers.12.mixer.dense._extra_state", "decoder.layers.12.mlp.linear_fc1._extra_state", "decoder.layers.12.mlp.linear_fc2._extra_state", "decoder.layers.13.mixer.dense_projection._extra_state", "decoder.layers.13.mixer.dense._extra_state", "decoder.layers.13.mlp.linear_fc1._extra_state", "decoder.layers.13.mlp.linear_fc2._extra_state", "decoder.layers.14.mixer.dense_projection._extra_state", "decoder.layers.14.mixer.dense._extra_state", "decoder.layers.14.mlp.linear_fc1._extra_state", "decoder.layers.14.mlp.linear_fc2._extra_state", "decoder.layers.15.mixer.dense_projection._extra_state", "decoder.layers.15.mixer.dense._extra_state", "decoder.layers.15.mlp.linear_fc1._extra_state", "decoder.layers.15.mlp.linear_fc2._extra_state", "decoder.layers.16.mixer.dense_projection._extra_state", "decoder.layers.16.mixer.dense._extra_state", "decoder.layers.16.mlp.linear_fc1._extra_state", "decoder.layers.16.mlp.linear_fc2._extra_state", "decoder.layers.17.self_attention.linear_proj._extra_state", "decoder.layers.17.self_attention.linear_qkv._extra_state", "decoder.layers.17.mlp.linear_fc1._extra_state", "decoder.layers.17.mlp.linear_fc2._extra_state", "decoder.layers.18.mixer.dense_projection._extra_state", "decoder.layers.18.mixer.dense._extra_state", "decoder.layers.18.mlp.linear_fc1._extra_state", "decoder.layers.18.mlp.linear_fc2._extra_state", "decoder.layers.19.mixer.dense_projection._extra_state", "decoder.layers.19.mixer.dense._extra_state", "decoder.layers.19.mlp.linear_fc1._extra_state", "decoder.layers.19.mlp.linear_fc2._extra_state", "decoder.layers.20.mixer.dense_projection._extra_state", "decoder.layers.20.mixer.dense._extra_state", "decoder.layers.20.mlp.linear_fc1._extra_state", "decoder.layers.20.mlp.linear_fc2._extra_state", "decoder.layers.21.mixer.dense_projection._extra_state", "decoder.layers.21.mixer.dense._extra_state", "decoder.layers.21.mlp.linear_fc1._extra_state", "decoder.layers.21.mlp.linear_fc2._extra_state", "decoder.layers.22.mixer.dense_projection._extra_state", "decoder.layers.22.mixer.dense._extra_state", "decoder.layers.22.mlp.linear_fc1._extra_state", "decoder.layers.22.mlp.linear_fc2._extra_state", "decoder.layers.23.mixer.dense_projection._extra_state", "decoder.layers.23.mixer.dense._extra_state", "decoder.layers.23.mlp.linear_fc1._extra_state", "decoder.layers.23.mlp.linear_fc2._extra_state", "decoder.layers.24.self_attention.linear_proj._extra_state", "decoder.layers.24.self_attention.linear_qkv._extra_state", "decoder.layers.24.mlp.linear_fc1._extra_state", "decoder.layers.24.mlp.linear_fc2._extra_state", "decoder.final_norm._extra_state", "classification_head.0.weight", "classification_head.0.bias", "classification_head.1.weight", "classification_head.1.bias", "classification_head.4.weight", "classification_head.4.bias". 
+Non-extra-state mismatched keys: ['classification_head.0.weight', 'classification_head.0.bias', 'classification_head.1.weight', 'classification_head.1.bias', 'classification_head.4.weight', 'classification_head.4.bias']
+ checkpoint version 3.0
+  successfully loaded checkpoint from /projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge [ t 0/1, p 0/1 ] at iteration 0
+Applying PEFT transformation...
+PEFT Statistics:
+  Total parameters: 1,111,900,802
+  Trainable parameters: 3,696,002
+  Trainable percentage: 0.33%
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 1111900802
+[after model, optimizer, and learning rate scheduler are built] datetime: 2026-10-20 17:20:49 
+> setting tensorboard ...
+> building train, validation, and test datasets ...
+ > datasets target sizes (minimum size):
+    train:      2400
+    validation: 560
+    test:       80
+[after dataloaders are built] datetime: 2026-10-20 17:20:55 
+done with setup ...
+Setting rerun_state_machine.current_iteration to 0...
+Starting training loop at iteration 0
+Step Time : 1.23s GPU utilization: 481.4MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:07] iteration       10/     300 | consumed samples:           80 | elapsed time per iteration (ms): 1225.4 | learning rate: 5.000000E-04 | global batch size:     8 | ce loss: 9.038960E-01 | accuracy: 5.750000E-01 | loss scale: 1.0 | grad norm: 20.236 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Number of dense and embedding parameters in billions: 0.86
+Total number of parameters in billions: 0.86
+Number of dense and embedding parameters in most loaded shard in billions: 0.8613
+Theoretical memory footprints: weight and optimizer=14785.86 MB
+[Rank 0] (after 10 iterations) memory (GB) | mem-allocated-gigabytes: 2.4225 | mem-active-gigabytes: 2.4225 | mem-inactive-gigabytes: 0.19263 | mem-reserved-gigabytes: 3.7015 | mem-max-allocated-gigabytes: 3.2517 | mem-max-active-gigabytes: 3.2517 | mem-max-inactive-gigabytes: 0.26605 | mem-max-reserved-gigabytes: 3.7015 | mem-alloc-retires: 0 | mem-allocated-count: 295
+Step Time : 0.11s GPU utilization: 5517.3MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:09] iteration       20/     300 | consumed samples:          160 | elapsed time per iteration (ms): 106.9 | learning rate: 1.000000E-03 | global batch size:     8 | ce loss: 1.187423E+00 | accuracy: 6.125000E-01 | loss scale: 1.0 | grad norm: 6.067 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5519.8MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:10] iteration       30/     300 | consumed samples:          240 | elapsed time per iteration (ms): 106.9 | learning rate: 9.967190E-04 | global batch size:     8 | ce loss: 8.560458E-01 | accuracy: 5.875000E-01 | loss scale: 1.0 | grad norm: 13.663 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5489.2MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:11] iteration       40/     300 | consumed samples:          320 | elapsed time per iteration (ms): 107.5 | learning rate: 9.869238E-04 | global batch size:     8 | ce loss: 1.017390E+00 | accuracy: 6.125000E-01 | loss scale: 1.0 | grad norm: 24.772 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5484.3MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:12] iteration       50/     300 | consumed samples:          400 | elapsed time per iteration (ms): 107.6 | learning rate: 9.707573E-04 | global batch size:     8 | ce loss: 8.290925E-01 | accuracy: 5.875000E-01 | loss scale: 1.0 | grad norm: 11.537 | number of skipped iterations:   0 | number of nan iterations:   0 |
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 50 | ce loss value: 1.592523E+00 | ce loss PPL: 4.916136E+00 | accuracy value: 6.000000E-01 | accuracy PPL: 1.822119E+00 | 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Step Time : 0.12s GPU utilization: 4751.0MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:14] iteration       60/     300 | consumed samples:          480 | elapsed time per iteration (ms): 124.2 | learning rate: 9.484552E-04 | global batch size:     8 | ce loss: 1.384408E+00 | accuracy: 4.875000E-01 | loss scale: 1.0 | grad norm: 19.836 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.23s GPU utilization: 2595.5MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:16] iteration       70/     300 | consumed samples:          560 | elapsed time per iteration (ms): 227.3 | learning rate: 9.203427E-04 | global batch size:     8 | ce loss: 9.018274E-01 | accuracy: 5.875000E-01 | loss scale: 1.0 | grad norm: 6.501 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5445.5MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:17] iteration       80/     300 | consumed samples:          640 | elapsed time per iteration (ms): 108.3 | learning rate: 8.868299E-04 | global batch size:     8 | ce loss: 7.896772E-01 | accuracy: 6.125000E-01 | loss scale: 1.0 | grad norm: 7.992 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5438.8MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:18] iteration       90/     300 | consumed samples:          720 | elapsed time per iteration (ms): 108.5 | learning rate: 8.484052E-04 | global batch size:     8 | ce loss: 8.996768E-01 | accuracy: 6.500000E-01 | loss scale: 1.0 | grad norm: 16.080 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5430.9MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:20] iteration      100/     300 | consumed samples:          800 | elapsed time per iteration (ms): 108.6 | learning rate: 8.056291E-04 | global batch size:     8 | ce loss: 6.485274E-01 | accuracy: 6.625000E-01 | loss scale: 1.0 | grad norm: 2.674 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 100 | ce loss value: 6.935348E-01 | ce loss PPL: 2.000775E+00 | accuracy value: 6.750000E-01 | accuracy PPL: 1.964033E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Step Time : 0.11s GPU utilization: 5433.8MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:22] iteration      110/     300 | consumed samples:          880 | elapsed time per iteration (ms): 108.6 | learning rate: 7.591255E-04 | global batch size:     8 | ce loss: 6.148937E-01 | accuracy: 7.000000E-01 | loss scale: 1.0 | grad norm: 6.704 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5455.9MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:23] iteration      120/     300 | consumed samples:          960 | elapsed time per iteration (ms): 108.1 | learning rate: 7.095722E-04 | global batch size:     8 | ce loss: 6.418039E-01 | accuracy: 6.875000E-01 | loss scale: 1.0 | grad norm: 3.816 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5465.0MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:24] iteration      130/     300 | consumed samples:         1040 | elapsed time per iteration (ms): 107.9 | learning rate: 6.576920E-04 | global batch size:     8 | ce loss: 5.941295E-01 | accuracy: 6.875000E-01 | loss scale: 1.0 | grad norm: 2.868 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5457.8MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:25] iteration      140/     300 | consumed samples:         1120 | elapsed time per iteration (ms): 108.1 | learning rate: 6.042415E-04 | global batch size:     8 | ce loss: 6.237325E-01 | accuracy: 7.250000E-01 | loss scale: 1.0 | grad norm: 4.812 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5507.8MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:26] iteration      150/     300 | consumed samples:         1200 | elapsed time per iteration (ms): 107.1 | learning rate: 5.500000E-04 | global batch size:     8 | ce loss: 6.460524E-01 | accuracy: 7.000000E-01 | loss scale: 1.0 | grad norm: 6.779 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 150 | ce loss value: 6.096108E-01 | ce loss PPL: 1.839715E+00 | accuracy value: 6.875000E-01 | accuracy PPL: 1.988737E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Step Time : 0.11s GPU utilization: 5483.3MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:28] iteration      160/     300 | consumed samples:         1280 | elapsed time per iteration (ms): 107.6 | learning rate: 4.957585E-04 | global batch size:     8 | ce loss: 6.536004E-01 | accuracy: 5.625000E-01 | loss scale: 1.0 | grad norm: 3.387 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.28s GPU utilization: 2139.3MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:31] iteration      170/     300 | consumed samples:         1360 | elapsed time per iteration (ms): 275.7 | learning rate: 4.423079E-04 | global batch size:     8 | ce loss: 6.368565E-01 | accuracy: 6.750000E-01 | loss scale: 1.0 | grad norm: 4.712 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.33s GPU utilization: 1793.2MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:34] iteration      180/     300 | consumed samples:         1440 | elapsed time per iteration (ms): 328.9 | learning rate: 3.904278E-04 | global batch size:     8 | ce loss: 7.263555E-01 | accuracy: 6.250000E-01 | loss scale: 1.0 | grad norm: 2.974 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.48s GPU utilization: 1217.8MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:39] iteration      190/     300 | consumed samples:         1520 | elapsed time per iteration (ms): 484.4 | learning rate: 3.408746E-04 | global batch size:     8 | ce loss: 6.174005E-01 | accuracy: 6.875000E-01 | loss scale: 1.0 | grad norm: 7.651 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.22s GPU utilization: 2737.5MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:41] iteration      200/     300 | consumed samples:         1600 | elapsed time per iteration (ms): 215.5 | learning rate: 2.943709E-04 | global batch size:     8 | ce loss: 7.434227E-01 | accuracy: 6.500000E-01 | loss scale: 1.0 | grad norm: 6.466 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 200 | ce loss value: 6.819611E-01 | ce loss PPL: 1.977752E+00 | accuracy value: 5.875000E-01 | accuracy PPL: 1.799484E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Step Time : 0.22s GPU utilization: 2735.2MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:44] iteration      210/     300 | consumed samples:         1680 | elapsed time per iteration (ms): 215.7 | learning rate: 2.515948E-04 | global batch size:     8 | ce loss: 5.892100E-01 | accuracy: 6.500000E-01 | loss scale: 1.0 | grad norm: 7.427 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5478.0MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:45] iteration      220/     300 | consumed samples:         1760 | elapsed time per iteration (ms): 107.7 | learning rate: 2.131702E-04 | global batch size:     8 | ce loss: 5.033932E-01 | accuracy: 7.875000E-01 | loss scale: 1.0 | grad norm: 3.225 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.17s GPU utilization: 3502.3MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:47] iteration      230/     300 | consumed samples:         1840 | elapsed time per iteration (ms): 168.4 | learning rate: 1.796573E-04 | global batch size:     8 | ce loss: 5.517241E-01 | accuracy: 7.625000E-01 | loss scale: 1.0 | grad norm: 3.319 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.13s GPU utilization: 4473.3MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:48] iteration      240/     300 | consumed samples:         1920 | elapsed time per iteration (ms): 131.9 | learning rate: 1.515448E-04 | global batch size:     8 | ce loss: 6.970422E-01 | accuracy: 6.250000E-01 | loss scale: 1.0 | grad norm: 8.346 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.11s GPU utilization: 5476.2MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:49] iteration      250/     300 | consumed samples:         2000 | elapsed time per iteration (ms): 107.7 | learning rate: 1.292427E-04 | global batch size:     8 | ce loss: 6.406940E-01 | accuracy: 6.500000E-01 | loss scale: 1.0 | grad norm: 5.802 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 250 | ce loss value: 5.704090E-01 | ce loss PPL: 1.768990E+00 | accuracy value: 6.875000E-01 | accuracy PPL: 1.988737E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Step Time : 0.11s GPU utilization: 5510.4MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:51] iteration      260/     300 | consumed samples:         2080 | elapsed time per iteration (ms): 107.0 | learning rate: 1.130762E-04 | global batch size:     8 | ce loss: 5.443543E-01 | accuracy: 7.750000E-01 | loss scale: 1.0 | grad norm: 7.686 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.22s GPU utilization: 2664.7MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:53] iteration      270/     300 | consumed samples:         2160 | elapsed time per iteration (ms): 221.4 | learning rate: 1.032810E-04 | global batch size:     8 | ce loss: 5.253711E-01 | accuracy: 7.375000E-01 | loss scale: 1.0 | grad norm: 5.825 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.51s GPU utilization: 1163.0MODEL_TFLOP/s/GPU
+ [2026-10-20 17:21:58] iteration      280/     300 | consumed samples:         2240 | elapsed time per iteration (ms): 507.2 | learning rate: 1.000000E-04 | global batch size:     8 | ce loss: 5.650668E-01 | accuracy: 6.875000E-01 | loss scale: 1.0 | grad norm: 3.262 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.12s GPU utilization: 4922.5MODEL_TFLOP/s/GPU
+ [2026-10-20 17:22:00] iteration      290/     300 | consumed samples:         2320 | elapsed time per iteration (ms): 119.8 | learning rate: 1.000000E-04 | global batch size:     8 | ce loss: 6.142893E-01 | accuracy: 7.000000E-01 | loss scale: 1.0 | grad norm: 7.957 | number of skipped iterations:   0 | number of nan iterations:   0 |
+Step Time : 0.19s GPU utilization: 3058.7MODEL_TFLOP/s/GPU
+ [2026-10-20 17:22:02] iteration      300/     300 | consumed samples:         2400 | elapsed time per iteration (ms): 192.9 | learning rate: 1.000000E-04 | global batch size:     8 | ce loss: 5.641178E-01 | accuracy: 7.375000E-01 | loss scale: 1.0 | grad norm: 5.446 | number of skipped iterations:   0 | number of nan iterations:   0 |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 300 | ce loss value: 6.823978E-01 | ce loss PPL: 1.978616E+00 | accuracy value: 6.000000E-01 | accuracy PPL: 1.822119E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+saving checkpoint at iteration     300 to /projects/MENTISLab/unlearning/results/evo2_official/base_emp_h3/pooled_last_layer/checkpoints in torch_dist format
+Storing distributed optimizer sharded state of type dp_reshardable
+  successfully saved checkpoint from iteration     300 to /projects/MENTISLab/unlearning/results/evo2_official/base_emp_h3/pooled_last_layer/checkpoints [ t 1/1, p 1/1 ]
+Deleting CUDA graphs
+[after training is done] datetime: 2026-10-20 17:24:58 
+Evaluating on 80 samples
+Evaluating iter 1/10
+Evaluating iter 2/10
+Evaluating iter 3/10
+Evaluating iter 4/10
+Evaluating iter 5/10
+Evaluating iter 6/10
+Evaluating iter 7/10
+Evaluating iter 8/10
+Evaluating iter 9/10
+Evaluating iter 10/10
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 300 on validation set | ce loss value: 5.266281E-01 | ce loss PPL: 1.693213E+00 | accuracy value: 8.000000E-01 | accuracy PPL: 2.225541E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Evaluating on 80 samples
+Evaluating iter 1/10
+Evaluating iter 2/10
+Evaluating iter 3/10
+Evaluating iter 4/10
+Evaluating iter 5/10
+Evaluating iter 6/10
+Evaluating iter 7/10
+Evaluating iter 8/10
+Evaluating iter 9/10
+Evaluating iter 10/10
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ validation loss at iteration 300 on test set | ce loss value: 5.534416E-01 | ce loss PPL: 1.739229E+00 | accuracy value: 6.875000E-01 | accuracy PPL: 1.988737E+00 | 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
