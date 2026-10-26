@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "rows_verified": 14965,
+  "selected_step": 250,
+  "checks": {
+    "train": {
+      "examples": 11971,
+      "independent_metrics": {
+        "auroc": 0.8372158277501002,
+        "accuracy": 0.7153955392197812,
+        "balanced_accuracy": 0.7106703371448764,
+        "class1_prevalence": 0.5137415420599782,
+        "majority_baseline": 0.5137415420599782,
+        "causal_nll": 1.2567221982213075,
+        "lm_perplexity": 3.5138847724050524
+      },
+      "max_probability_reconstruction_delta": 0.0
+    },
+    "dev": {
+      "examples": 1497,
+      "independent_metrics": {
+        "auroc": 0.8206563465281126,
+        "accuracy": 0.7027388109552438,
+        "balanced_accuracy": 0.6998098451979218,
+        "class1_prevalence": 0.5090180360721442,
+        "majority_baseline": 0.5090180360721442,
+        "causal_nll": 1.2545651072580895,
+        "lm_perplexity": 3.506313172567415
+      },
+      "max_probability_reconstruction_delta": 0.0
+    },
+    "test": {
+      "examples": 1497,
+      "independent_metrics": {
+        "auroc": 0.8318166401885008,
+        "accuracy": 0.7027388109552438,
+        "balanced_accuracy": 0.7011790221524071,
+        "class1_prevalence": 0.5043420173680695,
+        "majority_baseline": 0.5043420173680695,
+        "causal_nll": 1.2557225272213952,
+        "lm_perplexity": 3.5103737989026302
+      },
+      "max_probability_reconstruction_delta": 0.0
+    }
+  },
+  "limitations": "Reconstruction uses saved frozen features; independent aggregate accounting does not regenerate GPU features"
+}
