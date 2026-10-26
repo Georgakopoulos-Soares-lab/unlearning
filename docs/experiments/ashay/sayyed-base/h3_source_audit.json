@@ -1,0 +1,38 @@
+{
+  "revision": "b90fc1853d1d3be79922a98a2649c91c89716637",
+  "files": [
+    {
+      "path": "evo2_classifier_official/evo2_classifier_official/base_model_performances/headonly_emp_h3_last_layer.sbatch",
+      "sha256": "1a557abe25cd8d2f23d489d03059e4ba5f1b5b0ab9fa0778e01698627af92eef",
+      "git_blob": "d8b811d9e24adb5332ad2ffa201b43eaf606a558"
+    },
+    {
+      "path": "evo2_classifier_official/evo2_classifier_official/base_model_performances/headonly_base_emp_h3_11266798.out",
+      "sha256": "215791ef828f1608fea18b8fbd0d5cbdcc13e63ff666eb56f17085f56d6e48a8",
+      "git_blob": "d0c934020c57adc888c20c5dfce21556dd56cd3c"
+    },
+    {
+      "path": "evo2_classifier_official/evo2_classifier_official/evaluations/evo2_classifier.py",
+      "sha256": "9fea43f6fbbd9d10c21101f01e11d300d897b6adedba932d85663350c23167ab",
+      "git_blob": "1ebcbfc9cf5dad3ce3a112f61d1a599f025dd45b"
+    }
+  ],
+  "h3_effective_settings": {
+    "train_steps": 300,
+    "global_batch_size": 8,
+    "micro_batch_size": 2,
+    "learning_rate": 0.001,
+    "min_learning_rate": 0.0001,
+    "warmup_steps": 20,
+    "sequence_token_limit": 1000,
+    "representation": "mean-pooled final hidden states",
+    "head": [
+      "LayerNorm(1920)",
+      "Linear(1920,1920)",
+      "GELU",
+      "Dropout(0.1)",
+      "Linear(1920,2)"
+    ],
+    "launcher_discrepancy": "missing continuation after tokenizer-path prevents subsequent arguments reaching torchrun"
+  }
+}

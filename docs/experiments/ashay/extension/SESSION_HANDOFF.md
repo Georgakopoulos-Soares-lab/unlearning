@@ -17,3 +17,13 @@ Recovery VERIFIED: /workspace/meeting-artifacts/evo2-extension-20261021T0942-sup
 Fresh repository search found historical Evo1 base-vs-GD aggregate comparisons and BioNeMo Evo2 source/evaluation launchers. See GRADDIFF_REPOSITORY_FINDINGS.md. These do not supply a corrected accessible Evo2-1B checkpoint; comparison remains blocked on immutable iteration/parent/tokenizer/loader/conversion/exposure handoff. Do not substitute Evo1 metrics or a 7B adapter script for the requested model comparison. No GPU work was run during follow-up; ledger unchanged579.830295.
 
 Follow-up search/backup evidence: /workspace/meeting-artifacts/evo2-graddiff-handoff-20261021T124350Z. Its separate recovery supplement and round-trip receipt will be adjacent to that directory; preserve the original198MB extension archive. Exact next command: `cat docs/experiments/ashay/extension/GRADDIFF_REPOSITORY_FINDINGS.md`. No experiment rerun is needed.
+
+## Sayyed baseline preparation — 2026-10-26
+
+Current user authorized new work on experiments-ashay-sayyed-base-v1 at /workspace/wt-sayyed-base, superseding the historical path restriction for this task. Created that worktree from 5bb08f5 after fetching origin and confirming no existing Sayyed branch/worktree. Original benign checkout was clean and remains unchanged. No experiment/GPU compute job was found; existing genomic-sayyed tmux session was preserved. No experiment was launched.
+
+Execution prompt retrieval is blocked: prompts repository actual default branch main resolves to d158a3666c72a212c6c1cbc5b9c264f3c6dd3687; requested default file evo2_next_phase_prompt.txt does not exist there. No alternate prompt was substituted. Ask user for the exact Sayyed execution prompt path/ref or its text.
+
+This restored workspace lacks historical artifact directories/ledger, /workspace/venvs/evo2-pilot, /tmp/evo2-extension-env and /workspace/data/gue/GUE.zip. Historical reports describe completed/verified runs but local measurements and environment are not currently restored. Do not create a fresh zeroed ledger or rerun baselines; recover authentic artifacts and ledger before GPU work. No historical results were modified.
+
+Sayyed checkpoint: v6.txt@9e91b18c89757edce695e9b5b88ce1987509506e read fully and recorded, SHA256 db42aa34b28f4d18913155136e8c6e499147a6fbd483aa4272a4e3593740a99d. Prior prompt-path blocker resolved. See ../sayyed-base/STATUS.md for current independent H3 preparation and precise recovery blocker. Private HF revision access returned401; interactive hf auth login required. No GPU stage/ledger modification. H3 train/dev qualified; test unopened. HVUE human-host-tropism classification excluded. Original historical checkout/results remain untouched.

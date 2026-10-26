@@ -1,0 +1,122 @@
+The Sayyed execution prompt is being supplied directly in this message.
+There is no GitHub path/ref for it. Do not substitute v5.txt or continue
+looking for evo2_next_phase_prompt.txt.
+
+Record this message verbatim as:
+ /workspace/runbooks/sayyed_base_execution_20261026.txt
+
+Record its source as "explicit user chat instruction", with its SHA256.
+Do not invent a Git commit for it.
+
+CURRENT TASK AND AUTHORIZATION
+
+Continue on:
+- Branch: experiments-ashay-sayyed-base-v1
+- Worktree: /workspace/wt-sayyed-base
+
+The October 21 AGENTS.md describes the earlier benign-only phase.
+For this new task, I explicitly authorize:
+- Recovery on this new Pod.
+- An isolated replacement experiment environment.
+- Evaluation of frozen evo2_1b_base on supplied EMP/H3 and HVUE data.
+- Training classification heads while keeping the backbone frozen.
+- Evaluation of designated held-out splits after freezing the protocol.
+
+Preserve the previous results and branches. No backbone fine-tuning,
+LoRA, unlearning training, automatic Pod shutdown or hardware changes.
+
+FIRST: RECOVER WHAT IS MISSING
+
+Private Hugging Face dataset:
+ashay-sriv/undo-evo2-pilot-backup-20261020
+
+Latest previously recorded backup revision:
+5f2d1a15f74b84cb7f268c14e0507f91d7800c19
+
+The six-task extension supplement was originally verified at:
+54832ea5536cb6ce519fb280b36dcd4cd9422cd6
+
+Download into a fresh directory under /workspace/recovery.
+Verify archive SHA256 sidecars and packaged checksums before use.
+Inspect archive members and extract safely into a separate recovery
+directory. Do not overwrite existing work.
+
+If HF authentication is unavailable, give me the interactive login
+command and continue independent public-data preparation. Never ask
+me to paste a token into chat.
+
+Recover historical manifests, environment locks, model identities,
+receipts and the GPU ledger.
+
+The pinned previous SESSION_HANDOFF.md records:
+- GPU budget used: 579.830295 seconds
+- Total limit: 7200 seconds
+- active_since: null
+
+Prefer the recovered original ledger. If it was not packaged, reconstruct
+a ledger from verified final records, explicitly label it reconstructed,
+and preserve that consumed budget. Reconcile any newer usage evidence;
+do not reset usage to zero or overwrite an existing ledger.
+
+The old /tmp/evo2-extension-env was ephemeral. Rebuild an isolated,
+compatible environment using ENVIRONMENT_RECOVERY.md and recovered
+locks/wheel hashes. Validate Python/CUDA compatibility. Do not globally
+upgrade an existing ML environment.
+
+SECOND: DOWNLOAD THE CURRENT DATA
+
+GUE_benchmark.zip:
+https://drive.google.com/file/d/1CYNhcY1HXbI85SLMFtwM_TRxB0ya1rYf/view
+
+HVUE_v2.zip:
+https://drive.google.com/file/d/1jmq5sWWxXSNme2OKILJTXLpA3k3PdMLC/view
+
+Use /workspace/data/sayyed-20261026.
+Reuse verified downloads, otherwise download and record checksums.
+Qualify the manifests, IDs, labels, splits and sequence handling.
+
+The missing old GUE.zip is not automatically a blocker for evaluating
+these newly supplied files. Keep their dataset identities separate.
+
+THIRD: EXECUTE THE BASELINE
+
+Inspect the bionemo branch and reconstruct the effective evaluation
+configuration from code, logs and checkpoint metadata.
+
+Important recorded discrepancies:
+- H3 head training actually used 300 steps, global batch 8 and LR 1e-3.
+  Later launcher arguments were lost because of a missing continuation.
+- HVUE base evaluation used head iteration 750.
+- HVUE MaxEnt evaluation used head iteration 500, with the post-model
+  backbone resolved to iteration 2000.
+- The classification head is an MLP, not a linear probe.
+
+Do not treat those historical scores as a clean matched comparison.
+
+Write protocol.json before full evaluation. Establish model/tokenizer
+identity, dataset variant, sequence handling, representation, head
+architecture, head-training schedule and selection procedure.
+
+Use the compatible BioNeMo route when available. If compatibility cannot
+be established, proceed with an explicitly labeled independent frozen
+Evo2 reference using the validated pipeline.
+
+Run a training-split smoke test, measure cost, then complete H3 followed
+by the qualified primary HVUE variant within the remaining GPU budget.
+Use training/dev data for fitting and selection; never tune on test.
+
+Report AUROC, accuracy, balanced accuracy, class prevalence, majority
+baseline, HVUE average precision, and genuine causal NLL/perplexity.
+Classification cross-entropy printed as "PPL" is not language-model
+perplexity.
+
+Save ID-aligned predictions, losses, manifests, fitted heads and exact
+execution identities. Independently recompute the aggregate metrics.
+
+Deliver a concise results report, push suitable code and aggregate
+reports only to the new branch, and create a private backup with
+fresh-download checksum verification.
+
+Proceed through recovery and execution. Do not stop at another plan.
+If a component remains unavailable, state the precise blocker and
+complete the independent work that can proceed.

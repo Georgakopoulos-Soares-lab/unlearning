@@ -1,0 +1,62 @@
+{
+  "archive_sha256": "de48cbc46c30ebf04b261d5711d737d3805e43bca6c79adf73b8143bd53b190e",
+  "task": "GUE_benchmark/emp_H3",
+  "test_contents_opened": false,
+  "splits": {
+    "train": {
+      "rows": 11971,
+      "labels": {
+        "1": 6150,
+        "0": 5821
+      },
+      "lengths": {
+        "500": 11969,
+        "290": 1,
+        "310": 1
+      },
+      "alphabet": {
+        "C": 1148860,
+        "T": 1839295,
+        "G": 1152998,
+        "A": 1843947
+      },
+      "source_sha256": "058aa6e00a7c9fd1867ad7e4d61b60d3f77dba0df36f7891787798310e8dc4c0",
+      "csv_jsonl_match": true,
+      "exact_duplicate_groups": 0,
+      "exact_rc_duplicate_groups": 0,
+      "majority_baseline": 0.5137415420599782
+    },
+    "dev": {
+      "rows": 1497,
+      "labels": {
+        "0": 735,
+        "1": 762
+      },
+      "lengths": {
+        "500": 1497
+      },
+      "alphabet": {
+        "A": 232570,
+        "C": 142559,
+        "T": 229610,
+        "G": 143761
+      },
+      "source_sha256": "5e04989c01c5021020b0fa71851451ff5a6862bee4a67e550bef9f9772999d4b",
+      "csv_jsonl_match": true,
+      "exact_duplicate_groups": 0,
+      "exact_rc_duplicate_groups": 0,
+      "majority_baseline": 0.5090180360721442
+    }
+  },
+  "train_dev_overlap": {
+    "exact_groups": 0,
+    "exact_rc_groups": 0
+  },
+  "limitations": [
+    "No supplied biological group IDs or class-name map",
+    "Deterministic IDs identify archive member/row, not biological independence",
+    "Archive hash records downloaded bytes; no publisher checksum supplied",
+    "Held-out contents remain unopened pending frozen protocol"
+  ],
+  "manifest_sha256": "03544ffdbc96d2b5fa9bd6f81c68e0b3ba9e1d23b00714b710846989687e98de"
+}
