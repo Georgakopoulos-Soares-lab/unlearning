@@ -1,0 +1,73 @@
+{
+  "protocol_id": "sayyed-h3-independent-frozen-v1",
+  "frozen_utc": "2026-10-26T23:46:54.682147+00:00",
+  "task": "GUE_benchmark/emp_H3",
+  "scope": "Benign yeast histone H3; no viral capability classification",
+  "route": "Independent original Evo2 reference; BioNeMo conversion/loader equivalence not established",
+  "model_repo": "arcinstitute/evo2_1b_base",
+  "model_revision": "2279e1df422c991037470302360edd40d0d2ea1e",
+  "checkpoint_sha256": "8ffba7d0e6445a8f2c92d9ff1c4e772c7f73ca9179f5e0c699b8b0ca1b966f64",
+  "backend_revision": "53f195997257c56c00e5ef8d33a54f5baad143a6",
+  "archive_sha256": "de48cbc46c30ebf04b261d5711d737d3805e43bca6c79adf73b8143bd53b190e",
+  "splits": "All supplied H3 train/dev/test; fit train only; select checkpoint by dev AUROC; evaluate test once after selection; no test tuning",
+  "sequence_handling": "Uppercase remove whitespace, reject outside ACGTN; maximum 1000 nt prefix, no BOS/EOS; no length padding included in pooling or targets; no RC augmentation",
+  "tokenizer": "Verified ASCII CharLevelTokenizer(512); pad1/eos0; right pad multiple16",
+  "representation": "Mean pooled post-final RMSNorm output (norm), width1920; independent of BioNeMo final representation equivalence",
+  "extraction": {
+    "batch_size": 1,
+    "precision": "unchanged upstream FP8 input projections",
+    "smoke": "32 training rows; finite features/losses, estimate full cost with 25% buffer plus 300s reserve",
+    "identity": "Per-row IDs, labels, splits, full sequence hashes embedded in chunk arrays"
+  },
+  "head": {
+    "architecture": [
+      "LayerNorm(1920)",
+      "Linear(1920,1920)",
+      "GELU",
+      "Dropout(.1)",
+      "Linear(1920,2)"
+    ],
+    "initialization": "Linear Normal std1/sqrt(in_features), zero bias",
+    "backbone_frozen": true,
+    "seed": 42,
+    "steps": 300,
+    "batch_size": 8,
+    "sampling": "Seed42 independent uniform minibatches with replacement",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "min_learning_rate": 0.0001,
+    "warmup_steps": 20,
+    "lr_schedule": "Linear warmup then cosine to minimum at300; no weight decay",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "checkpoint_steps": [
+      50,
+      100,
+      150,
+      200,
+      250,
+      300
+    ],
+    "selection": "Maximum dev AUROC, exact ties earliest step",
+    "classification_threshold": 0.5,
+    "device": "CPU float32 cached frozen features; four threads"
+  },
+  "metrics": [
+    "AUROC class1 positive",
+    "accuracy",
+    "balanced accuracy",
+    "class1 prevalence",
+    "majority baseline",
+    "classification cross entropy explicitly not LM perplexity",
+    "causal corpus NLL=sum next-token losses/sum valid targets positions1..L-1",
+    "LM perplexity=exp(causal corpus NLL)"
+  ],
+  "limitations": [
+    "Numeric labels have no supplied biological class mapping",
+    "No biological group IDs or homology independence established",
+    "H3 dev may overlap historical experiments; no new independence claim",
+    "Historical BioNeMo scores are not a clean matched comparison"
+  ]
+}
