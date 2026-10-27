@@ -1,0 +1,85 @@
+{
+  "checked_utc": "2026-10-27T02:56:13.261197+00:00",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "authentication": "Configured replacement authentication only; exposed token not reused",
+  "remote_access_checks": {
+    "utc": "2026-10-27T02:53:45.715154+00:00",
+    "configured_auth_only": true,
+    "exposed_token_reused": false,
+    "attempts": [
+      {
+        "item": "destination",
+        "revision": "main",
+        "access": false,
+        "error": "RepositoryNotFoundError",
+        "http_status": 401
+      },
+      {
+        "item": "original_H3_parent",
+        "revision": "117c01edd97d595c68bd04e9d28f3c4c4e9852f1",
+        "access": false,
+        "error": "RepositoryNotFoundError",
+        "http_status": 401
+      }
+    ]
+  },
+  "original_parent": {
+    "archive": "sayyed-base-20261026-v1-recovery.tar.gz",
+    "sha256": "af4dd220e8b9968ca4acde3850fc66e9c57755b78885309ea77f1375fc44edb8",
+    "immutable_hf_revision": "117c01edd97d595c68bd04e9d28f3c4c4e9852f1",
+    "historical_roundtrip_verified": true,
+    "historical_verified_utc": "2026-10-26T23:59:03.943256+00:00",
+    "historical_payload_files_verified": 173,
+    "current_remote_access": "UNVERIFIED_AUTH_HTTP_401; not evidence of deletion",
+    "local_path": "/workspace/meeting-artifacts/sayyed-base-20261026-v1-recovery.tar.gz"
+  },
+  "followup_supplement": {
+    "archive": "sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
+    "sha256": "19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5",
+    "immutable_hf_revision": null,
+    "uploaded": false,
+    "fresh_download_verified": false,
+    "local_payload_files_verified": 95,
+    "remote_status": "PENDING_REPLACEMENT_AUTHENTICATION",
+    "local_path": "/workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
+    "self_contained": false,
+    "requires_archive": "sayyed-base-20261026-v1-recovery.tar.gz",
+    "requires_hf_revision": "117c01edd97d595c68bd04e9d28f3c4c4e9852f1"
+  },
+  "restoration_order": [
+    "Obtain the repository source on experiments-ashay-sayyed-base-v1; preserve the source receipts and delta-bundle prerequisites. Never overwrite existing runs.",
+    "Download the original H3 archive and its sidecar from immutable HF revision 117c01edd97d595c68bd04e9d28f3c4c4e9852f1. Confirm parent SHA256 and safe member names; extract into fresh staging and verify its payload checksums. Restore original H3 cached features/head to the documented canonical path only in a fresh workspace.",
+    "After a replacement credential permits supplement upload and fresh-download verification, record that NEW immutable revision; until then there is no remote supplement revision to download. The complete local supplement and sidecar may be transferred manually, but no off-Pod transfer is currently verified.",
+    "Verify supplement SHA256, inspect members, extract into separate fresh staging and verify CHECKSUMS.sha256. It depends on the original cache; it is not independently self-contained.",
+    "Preserve the shared GPU ledger at868.753177/7200 seconds, inactive, and reconcile any later usage. Restore an isolated compatible environment from recorded locks only if needed. Do not rerun completed inference, fitting or bootstrap calculations to restore results."
+  ],
+  "local_archive_checks": [
+    {
+      "path": "/workspace/meeting-artifacts/sayyed-base-20261026-v1-recovery.tar.gz",
+      "exists": true,
+      "sha256": "af4dd220e8b9968ca4acde3850fc66e9c57755b78885309ea77f1375fc44edb8",
+      "bytes": 228120187,
+      "unchanged": true
+    },
+    {
+      "path": "/workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
+      "exists": true,
+      "sha256": "19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5",
+      "bytes": 43850097,
+      "unchanged": true
+    }
+  ],
+  "stopping_assessment": {
+    "experiment_jobs": [],
+    "gpu_compute_processes": [],
+    "ledger": {
+      "used_seconds": 868.753177,
+      "limit_seconds": 7200,
+      "active_since": null
+    },
+    "jobs_support_idle": true,
+    "backup_supports_stopping": false,
+    "reason": "New follow-up artifact supplement has no verified off-Pod copy and current parent remote access could not be rechecked; job idleness alone does not establish recovery readiness.",
+    "pod_stopped": false
+  }
+}

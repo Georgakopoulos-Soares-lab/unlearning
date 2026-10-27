@@ -1,0 +1,68 @@
+Close out the completed H3 follow-up and prepare the smallest useful handoff
+for a new matched benign H3 comparison. Do not launch another experiment sweep.
+
+Continue in /workspace/wt-sayyed-base on experiments-ashay-sayyed-base-v1.
+Inspect current state and preserve all completed results.
+
+1. Finish recovery
+Use replacement HF authentication configured privately on the Pod.
+Never reuse the token exposed in chat.
+
+Upload the existing verified follow-up supplement and sidecar to the existing
+private backup repository. Resolve the immutable revision, fresh-download,
+and verify archive and payload checksums.
+
+The supplement depends on the earlier original H3 backup for cached features.
+Record both immutable revisions and the restoration order. Verify that the
+referenced parent archive remains accessible. Do not claim that the supplement
+alone is a self-contained recovery package.
+
+If authentication remains unavailable, complete everything else and report
+backup as pending.
+
+2. Prepare a minimal H3 comparison handoff
+Create one concise document with two clearly separated routes:
+
+A. Exact historical reproduction:
+List the original checkpoint/head/runtime/selection evidence needed.
+
+B. New matched comparison:
+Specify the minimum inputs needed to evaluate pretrained and post-unlearning
+models under one shared benign H3 protocol. Historical sampler state and the
+old trained classifier are not mandatory for this route.
+
+For route B, define the required input contract:
+- Immutable model and parent identities.
+- Compatible tokenizer/config/loading route.
+- Exact dataset splits, sequence hashes and numeric labels.
+- Representation, pooling, precision and sequence handling.
+- Fixed-base-head versus separately refitted-head evaluation policy.
+- Identical head selection rules and evaluation metrics.
+- Training-exposure checks and known biological-group limitations.
+
+Do not invent missing fields or mark compatibility established.
+
+3. Prepare the team-facing evidence
+Create a short results summary containing:
+- Original MLP, Evo2 logistic, composition and 4-mer scores.
+- Paired uncertainty and exploratory qualifications.
+- The original MLP's limited training exposure.
+- Why these results do not yet measure unlearning.
+- The smallest concrete request needed from Sayyed.
+
+Link existing figures and reports rather than generating redundant documents.
+Do not send any message.
+
+4. Finish delivery
+Push only the relevant handoff and backup receipts to the current Sayyed branch.
+Preserve existing archives and results.
+
+Report:
+- Final Git commit.
+- HF revision and recovery dependencies.
+- Exact remaining input request.
+- Current experiment processes, GPU activity and ledger.
+- Whether backup and job checks support stopping the Pod.
+
+Do not rerun completed inference, fit more models, alter hardware, or stop
+the Pod automatically.
