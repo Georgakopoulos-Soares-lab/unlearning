@@ -1,0 +1,97 @@
+Complete the pending recovery transfer. Do not run more experiments or
+repeat completed scientific audits.
+
+Worktree: /workspace/wt-sayyed-base
+Branch: experiments-ashay-sayyed-base-v1
+Last reported closeout commit: d5068b1
+
+Read the current recovery_chain.json and latest handoff. Preserve all
+existing files, results, archives and unrelated work.
+
+1. Diagnose authentication safely
+
+I have attempted replacement authentication in a separate Pod terminal.
+
+Inspect the installed HF CLI/library version and credential configuration.
+Check whether HF_TOKEN or HUGGING_FACE_HUB_TOKEN is present, reporting only
+presence, never values.
+
+For this transfer, use a fresh subprocess with those two environment
+variables excluded before importing huggingface_hub. Use the privately
+configured replacement login. Check that the login and transfer use the
+same HF_HOME/HF_TOKEN_PATH configuration without exposing credential contents.
+
+Verify authenticated identity, then access to the exact existing dataset:
+ashay-sriv/undo-evo2-pilot-backup-20261020
+
+Verify that it is private.
+
+Do not reuse the exposed token, create another repository, change visibility,
+or blindly retry identical failed requests.
+
+If access fails, distinguish:
+- invalid or unavailable authentication;
+- authenticated account without repository access;
+- insufficient upload permission;
+- another verified configuration problem.
+
+Report only sanitized diagnostics. Do not infer that HTTP 401 means the
+repository was deleted.
+
+2. Complete the existing backup
+
+Original parent archive:
+/workspace/meeting-artifacts/sayyed-base-20261026-v1-recovery.tar.gz
+
+Recorded parent revision:
+117c01edd97d595c68bd04e9d28f3c4c4e9852f1
+
+Expected parent SHA256:
+af4dd220e8b9968ca4acde3850fc66e9c57755b78885309ea77f1375fc44edb8
+
+Pending supplement:
+/workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz
+
+Expected supplement SHA256:
+19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5
+
+Verify local archive identities and sidecars. Inspect the destination before
+uploading: if identical files already exist, verify them rather than creating
+duplicate uploads. Never overwrite different remote bytes silently.
+
+Upload the supplement and its sidecar. Resolve the resulting immutable
+revision, force-download into fresh staging, and verify the archive SHA256
+and all 95 payload checksums.
+
+Also confirm the original parent archive is retrievable at its recorded
+revision and matches its expected hash. The supplement depends on the parent
+for cached features; do not describe it as self-contained.
+
+Preserve the originals. Record both revisions and restoration order.
+
+3. Finish source delivery
+
+Update the backup receipt and recovery_chain.json with actual evidence.
+Preserve the distinction between historical verification and checks
+performed during this transfer.
+
+Commit and push only the necessary receipt/handoff updates to the Sayyed
+branch. Verify local and remote HEAD and required tracked files, including
+whether anything remains unfinished after the earlier nonzero Git command.
+Do not force-push.
+
+4. Report readiness
+
+Check experiment processes, GPU activity and the current ledger.
+Do not restart experiments or automatically stop the Pod.
+
+Finish with:
+- Authentication/repository access result.
+- Parent and supplement immutable revisions and verification results.
+- Final Git commit and worktree status.
+- Active jobs and ledger state.
+- Whether verified off-Pod recovery is complete.
+
+If authentication still blocks transfer, stop retrying and give the exact
+archive/sidecar download list for a manual off-Pod backup, plus checksum
+verification commands. Preserve all local work.

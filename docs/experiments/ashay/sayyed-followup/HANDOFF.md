@@ -31,3 +31,5 @@ SHA256: 19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5. Its si
 Measured successful scientific stages used 90.941 CPU process-seconds, excluding imports, orchestration, failed verifier preflights and setup; additional GPU time was0. No experiment remains active.
 
 Current recovery chain VERIFIED: original archive at 117c01edd97d595c68bd04e9d28f3c4c4e9852f1 first, then follow-up supplement at dfae7d29f0550430d1c64605501f403445059ff6. Both sidecars and all268 payload checksums passed a fresh remote download. Archives remain unchanged. Jobs/GPU are idle, ledger unchanged; these H3 backup/job checks support stopping the Pod, but no shutdown was performed.
+
+V9 checked the private-login path in a fresh subprocess with both token environment variables excluded. No saved login exists at the effective path or standard alternate home. No token was reused and no remote transfer was retried. Both local archive/sidecar identities were checked unchanged. The successful prior fresh-download verification remains authoritative; see V9_TRANSFER_STATUS.md and v9_transfer_receipt.json for the distinction, exact manual fallback list and source-state checks.

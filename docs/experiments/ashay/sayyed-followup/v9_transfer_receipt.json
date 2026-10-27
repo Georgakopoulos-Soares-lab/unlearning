@@ -1,0 +1,110 @@
+{
+  "prompt": {
+    "repo": "https://github.com/ashay-sriv-06/test-prompts-push",
+    "ref": "main",
+    "commit": "d8895cb738164d42cbd8376a68fdccc0b4892077",
+    "path": "v9.txt",
+    "sha256": "cef7591e64d0435ff2cf08d09ba8e54c6f30e91e439c067f9218ac644a77c245",
+    "retrieved_utc": "2026-10-27T04:46:20.580392+00:00"
+  },
+  "checked_utc": "2026-10-27T04:54:43.997681+00:00",
+  "current_saved_login_diagnostics": {
+    "utc": "2026-10-27T04:52:04.771166+00:00",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "env_token_variables_excluded": [
+      "HF_TOKEN",
+      "HUGGING_FACE_HUB_TOKEN"
+    ],
+    "child_environment_presence": {
+      "HF_TOKEN": false,
+      "HUGGING_FACE_HUB_TOKEN": false
+    },
+    "no_exposed_token_reused": true,
+    "no_credential_persisted": true,
+    "upload_performed": false,
+    "library_version": "2.3.0",
+    "cli_executable": "/workspace/venvs/sayyed-base-tools/bin/hf",
+    "cli_version": [
+      "version=2.3.0"
+    ],
+    "configuration": {
+      "HF_HOME": "/workspace/.cache/huggingface/",
+      "HF_TOKEN_PATH": "/workspace/.cache/huggingface/token",
+      "credential_file_exists": false,
+      "CLI_and_library_same_interpreter_environment": true,
+      "inherited_HF_HOME": "/workspace/.cache/huggingface/",
+      "inherited_HF_TOKEN_PATH": null,
+      "note": "Current CLI and transfer inherit identical path configuration. Historical separate-terminal environment cannot be independently attested."
+    },
+    "configured_credential_present": false,
+    "success": false,
+    "failure_category": "authentication_unavailable_no_saved_login_at_effective_configuration"
+  },
+  "parent_environment_presence": {
+    "HF_TOKEN": false,
+    "HUGGING_FACE_HUB_TOKEN": false
+  },
+  "configuration_file_presence": [
+    {
+      "path": "/workspace/.cache/huggingface/token",
+      "exists": false
+    },
+    {
+      "path": "/root/.cache/huggingface/token",
+      "exists": false
+    },
+    {
+      "path": "/workspace/.cache/huggingface/stored_tokens",
+      "exists": false
+    },
+    {
+      "path": "/root/.cache/huggingface/stored_tokens",
+      "exists": false
+    }
+  ],
+  "local_archive_checks": [
+    {
+      "archive": "/workspace/meeting-artifacts/sayyed-base-20261026-v1-recovery.tar.gz",
+      "sidecar": "/workspace/meeting-artifacts/sayyed-base-20261026-v1-recovery.tar.gz.sha256",
+      "sha256": "af4dd220e8b9968ca4acde3850fc66e9c57755b78885309ea77f1375fc44edb8",
+      "archive_and_sidecar_verified": true
+    },
+    {
+      "archive": "/workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
+      "sidecar": "/workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz.sha256",
+      "sha256": "19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5",
+      "archive_and_sidecar_verified": true
+    }
+  ],
+  "git_before": {
+    "local_head": "38af9b0daaf1f593fc860abc5545914dac605121",
+    "remote_head": "38af9b0daaf1f593fc860abc5545914dac605121",
+    "required_tracked_files_verified": [
+      "docs/experiments/ashay/sayyed-followup/backup_receipt.json",
+      "docs/experiments/ashay/sayyed-followup/recovery_chain.json",
+      "docs/experiments/ashay/sayyed-followup/HANDOFF.md",
+      "docs/experiments/ashay/sayyed-followup/MATCHED_H3_HANDOFF.md",
+      "docs/experiments/ashay/sayyed-followup/TEAM_SUMMARY.md"
+    ],
+    "unfinished_git_state": {
+      "index.lock": false,
+      "MERGE_HEAD": false,
+      "CHERRY_PICK_HEAD": false,
+      "REBASE_HEAD": false,
+      "rebase-merge": false,
+      "rebase-apply": false
+    },
+    "worktree_status": ""
+  },
+  "no_new_transfer_or_upload": true,
+  "scientific_audits_repeated": false,
+  "historical_successful_transfer": {
+    "verified_utc": "2026-10-27T04:16:48.673052+00:00",
+    "original_hf_revision": "117c01edd97d595c68bd04e9d28f3c4c4e9852f1",
+    "supplement_hf_revision": "dfae7d29f0550430d1c64605501f403445059ff6",
+    "parent_payload_checksums": 173,
+    "supplement_payload_checksums": 95,
+    "proof": "backup_receipt.json preserves actual prior fresh-download verification; v9 did not repeat that transfer"
+  },
+  "conclusion": "Recovery was already completed and verified before v9. Current saved-login auth is unavailable, so no new remote check or duplicate upload was attempted. Prior verification is not invalidated by missing current credentials."
+}

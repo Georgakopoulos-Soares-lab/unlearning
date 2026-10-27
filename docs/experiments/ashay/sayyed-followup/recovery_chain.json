@@ -9,10 +9,11 @@
     "historical_roundtrip_verified": true,
     "historical_verified_utc": "2026-10-26T23:59:03.943256+00:00",
     "historical_payload_files_verified": 173,
-    "current_remote_access": "VERIFIED by fresh download at immutable original revision",
+    "current_remote_access": "Not attempted during v9: no saved login; earlier fresh-download verification retained",
     "local_path": "/workspace/meeting-artifacts/sayyed-base-20261026-v1-recovery.tar.gz",
     "current_fresh_download": "/workspace/recovery/h3-final-roundtrip-20261027T041632Z/sayyed-base-20261026-v1-recovery",
-    "current_payload_files_verified": 173
+    "current_payload_files_verified": 173,
+    "last_successful_remote_access": "VERIFIED by fresh download at immutable original revision"
   },
   "followup_supplement": {
     "archive": "sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
@@ -63,7 +64,8 @@
     "jobs_support_idle": true,
     "backup_supports_stopping": true,
     "reason": "Original and dependent supplement were fresh-downloaded at immutable revisions, both sidecars and all268 payload checksums passed; completed H3 jobs and GPU are idle. This assessment covers these completed H3 artifacts; no automatic shutdown was performed.",
-    "pod_stopped": false
+    "pod_stopped": false,
+    "latest_saved_login_check": "Unavailable; prior verified H3 off-Pod backups remain the recovery evidence"
   },
   "historical_blocked_access_checks": {
     "utc": "2026-10-27T02:53:45.715154+00:00",
@@ -123,5 +125,18 @@
     "credential_persisted": false,
     "verified_utc": "2026-10-27T04:16:48.673052+00:00"
   },
-  "archive_internal_pending_wording": "Historical immutable snapshot; superseded by this verified external backup receipt. Archives were not rebuilt."
+  "archive_internal_pending_wording": "Historical immutable snapshot; superseded by this verified external backup receipt. Archives were not rebuilt.",
+  "v9_saved_login_recheck": {
+    "utc": "2026-10-27T04:54:43.997681+00:00",
+    "success": false,
+    "failure_category": "authentication_unavailable_no_saved_login_at_effective_configuration",
+    "remote_check_performed": false,
+    "upload_performed": false,
+    "HF_HOME": "/workspace/.cache/huggingface/",
+    "HF_TOKEN_PATH": "/workspace/.cache/huggingface/token",
+    "credential_file_exists": false,
+    "both_token_env_variables_absent_in_fresh_subprocess": true,
+    "reference": "v9_transfer_receipt.json",
+    "preserves_prior_successful_verification": true
+  }
 }
