@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-10-27T00:16:19.865647+00:00",
+  "seeds": [
+    17,
+    1234
+  ],
+  "original_seed": 42,
+  "policy": "Report every seed; no best-seed selection and no replacement of original primary result",
+  "architecture_and_schedule": "Exactly the original LayerNorm1920/Linear1920/GELU/Dropout.1/Linear2; AdamW betas.9/.95 eps1e-8 no weight decay;300 steps batch8 uniform replacement;20-step warmup to.001 then cosine to.0001; CPU float32 four threads",
+  "rng": "Set torch.manual_seed(seed), numpy seed, and separate torch.Generator seed to each declared seed",
+  "selection": "Dev AUROC at50/100/150/200/250/300; exact ties earliest; threshold.5",
+  "protocol_sha256": "b60f76975107b1d6d11771dbc17efb977303b5ab8ae86d73681fa541d81d5752",
+  "source_sha256": "9f6648e5e49ca5cd0724278168f0b5eb318aaf78efc6a93b0f8a96ea435fc222",
+  "qualification": "Optional post-hoc exploratory sensitivity; three seeds do not estimate all training uncertainty"
+}
