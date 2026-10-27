@@ -1,7 +1,9 @@
-# H3 follow-up complete
+# H3 closeout and recovery complete
 
-Scientific work is complete: original training exposure reconstructed; all three supplemental logistic readouts fit with train-only CV; 2,000 paired whole-sequence resamples per evaluation split; exactly two predeclared MLP seeds; immutable BioNeMo source comparison matrix; independent saved-artifact verification and five focused tests. See FOLLOWUP_RESULTS.md, TRAINING_EXPOSURE.md, COMPARABILITY.md and HANDOFF.md.
+Scientific results remain unchanged. Both the original H3 archive and dependent follow-up supplement have been fresh-downloaded from the private HF backup and verified against sidecars and all payload checksums. See backup_receipt.json and recovery_chain.json.
 
-Run: /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z. Original run remains read-only. No additional GPU time; shared ledger 868.753177 / 7200 seconds, inactive. Cross-backend parity is blocked by missing converted base/head/tokenizer/runtime and provenance. Remote backup is pending securely configured replacement HF authentication; the exposed token was not reused. Local archive and final source/documentation receipts are recorded separately.
+Restore the original at 117c01edd97d595c68bd04e9d28f3c4c4e9852f1 first, then the follow-up at dfae7d29f0550430d1c64605501f403445059ff6. The supplement alone is not self-contained. Any pending-backup wording inside immutable archives is historical and superseded by the current receipt. No archive was rebuilt.
 
-Local recovery supplement: /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz. All95 payload checksums verified. Remote backup remains PENDING_REPLACEMENT_AUTHENTICATION, with no new HF revision.
+The new matched comparison still awaits the inputs in MATCHED_H3_HANDOFF.md; historical reproduction and new matched evaluation remain separate routes. TEAM_SUMMARY.md is prepared but was not sent.
+
+No experiment or GPU job is active. The ledger remains 868.753177 / 7200 seconds, inactive. Backup and job checks support stopping this Pod for the completed H3 work; it has not been stopped automatically.

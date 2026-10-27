@@ -1,13 +1,37 @@
 {
-  "archive": "/workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "private": true,
+  "revision": "dfae7d29f0550430d1c64605501f403445059ff6",
+  "archive": "sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
   "sha256": "19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5",
   "bytes": 43850097,
+  "uploaded": true,
+  "fresh_remote_download_verified": true,
   "payload_files_verified": 95,
-  "local_archive_verification": "Passed; archive members and payload hashes inspected without executing contents",
-  "remote_status": "PENDING_REPLACEMENT_AUTHENTICATION",
-  "hf_revision": null,
-  "uploaded": false,
-  "fresh_remote_download_verified": false,
-  "reason": "Configured replacement authentication returned401; previously exposed chat credential was not reused",
-  "utc": "2026-10-27T00:28:41.636270+00:00"
+  "remote_status": "VERIFIED",
+  "parent": {
+    "archive": "sayyed-base-20261026-v1-recovery.tar.gz",
+    "revision": "117c01edd97d595c68bd04e9d28f3c4c4e9852f1",
+    "sha256": "af4dd220e8b9968ca4acde3850fc66e9c57755b78885309ea77f1375fc44edb8",
+    "bytes": 228120187,
+    "fresh_download": "/workspace/recovery/h3-final-roundtrip-20261027T041632Z/sayyed-base-20261026-v1-recovery",
+    "sidecar_verified": true,
+    "payload_files_verified": 173
+  },
+  "supplement": {
+    "archive": "sayyed-h3-followup-20261027T001154Z-supplement.tar.gz",
+    "revision": "dfae7d29f0550430d1c64605501f403445059ff6",
+    "sha256": "19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5",
+    "bytes": 43850097,
+    "fresh_download": "/workspace/recovery/h3-final-roundtrip-20261027T041632Z/sayyed-h3-followup-20261027T001154Z-supplement",
+    "sidecar_verified": true,
+    "payload_files_verified": 95
+  },
+  "restoration_order": [
+    "Original H3 archive at 117c01edd97d595c68bd04e9d28f3c4c4e9852f1",
+    "Follow-up supplement at dfae7d29f0550430d1c64605501f403445059ff6"
+  ],
+  "self_contained": false,
+  "credential_persisted": false,
+  "verified_utc": "2026-10-27T04:16:48.673052+00:00"
 }

@@ -22,10 +22,12 @@ OPENBLAS_NUM_THREADS=4 OMP_NUM_THREADS=4 /workspace/venvs/sayyed-base-runtime/bi
 
 Create the new output directory first. Reusing completed follow-up artifacts requires only the verifier, not refitting or bootstrap regeneration. Optional seed stage must first freeze its amendment; never expand beyond 17/1234.
 
-No additional GPU work was performed; shared ledger 868.753177 / 7200 seconds remains inactive. No experiment job remains after delivery. Private remote backup remains pending replacement securely configured HF credentials. Do not reuse the exposed chat token. The complete local archive, checksum and source/delivery receipts are recorded separately; preserve the original verified backup.
+No additional GPU work was performed; shared ledger 868.753177 / 7200 seconds remains inactive. No experiment job remains after delivery. Private remote backup is now VERIFIED; see backup_receipt.json and recovery_chain.json. The previous token was not reused. The complete local archive, checksum and source/delivery receipts are recorded separately; preserve the original verified backup.
 
 Local supplement: /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz
 
-SHA256: 19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5. Its sidecar is /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz.sha256. All95 payload files passed local archive verification. This is not an uploaded/fresh-downloaded remote backup. The supplement requires the preserved original H3 backup for cached Evo2 features.
+SHA256: 19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5. Its sidecar is /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz.sha256. All95 payload files passed local archive verification. This archive has now been uploaded and verified by fresh remote download; the earlier local-only status is superseded by the current external receipt. The supplement requires the preserved original H3 backup for cached Evo2 features.
 
 Measured successful scientific stages used 90.941 CPU process-seconds, excluding imports, orchestration, failed verifier preflights and setup; additional GPU time was0. No experiment remains active.
+
+Current recovery chain VERIFIED: original archive at 117c01edd97d595c68bd04e9d28f3c4c4e9852f1 first, then follow-up supplement at dfae7d29f0550430d1c64605501f403445059ff6. Both sidecars and all268 payload checksums passed a fresh remote download. Archives remain unchanged. Jobs/GPU are idle, ledger unchanged; these H3 backup/job checks support stopping the Pod, but no shutdown was performed.
