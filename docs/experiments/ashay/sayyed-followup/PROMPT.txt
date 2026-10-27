@@ -1,0 +1,439 @@
+Continue this research project autonomously for approximately 45–60 minutes.
+Complete substantial, scientifically useful work, not just planning or
+repeated verification of already verified files.
+
+Work through the priorities below. If an item is blocked, record the exact
+dependency and continue with independent work. Do not keep stopping to ask
+routine implementation questions.
+
+Finish earlier if the useful authorized work is complete. Do not manufacture
+work to fill an hour. Near the end, finish the current bounded operation,
+save recoverable state, and deliver a clear handoff rather than launching
+another lengthy stage.
+
+============================================================
+PROJECT, CURRENT STATE, AND AUTHORIZATION
+============================================================
+
+Research repository:
+https://github.com/Georgakopoulos-Soares-lab/unlearning
+
+Current working branch:
+experiments-ashay-sayyed-base-v1
+
+Current worktree:
+/workspace/wt-sayyed-base
+
+Last known delivery commit:
+0687fc6112414a87ee178919825cf6e4f6f1f999
+
+Completed original H3 run:
+/workspace/meeting-artifacts/sayyed-base-20261026-v1
+
+Recorded runtime:
+/workspace/venvs/sayyed-base-runtime/bin/python
+
+Last known cumulative GPU usage:
+868.753177 / 7200 seconds, inactive.
+Inspect current records and preserve any legitimate later usage.
+
+Last known original H3 test results:
+- Examples: 1497
+- AUROC: 0.8318166401885008
+- Accuracy: 0.7027388109552438
+- Balanced accuracy: 0.7011790221524071
+- Causal NLL: 1.2557225272213952
+- LM perplexity: 3.5103737989026302
+- Selected MLP checkpoint: step 250
+
+These are an independent original-backend frozen Evo2-1B reference.
+BioNeMo equivalence has not been established.
+
+The objective is to make this benign H3 evaluation scientifically stronger
+and practically usable for the team's eventual comparison.
+
+Authorized:
+- Read-only investigation of relevant repository branches and artifacts.
+- Benign H3 analysis, CPU classifier fitting and statistical evaluation.
+- Small, justified benign compatibility checks within the existing GPU budget.
+- New code, reports and recovery artifacts on the current Sayyed branch.
+- Branch-only push and private HF backup using securely configured credentials.
+
+Excluded:
+- Backbone fine-tuning, LoRA or new unlearning training.
+- Viral human-host-tropism predictor training, optimization or evaluation.
+- Modifying previous experiment outputs or unrelated branches.
+- Hardware changes, new paid services or automatic Pod shutdown.
+
+This is an explicit user-chat instruction. Save a verbatim prompt receipt
+and its SHA256. Do not search for a nonexistent prompt filename, invent a
+prompt-repository ref, or substitute another instruction file.
+
+============================================================
+1. INSPECT ONCE, THEN WORK
+Approximate allocation: first 5 minutes
+============================================================
+
+Inspect:
+- Current branch, HEAD, remote state and uncommitted changes.
+- Active jobs, GPU processes and current ledger.
+- Latest STATUS.md and any follow-up work already completed.
+- Original RESULTS.md, protocol.json, selection.json and metrics.json.
+- Execution identities, manifests, feature chunks and saved predictions.
+- Existing backup receipts and securely configured authentication.
+
+Create a short task matrix:
+DONE / READY / BLOCKED / OUT OF SCOPE.
+
+Do not repeat completed work merely because it appears in this prompt.
+Reuse existing verified outputs when their identities and protocols match.
+
+Create one distinct follow-up run directory under:
+/workspace/meeting-artifacts/
+
+Record the actual UTC timestamp, source commit, environment and input hashes.
+Keep the completed original run read-only.
+
+Preserve current local edits. Do not reset, force-checkout, force-push or
+overwrite active work.
+
+Authentication must not block local scientific work. Never print or reuse
+the HF token exposed in chat. If replacement credentials are unavailable,
+complete the local work and mark remote backup pending.
+
+============================================================
+2. ESTABLISH EXACTLY WHAT THE ORIGINAL HEAD LEARNED FROM
+Approximate allocation: 5–10 minutes
+============================================================
+
+Reconcile executed code, protocol and saved artifacts.
+
+The original selected head used 250 steps at batch size 8 with replacement.
+That is 2000 training draws from 11971 available training rows.
+
+Reconstruct the exact original sampler using the recorded implementation,
+random generator and seed, without retraining the model.
+
+For steps 50, 100, 150, 200, 250 and 300, report:
+- Total training draws.
+- Unique training rows seen.
+- Fraction of the training split seen.
+- Class counts among draws and unique rows.
+- Repeated-draw counts.
+
+Distinguish clearly:
+- Rows available for training.
+- Rows used in gradient updates.
+- Rows whose features were extracted.
+- Rows scored for reported metrics.
+
+Check the original head's:
+- Architecture and parameter count.
+- Initialization.
+- Optimizer, schedule and sampling.
+- Checkpoint-selection rule.
+- Dev AUROC and classification loss trajectory.
+- Fixed classification threshold.
+
+Determine whether any statement in the existing report overstates training
+coverage. Write an addendum rather than rewriting historical evidence.
+
+Do not infer that limited exposure necessarily explains the observed score.
+Treat it as a measurable protocol limitation.
+
+============================================================
+3. FREEZE A SMALL SUPPLEMENTAL H3 STUDY
+Approximate allocation: 5 minutes
+============================================================
+
+Before new test scoring, write and hash a supplemental protocol.
+
+The original selected MLP remains the original result. The supplementary
+study adds these three conditions:
+
+A. Logistic regression on cached final-normalized Evo2 features.
+B. Logistic regression on simple sequence-composition features.
+C. Logistic regression on normalized 4-mer features.
+
+Use the supplied H3 train/dev/test splits unchanged.
+
+Inspect and reuse existing control implementations where suitable. Record
+the exact feature definitions, normalization, sequence handling and treatment
+of reverse complements.
+
+Selection:
+- Three-fold stratified training-only cross-validation.
+- Use verified biological grouping if available; otherwise use available
+  exact/RC grouping and state its limitations.
+- Same folds across the three conditions.
+- C candidates: 0.1, 1, 10.
+- Select by mean training-CV AUROC.
+- Resolve exact ties deterministically, preferring stronger regularization.
+- Fit preprocessing inside each training fold.
+- Refit the selected pipeline on all training rows.
+- Fixed classification threshold: 0.5.
+
+Record the solver, convergence criterion, iteration limit and seed before
+test evaluation. Handle convergence using training evidence only.
+
+Check expected CPU memory and runtime before fitting. Avoid oversubscribing
+threads or launching competing heavy processes.
+
+Important:
+The original H3 test result is already known. Therefore this supplement is
+post-hoc exploratory analysis, even though its own selection uses training
+data only. Do not call it a fresh confirmatory test.
+
+Do not search new features, thresholds, hyperparameters or seeds in response
+to test results. Do not choose which conditions to report based on results.
+
+============================================================
+4. EXECUTE THE CPU STUDY AND PRODUCE REAL COMPARISONS
+Approximate allocation: 15–25 minutes
+============================================================
+
+Reuse the existing frozen feature cache after checking its identity and row
+alignment. Do not regenerate GPU features merely to fit another classifier.
+
+Run all three supplemental conditions.
+
+Save:
+- Training-CV fold scores and selection decisions.
+- Fitted preprocessing and classifier parameters.
+- Dev and test probabilities with source IDs.
+- Input, protocol, code and artifact hashes.
+- Convergence diagnostics and elapsed CPU time.
+
+Report for each condition:
+- AUROC.
+- Average precision, with class1 prevalence.
+- Accuracy.
+- Balanced accuracy.
+- Sensitivity and specificity.
+- Confusion matrix.
+- Classification cross-entropy where valid probabilities are available.
+
+Retain class labels as numeric when authoritative biological mappings are
+unavailable. Do not guess their meanings.
+
+Keep causal LM NLL and perplexity separate from classifier cross-entropy.
+The frozen backbone's NLL should not change when only its readout changes.
+
+Do not rank the old block-7 development result and the new final-layer test
+result as model improvement or degradation. Their protocols differ.
+
+Interpret the control comparison narrowly:
+- A difference between readouts shows dependence on the classifier and
+  training procedure.
+- An advantage over sequence controls suggests additional predictive
+  information under this particular protocol.
+- Neither establishes causal biological understanding or unlearning.
+
+============================================================
+5. ADD UNCERTAINTY AND CHECK STABILITY
+Approximate allocation: 10–15 minutes
+============================================================
+
+Use a fixed recorded bootstrap seed and 2000 resamples.
+
+For the original selected head and supplemental classifiers:
+- Estimate 95% intervals for AUROC, accuracy and balanced accuracy.
+- Report paired AUROC differences between the supplemental Evo2 probe and
+  each sequence control using identical resampled evaluation IDs.
+- Optionally include original MLP versus supplemental Evo2 probe as an
+  explicitly exploratory paired comparison.
+
+Use verified biological groups as the resampling unit when available.
+Otherwise state that example-level intervals do not account for homology
+or other unknown biological dependencies.
+
+For original causal NLL:
+- Resample whole sequences.
+- Recompute sum(loss) / sum(valid targets) for each resample.
+- Obtain perplexity by exponentiating the resampled NLL.
+- Never bootstrap individual nucleotide targets as independent observations.
+
+Explain that these intervals condition on the fitted classifiers and split.
+They do not incorporate all training or selection uncertainty.
+Label multiple exploratory comparisons appropriately; do not declare a
+discovery merely because one unadjusted interval excludes zero.
+
+If the main study is complete and time remains:
+Run a bounded original-MLP seed sensitivity check on cached features.
+
+Use exactly two additional predeclared seeds, 17 and 1234, alongside the
+existing seed 42 result. Preserve the original architecture, sampling,
+300-step schedule and dev-based selection rule.
+
+Record this amendment before their test scoring.
+Report every seed, selected step, dev score and test score.
+Do not select the best seed or replace the primary result.
+Do not describe three seeds as a precise estimate of all training uncertainty.
+
+If this optional check would threaten completion of the main study and
+handoff, defer it explicitly. Do not expand into an open-ended seed sweep.
+
+============================================================
+6. RESOLVE WHAT CAN ACTUALLY BE COMPARED WITH SAYYED
+Work alongside CPU jobs where practical
+============================================================
+
+Inspect the current relevant H3 BioNeMo files read-only.
+Resolve and record the immutable branch head.
+
+Previously inspected BioNeMo revision:
+b90fc1853d1d3be79922a98a2649c91c89716637
+
+Build a comparison matrix covering:
+- Dataset identities and exact split IDs.
+- Label encoding.
+- Base-model parent and checkpoint identity.
+- Conversion provenance.
+- Tokenizer and special-token handling.
+- Sequence handling and pooling.
+- Representation location relative to final normalization.
+- Precision and backend.
+- Classifier architecture and initialization.
+- Optimizer, sampling, schedule and training exposure.
+- Checkpoint selection and classification threshold.
+- NLL and metric definitions.
+
+Mark every item:
+VERIFIED MATCH / VERIFIED DIFFERENCE / UNAVAILABLE.
+
+Use effective runtime settings from logs and checkpoint metadata.
+Do not mistake intended shell arguments for executed arguments.
+Preserve the documented H3 shell-continuation discrepancy.
+
+Matching row counts, model names or aggregate scores is insufficient.
+Do not calculate an “unlearning effect” from unmatched historical scores.
+Do not relabel MaxEnt as GradDiff.
+
+Inspect accessible local paths and repository references for missing H3
+checkpoint/config evidence. If absent, list exactly what is missing.
+
+A small training-only compatibility check is allowed only if the required
+backends and checkpoint files are already accessible:
+- Write the protocol and tolerances first.
+- Estimate cost.
+- Use the existing ledger and exclusive GPU lock.
+- Allow at most 10 additional minutes of GPU job wall time, and never exceed
+  the remaining shared budget.
+- Compare outputs relevant to the claimed equivalence.
+- Do not launch a large conversion, multi-hour build or full evaluation.
+
+If equivalence remains unresolved, finish the independent reference study
+and retain that qualification prominently.
+
+============================================================
+7. MAKE THE DELIVERABLE USEFUL TO THE TEAM
+Reserve approximately the final 10 minutes
+============================================================
+
+Produce a concise report with:
+
+TABLE 1:
+Unchanged original H3 results, including uncertainty and training exposure.
+
+TABLE 2:
+Supplemental Evo2 probe and sequence controls on identical evaluation rows,
+including paired differences and exploratory qualifications.
+
+TABLE 3:
+Compatibility with Sayyed's H3 setup: matches, differences and missing items.
+
+If completed, include a small seed-sensitivity table.
+
+Create:
+- FOLLOWUP_RESULTS.md
+- TRAINING_EXPOSURE.md
+- COMPARABILITY.md
+- HANDOFF.md
+- Machine-readable metrics and protocol files.
+- A small number of useful figures with legible labels.
+
+Figures should explain findings, not decorate the report:
+- Performance and uncertainty for the original head and controls.
+- Original training exposure and dev trajectory, if informative.
+- Paired AUROC differences, if available.
+
+The handoff must answer:
+1. What did we actually measure?
+2. What new evidence did this follow-up add?
+3. What conclusions are supported?
+4. What remains uncertain?
+5. Can Sayyed compare these results directly with his current outputs?
+6. If not, exactly which files or protocol choices would resolve that?
+7. What is the single highest-value next experiment?
+
+Provide a reproducible benign-H3 command or entry point with explicit paths
+and validation. Parameterize new code rather than embedding this run's
+paths throughout it. Avoid unrelated historical refactors.
+
+Do not invent paper conclusions, missing results or biological metadata.
+Do not claim the full Slack request or unlearning project is complete.
+
+============================================================
+8. VERIFY, SAVE AND STOP CLEANLY
+============================================================
+
+Use focused validation for new work:
+- Correct ID and label alignment.
+- No training on dev/test.
+- Fold-local preprocessing.
+- Correct bootstrap pairing.
+- Metric reconstruction from saved predictions.
+- Reproducible loading of new fitted pipelines.
+
+Do not repeatedly rerun the old audit or broaden tests without a concrete
+remaining risk. Distinguish artifact verification from independent model
+reproduction.
+
+Commit and push only appropriate source and reports to:
+experiments-ashay-sayyed-base-v1
+
+Do not push raw datasets, feature arrays, weights or credentials to Git.
+Do not push to main, historical experiment branches or the prompts repository.
+Do not force-push.
+
+Create a new recovery supplement without replacing existing backups.
+Include new results, fitted heads, predictions, manifests, protocol,
+environment records and source recovery as appropriate.
+
+Using securely configured replacement HF credentials:
+- Verify the destination is private.
+- Upload the supplement and checksum sidecar.
+- Resolve the immutable uploaded revision.
+- Fresh-download and verify the archive and payload checksums.
+- Save a receipt.
+
+If authentication is blocked, retain the complete local archive, give its
+exact location, and mark remote backup pending. Do not claim success.
+
+Record separately:
+- Experiment execution commit.
+- Packaged source commit.
+- Final documentation commit.
+- Immutable HF revision.
+
+Before finishing, report current jobs and ledger status.
+Do not terminate the Pod or interrupt unrelated processes.
+
+FINAL RESPONSE
+
+Lead with the results, not the list of files edited.
+
+Include:
+- A compact original-versus-supplemental results table.
+- Three specific findings supported by the evidence.
+- Whether the H3 comparison with Sayyed is ready.
+- Any precise remaining blocker.
+- Source commit, report path and backup status.
+- Additional CPU/GPU time used.
+- Whether any job remains active.
+
+Be candid if controls match or outperform Evo2, if differences are uncertain,
+or if compatibility is still unresolved. A well-supported negative or
+inconclusive result is useful.
+
+Proceed now. Execute the work; do not stop after presenting a plan.

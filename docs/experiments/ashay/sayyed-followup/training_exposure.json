@@ -1,0 +1,113 @@
+{
+  "available_train_rows": 11971,
+  "feature_extracted_rows": 14965,
+  "metric_scored_rows": {
+    "train": 11971,
+    "dev": 1497,
+    "test": 1497
+  },
+  "selected_step": 250,
+  "parameter_count": 3696002,
+  "summaries": [
+    {
+      "step": 50,
+      "draws": 400,
+      "unique_rows": 390,
+      "fraction_seen": 0.03257873193551082,
+      "draw_class_counts": {
+        "1": 221,
+        "0": 179
+      },
+      "unique_class_counts": {
+        "1": 215,
+        "0": 175
+      },
+      "repeated_draws": 10,
+      "rows_drawn_more_than_once": 10
+    },
+    {
+      "step": 100,
+      "draws": 800,
+      "unique_rows": 773,
+      "fraction_seen": 0.06457271740038426,
+      "draw_class_counts": {
+        "1": 424,
+        "0": 376
+      },
+      "unique_class_counts": {
+        "1": 407,
+        "0": 366
+      },
+      "repeated_draws": 27,
+      "rows_drawn_more_than_once": 26
+    },
+    {
+      "step": 150,
+      "draws": 1200,
+      "unique_rows": 1141,
+      "fraction_seen": 0.0953136747138919,
+      "draw_class_counts": {
+        "1": 628,
+        "0": 572
+      },
+      "unique_class_counts": {
+        "1": 593,
+        "0": 548
+      },
+      "repeated_draws": 59,
+      "rows_drawn_more_than_once": 55
+    },
+    {
+      "step": 200,
+      "draws": 1600,
+      "unique_rows": 1499,
+      "fraction_seen": 0.125219279926489,
+      "draw_class_counts": {
+        "1": 822,
+        "0": 778
+      },
+      "unique_class_counts": {
+        "1": 768,
+        "0": 731
+      },
+      "repeated_draws": 101,
+      "rows_drawn_more_than_once": 95
+    },
+    {
+      "step": 250,
+      "draws": 2000,
+      "unique_rows": 1842,
+      "fraction_seen": 0.15387185698772032,
+      "draw_class_counts": {
+        "1": 1047,
+        "0": 953
+      },
+      "unique_class_counts": {
+        "1": 959,
+        "0": 883
+      },
+      "repeated_draws": 158,
+      "rows_drawn_more_than_once": 150
+    },
+    {
+      "step": 300,
+      "draws": 2400,
+      "unique_rows": 2181,
+      "fraction_seen": 0.18219029320858743,
+      "draw_class_counts": {
+        "1": 1275,
+        "0": 1125
+      },
+      "unique_class_counts": {
+        "1": 1154,
+        "0": 1027
+      },
+      "repeated_draws": 219,
+      "rows_drawn_more_than_once": 206
+    }
+  ],
+  "source_sha256": "1e2f426bb0f7157ecedf01fc2391baf25493ab626be27973f6dbee9bca70dc84",
+  "torch_version": "2.8.0+cu128",
+  "sampler": "Reconstructed from executed torch.Generator().manual_seed(42), 300 consecutive randint batches8; not an originally logged draw trace",
+  "interpretation": "Available/extracted/scored training rows differ from gradient-exposed rows; limited exposure is a protocol limitation, not an established cause of performance"
+}
