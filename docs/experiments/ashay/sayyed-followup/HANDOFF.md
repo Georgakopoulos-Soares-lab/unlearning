@@ -23,3 +23,9 @@ OPENBLAS_NUM_THREADS=4 OMP_NUM_THREADS=4 /workspace/venvs/sayyed-base-runtime/bi
 Create the new output directory first. Reusing completed follow-up artifacts requires only the verifier, not refitting or bootstrap regeneration. Optional seed stage must first freeze its amendment; never expand beyond 17/1234.
 
 No additional GPU work was performed; shared ledger 868.753177 / 7200 seconds remains inactive. No experiment job remains after delivery. Private remote backup remains pending replacement securely configured HF credentials. Do not reuse the exposed chat token. The complete local archive, checksum and source/delivery receipts are recorded separately; preserve the original verified backup.
+
+Local supplement: /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz
+
+SHA256: 19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5. Its sidecar is /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz.sha256. All95 payload files passed local archive verification. This is not an uploaded/fresh-downloaded remote backup. The supplement requires the preserved original H3 backup for cached Evo2 features.
+
+Measured successful scientific stages used 90.941 CPU process-seconds, excluding imports, orchestration, failed verifier preflights and setup; additional GPU time was0. No experiment remains active.

@@ -67,3 +67,5 @@ Core classifier/bootstrap execution commit: d64c943ab272120a82c67a04a40da1501cfd
 ![Paired test AUROC differences](figures/paired_differences.png)
 
 ![Original exposure and dev trajectory](figures/exposure_trajectory.png)
+
+Measured successful scientific stages used 90.941 CPU process-seconds; additional GPU time was0. This excludes imports, coding/orchestration, failed verifier preflight attempts and setup. The locally verified supplement is /workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z-supplement.tar.gz (95 payload checksums passed). Remote upload/fresh-download verification is pending replacement authentication; see backup_receipt.json.
