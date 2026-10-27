@@ -1,0 +1,213 @@
+{
+  "dev": {
+    "examples": 1497,
+    "seed": 20261027,
+    "resamples": 2000,
+    "valid_resamples": 2000,
+    "missing_class_resamples": 0,
+    "index_sha256": "d03ec6f639d0473dc0de173bb2446989606fc8f7054b37da07e05ae7b93c3123",
+    "models": {
+      "original_mlp": {
+        "auroc": {
+          "estimate": 0.8206563465281125,
+          "low": 0.7991201277051285,
+          "high": 0.8410841008265318
+        },
+        "accuracy": {
+          "estimate": 0.7027388109552438,
+          "low": 0.6793587174348698,
+          "high": 0.7261189044756179
+        },
+        "balanced_accuracy": {
+          "estimate": 0.6998098451979218,
+          "low": 0.6782447035548249,
+          "high": 0.7213452515852529
+        }
+      },
+      "evo2_norm": {
+        "auroc": {
+          "estimate": 0.8360651347153035,
+          "low": 0.815879456306614,
+          "high": 0.8555255518590549
+        },
+        "accuracy": {
+          "estimate": 0.7615230460921844,
+          "low": 0.7407982631930529,
+          "high": 0.7828991315965264
+        },
+        "balanced_accuracy": {
+          "estimate": 0.7619154748513579,
+          "low": 0.7410754141495325,
+          "high": 0.7832223971147865
+        }
+      },
+      "composition": {
+        "auroc": {
+          "estimate": 0.8235015265948898,
+          "low": 0.8017174614807894,
+          "high": 0.8455469612280734
+        },
+        "accuracy": {
+          "estimate": 0.751503006012024,
+          "low": 0.7294422177688711,
+          "high": 0.7728957915831662
+        },
+        "balanced_accuracy": {
+          "estimate": 0.7520247469066367,
+          "low": 0.7297400129351428,
+          "high": 0.7737330677758875
+        }
+      },
+      "4mer": {
+        "auroc": {
+          "estimate": 0.8937364972235614,
+          "low": 0.8774445122695865,
+          "high": 0.9100835382243929
+        },
+        "accuracy": {
+          "estimate": 0.8142952571810287,
+          "low": 0.7942551770207081,
+          "high": 0.8336840347361388
+        },
+        "balanced_accuracy": {
+          "estimate": 0.8144758690877927,
+          "low": 0.7947911245574939,
+          "high": 0.8342920981576425
+        }
+      }
+    },
+    "paired_auroc_differences": {
+      "evo2_norm minus composition": {
+        "estimate": 0.012563608120413683,
+        "low": -0.00498540971998308,
+        "high": 0.030241055709899146
+      },
+      "evo2_norm minus 4mer": {
+        "estimate": -0.057671362508257884,
+        "low": -0.07554533208514244,
+        "high": -0.04093429976028217
+      },
+      "original_mlp minus evo2_norm": {
+        "estimate": -0.015408788187191047,
+        "low": -0.026670224548491345,
+        "high": -0.00455831221499535
+      }
+    },
+    "causal_nll": {
+      "estimate": 1.2545651072580895,
+      "low": 1.2476778956440264,
+      "high": 1.261365274971597
+    },
+    "lm_perplexity": {
+      "estimate": 3.506313172567415,
+      "low": 3.4822474198557556,
+      "high": 3.5302379442322716
+    }
+  },
+  "test": {
+    "examples": 1497,
+    "seed": 20261027,
+    "resamples": 2000,
+    "valid_resamples": 2000,
+    "missing_class_resamples": 0,
+    "index_sha256": "d03ec6f639d0473dc0de173bb2446989606fc8f7054b37da07e05ae7b93c3123",
+    "models": {
+      "original_mlp": {
+        "auroc": {
+          "estimate": 0.8318166401885008,
+          "low": 0.809655535181963,
+          "high": 0.8518662685999496
+        },
+        "accuracy": {
+          "estimate": 0.7027388109552438,
+          "low": 0.678690714762859,
+          "high": 0.7261189044756179
+        },
+        "balanced_accuracy": {
+          "estimate": 0.7011790221524071,
+          "low": 0.6797155671456959,
+          "high": 0.7228601701936386
+        }
+      },
+      "evo2_norm": {
+        "auroc": {
+          "estimate": 0.8469199050356117,
+          "low": 0.8272194772397317,
+          "high": 0.8655267768287129
+        },
+        "accuracy": {
+          "estimate": 0.7621910487641951,
+          "low": 0.7401469605878424,
+          "high": 0.7835671342685371
+        },
+        "balanced_accuracy": {
+          "estimate": 0.7621731136538084,
+          "low": 0.7401459275086701,
+          "high": 0.7832963364669909
+        }
+      },
+      "composition": {
+        "auroc": {
+          "estimate": 0.8053604898163189,
+          "low": 0.7815457672483568,
+          "high": 0.8267133110133743
+        },
+        "accuracy": {
+          "estimate": 0.738810955243821,
+          "low": 0.7167668670674683,
+          "high": 0.7608550434201736
+        },
+        "balanced_accuracy": {
+          "estimate": 0.7388202638296353,
+          "low": 0.7169844027969358,
+          "high": 0.7609724799801081
+        }
+      },
+      "4mer": {
+        "auroc": {
+          "estimate": 0.8954517056103961,
+          "low": 0.8794296501497688,
+          "high": 0.9113721780982156
+        },
+        "accuracy": {
+          "estimate": 0.8209752839011356,
+          "low": 0.8016032064128257,
+          "high": 0.8396793587174348
+        },
+        "balanced_accuracy": {
+          "estimate": 0.8209269738133913,
+          "low": 0.8015796854718862,
+          "high": 0.8396118097447027
+        }
+      }
+    },
+    "paired_auroc_differences": {
+      "evo2_norm minus composition": {
+        "estimate": 0.04155941521929274,
+        "low": 0.024034781298963363,
+        "high": 0.06023312674910259
+      },
+      "evo2_norm minus 4mer": {
+        "estimate": -0.048531800574784456,
+        "low": -0.06569003911498783,
+        "high": -0.03221562166426872
+      },
+      "original_mlp minus evo2_norm": {
+        "estimate": -0.015103264847110887,
+        "low": -0.025773396619770034,
+        "high": -0.004728034119275626
+      }
+    },
+    "causal_nll": {
+      "estimate": 1.2557225272213952,
+      "low": 1.2491631043593983,
+      "high": 1.2629176909966797
+    },
+    "lm_perplexity": {
+      "estimate": 3.5103737989026302,
+      "low": 3.487423126623806,
+      "high": 3.535722598320203
+    }
+  },
+  "qualification": "Post-hoc exploratory, pointwise unadjusted intervals conditional on fitted classifiers and split; exclude training/selection uncertainty and unknown homology dependence"
+}

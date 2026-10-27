@@ -1,0 +1,247 @@
+{
+  "passed": true,
+  "seed_checks": {
+    "17": {
+      "selected_step": 150,
+      "reconstructed_probability_max_abs": {
+        "dev": 0.0,
+        "test": 0.0
+      }
+    },
+    "1234": {
+      "selected_step": 250,
+      "reconstructed_probability_max_abs": {
+        "dev": 0.0,
+        "test": 0.0
+      }
+    }
+  },
+  "method": "Independent weighted-rank AUROC/AP, contingency metrics, explicit cross entropy, affine-sigmoid pipeline reconstruction, all2000 paired resamples per split; no refitting or GPU inference",
+  "fold_training_ids_verified": 11971,
+  "evaluation_rows_verified": 2994,
+  "pipeline_reconstruction": {
+    "evo2_norm": {
+      "dev": {
+        "saved_vs_loaded_max_abs": 0.0,
+        "saved_vs_affine_sigmoid_max_abs": 0.0
+      },
+      "test": {
+        "saved_vs_loaded_max_abs": 0.0,
+        "saved_vs_affine_sigmoid_max_abs": 0.0
+      }
+    },
+    "composition": {
+      "dev": {
+        "saved_vs_loaded_max_abs": 0.0,
+        "saved_vs_affine_sigmoid_max_abs": 0.0
+      },
+      "test": {
+        "saved_vs_loaded_max_abs": 0.0,
+        "saved_vs_affine_sigmoid_max_abs": 0.0
+      }
+    },
+    "4mer": {
+      "dev": {
+        "saved_vs_loaded_max_abs": 0.0,
+        "saved_vs_affine_sigmoid_max_abs": 0.0
+      },
+      "test": {
+        "saved_vs_loaded_max_abs": 0.0,
+        "saved_vs_affine_sigmoid_max_abs": 0.0
+      }
+    }
+  },
+  "splits": {
+    "dev": {
+      "examples": 1497,
+      "metrics": {
+        "original_mlp": {
+          "auroc": 0.8206563465281126,
+          "average_precision": 0.831522824032665,
+          "accuracy": 0.7027388109552438,
+          "balanced_accuracy": 0.6998098451979218,
+          "sensitivity": 0.8622047244094488,
+          "specificity": 0.5374149659863946,
+          "confusion_matrix": [
+            [
+              395,
+              340
+            ],
+            [
+              105,
+              657
+            ]
+          ],
+          "class1_prevalence": 0.5090180360721442,
+          "classification_cross_entropy_abs_delta": 0.0,
+          "classification_cross_entropy_tolerance": 1e-12,
+          "classification_cross_entropy": 0.5695815896466075
+        },
+        "evo2_norm": {
+          "auroc": 0.8360651347153034,
+          "average_precision": 0.8291596042771336,
+          "accuracy": 0.7615230460921844,
+          "balanced_accuracy": 0.7619154748513579,
+          "sensitivity": 0.7401574803149606,
+          "specificity": 0.7836734693877551,
+          "confusion_matrix": [
+            [
+              576,
+              159
+            ],
+            [
+              198,
+              564
+            ]
+          ],
+          "class1_prevalence": 0.5090180360721442,
+          "classification_cross_entropy_abs_delta": 2.7697140692062305e-08,
+          "classification_cross_entropy_tolerance": 1.9073486328125e-06,
+          "classification_cross_entropy": 0.5057884177755766
+        },
+        "composition": {
+          "auroc": 0.82350152659489,
+          "average_precision": 0.7651302214450981,
+          "accuracy": 0.751503006012024,
+          "balanced_accuracy": 0.7520247469066367,
+          "sensitivity": 0.7230971128608924,
+          "specificity": 0.780952380952381,
+          "confusion_matrix": [
+            [
+              574,
+              161
+            ],
+            [
+              211,
+              551
+            ]
+          ],
+          "class1_prevalence": 0.5090180360721442,
+          "classification_cross_entropy_abs_delta": 1.1102230246251565e-16,
+          "classification_cross_entropy_tolerance": 1e-12,
+          "classification_cross_entropy": 0.5321752923396119
+        },
+        "4mer": {
+          "auroc": 0.8937364972235613,
+          "average_precision": 0.889266746319981,
+          "accuracy": 0.8142952571810287,
+          "balanced_accuracy": 0.8144758690877927,
+          "sensitivity": 0.8044619422572179,
+          "specificity": 0.8244897959183674,
+          "confusion_matrix": [
+            [
+              606,
+              129
+            ],
+            [
+              149,
+              613
+            ]
+          ],
+          "class1_prevalence": 0.5090180360721442,
+          "classification_cross_entropy_abs_delta": 0.0,
+          "classification_cross_entropy_tolerance": 1e-12,
+          "classification_cross_entropy": 0.4176660543118564
+        }
+      },
+      "paired_resamples_verified": 2000,
+      "weighted_rank_bootstrap_max_abs_delta": 4.440892098500626e-16
+    },
+    "test": {
+      "examples": 1497,
+      "metrics": {
+        "original_mlp": {
+          "auroc": 0.8318166401885008,
+          "average_precision": 0.8238270582996897,
+          "accuracy": 0.7027388109552438,
+          "balanced_accuracy": 0.7011790221524071,
+          "sensitivity": 0.8807947019867549,
+          "specificity": 0.5215633423180593,
+          "confusion_matrix": [
+            [
+              387,
+              355
+            ],
+            [
+              90,
+              665
+            ]
+          ],
+          "class1_prevalence": 0.5043420173680695,
+          "classification_cross_entropy_abs_delta": 0.0,
+          "classification_cross_entropy_tolerance": 1e-12,
+          "classification_cross_entropy": 0.5699214924476579
+        },
+        "evo2_norm": {
+          "auroc": 0.8469199050356117,
+          "average_precision": 0.8268232182991779,
+          "accuracy": 0.7621910487641951,
+          "balanced_accuracy": 0.7621731136538084,
+          "sensitivity": 0.7642384105960265,
+          "specificity": 0.7601078167115903,
+          "confusion_matrix": [
+            [
+              564,
+              178
+            ],
+            [
+              178,
+              577
+            ]
+          ],
+          "class1_prevalence": 0.5043420173680695,
+          "classification_cross_entropy_abs_delta": 6.928725482246989e-09,
+          "classification_cross_entropy_tolerance": 1.9073486328125e-06,
+          "classification_cross_entropy": 0.49202743865518117
+        },
+        "composition": {
+          "auroc": 0.8053604898163189,
+          "average_precision": 0.7269218991564886,
+          "accuracy": 0.738810955243821,
+          "balanced_accuracy": 0.7388202638296353,
+          "sensitivity": 0.7377483443708609,
+          "specificity": 0.7398921832884097,
+          "confusion_matrix": [
+            [
+              549,
+              193
+            ],
+            [
+              198,
+              557
+            ]
+          ],
+          "class1_prevalence": 0.5043420173680695,
+          "classification_cross_entropy_abs_delta": 0.0,
+          "classification_cross_entropy_tolerance": 1e-12,
+          "classification_cross_entropy": 0.5571735994474966
+        },
+        "4mer": {
+          "auroc": 0.8954517056103961,
+          "average_precision": 0.8806545551992139,
+          "accuracy": 0.8209752839011356,
+          "balanced_accuracy": 0.8209269738133913,
+          "sensitivity": 0.8264900662251655,
+          "specificity": 0.8153638814016172,
+          "confusion_matrix": [
+            [
+              605,
+              137
+            ],
+            [
+              131,
+              624
+            ]
+          ],
+          "class1_prevalence": 0.5043420173680695,
+          "classification_cross_entropy_abs_delta": 0.0,
+          "classification_cross_entropy_tolerance": 1e-12,
+          "classification_cross_entropy": 0.4127263276675625
+        }
+      },
+      "paired_resamples_verified": 2000,
+      "weighted_rank_bootstrap_max_abs_delta": 4.440892098500626e-16
+    }
+  },
+  "original_selected_unique_training_rows": 1842
+}
