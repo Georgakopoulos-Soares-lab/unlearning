@@ -75,6 +75,11 @@ def main():
             np.savez_compressed(run/f'{layer}_{split}_bootstrap.npz',ids=base['ids'][ix],indices=draws,**{k:np.array(v) for k,v in samples.items()})
             for n,values in samples.items():
                 lo,hi=np.quantile(values,[.025,.975]);comparisons.append(dict(task='EMP/H3',split=split,layer=layer,probe=n,metric='auroc',difference=float(roc_auc_score(y[ix],probs[n])-roc_auc_score(y[ix],probs['base_refit'])),ci_low=float(lo),ci_high=float(hi),status='paired conditional exploratory; singleton sequence resampling; no homology groups',rejected=rejected))
+        with (run/'predictions.jsonl').open('w') as f:
+            for r in predictions:f.write(json.dumps(r)+'\n')
+        for filename,records in [('metrics.csv',metrics),('paired_comparisons.csv',comparisons)]:
+            with (run/filename).open('w',newline='') as f:
+                w=csv.DictWriter(f,fieldnames=list(records[0]),lineterminator='\n');w.writeheader();w.writerows(records)
         write(run/(layer+'_complete.json'),dict(wall_seconds=time.monotonic()-started))
     with (run/'predictions.jsonl').open('w') as f:
         for r in predictions:f.write(json.dumps(r)+'\n')

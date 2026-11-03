@@ -1,14 +1,14 @@
 {
-  "stage": "both_smokes_passed_full_H3_authorized",
+  "stage": "base_H3_complete_maxent_H3_extracting",
   "started_utc": "2026-11-03T12:23:26Z",
   "deadline_utc": "2026-11-03T14:23:26Z",
   "prompt_commit": "7d1318dded7e1e98563a123fcd170daa86b94b12",
   "prompt_sha256": "e157f1aeeb699fdc69c11ecbc8d82c50a8b64556d6ad29a2c14f40d464908af2",
   "starting_commit": "c2109848d323ceb170d14d2ae8137864de7fb302",
-  "gpu_seconds_this_run": 19.193715999999995,
+  "gpu_seconds_this_run": 191.0001749999999,
   "historical_gpu_seconds": 868.753177,
   "gpu_limit_seconds": 7200,
-  "gpu_remaining_seconds": 6312.053107,
+  "gpu_remaining_seconds": 6140.246648,
   "completed": [
     "parent173 and supplement95 payload verification",
     "historical benign prediction metric reconstruction",
@@ -17,18 +17,26 @@
     "base eight-row GPU smoke passed"
   ],
   "new_maxent_examples": 0,
-  "active_pids": [],
+  "active_pids": [
+    9740
+  ],
   "artifacts": [
     "/workspace/recovery/maxent-benign",
-    "/workspace/maxent-assets"
+    "/workspace/maxent-assets",
+    "/workspace/meeting-artifacts/maxent-benign-v16/base-H3"
   ],
   "blocker": "connector large-file limit bypassed through normal shared-file download; runtime under construction",
-  "updated_utc": "2026-11-03T12:44:36.902790+00:00",
+  "updated_utc": "2026-11-03T12:49:13.669346+00:00",
   "throughput": {
     "warm_batch_seconds": 0.07088090688921511,
     "batch_size": 8,
     "estimated_forward_seconds_per_H3_model": 132.59159644963802,
     "estimate_excludes": "loading and filesystem I/O"
   },
-  "dtype_policy": "native BF16 compute with FP32 filter modules; stored BF16 filter values losslessly promoted to FP32; no FP32 downcast"
+  "dtype_policy": "native BF16 compute with FP32 filter modules; stored BF16 filter values losslessly promoted to FP32; no FP32 downcast",
+  "new_base_examples": 4416,
+  "source_commit": "55a7a78",
+  "completed_tasks": {
+    "base_H3": 14965
+  }
 }
