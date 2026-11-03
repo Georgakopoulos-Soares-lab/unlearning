@@ -1,0 +1,84 @@
+{
+  "/workspace/recovery/maxent-benign/sayyed-base-20261026-v1-recovery/sayyed-base-20261026-v1": {
+    "payloads_verified": 173
+  },
+  "/workspace/recovery/maxent-benign/sayyed-h3-followup-20261027T001154Z-supplement/sayyed-h3-followup-20261027T001154Z": {
+    "payloads_verified": 95
+  },
+  "original_mlp_prediction_recomputation": {
+    "train": {
+      "n": 11971,
+      "auroc": 0.8372158277501002,
+      "accuracy": 0.7153955392197812,
+      "balanced_accuracy": 0.7106703371448764,
+      "causal_nll": 1.2567221982213075,
+      "perplexity": 3.5138847724050524
+    },
+    "dev": {
+      "n": 1497,
+      "auroc": 0.8206563465281126,
+      "accuracy": 0.7027388109552438,
+      "balanced_accuracy": 0.6998098451979218,
+      "causal_nll": 1.2545651072580895,
+      "perplexity": 3.506313172567415
+    },
+    "test": {
+      "n": 1497,
+      "auroc": 0.8318166401885008,
+      "accuracy": 0.7027388109552438,
+      "balanced_accuracy": 0.7011790221524071,
+      "causal_nll": 1.2557225272213952,
+      "perplexity": 3.5103737989026302
+    }
+  },
+  "supplement_prediction_recomputation": {
+    "dev:original_mlp": {
+      "auroc": 0.8206563465281126,
+      "average_precision": 0.831522824032665,
+      "accuracy": 0.7027388109552438,
+      "balanced_accuracy": 0.6998098451979218
+    },
+    "dev:evo2_norm": {
+      "auroc": 0.8360651347153034,
+      "average_precision": 0.8291596042771336,
+      "accuracy": 0.7615230460921844,
+      "balanced_accuracy": 0.7619154748513579
+    },
+    "dev:composition": {
+      "auroc": 0.82350152659489,
+      "average_precision": 0.7651302214450981,
+      "accuracy": 0.751503006012024,
+      "balanced_accuracy": 0.7520247469066367
+    },
+    "dev:4mer": {
+      "auroc": 0.8937364972235613,
+      "average_precision": 0.889266746319981,
+      "accuracy": 0.8142952571810287,
+      "balanced_accuracy": 0.8144758690877927
+    },
+    "test:original_mlp": {
+      "auroc": 0.8318166401885008,
+      "average_precision": 0.8238270582996897,
+      "accuracy": 0.7027388109552438,
+      "balanced_accuracy": 0.7011790221524071
+    },
+    "test:evo2_norm": {
+      "auroc": 0.8469199050356117,
+      "average_precision": 0.8268232182991779,
+      "accuracy": 0.7621910487641951,
+      "balanced_accuracy": 0.7621731136538084
+    },
+    "test:composition": {
+      "auroc": 0.8053604898163189,
+      "average_precision": 0.7269218991564886,
+      "accuracy": 0.738810955243821,
+      "balanced_accuracy": 0.7388202638296353
+    },
+    "test:4mer": {
+      "auroc": 0.8954517056103961,
+      "average_precision": 0.8806545551992139,
+      "accuracy": 0.8209752839011356,
+      "balanced_accuracy": 0.8209269738133913
+    }
+  }
+}
