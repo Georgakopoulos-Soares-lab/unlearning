@@ -1,0 +1,107 @@
+[
+  {
+    "item": "Data identity and exact split IDs",
+    "status": "UNAVAILABLE",
+    "evidence": "Our ZIP/member/row IDs and hashes are pinned; HPC paths and 1,497 test rows do not establish byte-for-byte dataset/order identity. Need HPC train/dev/test hashes and row-ID/sequence-hash tables."
+  },
+  {
+    "item": "Numeric label convention",
+    "status": "VERIFIED MATCH",
+    "evidence": "Both evaluator definitions use numeric class 1 for binary AUROC. Biological code-to-class mapping remains unavailable."
+  },
+  {
+    "item": "Parent weights / model identity",
+    "status": "UNAVAILABLE",
+    "evidence": "Ours is hash-pinned official original Evo2-1B; historical eval resolves `evo2_1b_base_mbridge/iter_0000001`, whose bytes, upstream parent and checksums are absent. Model names do not prove equivalence."
+  },
+  {
+    "item": "Conversion lineage",
+    "status": "UNAVAILABLE",
+    "evidence": "Need immutable upstream weight revision/hash, converter code revision, command/config, tensor mapping and precision lineage."
+  },
+  {
+    "item": "Tokenizer bytes / special tokens",
+    "status": "UNAVAILABLE",
+    "evidence": "Ours is verified ASCII CharLevelTokenizer(512), pad1/eos0, no BOS/EOS insertion. BioNeMo names nucleotide_fast_tokenizer_512 and tokenizes via HuggingFaceTokenizer; actual tokenizer assets, automatic special-token behavior and token-ID parity are absent."
+  },
+  {
+    "item": "Padding and token limit",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "Ours right-pads to a multiple of 16; BioNeMo code preallocates a fixed 1,000-token input. Both mask padding for pooling by definition, but numerical equivalence has not been measured. Actual supplied H3 sequences are at most 500nt."
+  },
+  {
+    "item": "Mean pooling specification",
+    "status": "VERIFIED MATCH",
+    "evidence": "Both definitions mean-pool positions selected by a nonpadding mask. Token parity is an unresolved prerequisite."
+  },
+  {
+    "item": "Representation / final normalization",
+    "status": "UNAVAILABLE",
+    "evidence": "Ours hooks `norm` after final RMSNorm. BioNeMo pools `self.decoder(...)` output. Need exact installed decoder implementation/config to establish normalization location; a comment \u201clast layer\u201d is insufficient."
+  },
+  {
+    "item": "Backend and precision",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "Ours uses pinned Vortex FP8 input projections with original weights and CPU-float32 heads; BioNeMo log uses H200/Megatron-Bridge, BF16 and tensorwise FP8 metadata, distributed optimizer. No cross-backend numerical tolerance test exists."
+  },
+  {
+    "item": "MLP architecture / initialization definition",
+    "status": "VERIFIED MATCH",
+    "evidence": "Pinned source specifies LayerNorm1920/Linear1920/GELU/Dropout0.1/Linear2, linear Normal std1/sqrt(fan-in), zero bias, matching our independent head definition. Exact historical checkpoint head tensors/config still require verification."
+  },
+  {
+    "item": "Optimizer execution",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "Ours is CPU AdamW; BioNeMo constructs distributed fused Adam with matching LR/beta/epsilon/zero-weight-decay settings, but numerical update equivalence is not established."
+  },
+  {
+    "item": "Steps, batch and initial LR settings",
+    "status": "VERIFIED MATCH",
+    "evidence": "Actual H3 training log: 300 steps, global batch8, LR1e-3, min LR1e-4, warmup20. Intended launcher 750/64/3e-4 arguments were never passed."
+  },
+  {
+    "item": "Effective LR schedule",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "At step250 our LR is0.000168974; logged BioNeMo LR is0.000129243. BioNeMo reaches minimum at iteration280, while ours reaches it at300. Matching endpoints is insufficient."
+  },
+  {
+    "item": "Sampling and exact exposure",
+    "status": "UNAVAILABLE",
+    "evidence": "Ours is reconstructed uniform replacement (selected250:2,000 draws/1,842 unique rows). BioNeMo reports cyclic dataloader and2,400 consumed samples at300; exact unique rows/order and sampler state are absent."
+  },
+  {
+    "item": "Training seed",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "Ours seed42; actual H3 training config and initialization log both record1234. Exact training RNG state still requires checkpoint/config evidence."
+  },
+  {
+    "item": "Checkpoint used for test",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "Our independent MLP selected250 by dev AUROC; BioNeMo evaluation stderr resolves head `iter_0000300`. Need its immutable files and selection record, not just a parent directory path."
+  },
+  {
+    "item": "Selection procedure",
+    "status": "UNAVAILABLE",
+    "evidence": "Our six-checkpoint dev-AUROC rule is recorded. Historical parent-directory auto-resolution does not establish dev-based selection."
+  },
+  {
+    "item": "Classification decision",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "Ours is probability_class1 >=0.5; historical evaluator uses argmax over two logits, which differs on an exact tie (class0). Away from ties they coincide."
+  },
+  {
+    "item": "AUROC / accuracy definition",
+    "status": "VERIFIED MATCH",
+    "evidence": "Both report class1 softmax AUROC and fraction correct. This does not imply matching inputs or fitted heads."
+  },
+  {
+    "item": "LM NLL / \u201cPPL\u201d definition",
+    "status": "VERIFIED DIFFERENCE",
+    "evidence": "Ours scores causal next-nucleotide likelihood, aggregates by valid targets and exponentiates NLL. Historical classifier log \u201cce loss PPL\u201d exponentiates classification loss; it is not language-model perplexity."
+  },
+  {
+    "item": "Historical loader warning",
+    "status": "UNAVAILABLE",
+    "evidence": "Eval stdout lists missing head keys during a checkpoint load. Current source has separate base-load and head-overlay stages; the warning alone neither proves failed head overlay nor validates it. Need exact run_config, loader revision, load audit and actual trained head tensors."
+  }
+]

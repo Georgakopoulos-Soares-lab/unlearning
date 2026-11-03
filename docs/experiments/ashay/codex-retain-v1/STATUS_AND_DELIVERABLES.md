@@ -1,0 +1,7 @@
+# Meeting 4 preparation
+
+Read exact v10 at requested commit; receipt and verbatim copy adjacent. Inspected original repo instructions, fetched branch refs, worktrees, saved six-task/H3/follow-up reports and comparability matrix, local data manifest code and current bionemo dual provider. Isolated branch starts at 89c7e93; current bionemo is b90fc1853d1d3be79922a98a2649c91c89716637. User-requested isolated branch supersedes older writable-path restriction. Historical checkout preserved.
+
+Results here are transcribed historical report evidence, not newly regenerated measurements. Raw historical artifacts, ledger and old runtime are absent in this workspace; no restore needed for offline preparation. No baseline rerun, GPU work, environment change, push or message publication. Meeting statements are participant reports: provisional GradDiff diagnosis, distinct four-nucleotide MaxEnt, approximately .76→.801 last-layer H3 and post layer16 .9561 without a clear matching parent number. Do not infer matched effects.
+
+Ready for review: CSV tables, configuration comparison (Markdown/JSON), Slack drafts, retain candidate protocol and reusable benign_pilot/retain.py. Biological manifest remains unbuilt because source data/audit inputs are unavailable. No HVUE predictor was built. Mixture selection, proportions and adapter contract remain team decisions. The smallest request to Sayyed is in SLACK_DRAFTS.md; next bounded evaluation and prerequisites are in RETAIN_PROTOCOL_DRAFT.md.

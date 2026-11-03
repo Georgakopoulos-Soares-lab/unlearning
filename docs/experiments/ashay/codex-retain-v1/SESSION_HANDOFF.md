@@ -1,0 +1,3 @@
+# Session handoff
+
+Continue on /workspace/wt-codex-benign-v1, experiments-ashay-codex-benign-v1. Read STATUS_AND_DELIVERABLES.md and RETAIN_PROTOCOL_DRAFT.md. Offline API: benign_pilot.retain.prepare(rows, per_task_proxy_budgets, seed, heldout_hashes). It returns rows and JSON-compatible accounting; no model/data side effects. Synthetic-only tests cover order-invariant deterministic selection, budget shortfall, contamination, duplicates and provenance. Real biological preparation requires immutable training input and external split audit. Packed tokenizer/loss-mask accounting requires an agreed adapter. No GPU execution authorized by this preparation; preserve historical ledger and branches. No messages sent or branch pushed.

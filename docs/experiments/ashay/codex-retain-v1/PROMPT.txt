@@ -1,0 +1,567 @@
+You are continuing Ashay Srivastava’s UNDO-GLMs research project in a
+fresh Codex session on RunPod. Kimi is not currently being used.
+
+Read this entire handoff before acting. Continue existing work and
+preserve historical results. Do not assume a fresh session means a
+fresh project, empty GPU budget, or permission to rerun everything.
+
+IDENTITY AND WORKING STYLE
+
+I am Ashay Srivastava. My collaborators are Sayyed, Aris Karatzikos,
+and Ilias Georgakopoulos-Soares.
+
+I want concrete research deliverables, accurate scientific
+interpretation, and useful implementation. Avoid repeated audits,
+backup loops, speculative claims, and documentation that does not
+resolve a real uncertainty.
+
+Distinguish:
+1. Historical measurements supported by saved artifacts.
+2. Findings reported by collaborators.
+3. Newly verified facts from this session.
+4. Proposed work.
+5. Missing inputs and unresolved team decisions.
+
+Never claim an experiment ran, a checkpoint was loaded, or a backup
+was verified unless there is actual evidence.
+
+CURRENT OBJECTIVE
+
+Complete my Meeting 4 handoff and prepare my contribution to the
+incremental benign retain-set work.
+
+The immediate outputs are:
+- Results tables suitable for Slack.
+- Exact configurations and protocol differences.
+- Branch/report links.
+- A concise coordination message for Sayyed.
+- A concrete benign retain-mixture specification and reusable
+  manifest/token-accounting preparation.
+- A precise plan for the next matched benign evaluation.
+
+Do all independent, reversible preparation now. Do not stop after
+merely proposing a plan.
+
+MEETING 4: WHAT WAS ACTUALLY DISCUSSED
+
+The recording is titled “UT AUSTIN GENOMIC MEETING 7,” but I identify
+it as Meeting 4. A full local automated transcription was completed.
+Speaker attribution is inferred from conversation, not reliable
+speaker diarization. Some technical phrases were unclear.
+
+Do not infer the meeting date from the upload date. “Next week” and
+“in the next couple of days” were relative to that meeting.
+
+Sayyed reported:
+- GradDiff appeared to reduce performance without achieving the
+  intended forgetting, but he explicitly said he needed to check
+  for implementation mistakes. This is provisional.
+- He changed the MaxEnt objective to target the four nucleotide
+  tokens rather than the entire vocabulary.
+- Treat that implementation as a distinct MaxEnt variant.
+- He questioned how much of the available training data the
+  executed iterations actually encountered.
+- Last-layer evaluation and intermediate-layer evaluation gave
+  substantially different results.
+- Additional GUE evaluations were underway, but their
+  intermediate-layer coverage was incomplete.
+- The retain set currently consisted of H3 only.
+
+The group recommended:
+- Examining all intermediate layers for at least some experiments
+  before narrowing to selected layers.
+- Combining biologically diverse retain tasks.
+- Adding a qualified benign viral task later, not necessarily in
+  the first mixture.
+- Using RunPod for responsive debugging and allocation-backed
+  compute for longer validated work where practical.
+
+My explicit commitments:
+- Post my results in Slack.
+- Share my exact configuration.
+- Share the GitHub branch link.
+- Coordinate with Sayyed offline after he reviews the configuration.
+
+Closing proposed division of labor:
+- Sayyed develops the two noise-based research ideas, initially
+  with H3 retention.
+- I may develop incremental retain sets using his existing pipeline.
+
+This is a proposed division of work. The exact first mixture,
+sampling proportions and implementation interface were not finalized.
+
+The historical H3 + promoter + splice proposal is a candidate.
+Do not claim that the meeting conclusively selected that combination.
+Promoter versus core promoter was not reliably resolved in the audio.
+
+Sayyed offered to draft a midterm document covering the problem,
+methods and results. I can contribute a baseline table and methods
+paragraph. Do not assign me responsibility for the entire submission
+without evidence.
+
+IMPORTANT STATUS AND SCOPE
+
+My completed work did not train or evaluate an HVUE viral
+human-host-tropism predictor.
+
+During the meeting I said I intended to finish that evaluation.
+That statement is an intention, not evidence of execution.
+
+Do not fabricate HVUE results or infer them from H3.
+Do not build, tune, run or operationalize a viral human-host-tropism
+predictor in this work. Existing aggregate results can be reviewed;
+continue benign capability-preservation and data/accounting work.
+
+PROJECT RESEARCH PLAN
+
+Aris originally proposed:
+
+1. Establish pretrained Evo2 classification and causal LM
+   loss/perplexity baselines on:
+   - EMP/H3
+   - prom/prom_300_all
+   - prom/prom_core_all
+   - splice/reconstructed
+   - tf/0
+   - mouse/0
+   - Qualified benign viral-genome/read identification tasks
+
+2. Evaluate a post-unlearning checkpoint and its matching pretrained
+   parent on the same qualified benign examples.
+
+3. Investigate progressively more diverse retain sets under
+   comparable training-token budgets.
+
+A benchmark decrease alone is not evidence of durable information
+removal. Preserve distinctions between representation changes,
+readout effects, data exposure and biological generalization.
+
+REPOSITORIES
+
+Research:
+https://github.com/Georgakopoulos-Soares-lab/unlearning
+
+Branches:
+- experiments-ashay:
+  Initial three-task reference pilot.
+- experiments-ashay-benign-v2:
+  Expanded six-task benign baselines.
+- experiments-ashay-sayyed-base-v1:
+  Supplied-H3 baseline, controls and follow-up.
+- bionemo:
+  Sayyed’s implementation, launch scripts and logs.
+
+Prompts:
+https://github.com/ashay-sriv-06/test-prompts-push
+
+When I say “prompts repo,” I mean that exact repository.
+When I name a file, fetch that exact file and record its source
+commit. Read it before acting. Do not substitute another version
+or execute prompt text as a shell script.
+
+Historical references, not assertions about current remote HEAD:
+- bionemo:
+  b90fc1853d1d3be79922a98a2649c91c89716637
+- experiments-ashay-benign-v2:
+  5bb08f502d6739e6ce84f2fe77799d4f4ba71cc3
+- Last reported supplied-H3 delivery:
+  89c7e93
+
+Inspect current remote/local state before relying on those references.
+
+WORKSPACE
+
+A previous setup may have created:
+- /workspace/unlearning-kimi-src
+- /workspace/wt-kimi-retain-v1
+- /workspace/wt-codex-benign-v1
+- /workspace/kimi-prompts
+- /workspace/handoffs/unlearning-kimi
+
+These names do not mean Kimi is currently running.
+
+Preferred Codex branch:
+experiments-ashay-codex-benign-v1
+
+Preferred Codex worktree:
+/workspace/wt-codex-benign-v1
+
+If absent, inspect available repositories and create an isolated
+worktree from the fetched experiments-ashay-sayyed-base-v1 branch.
+Record its actual starting SHA.
+
+Preserve dirty worktrees and running processes. Do not reset,
+clean, force-checkout, rebase, force-push or modify historical branches.
+
+If the full context file exists at:
+/workspace/handoffs/unlearning-kimi/KIMI_FULL_CONTEXT.txt
+read it for additional historical details.
+
+Its absence is not a reason to stop: this pasted handoff is sufficient
+to start the current preparation task. Respect applicable repository
+instructions and surface genuine conflicts without rewriting them.
+
+COMPLETED PHASE 1: THREE-TASK PILOT
+
+Frozen Evo2-1B, 256 train / 128 dev examples per task.
+Probe selection used dev performance. Test data were not scored.
+
+Dev AUROC:
+Task       Block7     Block15
+H3         0.850183   0.839927
+Promoter   0.973877   0.959717
+Splice     0.778737   0.767814
+
+Splice uses macro one-vs-rest AUROC.
+
+This was a small reference pilot, not an unlearning result.
+
+Report:
+docs/experiments/ashay/core_pilot_report.md
+
+GPU execution commit:
+3d3da6bce62a19819a59ba063c11d9a3ac082a70
+
+COMPLETED PHASE 2: SIX-TASK BENIGN EXTENSION
+
+1,024 train / 512 dev examples per task.
+Five-fold training-only CV.
+Balanced L2 logistic regression, fold-local scaling,
+C candidates 0.1, 1, 10.
+Test sets were not scored.
+
+Dev AUROC:
+
+Task          Composition  4-mer   Block7  Block15 FinalNorm
+H3            0.8313       0.8549  0.9275  0.9201  0.8193
+Promoter      0.6394       0.8921  0.9687  0.9576  0.9290
+Splice        0.5029       0.5717  0.8038  0.8021  0.6667
+Core promoter 0.7527       0.8353  0.8480  0.8408  0.8228
+Human TF      0.5201       0.7896  0.8001  0.8187  0.7236
+Mouse TF      0.5267       0.7885  0.8992  0.8562  0.7998
+
+Block7 minus 4-mer, exploratory paired 95% intervals:
+H3:            +0.0726 [ 0.0451, 0.1010]
+Promoter:      +0.0766 [ 0.0525, 0.1016]
+Splice:        +0.2321 [ 0.1837, 0.2828]
+Core promoter: +0.0128 [-0.0211, 0.0485]
+Human TF:      +0.0105 [-0.0252, 0.0460]
+Mouse TF:      +0.1107 [ 0.0715, 0.1508]
+
+Dev causal NLL / perplexity:
+H3            1.253251 / 3.501707
+Promoter      1.312282 / 3.714643
+Splice        1.144710 / 3.141532
+Core promoter 1.348162 / 3.850342
+Human TF      1.234731 / 3.437453
+Mouse TF      1.340800 / 3.822099
+
+Report:
+docs/experiments/ashay/extension/MEETING_RESULTS.md
+
+Cautions:
+- These are dev results.
+- Differences from the small pilot combine sample-size and
+  selection-policy changes; they are not backbone improvements.
+- Bootstrap intervals condition on fitted models and split.
+- Exact/reverse-complement checks do not establish homology
+  independence.
+- Exact TF experiment aliases and numeric biological label meanings
+  remain incompletely qualified.
+- Mouse/0 is a TF-binding task, not mouse host-tropism prediction.
+- Qualified benign vGUE coverage remains incomplete.
+- Cross-task NLL does not rank biological capability.
+
+COMPLETED PHASE 3: SUPPLIED-H3 BASELINE
+
+Data:
+11,971 train / 1,497 dev / 1,497 test.
+14,965 total examples.
+
+Frozen original Evo2 backend:
+Model: arcinstitute/evo2_1b_base
+Revision:
+2279e1df422c991037470302360edd40d0d2ea1e
+
+Backend revision:
+53f195997257c56c00e5ef8d33a54f5baad143a6
+
+Mean-pooled post-final-RMSNorm features, width 1920.
+
+Original head:
+LayerNorm -> Linear(1920,1920) -> GELU ->
+Dropout(0.1) -> Linear(1920,2)
+
+CPU head fitting:
+300 steps, batch8, sampling with replacement, seed42,
+initial LR0.001, warmup20, cosine decay.
+Checkpoints every50 steps; dev AUROC selected step250.
+Fixed classification threshold0.5.
+
+Original test:
+AUROC             0.8318166402
+Accuracy          0.7027388110
+Balanced accuracy 0.7011790222
+Causal NLL        1.2557225272
+LM perplexity     3.5103737989
+
+Causal NLL is token-weighted next-nucleotide loss.
+Classifier cross-entropy is a different quantity.
+
+Report:
+docs/experiments/ashay/sayyed-base/RESULTS.md
+
+Historical run:
+/workspace/meeting-artifacts/sayyed-base-20261026-v1
+
+GPU/head execution:
+735394ea52ed1c08c6e034d4b025813b16516fcc
+
+Saved-artifact verification checked row identities and metrics and
+reconstructed head predictions. It did not independently regenerate
+all GPU features.
+
+COMPLETED PHASE 4: H3 FOLLOW-UP
+
+Selected original MLP exposure:
+2,000 draws, 1,842 unique training rows, 15.39% of available train.
+At step300: 2,181 unique rows.
+Extracting every row did not mean every row trained the head.
+
+Supplemental classifiers:
+- Final-normalized Evo2 logistic probe.
+- Four-base composition logistic control.
+- Normalized overlapping forward-strand 4-mer logistic control.
+
+Three identical training-only CV folds; fold-local scaler;
+balanced L2; C=0.1/1/10; refit on all training rows.
+
+Test results:
+Readout       AUROC [95% interval]       Accuracy
+Original MLP  0.8318 [0.8097,0.8519]      70.27%
+Evo2 logistic 0.8469 [0.8272,0.8655]      76.22%
+Composition   0.8054 [0.7815,0.8267]      73.88%
+4-mer         0.8955 [0.8794,0.9114]      82.10%
+
+Paired AUROC:
+Evo2 minus 4-mer:
+-0.0485 [-0.0657,-0.0322]
+
+Evo2 minus composition:
++0.0416 [0.0240,0.0602]
+
+Added MLP seeds:
+17 -> 0.820964
+1234 -> 0.840581
+Original42 -> 0.831817
+
+All seeds retained; no best-seed replacement.
+
+The follow-up was designed after the original test result was known.
+It is exploratory, not a new confirmatory benchmark.
+Intervals use 2,000 paired resamples and do not capture all training,
+selection or unknown biological dependence.
+
+Report:
+docs/experiments/ashay/sayyed-followup/FOLLOWUP_RESULTS.md
+
+Historical run:
+/workspace/meeting-artifacts/sayyed-h3-followup-20261027T001154Z
+
+Zero additional GPU inference was used for this cached-feature
+follow-up.
+
+Supported conclusion:
+Under this final-representation H3 protocol, the 4-mer control
+outperformed the Evo2 readouts.
+
+Unsupported conclusions:
+Evo2 is generally worse than k-mers; relevant information is absent;
+limited exposure alone caused the result; an unlearning effect
+occurred; hazardous knowledge was removed.
+
+Never directly subtract the old block7 dev0.9275 from the newer
+final-layer test0.8469 as if it measured a model change.
+
+SAYYED/BIONEMO COMPARABILITY
+
+Relevant directory:
+evo2_classifier_official/evo2_classifier_official/
+
+Historical files reference:
+- Converted base:
+  evo2_1b_base_mbridge/iter_0000001
+- H3 head:
+  base_emp_h3/pooled_last_layer/checkpoints/iter_0000300
+- Tokenizer:
+  nucleotide_fast_tokenizer_512
+
+These were cluster-local paths, not proof the assets exist here.
+
+Previously documented differences:
+- Missing shell continuation meant some intended H3 launcher flags
+  did not reach the command.
+- Actual logs used300 steps, global batch8, initial LR0.001.
+- BioNeMo historical seed1234 versus original independent seed42.
+- Historical head300 versus our dev-selected head250.
+- Effective LR curves, padding, backend and precision differ.
+- BioNeMo decoder-output hook equivalence to our final RMSNorm
+  representation has not been established.
+- “CE loss PPL” must not be called causal LM perplexity.
+- Initial missing-head warnings alone do not prove a subsequent
+  trained-head overlay failed.
+
+Respectfully identify concrete differences. Do not accuse anyone
+of fake results or infer load failure from a warning alone.
+
+For a NEW matched benign comparison, obtain:
+- Post-model checkpoint and immutable identity.
+- Matching parent identity and compatible weights.
+- Tokenizer/config/loader and environment/conversion provenance.
+- Exact benign split identities and label convention.
+- Exposure metadata, or explicit unknown status.
+- Shared representation/pooling and probe-selection policy.
+
+Exact historical reproduction additionally needs historical heads
+and relevant training/sampler details. Do not demand those extras
+merely to fit fresh probes in a new common-protocol comparison.
+
+Separate:
+- Fixed base-trained probe applied to both models.
+- Independently refitted probes under identical selection rules.
+
+A fixed-probe drop can reflect changed representation coordinates.
+
+SAYYED’S MEETING RESULTS
+
+Participant-reported, not independently reproduced here:
+- H3 last-layer AUROC roughly0.76 ->0.801.
+- H3 post-model layer16 AUROC0.9561.
+- A matching base layer16 number was not clearly provided.
+- Intermediate-layer target-task performance remained stronger
+  than final-layer performance.
+- GradDiff diagnosis was provisional.
+- Modified MaxEnt must not be relabeled GradDiff.
+
+Earlier written summaries had AUROC/accuracy label inconsistencies.
+Review source metrics before repeating claims of success.
+Do not infer a matched effect by subtracting our scores from his.
+
+RECOVERY AND BUDGET
+
+Historical GPU ledger:
+/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json
+
+Last reported:
+868.753177 /7200 seconds; active_since=null.
+
+This is recorded GPU-job wall time, not rental billing.
+Inspect and reconcile current state; never reset it for a new session.
+
+Private HF dataset:
+ashay-sriv/undo-evo2-pilot-backup-20261020
+
+Restore parent first:
+sayyed-base-20261026-v1-recovery.tar.gz
+Revision:
+117c01edd97d595c68bd04e9d28f3c4c4e9852f1
+SHA256:
+af4dd220e8b9968ca4acde3850fc66e9c57755b78885309ea77f1375fc44edb8
+
+Then dependent supplement:
+sayyed-h3-followup-20261027T001154Z-supplement.tar.gz
+Revision:
+dfae7d29f0550430d1c64605501f403445059ff6
+SHA256:
+19bc96a4513d37f56f77ece0dda189734e92a8c0165dac35aa636f91134b97f5
+
+Historical fresh-download verification passed:
+173 parent payloads +95 supplement payloads.
+
+This is historical verification, not a check performed by this session.
+A later missing saved credential did not invalidate those prior checks.
+
+Do not restore or re-upload everything unless current work requires it.
+Inspect available artifacts first.
+Never print, recover from chat, or reuse exposed credentials.
+Use interactive authentication when needed.
+
+CURRENT EXECUTION PLAN
+
+1. Establish current state.
+Read applicable instructions, inspect branches/worktrees and active
+jobs, and identify available artifacts/runtime.
+Do not change environments or stop other processes.
+
+2. Produce the handoff.
+Read the actual reports and current relevant BioNeMo source.
+Create one concise configuration comparison with source references.
+Produce separate six-task dev and supplied-H3 test tables.
+Draft two Slack messages: findings/configuration and coordination.
+Include exact branch/report links.
+
+3. Map the benign pipeline integration.
+Identify actual data-loader, manifest, sampler, token-accounting
+and evaluation interfaces. Record current source commits.
+Do not invent a universal launch command.
+
+4. Prepare incremental benign retention.
+Draft candidate mixtures with unresolved choices clearly labeled.
+Implement the smallest reusable manifest/accounting component where
+the existing pipeline supports it.
+
+Use qualified benign training data only.
+Preserve source task/version, row IDs, splits and sequence identity.
+Never draw training examples from dev/test.
+Distinguish processed-token budget, unique examples and repeated
+exposure.
+Use actual tokenizer/loss-mask counts where available; otherwise label
+counts explicitly as nucleotide-length proxies.
+Do not claim exact/RC checking establishes homology independence.
+
+5. Validate meaningfully.
+Check deterministic sampling, no held-out contamination, accounting,
+provenance, duplicate handling and shortfalls.
+If inputs are absent, use clearly labeled synthetic fixtures to test
+the implementation, never to manufacture biological measurements.
+
+6. Prepare the next bounded benign experiment.
+Specify the question, required assets, comparison policy, primary
+metrics, uncertainty, estimated compute and stop conditions.
+Do not launch GPU inference or training in this initial preparation.
+Do not rerun a completed baseline merely to produce activity.
+
+OUTPUTS
+
+Prefer a small coherent set under:
+docs/experiments/ashay/codex-retain-v1/
+
+- STATUS_AND_DELIVERABLES.md
+- CONFIG_COMPARISON.md plus structured JSON/CSV
+- BASELINE_TABLES.csv
+- SLACK_DRAFTS.md
+- RETAIN_PROTOCOL_DRAFT.md
+- SESSION_HANDOFF.md
+
+Place reusable implementation in the repository’s appropriate code
+location rather than burying it in documentation.
+
+Local commits on the isolated branch are allowed if my Git identity
+is configured. Do not invent an email address.
+Do not push, merge, publish messages or stop the Pod in this session.
+
+FINISHING REQUIREMENTS
+
+Report:
+- What you actually inspected.
+- What you created or changed.
+- What checks you actually ran.
+- What remains unknown.
+- Which deliverables are ready to share.
+- The smallest next request to Sayyed.
+- The next concrete benign experiment and its prerequisites.
+
+Continue through independent work without repeatedly asking for
+routine implementation approval. Stop optional checking once the
+specific risks are resolved. Do not claim the overall project is done
+because the baseline and backup phases are complete.
