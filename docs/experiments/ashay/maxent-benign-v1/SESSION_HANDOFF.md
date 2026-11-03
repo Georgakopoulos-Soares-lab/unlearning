@@ -1,0 +1,5 @@
+# Resume state
+
+Active branch experiments-ashay-maxent-benign-v1 at /workspace/wt-maxent-benign-v1, based on f1d5dbc. v15 read fully at ef49f26dd18c524273791383af97028bf16affa9. Prior handoff+retain branch pushed at b33c2592bb84d830159a208f69c6b5acad42e547. New comparison NOT_RUN; see RESULTS.md for precise recovered evidence and run_manifest.json for hashed local small assets and prespecified candidate protocol. Weight shards not downloaded/validated; no loading success claimed. No dataset/runtime/ledger available locally. GPU0 seconds; no experiment jobs observed. No backup upload or new recovery verification.
+
+Smallest recovery blocker: securely configured access to existing private HF benign recovery archives (pinned original117c01edd97d595c68bd04e9d28f3c4c4e9852f1 then supplementdfae7d29f0550430d1c64605501f403445059ff6). No historical head is required for new logistic probes. Also obtain supported BioNeMo environment/version provenance; do not guess conversion equivalence. Preserve other worktrees. Only this MaxEnt branch push authorized by v15. Never reset ledger or run host-tropism predictions.

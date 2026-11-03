@@ -1,0 +1,67 @@
+{
+  "prompt_commit": "ef49f26dd18c524273791383af97028bf16affa9",
+  "prompt_sha256": "eeeeb17de93fef92f6fd4be79872a1e288b4bf40d1dd8170b0f880ba2dce0bbd",
+  "starting_commit": "f1d5dbc",
+  "assets": [
+    {
+      "path": "/workspace/maxent-assets/18fZ2lKD3I3Gzrx6zwlM8ig03F7HPT-Qq.yaml",
+      "sha256": "b648cfd2fb11797ade835e82f6dd4c3e7abd0d4256ae4360bd67796d00f198c9",
+      "size": 23684
+    },
+    {
+      "path": "/workspace/maxent-assets/1nRv_swUK49w-n5Puw1lxxiDz8UPMmt0F.yaml",
+      "sha256": "43b18b0e2b9fa7e19e7c7b6d487514ede7400c3fc6176eebab596f9da6f84488",
+      "size": 24690
+    },
+    {
+      "path": "/workspace/maxent-assets/base_metadata.json",
+      "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+      "size": 119
+    },
+    {
+      "path": "/workspace/maxent-assets/base_tokenizer.json",
+      "sha256": "4783313f9804f545bf8515653cf91549b5f1a507fe5703c7d7279921dd9ec8fb",
+      "size": 6708
+    },
+    {
+      "path": "/workspace/maxent-assets/maxent_metadata.json",
+      "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+      "size": 119
+    },
+    {
+      "path": "/workspace/maxent-assets/maxent_tokenizer.json",
+      "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "size": 10649
+    }
+  ],
+  "gpu_seconds": 0,
+  "checkpoint_completeness": "listing only; torch_dist .metadata and shard contents not validated",
+  "dataset": "supplied H3 manifest and payload not located",
+  "protocol": {
+    "status": "proposed before new scores; executable only after readiness",
+    "split_counts_expected": [
+      11971,
+      1497,
+      1497
+    ],
+    "selection": "3 training-only grouped stratified folds; balanced L2 logistic; StandardScaler fit inside each fold; C=.1,1,10; smaller-C ties; seed42; refit all train",
+    "threshold": 0.5,
+    "representations": [
+      "final representation: exact post-final-norm hook must be validated",
+      "decoder.layers[16] output: exact source index, meeting layer16 correspondence unresolved"
+    ],
+    "policies": [
+      "separate fit per backbone",
+      "fixed base scaler/probe on MaxEnt if semantic/dimension compatibility established"
+    ],
+    "uncertainty": "2000 paired sequence/group bootstrap resamples conditional on fitted probes; known test reuse exploratory",
+    "metrics": [
+      "auroc",
+      "accuracy",
+      "balanced_accuracy",
+      "average_precision",
+      "causal_nll only with validated next-token scoring",
+      "perplexity only as exp(token-weighted causal_nll)"
+    ]
+  }
+}

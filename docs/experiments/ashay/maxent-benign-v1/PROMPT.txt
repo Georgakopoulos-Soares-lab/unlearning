@@ -1,0 +1,312 @@
+Continue our genomic unlearning project with a focused experimental task:
+
+Recover or produce logistic-regression results for Sayyed’s MaxEnt
+checkpoint on BENIGN GUE tasks, starting with H3, and establish the
+corresponding pretrained comparison.
+
+Use Codex only. Prioritize numerical results. No LaTeX, presentation work,
+or another broad historical reconciliation.
+
+CURRENT TEAM REQUEST
+
+Sayyed shared:
+https://drive.google.com/drive/folders/1pM5-kFeki5Oq1oLjQNXH0U2f2TlGNuzi
+
+He said:
+“You can try to extract the logistic regression results for the
+maxent checkpoint.”
+
+For this execution, scope is benign biological evaluation:
+- EMP/H3 first.
+- prom/prom_300_all and splice/reconstructed next.
+- prom/prom_core_all, tf/0 and mouse/0 after the initial comparison works.
+
+Host-tropism evaluation is outside this task.
+Do not run new unlearning training in this phase.
+
+IMPORTANT NEW EVIDENCE
+
+A read-only inspection of the shared Drive folder found:
+
+Converted base:
+https://drive.google.com/drive/folders/1n1ZfbP_OOucoEQhsuk5PsKeKMJu0ZYzj
+
+Base iteration:
+https://drive.google.com/drive/folders/154kF29Cjam2F2rC-ihj6_Oobmm-oNur1
+
+The base iteration listing included:
+- run_config.yaml
+- metadata.json
+- checkpoint shards
+- tokenizer/tokenizer.json
+- tokenizer/tokenizer_config.json
+
+MaxEnt root:
+https://drive.google.com/drive/folders/1AsgCkDs3n5JTJJF4BSyCtjYBbhES0gVA
+
+MaxEnt iteration:
+https://drive.google.com/drive/folders/16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv
+
+Observed hierarchy:
+results/evo2_maxent/emp_h3_human_host_tropism/
+checkpoints/iter_0002000
+
+The MaxEnt iteration listing included checkpoint data, .metadata,
+metadata.json, common.pt, train_state.pt, run_config.yaml and tokenizer.
+
+These are observed filenames, not proof of checkpoint completeness,
+successful loading, parent identity or model equivalence.
+
+Do not keep reporting “checkpoint absent” without checking these links.
+Do not assume a folder listing contains every file: the earlier base
+listing reached the connector’s 100-item limit.
+
+REPOSITORIES
+
+Research:
+https://github.com/Georgakopoulos-Soares-lab/unlearning
+
+Relevant branches:
+- bionemo
+- experiments-ashay
+- experiments-ashay-benign-v2
+- experiments-ashay-sayyed-base-v1
+- experiments-ashay-metrics-reconciliation-v1
+
+Prompts:
+https://github.com/ashay-sriv-06/test-prompts-push
+
+The latest reported reconciliation commit was 59de97d.
+Verify current state instead of assuming that commit is pushed or that
+this checkout contains it.
+
+WORKSPACE
+
+Inspect applicable instructions, worktrees, dirty files, running jobs,
+available storage, GPU, interpreters and previous handoffs.
+
+Create or safely resume:
+experiments-ashay-maxent-benign-v1
+
+Use a separate worktree:
+ /workspace/wt-maxent-benign-v1
+
+Choose the starting commit from the relevant existing Ashay evaluation
+work and record it. Inspect bionemo as the implementation reference.
+Do not merge whole branches merely to obtain a few relevant utilities.
+
+Preserve historical outputs and other worktrees.
+No resets, force pushes, automatic Pod shutdown or Slack messages.
+
+PHASE 1: DETERMINE WHAT “EXTRACT RESULTS” REQUIRES
+
+Inspect the shared materials and repository for existing BENIGN:
+- Logistic-regression metric files.
+- Fitted logistic probes.
+- Saved features.
+- Predictions and labels.
+- Evaluation configuration and logs.
+
+Distinguish these routes:
+
+A. Metrics already exist:
+   Extract them with their source and protocol.
+   Recompute from saved predictions where possible.
+
+B. Features exist but logistic probes/results do not:
+   Fit and evaluate probes on the saved eligible benign features.
+
+C. Only model checkpoints exist:
+   Load the frozen models, extract benign representations, then fit
+   logistic probes.
+
+Do not label an MLP result as logistic regression.
+Do not claim a checkpoint inherently contains downstream AUROC.
+Do not repeat GPU extraction if compatible saved features are available.
+
+PHASE 2: ESTABLISH A LOADABLE BENIGN EVALUATION PAIR
+
+Download only the required files, preserving checkpoint directory
+structure. Record file IDs, sizes and local SHA256 hashes.
+
+Check completeness against checkpoint metadata, not filenames alone.
+
+Use run configurations and bionemo source to establish:
+- Model architecture and backend.
+- Required library versions.
+- Tokenizer identity and special-token handling.
+- Sequence handling and padding.
+- MaxEnt checkpoint identity.
+- Whether the converted base is its documented pretrained parent.
+- Whether a classifier head is embedded and how it is distinguished
+  from the frozen backbone.
+
+Do not silently accept missing backbone weights, random initialization
+or unexpected model substitutions.
+
+Use an isolated environment if dependencies need changes.
+
+Run a small benign smoke test:
+- Successful checkpoint loading with explained key differences.
+- Finite representations and scoring outputs.
+- Expected representation dimensions.
+- Stable row/label association.
+- Correct masking and pooling.
+
+If parent provenance is unresolved but both models load correctly,
+label any comparison as a reference-model comparison with unresolved
+lineage. Do not claim a verified causal before/after effect.
+
+A localized blocker should not stop independent extraction of existing
+benign results.
+
+PHASE 3: COMPLETE H3 FIRST
+
+Use the supplied-H3 manifests and preserve their split identities.
+
+Historical split counts were:
+11,971 train / 1,497 dev / 1,497 test.
+Verify them; do not assume files with similar names are identical.
+
+Record label mapping, sequence processing, overlap checks and available
+biological grouping information. Do not rewrite historical splits.
+
+Define the evaluation protocol before inspecting new test scores.
+
+Use frozen backbones and genuine logistic-regression probes.
+Reuse the established benign probe-fitting implementation where valid.
+Fit preprocessing only on training data and inside selection folds.
+Use the same prespecified selection procedure for both models.
+
+Measure two distinct questions:
+1. Separately fitted logistic probes on base and MaxEnt representations:
+   how accessible is benign task information under this fitting protocol?
+2. A fixed base probe evaluated on MaxEnt representations, where feature
+   coordinates, dimensions and preprocessing make that meaningful:
+   how well does the original readout transfer?
+
+Do not interpret fixed-probe degradation alone as information removal.
+
+Start with the documented final representation and the intermediate
+representation corresponding to Sayyed’s “layer 16.”
+
+Explicitly resolve layer numbering and hook location.
+Do not silently equate layer 16 with blocks.15.
+If mapping remains unresolved, use exact module names and state it.
+
+Report:
+- AUROC.
+- Accuracy using the prespecified decision rule.
+- Balanced accuracy.
+- Average precision for binary H3.
+- Causal LM NLL and perplexity if the validated loading/scoring route
+  supports them.
+
+Classification loss and causal LM NLL must remain distinct.
+Aggregate causal NLL by scored target count, not an unweighted average
+of sequence means when lengths differ.
+
+Save prediction probabilities, labels, row IDs, fitted probes,
+configuration, and provenance.
+
+PHASE 4: QUANTIFY THE COMPARISON
+
+Use matched examples for paired base/MaxEnt differences.
+
+Report paired uncertainty with appropriate available grouping.
+If only example-level resampling is possible, state the independence
+limitation and that intervals are conditional on fitted probes.
+
+Historical H3 test results have already been inspected.
+Describe this as exploratory follow-up rather than a new untouched
+confirmatory test.
+
+Do not choose the best layer, seed or threshold from test performance.
+Present all prespecified results.
+
+Our historical original-backend H3 results were:
+- MLP AUROC 0.8318.
+- Linear probe AUROC 0.8469.
+- 4-mer AUROC 0.8955.
+
+Keep these as separate historical references unless full comparability
+is established. Do not subtract them from new BioNeMo scores and call
+that an unlearning effect.
+
+PHASE 5: EXPAND THROUGH THE BENIGN TASKS
+
+After saving and checking H3, proceed to:
+1. Promoter.
+2. Splice.
+3. Core promoter.
+4. Human TF.
+5. Mouse TF.
+
+Reuse the verified paired evaluation path.
+Preserve each dataset’s label structure and metric definition.
+For multiclass tasks, state the AUROC averaging convention explicitly.
+
+Check the existing compute ledger and remaining authorized budget.
+Do not reset it. Measure smoke-test throughput and estimate the remaining
+work before expanding. Stop cleanly at the budget boundary with completed
+tasks saved.
+
+If resources do not cover everything, prioritize a complete H3 comparison
+and the promoter/splice extension over a partially completed six-task run.
+
+Broader layer sweeps and incremental retain-set training are subsequent
+experiments, not prerequisites for delivering this first comparison.
+
+DELIVERABLES
+
+Write a focused output directory:
+docs/experiments/ashay/maxent-benign-v1/
+
+Include:
+- RESULTS.md: numerical findings and their interpretation.
+- metrics.csv: model/task/split/layer/probe/metric/value.
+- paired_comparisons.csv: differences and uncertainty.
+- checkpoint_inventory.json: identities and completeness evidence.
+- run_manifest.json: producing commit, configs and dataset fingerprints.
+- SESSION_HANDOFF.md: resume state and remaining work.
+
+Store large artifacts outside Git and link them through manifests.
+Keep original and new results separate.
+
+VALIDATION
+
+Independently recompute metrics from saved benign predictions.
+Check row counts, label/probability ordering and split identity.
+Confirm both models actually contributed their own features.
+Check the intended backbone stayed frozen.
+Use targeted tests for changed code and concrete risks.
+
+Do not spend the session repeating every historical test.
+
+Commit the new code and reports on the isolated branch.
+I authorize pushing only experiments-ashay-maxent-benign-v1 after checking
+the staged changes for secrets, large binaries and unintended files.
+
+Preserve newly produced irreplaceable artifacts using the established
+private backup route if authentication is available. Verify retrieval
+before declaring the new work recoverable.
+
+FINAL RESPONSE
+
+Lead with the actual results:
+
+Task | Representation | Base AUROC | MaxEnt AUROC | Paired difference
+     | Base accuracy  | MaxEnt accuracy | Comparison status
+
+Then state:
+- Existing results recovered versus genuinely new measurements.
+- Checkpoint identities and unresolved provenance.
+- Completed tasks.
+- Actual GPU time and active jobs.
+- Branch and commit.
+- Artifact and backup status.
+- The next experiment justified by the findings.
+
+If no new measurement was possible, explain the exact failure and the
+smallest action that resolves it. Do not call another inventory or
+reconciliation a completed experiment.
