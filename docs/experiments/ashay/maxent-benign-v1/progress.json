@@ -1,25 +1,34 @@
 {
-  "stage": "checkpoint_downloads_and_isolated_runtime",
+  "stage": "both_smokes_passed_full_H3_authorized",
   "started_utc": "2026-11-03T12:23:26Z",
   "deadline_utc": "2026-11-03T14:23:26Z",
   "prompt_commit": "7d1318dded7e1e98563a123fcd170daa86b94b12",
   "prompt_sha256": "e157f1aeeb699fdc69c11ecbc8d82c50a8b64556d6ad29a2c14f40d464908af2",
   "starting_commit": "c2109848d323ceb170d14d2ae8137864de7fb302",
-  "gpu_seconds_this_run": 0,
+  "gpu_seconds_this_run": 19.193715999999995,
   "historical_gpu_seconds": 868.753177,
   "gpu_limit_seconds": 7200,
-  "gpu_remaining_seconds": 6331.246823,
+  "gpu_remaining_seconds": 6312.053107,
   "completed": [
     "parent173 and supplement95 payload verification",
-    "historical benign prediction metric reconstruction"
+    "historical benign prediction metric reconstruction",
+    "all base and MaxEnt shards downloaded and hashed",
+    "254 finite tensors per backbone;234 changed",
+    "base eight-row GPU smoke passed"
   ],
   "new_maxent_examples": 0,
-  "active_pids": [
-    4940
-  ],
+  "active_pids": [],
   "artifacts": [
     "/workspace/recovery/maxent-benign",
     "/workspace/maxent-assets"
   ],
-  "blocker": "connector large-file limit bypassed through normal shared-file download; runtime under construction"
+  "blocker": "connector large-file limit bypassed through normal shared-file download; runtime under construction",
+  "updated_utc": "2026-11-03T12:44:36.902790+00:00",
+  "throughput": {
+    "warm_batch_seconds": 0.07088090688921511,
+    "batch_size": 8,
+    "estimated_forward_seconds_per_H3_model": 132.59159644963802,
+    "estimate_excludes": "loading and filesystem I/O"
+  },
+  "dtype_policy": "native BF16 compute with FP32 filter modules; stored BF16 filter values losslessly promoted to FP32; no FP32 downcast"
 }
