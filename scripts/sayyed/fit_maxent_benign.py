@@ -22,7 +22,7 @@ def arrays(path,manifest):
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--base',required=True);ap.add_argument('--post',required=True);ap.add_argument('--manifest',required=True);ap.add_argument('--output',required=True);args=ap.parse_args()
-    started=time.monotonic();run=Path(args.output);run.mkdir(parents=True,exist_ok=True);(run/'models').mkdir(exist_ok=True)
+    started=time.monotonic();cpu_started=time.process_time();run=Path(args.output);run.mkdir(parents=True,exist_ok=True);(run/'models').mkdir(exist_ok=True)
     rows=list(map(json.loads,Path(args.manifest).read_text().splitlines()));base,bi=arrays(args.base,rows);post,pi=arrays(args.post,rows)
     if bi['cache_key']==pi['cache_key'] or bi['checkpoint']==pi['checkpoint']:raise ValueError('Model cache collision')
     y=base['labels'];splits=base['split'];tr=np.flatnonzero(splits=='train');groups=np.array([r['exact_rc_group'] for r in rows]);folds=list(StratifiedGroupKFold(n_splits=3,shuffle=True,random_state=42).split(tr,y[tr],groups[tr]))
@@ -42,7 +42,7 @@ def main():
         if np.array_equal(base[layer],post[layer]):raise ValueError('Identical base/post features; investigate source')
         models={}
         for name,arr in [('base',base),('maxent',post)]:
-            x=arr[layer];candidates=[]
+            fit_started=time.monotonic();fit_cpu_started=time.process_time();x=arr[layer];candidates=[]
             with threadpool_limits(limits=4):
                 for c in [.1,1.,10.]:
                     scores=[]
@@ -55,6 +55,7 @@ def main():
                 chosen=max(candidates,key=lambda v:(v['mean_auroc'],-v['C']))['C'];model,attempts=train_model(x[tr],y[tr],chosen)
                 if attempts[-1]['warnings']:raise ValueError('Refit warning')
             joblib.dump(model,run/'models'/f'{name}_{layer}.joblib');models[name]=model
+            write(run/f'{name}_{layer}_fit_timing.json',dict(wall_seconds=time.monotonic()-fit_started,cpu_seconds=time.process_time()-fit_cpu_started))
             print(name,layer,'selected C',chosen,flush=True)
         for split in ['dev','test']:
             ix=np.flatnonzero(splits==split)
@@ -86,5 +87,5 @@ def main():
     for name,records in [('metrics.csv',metrics),('paired_comparisons.csv',comparisons)]:
         with (run/name).open('w',newline='') as f:
             w=csv.DictWriter(f,fieldnames=list(records[0]),lineterminator='\n');w.writeheader();w.writerows(records)
-    write(run/'fit_complete.json',dict(wall_seconds=time.monotonic()-started,prediction_rows=len(predictions),source_sha256=sha(__file__)))
+    write(run/'fit_complete.json',dict(cpu_seconds=time.process_time()-cpu_started,wall_seconds=time.monotonic()-started,prediction_rows=len(predictions),source_sha256=sha(__file__)))
 if __name__=='__main__':main()
