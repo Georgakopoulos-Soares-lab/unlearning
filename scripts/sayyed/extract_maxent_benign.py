@@ -1,5 +1,5 @@
 """Frozen BioNeMo benign H3 extraction with separate checkpoint cache identities."""
-import argparse,dataclasses,fcntl,hashlib,json,os,time,subprocess,importlib.metadata
+import argparse,dataclasses,fcntl,hashlib,json,os,time,subprocess,importlib.metadata,signal
 from pathlib import Path
 import numpy as np
 import torch
@@ -13,8 +13,12 @@ def write(path,obj):
     tmp=path.with_suffix(path.suffix+'.tmp');tmp.write_text(json.dumps(obj,indent=2));tmp.replace(path)
 def sha(p):
     return hashlib.file_digest(Path(p).open('rb'),'sha256').hexdigest()
+def terminate_own_stage(*_):
+    raise SystemExit('Terminated own stage; ledger finalized')
+
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--checkpoint',required=True);ap.add_argument('--config',required=True);ap.add_argument('--tokenizer',required=True);ap.add_argument('--manifest',required=True);ap.add_argument('--output',required=True);ap.add_argument('--model-name',required=True);ap.add_argument('--smoke',action='store_true');ap.add_argument('--smoke-rows',type=int,default=32);ap.add_argument('--batch-size',type=int,default=8);args=ap.parse_args()
+    signal.signal(signal.SIGTERM,terminate_own_stage)
     torch.set_num_threads(4);out=Path(args.output);out.mkdir(parents=True,exist_ok=True)
     manifest=Path(args.manifest);rows=list(map(json.loads,manifest.read_text().splitlines()))
     if args.smoke:rows=[r for r in rows if r['split']=='train'][:args.smoke_rows]
@@ -88,7 +92,9 @@ def main():
                 loss=torch.nn.functional.cross_entropy(logits[:,:-1].float().reshape(-1,512),tokens[:,1:].reshape(-1),reduction='none').reshape(len(rr),-1);mask=positions[:,1:]<lengths[:,None];sums=(loss*mask).sum(1)
                 if not torch.isfinite(sums).all():raise ValueError('Nonfinite NLL')
             torch.cuda.synchronize();batch_seconds.append(time.monotonic()-t);forward_seconds+=batch_seconds[-1]
-            np.savez(target,ids=np.array([r['id'] for r in rr]),labels=np.array([r['label'] for r in rr]),split=np.array([r['split'] for r in rr]),sequence_sha256=np.array([hashlib.sha256(r['sequence'].encode()).hexdigest() for r in rr]),cache_key=np.array(key),nll_sum=sums.cpu().numpy(),n_tokens=(lengths-1).cpu().numpy(),**{k:v.cpu().numpy() for k,v in features.items()})
+            temporary=target.with_name('.'+target.name+'.tmp.npz')
+            np.savez(temporary,ids=np.array([r['id'] for r in rr]),labels=np.array([r['label'] for r in rr]),split=np.array([r['split'] for r in rr]),sequence_sha256=np.array([hashlib.sha256(r['sequence'].encode()).hexdigest() for r in rr]),cache_key=np.array(key),nll_sum=sums.cpu().numpy(),n_tokens=(lengths-1).cpu().numpy(),**{k:v.cpu().numpy() for k,v in features.items()})
+            temporary.replace(target)
             processed+=len(rr);chunk_count+=1
             write(out/'progress.json',dict(processed=processed,total=len(rows),pid=os.getpid(),elapsed=time.monotonic()-started,forward_seconds=forward_seconds,peak_memory=torch.cuda.max_memory_allocated(),cache_key=key))
         write(out/'complete.json',dict(examples=processed,batch_seconds=batch_seconds,forward_seconds=forward_seconds,wall_seconds=time.monotonic()-started,peak_memory=torch.cuda.max_memory_allocated(),cache_key=key))
