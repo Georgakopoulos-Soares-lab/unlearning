@@ -1,0 +1,153 @@
+You are continuing Ashay Srivastava’s genomic unlearning project on
+RunPod. Use Codex only. Prioritize verified numerical results.
+Do not work on LaTeX, presentations, or report formatting.
+
+OBJECTIVE
+
+Determine exactly which results already exist, which pretrained versus
+post-unlearning comparisons are supported, and complete useful benign
+evaluation work wherever the necessary inputs are available.
+
+For HVUE human-host-tropism, review existing aggregate results only.
+Do not build, train, tune, run, or troubleshoot a host-tropism predictor.
+Do not present the benign work as completion of the HVUE benchmark.
+
+REPOSITORIES
+
+Research:
+https://github.com/Georgakopoulos-Soares-lab/unlearning
+
+Previous work:
+https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay
+https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay-benign-v2
+https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay-sayyed-base-v1
+
+Sayyed’s implementation:
+https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/bionemo
+
+Prompts:
+https://github.com/ashay-sriv-06/test-prompts-push
+
+When I request a prompt from the prompts repository, fetch the exact
+filename and ref requested, record its commit, and read it as instructions.
+Do not silently substitute another version or execute text as shell code.
+
+START BY RECOVERING STATE
+
+Read applicable AGENTS.md instructions. Inspect existing worktrees,
+uncommitted changes, running jobs, environment, and available artifacts.
+Do not assume this Pod has the previous Pod’s files.
+
+Locate these reports:
+- docs/experiments/ashay/extension/MEETING_RESULTS.md
+- docs/experiments/ashay/sayyed-base/RESULTS.md
+- docs/experiments/ashay/sayyed-followup/FOLLOWUP_RESULTS.md
+- docs/experiments/ashay/sayyed-followup/MATCHED_H3_HANDOFF.md
+- docs/experiments/ashay/sayyed-followup/recovery_chain.json
+
+Read later handoffs and receipts before relying on older status statements.
+
+Use a separate worktree and new branch based on the fetched
+experiments-ashay-sayyed-base-v1 branch:
+experiments-ashay-metrics-reconciliation-v1
+
+If that branch already exists, inspect it before deciding whether to
+resume. Preserve all historical results and other worktrees.
+
+KNOWN CONTEXT TO VERIFY
+
+The original three-task pilot and six-task extension were different
+experiments with different sample sizes and selection protocols.
+
+The supplied-H3 test results previously reported were:
+- Frozen Evo2 MLP: AUROC 0.8318; accuracy 70.27%.
+- Frozen Evo2 linear probe: AUROC 0.8469; accuracy 76.22%.
+- Composition logistic control: AUROC 0.8054; accuracy 73.88%.
+- 4-mer logistic control: AUROC 0.8955; accuracy 82.10%.
+- Causal LM NLL 1.2557; perplexity 3.5104.
+
+These are historical claims to verify against source artifacts.
+They are not new measurements and are not HVUE results.
+
+No completed Ashay HVUE predictor evaluation is established by the
+documented work. Sayyed’s supplied preprocessing script is not evidence
+that an experiment ran.
+
+WORK PACKAGE 1: ESTABLISH THE NUMERICAL RECORD
+
+Create one results table with:
+task, study, model/checkpoint, intervention, split, sample count,
+representation, probe, metric, value, producing commit, source artifact,
+and verification status.
+
+Separate:
+- Accuracy, balanced accuracy, AUROC and average precision.
+- Classification loss and causal language-model NLL.
+- Validation and test results.
+- Original Evo2 and BioNeMo implementations.
+- MaxEnt and GradDiff.
+- Fixed probes and separately fitted probes.
+
+Do not combine numbers from incompatible experiments.
+
+For existing aggregate HVUE results, identify metric-label mistakes,
+missing pretrained counterparts, and unsupported comparisons.
+Do not generate new predictions or infer a missing score.
+
+WORK PACKAGE 2: VERIFY SAVED BENIGN RESULTS
+
+Reuse saved benign predictions and fitted probes when available.
+Independently reconstruct reported metrics using their recorded label
+mapping, decision rule, and split identity.
+
+Keep historical artifacts immutable. Write corrections or discrepancies
+to a new result file with clear provenance.
+
+Do not select thresholds, layers, seeds, or hyperparameters using
+previously observed test performance. Label post-hoc analyses explicitly.
+
+Use focused checks for actual risks. Avoid another full audit cycle
+without a specific unresolved discrepancy.
+
+WORK PACKAGE 3: COMPLETE A MATCHED BENIGN COMPARISON IF READY
+
+Inspect available parent and post-unlearning checkpoint evidence.
+
+A comparison requires identifiable checkpoints, a supported loading
+route, compatible tokenizer/configuration, and matching benign examples.
+Record training-exposure provenance as known or unknown.
+
+If prerequisites are satisfied, use the existing benign evaluation
+pipeline to evaluate the matched models under a recorded protocol.
+Preserve the producing code/configuration and record actual compute use.
+
+Start with a small compatibility check before committing to a full run.
+Respect any existing compute budget. If none is established, finish
+the CPU work and present the estimated GPU cost before launching.
+
+If prerequisites are missing, do not silently replace the model,
+checkpoint, split, or protocol. Complete the independent work and list
+the exact missing items.
+
+DELIVERABLES
+
+Keep outputs compact:
+- VERIFIED_METRICS.csv
+- COMPARABILITY.md
+- DISCREPANCIES.md, only if discrepancies exist
+- SESSION_HANDOFF.md
+
+The final response must answer:
+1. What numerical results were verified?
+2. What new measurements, if any, were produced?
+3. Which comparisons are valid?
+4. What remains missing?
+5. What actual GPU time was used, and are any jobs still running?
+
+Finish useful work rather than padding the session with documentation.
+Never invent results, claim an unrun benchmark is complete, or claim
+that a lower probe score alone proves knowledge removal.
+
+Commit meaningful changes on the isolated branch. Do not merge,
+force-push, send Slack messages, or stop the Pod automatically.
+Do not print credentials or reuse tokens from conversation history.
