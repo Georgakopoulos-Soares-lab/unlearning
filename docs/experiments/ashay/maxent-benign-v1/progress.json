@@ -1,14 +1,14 @@
 {
-  "stage": "base_H3_complete_maxent_H3_extracting",
+  "stage": "H3_COMPLETE_VERIFIED",
   "started_utc": "2026-11-03T12:23:26Z",
   "deadline_utc": "2026-11-03T14:23:26Z",
   "prompt_commit": "7d1318dded7e1e98563a123fcd170daa86b94b12",
   "prompt_sha256": "e157f1aeeb699fdc69c11ecbc8d82c50a8b64556d6ad29a2c14f40d464908af2",
   "starting_commit": "c2109848d323ceb170d14d2ae8137864de7fb302",
-  "gpu_seconds_this_run": 191.0001749999999,
+  "gpu_seconds_this_run": 362.8712959999998,
   "historical_gpu_seconds": 868.753177,
   "gpu_limit_seconds": 7200,
-  "gpu_remaining_seconds": 6140.246648,
+  "gpu_remaining_seconds": 5968.375527,
   "completed": [
     "parent173 and supplement95 payload verification",
     "historical benign prediction metric reconstruction",
@@ -17,16 +17,14 @@
     "base eight-row GPU smoke passed"
   ],
   "new_maxent_examples": 0,
-  "active_pids": [
-    9740
-  ],
+  "active_pids": [],
   "artifacts": [
     "/workspace/recovery/maxent-benign",
     "/workspace/maxent-assets",
     "/workspace/meeting-artifacts/maxent-benign-v16/base-H3"
   ],
   "blocker": "connector large-file limit bypassed through normal shared-file download; runtime under construction",
-  "updated_utc": "2026-11-03T12:49:13.669346+00:00",
+  "updated_utc": "2026-11-03T12:58:10.706733+00:00",
   "throughput": {
     "warm_batch_seconds": 0.07088090688921511,
     "batch_size": 8,
@@ -37,6 +35,8 @@
   "new_base_examples": 4416,
   "source_commit": "55a7a78",
   "completed_tasks": {
-    "base_H3": 14965
+    "base_H3": 14965,
+    "maxent_H3": 14965,
+    "H3_verified_prediction_rows": 5988
   }
 }
