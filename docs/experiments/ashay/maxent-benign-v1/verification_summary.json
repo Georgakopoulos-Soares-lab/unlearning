@@ -1,0 +1,648 @@
+{
+  "studies": {
+    "H3-probes": {
+      "prediction_rows": 5988,
+      "bootstrap_max_abs_delta": 4.440892098500626e-16,
+      "checks": [
+        {
+          "model": "base_refit",
+          "split": "dev",
+          "layer": "final_norm",
+          "metrics": {
+            "auroc": 0.8198903708465013,
+            "average_precision": 0.7963694715769304,
+            "accuracy": 0.7508350033400134,
+            "balanced_accuracy": 0.7512962665381113,
+            "sensitivity": 0.7257217847769029,
+            "specificity": 0.7768707482993197,
+            "confusion_matrix": [
+              [
+                571,
+                164
+              ],
+              [
+                209,
+                553
+              ]
+            ],
+            "class1_prevalence": 0.5090180360721442
+          }
+        },
+        {
+          "model": "maxent_refit",
+          "split": "dev",
+          "layer": "final_norm",
+          "metrics": {
+            "auroc": 0.8393593657935615,
+            "average_precision": 0.8274317936798466,
+            "accuracy": 0.7568470273881096,
+            "balanced_accuracy": 0.7570571535700894,
+            "sensitivity": 0.7454068241469817,
+            "specificity": 0.7687074829931972,
+            "confusion_matrix": [
+              [
+                565,
+                170
+              ],
+              [
+                194,
+                568
+              ]
+            ],
+            "class1_prevalence": 0.5090180360721442
+          }
+        },
+        {
+          "model": "maxent_fixed_base",
+          "split": "dev",
+          "layer": "final_norm",
+          "metrics": {
+            "auroc": 0.6934311782455764,
+            "average_precision": 0.6742905411589675,
+            "accuracy": 0.5170340681362725,
+            "balanced_accuracy": 0.5081632653061224,
+            "sensitivity": 1.0,
+            "specificity": 0.0163265306122449,
+            "confusion_matrix": [
+              [
+                12,
+                723
+              ],
+              [
+                0,
+                762
+              ]
+            ],
+            "class1_prevalence": 0.5090180360721442
+          }
+        },
+        {
+          "model": "base_refit",
+          "split": "test",
+          "layer": "final_norm",
+          "metrics": {
+            "auroc": 0.8330965173774121,
+            "average_precision": 0.790837725830753,
+            "accuracy": 0.758183032732131,
+            "balanced_accuracy": 0.7580951785937416,
+            "sensitivity": 0.7682119205298014,
+            "specificity": 0.7479784366576819,
+            "confusion_matrix": [
+              [
+                555,
+                187
+              ],
+              [
+                175,
+                580
+              ]
+            ],
+            "class1_prevalence": 0.5043420173680695
+          }
+        },
+        {
+          "model": "maxent_refit",
+          "split": "test",
+          "layer": "final_norm",
+          "metrics": {
+            "auroc": 0.8426893486371182,
+            "average_precision": 0.8432014687795317,
+            "accuracy": 0.7628590514362057,
+            "balanced_accuracy": 0.7627193373913355,
+            "sensitivity": 0.7788079470198676,
+            "specificity": 0.7466307277628033,
+            "confusion_matrix": [
+              [
+                554,
+                188
+              ],
+              [
+                167,
+                588
+              ]
+            ],
+            "class1_prevalence": 0.5043420173680695
+          }
+        },
+        {
+          "model": "maxent_fixed_base",
+          "split": "test",
+          "layer": "final_norm",
+          "metrics": {
+            "auroc": 0.6687063779654059,
+            "average_precision": 0.6312641691904528,
+            "accuracy": 0.511690046760187,
+            "balanced_accuracy": 0.5074123989218329,
+            "sensitivity": 1.0,
+            "specificity": 0.014824797843665768,
+            "confusion_matrix": [
+              [
+                11,
+                731
+              ],
+              [
+                0,
+                755
+              ]
+            ],
+            "class1_prevalence": 0.5043420173680695
+          }
+        },
+        {
+          "model": "base_refit",
+          "split": "dev",
+          "layer": "decoder_layer_16",
+          "metrics": {
+            "auroc": 0.934063599192958,
+            "average_precision": 0.9284799953651542,
+            "accuracy": 0.8717434869739479,
+            "balanced_accuracy": 0.8719910011248594,
+            "sensitivity": 0.8582677165354331,
+            "specificity": 0.8857142857142857,
+            "confusion_matrix": [
+              [
+                651,
+                84
+              ],
+              [
+                108,
+                654
+              ]
+            ],
+            "class1_prevalence": 0.5090180360721442
+          }
+        },
+        {
+          "model": "maxent_refit",
+          "split": "dev",
+          "layer": "decoder_layer_16",
+          "metrics": {
+            "auroc": 0.9503954862785009,
+            "average_precision": 0.9510106572063685,
+            "accuracy": 0.8877755511022044,
+            "balanced_accuracy": 0.8879077615298088,
+            "sensitivity": 0.8805774278215223,
+            "specificity": 0.8952380952380953,
+            "confusion_matrix": [
+              [
+                658,
+                77
+              ],
+              [
+                91,
+                671
+              ]
+            ],
+            "class1_prevalence": 0.5090180360721442
+          }
+        },
+        {
+          "model": "maxent_fixed_base",
+          "split": "dev",
+          "layer": "decoder_layer_16",
+          "metrics": {
+            "auroc": 0.8266859499705393,
+            "average_precision": 0.8172652270019923,
+            "accuracy": 0.7074148296593187,
+            "balanced_accuracy": 0.7099951791740318,
+            "sensitivity": 0.5669291338582677,
+            "specificity": 0.8530612244897959,
+            "confusion_matrix": [
+              [
+                627,
+                108
+              ],
+              [
+                330,
+                432
+              ]
+            ],
+            "class1_prevalence": 0.5090180360721442
+          }
+        },
+        {
+          "model": "base_refit",
+          "split": "test",
+          "layer": "decoder_layer_16",
+          "metrics": {
+            "auroc": 0.9353242534049732,
+            "average_precision": 0.9379045155229611,
+            "accuracy": 0.8710754843019372,
+            "balanced_accuracy": 0.8711295764088467,
+            "sensitivity": 0.8649006622516556,
+            "specificity": 0.8773584905660378,
+            "confusion_matrix": [
+              [
+                651,
+                91
+              ],
+              [
+                102,
+                653
+              ]
+            ],
+            "class1_prevalence": 0.5043420173680695
+          }
+        },
+        {
+          "model": "maxent_refit",
+          "split": "test",
+          "layer": "decoder_layer_16",
+          "metrics": {
+            "auroc": 0.9507363310187251,
+            "average_precision": 0.946051952312077,
+            "accuracy": 0.8824315297261189,
+            "balanced_accuracy": 0.8825386908480748,
+            "sensitivity": 0.8701986754966887,
+            "specificity": 0.894878706199461,
+            "confusion_matrix": [
+              [
+                664,
+                78
+              ],
+              [
+                98,
+                657
+              ]
+            ],
+            "class1_prevalence": 0.5043420173680695
+          }
+        },
+        {
+          "model": "maxent_fixed_base",
+          "split": "test",
+          "layer": "decoder_layer_16",
+          "metrics": {
+            "auroc": 0.8478231377519144,
+            "average_precision": 0.8272194636897328,
+            "accuracy": 0.7394789579158316,
+            "balanced_accuracy": 0.740538369539994,
+            "sensitivity": 0.6185430463576159,
+            "specificity": 0.862533692722372,
+            "confusion_matrix": [
+              [
+                640,
+                102
+              ],
+              [
+                288,
+                467
+              ]
+            ],
+            "class1_prevalence": 0.5043420173680695
+          }
+        }
+      ],
+      "source_sha256": "5274d97aeed94711820e9ebf282211d3d725ba958d704d15d3e9c1ecddefc227",
+      "scope": "Predictions and identities; independent tied-rank/contingency metrics; not GPU replication"
+    },
+    "promoter-splice-probes": {
+      "prediction_rows": 2048,
+      "conditions": 12,
+      "checks": [
+        {
+          "task": "gue_prom_300_all",
+          "layer": "final_norm",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.8369115739681087,
+            "accuracy": 0.763671875,
+            "balanced_accuracy": 0.7635080491340505,
+            "average_precision": 0.8397312963399536
+          }
+        },
+        {
+          "task": "gue_prom_300_all",
+          "layer": "final_norm",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.8338902876325628,
+            "accuracy": 0.740234375,
+            "balanced_accuracy": 0.7398260471503777,
+            "average_precision": 0.8323537473211611
+          }
+        },
+        {
+          "task": "gue_prom_300_all",
+          "layer": "final_norm",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.27861448081178,
+            "accuracy": 0.498046875,
+            "balanced_accuracy": 0.5,
+            "average_precision": 0.3883749488505993
+          }
+        },
+        {
+          "task": "gue_prom_300_all",
+          "layer": "decoder_layer_16",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.9543907835507744,
+            "accuracy": 0.89453125,
+            "balanced_accuracy": 0.8944686045624475,
+            "average_precision": 0.9470511982934217
+          }
+        },
+        {
+          "task": "gue_prom_300_all",
+          "layer": "decoder_layer_16",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.9636377508201724,
+            "accuracy": 0.890625,
+            "balanced_accuracy": 0.8904859998474097,
+            "average_precision": 0.9624160900528272
+          }
+        },
+        {
+          "task": "gue_prom_300_all",
+          "layer": "decoder_layer_16",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.5629205767910277,
+            "accuracy": 0.45703125,
+            "balanced_accuracy": 0.45874723430228126,
+            "average_precision": 0.6334649100395724
+          }
+        },
+        {
+          "task": "gue_splice_reconstructed",
+          "layer": "final_norm",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.633477253630979,
+            "accuracy": 0.3984375,
+            "balanced_accuracy": 0.4482658325651405
+          }
+        },
+        {
+          "task": "gue_splice_reconstructed",
+          "layer": "final_norm",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.5933225664169971,
+            "accuracy": 0.3828125,
+            "balanced_accuracy": 0.4333557482346409
+          }
+        },
+        {
+          "task": "gue_splice_reconstructed",
+          "layer": "final_norm",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.5438250595496753,
+            "accuracy": 0.21875,
+            "balanced_accuracy": 0.3333333333333333
+          }
+        },
+        {
+          "task": "gue_splice_reconstructed",
+          "layer": "decoder_layer_16",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.787930184613106,
+            "accuracy": 0.65625,
+            "balanced_accuracy": 0.626194873815981
+          }
+        },
+        {
+          "task": "gue_splice_reconstructed",
+          "layer": "decoder_layer_16",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.7219795136333785,
+            "accuracy": 0.560546875,
+            "balanced_accuracy": 0.5146191359426654
+          }
+        },
+        {
+          "task": "gue_splice_reconstructed",
+          "layer": "decoder_layer_16",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.5032393865993336,
+            "accuracy": 0.525390625,
+            "balanced_accuracy": 0.32506208630776107
+          }
+        }
+      ],
+      "bootstrap_max_abs_delta": 4.440892098500626e-16,
+      "scope": "Independent tied-rank/class-count predictions and exact/RC-group bootstrap; no GPU replication"
+    },
+    "remaining-probes": {
+      "prediction_rows": 3072,
+      "conditions": 18,
+      "checks": [
+        {
+          "task": "gue_mouse_0",
+          "layer": "final_norm",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.6106564885496183,
+            "accuracy": 0.587890625,
+            "balanced_accuracy": 0.5878015267175573,
+            "average_precision": 0.6303805834455
+          }
+        },
+        {
+          "task": "gue_mouse_0",
+          "layer": "final_norm",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.6585343511450382,
+            "accuracy": 0.623046875,
+            "balanced_accuracy": 0.6216946564885496,
+            "average_precision": 0.6590553569482811
+          }
+        },
+        {
+          "task": "gue_mouse_0",
+          "layer": "final_norm",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.6282595419847328,
+            "accuracy": 0.595703125,
+            "balanced_accuracy": 0.5956183206106871,
+            "average_precision": 0.6323326513834775
+          }
+        },
+        {
+          "task": "gue_mouse_0",
+          "layer": "decoder_layer_16",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.8769465648854962,
+            "accuracy": 0.7734375,
+            "balanced_accuracy": 0.7726717557251908,
+            "average_precision": 0.8953007129179139
+          }
+        },
+        {
+          "task": "gue_mouse_0",
+          "layer": "decoder_layer_16",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.8340916030534351,
+            "accuracy": 0.751953125,
+            "balanced_accuracy": 0.750763358778626,
+            "average_precision": 0.8654280841990751
+          }
+        },
+        {
+          "task": "gue_mouse_0",
+          "layer": "decoder_layer_16",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.5970687022900764,
+            "accuracy": 0.4765625,
+            "balanced_accuracy": 0.48690076335877863,
+            "average_precision": 0.5982687307659977
+          }
+        },
+        {
+          "task": "gue_prom_core_all",
+          "layer": "final_norm",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.7613837514496734,
+            "accuracy": 0.67578125,
+            "balanced_accuracy": 0.6757004211682842,
+            "average_precision": 0.7905213165900181
+          }
+        },
+        {
+          "task": "gue_prom_core_all",
+          "layer": "final_norm",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.7732863333943722,
+            "accuracy": 0.724609375,
+            "balanced_accuracy": 0.7248519807117133,
+            "average_precision": 0.7791318464393929
+          }
+        },
+        {
+          "task": "gue_prom_core_all",
+          "layer": "final_norm",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.5457181224439969,
+            "accuracy": 0.50390625,
+            "balanced_accuracy": 0.5,
+            "average_precision": 0.5247326661529935
+          }
+        },
+        {
+          "task": "gue_prom_core_all",
+          "layer": "decoder_layer_16",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.8168680949765,
+            "accuracy": 0.748046875,
+            "balanced_accuracy": 0.7477720808154794,
+            "average_precision": 0.8099188383178332
+          }
+        },
+        {
+          "task": "gue_prom_core_all",
+          "layer": "decoder_layer_16",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.8465635109564793,
+            "accuracy": 0.783203125,
+            "balanced_accuracy": 0.7831746322407374,
+            "average_precision": 0.8455024908629634
+          }
+        },
+        {
+          "task": "gue_prom_core_all",
+          "layer": "decoder_layer_16",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.5938167612769334,
+            "accuracy": 0.49609375,
+            "balanced_accuracy": 0.4924006592199231,
+            "average_precision": 0.6231504174191648
+          }
+        },
+        {
+          "task": "gue_tf_0",
+          "layer": "final_norm",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.6796730578259873,
+            "accuracy": 0.642578125,
+            "balanced_accuracy": 0.6409670766175235,
+            "average_precision": 0.6717005072935641
+          }
+        },
+        {
+          "task": "gue_tf_0",
+          "layer": "final_norm",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.6416010999923611,
+            "accuracy": 0.599609375,
+            "balanced_accuracy": 0.6005576350164235,
+            "average_precision": 0.6369607251541334
+          }
+        },
+        {
+          "task": "gue_tf_0",
+          "layer": "final_norm",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.4445802459705141,
+            "accuracy": 0.482421875,
+            "balanced_accuracy": 0.5,
+            "average_precision": 0.46924109153752025
+          }
+        },
+        {
+          "task": "gue_tf_0",
+          "layer": "decoder_layer_16",
+          "model": "base_refit",
+          "metrics": {
+            "auroc": 0.8299747918417233,
+            "accuracy": 0.755859375,
+            "balanced_accuracy": 0.7550760064166222,
+            "average_precision": 0.8185300720503139
+          }
+        },
+        {
+          "task": "gue_tf_0",
+          "layer": "decoder_layer_16",
+          "model": "maxent_refit",
+          "metrics": {
+            "auroc": 0.8016194331983806,
+            "accuracy": 0.72265625,
+            "balanced_accuracy": 0.7227255366282178,
+            "average_precision": 0.8016261691388122
+          }
+        },
+        {
+          "task": "gue_tf_0",
+          "layer": "decoder_layer_16",
+          "model": "maxent_fixed_base",
+          "metrics": {
+            "auroc": 0.6447941333740738,
+            "accuracy": 0.595703125,
+            "balanced_accuracy": 0.5846841341379574,
+            "average_precision": 0.6485690588046842
+          }
+        }
+      ],
+      "bootstrap_max_abs_delta": 4.440892098500626e-16,
+      "scope": "Independent tied-rank/class-count predictions and exact/RC-group bootstrap; no GPU replication"
+    }
+  },
+  "total_prediction_rows": 11108,
+  "maximum_bootstrap_abs_difference": 4.440892098500626e-16,
+  "targeted_tests": "3 passed; tests/test_maxent_benign.py",
+  "independently_recomputed_scalar_metric_records": 232,
+  "classifier_ce_conditions": 42,
+  "causal_NLL_and_PPL_records_from_saved_sequence_statistics": 28,
+  "loss_maximum_abs_delta": 1.7763568394002505e-15,
+  "scope": "Classifier metrics from saved probabilities; causal LM metrics from saved sequence loss sums/counts; no independent GPU replication"
+}

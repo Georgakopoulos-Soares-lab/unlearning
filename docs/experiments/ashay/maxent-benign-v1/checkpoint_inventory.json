@@ -848,5 +848,18 @@
       "size": "188675",
       "mime_type": "application/octet-stream"
     }
-  ]
+  ],
+  "validation": {
+    "backbone_tensor_report": "backbone_tensor_validation.json",
+    "base_shards": "base_download_receipt.json",
+    "maxent_shard": "maxent_download_receipt.json",
+    "native_full_H3_loading": [
+      "/workspace/meeting-artifacts/maxent-benign-v16/base-H3/loading.json",
+      "/workspace/meeting-artifacts/maxent-benign-v16/maxent-H3/loading.json"
+    ],
+    "status": "254 finite model tensors per backbone read; full H3 forward passes complete; only TE extra-state differences allowed",
+    "classification_head": "No classification_head keys in backbone metadata; new logistic heads are separate artifacts",
+    "parent_evidence": "MaxEnt run_config pretrained_checkpoint path names converted-base directory; immutable upstream parent/conversion identity unresolved",
+    "method_label": "Supplied MaxEnt-labeled iteration2000; exact objective variant not independently established; not relabeled GradDiff"
+  }
 }

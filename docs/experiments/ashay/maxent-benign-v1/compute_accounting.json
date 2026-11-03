@@ -1,0 +1,89 @@
+{
+  "initial_ledger_seconds": 868.753177,
+  "final_ledger_seconds": 1423.9886059999997,
+  "additional_gpu_stage_seconds": 555.2354289999996,
+  "limit_seconds": 7200,
+  "remaining_seconds": 5776.011394,
+  "active_since": null,
+  "successful_stages": {
+    "base-smoke-v3": {
+      "examples": 8,
+      "forward_seconds": 2.8220688209403306,
+      "wall_seconds": 5.992385060992092,
+      "peak_memory": 3241954816,
+      "cache_key": "4f3b5de793902c624cbe504177d9aaf7b865ce47cd17f8b913a5031d67d7c7f7"
+    },
+    "maxent-smoke-v2": {
+      "examples": 32,
+      "forward_seconds": 2.596066555008292,
+      "wall_seconds": 5.833334550028667,
+      "peak_memory": 3283686912,
+      "cache_key": "2cb91021bea28841b70192a8dc121b0c399fb9a38d1378ae655ff86a23c137f5"
+    },
+    "base-H3": {
+      "examples": 14965,
+      "forward_seconds": 135.2376359528862,
+      "wall_seconds": 171.7839190729428,
+      "peak_memory": 3450123776,
+      "cache_key": "1e02703b15e346c6f4c955eb5ccff93d8c342284e46cf05ef4b6fad4e21d3875"
+    },
+    "maxent-H3": {
+      "examples": 14965,
+      "forward_seconds": 135.92891202610917,
+      "wall_seconds": 171.8491211491637,
+      "peak_memory": 3450123776,
+      "cache_key": "43afd5c379cbc13a5a03bc51fe11b0a560a10619d70b7bc174f472c815765765"
+    },
+    "base-promoter-splice": {
+      "examples": 3072,
+      "forward_seconds": 29.18099374184385,
+      "wall_seconds": 38.421663261950016,
+      "peak_memory": 3283686912,
+      "cache_key": "f2b7d407a4fd7a0b23108ebec0b5e529d6d2a4315c2f38f806d2c3d75df60f07"
+    },
+    "maxent-promoter-splice": {
+      "examples": 3072,
+      "forward_seconds": 29.149127254495397,
+      "wall_seconds": 38.726362319896,
+      "peak_memory": 3283686912,
+      "cache_key": "d32e5dfe5703d962b2fc9affc9e9c4acae8785ad754874fc3764643ca9b72ae7"
+    },
+    "base-remaining": {
+      "examples": 4608,
+      "forward_seconds": 43.26239511743188,
+      "wall_seconds": 57.43639655201696,
+      "peak_memory": 3283686912,
+      "cache_key": "ed542fa7b033752236d225aea7ed13558a4f93bb38a0fd367ec13fcc98c1bb4a"
+    },
+    "maxent-remaining": {
+      "examples": 4608,
+      "forward_seconds": 42.95978759578429,
+      "wall_seconds": 57.7087127501145,
+      "peak_memory": 3283686912,
+      "cache_key": "b17fa913be64e57d0fc2f188249653d5676c015ed95c9493017216c945192b54"
+    }
+  },
+  "cpu_stages": {
+    "H3-probes": {
+      "cpu_seconds": 352.258987908,
+      "wall_seconds": 99.25997528596781,
+      "prediction_rows": 5988,
+      "source_sha256": "a34091c9231988fbd4c818f64df7dfeeb7b33d8788e52986a4abe9b20ca2723a"
+    },
+    "promoter-splice-probes": {
+      "wall_seconds": 69.24197753099725,
+      "cpu_seconds": 267.742673115,
+      "prediction_rows": 2048
+    },
+    "remaining-probes": {
+      "wall_seconds": 54.41282115294598,
+      "cpu_seconds": 166.28448662,
+      "prediction_rows": 3072
+    }
+  },
+  "note": "Ledger total includes failed smoke attempts and stage bookkeeping; setup/download CPU work outside GPU stages is not counted as GPU time",
+  "probe_CV_refit_and_save_wall_seconds": 91.39990184409544,
+  "probe_and_uncertainty_stage_wall_seconds": 222.91477396991104,
+  "CPU_process_seconds": 786.286147643,
+  "standalone_download_setup_duration": "Not separately metered to exactness; excluded from GPU ledger; overall execution bounded by v16 deadline"
+}

@@ -1,14 +1,14 @@
 {
-  "stage": "H3_COMPLETE_VERIFIED",
+  "stage": "COMPLETE_VERIFIED_LOCAL_ARCHIVE_VERIFIED_REMOTE_BACKUP_PENDING",
   "started_utc": "2026-11-03T12:23:26Z",
   "deadline_utc": "2026-11-03T14:23:26Z",
   "prompt_commit": "7d1318dded7e1e98563a123fcd170daa86b94b12",
   "prompt_sha256": "e157f1aeeb699fdc69c11ecbc8d82c50a8b64556d6ad29a2c14f40d464908af2",
   "starting_commit": "c2109848d323ceb170d14d2ae8137864de7fb302",
-  "gpu_seconds_this_run": 362.8712959999998,
+  "gpu_seconds_this_run": 555.2354289999996,
   "historical_gpu_seconds": 868.753177,
   "gpu_limit_seconds": 7200,
-  "gpu_remaining_seconds": 5968.375527,
+  "gpu_remaining_seconds": 5776.011394,
   "completed": [
     "parent173 and supplement95 payload verification",
     "historical benign prediction metric reconstruction",
@@ -23,8 +23,8 @@
     "/workspace/maxent-assets",
     "/workspace/meeting-artifacts/maxent-benign-v16/base-H3"
   ],
-  "blocker": "connector large-file limit bypassed through normal shared-file download; runtime under construction",
-  "updated_utc": "2026-11-03T12:58:10.706733+00:00",
+  "blocker": "No measurement blocker; private backup upload pending secure configured authentication",
+  "updated_utc": "2026-11-03T13:38:19.037021+00:00",
   "throughput": {
     "warm_batch_seconds": 0.07088090688921511,
     "batch_size": 8,
@@ -35,8 +35,51 @@
   "new_base_examples": 4416,
   "source_commit": "55a7a78",
   "completed_tasks": {
-    "base_H3": 14965,
-    "maxent_H3": 14965,
-    "H3_verified_prediction_rows": 5988
-  }
+    "H3": {
+      "train": 11971,
+      "dev": 1497,
+      "test": 1497
+    },
+    "gue_prom_300_all": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_splice_reconstructed": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_prom_core_all": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_tf_0": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_mouse_0": {
+      "train": 1024,
+      "dev": 512
+    }
+  },
+  "next_estimated_extraction_seconds_per_model": 58.050000000000004,
+  "new_features_per_model": 22645,
+  "completed_extraction_counts": {
+    "H3": 14965,
+    "promoter_splice": 3072,
+    "core_promoter_human_TF_mouse_TF": 4608
+  },
+  "verified_prediction_rows": 11108,
+  "metric_rows": 232,
+  "paired_contrast_rows": 32,
+  "local_archive": "/workspace/meeting-artifacts/maxent-benign-v16-recovery.tar.gz",
+  "local_archive_sha256": "94e7e86f007fa6b317a433d4be0e402819f7fc5e834c92dc804e00c73edf6d46",
+  "local_archive_payloads_verified": 5914,
+  "off_pod_backup_verified": false,
+  "scientific_measurement_blockers": [],
+  "remaining_scientific_limits": [
+    "upstream parent/conversion lineage",
+    "row-level post-model training exposure",
+    "unknown homology dependence",
+    "runtime not historical cluster equivalence"
+  ]
 }
