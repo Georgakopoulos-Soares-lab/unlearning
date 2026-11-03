@@ -1,0 +1,289 @@
+Create a complete, evidence-backed handoff for Kimi to continue this
+project from the current state.
+
+This task is preparation of the handoff, not another experiment,
+another reconciliation pass, or a LaTeX report.
+
+I want Kimi to understand what we have actually accomplished, where
+everything lives, what is missing, and which useful work can proceed.
+
+Do not assume Kimi has this conversation.
+
+1. ESTABLISH THE CURRENT STATE
+
+Read applicable repository instructions and inspect:
+- Current repository, branch, HEAD and remote.
+- Relevant worktrees and uncommitted changes.
+- Existing experiment reports and session handoffs.
+- The v11 prompt receipt and reconciliation outputs.
+- Available local artifacts and recovery receipts.
+- Running experiment processes and GPU activity.
+
+The preceding session reported:
+- Prompt v11.txt at prompts-repository commit 9c9d13a.
+- Reconciliation commit 59de97d.
+- Branch experiments-ashay-metrics-reconciliation-v1.
+- 192 historical metric entries.
+- No new biological measurements.
+- Zero additional GPU time.
+- Missing saved predictions and probes in this workspace.
+
+Verify these statements rather than copying them uncritically.
+Distinguish a local commit from a verified remote push.
+
+One intermediate log mentioned 174 records and the final response
+mentioned 192. Explain the actual final count and its counting convention.
+Do not assume the discrepancy indicates an error.
+
+2. CREATE ONE SELF-CONTAINED HANDOFF
+
+Write:
+docs/experiments/ashay/metrics-reconciliation-v1/KIMI_HANDOFF.md
+
+Make this the main document Kimi needs to read.
+Use a brief executive summary followed by detailed, organized sections.
+Include enough context to act without burying decisions in repetitive
+history.
+
+A. PROJECT AND TEAM
+
+Explain:
+- The genomic unlearning research question.
+- Ashay, Sayyed, Aris and Ilias’s roles as supported by existing notes.
+- Pretrained baselines, matched post-unlearning comparison, and proposed
+  incremental benign retention.
+- Which assignments are documented and which are inferred.
+- Current emphasis: numerical evidence and useful experimental progress,
+  not LaTeX or presentation work.
+
+Do not invent meeting decisions or calendar deadlines.
+
+B. REPOSITORY MAP
+
+Include:
+https://github.com/Georgakopoulos-Soares-lab/unlearning
+https://github.com/ashay-sriv-06/test-prompts-push
+
+Map the relevant branches:
+- experiments-ashay
+- experiments-ashay-benign-v2
+- experiments-ashay-sayyed-base-v1
+- experiments-ashay-metrics-reconciliation-v1
+- bionemo
+- Other branches only where their contents matter.
+
+For each, record:
+- Purpose.
+- Observed commit and observation time.
+- Local path, if present.
+- Whether local and remote were checked.
+- Important source files and reports.
+- Whether it is historical evidence or the active workspace.
+
+Do not claim ownership from a branch name.
+
+C. EXPERIMENT HISTORY
+
+Separate:
+1. Three-task pilot.
+2. Expanded six-task benign evaluation.
+3. Supplied-H3 frozen baseline.
+4. H3 controls and seed follow-up.
+5. Current metrics reconciliation.
+
+For each, explain:
+- Scientific question.
+- Dataset and split sizes.
+- Model/backend and representation.
+- Classifier and selection procedure at the level needed to interpret
+  the results.
+- Metrics and uncertainty.
+- Producing execution commit, where documented.
+- What was independently verified.
+- What was merely read from a historical report.
+- Limitations and unresolved questions.
+
+Do not merge different splits, layers, selection procedures or metrics
+into one apparent experiment.
+
+D. RESULTS TABLES
+
+Include the important numerical findings, with exact source links or
+repository paths.
+
+At minimum:
+- Six-task benign representation/control comparison.
+- Supplied-H3 MLP, linear, composition and 4-mer results.
+- Supplied-H3 causal NLL/perplexity.
+- Paired uncertainty already reported in the follow-up.
+- Existing collaborator aggregate results, separately labeled.
+
+Use an explicit verification-status column:
+- Recomputed from available predictions.
+- Recomputed from aggregate sufficient statistics.
+- Arithmetic checked from rounded reported values.
+- Historical report only.
+- Unavailable.
+
+Use only statuses justified by actual evidence.
+
+Explain that agreement of NLL/PPL arithmetic is not prediction-level
+reproduction, checkpoint validation, or independent GPU replication.
+
+Do not call all 192 entries independently verified if they were not.
+
+E. COMPARABILITY AND SCIENTIFIC LIMITS
+
+Explain precisely:
+- Why our original Evo2 backend results are not automatically matched
+  to Sayyed’s BioNeMo results.
+- What checkpoint, tokenizer/configuration, conversion and split
+  evidence is present or absent.
+- Which within-protocol comparisons are supported.
+- Which before/after comparisons remain unsupported.
+- Why fixed-probe and separately fitted-probe results answer different
+  questions.
+- Why exact/RC overlap checks do not establish homology independence.
+- Which follow-up analyses were post-hoc.
+- Why an observed probe-score decrease does not prove knowledge removal.
+
+Keep MaxEnt, modified MaxEnt and GradDiff distinct.
+
+For HVUE, summarize existing aggregate evidence and reporting limits
+only. Do not include instructions to construct, train, tune, run or
+troubleshoot a viral human-host-tropism predictor.
+
+F. ARTIFACT AND RECOVERY INVENTORY
+
+Create a table of the specific artifacts needed for useful continuation:
+- Source and configuration.
+- Split manifests.
+- Saved benign predictions.
+- Saved benign features and probes.
+- Metric files.
+- Checkpoint provenance.
+- Recovery archives and receipts.
+
+Classify each as:
+- Present locally and checked.
+- Referenced in a verified historical backup receipt.
+- Referenced but currently inaccessible.
+- Not located.
+
+“Absent locally” is not the same as “lost.”
+
+For recovery, record the actual private HF repository, pinned revisions,
+archive filenames, expected hashes and dependency order from receipts.
+Do not expose tokens, signed URLs or private invitation fragments.
+
+Do not claim current HF access or a new download verification unless
+you actually check it. Do not download large archives merely to write
+this handoff.
+
+Explain whether restoring existing benign artifacts could unblock
+prediction-level verification without new GPU inference.
+
+G. IMPLEMENTATION MAP
+
+Identify the actual reusable benign pipeline entry points:
+- Configuration.
+- Data loading.
+- Feature extraction.
+- Probe fitting.
+- Metric computation.
+- Verification.
+- Artifact packaging.
+
+Describe inputs, outputs and relevant dependencies.
+Distinguish commands already executed successfully from commands merely
+documented or proposed.
+
+Avoid inventing commands or assuming historical paths still exist.
+
+H. NEXT WORK, ORDERED BY VALUE
+
+Provide a decision table with:
+- Task.
+- Scientific question it answers.
+- Prerequisites.
+- Inputs already available.
+- Missing inputs.
+- CPU/GPU requirement.
+- Expected deliverable.
+- Completion criterion.
+
+Prioritize:
+1. Recover missing saved benign artifacts if recovery makes verification
+   possible without repeating inference.
+2. Establish whether a matched benign parent/post-model comparison is
+   executable.
+3. Complete that comparison only when the protocol and compute budget
+   are established.
+4. Prepare incremental benign retention work after evaluation
+   prerequisites are satisfied.
+
+Do not recommend another full audit or backup cycle without a specific
+unresolved need.
+
+Do not estimate runtime or cost as fact without measurements.
+Mark estimates clearly.
+
+I. MINIMAL TEAM REQUEST
+
+Produce a short list of exact missing inputs needed from Sayyed or Aris.
+Explain what each item unblocks.
+
+Do not ask for a historical head or sampler unless exact historical
+reproduction actually requires it.
+
+Draft only. Do not send messages.
+
+3. CREATE A SHORT ENTRY PROMPT
+
+Write:
+docs/experiments/ashay/metrics-reconciliation-v1/KIMI_START_HERE.txt
+
+This should tell Kimi to:
+- Read KIMI_HANDOFF.md.
+- Inspect actual environment state.
+- Preserve existing results and other worktrees.
+- Use the handoff’s evidence-status distinctions.
+- Choose the highest-value unblocked task.
+- Avoid rerunning completed experiments without a reason.
+- Respect the stated scope and compute constraints.
+- Report concrete work, not just restate the plan.
+
+It must be understandable without this conversation.
+
+4. VALIDATE AND SAVE
+
+Check:
+- Every quoted metric has a source.
+- Table counts agree with the final CSV.
+- Local file references resolve where claimed.
+- Referenced commits are correctly classified.
+- No credentials or private invitation tokens are included.
+- No unsupported claims of execution, verification or completion remain.
+
+Do not repeat expensive historical tests.
+Do not change original results.
+
+Commit these handoff files on the current isolated reconciliation branch.
+Do not switch, reset, merge or force-push.
+
+If that branch is already authorized for pushing, push only that branch
+and verify the remote head. Otherwise leave a clean local commit and
+state that it has not been pushed.
+
+Do not stop the Pod.
+
+FINAL RESPONSE
+
+Give me:
+1. The handoff and entry-prompt paths.
+2. Commit and push status.
+3. The most useful unblocked next task.
+4. The smallest remaining blocker.
+5. Whether any jobs remain active.
+
+Be explicit: this handoff creates no new biological results.
