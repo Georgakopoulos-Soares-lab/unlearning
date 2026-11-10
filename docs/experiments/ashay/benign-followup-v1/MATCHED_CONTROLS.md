@@ -80,3 +80,5 @@ At block16, the following task/model pairs have positive model-minus-control AUR
 - h3_only_refit: emp_H3, gue_mouse_0, gue_prom_300_all, gue_splice_reconstructed.
 
 These observations support performance beyond these specific controls at the declared anchor; they do not establish global significance across layers/tasks or information absence elsewhere. All outcomes, including final-normalization deficits and inconclusive comparisons, remain in the tables.
+
+Same search policy does not equalize feature dimension/capacity (4/256 control dimensions versus1920 model features). This is performance relative to specified controls, not a mechanistic attribution. Private archive/sidecar and446 payload hashes passed forced-download verification; all36 restored control heads/42 heldout probability arrays reconstructed exactly. See backup_receipt.json and RESTORE.md.

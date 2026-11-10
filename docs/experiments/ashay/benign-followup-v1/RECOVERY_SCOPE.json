@@ -1,0 +1,13 @@
+{
+  "scope": "Standalone new control features/heads/predictions plus copied original anchor predictions/bootstrap/results, manifests/folds/resamples and source. No original GPU features/weights or installed runtime.",
+  "CPU_dependencies": "See environment_lock.txt; Python3.12; separate CPU venv.",
+  "archive_receipt": "Post-package Git receipt intentionally outside immutable archive.",
+  "source_anchor_provenance": "SOURCE_ANCHORS.json links copied filenames/hashes to verified original unit receipts.",
+  "restore_order": [
+    "Download archive and sidecar at exact final receipt revision",
+    "Check byte size/SHA256 and sidecar, extract only verified regular-file archive to fresh directory",
+    "Verify CHECKSUMS.sha256; read report/MATCHED_CONTROLS.md and all CSVs",
+    "Use source pure CPU helpers for rechecking features/heads/paired metrics; all requisite cohorts/resamples/predictions included"
+  ],
+  "original_artifacts_dependency": "Not required for new saved-output comparisons; original GPU regeneration requires previous run recovery+weights/runtime."
+}
