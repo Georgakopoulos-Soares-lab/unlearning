@@ -1,0 +1,65 @@
+{
+  "status": "QUALIFIED_DESCRIPTIVE_REFERENCE",
+  "label": "supplied_three_source_config_iter2151",
+  "collaborator_context": "Supplied folder newly shared as multi-retain; context not objective/exposure proof",
+  "root_folder_id": "1AsgCkDs3n5JTJJF4BSyCtjYBbhES0gVA",
+  "delivery_folder_id": "10ASHqSuA5A-NO6FF1VLqWQSzUkWJcRlf",
+  "selected_iteration": 2151,
+  "selection_evidence": [
+    "latest_checkpointed_iteration.txt=2151",
+    "latest_state equals state2151 byte-for-byte",
+    "config train_iters=2151",
+    "progress same job11441792 explicitly saves2000 then2151"
+  ],
+  "earlier_iteration": 2000,
+  "download": {
+    "status": "DOWNLOADED_SIZE_SHA256_RECORDED",
+    "file_id": "1TNg6p00wJ4eQ7mm5JZiBWqUuI53Rf2p4",
+    "iteration": 2151,
+    "bytes": 15516878934,
+    "sha256": "a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0",
+    "identical_to_h3_only": false,
+    "completed_utc": "2026-11-10T16:29:08.413724+00:00",
+    "wall_seconds": 225.52607654500753,
+    "cpu_process_seconds": 79.446609172,
+    "provider_checksum_available": false,
+    "download_route": "Same public Drive confirmation fallback as verified historical download; connector metadata supplied stable ID/size but no checksum"
+  },
+  "tensor_integrity_summary": {
+    "base": "/workspace/meeting-artifacts/multiretain-layers-v1/checkpoint-assets/maxent",
+    "post": "/workspace/meeting-artifacts/multiretain-comparison-v1/checkpoint-assets",
+    "model_tensor_count": 254,
+    "parameters": 1108319488,
+    "all_finite": true,
+    "changed_tensors": 234,
+    "wall_seconds": 16.472051507793367,
+    "gpu_seconds": 0,
+    "scope": "Backbone tensor integrity; not successful forward loading or parent lineage proof"
+  },
+  "config_sha256": "43c03d2d23b917656ae0079b4af5f133aa0c48735f703cb68c5e5968187319bf",
+  "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+  "retain_config_paths": [
+    "training_data_config_emp_h3.yaml",
+    "training_data_config_human_tf_0.yaml",
+    "training_data_config_prom_core_all.yaml"
+  ],
+  "sampling": "retain_sizes:null; exact executed provider behavior/revision and proportions unresolved",
+  "method": "Unverified objective. Dataset provider GradDiffDualDatasetProvider is recorded; folder MaxEnt not objective proof; standard serialized model forward callback does not capture executed custom loss",
+  "parent": "base_mbridge by recorded path plus prior collaborator statement; no supplied upstream parent hash/conversion provenance",
+  "state": {
+    "step": 2151,
+    "consumed_train_samples": 275328,
+    "skipped_train_samples": 0,
+    "consumed_valid_samples": 359424,
+    "floating_point_operations_so_far": 1.858645791673942e+18,
+    "do_train": true,
+    "do_valid": true,
+    "do_test": false
+  },
+  "exposure": "Per-row/stream manifests absent; no claim current heldout cohorts unexposed",
+  "decisions": {
+    "descriptive": "PASS: selected explicit latest delivery, finite distinct complete254tensors, strict loading and fixed8 numerical gates",
+    "retain_diversity_causality": "NOT_SUPPORTED: objective, parent hashes, exact exposure/budget confounds"
+  },
+  "gpu_smoke_receipt_sha256": "1a0eb35acf47ab8a1ed5d3e200681db2959d3c4182dd5255b4eaec941c6d39d2"
+}

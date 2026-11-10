@@ -1,0 +1,195 @@
+{
+  "schema": "multiretain-protocol-v1",
+  "status": "FROZEN_BEFORE_NEW_HELDOUT_INFERENCE",
+  "implementation_base": "b5f700ff4f96a305b4c84d12346baccd94a22cdc",
+  "tasks": {
+    "EMP/H3": {
+      "expected_counts": [
+        11971,
+        1497,
+        1497
+      ],
+      "manifest_sha256": null,
+      "folds": 3
+    },
+    "other_five": {
+      "aliases": [
+        "prom/prom_300_all",
+        "splice/reconstructed",
+        "prom/prom_core_all",
+        "tf/0",
+        "mouse/0"
+      ],
+      "expected_train": 1024,
+      "expected_dev": 512,
+      "manifest_sha256": null,
+      "folds": 5
+    }
+  },
+  "hooks": [
+    "decoder.layers.0",
+    "decoder.layers.1",
+    "decoder.layers.2",
+    "decoder.layers.3",
+    "decoder.layers.4",
+    "decoder.layers.5",
+    "decoder.layers.6",
+    "decoder.layers.7",
+    "decoder.layers.8",
+    "decoder.layers.9",
+    "decoder.layers.10",
+    "decoder.layers.11",
+    "decoder.layers.12",
+    "decoder.layers.13",
+    "decoder.layers.14",
+    "decoder.layers.15",
+    "decoder.layers.16",
+    "decoder.layers.17",
+    "decoder.layers.18",
+    "decoder.layers.19",
+    "decoder.layers.20",
+    "decoder.layers.21",
+    "decoder.layers.22",
+    "decoder.layers.23",
+    "decoder.layers.24",
+    "decoder.final_norm"
+  ],
+  "hook_enumeration": "25 blocks in downloaded configs; actual model enumeration mandatory",
+  "pooling": "mean over nucleotide positions; right pad 1000, pad1; validate tokenizer before use",
+  "probe": {
+    "policies": [
+      "independent_refit",
+      "fixed_base_scaler_and_head"
+    ],
+    "C": [
+      0.1,
+      1,
+      10
+    ],
+    "penalty": "L2",
+    "class_weight": "balanced",
+    "scaler": "fold-local StandardScaler",
+    "tie_break": "smaller C",
+    "cv_seeds": [
+      42,
+      17,
+      1234
+    ],
+    "cv": "identical StratifiedGroupKFold splits across arms for each seed",
+    "threshold": "binary .5; multiclass sorted numeric class argmax"
+  },
+  "metrics": [
+    "binary AUROC",
+    "accuracy",
+    "balanced_accuracy",
+    "binary average_precision",
+    "splice macro OVR AUROC"
+  ],
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261103,
+    "paired": true,
+    "conditional_on_fitted_probes": true,
+    "group": "qualified biological groups if available; otherwise exact/RC groups with explicit limits",
+    "multiplicity": "pointwise exploratory unadjusted; all layers/seeds visible"
+  },
+  "preservation_margins": {},
+  "causal_loss": "single LM-output statistic; summed next-token loss / valid targets; distinct from classifier CE",
+  "resource_config_sha256": "40a5dc321ea8b21f2b6e9f06ba5cc688b3c7684d5ab94938b5e30530bdba5613",
+  "eligibility": "Qualified descriptive new checkpoint comparison; retain-diversity attribution unsupported",
+  "heldout_access": "No untouched test member access; restored previously analyzed H3 outputs remain exploratory",
+  "forbidden": [
+    "new intervention training",
+    "noise generation",
+    "host-tropism classification",
+    "relearning"
+  ],
+  "manifests": [
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/maxent-benign-v16/inputs/H3_manifest.jsonl",
+      "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+      "rows": 14965
+    },
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/maxent-benign-v16/promoter-splice-data/evaluation_manifest.jsonl",
+      "sha256": "02ec3c09d0fdcea391c486dd047fdda727d9f61b8541beac61610267f65357e3",
+      "rows": 3072
+    },
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/maxent-benign-v16/remaining-data/evaluation_manifest.jsonl",
+      "sha256": "c5e538404aaad5bf7362114cf66c20bf54c747a8b609de1538b687ebbb6ae817",
+      "rows": 4608
+    }
+  ],
+  "checkpoint_registry_sha256": "7c75c5f7c2c9873c780405cbd0dcd916ea6813654df33d40ad12855a1a6c3784",
+  "smoke_plan_sha256": "4180f990e664a76680c376fbca2f1a01c8a059f06eff7634a54f6971dc18799e",
+  "source_commit": "943b04f5413d99142f9fb22d176c1b8f9a054bb8",
+  "multi_retain": "deferred; qualified base/H3 fallback authorized",
+  "frozen_utc": "2026-11-10T16:42:20.278114+00:00",
+  "physical_batch_size": 8,
+  "logical_batch_size": 8,
+  "filler_policy": "pad1 filler rows; exclude all filler outputs",
+  "smoke_validation_sha256": "1a0eb35acf47ab8a1ed5d3e200681db2959d3c4182dd5255b4eaec941c6d39d2",
+  "smoke_plan_fixed8_sha256": "8b6c7bba1c740e6e8be54bda1cb9cea7082c795c65e14fb48c0cbf24519a07fb",
+  "batch_amendment": "Variable native physical batches failed original numerical gate; fixed physical8 passed unchanged tolerances. All failures retained; no new heldout scores observed.",
+  "runtime_lock_sha256": "905e6623633011af4e895980e34178b535715be6d38c39ae5c14349d1d4762c4",
+  "parent_protocol_sha256": "c65bf5d518ba1a2fdfa5c7f7733cd2596ce6df4e18379e34e545b6278773018a",
+  "version": "stage2-records-v2",
+  "amended_utc": "2026-11-10T11:53:17.215132+00:00",
+  "amendment_reason": "Stage2 explicitly requires multiclass AP, groups/lengths in feature records and task-completion scheduling. Only output metadata changes in extraction; qualified forward/pooling/batching unchanged. Before any new heldout inference.",
+  "feature_manifests": [
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-comparison-v1/manifests/H3.jsonl",
+      "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-comparison-v1/manifests/other_five.jsonl",
+      "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126"
+    }
+  ],
+  "metric_definitions": {
+    "auroc": "binary class1; splice macro one-vs-rest in sorted numeric class order",
+    "accuracy": "binary p(class1)>=.5; splice argmax",
+    "balanced_accuracy": "macro recall",
+    "average_precision": "binary class1; splice mean of per-class one-vs-rest AP",
+    "classification_cross_entropy": "sklearn log_loss float64 probabilities; distinct from LM NLL"
+  },
+  "bootstrap_metrics": [
+    "auroc",
+    "accuracy",
+    "balanced_accuracy",
+    "average_precision",
+    "classification_cross_entropy"
+  ],
+  "bootstrap_loss_metrics": [
+    "causal_nll",
+    "perplexity"
+  ],
+  "bootstrap_invalid": "reject missing-class draws consistently; record valid/invalid counts",
+  "gpu_lock": "/workspace/agent-handoff/multiretain-v1/GPU_EXECUTION.lock",
+  "execution_order": "Complete H3 all26 layers/all3 CV seeds/both policies first; then all five other tasks. Optional multi-retain/noise absent.",
+  "extraction_source_sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+  "smoke_equivalence": "Only schema/sidecar additions after qualified source902ed12; no inference arithmetic, dtype, mask, batching or pooling changes",
+  "study": "Exploratory reused-cohort three-arm descriptive checkpoint comparison",
+  "source_base": "3d82ba6f27312b58c265fdb0916d6872af80d2fc",
+  "selection": "Explicit latest pointer2151, latest train-state2151, config train_iters2151 and same-job progress; not performance or timestamp selection. iter2000 historical earlier state retained, not swept.",
+  "candidate_label": "supplied_three_source_config_iter2151",
+  "method": "Serialized dataset provider GradDiffDualDatasetProvider; objective execution revision unresolved; folder MaxEnt is not method proof",
+  "retain_config_sources": [
+    "emp_h3",
+    "human_tf_0",
+    "prom_core_all"
+  ],
+  "exposure": "Unknown row-level exposure, sampling weights and exact retain-stream token counts",
+  "new_contrasts": [
+    "new_minus_h3_only",
+    "new_minus_base"
+  ],
+  "fitting": "Only new-arm heads; reuse every unchanged base scaler/head, old predictions and matched controls",
+  "protocol_declared_utc": "2026-11-10T16:26:19.924527+00:00",
+  "new_checkpoint_sha256": "a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0",
+  "native_threads": "4 extraction; 4 independent one-thread CV workers, one-thread final refit",
+  "baseline_reuse": "Exact saved base heads/CV and probabilities; no new base or H3-only fits/inference",
+  "matched_controls": "Reuse36 controls from a745671; no control refitting",
+  "reference_run": "/workspace/meeting-artifacts/multiretain-layers-v1"
+}
