@@ -1,0 +1,351 @@
+Execute the next phase of Ashay’s Unlearning Project. This prompt is
+self-contained: do not require another transcript, context pack or session
+JSON before beginning.
+
+MISSION
+
+Extend our completed benign evaluation to the incremental retain checkpoints
+and perturbation checkpoints agreed in the November 10 meeting.
+
+Produce accurate, informative comparisons using the existing validated
+pipeline. “Best results” means reliable evidence, including negative and
+inconclusive findings. It does not mean selecting favorable models, layers,
+seeds or metrics.
+
+Proceed with all available authorized work. Do not stop at a plan.
+
+AUTHORITATIVE MEETING DECISIONS
+
+The team agreed to ONE cumulative retain-set sequence:
+
+R1: H3.
+R2: H3 + human transcription-factor binding.
+R3: H3 + human TF + core-promoter detection.
+R4: R3 + promoter detection.
+R5: R4 + splice-site prediction.
+R6: R5 + mouse transcription-factor binding.
+
+The pretrained base is a separate reference.
+
+Do not use the older proposal that added promoter/splice immediately after
+H3. Do not test every possible combination. Aris explicitly chose the simpler
+incremental sequence and deferred combination searches unless later evidence
+justifies them.
+
+Sayyed said two of the six stages already existed and promised the other
+four within two days of November 10. Treat this as a delivery expectation,
+not evidence that files have arrived.
+
+Sayyed also offered two existing perturbation checkpoints. The meeting
+discussed additive Gaussian noise and partial weight re-initialization,
+initially affecting a selected 5% of parameters. Do not infer a supplied
+checkpoint’s intervention from this discussion alone.
+
+OWNERSHIP
+
+Sayyed:
+- Creates the incremental intervention checkpoints.
+- Develops and runs perturbation sweeps.
+- Runs LoRA relearning experiments.
+- Supplies model files and training metadata.
+
+Ashay/Codex:
+- Reports completed benign results.
+- Qualifies supplied checkpoint identities.
+- Evaluates six benign tasks across every model block.
+- Compares refitted and fixed-base probes, simple controls and causal LM loss.
+- Preserves provenance, numerical verification and recoverable artifacts.
+
+Aris coordinates the research direction and meeting schedule.
+
+Do not duplicate Sayyed’s training work. No new backbone/intervention
+training, perturbation generation, LoRA/relearning execution, host-tropism
+prediction/evaluation, distillation or viral-task expansion.
+
+CURRENT COMPLETED WORK
+
+Research repository:
+https://github.com/Georgakopoulos-Soares-lab/unlearning
+
+Completed three-arm comparison:
+Commit c79ab07e763a9754c68fdaf7d0730d8458f508dc
+Branch experiments-ashay-multiretain-comparison-v1
+Report:
+docs/experiments/ashay/multiretain-comparison-v1/RESULTS.md
+
+Completed base/H3-only reference:
+Commit 3d82ba6f27312b58c265fdb0916d6872af80d2fc
+docs/experiments/ashay/multiretain-layers-v1/RESULTS.md
+
+Completed matched controls:
+Commit a745671c8236c5ce6d62bf65c5262909e626d6f2
+docs/experiments/ashay/benign-followup-v1/MATCHED_CONTROLS.md
+
+Completed checkpoint/data audit:
+Commit e95380d22b982a8fa5d71e4aaf7f8553010b6408
+docs/experiments/ashay/graddiff-qualification-v1/
+
+The completed three-source checkpoint is iteration2151. Its configuration
+declares H3, humanTF0 and core promoter. Actual sampling/exposure and
+parent/objective lineage remain incomplete.
+
+Map the existing H3-only arm provisionally to R1 and the three-source-config
+arm provisionally to R3. Preserve their original identifiers and uncertainty.
+Stage aliases must not turn config declarations into verified exposure claims.
+
+All 468 new task/representation/CV-seed units for that three-source arm have
+already completed. Do not rerun them without a documented incompatibility.
+
+The historical finding to investigate further:
+At block16, the three-source arm improved splice and mouse TF relative to
+H3-only, while H3’s refitted score changed little. This is descriptive evidence,
+not an established causal retain-diversity effect.
+
+AVAILABLE LOCATIONS
+
+Original shared model root:
+https://drive.google.com/drive/folders/1pM5-kFeki5Oq1oLjQNXH0U2f2TlGNuzi
+
+Previously supplied three-source checkpoint:
+https://drive.google.com/drive/folders/1AsgCkDs3n5JTJJF4BSyCtjYBbhES0gVA
+
+Known worktrees may include:
+/workspace/wt-multiretain-comparison
+/workspace/wt-multiretain-layers
+/workspace/wt-benign-followup
+/workspace/wt-multiretain-reporting
+
+Inspect actual state rather than assuming all paths exist.
+
+Use an isolated continuation branch:
+experiments-ashay-incremental-retain-eval-v1
+
+Suggested worktree:
+/workspace/wt-incremental-retain-eval
+
+New artifact root:
+/workspace/meeting-artifacts/incremental-retain-eval-v1
+
+Do not require a separate runbooks directory or JSON input. Use existing
+private authentication. Never print or commit credentials.
+
+PHASE 1 — ESTABLISH CURRENT STATE AND FREEZE THE EXTENSION
+
+1. Read applicable instructions and inspect worktrees, jobs, uncommitted
+   changes, available storage and existing scientific receipts.
+2. Preserve active jobs and other agents’ work. Resume an existing matching
+   task rather than starting a duplicate.
+3. Read the completed evaluator, protocol, registry, audits and backup
+   dependencies at the commits above.
+4. Inspect finalized data-identity/retain-preparation work if present, but do
+   not block the entire task on those parallel efforts.
+5. Create the continuation branch from the validated completed implementation,
+   recording any later fixes incorporated.
+6. Write a dated extension protocol before new evaluation.
+
+The study remains exploratory because the evaluation cohorts have already
+been examined. Do not describe it as an untouched confirmatory study.
+
+PHASE 2 — FIND AND QUALIFY NEW CHECKPOINTS
+
+Refresh live listings of the known Drive folders and relevant discovered
+subfolders. Inspect small configurations/manifests before large downloads.
+
+Create entries for R1–R6, base and discovered perturbation candidates.
+Distinguish evaluated, available-unqualified, eligible, running, complete,
+failed and awaiting-delivery states.
+
+For each candidate establish:
+- Exact folder/file IDs, iteration, shard inventory and hashes.
+- Architecture, tokenizer and loading configuration.
+- Declared retain sources and mapping to the agreed stages.
+- Parent and whether it starts from the common base or a preceding stage.
+- Objective/code revision where supported.
+- Steps, learning rate and material training differences.
+- Sampling weights, processed tokens and row exposure where available.
+- Any known overlap with existing evaluation cohorts.
+
+For perturbation models additionally establish:
+- Actual intervention type.
+- Immediate parent and retain stage.
+- Selected fraction, intervention seed and other supplied settings.
+- Any training performed before/after perturbation.
+
+Do not infer these fields from folder names, file sizes or performance.
+Do not select the “best” candidate by evaluation score.
+Do not assume “incremental” means sequential fine-tuning.
+
+Detect duplicate checkpoints and reuse existing results when truly identical.
+
+Separate:
+A. Eligibility for descriptive benign evaluation.
+B. Eligibility for causal claims about retain composition or perturbation.
+
+Missing causal provenance must remain visible but need not block an otherwise
+valid descriptive comparison. Ambiguous model identity or failed loading/
+numerical gates does block scoring.
+
+Do not read or execute unrelated hazardous benchmark contents.
+
+PHASE 3 — EXECUTE AVAILABLE MISSING ARMS
+
+Use exactly the established six tasks:
+emp_H3
+gue_prom_300_all
+gue_prom_core_all
+gue_splice_reconstructed
+gue_tf_0
+gue_mouse_0
+
+Use the exact qualified existing cohorts and verify their receipts:
+H3: 11,971 train / 1,497 dev / 1,497 test.
+Others: 1,024 train / 512 existing official-dev examples.
+
+No new test opening, split changes or fresh sample selection.
+
+Preserve:
+- 25 post-block outputs and final normalization.
+- The exact representation hooks and masked pooling.
+- Fixed physical batches of eight, with filler rows excluded.
+- Existing precision, runtime and numerical tolerances.
+- Training-CV seeds 42/17/1234 and identical grouped folds.
+- Fold-local StandardScaler and established logistic-probe policy.
+- Existing C grid, tie rules and convergence handling.
+- Block16 and final norm as historical anchors.
+
+Block16 is decoder.layers.16, zero-based, the 17th block.
+
+Before held-out scoring, strictly load each new model and pass the existing
+bounded training-only numerical/masking/repeatability gates. Preserve and
+diagnose failures. Do not relax tolerances or loading requirements silently.
+
+Reuse compatible base/R1/R3 caches, heads, predictions and controls.
+Verify compatibility using exact source/checkpoint/protocol identities.
+
+For each new eligible model:
+1. Complete H3 extraction, fitting and verification.
+2. Continue the other five tasks.
+3. Capture all layers efficiently through the existing multi-hook extractor.
+4. Fit independent probes and separately apply unchanged base scaler/heads.
+5. Save atomic checksummed unit receipts for safe resumption.
+
+Evaluate available incremental stages in their agreed order.
+A missing earlier stage does not prevent descriptive evaluation of an
+available later stage; its adjacent-stage contrast remains pending.
+
+Then evaluate available qualified perturbation models against their actual
+parent where available, with base/R1/R3 as appropriate contextual references.
+
+Do not generate missing models or expand to a full stage-by-perturbation grid.
+
+PHASE 4 — PRODUCE USEFUL COMPARISONS
+
+For each incremental stage report:
+- Versus pretrained base.
+- Versus H3-only.
+- Versus the immediately preceding stage, if available.
+
+Never call a nonadjacent contrast an adjacent-stage effect.
+
+For each task and checkpoint annotate:
+- Already included in declared retention.
+- Newly included.
+- Not yet included.
+- Unresolved identity or exposure.
+
+Answer:
+1. Do newly added tasks improve?
+2. Do previously retained tasks deteriorate?
+3. Do tasks not yet included benefit?
+4. Are changes distributed across layers or confined to certain outputs?
+5. Does fixed-base transfer disagree with refitted performance?
+6. Do causal LM metrics and classification tell different stories?
+
+“Not in the declared retain mixture” does not prove the data were unseen.
+
+Preserve established classification metrics and class-column conventions.
+Splice AUROC remains macro one-vs-rest.
+
+Compute causal NLL/PPL through the actual validated LM output head using
+target-weighted loss aggregation. Do not produce per-hidden-layer perplexity.
+
+Reuse matched composition/4-mer controls at the existing anchors.
+Do not refit identical controls for each new checkpoint.
+
+Use paired comparisons on exactly aligned examples/groups, with the existing
+2,000-draw bootstrap protocol where compatible. Preserve per-seed results.
+
+State:
+- Intervals are conditional, pointwise and unadjusted.
+- CV seeds are not independent intervention-training replications.
+- Exact/RC groups do not establish biological independence.
+- Nonsignificance does not prove preservation/equivalence.
+- Readout degradation does not prove information removal.
+- Benign results alone do not establish successful unlearning.
+
+Do not choose favorable layers, average CI endpoints or invent preservation
+thresholds after observing results.
+
+PHASE 5 — REPORT AND VERIFY
+
+Create:
+docs/experiments/ashay/incremental-retain-eval-v1/
+
+Deliver a concise report, checkpoint/coverage registry, comparison protocol,
+comparability/exposure record, exact metric/contrast tables, verification
+receipts and session handoff.
+
+Prioritize:
+- A stage-by-task anchor table with declared retain membership.
+- Adjacent-stage differences with missing comparisons clearly marked.
+- Full layer profiles.
+- Fixed-base versus refitted comparisons.
+- Matched controls and within-task causal LM results.
+- A separate perturbation-versus-parent section.
+
+Keep H3 test distinct from other-task dev.
+No unsupported aggregate “overall capability” score.
+No interpolated missing stages.
+
+Independently reconstruct saved predictions and recompute new metrics,
+paired contrasts and LM arithmetic using the existing auditor.
+Check folds, hyperparameter selection, class ordering, joins and convergence.
+
+Use focused tests for changed code and concrete risks. Do not repeat unrelated
+full suites or complete historical studies merely to show activity.
+
+Prepare one unsent team update summarizing completed evidence and precise
+remaining requests. Do not send messages.
+
+PHASE 6 — DELIVERY, RECOVERY AND STOP CONDITIONS
+
+GPU time for this supplied-checkpoint benign evaluation is authorized without
+a fixed cap. Record actual usage and avoid unnecessary duplication.
+
+Commit and push only the continuation experimental branch; verify remote head.
+Do not merge into main or force-push.
+
+Privately back up new reproducibility-critical outputs using the existing
+destination. Verify fresh-download hashes, safe extraction and restored
+artifacts. Record immutable prior-backup dependencies and whether weights/
+runtime are excluded.
+
+If required files are absent:
+- Complete the registry, extension preparation and completed-results handoff.
+- State the exact missing checkpoint/metadata.
+- Stop cleanly without indefinite polling or rerunning completed arms.
+
+Do not stop the Pod.
+
+FINAL ANSWER MUST DISTINGUISH
+
+1. Reused completed results.
+2. New verified measurements.
+3. Preparation completed without measurements.
+4. Blocked stages and precise missing inputs.
+5. Scientific conclusions supported by the actual comparisons.
+6. Provenance limitations preventing stronger claims.
+7. Commit/report/backup links and compute accounting.
+8. The next action owned by Ashay versus Sayyed.
+
+Begin execution now with workspace inspection and receipt verification.

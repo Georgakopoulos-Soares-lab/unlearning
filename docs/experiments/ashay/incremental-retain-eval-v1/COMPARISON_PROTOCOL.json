@@ -1,0 +1,236 @@
+{
+  "schema": "incremental-retain-extension-v1",
+  "frozen_utc": "2026-11-10T18:59:07.385275+00:00",
+  "status": "FROZEN_BEFORE_ANY_NEW_MODEL_SCORING",
+  "study": "Exploratory reuse of previously examined cohorts; not untouched confirmatory evaluation",
+  "implementation_source": "c79ab07e763a9754c68fdaf7d0730d8458f508dc",
+  "later_fixes": "No later relevant production changes found after fetching research refs; computational source unchanged",
+  "authoritative_sequence": {
+    "R1": [
+      "emp_H3"
+    ],
+    "R2": [
+      "emp_H3",
+      "gue_tf_0"
+    ],
+    "R3": [
+      "emp_H3",
+      "gue_tf_0",
+      "gue_prom_core_all"
+    ],
+    "R4": [
+      "emp_H3",
+      "gue_tf_0",
+      "gue_prom_core_all",
+      "gue_prom_300_all"
+    ],
+    "R5": [
+      "emp_H3",
+      "gue_tf_0",
+      "gue_prom_core_all",
+      "gue_prom_300_all",
+      "gue_splice_reconstructed"
+    ],
+    "R6": [
+      "emp_H3",
+      "gue_tf_0",
+      "gue_prom_core_all",
+      "gue_prom_300_all",
+      "gue_splice_reconstructed",
+      "gue_mouse_0"
+    ]
+  },
+  "aliases": {
+    "R1": "provisional h3_only_maxent",
+    "R3": "provisional supplied_three_source_config_iter2151"
+  },
+  "parent_design": "Unknown common-base versus preceding-stage fine-tuning; incremental means agreed retain-set ordering only",
+  "tasks": [
+    "emp_H3",
+    "gue_tf_0",
+    "gue_prom_core_all",
+    "gue_prom_300_all",
+    "gue_splice_reconstructed",
+    "gue_mouse_0"
+  ],
+  "cohorts": {
+    "H3": {
+      "path": "/workspace/meeting-artifacts/multiretain-comparison-v1/manifests/H3.jsonl",
+      "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+      "counts": {
+        "train": 11971,
+        "dev": 1497,
+        "test": 1497
+      }
+    },
+    "other_five": {
+      "path": "/workspace/meeting-artifacts/multiretain-comparison-v1/manifests/other_five.jsonl",
+      "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+      "counts": {
+        "per_task_train": 1024,
+        "per_task_dev": 512
+      }
+    }
+  },
+  "representations": [
+    "decoder.layers.0",
+    "decoder.layers.1",
+    "decoder.layers.2",
+    "decoder.layers.3",
+    "decoder.layers.4",
+    "decoder.layers.5",
+    "decoder.layers.6",
+    "decoder.layers.7",
+    "decoder.layers.8",
+    "decoder.layers.9",
+    "decoder.layers.10",
+    "decoder.layers.11",
+    "decoder.layers.12",
+    "decoder.layers.13",
+    "decoder.layers.14",
+    "decoder.layers.15",
+    "decoder.layers.16",
+    "decoder.layers.17",
+    "decoder.layers.18",
+    "decoder.layers.19",
+    "decoder.layers.20",
+    "decoder.layers.21",
+    "decoder.layers.22",
+    "decoder.layers.23",
+    "decoder.layers.24",
+    "decoder.final_norm"
+  ],
+  "anchors": [
+    "decoder.layers.16",
+    "decoder.final_norm"
+  ],
+  "physical_batch_size": 8,
+  "precision": "Existing native BF16/FP32 preserved; TEunfused; physical8/fillers excluded; original numerical tolerances and strict loader exceptions",
+  "compatibility_fields": [
+    "runtime",
+    "hooks",
+    "schema",
+    "feature_dtype",
+    "feature_width",
+    "physical_batch_size",
+    "filler_policy",
+    "pool",
+    "padding",
+    "dtype",
+    "attention_backend",
+    "source_sha256",
+    "support_sha256",
+    "fixed_batch_source_sha256"
+  ],
+  "per_arm_tokenizers": "Preserve exact identity; base256 and intervention512 differ but prior ordinal-DNA behavior was qualified. Never require equal tokenizer-file hashes across legitimate models.",
+  "probe": {
+    "policies": [
+      "independent_refit",
+      "fixed_base_scaler_and_head"
+    ],
+    "C": [
+      0.1,
+      1,
+      10
+    ],
+    "penalty": "L2",
+    "class_weight": "balanced",
+    "scaler": "fold-local StandardScaler",
+    "tie_break": "smaller C",
+    "cv_seeds": [
+      42,
+      17,
+      1234
+    ],
+    "cv": "identical StratifiedGroupKFold splits across arms for each seed",
+    "threshold": "binary .5; multiclass sorted numeric class argmax"
+  },
+  "exact_optimizer": "balanced L2 logistic LBFGS, tol1e-4,2000 then10000 convergence retry, optimizer42; unchanged fitter computational source943b04f5413d99142f9fb22d176c1b8f9a054bb8",
+  "metrics": [
+    "auroc",
+    "accuracy",
+    "balanced_accuracy",
+    "average_precision",
+    "classification_cross_entropy"
+  ],
+  "metric_definitions": {
+    "auroc": "binary class1; splice macro one-vs-rest in sorted numeric class order",
+    "accuracy": "binary p(class1)>=.5; splice argmax",
+    "balanced_accuracy": "macro recall",
+    "average_precision": "binary class1; splice mean of per-class one-vs-rest AP",
+    "classification_cross_entropy": "sklearn log_loss float64 probabilities; distinct from LM NLL"
+  },
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261103,
+    "paired": true,
+    "conditional_on_fitted_probes": true,
+    "group": "qualified biological groups if available; otherwise exact/RC groups with explicit limits",
+    "multiplicity": "pointwise exploratory unadjusted; all layers/seeds visible"
+  },
+  "bootstrap_invalid": "reject missing-class draws consistently; record valid/invalid counts",
+  "lm": "Actual LM output head, next-token mask, float32 per-sequence sums/counts and float64 target-weighted aggregate; PPL exp(corpus NLL), no per-layer PPL",
+  "contrasts": [
+    "stage minus base",
+    "stage minus R1",
+    "stage minus immediate preceding stage if available",
+    "perturbation minus actual identified parent if available"
+  ],
+  "nonadjacent": "R3 minus R1 is observational nonadjacent: planned additions include both humanTF and core-promoter, not a single-task adjacent effect",
+  "execution_order": "R2,R4,R5,R6 if available, skipping missing stages without imputing contrasts; each candidate strict load plus bounded training-only smoke, then complete H3 extraction/fits/audit before other5; then qualified perturbations against actual parent",
+  "controls": "Reuse verified36 composition/normalized-forward4mer controls at block16/finalnorm; do not refit",
+  "allowed": "Frozen benign inference and small CPU classifiers only",
+  "forbidden": "codex_prompt_v13 ownership exclusions: no backbone/intervention/noise/LoRA/relearning training, hazardous benchmark contents/evaluation, distillation, test opening, collaborator messages, force push, main merge, shutdown",
+  "gpu_accounting": "Uncapped within supplied-checkpoint benign scope; shared GPU_EXECUTION.lock plus historical ledger locks; separate new session identities, preserve historical ledger",
+  "selection": "Metadata-grounded intended candidate only, not heldout score/timestamp/largest iteration alone",
+  "preservation_margins": {},
+  "prior_protocol_sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462",
+  "registry_sha256": "f4bed2ee7e555d53c4b6b8175462dbf61248a79e3b24eb35c6a9b6976287f693",
+  "live_inventory_sha256": "a1bf6cc5082f814dc6c18132812dc3f3c61e7385cb0f2b67525442522da41ff0",
+  "new_measurements": 0,
+  "bounded_training_smoke": {
+    "manifest": "/workspace/meeting-artifacts/multiretain-comparison-v1/training_smoke_manifest.jsonl",
+    "manifest_sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+    "rows": 12,
+    "training_only": true,
+    "arms": [
+      "each new qualified candidate"
+    ],
+    "batch_sizes": [
+      1,
+      8
+    ],
+    "repeat_batch_size": 8,
+    "pooling_tolerance": {
+      "atol": 0.0001,
+      "rtol": 1e-05
+    },
+    "nll_tolerance": {
+      "atol": 0.0001,
+      "rtol": 1e-05
+    },
+    "validation": "all26 activations finite; tokenizer/padding masks; repeat and batch comparisons; historical layer16/final_norm training anchors",
+    "declared_before_gpu": true,
+    "protocol_version": "fixed-physical8-v2",
+    "physical_batch_size": 8,
+    "logical_batch_sizes": [
+      1,
+      8
+    ],
+    "filler_outputs": "excluded from IDs/features/losses/target counts",
+    "amendment_reason": "Native BF16 batch1 differs from batch8; batch8 training anchors match history. Keep original tolerances and enforce identical physical compute shape. No new held-out measurements observed.",
+    "superseded_protocol_status": "native variable-physical-batch path INELIGIBLE",
+    "diagnostic": "/workspace/meeting-artifacts/multiretain-layers-v1/BATCH_DIAGNOSTIC_BASE.json",
+    "reference_run": "/workspace/meeting-artifacts/multiretain-layers-v1",
+    "status": "FROZEN_BEFORE_NEW_GPU",
+    "reference_policy": "Verified cached base/H3-only training smokes plus identical runtime/source; do not regenerate completed full inference",
+    "reference_smoke_plan_sha256": "b16bae5da6b5e843e92c1933f5bed5181cb6502d62a0de9404ee66d583aa1bf9"
+  },
+  "numeric_audit_tolerances": {
+    "saved_probability_max_abs": 1e-10,
+    "metric_and_bootstrap_max_abs": 1e-12
+  },
+  "metadata_clarified_utc": "2026-11-10T19:01:49.964207+00:00",
+  "metadata_clarification": "Explicit unchanged smoke/audit references; no new heldout inference has occurred.",
+  "declared_membership_scope": "Provisional task-family mapping only; exact retain dataset/source identity unresolved."
+}

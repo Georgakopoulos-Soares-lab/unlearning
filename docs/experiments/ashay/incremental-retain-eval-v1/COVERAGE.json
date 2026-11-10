@@ -1,0 +1,66 @@
+{
+  "status": "PREPARATION_COMPLETE_NO_NEW_MODELS",
+  "new_verified_measurement_units": 0,
+  "reused_completed_units": {
+    "base": 468,
+    "R1": 468,
+    "R3": 468
+  },
+  "incremental_pending": {
+    "R2": 468,
+    "R4": 468,
+    "R5": 468,
+    "R6": 468
+  },
+  "pending_incremental_units": 1872,
+  "offered_perturbation_candidates_located": 0,
+  "perturbation_expectations": 2,
+  "adjacent_comparisons": [
+    {
+      "previous": "R1",
+      "current": "R2",
+      "status": "awaiting-delivery",
+      "missing": [
+        "R2"
+      ]
+    },
+    {
+      "previous": "R2",
+      "current": "R3",
+      "status": "awaiting-delivery",
+      "missing": [
+        "R2"
+      ]
+    },
+    {
+      "previous": "R3",
+      "current": "R4",
+      "status": "awaiting-delivery",
+      "missing": [
+        "R4"
+      ]
+    },
+    {
+      "previous": "R4",
+      "current": "R5",
+      "status": "awaiting-delivery",
+      "missing": [
+        "R4",
+        "R5"
+      ]
+    },
+    {
+      "previous": "R5",
+      "current": "R6",
+      "status": "awaiting-delivery",
+      "missing": [
+        "R5",
+        "R6"
+      ]
+    }
+  ],
+  "owned_gpu_jobs": 0,
+  "gpu_stage_seconds": 0,
+  "backbone_training": false,
+  "mathematical_audit_scope": "Existing all-unit audits and paired checks reused after current payload hash checks; this extension independently verifies table annotations/source mapping only."
+}
