@@ -1,0 +1,71 @@
+{
+  "status": "PARTIAL",
+  "parent_statement": "Sayyed: Yes, the evo2_1b_base checkpoint one. Supplied context only; not downloaded shard lineage verification.",
+  "arms": {
+    "base": {
+      "status": "REMOTE_CONFIG_IDENTIFIED_NOT_LOCAL_QUALIFIED",
+      "drive_folder_id": "154kF29Cjam2F2rC-ihj6_Oobmm-oNur1",
+      "iteration_from_folder": 1,
+      "config_path": "/workspace/meeting-artifacts/multiretain-layers-v1/base_run_config.yaml",
+      "config_sha256": "b648cfd2fb11797ade835e82f6dd4c3e7abd0d4256ae4360bd67796d00f198c9",
+      "architecture": {
+        "_target_": "bionemo.evo2.models.evo2_provider.Hyena1bModelProvider",
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "vocab_size": 256
+      },
+      "recorded_parent": null,
+      "retain_config": null,
+      "retain_data": null,
+      "local_shards": [],
+      "shard_hashes": null,
+      "total_local_weight_bytes": 0,
+      "tokenizer_identity": null,
+      "conversion_source": null,
+      "exposure_row_manifest": null,
+      "missing": [
+        "downloaded shard checksums matched to recovered receipts",
+        "tokenizer files and encoding validation",
+        "strict backbone loading and training-only smoke",
+        "conversion and parent hash lineage"
+      ]
+    },
+    "h3_only_maxent": {
+      "status": "REMOTE_CONFIG_IDENTIFIED_NOT_LOCAL_QUALIFIED",
+      "drive_folder_id": "16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv",
+      "iteration_from_folder": 2000,
+      "config_path": "/workspace/meeting-artifacts/multiretain-layers-v1/maxent_run_config.yaml",
+      "config_sha256": "43b18b0e2b9fa7e19e7c7b6d487514ede7400c3fc6176eebab596f9da6f84488",
+      "architecture": {
+        "_target_": "bionemo.evo2.models.evo2_provider.Hyena1bModelProvider",
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "vocab_size": 512
+      },
+      "recorded_parent": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "retain_config": "/projects/MENTISLab/unlearning/evo2_unlearn_pipeline/training_data_config_emp_h3.yaml",
+      "retain_data": "/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_h3_fasta_splits/preprocessed_emp_h3",
+      "local_shards": [],
+      "shard_hashes": null,
+      "total_local_weight_bytes": 0,
+      "tokenizer_identity": null,
+      "conversion_source": null,
+      "exposure_row_manifest": null,
+      "missing": [
+        "downloaded shard checksums matched to recovered receipts",
+        "tokenizer files and encoding validation",
+        "strict backbone loading and training-only smoke",
+        "conversion and parent hash lineage"
+      ]
+    },
+    "multi_retain": {
+      "status": "BLOCKED_NOT_IDENTIFIED",
+      "evidence": "MaxEnt and both GradDiff configs name training_data_config_emp_h3.yaml and preprocessed_emp_h3. No evidence of a broader mixture in inspected candidates.",
+      "missing": [
+        "exact broader-retain checkpoint folder/config",
+        "retain aliases, weights, token accounting and parent"
+      ]
+    }
+  },
+  "no_noise_checkpoints_supplied": true
+}

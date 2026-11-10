@@ -1,0 +1,39 @@
+{
+  "schema": "multiretain-artifact-contract-v1",
+  "producer_root": "/workspace/meeting-artifacts/multiretain-layers-v1",
+  "producer_owner": "Codex; extraction/fitting/scientific artifacts",
+  "consumer_owner": "Kimi; independent CPU verification/reporting in separate worktree",
+  "suggestions": "Consumer may write separate suggestion files; producer files immutable to consumer",
+  "unit_key": [
+    "task",
+    "split",
+    "checkpoint",
+    "layer",
+    "CV seed",
+    "probe policy"
+  ],
+  "required_identity_fields": [
+    "stable IDs",
+    "labels and sorted class order",
+    "sequence hashes",
+    "split/manifest SHA256",
+    "checkpoint shard SHA256s",
+    "runtime packages and source commits",
+    "exact hook and pooling",
+    "fold IDs and training-only selection",
+    "probe policy",
+    "source SHA256",
+    "protocol SHA256"
+  ],
+  "statuses": {
+    "REUSED": "unchanged qualified prior artifacts, no new inference",
+    "NEW": "new extraction or CPU fit; distinguish producer measurement from independent verification",
+    "PARTIAL": "unfinished, ineligible for reporting as completed",
+    "BLOCKED": "missing required input or failed gate",
+    "INVALID": "failed correctness or identity check"
+  },
+  "completion": "Consume only files enumerated with absolute paths, bytes and SHA256 in finalized atomic COMPLETE.json; completion is file integrity, scientific/independent validation tracked separately. No actively written CSV is complete.",
+  "current_scientific_units": [],
+  "stage1_status": "BLOCKED_RECOVERY_AUTH",
+  "protocol_draft": "/workspace/meeting-artifacts/multiretain-layers-v1/PROTOCOL_DRAFT.json"
+}

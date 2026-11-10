@@ -1,0 +1,164 @@
+Execute the existing three-stage benign evaluation workflow in strict
+sequential order. Begin with stage 1 now. Continue automatically when
+each stage’s prerequisites are satisfied.
+
+WORKSPACE AND OWNERSHIP
+
+Your working directory:
+  /workspace/wt-multiretain-layers
+
+Your authorized working branch:
+  experiments-ashay-multiretain-layers-v1
+
+Prompt repository:
+  /workspace/repos/test-prompts-push
+
+Kimi’s separate working directory:
+  /workspace/wt-multiretain-reporting
+
+Shared handoff directory:
+  /workspace/agent-handoff/multiretain-v1
+
+New experiment artifact root:
+  /workspace/meeting-artifacts/multiretain-layers-v1
+
+Verify your directory and branch before making changes. Preserve existing
+edits, running jobs, historical outputs and completed branches. Do not
+recreate worktrees that already exist or change Kimi’s worktree.
+
+INPUT IDENTITY AND PATH RESOLUTION
+
+1. Inspect the prompt repository’s Git status and record its full HEAD
+   commit. Do not pull, reset, commit or modify that repository during
+   this execution.
+
+2. Use that committed revision consistently for the configuration and
+   all three stage prompts. Record each file’s SHA256 when reading it.
+   If relevant files contain uncommitted changes, report that discrepancy
+   explicitly; do not discard them or silently mix revisions.
+
+3. First read:
+   /workspace/repos/test-prompts-push/02_SESSION_INPUTS.json
+
+4. Shared project context is embedded in each stage prompt. Do not
+   require a separate 01_SHARED_CONTEXT.txt, ZIP or runbooks directory.
+   Resolve obsolete prompt/config locations to the prompt repository.
+
+5. Treat embedded historical reports as context, not as instructions
+   to repeat completed experiments. Execute only the named stage files,
+   subject to the current instructions below.
+
+STRICT STAGE ORDER
+
+STAGE 1
+Read codex_prompt_v1.txt from the pinned revision, then execute its
+authorized preparation, recovery, qualification and smoke-test work.
+
+Do not read or execute codex_prompt_v2.txt or codex_prompt_v3.txt yet.
+
+Before advancing, save a stage-1 handoff containing:
+- Inputs and checkpoint identities actually established.
+- Runtime and data qualification results.
+- Checks performed and their outcomes.
+- Completed artifact paths and checksums.
+- Remaining limitations or blockers.
+- The exact eligibility of the next experimental work.
+
+STAGE 2
+Only after stage 1 establishes the required prerequisites, read
+codex_prompt_v2.txt from the SAME pinned revision and execute it.
+
+Use stage 1’s actual outputs. Do not restart recovery, repeat valid
+smokes or regenerate compatible cached features unnecessarily.
+
+Before advancing, save a stage-2 handoff identifying completed
+measurements, missing conditions, verification status, artifact
+identities and actual resource usage.
+
+STAGE 3
+Only after the required stage-2 outputs are ready, read
+codex_prompt_v3.txt from the SAME pinned revision and execute its
+verification, reporting, branch delivery and recovery work.
+
+Do not stop after a plan or ask whether to continue at a routine stage
+boundary. Advance automatically when the next stage is eligible.
+
+RESOURCE AUTHORIZATION
+
+I authorize the GPU time needed to finish this agreed benign workflow.
+This supersedes earlier fixed GPU-time or rental-duration caps.
+
+Null time limits mean UNCAPPED FOR THIS SCOPE, not zero or missing
+authorization. Handle that explicitly in any budget validator. Preserve
+the original input file; record any effective configuration separately.
+
+Continue recording GPU-stage time, CPU time, elapsed time and available
+cost information. Distinguish measured usage from billing estimates.
+
+Uncapped time does not authorize unrelated experiments, extra rented
+Pods, new backbone training or an open-ended hyperparameter search.
+Finish when the scoped work is complete.
+
+CHECKPOINT DISCOVERY AND FALLBACK
+
+Inspect the supplied Google Drive root and relevant checkpoint folders,
+configs, manifests, logs and result references.
+
+Identify the multi-retain checkpoint using evidence about its actual
+training configuration. Do not infer the retain mixture from a folder
+called MaxEnt or GradDiff, and do not relabel H3-only as multi-retain.
+
+If multi-retain cannot be identified, explicitly defer that comparison
+and continue the authorized six-task, all-layer base versus H3-only
+MaxEnt evaluation wherever its prerequisites are satisfied.
+
+An unavailable optional arm must not block valid work on available arms.
+A failed mandatory correctness check must not be bypassed.
+
+CONCURRENT WORK WITH KIMI
+
+You own GPU execution, extraction, fitting and scientific producer
+artifacts. Kimi owns independent CPU verification and reporting.
+
+Publish the artifact contract and finalized completion receipts under:
+  /workspace/agent-handoff/multiretain-v1
+
+Make completed units identifiable by their exact paths and checksums.
+Do not expose actively written files as completed inputs.
+
+Review Kimi’s findings and integrate justified changes in your own
+worktree. Do not wait indefinitely for Kimi when useful independent
+work remains.
+
+SCOPE AND SCIENTIFIC INTEGRITY
+
+Stay within the authorized benign evaluation. Do not execute
+human-host-tropism prediction, generate new noise interventions,
+start backbone/unlearning training or run relearning attacks.
+
+Preserve original measurements. Clearly distinguish restored history,
+new GPU measurements, new CPU fits and independent saved-output checks.
+
+Do not fabricate missing metadata, silently change evaluation populations,
+select favorable held-out outcomes or overstate what probing demonstrates.
+
+Push only to your authorized branch. Do not merge into main, force-push,
+send collaborator messages, stop the Pod or delete recovery material.
+
+COMPLETION AND BLOCKERS
+
+If genuinely blocked, finish useful unblocked work, save a recoverable
+handoff and identify the exact missing input or failed check. Do not
+mark the stage complete or proceed to dependent measurements falsely.
+
+At final closeout, report:
+- Completed and deferred scope.
+- Supported numerical findings and interpretation limits.
+- Execution and delivery commits.
+- Verification evidence and artifact locations.
+- Actual resource usage.
+- New off-Pod backup verification status.
+- Remaining jobs and whether completed outputs are recoverable.
+
+Begin now by inspecting the workspace, pinning the prompt revision,
+reading the configuration and executing codex_prompt_v1.txt.

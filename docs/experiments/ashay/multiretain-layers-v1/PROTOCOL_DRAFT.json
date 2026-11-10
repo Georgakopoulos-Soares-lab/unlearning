@@ -1,0 +1,107 @@
+{
+  "schema": "multiretain-protocol-v1",
+  "status": "DRAFT_INELIGIBLE_PENDING_INPUT_QUALIFICATION",
+  "implementation_base": "b5f700ff4f96a305b4c84d12346baccd94a22cdc",
+  "tasks": {
+    "EMP/H3": {
+      "expected_counts": [
+        11971,
+        1497,
+        1497
+      ],
+      "manifest_sha256": null,
+      "folds": 3
+    },
+    "other_five": {
+      "aliases": [
+        "prom/prom_300_all",
+        "splice/reconstructed",
+        "prom/prom_core_all",
+        "tf/0",
+        "mouse/0"
+      ],
+      "expected_train": 1024,
+      "expected_dev": 512,
+      "manifest_sha256": null,
+      "folds": 5
+    }
+  },
+  "hooks": [
+    "decoder.layers.0",
+    "decoder.layers.1",
+    "decoder.layers.2",
+    "decoder.layers.3",
+    "decoder.layers.4",
+    "decoder.layers.5",
+    "decoder.layers.6",
+    "decoder.layers.7",
+    "decoder.layers.8",
+    "decoder.layers.9",
+    "decoder.layers.10",
+    "decoder.layers.11",
+    "decoder.layers.12",
+    "decoder.layers.13",
+    "decoder.layers.14",
+    "decoder.layers.15",
+    "decoder.layers.16",
+    "decoder.layers.17",
+    "decoder.layers.18",
+    "decoder.layers.19",
+    "decoder.layers.20",
+    "decoder.layers.21",
+    "decoder.layers.22",
+    "decoder.layers.23",
+    "decoder.layers.24",
+    "decoder.final_norm"
+  ],
+  "hook_enumeration": "25 blocks in downloaded configs; actual model enumeration mandatory",
+  "pooling": "mean over nucleotide positions; right pad 1000, pad1; validate tokenizer before use",
+  "probe": {
+    "policies": [
+      "independent_refit",
+      "fixed_base_scaler_and_head"
+    ],
+    "C": [
+      0.1,
+      1,
+      10
+    ],
+    "penalty": "L2",
+    "class_weight": "balanced",
+    "scaler": "fold-local StandardScaler",
+    "tie_break": "smaller C",
+    "cv_seeds": [
+      42,
+      17,
+      1234
+    ],
+    "cv": "identical StratifiedGroupKFold splits across arms for each seed",
+    "threshold": "binary .5; multiclass sorted numeric class argmax"
+  },
+  "metrics": [
+    "binary AUROC",
+    "accuracy",
+    "balanced_accuracy",
+    "binary average_precision",
+    "splice macro OVR AUROC"
+  ],
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261103,
+    "paired": true,
+    "conditional_on_fitted_probes": true,
+    "group": "qualified biological groups if available; otherwise exact/RC groups with explicit limits",
+    "multiplicity": "pointwise exploratory unadjusted; all layers/seeds visible"
+  },
+  "preservation_margins": {},
+  "causal_loss": "single LM-output statistic; summed next-token loss / valid targets; distinct from classifier CE",
+  "resource_config_sha256": "0f246900711d7d6bf530e75f032cae749d8f527c9a20f5f22f87882bcc1b75d8",
+  "eligibility": "Freeze only after recovery, manifests, checkpoint/runtime identity and training-only smoke pass; optional multi-retain absence does not block qualified base/H3 fallback",
+  "heldout_access": "No untouched test member access; restored previously analyzed H3 outputs remain exploratory",
+  "forbidden": [
+    "new intervention training",
+    "noise generation",
+    "host-tropism classification",
+    "relearning"
+  ]
+}
