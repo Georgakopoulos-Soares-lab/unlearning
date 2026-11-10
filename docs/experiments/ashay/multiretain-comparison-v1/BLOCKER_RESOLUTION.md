@@ -12,7 +12,7 @@
 | Objective/method execution | UNRESOLVED | Folder MaxEnt and provider GradDiff do not pin custom objective invocation |
 | Processed retain tokens/unique rows | UNRESOLVED | Rounded combined logs and logical counters do not give stream/exposure counts |
 | Evaluation exposure/homology | UNRESOLVED | No retain-row/biological group manifests; no clean-exposure claim |
-| Common causal budget | CONTRADICTED | Delivered2151 versus old2000 steps; additional objective/exposure differences unknown |
+| Identical step schedule | CONTRADICTED | Delivered2151 versus old2000 steps; additional objective/exposure differences unknown |
 | Reused base/H3/controls | RESOLVED |478 sealed receipts/9156files verified;36controls reused, no refits |
 
 Decision1 descriptive eligibility passes. Decision2 attribution to retain diversity does not. Numerical results will not retroactively change candidate selection, cohorts or these evidence qualifications.

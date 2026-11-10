@@ -67,7 +67,7 @@ def main():
     links.append(dict(task=task,layer=layer,cv_seed=seed,split=split,new_receipt=str(unit/'COMPLETE.json'),new_receipt_sha256=sha(unit/'COMPLETE.json'),old_receipt=str(prior/'COMPLETE.json'),old_receipt_sha256=sha(prior/'COMPLETE.json'),new_predictions=str(unit/(split+'_predictions.npz')),old_predictions=str(prior/(split+'_predictions.npz')),protocol_sha256=sha(root/'PROTOCOL_V2.json')))
    print('PAIRED',units,task,layer,seed,flush=True)
   for task in sorted({x['task'] for x in idx['units']}):
-   newtask=root/'probes'/group/task;oldtask=old/'probes'/group/task;nr=json.loads((newtask/'lm_metrics.json').read_text());orr=json.loads((oldtask/'lm_metrics.json').read_text());lm_m.extend(nr['metrics']);lm_m.extend(x for x in orr['metrics'] if x['arm']=='h3_only_maxent');lm_d.extend(nr['contrasts'])
+   newtask=root/'probes'/group/task;oldtask=old/'probes'/group/task;nr=json.loads((newtask/'lm_metrics.json').read_text());orr=json.loads((oldtask/'lm_metrics.json').read_text());lm_m.extend(nr['metrics']);lm_m.extend(x for x in orr['metrics'] if x['arm']=='h3_only_maxent');lm_d.extend(nr['contrasts']);lm_d.extend(orr['contrasts'])
    for split in (['dev','test'] if group=='H3' else ['dev']):
     with np.load(newtask/(split+'_lm_bootstrap.npz'),allow_pickle=False) as ns,np.load(oldtask/(split+'_lm_bootstrap.npz'),allow_pickle=False) as os:
      for metric in ['causal_nll','perplexity']:
