@@ -11,6 +11,8 @@ from scripts.sayyed.multiretain_support import atomic_json
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run', required=True)
+    parser.add_argument('--smoke-directory', default='smokes')
+    parser.add_argument('--output-name', default='SMOKE_VALIDATION.json')
     args = parser.parse_args()
     root = Path(args.run)
     plan = json.loads((root / 'SMOKE_PLAN.json').read_text())
@@ -30,12 +32,12 @@ def main():
         checks.append(dict(comparison=name, max_abs_difference=difference, tolerance=tolerance))
 
     for arm in ['base', 'maxent']:
-        baseline, identity = arrays(root / 'smokes' / (arm + '-b8'), manifest)
+        baseline, identity = arrays(root / args.smoke_directory / (arm + '-b8'), manifest)
         layers = [key for key in baseline if key.startswith('decoder_layer_')] + ['final_norm']
         if len(layers) != 26:
             raise ValueError('Missing all-layer coverage')
         for variant in ['b1', 'repeat']:
-            value, other = arrays(root / 'smokes' / (arm + '-' + variant), manifest)
+            value, other = arrays(root / args.smoke_directory / (arm + '-' + variant), manifest)
             for key in ['checkpoint_shards', 'config_sha256', 'tokenizer_sha256', 'hooks']:
                 if identity[key] != other[key]:
                     raise ValueError('Smoke checkpoint/tokenizer/hook identity changed')
@@ -67,7 +69,7 @@ def main():
                   actual_blocks=25, representations=26, wall_seconds=time.monotonic()-started,
                   cpu_process_seconds=time.process_time()-cpu,
                   scope='Training-only output checks, not held-out performance or parent-lineage proof')
-    atomic_json(root / 'SMOKE_VALIDATION.json', result)
+    atomic_json(root / args.output_name, result)
     print('Training-only smoke validation passed:', len(checks), 'comparisons')
 
 
