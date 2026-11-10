@@ -12,6 +12,14 @@ def write(path,rows):
   w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 def sha(path):
  with Path(path).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+def subtract_shared_base_contrasts(new_delta, old_delta, valid):
+ new_delta=np.asarray(new_delta);old_delta=np.asarray(old_delta);valid=np.asarray(valid)
+ if new_delta.shape!=old_delta.shape or new_delta.shape!=valid.shape or valid.dtype!=np.bool_ or not valid.any():
+  raise ValueError('Paired distribution shape/mask mismatch')
+ delta=new_delta-old_delta
+ if not np.isfinite(delta[valid]).all():raise ValueError('Nonfinite paired draws')
+ return delta,np.quantile(delta[valid],[.025,.975])
+
 def main():
  p=argparse.ArgumentParser();p.add_argument('--run',required=True);p.add_argument('--reference-run',required=True);p.add_argument('--controls',required=True);a=p.parse_args();root,old,ctrl=map(Path,[a.run,a.reference_run,a.controls]);out=root/'reports';out.mkdir(exist_ok=True);start=time.monotonic();cpu=time.process_time();m=[];d=[];reference=[];links=[];control_comparisons=[];new_h3=[];lm_m=[];lm_d=[];cache={};maxdelta=0.;units=0
  def weights(group,task,split):
@@ -31,7 +39,7 @@ def main():
   assert np.array_equal(loss_arrays['new']['ids'],loss_arrays['old']['ids']);loss_lookup={str(v):i for i,v in enumerate(loss_arrays['new']['ids'])}
   audit=json.loads((root/'producer_audit'/group/'VERIFICATION_COMPLETE.json').read_text());assert audit['status']=='PASS';idx=json.loads((root/'probes'/group/'PROBE_INDEX.json').read_text());assert len(idx['units'])==(78 if group=='H3' else 390)
   for entry in idx['units']:
-   unit=Path(entry['receipt']).parent;task,layer,seed=entry['task'],entry['layer'],entry['cv_seed'];prior=old/'probes'/group/task/layer/f'seed{seed}';result=json.loads((unit/'results.json').read_text());prev=json.loads((prior/'results.json').read_text());m.extend(result['metrics']);m.extend(x for x in prev['metrics'] if x['policy']!='base_refit');d.extend(dict(x,contrast='new_minus_base') for x in result['contrasts']);reference.extend(prev['contrasts']);units+=1
+   task,layer,seed=entry['task'],entry['layer'],entry['cv_seed'];unit=root/'probes'/group/task/layer/f'seed{seed}';assert sha(unit/'COMPLETE.json')==entry['receipt_sha256'];prior=old/'probes'/group/task/layer/f'seed{seed}';result=json.loads((unit/'results.json').read_text());prev=json.loads((prior/'results.json').read_text());m.extend(result['metrics']);m.extend(x for x in prev['metrics'] if x['policy']!='base_refit');d.extend(dict(x,contrast='new_minus_base') for x in result['contrasts']);reference.extend(prev['contrasts']);units+=1
    oldbase={(x['split'],x['metric']):x['value'] for x in prev['metrics'] if x['policy']=='base_refit'}
    for x in result['metrics']:
     if x['policy']=='base_refit':assert abs(x['value']-oldbase[x['split'],x['metric']])<1e-12
@@ -44,7 +52,7 @@ def main():
       ni,nv=independent(y,n['prob_'+policy],classes,w);oi,ov=independent(y,o['prob_'+oldpolicy],classes,w);assert np.array_equal(nv,valid) and np.array_equal(ov,valid)
       npnt,_=independent(y,n['prob_'+policy],classes,np.ones((1,len(y))));opnt,_=independent(y,o['prob_'+oldpolicy],classes,np.ones((1,len(y))));samples={}
       for metric in ni:
-       distribution=nb[policy+'__'+metric]-ob[oldpolicy+'__'+metric];separate=ni[metric]-oi[metric];delta=float(np.max(np.abs(distribution[valid]-separate[valid])));maxdelta=max(maxdelta,delta);assert delta<1e-12;ci=np.quantile(distribution[valid],[.025,.975]);ici=np.quantile(separate[valid],[.025,.975]);assert np.max(np.abs(ci-ici))<1e-12
+       distribution,ci=subtract_shared_base_contrasts(nb[policy+'__'+metric],ob[oldpolicy+'__'+metric],valid);separate=ni[metric]-oi[metric];delta=float(np.max(np.abs(distribution[valid]-separate[valid])));maxdelta=max(maxdelta,delta);assert delta<1e-12;ci=np.quantile(distribution[valid],[.025,.975]);ici=np.quantile(separate[valid],[.025,.975]);assert np.max(np.abs(ci-ici))<1e-12
        x=dict(task=task,layer=layer,cv_seed=seed,split=split,policy=policy,metric=metric,contrast='new_minus_h3_only',difference=float(npnt[metric][0]-opnt[metric][0]),ci_low=float(ci[0]),ci_high=float(ci[1]),valid=int(valid.sum()),invalid=int((~valid).sum()),scope='pointwise unadjusted conditional on fitted heads; exact/RC groups only');d.append(x);new_h3.append(x);samples[metric]=distribution
       paired_out=root/'paired_bootstrap'/group/task/layer/f'seed{seed}';paired_out.mkdir(parents=True,exist_ok=True)
       np.savez_compressed(paired_out/(split+'_'+policy+'_vs_h3.npz'),valid=valid,**samples)
