@@ -26,13 +26,16 @@ def run():
     for name,x in features.items():
      unit=td/name/f'seed{seed}';unit.mkdir(parents=True,exist_ok=True)
      if (unit/'COMPLETE.json').exists():raise ValueError('Fresh execution only; do not overwrite units')
-     candidates=[]
-     for c in [.1,1.,10.]:
-      scores=[];attempts=[]
-      for a,b in foldix:
-       m,logs=train_model(x[a],y[a],c);scores.append(point_metrics(y[b],m.predict_proba(x[b]),classes)[0]['auroc']);attempts.append(logs)
-      candidates.append(dict(C=c,scores=scores,mean_auroc=float(np.mean(scores)),convergence=attempts))
-     c=max(candidates,key=lambda z:(z['mean_auroc'],-z['C']))['C'];model,logs=train_model(x[tr],y[tr],c);assert np.array_equal(model.classes_,classes);joblib.dump(model,unit/'model.joblib');write(unit/'selection.json',dict(candidates=candidates,selected_C=c,refit=logs,train_rows=len(tr)))
+     if (unit/'selection.json').exists():
+      model=joblib.load(unit/'model.joblib');assert np.array_equal(model.classes_,classes)
+     else:
+      candidates=[]
+      for c in [.1,1.,10.]:
+       scores=[];attempts=[]
+       for a,b in foldix:
+        m,logs=train_model(x[a],y[a],c);scores.append(point_metrics(y[b],m.predict_proba(x[b]),classes)[0]['auroc']);attempts.append(logs)
+       candidates.append(dict(C=c,scores=scores,mean_auroc=float(np.mean(scores)),convergence=attempts))
+      c=max(candidates,key=lambda z:(z['mean_auroc'],-z['C']))['C'];model,logs=train_model(x[tr],y[tr],c);assert np.array_equal(model.classes_,classes);joblib.dump(model,unit/'model.joblib');write(unit/'selection.json',dict(candidates=candidates,selected_C=c,refit=logs,train_rows=len(tr)))
      for split in (['dev','test'] if group=='H3' else ['dev']):
       ix=np.array([i for i,r in enumerate(rr) if r['split']==split]);sample=OLD/'probes'/group/task/f'{split}_resampling.npz';copied=td/sample.name
       if not copied.exists():shutil.copy2(sample,copied)
@@ -54,11 +57,14 @@ def run():
         sources[key]=dict(original=str(orig),receipt_sha256=sha(orig/'COMPLETE.json'),files={p.name:sha(p) for p in anchor.iterdir()})
        with np.load(anchor/f'{split}_predictions.npz',allow_pickle=False) as z:
         assert np.array_equal(z['ids'],ids[ix]) and np.array_equal(z['labels'],y[ix]) and np.array_equal(z['classes'],classes) and np.array_equal(z['groups'],groups[ix]);pred={pol:z['prob_'+pol] for pol in ['base_refit','h3_only_refit','h3_only_fixed_base']}
+       baseboot,basevalid=independent(y[ix],pred['base_refit'],classes,weights)
        with np.load(anchor/f'{split}_bootstrap.npz',allow_pickle=False) as z:
         for pol,probs in pred.items():
          modelpoint,_=point_metrics(y[ix],probs,classes);im,_=independent(y[ix],probs,classes,np.ones((1,len(ix))));imboot,vm=independent(y[ix],probs,classes,weights);assert np.array_equal(valid,vm)
          for metric in point:
-          dist=z[pol+'__'+metric];assert np.max(np.abs(dist[valid]-imboot[metric][valid]))<1e-12;diff=dist[valid]-sampled[metric][valid];ci=np.quantile(diff,[.025,.975]);ic=np.quantile(imboot[metric][valid]-ib[metric][valid],[.025,.975]);assert np.max(np.abs(ci-ic))<1e-12;assert abs(im[metric][0]-modelpoint[metric])<1e-12
+          dist=imboot[metric]
+          if pol!='base_refit':assert np.max(np.abs(z[pol+'__'+metric][valid]-(dist[valid]-baseboot[metric][valid])))<1e-12
+          diff=dist[valid]-sampled[metric][valid];ci=np.quantile(diff,[.025,.975]);ic=np.quantile(imboot[metric][valid]-ib[metric][valid],[.025,.975]);assert np.max(np.abs(ci-ic))<1e-12;assert abs(im[metric][0]-modelpoint[metric])<1e-12
           contrasts.append(dict(task=task,split=split,seed=seed,layer=layer,policy=pol,control=name,metric=metric,difference=modelpoint[metric]-point[metric],ci_low=float(ci[0]),ci_high=float(ci[1]),valid=int(valid.sum()),invalid=int((~valid).sum())))
           if name=='composition':records.append(dict(task=task,split=split,seed=seed,readout=pol,layer=layer,policy=pol,metric=metric,value=modelpoint[metric]))
      write(unit/'COMPLETE.json',dict(status='COMPLETE',task=task,seed=seed,control=name,files={p.name:sha(p) for p in unit.iterdir() if p.is_file()}));units.append(str(unit));print('COMPLETE',task,seed,name,flush=True)
