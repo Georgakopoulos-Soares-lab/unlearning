@@ -1,0 +1,90 @@
+Run matched low-complexity controls for the completed six-task benign
+Evo2 evaluation. This is new CPU scientific work. Reuse all compatible
+verified model features, probes and predictions.
+
+Source scientific commit:
+3d82ba6f27312b58c265fdb0916d6872af80d2fc
+Repository: /workspace/repos/unlearning
+Existing artifacts: /workspace/meeting-artifacts/multiretain-layers-v1
+
+Create or safely resume:
+Branch: experiments-ashay-benign-followup-v1
+Worktree: /workspace/wt-benign-followup
+New artifacts: /workspace/meeting-artifacts/benign-followup-v1
+Base the branch on the completed scientific commit. Preserve existing
+branches and uncommitted work. Record all source commits and file hashes.
+
+Question:
+On the current qualified cohorts, how do composition and normalized
+4-mer logistic controls compare with base and H3-only MaxEnt logistic
+probes?
+
+Use exactly the current six tasks and qualified cohorts:
+EMP/H3, promoter, core promoter, splice, human TF and mouse TF.
+Resolve their exact manifest names from the completed run.
+
+Before fitting, write a dated protocol amendment. This is exploratory
+follow-up after seeing the existing results, not a prospectively
+registered confirmatory experiment.
+
+Recover historical control implementations and document their feature
+definitions. Preserve a fixed, explicit treatment of orientation,
+ambiguous bases, normalization, sequence length and padding. Use only
+biological sequence content, excluding padding/special tokens. Do not
+choose feature definitions based on held-out performance.
+
+Reuse historical control outputs only if sequence identities, cohorts,
+folds, labels, preprocessing, fitting policy and metric definitions
+actually match. Otherwise fit new controls. Do not compare unmatched old
+H3 AUROC 0.8955 directly against current Evo2 results as a matched effect.
+
+Match the current protocol:
+- Same row IDs, labels and exact/reverse-complement groups.
+- Same grouped training folds for seeds 42, 17 and 1234.
+- Fold-local preprocessing.
+- Balanced L2 logistic regression and the existing C grid, selection
+  metric, tie rule and convergence policy.
+- Train-only model selection.
+- Binary class-column mapping and thresholds, and sorted multiclass
+  columns/argmax, matching the scientific run.
+- Same AUROC, accuracy, balanced accuracy, AP and classifier-loss
+  definitions, including splice macro-OVR treatment.
+
+Fit each control once per task/CV seed, not once per model layer.
+Two controls x six tasks x three seeds implies 36 final control fits
+if no compatible fits are reusable.
+
+Compare against the already declared block-16 and final-normalization
+anchors. Do not choose a favorable layer, seed, C or threshold using
+held-out outcomes. All-layer comparisons, if reported, are descriptive
+extensions using the same control predictions, not additional control fits.
+
+Use existing development populations and the already analyzed H3 test
+population only. Label H3 test follow-up explicitly as exploratory reuse.
+Do not open any previously untouched test set.
+
+Calculate paired differences using matched examples and the existing
+group-bootstrap convention with 2,000 draws. Report conditional pointwise
+intervals and their limitations; do not treat seeds as independent
+intervention replicates or nonsignificance as preservation.
+
+Save feature definitions, sequence/manifest hashes, features, folds,
+selection traces, scalers/heads, predictions, convergence logs, metrics,
+resampling identities and execution receipts. Independently verify
+reported values and row/class joins. Use focused tests for any new
+implementation risks.
+
+Deliver:
+1. MATCHED_CONTROLS.md with an exact comparison table.
+2. Machine-readable metrics and paired contrasts.
+3. A short answer to which tasks show evidence beyond these controls.
+4. Clear separation of recovered historical results and new measurements.
+
+Use an isolated CPU environment and bounded CPU threads. No GPU inference
+is needed. Do not alter the completed scientific artifacts or shared
+runtime. Record actual CPU/wall usage, push only the follow-up branch,
+and verify a private backup of the new artifacts.
+
+No backbone training, host-tropism prediction, collaborator messages or
+Pod shutdown. Proceed through all eligible tasks; a missing input for
+one task must not silently invalidate or block the others.

@@ -1,0 +1,33 @@
+{
+  "dated_utc": "2026-11-10T15:11:44.453707+00:00",
+  "status": "FROZEN_BEFORE_CONTROL_FITS",
+  "study": "Exploratory follow-up after existing results, not confirmatory",
+  "source_commit": "3d82ba6f27312b58c265fdb0916d6872af80d2fc",
+  "historical_controls": "benign_pilot/extension.py controls; four ACGT counts divided by total canonical bases; 256 overlapping forward-strand ACGT 4-mers in lexicographic order divided by valid window count. Ambiguous windows excluded; denominators exclude ambiguity. No RC aggregation, length feature, padding or specials. Empty canonical/window denominator raises; no imputation. Use complete manifest biological content.",
+  "reuse": "No historical control fits claimed compatible; new36 final fits. Existing model predictions/probes only, exact IDs/classes checked.",
+  "fit": "Same saved task/seed folds, fold-local scaler, balanced L2 LBFGS tol1e-4, 2000 then10000 retry for convergence, C .1/1/10 train-CV AUROC, smaller-C ties; full-train refit; optimizer42; CVseeds42/17/1234",
+  "anchors": [
+    "decoder_layer_16",
+    "final_norm"
+  ],
+  "policies": [
+    "base_refit",
+    "h3_only_refit",
+    "h3_only_fixed_base"
+  ],
+  "metrics": "Existing five metrics; binary class1 threshold.5; splice sorted classes argmax, macroOVR AUROC/AP",
+  "bootstrap": "Reuse saved2000 exactRC-group draws; paired conditional pointwise unadjusted; seeds not intervention replicas; no preservation margins",
+  "population": "H3 dev and exploratory reused test; other five existing dev only; no untouched test",
+  "threads": 2,
+  "GPU": false,
+  "manifests": [
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/manifests/H3.jsonl",
+      "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/manifests/other_five.jsonl",
+      "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126"
+    }
+  ]
+}
