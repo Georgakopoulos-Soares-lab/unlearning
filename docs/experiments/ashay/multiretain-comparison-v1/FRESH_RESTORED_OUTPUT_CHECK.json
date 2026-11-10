@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "new_payload": "/workspace/recovery/multiretain-comparison-roundtrip-20261110T174916Z/extracted/multiretain-comparison-v1-final-20261110T173945Z",
+  "reference_payload": "/workspace/recovery/multiretain-roundtrip-20261110T142652Z/extracted/multiretain-layers-v1-final-20261110T140836Z",
+  "controls_payload": "/workspace/recovery/benign-followup-roundtrip-20261110T151824Z/extracted/benign-followup-v1",
+  "checks": [
+    {
+      "task": "emp_H3",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "split": "dev",
+      "rows": 12,
+      "policy": "base_refit",
+      "max_probability_delta": 0.0
+    },
+    {
+      "task": "emp_H3",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "split": "dev",
+      "rows": 12,
+      "policy": "new_refit",
+      "max_probability_delta": 0.0
+    },
+    {
+      "task": "emp_H3",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "split": "dev",
+      "rows": 12,
+      "policy": "new_fixed_base",
+      "max_probability_delta": 0.0
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "split": "dev",
+      "rows": 12,
+      "policy": "base_refit",
+      "max_probability_delta": 1.4432899320127035e-15
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "split": "dev",
+      "rows": 12,
+      "policy": "new_refit",
+      "max_probability_delta": 7.771561172376096e-16
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "split": "dev",
+      "rows": 12,
+      "policy": "new_fixed_base",
+      "max_probability_delta": 5.10702591327572e-15
+    }
+  ],
+  "control_join_checks": 4,
+  "wall_seconds": 4.616298483684659,
+  "cpu_process_seconds": 1.26045805,
+  "scope": "Fresh downloaded and fully hash-verified supplement plus separately verified immutable base/H3/control dependencies; reconstruct 12 dev rows for binary H3 and multiclass splice, three readout policies; all468units already audited before transfer. No GPU or full CV rerun."
+}

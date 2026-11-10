@@ -1,0 +1,96 @@
+{
+  "status": "COMPLETE",
+  "closed_utc": "2026-11-10T17:55:13.058478+00:00",
+  "elapsed_from_prompt_read_seconds": 5556.865818,
+  "completed_units": 468,
+  "expected_units": 468,
+  "blocked_task_layer_seed_units": 0,
+  "coverage": "6 benign tasks \u00d726 representations \u00d73 CV seeds; new refits, unchanged-base-head transfer, controls and actual LM loss",
+  "checkpoint": "supplied_three_source_config_iter2151",
+  "checkpoint_identity": "RESOLVED",
+  "configuration_declared_sources": [
+    "H3",
+    "human_tf_0",
+    "prom_core_all"
+  ],
+  "realized_mixture_exposure": "UNKNOWN",
+  "causal_retain_diversity_attribution": "NOT_SUPPORTED",
+  "remaining_evidence": [
+    "Parent/conversion hashes",
+    "Executed objective and multi-source loader revision/settings",
+    "Retain source manifests/versions/alias maps and per-source sampling/exposure/token accounting"
+  ],
+  "source_commits": {
+    "3d82ba6": "3d82ba6f27312b58c265fdb0916d6872af80d2fc",
+    "a745671": "a745671c8236c5ce6d62bf65c5262909e626d6f2",
+    "e95380d": "e95380d22b982a8fa5d71e4aaf7f8553010b6408",
+    "943b04f": "943b04f5413d99142f9fb22d176c1b8f9a054bb8",
+    "4f9aa65": "4f9aa65518f58b44a2afc76cec6f96c240115916",
+    "9fcfa9f": "9fcfa9f773f837c41a5d569d5aef716ecb2b7ccb",
+    "bb194d2": "bb194d25331d7de77c52eff927c36bd25a4fc88f",
+    "a41c13a": "a41c13ae7d929ba643a870c0b5d8a8631f5a22f0",
+    "087d7dc": "087d7dc39db61ee9ad660544a76622659861052f"
+  },
+  "source_hash_checks": [
+    {
+      "path": "scripts/sayyed/fit_multiretain_new_arm.py",
+      "sha256": "8167aea0ccd9b593dfc62b1bd825dc797bcc4e274cfe3954507b34e14fb8a77a"
+    },
+    {
+      "path": "scripts/sayyed/verify_multiretain_new_arm.py",
+      "sha256": "34ce55b11f3200477085ddab5fdf25efc8e8b461746ae28a7a1fb301e551a265"
+    },
+    {
+      "path": "scripts/sayyed/multiretain_independent.py",
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "scripts/sayyed/aggregate_three_arm.py",
+      "sha256": "8953848a5808100a56d8bb97c413601b100b20bcd33e615d3ad118154690cbab"
+    },
+    {
+      "path": "scripts/sayyed/multiretain_report.py",
+      "sha256": "8911e34bce6167be8a7616031e79978fad57e65ae68294ffe6cdae7495bb4f26"
+    }
+  ],
+  "gpu_stage_seconds": 375.78481797641143,
+  "fit_cpu_seconds": 4230.210150359,
+  "saved_output_audit_cpu_seconds": 497.179200265,
+  "paired_audit_cpu_seconds": 587.0312255150001,
+  "local_packaging_wall_seconds": 391.1353731001727,
+  "private_backup_wall_seconds": 391.8235372370109,
+  "private_backup_cpu_seconds": 111.551877623,
+  "fresh_restored_smoke_cpu_seconds": 1.26045805,
+  "accounting_scope": "Separate measured components, not exhaustive CPU usage or provider billing. Package/backup include I/O; concurrent phases must not be summed as elapsed task wall time.",
+  "backup_revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+  "backup_status": "VERIFIED_PRIVATE_FRESH_DOWNLOAD_AND_RESTORED_CPU_SMOKE",
+  "backup_payload_files": 8199,
+  "backup_dependencies": "RESTORE_DEPENDENCIES.json",
+  "weights_and_runtime_included": false,
+  "remaining_owned_jobs": [],
+  "gpu_processes": [],
+  "historical_ledger_preserved": true,
+  "other_worktrees": {
+    "/workspace/wt-multiretain-layers": {
+      "head": "3d82ba6f27312b58c265fdb0916d6872af80d2fc",
+      "status": "",
+      "ownership": "Read-only external worktree; reporting untracked v5 output preserved"
+    },
+    "/workspace/wt-benign-followup": {
+      "head": "e95380d22b982a8fa5d71e4aaf7f8553010b6408",
+      "status": "",
+      "ownership": "Read-only external worktree; reporting untracked v5 output preserved"
+    },
+    "/workspace/wt-multiretain-reporting": {
+      "head": "8116ca826a54c66b48111f7750a30d819e238343",
+      "status": "?? docs/experiments/ashay/multiretain-reporting-v1/v5-20261110T144354Z/",
+      "ownership": "Read-only external worktree; reporting untracked v5 output preserved"
+    }
+  },
+  "pod_state": "LEFT_RUNNING",
+  "collaborator_messages_sent": false,
+  "main_merged": false,
+  "force_push_used": false,
+  "scientific_delivery_commit": "087d7dc39db61ee9ad660544a76622659861052f",
+  "final_receipt_commit": "This receipt necessarily precedes its own Git commit; final remote equality proof saved separately in artifact root."
+}

@@ -1,0 +1,115 @@
+{
+  "status": "VERIFIED_PRIVATE_FRESH_DOWNLOAD",
+  "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "remote_repository_type": "dataset",
+  "remote_revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+  "remote_archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+  "remote_sidecar_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz.sha256",
+  "private_repository_verified": true,
+  "archive": "/workspace/meeting-artifacts/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+  "sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+  "bytes": 4412868094,
+  "fresh_download": "/workspace/recovery/multiretain-comparison-roundtrip-20261110T174916Z/multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+  "fresh_payload_root": "/workspace/recovery/multiretain-comparison-roundtrip-20261110T174916Z/extracted/multiretain-comparison-v1-final-20261110T173945Z",
+  "payload_files_verified": 8199,
+  "sidecar_byte_identical": true,
+  "upload_seconds": 130.87819005502388,
+  "download_seconds": 68.65320432884619,
+  "payload_verification_seconds": 189.1117891143076,
+  "total_backup_wall_seconds": 391.8235372370109,
+  "cpu_process_seconds": 111.551877623,
+  "credential_wait_seconds": 3570.3538469108753,
+  "credential_persisted": false,
+  "scope": "New three-source checkpoint features/probes/comparisons; explicitly dependent on prior verified base/H3 and control archives; weights/installed runtime excluded",
+  "required_dependencies": {
+    "status": "REQUIRED_IMMUTABLE_DEPENDENCIES",
+    "base_h3_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "archive": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "bytes": 10108100047,
+      "payload_root": "multiretain-layers-v1-final-20261110T140836Z",
+      "original_root": "/workspace/meeting-artifacts/multiretain-layers-v1"
+    },
+    "controls_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "archive": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "bytes": 47129813,
+      "payload_root": "benign-followup-v1",
+      "original_root": "/workspace/meeting-artifacts/benign-followup-v1"
+    },
+    "supplement": "New features/probes/paired results/source; no repackaging old large caches",
+    "excluded": "All model weights and installed runtime; selected new weights must be reacquired via recorded DriveID/SHA for GPU regeneration"
+  },
+  "fresh_restored_output_check": {
+    "status": "PASS",
+    "new_payload": "/workspace/recovery/multiretain-comparison-roundtrip-20261110T174916Z/extracted/multiretain-comparison-v1-final-20261110T173945Z",
+    "reference_payload": "/workspace/recovery/multiretain-roundtrip-20261110T142652Z/extracted/multiretain-layers-v1-final-20261110T140836Z",
+    "controls_payload": "/workspace/recovery/benign-followup-roundtrip-20261110T151824Z/extracted/benign-followup-v1",
+    "checks": [
+      {
+        "task": "emp_H3",
+        "layer": "decoder_layer_0",
+        "seed": 42,
+        "split": "dev",
+        "rows": 12,
+        "policy": "base_refit",
+        "max_probability_delta": 0.0
+      },
+      {
+        "task": "emp_H3",
+        "layer": "decoder_layer_0",
+        "seed": 42,
+        "split": "dev",
+        "rows": 12,
+        "policy": "new_refit",
+        "max_probability_delta": 0.0
+      },
+      {
+        "task": "emp_H3",
+        "layer": "decoder_layer_0",
+        "seed": 42,
+        "split": "dev",
+        "rows": 12,
+        "policy": "new_fixed_base",
+        "max_probability_delta": 0.0
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "layer": "decoder_layer_0",
+        "seed": 42,
+        "split": "dev",
+        "rows": 12,
+        "policy": "base_refit",
+        "max_probability_delta": 1.4432899320127035e-15
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "layer": "decoder_layer_0",
+        "seed": 42,
+        "split": "dev",
+        "rows": 12,
+        "policy": "new_refit",
+        "max_probability_delta": 7.771561172376096e-16
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "layer": "decoder_layer_0",
+        "seed": 42,
+        "split": "dev",
+        "rows": 12,
+        "policy": "new_fixed_base",
+        "max_probability_delta": 5.10702591327572e-15
+      }
+    ],
+    "control_join_checks": 4,
+    "wall_seconds": 4.616298483684659,
+    "cpu_process_seconds": 1.26045805,
+    "scope": "Fresh downloaded and fully hash-verified supplement plus separately verified immutable base/H3/control dependencies; reconstruct 12 dev rows for binary H3 and multiclass splice, three readout policies; all468units already audited before transfer. No GPU or full CV rerun."
+  },
+  "source_snapshot_base_commit": "087d7dc39db61ee9ad660544a76622659861052f",
+  "source_snapshot_note": "Scientific code at this commit; per-file checksums cover all packaged contents, including any later verification receipts. Final backup/restore receipts intentionally postdate the archive."
+}
