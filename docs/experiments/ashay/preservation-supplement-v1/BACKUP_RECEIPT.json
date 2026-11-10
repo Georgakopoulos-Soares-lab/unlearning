@@ -1,0 +1,147 @@
+{
+  "status": "SUPPLEMENT_VERIFIED",
+  "preservation_gaps": "CLOSED",
+  "verified_utc": "2026-11-10T21:14:07.805638+00:00",
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+    "ref": "main",
+    "commit": "84eb97ab7588e49a510ed6c21287410a85185d4e",
+    "path": "codex_prompt_v17.txt",
+    "sha256": "0fd75117849c3b1ffdfc4d304d5e7db6adacf8d3876284d01d08dc3300a2d070",
+    "read_utc": "2026-11-10T21:06:41.701210+00:00"
+  },
+  "backup": {
+    "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "remote_repository_type": "dataset",
+    "remote_revision": "8694a540b5fc987b443ee488b085f753c5c4eb01",
+    "remote_archive_path": "preservation-supplement-v1/20261110T211124Z/preservation-supplement-v1-final-20261110T211124Z.tar.gz",
+    "remote_sidecar_path": "preservation-supplement-v1/20261110T211124Z/preservation-supplement-v1-final-20261110T211124Z.tar.gz.sha256",
+    "private_repository_verified": true,
+    "sha256": "41b492ed74059861b8ddab7d0075cb5a3709cebb22bc36941351500676b908eb",
+    "bytes": 14262042,
+    "payload_files_verified": 86,
+    "sidecar_byte_identical": true,
+    "upload_seconds": 2.270646917168051,
+    "download_seconds": 0.9225360509008169,
+    "payload_verification_seconds": 1.6960968598723412,
+    "total_backup_wall_seconds": 4.934963065199554
+  },
+  "source_categories": {
+    "historical_saved_output_adaptation": 13,
+    "post_backup_administrative_state": 37,
+    "prompt": 3,
+    "prompt_receipt": 1,
+    "synthetic_preview": 13,
+    "training_only_smoke_manifest": 2
+  },
+  "selected_original_files": 69,
+  "both_smoke_manifest_paths": [
+    "/workspace/meeting-artifacts/multiretain-layers-v1/training_smoke_manifest.jsonl",
+    "/workspace/meeting-artifacts/multiretain-comparison-v1/training_smoke_manifest.jsonl"
+  ],
+  "credential_scan": {
+    "status": "PASS",
+    "findings": 0,
+    "sanitized_files": 0,
+    "selected_content_excluded": 0,
+    "secret_values_logged": false,
+    "credentials_uploaded": false
+  },
+  "git_recovery": {
+    "recorded_HEAD": "d158a3666c72a212c6c1cbc5b9c264f3c6dd3687",
+    "head_recovered_from_remote": true,
+    "saved_git_state_items_replayed": 7,
+    "staged_and_unstaged_patches_byte_identical": true,
+    "index_absence_preserved": true,
+    "selected_original_files_unchanged": 69,
+    "both_smoke_paths_present": true,
+    "original_checkout_unchanged": true
+  },
+  "git_original_state": "Five pre-existing staged deletions and original absent index preserved; no original commit/reset/restore; no bundle needed because HEAD recovered from public remote",
+  "dependencies": {
+    "status": "REQUIRED_IMMUTABLE_DEPENDENCIES",
+    "base_h3_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "archive": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "bytes": 10108100047,
+      "payload_root": "multiretain-layers-v1-final-20261110T140836Z",
+      "original_root": "/workspace/meeting-artifacts/multiretain-layers-v1"
+    },
+    "controls_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "archive": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "bytes": 47129813,
+      "payload_root": "benign-followup-v1",
+      "original_root": "/workspace/meeting-artifacts/benign-followup-v1"
+    },
+    "supplement": "New features/probes/paired results/source; no repackaging old large caches",
+    "excluded": "All model weights and installed runtime; selected new weights must be reacquired via recorded DriveID/SHA for GPU regeneration",
+    "R3_archive": {
+      "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "remote_repository_type": "dataset",
+      "remote_revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+      "remote_archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "remote_sidecar_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz.sha256",
+      "sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "bytes": 4412868094,
+      "payload_files_verified": 8199,
+      "payload_root": "multiretain-comparison-v1-final-20261110T173945Z"
+    },
+    "restore_order": [
+      "base_h3_archive",
+      "controls_archive",
+      "R3_archive",
+      "incremental_preparation_archive",
+      "graddiff_qualification_archive",
+      "this_preservation_supplement"
+    ],
+    "scope": "Existing archives remain immutable and are not repackaged/reverified. This supplement closes local consumer/smoke/prompt-state gaps only.",
+    "incremental_preparation_archive": {
+      "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "remote_repository_type": "dataset",
+      "remote_revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+      "remote_archive_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+      "remote_sidecar_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz.sha256",
+      "sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+      "bytes": 6963484,
+      "payload_files_verified": 131
+    },
+    "graddiff_qualification_archive": {
+      "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "remote_repository_type": "dataset",
+      "remote_revision": "fb165819f22ba6444025f7397e8ca7885fdde084",
+      "remote_archive_path": "benign-graddiff-qualification-v1/20261110-audit/benign-graddiff-qualification-v1-20261110.tar.gz",
+      "remote_sidecar_path": "benign-graddiff-qualification-v1/20261110-audit/benign-graddiff-qualification-v1-20261110.tar.gz.sha256",
+      "sha256": "b5f5e8c484334bbc851b1646d910899df639e225d9a92ed4b42be61ae3be49b9",
+      "bytes": 113056,
+      "payload_files_verified": 76
+    }
+  },
+  "restore_in_archive": [
+    "RESTORE.md",
+    "PATH_INVENTORY.json",
+    "PAYLOAD_LABELS.json",
+    "CHECKSUMS.sha256",
+    "git-state/test-prompts-push/",
+    "verify_restored_state.py"
+  ],
+  "remaining_documented_exclusions": [
+    "Model weights/installed runtime/cache directories remain excluded as in existing verified scientific backups; reacquisition references preserved",
+    "No credentials detected; no selected source files were excluded",
+    "Disposable fresh-download/scratch replay copies and this backup task own local helper/transfer logs are operational outputs; authoritative sanitized receipt/handoff published in Git"
+  ],
+  "remaining_intentionally_uncommitted_state": "Kimi four unfinished files and prompts five staged deletions remain in place, now recoverably preserved in the private supplement",
+  "active_experiment_transfer_gpu_jobs": [],
+  "interactive_sessions": "Codex audit and Kimi CLI/shell sessions remain open; no experiment/transfer/GPU work found",
+  "new_experiments": 0,
+  "new_gpu_seconds": 0,
+  "old_scientific_archives_repackaged": false,
+  "old_backup_verification_repeated": false,
+  "pod": "LEFT_RUNNING",
+  "publication_branch": "experiments-ashay-preservation-supplement-v1",
+  "publication_scope": "Only this sanitized receipt and SESSION_HANDOFF.md; no unfinished Kimi content committed"
+}
