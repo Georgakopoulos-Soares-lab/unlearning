@@ -16,3 +16,5 @@
 | Reused base/H3/controls | RESOLVED |478 sealed receipts/9156files verified;36controls reused, no refits |
 
 Decision1 descriptive eligibility passes. Decision2 attribution to retain diversity does not. Numerical results will not retroactively change candidate selection, cohorts or these evidence qualifications.
+
+Supplement: objective-reporting evidence is now PARTIAL via actual MaxEnt-labeled TensorBoard tag names; exact executed objective/revision remains UNRESOLVED. No change to frozen selection or inferential decisions.
