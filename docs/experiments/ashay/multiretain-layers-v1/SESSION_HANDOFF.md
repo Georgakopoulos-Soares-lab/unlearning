@@ -1,4 +1,6 @@
-# Stage 1: recovery blocked; preparation implemented
+# Session handoff: available matrix audited; stage3 closeout
+
+Status entries below are chronological. Initial blocked/preparation entries are preserved history and superseded by the later V25/stage1/stage2 checkpoints. Current matrix: all468 available units audited; private backup verification pending.
 
 The starter at 0c9867653969ce83533f902b8a99f2527b4d6b36 authorized this worktree/branch and sequential stages. The stage pack/config is pinned consistently to the clean /workspace/repos/test-prompts-push HEAD 162f6a8110e22538634838866bacba12ba753c25. The other prompt clone differs; nothing was checked out/reset or pushed there. Stage 2/3 prompts have not been read. Verbatim inputs and SHA256 receipts are adjacent.
 
@@ -64,3 +66,7 @@ Stage3 prompt NOT YET READ. When remaining_matrix_state.json says COMPLETE_AND_A
 All468 native units,936 heads and433212 saved prediction rows audited PASS. Probe8190 scalars/5460paired contrasts; LM28scalars/14contrasts. Every probability reconstructed exactly; max metric/bootstrapdelta<1.2e-14. All final convergence attempts passed (50initial warnings preserved/retried); no invalid metric-bootstrap draws. New GPU778.576233s, inactive. STAGE2_COMPLETE.json marks COMPLETE_AVAILABLE_SCOPE, with optional multi-retain deferred/no noise. Native outputs ready; supplemental consumer serialization still finishing. This supersedes the prior checkpoint requirement to wait for the view controller: full scientific matrix and numerical audits are complete; no scientific fitting/inference remains.
 
 Stage3 codex_prompt_v3.txt read in full from pinned162f6a8110e22538634838866bacba12ba753c25 after this gate, exact text/receipt adjacent. Scoped Kimi renderer8116ca8 integrated; only one-ULP mean bounding and legible heatmap formatting adjusted. All source numeric values unchanged; failures/logs retained. RESULTS/MEETING_SUMMARY/NEXT_ACTIONS/unsent Slack draft and all numerical tables generated. Main three figures visually inspected for axes/signs/missing arms; PNG/PDF/SVG full artifacts. New backup not yet uploaded. Wait consumer views+14 supplemental anchors, seal scoped payload, publish READY_FOR_BACKUP for existing RAM-authenticated worker, fresh-download verify, then push receipt. Never kill backup worker or repeat GPU.
+
+## Stage3 scientific gate passed
+
+All546 consumer views finalized; controller COMPLETE_AND_AUDITED. All14 supplemental anchors PASS. STAGE3_SCIENTIFIC_COMPLETE.json records current global prompt/report status (controller itself never reads prompts). Main reports/test/figure/evidence links complete,4 focused renderer tests PASS. Stage3 only package/upload/fresh retrieval/final receipt+job check remain. Core scientific source delivered68dad2b; backup source snapshot may include this later receipt checkpoint.
