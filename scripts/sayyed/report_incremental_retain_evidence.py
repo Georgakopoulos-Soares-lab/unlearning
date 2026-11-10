@@ -37,7 +37,9 @@ for i,s in enumerate(stages):
   else:ax.text(j,i,'NO CHECKPOINT',ha='center',va='center',fontsize=8,color='#555555')
 ax.set_title('Reused block16 / seed42 refitted AUROC; missing stages remain blank');fig.colorbar(im,ax=ax,label='AUROC (existing measurements)');fig.text(.5,-.02,'R1/R3 aliases reflect config declarations, not verified exposure. No adjacent-stage effect is estimable. No interpolation, overall score or new measurements.',ha='center',fontsize=9)
 fig.tight_layout()
-for ext in ['png','pdf','svg']:fig.savefig(r/'figures'/('stage_coverage.'+ext),dpi=180,bbox_inches='tight')
+for ext in ['png','pdf','svg']:
+ path=r/'figures'/('stage_coverage.'+ext);fig.savefig(path,dpi=180,bbox_inches='tight')
+ if ext=='svg':path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines())+'\n')
 plt.close(fig)
 # Make exact smoke/runtime gates explicit before any future candidate scoring.
 p=load(r/'COMPARISON_PROTOCOL.json');p['bounded_training_smoke']=load(n/'SMOKE_PLAN.json');p['bounded_training_smoke']['arms']=['each new qualified candidate'];p['bounded_training_smoke']['reference_smoke_plan_sha256']=sha(n/'SMOKE_PLAN.json');p['numeric_audit_tolerances']={'saved_probability_max_abs':1e-10,'metric_and_bootstrap_max_abs':1e-12};p['metadata_clarified_utc']=now;p['metadata_clarification']='Explicit unchanged smoke/audit references; no new heldout inference has occurred.';save(r/'COMPARISON_PROTOCOL.json',p);save(r/'PROTOCOL_FROZEN.json',dict(status='FROZEN_BEFORE_NEW_MODEL_SCORING',utc=now,protocol_sha256=sha(r/'COMPARISON_PROTOCOL.json'),new_heldout_scoring=False));shutil.copy2(r/'COMPARISON_PROTOCOL.json',d/'COMPARISON_PROTOCOL.json');shutil.copy2(r/'PROTOCOL_FROZEN.json',d/'PROTOCOL_FROZEN.json')
@@ -49,7 +51,7 @@ text='''# Incremental retain evaluation: qualified continuation and delivery sta
 
 The validated implementation is pinned to c79ab07e763a9754c68fdaf7d0730d8458f508dc. Existing base, H3-only and three-source results were verified again against990sealed receipts/15678files, including exact cohorts, heads/predictions/bootstrap/LM records and36controls. The original independent numerical audits are reused, not counted as new measurements or GPU replication. Source SHA/frozen runtime/hook/pooling/batching identities match.
 
-R1 is the provisional alias for original `h3_only_maxent`, iteration2000, config declares H3. R3 provisionally aliases `supplied_three_source_config_iter2151`, config declares H3/humanTF0/core-promoter. Its shard SHA256 is a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0. Original identifiers and all per-arm tokenizer/checkpoint identities remain in CHECKPOINT_REGISTRY.json. These aliases establish neither realized exposure nor sequential fine-tuning. The R3 pointer still reads2151 and freshly retrieved R1/R3 configs match recorded SHA256 values. No large remote weights were downloaded or freshly hashed; live IDs/sizes/timestamps alone are not weight-identity proof.
+R1 is the provisional alias for original `h3_only_maxent`, iteration2000, config declares H3. R3 provisionally aliases `supplied_three_source_config_iter2151`, config declares H3/humanTF0/core-promoter. Its shard SHA256 is a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0. Original identifiers and all per-arm tokenizer/checkpoint identities remain in CHECKPOINT_REGISTRY.json. These are provisional task-family mappings; exact retain-source versions/manifests and equality to benchmark-source identities remain unverified. These aliases establish neither realized exposure nor sequential fine-tuning. The R3 pointer still reads2151 and freshly retrieved R1/R3 configs match recorded SHA256 values. No large remote weights were downloaded or freshly hashed; live IDs/sizes/timestamps alone are not weight-identity proof.
 
 | Stage | Agreed cumulative retain set | Delivery/result status | Completed task/layer/seed units reused |
 |---|---|---|---:|
