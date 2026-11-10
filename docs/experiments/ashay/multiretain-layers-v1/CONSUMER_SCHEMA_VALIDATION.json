@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "receipt": "/workspace/meeting-artifacts/multiretain-layers-v1/consumer_views/H3/emp_H3/decoder_layer_0/seed42/dev/COMPLETE.json",
+  "file_roles": [
+    "protocol",
+    "manifest",
+    "predictions",
+    "metrics",
+    "contrasts",
+    "bootstrap",
+    "folds",
+    "selection",
+    "post_selection",
+    "producer_receipt",
+    "producer_results",
+    "scientific_protocol",
+    "source_manifest",
+    "base_model",
+    "post_model"
+  ],
+  "schema": "multiretain-unit-v1",
+  "unit": {
+    "task": "emp_H3",
+    "split": "dev",
+    "checkpoint": "base_and_h3_only_maxent",
+    "layer": "decoder.layers.0",
+    "seed": 42,
+    "probe_policy": "independent_refit_and_fixed_base"
+  },
+  "scope": "Reviewer-authored receipt/schema/hash validation only; numerical audit separate"
+}

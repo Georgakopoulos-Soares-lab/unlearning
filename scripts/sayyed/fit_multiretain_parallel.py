@@ -116,7 +116,7 @@ def main():
                     seeds=seeds, source_sha256=sha(__file__),
                     metrics_source_sha256=sha(Path(__file__).with_name('multiretain_metrics.py')),
                     training_source_sha256=sha(Path(__file__).with_name('h3_followup.py')),
-                    cv_parallelism=dict(workers=4,blas_threads_per_worker=1,final_refit_blas_threads=4),
+                    cv_parallelism=dict(workers=4,blas_threads_per_worker=1,final_refit_blas_threads=1),
                     packages={name: importlib.metadata.version(name) for name in
                               ['numpy', 'scipy', 'scikit-learn', 'joblib', 'threadpoolctl']})
     identity_path = out / 'run_identity.json'
@@ -249,7 +249,7 @@ def main():
                 print('START', task, layer, 'CV seed', seed, flush=True)
                 for arm, arr in [('base', base), ('h3_only_maxent', post)]:
                     candidates = []
-                    with threadpool_limits(limits=4):
+                    with threadpool_limits(limits=1):
                         for regularization in [.1, 1., 10.]:
                             fold_results = parallel(delayed(cv_fold)(arr[layer], y, train[a], train[b], regularization, classes)
                                                     for a, b in folds)
@@ -277,7 +277,7 @@ def main():
                     files.extend([model_path, unit / (arm+'_cv.json')])
                 metrics, contrasts, support = [], [], []
                 for split, (ix, weights, sample_path) in heldout.items():
-                    with threadpool_limits(limits=4):
+                    with threadpool_limits(limits=1):
                         probabilities = dict(base_refit=models['base'].predict_proba(base[layer][ix]),
                                              h3_only_refit=models['h3_only_maxent'].predict_proba(post[layer][ix]),
                                              h3_only_fixed_base=models['base'].predict_proba(post[layer][ix]))
@@ -340,7 +340,7 @@ def main():
                 cpu_process_seconds_this_invocation=time.process_time()-cpu_started,
                 cv_worker_cpu_process_seconds=worker_cpu_seconds,
                 child_cpu_seconds_including_worker_setup=resource.getrusage(resource.RUSAGE_CHILDREN).ru_utime+resource.getrusage(resource.RUSAGE_CHILDREN).ru_stime,
-                scope='New CPU logistic fits; four independent one-thread CV workers, four-thread final refit; no backbone training'))
+                scope='New CPU logistic fits; four independent one-thread CV workers, one-thread final refit; no backbone training'))
 
 
 if __name__ == '__main__':
