@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-11-10T17:38:31.286033+00:00",
+  "renderer_sha256": "8911e34bce6167be8a7616031e79978fad57e65ae68294ffe6cdae7495bb4f26",
+  "source_tables": [
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-comparison-v1/reports/metrics.csv",
+      "sha256": "b90d7b1413714cb01fb8527af7ecd57298219705c82e7bd609412a4b5127c986"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-comparison-v1/reports/differences.csv",
+      "sha256": "000cafef68eac3ab05cb1d752a2f44b5d2d660e3834d3c14bd09f9b228bad6d0"
+    }
+  ],
+  "visually_reviewed": [
+    {
+      "path": "dev_fixed_base.png",
+      "sha256": "30fc6b88edf51cb6e458588f67951aefb07c615dfe210adec38b2ed18d223857"
+    },
+    {
+      "path": "dev_new_minus_h3.png",
+      "sha256": "455c96291cc76e4c0af21f3a4e1012c222287e3637e4f63635c123b843d316f5"
+    },
+    {
+      "path": "dev_refit.png",
+      "sha256": "0f640afadeee4282f364f24ed6e6ffc31ddbc5cb7d091c698f788750c2b89427"
+    },
+    {
+      "path": "h3_test_refit.png",
+      "sha256": "c25acc9e3ed2adcdd4b734317edd08f9e6f35e04a4b9636334f8dad49a2b350f"
+    }
+  ],
+  "checks": [
+    "All three arms and all26representations present",
+    "Six dev tasks separated from H3-only test",
+    "AUROC numerical positive-class/macro splice convention preserved",
+    "Seed mean/minmax is explicitly seed variation, not bootstrap CI",
+    "Heatmap sign red positive/blue negative matches verified differences",
+    "No heldout maximum or CI endpoint averaging",
+    "Single-task H3 uses a readable one-panel layout; captions and final-norm labels separated"
+  ],
+  "scope": "Visual main four PNGs plus machine identity of every PNG/PDF/SVG/CSV export. Source table arithmetic independently audited; no scientific values changed by layout fix."
+}

@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "counts": {
+    "new_heads": 468,
+    "refit_attempts": 474,
+    "initial_refit_warning_events": 6,
+    "new_cv_fits": 6552,
+    "cv_attempts": 6574,
+    "initial_cv_warning_events": 22
+  },
+  "selected_C_counts": {
+    "0.1": 398,
+    "10.0": 57,
+    "1.0": 13
+  },
+  "unresolved_final_warnings": 0,
+  "new_fit_cpu_including_children": 4230.210150359,
+  "groups": {
+    "H3": {
+      "fit": {
+        "status": "COMPLETE",
+        "units": 78,
+        "protocol_sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462",
+        "identity_sha256": "7504405ac6e02fc781015305ecba7b64559c754d175c7cc2dd37e3c648736d3f",
+        "index_sha256": "c11b0c765b6a60118fce1d5c4d5e60175d4eb6afb3b1a4f4fb96b051e7d9fd98",
+        "wall_seconds_this_invocation": 1442.4265892799012,
+        "cpu_process_seconds_this_invocation": 540.534455179,
+        "cv_worker_cpu_process_seconds": 2221.877471635,
+        "child_cpu_seconds_including_worker_setup": 2234.4502979999997,
+        "scope": "Only new-arm CPU logistic fits; all base heads/CV/predictions reused; four independent one-thread CV workers, one-thread final refit; no backbone training"
+      },
+      "audit": {
+        "status": "PASS",
+        "group": "H3",
+        "units": 78,
+        "scalar_probe_metrics": 2340,
+        "paired_probe_contrasts": 1560,
+        "prediction_rows": 233532,
+        "max_probability_delta": 2.609024107869118e-14,
+        "max_metric_delta": 5.329070518200751e-15,
+        "max_bootstrap_delta": 1.4210854715202004e-14,
+        "lm_contrasts_checked": [
+          {
+            "task": "emp_H3",
+            "split": "dev",
+            "metric": "causal_nll"
+          },
+          {
+            "task": "emp_H3",
+            "split": "dev",
+            "metric": "perplexity"
+          },
+          {
+            "task": "emp_H3",
+            "split": "test",
+            "metric": "causal_nll"
+          },
+          {
+            "task": "emp_H3",
+            "split": "test",
+            "metric": "perplexity"
+          }
+        ],
+        "scalar_lm_metrics": 8,
+        "source_sha256": "34ce55b11f3200477085ddab5fdf25efc8e8b461746ae28a7a1fb301e551a265",
+        "independent_math_sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+        "producer_index_sha256": "c11b0c765b6a60118fce1d5c4d5e60175d4eb6afb3b1a4f4fb96b051e7d9fd98",
+        "wall_seconds": 149.8920059609227,
+        "cpu_process_seconds": 248.940901209,
+        "scope": "Independent pairwise/rank-threshold metrics and all resamples; direct saved-head algebra, folds and source joins. No GPU replication or CV refitting."
+      }
+    },
+    "other_five": {
+      "fit": {
+        "status": "COMPLETE",
+        "units": 390,
+        "protocol_sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462",
+        "identity_sha256": "aeb6495c23d58565574483102f691920545a0d0a52ff70d7a58e79887547e068",
+        "index_sha256": "aa378d67e7abe3b7342d26e96f1d8715ad9f0d560084efe5343a06c723b8f511",
+        "wall_seconds_this_invocation": 777.066329728812,
+        "cpu_process_seconds_this_invocation": 226.87523918,
+        "cv_worker_cpu_process_seconds": 1210.1017165440012,
+        "child_cpu_seconds_including_worker_setup": 1228.350158,
+        "scope": "Only new-arm CPU logistic fits; all base heads/CV/predictions reused; four independent one-thread CV workers, one-thread final refit; no backbone training"
+      },
+      "audit": {
+        "status": "PASS",
+        "group": "other_five",
+        "units": 390,
+        "scalar_probe_metrics": 5850,
+        "paired_probe_contrasts": 3900,
+        "prediction_rows": 199680,
+        "max_probability_delta": 0.0,
+        "max_metric_delta": 7.105427357601002e-15,
+        "max_bootstrap_delta": 1.2434497875801753e-14,
+        "lm_contrasts_checked": [
+          {
+            "task": "gue_prom_300_all",
+            "split": "dev",
+            "metric": "causal_nll"
+          },
+          {
+            "task": "gue_prom_300_all",
+            "split": "dev",
+            "metric": "perplexity"
+          },
+          {
+            "task": "gue_splice_reconstructed",
+            "split": "dev",
+            "metric": "causal_nll"
+          },
+          {
+            "task": "gue_splice_reconstructed",
+            "split": "dev",
+            "metric": "perplexity"
+          },
+          {
+            "task": "gue_prom_core_all",
+            "split": "dev",
+            "metric": "causal_nll"
+          },
+          {
+            "task": "gue_prom_core_all",
+            "split": "dev",
+            "metric": "perplexity"
+          },
+          {
+            "task": "gue_tf_0",
+            "split": "dev",
+            "metric": "causal_nll"
+          },
+          {
+            "task": "gue_tf_0",
+            "split": "dev",
+            "metric": "perplexity"
+          },
+          {
+            "task": "gue_mouse_0",
+            "split": "dev",
+            "metric": "causal_nll"
+          },
+          {
+            "task": "gue_mouse_0",
+            "split": "dev",
+            "metric": "perplexity"
+          }
+        ],
+        "scalar_lm_metrics": 20,
+        "source_sha256": "34ce55b11f3200477085ddab5fdf25efc8e8b461746ae28a7a1fb301e551a265",
+        "independent_math_sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+        "producer_index_sha256": "aa378d67e7abe3b7342d26e96f1d8715ad9f0d560084efe5343a06c723b8f511",
+        "wall_seconds": 106.49033604795113,
+        "cpu_process_seconds": 248.23829905600002,
+        "scope": "Independent pairwise/rank-threshold metrics and all resamples; direct saved-head algebra, folds and source joins. No GPU replication or CV refitting."
+      }
+    }
+  }
+}

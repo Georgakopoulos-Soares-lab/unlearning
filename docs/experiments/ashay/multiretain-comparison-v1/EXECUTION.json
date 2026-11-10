@@ -1,0 +1,219 @@
+{
+  "status": "COMPLETE_AND_AUDITED",
+  "scientific_end_utc": "2026-11-10T17:36:03.328517+00:00",
+  "prompt_read_utc": "2026-11-10T16:22:36.192660+00:00",
+  "scientific_elapsed_from_prompt_seconds": 4407.135857,
+  "gpu_stage_wall_seconds": 375.78481797641143,
+  "gpu_stages": [
+    {
+      "pid": 20971,
+      "gpu_stage_wall_seconds": 6.231984040234238
+    },
+    {
+      "pid": 21128,
+      "gpu_stage_wall_seconds": 7.691701937932521
+    },
+    {
+      "pid": 21267,
+      "gpu_stage_wall_seconds": 6.59166119620204
+    },
+    {
+      "pid": 21505,
+      "gpu_stage_wall_seconds": 235.07672840403393
+    },
+    {
+      "pid": 22492,
+      "gpu_stage_wall_seconds": 120.1927423980087
+    }
+  ],
+  "new_fit_cpu_seconds_including_children": 4230.210150359,
+  "full_saved_output_audit_cpu_seconds": 497.179200265,
+  "paired_verification_cpu_seconds": 587.0312255150001,
+  "measurement_scope": "GPU includes 3 training smokes and 2 new-arm all-layer extractions. CPU components reported separately; metadata, rendering and orchestration not exhaustively CPU-metered. Provider billing/allocation time unknown. Worker CPU is already included in child total; do not double count.",
+  "new_final_heads": 468,
+  "cv_fits": 6552,
+  "convergence_retries": {
+    "cv": 22,
+    "final": 6,
+    "unresolved": 0
+  },
+  "implementation_base": "3d82ba6f27312b58c265fdb0916d6872af80d2fc",
+  "controls_source": "a745671c8236c5ce6d62bf65c5262909e626d6f2",
+  "qualification_reference": "e95380d22b982a8fa5d71e4aaf7f8553010b6408",
+  "fitter_computational_source_commit": "943b04f",
+  "independent_auditor_identity_commit": "bb194d2",
+  "extractor_original_computational_source_commit": "4f9aa65",
+  "paired_computational_source_commit": "a41c13a",
+  "groups": {
+    "H3": {
+      "feature_execution": {
+        "source_commit": "9fcfa9f773f837c41a5d569d5aef716ecb2b7ccb",
+        "manifest_sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+        "protocol_sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462",
+        "model": "supplied_three_source_config_iter2151",
+        "new_measurement": true
+      },
+      "fit_invocations": [
+        {
+          "actual_git_head": "6b420c9c5beea9e01fbcf8514a4a581546b1936d",
+          "started_utc": "2026-11-10T16:48:49.832607+00:00",
+          "identity_sha256": "7504405ac6e02fc781015305ecba7b64559c754d175c7cc2dd37e3c648736d3f",
+          "argv": {
+            "base": "/workspace/meeting-artifacts/multiretain-layers-v1/features/H3/base",
+            "post": "/workspace/meeting-artifacts/multiretain-comparison-v1/features/H3/new",
+            "manifest": "/workspace/meeting-artifacts/multiretain-comparison-v1/manifests/H3.jsonl",
+            "protocol": "/workspace/meeting-artifacts/multiretain-comparison-v1/PROTOCOL_V2.json",
+            "output": "/workspace/meeting-artifacts/multiretain-comparison-v1/probes/H3",
+            "shared": "/workspace/agent-handoff/multiretain-v1/comparison-v1",
+            "reference_probes": "/workspace/meeting-artifacts/multiretain-layers-v1/probes/H3"
+          }
+        }
+      ],
+      "fit_identity": {
+        "schema": "multiretain-fit-v1",
+        "manifest_sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+        "protocol_sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462",
+        "base_cache_key": "6ef161f60302257471346e3ee825d9a56e0827523e54cc47ff9e3a6af1272dd8",
+        "post_cache_key": "a0a00c12647e3a938f594ba15a5cb36aefa01d610e42c392a655636486571280",
+        "tasks": [
+          "emp_H3"
+        ],
+        "layers": [
+          "decoder_layer_0",
+          "decoder_layer_1",
+          "decoder_layer_2",
+          "decoder_layer_3",
+          "decoder_layer_4",
+          "decoder_layer_5",
+          "decoder_layer_6",
+          "decoder_layer_7",
+          "decoder_layer_8",
+          "decoder_layer_9",
+          "decoder_layer_10",
+          "decoder_layer_11",
+          "decoder_layer_12",
+          "decoder_layer_13",
+          "decoder_layer_14",
+          "decoder_layer_15",
+          "decoder_layer_16",
+          "decoder_layer_17",
+          "decoder_layer_18",
+          "decoder_layer_19",
+          "decoder_layer_20",
+          "decoder_layer_21",
+          "decoder_layer_22",
+          "decoder_layer_23",
+          "decoder_layer_24",
+          "final_norm"
+        ],
+        "seeds": [
+          42,
+          17,
+          1234
+        ],
+        "source_sha256": "8167aea0ccd9b593dfc62b1bd825dc797bcc4e274cfe3954507b34e14fb8a77a",
+        "metrics_source_sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+        "training_source_sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+        "cv_parallelism": {
+          "workers": 4,
+          "blas_threads_per_worker": 1,
+          "final_refit_blas_threads": 1
+        },
+        "packages": {
+          "numpy": "2.5.4",
+          "scipy": "1.18.1",
+          "scikit-learn": "1.7.2",
+          "joblib": "1.5.2",
+          "threadpoolctl": "3.8.0"
+        }
+      }
+    },
+    "other_five": {
+      "feature_execution": {
+        "source_commit": "bb194d25331d7de77c52eff927c36bd25a4fc88f",
+        "manifest_sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "protocol_sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462",
+        "model": "supplied_three_source_config_iter2151",
+        "new_measurement": true
+      },
+      "fit_invocations": [
+        {
+          "actual_git_head": "826af5a133e34532e319c1434ed0bad1a8bf2fd8",
+          "started_utc": "2026-11-10T17:18:16.775258+00:00",
+          "identity_sha256": "aeb6495c23d58565574483102f691920545a0d0a52ff70d7a58e79887547e068",
+          "argv": {
+            "base": "/workspace/meeting-artifacts/multiretain-layers-v1/features/other_five/base",
+            "post": "/workspace/meeting-artifacts/multiretain-comparison-v1/features/other_five/new",
+            "manifest": "/workspace/meeting-artifacts/multiretain-comparison-v1/manifests/other_five.jsonl",
+            "protocol": "/workspace/meeting-artifacts/multiretain-comparison-v1/PROTOCOL_V2.json",
+            "output": "/workspace/meeting-artifacts/multiretain-comparison-v1/probes/other_five",
+            "shared": "/workspace/agent-handoff/multiretain-v1/comparison-v1",
+            "reference_probes": "/workspace/meeting-artifacts/multiretain-layers-v1/probes/other_five"
+          }
+        }
+      ],
+      "fit_identity": {
+        "schema": "multiretain-fit-v1",
+        "manifest_sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "protocol_sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462",
+        "base_cache_key": "7014cfcf6fba5d8aa4012ae04cbcf585c4e392fc790bb516ab207881bad8783f",
+        "post_cache_key": "cdd88f34ee3dfda68ac63b15f20605e61b4752669f8457d4fe3d1467165ab40a",
+        "tasks": [
+          "gue_prom_300_all",
+          "gue_splice_reconstructed",
+          "gue_prom_core_all",
+          "gue_tf_0",
+          "gue_mouse_0"
+        ],
+        "layers": [
+          "decoder_layer_0",
+          "decoder_layer_1",
+          "decoder_layer_2",
+          "decoder_layer_3",
+          "decoder_layer_4",
+          "decoder_layer_5",
+          "decoder_layer_6",
+          "decoder_layer_7",
+          "decoder_layer_8",
+          "decoder_layer_9",
+          "decoder_layer_10",
+          "decoder_layer_11",
+          "decoder_layer_12",
+          "decoder_layer_13",
+          "decoder_layer_14",
+          "decoder_layer_15",
+          "decoder_layer_16",
+          "decoder_layer_17",
+          "decoder_layer_18",
+          "decoder_layer_19",
+          "decoder_layer_20",
+          "decoder_layer_21",
+          "decoder_layer_22",
+          "decoder_layer_23",
+          "decoder_layer_24",
+          "final_norm"
+        ],
+        "seeds": [
+          42,
+          17,
+          1234
+        ],
+        "source_sha256": "8167aea0ccd9b593dfc62b1bd825dc797bcc4e274cfe3954507b34e14fb8a77a",
+        "metrics_source_sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+        "training_source_sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+        "cv_parallelism": {
+          "workers": 4,
+          "blas_threads_per_worker": 1,
+          "final_refit_blas_threads": 1
+        },
+        "packages": {
+          "numpy": "2.5.4",
+          "scipy": "1.18.1",
+          "scikit-learn": "1.7.2",
+          "joblib": "1.5.2",
+          "threadpoolctl": "3.8.0"
+        }
+      }
+    }
+  }
+}

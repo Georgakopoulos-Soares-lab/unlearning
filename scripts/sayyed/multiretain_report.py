@@ -221,7 +221,12 @@ def plot_profiles(
     }
     checkpoints = sorted({row["checkpoint"] for row in selected})
     colors = plt.cm.tab10(np.linspace(0, 1, max(10, len(checkpoints))))
-    figure, axes = plt.subplots(2, 3, figsize=(17, 9), sharex=True)
+    columns = min(3, len(tasks))
+    rows_count = (len(tasks) + columns - 1) // columns
+    figure, axes = plt.subplots(
+        rows_count, columns, figsize=(max(9, columns * 17 / 3), rows_count * 4.5),
+        sharex=True, squeeze=False,
+    )
     for axis, task in zip(axes.flat, tasks):
         for checkpoint_index, checkpoint in enumerate(checkpoints):
             task_rows = [
@@ -285,7 +290,7 @@ def plot_profiles(
     figure.suptitle(f"{metric} by exact layer — {split} — {probe_policy}", y=1.05)
     figure.text(
         0.5,
-        -0.02,
+        -0.17 if rows_count == 1 else -0.02,
         f"Checkpoint roles: {roles}. Seeds: {seeds}; lines=mean, bars=observed min/max, faint points=each seed. "
         "Missing arms are labeled; no bootstrap interval is aggregated across seeds.",
         ha="center",

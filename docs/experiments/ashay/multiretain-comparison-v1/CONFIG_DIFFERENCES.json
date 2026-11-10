@@ -1,0 +1,85 @@
+[
+  {
+    "path": ".checkpoint.load",
+    "h3_only": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+    "new": "/projects/MENTISLab/unlearning/results/evo2_maxent/multi_retain/emp_h3_human_tf_0_prom_core_all_human_host_tropism/checkpoints"
+  },
+  {
+    "path": ".checkpoint.save",
+    "h3_only": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+    "new": "/projects/MENTISLab/unlearning/results/evo2_maxent/multi_retain/emp_h3_human_tf_0_prom_core_all_human_host_tropism/checkpoints"
+  },
+  {
+    "path": ".dataset.retain_dataset_config_path",
+    "h3_only": "/projects/MENTISLab/unlearning/evo2_unlearn_pipeline/training_data_config_emp_h3.yaml",
+    "new_field_absent": true
+  },
+  {
+    "path": ".dataset.retain_dataset_config_paths",
+    "h3_only_field_absent": true,
+    "new": [
+      "/projects/MENTISLab/unlearning/evo2_unlearn_pipeline/training_data_config_emp_h3.yaml",
+      "/projects/MENTISLab/unlearning/evo2_unlearn_pipeline/training_data_config_human_tf_0.yaml",
+      "/projects/MENTISLab/unlearning/evo2_unlearn_pipeline/training_data_config_prom_core_all.yaml"
+    ]
+  },
+  {
+    "path": ".dataset.retain_dataset_dir",
+    "h3_only": "/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_h3_fasta_splits/preprocessed_emp_h3",
+    "new_field_absent": true
+  },
+  {
+    "path": ".dataset.retain_dataset_dirs",
+    "h3_only_field_absent": true,
+    "new": [
+      "/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/emp_h3_fasta_splits/preprocessed_emp_h3",
+      "/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/human_tf_0/preprocessed_human_tf_0",
+      "/projects/MENTISLab/unlearning/data/evo2/GUE_benchmark/prom_core_all/preprocessed_prom_core_all"
+    ]
+  },
+  {
+    "path": ".dataset.retain_sizes",
+    "h3_only_field_absent": true,
+    "new": null
+  },
+  {
+    "path": ".logger.tensorboard_dir",
+    "h3_only": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/tb_logs",
+    "new": "/projects/MENTISLab/unlearning/results/evo2_maxent/multi_retain/emp_h3_human_tf_0_prom_core_all_human_host_tropism/tb_logs"
+  },
+  {
+    "path": ".logger.wandb_save_dir",
+    "h3_only": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/wandb",
+    "new": "/projects/MENTISLab/unlearning/results/evo2_maxent/multi_retain/emp_h3_human_tf_0_prom_core_all_human_host_tropism/wandb"
+  },
+  {
+    "path": ".scheduler.lr_decay_iters",
+    "h3_only": 3609,
+    "new": 2151
+  },
+  {
+    "path": ".scheduler.lr_decay_steps",
+    "h3_only": 461952,
+    "new": 275328
+  },
+  {
+    "path": ".scheduler.wd_incr_steps",
+    "h3_only": 461952,
+    "new": 275328
+  },
+  {
+    "path": ".train.eval_interval",
+    "h3_only": 1000,
+    "new": 500
+  },
+  {
+    "path": ".train.train_iters",
+    "h3_only": 3609,
+    "new": 2151
+  },
+  {
+    "path": ".validation.eval_interval",
+    "h3_only": 1000,
+    "new": 500
+  }
+]
