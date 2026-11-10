@@ -1,0 +1,9 @@
+{
+  "status": "INVALID_FOR_VARIABLE_PHYSICAL_BATCHES",
+  "failed_check": "base/b1/decoder_layer_7 max_abs0.0011315345764160156 exceeds fixed tolerance",
+  "repeated_batch8": "exact",
+  "historical_base_anchors": "layer16/finalnorm exact; NLL maxdelta3.0517578125e-05",
+  "original_outputs_preserved": "/workspace/meeting-artifacts/multiretain-layers-v1/smokes",
+  "remedy": "fixed physical8 compute shape with filler rows excluded; original tolerances retained; new cache/source/protocol identity",
+  "scope": "training-only; no heldout endpoint observed"
+}

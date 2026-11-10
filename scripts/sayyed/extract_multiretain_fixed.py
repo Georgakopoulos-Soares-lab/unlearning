@@ -35,7 +35,7 @@ def main():
     shards=[dict(name=p.name,bytes=p.stat().st_size,sha256=sha(p)) for p in sorted(Path(args.checkpoint).glob('*.distcp'))]
     runtime={n:importlib.metadata.version(n) for n in ['torch','transformer-engine','transformer-engine-torch','bionemo-evo2','megatron-bridge','megatron-core','tokenizers','causal-conv1d']}
     runtime['source_commits']={p:subprocess.check_output(['git','-C',p,'rev-parse','HEAD'],text=True).strip() for p in ['/workspace/bionemo-cu12','/workspace/megatron-bridge','/workspace/megatron-bridge/3rdparty/Megatron-LM']}
-    identity=dict(runtime=runtime,checkpoint_shards=shards,model=args.model_name,checkpoint=args.checkpoint,checkpoint_metadata_sha256=sha(Path(args.checkpoint)/'.metadata'),config_sha256=sha(args.config),tokenizer_sha256=sha(args.tokenizer),manifest_sha256=sha(manifest),hooks=[f'decoder.layers.{i}' for i in range(yaml.safe_load(Path(args.config).read_text())['model']['num_layers'])]+['decoder.final_norm'],schema='multiretain-all-layers-fixed8-v2',physical_batch_size=8,filler_policy='pad1 rows of valid length1; all filler outputs excluded',layer_numbering='exact zero-indexed module16; meeting layer16 equivalence unresolved',pool='mean nucleotide positions; padding excluded',padding='right to1000, pad1',dtype='checkpoint BF16/FP32 preserved',attention_backend='TE unfused',batch_size=args.batch_size,smoke=args.smoke,smoke_rows=args.smoke_rows,source_sha256=sha(__file__),support_sha256=sha(Path(__file__).with_name('multiretain_support.py')),fixed_batch_source_sha256=sha(Path(__file__).with_name('fixed_benign_batch.py')),effective_config_sha256=sha(args.session_config))
+    identity=dict(runtime=runtime,checkpoint_shards=shards,model=args.model_name,checkpoint=args.checkpoint,checkpoint_metadata_sha256=sha(Path(args.checkpoint)/'.metadata'),config_sha256=sha(args.config),tokenizer_sha256=sha(args.tokenizer),manifest_sha256=sha(manifest),hooks=[f'decoder.layers.{i}' for i in range(yaml.safe_load(Path(args.config).read_text())['model']['num_layers'])]+['decoder.final_norm'],schema='multiretain-all-layers-fixed8-records-v3',feature_dtype='float32',feature_width=yaml.safe_load(Path(args.config).read_text())['model']['hidden_size'],physical_batch_size=8,filler_policy='pad1 rows of valid length1; all filler outputs excluded',layer_numbering='exact zero-indexed module16; meeting layer16 equivalence unresolved',pool='mean nucleotide positions; padding excluded',padding='right to1000, pad1',dtype='checkpoint BF16/FP32 preserved',attention_backend='TE unfused',batch_size=args.batch_size,smoke=args.smoke,smoke_rows=args.smoke_rows,source_sha256=sha(__file__),support_sha256=sha(Path(__file__).with_name('multiretain_support.py')),fixed_batch_source_sha256=sha(Path(__file__).with_name('fixed_benign_batch.py')),effective_config_sha256=sha(args.session_config))
     key=hashlib.sha256(json.dumps(identity,sort_keys=True).encode()).hexdigest();identity['cache_key']=key
     ip=out/'identity.json'
     if ip.exists() and json.loads(ip.read_text())!=identity:raise ValueError('Cache identity mismatch')
@@ -77,6 +77,7 @@ def main():
             return capture
         specs=layer_specs(model)
         if [name for _,name,_ in specs]!=identity['hooks']:raise ValueError('Actual architecture differs from configured hooks')
+        write(out/'layer_registry.json',[dict(array_key=key,module_path=name,zero_based_index=None if key=='final_norm' else int(key.rsplit('_',1)[-1]),display_name='Final RMSNorm' if key=='final_norm' else 'Block '+str(int(key.rsplit('_',1)[-1])+1),width=model.config.hidden_size,module_type=type(module).__name__,hook_semantics='post-final RMSNorm' if key=='final_norm' else 'post-decoder-block residual output') for key,name,module in specs])
         handles=[module.register_forward_hook(hook(key)) for key,_,module in specs]
         chunk_count=0;processed=0;forward_seconds=0;batch_seconds=[]
         for start in range(0,len(rows),args.batch_size):
@@ -102,12 +103,12 @@ def main():
                 if not torch.isfinite(sums).all():raise ValueError('Nonfinite NLL')
             torch.cuda.synchronize();batch_seconds.append(time.monotonic()-t);forward_seconds+=batch_seconds[-1]
             temporary=target.with_name('.'+target.name+'.tmp.npz')
-            np.savez(temporary,ids=np.array([r['id'] for r in rr]),labels=np.array([r['label'] for r in rr]),split=np.array([r['split'] for r in rr]),sequence_sha256=np.array([hashlib.sha256(r['sequence'].encode()).hexdigest() for r in rr]),cache_key=np.array(key),nll_sum=sums[:len(rr)].cpu().numpy(),n_tokens=(lengths[:len(rr)]-1).cpu().numpy(),**{k:v.cpu().numpy() for k,v in features.items()})
+            np.savez(temporary,groups=np.array([r['exact_rc_group'] for r in rr]),lengths=lengths[:len(rr)].cpu().numpy(),task=np.array([r['task'] for r in rr]),ids=np.array([r['id'] for r in rr]),labels=np.array([r['label'] for r in rr]),split=np.array([r['split'] for r in rr]),sequence_sha256=np.array([hashlib.sha256(r['sequence'].encode()).hexdigest() for r in rr]),cache_key=np.array(key),nll_sum=sums[:len(rr)].cpu().numpy(),n_tokens=(lengths[:len(rr)]-1).cpu().numpy(),**{k:v.cpu().numpy() for k,v in features.items()})
             temporary.replace(target)
             processed+=len(rr);chunk_count+=1
             write(out/'progress.json',dict(processed=processed,total=len(rows),pid=os.getpid(),elapsed=time.monotonic()-started,forward_seconds=forward_seconds,peak_memory=torch.cuda.max_memory_allocated(),cache_key=key))
         write(out/'complete.json',dict(examples=processed,batch_seconds=batch_seconds,forward_seconds=forward_seconds,wall_seconds=time.monotonic()-started,peak_memory=torch.cuda.max_memory_allocated(),cache_key=key))
-        finalized=[out/'identity.json',out/'loading.json',out/'complete.json',*sorted(out.glob('chunk_*.npz'))]
+        finalized=[out/'identity.json',out/'loading.json',out/'layer_registry.json',out/'complete.json',*sorted(out.glob('chunk_*.npz'))]
         write(out/'COMPLETE.json',dict(schema='multiretain-unit-v1',status='NEW',unit='training_smoke' if args.smoke else 'extraction',cache_key=key,examples=processed,files=[dict(path=str(p.resolve()),sha256=sha(p),bytes=p.stat().st_size) for p in finalized],qualification='Extraction finished; scientific smoke/anchor and consumer verification remain separate gates'))
     finally:
         budget.end()
