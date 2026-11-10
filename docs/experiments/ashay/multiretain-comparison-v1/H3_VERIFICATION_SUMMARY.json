@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "group": "H3",
+  "units": 78,
+  "scalar_probe_metrics": 2340,
+  "paired_probe_contrasts": 1560,
+  "prediction_rows": 233532,
+  "max_probability_delta": 2.609024107869118e-14,
+  "max_metric_delta": 5.329070518200751e-15,
+  "max_bootstrap_delta": 1.4210854715202004e-14,
+  "lm_contrasts_checked": [
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "causal_nll"
+    },
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "perplexity"
+    },
+    {
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "causal_nll"
+    },
+    {
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "perplexity"
+    }
+  ],
+  "scalar_lm_metrics": 8,
+  "source_sha256": "34ce55b11f3200477085ddab5fdf25efc8e8b461746ae28a7a1fb301e551a265",
+  "independent_math_sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+  "producer_index_sha256": "c11b0c765b6a60118fce1d5c4d5e60175d4eb6afb3b1a4f4fb96b051e7d9fd98",
+  "wall_seconds": 149.8920059609227,
+  "cpu_process_seconds": 248.940901209,
+  "scope": "Independent pairwise/rank-threshold metrics and all resamples; direct saved-head algebra, folds and source joins. No GPU replication or CV refitting."
+}
