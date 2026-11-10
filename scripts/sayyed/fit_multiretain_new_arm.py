@@ -52,6 +52,19 @@ def verify_receipt(path):
     return receipt
 
 
+def reuse_base_head(original, unit):
+    original = Path(original)
+    unit = Path(unit)
+    verify_receipt(original / 'COMPLETE.json')
+    record = json.loads((original / 'results.json').read_text())
+    paths = []
+    for filename in ['base.joblib','base_cv.json']:
+        shutil.copy2(original / filename, unit / filename)
+        paths.append(unit / filename)
+    return joblib.load(unit / 'base.joblib'), dict(record['fits']['base'], reused=True,
+             source_receipt_sha256=sha(original / 'COMPLETE.json')), paths
+
+
 def cv_fold(features, labels, train_indices, validation_indices, regularization, classes):
     """One independent fold, bounded to one BLAS thread in each worker."""
     started_cpu = time.process_time()
@@ -190,14 +203,8 @@ def main():
                     for arm, arr in [('base', base), ('new_checkpoint', post)]:
                         if arm == 'base':
                             original = Path(args.reference_probes) / task / layer / ('seed'+str(seed))
-                            original_receipt = verify_receipt(original / 'COMPLETE.json')
-                            original_results = json.loads((original / 'results.json').read_text())
-                            for filename in ['base.joblib', 'base_cv.json']:
-                                shutil.copy2(original / filename, unit / filename)
-                                files.append(unit / filename)
-                            models['base'] = joblib.load(unit / 'base.joblib')
-                            fits['base'] = dict(original_results['fits']['base'], reused=True,
-                                               source_receipt_sha256=sha(original / 'COMPLETE.json'))
+                            models['base'], fits['base'], reused_paths = reuse_base_head(original, unit)
+                            files.extend(reused_paths)
                             continue
                         sums = arr['nll_sum'][ix].astype(np.float64)
                         counts = arr['n_tokens'][ix].astype(np.float64)
