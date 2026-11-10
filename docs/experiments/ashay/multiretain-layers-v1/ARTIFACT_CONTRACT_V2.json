@@ -1,0 +1,62 @@
+{
+  "schema": "multiretain-artifact-contract-v2",
+  "producer_root": "/workspace/meeting-artifacts/multiretain-layers-v1",
+  "producer_owner": "Codex; extraction/fitting/scientific artifacts",
+  "consumer_owner": "Kimi; independent CPU verification/reporting in separate worktree",
+  "suggestions": "Consumer may write separate suggestion files; producer files immutable to consumer",
+  "unit_key": [
+    "task",
+    "split",
+    "checkpoint",
+    "layer",
+    "CV seed",
+    "probe policy"
+  ],
+  "required_identity_fields": [
+    "stable IDs",
+    "labels and sorted class order",
+    "sequence hashes",
+    "split/manifest SHA256",
+    "checkpoint shard SHA256s",
+    "runtime packages and source commits",
+    "exact hook and pooling",
+    "fold IDs and training-only selection",
+    "probe policy",
+    "source SHA256",
+    "protocol SHA256"
+  ],
+  "statuses": {
+    "REUSED": "unchanged qualified prior artifacts, no new inference",
+    "NEW": "new extraction or CPU fit; distinguish producer measurement from independent verification",
+    "PARTIAL": "unfinished, ineligible for reporting as completed",
+    "BLOCKED": "missing required input or failed gate",
+    "INVALID": "failed correctness or identity check"
+  },
+  "completion": "Consume only files enumerated with absolute paths, bytes and SHA256 in finalized atomic COMPLETE.json; completion is file integrity, scientific/independent validation tracked separately. No actively written CSV is complete.",
+  "current_scientific_units": "See current indexes; never consume a directory without its final receipt",
+  "stage1_status": "COMPLETE_FOR_BASE_H3_FALLBACK",
+  "protocol_draft": "/workspace/meeting-artifacts/multiretain-layers-v1/PROTOCOL_DRAFT.json",
+  "protocol": "/workspace/meeting-artifacts/multiretain-layers-v1/PROTOCOL_V2.json",
+  "producer_index": "/workspace/agent-handoff/multiretain-v1/PRODUCER_INDEX.json",
+  "feature_index": "/workspace/agent-handoff/multiretain-v1/FEATURE_INDEX.json",
+  "feature_completion": "FEATURE_UNIT_COMPLETE.json wraps sealed per-checkpoint chunks, manifest, source/runtime/config identity and actual layer registry",
+  "probe_layout": "/workspace/meeting-artifacts/multiretain-layers-v1/probes/{group}/{task}/{layer}/seed{seed}/COMPLETE.json",
+  "probe_npz_fields": [
+    "ids",
+    "labels",
+    "groups",
+    "sequence_sha256",
+    "classes",
+    "prob_base_refit",
+    "prob_h3_only_refit",
+    "prob_h3_only_fixed_base"
+  ],
+  "probe_results": "results.json: all metrics, paired differences/CIs, supports/confusions, selected C, convergence, timing and fold SHA256",
+  "probe_models": [
+    "base.joblib",
+    "h3_only_maxent.joblib"
+  ],
+  "resampling": "{task}/{split}_resampling.npz: sorted group names, row-to-group IDs and2000 shared group draws; reused across all layers/CV seeds/arms",
+  "lm_units": "{task}/LM_COMPLETE.json: layer-independent causal NLL/PPL and paired bootstrap; natural logs, target-weighted aggregation",
+  "multi_retain": "DEFERRED_NOT_IDENTIFIED"
+}
