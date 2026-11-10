@@ -78,6 +78,17 @@ def main():
         raw_identity = {k:v for k,v in identity.items() if k != 'cache_key'}
         if hashlib.sha256(json.dumps(raw_identity, sort_keys=True).encode()).hexdigest() != key:
             raise ValueError('Feature identity is not self-consistent')
+        if arm != 'base':
+            registry_path = root / 'CHECKPOINT_REGISTRY.json'
+            registry = json.loads(registry_path.read_text())
+            if sha(registry_path) != protocol['checkpoint_registry_sha256']:
+                raise ValueError('Frozen registry identity mismatch')
+            if (len(identity['checkpoint_shards']) != 1
+                    or identity['checkpoint_shards'][0]['sha256'] != protocol['new_checkpoint_sha256']
+                    or identity['tokenizer_sha256'] != registry['tokenizer_sha256']
+                    or identity['config_sha256'] != registry['config_sha256']
+                    or identity['source_sha256'] != protocol['extraction_source_sha256']):
+                raise ValueError('New model/tokenizer/config/extractor differs from frozen specification')
         if identity['manifest_sha256'] != sha(manifest_path):
             raise ValueError('Feature manifest hash mismatch')
         chunks = sorted(folder.glob('chunk_*.npz'))
