@@ -201,11 +201,6 @@ def main():
                 for split, (ix, weights, sample_path) in heldout.items():
                     values, sampled = {}, {}
                     for arm, arr in [('base', base), ('new_checkpoint', post)]:
-                        if arm == 'base':
-                            original = Path(args.reference_probes) / task / layer / ('seed'+str(seed))
-                            models['base'], fits['base'], reused_paths = reuse_base_head(original, unit)
-                            files.extend(reused_paths)
-                            continue
                         sums = arr['nll_sum'][ix].astype(np.float64)
                         counts = arr['n_tokens'][ix].astype(np.float64)
                         if np.any(counts <= 0) or not np.isfinite(sums).all():
@@ -272,14 +267,8 @@ def main():
                     for arm, arr in [('base', base), ('new_checkpoint', post)]:
                         if arm == 'base':
                             original = Path(args.reference_probes) / task / layer / ('seed'+str(seed))
-                            original_receipt = verify_receipt(original / 'COMPLETE.json')
-                            original_results = json.loads((original / 'results.json').read_text())
-                            for filename in ['base.joblib', 'base_cv.json']:
-                                shutil.copy2(original / filename, unit / filename)
-                                files.append(unit / filename)
-                            models['base'] = joblib.load(unit / 'base.joblib')
-                            fits['base'] = dict(original_results['fits']['base'], reused=True,
-                                               source_receipt_sha256=sha(original / 'COMPLETE.json'))
+                            models['base'], fits['base'], reused_paths = reuse_base_head(original, unit)
+                            files.extend(reused_paths)
                             continue
                         candidates = []
                         with threadpool_limits(limits=1):
