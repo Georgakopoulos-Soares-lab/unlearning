@@ -1,5 +1,5 @@
 {
-  "status": "PREPARATION_COMPLETE_NO_NEW_MODELS",
+  "status": "PREPARATION_DELIVERED_AWAITING_MODELS",
   "utc": "2026-11-10T19:04:51.622201+00:00",
   "implementation_base": "c79ab07e763a9754c68fdaf7d0730d8458f508dc",
   "new_backbone_inference": 0,
@@ -10,8 +10,8 @@
   "reuse_hash_verification_wall_seconds": 88.88028240110725,
   "preparation_cpu_seconds": 0.453122514,
   "preparation_wall_seconds": 1.286094130948186,
-  "table_verification_cpu_seconds": 0.4671339,
-  "table_verification_wall_seconds": 0.9658907852135599,
+  "table_verification_cpu_seconds": 2.0087493419999998,
+  "table_verification_wall_seconds": 4.03525364305824,
   "focused_tests": "2PASS in0.15s; planning semantics only",
   "accounting_scope": "Measured components, no exhaustive CPU total/provider billing claim. Metadata and plotting are CPU/I/O only. Historical scientific compute is not counted as new.",
   "scripts": {
@@ -27,5 +27,36 @@
   "discovery_scope": "Live supplied root, relevant checkpoint metadata and scoped accessible-folder name search; no unrelated hazardous benchmark contents",
   "initialization_note": "Artifact directory was created by metadata capture while worktree checkout was finishing. Receipt initialization resumed safely with that existing metadata directory; no payload overwritten.",
   "new_model_readiness": "Missing deliverable checkpoint identities; no eligible missing arm. No numerical gate attempted or relaxed.",
-  "source_note": "Workspace-bound builders preserved with explicit provisional dataset-identity wording and normalized SVG export whitespace; frozen scoring policy and numerical tables unchanged."
+  "source_note": "Workspace-bound builders preserved with explicit provisional dataset-identity wording and normalized SVG export whitespace; frozen scoring policy and numerical tables unchanged.",
+  "table_verification_invocations": [
+    {
+      "log": "verification.log",
+      "wall_seconds": 1.004739937838167,
+      "cpu_process_seconds": 0.589307071,
+      "source_sha256": "9c9aea192bcb0519ef952f920c2a3400d9e9ff98427fc4ec160c315fee44813a"
+    },
+    {
+      "log": "verification-final.log",
+      "wall_seconds": 0.9658907852135599,
+      "cpu_process_seconds": 0.4671339,
+      "source_sha256": "6733e66f7b7bac5f55680ae60aafcb0259e9ebfc28883d64a497871b92964301"
+    },
+    {
+      "log": "verification-git-source.log",
+      "wall_seconds": 1.1541833970695734,
+      "cpu_process_seconds": 0.489517803,
+      "source_sha256": "6733e66f7b7bac5f55680ae60aafcb0259e9ebfc28883d64a497871b92964301"
+    },
+    {
+      "log": "verification-seal.log",
+      "wall_seconds": 0.9104395229369402,
+      "cpu_process_seconds": 0.46279056799999996,
+      "source_sha256": "6733e66f7b7bac5f55680ae60aafcb0259e9ebfc28883d64a497871b92964301"
+    }
+  ],
+  "local_packaging_wall_seconds": 4.1946834730915725,
+  "private_backup_wall_seconds": 7.140629499685019,
+  "private_backup_cpu_seconds": 0.693258299,
+  "fresh_restored_preparation_cpu_seconds": 0.269324707,
+  "fresh_restored_preparation_wall_seconds": 0.3041316722519696
 }

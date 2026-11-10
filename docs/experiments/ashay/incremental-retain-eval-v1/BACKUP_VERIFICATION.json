@@ -1,0 +1,82 @@
+{
+  "status": "VERIFIED_PRIVATE_FRESH_DOWNLOAD",
+  "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "remote_repository_type": "dataset",
+  "remote_revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+  "remote_archive_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+  "remote_sidecar_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz.sha256",
+  "private_repository_verified": true,
+  "archive": "/workspace/meeting-artifacts/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+  "sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+  "bytes": 6963484,
+  "fresh_download": "/workspace/recovery/multiretain-comparison-roundtrip-20261110T190847Z/incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+  "fresh_payload_root": "/workspace/recovery/multiretain-comparison-roundtrip-20261110T190847Z/extracted/incremental-retain-eval-v1-final-20261110T190751Z",
+  "payload_files_verified": 131,
+  "sidecar_byte_identical": true,
+  "upload_seconds": 2.525065179914236,
+  "download_seconds": 0.9152254681102931,
+  "payload_verification_seconds": 3.6545726829208434,
+  "total_backup_wall_seconds": 7.140629499685019,
+  "cpu_process_seconds": 0.693258299,
+  "credential_wait_seconds": 725.2135249171406,
+  "credential_persisted": false,
+  "scope": "Incremental-retain protocol, live inventory, registry, reused-result tables and source only; no new checkpoint measurements. Explicit prior R1/base/R3/control dependencies; weights/runtime excluded",
+  "required_dependencies": {
+    "status": "REQUIRED_IMMUTABLE_DEPENDENCIES",
+    "base_h3_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "archive": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "bytes": 10108100047,
+      "payload_root": "multiretain-layers-v1-final-20261110T140836Z",
+      "original_root": "/workspace/meeting-artifacts/multiretain-layers-v1"
+    },
+    "controls_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "archive": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "bytes": 47129813,
+      "payload_root": "benign-followup-v1",
+      "original_root": "/workspace/meeting-artifacts/benign-followup-v1"
+    },
+    "supplement": "New features/probes/paired results/source; no repackaging old large caches",
+    "excluded": "All model weights and installed runtime; selected new weights must be reacquired via recorded DriveID/SHA for GPU regeneration",
+    "R3_archive": {
+      "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "remote_repository_type": "dataset",
+      "remote_revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+      "remote_archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "remote_sidecar_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz.sha256",
+      "sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "bytes": 4412868094,
+      "payload_files_verified": 8199,
+      "payload_root": "multiretain-comparison-v1-final-20261110T173945Z"
+    },
+    "restore_order": [
+      "base_h3_archive",
+      "controls_archive",
+      "R3_archive",
+      "new_incremental_preparation_supplement"
+    ],
+    "scope": "Full prior scientific recovery requires these archives. New v13 supplement contains no duplicate feature/probe caches or model weights."
+  },
+  "restored_preparation_check": {
+    "status": "PASS",
+    "payload_root": "/workspace/recovery/multiretain-comparison-roundtrip-20261110T190847Z/extracted/incremental-retain-eval-v1-final-20261110T190751Z",
+    "reused_metric_rows_checked": 13650,
+    "reused_contrast_rows_checked": 16380,
+    "anchor_rows_checked": 2520,
+    "blank_missing_anchor_rows": 1440,
+    "all5adjacent_pending": true,
+    "nonadjacent_guard": true,
+    "new_measurements": 0,
+    "wall_seconds": 0.3041316722519696,
+    "cpu_process_seconds": 0.269324707,
+    "scope": "Fresh fully hash-verified preparation supplement: portable stage logic and exact restored CSV mapping/missingness. No old model-head audit/GPU replication repeated; full prior science depends on the three pinned archives."
+  },
+  "source_snapshot_commit": "69f363cde3209788c5fbdcb034484dc85d1fc738",
+  "new_scientific_measurements": 0,
+  "recovery_scope": "Preparation/reused-result annotations only; full prior scientific reanalysis needs pinned base/R1,controls,R3 archives. No model weights or installed runtime included."
+}
