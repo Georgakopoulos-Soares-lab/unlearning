@@ -1,0 +1,101 @@
+Continue on experiments-ashay-benign-followup-v1 in
+/workspace/wt-benign-followup.
+
+Recover the original meeting requirement: benign pretrained-versus-
+GradDiff evaluation. The completed six-task run evaluated H3-only MaxEnt,
+not GradDiff. Qualify the existing GradDiff candidates and evaluate an
+eligible supplied checkpoint if its identity can be established.
+
+Relevant sources:
+Research repository:
+https://github.com/Georgakopoulos-Soares-lab/unlearning
+
+Completed Evo2 scientific delivery:
+3d82ba6f27312b58c265fdb0916d6872af80d2fc
+
+Shared checkpoint root:
+https://drive.google.com/drive/folders/1pM5-kFeki5Oq1oLjQNXH0U2f2TlGNuzi
+
+Important verified correction:
+https://drive.google.com/drive/folders/1n1ZfbP_OOucoEQhsuk5PsKeKMJu0ZYzj
+is evo2_1b_base_mbridge. Its latest state records step=1 and
+consumed_train_samples=0. Its run_config uses MockEvo2DatasetProvider
+with null dataset path/config.
+Config SHA256:
+b648cfd2fb11797ade835e82f6dd4c3e7abd0d4256ae4360bd67796d00f198c9
+This is not evidence of the combined-retain checkpoint.
+
+Read the qualified checkpoint registry and latest receipts first.
+Use earlier partial registries only as historical discovery evidence.
+Do not redo completed base/MaxEnt extraction.
+
+First, inspect small metadata/configuration files for existing GradDiff,
+multi-retain and supplied-noise candidates. Record:
+- Exact Drive file IDs, checkpoint iteration, sizes and checksums.
+- Model architecture, tokenizer and loading requirements.
+- Method/objective evidence and implementation revision.
+- Recorded initialization/parent and conversion evidence.
+- Retain dataset aliases, mixture and available exposure/token accounting.
+- Whether each candidate is distinct, complete and reproducibly loadable.
+
+Do not identify methods or retain mixtures solely from folder names.
+Sayyed previously reported checkpoint mistakes; do not assume every
+GradDiff-looking folder is the corrected intended checkpoint.
+Distinguish collaborator confirmation from artifact-level proof.
+
+If multiple candidates remain ambiguous, produce one precise question
+identifying those candidates and defer that arm. Do not choose whichever
+gives the most attractive results.
+
+Keep PLMUnlearning's Evo-1 implementation/results separate from Evo2.
+Read it for relevant evaluation lessons if useful, but do not transplant
+its layer IDs, checkpoint loader, intervention commands or results.
+
+If a supplied Evo2 GradDiff candidate has sufficiently established
+identity and a valid loading route:
+1. Freeze the candidate selection and comparison protocol before
+   held-out inference.
+2. Qualify shards/tokenizer/config and strict loading.
+3. Pass training-only numerical, masking and repeatability checks using
+   the existing fixed-physical-batch-8 route and unchanged tolerances.
+4. Evaluate H3 first, then the other five benign tasks.
+5. Use the same qualified cohorts, 26 representations, three training-CV
+   seeds, refitted heads and unchanged-base-head transfer policy.
+6. Reuse compatible base/MaxEnt caches; do not refit/re-extract them
+   without a specific incompatibility.
+7. Measure causal NLL/PPL only through the validated output-head route.
+8. Independently verify saved predictions and reported comparisons.
+
+Report GradDiff versus base and GradDiff versus H3-only MaxEnt. Do not
+attribute differences causally to the method or retain diversity when
+initialization, exposure or processed-token budgets are unmatched or
+unknown. An eligible descriptive checkpoint comparison must be labeled
+as such.
+
+In parallel with metadata inspection, complete a focused data-evidence
+audit using existing authorized benign materials:
+- Exact meanings of numeric labels and TF/promoter aliases.
+- Available biological/source-genome grouping metadata.
+- Known training exposure and exact/RC overlap limitations.
+- The difference between the proposed incremental retain plan and the
+  actually supplied checkpoint's retain mixture.
+Do not invent missing homology groups or claim their absence proves
+independence. Do not alter established splits.
+
+Produce CHECKPOINT_ELIGIBILITY.md, DATA_EVIDENCE_GAPS.md and, if an arm
+runs, its results/predictions/receipts. If blocked, finish the metadata
+audit and minimal unsent request rather than building speculative
+training infrastructure.
+
+Keep multi-retain and noise evaluation deferred unless an actual
+qualified supplied checkpoint is identified. A checkpoint iteration
+number is not a retain-dataset identity.
+
+GPU time is authorized as needed for this benign evaluation; null limits
+mean uncapped within scope. Maintain actual usage accounting. Do not
+start new intervention/backbone training, LoRA, distillation, relearning,
+noise generation or host-tropism prediction. Do not open untouched tests.
+
+Verify and privately back up new artifacts, push only the authorized
+follow-up branch, preserve existing jobs, and leave the Pod running.
+Do not send collaborator messages.
