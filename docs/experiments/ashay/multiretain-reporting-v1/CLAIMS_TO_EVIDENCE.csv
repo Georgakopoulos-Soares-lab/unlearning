@@ -1,0 +1,8 @@
+claim_id,proposed_claim,status,evidence_paths,required_evidence,interpretation_limit
+C001,The completed BioNeMo comparison used an H3-only MaxEnt checkpoint,historical_supported,docs/experiments/ashay/maxent-benign-v1/run_manifest.json; docs/experiments/ashay/maxent-benign-v1/RESULTS.md,retain config and checkpoint identity already recorded,not a multi-retain result
+C002,The broader-retain checkpoint better preserves benign capability than H3-only,unanswered,RETAIN_MIXTURE.csv; COVERAGE_TEMPLATE.csv,identified checkpoint plus finalized paired all-layer units,no numerical claim before measurements
+C003,All-layer coverage has been established,not_supported,COVERAGE_TEMPLATE.csv,26 representations per eligible arm/task/split/seed/policy,historical two-hook results are insufficient
+C004,Bootstrap intervals include probe-seed variation,not_supported,docs/experiments/ashay/maxent-benign-v1/RESULTS.md,seed-specific fits and separate seed summaries,bootstrap conditions on fitted probes
+C005,Fixed-base probe degradation proves absent information,not_supported,docs/experiments/ashay/maxent-benign-v1/RESULTS.md,independent refits and representation diagnostics,coordinate/readout mismatch remains possible
+C006,Observed differences are caused by retain diversity,unanswered,RETAIN_MIXTURE.csv,matched parent initialization exposure and processed-token budgets,unmeasured confounds preclude causal attribution
+C007,The historical MaxEnt result archive is recovered and checksum verified,historical_supported,docs/experiments/ashay/maxent-benign-v1/backup_receipt.json; /workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/recovery_receipt.json,pinned revision and 5914 payload checks,recovery is not independent scientific replication

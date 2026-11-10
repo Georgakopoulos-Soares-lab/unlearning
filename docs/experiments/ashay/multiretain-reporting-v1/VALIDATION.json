@@ -1,0 +1,65 @@
+{
+  "schema": "multiretain-reporting-validation-v1",
+  "validated_utc": "2026-11-10T12:16:19Z",
+  "environment": {
+    "interpreter": "/workspace/venvs/multiretain-reporting/bin/python",
+    "python": "3.12.3",
+    "cpu_threads": 2,
+    "cuda_visible_devices": "",
+    "versions": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scikit-learn": "1.7.2",
+      "matplotlib": "3.10.8",
+      "joblib": "1.5.3",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1"
+    }
+  },
+  "tests": {
+    "focused_command": "pytest -q tests/test_multiretain_verifier.py tests/test_multiretain_report.py tests/test_multiretain_evidence.py",
+    "focused_result": "21 passed in 12.43s",
+    "full_command": "CUDA_VISIBLE_DEVICES= OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2 /workspace/venvs/multiretain-reporting/bin/python -m pytest -q",
+    "full_result": "265 passed, 2 skipped, 9 warnings in 111.13s",
+    "skips": "Both require absent pre-existing generated base_calibration_27run_unified.csv; not created or substituted",
+    "compileall": "PASS for four new entry points",
+    "diff_check": "PASS"
+  },
+  "synthetic_preview": {
+    "manifest": "/workspace/meeting-artifacts/multiretain-reporting-v1/synthetic-preview/figure_manifest.json",
+    "manifest_sha256": "0c4c15a73d21ad05b44cad451808acc2cb9ba8b6d2b76849eae971efb36a26a4",
+    "metric_rows": 72,
+    "paired_rows": 36,
+    "formats": ["PNG", "PDF", "SVG"],
+    "visual_review": "PASS after title/legend spacing correction; visible synthetic watermark and missing-arm labels",
+    "scientific_results": false
+  },
+  "historical_real_output_verification": {
+    "unit": "/workspace/meeting-artifacts/multiretain-reporting-v1/historical-h3-layer16-test-v2/COMPLETE.json",
+    "verification": "/workspace/meeting-artifacts/multiretain-reporting-v1/historical-h3-layer16-test-v2/verification.json",
+    "verification_sha256": "3f64fccb65ebfba1502b9256b4ab0bfa563d4e2e3320c9edaaa8048eb3d318dc",
+    "prediction_rows": 1497,
+    "folds": 3,
+    "training_ids": 11971,
+    "paired_contrasts": 2,
+    "resamples_per_contrast": 2000,
+    "bootstrap_max_abs_delta": 4.440892098500626e-16,
+    "result": "PASS",
+    "scope": "Recovered historical base/H3-only layer-16 test saved outputs; consumer-side lossless schema adaptation; no GPU regeneration or new measurement",
+    "failed_attempts": "Initial adapter/verifier attempts retained in historical-h3-layer16-test; they exposed and corrected a Counter mapping bug and an overly restrictive sorted-group assumption before the PASS"
+  },
+  "producer_inputs_reviewed": [
+    {"path": "/workspace/agent-handoff/multiretain-v1/ARTIFACT_CONTRACT.json", "sha256": "b9f9c0a7352880cdd152639515fecd864cf9d233433696ee6bbc2b741bbb6d14"},
+    {"path": "/workspace/agent-handoff/multiretain-v1/PROGRESS.json", "sha256": "9886876b8fa6abc12305595dced640a8f04aefce886bbf38e19fd764e9712727"},
+    {"path": "/workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/recovery_receipt.json", "sha256": "46f11c282c1e11dcb039cf03c7b81c1f81eb695936e9e05fb6da6c6110cb3c07"},
+    {"path": "/workspace/meeting-artifacts/multiretain-layers-v1/restored_saved_output_verification.json", "sha256": "dd6a1f4d005f603f82036b94f68c75fe97da4bd1c7897295b72854bc66b1cb56"},
+    {"path": "/workspace/meeting-artifacts/multiretain-layers-v1/DATA_QUALIFICATION.json", "sha256": "7b660db45f5924a8e43f253e45af61236ea1edf0f596aa5e61f474f38041f865"},
+    {"path": "/workspace/meeting-artifacts/multiretain-layers-v1/checkpoint_tensor_integrity.json", "sha256": "abeedcc130cb843f61f69f87be1a59ba25f7531f6ae5f5ea91b3ddbfcbbdfb87"},
+    {"path": "/workspace/meeting-artifacts/multiretain-layers-v1/SMOKE_PLAN_FIXED8.json", "sha256": "8b6c7bba1c740e6e8be54bda1cb9cea7082c795c65e14fb48c0cbf24519a07fb"}
+  ],
+  "new_gpu_seconds": 0,
+  "new_scientific_classifier_fits": 0,
+  "new_biological_measurements": 0,
+  "stage2_eligible": false,
+  "multi_retain_identified": false
+}

@@ -1,0 +1,37 @@
+{
+  "schema": "multiretain-reporting-prompt-receipt-v1",
+  "retrieved_utc": "2026-11-10T12:07:33Z",
+  "prompt_repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+  "local_clone": "/workspace/repos/test-prompts-push",
+  "starter": {
+    "requested_ref": "main",
+    "resolved_commit": "0dd78c3dfde5d00b049d89e1f41f002b73fedd4f",
+    "path": "kimi_starter_prompt.txt",
+    "sha256": "23faa2ab6a52f28306a74f5d08ac6a9a7f744d66dcbe27449f69dc48e2a23223",
+    "verbatim_copy": "PROMPT_STARTER.txt"
+  },
+  "stage_pack": {
+    "resolved_commit": "162f6a8110e22538634838866bacba12ba753c25",
+    "selection_reason": "Matches Codex's recorded stage-pack revision; file hashes equal the starter's current main versions",
+    "files": [
+      {
+        "path": "kimi_prompt_v1.txt",
+        "sha256": "d6a5de1d0a3e008271544f758a1f747bb9a371897c03ab4546c26fdef28aab2f",
+        "verbatim_copy": "PROMPT_STAGE1.txt"
+      },
+      {
+        "path": "02_SESSION_INPUTS.json",
+        "sha256": "6874e1ef472dd1d5369926350494c96b051478ed277f29414a7b9ec4fcc6e52f",
+        "verbatim_copy": "SESSION_INPUTS.json"
+      }
+    ]
+  },
+  "tool_roundtrip": {
+    "path": "/workspace/wt-multiretain-reporting/.kimi-stage1-roundtrip-20261110.txt",
+    "create": "PASS",
+    "read": "PASS; exact synthetic non-scientific content returned",
+    "delete": "PASS",
+    "persisted": false
+  },
+  "credential_handling": "No credential persisted in the worktree or review artifacts. HF authentication was not needed for this CPU reporting stage because the producer's pinned recovery was already complete."
+}

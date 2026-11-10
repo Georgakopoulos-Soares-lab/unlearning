@@ -1,0 +1,131 @@
+Begin the CPU verification and reporting work for the Unlearning Project.
+
+YOUR WORKSPACE
+Worktree: /workspace/wt-multiretain-reporting
+Branch: experiments-ashay-multiretain-reporting-v1
+
+CODEX WORKSPACE
+/workspace/wt-multiretain-layers
+Branch: experiments-ashay-multiretain-layers-v1
+
+SHARED LOCATIONS
+Prompts: /workspace/repos/test-prompts-push/
+Handoff: /workspace/agent-handoff/multiretain-v1/
+Scientific artifacts: /workspace/meeting-artifacts/multiretain-layers-v1/
+
+You are using my Kimi subscription through Kimi Code.
+Do not configure Runpod inference, require a Runpod API key, enable paid
+Extra Usage, or launch additional agents.
+
+READ AND EXECUTE IN THIS ORDER
+1. Read applicable AGENTS.md instructions and inspect your worktree.
+2. Read 02_SESSION_INPUTS.json.
+3. Read kimi_prompt_v1.txt and execute stage 1.
+4. After stage 1 prerequisites are satisfied, read kimi_prompt_v2.txt
+   and execute stage 2.
+5. After stage 2 prerequisites are satisfied, read kimi_prompt_v3.txt
+   and execute stage 3.
+
+Shared context is embedded in each prompt. Do not require a ZIP,
+separate shared-context file, or /workspace/runbooks directory.
+Resolve obsolete prompt/config paths to the prompts repository above.
+
+Record the prompt repository revision and input-file hashes. Match
+Codex's recorded prompt revision where available. If the checkout has
+changed, read the matching files using git show without changing the
+shared checkout. Never modify, pull, reset or clean the prompts repository.
+
+CURRENT STATUS
+The last report I received from Codex was stage-1 preparation at commit
+7814e241d00ae1d24480b4cd58b3125ae8170198:
+- All-layer extraction and accounting implementation prepared.
+- Eight CPU tests passed.
+- GPU validation and new measurements had not yet run.
+- Recovery was blocked by private Hugging Face HTTP 401.
+- Identified intervention candidates retained H3 only.
+- A multi-retain checkpoint had not been identified.
+
+This is historical session context, not a statement of current status.
+Read the latest Codex handoff and producer receipts before determining
+what is ready now.
+
+DIVISION OF RESPONSIBILITY
+Codex owns GPU execution, checkpoint loading, feature extraction,
+scientific output generation and final artifact backup.
+
+You own independent CPU verification, evidence reconciliation,
+reporting tools, figures and review findings.
+
+Use at most two CPU worker threads. Keep CUDA_VISIBLE_DEVICES empty.
+Do not launch GPU jobs, duplicate checkpoint downloads, change Codex's
+environment, modify its worktree, or alter producer artifacts.
+Use your own isolated environment if additional packages are necessary.
+Do not reset, clean, merge, rebase or switch another worktree's branch.
+
+START WITH USEFUL WORK
+Confirm tool execution by inspecting the actual repository and files.
+Then execute stage 1 rather than merely proposing a plan.
+
+While Codex's measurements are unavailable, complete the portions that
+do not depend on them:
+- Audit historical evidence and its provenance.
+- Review the available benign evaluation implementation.
+- Prepare independent metric-verification tools.
+- Exercise those tools with clearly identified synthetic fixtures.
+- Prepare reporting schemas and accurately labeled historical tables.
+- Identify concrete methodological or implementation issues for Codex.
+
+Do not manufacture current results or reuse historical measurements as
+if they were generated in this session.
+
+CONSUMING CODEX OUTPUTS
+Read the producer's artifact contract first. Consume completed,
+checksummed outputs identified by its receipts; do not read partially
+written prediction or feature files as final results.
+
+When outputs are ready, independently recompute the supported metrics,
+check example alignment and split identity, and verify the reported
+paired comparisons and uncertainty according to the agreed protocol.
+Distinguish computational verification from scientific validity.
+
+Keep all-layer exploration, layer selection, probe-seed variation and
+test-set limitations explicit. Do not imply that a bootstrap interval
+covers unmeasured sources of uncertainty.
+
+Do not claim a multi-retain result unless checkpoint identity and retain
+composition are established. Keep unsupported comparisons deferred.
+
+COLLABORATION AND DELIVERY
+Write code and reports only in your own worktree.
+Follow the shared contract for review receipts; if no reviewer location
+is specified, use a new kimi-review subdirectory under the handoff root.
+Never overwrite Codex's contract, status or producer receipts.
+
+Send findings to Codex through these review files, with severity,
+evidence, affected paths and a concrete suggested correction.
+Do not directly patch Codex's active files.
+
+Preserve existing changes. Commit only your own scoped changes and,
+when authorized by the inputs, push only your reporting branch.
+Record the source revisions and artifact hashes reviewed.
+
+Continue sequentially through stages whose prerequisites are met.
+If later stages depend on unavailable producer outputs, finish all
+independent work, save a precise resume handoff and report the missing
+input. Avoid repeated polling or indefinite idle loops.
+
+SCOPE
+Benign evaluation and reporting only.
+Do not run human-host-tropism prediction, new backbone training,
+unlearning training, noise generation, relearning or distillation.
+Do not open a new test set without existing explicit authorization.
+Do not send Slack/email messages, expose credentials or stop the Pod.
+
+Deliver a clear account of:
+- Work completed and files produced.
+- Checks actually executed and their outcomes.
+- Historical versus newly measured results.
+- Remaining defects, missing inputs and interpretation limits.
+- The next concrete action for Codex or me.
+
+Begin with workspace inspection, then execute stage 1 now.
