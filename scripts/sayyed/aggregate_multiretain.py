@@ -52,6 +52,11 @@ def main():
                     target.append(out)
                     if base:
                         target.append(dict(out, probe_policy='fixed_base_scaler_and_head'))
+    # Explicit absent arm, with blank values rather than invented zero scores.
+    absent = [dict(row, checkpoint='multi_retain', checkpoint_role='multi_retain',
+                   value='', status='blocked', missing_reason='Checkpoint not identified')
+              for row in metrics if row['checkpoint'] == 'base']
+    metrics.extend(absent)
     output = root/'reports'
     output.mkdir(exist_ok=True)
     write(output/'metrics.csv', metrics)

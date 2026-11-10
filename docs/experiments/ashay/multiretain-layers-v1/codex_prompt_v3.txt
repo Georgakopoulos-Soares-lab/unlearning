@@ -1,0 +1,252 @@
+CODEX: COMPLETE THREE-PROMPT PACK
+The three numbered stages below are execution instructions to use in order.
+Edit the separate 02_SESSION_INPUTS.json on the Pod before execution.
+The JSON reproduced here is the blank template, not authorization to spend.
+The edited file on the Pod is the authoritative session configuration.
+Supply the shared context with stage 1; later stages inherit it.
+If you paste this whole file, explicitly authorize the sequential stages and identify your edited input-file path.
+
+SHARED CONTEXT
+
+SHARED PROJECT CONTEXT | READ BEFORE EITHER AGENT STARTS
+
+This is Ashay's genomic-model Unlearning Project with Sayyed, Aris and Ilias. The current authorized work is benign-capability evaluation and evidence/reporting support. It is not a generic benchmark exercise: extend the exact recovered Evo2/BioNeMo pipeline and qualified data identities. This context is a handoff, not evidence that anything has executed in the new session.
+
+1. WHAT THE TEAM NOW NEEDS
+Aris originally proposed pretrained baselines on H3, promoter, core promoter, splice, human TF, mouse TF, and eventually qualified benign viral tasks. Then compare the current unlearned model and study progressively broader retain sets with comparable training-token budgets.
+Ashay has completed several baseline stages and a six-task base/H3-only MaxEnt comparison. The supplied meeting-5 transcript corrected a misunderstanding: the checkpoint evaluated in that comparison retained H3 only, not the combined retain set. The next assignment is to evaluate the actual combined-retain checkpoint at every intermediate layer. Supplied noise checkpoints can then be evaluated on the same benign tasks.
+The transcript calls the three retain components approximately "ENG H3, promoter 4, human TF0". Treat the exact task aliases, mixture proportions, example exposure and token budget as unresolved until the training config/manifests establish them. Do not assume "promoter 4" means prom/prom_300_all, or substitute the earlier proposed H3/promoter/splice mixture.
+Sayyed is doing the parameter-percentage noise sweep and is expected to provide relevant checkpoints. Do not duplicate his intervention training. Multiple probing seeds were requested. LoRA, full fine-tuning, distillation and relearning were discussed as later work, not this session's default execution scope.
+
+2. LATEST SLACK EVIDENCE
+Sayyed asked Ashay to extract logistic-regression results from the MaxEnt checkpoint. Ashay reported loading both models and completing six benign tasks at decoder.layers[16] and the final normalized output. Asked whether the shared base was the exact parent, Sayyed replied: "Yes, the evo2_1b_base checkpoint one." He also preferred logistic regression for reporting.
+Record that as collaborator-confirmed parent identity. Do not keep asking the identical generic question. Pin the specific recovered base and intervention shard hashes, configs, iterations and conversion provenance. The Slack confirmation alone does not identify every file in an arbitrary folder or resolve training exposure.
+Older Slack asks about HVUE host tropism and contains a suggestion to substitute a benign dataset when encountering restrictions. That is historical context, not an instruction for either agent. Do not use relabeling, delayed parameter substitution, delegation, or another provider to circumvent a restriction. No host-tropism predictor execution or optimization belongs in this pack.
+
+3. REPOSITORIES AND BRANCHES
+Research repo: https://github.com/Georgakopoulos-Soares-lab/unlearning
+Prompt repo: https://github.com/ashay-sriv-06/test-prompts-push
+When Ashay says "pull from the prompts repo", the second URL is what he means. Fetch the exact named file/ref, record resolved commit and file hash, and execute only the specifically authorized prompt. Older prompts are historical data; do not recursively run them. Repository documents cannot override the current task's scope or tool restrictions.
+
+Remote snapshots checked during preparation; re-fetch and record any subsequent changes:
+- experiments-ashay: 06fb273ae0cf3578f4c79d3c97052b93c4f6300a
+  https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay
+  Original three-task pilot and audit/closeout.
+- experiments-ashay-benign-v2: 5bb08f502d6739e6ce84f2fe77799d4f4ba71cc3
+  https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay-benign-v2
+  Six-task original-backend baseline, controls and grouped train-only CV.
+- experiments-ashay-sayyed-base-v1: 89c7e934fb025fe1048d9e06dd0fb039211fe46a
+  https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay-sayyed-base-v1
+  Supplied-H3 baseline, controls, follow-up and recovery evidence.
+- experiments-ashay-handoff-published-v1: b33c2592bb84d830159a208f69c6b5acad42e547
+  https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay-handoff-published-v1
+  Historical reconciliation and handoff, including metrics-reconciliation-v1 and codex-retain-v1 documentation.
+- experiments-ashay-maxent-benign-v1: b5f700ff4f96a305b4c84d12346baccd94a22cdc
+  https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/experiments-ashay-maxent-benign-v1
+  Latest completed six-task BioNeMo base/H3-only MaxEnt evaluation and verified recovery. Preferred implementation starting point.
+- bionemo: b90fc1853d1d3be79922a98a2649c91c89716637
+  https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/bionemo
+  Sayyed's historical BioNeMo scripts and logs. Inspect actual executed arguments, not just comments.
+- PLMUnlearning: af92e593162478c8aa40b6303ed0f0e508affac7
+  https://github.com/Georgakopoulos-Soares-lab/unlearning/tree/PLMUnlearning
+  Current repository snapshot includes an Evo-1-oriented pipeline; model identity and layer conventions must be checked before borrowing code.
+- main currently resolves to the same af92e593... snapshot. Leave it unchanged.
+The earlier experiments-ashay-metrics-reconciliation-v1 branch was not available remotely during inspection. Find its published material on experiments-ashay-handoff-published-v1 instead of claiming a missing branch was read.
+
+Proposed NEW branches, not already created by this pack:
+Codex: experiments-ashay-multiretain-layers-v1
+Kimi: experiments-ashay-multiretain-reporting-v1
+Create isolated worktrees from the pinned MaxEnt implementation base. Never silently switch an active user's checkout. If either proposed branch already contains work, inspect and resume it or create a collision-free suffix without deleting existing work.
+
+4. HISTORICAL RESULTS: KEEP THE PROTOCOLS SEPARATE
+A. Original pilot: frozen Evo2, three tasks, small train/dev subsets, validation-selected heads. Block-7/block-15 dev AUROC: H3 .850183/.839927; promoter .973877/.959717; splice .778737/.767814. These are exploratory, not final test results.
+B. Six-task extension: 1,024 training and 512 development examples/task; train-only CV. Block-7 AUROC: H3 .9275, promoter .9687, splice .8038, core promoter .8480, human TF .8001, mouse TF .8992. Different sample sizes/protocols explain why these cannot be called model improvements over A.
+C. Supplied H3, original backend: 11,971 train / 1,497 dev / 1,497 test. MLP test AUROC .8318, linear .8469, 4-mer .8955, composition .8054. Original selected MLP saw 1,842 unique train rows, not all available rows. Test causal NLL 1.255723 and PPL 3.510374. The linear-minus-4-mer AUROC difference was -.0485, conditional interval [-.0657,-.0322]. Do not overwrite this inconvenient result or subtract it from another backend's score as an unlearning effect.
+D. Latest BioNeMo common-protocol base/H3-only MaxEnt comparison: two representations, separately fitted and fixed-base logistic probes, six benign tasks. All 232 scalar metric entries were independently recomputed from saved outputs. These are scalar records, not 232 independent experiments. GPU features were not independently regenerated by that CPU audit.
+
+Selected latest refitted AUROCs, base -> H3-only MaxEnt:
+Task/split        decoder.layers[16]          decoder.final_norm
+H3/test           .935324 -> .950736          .833097 -> .842689
+Promoter/dev      .954391 -> .963638          .836912 -> .833890
+Splice/dev        .787930 -> .721980          .633477 -> .593323
+Core promoter/dev .816868 -> .846564          .761384 -> .773286
+Human TF/dev      .829975 -> .801619          .679673 -> .641601
+Mouse TF/dev      .876947 -> .834092          .610656 -> .658534
+Splice AUROC is macro one-vs-rest. Binary and multiclass scores must remain explicitly labeled.
+Layer-16 AUROC differences with pointwise conditional 95% intervals:
+H3 +.015412 [.005651,.025530]; splice -.065951 [-.100909,-.032580]; mouse TF -.042855 [-.076295,-.012301]. Other selected refit intervals included zero. These are exploratory, unadjusted comparisons; an interval including zero does not prove preservation or equivalence.
+Fixed-base H3 probe applied to MaxEnt: final norm .668706, layer 16 .847823. Refitted results are much stronger. Fixed-probe failure can reflect representation/readout mismatch; it is not evidence that the information is absent.
+H3 test causal NLL: 1.3106501334 -> 1.4557958699. PPL: 3.7085840028 -> 4.2878947144. A better refitted classification score can coexist with worse language-model loss. Do not treat those as interchangeable measurements.
+
+Exact report:
+https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/experiments-ashay-maxent-benign-v1/docs/experiments/ashay/maxent-benign-v1/RESULTS.md
+Also read RUNTIME_STATUS.md, SESSION_HANDOFF.md and backup_receipt.json in the same directory. RESULTS.md's pending-backup wording is an older scientific snapshot; the later receipt verifies recovery. Resolve apparent contradictions chronologically using evidence rather than copying the stale status.
+
+5. EXISTING IMPLEMENTATION AND PROTOCOL
+Reusable entrypoints on the MaxEnt branch:
+scripts/sayyed/extract_maxent_benign.py
+scripts/sayyed/fit_maxent_benign.py
+scripts/sayyed/fit_maxent_extension.py
+scripts/sayyed/verify_maxent_benign.py
+scripts/sayyed/verify_maxent_extension.py
+scripts/sayyed/package_maxent_benign.py
+Inspect these files and their actual dependencies before modifying or invoking them. This pack is not a promise that a guessed CLI flag exists.
+
+Historical validated runtime: BioNeMo recipe 7dd1659f2103982562d7a23896fb2091200a1f1d, Bridge 18ef1b61309dd45bc0535fb7c60064b9d8829a35, Megatron Core 92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13, Torch 2.8.0+cu128, Transformer Engine 2.3.0 with a documented dependency exception. These are provenance, not instructions to blindly install incompatible packages over the Pod's environment.
+The validated route used shared unfused attention; frozen/eval models; inference_mode; checkpoint-native BF16/FP32 values; lossless promotion of BF16 filters to FP32 computation. Only qualified TE extra-state differences were allowed. No missing backbone or random replacement weights.
+Padding length 1,000, pad ID 1, no inserted BOS/EOS for these sequences, nucleotide-only mean pooling. Check recovered tokenizer/config rather than hard-code these for an unqualified model.
+decoder.layers[16] is the zero-indexed 17th block. It is not blocks.15. Resolve transcript "layer 16" separately from the implementation convention. Enumerate the actual model; the previous Evo2-1B has 25 blocks, but do not import an Evo-1 branch's 32-layer assumptions.
+H3 used the supplied 11,971/1,497/1,497 split. Other five tasks used historical 1,024 train / 512 official dev subsets. Their test contents were not opened. H3 test and other-task dev sets have already been analyzed and must stay labeled exploratory.
+Historical logistic protocol: balanced L2, C in {.1,1,10}, fold-local StandardScaler, smaller-C tie break, all-training refit. H3 used three training folds, other tasks five; stratified exact/reverse-complement groups. Numeric label meaning and TF aliases remain incompletely qualified. Binary threshold .5, splice argmax. Bootstrap used 2,000 paired resamples conditional on fitted models and available groups.
+
+6. DATA AND CHECKPOINT SOURCES
+Sayyed shared checkpoint folder:
+https://drive.google.com/drive/folders/1pM5-kFeki5Oq1oLjQNXH0U2f2TlGNuzi?usp=sharing
+Historical shared dataset files:
+https://drive.google.com/file/d/1CYNhcY1HXbI85SLMFtwM_TRxB0ya1rYf/view?usp=sharing
+https://drive.google.com/file/d/1jmq5sWWxXSNme2OKILJTXLpA3k3PdMLC/view?usp=sharing
+Identify files from metadata and receipts; do not guess which link contains which dataset. Reuse qualified benign manifests from recovery first. Do not process unrelated data in a mixed archive by default.
+The preparation did not establish a specific multi-retain or noise-checkpoint URL. These belong in 02_SESSION_INPUTS.json or must be located and qualified from the shared folder. Do not silently use H3-only as the multi-retain arm.
+
+7. RECOVERY: PREVIOUS POD WAS DELETED
+Private HF dataset: ashay-sriv/undo-evo2-pilot-backup-20261020
+https://huggingface.co/datasets/ashay-sriv/undo-evo2-pilot-backup-20261020
+Pinned revision: 0713f0906803e49911b33024b8411dbe012c1478
+Archive: maxent-benign-v16/maxent-benign-v16-recovery.tar.gz
+Sidecar: maxent-benign-v16/maxent-benign-v16-recovery.tar.gz.sha256
+Archive SHA256: 94e7e86f007fa6b317a433d4be0e402819f7fc5e834c92dc804e00c73edf6d46
+Archive bytes: 700410986
+Payloads previously checked: 5914
+Fresh-download identity and pinned revision are recorded in the Git receipt at b5f700ff4f96a305b4c84d12346baccd94a22cdc. Verify the new download before using it. The archive contains features/probes/predictions/manifests and source/runtime references, but NOT model weights or an installed runtime. Inspect and safely extract into a fresh directory, then verify the payload manifest. Some post-package verification code lives in Git, not in the immutable archive.
+Historical absolute paths such as /workspace/wt-maxent-benign-v1 and /workspace/venvs/maxent-benign are not evidence those directories exist on the new Pod.
+Historical cumulative GPU-stage usage was 1423.988606 / 7200 seconds, inactive. This is not rental cost, current GPU activity, or permission to spend a new 7200 seconds. Preserve it and open a separate new-session ledger under the limits in 02_SESSION_INPUTS.json.
+
+8. INTERPRETATION AND OWNERSHIP
+Main question: does the supplied broader-retain checkpoint show better preservation of the evaluated benign capabilities across layers than the H3-only checkpoint? Report model differences and their uncertainty. If training budgets, initialization, exposure or interventions differ, those confounds limit attribution to retain diversity.
+Splice and mouse TF are useful monitoring tasks because the prior layer-16 refits declined. Do not call them unexposed until actual training manifests establish that. All six tasks must remain visible.
+Every layer matters: a change at one output does not establish a whole-network loss. Better performance in an earlier layer can show retained linear decodability. No tested linear probe establishes the absence of all possible information or a bound against every downstream method.
+Do not train fresh noise/unlearning interventions, tune human-host-tropism predictors, run relearning attacks, or disguise excluded tasks. Evaluate the supplied checkpoints only on qualified benign tasks. Qualified benign viral tasks remain a future addition until their labels, source/genome grouping, splits and licenses are available.
+Preserve old branches/results; log all outcomes, including negative findings, numerical mismatches and blocked arms. Do not optimize for an impressive-looking answer. A rigorous negative result is a result.
+
+SESSION INPUT TEMPLATE
+
+{
+  "PACK_DATE": "2026-11-10",
+  "PACK_DIR": "/workspace/runbooks/unlearning-agent-pack",
+  "RESEARCH_REPO": "https://github.com/Georgakopoulos-Soares-lab/unlearning",
+  "PROMPT_REPO": "https://github.com/ashay-sriv-06/test-prompts-push",
+  "PROMPT_REPO_FILENAME": null,
+  "PROMPT_REPO_REF": "main",
+  "PINNED_IMPLEMENTATION_BASE": "b5f700ff4f96a305b4c84d12346baccd94a22cdc",
+  "CODEX_BRANCH": "experiments-ashay-multiretain-layers-v1",
+  "KIMI_BRANCH": "experiments-ashay-multiretain-reporting-v1",
+  "CODEX_WORKTREE": "/workspace/wt-multiretain-layers",
+  "KIMI_WORKTREE": "/workspace/wt-multiretain-reporting",
+  "SHARED_HANDOFF_ROOT": "/workspace/agent-handoff/multiretain-v1",
+  "NEW_ARTIFACT_ROOT": "/workspace/meeting-artifacts/multiretain-layers-v1",
+  "SAYYED_CHECKPOINT_ROOT": "https://drive.google.com/drive/folders/1pM5-kFeki5Oq1oLjQNXH0U2f2TlGNuzi?usp=sharing",
+  "BASE_CHECKPOINT_URL_OR_PATH": null,
+  "H3_MAXENT_CHECKPOINT_URL_OR_PATH": null,
+  "MULTIRETAIN_CHECKPOINT_URL_OR_PATH": null,
+  "MULTIRETAIN_TRAINING_METADATA_URL_OR_PATH": null,
+  "NOISE_CHECKPOINTS": [],
+  "BENIGN_DATA_MANIFEST_OVERRIDE": null,
+  "BIOLOGICAL_GROUP_METADATA_URL_OR_PATH": null,
+  "MEETING_TRANSCRIPT_PATH": null,
+  "SLACK_UPDATE_PATH": null,
+  "AUTHORIZED_GPU_STAGE_SECONDS": 0,
+  "AUTHORIZED_RENTAL_WALL_MINUTES": 0,
+  "GPU_HOURLY_RATE_USD": null,
+  "SESSION_SPEND_CAP_USD": null,
+  "KIMI_API_SPEND_CAP_USD": null,
+  "CPU_THREADS_CODEX": 4,
+  "CPU_THREADS_KIMI": 2,
+  "PROBE_CV_SEEDS": [42, 17, 1234],
+  "BOOTSTRAP_RESAMPLES": 2000,
+  "PRESERVATION_MARGINS": {},
+  "ALLOW_SUPPLIED_NOISE_CHECKPOINT_BENIGN_EVAL": true,
+  "ALLOW_NEW_BACKBONE_TRAINING": false,
+  "ALLOW_NEW_TEST_SET_OPENING": false,
+  "ALLOW_BRANCH_ONLY_PUSH": true,
+  "ALLOW_PRIVATE_BACKUP_UPLOAD": true,
+  "HF_DATASET_REPO": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "OLD_BACKUP_REVISION": "0713f0906803e49911b33024b8411dbe012c1478",
+  "OLD_BACKUP_ARCHIVE": "maxent-benign-v16/maxent-benign-v16-recovery.tar.gz",
+  "OLD_BACKUP_SIDECAR": "maxent-benign-v16/maxent-benign-v16-recovery.tar.gz.sha256",
+  "OLD_BACKUP_SHA256": "94e7e86f007fa6b317a433d4be0e402819f7fc5e834c92dc804e00c73edf6d46",
+  "OLD_BACKUP_BYTES": 700410986,
+  "NOISE_ENTRY_TEMPLATE_DO_NOT_EXECUTE": {
+    "checkpoint_url_or_path": null,
+    "checkpoint_label": null,
+    "parent_checkpoint_id": null,
+    "selected_parameter_fraction": null,
+    "noise_scale": null,
+    "parameter_selection_rule": null,
+    "noise_seed": null,
+    "training_metadata_url_or_path": null
+  }
+}
+
+
+========================================================================
+CODEX_03_VERIFY_AND_CLOSE_OUT.txt
+========================================================================
+
+CODEX PROMPT 3 OF 3 | VERIFY, INTERPRET AND DELIVER RECOVERABLE RESULTS
+
+Continue from the current session. Read the shared context, inputs, frozen protocol, registries, producer index, runtime/compute ledger and Kimi's completed review receipts. Do not relaunch finished GPU work merely because this is a new prompt. Do not mistake an old backup receipt for preservation of today's new outputs.
+
+MISSION
+Convert the completed benign measurements into a defensible research deliverable: independently checked tables, clear layer-wise findings, a precise account of what the multi-retain and supplied-noise comparisons establish, reproducible source, and a verified off-Pod recovery package. Finish useful unblocked work even if an optional arm is absent. Never declare the unavailable multi-retain assignment complete.
+
+1. VERIFY THE SCIENTIFIC RECORD
+Check that every released row points to an exact source commit, protocol hash, checkpoint identity, dataset manifest, layer/pooling definition, probe artifact and prediction file. Verify that all compared examples and class orders match. Counts alone are insufficient. Distinguish restored historical data, new measurements, new fits on old features, and interpretation-only updates.
+Use independent CPU calculations on saved predictions to reconstruct AUROC (including ties), accuracy, balanced accuracy, average precision and any reported cross-entropy. Reconstruct selected heads from saved parameters/features for representative cases and every unit where a defect is suspected. Recompute paired deltas/intervals from saved resample rules and independently aggregate LM loss sums/counts. Review Kimi's verifier implementation for actual independence from producer helpers.
+Independence means separate calculation paths, not a second call to the same metric function. Saved-output checks do not independently reproduce GPU extraction. Label this limit explicitly. Require identity, mask/target and finite-value tests relevant to the new implementation. Avoid a large mirror-test suite that adds no remaining evidence.
+Use numerical tolerances justified by stored dtypes/algorithms. Do not relax a tolerance simply to get a pass. If a mismatch is found, record its cause, impact, affected rows and fix. Preserve original outputs; write corrected versioned artifacts and explain whether any published number changed.
+Review convergence warnings, missing-class folds/resamples, class imbalance, layer mapping, fixed-scaler policy, train-only model selection, seed variation and duplicate/grouping qualifications. Missing biology metadata must remain a visible limitation rather than disappearing into a success badge.
+If Kimi is unavailable, perform essential independent checks yourself. Do not idle indefinitely or claim that Kimi verified something without its artifact/receipt.
+
+2. ANSWER THE ACTUAL RESEARCH QUESTIONS
+Write RESULTS.md and a concise MEETING_SUMMARY.md in the new branch's experiment directory. Use generated tables/figures sourced from the finalized numerical files. Address:
+- How base, H3-only and multi-retain refitted logistic performance differs across all layers on each benign task.
+- Whether prior splice and mouse-TF deficits are reduced, unchanged or worse on the supplied multi-retain checkpoint, with uncertainty and exposure caveats.
+- Whether differences appear restricted to certain layers, and whether any earlier tested layer retains strong decodability.
+- How fixed-base transfer differs from refitting. Explain feature/readout drift without claiming it proves information is absent or preserved under all possible classifiers.
+- Whether causal LM loss and classification move together or disagree on the same task. Avoid cross-task perplexity rankings as a capability leaderboard.
+- For available supplied-noise arms, the measured benign cost relative to the correct parent. Keep noise sweep creation and hazardous-benchmark claims outside this report's new evidence.
+- Whether training-token budgets, exposure and initialization are sufficiently matched to attribute a difference to retain diversity. If not, call it a checkpoint comparison and identify the minimal evidence needed.
+
+Include all tasks/layers and all prespecified seeds in machine-readable outputs. Display useful summaries without selecting a favorable seed or hiding negative results. Retain the old scores in a separate historical-reference section with their own protocols. Do not combine original-backend, converted-backend, pilot-dev and supplied-test results into a causal before/after table.
+A pointwise confidence interval including zero is uncertainty, not a preservation certificate. Do not invent margins. If many layers were tested, avoid unadjusted winner claims. State which evaluation sets have been reused and what a future held-out confirmatory study would require.
+
+3. REVIEW AND INTEGRATE KIMI'S COMPLEMENTARY WORK
+Read Kimi's branch diff and review outputs by full commit/hash. Integrate only relevant reporting/verification changes with explicit source provenance after checking tests and dependencies. Cherry-pick individual reviewed commits or copy scoped files as appropriate; do not merge unrelated work or modify the active Kimi worktree. Resolve conflicts in your own branch and record the review outcome.
+Require machine-readable metric/claim links in figures and summaries. Visually inspect generated scientific figures for correct axes, layer labels, class/metric names, signs, missing values and legends. Export standard PDF/SVG/PNG formats using plotting code, not generated imagery. Every caption must say which split/policy/seed summary and uncertainty it shows.
+Keep the delivery focused. A six-panel layer plot, a compact paired-difference heatmap and a clear primary table are usually more useful than dozens of disconnected charts. Provide full data for all remaining conditions.
+
+4. PUBLISH SOURCE WITHOUT DISTURBING HISTORY
+Before pushing, inspect the exact diff for secrets, accidental raw-data/model-weight inclusion, unrelated files and stale assertions. Commit source, small aggregate outputs, protocols, provenance and reports only to CODEX_BRANCH. If ALLOW_BRANCH_ONLY_PUSH is true, push only that explicitly named branch and verify local/remote head agreement. No main merge, force push, history rewrite, deletion or update to completed branches. Kimi's branch is separately owned.
+Record the execution commit(s) separately from final delivery/receipt commits. Results produced by an earlier commit do not become measurements from the final documentation commit just because the report was updated. List any clean/dirty state honestly; do not discard changes to make the worktree look clean.
+
+5. PACKAGE AND VERIFY NEW OFF-POD RECOVERY
+Create a new immutable archive or explicitly dependent supplement with all essential new scientific outputs: manifests, pooled features where required to reconstruct heads, predictions, probes, selection records, per-sequence loss statistics, metrics, contrasts, configurations, registries, source/provenance references and verification reports. Include dependency/restore order if relying on the old archive. Do not claim a supplement is standalone when it is not.
+Document weights/runtime inclusion or exclusion and the exact recovery source for excluded model shards/configs. Do not copy credentials, credential caches, unrelated home directories or private chat transcripts into the archive. Write relative-path payload checksums, a safe inventory and an external archive SHA256 sidecar. Test archive integrity and member-path safety.
+When private HF authentication is configured and upload is authorized, verify destination privacy, upload to a unique new prefix in HF_DATASET_REPO, pin the revision containing both archive and sidecar, then force-download both into a fresh verification location. Verify downloaded size/hash against the local original, sidecar identity, archive integrity and required payload checksums. Do not mark verified from an upload success message alone.
+Write a transfer/recovery receipt containing immutable revision, remote paths, archive hash/size, payload count, dependency hashes/order, restore commands and verification scope. The receipt can live in Git after packaging to avoid self-referential archive hashing. Push that final receipt only to the authorized branch and verify its remote head.
+If authentication/network/storage prevents upload or retrieval verification, finish the local archive and give the exact remaining command/path with BACKUP_PENDING. Preserve work and state that stopping/deleting would risk new artifacts. Never fall back to a public repository without permission.
+
+6. CLOSE OUT WITH A USEFUL HANDOFF
+Check owned jobs, active transfers, GPU processes and ledger status. Report current evidence rather than inheriting an old idle check. Do not stop or delete the Pod. Give a stop-readiness assessment only after new outputs are recoverable and no relevant jobs are active; clearly state if weights/runtime would need reacquisition.
+Create a concise Slack draft for Ashay to review/send, with: the new comparison completed; two or three numerically supported findings; the remaining qualification; and the exact report link. Do not send it.
+Create NEXT_ACTIONS.md with no more than five high-value items. Prioritize missing multi-retain/noise checkpoint metadata, actual exposure/budget matching, meaningful intervention-seed replication or qualified biological grouping ahead of more decorative analysis. Future training, LoRA/distillation/relearning and qualified benign viral tasks need a separately scoped team decision; do not silently launch them now.
+
+FINAL RESPONSE FORMAT
+1. Completed / blocked / deliberately deferred, including exact model/task/layer/seed coverage.
+2. Compact numerical findings with uncertainty and an interpretation calibrated to the evidence.
+3. Execution and delivery commit links, report, artifact and independent-verification paths.
+4. Actual GPU-stage usage, rental elapsed estimate, CPU work and any unspent authorized allowance.
+5. New backup revision/hash and restore order, or precise pending action.
+6. Current job status and whether completed work is recoverable if the user stops the Pod.
+
+Do not say "everything is done" if the multi-retain checkpoint was unavailable, parts of the matrix are missing, or new backups are unverified. Finish when the authorized useful work is complete; do not consume remaining budget just because it exists.

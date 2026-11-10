@@ -1,0 +1,91 @@
+task,split,checkpoint,checkpoint_role,layer,seed,probe_policy,metric,value,status,missing_reason
+emp_H3,dev,synthetic-base,reference,decoder.layers.0,42,independent_refit,auroc,0.600000,completed,
+emp_H3,dev,synthetic-post,intervention,decoder.layers.0,42,independent_refit,auroc,0.620000,completed,
+emp_H3,dev,synthetic-base,reference,decoder.layers.0,17,independent_refit,auroc,0.605000,completed,
+emp_H3,dev,synthetic-post,intervention,decoder.layers.0,17,independent_refit,auroc,0.625000,completed,
+emp_H3,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.0,,independent_refit,auroc,,expected,synthetic placeholder
+emp_H3,dev,synthetic-base,reference,decoder.layers.1,42,independent_refit,auroc,0.620000,completed,
+emp_H3,dev,synthetic-post,intervention,decoder.layers.1,42,independent_refit,auroc,0.640000,completed,
+emp_H3,dev,synthetic-base,reference,decoder.layers.1,17,independent_refit,auroc,0.625000,completed,
+emp_H3,dev,synthetic-post,intervention,decoder.layers.1,17,independent_refit,auroc,0.645000,completed,
+emp_H3,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.1,,independent_refit,auroc,,expected,synthetic placeholder
+emp_H3,dev,synthetic-base,reference,decoder.final_norm,42,independent_refit,auroc,0.640000,completed,
+emp_H3,dev,synthetic-post,intervention,decoder.final_norm,42,independent_refit,auroc,0.660000,completed,
+emp_H3,dev,synthetic-base,reference,decoder.final_norm,17,independent_refit,auroc,0.645000,completed,
+emp_H3,dev,synthetic-post,intervention,decoder.final_norm,17,independent_refit,auroc,0.665000,completed,
+emp_H3,dev,synthetic-multi,broader-retain-unidentified,decoder.final_norm,,independent_refit,auroc,,expected,synthetic placeholder
+gue_prom_300_all,dev,synthetic-base,reference,decoder.layers.0,42,independent_refit,auroc,0.610000,completed,
+gue_prom_300_all,dev,synthetic-post,intervention,decoder.layers.0,42,independent_refit,auroc,0.625000,completed,
+gue_prom_300_all,dev,synthetic-base,reference,decoder.layers.0,17,independent_refit,auroc,0.615000,completed,
+gue_prom_300_all,dev,synthetic-post,intervention,decoder.layers.0,17,independent_refit,auroc,0.630000,completed,
+gue_prom_300_all,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.0,,independent_refit,auroc,,expected,synthetic placeholder
+gue_prom_300_all,dev,synthetic-base,reference,decoder.layers.1,42,independent_refit,auroc,0.630000,completed,
+gue_prom_300_all,dev,synthetic-post,intervention,decoder.layers.1,42,independent_refit,auroc,0.645000,completed,
+gue_prom_300_all,dev,synthetic-base,reference,decoder.layers.1,17,independent_refit,auroc,0.635000,completed,
+gue_prom_300_all,dev,synthetic-post,intervention,decoder.layers.1,17,independent_refit,auroc,0.650000,completed,
+gue_prom_300_all,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.1,,independent_refit,auroc,,expected,synthetic placeholder
+gue_prom_300_all,dev,synthetic-base,reference,decoder.final_norm,42,independent_refit,auroc,0.650000,completed,
+gue_prom_300_all,dev,synthetic-post,intervention,decoder.final_norm,42,independent_refit,auroc,0.665000,completed,
+gue_prom_300_all,dev,synthetic-base,reference,decoder.final_norm,17,independent_refit,auroc,0.655000,completed,
+gue_prom_300_all,dev,synthetic-post,intervention,decoder.final_norm,17,independent_refit,auroc,0.670000,completed,
+gue_prom_300_all,dev,synthetic-multi,broader-retain-unidentified,decoder.final_norm,,independent_refit,auroc,,expected,synthetic placeholder
+gue_splice_reconstructed,dev,synthetic-base,reference,decoder.layers.0,42,independent_refit,auroc,0.620000,completed,
+gue_splice_reconstructed,dev,synthetic-post,intervention,decoder.layers.0,42,independent_refit,auroc,0.630000,completed,
+gue_splice_reconstructed,dev,synthetic-base,reference,decoder.layers.0,17,independent_refit,auroc,0.625000,completed,
+gue_splice_reconstructed,dev,synthetic-post,intervention,decoder.layers.0,17,independent_refit,auroc,0.635000,completed,
+gue_splice_reconstructed,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.0,,independent_refit,auroc,,expected,synthetic placeholder
+gue_splice_reconstructed,dev,synthetic-base,reference,decoder.layers.1,42,independent_refit,auroc,0.640000,completed,
+gue_splice_reconstructed,dev,synthetic-post,intervention,decoder.layers.1,42,independent_refit,auroc,0.650000,completed,
+gue_splice_reconstructed,dev,synthetic-base,reference,decoder.layers.1,17,independent_refit,auroc,0.645000,completed,
+gue_splice_reconstructed,dev,synthetic-post,intervention,decoder.layers.1,17,independent_refit,auroc,0.655000,completed,
+gue_splice_reconstructed,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.1,,independent_refit,auroc,,expected,synthetic placeholder
+gue_splice_reconstructed,dev,synthetic-base,reference,decoder.final_norm,42,independent_refit,auroc,0.660000,completed,
+gue_splice_reconstructed,dev,synthetic-post,intervention,decoder.final_norm,42,independent_refit,auroc,0.670000,completed,
+gue_splice_reconstructed,dev,synthetic-base,reference,decoder.final_norm,17,independent_refit,auroc,0.665000,completed,
+gue_splice_reconstructed,dev,synthetic-post,intervention,decoder.final_norm,17,independent_refit,auroc,0.675000,completed,
+gue_splice_reconstructed,dev,synthetic-multi,broader-retain-unidentified,decoder.final_norm,,independent_refit,auroc,,expected,synthetic placeholder
+gue_prom_core_all,dev,synthetic-base,reference,decoder.layers.0,42,independent_refit,auroc,0.630000,completed,
+gue_prom_core_all,dev,synthetic-post,intervention,decoder.layers.0,42,independent_refit,auroc,0.635000,completed,
+gue_prom_core_all,dev,synthetic-base,reference,decoder.layers.0,17,independent_refit,auroc,0.635000,completed,
+gue_prom_core_all,dev,synthetic-post,intervention,decoder.layers.0,17,independent_refit,auroc,0.640000,completed,
+gue_prom_core_all,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.0,,independent_refit,auroc,,expected,synthetic placeholder
+gue_prom_core_all,dev,synthetic-base,reference,decoder.layers.1,42,independent_refit,auroc,0.650000,completed,
+gue_prom_core_all,dev,synthetic-post,intervention,decoder.layers.1,42,independent_refit,auroc,0.655000,completed,
+gue_prom_core_all,dev,synthetic-base,reference,decoder.layers.1,17,independent_refit,auroc,0.655000,completed,
+gue_prom_core_all,dev,synthetic-post,intervention,decoder.layers.1,17,independent_refit,auroc,0.660000,completed,
+gue_prom_core_all,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.1,,independent_refit,auroc,,expected,synthetic placeholder
+gue_prom_core_all,dev,synthetic-base,reference,decoder.final_norm,42,independent_refit,auroc,0.670000,completed,
+gue_prom_core_all,dev,synthetic-post,intervention,decoder.final_norm,42,independent_refit,auroc,0.675000,completed,
+gue_prom_core_all,dev,synthetic-base,reference,decoder.final_norm,17,independent_refit,auroc,0.675000,completed,
+gue_prom_core_all,dev,synthetic-post,intervention,decoder.final_norm,17,independent_refit,auroc,0.680000,completed,
+gue_prom_core_all,dev,synthetic-multi,broader-retain-unidentified,decoder.final_norm,,independent_refit,auroc,,expected,synthetic placeholder
+gue_tf_0,dev,synthetic-base,reference,decoder.layers.0,42,independent_refit,auroc,0.640000,completed,
+gue_tf_0,dev,synthetic-post,intervention,decoder.layers.0,42,independent_refit,auroc,0.640000,completed,
+gue_tf_0,dev,synthetic-base,reference,decoder.layers.0,17,independent_refit,auroc,0.645000,completed,
+gue_tf_0,dev,synthetic-post,intervention,decoder.layers.0,17,independent_refit,auroc,0.645000,completed,
+gue_tf_0,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.0,,independent_refit,auroc,,expected,synthetic placeholder
+gue_tf_0,dev,synthetic-base,reference,decoder.layers.1,42,independent_refit,auroc,0.660000,completed,
+gue_tf_0,dev,synthetic-post,intervention,decoder.layers.1,42,independent_refit,auroc,0.660000,completed,
+gue_tf_0,dev,synthetic-base,reference,decoder.layers.1,17,independent_refit,auroc,0.665000,completed,
+gue_tf_0,dev,synthetic-post,intervention,decoder.layers.1,17,independent_refit,auroc,0.665000,completed,
+gue_tf_0,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.1,,independent_refit,auroc,,expected,synthetic placeholder
+gue_tf_0,dev,synthetic-base,reference,decoder.final_norm,42,independent_refit,auroc,0.680000,completed,
+gue_tf_0,dev,synthetic-post,intervention,decoder.final_norm,42,independent_refit,auroc,0.680000,completed,
+gue_tf_0,dev,synthetic-base,reference,decoder.final_norm,17,independent_refit,auroc,0.685000,completed,
+gue_tf_0,dev,synthetic-post,intervention,decoder.final_norm,17,independent_refit,auroc,0.685000,completed,
+gue_tf_0,dev,synthetic-multi,broader-retain-unidentified,decoder.final_norm,,independent_refit,auroc,,expected,synthetic placeholder
+gue_mouse_0,dev,synthetic-base,reference,decoder.layers.0,42,independent_refit,auroc,0.650000,completed,
+gue_mouse_0,dev,synthetic-post,intervention,decoder.layers.0,42,independent_refit,auroc,0.645000,completed,
+gue_mouse_0,dev,synthetic-base,reference,decoder.layers.0,17,independent_refit,auroc,0.655000,completed,
+gue_mouse_0,dev,synthetic-post,intervention,decoder.layers.0,17,independent_refit,auroc,0.650000,completed,
+gue_mouse_0,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.0,,independent_refit,auroc,,expected,synthetic placeholder
+gue_mouse_0,dev,synthetic-base,reference,decoder.layers.1,42,independent_refit,auroc,0.670000,completed,
+gue_mouse_0,dev,synthetic-post,intervention,decoder.layers.1,42,independent_refit,auroc,0.665000,completed,
+gue_mouse_0,dev,synthetic-base,reference,decoder.layers.1,17,independent_refit,auroc,0.675000,completed,
+gue_mouse_0,dev,synthetic-post,intervention,decoder.layers.1,17,independent_refit,auroc,0.670000,completed,
+gue_mouse_0,dev,synthetic-multi,broader-retain-unidentified,decoder.layers.1,,independent_refit,auroc,,expected,synthetic placeholder
+gue_mouse_0,dev,synthetic-base,reference,decoder.final_norm,42,independent_refit,auroc,0.690000,completed,
+gue_mouse_0,dev,synthetic-post,intervention,decoder.final_norm,42,independent_refit,auroc,0.685000,completed,
+gue_mouse_0,dev,synthetic-base,reference,decoder.final_norm,17,independent_refit,auroc,0.695000,completed,
+gue_mouse_0,dev,synthetic-post,intervention,decoder.final_norm,17,independent_refit,auroc,0.690000,completed,
+gue_mouse_0,dev,synthetic-multi,broader-retain-unidentified,decoder.final_norm,,independent_refit,auroc,,expected,synthetic placeholder

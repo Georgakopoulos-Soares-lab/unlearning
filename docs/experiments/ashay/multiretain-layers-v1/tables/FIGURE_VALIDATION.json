@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "renderer_source": "scripts/sayyed/multiretain_report.py",
+  "renderer_sha256": "099d1975a02e5c75ee7762580a5a9baeb6eec484f55bf0f46e67386b24523e2f",
+  "upstream_commit": "8116ca826a54c66b48111f7750a30d819e238343",
+  "upstream_sha256": "331d581fe8f78c9de685044c6a1ccc50594f484b4ae838985488028a7adb5cc4",
+  "tests": "4 passed in 3.61s",
+  "real_outputs": "4 split/policy figure sets; no synthetic flag; PNG/PDF/SVG",
+  "visual_inspection": [
+    "six-panel dev refit profiles: correct canonical layer0..24/final norm, both arms, seed range, missing multi",
+    "six-panel dev fixed-base profiles: unchanged base reference, correct policy and all tasks",
+    "paired difference dev heatmap: positive H3-only-minus-base sign, zero-centered colors, legible labels"
+  ],
+  "limits": "Splice macroOVR and binary AUROCs distinguished in captions; seed range is not conditional CI",
+  "corrections": "Initial renderer one-ULP mean-range failure preserved; mean clip for display, wider heatmap/3 decimals; raw numerical tables unchanged"
+}

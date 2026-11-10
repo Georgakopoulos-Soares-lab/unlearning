@@ -1,0 +1,84 @@
+{
+  "status": "COMPLETE_AVAILABLE_SCOPE",
+  "completed_utc": "2026-11-10T13:56:51.672756+00:00",
+  "groups": {
+    "H3": {
+      "audit": "/workspace/meeting-artifacts/multiretain-layers-v1/producer_audit/H3/VERIFICATION_COMPLETE.json",
+      "sha256": "4c8a66d208e06061bb995ff10c010c0a5df31d02b25216f4ab68ad5c9a8c6065",
+      "units": 78,
+      "fit": {
+        "status": "COMPLETE",
+        "units": 78,
+        "protocol_sha256": "ee8bcd6d2c6e9c0f60a457f4ed10eff44dbcb23c80167ee2009e752857a355a6",
+        "identity_sha256": "7a9673b4ff25902428255147b01be9d9859ff9f171c17f2bfdc4c0a9bb63e876",
+        "index_sha256": "289ebc478435638e3ef94e0f62e6eb2b593632a7ad1b386270d8251224be8baa",
+        "wall_seconds_this_invocation": 3211.6629460388795,
+        "cpu_process_seconds_this_invocation": 19227.364132699,
+        "scope": "New CPU logistic fits and paired saved-feature evaluation; no backbone training"
+      },
+      "audit_summary": {
+        "scalar_probe_metrics": 2340,
+        "paired_probe_contrasts": 1560,
+        "prediction_rows": 233532,
+        "max_probability_delta": 0.0,
+        "max_metric_delta": 8.881784197001252e-15,
+        "max_bootstrap_delta": 8.881784197001252e-15,
+        "scalar_lm_metrics": 8,
+        "wall_seconds": 127.33910078881308,
+        "cpu_process_seconds": 253.729632866
+      }
+    },
+    "other_five": {
+      "audit": "/workspace/meeting-artifacts/multiretain-layers-v1/producer_audit/other_five/VERIFICATION_COMPLETE.json",
+      "sha256": "cf3a469965074012b7760dd2ee9fa05807d2d5b7cc555717b6e43a485a96e9ef",
+      "units": 390,
+      "fit": {
+        "status": "COMPLETE",
+        "units": 390,
+        "protocol_sha256": "ee8bcd6d2c6e9c0f60a457f4ed10eff44dbcb23c80167ee2009e752857a355a6",
+        "identity_sha256": "e0b311b5a136ee0e05c983e6bfa71a1550c2d4830a23cf1beffeb4e2834b6f95",
+        "index_sha256": "d14a6210b27d3b337bf910be406bda87c9d6d16505043a26c9f149ecab21debf",
+        "wall_seconds_this_invocation": 1967.0283227739856,
+        "cpu_process_seconds_this_invocation": 502.438353256,
+        "cv_worker_cpu_process_seconds": 2709.9527125930103,
+        "child_cpu_seconds_including_worker_setup": 2754.917899,
+        "scope": "New CPU logistic fits; four independent one-thread CV workers, one-thread final refit; no backbone training"
+      },
+      "audit_summary": {
+        "scalar_probe_metrics": 5850,
+        "paired_probe_contrasts": 3900,
+        "prediction_rows": 199680,
+        "max_probability_delta": 0.0,
+        "max_metric_delta": 5.329070518200751e-15,
+        "max_bootstrap_delta": 1.1546319456101628e-14,
+        "scalar_lm_metrics": 20,
+        "wall_seconds": 114.61539820814505,
+        "cpu_process_seconds": 251.419346425
+      }
+    }
+  },
+  "units": 468,
+  "representations": 26,
+  "cv_seeds": [
+    42,
+    17,
+    1234
+  ],
+  "heads": 936,
+  "tasks": 6,
+  "probe_metric_records": 8190,
+  "paired_probe_contrasts": 5460,
+  "lm_metric_records": 28,
+  "multi_retain": "DEFERRED_NOT_IDENTIFIED",
+  "noise": "NOT_SUPPLIED",
+  "gpu_stage_seconds": 778.5762330316938,
+  "scientific_outputs": "Immutable native producer units fully audited; consumer serialization views still finalizing as supplemental outputs",
+  "source_delivery_head": "9a00f05289a3b289852183a391d1738332cef268",
+  "limitations": [
+    "Exploratory H3 dev/test and other five dev",
+    "No multiplicity adjustment or preservation margins",
+    "Exact/RC grouping does not establish homology independence",
+    "Unknown intervention exposure/training budget prevents attribution to retain diversity",
+    "CPU saved-output audit does not independently regenerate GPU features"
+  ]
+}
