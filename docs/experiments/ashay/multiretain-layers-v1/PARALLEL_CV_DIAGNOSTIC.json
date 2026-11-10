@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "scope": "Eight training-only CV fits independently recomputed without joblib/memmap; original scientific outputs unchanged",
+  "resource_tracker_issue": "nonfatal cleanup-bookkeeping errors retained in logs; full saved-output audit remains mandatory",
+  "checks": [
+    {
+      "task": "gue_prom_300_all",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "arm": "base",
+      "C": 0.1,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    },
+    {
+      "task": "gue_prom_300_all",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "arm": "base",
+      "C": 10.0,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    },
+    {
+      "task": "gue_prom_300_all",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "arm": "h3_only_maxent",
+      "C": 0.1,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    },
+    {
+      "task": "gue_prom_300_all",
+      "layer": "decoder_layer_0",
+      "seed": 42,
+      "arm": "h3_only_maxent",
+      "C": 10.0,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "layer": "decoder_layer_17",
+      "seed": 42,
+      "arm": "base",
+      "C": 0.1,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "layer": "decoder_layer_17",
+      "seed": 42,
+      "arm": "base",
+      "C": 10.0,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "layer": "decoder_layer_17",
+      "seed": 42,
+      "arm": "h3_only_maxent",
+      "C": 0.1,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "layer": "decoder_layer_17",
+      "seed": 42,
+      "arm": "h3_only_maxent",
+      "C": 10.0,
+      "fold": 0,
+      "score_delta": 0.0,
+      "converged": true
+    }
+  ],
+  "wall_seconds": 21.64920946303755,
+  "cpu_process_seconds": 6.637957352000001
+}
