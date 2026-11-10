@@ -1,0 +1,140 @@
+{
+  "manifests": [
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/maxent-benign-v16/inputs/H3_manifest.jsonl",
+      "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+      "rows": 14965
+    },
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/maxent-benign-v16/promoter-splice-data/evaluation_manifest.jsonl",
+      "sha256": "02ec3c09d0fdcea391c486dd047fdda727d9f61b8541beac61610267f65357e3",
+      "rows": 3072
+    },
+    {
+      "path": "/workspace/meeting-artifacts/multiretain-layers-v1/recovery-01/maxent-benign-v16/remaining-data/evaluation_manifest.jsonl",
+      "sha256": "c5e538404aaad5bf7362114cf66c20bf54c747a8b609de1538b687ebbb6ae817",
+      "rows": 4608
+    }
+  ],
+  "tasks": [
+    {
+      "task": "emp_H3",
+      "counts": {
+        "train": 11971,
+        "dev": 1497,
+        "test": 1497
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "length_min": 290,
+      "length_max": 500,
+      "ambiguous_bases": 0,
+      "scored_exact_rc_duplicate_groups": 0,
+      "scored_exact_rc_cross_split_groups": 0,
+      "conflicting_label_groups": 0,
+      "biological_groups": "unavailable; exact/RC grouping does not prove homology independence",
+      "eligible": true
+    },
+    {
+      "task": "gue_prom_300_all",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "length_min": 300,
+      "length_max": 300,
+      "ambiguous_bases": 0,
+      "scored_exact_rc_duplicate_groups": 0,
+      "scored_exact_rc_cross_split_groups": 0,
+      "conflicting_label_groups": 0,
+      "biological_groups": "unavailable; exact/RC grouping does not prove homology independence",
+      "eligible": true
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "length_min": 400,
+      "length_max": 400,
+      "ambiguous_bases": 0,
+      "scored_exact_rc_duplicate_groups": 1,
+      "scored_exact_rc_cross_split_groups": 0,
+      "conflicting_label_groups": 0,
+      "biological_groups": "unavailable; exact/RC grouping does not prove homology independence",
+      "eligible": true
+    },
+    {
+      "task": "gue_mouse_0",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "length_min": 101,
+      "length_max": 101,
+      "ambiguous_bases": 0,
+      "scored_exact_rc_duplicate_groups": 0,
+      "scored_exact_rc_cross_split_groups": 0,
+      "conflicting_label_groups": 0,
+      "biological_groups": "unavailable; exact/RC grouping does not prove homology independence",
+      "eligible": true
+    },
+    {
+      "task": "gue_prom_core_all",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "length_min": 70,
+      "length_max": 70,
+      "ambiguous_bases": 0,
+      "scored_exact_rc_duplicate_groups": 0,
+      "scored_exact_rc_cross_split_groups": 0,
+      "conflicting_label_groups": 0,
+      "biological_groups": "unavailable; exact/RC grouping does not prove homology independence",
+      "eligible": true
+    },
+    {
+      "task": "gue_tf_0",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "length_min": 101,
+      "length_max": 101,
+      "ambiguous_bases": 0,
+      "scored_exact_rc_duplicate_groups": 0,
+      "scored_exact_rc_cross_split_groups": 0,
+      "conflicting_label_groups": 0,
+      "biological_groups": "unavailable; exact/RC grouping does not prove homology independence",
+      "eligible": true
+    }
+  ],
+  "status": "PASS",
+  "wall_seconds": 0.3631253163330257,
+  "cpu_process_seconds": 0.32791470500000003
+}

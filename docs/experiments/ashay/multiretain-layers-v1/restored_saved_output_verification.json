@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "scalar_metrics_checked": 24,
+  "conditions": [
+    {
+      "layer": "decoder_layer_16",
+      "model": "base_refit",
+      "auroc": 0.9353242534049732
+    },
+    {
+      "layer": "decoder_layer_16",
+      "model": "maxent_refit",
+      "auroc": 0.9507363310187251
+    },
+    {
+      "layer": "decoder_layer_16",
+      "model": "maxent_fixed_base",
+      "auroc": 0.8478231377519144
+    },
+    {
+      "layer": "final_norm",
+      "model": "base_refit",
+      "auroc": 0.8330965173774121
+    },
+    {
+      "layer": "final_norm",
+      "model": "maxent_refit",
+      "auroc": 0.8426893486371182
+    },
+    {
+      "layer": "final_norm",
+      "model": "maxent_fixed_base",
+      "auroc": 0.6687063779654059
+    }
+  ],
+  "source": "independent tied-rank/contingency helper",
+  "scope": "Saved historical outputs only; no GPU regeneration",
+  "wall_seconds": 0.050151006784290075,
+  "cpu_process_seconds": 0.042046156999999695
+}
