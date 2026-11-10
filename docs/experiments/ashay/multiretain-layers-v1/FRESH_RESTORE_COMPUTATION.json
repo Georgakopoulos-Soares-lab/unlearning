@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "fresh_payload_root": "/workspace/recovery/multiretain-roundtrip-20261110T142652Z/extracted/multiretain-layers-v1-final-20261110T140836Z",
+  "remote_revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+  "cases": [
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "layer": "decoder.layers.0",
+      "cv_seed": 42,
+      "policy": "base_refit",
+      "rows": 12,
+      "classes": [
+        0,
+        1
+      ],
+      "max_probability_delta": 0.0
+    },
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "layer": "decoder.layers.0",
+      "cv_seed": 42,
+      "policy": "h3_only_refit",
+      "rows": 12,
+      "classes": [
+        0,
+        1
+      ],
+      "max_probability_delta": 0.0
+    },
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "layer": "decoder.layers.0",
+      "cv_seed": 42,
+      "policy": "h3_only_fixed_base",
+      "rows": 12,
+      "classes": [
+        0,
+        1
+      ],
+      "max_probability_delta": 0.0
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "layer": "decoder.layers.0",
+      "cv_seed": 42,
+      "policy": "base_refit",
+      "rows": 12,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "max_probability_delta": 1.4432899320127035e-15
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "layer": "decoder.layers.0",
+      "cv_seed": 42,
+      "policy": "h3_only_refit",
+      "rows": 12,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "max_probability_delta": 1.2212453270876722e-15
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "layer": "decoder.layers.0",
+      "cv_seed": 42,
+      "policy": "h3_only_fixed_base",
+      "rows": 12,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "max_probability_delta": 1.2212453270876722e-15
+    }
+  ],
+  "source_module": "/workspace/recovery/multiretain-roundtrip-20261110T142652Z/extracted/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/multiretain_independent.py",
+  "source_sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+  "wall_seconds": 5.433576304931194,
+  "scope": "Actual fresh payload source/features/models/predictions; binary and three-class task; all three policies; supplements complete archive/payload hash roundtrip and prior full audit; no GPU regeneration"
+}

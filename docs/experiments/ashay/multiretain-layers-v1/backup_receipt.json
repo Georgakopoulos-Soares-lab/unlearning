@@ -1,0 +1,57 @@
+{
+  "status": "VERIFIED_PRIVATE_FRESH_DOWNLOAD",
+  "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "remote_repository_type": "dataset",
+  "remote_revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+  "remote_archive_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+  "remote_sidecar_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz.sha256",
+  "private_repository_verified": true,
+  "archive": "/workspace/meeting-artifacts/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+  "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+  "bytes": 10108100047,
+  "fresh_download": "/workspace/recovery/multiretain-roundtrip-20261110T142652Z/multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+  "fresh_payload_root": "/workspace/recovery/multiretain-roundtrip-20261110T142652Z/extracted/multiretain-layers-v1-final-20261110T140836Z",
+  "payload_files_verified": 14550,
+  "sidecar_byte_identical": true,
+  "upload_seconds": 205.69580157427117,
+  "download_seconds": 124.98561687814072,
+  "payload_verification_seconds": 356.23769532702863,
+  "total_backup_wall_seconds": 693.6943145547993,
+  "cpu_process_seconds": 245.334683736,
+  "credential_wait_seconds": 3900.405693401117,
+  "credential_persisted": false,
+  "scope": "Available six-task base/H3-only all-layer scientific outputs; model weights/installed runtime excluded as declared by package",
+  "payload_root": "multiretain-layers-v1-final-20261110T140836Z",
+  "payload_source_commit": "1eeb0f5c279e28845f724f7e02d6be538093e043",
+  "scientific_report_commit": "68dad2b91fbe9ae20c925ea3eda43cd6538844b6",
+  "payload_checksum_manifest": "CHECKSUMS.sha256",
+  "checksum_manifest_sha256": "b381c43485b40f0e58dec74d74d2faf579cdfbc553ae85608fff20d54598d813",
+  "dependency_order": [
+    "New private archive+sidecar at exact revision; verify trusted size/SHA256",
+    "Fresh safe extraction and all relative payload checksums",
+    "Pinned CPU environment and payload/source; audit with original-root remapping",
+    "Only for GPU regeneration: exact excluded Drive shards and reconstructed pinned native runtime"
+  ],
+  "old_archive_required_for_new_saved_output_audit": false,
+  "old_archive_optional_historical_context": {
+    "revision": "0713f0906803e49911b33024b8411dbe012c1478",
+    "sha256": "94e7e86f007fa6b317a433d4be0e402819f7fc5e834c92dc804e00c73edf6d46"
+  },
+  "restore_instructions": "RESTORE.md",
+  "excluded": [
+    "Model shards",
+    "Installed runtime",
+    "Raw mixed dataset archive",
+    "Credentials"
+  ],
+  "fresh_computational_check": {
+    "status": "PASS",
+    "cases": 6,
+    "rows_per_case": 12,
+    "maximum_probability_delta": 1.4432899320127035e-15,
+    "source_sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+    "scope": "Actual fresh payload source/features/models/predictions; binary and three-class task; all three policies; supplements complete archive/payload hash roundtrip and prior full audit; no GPU regeneration"
+  },
+  "chronology": "This final receipt and fresh-computation result postdate the immutable archive and are published in Git; no self-referential archive receipt hash",
+  "scientific_status": "COMPLETE_AVAILABLE_SCOPE; multi-retain DEFERRED_NOT_IDENTIFIED; noise NOT_SUPPLIED"
+}
