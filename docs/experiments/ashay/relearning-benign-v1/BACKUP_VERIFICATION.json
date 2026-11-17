@@ -1,0 +1,37 @@
+{
+  "status": "VERIFIED_PRIVATE_FRESH_DOWNLOAD",
+  "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "revision": "32206eeed1dd9024fc92ecd898be39094840de94",
+  "remote_archive_path": "two-pod-20261116/pod-b/20261117T063321Z/relearning-benign-v1-qualification-20261117T070817Z.tar.gz",
+  "remote_sidecar_path": "two-pod-20261116/pod-b/20261117T063321Z/relearning-benign-v1-qualification-20261117T070817Z.tar.gz.sha256",
+  "sha256": "bf56f316d3587ce979b797312d2896d4fe942709666aea04d77518e90adbb1dc",
+  "bytes": 5593985967,
+  "payload_root": "relearning-benign-v1-qualification-20261117T070817Z",
+  "payload_files": 929,
+  "fresh_payload": "/workspace/meeting-artifacts/relearning-benign-v1/fresh-recovery/20261117T070817Z/extracted/relearning-benign-v1-qualification-20261117T070817Z",
+  "source_snapshot_commit": "075b8f0dc46fa3e29f686c5f08b7b6e256511a74",
+  "private_repository_verified": true,
+  "upload_permission_preflight": true,
+  "full_payload_checksums": true,
+  "safe_extraction": true,
+  "restored_head_check": {
+    "status": "PASS",
+    "checks": [
+      {
+        "task": "emp_H3",
+        "rows": 12,
+        "max_abs_probability_delta": 0.0
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "rows": 12,
+        "max_abs_probability_delta": 0.0
+      }
+    ],
+    "scope": "Restored historical heads; no new feature extraction or model fitting"
+  },
+  "wall_seconds": 370.6903954649988,
+  "credentials_persisted": false,
+  "dependencies": "Parent weights/runtime excluded; historical full caches remain separately pinned",
+  "scientific_status": "Qualification complete; actual supplied-model scoring remains blocked"
+}

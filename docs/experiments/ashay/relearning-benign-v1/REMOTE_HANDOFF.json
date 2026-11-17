@@ -1,0 +1,106 @@
+{
+  "role": "B",
+  "status": "QUALIFICATION_COMPLETE_SUPPLIED_MODEL_SCORING_BLOCKED",
+  "branch": "experiments-ashay-relearning-benign-v1",
+  "source_snapshot_commit": "075b8f0dc46fa3e29f686c5f08b7b6e256511a74",
+  "checkpoint_ids": [
+    "base/iter_0000100",
+    "base/iter_0000200",
+    "base/iter_0000300",
+    "base/iter_0000400",
+    "base/iter_0000500",
+    "base/iter_0000600",
+    "base/iter_0000700",
+    "base/iter_0000800",
+    "base/iter_0000900",
+    "base/iter_0001000",
+    "base/iter_0001100",
+    "base/iter_0001200",
+    "base/iter_0001300",
+    "base/iter_0001400",
+    "base/iter_0001500",
+    "base/iter_0001600",
+    "base/iter_0001700",
+    "base/iter_0001800",
+    "maxent/iter_0000100",
+    "maxent/iter_0000200",
+    "maxent/iter_0000300",
+    "maxent/iter_0000400",
+    "maxent/iter_0000500",
+    "maxent/iter_0000600",
+    "maxent/iter_0000700",
+    "maxent/iter_0000800",
+    "maxent/iter_0000900",
+    "maxent/iter_0001000",
+    "maxent/iter_0001100",
+    "maxent/iter_0001200",
+    "maxent/iter_0001300",
+    "maxent/iter_0001400",
+    "maxent/iter_0001500",
+    "maxent/iter_0001600",
+    "maxent/iter_0001700",
+    "maxent/iter_0001800"
+  ],
+  "delivered_unique_adapter_payloads": 36,
+  "completed_supplied_model_probe_cells": 0,
+  "potential_supplied_model_probe_cells": 16848,
+  "known_parent_smoke_comparisons_passed": 162,
+  "training384_checks_passed": 28,
+  "registry": {
+    "path": "docs/experiments/ashay/relearning-benign-v1/CHECKPOINT_REGISTRY.json",
+    "sha256": "54c734405d0230c0270e64ee53333e0af7bb84d8015c597c73201088bcaaee97"
+  },
+  "coverage": {
+    "path": "docs/experiments/ashay/relearning-benign-v1/COVERAGE.csv",
+    "sha256": "0513ed27ccee8fc64e4cd52565fe55f5392ffb1a51ed1e301200070f11b9c682"
+  },
+  "protocol": {
+    "path": "docs/experiments/ashay/relearning-benign-v1/COMPARISON_PROTOCOL.json",
+    "sha256": "bf2d192b7e5aa12a6cc655b7ade3b8cef4a64e6de1c8a96071b3bd138e133970"
+  },
+  "artifact_root": "/workspace/meeting-artifacts/relearning-benign-v1",
+  "backup": {
+    "status": "VERIFIED_PRIVATE_FRESH_DOWNLOAD",
+    "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "revision": "32206eeed1dd9024fc92ecd898be39094840de94",
+    "remote_archive_path": "two-pod-20261116/pod-b/20261117T063321Z/relearning-benign-v1-qualification-20261117T070817Z.tar.gz",
+    "remote_sidecar_path": "two-pod-20261116/pod-b/20261117T063321Z/relearning-benign-v1-qualification-20261117T070817Z.tar.gz.sha256",
+    "sha256": "bf56f316d3587ce979b797312d2896d4fe942709666aea04d77518e90adbb1dc",
+    "bytes": 5593985967,
+    "payload_files": 929,
+    "source_snapshot_commit": "075b8f0dc46fa3e29f686c5f08b7b6e256511a74"
+  },
+  "dependencies": {
+    "base_h3": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+    "controls": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+    "R3": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+    "preservation": "8694a540b5fc987b443ee488b085f753c5c4eb01"
+  },
+  "blockers": [
+    "Original Evo2LoRA loader/source or known-output reconstruction evidence",
+    "Exact initialization/resume chain; declared pretrained parents differ but both resume paths name MaxEnt",
+    "True step-zero adapter references absent; start-relative contrasts unavailable"
+  ],
+  "peer_status": "Assigned Pod A remote branch absent at initial and qualification-boundary read-only fetches; no peer completion inferred",
+  "scientific_cutoff_utc": "2026-11-17T17:33:21+00:00",
+  "session_deadline_utc": "2026-11-17T20:33:21+00:00",
+  "pod_status": "LEFT_RUNNING",
+  "recovery_head_check": {
+    "status": "PASS",
+    "checks": [
+      {
+        "task": "emp_H3",
+        "rows": 12,
+        "max_abs_probability_delta": 0.0
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "rows": 12,
+        "max_abs_probability_delta": 0.0
+      }
+    ],
+    "scope": "Restored historical heads; no new feature extraction or model fitting"
+  },
+  "new_gpu_stage_seconds": 49.65920904699851,
+  "remaining_owned_scientific_jobs": []
+}
