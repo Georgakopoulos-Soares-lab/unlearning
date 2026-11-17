@@ -1,0 +1,218 @@
+{
+  "schema": "pod-a-a03-recovery-dependencies-v1",
+  "run_id": "20261117T084728Z-a01",
+  "attempt_id": "A03-attempt-001",
+  "dependencies": [
+    {
+      "dependency_id": "base_R1",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "repository_type": "dataset",
+      "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "archive_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "sidecar_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz.sha256",
+      "sidecar_status": "Observed in immutable directory listing and verified below",
+      "expected_bytes": 10108100047,
+      "expected_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "expected_payload_root": "multiretain-layers-v1-final-20261110T140836Z",
+      "source_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+      "source_receipt_path": "docs/experiments/ashay/incremental-retain-eval-v1/RESTORE_DEPENDENCIES.json",
+      "source_receipt_sha256": "25040588f64f4087bb70ec2a360ea745aa131e0c88a78b33740b581bf8237695",
+      "original_root": "/workspace/meeting-artifacts/multiretain-layers-v1",
+      "archive_cache": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "extraction_container": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1",
+      "downstream_consumers": [
+        "data/reuse/LM/numerical audit",
+        "training-only A04 handoff"
+      ],
+      "required_families": [
+        "features",
+        "cohort manifests",
+        "heads/scalers",
+        "folds",
+        "predictions",
+        "bootstrap",
+        "LM records",
+        "source/runtime evidence"
+      ],
+      "remote_archive_metadata": {
+        "bytes": 10108100047,
+        "lfs_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+        "metadata_checked_utc": "2026-11-17T12:25:17.263671+00:00"
+      },
+      "remote_sidecar_metadata": {
+        "bytes": 118,
+        "lfs_sha256": "df8fe6f179c80d3a214ad1d847684c50c7cf390b9ba370c9ac3814faf772e49b"
+      },
+      "initial_local_status": "MISSING",
+      "final_local_status": "VERIFIED",
+      "final_restore_receipt": "RESTORE_VALIDATION.json#base_R1",
+      "actual_restored_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z",
+      "verified_regular_files": 14551,
+      "verified_payload_files": 14550,
+      "retrieval_status": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag."
+    },
+    {
+      "dependency_id": "controls",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "repository_type": "dataset",
+      "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "archive_path": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "sidecar_path": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz.sha256",
+      "sidecar_status": "Observed in immutable directory listing and verified below",
+      "expected_bytes": 47129813,
+      "expected_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "expected_payload_root": "benign-followup-v1",
+      "source_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+      "source_receipt_path": "docs/experiments/ashay/incremental-retain-eval-v1/RESTORE_DEPENDENCIES.json",
+      "source_receipt_sha256": "25040588f64f4087bb70ec2a360ea745aa131e0c88a78b33740b581bf8237695",
+      "original_root": "/workspace/meeting-artifacts/benign-followup-v1",
+      "archive_cache": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "extraction_container": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls",
+      "downstream_consumers": [
+        "data/reuse/LM/numerical audit",
+        "training-only A04 handoff"
+      ],
+      "required_families": [
+        "36 controls",
+        "control features/heads/predictions"
+      ],
+      "remote_archive_metadata": {
+        "bytes": 47129813,
+        "lfs_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+        "metadata_checked_utc": "2026-11-17T12:25:17.305089+00:00"
+      },
+      "remote_sidecar_metadata": {
+        "bytes": 110,
+        "lfs_sha256": "a9cfccdee552d8c13bdd0708cf4d74ba99b74254d4f80480b813e2f6d44832be"
+      },
+      "initial_local_status": "MISSING",
+      "final_local_status": "VERIFIED",
+      "final_restore_receipt": "RESTORE_VALIDATION.json#controls",
+      "actual_restored_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1",
+      "verified_regular_files": 447,
+      "verified_payload_files": 446,
+      "retrieval_status": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag."
+    },
+    {
+      "dependency_id": "R3",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "repository_type": "dataset",
+      "revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+      "archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "sidecar_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz.sha256",
+      "sidecar_status": "Observed in immutable directory listing and verified below",
+      "expected_bytes": 4412868094,
+      "expected_sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "expected_payload_root": "multiretain-comparison-v1-final-20261110T173945Z",
+      "source_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+      "source_receipt_path": "docs/experiments/ashay/incremental-retain-eval-v1/RESTORE_DEPENDENCIES.json",
+      "source_receipt_sha256": "25040588f64f4087bb70ec2a360ea745aa131e0c88a78b33740b581bf8237695",
+      "original_root": "/workspace/meeting-artifacts/multiretain-comparison-v1",
+      "archive_cache": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "extraction_container": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3",
+      "downstream_consumers": [
+        "data/reuse/LM/numerical audit",
+        "training-only A04 handoff"
+      ],
+      "required_families": [
+        "features",
+        "cohort manifests",
+        "heads/scalers",
+        "folds",
+        "predictions",
+        "bootstrap",
+        "LM records",
+        "source/runtime evidence"
+      ],
+      "remote_archive_metadata": {
+        "bytes": 4412868094,
+        "lfs_sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+        "metadata_checked_utc": "2026-11-17T12:25:17.342920+00:00"
+      },
+      "remote_sidecar_metadata": {
+        "bytes": 122,
+        "lfs_sha256": "c14541270e412b96b0b50d9f5d9867ddb16bbe8213ed878daf91d4d56aab20a5"
+      },
+      "initial_local_status": "MISSING",
+      "final_local_status": "VERIFIED",
+      "final_restore_receipt": "RESTORE_VALIDATION.json#R3",
+      "actual_restored_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z",
+      "verified_regular_files": 8200,
+      "verified_payload_files": 8199,
+      "retrieval_status": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag."
+    },
+    {
+      "dependency_id": "preparation",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "repository_type": "dataset",
+      "revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+      "archive_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+      "sidecar_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz.sha256",
+      "sidecar_status": "Observed in immutable directory listing and verified below",
+      "expected_bytes": 6963484,
+      "expected_sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+      "expected_payload_root": "incremental-retain-eval-v1-final-20261110T190751Z",
+      "source_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+      "source_receipt_path": "docs/experiments/ashay/incremental-retain-eval-v1/BACKUP_VERIFICATION.json",
+      "source_receipt_sha256": "a65ffe14ecfdf7ab83b73757b615681bc0bd2f37266619b4023db10ca3663b75",
+      "original_root": "/workspace/meeting-artifacts/incremental-retain-eval-v1",
+      "archive_cache": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "extraction_container": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation",
+      "downstream_consumers": [
+        "data/reuse/LM/numerical audit",
+        "training-only A04 handoff"
+      ],
+      "required_families": [
+        "frozen protocol",
+        "reference registry",
+        "source/table mappings"
+      ],
+      "remote_archive_metadata": {
+        "bytes": 6963484,
+        "lfs_sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+        "metadata_checked_utc": "2026-11-17T12:25:17.404634+00:00"
+      },
+      "remote_sidecar_metadata": {
+        "bytes": 123,
+        "lfs_sha256": "94f8ea5d9375c19e57053d3e1b20775220b206fe37f42ca4a676cc1214c91421"
+      },
+      "initial_local_status": "MISSING",
+      "final_local_status": "VERIFIED",
+      "final_restore_receipt": "RESTORE_VALIDATION.json#preparation",
+      "actual_restored_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation/incremental-retain-eval-v1-final-20261110T190751Z",
+      "verified_regular_files": 132,
+      "verified_payload_files": 131,
+      "retrieval_status": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag."
+    }
+  ],
+  "compressed_bytes": 14575061438,
+  "max_total_uncompressed_bytes": 85899345920,
+  "max_single_member_bytes": 34359738368,
+  "minimum_free_margin_bytes": 2147483648,
+  "provider_volume_quota_bytes": null,
+  "quota_note": "Shared FUSE free space is not provider quota; no volume quota supplied. Transfers/extraction are sequential and stop affected units on capacity failure.",
+  "observed_workspace_disk": {
+    "total": 898491987329024,
+    "used": 570439088406528,
+    "free": 328052898922496
+  },
+  "observed_tmp_disk": {
+    "total": 107374182400,
+    "used": 911343616,
+    "free": 106462838784
+  },
+  "cgroup_memory_limit_bytes": 214999998464,
+  "effective_cpu_quota": 15.3,
+  "initial_CPU_workers": 1,
+  "BLAS_threads_per_worker": 1,
+  "max_transient_attempts_per_object": 3,
+  "credentials_in_reports": false,
+  "weights_and_GPU_runtime_included": false,
+  "excluded_every_dependency": [
+    "model weights",
+    "installed GPU/runtime binaries",
+    "credentials"
+  ],
+  "runtime_readiness": "Historical CPU recovery complete; current live weights/runtime unqualified until A04",
+  "no_full_A09_claim": true
+}

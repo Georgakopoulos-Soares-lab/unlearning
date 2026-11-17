@@ -1,0 +1,71 @@
+{
+  "schema": "pod-a-a03-structural-reuse-audit-v1",
+  "status": "PASS",
+  "receipt_count": 954,
+  "feature_receipts": 6,
+  "paired_probe_receipts": 936,
+  "lm_receipts": 12,
+  "base_R1_R3_final_refit_heads": {
+    "base": 468,
+    "R1": 468,
+    "R3": 468
+  },
+  "unique_fixed_reference_heads": 468,
+  "reuse_rows": 2730,
+  "inherited_numerical_audits": [
+    {
+      "dependency": "base_R1",
+      "group": "H3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/producer_audit/H3/VERIFICATION_COMPLETE.json",
+        "sha256": "4c8a66d208e06061bb995ff10c010c0a5df31d02b25216f4ab68ad5c9a8c6065",
+        "bytes": 27036
+      },
+      "units": 78,
+      "scope": "Independent pairwise/rank-threshold metrics and all resamples; direct saved-head algebra, folds and source joins. No GPU replication or CV refitting.",
+      "status": "INHERITED_FULL_HISTORICAL_AUDIT_NOT_RERUN"
+    },
+    {
+      "dependency": "base_R1",
+      "group": "other_five",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/producer_audit/other_five/VERIFICATION_COMPLETE.json",
+        "sha256": "cf3a469965074012b7760dd2ee9fa05807d2d5b7cc555717b6e43a485a96e9ef",
+        "bytes": 134411
+      },
+      "units": 390,
+      "scope": "Independent pairwise/rank-threshold metrics and all resamples; direct saved-head algebra, folds and source joins. No GPU replication or CV refitting.",
+      "status": "INHERITED_FULL_HISTORICAL_AUDIT_NOT_RERUN"
+    },
+    {
+      "dependency": "R3",
+      "group": "H3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/producer_audit/H3/VERIFICATION_COMPLETE.json",
+        "sha256": "389777c73b008d777ccdaefb1f3a70596f9a435d62134ac8eafcfdf857418541",
+        "bytes": 28507
+      },
+      "units": 78,
+      "scope": "Independent pairwise/rank-threshold metrics and all resamples; direct saved-head algebra, folds and source joins. No GPU replication or CV refitting.",
+      "status": "INHERITED_FULL_HISTORICAL_AUDIT_NOT_RERUN"
+    },
+    {
+      "dependency": "R3",
+      "group": "other_five",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/producer_audit/other_five/VERIFICATION_COMPLETE.json",
+        "sha256": "de6dda01d142cfa24f96068c22d01aec3f37675284e62ecf709e56b14fecf1e3",
+        "bytes": 134353
+      },
+      "units": 390,
+      "scope": "Independent pairwise/rank-threshold metrics and all resamples; direct saved-head algebra, folds and source joins. No GPU replication or CV refitting.",
+      "status": "INHERITED_FULL_HISTORICAL_AUDIT_NOT_RERUN"
+    }
+  ],
+  "feature_family_index": "FEATURE_STRUCTURAL_AUDIT.json",
+  "runtime_qualified_now": false,
+  "no_gpu_replication": true,
+  "source_sha256": "c050a2c77ff31e84f2f639c854b67aacb5de4c6464395ec86d43753f7e84e6be",
+  "wall_seconds": 105.08768395399966,
+  "cpu_process_seconds": 54.39106063
+}

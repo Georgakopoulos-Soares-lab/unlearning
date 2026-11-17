@@ -1,0 +1,2639 @@
+{
+  "schema": "pod-a-a03-numerical-recovery-plan-v1",
+  "written_utc": "2026-11-17T12:28:04.834941+00:00",
+  "selection_basis": "Frozen metadata-only panel specified in approved A03, written before any fresh numerical comparison. No outcome selection.",
+  "refitted_head_count": 108,
+  "fixed_base_combination_count": 72,
+  "control_head_count": 36,
+  "heads": [
+    {
+      "role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    },
+    {
+      "role": "R3",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED",
+      "missing_unit_rule": "Keep missing or failed; no score-based replacement"
+    }
+  ],
+  "fixed_base": [
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R1",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev",
+        "test"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    },
+    {
+      "target_role": "R3",
+      "reference_role": "base",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "splits": [
+        "dev"
+      ],
+      "status": "PLANNED_METADATA_SELECTED"
+    }
+  ],
+  "controls": [
+    {
+      "task": "emp_H3",
+      "seed": 42,
+      "control_type": "composition",
+      "splits": [
+        "dev",
+        "test"
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "seed": 42,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev",
+        "test"
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "seed": 17,
+      "control_type": "composition",
+      "splits": [
+        "dev",
+        "test"
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "seed": 17,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev",
+        "test"
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "seed": 1234,
+      "control_type": "composition",
+      "splits": [
+        "dev",
+        "test"
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "seed": 1234,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev",
+        "test"
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 42,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 42,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 17,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 17,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 1234,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 1234,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 42,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 42,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 17,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 17,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 1234,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 1234,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 42,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 42,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 17,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 17,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 1234,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 1234,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 42,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 42,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 17,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 17,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 1234,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 1234,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 42,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 42,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 17,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 17,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 1234,
+      "control_type": "composition",
+      "splits": [
+        "dev"
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 1234,
+      "control_type": "normalized_forward_4mer",
+      "splits": [
+        "dev"
+      ]
+    }
+  ],
+  "bootstrap_contrast_panel": [
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "test",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "test",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "test",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "test",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "independent_refit",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    },
+    {
+      "target": "R3",
+      "reference": "R1",
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "policy": "fixed_base",
+      "split": "dev",
+      "resamples": 2000,
+      "bootstrap_seed": 20261103
+    }
+  ],
+  "probability_max_abs_tolerance": 1e-10,
+  "metric_bootstrap_max_abs_tolerance": 1e-12,
+  "LM_scope": "All recovered base/R1/R3 task/split corpus aggregates, with paired historical LM intervals wherever saved draws exist.",
+  "H3_test_gate": "Audit only exact previously examined frozen H3 cohort after hash/history verification; no new official tests.",
+  "structural_scope": "All required historical six-task/26-representation/three-seed artifact units and receipt/hash/array alignment coverage.",
+  "no_fit": true,
+  "no_model_inference": true,
+  "no_GPU": true,
+  "missing_failure_rule": "Block affected units; preserve failure, diagnose independently; never refit, change cohort, select alternate favorable unit or relax tolerances.",
+  "fresh_vs_inherited": "Current CPU panel separate from all-byte verification and inherited full historical numerical audits.",
+  "environment": "Isolated CPU dependencies, actual versions recorded; never install GPU runtime in A03."
+}

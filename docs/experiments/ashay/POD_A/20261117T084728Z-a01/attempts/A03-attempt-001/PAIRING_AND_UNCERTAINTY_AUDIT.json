@@ -1,0 +1,2669 @@
+{
+  "schema": "pod-a-a03-pairing-and-uncertainty-audit-v1",
+  "status": "PASS",
+  "resampling_checks": [
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "dependency": "base_R1",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/dev_resampling.npz",
+        "sha256": "002ec27ac3749826429b1fce1f8859f84c621fe8a17ce057b4d7ad0722c152f4",
+        "bytes": 5648944
+      },
+      "draws": 2000,
+      "groups": 1497,
+      "rows": 1497,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "dependency": "R3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/probes/H3/emp_H3/dev_resampling.npz",
+        "sha256": "002ec27ac3749826429b1fce1f8859f84c621fe8a17ce057b4d7ad0722c152f4",
+        "bytes": 5648944
+      },
+      "draws": 2000,
+      "groups": 1497,
+      "rows": 1497,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "emp_H3",
+      "split": "dev",
+      "dependency": "controls",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/dev_resampling.npz",
+        "sha256": "002ec27ac3749826429b1fce1f8859f84c621fe8a17ce057b4d7ad0722c152f4",
+        "bytes": 5648944
+      },
+      "draws": 2000,
+      "groups": 1497,
+      "rows": 1497,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "emp_H3",
+      "split": "test",
+      "dependency": "base_R1",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/test_resampling.npz",
+        "sha256": "e6257ef0bc5cdcf15dc1c358f3397478f9961da4a5d4b9d9a62e7a8c90963534",
+        "bytes": 5649034
+      },
+      "draws": 2000,
+      "groups": 1497,
+      "rows": 1497,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "emp_H3",
+      "split": "test",
+      "dependency": "R3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/probes/H3/emp_H3/test_resampling.npz",
+        "sha256": "e6257ef0bc5cdcf15dc1c358f3397478f9961da4a5d4b9d9a62e7a8c90963534",
+        "bytes": 5649034
+      },
+      "draws": 2000,
+      "groups": 1497,
+      "rows": 1497,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "emp_H3",
+      "split": "test",
+      "dependency": "controls",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/test_resampling.npz",
+        "sha256": "e6257ef0bc5cdcf15dc1c358f3397478f9961da4a5d4b9d9a62e7a8c90963534",
+        "bytes": 5649034
+      },
+      "draws": 2000,
+      "groups": 1497,
+      "rows": 1497,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_tf_0",
+      "split": "dev",
+      "dependency": "base_R1",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/dev_resampling.npz",
+        "sha256": "f02f731c6a7ed7162b81c75b4989cbe6629c8b40dca25f06246de09acce311b6",
+        "bytes": 1732863
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_tf_0",
+      "split": "dev",
+      "dependency": "R3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_tf_0/dev_resampling.npz",
+        "sha256": "f02f731c6a7ed7162b81c75b4989cbe6629c8b40dca25f06246de09acce311b6",
+        "bytes": 1732863
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_tf_0",
+      "split": "dev",
+      "dependency": "controls",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/dev_resampling.npz",
+        "sha256": "f02f731c6a7ed7162b81c75b4989cbe6629c8b40dca25f06246de09acce311b6",
+        "bytes": 1732863
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "dependency": "base_R1",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/dev_resampling.npz",
+        "sha256": "85e88a65e6c304ff1a07dc2425f56c2293929db4348cf8ea2f025f83770a76da",
+        "bytes": 1733129
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "dependency": "R3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_prom_core_all/dev_resampling.npz",
+        "sha256": "85e88a65e6c304ff1a07dc2425f56c2293929db4348cf8ea2f025f83770a76da",
+        "bytes": 1733129
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "dependency": "controls",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/dev_resampling.npz",
+        "sha256": "85e88a65e6c304ff1a07dc2425f56c2293929db4348cf8ea2f025f83770a76da",
+        "bytes": 1733129
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "dependency": "base_R1",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/dev_resampling.npz",
+        "sha256": "b1497164cfba7ebef14109e86e82b519b9f2d9bf9ee568d45c9fc617d90a08a6",
+        "bytes": 1733178
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "dependency": "R3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_prom_300_all/dev_resampling.npz",
+        "sha256": "b1497164cfba7ebef14109e86e82b519b9f2d9bf9ee568d45c9fc617d90a08a6",
+        "bytes": 1733178
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "dependency": "controls",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/dev_resampling.npz",
+        "sha256": "b1497164cfba7ebef14109e86e82b519b9f2d9bf9ee568d45c9fc617d90a08a6",
+        "bytes": 1733178
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "dependency": "base_R1",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/dev_resampling.npz",
+        "sha256": "400821696863e19ab2f96831e21e2433a31e82882cb976d5e556a2a56bf1dcb1",
+        "bytes": 1729609
+      },
+      "draws": 2000,
+      "groups": 511,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "dependency": "R3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_splice_reconstructed/dev_resampling.npz",
+        "sha256": "400821696863e19ab2f96831e21e2433a31e82882cb976d5e556a2a56bf1dcb1",
+        "bytes": 1729609
+      },
+      "draws": 2000,
+      "groups": 511,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "dependency": "controls",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/dev_resampling.npz",
+        "sha256": "400821696863e19ab2f96831e21e2433a31e82882cb976d5e556a2a56bf1dcb1",
+        "bytes": 1729609
+      },
+      "draws": 2000,
+      "groups": 511,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "dependency": "base_R1",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/dev_resampling.npz",
+        "sha256": "20e88aa36d6c4b1f049a9d160e8b31eaa208a960c2d66567afd4305a5c509f1f",
+        "bytes": 1732839
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "dependency": "R3",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_mouse_0/dev_resampling.npz",
+        "sha256": "20e88aa36d6c4b1f049a9d160e8b31eaa208a960c2d66567afd4305a5c509f1f",
+        "bytes": 1732839
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    },
+    {
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "dependency": "controls",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/dev_resampling.npz",
+        "sha256": "20e88aa36d6c4b1f049a9d160e8b31eaa208a960c2d66567afd4305a5c509f1f",
+        "bytes": 1732839
+      },
+      "draws": 2000,
+      "groups": 512,
+      "rows": 512,
+      "seed": 20261103,
+      "identity_replay": "PASS, saved draws used; replay only validates existing artifact"
+    }
+  ],
+  "paired_panels": [
+    {
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/decoder_layer_16/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "6855e3bfdfde937b1543f0ca49ec2410c45b64900a882dae2859288060c2bbe6",
+        "bytes": 62239
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.00487974717446038,
+          "ci_low": -0.00090916720905381,
+          "ci_high": 0.010617200793535406,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.010688042752171056,
+          "ci_low": -0.0013360053440213432,
+          "ci_high": 0.022712090848363453,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.01090845787133754,
+          "ci_low": -0.0012488038597367743,
+          "ci_high": 0.022899285901925612,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 6.661338147750939e-16,
+          "interval_max_residual": 1.0581813203458523e-16,
+          "point_residual": 0.0,
+          "difference": 0.004007159818030792,
+          "ci_low": -0.004116380627945481,
+          "ci_high": 0.013247951405330765,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.027721467304536673,
+          "ci_low": -0.0547423748416749,
+          "ci_high": -0.0015192470431658284,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/decoder_layer_16/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "e7bbd4a3ec2768f2f57e47b2fcba7e30b96ec622bf137c43bb2904f247e0de01",
+        "bytes": 62817
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.007670469762708132,
+          "ci_low": -0.014238975387588209,
+          "ci_high": -0.001043717432229365,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.02605210420841675,
+          "ci_low": 0.00868403473613899,
+          "ci_high": 0.044104876419505626,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.02387915796239759,
+          "ci_low": 0.00737035874351614,
+          "ci_high": 0.040625424464846335,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 1.0755285551056204e-16,
+          "point_residual": 0.0,
+          "difference": -0.009930257204388115,
+          "ci_low": -0.01985752146925624,
+          "ci_high": -0.0007006400219727387,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 2.220446049250313e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.2628576352576255,
+          "ci_low": 0.14093514247623393,
+          "ci_high": 0.37973257646439257,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "test",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/decoder_layer_16/seed42/test_new_refit_vs_h3.npz",
+        "sha256": "97944251c59f1eaaa1e9b34c5ddfefd17f2b915ba62249251361b300b6032d14",
+        "bytes": 62039
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.001777904714303613,
+          "ci_low": -0.0076041053705776015,
+          "ci_high": 0.003955832410867563,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0006680026720106147,
+          "ci_low": -0.014028056112224463,
+          "ci_high": 0.015364061456245803,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.000604237696578025,
+          "ci_low": -0.014333658279292465,
+          "ci_high": 0.015162804219692669,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 1.1275702593849246e-17,
+          "point_residual": 0.0,
+          "difference": -0.0001350413690173191,
+          "ci_low": -0.00693817525570187,
+          "ci_high": 0.006693191757105659,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.004506615196176733,
+          "ci_low": -0.03495991832548107,
+          "ci_high": 0.02318320282722645,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "test",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/decoder_layer_16/seed42/test_new_fixed_base_vs_h3.npz",
+        "sha256": "77083881c3eeb8688da3bb69623226f12fa9b3dd3fc07d5532e7e00accd96551",
+        "bytes": 62713
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.007000946073793757,
+          "ci_low": -0.013360160400763849,
+          "ci_high": -0.0007521651927422086,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.018036072144288595,
+          "ci_low": 0.002004008016032066,
+          "ci_high": 0.03473613894455585,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.01713821602613297,
+          "ci_low": 0.0018949842240038124,
+          "ci_high": 0.033195964112793436,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 1.0755285551056204e-16,
+          "point_residual": 0.0,
+          "difference": -0.0018652346664495,
+          "ci_low": -0.012377880140531733,
+          "ci_high": 0.009315409130485801,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 2.220446049250313e-16,
+          "interval_max_residual": 2.220446049250313e-16,
+          "point_residual": 0.0,
+          "difference": 0.2616181961404709,
+          "ci_low": 0.14688039052173926,
+          "ci_high": 0.3764337753278714,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/final_norm/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "7d3cab236ae1788ec563b950451d812c3fa7618288a3d10a58535e7a02cc3c06",
+        "bytes": 62998
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.01654971699966079,
+          "ci_low": 0.005709427905414258,
+          "ci_high": 0.028096918514167533,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.012024048096192286,
+          "ci_low": -0.005344021376085473,
+          "ci_high": 0.02872411489645965,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.012365418608388357,
+          "ci_low": -0.004794288085656895,
+          "ci_high": 0.02932633276253811,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 1.3877787807814457e-17,
+          "point_residual": 0.0,
+          "difference": 0.023020223688683616,
+          "ci_low": 0.004023456650943694,
+          "ci_high": 0.041122577736042026,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.028858479613325216,
+          "ci_low": -0.04523330293133557,
+          "ci_high": -0.01130765501389216,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/final_norm/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "47c7a41d028864d8ea312b9ddca3ef44a01f7e1294de8bc8ae4e2d29e6b96bc7",
+        "bytes": 58388
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.14451229310621894,
+          "ci_low": 0.1221946208430127,
+          "ci_high": 0.1670578366340212,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.021376085504342,
+          "ci_low": 0.012692050768203123,
+          "ci_high": 0.030060120240480992,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0217687074829932,
+          "ci_low": 0.01320964975047694,
+          "ci_high": 0.030504608618350304,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 2.220446049250313e-16,
+          "point_residual": 0.0,
+          "difference": 0.14804520006775512,
+          "ci_low": 0.11950315481847647,
+          "ci_high": 0.1743649549498637,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 8.881784197001252e-16,
+          "interval_max_residual": 4.440892098500626e-16,
+          "point_residual": 0.0,
+          "difference": -3.978840472291677,
+          "ci_low": -4.204939581521526,
+          "ci_high": -3.745296845128722,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "test",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/final_norm/seed42/test_new_refit_vs_h3.npz",
+        "sha256": "44b00b61ad523382e50ee818c4895e09d01377356b7ce67a8b7e43415600989e",
+        "bytes": 62798
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.019844344085253707,
+          "ci_low": 0.008910078474490801,
+          "ci_high": 0.03132311385937112,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.006012024048096198,
+          "ci_low": -0.01002004008016033,
+          "ci_high": 0.023380093520374068,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.006250334695917514,
+          "ci_low": -0.009786548371346177,
+          "ci_high": 0.023856129140342797,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 2.1510571102112408e-16,
+          "point_residual": 0.0,
+          "difference": 0.017803709967843306,
+          "ci_low": 0.002393312389635305,
+          "ci_high": 0.03391462296894521,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.03764792636350517,
+          "ci_low": -0.05360464770597192,
+          "ci_high": -0.022266433725025934,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "test",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/H3/emp_H3/final_norm/seed42/test_new_fixed_base_vs_h3.npz",
+        "sha256": "b923fa8a702982817dcb4dce2bd8d4314ea5916fa9879e5773efca5698342715",
+        "bytes": 58253
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.16663572588850606,
+          "ci_low": 0.14277370645881504,
+          "ci_high": 0.18917754193906644,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.025384101536406134,
+          "ci_low": 0.018036072144288484,
+          "ci_high": 0.03406813627254501,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.025606469002695476,
+          "ci_low": 0.01792822308716477,
+          "ci_high": 0.03415417348792355,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 1.942890293094024e-16,
+          "point_residual": 0.0,
+          "difference": 0.17817893011141872,
+          "ci_low": 0.1488480027466352,
+          "ci_high": 0.20559976314538178,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 8.881784197001252e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -4.076975340851865,
+          "ci_low": -4.305981602487122,
+          "ci_high": -3.8447233990380187,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_tf_0/decoder_layer_16/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "13623d54ee75ebe6f42641c795ca5fbb47a765896c7612db9b150c91a8661e6d",
+        "bytes": 61429
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.026812313803376342,
+          "ci_low": -0.006170813461983435,
+          "ci_high": 0.06007844112597229,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.01953125,
+          "ci_low": -0.01953125,
+          "ci_high": 0.060546875,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.018317928347719836,
+          "ci_low": -0.022666989589383083,
+          "ci_high": 0.058155561789001574,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 1.1102230246251565e-16,
+          "point_residual": 0.0,
+          "difference": 0.023450375522557798,
+          "ci_low": -0.017901012570830186,
+          "ci_high": 0.0643841338495487,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0017370402872433077,
+          "ci_low": -0.10070617446035832,
+          "ci_high": 0.1079510561187408,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_tf_0/decoder_layer_16/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "0aaec442896ca42730e6c859a6d13a323786e496682fee55a988b5bc04bc6c37",
+        "bytes": 61875
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.014513788098693747,
+          "ci_low": -0.0352830525981249,
+          "ci_high": 0.06607544529159606,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.021484375,
+          "ci_low": -0.029296875,
+          "ci_high": 0.0703125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.030792147276754944,
+          "ci_low": -0.015611009861355524,
+          "ci_high": 0.07515337409187714,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 2.185751579730777e-16,
+          "point_residual": 0.0,
+          "difference": 0.02280890564558158,
+          "ci_low": -0.031220526991243426,
+          "ci_high": 0.07652597753901898,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 2.220446049250313e-16,
+          "interval_max_residual": 2.220446049250313e-16,
+          "point_residual": 0.0,
+          "difference": -1.236128613746665,
+          "ci_low": -1.5948306524167637,
+          "ci_high": -0.88353800772548,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_tf_0/final_norm/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "b43868dd9f46950470ab5a01c0861951878bbac2e198dd31be69366109539662",
+        "bytes": 62013
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.07264532885188302,
+          "ci_low": 0.015144751270749985,
+          "ci_high": 0.13072817756823954,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0703125,
+          "ci_low": 0.013671875,
+          "ci_high": 0.125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.06943701779848754,
+          "ci_low": 0.012696511967743476,
+          "ci_high": 0.12364994167177289,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 3.3306690738754696e-16,
+          "interval_max_residual": 1.0755285551056204e-16,
+          "point_residual": 0.0,
+          "difference": 0.05137196030874369,
+          "ci_low": -0.016260236147002085,
+          "ci_high": 0.11364589913444503,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.03605360072009045,
+          "ci_low": -0.07333432540993613,
+          "ci_high": 0.0013711688709513955,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_tf_0/final_norm/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "cdffc48946f7fbb1cd0c4cae25dbb7fd90ce30683c31ddc625b748bf680fcca2",
+        "bytes": 45542
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.04317470017569319,
+          "ci_low": -0.032285490034171034,
+          "ci_high": 0.11277702334068568,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 3.3306690738754696e-16,
+          "interval_max_residual": 5.551115123125783e-17,
+          "point_residual": 0.0,
+          "difference": 0.06678520917415498,
+          "ci_low": 0.008558713958731715,
+          "ci_high": 0.12194614033782888,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 8.881784197001252e-16,
+          "interval_max_residual": 4.440892098500626e-16,
+          "point_residual": 0.0,
+          "difference": -0.5722420435555051,
+          "ci_low": -0.871863543387872,
+          "ci_high": -0.2608824444360128,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_core_all/decoder_layer_16/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "6bd349a2902d23af31218252eaf4ca08333fe678f4436ec75f206a121bc28a26",
+        "bytes": 59951
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.03323567112250503,
+          "ci_low": 0.005188353464686835,
+          "ci_high": 0.06293010239286334,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0078125,
+          "ci_low": -0.029296875,
+          "ci_high": 0.046875,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.007751937984496138,
+          "ci_low": -0.030042791126557434,
+          "ci_high": 0.04679451161834554,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.03371603058283712,
+          "ci_low": 0.003809035937419994,
+          "ci_high": 0.0659939545287428,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.08036352251580303,
+          "ci_low": -0.18240583134265273,
+          "ci_high": 0.016808405735156535,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_core_all/decoder_layer_16/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "4fe747209e2912a3a8684e69af6d8edfeb4e4fe4b40696701a993c4a01749350",
+        "bytes": 58173
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.1044527864249527,
+          "ci_low": 0.050339077627538156,
+          "ci_high": 0.15623099144829855,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.00390625,
+          "ci_low": -0.01171875,
+          "ci_high": 0.01953125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.003753891228712669,
+          "ci_low": -0.01250405248348423,
+          "ci_high": 0.020220152859423288,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 3.3306690738754696e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.09450336227701384,
+          "ci_low": 0.04112786766208294,
+          "ci_high": 0.14775383737781783,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 4.440892098500626e-16,
+          "point_residual": 0.0,
+          "difference": 1.723756967076878,
+          "ci_low": 1.4160615252613733,
+          "ci_high": 2.0470194052891073,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_core_all/final_norm/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "66729f542242e85d20f63dcc81cd2a4f62de07bf128fc82c86699885f31b064b",
+        "bytes": 60738
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.06372459256546414,
+          "ci_low": 0.03169796664957292,
+          "ci_high": 0.09581932443654238,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.05859375,
+          "ci_low": 0.0234375,
+          "ci_high": 0.095703125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0590245986693525,
+          "ci_low": 0.024729119294336806,
+          "ci_high": 0.09646517924542826,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 1.1102230246251565e-16,
+          "point_residual": 0.0,
+          "difference": 0.06684931663604898,
+          "ci_low": 0.029962995681562164,
+          "ci_high": 0.10647640893497057,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.08033679701091523,
+          "ci_low": -0.11111725151870806,
+          "ci_high": -0.04848610874795512,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_core_all/final_norm/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "296361afbcc0e364377311131aaaa3d0382f9cb0bbfc124d7773d7dadaa45862",
+        "bytes": 44827
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.20278642495269483,
+          "ci_low": 0.14939543576806405,
+          "ci_high": 0.26067102257480357,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 3.3306690738754696e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.2387993435980692,
+          "ci_low": 0.1771378119870025,
+          "ci_high": 0.28994691554501606,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 8.881784197001252e-16,
+          "interval_max_residual": 8.881784197001252e-16,
+          "point_residual": 0.0,
+          "difference": -3.400412879328572,
+          "ci_low": -3.751549171187857,
+          "ci_high": -3.0276701409291022,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_300_all/decoder_layer_16/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "3f1aedaf5aad2f3fda1763a1d035d4fede27e9978508b9d244a5f9d28dfc70da",
+        "bytes": 59023
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0027924010070954353,
+          "ci_low": -0.008700163314424544,
+          "ci_high": 0.014208956265120242,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.01953125,
+          "ci_low": -0.005859375,
+          "ci_high": 0.044921875,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.019653620202945032,
+          "ci_low": -0.0067624259703095374,
+          "ci_high": 0.04539859927492454,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 6.938893903907228e-18,
+          "point_residual": 0.0,
+          "difference": -0.0003819488835153928,
+          "ci_low": -0.01623395057347262,
+          "ci_high": 0.014406866268618434,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.01597665532326098,
+          "ci_low": -0.06713417270252053,
+          "ci_high": 0.04012588321060791,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_300_all/decoder_layer_16/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "324c52bce66fdc1c04c503ae0ccd032ac988dbf71269cc702309cb3720c13136",
+        "bytes": 59842
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 5.551115123125783e-17,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.16861219195849547,
+          "ci_low": -0.23286704001238412,
+          "ci_high": -0.10999270317196021,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.01953125,
+          "ci_low": -0.00390625,
+          "ci_high": 0.04296875,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.019638361181048225,
+          "ci_low": -0.0036687438905180806,
+          "ci_high": 0.04297256195812006,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 3.3306690738754696e-16,
+          "interval_max_residual": 1.1102230246251565e-16,
+          "point_residual": 0.0,
+          "difference": -0.17942327534126923,
+          "ci_low": -0.23477448975195797,
+          "ci_high": -0.11944674503862392,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 8.881784197001252e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 1.9571485107665518,
+          "ci_low": 1.5605575249235122,
+          "ci_high": 2.3384094778914606,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_300_all/final_norm/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "77dc65a2b2e39e388a4b894db127b0c391afee3c4ad7fec0f2116b3640202c35",
+        "bytes": 60802
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.002441443503471419,
+          "ci_low": -0.03622696050252709,
+          "ci_high": 0.04210509611170038,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.021484375,
+          "ci_low": -0.021484375,
+          "ci_high": 0.0625,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.021599145494773708,
+          "ci_low": -0.020181431399201758,
+          "ci_high": 0.06264026403919787,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 2.1076890233118206e-16,
+          "point_residual": 0.0,
+          "difference": 0.03104460891641203,
+          "ci_low": -0.004358678387241355,
+          "ci_high": 0.06696376337644426,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.0283488114566689,
+          "ci_low": -0.06874322072058238,
+          "ci_high": 0.012323175167117761,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_prom_300_all/final_norm/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "1464fe55d6f31f325108771a95a1d86715c954856462e6dd2af9304ec0b4fb37",
+        "bytes": 56163
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 5.551115123125783e-17,
+          "interval_max_residual": 5.551115123125783e-17,
+          "point_residual": 0.0,
+          "difference": 0.37798123140306705,
+          "ci_low": 0.3208715613128409,
+          "ci_high": 0.4409563414131297,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.0078125,
+          "ci_low": -0.01953125,
+          "ci_high": 0.001953125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.007873655298695381,
+          "ci_low": -0.019626913790587907,
+          "ci_high": 0.0022815877257998207,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 3.3306690738754696e-16,
+          "interval_max_residual": 1.1102230246251565e-16,
+          "point_residual": 0.0,
+          "difference": 0.3262324199151939,
+          "ci_low": 0.2751745349625685,
+          "ci_high": 0.37063791526153717,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 1.7763568394002505e-15,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -9.297657716568875,
+          "ci_low": -10.173685566273054,
+          "ci_high": -8.393404579774879,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_splice_reconstructed/decoder_layer_16/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "51a66d9a119deed250a6efd28ae61cdde0864fca5ac61249386061fa99ca90ec",
+        "bytes": 65223
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.05024330434153601,
+          "ci_low": 0.01886803997224006,
+          "ci_high": 0.08213984668065172,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.044921875,
+          "ci_low": -0.001953125,
+          "ci_high": 0.08949852473813152,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.06333257998482911,
+          "ci_low": 0.011246265231407575,
+          "ci_high": 0.11390577487648247,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 1.1102230246251565e-16,
+          "point_residual": 0.0,
+          "difference": 0.06454837500309973,
+          "ci_low": 0.020723460930082257,
+          "ci_high": 0.10718381803547235,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.10139222005987447,
+          "ci_low": -0.22961029404708547,
+          "ci_high": 0.03456254720551049,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_splice_reconstructed/decoder_layer_16/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "f8bda60a2a91208cc7130724d8395df1713521359d3c2bc0f2ff18b3eb9a1cff",
+        "bytes": 65276
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.06209122839387615,
+          "ci_low": 0.025502692464083692,
+          "ci_high": 0.10308005307111345,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.029296875,
+          "ci_low": -0.06640949883806262,
+          "ci_high": 0.0078125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.04373577729979111,
+          "ci_low": 0.01239755349740498,
+          "ci_high": 0.07773132520349925,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 2.7755575615628914e-16,
+          "interval_max_residual": 5.551115123125783e-17,
+          "point_residual": 0.0,
+          "difference": 0.03703034603591354,
+          "ci_low": 0.008691061255041049,
+          "ci_high": 0.06999819262927778,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 8.881784197001252e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.3713346880506032,
+          "ci_low": -0.14938432121262038,
+          "ci_high": 0.8583495381991618,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_splice_reconstructed/final_norm/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "28e798b98c93e96489d26d551f9d46fbda730841ccdf4cb4776bd6a28a5b85b9",
+        "bytes": 64790
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.009713233391194454,
+          "ci_low": -0.05272885490558685,
+          "ci_high": 0.03532798914669673,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.00390625,
+          "ci_low": -0.04700615583379248,
+          "ci_high": 0.04296875,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.0069680097794284634,
+          "ci_low": -0.04939590985222937,
+          "ci_high": 0.06801256366226223,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 2.7755575615628914e-16,
+          "interval_max_residual": 4.85722573273506e-17,
+          "point_residual": 0.0,
+          "difference": -0.005499408173501696,
+          "ci_low": -0.04771037887602491,
+          "ci_high": 0.03398125325056323,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.002711547737081599,
+          "ci_low": -0.020906295878971498,
+          "ci_high": 0.02490144408319031,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_splice_reconstructed/final_norm/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "3657e53179c1c6fe5526629e5319ec6fe246d9c07c9e589e96fa2adf28e78d21",
+        "bytes": 64142
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.03169681241296496,
+          "ci_low": -0.0744557932559738,
+          "ci_high": 0.011917368921111973,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.005859375,
+          "ci_low": -0.025341130604288498,
+          "ci_high": 0.03711119052715263,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.00984019734019731,
+          "ci_low": -0.029392455756933097,
+          "ci_high": 0.051697212994135794,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 2.220446049250313e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.023193553232219,
+          "ci_low": -0.05474843675532468,
+          "ci_high": 0.011495528063686035,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 1.7763568394002505e-15,
+          "interval_max_residual": 8.881784197001252e-16,
+          "point_residual": 0.0,
+          "difference": -7.555139913492276,
+          "ci_low": -8.25089084699247,
+          "ci_high": -6.855783136019198,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_mouse_0/decoder_layer_16/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "4366d76fbe7c4d48983b143005d65a1ec43697ca9dea7db145370b4c461c9c1a",
+        "bytes": 60824
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.04416793893129767,
+          "ci_low": 0.01572456167433091,
+          "ci_high": 0.07361268617076135,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.04296875,
+          "ci_low": 0.007763671875000003,
+          "ci_high": 0.08203125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.043725190839694617,
+          "ci_low": 0.007508845899165872,
+          "ci_high": 0.08305299703484659,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 2.0816681711721685e-16,
+          "point_residual": 0.0,
+          "difference": 0.0400068381732277,
+          "ci_low": 0.01809720063962792,
+          "ci_high": 0.06272035137773291,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.08036768818985796,
+          "ci_low": -0.17138517017528487,
+          "ci_high": 0.010174451344924873,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_mouse_0/decoder_layer_16/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "60b75490c047458b9ebbeacacccf09c8c9aafd2a029e642539e3ba24c6cb5a42",
+        "bytes": 59850
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.13064122137404577,
+          "ci_low": 0.09065261384919919,
+          "ci_high": 0.1724235840740154,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.013671875,
+          "ci_low": -0.005859375,
+          "ci_high": 0.03515625,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.014641221374045776,
+          "ci_low": -0.004343051893243665,
+          "ci_high": 0.03496321980969561,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.18033473577269454,
+          "ci_low": 0.1287330648390092,
+          "ci_high": 0.22538963496791953,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 8.881784197001252e-16,
+          "interval_max_residual": 1.1102230246251565e-16,
+          "point_residual": 0.0,
+          "difference": 1.1365727483483674,
+          "ci_low": 0.7450478571076837,
+          "ci_high": 1.5092952769276575,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_refit",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_mouse_0/final_norm/seed42/dev_new_refit_vs_h3.npz",
+        "sha256": "44a9d4e9bb0ef8d199099c5c05eba78fd5664bf897f0c074f1d2b99f3652acd1",
+        "bytes": 61200
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.18961832061068695,
+          "ci_low": 0.1360368534209174,
+          "ci_high": 0.24125370664584533,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.158203125,
+          "ci_low": 0.107421875,
+          "ci_high": 0.205078125,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.1576030534351145,
+          "ci_low": 0.10795331282305803,
+          "ci_high": 0.20482815571508262,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 4.440892098500626e-16,
+          "interval_max_residual": 2.220446049250313e-16,
+          "point_residual": 0.0,
+          "difference": 0.2191590669027621,
+          "ci_low": 0.1638730623333638,
+          "ci_high": 0.27423252296909356,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.19007424180732047,
+          "ci_low": -0.22752039026042492,
+          "ci_high": -0.1491138238044316,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "split": "dev",
+      "policy": "new_fixed_base",
+      "status": "PASS",
+      "saved_draws": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/paired_bootstrap/other_five/gue_mouse_0/final_norm/seed42/dev_new_fixed_base_vs_h3.npz",
+        "sha256": "14b4ad3d309f769bdb645f857d7fd7e2ed73e20dac3b1854b1aa48f7f0dd4c05",
+        "bytes": 61555
+      },
+      "metrics": [
+        {
+          "metric": "auroc",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.15638167938931302,
+          "ci_low": 0.10310577728636396,
+          "ci_high": 0.20931370924953865,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.01953125,
+          "ci_low": -0.0390625,
+          "ci_high": 0.076171875,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "balanced_accuracy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.025404580152671663,
+          "ci_low": -0.02788090492142842,
+          "ci_high": 0.07822806656637746,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "average_precision",
+          "draw_max_residual": 5.551115123125783e-16,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": 0.18952463161585276,
+          "ci_low": 0.13321385198294747,
+          "ci_high": 0.24607959250953035,
+          "valid": 2000,
+          "invalid": 0
+        },
+        {
+          "metric": "classification_cross_entropy",
+          "draw_max_residual": 0.0,
+          "interval_max_residual": 0.0,
+          "point_residual": 0.0,
+          "difference": -0.04182471377554642,
+          "ci_low": -0.09310383842758205,
+          "ci_high": 0.010637670032608959,
+          "valid": 2000,
+          "invalid": 0
+        }
+      ]
+    }
+  ],
+  "lm_paired_checks": [
+    {
+      "contrast": "R1-base",
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "emp_H3",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "emp_H3",
+      "split": "test",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_tf_0",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_tf_0",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_tf_0",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_tf_0",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_tf_0",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_tf_0",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_prom_core_all",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_prom_300_all",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_splice_reconstructed",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R1-base",
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-base",
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "metric": "causal_nll",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    },
+    {
+      "contrast": "R3-R1 (nonadjacent)",
+      "task": "gue_mouse_0",
+      "split": "dev",
+      "metric": "perplexity",
+      "draws": 2000,
+      "max_residual": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "interpretation": "2000 paired exact/RC-group draws, seed20261103; pointwise exploratory conditional on fitted heads; not homology groups; R3-R1 nonadjacent; CV seeds are not checkpoint replicates",
+  "new_R4_R5_R6_contrasts": 0,
+  "control_bootstrap_scope": "All original36 controls have inherited full draw audits, fresh probability/point-metric checks; resampling identity freshly validated",
+  "source_sha256": "f9ff34a2fa98b46131cb6c94c1666a8d192ac02b56fed789e964f0257e15cf20",
+  "wall_seconds": 16.197090305999154,
+  "cpu_process_seconds": 41.012481972
+}

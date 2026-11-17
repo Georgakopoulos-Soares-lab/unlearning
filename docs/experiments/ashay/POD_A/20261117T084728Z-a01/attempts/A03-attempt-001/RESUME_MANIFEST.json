@@ -1,0 +1,126 @@
+{
+  "schema": "pod-a-a03-resume-v1",
+  "stage": "A03",
+  "attempt_id": "A03-attempt-001",
+  "completed_families": [
+    "package31 checks",
+    "A02 immutable handoff input verification",
+    "four archive restores/allbytes",
+    "frozen cohort/labels/groups18fold assignments",
+    "990receipt dependencies/all-unit structure",
+    "108heads+72transfers+36controls",
+    "28pairedpolicy panels/21LMaggregates/42LMintervals",
+    "exact training-only fixture/all26 anchors",
+    "semantic/exposure qualified audit"
+  ],
+  "missing_A03_scientific_units": [],
+  "failed_A03_scientific_units": [],
+  "preserve_and_do_not_repeat": [
+    "A01/A02 audits",
+    "verified immutable archives",
+    "completed historical CPU checks"
+  ],
+  "pending_closure": [],
+  "next_state": "WAITING_FOR_APPROVAL: A04",
+  "next_stage_approved": false,
+  "required_new_direct_approval": "A04",
+  "time_policy": "ACTIVE_USER_SUPERSESSION; reporting only",
+  "original_start_utc": null,
+  "paths": {
+    "run_id": "20261117T084728Z-a01",
+    "attempt_id": "A03-attempt-001",
+    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001",
+    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001",
+    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001",
+    "docs": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001",
+    "root_control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01",
+    "prompt_commit": "1f7280d118cd540804b4fcef4b0e4768b48a2d17",
+    "research_head_before": "4f230c0a5c09be09f0326a2497fd548be16b249f",
+    "started_utc": "2026-11-17T12:22:59.776829+00:00",
+    "time_policy": {
+      "schema": "pod-a-time-policy-v2",
+      "status": "ACTIVE_USER_SUPERSESSION",
+      "source": "Current direct request explicitly invoking read_a02.md",
+      "source_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+      "source_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+      "historical_budget_records_preserved": true,
+      "original_start_utc": null,
+      "active_hard_deadline_utc": null,
+      "active_science_cutoff_utc": null,
+      "active_fixed_closure_reserve_hours": null,
+      "prior_wall_clock_deadlines_science_cutoffs_fixed_reserve": "SUPERSEDED_NOT_EXECUTION_GATES",
+      "time_tracking": "REPORTING_ONLY",
+      "provider_rental_start_utc": null,
+      "provider_hourly_rate_usd": null,
+      "cost_usd": null,
+      "ask_for_original_or_replacement_deadline": false,
+      "stage_approval_required": true,
+      "stage_scope": "A02 only; stop for separate A03 approval"
+    }
+  },
+  "resume_command_policy": "No automatic resume/future dispatcher. For interruption, fresh A03 approval is required before missing closure only. On this successful handoff no A03 scientific rerun is required.",
+  "owned_cli_help_verified": true,
+  "completed_receipts": {
+    "RECOVERY_DEPENDENCIES.json": "ee8ae60eb8cdd70be71e3fd622926e93c31a6e914660a7e8271a4a2df56fee79",
+    "RESTORE_VALIDATION.json": "99a9a7318c4aef201fc2e3165bc5ef276b2cabe341e1ba093fab8af386b26109",
+    "PATH_TRANSLATION.json": "415dc09aa6b3d1dbd0e3abc3b507c9a52d2c9a3a54a2b0ae96d53b0b72f48f9a",
+    "BACKUP_ACCESS_CHECK.json": "a90e77fd5253eb489637de7dc338d6ea136a9fb050db26a7704ae6275387b535",
+    "DATA_AUDIT.json": "ae0800179006b747ebb5240dd441a15965628a7b497a35e818f8436473b6f364",
+    "LABEL_SOURCE_MAP.csv": "936842cd620653138cc4e0b3babfc363da6ae3c6ce9531de2ac53f8dcbcf4631",
+    "EXPOSURE_AUDIT.csv": "c33f4140b4c034f8b2b2bcf59a9d72329394e50a032a9c683eb103eded9d284b",
+    "REUSE_MATRIX.csv": "594175d2d35a26e362d7e0f355c8e936ac5cfe841cefa9a97102d7563cf2f2b7",
+    "FIXED_REFERENCE_INDEX.json": "1e189a430072e8d8b8d96b8b5026776f6b031b382df2334c34e0255b85a6b4db",
+    "CONTROL_REUSE_INDEX.json": "5352e77a7984ed985ba2f79e53fab9092335abc0f049956d70b6bddb1da6716a",
+    "NUMERICAL_RECOVERY_PLAN.json": "97f6ddcadb0fc4f7008ab1f280362657e806f3f18cdba3f5078e6142d3bb3e8b",
+    "NUMERICAL_RECOVERY_CHECKS.json": "74191d5dd07df45d72185c9e9beb69194762f2f1f141219e5b6920c0a2625bbf",
+    "PAIRING_AND_UNCERTAINTY_AUDIT.json": "1ed5e42b1c4da24f0dbe96b6451da0e1dcb4e7ba7ebe2e49423a0efdf0cc7885",
+    "RUNTIME_RECONSTRUCTION_INPUTS.json": "461bcf614484f624d8f834f8e74649700a82a66fe54e7d8c28956ad8e89fdf51",
+    "A04_REQUIREMENTS.md": "2b146b6309fe4472cde307aab4b709b89eb2e97dd3b145dbfbffd19b99477577",
+    "COVERAGE.csv": "60f922f119286a93de9c7fc7c1d735f1c684683cae2cea2f3a0359fe6ab3a3d3",
+    "AUDIT_SOURCE_MANIFEST.json": "ce6fc65c6545d9b61cfa2121b3c6450390e72aa32cb7ea74a2436ac07e1a9a50",
+    "A03_RECEIPT.json": "134c91a1fb50ea71f02fbfcf07b4998e02e0bf948cf271b0867d1b0e22c6596f",
+    "BACKUP_VERIFICATION.json": "3d6a5701e21d4eb41473fecbaf9ebc179d7eca526ef2994ad4338a3f506fa30e"
+  },
+  "verified_cli_checks": "CLI_VALIDATION.json",
+  "next_recommended_action": "Review A04_REQUIREMENTS.md, then separately approve A04 if desired. Do not rerun A03.",
+  "remaining_metadata_restrictions": [
+    {
+      "id": "LIVE_WEIGHTS_RUNTIME_PENDING_A04",
+      "affected": "All future model execution and new comparisons",
+      "status": "EXPECTED_NEXT_STAGE_GATE",
+      "action": "A04 must verify exact current native payloads/sidecars, runtime strict loading and same-model training-only bridge"
+    },
+    {
+      "id": "ACTUAL_DISK_ALLOCATION_UNKNOWN",
+      "affected": "46.550636802GB new weights plus native/conversion/scratch staging",
+      "status": "A04_STAGING_GATE",
+      "action": "Check provider allocation and bounded coexistence before staging"
+    },
+    {
+      "id": "R2_UNIDENTIFIED",
+      "affected": "R2 and its adjacent/other dependent contrasts",
+      "status": "SCOPED_MISSING_A02",
+      "action": "Keep conditional; no global absence claim; optional separately scoped identification"
+    },
+    {
+      "id": "BIOLOGICAL_LABEL_TF_IDENTITY_UNKNOWN",
+      "affected": "Biological interpretation only; numeric results remain qualified",
+      "status": "EXPLICIT_LIMITATION",
+      "action": "Supply versioned label map and TF accession mapping; unsent metadata questions recorded"
+    },
+    {
+      "id": "LINEAGE_OBJECTIVE_EXPOSURE_BUDGET_UNKNOWN",
+      "affected": "Causal retain-mixture claims and actual exposure accounting",
+      "status": "EXPLICIT_LIMITATION",
+      "action": "Supply actual consumed-row/source digests, parent hashes, sampler and executed objective/token counts"
+    },
+    {
+      "id": "A02_PROVIDER_EXHAUSTION_UNPROVED",
+      "affected": "Inventory completeness/global absence claims",
+      "status": "ACCEPTED_PARTIAL_HANDOFF",
+      "action": "Preserve bounded selected inventory; do not repeat unchanged discovery"
+    }
+  ],
+  "approved_future_stage": false,
+  "automatic_resume": false
+}

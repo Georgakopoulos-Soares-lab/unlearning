@@ -1,0 +1,106 @@
+{
+  "schema": "pod-a-a03-dependency-and-draw-audit-v1",
+  "status": "PASS",
+  "sealed_receipts": 990,
+  "unique_files_referenced_by_receipts": 15669,
+  "heterogeneous_receipt_types": {
+    "feature": 6,
+    "probe": 936,
+    "LM": 12,
+    "control": 36
+  },
+  "all_payload_file_integrity": "RESTORE_VALIDATION independently verifies23326 payload files plus4 checksum manifests; counts differ from scientific dependency accounting",
+  "draw_output_files": 2226,
+  "draw_output_types": {
+    "native_probe": 1092,
+    "R3_R1_paired": 1092,
+    "control": 42
+  },
+  "duplicated_base_prediction_records_exactly_equal": 546,
+  "all_resampling_population_arrays": "21 checked in PAIRING_POPULATION_CHECKS",
+  "loading_records": [
+    {
+      "role": "base",
+      "group": "H3",
+      "status": "INHERITED_LOADER_RECORD_STRUCTURALLY_VALIDATED",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/features/H3/base/loading.json",
+        "sha256": "22551f7480126243e39fa9b42f6f1e1231ac4f8dce084d0de8b5fdf5dc54356b",
+        "bytes": 5762
+      },
+      "missing_extra_state": 101,
+      "unexpected_extra_state": 0,
+      "live_qualification": "NOT_PERFORMED"
+    },
+    {
+      "role": "base",
+      "group": "other_five",
+      "status": "INHERITED_LOADER_RECORD_STRUCTURALLY_VALIDATED",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/features/other_five/base/loading.json",
+        "sha256": "22551f7480126243e39fa9b42f6f1e1231ac4f8dce084d0de8b5fdf5dc54356b",
+        "bytes": 5762
+      },
+      "missing_extra_state": 101,
+      "unexpected_extra_state": 0,
+      "live_qualification": "NOT_PERFORMED"
+    },
+    {
+      "role": "R1",
+      "group": "H3",
+      "status": "INHERITED_LOADER_RECORD_STRUCTURALLY_VALIDATED",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/features/H3/maxent/loading.json",
+        "sha256": "cf59f9101e03fb765f98ef3c1df3fd38239be3b4e204485065d97ba9fb221336",
+        "bytes": 9340
+      },
+      "missing_extra_state": 101,
+      "unexpected_extra_state": 0,
+      "live_qualification": "NOT_PERFORMED"
+    },
+    {
+      "role": "R1",
+      "group": "other_five",
+      "status": "INHERITED_LOADER_RECORD_STRUCTURALLY_VALIDATED",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/features/other_five/maxent/loading.json",
+        "sha256": "cf59f9101e03fb765f98ef3c1df3fd38239be3b4e204485065d97ba9fb221336",
+        "bytes": 9340
+      },
+      "missing_extra_state": 101,
+      "unexpected_extra_state": 0,
+      "live_qualification": "NOT_PERFORMED"
+    },
+    {
+      "role": "R3",
+      "group": "H3",
+      "status": "INHERITED_LOADER_RECORD_STRUCTURALLY_VALIDATED",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/features/H3/new/loading.json",
+        "sha256": "cf59f9101e03fb765f98ef3c1df3fd38239be3b4e204485065d97ba9fb221336",
+        "bytes": 9340
+      },
+      "missing_extra_state": 101,
+      "unexpected_extra_state": 0,
+      "live_qualification": "NOT_PERFORMED"
+    },
+    {
+      "role": "R3",
+      "group": "other_five",
+      "status": "INHERITED_LOADER_RECORD_STRUCTURALLY_VALIDATED",
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/features/other_five/new/loading.json",
+        "sha256": "cf59f9101e03fb765f98ef3c1df3fd38239be3b4e204485065d97ba9fb221336",
+        "bytes": 9340
+      },
+      "missing_extra_state": 101,
+      "unexpected_extra_state": 0,
+      "live_qualification": "NOT_PERFORMED"
+    }
+  ],
+  "detailed_private_draw_structure_index": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/audit-cache/ALL_BOOTSTRAP_STRUCTURES.json",
+  "numerical_reconstruction_scope": "Separate predeclared NUMERICAL_RECOVERY_CHECKS; this all-unit scan does not rerun all numerical values",
+  "source_sha256": "fc3399e68c5f8ba3c8c36a9052907f5aca4ef87e8851a8554b4c72170e1dbc2a",
+  "wall_seconds": 53.806140675005736,
+  "cpu_process_seconds": 28.632733527
+}

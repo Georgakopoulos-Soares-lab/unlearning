@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "commands": [
+    {
+      "command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/audit_code/a03_structural.py",
+        "--help"
+      ],
+      "status": "PASS",
+      "stdout_sha256": "d42015f23d898c9750b91823824905da1b742bd8bcbf6780f27a7c0f36963854"
+    },
+    {
+      "command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/audit_code/a03_numerical.py",
+        "--help"
+      ],
+      "status": "PASS",
+      "stdout_sha256": "ab8fd1303f8b2be413af45e872b099436523e0932ed787268b01522b5dd7a2bc"
+    },
+    {
+      "command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/audit_code/a03_runtime.py",
+        "--help"
+      ],
+      "status": "PASS",
+      "stdout_sha256": "a377c5b2eed42e6d47a92fa40dae7b4685372e6e303eb0873a9968f92de0dd14"
+    },
+    {
+      "command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/audit_code/a03_supplement.py",
+        "--help"
+      ],
+      "status": "PASS",
+      "stdout_sha256": "d87865ee1b39382f76f427a2ea6e61e617776ddbfe9530c6717d777f70b08466"
+    },
+    {
+      "command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/audit_code/a03_representative.py",
+        "--help"
+      ],
+      "status": "PASS",
+      "stdout_sha256": "bf8339a8795ef81068aedd95d65abd403f1672cf22c882481cbebe56b0aacd38"
+    },
+    {
+      "command": [
+        "/workspace/venvs/pod-a-tools/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/audit_code/a03_checkpoint.py",
+        "--help"
+      ],
+      "status": "PASS",
+      "stdout_sha256": "b2e76c1676031aac545cb78947db33663719c63715f0863ef0e2bbb8c9e85cdc"
+    }
+  ],
+  "no_scientific_job_started_by_help": true,
+  "execution_environments": "CPU audit venv for scientific checks; separate existing HF admin venv for private protection"
+}

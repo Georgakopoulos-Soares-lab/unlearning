@@ -1,0 +1,176 @@
+{
+  "schema": "pod-a-a03-restore-validation-v1",
+  "dependencies": [
+    {
+      "dependency_id": "base_R1",
+      "status": "VERIFIED",
+      "archive_revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "archive_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "expected_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "expected_bytes": 10108100047,
+      "started_utc": "2026-11-17T12:25:18.097551+00:00",
+      "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 56.781146217999776
+        }
+      ],
+      "sidecar_download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 0.27127542100060964
+        }
+      ],
+      "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e75b95d9ca579ddb85fe354bea52bb9a78215b16/multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "archive_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e75b95d9ca579ddb85fe354bea52bb9a78215b16/multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz.sha256",
+      "sidecar_sha256": "df8fe6f179c80d3a214ad1d847684c50c7cf390b9ba370c9ac3814faf772e49b",
+      "archive_size_and_hash": "PASS",
+      "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+      "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z",
+      "regular_files": 14551,
+      "payload_files_hash_verified": 14550,
+      "checksum_manifest_self_sha256": "b381c43485b40f0e58dec74d74d2faf579cdfbc553ae85608fff20d54598d813",
+      "exact_member_coverage": true,
+      "uncompressed_bytes": 11288882782,
+      "safe_member_check": "PASS",
+      "restored_file_hashes": "PASS",
+      "historical_payload_read_only": true,
+      "completed_utc": "2026-11-17T12:32:21.059796+00:00",
+      "wall_seconds": 422.96226119399944,
+      "cpu_process_seconds": 204.913432977
+    },
+    {
+      "dependency_id": "controls",
+      "status": "VERIFIED",
+      "archive_revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "archive_path": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "expected_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "expected_bytes": 47129813,
+      "started_utc": "2026-11-17T12:32:21.090111+00:00",
+      "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 0.8202480639993155
+        }
+      ],
+      "sidecar_download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 0.23026459899847396
+        }
+      ],
+      "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/3e1fc6dea176fac609be95ca8834a9b1961274c6/benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "archive_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/3e1fc6dea176fac609be95ca8834a9b1961274c6/benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz.sha256",
+      "sidecar_sha256": "a9cfccdee552d8c13bdd0708cf4d74ba99b74254d4f80480b813e2f6d44832be",
+      "archive_size_and_hash": "PASS",
+      "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+      "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1",
+      "regular_files": 447,
+      "payload_files_hash_verified": 446,
+      "checksum_manifest_self_sha256": "237a1ca1e275830c0f73956792a6ff3c3dea91c06caf936b2a8674ab0c08d97a",
+      "exact_member_coverage": true,
+      "uncompressed_bytes": 77774927,
+      "safe_member_check": "PASS",
+      "restored_file_hashes": "PASS",
+      "historical_payload_read_only": true,
+      "completed_utc": "2026-11-17T12:32:27.870491+00:00",
+      "wall_seconds": 6.780387609996978,
+      "cpu_process_seconds": 1.7830425820000073
+    },
+    {
+      "dependency_id": "R3",
+      "status": "VERIFIED",
+      "archive_revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+      "archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "expected_sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "expected_bytes": 4412868094,
+      "started_utc": "2026-11-17T12:32:27.897959+00:00",
+      "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 27.155149278001772
+        }
+      ],
+      "sidecar_download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 0.35602552599812043
+        }
+      ],
+      "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3/multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "archive_sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3/multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz.sha256",
+      "sidecar_sha256": "c14541270e412b96b0b50d9f5d9867ddb16bbe8213ed878daf91d4d56aab20a5",
+      "archive_size_and_hash": "PASS",
+      "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+      "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z",
+      "regular_files": 8200,
+      "payload_files_hash_verified": 8199,
+      "checksum_manifest_self_sha256": "4bb31aa3e98018db0dc4deea2fb64f102824985594948ba97aa5f7e009a47359",
+      "exact_member_coverage": true,
+      "uncompressed_bytes": 5003047603,
+      "safe_member_check": "PASS",
+      "restored_file_hashes": "PASS",
+      "historical_payload_read_only": true,
+      "completed_utc": "2026-11-17T12:35:49.067243+00:00",
+      "wall_seconds": 201.16930421699726,
+      "cpu_process_seconds": 89.399038768
+    },
+    {
+      "dependency_id": "preparation",
+      "status": "VERIFIED",
+      "archive_revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+      "archive_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+      "expected_sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+      "expected_bytes": 6963484,
+      "started_utc": "2026-11-17T12:35:49.105091+00:00",
+      "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+      "download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 0.5612100759972236
+        }
+      ],
+      "sidecar_download_attempts": [
+        {
+          "attempt": 1,
+          "status": "DOWNLOADED_OR_EXACT_CACHE",
+          "seconds": 0.2503159309999319
+        }
+      ],
+      "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e9710c11d54c23e9081b15e63a6616f2a4214797/incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+      "archive_sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+      "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e9710c11d54c23e9081b15e63a6616f2a4214797/incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz.sha256",
+      "sidecar_sha256": "94f8ea5d9375c19e57053d3e1b20775220b206fe37f42ca4a676cc1214c91421",
+      "archive_size_and_hash": "PASS",
+      "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+      "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation/incremental-retain-eval-v1-final-20261110T190751Z",
+      "regular_files": 132,
+      "payload_files_hash_verified": 131,
+      "checksum_manifest_self_sha256": "abd040298f415c50c91a072e83e621d4be612aa1f9163920fcb95f8bedc0d510",
+      "exact_member_coverage": true,
+      "uncompressed_bytes": 36774527,
+      "safe_member_check": "PASS",
+      "restored_file_hashes": "PASS",
+      "historical_payload_read_only": true,
+      "completed_utc": "2026-11-17T12:35:51.628312+00:00",
+      "wall_seconds": 2.5232306819962105,
+      "cpu_process_seconds": 0.6065566320000357
+    }
+  ],
+  "total_verified_uncompressed_bytes": 16406479839,
+  "status": "PASS",
+  "scope": "All archive and all restored member bytes; numerical reuse audit is separate."
+}

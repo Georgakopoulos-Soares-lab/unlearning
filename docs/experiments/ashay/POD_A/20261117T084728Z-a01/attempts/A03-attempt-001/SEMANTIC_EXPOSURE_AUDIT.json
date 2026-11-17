@@ -1,0 +1,41 @@
+{
+  "schema": "pod-a-a03-semantic-exposure-audit-v1",
+  "status": "COMPLETE_WITH_EXPLICIT_UNRESOLVED_FIELDS",
+  "label_source_rows": 12,
+  "exposure_rows": 36,
+  "scoped_member_manifests": [
+    {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/CHECKSUMS.sha256",
+      "sha256": "b381c43485b40f0e58dec74d74d2faf579cdfbc553ae85608fff20d54598d813",
+      "bytes": 1838974
+    },
+    {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/CHECKSUMS.sha256",
+      "sha256": "237a1ca1e275830c0f73956792a6ff3c3dea91c06caf936b2a8674ab0c08d97a",
+      "bytes": 52519
+    },
+    {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/CHECKSUMS.sha256",
+      "sha256": "4bb31aa3e98018db0dc4deea2fb64f102824985594948ba97aa5f7e009a47359",
+      "bytes": 1035611
+    },
+    {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation/incremental-retain-eval-v1-final-20261110T190751Z/CHECKSUMS.sha256",
+      "sha256": "abd040298f415c50c91a072e83e621d4be612aa1f9163920fcb95f8bedc0d510",
+      "bytes": 13115
+    }
+  ],
+  "actual_benign_retain_row_manifests_found": 0,
+  "scope_limit": "Only four explicit authorized dependencies and accepted A02 metadata; no account-wide search or unrelated forget data inspected. Absence here is not global absence.",
+  "actual_overlap_computation": "BLOCKED_MISSING_TRAINING_ROW_DIGEST_MANIFEST; not reported as zero",
+  "questions_unsent": [
+    "Supply immutable numeric-to-biological label mapping and exact human/mouse TF0 accession metadata",
+    "Supply intended and actually consumed benign retain row/source digests, sampler revision, repeats and per-source token counts",
+    "Supply checkpoint parent hashes and executed objective/runtime code; identify R2 if intended"
+  ],
+  "messages_sent": false,
+  "cohort_changes": false,
+  "source_sha256": "fc3399e68c5f8ba3c8c36a9052907f5aca4ef87e8851a8554b4c72170e1dbc2a",
+  "wall_seconds": 53.98881280400383,
+  "cpu_process_seconds": 28.754956757000002
+}

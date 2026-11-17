@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "run_id": "20261117T084728Z-a01",
+  "server": {
+    "hostname_sha256": "fb2fdc69e74171312390fd4a80c7e4b4e9e118859ed1823f06e4904b22b80462",
+    "boot_id_sha256": "9a0da30dba9393153ff51d2a2af0b275472313fd5e8811eb5f3f5a1e1cf2e5bc",
+    "runpod_pod_id_sha256": "190433a38ad55f0284da26e2f7b3b81ec000efabf134af993fd996c1478baee5",
+    "assignment_basis": "Direct current user Pod A assignment plus dedicated matching worktree/origin and setup-A records; not independent provider-account verification.",
+    "timezone": "UTC",
+    "container_start_utc": "2026-11-17T06:14:41.200000+00:00"
+  },
+  "worktree": "/workspace/wt-pod-a",
+  "current_stage": "A03",
+  "attempt_id": "A03-attempt-001",
+  "status": "COMPLETE",
+  "lifecycle": "WAITING",
+  "lifecycle_history": [
+    "APPROVAL_RECEIVED",
+    "PINNED",
+    "PREREQUISITES_CHECKED",
+    "RUNNING_ADMIN_DIAGNOSTICS_ONLY",
+    "PARTIAL",
+    "WAITING_FOR_STEERING",
+    "A03_APPROVAL_RECEIVED",
+    "A03_PINNED",
+    "A03_PREREQUISITES_CHECKED",
+    "A03_RUNNING",
+    "A03_DRAINING",
+    "A03_COMPLETE",
+    "WAITING_FOR_APPROVAL_A04"
+  ],
+  "approval": {
+    "stage": "A03",
+    "attempt_id": "A03-attempt-001",
+    "direct_message": "given the files here,  \ud83d\udc4d A03\n\nFetch and pin the updated A03 package and verify its checksums.\nAccept A02\u2019s partial handoff and preserve completed work.\n\nCarry forward my recorded time-policy supersession.\nDo not reopen the deadline blocker or repeat unchanged A01/A02 audits.\n\nExecute A03 only. Complete its recovery, data/reuse audits,\nsaved-head numerical checks and actionable A04 handoff.\n\nStop afterward for my separate A04 approval.   and   pull from here and execute and get this done with the greateat amount of rigorour and robustness possible - https://github.com/ashay-sriv-06/test-prompts-push/tree/POD_A also only pull the files that were uploaded in the last 40 minutes from here as there might be older versions/duplicates",
+    "message_time_utc": null,
+    "observed_time_utc": "2026-11-17T12:22:59.776829+00:00",
+    "prompt_commit": "1f7280d118cd540804b4fcef4b0e4768b48a2d17",
+    "prior_state_sha256": "6254b1a06b33b7b63eb53dcdc33ff9fd3cf52879462d2bc68db713330ad3f246",
+    "research_head_before": "4f230c0a5c09be09f0326a2497fd548be16b249f",
+    "recent_file_selection": {
+      "observed_utc": "2026-11-17T12:17:10.136710+00:00",
+      "window_start_utc": "2026-11-17T11:37:10.136710+00:00",
+      "upload_commit": "1f7280d118cd540804b4fcef4b0e4768b48a2d17",
+      "upload_committer_time_utc": "2026-11-17T12:14:04Z",
+      "selected_recent_files": [
+        "A02_REVIEW.md",
+        "A03_CHECKSUM_ENTRY.txt",
+        "A03_RECOVERY_DATA_AUDIT.md",
+        "A03_REVISION_SOURCES.json",
+        "REVISION_VALIDATION.json",
+        "SHA256SUMS",
+        "UPDATE_README.md"
+      ],
+      "new_prompt_scope": "Only these recent root upload files selected; no similarly named older prompt/version used. Unchanged master/contracts/support are reused by verified blob identity.",
+      "old_historical_archives_note": "The 40-minute filter applies to requested prompt-repository uploads, not the explicitly authorized immutable historical scientific dependencies."
+    }
+  },
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_A",
+    "commit": "1f7280d118cd540804b4fcef4b0e4768b48a2d17",
+    "effective_files": [
+      {
+        "path": "POD_A_MASTER.md",
+        "sha256": "7ed638c1fa912302becedb1096a82ac3d097a6bf07117d738c3604f84c07588b"
+      },
+      {
+        "path": "A03_RECOVERY_DATA_AUDIT.md",
+        "sha256": "c65e8b3a4ab7e0d4e2fb05a9d7c14481491b7e05dfcc8e5d23f89ebe35926e8a"
+      },
+      {
+        "path": "SCIENTIFIC_CONTRACT.md",
+        "sha256": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413"
+      },
+      {
+        "path": "ARTIFACT_CONTRACT.md",
+        "sha256": "c58d9567f7dac25b163fbe494fbf9a2e10ed74db0d464f2395bf07ffd1f81f60"
+      },
+      {
+        "path": "SOURCE_NOTES.md",
+        "sha256": "d577f8176a47ddc47b59079393fca6c050795030be379d8e5d5c3bd613282bfa"
+      },
+      {
+        "path": "SOURCE_MANIFEST.json",
+        "sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f"
+      },
+      {
+        "path": "STAGE_MAP.json",
+        "sha256": "1a813e7dab6507be6766cc982b0b6ba5f5d2af962cfee029432c60dc64a5e54b"
+      }
+    ]
+  },
+  "research_head_before": "4f230c0a5c09be09f0326a2497fd548be16b249f",
+  "dirty_baseline": [],
+  "prior_state_sha256": "6254b1a06b33b7b63eb53dcdc33ff9fd3cf52879462d2bc68db713330ad3f246",
+  "source_evidence_manifest_sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f",
+  "runtime_sha256": "30430388af3fdb3997c9ec5108eaacfdb59c928037142392126e4c92ccf30822",
+  "protocol_sha256": "ee8bcd6d2c6e9c0f60a457f4ed10eff44dbcb23c80167ee2009e752857a355a6",
+  "protocol_status": "Frozen historical protocols/cohorts/reuse validated; prospective new runtime/coverage remains unqualified",
+  "coverage_plan_sha256": "60f922f119286a93de9c7fc7c1d735f1c684683cae2cea2f3a0359fe6ab3a3d3",
+  "selected_checkpoint_ids": [
+    "drive-folder:13EXn9LuTTmqHuYjdIoWQ36Ig27MZ51sI",
+    "drive-folder:154kF29Cjam2F2rC-ihj6_Oobmm-oNur1",
+    "drive-folder:16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv",
+    "drive-folder:1K19CrsvXAk6mIwB1m3xe1epomEHRtEUE",
+    "drive-folder:1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+    "drive-folder:1x1ugJ0Cd-ODGVWMHClxJojRZKBQXRf-V"
+  ],
+  "budget": {
+    "original_start_utc": null,
+    "deadline_utc": null,
+    "science_cutoff_utc": null,
+    "closure_reserve_hours": null,
+    "historical_limits_status": "SUPERSEDED",
+    "historical_record": "attempts/A02-attempt-001/PRIOR_BUDGET.json",
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "elapsed_time_reporting_started_utc": "2026-11-17T10:06:48.708951+00:00",
+    "limits_are_execution_gates": false,
+    "stage_approval_required": true,
+    "execution_time_policy": {
+      "schema": "pod-a-time-policy-v2",
+      "status": "ACTIVE_USER_SUPERSESSION",
+      "source": "Current direct request explicitly invoking read_a02.md",
+      "source_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+      "source_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+      "historical_budget_records_preserved": true,
+      "original_start_utc": null,
+      "active_hard_deadline_utc": null,
+      "active_science_cutoff_utc": null,
+      "active_fixed_closure_reserve_hours": null,
+      "prior_wall_clock_deadlines_science_cutoffs_fixed_reserve": "SUPERSEDED_NOT_EXECUTION_GATES",
+      "time_tracking": "REPORTING_ONLY",
+      "provider_rental_start_utc": null,
+      "provider_hourly_rate_usd": null,
+      "cost_usd": null,
+      "ask_for_original_or_replacement_deadline": false,
+      "stage_approval_required": true,
+      "stage_scope": "A02 only; stop for separate A03 approval"
+    }
+  },
+  "paths": {
+    "schema": "pod-a-paths-v1",
+    "run_id": "20261117T084728Z-a01",
+    "owner": "POD_A",
+    "research_worktree": "/workspace/wt-pod-a",
+    "research_common_directory": "/workspace/repos/unlearning-pod-a/.git",
+    "prompt_cache": "/workspace/test-prompts-push/.git",
+    "prompt_cache_note": "Existing isolated single-branch clone, exact origin verified; no additional remote prompt fetch after pinning. Tracked prompt files unchanged.",
+    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01",
+    "reports": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01",
+    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01",
+    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01",
+    "private_backup_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "private_backup_prefix": "POD_A/20261117T084728Z-a01/<stage>/<attempt-id>/",
+    "gpu_lock": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+    "gpu_lock_status": "NOT_CREATED_NOT_ACQUIRED_NO_GPU_WORK",
+    "path_isolation_verified": true,
+    "latest_attempt": "A03-attempt-001",
+    "latest_attempt_reports": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001",
+    "latest_attempt_control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001",
+    "stable_run_reused": true,
+    "current_artifact_root": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001",
+    "current_stage": "A03",
+    "current_recovery_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001"
+  },
+  "owned_scientific_processes": [],
+  "owned_scientific_locks": [],
+  "completion_receipts": [
+    {
+      "path": "A01_RECEIPT.json",
+      "scope": "Partial administrative A01 attempt; hash in external delivery receipt"
+    },
+    {
+      "path": "attempts/A01-attempt-002/A01_RECEIPT.json",
+      "scope": "Resumed administrative A01 check, same unresolved budget"
+    },
+    {
+      "path": "attempts/A01-attempt-003/A01_RECEIPT.json",
+      "scope": "Completed A01 administrative readiness and explicit deadline amendment"
+    },
+    {
+      "path": "attempts/A02-attempt-001/A02_RECEIPT.json",
+      "scope": "Partial bounded inventory, metadata QA and verified private metadata checkpoint"
+    },
+    {
+      "path": "attempts/A03-attempt-001/A03_RECEIPT.json",
+      "sha256": "134c91a1fb50ea71f02fbfcf07b4998e02e0bf948cf271b0867d1b0e22c6596f",
+      "scope": "Historical dependency recovery; frozen cohort/label/group/fold and all-unit reuse audits; predeclared saved-head/control/LM/bootstrap CPU recovery; qualified training-only A04 handoff"
+    }
+  ],
+  "blockers": [],
+  "next_recommended_action": "Separate A04 approval for training-only runtime/loading qualification per A04_REQUIREMENTS.md",
+  "future_stage_permission": false,
+  "resumed_from_attempt": "A02-attempt-001",
+  "next_stage_blockers": [
+    {
+      "id": "LIVE_WEIGHTS_RUNTIME_PENDING_A04",
+      "affected": "All future model execution and new comparisons",
+      "status": "EXPECTED_NEXT_STAGE_GATE",
+      "action": "A04 must verify exact current native payloads/sidecars, runtime strict loading and same-model training-only bridge"
+    },
+    {
+      "id": "ACTUAL_DISK_ALLOCATION_UNKNOWN",
+      "affected": "46.550636802GB new weights plus native/conversion/scratch staging",
+      "status": "A04_STAGING_GATE",
+      "action": "Check provider allocation and bounded coexistence before staging"
+    },
+    {
+      "id": "R2_UNIDENTIFIED",
+      "affected": "R2 and its adjacent/other dependent contrasts",
+      "status": "SCOPED_MISSING_A02",
+      "action": "Keep conditional; no global absence claim; optional separately scoped identification"
+    },
+    {
+      "id": "BIOLOGICAL_LABEL_TF_IDENTITY_UNKNOWN",
+      "affected": "Biological interpretation only; numeric results remain qualified",
+      "status": "EXPLICIT_LIMITATION",
+      "action": "Supply versioned label map and TF accession mapping; unsent metadata questions recorded"
+    },
+    {
+      "id": "LINEAGE_OBJECTIVE_EXPOSURE_BUDGET_UNKNOWN",
+      "affected": "Causal retain-mixture claims and actual exposure accounting",
+      "status": "EXPLICIT_LIMITATION",
+      "action": "Supply actual consumed-row/source digests, parent hashes, sampler and executed objective/token counts"
+    },
+    {
+      "id": "A02_PROVIDER_EXHAUSTION_UNPROVED",
+      "affected": "Inventory completeness/global absence claims",
+      "status": "ACCEPTED_PARTIAL_HANDOFF",
+      "action": "Preserve bounded selected inventory; do not repeat unchanged discovery"
+    }
+  ],
+  "a01_readiness": "Preserved completed A01 handoff; not reaudited",
+  "execution_time_policy": {
+    "schema": "pod-a-time-policy-v2",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "source": "Current direct request explicitly invoking read_a02.md",
+    "source_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "source_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+    "historical_budget_records_preserved": true,
+    "original_start_utc": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "prior_wall_clock_deadlines_science_cutoffs_fixed_reserve": "SUPERSEDED_NOT_EXECUTION_GATES",
+    "time_tracking": "REPORTING_ONLY",
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "ask_for_original_or_replacement_deadline": false,
+    "stage_approval_required": true,
+    "historical_source_stage_scope": "A02 only; stop for separate A03 approval",
+    "current_direct_approval": "A03 only; stop for separate A04 approval",
+    "carried_forward_by_explicit_user_request": true,
+    "current_source_request": "given the files here,  \ud83d\udc4d A03\n\nFetch and pin the updated A03 package and verify its checksums.\nAccept A02\u2019s partial handoff and preserve completed work.\n\nCarry forward my recorded time-policy supersession.\nDo not reopen the deadline blocker or repeat unchanged A01/A02 audits.\n\nExecute A03 only. Complete its recovery, data/reuse audits,\nsaved-head numerical checks and actionable A04 handoff.\n\nStop afterward for my separate A04 approval.   and   pull from here and execute and get this done with the greateat amount of rigorour and robustness possible - https://github.com/ashay-sriv-06/test-prompts-push/tree/POD_A also only pull the files that were uploaded in the last 40 minutes from here as there might be older versions/duplicates"
+  },
+  "active_stage_scope": "A03 COMPLETE; no A04 permission",
+  "inventory_limitations": [
+    {
+      "id": "R2_UNIDENTIFIED",
+      "affected": "R2 and its adjacent/other dependent contrasts",
+      "status": "SCOPED_MISSING_A02",
+      "action": "Keep conditional; no global absence claim; optional separately scoped identification"
+    },
+    {
+      "id": "LINEAGE_OBJECTIVE_EXPOSURE_BUDGET_UNKNOWN",
+      "affected": "Causal retain-mixture claims and actual exposure accounting",
+      "status": "EXPLICIT_LIMITATION",
+      "action": "Supply actual consumed-row/source digests, parent hashes, sampler and executed objective/token counts"
+    },
+    {
+      "id": "A02_PROVIDER_EXHAUSTION_UNPROVED",
+      "affected": "Inventory completeness/global absence claims",
+      "status": "ACCEPTED_PARTIAL_HANDOFF",
+      "action": "Preserve bounded selected inventory; do not repeat unchanged discovery"
+    }
+  ],
+  "waiting_state": "WAITING_FOR_APPROVAL: A04",
+  "runtime_identity_scope": "Isolated CPU audit environment only; actual GPU/model runtime NOT qualified",
+  "scientific_reuse_status": "COMPLETE_A03_HISTORICAL_SCOPE",
+  "manifest_sha256": {
+    "H3": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+    "other_five": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126"
+  },
+  "historical_model_feature_identity_index_sha256": "1cf85ef603aea4b99516ba71d5c01c42346781f61950115d13acef0230a04a85",
+  "administrative_A03_requirements_sha256": "fbea7ab5ae3f4aae8a52a6b0e31441b4ccc31cb178d9edf891ceaaee54869e4f",
+  "historical_protocols": [
+    {
+      "dependency": "base_R1",
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/PROTOCOL_V2.json",
+      "sha256": "ee8bcd6d2c6e9c0f60a457f4ed10eff44dbcb23c80167ee2009e752857a355a6"
+    },
+    {
+      "dependency": "R3",
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z/PROTOCOL_V2.json",
+      "sha256": "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462"
+    },
+    {
+      "dependency": "preparation",
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation/incremental-retain-eval-v1-final-20261110T190751Z/PROTOCOL_FROZEN.json",
+      "sha256": "b69b13f264cd26f8245872c6e1b99de658d14dfb71d1d7418f6a9d14bf1fb1a4"
+    }
+  ]
+}
