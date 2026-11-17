@@ -1,7 +1,7 @@
 {
   "stage": "B04",
-  "status": "BLOCKED_NO_SCIENTIFICALLY_QUALIFIED_ROUTE_OR_PAYLOAD",
-  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z",
+  "status": "WAITING_FOR_STEERING: B04",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z",
   "research_context": {
     "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
     "worktree": "/workspace/wt-POD_B",
@@ -19,35 +19,93 @@
     "refs/heads/experiments-ashay-relearning-benign-v1": "cf7b861619d05b8916690471fcd9469ab9d80f75",
     "refs/heads/main": "af92e593162478c8aa40b6303ed0f0e508affac7"
   },
-  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/PROMPT_RECEIPT.json",
-  "prompt_commit": "a248257d9610c9b33410c70c22859ca07104f2b5",
+  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/PROMPT_RECEIPT.json",
+  "prompt_commit": "8f9cc2cdbc3b33cba6693708ac66717fc5d3fcdb",
   "current_run_science_gpu_seconds": 0,
   "current_run_new_fits": 0,
   "next_stage_authorized": false,
-  "approved_scope": "B04 identity/runtime/training-only qualification; no training/fits/heldout evaluation",
-  "research_head_at_start": "fc7d4a31d1733caaf0a094fa2bbac7a8606324d3",
+  "approved_scope": "Resumed B04 native implementation and training-only engineering qualification; no training/fits/heldout evaluation/B05",
+  "research_head_at_start": "fc7caa245b7c43ffa57cc44313ef27a67a96aa79",
   "prompt_hashes": {
     "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
     "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
-    "POD_B_04_RUNTIME.md": "04c8e9aeeb4c5688d5aa49f332a1a5fb8e8f197fa51cc3b160d99b09f6c95f1a"
+    "POD_B_04_RUNTIME (1).md": "ce0aa8cc20c76c2caf779d8102d23101173ecf436e9d8c286b5a22d89026c611"
   },
   "budget": {
-    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-B.json",
-    "source_state_sha256": "efb43521cf721738ed04e7f06ec5d1585e5c40f65008f920eff467726d116e9e",
-    "session_window_start_utc": "2026-11-17T06:33:21+00:00",
-    "scientific_stage_cutoff_utc": "2026-11-17T17:33:21+00:00",
-    "session_deadline_utc": "2026-11-17T20:33:21+00:00",
-    "clock_reset": false,
-    "observed_utc": "2026-11-17T10:31:50.517788+00:00",
-    "remaining_to_scientific_cutoff_seconds": 25290.482212,
-    "remaining_to_session_deadline_seconds": 36090.482212,
-    "authorized_gpu_stage_seconds": null,
-    "null_gpu_allowance_meaning": "No separate fixed stage-seconds cap; stage approval still required",
-    "deadline_expired": false,
-    "provider_rental_start": null,
-    "provider_hourly_rate_usd": null,
-    "approval_waiting_consumes_original_window": true,
-    "preserved_ledger_files": [
+    "stage": "B04",
+    "mode": "ENGINEERING_DIAGNOSTIC",
+    "scientifically_qualified": false,
+    "downstream_eligible": false,
+    "window_start_utc": "2026-11-17T12:11:46+00:00",
+    "forward_deadline_utc": "2026-11-17T18:11:46+00:00",
+    "closure_deadline_utc": "2026-11-17T18:56:46+00:00",
+    "hard_gpu_seconds": 9000,
+    "planning_gpu_seconds": 7200,
+    "engineering_gpu_seconds": 1675.5146971674585,
+    "prior_numbered_B04_gpu_seconds": 0,
+    "historical_separate_gpu_usage": {
+      "qualification": 49.65920904699851,
+      "shared_ledger": 1423.9886059999997
+    },
+    "parent_choice": {
+      "base": "base",
+      "maxent_pre_restart": "maxent",
+      "maxent_post_restart": "maxent"
+    },
+    "parent_choice_basis": "Delivered configuration parent labels plus existing verified parent manifests; engineering assumption only, no job identity claim, no parent sweep",
+    "representatives": [
+      "base/iter_0000100",
+      "base/iter_0001800",
+      "maxent/iter_0000100",
+      "maxent/iter_0001600",
+      "maxent/iter_0001700",
+      "maxent/iter_0001800"
+    ],
+    "runtime_strategy": "Physical isolated copy of pinned working binary environment and pinned source archives; exact official Evo2LoRA source with minimal source-justified Bridge compatibility backport; new route identity",
+    "historical_identity": "Q1/Q2 unresolved; no new authority supplied; unchanged source/provenance evidence reused",
+    "forbidden": [
+      "training",
+      "probe_fits",
+      "dev_test_inference",
+      "B05",
+      "automatic_advance"
+    ],
+    "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z",
+    "superseded_prior_numbered_B04": {
+      "plan": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/B04_QUALIFICATION_PLAN.json",
+      "plan_sha256": "b7c1294127951860bf689c328f6af2fd5411528427e6f254cbc942103ffacfcd",
+      "budgets": {
+        "total_stage_wall_seconds": 5400,
+        "provenance_pass_seconds": 600,
+        "per_api_seconds": 60,
+        "per_cpu_check_seconds": 600,
+        "per_transfer_seconds": 300,
+        "per_build_seconds": 1800,
+        "per_gpu_job_seconds": 600,
+        "total_gpu_seconds_if_eligible": 1800,
+        "scientific_cutoff": "2026-11-17T17:33:21+00:00",
+        "closure_deadline": "2026-11-17T20:33:21+00:00",
+        "minimum_later_science_reserve_seconds": 14400,
+        "no_clock_reset": true
+      },
+      "actual_gpu_seconds": 0,
+      "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z"
+    },
+    "approval_record": {
+      "approved_stage": "resumed B04",
+      "approved_sha256": "ce0aa8cc20c76c2caf779d8102d23101173ecf436e9d8c286b5a22d89026c611",
+      "start_basis": "First observed UTC in this approval turn; user-message timestamp not exposed",
+      "scope": "Native implementation and qualification; explicit engineering diagnostics while historical identity unbound",
+      "B05_authorized": false
+    },
+    "fixed_new_deadlines": true,
+    "provider": {
+      "termination_deadline": null,
+      "rental_start": null,
+      "hourly_rate": null,
+      "action": "No infrastructure extension/change/shutdown"
+    },
+    "ledger_preservation": [
       {
         "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
         "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
@@ -57,24 +115,7 @@
         "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
       }
     ],
-    "original_start_utc": "2026-11-17T06:33:21+00:00",
-    "scientific_cutoff_utc": "2026-11-17T17:33:21+00:00",
-    "closure_deadline_utc": "2026-11-17T20:33:21+00:00",
-    "waiting_consumes_original_window": true,
-    "new_gpu_seconds": 0,
-    "new_fits": 0,
-    "new_model_inferences": 0,
-    "new_metric_computations": 0,
-    "installations": 0,
-    "new_backups_or_restorations": 0,
-    "b02_wall_start_utc": "2026-11-17T08:16:10.249976+00:00",
-    "elapsed_b02_wall_seconds": 1543.537625,
-    "remaining_scientific_seconds": 31887.212399,
-    "remaining_closure_seconds": 42687.212399,
-    "metadata_cpu_seconds": "not metered cumulatively; bounded metadata/source parsing only",
-    "private_stage_artifact_bytes_at_close": 7532084,
-    "b03_elapsed_wall_seconds": 1355.404395,
-    "B04_elapsed_wall_seconds": 2032.306837
+    "charged_gpu_seconds": 1675.5146971674585
   },
   "prior_source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
   "prior_artifact_root": "/workspace/meeting-artifacts/relearning-benign-v1",
@@ -119,18 +160,11 @@
     "maxent/iter_0001800"
   ],
   "scientific_coverage": {
-    "supplied_model_score_cells": 0,
-    "potential_refit_cells": 16848,
     "qualified_full_models": 0,
-    "identity_blocked_full_models": 36,
-    "planned_representatives": 6,
-    "fresh_CPU_adapter_passes": 6,
-    "native_model_forwards": 0,
-    "native_numerical_comparisons": 0,
+    "total_supplied_models": 36,
     "new_probe_fits": 0,
     "optimizer_steps": 0,
-    "heldout_inference": 0,
-    "GPU_seconds": 0
+    "heldout_inference": 0
   },
   "prior_completed_evidence": {
     "parent_smoke_comparisons": 162,
@@ -139,11 +173,10 @@
     "prior_backup_revision": "32206eeed1dd9024fc92ecd898be39094840de94"
   },
   "blockers": [
-    "Q1 actual job-bound original source/runtime/commands missing",
-    "Q2 complete actual parent/extra-state/job association missing; unknown hidden changes not excluded",
-    "Independent original-route adapter fixture missing forR2; verifiedR0 unavailable",
-    "Native backend not implemented/authenticated; gate is contract interface, notB06-ready",
-    "Q3 true starts/Q4 actual exposure remain separate comparison limits"
+    "Q1 actual job source/runtime/commands for11760341,11776574,11803647",
+    "Q2 complete actual job-bound backbone/extra state and restart resumed payload",
+    "R2 independent original-route adapter fixture; authenticated R0 remains unavailable",
+    "Q3 true initial states, Q4 actual exposure separately constrain comparisons"
   ],
   "owned_scientific_jobs": [],
   "legacy_wrapper": {
@@ -161,19 +194,18 @@
   "migration_performed": "B03 curated scoped metadata/views only; unchanged scientific sources reused in place; no array/head copy/refit",
   "no_background_stage_queue": true,
   "later_prompts_read": false,
-  "last_checkpoint_utc": "2026-11-17T10:31:50.517788+00:00",
+  "last_checkpoint_utc": "2026-11-17T13:00:08.785383+00:00",
   "completion_receipts": {
     "B01": "docs/experiments/ashay/POD_B/B01_VERIFICATION.json",
     "B02": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json",
     "B03": "docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json",
-    "B04": "docs/experiments/ashay/POD_B/B04_RUNTIME_RECEIPT.json"
+    "B04": "docs/experiments/ashay/POD_B/B04_RESUME_RECEIPT.json"
   },
-  "research_head": "fc7d4a31d1733caaf0a094fa2bbac7a8606324d3",
-  "publication_status": "B04_BLOCKED_RESULT_VALIDATED_PENDING_PUSH",
-  "delivery_receipt": "/workspace/agent-handoff/POD_B/B04_DELIVERY_VERIFICATION.json",
-  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/PROMPT_RECEIPT.json",
-  "research_head_note": "Pre-publication HEAD; B04 external delivery receipt gives actual published commit",
-  "handoff": "docs/experiments/ashay/POD_B/B04_HANDOFF.md",
+  "publication_status": "DELIVERY_HEAD_AND_VERIFICATION_RECORDED_EXTERNALLY",
+  "delivery_receipt": "/workspace/agent-handoff/POD_B/B04_RESUME_DELIVERY_VERIFICATION.json",
+  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/PROMPT_RECEIPT.json",
+  "research_head_note": "Actual delivered head is recorded in external B04_RESUME_DELIVERY_VERIFICATION.json; no self-referential commit hash is embedded",
+  "handoff": "docs/experiments/ashay/POD_B/B04_RESUME_HANDOFF.md",
   "data_readiness": {
     "rows": 22645,
     "tasks": 6,
@@ -203,5 +235,37 @@
     "prediction_channel_views": 3318,
     "scope": "Rows are scoped artifact/views, not new fits, unique learned functions or independent experiments"
   },
-  "resume_requirement": "Missing evidence or scope steering plus fresh explicit B04 approval; no B05 advancement"
+  "resume_requirement": "Review B04; supply missing provenance or revised steering and explicit approval. Never auto-advance to B05.",
+  "resumed_B04_plan": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/plans/EXECUTION_PLAN.json",
+  "resumed_B04_previous_state": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/PREVIOUS_STATE.json",
+  "current_run_engineering_gpu_seconds": 1675.5146971674585,
+  "owned_engineering_jobs": [],
+  "resumed_B04_engineering": {
+    "native_matrices_passed": 6,
+    "fresh_process_passed": 6,
+    "CPU_tests": 93,
+    "parent_anchor_comparisons": 54
+  },
+  "resumed_B04_resource_ledger": "B04_RESUME_RESOURCE_LEDGER.json",
+  "previous_prompt_hashes": {
+    "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
+    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
+    "POD_B_04_RUNTIME.md": "04c8e9aeeb4c5688d5aa49f332a1a5fb8e8f197fa51cc3b160d99b09f6c95f1a"
+  },
+  "prior_completion_receipts": {
+    "B01": "docs/experiments/ashay/POD_B/B01_VERIFICATION.json",
+    "B02": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json",
+    "B03": "docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json",
+    "B04": "docs/experiments/ashay/POD_B/B04_RUNTIME_RECEIPT.json"
+  },
+  "engineering_selected_checkpoint_ids": [
+    "base/iter_0000100",
+    "base/iter_0001800",
+    "maxent/iter_0000100",
+    "maxent/iter_0001600",
+    "maxent/iter_0001700",
+    "maxent/iter_0001800"
+  ],
+  "runtime_status": "NATIVE_ENGINEERING_IMPLEMENTED_SCIENTIFIC_ROUTE_UNBOUND",
+  "research_head_at_resume_entry": "fc7caa245b7c43ffa57cc44313ef27a67a96aa79"
 }

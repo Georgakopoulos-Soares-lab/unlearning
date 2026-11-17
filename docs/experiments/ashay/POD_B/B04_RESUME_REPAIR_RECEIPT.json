@@ -1,0 +1,18 @@
+{
+  "start_utc": "2026-11-17T12:28:27.774470+00:00",
+  "primary_failure": "Strict weight-set comparison included TE2.3 emitted serialized-None _extra_state tensors, which are absent from distributed inference weight loader set",
+  "evidence": "base100-matrix worker RESULT + pinned transformer_engine/pytorch/module/base.py get_extra_state implementation",
+  "repair": "Explicitly distinguish runtime TE serialized-None state from parent weights, reject any nonempty/FP8 state; retain all extra-state tensors in actual parent snapshots",
+  "alternate_parent": false,
+  "tolerance_changes": false,
+  "repair_window_minutes": 45,
+  "primary_environment_rebuild": false,
+  "additional_observation": "TE2.3 RMSNorm derives BasicOperation: its source emits an empty dict for no quantizer state, unlike module/base.py serialized None. Accept only exact bytes of either empty object; no nonempty state accepted.",
+  "adapter_device_observation": "Plain parent training forward completed in v5; first adapter forward failed because native PEFT respected CPU initialization config after parent had already moved to CUDA. Explicit model.to(device=cuda) after native attachment preserves all dtypes and weights.",
+  "repair_completed_not_later_than_utc": "2026-11-17T12:40:00+00:00",
+  "completion_evidence": "First full v7 native matrix had exited successfully by the12:40 observation; subsequent jobs were qualification only",
+  "primary_runtime_builds": 1,
+  "alternative_runtime_builds": 0,
+  "failed_native_iterations": 6,
+  "final_native_source_version": 7
+}

@@ -1,0 +1,74 @@
+{
+  "native_failed_attempts": [
+    {
+      "attempt": "base100-matrix",
+      "category": "LOAD_MAPPING",
+      "observed_error_type": "GateError",
+      "diagnosis": "Runtime serialized TE empty-state tensors were included in the parent weight-set comparison.",
+      "occupied_gpu_stage_seconds": 57.007510733001254,
+      "raw_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix/worker/RESULT.json",
+      "raw_receipt_sha256": "dc11598dca26b083c397a3b0942b37000b66056eacafc0952ccfdcbe76c80b8a"
+    },
+    {
+      "attempt": "base100-matrix-v2",
+      "category": "SEMANTICS",
+      "observed_error_type": "GateError",
+      "diagnosis": "TE RMSNorm emits serialized empty dict rather than serialized None.",
+      "occupied_gpu_stage_seconds": 55.9924815710001,
+      "raw_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v2/worker/RESULT.json",
+      "raw_receipt_sha256": "9a67025ffbfc8893ec707d10ce09b69f01515650ab233a2957b436abccfa1b8c"
+    },
+    {
+      "attempt": "base100-matrix-v3",
+      "category": "SEMANTICS",
+      "observed_error_type": "GateError",
+      "diagnosis": "Core output layer emits literal None extra state.",
+      "occupied_gpu_stage_seconds": 59.80077171999801,
+      "raw_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v3/worker/RESULT.json",
+      "raw_receipt_sha256": "1d31136bbd767c783f800699491217e926915ec0bcbd6664b049d4cf9a43705e"
+    },
+    {
+      "attempt": "base100-matrix-v4",
+      "category": "INPUT_PATH",
+      "observed_error_type": "Exception",
+      "diagnosis": "Tokenizer is in tokenizer/tokenizer.json, not the checkpoint root.",
+      "occupied_gpu_stage_seconds": 59.19795772400175,
+      "raw_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v4/worker/RESULT.json",
+      "raw_receipt_sha256": "2ef76d552b5970754bab73107c75a6f630f051dca823d454905749cd803c53d6"
+    },
+    {
+      "attempt": "base100-matrix-v5",
+      "category": "DEVICE_MAPPING",
+      "observed_error_type": "RuntimeError",
+      "diagnosis": "Native PEFT followed CPU initialization after the parent had moved to CUDA.",
+      "occupied_gpu_stage_seconds": 68.8879628499999,
+      "raw_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v5/worker/RESULT.json",
+      "raw_receipt_sha256": "6b39c1ced8f3bde202aa8dc4b1351aed69a076aa80420f5511bd5aa050f3709d"
+    },
+    {
+      "attempt": "base100-matrix-v6",
+      "category": "DIAGNOSTIC_DTYPE",
+      "observed_error_type": "RuntimeError",
+      "diagnosis": "Controlled tiny FP64 witness retained the copied bf16 flag; actual full-model forward had already passed.",
+      "occupied_gpu_stage_seconds": 67.48922205999406,
+      "raw_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v6/worker/RESULT.json",
+      "raw_receipt_sha256": "94c0c2f53166068b65e60868164705d5a13ccb7ee1809bf8182ef5774329f9bc"
+    }
+  ],
+  "initial_native_import": {
+    "status": "CUDA_INITIALIZED_UNEXPECTEDLY_DURING_IMPORT",
+    "charged_upper_bound_seconds": 118.58236074447632,
+    "model_inference": false,
+    "repair": "Subsequent native imports occur only in the budget-owned worker"
+  },
+  "initial_CPU_test": {
+    "status": "FAILED_BUFFER_ROOT_KEY_FORMATTING",
+    "gpu_seconds": 0,
+    "repair": "Corrected root nonpersistent buffer key; final93 tests pass"
+  },
+  "tolerance_changes": 0,
+  "parent_sweeps": 0,
+  "alternate_runtime_builds": 0,
+  "repair_path": "One bounded repair path; six failed native iterations preserved, then v7 matrices pass",
+  "source_history_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/RUNNER_SOURCE_HISTORY.json"
+}

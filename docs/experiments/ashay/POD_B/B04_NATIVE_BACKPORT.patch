@@ -1,0 +1,94 @@
+--- base.py
++++ base.py
+@@ -119,6 +119,37 @@
+ 
+         return model
+ 
++    def _walk_model(self, model: ModelType, func) -> None:
++        if isinstance(model, list):
++            for model_chunk in model:
++                walk(model_chunk, func)
++        elif isinstance(model, torch.nn.parallel.DistributedDataParallel):
++            walk(model.module, func)
++        else:
++            walk(model, func)
++
++    def enable_adapter_layers(self, model: ModelType) -> None:
++        """Enable adapter layers for all PEFT-wrapped modules in the model."""
++
++        def enable(module: nn.Module) -> nn.Module:
++            method = getattr(module, "enable_adapter_layers", None)
++            if callable(method):
++                method()
++            return module
++
++        self._walk_model(model, enable)
++
++    def disable_adapter_layers(self, model: ModelType) -> None:
++        """Disable adapter layers for all PEFT-wrapped modules in the model."""
++
++        def disable(module: nn.Module) -> nn.Module:
++            method = getattr(module, "disable_adapter_layers", None)
++            if callable(method):
++                method()
++            return module
++
++        self._walk_model(model, disable)
++
+     def freeze_model(self, model: ModelType, training: bool = True) -> None:
+         """Apply a default freeze method to the model.
+ 
+
+--- adapter_wrapper.py
++++ adapter_wrapper.py
+@@ -100,6 +100,15 @@
+         super(AdapterWrapper, self).__init__()
+         self.to_wrap = to_wrap
+         self.adapter = adapter
++        self._adapter_enabled = True
++
++    def enable_adapter_layers(self) -> None:
++        """Enable the adapter layers, allowing them to contribute to the forward pass output."""
++        self._adapter_enabled = True
++
++    def disable_adapter_layers(self) -> None:
++        """Disable the adapter layers, making the forward pass return only the base module output."""
++        self._adapter_enabled = False
+ 
+     def base_linear_forward(
+         self, x: torch.Tensor, *args: Any, **kwargs: Any
+
+--- lora_layers.py
++++ lora_layers.py
+@@ -53,6 +53,8 @@
+         """
+         # pylint: disable=C0115,C0116
+         linear_output, bias, layernorm_output = self.base_linear_forward(x, *args, **kwargs)
++        if not self._adapter_enabled:
++            return linear_output, bias
+         adapter_output = self.adapter(layernorm_output.contiguous())
+         adapter_output = adapter_output.reshape(linear_output.shape)
+         return linear_output + adapter_output, bias
+
+--- lora.py
++++ lora.py
+@@ -88,6 +88,8 @@
+     lora_B_init_method: str = "zero"
+     a2a_experimental: bool = False
+     lora_dtype: torch.dtype = None
++    normalize_moe_lora: bool = False
++    share_expert_adapters: bool = True
+ 
+     def transform(self, module: nn.Module, name: Optional[str] = None, prefix: Optional[str] = None) -> nn.Module:
+         """
+@@ -101,6 +103,10 @@
+         Returns:
+             nn.Module: The modified module with LoRA applied, or the original module if not a target.
+         """
++        if self.normalize_moe_lora or not self.share_expert_adapters:
++            raise ValueError("B04 backport supports only observed non-MoE defaults")
++        if getattr(getattr(module, "config", None), "num_moe_experts", None):
++            raise ValueError("MoE unsupported by this explicitly scoped backport")
+         # Skip already transformed modules
+         adapter_types = (LinearAdapter, LoRALinear)
+         adapter_types = adapter_types + (TELinearAdapter,)

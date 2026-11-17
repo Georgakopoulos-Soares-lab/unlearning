@@ -1,3 +1,7 @@
+Current status: WAITING_FOR_STEERING: B04. See B04_RESUME_HANDOFF.md, B04_RESUME_RECEIPT.json, B04_CHANNEL_ELIGIBILITY.csv and B04_GOAL_CROSSWALK.md. Only engineering diagnostics completed;0/36 supplied models are scientifically qualified. No later stage is approved.
+
+Previous handoff, retained verbatim:
+
 # Current session: B04 blocked; B05 not authorized
 
 Read [B04_HANDOFF.md](B04_HANDOFF.md), [B04_RUNTIME_RECEIPT.json](B04_RUNTIME_RECEIPT.json) and [B04_EVIDENCE_REQUEST.md](B04_EVIDENCE_REQUEST.md).6 selected CPU integrity checks and74 synthetic contract tests pass, but0 full-model routes/payloads qualify. No native inference/GPU/fitting/held-out evaluation occurred. Actual source/full-state bindings and original adapter reference remain missing. Only POD_B is writable. No owned queue/lock remains; original17:33:21UTC science/20:33:21UTC closure deadlines stand. Resume B04 only after missing evidence/scope steering and fresh explicit approval; B05 has not been read. Artifacts: `/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z`.

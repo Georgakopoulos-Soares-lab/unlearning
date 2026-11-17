@@ -61,7 +61,112 @@
         "B04.E2",
         "B04.E3",
         "B04.E7"
-      ]
+      ],
+      "engineering_candidates": [
+        {
+          "checkpoint_id": "base/iter_0000100",
+          "family": "base_all",
+          "mode": "ENGINEERING_DIAGNOSTIC",
+          "scientifically_qualified": false,
+          "downstream_eligible": false,
+          "assembly_identity": "HASH_BOUND_CANDIDATE",
+          "supplied_model_binding": "UNKNOWN_Q1_Q2",
+          "native_execution": "PASS",
+          "route_evidence": "SOURCE_JUSTIFIED_CANDIDATE_BACKPORT",
+          "feature_qualification": "TRAIN12_ALL26_ENGINEERING_PASS",
+          "LM_qualification": "TRAIN12_FULL_VOCAB_ENGINEERING_PASS",
+          "fixed_base_compatibility": "PARENT_ANCHORS_PASS_ONLY_SUPPLIED_MODEL_UNQUALIFIED",
+          "original_reference_agreement": "NOT_AVAILABLE",
+          "matrix_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "matrix_gates": {
+            "schema_all26_full_vocabulary_train12_filler_exclusion": true,
+            "all100_native_adapter_branch_execution": true,
+            "independent_float64_lm_diagnostic": true,
+            "native_normalized_input_scale_bias_eval_dropout_disable": true,
+            "repeat": true,
+            "logical1": true,
+            "filler_perturbation": true,
+            "hookless": true,
+            "adapter_disabled_vs_plain_same_candidate_parent": true,
+            "A_B_A_same_parent_full_adapter_overwrite": true,
+            "strict_state_after_swap": true
+          },
+          "fresh_process_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "fresh_process_final_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "parent_fingerprint": "7918a3345afa3d1b143d1d28bc0bf7f5633d218936b767e27cf8c18d08f1f95c",
+          "output_head_fingerprint": "d55b32344c96c172fcf8bf12c004eb09f339dafa58f0daa6b0f1ceda2da744e9",
+          "adapter_sha256": "0da8c27848d87d769158d1a9067fd0031b7dbe970ea1b357c0c6ba4aa8ada059",
+          "config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+          "candidate_route_id": "c731fd7ad12e1b75ddbabf91080c03ea6b5acb669d987abf8a2023909e85936a",
+          "environment_lock_sha256": "96ba8d67347d28dd72b0d67c720cfcd946b8846d83dccdb5ee6f2a8ebc067b9a",
+          "native_parent_tensor_records": 359,
+          "native_adapter_tensor_records": 200,
+          "peak_cuda_memory_bytes": 3264102912,
+          "maximum_absolute_comparison_error": 1.52587890625e-05,
+          "failing_numerical_elements": 0,
+          "receipts": {
+            "matrix": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/RESULT.json",
+            "matrix_sha256": "ea9919d8189e3f48be2387af49346bb815e5f78c443dcff4c1f62ac951816c66",
+            "fresh": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-fresh/worker/RESULT.json",
+            "qualification": {
+              "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/ENGINEERING_QUALIFICATION.json",
+              "sha256": "06e822cc98fd9d3a41712aac5e5fcea628c5513c027aca8e846370dcd6f3cace"
+            }
+          }
+        },
+        {
+          "checkpoint_id": "base/iter_0001800",
+          "family": "base_all",
+          "mode": "ENGINEERING_DIAGNOSTIC",
+          "scientifically_qualified": false,
+          "downstream_eligible": false,
+          "assembly_identity": "HASH_BOUND_CANDIDATE",
+          "supplied_model_binding": "UNKNOWN_Q1_Q2",
+          "native_execution": "PASS",
+          "route_evidence": "SOURCE_JUSTIFIED_CANDIDATE_BACKPORT",
+          "feature_qualification": "TRAIN12_ALL26_ENGINEERING_PASS",
+          "LM_qualification": "TRAIN12_FULL_VOCAB_ENGINEERING_PASS",
+          "fixed_base_compatibility": "PARENT_ANCHORS_PASS_ONLY_SUPPLIED_MODEL_UNQUALIFIED",
+          "original_reference_agreement": "NOT_AVAILABLE",
+          "matrix_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "matrix_gates": {
+            "schema_all26_full_vocabulary_train12_filler_exclusion": true,
+            "all100_native_adapter_branch_execution": true,
+            "independent_float64_lm_diagnostic": true,
+            "native_normalized_input_scale_bias_eval_dropout_disable": true,
+            "repeat": true,
+            "logical1": true,
+            "filler_perturbation": true,
+            "hookless": true,
+            "adapter_disabled_vs_plain_same_candidate_parent": true,
+            "A_B_A_same_parent_full_adapter_overwrite": true,
+            "strict_state_after_swap": true
+          },
+          "fresh_process_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "fresh_process_final_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "parent_fingerprint": "7918a3345afa3d1b143d1d28bc0bf7f5633d218936b767e27cf8c18d08f1f95c",
+          "output_head_fingerprint": "d55b32344c96c172fcf8bf12c004eb09f339dafa58f0daa6b0f1ceda2da744e9",
+          "adapter_sha256": "53180d7be4fa70f86e2f2a7c623f3e73b765e318c50164d1296229c857ed94ce",
+          "config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+          "candidate_route_id": "c731fd7ad12e1b75ddbabf91080c03ea6b5acb669d987abf8a2023909e85936a",
+          "environment_lock_sha256": "96ba8d67347d28dd72b0d67c720cfcd946b8846d83dccdb5ee6f2a8ebc067b9a",
+          "native_parent_tensor_records": 359,
+          "native_adapter_tensor_records": 200,
+          "peak_cuda_memory_bytes": 3264102912,
+          "maximum_absolute_comparison_error": 3.218760832623957e-05,
+          "failing_numerical_elements": 0,
+          "receipts": {
+            "matrix": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/RESULT.json",
+            "matrix_sha256": "d89d23ae89c11c0803f6de5ab38a6915dee960c42cf889edcd6e0c06722608c4",
+            "fresh": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-fresh/worker/RESULT.json",
+            "qualification": {
+              "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/ENGINEERING_QUALIFICATION.json",
+              "sha256": "5459684a626bd4152d077c82b9ed86d3a7b8a4edb2edae2bba4ebdd8aeb5a351"
+            }
+          }
+        }
+      ],
+      "engineering_is_historical_identity_proof": false
     },
     {
       "family": "maxent_initial",
@@ -120,7 +225,112 @@
         "B04.E2",
         "B04.E3",
         "B04.E7"
-      ]
+      ],
+      "engineering_candidates": [
+        {
+          "checkpoint_id": "maxent/iter_0000100",
+          "family": "maxent_initial",
+          "mode": "ENGINEERING_DIAGNOSTIC",
+          "scientifically_qualified": false,
+          "downstream_eligible": false,
+          "assembly_identity": "HASH_BOUND_CANDIDATE",
+          "supplied_model_binding": "UNKNOWN_Q1_Q2",
+          "native_execution": "PASS",
+          "route_evidence": "SOURCE_JUSTIFIED_CANDIDATE_BACKPORT",
+          "feature_qualification": "TRAIN12_ALL26_ENGINEERING_PASS",
+          "LM_qualification": "TRAIN12_FULL_VOCAB_ENGINEERING_PASS",
+          "fixed_base_compatibility": "PARENT_ANCHORS_PASS_ONLY_SUPPLIED_MODEL_UNQUALIFIED",
+          "original_reference_agreement": "NOT_AVAILABLE",
+          "matrix_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "matrix_gates": {
+            "schema_all26_full_vocabulary_train12_filler_exclusion": true,
+            "all100_native_adapter_branch_execution": true,
+            "independent_float64_lm_diagnostic": true,
+            "native_normalized_input_scale_bias_eval_dropout_disable": true,
+            "repeat": true,
+            "logical1": true,
+            "filler_perturbation": true,
+            "hookless": true,
+            "adapter_disabled_vs_plain_same_candidate_parent": true,
+            "A_B_A_same_parent_full_adapter_overwrite": true,
+            "strict_state_after_swap": true
+          },
+          "fresh_process_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "fresh_process_final_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "parent_fingerprint": "00e1787b5eb0bf3fa2a2d374e7a97c1590662a2d0b5a71b8a4e968e1b7e1018f",
+          "output_head_fingerprint": "255cd640b67c5ad4524eab53a6d16a5af4c52326d5212e8e38a595564d8f5321",
+          "adapter_sha256": "4230913cae92e412d9c11717937396c7e435c84f20393b9303157e1bee87dd5f",
+          "config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+          "candidate_route_id": "c731fd7ad12e1b75ddbabf91080c03ea6b5acb669d987abf8a2023909e85936a",
+          "environment_lock_sha256": "96ba8d67347d28dd72b0d67c720cfcd946b8846d83dccdb5ee6f2a8ebc067b9a",
+          "native_parent_tensor_records": 359,
+          "native_adapter_tensor_records": 200,
+          "peak_cuda_memory_bytes": 3264102912,
+          "maximum_absolute_comparison_error": 3.0517578125e-05,
+          "failing_numerical_elements": 0,
+          "receipts": {
+            "matrix": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/RESULT.json",
+            "matrix_sha256": "0ac91343100cfdf7835fcb114415c289f19f2dfe6e32759984bb4d21a84f72b0",
+            "fresh": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-fresh/worker/RESULT.json",
+            "qualification": {
+              "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/ENGINEERING_QUALIFICATION.json",
+              "sha256": "da813c205756e0e9ef6d2f69b53fbae50772c282c9c6d8e8e7304f3dec696dec"
+            }
+          }
+        },
+        {
+          "checkpoint_id": "maxent/iter_0001600",
+          "family": "maxent_initial",
+          "mode": "ENGINEERING_DIAGNOSTIC",
+          "scientifically_qualified": false,
+          "downstream_eligible": false,
+          "assembly_identity": "HASH_BOUND_CANDIDATE",
+          "supplied_model_binding": "UNKNOWN_Q1_Q2",
+          "native_execution": "PASS",
+          "route_evidence": "SOURCE_JUSTIFIED_CANDIDATE_BACKPORT",
+          "feature_qualification": "TRAIN12_ALL26_ENGINEERING_PASS",
+          "LM_qualification": "TRAIN12_FULL_VOCAB_ENGINEERING_PASS",
+          "fixed_base_compatibility": "PARENT_ANCHORS_PASS_ONLY_SUPPLIED_MODEL_UNQUALIFIED",
+          "original_reference_agreement": "NOT_AVAILABLE",
+          "matrix_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "matrix_gates": {
+            "schema_all26_full_vocabulary_train12_filler_exclusion": true,
+            "all100_native_adapter_branch_execution": true,
+            "independent_float64_lm_diagnostic": true,
+            "native_normalized_input_scale_bias_eval_dropout_disable": true,
+            "repeat": true,
+            "logical1": true,
+            "filler_perturbation": true,
+            "hookless": true,
+            "adapter_disabled_vs_plain_same_candidate_parent": true,
+            "A_B_A_same_parent_full_adapter_overwrite": true,
+            "strict_state_after_swap": true
+          },
+          "fresh_process_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "fresh_process_final_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "parent_fingerprint": "00e1787b5eb0bf3fa2a2d374e7a97c1590662a2d0b5a71b8a4e968e1b7e1018f",
+          "output_head_fingerprint": "255cd640b67c5ad4524eab53a6d16a5af4c52326d5212e8e38a595564d8f5321",
+          "adapter_sha256": "d27405b8d1ff6127c4fe8065755255c2af4f3d7389eb67e66a5d0ce56245b952",
+          "config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+          "candidate_route_id": "c731fd7ad12e1b75ddbabf91080c03ea6b5acb669d987abf8a2023909e85936a",
+          "environment_lock_sha256": "96ba8d67347d28dd72b0d67c720cfcd946b8846d83dccdb5ee6f2a8ebc067b9a",
+          "native_parent_tensor_records": 359,
+          "native_adapter_tensor_records": 200,
+          "peak_cuda_memory_bytes": 3264102912,
+          "maximum_absolute_comparison_error": 2.3979191496437124e-05,
+          "failing_numerical_elements": 0,
+          "receipts": {
+            "matrix": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/RESULT.json",
+            "matrix_sha256": "2ff9e8473b21ae71b00fbde6625cde72e9776ab9a8cca40b38985d8fba1bbeab",
+            "fresh": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-fresh/worker/RESULT.json",
+            "qualification": {
+              "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/ENGINEERING_QUALIFICATION.json",
+              "sha256": "b3b557b964dc160d729f67ba5efa3db31fb784b97644c40872886f86d1594a27"
+            }
+          }
+        }
+      ],
+      "engineering_is_historical_identity_proof": false
     },
     {
       "family": "maxent_restart",
@@ -165,7 +375,112 @@
         "B04.E2",
         "B04.E3",
         "B04.E7"
-      ]
+      ],
+      "engineering_candidates": [
+        {
+          "checkpoint_id": "maxent/iter_0001700",
+          "family": "maxent_restart",
+          "mode": "ENGINEERING_DIAGNOSTIC",
+          "scientifically_qualified": false,
+          "downstream_eligible": false,
+          "assembly_identity": "HASH_BOUND_CANDIDATE",
+          "supplied_model_binding": "UNKNOWN_Q1_Q2",
+          "native_execution": "PASS",
+          "route_evidence": "SOURCE_JUSTIFIED_CANDIDATE_BACKPORT",
+          "feature_qualification": "TRAIN12_ALL26_ENGINEERING_PASS",
+          "LM_qualification": "TRAIN12_FULL_VOCAB_ENGINEERING_PASS",
+          "fixed_base_compatibility": "PARENT_ANCHORS_PASS_ONLY_SUPPLIED_MODEL_UNQUALIFIED",
+          "original_reference_agreement": "NOT_AVAILABLE",
+          "matrix_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "matrix_gates": {
+            "schema_all26_full_vocabulary_train12_filler_exclusion": true,
+            "all100_native_adapter_branch_execution": true,
+            "independent_float64_lm_diagnostic": true,
+            "native_normalized_input_scale_bias_eval_dropout_disable": true,
+            "repeat": true,
+            "logical1": true,
+            "filler_perturbation": true,
+            "hookless": true,
+            "adapter_disabled_vs_plain_same_candidate_parent": true,
+            "A_B_A_same_parent_full_adapter_overwrite": true,
+            "strict_state_after_swap": true
+          },
+          "fresh_process_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "fresh_process_final_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "parent_fingerprint": "00e1787b5eb0bf3fa2a2d374e7a97c1590662a2d0b5a71b8a4e968e1b7e1018f",
+          "output_head_fingerprint": "255cd640b67c5ad4524eab53a6d16a5af4c52326d5212e8e38a595564d8f5321",
+          "adapter_sha256": "da0e45e9b20ad6fa82ea79607f87396b4dc39366ad4830806a11667da176aaa0",
+          "config_sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812",
+          "candidate_route_id": "c731fd7ad12e1b75ddbabf91080c03ea6b5acb669d987abf8a2023909e85936a",
+          "environment_lock_sha256": "96ba8d67347d28dd72b0d67c720cfcd946b8846d83dccdb5ee6f2a8ebc067b9a",
+          "native_parent_tensor_records": 359,
+          "native_adapter_tensor_records": 200,
+          "peak_cuda_memory_bytes": 3264102912,
+          "maximum_absolute_comparison_error": 2.8831280360464007e-05,
+          "failing_numerical_elements": 0,
+          "receipts": {
+            "matrix": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/RESULT.json",
+            "matrix_sha256": "40bc3cac4497c14861d0862e9717f9b83933144dfeb3c0b29831c29a35034de0",
+            "fresh": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-fresh/worker/RESULT.json",
+            "qualification": {
+              "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/ENGINEERING_QUALIFICATION.json",
+              "sha256": "e79e0f5450bd2a27675367ad15f41e5a5cda7fbb166fbf29d9e8b62bd55ee621"
+            }
+          }
+        },
+        {
+          "checkpoint_id": "maxent/iter_0001800",
+          "family": "maxent_restart",
+          "mode": "ENGINEERING_DIAGNOSTIC",
+          "scientifically_qualified": false,
+          "downstream_eligible": false,
+          "assembly_identity": "HASH_BOUND_CANDIDATE",
+          "supplied_model_binding": "UNKNOWN_Q1_Q2",
+          "native_execution": "PASS",
+          "route_evidence": "SOURCE_JUSTIFIED_CANDIDATE_BACKPORT",
+          "feature_qualification": "TRAIN12_ALL26_ENGINEERING_PASS",
+          "LM_qualification": "TRAIN12_FULL_VOCAB_ENGINEERING_PASS",
+          "fixed_base_compatibility": "PARENT_ANCHORS_PASS_ONLY_SUPPLIED_MODEL_UNQUALIFIED",
+          "original_reference_agreement": "NOT_AVAILABLE",
+          "matrix_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "matrix_gates": {
+            "schema_all26_full_vocabulary_train12_filler_exclusion": true,
+            "all100_native_adapter_branch_execution": true,
+            "independent_float64_lm_diagnostic": true,
+            "native_normalized_input_scale_bias_eval_dropout_disable": true,
+            "repeat": true,
+            "logical1": true,
+            "filler_perturbation": true,
+            "hookless": true,
+            "adapter_disabled_vs_plain_same_candidate_parent": true,
+            "A_B_A_same_parent_full_adapter_overwrite": true,
+            "strict_state_after_swap": true
+          },
+          "fresh_process_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "fresh_process_final_status": "ENGINEERING_DIAGNOSTIC_PASS",
+          "parent_fingerprint": "00e1787b5eb0bf3fa2a2d374e7a97c1590662a2d0b5a71b8a4e968e1b7e1018f",
+          "output_head_fingerprint": "255cd640b67c5ad4524eab53a6d16a5af4c52326d5212e8e38a595564d8f5321",
+          "adapter_sha256": "8fba7f205d5809ae0d6676c2189fa7a163fa9f4f97665f3b0bd4c03d99d24c70",
+          "config_sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812",
+          "candidate_route_id": "c731fd7ad12e1b75ddbabf91080c03ea6b5acb669d987abf8a2023909e85936a",
+          "environment_lock_sha256": "96ba8d67347d28dd72b0d67c720cfcd946b8846d83dccdb5ee6f2a8ebc067b9a",
+          "native_parent_tensor_records": 359,
+          "native_adapter_tensor_records": 200,
+          "peak_cuda_memory_bytes": 3264102912,
+          "maximum_absolute_comparison_error": 6.103515625e-05,
+          "failing_numerical_elements": 0,
+          "receipts": {
+            "matrix": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/RESULT.json",
+            "matrix_sha256": "76697a1666810eb7a437adda0565f38dd9b80ad9fc31cb01ed6634de9df55c28",
+            "fresh": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-fresh/worker/RESULT.json",
+            "qualification": {
+              "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/ENGINEERING_QUALIFICATION.json",
+              "sha256": "fd93cb1f095a99a95bbcab43cdfd5991248bfa8f9b0960bb10dd58a4a5188cb3"
+            }
+          }
+        }
+      ],
+      "engineering_is_historical_identity_proof": false
     }
   ],
   "restart": {
@@ -266,5 +581,7 @@
       "claim": "B03 frozen data/folds/historical anchors reused; exact12-row training fixture rechecked at B04 entry.384-row escalation not used.",
       "limitations": "Parent-only162/28 and historical saved-head diagnostics do not qualify supplied adapters. No recovery, fitting, held-out replay or new outputs repeated."
     }
-  ]
+  ],
+  "resumed_B04_status": "ENGINEERING_IMPLEMENTED_SCIENTIFIC_BINDINGS_UNRESOLVED",
+  "resumed_B04_receipt": "B04_RESUME_RECEIPT.json"
 }

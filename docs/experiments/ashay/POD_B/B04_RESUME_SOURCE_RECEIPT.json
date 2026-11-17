@@ -1,0 +1,60 @@
+{
+  "route_kind": "CANDIDATE_SOURCE_JUSTIFIED_BACKPORT",
+  "original_job_identity": false,
+  "official_class_git_blob": "a79acacbd26139dd617b494ac96f8370ec8cdb85",
+  "upstream_bridge05": "fcbb6031103d0ca845c1a54d4fee55ecfcca17b6",
+  "source_pins": [
+    [
+      "/workspace/bionemo-cu12",
+      "7dd1659f2103982562d7a23896fb2091200a1f1d",
+      "bionemo"
+    ],
+    [
+      "/workspace/megatron-bridge",
+      "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+      "bridge"
+    ],
+    [
+      "/workspace/megatron-bridge/3rdparty/Megatron-LM",
+      "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13",
+      "core"
+    ]
+  ],
+  "compatibility": "Official Evo2LoRA byte-identical; Bridge0.5 traversal/disable methods; default-only non-MoE config fields; no changes to old native normalized-input/bias/ParallelLinearAdapter algebra",
+  "files": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bionemo/bionemo-recipes/recipes/evo2_megatron/src/bionemo/evo2/models/evo2_lora.py",
+      "sha256": "9b481000249879695c266b2489ac40999732c3e8f81f024027f96b9d972a6af3"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/base.py",
+      "sha256": "3690e200f360bd6d9fd42df4ef1e04756baaf09cd26778a37981eb168b7bb188"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/lora.py",
+      "sha256": "6c0397c74261d6abe2b24712537286b5fafa30fedcd1442198007a986ea32397"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/adapter_wrapper.py",
+      "sha256": "2eb09d7f92584ab049e5ae260c160b113c7a3dce9bc01b020be0656a1dfd4161"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/lora_layers.py",
+      "sha256": "a6827907479fb99fd26f3de4c6961e36284d35ec34941a73de72b67b98f9a963"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/module_matcher.py",
+      "sha256": "a1f2f087241a5709cfbb94d1337a458ffebbe207c9b9c3a7baf8ef2e04e19ae3"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/utils.py",
+      "sha256": "ccbc2c4d0795df2ea02d9c7d342c8ed08ef68b553a8255b0f75acd21104639e1"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/walk_utils.py",
+      "sha256": "3bd60155e93b6341468c69569c860da762e3acfd5e3ad5d087a6faca0ad9ba6c"
+    }
+  ],
+  "patch_sha256": "ba9225905a35669f30ec59f753ae7cb43c76c3e8e09c416105679badeb8db4ee",
+  "route_id": "0f37560d71a607533c5b9f5a98ae24c0cd4fea8f32a642a08b85996c32454fe3"
+}

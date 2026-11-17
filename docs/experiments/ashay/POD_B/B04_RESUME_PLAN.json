@@ -1,0 +1,85 @@
+{
+  "stage": "B04",
+  "mode": "ENGINEERING_DIAGNOSTIC",
+  "scientifically_qualified": false,
+  "downstream_eligible": false,
+  "window_start_utc": "2026-11-17T12:11:46+00:00",
+  "forward_deadline_utc": "2026-11-17T18:11:46+00:00",
+  "closure_deadline_utc": "2026-11-17T18:56:46+00:00",
+  "hard_gpu_seconds": 9000,
+  "planning_gpu_seconds": 7200,
+  "engineering_gpu_seconds": 1800,
+  "prior_numbered_B04_gpu_seconds": 0,
+  "historical_separate_gpu_usage": {
+    "qualification": 49.65920904699851,
+    "shared_ledger": 1423.9886059999997
+  },
+  "parent_choice": {
+    "base": "base",
+    "maxent_pre_restart": "maxent",
+    "maxent_post_restart": "maxent"
+  },
+  "parent_choice_basis": "Delivered configuration parent labels plus existing verified parent manifests; engineering assumption only, no job identity claim, no parent sweep",
+  "representatives": [
+    "base/iter_0000100",
+    "base/iter_0001800",
+    "maxent/iter_0000100",
+    "maxent/iter_0001600",
+    "maxent/iter_0001700",
+    "maxent/iter_0001800"
+  ],
+  "runtime_strategy": "Physical isolated copy of pinned working binary environment and pinned source archives; exact official Evo2LoRA source with minimal source-justified Bridge compatibility backport; new route identity",
+  "historical_identity": "Q1/Q2 unresolved; no new authority supplied; unchanged source/provenance evidence reused",
+  "forbidden": [
+    "training",
+    "probe_fits",
+    "dev_test_inference",
+    "B05",
+    "automatic_advance"
+  ],
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z",
+  "superseded_prior_numbered_B04": {
+    "plan": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/B04_QUALIFICATION_PLAN.json",
+    "plan_sha256": "b7c1294127951860bf689c328f6af2fd5411528427e6f254cbc942103ffacfcd",
+    "budgets": {
+      "total_stage_wall_seconds": 5400,
+      "provenance_pass_seconds": 600,
+      "per_api_seconds": 60,
+      "per_cpu_check_seconds": 600,
+      "per_transfer_seconds": 300,
+      "per_build_seconds": 1800,
+      "per_gpu_job_seconds": 600,
+      "total_gpu_seconds_if_eligible": 1800,
+      "scientific_cutoff": "2026-11-17T17:33:21+00:00",
+      "closure_deadline": "2026-11-17T20:33:21+00:00",
+      "minimum_later_science_reserve_seconds": 14400,
+      "no_clock_reset": true
+    },
+    "actual_gpu_seconds": 0,
+    "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z"
+  },
+  "approval_record": {
+    "approved_stage": "resumed B04",
+    "approved_sha256": "ce0aa8cc20c76c2caf779d8102d23101173ecf436e9d8c286b5a22d89026c611",
+    "start_basis": "First observed UTC in this approval turn; user-message timestamp not exposed",
+    "scope": "Native implementation and qualification; explicit engineering diagnostics while historical identity unbound",
+    "B05_authorized": false
+  },
+  "fixed_new_deadlines": true,
+  "provider": {
+    "termination_deadline": null,
+    "rental_start": null,
+    "hourly_rate": null,
+    "action": "No infrastructure extension/change/shutdown"
+  },
+  "ledger_preservation": [
+    {
+      "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
+      "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
+      "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
+    }
+  ]
+}
