@@ -1,0 +1,26 @@
+{
+  "schema": "pod-a-a04-recovery-component-report-v1",
+  "component": "NATIVE_METADATA_AUDIT.json",
+  "preserved_endpoint_status": "REUSED_VALIDATED base/R1/R4/R6; no rerun",
+  "inherited_report": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/NATIVE_METADATA_AUDIT.json",
+  "inherited_report_sha256": "f22fbd76f3d094413b8e099b33d6038c13e94c4b575ae82f6e212cb45e680a1e",
+  "new_targets": {
+    "R2": {
+      "status": "BLOCKED_SELECTION",
+      "value": null,
+      "reason": "No admittedcheckpoint"
+    },
+    "R3": {
+      "status": "BLOCKED_PAYLOAD",
+      "value": null,
+      "reason": "Nativepayload quota/transportblock; historicalresults unaffected"
+    },
+    "R5": {
+      "status": "BLOCKED_PAYLOAD",
+      "value": null,
+      "reason": "Nativepayload quota/transportblock"
+    }
+  },
+  "new_model_tensor_deserialization": false,
+  "new_model_forwards": 0
+}

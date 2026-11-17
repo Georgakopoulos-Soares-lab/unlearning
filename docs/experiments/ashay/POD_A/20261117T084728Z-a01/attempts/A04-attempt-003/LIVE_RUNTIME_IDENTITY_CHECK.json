@@ -1,0 +1,16 @@
+{
+  "schema": "pod-a-a04-live-runtime-identity-v2",
+  "status": "PASS",
+  "metadata_distribution_entries": 141,
+  "metadata_multiset_matches_frozen_lock": true,
+  "pip_freeze_sha256": "0c7ccdbe3a97b5259b4a50d24f4850b4b97d06056800b58b99a1afe0e7941fea",
+  "pip_freeze_matches_frozen_lock": true,
+  "metadata_origins": [
+    "/workspace/venvs/pod-a-a04-attempt-002/lib/python3.12/site-packages",
+    "/workspace/venvs/pod-a-a04-attempt-002/lib/python3.12/site-packages/setuptools/_vendor"
+  ],
+  "reconciliation": "Original lock was collected after imports exposed setuptools._vendor distributions. A freshprocess-only lookup omitted16vendoredmetadataentries and collapsed duplicate names. Matchingdistributionmultiset and originalpipfreeze proves no environmentdrift; original lock/initial diagnosis retained.",
+  "initial_diagnosis": "LIVE_RUNTIME_IDENTITY_CHECK.initial.json",
+  "no_environment_changes_performed": true,
+  "GPU_runs": 0
+}

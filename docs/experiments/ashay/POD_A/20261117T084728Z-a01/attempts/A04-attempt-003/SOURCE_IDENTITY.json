@@ -1,0 +1,86 @@
+{
+  "schema": "pod-a-a04-owned-source-identity-v1",
+  "owned_source_files": [
+    {
+      "path": "native_loader.py",
+      "sha256": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304",
+      "bytes": 7529
+    },
+    {
+      "path": "owned_adapter.patch",
+      "sha256": "cc8110247f3b39c266f4737bf3a6b6ef1216a23b8ef4744b32d8e5a673366bd6",
+      "bytes": 28056
+    },
+    {
+      "path": "qualification_contract.py",
+      "sha256": "cdce1c4d2e6f75c2c2bd761e764ebc640a6907e184cf7483555184b5b935cd70",
+      "bytes": 11685
+    },
+    {
+      "path": "run_qualification.py",
+      "sha256": "85367ff7fc15063343e61c4f8d93fe437bc31a7f7c4f7595710b8cc20ea5e403",
+      "bytes": 16425
+    },
+    {
+      "path": "test_qualification_contract.py",
+      "sha256": "efdbe475ca17ad55581994de8f0213f6ff4b13f47c37dc5028227105783c9e7f",
+      "bytes": 10874
+    }
+  ],
+  "historical_fixed8_sources": [
+    {
+      "commit": "902ed12c663ef0c43c92ba27a60d2fd67822108b",
+      "path": "scripts/sayyed/extract_multiretain_fixed.py",
+      "sha256": "5e864a8b44e31d961d3a2e6014a0aa5e11730ddf7a9a23069f6c16fd958853d5",
+      "bundle_path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/a04-training-only/pinned-source/902ed12c663ef0c43c92ba27a60d2fd67822108b/scripts/sayyed/extract_multiretain_fixed.py"
+    },
+    {
+      "commit": "902ed12c663ef0c43c92ba27a60d2fd67822108b",
+      "path": "scripts/sayyed/fixed_benign_batch.py",
+      "sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+      "bundle_path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/a04-training-only/pinned-source/902ed12c663ef0c43c92ba27a60d2fd67822108b/scripts/sayyed/fixed_benign_batch.py"
+    },
+    {
+      "commit": "902ed12c663ef0c43c92ba27a60d2fd67822108b",
+      "path": "scripts/sayyed/multiretain_support.py",
+      "sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+      "bundle_path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/a04-training-only/pinned-source/902ed12c663ef0c43c92ba27a60d2fd67822108b/scripts/sayyed/multiretain_support.py"
+    },
+    {
+      "commit": "902ed12c663ef0c43c92ba27a60d2fd67822108b",
+      "path": "scripts/sayyed/verify_multiretain_smoke.py",
+      "sha256": "3ea2c999dc4039bf4e7ce49b902e0789d9eacb56cabe84ea137d4309c5bc24d3",
+      "bundle_path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A03-attempt-001/a04-training-only/pinned-source/902ed12c663ef0c43c92ba27a60d2fd67822108b/scripts/sayyed/verify_multiretain_smoke.py"
+    }
+  ],
+  "extractor_anchor_commit": "c79ab07e763a9754c68fdaf7d0730d8458f508dc",
+  "fixed8_commit": "902ed12c663ef0c43c92ba27a60d2fd67822108b",
+  "runtime_source_receipt_sha256": "604f15a9e3831933da4c4034ea0c2d811c418cf260b42ff3eab95b18bf00671c",
+  "changes": [
+    "Owned stage CLI paths, reporting-only GPU ledger/lock; no historical ledger imports or timers",
+    "Model-only native reader with restricted metadata class allowlist and tensor chunk completeness",
+    "Strict typed TE non-tensor exceptions and exact every-loaded-tensor equality; model-content digest",
+    "Explicit all26 hooks, physical8 batches, ordinal tokenizer, unchanged pooling/LM math",
+    "Independent actual-logit CPU float64 CE witnesses and synthetic rejection tests"
+  ],
+  "test_result": {
+    "status": "PASS",
+    "tests": 26,
+    "log_sha256": "0bf0e1bcff418e02a2300cb3360a3148f459a875b4525f86e611cb347b39176d"
+  },
+  "probe_fit_imports": false,
+  "stage_dispatch": false,
+  "pre_execution_reseal": "Tensor digest reshapes scalars before byte view. First unit source guard correctly rejected concurrent preflight edit before GPU; no model initialized.",
+  "TE_metadata_repair": "Variant2: exact serialization of None for TElinear and emptydict for TERMSNorm; no registered tensor, no FP8 flags/state; architecture diagnosis matches those byte patterns plus actual non-tensorNone. No numerical changes.",
+  "output_compat_metadata_repair": "Exact pinned MCore ColumnParallelLinear.get_extra_state returns non-tensorNone for TE compatibility; actualclassidentity required; registered tensors never excluded. Native checkpoint has no output_layer._extra_state, and outputhead uses checkpoint-covered tiedembedding. No numerical changes.",
+  "output_compat_load_hook_repair": "MCore pinnedpreloadhook inserts output_layer._extra_state=None. Require actual missing metadata exactly equal prevalidatedTEexceptions minus that single explicit compatibilitydefault; no unexplained tensor exception.",
+  "TE_attention_posthook": "TE2.3 DotProductAttention removes its four empty metadata entries from actualmissing via documented posthook. Exact typedclassMRO proof added. Actualmissing muststill equal allremaining prevalidatedmetadata exactly, with no unexpectedkeys.",
+  "native_serialized_metadata_repair": "ExactnativeTP1 singletonwrapper; safelydecodeTorchweights_onlyTrue and prove eachTE/MCoremetadataobject empty(None,zeroelementuint8,orcanonical serializedNone/emptydict). Confirmowner actualTE or exactMCore TEcompatibilityNone. No model/optimizer tensor dropped or changed.",
+  "accepted_prior_executed_source": {
+    "sha256": "b5628c7fefa457aa272a6a3b6cff45b63fd6f03635397a5383150c5b38548e1c",
+    "scope": "base logical1/logical8/repeat8",
+    "exact_source_root": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/source-versions/b5628c7fefa457aa272a6a3b6cff45b63fd6f03635397a5383150c5b38548e1c",
+    "path_equivalence_proof": "Base native.metadata contains zero BytesStorageMetadata/serializedTE entries, so repairednativeBytesbranch is notexecuted forbase. Alltensorloading/config/tokenizer/hooks/pool/LM paths unchanged; threebaseunits alreadysealed andhistorical+batch/repeat comparisonsPASS.",
+    "evidence": "NATIVE_EXTRA_STATE_BLOB_AUDIT.json baseentry0; preservedsourcefiles allSHAverified"
+  }
+}

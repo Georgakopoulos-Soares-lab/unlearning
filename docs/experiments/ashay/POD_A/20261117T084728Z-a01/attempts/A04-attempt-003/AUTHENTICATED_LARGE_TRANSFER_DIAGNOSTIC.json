@@ -1,0 +1,16 @@
+{
+  "schema": "pod-a-a04-authenticated-large-route-diagnostic-v1",
+  "attempts": 1,
+  "file_id": "1TNg6p00wJ4eQ7mm5JZiBWqUuI53Rf2p4",
+  "provider_pre_metadata_verified": true,
+  "include_base64": false,
+  "status": "BLOCKED_TRANSPORT_CEILING",
+  "error": {
+    "error": "HTTP error prior to action invocation. HTTPException: 413: File too large to download: 15516878934 bytes exceeds the 268435456-byte limit.",
+    "error_code": "INVALID_ARGUMENT"
+  },
+  "route_ceiling_bytes": 268435456,
+  "selected_payload_bytes": 15516878934,
+  "second_same_size_file_not_retried": true,
+  "credentials_extracted": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "pod-a-a04-provider-revision-supplement-v1",
+  "status": "PASS_METADATA_PIN_ONLY",
+  "records": [
+    {
+      "alias": "R3",
+      "file_id": "1TNg6p00wJ4eQ7mm5JZiBWqUuI53Rf2p4",
+      "current_revision_id": "0B5Q-Vlo1rn8VU3dyM0pFcmxMQStwWFp1T051dHY5bWlhZHdjPQ",
+      "previous_revision_id": null,
+      "revisions": [
+        {
+          "revision_id": "0B5Q-Vlo1rn8VU3dyM0pFcmxMQStwWFp1T051dHY5bWlhZHdjPQ",
+          "mime_type": "application/x-zip",
+          "modified_time": "2026-11-10T15:35:17.119Z",
+          "bytes": 15516878934,
+          "original_filename": "__0_0.distcp",
+          "keep_forever": true
+        }
+      ],
+      "payload_access": "BLOCKED_PROVIDER_QUOTA_AND_CONNECTOR_SIZE_CEILING",
+      "payload_bytes_verified": false
+    },
+    {
+      "alias": "R5",
+      "file_id": "1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq",
+      "current_revision_id": "0B5Q-Vlo1rn8VYVZndzhsNUVUVzZOSVduaHFwVkdWUzVydnUwPQ",
+      "previous_revision_id": null,
+      "revisions": [
+        {
+          "revision_id": "0B5Q-Vlo1rn8VYVZndzhsNUVUVzZOSVduaHFwVkdWUzVydnUwPQ",
+          "mime_type": "application/x-zip",
+          "modified_time": "2026-11-13T18:35:57.877Z",
+          "bytes": 15516878934,
+          "original_filename": "__0_0.distcp",
+          "keep_forever": true
+        }
+      ],
+      "payload_access": "BLOCKED_PROVIDER_QUOTA_AND_CONNECTOR_SIZE_CEILING",
+      "payload_bytes_verified": false
+    }
+  ],
+  "metadata_route": "GoogleDrive list_file_revisions; no cursor returned, single revision each",
+  "prior_limitation": "Earlier get_file_metadata normalization omitted revision IDs; prior receipts remain unchanged",
+  "availability_not_guaranteed": true,
+  "authors_or_permissions_not_published": true
+}

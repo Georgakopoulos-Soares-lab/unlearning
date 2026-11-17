@@ -1,0 +1,81 @@
+{
+  "schema": "pod-a-a04-recovery-owned-source-v1",
+  "inference_source_identity_sha256": "e72bb12601855339bf4497d3854cbd90e1f052d1def08a7ed4bcbb1da2192c1c",
+  "inference_environment_sha256": "401c96fdeb59783bf20954b153b24edaf913b87aa3d7607e1cc32c088d3ca294",
+  "numerical_code_changed": false,
+  "owned_recovery_files": [
+    {
+      "path": "recovery_code/archive_helpers.py",
+      "sha256": "af22fb279c22e226dd5245ca83ce325d89ed7819a539f3ae09a6ba21cd41be33"
+    },
+    {
+      "path": "recovery_code/recovery_contract.py",
+      "sha256": "24789ec2c11a44f3c2b1016728aa2de5a298012042fde12dc2b75d9a0c4a2e36"
+    },
+    {
+      "path": "recovery_code/test_recovery_contract.py",
+      "sha256": "77779109bb32985283e0e45bf0316704230fef4dfffe3504b3cd42d3f0c333a0"
+    },
+    {
+      "path": "recovery_code/verify_restored_recovery.py",
+      "sha256": "a0fd53a556c675a54d13a9db9821f932efab47098d1b92ebb688c1017b464b57"
+    },
+    {
+      "path": "stage_drivers/archive_verified_sidecars.py",
+      "sha256": "74af8ee160419577bc1a4503cb135fbae8515e6c7252ab56a099972f52926177"
+    },
+    {
+      "path": "stage_drivers/build_recovery_reports.py",
+      "sha256": "91cf0b8871e5c2fdec7d8c768a37d137f143017f22caf8d4945e72c6354c7d66"
+    },
+    {
+      "path": "stage_drivers/checkpoint_recovery.py",
+      "sha256": "12450787464d5d7675f6899cd433a5bdc34cbb632d54e5a0e44a691b2f13aa92"
+    },
+    {
+      "path": "stage_drivers/closeout_recovery.py",
+      "sha256": "573fa992acfc4e7b65656dcf3a3ed62e768ef7d859e90749fb869620f4aa471a"
+    },
+    {
+      "path": "stage_drivers/init_a04_recovery_003.py",
+      "sha256": "336d0e7450dd704fe36825923a53e42e0cf979c20c238d84957ff142a9c9ada4"
+    },
+    {
+      "path": "stage_drivers/preflight_recovery.py",
+      "sha256": "ecefc4aa84887bcbf14b1e1aad5088fdfdb3f2eeefb786c33766e770ac24625a"
+    },
+    {
+      "path": "stage_drivers/prepare_recovery_assets.py",
+      "sha256": "f97faffd4d4b0078a650e2f20a1439fdf49a65a79f99cd5b4c8ad10e33cdce0f"
+    },
+    {
+      "path": "stage_drivers/publish_recovery.py",
+      "sha256": "500e49648a99e2eaf1aa01bfb5127f4b6c29ffee3c5d6e9c1ce1a5a14f6918eb"
+    },
+    {
+      "path": "stage_drivers/recover_selected_shards.py",
+      "sha256": "e942966cd562588d374ef6318b02eedf354a7ceae2f71e99ab0d093af751adc5"
+    },
+    {
+      "path": "stage_drivers/research_guard.py",
+      "sha256": "ccbdb0d34fd88648950b01ba8fa186ffca655c7fe183e603405b2f9082c99264"
+    },
+    {
+      "path": "stage_drivers/summarize_discovery.py",
+      "sha256": "c417425f0c92ff27a5e7193194c4a3fda1a69d19b748088192fcbdbc0067ea77"
+    }
+  ],
+  "new_software_tests": {
+    "count": 8,
+    "status": "PASS",
+    "log_sha256": "563e5b9533e1a83cdb598065d25dedeb33ac47b3014618a20e0cea9dc03d9caa",
+    "scope": "Quota/HTML rejection, bytes/digests/source identity, safe rangeoffset/full200 rejection, protectedpaths andqualificationidentity guards. Synthetic fixtures; no productiondata."
+  },
+  "inherited_software_tests": {
+    "count": 26,
+    "status": "REUSED_VALIDATED",
+    "source_identity": "SOURCE_IDENTITY.json"
+  },
+  "live_environment_check": "LIVE_RUNTIME_IDENTITY_CHECK.json",
+  "final_delivery_source_protection": "Final post-push metadata archive includes executed closure drivers; numerical executor unchanged."
+}

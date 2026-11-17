@@ -1,0 +1,5 @@
+Replace the stale attempt-002 handoff pin with A04-attempt-003 and the exact post-push research commit/receipt hashes in the separate DELIVERY_RECEIPT.json. The final private A05_PROMPT_DELTA.final.md records those literal values after commit.
+
+Retain the standing no-deadline/no-GPU-cap/no-reserve amendment, unknown original/rental start/rate/cost, and separate stage approvals. State R2 unadmitted, R3/R5 payload and missing numerical/recovery gates blocked, and preserved base/R1/R4/R6 PASS. Preserve both newly pinned provider revision IDs and the sidecar-only recovery scope. Do not treat sidecar backup or metadata-only checkpoint PASS as full native model recovery.
+
+For full scope, require missingA04 completion before A05 freeze. If Ashay explicitly accepts R4/R6-only planning, name that reduced scope and the missing936conditionalheads contributed byR2/R5. Keep full3276-head universe/1404historical/36controls; later newfits remain0 here. A05 may calibrate training-only throughput and freeze coverage/statistics only after its own new direct approval. Do not edit or execute the prompts repository automatically.

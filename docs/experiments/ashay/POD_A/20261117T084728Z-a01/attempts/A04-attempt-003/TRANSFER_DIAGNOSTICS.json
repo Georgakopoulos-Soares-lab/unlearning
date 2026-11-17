@@ -1,0 +1,118 @@
+{
+  "schema": "pod-a-a04-transfer-diagnostics-v1",
+  "status": "BLOCKED_EXTERNAL_PROVIDER_QUOTA",
+  "current_attempts": [
+    {
+      "alias": "R3",
+      "candidate_id": "drive-folder:13EXn9LuTTmqHuYjdIoWQ36Ig27MZ51sI",
+      "file_id": "1TNg6p00wJ4eQ7mm5JZiBWqUuI53Rf2p4",
+      "name": "__0_0.distcp",
+      "expected_bytes": 15516878934,
+      "expected_historical_sha256": "a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0",
+      "expected_modified_time": "2026-11-10T15:35:17.119Z",
+      "status": "BLOCKED",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-003/checkpoints/R3/__0_0.distcp",
+      "source_locator": "https://drive.google.com/file/d/1TNg6p00wJ4eQ7mm5JZiBWqUuI53Rf2p4/view",
+      "provider_revision": null,
+      "revision_limitation": "Provider connector exposes no immutable revision/checksum; stableID,pre/post size/mtime andfullSHA identify snapshot",
+      "route": "Public GoogleDrive exactID requests.Session downloadconfirmation; supportedarchivedroute with fresh-cache request",
+      "started_utc": "2026-11-17T17:07:08.035192+00:00",
+      "responses": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "html_title": "Google Drive - Virus scan warning",
+          "failure_class": "CONFIRMATION_FORM",
+          "page_sha256": "80533681cbdbaeb7540a1c6cef71336f44057091595386afa5fc1c74704af365",
+          "age_header": null,
+          "transport_query_credentials_omitted": true
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "html_title": "Google Drive - Quota exceeded",
+          "failure_class": "PROVIDER_QUOTA",
+          "page_sha256": "8719f3103f152df140044976ce017554d32773fc4012ee8dd3868737bac65084",
+          "age_header": null,
+          "transport_query_credentials_omitted": true
+        }
+      ],
+      "failure_class": "PROVIDER_QUOTA",
+      "exception_type": "ValueError",
+      "partial_bytes": 0,
+      "completed_utc": "2026-11-17T17:07:09.060441+00:00",
+      "wall_seconds": 1.02523776399903,
+      "cpu_process_seconds": 0.08004816000000001
+    },
+    {
+      "alias": "R5",
+      "candidate_id": "drive-folder:1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+      "file_id": "1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq",
+      "name": "__0_0.distcp",
+      "expected_bytes": 15516878934,
+      "expected_historical_sha256": null,
+      "expected_modified_time": "2026-11-13T18:35:57.877Z",
+      "status": "BLOCKED",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-003/checkpoints/R5/__0_0.distcp",
+      "source_locator": "https://drive.google.com/file/d/1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq/view",
+      "provider_revision": null,
+      "revision_limitation": "Provider connector exposes no immutable revision/checksum; stableID,pre/post size/mtime andfullSHA identify snapshot",
+      "route": "Public GoogleDrive exactID requests.Session downloadconfirmation; supportedarchivedroute with fresh-cache request",
+      "started_utc": "2026-11-17T17:07:09.066818+00:00",
+      "responses": [
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "html_title": "Google Drive - Virus scan warning",
+          "failure_class": "CONFIRMATION_FORM",
+          "page_sha256": "153dcf8246636ecc2acf8cbfd457dd162ebbc70d4a5e2b37a99a5d7ec7dd84e6",
+          "age_header": null,
+          "transport_query_credentials_omitted": true
+        },
+        {
+          "http_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "html_title": "Google Drive - Quota exceeded",
+          "failure_class": "PROVIDER_QUOTA",
+          "page_sha256": "a4b651116b248aa90809edaec4fad7c9a640e4bbe3d209a5fafdf0e35644351e",
+          "age_header": null,
+          "transport_query_credentials_omitted": true
+        }
+      ],
+      "failure_class": "PROVIDER_QUOTA",
+      "exception_type": "ValueError",
+      "partial_bytes": 0,
+      "completed_utc": "2026-11-17T17:07:09.963793+00:00",
+      "wall_seconds": 0.8969767529997625,
+      "cpu_process_seconds": 0.065760392
+    }
+  ],
+  "prior_failure_context": {
+    "R3": "PriorHTML/confirmation failure; priorquotanotassumed. Currentnewdiagnostic explicitlyreturnsquotapage.",
+    "R5": "Priorproviderquota remains explicitinnewdiagnostic.",
+    "connector": "Priorrawroute256MiBceiling preserved; no repeated15.5GBrequests to unchangedlimit."
+  },
+  "supported_auth_routes": {
+    "google_drive_connector": {
+      "metadata_and_smallfile_reads": "PASS",
+      "separate_largefile_download_tool_available": false,
+      "known_raw_transfer_ceiling_bytes": 268435456
+    },
+    "rclone": {
+      "binary_available": true,
+      "configured_remotes": 0,
+      "config_missing": true
+    },
+    "gcloud_available": false,
+    "explicit_google_auth_environment_variables": []
+  },
+  "hidden_credentials_extracted": false,
+  "quota_bypass_or_account_rotation": false,
+  "copies_or_sharing_changes_on_Drive": false,
+  "immutable_mirror_check": "KnownA03/A04 archives explicitlyexcludeweights; targetdataset contains no directselectednative .distcpobject among currentknownobjects. No newmirror with exactoriginprovenance located inauthorizedreferences.",
+  "new_native_bytes_transferred": 0,
+  "repeat_quota_polling": false,
+  "all_independent_metadata_work_finished": true,
+  "authenticated_large_route_current_probe": "AUTHENTICATED_LARGE_TRANSFER_DIAGNOSTIC.json: one freshR3probe HTTP413 at268435456bytes; R5same-size requestnotrepeated",
+  "new_provider_revisions": "PROVIDER_REVISION_SUPPLEMENT.json: retainedrevisionmetadata pinned after originalnormalizedmetadata omittedIDs"
+}

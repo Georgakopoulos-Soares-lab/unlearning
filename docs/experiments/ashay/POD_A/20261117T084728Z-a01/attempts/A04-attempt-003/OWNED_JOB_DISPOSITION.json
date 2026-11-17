@@ -1,0 +1,29 @@
+{
+  "schema": "pod-a-a04-recovery-job-disposition-v1",
+  "status": "QUIESCENT",
+  "jobs": [
+    {
+      "record": "TRANSFER_JOB.json",
+      "pid": 23683,
+      "same_owned_process_active": false,
+      "recorded_status": "EXITING_FINISHED"
+    },
+    {
+      "record": "PAYLOAD_ARCHIVE_JOB.json",
+      "pid": 23883,
+      "same_owned_process_active": false,
+      "recorded_status": "EXITING_SUCCESS"
+    },
+    {
+      "record": "CHECKPOINT_JOB.json",
+      "pid": 24352,
+      "same_owned_process_active": false,
+      "recorded_status": "EXITING_SUCCESS"
+    }
+  ],
+  "GPU_jobs_started": 0,
+  "GPU_lock_available_and_released": true,
+  "foreign_processes_untouched": true,
+  "future_dispatchers_created": false,
+  "A05_started": false
+}

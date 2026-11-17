@@ -1,0 +1,87 @@
+{
+  "schema": "pod-a-a04-recovery-plan-v1",
+  "stage_scope": "A04 only; boundedR2discovery/admission,exactR3/R5recovery,missingtraining-onlyqualification,historicalbridges,verifiedprivatepayloadbackup; noA05",
+  "research_baseline": "e30b442d1175e79bbbf8f4acb02223afca74eee4",
+  "preserve_aliases": [
+    "base",
+    "R1",
+    "R4",
+    "R6"
+  ],
+  "targets": {
+    "R3": {
+      "folder_id": "13EXn9LuTTmqHuYjdIoWQ36Ig27MZ51sI",
+      "file_id": "1TNg6p00wJ4eQ7mm5JZiBWqUuI53Rf2p4",
+      "expected_bytes": 15516878934,
+      "expected_sha256": "a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0"
+    },
+    "R5": {
+      "folder_id": "1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+      "file_id": "1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq",
+      "expected_bytes": 15516878934,
+      "expected_sha256": null
+    },
+    "R2": {
+      "selection_status": "PENDING_BOUNDED_EVIDENCE_DISCOVERY",
+      "file_id": null,
+      "expected_sha256": null
+    }
+  },
+  "GPU_order": [
+    "R3",
+    "R5",
+    "R2_if_uniquely_admitted"
+  ],
+  "variants": [
+    "logical1",
+    "logical8",
+    "repeat8"
+  ],
+  "new_expected_variants": 9,
+  "new_expected_comparison_rows": 243,
+  "total_expected_variants": 21,
+  "total_expected_comparison_rows": 621,
+  "manifest_sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+  "numeric_atol": 0.0001,
+  "numeric_rtol": 1e-05,
+  "physical_batch": 8,
+  "BLAS_OpenMP_threads": 4,
+  "GPU_jobs": 1,
+  "metadata_scope": {
+    "roots": [
+      "1OUQVCn5JgQG_V_wIp0kAi19Y-PxgV6cE",
+      "1pM5-kFeki5Oq1oLjQNXH0U2f2TlGNuzi",
+      "1AsgCkDs3n5JTJJF4BSyCtjYBbhES0gVA"
+    ],
+    "max_folders": 120,
+    "max_depth": 12,
+    "max_requests": 500,
+    "max_small_object_bytes": 8388608,
+    "max_new_metadata_bytes": 134217728,
+    "skip_subtrees": [
+      "saliency",
+      "perturb",
+      "relearn",
+      "reinit",
+      "noise",
+      "gaussian"
+    ],
+    "selection_rule": "Unique explicitdeliverypointer plus config/log/sourcecontinuity; no newest/score/size-only admission"
+  },
+  "retry_policy": {
+    "one_fresh_diagnostic_per_prior_failed_route": true,
+    "max_justified_retries_per_transient_root_cause": 2,
+    "max_repair_variants_per_diagnosed_cause": 2,
+    "permission_quota_or_unchanged_transport_ceiling": "No repeatedpolling/bypass; continue independenttargets"
+  },
+  "pre_transfer_requirements": [
+    "RESOURCE_PLAN sufficientlocalcoexistence",
+    "Private destinationprivacy/write/freshreadprobe",
+    "Current selectedIDmetadata"
+  ],
+  "private_payload_backup": "ExactrescuedR3/R5/R2 nativeassets+sidecars,uniqueappend-onlyprefix; everyrequiredfilefreshdownloaded/fullSHAverified. Separate boundedcode/smokecheckpoint.",
+  "original_start_utc": null,
+  "cost_usd": null,
+  "time_policy": "Explicit supersession, reportingonly",
+  "future_stage_permission": false
+}

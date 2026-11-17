@@ -1,0 +1,64 @@
+{
+  "schema": "pod-a-a04-recovery-inherited-dependencies-v1",
+  "A04_002": {
+    "schema": "pod-a-a04-backup-verification-v1",
+    "status": "PASS",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "private_at_write_and_closeout": true,
+    "revision": "5e32de857cb9a289f6def0536e8dc55cd3885f96",
+    "archive_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-002/checkpoint-001/a04-checkpoint-001.tar.gz",
+    "sidecar_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-002/checkpoint-001/a04-checkpoint-001.tar.gz.sha256",
+    "archive_bytes": 48326169,
+    "archive_sha256": "fcf6e74b99e5be0a19ab188d266fe09313690a2c6461a74a6967a30a04ca64cb",
+    "member_manifest_sha256": "6e39921a849d00563da8d088b2d85d4321165d602acdd7b3a8c42dbb79bbfcce",
+    "all_included_files_verified": 491,
+    "fresh_download": true,
+    "force_download": true,
+    "new_consumer_and_cache": true,
+    "safe_paths_and_exact_member_set": true,
+    "fresh_CPU_results_exactly_equal": true,
+    "CPU_units_reverified": 12,
+    "CPU_comparison_rows": 378,
+    "actual_logit_witness_checks": 144,
+    "fresh_CPU_command": [
+      "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001/artifacts/stage_drivers/compare_a04.py",
+      "--control",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001/control",
+      "--artifacts",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001/artifacts",
+      "--report",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/fresh-CPU-comparisons",
+      "--anchor-root",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001/dependencies/training-only"
+    ],
+    "fresh_CPU_report_sha256": "346d5d6b8d017bbf839c85dffc8475f0794bd150802d5a7d8d2812f78b2c04c3",
+    "GPU_recovery_runs": 0,
+    "excluded": {
+      "schema": "pod-a-a04-checkpoint-exclusions-v1",
+      "excluded": [
+        "Original native model shards and sidecars",
+        "Installed GPU runtime, CUDA toolkit, compiled binaries and wheel caches",
+        "Inherited23,330 archive payload/checksum files and fullscientific artifacts",
+        "Credentials/provider account stores/unrelatedPodBdata",
+        "No untouchedtests or productioncohort arrays included"
+      ],
+      "reacquisition": {
+        "weights": "control/CHECKPOINT_HASHES.final.json and ASSET_TRANSFER_MANIFEST.json: exactID/size/contentSHA when acquired; R3/R5 missing payloads explicitlyblocked, no digestfabricated",
+        "runtime": "ENVIRONMENT_LOCK.json, SOURCE_IDENTITY.json, RUNTIME_REBUILD.md, runtime-freeze.txt and install/build/source receipts incontrol; exactsourcecommits/wheelSHA/officialCUDAredistributionpins. Rebuiltbinaryidentity alone is not GPUbridgeproof.",
+        "inherited_science": "dependencies/A03-receipts/BACKUP_VERIFICATION.json pins A03revision01ce0121650fb9668499de67027e3bdb63e0b5ca and immutable inheritedarchive graph; not repacked"
+      },
+      "recovery_scope": "All includednewbytes and restored-code CPU comparison/witnessverification. No fullGPUruntime rebuild, no secondGPUqualification, no production/science reproduction.",
+      "draft_public_reports": "Reports captured before post-upload proof; final canonical reports are protected separately after Gitdelivery."
+    },
+    "inherited_scientific_bytes_repacked": 0,
+    "scope": "Includedbytes+CPU numerical checks only; modelweights and installedruntime excluded with exactreacquisition/rebuild references",
+    "fresh_consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001",
+    "wall_seconds": 17.450509604997933,
+    "completed_utc": "2026-11-17T15:55:11.095655+00:00",
+    "post_upload_receipt": "Published separately to avoid selfhashcycle"
+  },
+  "dependency_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001",
+  "use": "Existingpreviouslyforce-fresh-restored immutableA04checkpoint; targeted neededmemberhashes rechecked. Not repacked or calleda newGPUreproduction.",
+  "A03": "Referenced by A04_002immutabledependencygraph; no repeatedlargearchiverestores/historicalheadCPUaudit."
+}

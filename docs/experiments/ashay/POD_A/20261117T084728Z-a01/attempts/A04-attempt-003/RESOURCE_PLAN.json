@@ -1,0 +1,31 @@
+{
+  "schema": "pod-a-a04-recovery-resource-plan-v1",
+  "status": "SUFFICIENT_LOCAL_CAPACITY",
+  "conservative_persistent_capacity_bytes": 500000000000,
+  "current_workspace_allocated_bytes": 106576631296,
+  "peak_coexistence_parts": {
+    "existing_all_workspace_bytes_including_shared_runtime_priorweights_andpriorrecovery": 106576631296,
+    "three_rescued_original_main_shards": 46550636802,
+    "fresh_private_payload_recovery_copies": 46550636802,
+    "one_inflight_partial": 15516878934,
+    "metadata_reports_boundedarchive_andfreshrestore": 3221225472,
+    "upload_SDK_cache_and_safety": 42949672960
+  },
+  "peak_total_bytes": 261365682266,
+  "margin_bytes": 238634317734,
+  "shared_existing_bytes_counted_once": true,
+  "GPU": "NVIDIA H100 NVL, 95830 MiB, 0 MiB, 595.112.07",
+  "cgroup_CPU_equivalents": 15.3,
+  "cgroup_RAM_limit_bytes": 214999998464,
+  "CPU_workers": 1,
+  "BLAS_threads": 4,
+  "GPU_workers": 1,
+  "purchases": false,
+  "original_start_utc": null,
+  "cost_usd": null,
+  "time_policy": "Reportingonly, no deadline/cap/reserve",
+  "private_destination_capacity": "Privacy/write/freshread checked separately; remoteaccountquota notexposed, no purchase or inventedquota; explicitstorageerrors stopaffectedarchival",
+  "R2_payload_size_reserve_is_provisional": true,
+  "R2_verified_required_bytes": null,
+  "R2_actual_capacity_recheck_required_on_admission": true
+}
