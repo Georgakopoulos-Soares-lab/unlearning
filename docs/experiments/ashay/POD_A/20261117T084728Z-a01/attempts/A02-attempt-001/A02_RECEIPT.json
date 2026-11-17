@@ -1,0 +1,389 @@
+{
+  "schema": "pod-a-stage-receipt-v1",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A02",
+  "attempt_id": "A02-attempt-001",
+  "status": "PARTIAL",
+  "approval": {
+    "stage": "A02",
+    "attempt_id": "A02-attempt-001",
+    "direct_message": "read this prompt first - https://github.com/ashay-sriv-06/test-prompts-push/blob/POD_A/read_a02.md followed by this one - https://github.com/ashay-sriv-06/test-prompts-push/blob/POD_A/A02_CHECKPOINT_INVENTORY.md and go absolutely ham on the rigorous and robustness in execution make it amazing",
+    "message_time_utc": null,
+    "observed_time_utc": "2026-11-17T10:06:48.708951+00:00",
+    "invoked_amendment": "read_a02.md",
+    "invoked_amendment_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+    "prompt_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "prior_state_sha256": "2540671c18796cb3621e09ab4f49e1d04750fb68605e61e6fa8cf2b44f69ad82",
+    "research_head": "10b93de6c7e84916c1b0a57305ad46c6396a1094",
+    "authority_note": "Direct user instruction invokes the named amendment first, then names A02 and requests execution; file text alone is not treated as approval."
+  },
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_A",
+    "commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "effective_files": [
+      {
+        "path": "read_a02.md",
+        "sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090"
+      },
+      {
+        "path": "POD_A_MASTER.md",
+        "sha256": "7ed638c1fa912302becedb1096a82ac3d097a6bf07117d738c3604f84c07588b"
+      },
+      {
+        "path": "A02_CHECKPOINT_INVENTORY.md",
+        "sha256": "978277f9225d71d06b486799a5f72be5da2870d9118b56260e04c3727f6114bd"
+      },
+      {
+        "path": "SCIENTIFIC_CONTRACT.md",
+        "sha256": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413"
+      },
+      {
+        "path": "ARTIFACT_CONTRACT.md",
+        "sha256": "c58d9567f7dac25b163fbe494fbf9a2e10ed74db0d464f2395bf07ffd1f81f60"
+      },
+      {
+        "path": "SOURCE_NOTES.md",
+        "sha256": "d577f8176a47ddc47b59079393fca6c050795030be379d8e5d5c3bd613282bfa"
+      },
+      {
+        "path": "SOURCE_MANIFEST.json",
+        "sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f"
+      },
+      {
+        "path": "STAGE_MAP.json",
+        "sha256": "1a813e7dab6507be6766cc982b0b6ba5f5d2af962cfee029432c60dc64a5e54b"
+      }
+    ]
+  },
+  "accepted_A01_receipt": {
+    "path": "attempts/A01-attempt-003/A01_RECEIPT.json",
+    "sha256": "046761bd537c82cbfd0530a63bc063aec55407267717ebfef02bf6503cf8204b",
+    "budget_limits_superseded_by_current_amendment": true
+  },
+  "research": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "branch": "POD_A",
+    "worktree": "/workspace/wt-pod-a",
+    "head_before": "10b93de6c7e84916c1b0a57305ad46c6396a1094",
+    "head_after": null,
+    "preexisting_dirty_paths": [],
+    "final_delivery_note": "Final Git commit/equality in separate private delivery receipt and response."
+  },
+  "scope": "Bounded checkpoint metadata inventory only",
+  "summary": {
+    "schema": "pod-a-a02-closeout-v1",
+    "status": "PARTIAL",
+    "run_id": "20261117T084728Z-a01",
+    "stage": "A02",
+    "attempt_id": "A02-attempt-001",
+    "prompt_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "candidate_count": 10,
+    "proposed_selected_candidates": 6,
+    "historical_reference_candidates": 3,
+    "proposed_new_incremental_candidates": 3,
+    "unselected_earlier_iterations": 2,
+    "off_design_candidates_excluded_from_primary_matrix": 2,
+    "unresolved_stage": [
+      "R2"
+    ],
+    "weight_duplicate_status": "UNKNOWN_NOT_MEASURED",
+    "metadata_comparison_pairs": 15,
+    "metadata_endpoint_pairs_available": 12,
+    "adjacent_pairs_total": 5,
+    "adjacent_pairs_with_endpoints": 3,
+    "scientific_comparisons_verified": 0,
+    "scientific_units_new": 0,
+    "scientific_units_reused_validated": 0,
+    "scientific_units_failed": 0,
+    "provenance_records": 1106,
+    "membership_rows": 60,
+    "independent_metadata_QA": "PASS",
+    "limitations": [
+      {
+        "id": "PROVIDER_LISTING_EXHAUSTION_UNVERIFIED",
+        "scope": "Discovery completeness and absence claims",
+        "detail": "Direct connector listing and public embedded display agree for three roots and128-shard base folder, but neither exposes terminal provider-page evidence; search returned contradictory empties."
+      },
+      {
+        "id": "R2_UNIDENTIFIED_IN_BOUNDED_SCOPE",
+        "scope": "R2-dependent selection/contrasts",
+        "detail": "No candidate identified in inspected metadata. No global absence conclusion."
+      },
+      {
+        "id": "PAYLOAD_RUNTIME_COHORT_PENDING",
+        "scope": "Scientific acceptance",
+        "detail": "All payload hashes/runtime loading pending A04; scientific reuse/cohorts/heads/controls pending A03. This is expected downstream work."
+      },
+      {
+        "id": "LINEAGE_EXPOSURE_OBJECTIVE_UNRESOLVED",
+        "scope": "Causal interpretation",
+        "detail": "Configured paths, task-family declarations and rounded counters do not resolve exact parents/objective/dataset versions/realized exposure."
+      }
+    ],
+    "global_ownership_or_budget_blocker": false,
+    "private_stage_checkpoint_verified": true,
+    "a03_can_use_handoff": true,
+    "a03_approved": false,
+    "next_state": "WAITING_FOR_APPROVAL: A03"
+  },
+  "time_policy": {
+    "schema": "pod-a-time-policy-v2",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "source": "Current direct request explicitly invoking read_a02.md",
+    "source_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "source_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+    "historical_budget_records_preserved": true,
+    "original_start_utc": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "prior_wall_clock_deadlines_science_cutoffs_fixed_reserve": "SUPERSEDED_NOT_EXECUTION_GATES",
+    "time_tracking": "REPORTING_ONLY",
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "ask_for_original_or_replacement_deadline": false,
+    "stage_approval_required": true,
+    "stage_scope": "A02 only; stop for separate A03 approval"
+  },
+  "resources": {
+    "schema": "pod-a-a02-resource-closeout-v1",
+    "observed_utc": "2026-11-17T10:32:40.923158+00:00",
+    "a02_started_utc": "2026-11-17T10:06:48.708951+00:00",
+    "a02_elapsed_wall_seconds": 1552.214207,
+    "provider_rental_start_utc": null,
+    "provider_rental_elapsed_seconds": null,
+    "original_start_utc": null,
+    "hourly_rate_usd": null,
+    "cost_usd": null,
+    "cost_reason": "Provider rate and rental-start basis not supplied.",
+    "gpu_compute_seconds": 0,
+    "scientific_inference_units": 0,
+    "scientific_probe_fits": 0,
+    "metadata_original_files": 63,
+    "metadata_original_bytes": 2128920,
+    "selected_metadata_rechecks": 12,
+    "metadata_recheck_bytes": 150764,
+    "raw_source_tree_bytes": 2671768,
+    "private_archive_bytes": 684458,
+    "private_payload_files_verified": 347,
+    "cpu_total_seconds": null,
+    "cpu_accounting_limit": "No process-wide CPU ledger was attached to connector-side requests or all prior local commands; not inferred from wall time.",
+    "time_policy": {
+      "schema": "pod-a-time-policy-v2",
+      "status": "ACTIVE_USER_SUPERSESSION",
+      "source": "Current direct request explicitly invoking read_a02.md",
+      "source_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+      "source_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+      "historical_budget_records_preserved": true,
+      "original_start_utc": null,
+      "active_hard_deadline_utc": null,
+      "active_science_cutoff_utc": null,
+      "active_fixed_closure_reserve_hours": null,
+      "prior_wall_clock_deadlines_science_cutoffs_fixed_reserve": "SUPERSEDED_NOT_EXECUTION_GATES",
+      "time_tracking": "REPORTING_ONLY",
+      "provider_rental_start_utc": null,
+      "provider_hourly_rate_usd": null,
+      "cost_usd": null,
+      "ask_for_original_or_replacement_deadline": false,
+      "stage_approval_required": true,
+      "stage_scope": "A02 only; stop for separate A03 approval"
+    },
+    "owned_metadata_workers_remaining": [],
+    "owned_scientific_jobs": [],
+    "owned_gpu_locks": [],
+    "auto_advancer_installed": false
+  },
+  "outputs": [
+    {
+      "path": "A02_SUMMARY.json",
+      "bytes": 2205,
+      "sha256": "e4483747cf5752c88a6fdaf56bee1f837b7fe3a8a6230d582e245d0f7d9f1742"
+    },
+    {
+      "path": "A03_REQUIREMENTS.json",
+      "bytes": 3666,
+      "sha256": "fbea7ab5ae3f4aae8a52a6b0e31441b4ccc31cb178d9edf891ceaaee54869e4f"
+    },
+    {
+      "path": "APPROVAL_LOG.jsonl",
+      "bytes": 3296,
+      "sha256": "134fc1dece9ed3bed40767c9b99a6e62aedb3af699982b0afb3848c8e57373f8"
+    },
+    {
+      "path": "BACKUP_VERIFICATION.json",
+      "bytes": 2791,
+      "sha256": "867749172561954806fb8d7eae219db3526b90bcc1211289270cb37c5b92cb69"
+    },
+    {
+      "path": "BUDGET_SUPERSESSION.json",
+      "bytes": 870,
+      "sha256": "ee0f8c6437048caf36bf3718061969020d08c562bbfecb781755f1d21fb349a8"
+    },
+    {
+      "path": "CANDIDATE_SELECTION.md",
+      "bytes": 2393,
+      "sha256": "408b55e889f4b15dba43d0320084c7298c5bd1745d2e3c2dcaf5a7589ae242a9"
+    },
+    {
+      "path": "CHECKPOINT_REGISTRY.json",
+      "bytes": 198911,
+      "sha256": "20fd650ea5c4734395f738b87924927353ac24d320cd3c21f867732dcc9d326b"
+    },
+    {
+      "path": "COMPARABILITY_MATRIX.csv",
+      "bytes": 6312,
+      "sha256": "d73c1cc6903b15c5a29b129ac2040fe2091acef7567fcdf3cac6840972a31659"
+    },
+    {
+      "path": "CONTROLLER_STATE.json",
+      "bytes": 10315,
+      "sha256": "6254b1a06b33b7b63eb53dcdc33ff9fd3cf52879462d2bc68db713330ad3f246"
+    },
+    {
+      "path": "COVERAGE.csv",
+      "bytes": 8230,
+      "sha256": "38143be94c4ff9b5d34a770883ec55af8c3ed3070cc47788953e52a07e9fff6d"
+    },
+    {
+      "path": "DEFERRED_GOALS.json",
+      "bytes": 509,
+      "sha256": "c65f2e63fc0db5baebcd24effa86b0afec3ff9a88f5e96914b53572f8edf7191"
+    },
+    {
+      "path": "DISCOVERY_CHECKPOINT.json",
+      "bytes": 1444,
+      "sha256": "5944a6ca7b3827fff5957f1b2c50e640c743855b592c3e43c9b285ce47b8b189"
+    },
+    {
+      "path": "DISCOVERY_PLAN.json",
+      "bytes": 2764,
+      "sha256": "3df3c80f9cf16fc36d75597e5324006e86e14d7cee58696520f0ea41b69c8f8d"
+    },
+    {
+      "path": "DOWNLOAD_PLAN.json",
+      "bytes": 82466,
+      "sha256": "3071de47fbc73f0d9c90519487aa01b1c5f6bc9a86f011cdc26ff04012f0291d"
+    },
+    {
+      "path": "EVIDENCE_MANIFEST.json",
+      "bytes": 50688,
+      "sha256": "548ee21dca1abf02c3082f43e27f5c12c16abc4c52ad2b10e3357195ec2f4e8a"
+    },
+    {
+      "path": "INVENTORY_QA.json",
+      "bytes": 30724,
+      "sha256": "e1dd3728ed721b73d534f8ba855ed612a59fe366fae746b9f626b2b7203d4a73"
+    },
+    {
+      "path": "INVENTORY_SUMMARY.json",
+      "bytes": 854,
+      "sha256": "d38914f265b9042654ce058c8d3322ea89707802dc15d6eb2de9d311bf6466d0"
+    },
+    {
+      "path": "LINEAGE_EXPOSURE.csv",
+      "bytes": 36771,
+      "sha256": "61e5fffc0103b6aae2e5368e84f666d59b5932c1b3f6cbeeb4910a3ed224b438"
+    },
+    {
+      "path": "LIVE_INVENTORY.json",
+      "bytes": 179275,
+      "sha256": "e6a8e0fa7fa4e1337c4ba8611dbad021d13e6975025b306c8f92fd74481157ae"
+    },
+    {
+      "path": "MISSING_INPUTS_DRAFT.md",
+      "bytes": 1605,
+      "sha256": "f2919aa57c8e5fefa36d0ab02cc6f211e9f61aeef0dff85dad911310a9eef68d"
+    },
+    {
+      "path": "PACKAGE_VALIDATION.json",
+      "bytes": 455,
+      "sha256": "f88482aba9ef7f44cbb61d348c1b800fca5a09948a9559705d47645f1c97fb89"
+    },
+    {
+      "path": "PROVENANCE_EVIDENCE.jsonl",
+      "bytes": 669587,
+      "sha256": "fb1aa4d9e120eba42f169291b290ed3e720038282a10bdbbf78681991bc41640"
+    },
+    {
+      "path": "REMOTE_HANDOFF.json",
+      "bytes": 7890,
+      "sha256": "4c19facb880417e0daea8f21199dcd7c6c68c661c565e3363e9665d0b1584140"
+    },
+    {
+      "path": "RESOURCE_CLOSEOUT.json",
+      "bytes": 2022,
+      "sha256": "1c4ba131295b561621e3858fc1dbfb108e5d030e411f201bb59761d65e1d7953"
+    },
+    {
+      "path": "RESUME_MANIFEST.json",
+      "bytes": 3376,
+      "sha256": "55d8c2c42f176ebad6621385068e3e0a416aafe0fbbd21f9d7564368ed01304e"
+    },
+    {
+      "path": "RETAIN_MEMBERSHIP.csv",
+      "bytes": 20120,
+      "sha256": "f4b3ded5dac2bd00aff4ee58d11d3916c7a003b7e1cf382bb66d076c71ba5cf0"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 7877,
+      "sha256": "75be60c8dab4826fd9edd9b6f6685e8f595d5a88137baef5a28162c6619c4c1c"
+    },
+    {
+      "path": "SHARD_MANIFESTS.json",
+      "bytes": 71033,
+      "sha256": "499048f9acf96fa9197adeba35d35c73d52c1715c04c2c6e959ff072318b3eb6"
+    },
+    {
+      "path": "TASK_ENTRY_MATRIX.csv",
+      "bytes": 1530,
+      "sha256": "dc01d64cdf7eef14e7d5bc6fba1c9e2851cd07cea69019764fc997649b041b92"
+    }
+  ],
+  "checks": {
+    "package": "31/31 PASS",
+    "independent_saved_metadata_QA": "PASS",
+    "raw_small_objects_hashed": 63,
+    "selected_config_pointer_rechecks": 12,
+    "restored_payload_files_verified": 347,
+    "provider_listing_exhaustion": "UNVERIFIED; claims limited"
+  },
+  "limitations": [
+    {
+      "id": "PROVIDER_LISTING_EXHAUSTION_UNVERIFIED",
+      "scope": "Discovery completeness and absence claims",
+      "detail": "Direct connector listing and public embedded display agree for three roots and128-shard base folder, but neither exposes terminal provider-page evidence; search returned contradictory empties."
+    },
+    {
+      "id": "R2_UNIDENTIFIED_IN_BOUNDED_SCOPE",
+      "scope": "R2-dependent selection/contrasts",
+      "detail": "No candidate identified in inspected metadata. No global absence conclusion."
+    },
+    {
+      "id": "PAYLOAD_RUNTIME_COHORT_PENDING",
+      "scope": "Scientific acceptance",
+      "detail": "All payload hashes/runtime loading pending A04; scientific reuse/cohorts/heads/controls pending A03. This is expected downstream work."
+    },
+    {
+      "id": "LINEAGE_EXPOSURE_OBJECTIVE_UNRESOLVED",
+      "scope": "Causal interpretation",
+      "detail": "Configured paths, task-family declarations and rounded counters do not resolve exact parents/objective/dataset versions/realized exposure."
+    }
+  ],
+  "blockers_to_useful_A03": [],
+  "owned_jobs": [],
+  "owned_locks": [],
+  "all_owned_jobs_quiescent": true,
+  "backup_status": "VERIFIED_METADATA_STAGE_CHECKPOINT",
+  "private_checkpoint_revision": "24c8dad8b4375cf921740981d90aabe9d1f5785b",
+  "resume_manifest_sha256": "55d8c2c42f176ebad6621385068e3e0a416aafe0fbbd21f9d7564368ed01304e",
+  "approval_for_next_stage": false,
+  "sealed_utc": "2026-11-17T10:32:40.923158+00:00",
+  "precommit_validation_correction": {
+    "issue": "Current state retained A01 latest-attempt aliases after stage transition",
+    "repair": "Use A02 report/control/artifact namespaces; historical budget alias explicitly points to preserved prior record; no execution-time gate remains",
+    "prior_seal_preserved": "precommit-seals/v1"
+  }
+}

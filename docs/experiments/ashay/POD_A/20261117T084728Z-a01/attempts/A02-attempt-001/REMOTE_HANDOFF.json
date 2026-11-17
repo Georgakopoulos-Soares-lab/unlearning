@@ -1,0 +1,182 @@
+{
+  "schema": "pod-a-remote-handoff-v1",
+  "owner": "POD_A",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A02",
+  "attempt_id": "A02-attempt-001",
+  "status": "PARTIAL",
+  "prompt_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+  "scientific_code_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "research_before_delivery": "10b93de6c7e84916c1b0a57305ad46c6396a1094",
+  "report_root": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A02-attempt-001",
+  "inventory_counts": {
+    "schema": "pod-a-a02-closeout-v1",
+    "status": "PARTIAL",
+    "run_id": "20261117T084728Z-a01",
+    "stage": "A02",
+    "attempt_id": "A02-attempt-001",
+    "prompt_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "candidate_count": 10,
+    "proposed_selected_candidates": 6,
+    "historical_reference_candidates": 3,
+    "proposed_new_incremental_candidates": 3,
+    "unselected_earlier_iterations": 2,
+    "off_design_candidates_excluded_from_primary_matrix": 2,
+    "unresolved_stage": [
+      "R2"
+    ],
+    "weight_duplicate_status": "UNKNOWN_NOT_MEASURED",
+    "metadata_comparison_pairs": 15,
+    "metadata_endpoint_pairs_available": 12,
+    "adjacent_pairs_total": 5,
+    "adjacent_pairs_with_endpoints": 3,
+    "scientific_comparisons_verified": 0,
+    "scientific_units_new": 0,
+    "scientific_units_reused_validated": 0,
+    "scientific_units_failed": 0,
+    "provenance_records": 1106,
+    "membership_rows": 60,
+    "independent_metadata_QA": "PASS",
+    "limitations": [
+      {
+        "id": "PROVIDER_LISTING_EXHAUSTION_UNVERIFIED",
+        "scope": "Discovery completeness and absence claims",
+        "detail": "Direct connector listing and public embedded display agree for three roots and128-shard base folder, but neither exposes terminal provider-page evidence; search returned contradictory empties."
+      },
+      {
+        "id": "R2_UNIDENTIFIED_IN_BOUNDED_SCOPE",
+        "scope": "R2-dependent selection/contrasts",
+        "detail": "No candidate identified in inspected metadata. No global absence conclusion."
+      },
+      {
+        "id": "PAYLOAD_RUNTIME_COHORT_PENDING",
+        "scope": "Scientific acceptance",
+        "detail": "All payload hashes/runtime loading pending A04; scientific reuse/cohorts/heads/controls pending A03. This is expected downstream work."
+      },
+      {
+        "id": "LINEAGE_EXPOSURE_OBJECTIVE_UNRESOLVED",
+        "scope": "Causal interpretation",
+        "detail": "Configured paths, task-family declarations and rounded counters do not resolve exact parents/objective/dataset versions/realized exposure."
+      }
+    ],
+    "global_ownership_or_budget_blocker": false,
+    "private_stage_checkpoint_verified": true,
+    "a03_can_use_handoff": true,
+    "a03_approved": false,
+    "next_state": "WAITING_FOR_APPROVAL: A03"
+  },
+  "time_policy": {
+    "schema": "pod-a-time-policy-v2",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "source": "Current direct request explicitly invoking read_a02.md",
+    "source_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "source_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+    "historical_budget_records_preserved": true,
+    "original_start_utc": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "prior_wall_clock_deadlines_science_cutoffs_fixed_reserve": "SUPERSEDED_NOT_EXECUTION_GATES",
+    "time_tracking": "REPORTING_ONLY",
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "ask_for_original_or_replacement_deadline": false,
+    "stage_approval_required": true,
+    "stage_scope": "A02 only; stop for separate A03 approval"
+  },
+  "private_checkpoint": {
+    "schema": "pod-a-a02-private-checkpoint-v1",
+    "status": "VERIFIED_METADATA_STAGE_CHECKPOINT",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "repository_type": "dataset",
+    "private_verified_before_and_after": true,
+    "write_auth_check": "PASS",
+    "revision": "24c8dad8b4375cf921740981d90aabe9d1f5785b",
+    "archive_path": "POD_A/20261117T084728Z-a01/A02/A02-attempt-001/evidence-001/a02-provenance.tar.gz",
+    "sidecar_path": "POD_A/20261117T084728Z-a01/A02/A02-attempt-001/evidence-001/a02-provenance.tar.gz.sha256",
+    "archive_bytes": 684458,
+    "archive_sha256": "04b7672dc0ccb19301006f290f9766bedc1858ba6425ada825ca29be14b9b41f",
+    "sidecar_sha256": "11a559f5e02426bcaa80b6f414efca8e9dc7bd3c26b82d02d13e19ccb3d1816a",
+    "fresh_download_force": true,
+    "fresh_download_cache_was_new": true,
+    "restored_archive_sha256_matches": true,
+    "safe_member_checks_pass": true,
+    "payload_files_verified": 347,
+    "all_payload_member_sizes_and_hashes_verified": true,
+    "checksum_file_itself_sha256_verified": true,
+    "restored_metadata_checks": [
+      {
+        "candidate_id": "drive-folder:13EXn9LuTTmqHuYjdIoWQ36Ig27MZ51sI",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:154kF29Cjam2F2rC-ihj6_Oobmm-oNur1",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:17qYvOuX28kUId81CkME36ksT9Zb4s99e",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:1K19CrsvXAk6mIwB1m3xe1epomEHRtEUE",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:1f9zcarXxhWNmdPXw6ZAA93JHtlEn3ll9",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:1iYFc6si0sFOY2j8uDLeh-AFXodO3htbk",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:1sSwNcCpavYM9r6D0GTOzcSPKjd9sZV7D",
+        "config_and_index_check": "PASS"
+      },
+      {
+        "candidate_id": "drive-folder:1x1ugJ0Cd-ODGVWMHClxJojRZKBQXRf-V",
+        "config_and_index_check": "PASS"
+      }
+    ],
+    "restore_semantic_scope": "All 10 restored configs and index storage-name sets; no models, scientific heads, predictions or metrics exist in this A02 payload",
+    "original_archive_not_substituted": true,
+    "final_delivery_receipt_excluded_to_avoid_self_reference": true,
+    "started_utc": "2026-11-17T10:29:09.876024+00:00",
+    "completed_utc": "2026-11-17T10:29:19.728762+00:00",
+    "local_recovery_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A02-attempt-001/evidence-001"
+  },
+  "limitations": [
+    {
+      "id": "PROVIDER_LISTING_EXHAUSTION_UNVERIFIED",
+      "scope": "Discovery completeness and absence claims",
+      "detail": "Direct connector listing and public embedded display agree for three roots and128-shard base folder, but neither exposes terminal provider-page evidence; search returned contradictory empties."
+    },
+    {
+      "id": "R2_UNIDENTIFIED_IN_BOUNDED_SCOPE",
+      "scope": "R2-dependent selection/contrasts",
+      "detail": "No candidate identified in inspected metadata. No global absence conclusion."
+    },
+    {
+      "id": "PAYLOAD_RUNTIME_COHORT_PENDING",
+      "scope": "Scientific acceptance",
+      "detail": "All payload hashes/runtime loading pending A04; scientific reuse/cohorts/heads/controls pending A03. This is expected downstream work."
+    },
+    {
+      "id": "LINEAGE_EXPOSURE_OBJECTIVE_UNRESOLVED",
+      "scope": "Causal interpretation",
+      "detail": "Configured paths, task-family declarations and rounded counters do not resolve exact parents/objective/dataset versions/realized exposure."
+    }
+  ],
+  "a03_approved": false,
+  "next_state": "WAITING_FOR_APPROVAL: A03",
+  "peer_filesystem_assumed_shared": false
+}

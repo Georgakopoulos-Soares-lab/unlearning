@@ -1,0 +1,59 @@
+{
+  "schema": "pod-a-a02-a03-requirements-v1",
+  "historical_dependencies": {
+    "status": "REQUIRED_IMMUTABLE_DEPENDENCIES",
+    "base_h3_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "archive": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "bytes": 10108100047,
+      "payload_root": "multiretain-layers-v1-final-20261110T140836Z",
+      "original_root": "/workspace/meeting-artifacts/multiretain-layers-v1"
+    },
+    "controls_archive": {
+      "repo": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "archive": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "bytes": 47129813,
+      "payload_root": "benign-followup-v1",
+      "original_root": "/workspace/meeting-artifacts/benign-followup-v1"
+    },
+    "supplement": "New features/probes/paired results/source; no repackaging old large caches",
+    "excluded": "All model weights and installed runtime; selected new weights must be reacquired via recorded DriveID/SHA for GPU regeneration",
+    "R3_archive": {
+      "remote_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "remote_repository_type": "dataset",
+      "remote_revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+      "remote_archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "remote_sidecar_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz.sha256",
+      "sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "bytes": 4412868094,
+      "payload_files_verified": 8199,
+      "payload_root": "multiretain-comparison-v1-final-20261110T173945Z"
+    },
+    "restore_order": [
+      "base_h3_archive",
+      "controls_archive",
+      "R3_archive",
+      "new_incremental_preparation_supplement"
+    ],
+    "scope": "Full prior scientific recovery requires these archives. New v13 supplement contains no duplicate feature/probe caches or model weights."
+  },
+  "source_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "source_path": "docs/experiments/ashay/incremental-retain-eval-v1/RESTORE_DEPENDENCIES.json",
+  "source_sha256": "25040588f64f4087bb70ec2a360ea745aa131e0c88a78b33740b581bf8237695",
+  "stage_instruction": "Separate direct A03 approval required; A03 prompt has not been fetched for execution.",
+  "requirements": [
+    "Verify private read/write roundtrip, archive/member hashes and safe restore into isolated paths",
+    "Restore base/R1/R3 feature/cohort/head/control evidence; accept only compatible sealed units",
+    "Verify exact previously examined H3 members, all ordered cohort/label/group identities and folds",
+    "Bridge same config/tokenizer references, never equate IDs/sizes with fresh payload digests",
+    "Preserve A02 bounded listing limitations and R2 unresolved status",
+    "Carry explicit read_a02.md time supersession; do not reopen original-start/deadline blocker",
+    "Document R4/R5/R6 unequal nominal steps/decay targets and unknown parent/objective/exposure",
+    "Do not download new model payloads or qualify runtime until separately approved A04"
+  ],
+  "inventory_does_not_depend_on_R2": "A03 historical recovery is useful without resolving R2 or claiming listing exhaustion."
+}

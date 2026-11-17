@@ -1,0 +1,73 @@
+{
+  "schema": "pod-a-a02-discovery-plan-v1",
+  "run_id": "20261117T084728Z-a01",
+  "attempt_id": "A02-attempt-001",
+  "created_utc": "2026-11-17T10:06:48.708951+00:00",
+  "roots": [
+    {
+      "id": "1OUQVCn5JgQG_V_wIp0kAi19Y-PxgV6cE",
+      "role": "primary_incremental"
+    },
+    {
+      "id": "1pM5-kFeki5Oq1oLjQNXH0U2f2TlGNuzi",
+      "role": "historical_base_reference_metadata"
+    },
+    {
+      "id": "1AsgCkDs3n5JTJJF4BSyCtjYBbhES0gVA",
+      "role": "maxent_reference_metadata"
+    }
+  ],
+  "routes": [
+    "Connected Drive metadata/list/search with pagination where supported",
+    "Existing proven public Drive listing fallback if connector access insufficient"
+  ],
+  "max_metadata_file_bytes": 8388608,
+  "max_total_new_metadata_bytes": 134217728,
+  "max_requests": 600,
+  "max_attempts_per_transient_request": 3,
+  "authorization_failure_retries": 0,
+  "max_folders": 200,
+  "max_depth": 12,
+  "max_candidates": 100,
+  "max_metadata_objects": 1000,
+  "local_weight_hashing": "DEFERRED_TO_A04; no local weights known, avoid unrelated I/O",
+  "skip_subtree_patterns": [
+    "relearn",
+    "saliency",
+    "perturb",
+    "noise",
+    "gaussian",
+    "reinit",
+    "host_tropism",
+    "hvue",
+    "benchmark",
+    "evaluation"
+  ],
+  "no_payload_download": true,
+  "no_model_deserialization": true,
+  "no_GPU": true,
+  "selection_rule": "Explicit supplied delivery pointer tied to consistent config/shards/job; never max step, newest mtime or held-out score. Preserve ambiguous candidates.",
+  "private_artifact_root": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A02-attempt-001",
+  "private_control_root": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A02-attempt-001",
+  "research_report_root": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A02-attempt-001",
+  "time_policy": {
+    "schema": "pod-a-time-policy-v2",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "source": "Current direct request explicitly invoking read_a02.md",
+    "source_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+    "source_sha256": "357ad885a8278c0f10108e3ba26249849c8582971b1ec73557b7651c4c01c090",
+    "historical_budget_records_preserved": true,
+    "original_start_utc": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "prior_wall_clock_deadlines_science_cutoffs_fixed_reserve": "SUPERSEDED_NOT_EXECUTION_GATES",
+    "time_tracking": "REPORTING_ONLY",
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "ask_for_original_or_replacement_deadline": false,
+    "stage_approval_required": true,
+    "stage_scope": "A02 only; stop for separate A03 approval"
+  }
+}

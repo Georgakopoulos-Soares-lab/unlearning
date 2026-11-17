@@ -1,0 +1,56 @@
+{
+  "schema": "pod-a-a02-closeout-v1",
+  "status": "PARTIAL",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A02",
+  "attempt_id": "A02-attempt-001",
+  "prompt_commit": "c852a3a9636855dd113b07142cb0771031fa2364",
+  "candidate_count": 10,
+  "proposed_selected_candidates": 6,
+  "historical_reference_candidates": 3,
+  "proposed_new_incremental_candidates": 3,
+  "unselected_earlier_iterations": 2,
+  "off_design_candidates_excluded_from_primary_matrix": 2,
+  "unresolved_stage": [
+    "R2"
+  ],
+  "weight_duplicate_status": "UNKNOWN_NOT_MEASURED",
+  "metadata_comparison_pairs": 15,
+  "metadata_endpoint_pairs_available": 12,
+  "adjacent_pairs_total": 5,
+  "adjacent_pairs_with_endpoints": 3,
+  "scientific_comparisons_verified": 0,
+  "scientific_units_new": 0,
+  "scientific_units_reused_validated": 0,
+  "scientific_units_failed": 0,
+  "provenance_records": 1106,
+  "membership_rows": 60,
+  "independent_metadata_QA": "PASS",
+  "limitations": [
+    {
+      "id": "PROVIDER_LISTING_EXHAUSTION_UNVERIFIED",
+      "scope": "Discovery completeness and absence claims",
+      "detail": "Direct connector listing and public embedded display agree for three roots and128-shard base folder, but neither exposes terminal provider-page evidence; search returned contradictory empties."
+    },
+    {
+      "id": "R2_UNIDENTIFIED_IN_BOUNDED_SCOPE",
+      "scope": "R2-dependent selection/contrasts",
+      "detail": "No candidate identified in inspected metadata. No global absence conclusion."
+    },
+    {
+      "id": "PAYLOAD_RUNTIME_COHORT_PENDING",
+      "scope": "Scientific acceptance",
+      "detail": "All payload hashes/runtime loading pending A04; scientific reuse/cohorts/heads/controls pending A03. This is expected downstream work."
+    },
+    {
+      "id": "LINEAGE_EXPOSURE_OBJECTIVE_UNRESOLVED",
+      "scope": "Causal interpretation",
+      "detail": "Configured paths, task-family declarations and rounded counters do not resolve exact parents/objective/dataset versions/realized exposure."
+    }
+  ],
+  "global_ownership_or_budget_blocker": false,
+  "private_stage_checkpoint_verified": true,
+  "a03_can_use_handoff": true,
+  "a03_approved": false,
+  "next_state": "WAITING_FOR_APPROVAL: A03"
+}
