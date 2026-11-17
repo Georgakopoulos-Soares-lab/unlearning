@@ -1,0 +1,1182 @@
+{
+  "schema_version": "POD_B.inventory-receipt.v1",
+  "stage": "B02",
+  "status": "COMPLETE_INVENTORY_SCOPE_WITH_EXTERNAL_RECONSTRUCTION_BLOCKERS",
+  "created_utc": "2026-11-17T08:34:51.182628+00:00",
+  "approval": {
+    "stage": "B02",
+    "attempt": 1,
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_B",
+    "commit": "bf7b468a40f27b528992930ce55a26504ef27683",
+    "files": [
+      {
+        "path": "POD_B_MASTER.md",
+        "sha256": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
+        "bytes": 10648
+      },
+      {
+        "path": "POD_B_02_INVENTORY.md",
+        "sha256": "958ffca8d6f72043a656742bc5ec8218b58bbaef1f8208925b455c8f9130b21d",
+        "bytes": 24589
+      },
+      {
+        "path": "override_pod_b_.txt",
+        "sha256": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
+        "bytes": 1376
+      }
+    ],
+    "direct_approval_message": "👍 B02. Execute the expanded post-B01 replacement of\nPOD_B_02_INVENTORY.md from the latest fetched POD_B prompt commit.\n\nWork through its full scope, reuse verified prior evidence, and\nresolve every question that the available sources support.\nPreserve unresolved facts explicitly.\n\nOnly research POD_B is writable. Report findings, deliverables\nand blockers, then stop before B03.",
+    "approval_observed_utc": "2026-11-17T08:16:10.249976+00:00",
+    "user_message_timestamp_exposed": false,
+    "verbatim_copy_directory": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/prompts",
+    "new_scope_explicitly_approved_by_user": true,
+    "master_and_override_unchanged": true,
+    "later_stage_prompts_read": false
+  },
+  "research_context": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "worktree": "/workspace/wt-POD_B",
+    "branch": "POD_B",
+    "head_at_entry": "d5d4f256e09d7939b92ce9404d97047beb53506d",
+    "prior_science_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75"
+  },
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z",
+  "counts": {
+    "historical": 36,
+    "base": 18,
+    "maxent": 18,
+    "new": 0,
+    "removed": 0,
+    "changed_listed_metadata": 0,
+    "incomplete_historical_deliveries": 0,
+    "current_weight_byte_identity_freshly_verified": 0,
+    "reconstruction_blocked": 36,
+    "full_models_qualified": 0,
+    "supplied_score_cells": 0,
+    "potential_supplied_score_cells": 16848,
+    "distinct_historical_payload_hashes": 36,
+    "distinct_historical_tensor_fingerprints": 36,
+    "config_hash_families": 3,
+    "tensor_key_shape_dtype_schemas": 1,
+    "observed_jobs": 3,
+    "potential_adjacent_edges": 34,
+    "restart_edges_unproven": 1,
+    "common_step_pairs": 18
+  },
+  "evidence_map": [
+    {
+      "id": "E01",
+      "type": "historical_cpu_qualification",
+      "source": {
+        "repo": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+        "path": "docs/experiments/ashay/relearning-benign-v1/CHECKPOINT_REGISTRY.json",
+        "sha256": "54c734405d0230c0270e64ee53333e0af7bb84d8015c597c73201088bcaaee97",
+        "full_registry": "/workspace/meeting-artifacts/relearning-benign-v1/CHECKPOINT_REGISTRY.json",
+        "full_registry_sha256": "96ba15ca533d4f5091b6300c5f62c79f8d203ff46fe639e87c73d2f27e404c03"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "36 distinct archival weights hashes and 36 tensor-content fingerprints; 200 finite adapter model tensors / 100 modules each; single required storage shard.",
+      "limitations": "B02 verifies compact/full receipt linkage and small identities, not tensor bytes or finiteness again. Model-only extraction excludes optimizer tensors; this is not full-model identity.",
+      "historical_reuse": true
+    },
+    {
+      "id": "E02",
+      "type": "new_saved_metadata_inspection",
+      "source": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/LOCAL_METADATA_ANALYSIS.json",
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "All36 local configs/small-file hashes checked; three exact YAML hash families, one tensor name/shape/dtype schema; both load/save paths name MaxEnt; only pretrained parent and last-two finetune fields differ.",
+      "limitations": "Config declarations are not actual runtime loads. Local snapshot hashes do not prove unchanged live bytes. Tensor schemas reuse E01; no new tensor parsing.",
+      "historical_reuse": false,
+      "additional_config_metadata": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/ADDITIONAL_CONFIG_FIELDS.json"
+    },
+    {
+      "id": "E03",
+      "type": "new_authenticated_listing",
+      "source": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/LIVE_CHECKPOINT_LISTINGS.json",
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "36 directly listed folders; 18+18 steps100..1800; seven top-level entries each; IDs/sizes/mtimes match historical snapshot; no added/removed/metadata-changed checkpoints.",
+      "limitations": "No provider version/cryptographic checksum exposed in normalized listing. Unchanged metadata does not prove unchanged contents; tokenizer children not freshly traversed. No new weight download.",
+      "historical_reuse": false,
+      "listing_limit": 1000,
+      "observed_children_per_checkpoint": 7,
+      "update_analysis": {
+        "historical_count": 36,
+        "live_count": 36,
+        "entries_per_folder": [
+          7
+        ],
+        "changed_metadata_records": 0,
+        "changes": [],
+        "new_steps": [],
+        "removed_steps": [],
+        "limitation": "Live identity/size/mtime comparison only; no fresh weight checksum or tensor validation"
+      }
+    },
+    {
+      "id": "E04",
+      "type": "new_log_observation",
+      "source": {
+        "base_file_id": "1hFDzXtitZPmohHlKZTqumBoXRcZFFlnR",
+        "maxent_file_id": "1EPoINmxGEhje2mQ6X1oLbI2dsIEQ7DQz",
+        "base_text_sha256": "b0b06c51cb218b939a7b718801c67b9aadc3bb389c43f9d2078a0412808ecf2c",
+        "maxent_text_sha256": "0d644e202cdf77e0cc353c6a6136154b8de0020c47d1f52c0de038abf8154e4a"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Base job11760341 saves100..1800 Nov9; MaxEnt job11776574 saves100..1600 Nov10, job11803647 saves1700..1800 after later restart. Current series latest pointers both1800.",
+      "limitations": "Readable-text hashes, not provider checksums. Progress logs report saved steps but not selected parent hashes, resumed adapter identity, command line or source revision; job labels do not prove checkpoint lineage.",
+      "historical_reuse": false
+    },
+    {
+      "id": "E05",
+      "type": "new_static_scalar_extraction",
+      "source": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/SAVED_COUNTER_ANALYSIS.json",
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "All36 folder/common/train-state steps agree; train sample slots and scheduler num_steps equal128*step; skipped sample counters0; validation counters0/44928/89856/134784.",
+      "limitations": "No unpickling: fixed audited652-byte scalar descriptor SHA and struct reads. No new model packages. do_train/do_valid/do_test flags are config metadata, not proof or authorization of data access; successful updates/unique examples/valid tokens remain unknown.",
+      "historical_reuse": false
+    },
+    {
+      "id": "E06",
+      "type": "new_official_source_history",
+      "source": {
+        "repo": "NVIDIA-BioNeMo/bionemo-recipes",
+        "pretraining_commit": "1263f64629ecd27e9333f28923e728c381a9cf2c",
+        "pretraining_path": "bionemo-recipes/recipes/evo2_megatron/src/bionemo/evo2/models/evo2_lora.py",
+        "later_commit": "19ee43214fec23e87916efd468eaa62df47dba3e",
+        "later_path": "recipes/evo2_megatron/src/bionemo/evo2/models/evo2_lora.py",
+        "identical_git_blob": "a79acacbd26139dd617b494ac96f8370ec8cdb85",
+        "move_commit": "5f1cacdb47015c6e29c09b0c582fe31e41650dad"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Evo2LoRA source is identical at Apr23 and Nov12 revisions; therefore this implementation existed before Nov9/10 training. Training recompute patch, tied-pair validation and skip-freeze behavior identified.",
+      "limitations": "Actual training source/environment not supplied. Same class or blob availability does not establish that the jobs used it. Later whole environment is not an approved compatible install.",
+      "historical_reuse": false
+    },
+    {
+      "id": "E07",
+      "type": "new_static_source_trace",
+      "source": {
+        "repo": "NVIDIA-NeMo/Megatron-Bridge",
+        "candidate_revision": "fcbb6031103d0ca845c1a54d4fee55ecfcca17b6",
+        "tag": "v0.5.0",
+        "tag_commit_date": "2026-06-16T12:26:31Z",
+        "adjacent_older_recipe_pin": "549e3cb970c170b1d7a86d021261efe05e8a5d9f",
+        "parent_runtime_pin": "18ef1b61309dd45bc0535fb7c60064b9d8829a35"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "v0.5 LoRA/base/matcher declare the saved adapter fields, scale32/16, matching adapter key conventions and pretrained-before-adapter load order. Older549 lacks share_expert_adapters/normalize_moe_lora; parent18ef also lacks required _walk_model/canonical_mapping APIs.",
+      "limitations": "Adapter API compatibility only; full config/provider/Core/TE/runtime and numerical equivalence remain unqualified. Neither runtime version is proven original. Source stored as inert text only.",
+      "historical_reuse": false,
+      "locations": [
+        "peft/base.py:84-134",
+        "peft/module_matcher.py",
+        "peft/lora.py:96-109",
+        "peft/adapter_wrapper.py:164-222",
+        "peft/lora_layers.py:40-62",
+        "training/setup.py:274-281,458-496",
+        "training/checkpointing.py:2408-2426,2510-2517,2770-2836"
+      ],
+      "additional_static_check": "AST-only declaration check: all14 serialized adapter data/constructor fields exist across R2 Evo2LoRA/LoRA/PEFT/ModuleMatcher; full runtime remains unqualified."
+    },
+    {
+      "id": "E08",
+      "type": "new_project_source_history",
+      "source": {
+        "repo": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "branch_read_only": "bionemo",
+        "commit": "b90fc1853d1d3be79922a98a2649c91c89716637",
+        "launcher_path": "evo2_causal_lm_finetune/train_lora.sbatch",
+        "launcher_history_commit": "f002639c8089433f37cbb1057ffca33b36d9da5b"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Relevant launcher exists on bionemo (main path404). Launcher external environment lacks immutable training source pin and has seq1024/GBS64/max20k/save1000, differing from delivery seq1000/GBS128/max1800/save100.",
+      "limitations": "Not the demonstrated executed command. Eval-script full-state comment conflicts with adapter-only model inventory and cannot establish reconstruction. Dataset prefix metadata inspected only; no dataset contents accessed.",
+      "historical_reuse": false
+    },
+    {
+      "id": "E09",
+      "type": "new_targeted_negative_evidence",
+      "source": {
+        "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/SOURCE_PROVENANCE.json",
+        "sibling_config_file_id": "1tpg-q9N5u_LD-70cO5bRc4yTvkfeKxef",
+        "sibling_config_sha256": "507433db1d7cf521cc4e3a07fc2466780765ff3ef6a10d70ea6228ca78a2fec1"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Current series folders have no step0. Relevant older continued-pretrain sibling lists17000,18000,19000,20000,20001; its20001 config is GBS64/seq1024, different run. ParentH3 current pointer2000; base conversioniter1 available.",
+      "limitations": "Scoped absence only; no global absence claim. Sibling not part of36, no weights acquired. Available base/H3 parents are reference candidates, not proven trajectory starts.",
+      "historical_reuse": false,
+      "sibling_config_raw_artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/live-small/sibling_config.yaml"
+    },
+    {
+      "id": "E10",
+      "type": "new_bounded_log_metadata",
+      "source": {
+        "file_id": "1vuSJVKRY0hoJppCSwxe25VMN9CuAy2SA",
+        "bytes": 5417250,
+        "sha256": "091253af36e0820831c7443f767f5bfdd91b7388571fa424b3b299afeae9a778",
+        "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/TENSORBOARD_METADATA.json"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Restart event file has 46881 events and 245 summary tags; no string/text startup metadata. No revision/parent identity resolved.",
+      "limitations": "Only framing/protobuf/tag names inspected, no scalar/histogram metrics extracted or calculated. CRC fields skipped; exact downloaded file SHA recorded. Initial44MB/base49MB event files not downloaded to repeat this low-yield search.",
+      "historical_reuse": false
+    },
+    {
+      "id": "E11",
+      "type": "historical_receipt",
+      "source": {
+        "repo": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+        "path": "docs/experiments/ashay/relearning-benign-v1/PARENT_DOWNLOAD_COMPLETE.json",
+        "sha256": "f1762104795f95b4caa47eb06625da9659e87ca89fa41eae04a9ce09b4f81f0c"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "129 historical parent input file identities; available base conversion and H3 parent payloads.",
+      "limitations": "Reused receipt; B02 does not repeat its scientific computation or large input hash audit.",
+      "historical_reuse": true
+    },
+    {
+      "id": "E12",
+      "type": "historical_receipt",
+      "source": {
+        "repo": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+        "path": "docs/experiments/ashay/relearning-benign-v1/PARENT_SMOKE_VALIDATION.json",
+        "sha256": "a99c42427b58b4596d187dadd315d8e8140ff7126ba198ad76e2261b9a25e23a"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Historical162 fixed-batch parent comparisons pass, not adapter qualification.",
+      "limitations": "Reused receipt; B02 does not repeat its scientific computation or large input hash audit.",
+      "historical_reuse": true
+    },
+    {
+      "id": "E13",
+      "type": "historical_receipt",
+      "source": {
+        "repo": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+        "path": "docs/experiments/ashay/relearning-benign-v1/THROUGHPUT_TRAINING_VALIDATION.json",
+        "sha256": "0a7e6bd105ae3961ac5768683ce79689b1e2ae7af677eb36eec977deb05f2913"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Historical384 train-only rows/six tasks/28 numerical checks pass, not supplied-model features.",
+      "limitations": "Reused receipt; B02 does not repeat its scientific computation or large input hash audit.",
+      "historical_reuse": true
+    },
+    {
+      "id": "E14",
+      "type": "historical_receipt",
+      "source": {
+        "repo": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+        "path": "docs/experiments/ashay/relearning-benign-v1/BACKUP_VERIFICATION.json",
+        "sha256": "74b76afd55d10c4086b3ca2c8ec98b0e978d2bdafa2f821bff8bf8712265f223"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Historical private qualification recovery and exact restored training-head predictions; no new restoration/backup.",
+      "limitations": "Reused receipt; B02 does not repeat its scientific computation or large input hash audit.",
+      "historical_reuse": true
+    },
+    {
+      "id": "E15",
+      "type": "historical_receipt",
+      "source": {
+        "repo": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+        "path": "docs/experiments/ashay/relearning-benign-v1/COMPARISON_PROTOCOL.json",
+        "sha256": "bf2d192b7e5aa12a6cc655b7ade3b8cef4a64e6de1c8a96071b3bd138e133970"
+      },
+      "inspected_utc": "2026-11-17T08:34:51.182628+00:00",
+      "claim": "Existing prospective protocol context and physical8/26 representations; no B02 protocol freeze or change.",
+      "limitations": "Reused receipt; B02 does not repeat its scientific computation or large input hash audit.",
+      "historical_reuse": true
+    }
+  ],
+  "carryover_manifest": [
+    {
+      "source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+      "source_path": "docs/experiments/ashay/relearning-benign-v1/CHECKPOINT_REGISTRY.json",
+      "source_sha256": "54c734405d0230c0270e64ee53333e0af7bb84d8015c597c73201088bcaaee97",
+      "full_local_registry_sha256": "96ba15ca533d4f5091b6300c5f62c79f8d203ff46fe639e87c73d2f27e404c03",
+      "destination": "docs/experiments/ashay/POD_B/CHECKPOINT_REGISTRY.jsonl",
+      "destination_sha256": "8c0503a9a25ae069181208c55695d99c27ce802e83ca3efb08d8cfd77691a59b",
+      "normalization": "v1 compatibility fields retained: series/step/folder_id/weights_sha256/tensor_content_fingerprint/tokenizer_sha256; stable id derived series/iter_7digits. input_files from v1 files; all tensor names/shapes/dtypes shared once. Independent statuses/counters/new listing links added. No numerical results transferred."
+    },
+    {
+      "source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+      "source_path": "docs/experiments/ashay/relearning-benign-v1/CHECKPOINT_REGISTRY.json",
+      "source_sha256": "54c734405d0230c0270e64ee53333e0af7bb84d8015c597c73201088bcaaee97",
+      "full_local_registry_sha256": "96ba15ca533d4f5091b6300c5f62c79f8d203ff46fe639e87c73d2f27e404c03",
+      "destination": "docs/experiments/ashay/POD_B/ADAPTER_TENSOR_SCHEMA.json",
+      "destination_sha256": "dea7f2182a6308c2e290dda9024d804d96bbfb8a3d0dea05b0fd7036d7f0c3c9",
+      "normalization": "v1 compatibility fields retained: series/step/folder_id/weights_sha256/tensor_content_fingerprint/tokenizer_sha256; stable id derived series/iter_7digits. input_files from v1 files; all tensor names/shapes/dtypes shared once. Independent statuses/counters/new listing links added. No numerical results transferred."
+    },
+    {
+      "source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+      "source_path": "docs/experiments/ashay/relearning-benign-v1/CHECKPOINT_REGISTRY.json",
+      "source_sha256": "54c734405d0230c0270e64ee53333e0af7bb84d8015c597c73201088bcaaee97",
+      "full_local_registry_sha256": "96ba15ca533d4f5091b6300c5f62c79f8d203ff46fe639e87c73d2f27e404c03",
+      "destination": "docs/experiments/ashay/POD_B/TRAJECTORY_MAP.csv",
+      "destination_sha256": "eedb8128d44103ecb46ea8e21d7f5fc5b014494392f5a4f5c9f073f20016c76c",
+      "normalization": "v1 compatibility fields retained: series/step/folder_id/weights_sha256/tensor_content_fingerprint/tokenizer_sha256; stable id derived series/iter_7digits. input_files from v1 files; all tensor names/shapes/dtypes shared once. Independent statuses/counters/new listing links added. No numerical results transferred."
+    },
+    {
+      "source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+      "source_path": "docs/experiments/ashay/relearning-benign-v1/CHECKPOINT_REGISTRY.json",
+      "source_sha256": "54c734405d0230c0270e64ee53333e0af7bb84d8015c597c73201088bcaaee97",
+      "full_local_registry_sha256": "96ba15ca533d4f5091b6300c5f62c79f8d203ff46fe639e87c73d2f27e404c03",
+      "destination": "docs/experiments/ashay/POD_B/DELIVERY_COVERAGE.csv",
+      "destination_sha256": "a5790dc54be74abac7e72fadcfc212054250e09db2ec26c6ac00f1ae45bce8fd",
+      "normalization": "v1 compatibility fields retained: series/step/folder_id/weights_sha256/tensor_content_fingerprint/tokenizer_sha256; stable id derived series/iter_7digits. input_files from v1 files; all tensor names/shapes/dtypes shared once. Independent statuses/counters/new listing links added. No numerical results transferred."
+    }
+  ],
+  "source_artifacts": [
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_adapter_wrapper.py.txt",
+      "bytes": 8818,
+      "sha256": "453b0f475fafe8add918fc9e1d65144a9d0671c46b2820a7932934e41f4513f3",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_base.py.txt",
+      "bytes": 9861,
+      "sha256": "4ea4fe3a04875869a00ae9742dfc071adc6484fc5e0ee266b5c0e4a603fd4682",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_checkpointing.py.txt",
+      "bytes": 139976,
+      "sha256": "efef23e8b41322692a7731860329b8a8378ff67e2f19bb9a095042639c3835d1",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_lora.py.txt",
+      "bytes": 14838,
+      "sha256": "b8596ed74fb940dd80e55e5c92f9afe2aa525c546af341a90ca4820d03d7ca03",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_lora_layers.py.txt",
+      "bytes": 29563,
+      "sha256": "b8d2233340cfaf2684708da45576d226e61632498783b7dad8c4b3b1d6d038a9",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_module_matcher.py.txt",
+      "bytes": 10401,
+      "sha256": "57fe5dc9516c0c5aad0d20e9b6e22058e92dc47577732d313dcb2b4dcaac4e00",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_setup.py.txt",
+      "bytes": 26425,
+      "sha256": "612cb8396b1576bcf978d98262fff72399e6684378aa7c30c5f9e50b2bf08a80",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge05_utils.py.txt",
+      "bytes": 66279,
+      "sha256": "a197ac577dd48dcbc05be6ed3d23ccbe050cc4b4e0908c8b6980927f13df1d60",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge549_base.py.txt",
+      "bytes": 9079,
+      "sha256": "4e1c44e8035c336b58bd61b1192f852126b5bd6f28e86f6899642b3bc9494f67",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge549_checkpointing.py.txt",
+      "bytes": 98907,
+      "sha256": "ff8b66f5a11dd0a7a90a60aa1c003df91b081d035dd59739ee2975fd893e0c12",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge549_lora.py.txt",
+      "bytes": 12367,
+      "sha256": "1a65735ce34afeceaf7a46141db6f80ce1db0f93959e71b82716cf456ab1baca",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge549_lora_layers.py.txt",
+      "bytes": 29480,
+      "sha256": "5dc6384f7e37c664bec11dc02243a47253f93c422986a34a409847fd7fdc2ef4",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge549_module_matcher.py.txt",
+      "bytes": 6426,
+      "sha256": "a1f2f087241a5709cfbb94d1337a458ffebbe207c9b9c3a7baf8ef2e04e19ae3",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge549_setup.py.txt",
+      "bytes": 22041,
+      "sha256": "1fcc7afe5c93364b1aa2800b8979601f5961e9992a4a23522f726842883d6c1d",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/bridge549_utils.py.txt",
+      "bytes": 30350,
+      "sha256": "e6a7715daed77086c36ee7dd7dbec3447b6eeca2356c01a74719eddf9341c51d",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/candidate_recipe.py.txt",
+      "bytes": 11753,
+      "sha256": "fa26a88411a399a08f5a302c2512df7231b77279fec05c54b231b0b24953df7e",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/loader_20260423.txt",
+      "bytes": 11465,
+      "sha256": "9b481000249879695c266b2489ac40999732c3e8f81f024027f96b9d972a6af3",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/project_environment.yml",
+      "bytes": 2422,
+      "sha256": "2aa58bcd5c75f749e6ee10fdedd07bea0432b4c1e785b1c8eb8b0d7afd12bce6",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/project_eval.sbatch.txt",
+      "bytes": 2683,
+      "sha256": "489dbc6b25276d41cc4fe06032473d4abb6058e0a8addf36fe1bf28e9155b270",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/project_requirements.txt",
+      "bytes": 1506,
+      "sha256": "5c8ddc627bedfb1228d7c3a8304f85ae1075447244e172322a9e760fa5ce9530",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/project_train_lora.sbatch.txt",
+      "bytes": 2215,
+      "sha256": "f057389bdba6d0757cf4bc3afd2887e6f87cf127b17e8d2ec1e4951bdf43c865",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/pyproject_20260423.txt",
+      "bytes": 4298,
+      "sha256": "d566a124b171156347a0268e80a4841001a24f51a28720043d31095678bc25d7",
+      "representation": "exact Git blob verified"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/sibling_config.yaml.txt",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "representation": "failed empty readable sibling response retained; exact raw YAML is separate"
+    },
+    {
+      "artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/source/train_20260423.txt",
+      "bytes": 44850,
+      "sha256": "84f875edb5a9f13e8e9e1ed940a65894f4f44fde59363a2d2d68374eebf47a6a",
+      "representation": "exact Git blob verified"
+    }
+  ],
+  "source_provenance": {
+    "bridge05_revision": {
+      "sha": "fcbb6031103d0ca845c1a54d4fee55ecfcca17b6",
+      "date": "2026-06-16T12:26:31Z",
+      "message": "cp: `fix(qwen3-asr): preserve audio config for checkpoint export (4361)` into `r0.5.0` (#4382)"
+    },
+    "source_files": [
+      {
+        "key": "b02_loader_20260423",
+        "git_blob_sha": "a79acacbd26139dd617b494ac96f8370ec8cdb85",
+        "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/1263f64629ecd27e9333f28923e728c381a9cf2c/bionemo-recipes/recipes/evo2_megatron/src/bionemo/evo2/models/evo2_lora.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_pyproject_20260423",
+        "git_blob_sha": "e83ac2c76cb6ede7159f1084adfd622820a1b94f",
+        "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/1263f64629ecd27e9333f28923e728c381a9cf2c/bionemo-recipes/recipes/evo2_megatron/pyproject.toml",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_train_20260423",
+        "git_blob_sha": "09b5b9df230527c9df937b9c1407aa8c203896a1",
+        "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/1263f64629ecd27e9333f28923e728c381a9cf2c/bionemo-recipes/recipes/evo2_megatron/src/bionemo/evo2/run/train.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_candidate_recipe",
+        "git_blob_sha": "27ab0c64dc056fe28dac3ad5dca73247e5ffd2f8",
+        "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/19ee43214fec23e87916efd468eaa62df47dba3e/recipes/evo2_megatron/src/bionemo/evo2/recipes/evo2.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge549_src/megatron/bridge/peft/lora.py",
+        "git_blob_sha": "b1f8b55dedfef0e9211b5c627a0192a27653ad9f",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/lora.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge549_src/megatron/bridge/peft/lora_layers.py",
+        "git_blob_sha": "f63e59357652eefb310fbf3d1ee851cb6847e6c2",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/lora_layers.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge549_src/megatron/bridge/peft/utils.py",
+        "git_blob_sha": "1ca5b18bd1b04446b06127247c164225e088e9e8",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/utils.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge549_src/megatron/bridge/training/setup.py",
+        "git_blob_sha": "42b70c07b4e3354b32859e72ef5f8daaf195b388",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/training/setup.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge549_src/megatron/bridge/training/checkpointing.py",
+        "git_blob_sha": "ca41f4faec59ddcf8f54a6d25bcc3aa779e7df98",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/training/checkpointing.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge549_base.py",
+        "git_blob_sha": "f6eb8db3e0762724123c0805b06dd9e033f0fb91",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/base.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge549_module_matcher.py",
+        "git_blob_sha": "cc979079bce3f457b5302ece298c74411b57c2d9",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/module_matcher.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge05_lora",
+        "git_blob_sha": "fddc30420a33e429893a8492bd2c89e2e0ac8258",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/v0.5.0/src/megatron/bridge/peft/lora.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge05_base",
+        "git_blob_sha": "4c50fd84f32717c294875fab4edf3a5738689169",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/v0.5.0/src/megatron/bridge/peft/base.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge05_module_matcher.py",
+        "git_blob_sha": "9b315289a6935605762acd540b15332eda569c66",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/module_matcher.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge05_lora_layers.py",
+        "git_blob_sha": "4fbe1ded003c25c62fa9eb7f01dad6e446b0d307",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/lora_layers.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge05_utils.py",
+        "git_blob_sha": "b3b8329580a13af8bd6620197dcc23807aad7101",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/utils.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge05_setup.py",
+        "git_blob_sha": "ec3ab9729c03d620f36207189537ac4cadf5c5de",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/training/setup.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_bridge05_checkpointing.py",
+        "git_blob_sha": "056cdb2c561b3dc04762e0c088ad39436c63da3c",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/training/checkpointing.py",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_projectfile_evo2_causal_lm_finetune/train_lora.sbatch",
+        "git_blob_sha": "3fbef37dd113ed98201163917c000a6baca4e0eb",
+        "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/evo2_causal_lm_finetune/train_lora.sbatch",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_projectfile_evo2_causal_lm_finetune/eval_lora_ppl_test.sbatch",
+        "git_blob_sha": "9453e1f5d8785d75ad64bc0c31d4594a73bc35ed",
+        "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/evo2_causal_lm_finetune/eval_lora_ppl_test.sbatch",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_projectfile_requirements.txt",
+        "git_blob_sha": "17814c021f1d742cda240a1f3d0aea1a5d3cccfd",
+        "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/requirements.txt",
+        "encoding": "utf-8",
+        "content_type": "string"
+      },
+      {
+        "key": "b02_projectfile_environment.yml",
+        "git_blob_sha": "c916d2d451707cf995389ad6e97055ab6f7403c8",
+        "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/environment.yml",
+        "encoding": "utf-8",
+        "content_type": "string"
+      }
+    ],
+    "discovery": [
+      {
+        "key": "b02_sibling",
+        "files": [
+          {
+            "id": "1WlsUGMr2R0uHOugUw6lRCv9aTRBIIH1p",
+            "title": "checkpoints",
+            "size": null,
+            "mtime": "2026-10-31T16:05:53.840Z"
+          },
+          {
+            "id": "1PmjOH6FHQB5FaFXeRrIB00IuMxNrcZqi",
+            "title": "tb_logs",
+            "size": null,
+            "mtime": "2026-10-31T16:05:53.262Z"
+          }
+        ],
+        "limit": 1000
+      },
+      {
+        "key": "b02_sibling_checkpoints",
+        "files": [
+          {
+            "id": "1bJgBAbZTFHAWuvRHG9zTVwUlAAUtS1HR",
+            "title": "iter_0020001",
+            "size": null,
+            "mtime": "2026-10-31T16:05:55.863Z"
+          },
+          {
+            "id": "1ECnj1-2b-zzM4w8GiuXVS1mF33nydSMf",
+            "title": "iter_0017000",
+            "size": null,
+            "mtime": "2026-10-31T16:05:55.862Z"
+          },
+          {
+            "id": "1XV5ZYfuTNOmlON36wIg5fC17O2s7qFRk",
+            "title": "iter_0019000",
+            "size": null,
+            "mtime": "2026-10-31T16:05:55.860Z"
+          },
+          {
+            "id": "1Zwc6qHZ0CsC2SXoFQPFHkRr3nmeuXgBA",
+            "title": "iter_0020000",
+            "size": null,
+            "mtime": "2026-10-31T16:05:55.851Z"
+          },
+          {
+            "id": "1jJOTZfwh6Ifs4waGstniqqAnVDoTSvkW",
+            "title": "iter_0018000",
+            "size": null,
+            "mtime": "2026-10-31T16:05:55.844Z"
+          },
+          {
+            "id": "1wgrbmQvarZf_Ek68v_YWWi_qjC8WEJ3g",
+            "title": "progress.txt",
+            "size": "4970",
+            "mtime": "2026-10-27T15:18:10.641Z"
+          },
+          {
+            "id": "1JhV1ZW3QwES4hhpelOpQY5PBPXpDTZqW",
+            "title": "latest_train_state.pt",
+            "size": "3461",
+            "mtime": "2026-10-27T15:18:10.609Z"
+          },
+          {
+            "id": "1iOfsyX4ykQOT3IVq-IBszFeNTRnGlXch",
+            "title": "latest_checkpointed_iteration.txt",
+            "size": "5",
+            "mtime": "2026-10-27T15:18:10.577Z"
+          }
+        ],
+        "limit": 1000
+      },
+      {
+        "key": "b02_sibling_last",
+        "files": [
+          {
+            "id": "1t5MnWZ1p5xc4MfqsMHb-uBtRLb5VFKOB",
+            "title": "tokenizer",
+            "size": null,
+            "mtime": "2026-10-31T16:05:58.954Z"
+          },
+          {
+            "id": "1JqVkZhnUMvEAP2SySBCIYRmp0_4zy92C",
+            "title": "train_state.pt",
+            "size": "3461",
+            "mtime": "2026-10-27T15:18:10.545Z"
+          },
+          {
+            "id": "1tpg-q9N5u_LD-70cO5bRc4yTvkfeKxef",
+            "title": "run_config.yaml",
+            "size": "39215",
+            "mtime": "2026-10-27T15:18:10.389Z"
+          },
+          {
+            "id": "1lbkH7pYKoyotDxWZnzXX7HIZlMP0NICW",
+            "title": "metadata.json",
+            "size": "119",
+            "mtime": "2026-10-27T15:18:10.365Z"
+          },
+          {
+            "id": "1cT_wmnXoYrm1hO3THvRtSv6bjtzg385R",
+            "title": "common.pt",
+            "size": "1767",
+            "mtime": "2026-10-27T15:18:10.333Z"
+          },
+          {
+            "id": "1qQ1JdX6YgfG966T2W7l4hhLnSfLo3uUO",
+            "title": "__0_0.distcp",
+            "size": "173352705",
+            "mtime": "2026-10-27T15:18:10.309Z"
+          },
+          {
+            "id": "173HpYZMpZpY5BOiN5QwaLkbJYKhSSmqR",
+            "title": ".metadata",
+            "size": "142423",
+            "mtime": "2026-10-27T15:18:07.341Z"
+          }
+        ],
+        "limit": 1000
+      }
+    ],
+    "additional": [
+      {
+        "key": "b02_candidate_recipe",
+        "git_blob_sha": "27ab0c64dc056fe28dac3ad5dca73247e5ffd2f8",
+        "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/19ee43214fec23e87916efd468eaa62df47dba3e/recipes/evo2_megatron/src/bionemo/evo2/recipes/evo2.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_lora",
+        "git_blob_sha": "fddc30420a33e429893a8492bd2c89e2e0ac8258",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/v0.5.0/src/megatron/bridge/peft/lora.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_base",
+        "git_blob_sha": "4c50fd84f32717c294875fab4edf3a5738689169",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/v0.5.0/src/megatron/bridge/peft/base.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_module_matcher.py",
+        "git_blob_sha": "9b315289a6935605762acd540b15332eda569c66",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/module_matcher.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_lora_layers.py",
+        "git_blob_sha": "4fbe1ded003c25c62fa9eb7f01dad6e446b0d307",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/lora_layers.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_utils.py",
+        "git_blob_sha": "b3b8329580a13af8bd6620197dcc23807aad7101",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/utils.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_setup.py",
+        "git_blob_sha": "ec3ab9729c03d620f36207189537ac4cadf5c5de",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/training/setup.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_checkpointing.py",
+        "git_blob_sha": "056cdb2c561b3dc04762e0c088ad39436c63da3c",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/training/checkpointing.py",
+        "encoding": "utf-8"
+      },
+      {
+        "key": "b02_bridge05_adapter_wrapper.py",
+        "git_blob_sha": "bc267fd12342f7c13369ab353be58cf46645012b",
+        "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/adapter_wrapper.py",
+        "encoding": "utf-8"
+      }
+    ]
+  },
+  "references_separate_from_delivery_count": [
+    {
+      "id": "candidate/base-conversion-iter1",
+      "folder_id": "154kF29Cjam2F2rC-ihj6_Oobmm-oNur1",
+      "payload_evidence": "E11",
+      "role": "available qualified historical parent; actual run attachment unknown; not true start"
+    },
+    {
+      "id": "candidate/H3-iter2000",
+      "folder_id": "16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv",
+      "payload_evidence": "E11",
+      "current_pointer": 2000,
+      "role": "available qualified historical parent; actual run attachment unknown; not true start"
+    },
+    {
+      "id": "unknown/base-true-start",
+      "available": false
+    },
+    {
+      "id": "unknown/maxent-true-start",
+      "available": false
+    }
+  ],
+  "discovery_scope": {
+    "route": "authenticated direct Drive list_folder, top_k1000; immutable GitHub files/trees/branch/history reads",
+    "initial_listings_artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/LIVE_LISTINGS_INITIAL.json",
+    "per_checkpoint_listings_artifact": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/LIVE_CHECKPOINT_LISTINGS.json",
+    "series_steps": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500,
+      1600,
+      1700,
+      1800
+    ],
+    "checkpoint_children": 7,
+    "listing_truncation_observed": false,
+    "scope_limit": "All relevant top-level/checkpoint folders below cap; base conversion directory134 entries listed without weight reads; no recursive unrelated traversal, no saliency/multi-retain or dataset contents. Tokenizer children reused historical IDs.",
+    "negative_routes": [
+      "Project main exact launcher path404; relevant bionemo branch supplied bounded alternative.",
+      "No training stdout/runtime manifest in listed series run/checkpoint directories; only checkpoints/tb_logs and metadata.",
+      "Restart5.4MB event has245tags but no string startup fields; larger44MB/49MB event files not acquired.",
+      "Readable sibling config returned empty despite size39215; bounded raw download resolved metadata (no weights).",
+      "Current series steps100..1800; older sibling17000..20001, no true start there; no global absence inferred.",
+      "Megatron-Bridge peft/peft.py404; imports identify correct base.py source."
+    ]
+  },
+  "budget": {
+    "original_start_utc": "2026-11-17T06:33:21+00:00",
+    "scientific_cutoff_utc": "2026-11-17T17:33:21+00:00",
+    "closure_deadline_utc": "2026-11-17T20:33:21+00:00",
+    "clock_reset": false,
+    "waiting_consumes_original_window": true,
+    "new_gpu_seconds": 0,
+    "new_fits": 0,
+    "new_model_inferences": 0,
+    "new_metric_computations": 0,
+    "installations": 0,
+    "new_backups_or_restorations": 0,
+    "provider_hourly_rate_usd": null,
+    "provider_rental_start": null,
+    "b02_wall_start_utc": "2026-11-17T08:16:10.249976+00:00",
+    "preserved_ledger_files": [
+      {
+        "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
+        "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
+      },
+      {
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
+        "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
+      }
+    ],
+    "observed_utc": "2026-11-17T08:41:53.787601+00:00",
+    "elapsed_b02_wall_seconds": 1543.537625,
+    "remaining_scientific_seconds": 31887.212399,
+    "remaining_closure_seconds": 42687.212399,
+    "metadata_cpu_seconds": "not metered cumulatively; bounded metadata/source parsing only",
+    "private_stage_artifact_bytes_at_close": 7532084
+  },
+  "validation": {
+    "status": "PASS",
+    "checks": [
+      "36 unique stable IDs,18+18, all evidence IDs accounted for",
+      "historical/normalized hash links and all180 scoped small-file hashes match",
+      "all36 live file-ID/size inventories match historical records; no new weight rehash claim",
+      "36 distinct archival hashes AND36 distinct tensor fingerprints; three config families/one200-tensor schema",
+      "counter/order/run-boundary consistency and all seven comparison-family statuses agree across JSONL/CSVs",
+      "no full-model/score qualification or invented start/exposure/reference",
+      "23 official/project source copies match returned Git blob IDs exactly; receipt links and carryover destination hashes agree",
+      "original shared/prior GPU ledgers and non-POD_B branch refs preserved",
+      "diff limited to approved POD_B docs; no large artifact/access credential staged; no later-stage authorization or queue"
+    ],
+    "check_count": 9,
+    "rows": 36,
+    "scope": "metadata validation only; no performance or model validation"
+  },
+  "search_stopping_rationale": "All36 inventory decisions determined; relevant delivery, project branch/history, official class/API and logs exhausted within bounded metadata scope. Remaining model identity needs original startup/hash/source or authoritative output fixtures; larger logs/weights or candidate execution would not be authorized B02. Exposure and true starts explicitly separate. No repeated broad negative search.",
+  "next_stage_authorized": false,
+  "later_stage_prompts_read": false,
+  "owned_scientific_or_transfer_jobs": [],
+  "publication": "Commit and remote HEAD recorded after push in external control delivery receipt to avoid self-referential hashes.",
+  "exact_source_file_receipts": [
+    {
+      "file": "loader_20260423.txt",
+      "tool_key": "b02_loader_20260423",
+      "git_blob_sha": "a79acacbd26139dd617b494ac96f8370ec8cdb85",
+      "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/1263f64629ecd27e9333f28923e728c381a9cf2c/bionemo-recipes/recipes/evo2_megatron/src/bionemo/evo2/models/evo2_lora.py",
+      "bytes": 11465,
+      "sha256": "9b481000249879695c266b2489ac40999732c3e8f81f024027f96b9d972a6af3",
+      "git_blob_verified": true
+    },
+    {
+      "file": "pyproject_20260423.txt",
+      "tool_key": "b02_pyproject_20260423",
+      "git_blob_sha": "e83ac2c76cb6ede7159f1084adfd622820a1b94f",
+      "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/1263f64629ecd27e9333f28923e728c381a9cf2c/bionemo-recipes/recipes/evo2_megatron/pyproject.toml",
+      "bytes": 4298,
+      "sha256": "d566a124b171156347a0268e80a4841001a24f51a28720043d31095678bc25d7",
+      "git_blob_verified": true
+    },
+    {
+      "file": "train_20260423.txt",
+      "tool_key": "b02_train_20260423",
+      "git_blob_sha": "09b5b9df230527c9df937b9c1407aa8c203896a1",
+      "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/1263f64629ecd27e9333f28923e728c381a9cf2c/bionemo-recipes/recipes/evo2_megatron/src/bionemo/evo2/run/train.py",
+      "bytes": 44850,
+      "sha256": "84f875edb5a9f13e8e9e1ed940a65894f4f44fde59363a2d2d68374eebf47a6a",
+      "git_blob_verified": true
+    },
+    {
+      "file": "candidate_recipe.py.txt",
+      "tool_key": "b02_candidate_recipe",
+      "git_blob_sha": "27ab0c64dc056fe28dac3ad5dca73247e5ffd2f8",
+      "url": "https://github.com/NVIDIA-BioNeMo/bionemo-recipes/blob/19ee43214fec23e87916efd468eaa62df47dba3e/recipes/evo2_megatron/src/bionemo/evo2/recipes/evo2.py",
+      "bytes": 11753,
+      "sha256": "fa26a88411a399a08f5a302c2512df7231b77279fec05c54b231b0b24953df7e",
+      "git_blob_verified": true
+    },
+    {
+      "file": "project_train_lora.sbatch.txt",
+      "tool_key": "b02_projectfile_evo2_causal_lm_finetune/train_lora.sbatch",
+      "git_blob_sha": "3fbef37dd113ed98201163917c000a6baca4e0eb",
+      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/evo2_causal_lm_finetune/train_lora.sbatch",
+      "bytes": 2215,
+      "sha256": "f057389bdba6d0757cf4bc3afd2887e6f87cf127b17e8d2ec1e4951bdf43c865",
+      "git_blob_verified": true
+    },
+    {
+      "file": "project_eval.sbatch.txt",
+      "tool_key": "b02_projectfile_evo2_causal_lm_finetune/eval_lora_ppl_test.sbatch",
+      "git_blob_sha": "9453e1f5d8785d75ad64bc0c31d4594a73bc35ed",
+      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/evo2_causal_lm_finetune/eval_lora_ppl_test.sbatch",
+      "bytes": 2683,
+      "sha256": "489dbc6b25276d41cc4fe06032473d4abb6058e0a8addf36fe1bf28e9155b270",
+      "git_blob_verified": true
+    },
+    {
+      "file": "project_requirements.txt",
+      "tool_key": "b02_projectfile_requirements.txt",
+      "git_blob_sha": "17814c021f1d742cda240a1f3d0aea1a5d3cccfd",
+      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/requirements.txt",
+      "bytes": 1506,
+      "sha256": "5c8ddc627bedfb1228d7c3a8304f85ae1075447244e172322a9e760fa5ce9530",
+      "git_blob_verified": true
+    },
+    {
+      "file": "project_environment.yml",
+      "tool_key": "b02_projectfile_environment.yml",
+      "git_blob_sha": "c916d2d451707cf995389ad6e97055ab6f7403c8",
+      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/b90fc1853d1d3be79922a98a2649c91c89716637/environment.yml",
+      "bytes": 2422,
+      "sha256": "2aa58bcd5c75f749e6ee10fdedd07bea0432b4c1e785b1c8eb8b0d7afd12bce6",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge549_lora.py.txt",
+      "tool_key": "b02_bridge549_src/megatron/bridge/peft/lora.py",
+      "git_blob_sha": "b1f8b55dedfef0e9211b5c627a0192a27653ad9f",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/lora.py",
+      "bytes": 12367,
+      "sha256": "1a65735ce34afeceaf7a46141db6f80ce1db0f93959e71b82716cf456ab1baca",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge549_lora_layers.py.txt",
+      "tool_key": "b02_bridge549_src/megatron/bridge/peft/lora_layers.py",
+      "git_blob_sha": "f63e59357652eefb310fbf3d1ee851cb6847e6c2",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/lora_layers.py",
+      "bytes": 29480,
+      "sha256": "5dc6384f7e37c664bec11dc02243a47253f93c422986a34a409847fd7fdc2ef4",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge549_utils.py.txt",
+      "tool_key": "b02_bridge549_src/megatron/bridge/peft/utils.py",
+      "git_blob_sha": "1ca5b18bd1b04446b06127247c164225e088e9e8",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/utils.py",
+      "bytes": 30350,
+      "sha256": "e6a7715daed77086c36ee7dd7dbec3447b6eeca2356c01a74719eddf9341c51d",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge549_setup.py.txt",
+      "tool_key": "b02_bridge549_src/megatron/bridge/training/setup.py",
+      "git_blob_sha": "42b70c07b4e3354b32859e72ef5f8daaf195b388",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/training/setup.py",
+      "bytes": 22041,
+      "sha256": "1fcc7afe5c93364b1aa2800b8979601f5961e9992a4a23522f726842883d6c1d",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge549_checkpointing.py.txt",
+      "tool_key": "b02_bridge549_src/megatron/bridge/training/checkpointing.py",
+      "git_blob_sha": "ca41f4faec59ddcf8f54a6d25bcc3aa779e7df98",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/training/checkpointing.py",
+      "bytes": 98907,
+      "sha256": "ff8b66f5a11dd0a7a90a60aa1c003df91b081d035dd59739ee2975fd893e0c12",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge549_base.py.txt",
+      "tool_key": "b02_bridge549_base.py",
+      "git_blob_sha": "f6eb8db3e0762724123c0805b06dd9e033f0fb91",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/base.py",
+      "bytes": 9079,
+      "sha256": "4e1c44e8035c336b58bd61b1192f852126b5bd6f28e86f6899642b3bc9494f67",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge549_module_matcher.py.txt",
+      "tool_key": "b02_bridge549_module_matcher.py",
+      "git_blob_sha": "cc979079bce3f457b5302ece298c74411b57c2d9",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/549e3cb970c170b1d7a86d021261efe05e8a5d9f/src/megatron/bridge/peft/module_matcher.py",
+      "bytes": 6426,
+      "sha256": "a1f2f087241a5709cfbb94d1337a458ffebbe207c9b9c3a7baf8ef2e04e19ae3",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_lora.py.txt",
+      "tool_key": "b02_bridge05_lora",
+      "git_blob_sha": "fddc30420a33e429893a8492bd2c89e2e0ac8258",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/v0.5.0/src/megatron/bridge/peft/lora.py",
+      "bytes": 14838,
+      "sha256": "b8596ed74fb940dd80e55e5c92f9afe2aa525c546af341a90ca4820d03d7ca03",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_base.py.txt",
+      "tool_key": "b02_bridge05_base",
+      "git_blob_sha": "4c50fd84f32717c294875fab4edf3a5738689169",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/v0.5.0/src/megatron/bridge/peft/base.py",
+      "bytes": 9861,
+      "sha256": "4ea4fe3a04875869a00ae9742dfc071adc6484fc5e0ee266b5c0e4a603fd4682",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_module_matcher.py.txt",
+      "tool_key": "b02_bridge05_module_matcher.py",
+      "git_blob_sha": "9b315289a6935605762acd540b15332eda569c66",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/module_matcher.py",
+      "bytes": 10401,
+      "sha256": "57fe5dc9516c0c5aad0d20e9b6e22058e92dc47577732d313dcb2b4dcaac4e00",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_lora_layers.py.txt",
+      "tool_key": "b02_bridge05_lora_layers.py",
+      "git_blob_sha": "4fbe1ded003c25c62fa9eb7f01dad6e446b0d307",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/lora_layers.py",
+      "bytes": 29563,
+      "sha256": "b8d2233340cfaf2684708da45576d226e61632498783b7dad8c4b3b1d6d038a9",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_utils.py.txt",
+      "tool_key": "b02_bridge05_utils.py",
+      "git_blob_sha": "b3b8329580a13af8bd6620197dcc23807aad7101",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/utils.py",
+      "bytes": 66279,
+      "sha256": "a197ac577dd48dcbc05be6ed3d23ccbe050cc4b4e0908c8b6980927f13df1d60",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_setup.py.txt",
+      "tool_key": "b02_bridge05_setup.py",
+      "git_blob_sha": "ec3ab9729c03d620f36207189537ac4cadf5c5de",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/training/setup.py",
+      "bytes": 26425,
+      "sha256": "612cb8396b1576bcf978d98262fff72399e6684378aa7c30c5f9e50b2bf08a80",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_checkpointing.py.txt",
+      "tool_key": "b02_bridge05_checkpointing.py",
+      "git_blob_sha": "056cdb2c561b3dc04762e0c088ad39436c63da3c",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/training/checkpointing.py",
+      "bytes": 139976,
+      "sha256": "efef23e8b41322692a7731860329b8a8378ff67e2f19bb9a095042639c3835d1",
+      "git_blob_verified": true
+    },
+    {
+      "file": "bridge05_adapter_wrapper.py.txt",
+      "tool_key": "b02_bridge05_adapter_wrapper.py",
+      "git_blob_sha": "bc267fd12342f7c13369ab353be58cf46645012b",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/blob/fcbb6031103d0ca845c1a54d4fee55ecfcca17b6/src/megatron/bridge/peft/adapter_wrapper.py",
+      "bytes": 8818,
+      "sha256": "453b0f475fafe8add918fc9e1d65144a9d0671c46b2820a7932934e41f4513f3",
+      "git_blob_verified": true
+    }
+  ],
+  "metadata_code_artifacts": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/parse_saved_metadata.py",
+      "sha256": "9432ab0c663ea3dfeda370b5af8c79676e6d2678f453cebfd3aa74a47dab8f14"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/build_inventory.py",
+      "sha256": "8e6103ba5b21a66655285a199e1554732cbd500938c846d19f442b8bc109ea67"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/finalize_inventory.py",
+      "sha256": "71ebec6340124efefb3137e64fa929c4df1fa9d278c53b806ec5523e83dd2f92"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/validate_inventory.py",
+      "sha256": "d287702a71f261a2db55696376a1d8aab674410f2313f0ac089f76c15330feb9"
+    }
+  ],
+  "final_process_status": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/FINAL_PROCESS_STATUS.json",
+  "publication_files": [
+    "CHECKPOINT_REGISTRY.jsonl",
+    "TRAJECTORY_MAP.csv",
+    "DELIVERY_COVERAGE.csv",
+    "RECONSTRUCTION_SPEC.md",
+    "PROVENANCE_QUESTIONS.md",
+    "INVENTORY_RECEIPT.json",
+    "B02_HANDOFF.md",
+    "ADAPTER_TENSOR_SCHEMA.json",
+    "SESSION_HANDOFF.md",
+    "STATE.json"
+  ],
+  "format_check_history": [
+    {
+      "check": "git diff --cached --check",
+      "initial_result": "CSV default CRLF flagged as trailing whitespace",
+      "correction": "CSV serialization changed to LF; values and source evidence unchanged"
+    }
+  ]
+}

@@ -1,0 +1,1412 @@
+{
+  "schema_version": "POD_B.adapter-schema.v1",
+  "tensor_schema_sha256": "38a84e1cd2b75b58e7a6d61fb2114238d17812f7301a5e00e2f5e1091b831e78",
+  "hash_definition": "SHA256(json.dumps(model_tensors, sort_keys=True).encode('utf-8')); default JSON separators",
+  "evidence_ids": [
+    "E01",
+    "E02"
+  ],
+  "model_tensors": {
+    "decoder.layers.0.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.0.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.0.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.0.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.0.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.0.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.0.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.0.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.1.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.self_attention.linear_proj.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.self_attention.linear_proj.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.self_attention.linear_qkv.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.10.self_attention.linear_qkv.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.11.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.12.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.13.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.14.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.15.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.16.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.self_attention.linear_proj.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.self_attention.linear_proj.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.self_attention.linear_qkv.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.17.self_attention.linear_qkv.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.18.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.19.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.2.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.20.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.21.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.22.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.23.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.self_attention.linear_proj.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.self_attention.linear_proj.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.self_attention.linear_qkv.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.24.self_attention.linear_qkv.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.self_attention.linear_proj.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.self_attention.linear_proj.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.self_attention.linear_qkv.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.3.self_attention.linear_qkv.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.4.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.5.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.6.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.7.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.8.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mixer.dense.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mixer.dense.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mixer.dense_projection.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mixer.dense_projection.adapter.linear_out.weight": {
+      "shape": [
+        5760,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mlp.linear_fc1.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        1920
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mlp.linear_fc1.adapter.linear_out.weight": {
+      "shape": [
+        10240,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mlp.linear_fc2.adapter.linear_in.weight": {
+      "shape": [
+        16,
+        5120
+      ],
+      "dtype": "torch.bfloat16"
+    },
+    "decoder.layers.9.mlp.linear_fc2.adapter.linear_out.weight": {
+      "shape": [
+        1920,
+        16
+      ],
+      "dtype": "torch.bfloat16"
+    }
+  },
+  "merge_state": "separate adapter tensors; full backbone not included"
+}

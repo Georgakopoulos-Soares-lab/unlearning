@@ -1,7 +1,7 @@
 {
-  "stage": "B01",
-  "status": "COMPLETE",
-  "artifact_root": "/workspace/meeting-artifacts/POD_B/B01-reconciliation-20261117T074926Z",
+  "stage": "B02",
+  "status": "COMPLETE_INVENTORY_SCOPE_WITH_EXTERNAL_RECONSTRUCTION_BLOCKERS",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z",
   "research_context": {
     "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
     "worktree": "/workspace/wt-POD_B",
@@ -19,18 +19,17 @@
     "refs/heads/experiments-ashay-relearning-benign-v1": "cf7b861619d05b8916690471fcd9469ab9d80f75",
     "refs/heads/main": "af92e593162478c8aa40b6303ed0f0e508affac7"
   },
-  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B01-reconciliation-20261117T074926Z/PROMPT_RECEIPT.json",
-  "prompt_commit": "903ef4f725301c477a438e721e15568967a8f395",
+  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/PROMPT_RECEIPT.json",
+  "prompt_commit": "bf7b468a40f27b528992930ce55a26504ef27683",
   "current_run_science_gpu_seconds": 0,
   "current_run_new_fits": 0,
   "next_stage_authorized": false,
-  "approved_scope": "B01 reconciliation only; no experiments or migration of scientific code/results",
-  "research_head_at_start": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "approved_scope": "B02 expanded post-B01 inventory/source/lineage/metadata reconciliation only",
+  "research_head_at_start": "d5d4f256e09d7939b92ce9404d97047beb53506d",
   "prompt_hashes": {
     "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
-    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
-    "POD_B_01_WORKSPACE.md": "ea34e6e04f229c3d60b495ac83c61c7b78566dd9bad9fc2876999aa1c5596f1a",
-    "b01-v2.txt": "79e9ad173260e12a5457893a4e96edf3156c10f45302615a0964d61ad5bedbea"
+    "POD_B_02_INVENTORY.md": "958ffca8d6f72043a656742bc5ec8218b58bbaef1f8208925b455c8f9130b21d",
+    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
   },
   "budget": {
     "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-B.json",
@@ -39,7 +38,7 @@
     "scientific_stage_cutoff_utc": "2026-11-17T17:33:21+00:00",
     "session_deadline_utc": "2026-11-17T20:33:21+00:00",
     "clock_reset": false,
-    "observed_utc": "2026-11-17T07:53:41.460592+00:00",
+    "observed_utc": "2026-11-17T08:41:53.787601+00:00",
     "remaining_to_scientific_cutoff_seconds": 34779.539408,
     "remaining_to_session_deadline_seconds": 45579.539408,
     "authorized_gpu_stage_seconds": null,
@@ -51,15 +50,29 @@
     "preserved_ledger_files": [
       {
         "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
-        "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b",
-        "active_since": null
+        "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
       },
       {
         "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
-        "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6",
-        "active_since": null
+        "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
       }
-    ]
+    ],
+    "original_start_utc": "2026-11-17T06:33:21+00:00",
+    "scientific_cutoff_utc": "2026-11-17T17:33:21+00:00",
+    "closure_deadline_utc": "2026-11-17T20:33:21+00:00",
+    "waiting_consumes_original_window": true,
+    "new_gpu_seconds": 0,
+    "new_fits": 0,
+    "new_model_inferences": 0,
+    "new_metric_computations": 0,
+    "installations": 0,
+    "new_backups_or_restorations": 0,
+    "b02_wall_start_utc": "2026-11-17T08:16:10.249976+00:00",
+    "elapsed_b02_wall_seconds": 1543.537625,
+    "remaining_scientific_seconds": 31887.212399,
+    "remaining_closure_seconds": 42687.212399,
+    "metadata_cpu_seconds": "not metered cumulatively; bounded metadata/source parsing only",
+    "private_stage_artifact_bytes_at_close": 7532084
   },
   "prior_source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
   "prior_artifact_root": "/workspace/meeting-artifacts/relearning-benign-v1",
@@ -104,12 +117,26 @@
     "maxent/iter_0001800"
   ],
   "scientific_coverage": {
-    "supplied_model_completed_cells": 0,
-    "supplied_model_potential_cells": 16848,
-    "prior_distinct_adapter_payloads": 36,
-    "B01_new_measurements": 0,
-    "B01_new_fits": 0,
-    "B01_new_gpu_seconds": 0
+    "historical": 36,
+    "base": 18,
+    "maxent": 18,
+    "new": 0,
+    "removed": 0,
+    "changed_listed_metadata": 0,
+    "incomplete_historical_deliveries": 0,
+    "current_weight_byte_identity_freshly_verified": 0,
+    "reconstruction_blocked": 36,
+    "full_models_qualified": 0,
+    "supplied_score_cells": 0,
+    "potential_supplied_score_cells": 16848,
+    "distinct_historical_payload_hashes": 36,
+    "distinct_historical_tensor_fingerprints": 36,
+    "config_hash_families": 3,
+    "tensor_key_shape_dtype_schemas": 1,
+    "observed_jobs": 3,
+    "potential_adjacent_edges": 34,
+    "restart_edges_unproven": 1,
+    "common_step_pairs": 18
   },
   "prior_completed_evidence": {
     "parent_smoke_comparisons": 162,
@@ -118,9 +145,9 @@
     "prior_backup_revision": "32206eeed1dd9024fc92ecd898be39094840de94"
   },
   "blockers": [
-    "Exact Evo2LoRA inference reconstruction not established for supplied adapters",
-    "Actual pretrained-parent/resume initialization unresolved; both resume paths name MaxEnt",
-    "True trajectory-zero adapter references absent; start-relative contrasts unavailable"
+    "Actual per-job hash-bound pretrained parent/resumed adapter identities unresolved",
+    "Original runtime source unknown; R2 adapter API statically supported, full runtime/numerics unqualified",
+    "True initial states unavailable for start-relative contrasts; actual exposure unavailable for matched-exposure interpretation"
   ],
   "owned_scientific_jobs": [],
   "legacy_wrapper": {
@@ -133,16 +160,20 @@
     "after_codex_exit": "Releases role lock and execs an interactive shell; printed resume command is not automatically executed",
     "action": "Preserved wrapper and role lock; current instructions supersede its old initial assignment. Do not invoke old start/resume launchers for new work."
   },
-  "next_stage": "B02",
-  "migration_approved": false,
-  "migration_performed": false,
+  "next_stage": "B03",
+  "migration_approved": "Curated small B02 evidence only; no code/result wholesale migration",
+  "migration_performed": "Curated metadata normalized in registry/views only; no scientific code/result migration",
   "no_background_stage_queue": true,
   "later_prompts_read": false,
-  "last_checkpoint_utc": "2026-11-17T07:53:41.460592+00:00",
+  "last_checkpoint_utc": "2026-11-17T08:41:53.787601+00:00",
   "completion_receipts": {
-    "workspace": "WORKSPACE_RECEIPT.json",
-    "resource_inventory": "RESOURCE_INVENTORY.json",
-    "prior_evidence_audit": "PRIOR_EVIDENCE_AUDIT.json",
-    "prior_backup_receipt_at_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75:docs/experiments/ashay/relearning-benign-v1/BACKUP_VERIFICATION.json"
-  }
+    "B01": "docs/experiments/ashay/POD_B/B01_VERIFICATION.json",
+    "B02": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json"
+  },
+  "research_head": "d5d4f256e09d7939b92ce9404d97047beb53506d",
+  "publication_status": "PENDING_B02_PUSH",
+  "delivery_receipt": "/workspace/agent-handoff/POD_B/B02_DELIVERY_VERIFICATION.json",
+  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/PROMPT_RECEIPT.json",
+  "research_head_note": "Pre-publication HEAD; external B02 delivery receipt gives pushed commit",
+  "handoff": "docs/experiments/ashay/POD_B/B02_HANDOFF.md"
 }
