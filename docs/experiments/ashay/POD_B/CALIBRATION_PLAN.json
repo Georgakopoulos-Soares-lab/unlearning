@@ -1,0 +1,206 @@
+{
+  "CPU_probe_search_units": [
+    {
+      "authorized": false,
+      "candidate_fold_fits": 9,
+      "final_fits": 1,
+      "fold_sha256": "e5a0ccf33f3c31f971e09351fb2fb4c349251a24a736ad38de56b70eac4bc944",
+      "max_retry_attempts": 10,
+      "reference_model": "historical_base_iter1",
+      "representation": "decoder_layer_16",
+      "seed": 42,
+      "source": "Compatible retained historical base TRAIN features only, exact frozen folds; no B04 engineering arrays or held-out rows",
+      "task": "emp_H3",
+      "training_rows": 11971,
+      "unit_id": "CALIB_CPU|emp_H3|decoder_layer_16|42"
+    },
+    {
+      "authorized": false,
+      "candidate_fold_fits": 9,
+      "final_fits": 1,
+      "fold_sha256": "e5a0ccf33f3c31f971e09351fb2fb4c349251a24a736ad38de56b70eac4bc944",
+      "max_retry_attempts": 10,
+      "reference_model": "historical_base_iter1",
+      "representation": "final_norm",
+      "seed": 42,
+      "source": "Compatible retained historical base TRAIN features only, exact frozen folds; no B04 engineering arrays or held-out rows",
+      "task": "emp_H3",
+      "training_rows": 11971,
+      "unit_id": "CALIB_CPU|emp_H3|final_norm|42"
+    },
+    {
+      "authorized": false,
+      "candidate_fold_fits": 15,
+      "final_fits": 1,
+      "fold_sha256": "4675e4e6dd2af2abbbc149206c6ba39744d08cd90396ebf7ff97f66fd510ff50",
+      "max_retry_attempts": 16,
+      "reference_model": "historical_base_iter1",
+      "representation": "decoder_layer_16",
+      "seed": 42,
+      "source": "Compatible retained historical base TRAIN features only, exact frozen folds; no B04 engineering arrays or held-out rows",
+      "task": "gue_splice_reconstructed",
+      "training_rows": 1024,
+      "unit_id": "CALIB_CPU|gue_splice_reconstructed|decoder_layer_16|42"
+    },
+    {
+      "authorized": false,
+      "candidate_fold_fits": 15,
+      "final_fits": 1,
+      "fold_sha256": "4675e4e6dd2af2abbbc149206c6ba39744d08cd90396ebf7ff97f66fd510ff50",
+      "max_retry_attempts": 16,
+      "reference_model": "historical_base_iter1",
+      "representation": "final_norm",
+      "seed": 42,
+      "source": "Compatible retained historical base TRAIN features only, exact frozen folds; no B04 engineering arrays or held-out rows",
+      "task": "gue_splice_reconstructed",
+      "training_rows": 1024,
+      "unit_id": "CALIB_CPU|gue_splice_reconstructed|final_norm|42"
+    },
+    {
+      "authorized": false,
+      "candidate_fold_fits": 15,
+      "final_fits": 1,
+      "fold_sha256": "8d2a1bbf96b2546fdcefe559684226e0d5cca8b7ac1aabe4cbafa17b769af783",
+      "max_retry_attempts": 16,
+      "reference_model": "historical_base_iter1",
+      "representation": "decoder_layer_16",
+      "seed": 42,
+      "source": "Compatible retained historical base TRAIN features only, exact frozen folds; no B04 engineering arrays or held-out rows",
+      "task": "gue_tf_0",
+      "training_rows": 1024,
+      "unit_id": "CALIB_CPU|gue_tf_0|decoder_layer_16|42"
+    },
+    {
+      "authorized": false,
+      "candidate_fold_fits": 15,
+      "final_fits": 1,
+      "fold_sha256": "8d2a1bbf96b2546fdcefe559684226e0d5cca8b7ac1aabe4cbafa17b769af783",
+      "max_retry_attempts": 16,
+      "reference_model": "historical_base_iter1",
+      "representation": "final_norm",
+      "seed": 42,
+      "source": "Compatible retained historical base TRAIN features only, exact frozen folds; no B04 engineering arrays or held-out rows",
+      "task": "gue_tf_0",
+      "training_rows": 1024,
+      "unit_id": "CALIB_CPU|gue_tf_0|final_norm|42"
+    }
+  ],
+  "CPU_small_sample_rule": "Use exact full frozen TRAIN rows in compatible retained base feature caches for the six timing units; do not recreate folds on384 or change production folds/classes. If unavailable use trustworthy existing timing or leave unknown",
+  "authorized": false,
+  "bound_units": [],
+  "commands": [],
+  "executable_units": [],
+  "inputs": {
+    "all_training_inherited_verified": true,
+    "length_strata_for_timing_only": [
+      {
+        "high": 100,
+        "low": 0
+      },
+      {
+        "high": 200,
+        "low": 101
+      },
+      {
+        "high": 500,
+        "low": 201
+      }
+    ],
+    "ordered_ids_sha256": "33e828f9d113daa2832f291c332ba97161fdffc90646a54a49af53a7d3beb838",
+    "per_task_lengths": {
+      "emp_H3": {
+        "max": 500,
+        "min": 500
+      },
+      "gue_mouse_0": {
+        "max": 101,
+        "min": 101
+      },
+      "gue_prom_300_all": {
+        "max": 300,
+        "min": 300
+      },
+      "gue_prom_core_all": {
+        "max": 70,
+        "min": 70
+      },
+      "gue_splice_reconstructed": {
+        "max": 400,
+        "min": 400
+      },
+      "gue_tf_0": {
+        "max": 101,
+        "min": 101
+      }
+    },
+    "record": {
+      "bytes": 348998,
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/throughput_training384.jsonl",
+      "sha256": "9bcfb9fc15a1a48f7a0158c8e4ebf92999cdaaa69bd00574803840643c90da12"
+    },
+    "rows": 384,
+    "selection": "Reuse exact existing frozen384 training members,64/task, in saved order; summarize timings by task and fixed length strata; no new row or outcome selection",
+    "task_counts": {
+      "emp_H3": 64,
+      "gue_mouse_0": 64,
+      "gue_prom_300_all": 64,
+      "gue_prom_core_all": 64,
+      "gue_splice_reconstructed": 64,
+      "gue_tf_0": 64
+    }
+  },
+  "max_CPU_extra_retry_attempts": 84,
+  "maximum_CPU_probe_search_units": 6,
+  "maximum_extract_passes": 6,
+  "maximum_representatives": 3,
+  "maximum_rows_per_representative": 384,
+  "measurements": [
+    "cold/warm import/load and occupied idle/cleanup",
+    "per-task/length rows, valid targets and padded physical tokens",
+    "all26 extraction time and emitted bytes",
+    "parent/adapter/full-state hashes and effective config consistency",
+    "actual candidate-fold/final estimator attempts,10000 retries,warnings and CPU process times including children",
+    "peak host/VRAM,disk read/write timing,sustained bytes/sec",
+    "warm output consistency with pinned B04 gates"
+  ],
+  "metadata_priority": [
+    {
+      "family": "base_all",
+      "preferred_if_scientifically_qualified": "base/iter_0000100"
+    },
+    {
+      "family": "maxent_initial",
+      "preferred_if_scientifically_qualified": "maxent/iter_0000100"
+    },
+    {
+      "family": "maxent_restart",
+      "preferred_if_scientifically_qualified": "maxent/iter_0001700"
+    }
+  ],
+  "missing_representative_rule": "Skip unavailable family explicitly; no unqualified substitute. Do not wait for every family if a reviewed useful partial scientific scope qualifies",
+  "mode": "FUTURE_QUALIFIED_CALIBRATION_RECIPE_ONLY",
+  "next_stage_authorized": false,
+  "nominal_CPU_estimator_fits": 84,
+  "passes_per_representative": {
+    "cold": 1,
+    "warm": 1
+  },
+  "prerequisites": [
+    "Separately approved B04 scientific scope with complete state/source/route and per-checkpoint receipts",
+    "Ashay review and separate explicit B05 calibration approval",
+    "Exact immutable child plan with selected qualified IDs, source/runtime/config/head,fixture hashes,pass counts,CPUfeature identities,threads,output root and stage deadline",
+    "Explicit cumulative GPU envelope and wall window/closure reserve, established shared locks, one GPU owner"
+  ],
+  "production_authorized": false,
+  "production_ready": false,
+  "proposed_ceilings": {
+    "CPU_benchmark_wall_seconds": 1800,
+    "accounting": "Ceilings require a later exact envelope; not new B04 credit and not authorized by PLAN_ONLY",
+    "authorization": false,
+    "occupied_GPU_seconds": 900
+  },
+  "qualified_checkpoint_ids": [],
+  "schema": "POD_B.B05.calibration.v1",
+  "stop": "Do not begin a unit that cannot finish and preserve cleanup; retain partial/failed attempts; no protocol/tolerance/precision change to fit. Requires rebind, not execution of this JSON",
+  "training_input_role": "Timing/consistency only; neither production scores nor independent replications"
+}

@@ -1,0 +1,1097 @@
+{
+  "B04_accounting": {
+    "aggregate_ceiling_seconds": 9000,
+    "copied_into_B05": false,
+    "engineering_ceiling_seconds": 1800,
+    "fixed_closure_deadline_utc": "2026-11-17T18:56:46+00:00",
+    "fixed_forward_deadline_utc": "2026-11-17T18:11:46+00:00",
+    "planning_threshold_seconds": 7200,
+    "preserved_ledger": {
+      "bytes": 6608,
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/GPU_LEDGER.json",
+      "sha256": "df26dbcc896f57962637e469341ec079a59340be9367605b84b9c7023c021335"
+    },
+    "remaining_aggregate_arithmetic_seconds": 7324.4853028325415,
+    "used_GPU_seconds": 1675.5146971674585
+  },
+  "PLAN_ONLY_GPU_authorization_seconds": 0,
+  "download": {
+    "confirmed_existing_inputs_confirmed_by_later_B04_binding_bytes_needed": 0,
+    "current_planning_bytes": 0,
+    "if_parent_or_extra_state_differs_bytes": null,
+    "reason": "No blind weights/log downloads; exact missing dependency files/bytes/hashes/storage must be quoted before later selective acquisition"
+  },
+  "extraction_batch_arithmetic": {
+    "filler_rows_per_model": 3,
+    "logical_rows_per_model": 22645,
+    "manifest_groups": [
+      {
+        "name": "H3",
+        "physical_batches": 1871,
+        "rows": 14965
+      },
+      {
+        "name": "other_five",
+        "physical_batches": 960,
+        "rows": 7680
+      }
+    ],
+    "physical_batches_per_model": 2831,
+    "physical_padded_positions_per_model": 22648000,
+    "physical_rows_per_model": 22648,
+    "scope": "Proposed preservation of two saved manifest streams, original row order,physical8 padded1000; not measured model forwards in PLAN_ONLY. Task/split outputs are views,not13 re-extractions."
+  },
+  "feasibility": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+  "historical_R3_unit_timing_summary": {
+    "actual_estimator_attempts": 7048,
+    "attempt_wall_work_seconds": 3900.6501388424076,
+    "basis": "Projected timing/convergence fields only from468 existing R3 results JSON plus training-CV logs; no saved outcome arrays opened or metrics analyzed. Unit sums omit task-level LM and invocation/backup overhead; R3 one-new-arm with frozen base and paired exploratory bootstrap differs from future trajectories.",
+    "conservative_task_max_wall_proxy_seconds": 14043.503169103526,
+    "nominal_estimator_fits": 7020,
+    "per_task": {
+      "emp_H3": {
+        "max_wall_seconds": 115.47535232407972,
+        "median_wall_seconds": 13.861447590170428,
+        "min_wall_seconds": 4.4042854658328,
+        "sum_wall_seconds": 1373.7273053815588,
+        "units": 78
+      },
+      "gue_mouse_0": {
+        "max_wall_seconds": 4.444195318967104,
+        "median_wall_seconds": 0.8655756923835725,
+        "min_wall_seconds": 0.6969048669561744,
+        "sum_wall_seconds": 76.1297823889181,
+        "units": 78
+      },
+      "gue_prom_300_all": {
+        "max_wall_seconds": 6.977947244886309,
+        "median_wall_seconds": 0.925848177401349,
+        "min_wall_seconds": 0.6442958582192659,
+        "sum_wall_seconds": 86.04403803916648,
+        "units": 78
+      },
+      "gue_prom_core_all": {
+        "max_wall_seconds": 2.7448168066330254,
+        "median_wall_seconds": 0.7679184400476515,
+        "min_wall_seconds": 0.6654140432365239,
+        "sum_wall_seconds": 66.55480377189815,
+        "units": 78
+      },
+      "gue_splice_reconstructed": {
+        "max_wall_seconds": 46.56021569017321,
+        "median_wall_seconds": 3.489943010965362,
+        "min_wall_seconds": 2.2050595628097653,
+        "sum_wall_seconds": 403.7331000431441,
+        "units": 78
+      },
+      "gue_tf_0": {
+        "max_wall_seconds": 3.842385039664805,
+        "median_wall_seconds": 0.8431699853390455,
+        "min_wall_seconds": 0.7363058659248054,
+        "sum_wall_seconds": 74.20973368594423,
+        "units": 78
+      }
+    },
+    "retry_attempt_wall_max": 36.994079631753266,
+    "retry_attempt_wall_mean": 12.676738296070003,
+    "retry_attempt_wall_min": 5.737662337254733,
+    "retry_attempts": 28,
+    "retry_fraction": 0.003988603988603989,
+    "retry_wall_work_seconds": 354.9486722899601,
+    "unit_CPU_sum_seconds": 4143.516457000999,
+    "unit_wall_sum_seconds": 2080.39876331063,
+    "units": 468
+  },
+  "historical_extraction_timings": [
+    {
+      "basis": "Historical completed parent/reference extraction; not a supplied-adapter throughput guarantee",
+      "elapsed_seconds": 213.41329907812178,
+      "forward_seconds": 154.9765290254727,
+      "historical_root": "base_h3",
+      "model_role": "base",
+      "peak_GPU_bytes": 3224296960,
+      "processed": 14965,
+      "record": {
+        "bytes": 243,
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/H3/base/progress.json",
+        "sha256": "15250076e9888a5b236fe855f00422b73552a5a1f9d5fcab67a19013c9c1187d"
+      },
+      "task_group": "H3"
+    },
+    {
+      "basis": "Historical completed parent/reference extraction; not a supplied-adapter throughput guarantee",
+      "elapsed_seconds": 216.01207701582462,
+      "forward_seconds": 154.83387517463416,
+      "historical_root": "base_h3",
+      "model_role": "maxent",
+      "peak_GPU_bytes": 3224296960,
+      "processed": 14965,
+      "record": {
+        "bytes": 244,
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/H3/maxent/progress.json",
+        "sha256": "53e8fbe1e8b662002b05024950711f958130b0431d6a4745b30d04fec3f39ad2"
+      },
+      "task_group": "H3"
+    },
+    {
+      "basis": "Historical completed parent/reference extraction; not a supplied-adapter throughput guarantee",
+      "elapsed_seconds": 109.72335541201755,
+      "forward_seconds": 80.54414919158444,
+      "historical_root": "base_h3",
+      "model_role": "base",
+      "peak_GPU_bytes": 3224296960,
+      "processed": 7680,
+      "record": {
+        "bytes": 241,
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/other_five/base/progress.json",
+        "sha256": "a7884d70c2d9dfc409c3fc9cf25a3bf3b97ee7e86fa0dd1add545ac19c5f720f"
+      },
+      "task_group": "other_five"
+    },
+    {
+      "basis": "Historical completed parent/reference extraction; not a supplied-adapter throughput guarantee",
+      "elapsed_seconds": 112.0322949141264,
+      "forward_seconds": 80.37299795914441,
+      "historical_root": "base_h3",
+      "model_role": "maxent",
+      "peak_GPU_bytes": 3224296960,
+      "processed": 7680,
+      "record": {
+        "bytes": 240,
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/other_five/maxent/progress.json",
+        "sha256": "814883ee5176cda1b8d97a34371a2c8410beac2f0f23106806c3780886f0a9a4"
+      },
+      "task_group": "other_five"
+    },
+    {
+      "basis": "Historical completed parent/reference extraction; not a supplied-adapter throughput guarantee",
+      "elapsed_seconds": 219.92438133899122,
+      "forward_seconds": 154.60874650906771,
+      "historical_root": "R3",
+      "model_role": "new",
+      "peak_GPU_bytes": 3224296960,
+      "processed": 14965,
+      "record": {
+        "bytes": 244,
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/features/H3/new/progress.json",
+        "sha256": "dbe11a6658611d6895cb5326de05f1b0815f60fc78dd036bf3f2f7a214b3183b"
+      },
+      "task_group": "H3"
+    },
+    {
+      "basis": "Historical completed parent/reference extraction; not a supplied-adapter throughput guarantee",
+      "elapsed_seconds": 111.07479944406077,
+      "forward_seconds": 80.44823382841423,
+      "historical_root": "R3",
+      "model_role": "new",
+      "peak_GPU_bytes": 3224296960,
+      "processed": 7680,
+      "record": {
+        "bytes": 241,
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/features/other_five/new/progress.json",
+        "sha256": "0c2dec40045eed3e56aa38fc56d621b3c6a2b116983e5c852c5ab0c3c84e0496"
+      },
+      "task_group": "other_five"
+    }
+  ],
+  "historical_reference_pair_totals": [
+    {
+      "elapsed_seconds": 323.13665449013934,
+      "forward_seconds": 235.52067821705714,
+      "reference": "base_h3/base"
+    },
+    {
+      "elapsed_seconds": 328.044371929951,
+      "forward_seconds": 235.20687313377857,
+      "reference": "base_h3/maxent"
+    },
+    {
+      "elapsed_seconds": 330.999180783052,
+      "forward_seconds": 235.05698033748195,
+      "reference": "R3/new"
+    }
+  ],
+  "historical_training384": {
+    "cache_key": "4161c225016b3dd4e904e6ddb34a7409c46584a36c7d3b78abb9930e52c6ee22",
+    "elapsed": 11.041761163000047,
+    "forward_seconds": 7.026997345999916,
+    "peak_memory": 3224296960,
+    "pid": 8827,
+    "processed": 384,
+    "scope": "Parent-only384 timing; not used as a full-cohort adapter benchmark",
+    "total": 384
+  },
+  "historical_training_single_fit_records": {
+    "blas_threads": 1,
+    "cv_seed": 42,
+    "fits": 8,
+    "limitations": "Reference timings are provisional; adapter-specific convergence and full bootstrap/audit/IO cost remain unmeasured",
+    "records": [
+      {
+        "C": 0.1,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              187
+            ],
+            "seconds": 1.3201451370005088,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 1.362024279,
+        "layer": "decoder_layer_16",
+        "task": "emp_H3",
+        "training_rows": 7980,
+        "wall_seconds": 1.4709834740006045
+      },
+      {
+        "C": 10.0,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              608
+            ],
+            "seconds": 3.933424617000128,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 3.9426790359999995,
+        "layer": "decoder_layer_16",
+        "task": "emp_H3",
+        "training_rows": 7980,
+        "wall_seconds": 3.9429203609997785
+      },
+      {
+        "C": 0.1,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              70
+            ],
+            "seconds": 0.55152183500104,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 0.5612693999999987,
+        "layer": "final_norm",
+        "task": "emp_H3",
+        "training_rows": 7980,
+        "wall_seconds": 0.5613272869995853
+      },
+      {
+        "C": 10.0,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              96
+            ],
+            "seconds": 0.692883076999351,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 0.7022210589999993,
+        "layer": "final_norm",
+        "task": "emp_H3",
+        "training_rows": 7980,
+        "wall_seconds": 0.7022488490001706
+      },
+      {
+        "C": 0.1,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              84
+            ],
+            "seconds": 0.05533764699976018,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 0.059873679000000735,
+        "layer": "decoder_layer_16",
+        "task": "gue_tf_0",
+        "training_rows": 819,
+        "wall_seconds": 0.05987537600049109
+      },
+      {
+        "C": 10.0,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              93
+            ],
+            "seconds": 0.055575420999957714,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 0.058433479999999705,
+        "layer": "decoder_layer_16",
+        "task": "gue_tf_0",
+        "training_rows": 819,
+        "wall_seconds": 0.05843189700135554
+      },
+      {
+        "C": 0.1,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              54
+            ],
+            "seconds": 0.03481481699964206,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 0.037737900000001545,
+        "layer": "final_norm",
+        "task": "gue_tf_0",
+        "training_rows": 819,
+        "wall_seconds": 0.03773591400022269
+      },
+      {
+        "C": 10.0,
+        "attempts": [
+          {
+            "max_iter": 2000,
+            "n_iter": [
+              99
+            ],
+            "seconds": 0.058990437999455025,
+            "warnings": []
+          }
+        ],
+        "converged": true,
+        "cpu_seconds": 0.06179432899999959,
+        "layer": "final_norm",
+        "task": "gue_tf_0",
+        "training_rows": 819,
+        "wall_seconds": 0.06180212300023413
+      }
+    ],
+    "scope": "Training-only timing on compatible historical base features; zero delivered-model performance scores",
+    "source_sha256": "889e3a25ca0de742c76a3eade21a19844a6276b7bc915cabd996b3f52406a9c3"
+  },
+  "host_overall_planning_deadline_utc": "2026-11-17T20:33:21+00:00",
+  "mode": "PLAN_ONLY",
+  "observed_hardware": {
+    "CPU_affinity": 128,
+    "CPU_quota_cores": 15.3,
+    "CUDA_initialized": false,
+    "GPU_process_query": "",
+    "GPU_query": "NVIDIA H100 NVL, 95830 MiB, 0 MiB, 595.112.07",
+    "cgroup_version": "v1",
+    "filesystem_available_reported_bytes": 325667354640384,
+    "filesystem_scope": "Shared filesystem statvfs, not a guaranteed project quota or measured sustained bandwidth",
+    "filesystem_total_reported_bytes": 898491987329024,
+    "hardware_modified": false,
+    "host_memory_current_bytes": 86337703936,
+    "host_memory_limit_bytes": 214999998464,
+    "model_imported": false,
+    "observed_utc": "2026-11-17T16:57:52.296792+00:00",
+    "proposed_total_host_soft_cap_bytes": 150499998924
+  },
+  "options": [
+    {
+      "CV_candidate_fold_fits": 235872,
+      "LM_evaluation_outputs": 252,
+      "LM_population_outputs": 468,
+      "additional_base_refits": 0,
+      "additional_control_fits": 0,
+      "adjacent_pairs": [
+        {
+          "cross_job": false,
+          "left": "base/iter_0000200",
+          "right": "base/iter_0000100"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0000300",
+          "right": "base/iter_0000200"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0000400",
+          "right": "base/iter_0000300"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0000500",
+          "right": "base/iter_0000400"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0000600",
+          "right": "base/iter_0000500"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0000700",
+          "right": "base/iter_0000600"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0000800",
+          "right": "base/iter_0000700"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0000900",
+          "right": "base/iter_0000800"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001000",
+          "right": "base/iter_0000900"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001100",
+          "right": "base/iter_0001000"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001200",
+          "right": "base/iter_0001100"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001300",
+          "right": "base/iter_0001200"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001400",
+          "right": "base/iter_0001300"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001500",
+          "right": "base/iter_0001400"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001600",
+          "right": "base/iter_0001500"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001700",
+          "right": "base/iter_0001600"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001800",
+          "right": "base/iter_0001700"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000200",
+          "right": "maxent/iter_0000100"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000300",
+          "right": "maxent/iter_0000200"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000400",
+          "right": "maxent/iter_0000300"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000500",
+          "right": "maxent/iter_0000400"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000600",
+          "right": "maxent/iter_0000500"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000700",
+          "right": "maxent/iter_0000600"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000800",
+          "right": "maxent/iter_0000700"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0000900",
+          "right": "maxent/iter_0000800"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001000",
+          "right": "maxent/iter_0000900"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001100",
+          "right": "maxent/iter_0001000"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001200",
+          "right": "maxent/iter_0001100"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001300",
+          "right": "maxent/iter_0001200"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001400",
+          "right": "maxent/iter_0001300"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001500",
+          "right": "maxent/iter_0001400"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001600",
+          "right": "maxent/iter_0001500"
+        },
+        {
+          "cross_job": true,
+          "left": "maxent/iter_0001700",
+          "right": "maxent/iter_0001600"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001800",
+          "right": "maxent/iter_0001700"
+        }
+      ],
+      "common_steps": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900,
+        1000,
+        1100,
+        1200,
+        1300,
+        1400,
+        1500,
+        1600,
+        1700,
+        1800
+      ],
+      "conditional_CPU_estimates": {
+        "basis": "Historical468-unit R3 one-new-arm timing projection; includes its metric/paired-bootstrap/transfer scope, excludes task-level LM/audit/report/backup and new trajectory contrast costs",
+        "conservative_each_task_unit_at_historical_task_max_wall_seconds": 505566.1140877269,
+        "four_busy_one_thread_workers_ideal_floor_seconds": 37291.648113008996,
+        "historical_process_work_proxy_seconds": 149166.59245203598,
+        "historical_serial_unit_wall_proxy_seconds": 74894.35547918268,
+        "retry_sensitivities": [
+          {
+            "additional_attempts": 2527.2000000000003,
+            "additional_retry_fraction": 0.01,
+            "additional_retry_wall_work_proxy_seconds": 32036.653021828115,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          },
+          {
+            "additional_attempts": 12636.0,
+            "additional_retry_fraction": 0.05,
+            "additional_retry_wall_work_proxy_seconds": 160183.26510914054,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          },
+          {
+            "additional_attempts": 252720.0,
+            "additional_retry_fraction": 1.0,
+            "additional_retry_wall_work_proxy_seconds": 3203665.302182811,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          }
+        ],
+        "total_CPU_wall_seconds": null,
+        "total_reason": "Unknown new-feature convergence, process utilization, extra bootstrap/audit/I/O. Ideal floor is not a scheduling promise"
+      },
+      "conditional_GPU_estimates": {
+        "basis": "Historical full-population plain parent/reference extraction elapsed projection, not qualified adapter forecast or smoke scaling",
+        "budget_scenarios": [
+          {
+            "authorization": false,
+            "feasibility": "NO_UNDER_HISTORICAL_PARENT_PROXY_BEFORE_OTHER_COSTS",
+            "future_phase_GPU_envelope_seconds": 7200,
+            "headroom_after_historical_best_proxy_seconds": -4432.919561645016,
+            "headroom_after_historical_conservative_proxy_seconds": -4715.970508189872,
+            "max_total_seconds_per_model": 200.0
+          },
+          {
+            "authorization": false,
+            "feasibility": "NO_UNDER_HISTORICAL_PARENT_PROXY_BEFORE_OTHER_COSTS",
+            "future_phase_GPU_envelope_seconds": 9000,
+            "headroom_after_historical_best_proxy_seconds": -2632.919561645016,
+            "headroom_after_historical_conservative_proxy_seconds": -2915.970508189872,
+            "max_total_seconds_per_model": 250.0
+          }
+        ],
+        "historical_best_elapsed_seconds": 11632.919561645016,
+        "historical_conservative_elapsed_seconds": 11915.970508189872,
+        "historical_forward_only_lower_proxy_seconds": 8462.05129214935,
+        "qualification_overhead_seconds": null,
+        "qualification_reason": "B04 scientific gates/extra state and inherited per-payload route cost unresolved; no new unbound engineering work",
+        "total_B06_GPU_seconds": null,
+        "total_reason": "Full adapter extraction/load/I/O/per-payload gate costs unmeasured; feasibility requires qualified calibration"
+      },
+      "confirmed_target_feature_or_fit_reuse": 0,
+      "contrast_counts": {
+        "absolute": 36,
+        "adjacent_delivered": 34,
+        "common_step_between_series": 18,
+        "difference_in_change_first_delivered": 17,
+        "first_delivered_relative": 34,
+        "matched_actual_exposure": 0,
+        "true_start_and_exposure_reason": "Conditional proposals only;Q3/Q4 not established",
+        "true_start_relative": 0
+      },
+      "currently_eligible_final_heads": 0,
+      "currently_eligible_models": [],
+      "executable_units": [],
+      "feature_temporary_and_backup_2copy_bytes": 325566259200,
+      "feature_temporary_backup_high3copy_bytes": 488349388800,
+      "final_refit_heads": 16848,
+      "forecast_status": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+      "heldout_probability_policy_populations": 39312,
+      "lost_coverage": "None among delivered models",
+      "max_additional_retry_attempts": 252720,
+      "model_ids": [
+        "base/iter_0000100",
+        "base/iter_0000200",
+        "base/iter_0000300",
+        "base/iter_0000400",
+        "base/iter_0000500",
+        "base/iter_0000600",
+        "base/iter_0000700",
+        "base/iter_0000800",
+        "base/iter_0000900",
+        "base/iter_0001000",
+        "base/iter_0001100",
+        "base/iter_0001200",
+        "base/iter_0001300",
+        "base/iter_0001400",
+        "base/iter_0001500",
+        "base/iter_0001600",
+        "base/iter_0001700",
+        "base/iter_0001800",
+        "maxent/iter_0000100",
+        "maxent/iter_0000200",
+        "maxent/iter_0000300",
+        "maxent/iter_0000400",
+        "maxent/iter_0000500",
+        "maxent/iter_0000600",
+        "maxent/iter_0000700",
+        "maxent/iter_0000800",
+        "maxent/iter_0000900",
+        "maxent/iter_0001000",
+        "maxent/iter_0001100",
+        "maxent/iter_0001200",
+        "maxent/iter_0001300",
+        "maxent/iter_0001400",
+        "maxent/iter_0001500",
+        "maxent/iter_0001600",
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "models": 36,
+      "nominal_estimator_fits": 252720,
+      "option_id": "full",
+      "planned_all_layer_physical_batches": 101916,
+      "planned_feature_streams": 72,
+      "questions_answered_if_qualified": "All6 tasks/all26 coordinates/all3 seeds, refit versus fixed-base and native LM; first-delivered and common-step descriptive contrasts; adjacent only where actual step difference100",
+      "questions_missing": "True-start and exposure-aligned questions untilQ3/Q4; causal mechanism, hazardous recovery and restart continuity remain unsupported",
+      "raw_LM_sufficient_statistic_bytes": 9782640,
+      "raw_bootstrap_elementary_LM_value_bytes": 8064000,
+      "raw_bootstrap_elementary_classification_value_bytes": 3144960000,
+      "raw_feature_GiB": 151.6036033630371,
+      "raw_feature_bytes": 162783129600,
+      "raw_probability_values_bytes": 522063360,
+      "representations": 26,
+      "seeds": 3,
+      "selection": "Exact predetermined metadata steps in both series; no outcome selection or nearest-step substitution. Missing required endpoint -> unavailable contrast and explicit partial coverage; never replace favorably",
+      "status": "PROPOSED_CONDITIONAL_NOT_SELECTED",
+      "task_count": 6,
+      "unchanged_fixed_base_transfer_units": 16848
+    },
+    {
+      "CV_candidate_fold_fits": 91728,
+      "LM_evaluation_outputs": 98,
+      "LM_population_outputs": 182,
+      "additional_base_refits": 0,
+      "additional_control_fits": 0,
+      "adjacent_pairs": [
+        {
+          "cross_job": false,
+          "left": "base/iter_0001700",
+          "right": "base/iter_0001600"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001800",
+          "right": "base/iter_0001700"
+        },
+        {
+          "cross_job": true,
+          "left": "maxent/iter_0001700",
+          "right": "maxent/iter_0001600"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001800",
+          "right": "maxent/iter_0001700"
+        }
+      ],
+      "common_steps": [
+        100,
+        500,
+        1000,
+        1400,
+        1600,
+        1700,
+        1800
+      ],
+      "conditional_CPU_estimates": {
+        "basis": "Historical468-unit R3 one-new-arm timing projection; includes its metric/paired-bootstrap/transfer scope, excludes task-level LM/audit/report/backup and new trajectory contrast costs",
+        "conservative_each_task_unit_at_historical_task_max_wall_seconds": 196609.04436744936,
+        "four_busy_one_thread_workers_ideal_floor_seconds": 14502.307599503498,
+        "historical_process_work_proxy_seconds": 58009.23039801399,
+        "historical_serial_unit_wall_proxy_seconds": 29125.58268634882,
+        "retry_sensitivities": [
+          {
+            "additional_attempts": 982.8000000000001,
+            "additional_retry_fraction": 0.01,
+            "additional_retry_wall_work_proxy_seconds": 12458.698397377599,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          },
+          {
+            "additional_attempts": 4914.0,
+            "additional_retry_fraction": 0.05,
+            "additional_retry_wall_work_proxy_seconds": 62293.491986887995,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          },
+          {
+            "additional_attempts": 98280.0,
+            "additional_retry_fraction": 1.0,
+            "additional_retry_wall_work_proxy_seconds": 1245869.83973776,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          }
+        ],
+        "total_CPU_wall_seconds": null,
+        "total_reason": "Unknown new-feature convergence, process utilization, extra bootstrap/audit/I/O. Ideal floor is not a scheduling promise"
+      },
+      "conditional_GPU_estimates": {
+        "basis": "Historical full-population plain parent/reference extraction elapsed projection, not qualified adapter forecast or smoke scaling",
+        "budget_scenarios": [
+          {
+            "authorization": false,
+            "feasibility": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+            "future_phase_GPU_envelope_seconds": 7200,
+            "headroom_after_historical_best_proxy_seconds": 2676.0868371380493,
+            "headroom_after_historical_conservative_proxy_seconds": 2566.011469037272,
+            "max_total_seconds_per_model": 514.2857142857143
+          },
+          {
+            "authorization": false,
+            "feasibility": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+            "future_phase_GPU_envelope_seconds": 9000,
+            "headroom_after_historical_best_proxy_seconds": 4476.086837138049,
+            "headroom_after_historical_conservative_proxy_seconds": 4366.011469037272,
+            "max_total_seconds_per_model": 642.8571428571429
+          }
+        ],
+        "historical_best_elapsed_seconds": 4523.913162861951,
+        "historical_conservative_elapsed_seconds": 4633.988530962728,
+        "historical_forward_only_lower_proxy_seconds": 3290.7977247247472,
+        "qualification_overhead_seconds": null,
+        "qualification_reason": "B04 scientific gates/extra state and inherited per-payload route cost unresolved; no new unbound engineering work",
+        "total_B06_GPU_seconds": null,
+        "total_reason": "Full adapter extraction/load/I/O/per-payload gate costs unmeasured; feasibility requires qualified calibration"
+      },
+      "confirmed_target_feature_or_fit_reuse": 0,
+      "contrast_counts": {
+        "absolute": 14,
+        "adjacent_delivered": 4,
+        "common_step_between_series": 7,
+        "difference_in_change_first_delivered": 6,
+        "first_delivered_relative": 12,
+        "matched_actual_exposure": 0,
+        "true_start_and_exposure_reason": "Conditional proposals only;Q3/Q4 not established",
+        "true_start_relative": 0
+      },
+      "currently_eligible_final_heads": 0,
+      "currently_eligible_models": [],
+      "executable_units": [],
+      "feature_temporary_and_backup_2copy_bytes": 126609100800,
+      "feature_temporary_backup_high3copy_bytes": 189913651200,
+      "final_refit_heads": 6552,
+      "forecast_status": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+      "heldout_probability_policy_populations": 15288,
+      "lost_coverage": "Omitted intermediate steps; gaps are not adjacent-delivered changes. Core is especially sparse.",
+      "max_additional_retry_attempts": 98280,
+      "model_ids": [
+        "base/iter_0000100",
+        "base/iter_0000500",
+        "base/iter_0001000",
+        "base/iter_0001400",
+        "base/iter_0001600",
+        "base/iter_0001700",
+        "base/iter_0001800",
+        "maxent/iter_0000100",
+        "maxent/iter_0000500",
+        "maxent/iter_0001000",
+        "maxent/iter_0001400",
+        "maxent/iter_0001600",
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "models": 14,
+      "nominal_estimator_fits": 98280,
+      "option_id": "balanced",
+      "planned_all_layer_physical_batches": 39634,
+      "planned_feature_streams": 28,
+      "questions_answered_if_qualified": "All6 tasks/all26 coordinates/all3 seeds, refit versus fixed-base and native LM; first-delivered and common-step descriptive contrasts; adjacent only where actual step difference100",
+      "questions_missing": "True-start and exposure-aligned questions untilQ3/Q4; causal mechanism, hazardous recovery and restart continuity remain unsupported",
+      "raw_LM_sufficient_statistic_bytes": 3804360,
+      "raw_bootstrap_elementary_LM_value_bytes": 3136000,
+      "raw_bootstrap_elementary_classification_value_bytes": 1223040000,
+      "raw_feature_GiB": 58.95695686340332,
+      "raw_feature_bytes": 63304550400,
+      "raw_probability_values_bytes": 203024640,
+      "representations": 26,
+      "seeds": 3,
+      "selection": "Exact predetermined metadata steps in both series; no outcome selection or nearest-step substitution. Missing required endpoint -> unavailable contrast and explicit partial coverage; never replace favorably",
+      "status": "PROPOSED_CONDITIONAL_NOT_SELECTED",
+      "task_count": 6,
+      "unchanged_fixed_base_transfer_units": 6552
+    },
+    {
+      "CV_candidate_fold_fits": 52416,
+      "LM_evaluation_outputs": 56,
+      "LM_population_outputs": 104,
+      "additional_base_refits": 0,
+      "additional_control_fits": 0,
+      "adjacent_pairs": [
+        {
+          "cross_job": false,
+          "left": "base/iter_0001700",
+          "right": "base/iter_0001600"
+        },
+        {
+          "cross_job": false,
+          "left": "base/iter_0001800",
+          "right": "base/iter_0001700"
+        },
+        {
+          "cross_job": true,
+          "left": "maxent/iter_0001700",
+          "right": "maxent/iter_0001600"
+        },
+        {
+          "cross_job": false,
+          "left": "maxent/iter_0001800",
+          "right": "maxent/iter_0001700"
+        }
+      ],
+      "common_steps": [
+        100,
+        1600,
+        1700,
+        1800
+      ],
+      "conditional_CPU_estimates": {
+        "basis": "Historical468-unit R3 one-new-arm timing projection; includes its metric/paired-bootstrap/transfer scope, excludes task-level LM/audit/report/backup and new trajectory contrast costs",
+        "conservative_each_task_unit_at_historical_task_max_wall_seconds": 112348.0253528282,
+        "four_busy_one_thread_workers_ideal_floor_seconds": 8287.032914001999,
+        "historical_process_work_proxy_seconds": 33148.131656007994,
+        "historical_serial_unit_wall_proxy_seconds": 16643.19010648504,
+        "retry_sensitivities": [
+          {
+            "additional_attempts": 561.6,
+            "additional_retry_fraction": 0.01,
+            "additional_retry_wall_work_proxy_seconds": 7119.256227072914,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          },
+          {
+            "additional_attempts": 2808.0,
+            "additional_retry_fraction": 0.05,
+            "additional_retry_wall_work_proxy_seconds": 35596.28113536457,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          },
+          {
+            "additional_attempts": 56160.0,
+            "additional_retry_fraction": 1.0,
+            "additional_retry_wall_work_proxy_seconds": 711925.6227072914,
+            "basis": "Explicit sensitivity using observed historical10000-iteration retry mean; not an adapter-specific rate prediction; existing28 retries already included in historical unit totals"
+          }
+        ],
+        "total_CPU_wall_seconds": null,
+        "total_reason": "Unknown new-feature convergence, process utilization, extra bootstrap/audit/I/O. Ideal floor is not a scheduling promise"
+      },
+      "conditional_GPU_estimates": {
+        "basis": "Historical full-population plain parent/reference extraction elapsed projection, not qualified adapter forecast or smoke scaling",
+        "budget_scenarios": [
+          {
+            "authorization": false,
+            "feasibility": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+            "future_phase_GPU_envelope_seconds": 7200,
+            "headroom_after_historical_best_proxy_seconds": 4614.906764078885,
+            "headroom_after_historical_conservative_proxy_seconds": 4552.006553735584,
+            "max_total_seconds_per_model": 900.0
+          },
+          {
+            "authorization": false,
+            "feasibility": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+            "future_phase_GPU_envelope_seconds": 9000,
+            "headroom_after_historical_best_proxy_seconds": 6414.906764078885,
+            "headroom_after_historical_conservative_proxy_seconds": 6352.006553735584,
+            "max_total_seconds_per_model": 1125.0
+          }
+        ],
+        "historical_best_elapsed_seconds": 2585.0932359211147,
+        "historical_conservative_elapsed_seconds": 2647.993446264416,
+        "historical_forward_only_lower_proxy_seconds": 1880.4558426998556,
+        "qualification_overhead_seconds": null,
+        "qualification_reason": "B04 scientific gates/extra state and inherited per-payload route cost unresolved; no new unbound engineering work",
+        "total_B06_GPU_seconds": null,
+        "total_reason": "Full adapter extraction/load/I/O/per-payload gate costs unmeasured; feasibility requires qualified calibration"
+      },
+      "confirmed_target_feature_or_fit_reuse": 0,
+      "contrast_counts": {
+        "absolute": 8,
+        "adjacent_delivered": 4,
+        "common_step_between_series": 4,
+        "difference_in_change_first_delivered": 3,
+        "first_delivered_relative": 6,
+        "matched_actual_exposure": 0,
+        "true_start_and_exposure_reason": "Conditional proposals only;Q3/Q4 not established",
+        "true_start_relative": 0
+      },
+      "currently_eligible_final_heads": 0,
+      "currently_eligible_models": [],
+      "executable_units": [],
+      "feature_temporary_and_backup_2copy_bytes": 72348057600,
+      "feature_temporary_backup_high3copy_bytes": 108522086400,
+      "final_refit_heads": 3744,
+      "forecast_status": "UNKNOWN_PENDING_QUALIFIED_CALIBRATION",
+      "heldout_probability_policy_populations": 8736,
+      "lost_coverage": "Omitted intermediate steps; gaps are not adjacent-delivered changes. Core is especially sparse.",
+      "max_additional_retry_attempts": 56160,
+      "model_ids": [
+        "base/iter_0000100",
+        "base/iter_0001600",
+        "base/iter_0001700",
+        "base/iter_0001800",
+        "maxent/iter_0000100",
+        "maxent/iter_0001600",
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "models": 8,
+      "nominal_estimator_fits": 56160,
+      "option_id": "core",
+      "planned_all_layer_physical_batches": 22648,
+      "planned_feature_streams": 16,
+      "questions_answered_if_qualified": "All6 tasks/all26 coordinates/all3 seeds, refit versus fixed-base and native LM; first-delivered and common-step descriptive contrasts; adjacent only where actual step difference100",
+      "questions_missing": "True-start and exposure-aligned questions untilQ3/Q4; causal mechanism, hazardous recovery and restart continuity remain unsupported",
+      "raw_LM_sufficient_statistic_bytes": 2173920,
+      "raw_bootstrap_elementary_LM_value_bytes": 1792000,
+      "raw_bootstrap_elementary_classification_value_bytes": 698880000,
+      "raw_feature_GiB": 33.68968963623047,
+      "raw_feature_bytes": 36174028800,
+      "raw_probability_values_bytes": 116014080,
+      "representations": 26,
+      "seeds": 3,
+      "selection": "Exact predetermined metadata steps in both series; no outcome selection or nearest-step substitution. Missing required endpoint -> unavailable contrast and explicit partial coverage; never replace favorably",
+      "status": "PROPOSED_CONDITIONAL_NOT_SELECTED",
+      "task_count": 6,
+      "unchanged_fixed_base_transfer_units": 3744
+    }
+  ],
+  "provider_hourly_rate": null,
+  "provider_reason": "Not independently supplied; no infrastructure or lease changes",
+  "provider_rental_start": null,
+  "qualification": {
+    "B04_engineering_reused": true,
+    "new_GPU_seconds": 0,
+    "new_scientific_gate_cost_seconds": null,
+    "reason": "Not executable during planning; later B04 responsible for real state/source/route and measured representative/inherited gates"
+  },
+  "raw_timing_projection": {
+    "bytes": 299634,
+    "path": "/workspace/meeting-artifacts/POD_B/B05-plan-only-20261117T165434Z/evidence/HISTORICAL_UNIT_TIMINGS.json",
+    "sha256": "9a8e6055cd9af0d7b1daac1bbb54702953e069786133d1f5b5f6fc948ba30152"
+  },
+  "scenario_definitions": {
+    "best_supported": "Historical measured full-population reference extraction and measured R3 per-unit timing projection; applicability to qualified supplied models unknown",
+    "conservative": "Maximum observed historical full-population reference extraction; CPU every task/unit at its task historical max; explicit stress proxy, not a confidence bound",
+    "high_cost": "Unknown new state/dependency transfer plus declared1%/5%/100% extra-retry sensitivities and3-copy features; totals null until calibrated. No fabricated bandwidth or bootstrap/audit duration"
+  },
+  "schema": "POD_B.B05.forecast.v1",
+  "storage": {
+    "all36_raw_feature_bytes": 162783129600,
+    "backup": "Price uncompressed-equivalent payload plus verified temporary copy; remote throughput/serialization/restore timings unknown; B09 separately authorized",
+    "compression_assumed_ratio": 1,
+    "feature_dtype": "float32",
+    "feature_width": 1920,
+    "full_logits_saved": false,
+    "memory": "Current cgroup use plus estimated worker memory must remain below proposed70% total soft cap and hard limit; recheck at launch; at most4 workers with1 BLAS thread each",
+    "per_model_raw_feature_bytes": 4521753600,
+    "retention": "All existing artifacts preserved. New features stored to disk with scoped hashes and atomic chunks; process one model at a time with mmap; no all36 resident-memory assumption, no deletion to make plan fit"
+  },
+  "uncertainty_work": {
+    "attempted_draws_per_population": 2000,
+    "canonical_eval_groups": 5553,
+    "class_score_rank_sorts_per_model": 1404,
+    "contrast_cost": "Compute each model/policy/layer/seed/task/split distribution once, reuse joint draws; subtract shared vectors for all planned contrasts; no quadratic refit or new resampling per contrast",
+    "elementary_bootstrap_metric_values_per_model": 10920000,
+    "metrics_per_sort_unit": 5,
+    "probability_population_units_per_model": 1092,
+    "rank_sort_definition": "Six binary eval populations require one class1 rank sort; splice one population requires3 OVR sorts; times26 coordinates\u00d73 seeds\u00d72 readouts",
+    "reason": "Historical R3 unit sums include narrower existing bootstrap scope; new total sorting/resampling/contrast aggregation/audit cost unmeasured",
+    "shared_eval_populations": 7,
+    "shared_float64_row_weight_bytes_all7": 88864000,
+    "shared_int32_group_draw_matrix_bytes": 44424000,
+    "timing_seconds": null
+  },
+  "wall": {
+    "calibration_seconds": null,
+    "closure_reserve_proposal": "At least max(still-applicable inherited reserve,45 minutes,measured audit/report/backup/restore time plus20% margin); future exact window must explicitly bind cutoff and closure",
+    "concurrency": "One GPU owner; at most4 bounded CPU workers,1 BLAS thread each; CPU steps start only after eligible model features sealed; no nested4x4 worker explosion",
+    "dependency_critical_formula": "T_identity + T_B04_qualification + T_approved_calibration + max(T_sequential_GPU_extraction, T_CPU_pipeline_after_each_sealed_model) + T_remaining_paired_contrast_audit + T_report + T_backup_verify + T_closure_reserve",
+    "extraction_seconds": null,
+    "fitting_and_bootstrap_seconds": null,
+    "future_closure_deadline_utc": null,
+    "future_forward_deadline_utc": null,
+    "future_start_utc": null,
+    "identity_resolution_seconds": null,
+    "reason": "Critical path has unresolved scientific/execution dependencies and measurements; do not sum unknown costs as zeros",
+    "reason_for_null_windows": "This approval is PLAN_ONLY; no new GPU/production clock exists",
+    "scientific_qualification_seconds": null,
+    "total_seconds": null,
+    "transfers_audit_reporting_backup_seconds": null
+  }
+}

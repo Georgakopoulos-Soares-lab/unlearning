@@ -1,0 +1,148 @@
+{
+  "all7_families_retained": true,
+  "current_executable_contrasts": [],
+  "families": [
+    {
+      "bootstrap": "Protocol2000 attempted paired group draws conditional on fixed heads; four endpoints jointly paired for DID",
+      "causal_claim": false,
+      "channels": [
+        "independent_refit",
+        "unchanged_fixed_base_scaler_AND_head",
+        "LM"
+      ],
+      "current_eligibility": "BLOCKED_B04_FULL_STATE_AND_ROUTE",
+      "estimand": "M(checkpoint,task,split,representation,seed,policy); LM omits layer/seed",
+      "extra_dependency": null,
+      "id": "absolute",
+      "interpretation": "Descriptive absolute benign measurement",
+      "left": "Each exact qualified checkpoint",
+      "paired_population": "Exact task/split/ordered IDs/sequence digests/labels/groups and qualified coordinate/readout identities; joint same bootstrap draw",
+      "references": "No trajectory-start reference required",
+      "right": null,
+      "sign": "Raw left minus right for every metric; lower-is-better losses improve when delta<0"
+    },
+    {
+      "bootstrap": "Protocol2000 attempted paired group draws conditional on fixed heads; four endpoints jointly paired for DID",
+      "causal_claim": false,
+      "channels": [
+        "independent_refit",
+        "unchanged_fixed_base_scaler_AND_head",
+        "LM"
+      ],
+      "current_eligibility": "BLOCKED_B04_FULL_STATE_AND_ROUTE",
+      "estimand": "M(left)-M(right)",
+      "extra_dependency": "Continuity only for interpreting a training transition; not for descriptive endpoint subtraction",
+      "id": "adjacent_delivered",
+      "interpretation": "MaxEnt1700 minus1600 is a cross-job endpoint difference with unproven continuation, not a restart causal effect",
+      "left": "series/step(t)",
+      "paired_population": "Exact task/split/ordered IDs/sequence digests/labels/groups and qualified coordinate/readout identities; joint same bootstrap draw",
+      "references": "Both actual consecutive delivered steps, not merely neighboring selected subset points",
+      "right": "same_series/step(t-100)",
+      "sign": "Raw left minus right for every metric; lower-is-better losses improve when delta<0"
+    },
+    {
+      "bootstrap": "Protocol2000 attempted paired group draws conditional on fixed heads; four endpoints jointly paired for DID",
+      "causal_claim": false,
+      "channels": [
+        "independent_refit",
+        "unchanged_fixed_base_scaler_AND_head",
+        "LM"
+      ],
+      "current_eligibility": "BLOCKED_B04_FULL_STATE_AND_ROUTE",
+      "estimand": "M(t)-M(true_start_series)",
+      "extra_dependency": "Q3",
+      "id": "true_start_relative",
+      "interpretation": "Start-relative descriptive change, not mechanism identification",
+      "left": "series/step(t)",
+      "paired_population": "Exact task/split/ordered IDs/sequence digests/labels/groups and qualified coordinate/readout identities; joint same bootstrap draw",
+      "references": "Explicit true initial full-state identity; not disabled adapter/bare parent/step100",
+      "right": "actual qualified pre-relearning true_start of that series",
+      "sign": "Raw left minus right for every metric; lower-is-better losses improve when delta<0"
+    },
+    {
+      "bootstrap": "Protocol2000 attempted paired group draws conditional on fixed heads; four endpoints jointly paired for DID",
+      "causal_claim": false,
+      "channels": [
+        "independent_refit",
+        "unchanged_fixed_base_scaler_AND_head",
+        "LM"
+      ],
+      "current_eligibility": "BLOCKED_B04_FULL_STATE_AND_ROUTE",
+      "estimand": "M(t)-M(first_delivered100)",
+      "extra_dependency": null,
+      "id": "first_delivered_relative",
+      "interpretation": "First-delivered-relative; never called recovery from true step0",
+      "left": "series/step(t),t>100",
+      "paired_population": "Exact task/split/ordered IDs/sequence digests/labels/groups and qualified coordinate/readout identities; joint same bootstrap draw",
+      "references": "Exact qualified step100 in each series; exclude100 self contrast",
+      "right": "same_series/step100",
+      "sign": "Raw left minus right for every metric; lower-is-better losses improve when delta<0"
+    },
+    {
+      "bootstrap": "Protocol2000 attempted paired group draws conditional on fixed heads; four endpoints jointly paired for DID",
+      "causal_claim": false,
+      "channels": [
+        "independent_refit",
+        "unchanged_fixed_base_scaler_AND_head",
+        "LM"
+      ],
+      "current_eligibility": "BLOCKED_B04_FULL_STATE_AND_ROUTE",
+      "estimand": "M_MaxEnt(t)-M_base(t)",
+      "extra_dependency": null,
+      "id": "common_step_between_series",
+      "interpretation": "Iteration-matched, exposure not assumed equal",
+      "left": "maxent/step(t)",
+      "paired_population": "Exact task/split/ordered IDs/sequence digests/labels/groups and qualified coordinate/readout identities; joint same bootstrap draw",
+      "references": "Same actually delivered counter value; no nearest-step substitution",
+      "right": "base/step(t)",
+      "sign": "Raw left minus right for every metric; lower-is-better losses improve when delta<0"
+    },
+    {
+      "bootstrap": "Protocol2000 attempted paired group draws conditional on fixed heads; four endpoints jointly paired for DID",
+      "causal_claim": false,
+      "channels": [
+        "independent_refit",
+        "unchanged_fixed_base_scaler_AND_head",
+        "LM"
+      ],
+      "current_eligibility": "BLOCKED_B04_FULL_STATE_AND_ROUTE",
+      "estimand": "M_MaxEnt(e)-M_base(e)",
+      "extra_dependency": "Q4; exact equal valid-token totals and comparable counter semantics, no rounding/interpolation/nearest matching; if none equal, unavailable",
+      "id": "matched_actual_exposure",
+      "interpretation": "Exposure-aligned descriptive comparison; does not equate sampling mixture, unique examples or objectives",
+      "left": "maxent/checkpoint at exposure e",
+      "paired_population": "Exact task/split/ordered IDs/sequence digests/labels/groups and qualified coordinate/readout identities; joint same bootstrap draw",
+      "references": "Independently evidenced cumulative valid relearning-training tokens under same exposure window/definition; current bindings null",
+      "right": "base/checkpoint at exact same exposure e",
+      "sign": "Raw left minus right for every metric; lower-is-better losses improve when delta<0"
+    },
+    {
+      "bootstrap": "Protocol2000 attempted paired group draws conditional on fixed heads; four endpoints jointly paired for DID",
+      "causal_claim": false,
+      "channels": [
+        "independent_refit",
+        "unchanged_fixed_base_scaler_AND_head",
+        "LM"
+      ],
+      "current_eligibility": "BLOCKED_B04_FULL_STATE_AND_ROUTE",
+      "estimand": "[M_MaxEnt(t)-M_MaxEnt(ref_MaxEnt)]-[M_base(t)-M_base(ref_base)]",
+      "extra_dependency": "Q3 for true-start variant; Q4 for exposure-aligned variant; none extra for explicitly first-delivered/iteration-matched variant",
+      "id": "difference_in_change",
+      "interpretation": "Descriptive DID; no causal parallel-trends or treatment-mechanism claim",
+      "left": "M_MaxEnt(t)-M_MaxEnt(reference_MaxEnt)",
+      "paired_population": "Exact task/split/ordered IDs/sequence digests/labels/groups and qualified coordinate/readout identities; joint same bootstrap draw",
+      "references": "Separate named variants: first_delivered100 refs (Q3 not required) versus true_start refs (Q3 required); all four exact endpoints qualified",
+      "right": "M_base(t)-M_base(reference_base)",
+      "sign": "Raw left minus right for every metric; lower-is-better losses improve when delta<0"
+    }
+  ],
+  "protocol_sha256": "4b8852fd0e4e9d9fa41b5a23d3839e0c265ab33a42a4a941b814434f89326f19",
+  "reference_bindings": {
+    "first_delivered_base": "base/iter_0000100",
+    "first_delivered_maxent": "maxent/iter_0000100",
+    "reason": "Q3 unresolved",
+    "true_start_base": null,
+    "true_start_maxent": null
+  },
+  "schema": "POD_B.B05.comparisons.v1"
+}

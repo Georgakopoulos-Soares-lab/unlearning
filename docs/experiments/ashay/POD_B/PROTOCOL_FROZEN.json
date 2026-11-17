@@ -1,0 +1,286 @@
+{
+  "LM": {
+    "PPL": "exp(corpus_NLL)",
+    "aggregation_dtype": "float64",
+    "corpus_NLL": "sum_i float64(nll_sum_i) / sum_i int64(n_tokens_i)",
+    "invalid": "Nonfinite loss, negative count or missing target contract fails channel; nonpositive total valid targets is INVALID_ZERO_TARGETS; never divide by zero",
+    "layer_seed_multiplier": 1,
+    "output": "Actual qualified next-token LM head; not hidden-layer or classifier loss",
+    "overflow": "Keep finite NLL/logPPL; set overflowing PPL=null with OVERFLOW reason, no clamp or silent infinity",
+    "resampling": "For each paired sampled group multiplicity, recompute token-weighted corpus NLL and then exp; do not average per-sequence PPL",
+    "row_loss_dtype": "float32",
+    "row_valid_target_count_dtype": "int64",
+    "tokenizer_limit": "Native256/512 head/vocabulary and targets remain explicit; compare loss only after relevant token/target semantics qualified"
+  },
+  "approved_prompt_sha256": "4d27da9836d35720aaddd457f9962d2a42c5ebc2aa6618c2fc0eeb50c42c8095",
+  "calibration_status": "NOT_AUTHORIZED_NOT_RUN",
+  "channel_eligibility": {
+    "LM": 0,
+    "features": 0,
+    "fixed_base_transfer": 0
+  },
+  "cohorts": "B05_COHORTS_AND_FOLDS.json",
+  "comparisons": "COMPARISON_FAMILIES.json",
+  "design_frozen": true,
+  "design_frozen_scope": "Resolved prospective rules below; qualification, calibration, runtime identity and subsequent execution approval remain separate",
+  "heldout_access": "No held-out outcomes opened for planning; future only exact frozen dev and previously analyzed1497 H3 test members, exploratory; no untouched/new tests",
+  "metrics": {
+    "accuracy": "Binary p(class1)>=0.5; splice argmax with sorted numeric class order",
+    "auroc": "Binary class1; splice unweighted macro one-vs-rest sorted class order",
+    "average_precision": "Binary class1; splice arithmetic mean of per-class one-vs-rest AP",
+    "balanced_accuracy": "Unweighted macro recall",
+    "binary_classes": [
+      0,
+      1
+    ],
+    "binary_positive_class": 1,
+    "classification_cross_entropy": "sklearn log_loss from float64 probabilities, natural logs; class-aligned and clipped to float64 machine epsilon in bootstrap; distinct from LM",
+    "directions": {
+      "accuracy": "HIGHER_BETTER",
+      "auroc": "HIGHER_BETTER",
+      "average_precision": "HIGHER_BETTER",
+      "balanced_accuracy": "HIGHER_BETTER",
+      "causal_nll": "LOWER_BETTER",
+      "classification_cross_entropy": "LOWER_BETTER",
+      "perplexity": "LOWER_BETTER"
+    },
+    "multiclass_classes": [
+      0,
+      1,
+      2
+    ],
+    "primary": "auroc",
+    "primary_designation": "Prospective B05 reaffirmation of explicit B03 COHORT_RECEIPT.primary_classification_metric; historical protocol lists alone do not establish a confirmatory primary hypothesis",
+    "probability_validation": "Exact ID/class alignment, finite float64 probabilities, entries in[0,1], row sums validated by pinned source",
+    "units": "AUROC/AP/accuracy/balanced accuracy reported as fractions; deltas in fraction units; CE/NLL in nats, PPL dimensionless; no undocumented percentage-point conversion"
+  },
+  "mode": "PLAN_ONLY",
+  "model_identity_complete": false,
+  "next_stage_authorized": false,
+  "numeric_audit_tolerances": {
+    "metric_bootstrap_max_abs": 1e-12,
+    "native_training_smoke_atol": 0.0001,
+    "native_training_smoke_rtol": 1e-05,
+    "saved_probability_max_abs": 1e-10,
+    "scope": "Separate native versus probability/statistical gates; never interchanged or relaxed"
+  },
+  "per_checkpoint_gate_status": "BLOCKED_IDENTITY_ROUTE_ALL36",
+  "populations_total_rows": 22645,
+  "presentation": {
+    "H3_dev_test_separate": true,
+    "LM_loss_curves": true,
+    "maxent_restart_boundary": [
+      1600,
+      1700
+    ],
+    "refit_versus_fixed_base": true,
+    "restart_rendering": "Separate100\u20131600 and1700\u20131800 segments; no uninterrupted line across boundary; explicit job IDs and unproven continuity on tables/figures",
+    "selection": "No best layer/checkpoint/outcome-based coverage selection",
+    "show_all_layers": true,
+    "show_all_seeds": true,
+    "step_layer_heatmaps": true,
+    "task_specific_step_curves": true
+  },
+  "probe": {
+    "CV_seeds": [
+      42,
+      17,
+      1234
+    ],
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "classifier": "L2 balanced LogisticRegression, LBFGS, tol1e-4, optimizer random_state42",
+    "controls": "B05_SEQUENCE_CONTROLS.json",
+    "feature_reuse": "Extract once per model/population for all26 coordinates; reuse across all CV seeds",
+    "fixed_base_readouts": "B05_FIXED_BASE_READOUTS.csv",
+    "fold_aggregation": "Unweighted arithmetic mean of each fold AUROC, not pooled OOF AUC or sample-size-weighted mean",
+    "fold_policy": "Reuse exact saved task/seed StratifiedGroupKFold partitions, three H3 folds/five other-task folds; no regeneration",
+    "fold_sets": 18,
+    "max_iter_attempts": [
+      2000,
+      10000
+    ],
+    "partitions": 84,
+    "policies": [
+      "independent_refit",
+      "unchanged_fixed_base_scaler_AND_head"
+    ],
+    "retry": "Fresh identical fit at10000 only after ConvergenceWarning; record all warnings/iterations/times; unresolved convergence or other final warnings block cell, no alternative C/solver/folds/tolerance/sample substitution",
+    "scaling": "Fit StandardScaler only on each fold training rows; final scaler/head refitted on all authorized task training rows after C selection",
+    "selection_metric": "Training-CV AUROC; binary class1; splice sorted0/1/2 macro-OVR",
+    "tie_break": "Exact equality of mean score; max(mean_AUROC,-C), hence smaller C; no isclose tie band"
+  },
+  "production_authorized": false,
+  "production_ready": false,
+  "representation_contract": {
+    "anchor_status": "Historical exploratory display anchor; all26 coordinates/all3 seeds retained",
+    "block16_ordinal": 17,
+    "checkpoint_precision": "Preserve actual qualified native BF16/FP32 route; no precision or tolerance changes",
+    "display_anchors": [
+      "decoder_layer_16",
+      "final_norm"
+    ],
+    "display_seed": 42,
+    "full_logits_production_retention": false,
+    "hooks": [
+      "decoder.layers.0",
+      "decoder.layers.1",
+      "decoder.layers.2",
+      "decoder.layers.3",
+      "decoder.layers.4",
+      "decoder.layers.5",
+      "decoder.layers.6",
+      "decoder.layers.7",
+      "decoder.layers.8",
+      "decoder.layers.9",
+      "decoder.layers.10",
+      "decoder.layers.11",
+      "decoder.layers.12",
+      "decoder.layers.13",
+      "decoder.layers.14",
+      "decoder.layers.15",
+      "decoder.layers.16",
+      "decoder.layers.17",
+      "decoder.layers.18",
+      "decoder.layers.19",
+      "decoder.layers.20",
+      "decoder.layers.21",
+      "decoder.layers.22",
+      "decoder.layers.23",
+      "decoder.layers.24",
+      "decoder.final_norm"
+    ],
+    "keys": [
+      "decoder_layer_0",
+      "decoder_layer_1",
+      "decoder_layer_2",
+      "decoder_layer_3",
+      "decoder_layer_4",
+      "decoder_layer_5",
+      "decoder_layer_6",
+      "decoder_layer_7",
+      "decoder_layer_8",
+      "decoder_layer_9",
+      "decoder_layer_10",
+      "decoder_layer_11",
+      "decoder_layer_12",
+      "decoder_layer_13",
+      "decoder_layer_14",
+      "decoder_layer_15",
+      "decoder_layer_16",
+      "decoder_layer_17",
+      "decoder_layer_18",
+      "decoder_layer_19",
+      "decoder_layer_20",
+      "decoder_layer_21",
+      "decoder_layer_22",
+      "decoder_layer_23",
+      "decoder_layer_24",
+      "final_norm"
+    ],
+    "logical_sizes": [
+      1,
+      8
+    ],
+    "native_vocabulary": "Use actual full qualified native output head; no DNA-only renormalization, assumed IDs or head resizing",
+    "padding": "Recorded route right-pad1000/pad1 fillers; behavior must be bound to each actual tokenizer/source",
+    "physical_batch_size": 8,
+    "pooled_dtype": "float32",
+    "pooling": "Mean over exactly qualified nucleotide positions, excluding padding/special/filler positions",
+    "post_block_residuals": 25,
+    "post_final_norm": true,
+    "production_streaming_proposal": {
+      "authorization": false,
+      "condition": "Actual source/runtime/row contract must be qualified and separate B06 plan approved",
+      "manifest_groups": [
+        "H3",
+        "other_five"
+      ],
+      "order": "Preserve original frozen manifest order, physical8; task/split outputs are views of each single stream",
+      "planned_batches_per_model": 2831,
+      "planned_filler_rows_per_model": 3
+    },
+    "runtime_source_binding": null,
+    "runtime_source_reason": "B04 actual supplied-state/source/route prerequisite unresolved",
+    "tokenizer_identity": null,
+    "tokenizer_reason": "Job/full-state binding unresolved; differing valid historical256/512 tokenizer hashes are allowed only with qualified coordinate semantics",
+    "width": 1920
+  },
+  "research_entry_commit": "62afabdbe103845fd5df58d54efbb62b0750f525",
+  "reuse_key": [
+    "actual_full_model_state_fingerprint",
+    "parent_shard_manifest_sha256",
+    "adapter_payload_sha256",
+    "output_head_fingerprint",
+    "embedding_norm_buffers_extra_state_fingerprint",
+    "resolved_inference_config_sha256",
+    "tokenizer_sha256_and_behavior",
+    "source_commit_and_file_hashes",
+    "runtime_binary_environment_identity",
+    "hook_coordinates_and_order",
+    "checkpoint_forward_precision",
+    "feature_dtype_and_width",
+    "nucleotide_pooling_and_masks",
+    "truncation_padding_length_policy",
+    "physical_batch_size_and_filler_policy",
+    "manifest_sha256",
+    "ordered_ids_sequence_digests_labels_groups",
+    "fold_assignment_sha256",
+    "probe_policy_and_class_order",
+    "CV_seed",
+    "fitter_auditor_metric_bootstrap_source_hashes"
+  ],
+  "route_qualified": false,
+  "schema": "POD_B.B05.protocol.v1",
+  "scope_limits": [
+    "Benign preservation/readout compatibility only; no hazardous-capability removal/recovery conclusions",
+    "Checkpoint comparisons are descriptive unless stronger identification separately established",
+    "Unknown true starts/exposure/continuity do not independently block otherwise faithfully bound absolute inference"
+  ],
+  "task_order": [
+    "emp_H3",
+    "gue_prom_300_all",
+    "gue_prom_core_all",
+    "gue_splice_reconstructed",
+    "gue_tf_0",
+    "gue_mouse_0"
+  ],
+  "uncertainty": {
+    "LM_validity": "Require positive sampled target denominator; LM does not reject a draw merely for missing a classification class",
+    "biological_groups": "No qualified locus/homology grouping exists; exact/RC groups do not establish biological independence or contamination exclusion",
+    "classification_validity": "All numeric classes have positive sampled support; identical label-based valid mask across paired endpoints/policies; record valid/invalid counts; no valid draws -> interval unavailable with reason",
+    "draw_attempts": 2000,
+    "draw_semantics": "Exactly2000 attempted group draws; missing-class draws marked invalid, never redrawn until2000 valid",
+    "duplicate_weighting": "Draw groups uniformly with replacement; include every member row at group multiplicity; preserve two-row same-label splice dev group, no dedup/reweight",
+    "equivalence_claims": false,
+    "group": "SHA256 of lexicographically smaller canonical uppercaseACGTN sequence and reverse complement; not min of two hashes",
+    "group_order": "np.unique sorted group names; default_rng(seed).integers with int32 matrix(2000,n_groups)",
+    "interval": "np.quantile of paired raw metric differences on valid draws at[0.025,0.975], default linear interpolation; fixed fitted heads",
+    "pairing": "Same groups, IDs, sampled group indices and multiplicities within each task/split/population across paired models/layers/seeds/readout policies; never pair unrelated task populations",
+    "pointwise": "Exploratory unadjusted pointwise intervals for all planned comparisons; no family-wide significance or p-values inferred",
+    "preservation_margins": null,
+    "seed": 20261103,
+    "seed_summary": "Retain all3 seed metrics/intervals; optional descriptive arithmetic mean of metrics across seeds is not probability ensembling or3 independent model-training replications; no mean-CI pooling"
+  },
+  "unresolved_design_fields": [
+    {
+      "field": "optional_multiplicity_adjustment",
+      "reason": "Default exploratory pointwise intervals are frozen; any correction needs a validated pre-outcome amendment",
+      "status": "PROPOSED_NOT_FROZEN"
+    },
+    {
+      "field": "optional_across_seed_mean_interval",
+      "reason": "Seed-specific intervals retained; descriptive arithmetic mean point summary allowed, not independent-trial uncertainty",
+      "status": "PROPOSED_NOT_FROZEN"
+    },
+    {
+      "field": "series_start_frozen_readouts",
+      "reason": "Only refitted and unchanged fixed-base policies included; additional starts/readouts require explicit scope/cost amendment",
+      "status": "PROPOSED_NOT_APPROVED"
+    }
+  ],
+  "version": "benign-relearning-plan-only-v1"
+}

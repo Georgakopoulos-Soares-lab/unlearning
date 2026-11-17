@@ -1,0 +1,168 @@
+{
+  "B04_126_test_suite_rerun": false,
+  "B04_control_and_ledgers_byte_identical": true,
+  "CPU_process_seconds": 0.868704315,
+  "CUDA_initialized": false,
+  "cases": [
+    {
+      "case": "saved_package_hashes_and_semantics",
+      "status": "PASS"
+    },
+    {
+      "actual_reason": "PLAN_ONLY_NOT_EXECUTABLE: obtain separate B04/calibration/B06 approvals",
+      "case": "attempt_to_require_execution",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "actual_reason": "PACKAGE_HASH_MISMATCH: docs/experiments/ashay/POD_B/PROTOCOL_FROZEN.json",
+      "case": "tamper_without_resealing",
+      "expected_reason": "PACKAGE_HASH_MISMATCH",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "PLAN_ONLY_NOT_EXECUTABLE",
+      "case": "blocked_plan_as_executable_after_rehash",
+      "expected_reason": "PLAN_ONLY_NOT_EXECUTABLE",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "BLOCKED_ROW_NOT_EXECUTABLE",
+      "case": "promote_unknown_model_after_rehash",
+      "expected_reason": "BLOCKED_ROW_NOT_EXECUTABLE",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "OPTION_LOST_PREDECLARED_RESTART_OR_STEPS",
+      "case": "loss_of_predeclared_restart_endpoint",
+      "expected_reason": "OPTION_LOST_PREDECLARED_RESTART_OR_STEPS",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "SCALER_HEAD_PAIR_DRIFT",
+      "case": "fixed_base_scaler_head_pair_drift",
+      "expected_reason": "SCALER_HEAD_PAIR_DRIFT",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "LM_NO_LAYER_SEED_MULTIPLIER",
+      "case": "LM_incorrectly_multiplied_by_seeds",
+      "expected_reason": "LM_NO_LAYER_SEED_MULTIPLIER",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "CALIBRATION_NOT_AUTHORIZED",
+      "case": "calibration_authorized_by_paperwork",
+      "expected_reason": "CALIBRATION_NOT_AUTHORIZED",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "BOOTSTRAP_ATTEMPT_POLICY",
+      "case": "bootstrap_attempt_count_changed",
+      "expected_reason": "BOOTSTRAP_ATTEMPT_POLICY",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "UNSAFE_PACKAGE_PATH",
+      "case": "path_traversal",
+      "expected_reason": "UNSAFE_PACKAGE_PATH",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "actual_reason": "UNKNOWN_TOTAL_IS_NOT_ZERO",
+      "case": "unknown_total_fabricated_as_zero",
+      "expected_reason": "UNKNOWN_TOTAL_IS_NOT_ZERO",
+      "status": "PASS_REJECTED",
+      "synthetic_fixture": true
+    },
+    {
+      "case": "actual_CLI_execution_rejection",
+      "returncode": 2,
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "failed_cases": 0,
+  "focused_metadata_cases": 13,
+  "independent_loop_recalculation": [
+    {
+      "CV_fits": 235872,
+      "LM_eval_outputs": 252,
+      "LM_population_outputs": 468,
+      "final_refit_heads": 16848,
+      "models": 36,
+      "option": "full",
+      "raw_feature_bytes": 162783129600,
+      "total_nominal_fits": 252720,
+      "unit_keys_sha256": "ae3ae202ac24319492553065991dbfdc427dd34868c22113ebbbfbb5324a45f4"
+    },
+    {
+      "CV_fits": 91728,
+      "LM_eval_outputs": 98,
+      "LM_population_outputs": 182,
+      "final_refit_heads": 6552,
+      "models": 14,
+      "option": "balanced",
+      "raw_feature_bytes": 63304550400,
+      "total_nominal_fits": 98280,
+      "unit_keys_sha256": "5996a310183d1319163795bb35147f70342f8bbab6951e11e014a29b90d8036a"
+    },
+    {
+      "CV_fits": 52416,
+      "LM_eval_outputs": 56,
+      "LM_population_outputs": 104,
+      "final_refit_heads": 3744,
+      "models": 8,
+      "option": "core",
+      "raw_feature_bytes": 36174028800,
+      "total_nominal_fits": 56160,
+      "unit_keys_sha256": "bced3e91eb34fbaa8ec00b5ecdb34fd7a0098a9d93f4481f238185d32c4cc74f"
+    }
+  ],
+  "initial_prevalidation_diagnostics": [
+    "Read-only metadata paths used cgroupv1 after v2 path absent",
+    "Historical results task identity taken from canonical directory after absent redundant task field",
+    "Private generator compile typo corrected before any outputs; no production code/scientific failure"
+  ],
+  "measurement_scope": "This bounded metadata validation process only, not whole planning CPU/process time",
+  "mode": "PLAN_ONLY",
+  "model_imported": false,
+  "new_fits": 0,
+  "new_heldout_outcome_arrays_opened": 0,
+  "new_model_forwards": 0,
+  "new_research_bootstraps": 0,
+  "observed_utc": "2026-11-17T17:13:33.612311+00:00",
+  "package_manifest": {
+    "bytes": 5393,
+    "path": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/B05_PACKAGE_MANIFEST.json",
+    "sha256": "33ee702bf1379122960262b0dad6c474b86a77d9a851338365070a4997868edc"
+  },
+  "positive_package_check": {
+    "GPU_operations": 0,
+    "eligible_models": 0,
+    "executable_units": 0,
+    "final_refit_units": 16848,
+    "mode": "PLAN_ONLY",
+    "models": 36,
+    "normalized_refit_and_transfer_units": 33696,
+    "package_files_verified": 25,
+    "scientific_stack_imported": false,
+    "status": "PASS"
+  },
+  "preserved_existing_scoped_file_count": 99,
+  "prompt_dirty_checkout_unchanged": true,
+  "protected_branch_refs_unchanged": true,
+  "protocol_sha256": "4b8852fd0e4e9d9fa41b5a23d3839e0c265ab33a42a4a941b814434f89326f19",
+  "schema": "POD_B.B05.validation.v1",
+  "skipped_cases": 0,
+  "status": "PASS",
+  "synthetic_fixtures_scope": "Disposable copied metadata and explicit negative-test mutations under private validation-fixtures; never research scores",
+  "wall_seconds": 4.112349738003104
+}

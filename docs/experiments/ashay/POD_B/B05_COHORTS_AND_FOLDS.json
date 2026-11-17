@@ -1,0 +1,841 @@
+{
+  "fold_partitions": 84,
+  "group_definition": "SHA256(min(sequence, sequence.translate(str.maketrans('ACGTN','TGCAN'))[::-1]).encode())",
+  "overlap_basis": "Reused B03 cohort audit, not a newly claimed biological independence check",
+  "rows": 22645,
+  "saved_fold_sets": 18,
+  "schema": "POD_B.B05.cohorts.v1",
+  "tasks": [
+    {
+      "authorization": "Metadata planning only now; future evaluation limited to these exact previously authorized populations; H3 test exploratory; no new test access",
+      "biological_label_meaning": null,
+      "biological_label_reason": "numeric classes fixed; exact biological alias unresolved in authoritative frozen manifest",
+      "class_counts": {
+        "dev": {
+          "0": 735,
+          "1": 762
+        },
+        "test": {
+          "0": 742,
+          "1": 755
+        },
+        "train": {
+          "0": 5821,
+          "1": 6150
+        }
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "dev": 1497,
+      "duplicates_preserved": [],
+      "exact_RC_groups": 14965,
+      "folds": [
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/folds_seed42.json",
+          "fold_count": 3,
+          "seed": 42,
+          "semantic_sha256": "e1e30e9a8b1244d0d2e1c571e083689dbe7ae4d5cf699ccee7cd8b5c92112254",
+          "sha256": "e5a0ccf33f3c31f971e09351fb2fb4c349251a24a736ad38de56b70eac4bc944",
+          "sizes": [
+            {
+              "train": 7980,
+              "validation": 3991
+            },
+            {
+              "train": 7981,
+              "validation": 3990
+            },
+            {
+              "train": 7981,
+              "validation": 3990
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/folds_seed17.json",
+          "fold_count": 3,
+          "seed": 17,
+          "semantic_sha256": "af46db0ad601d76bd9ea20589c107b9299257402c0bb9311745c7942a76ec540",
+          "sha256": "f7ecc6ec878a00c8244b167da11a529b7582cfcbd8a62608afefd814c35fcf3f",
+          "sizes": [
+            {
+              "train": 7981,
+              "validation": 3990
+            },
+            {
+              "train": 7980,
+              "validation": 3991
+            },
+            {
+              "train": 7981,
+              "validation": 3990
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/folds_seed1234.json",
+          "fold_count": 3,
+          "seed": 1234,
+          "semantic_sha256": "8830ff55b29774ef3de661d0dbd369fd2f7de2ef2b4a7686ec1fdd8d67a6ed96",
+          "sha256": "00a1b8a590129d2118dbdbbe3561bad75a12ed2d7fa32480f0e2b17365c51b72",
+          "sizes": [
+            {
+              "train": 7981,
+              "validation": 3990
+            },
+            {
+              "train": 7980,
+              "validation": 3991
+            },
+            {
+              "train": 7981,
+              "validation": 3990
+            }
+          ]
+        }
+      ],
+      "length_max": 500,
+      "length_min": 290,
+      "manifest": {
+        "bytes": 12709509,
+        "logical_id": "frozen/H3.jsonl",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/H3.jsonl",
+        "remote_root": "base_h3",
+        "rows": 14965,
+        "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+        "verification": "B03_FRESH_HASH_AND_CONTENT"
+      },
+      "previously_analyzed_test": 1497,
+      "source_locus_homology_groups": null,
+      "split_identities": {
+        "dev": {
+          "ordered_id_label_group_sha256": "f3ba934a1f17edfd06afe00f9cca79c6489663bad8053500c55d1934ab5a6374",
+          "ordered_ids_sha256": "70a0ba5244221f5412b2e80a55972fc5345a9953859cb8dacba5c8b11ddbb397",
+          "rows": 1497
+        },
+        "test": {
+          "ordered_id_label_group_sha256": "df070fa758922814b94671f19323524d0584722cd71360a09019c22b139d838b",
+          "ordered_ids_sha256": "51c8a43485c8ded8e62de10a76fe6b90bde9960d79dbe2acd803f0e4b5e3e5be",
+          "rows": 1497
+        },
+        "train": {
+          "ordered_id_label_group_sha256": "95dbc597eb3f67fb9f69609bb2948e7f7e2cdd34d3cc5777019dedaff4d2b5f5",
+          "ordered_ids_sha256": "66168c8e4d40f69c8eaf40e004a1677ebfe029156f6fbc112b8b2a55cc2577b0",
+          "rows": 11971
+        }
+      },
+      "task": "emp_H3",
+      "train": 11971
+    },
+    {
+      "authorization": "Metadata planning only now; future evaluation limited to these exact previously authorized populations; H3 test exploratory; no new test access",
+      "biological_label_meaning": null,
+      "biological_label_reason": "numeric classes fixed; exact biological alias unresolved in authoritative frozen manifest",
+      "class_counts": {
+        "dev": {
+          "0": 257,
+          "1": 255
+        },
+        "train": {
+          "0": 512,
+          "1": 512
+        }
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "dev": 512,
+      "duplicates_preserved": [],
+      "exact_RC_groups": 1536,
+      "folds": [
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/folds_seed42.json",
+          "fold_count": 5,
+          "seed": 42,
+          "semantic_sha256": "ad0effda074cb7fa62272cd1633a58ff4f70969c16217ca6aaef4c0f8041e7a3",
+          "sha256": "63851c3468fc18d6df201da9f54232103f99bdabcced148fb81a855c14869fb0",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/folds_seed17.json",
+          "fold_count": 5,
+          "seed": 17,
+          "semantic_sha256": "bbf1508e5175c610c5c05357e3139b463020d41201c8e19bf10c0dad8e1f3f5e",
+          "sha256": "f09b6b75586bb9ff27bddd40629926f421b541f7fb161089e3b6d4f55f41a155",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/folds_seed1234.json",
+          "fold_count": 5,
+          "seed": 1234,
+          "semantic_sha256": "20dddfda88f9662f53c64b4334615c6e28a6a9c40a9649bcd2e0a5e36216dda5",
+          "sha256": "3dee726af6729130b88bf1b7c083166d93b59b148f456db3b185c29581516acb",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        }
+      ],
+      "length_max": 300,
+      "length_min": 300,
+      "manifest": {
+        "bytes": 7089128,
+        "logical_id": "frozen/other_five.jsonl",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/other_five.jsonl",
+        "remote_root": "base_h3",
+        "rows": 7680,
+        "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "verification": "B03_FRESH_HASH_AND_CONTENT"
+      },
+      "previously_analyzed_test": 0,
+      "source_locus_homology_groups": null,
+      "split_identities": {
+        "dev": {
+          "ordered_id_label_group_sha256": "26b4f046ccb86cc3650207af0ba7522cb47c084adfd2b6cb7e23ac9c0dd0d5c2",
+          "ordered_ids_sha256": "e2ed76ee7049658bfcb7242434b54ce8a76cf8f44715a017bfe125752ea894dc",
+          "rows": 512
+        },
+        "train": {
+          "ordered_id_label_group_sha256": "19656a0e8caf76cc936399d43851f8981aea48173229ab19c2b27ae4668cb0eb",
+          "ordered_ids_sha256": "2c718bf8fc03336d06f987c74a9f6012f03a54861c4d4c21eeab93df9a668522",
+          "rows": 1024
+        }
+      },
+      "task": "gue_prom_300_all",
+      "train": 1024
+    },
+    {
+      "authorization": "Metadata planning only now; future evaluation limited to these exact previously authorized populations; H3 test exploratory; no new test access",
+      "biological_label_meaning": null,
+      "biological_label_reason": "numeric classes fixed; exact biological alias unresolved in authoritative frozen manifest",
+      "class_counts": {
+        "dev": {
+          "0": 254,
+          "1": 258
+        },
+        "train": {
+          "0": 513,
+          "1": 511
+        }
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "dev": 512,
+      "duplicates_preserved": [],
+      "exact_RC_groups": 1536,
+      "folds": [
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/folds_seed42.json",
+          "fold_count": 5,
+          "seed": 42,
+          "semantic_sha256": "6b7a7ef65615d779d2e799e21f83c2c4685be5e6db72b4f2a42b98277817a657",
+          "sha256": "2215c6d1dabfa14cd8f4a805965a2b467623b5f4d7ee56d7114a97ae9bdab985",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            },
+            {
+              "train": 819,
+              "validation": 205
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/folds_seed17.json",
+          "fold_count": 5,
+          "seed": 17,
+          "semantic_sha256": "19083e6c38ed10af3f502c24bd0f7129cd4add379d1ab6821df64cda69dc68ad",
+          "sha256": "7c675ede1fc899b9dc1eca17b181f465d72094fbd6893beca43c332e1916fb55",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/folds_seed1234.json",
+          "fold_count": 5,
+          "seed": 1234,
+          "semantic_sha256": "dd7470ea939b8ec5a5f5f4e45aae97f44150299275833556484c57444bd3335f",
+          "sha256": "f51c3dc0bf2f090c2b7b538562b4df984c93fd5d99ac508b55cf54292da4481c",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        }
+      ],
+      "length_max": 70,
+      "length_min": 70,
+      "manifest": {
+        "bytes": 7089128,
+        "logical_id": "frozen/other_five.jsonl",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/other_five.jsonl",
+        "remote_root": "base_h3",
+        "rows": 7680,
+        "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "verification": "B03_FRESH_HASH_AND_CONTENT"
+      },
+      "previously_analyzed_test": 0,
+      "source_locus_homology_groups": null,
+      "split_identities": {
+        "dev": {
+          "ordered_id_label_group_sha256": "4f45d3f216a456ba1e0b089e4b570c15201725ca6c6a61d116a2f4b85606c8c6",
+          "ordered_ids_sha256": "484343d912fda9633c19b37b4de1aae3922ef605072489a679f12770e716c868",
+          "rows": 512
+        },
+        "train": {
+          "ordered_id_label_group_sha256": "5bd3b0f6716237bf18a94bee8fefc9508724c60115728c520b29140cebe4bc4d",
+          "ordered_ids_sha256": "c5561570bba6a83e30d097c95a4c4f31d7fe88261f95e465904c1069029b8953",
+          "rows": 1024
+        }
+      },
+      "task": "gue_prom_core_all",
+      "train": 1024
+    },
+    {
+      "authorization": "Metadata planning only now; future evaluation limited to these exact previously authorized populations; H3 test exploratory; no new test access",
+      "biological_label_meaning": null,
+      "biological_label_reason": "numeric classes fixed; exact biological alias unresolved in authoritative frozen manifest",
+      "class_counts": {
+        "dev": {
+          "0": 112,
+          "1": 111,
+          "2": 289
+        },
+        "train": {
+          "0": 226,
+          "1": 224,
+          "2": 574
+        }
+      },
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "dev": 512,
+      "duplicates_preserved": [
+        {
+          "group": "0500b7c28fa4fd9a950cf12de9a6360e89297af42e4ef7cee839bf923de4f8b3",
+          "ids": [
+            "gue_splice_reconstructed:dev.csv:74",
+            "gue_splice_reconstructed:dev.csv:269"
+          ],
+          "labels": [
+            0,
+            0
+          ],
+          "rows": 2,
+          "split": "dev"
+        }
+      ],
+      "exact_RC_groups": 1535,
+      "folds": [
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/folds_seed42.json",
+          "fold_count": 5,
+          "seed": 42,
+          "semantic_sha256": "2027fd94fff97ba32b175376e1099298c2386354cda44653fb690c74082971d1",
+          "sha256": "4675e4e6dd2af2abbbc149206c6ba39744d08cd90396ebf7ff97f66fd510ff50",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            },
+            {
+              "train": 819,
+              "validation": 205
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/folds_seed17.json",
+          "fold_count": 5,
+          "seed": 17,
+          "semantic_sha256": "5483d553033ac382ad39df2d9a9b1e0724b77df5ce7c7692888fb7d53f331530",
+          "sha256": "a4d2f8975eb1becf8d7a15c9dd9161167c3c05c777c7976dfd09ae83b67f964d",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/folds_seed1234.json",
+          "fold_count": 5,
+          "seed": 1234,
+          "semantic_sha256": "8c6166ddc89ec27b3df2f082f577ce41bb58e9fec285571d6ad7cea0badaa6d1",
+          "sha256": "5aefc1a7806ddea84937cc016878c4100878321327bfb8df99021380395e5049",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        }
+      ],
+      "length_max": 400,
+      "length_min": 400,
+      "manifest": {
+        "bytes": 7089128,
+        "logical_id": "frozen/other_five.jsonl",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/other_five.jsonl",
+        "remote_root": "base_h3",
+        "rows": 7680,
+        "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "verification": "B03_FRESH_HASH_AND_CONTENT"
+      },
+      "previously_analyzed_test": 0,
+      "source_locus_homology_groups": null,
+      "split_identities": {
+        "dev": {
+          "ordered_id_label_group_sha256": "f26dec842fa728e2bc33b24c6715aedf0318c498f405a21c28465a1a320c7a50",
+          "ordered_ids_sha256": "800cbd09f488597afd454a56db078c058d78beed47ec74e85ef0fa080db229f3",
+          "rows": 512
+        },
+        "train": {
+          "ordered_id_label_group_sha256": "fdca1f2190de9f1d1aadd25e00391b819e8d792e967febaf7d52501c5c90430c",
+          "ordered_ids_sha256": "8ef6d32da5fbf8bf791dee194fcb63194234b3b104a07572df0d856b49c3ce57",
+          "rows": 1024
+        }
+      },
+      "task": "gue_splice_reconstructed",
+      "train": 1024
+    },
+    {
+      "authorization": "Metadata planning only now; future evaluation limited to these exact previously authorized populations; H3 test exploratory; no new test access",
+      "biological_label_meaning": null,
+      "biological_label_reason": "numeric classes fixed; exact biological alias unresolved in authoritative frozen manifest",
+      "class_counts": {
+        "dev": {
+          "0": 247,
+          "1": 265
+        },
+        "train": {
+          "0": 513,
+          "1": 511
+        }
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "dev": 512,
+      "duplicates_preserved": [],
+      "exact_RC_groups": 1536,
+      "folds": [
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/folds_seed42.json",
+          "fold_count": 5,
+          "seed": 42,
+          "semantic_sha256": "02c67be61b8dc4f6718011594900810d2213cd951fd5d611144d5009f0742c5a",
+          "sha256": "8d2a1bbf96b2546fdcefe559684226e0d5cca8b7ac1aabe4cbafa17b769af783",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/folds_seed17.json",
+          "fold_count": 5,
+          "seed": 17,
+          "semantic_sha256": "7a47bb8922c47583d82010ac09438308eea44cdf151eb09a704c78d5ad327391",
+          "sha256": "376df6aa74287b05841af4512dd3617e44f17470b870f6cdb34798b6f76ed05b",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/folds_seed1234.json",
+          "fold_count": 5,
+          "seed": 1234,
+          "semantic_sha256": "3b3e801c246e20342bc9ffc6e0d3d8d21de7f7453075a4bb75bf90f0277ec08e",
+          "sha256": "d4d6b459c222031e4d1791066cbb22e9d668e956366f5993b366d0abc7b4633c",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            }
+          ]
+        }
+      ],
+      "length_max": 101,
+      "length_min": 101,
+      "manifest": {
+        "bytes": 7089128,
+        "logical_id": "frozen/other_five.jsonl",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/other_five.jsonl",
+        "remote_root": "base_h3",
+        "rows": 7680,
+        "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "verification": "B03_FRESH_HASH_AND_CONTENT"
+      },
+      "previously_analyzed_test": 0,
+      "source_locus_homology_groups": null,
+      "split_identities": {
+        "dev": {
+          "ordered_id_label_group_sha256": "6cbc9284f425eb8e6c5e38cee97a3c8a334708dabc6d5db049ae984b88e2d4c9",
+          "ordered_ids_sha256": "7f86ecebf72c4847e36c3f39d97e0349e65d1fe9791527c3ebc67926c984dff9",
+          "rows": 512
+        },
+        "train": {
+          "ordered_id_label_group_sha256": "56132983ce0794fd4a0b5357b265fec830e13414ecae309013aba4f74e7d74e1",
+          "ordered_ids_sha256": "72dfdfbd1a6f8df80ea2e2e20533c8d5667b4042a546583ef5f6aa5cc330fe83",
+          "rows": 1024
+        }
+      },
+      "task": "gue_tf_0",
+      "train": 1024
+    },
+    {
+      "authorization": "Metadata planning only now; future evaluation limited to these exact previously authorized populations; H3 test exploratory; no new test access",
+      "biological_label_meaning": null,
+      "biological_label_reason": "numeric classes fixed; exact biological alias unresolved in authoritative frozen manifest",
+      "class_counts": {
+        "dev": {
+          "0": 262,
+          "1": 250
+        },
+        "train": {
+          "0": 510,
+          "1": 514
+        }
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "dev": 512,
+      "duplicates_preserved": [],
+      "exact_RC_groups": 1536,
+      "folds": [
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/folds_seed42.json",
+          "fold_count": 5,
+          "seed": 42,
+          "semantic_sha256": "b62fa3b9a04ffa47bb8d6eda8f948dc6ec3e988a289a7f05d076543dedc3879b",
+          "sha256": "a6f2e156a4cebb6e08c0cbcf20379dc3abff26c1f9fc5f7a105547768cb5e64a",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            },
+            {
+              "train": 819,
+              "validation": 205
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/folds_seed17.json",
+          "fold_count": 5,
+          "seed": 17,
+          "semantic_sha256": "94516c3e80fc12b8b3529685268ac79047e2bd519910dd02da1e38ad9c110a09",
+          "sha256": "95f1467de6f8797e5c2782aea0320ecdd1c69e98b9140e49e62bbd5f5a94ba4d",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            }
+          ]
+        },
+        {
+          "file": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/folds_seed1234.json",
+          "fold_count": 5,
+          "seed": 1234,
+          "semantic_sha256": "f2a4d2caca8ea0431cc8d739fe26976b06ee0248def9ad78cf8a5e55867b58e7",
+          "sha256": "f063ad15fb3a06f39138008a46ce7ef6f5bc20c36cf9be2f96fa9d59bb4a3f25",
+          "sizes": [
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 820,
+              "validation": 204
+            },
+            {
+              "train": 819,
+              "validation": 205
+            },
+            {
+              "train": 819,
+              "validation": 205
+            }
+          ]
+        }
+      ],
+      "length_max": 101,
+      "length_min": 101,
+      "manifest": {
+        "bytes": 7089128,
+        "logical_id": "frozen/other_five.jsonl",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/other_five.jsonl",
+        "remote_root": "base_h3",
+        "rows": 7680,
+        "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "verification": "B03_FRESH_HASH_AND_CONTENT"
+      },
+      "previously_analyzed_test": 0,
+      "source_locus_homology_groups": null,
+      "split_identities": {
+        "dev": {
+          "ordered_id_label_group_sha256": "6153c7e078800b1ab439d6ec8ff0475653b3d429901037f3a74dacbeee22e46f",
+          "ordered_ids_sha256": "560788d0e0fe79fa0cd28293d5b9a62ac0e88134b6ec1cd82c6c900cd6bcfd7e",
+          "rows": 512
+        },
+        "train": {
+          "ordered_id_label_group_sha256": "bbc1f8b68c6d180c2c19b3febc1083540fffa6f92bd24b46cdffd2d14f1cf7f1",
+          "ordered_ids_sha256": "2d9bef4a14de5c285b62235f527109e68c1eb5796221738f11ee61a2f89a92c8",
+          "rows": 1024
+        }
+      },
+      "task": "gue_mouse_0",
+      "train": 1024
+    }
+  ],
+  "within_task_cross_split_exact_RC_overlap": 0
+}

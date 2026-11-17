@@ -1,0 +1,53 @@
+{
+  "B04_scientific_status": "BLOCKED",
+  "B05_calibration_status": "NOT_AUTHORIZED_NOT_RUN",
+  "B05_planning_status": "COMPLETE_CONDITIONAL",
+  "B06_execution_status": "BLOCKED_NOT_AUTHORIZED",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B05-plan-only-20261117T165434Z",
+  "background_queue": [],
+  "calibration_status": "NOT_AUTHORIZED_NOT_RUN",
+  "completed_utc": "2026-11-17T17:15:08.869396+00:00",
+  "delivery_receipt": "/workspace/agent-handoff/POD_B/B05_DELIVERY_VERIFICATION.json",
+  "design_frozen": true,
+  "executable_units": [],
+  "execution_plan_sha256": "92208c44e6b91164ba5a4592ef82a15db78a549d0646cee2b6a5531bdef3fc44",
+  "mode": "PLAN_ONLY",
+  "new_GPU_seconds": 0,
+  "new_bootstrap_computations": 0,
+  "new_fits": 0,
+  "new_heldout_scoring": 0,
+  "new_model_forwards": 0,
+  "next_decision": "Minimum three-job full-state/route evidence,then separately approved B04 continuation; later reviewed qualified scope and separate B05 calibration; B06 separately gated",
+  "next_stage_authorized": false,
+  "owned_jobs": [],
+  "package_manifest": {
+    "bytes": 5393,
+    "path": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/B05_PACKAGE_MANIFEST.json",
+    "sha256": "33ee702bf1379122960262b0dad6c474b86a77d9a851338365070a4997868edc"
+  },
+  "planning_status": "COMPLETE_CONDITIONAL",
+  "private_backup_status": "LOCAL_ONLY_PENDING_B09",
+  "production_authorized": false,
+  "production_ready": false,
+  "protocol_sha256": "4b8852fd0e4e9d9fa41b5a23d3839e0c265ab33a42a4a941b814434f89326f19",
+  "publication_commit": "See external B05_DELIVERY_VERIFICATION.json",
+  "qualified_model_ids": [],
+  "qualified_models": 0,
+  "research_entry_commit": "62afabdbe103845fd5df58d54efbb62b0750f525",
+  "resource_measurements": {
+    "new_GPU_seconds": 0,
+    "reason": "Not cumulatively metered across agent/tool processes; metadata validation process measured separately",
+    "validation_CPU_process_seconds": 0.868704315,
+    "validation_wall_seconds": 4.112349738003104,
+    "whole_planning_CPU_process_seconds": null
+  },
+  "schema": "POD_B.B05.state.v1",
+  "stage": "B05",
+  "status": "WAITING_FOR_STEERING: B04",
+  "total_models": 36,
+  "validation": {
+    "bytes": 5801,
+    "path": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/B05_VALIDATION.json",
+    "sha256": "f7c61f598bd92b8d0d6fbc34c4f5b31852fad37ac11b4b7a16445b154c700ad9"
+  }
+}
