@@ -1,0 +1,1729 @@
+{
+  "schema": "POD_B.B04.identity_resolution.v1",
+  "execution_id": "B04-completion-20261117T162923Z",
+  "observed_utc": "2026-11-17T16:32:58.512510+00:00",
+  "research_entry_commit": "1da99cb35d83954a125e80f8cc6bb21bcb278df1",
+  "prompt_receipt": {
+    "repo": "https://github.com/ashay-sriv-06/test-prompts-push",
+    "ref": "POD_B",
+    "commit": "b5cf141608bc6c6f9c92cf04bec0a7ea060a61e6",
+    "files": [
+      {
+        "path": "POD_B_04_FINISH_QUALIFICATION.md",
+        "bytes": 21573,
+        "sha256": "150e864f0bfbb78aaf8fb0a405aa08af5597729a6489b288f3e5afd282ee851d"
+      },
+      {
+        "path": "POD_B_MASTER.md",
+        "bytes": 10648,
+        "sha256": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512"
+      },
+      {
+        "path": "override_pod_b_.txt",
+        "bytes": 1376,
+        "sha256": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
+      }
+    ],
+    "research_entry_commit": "1da99cb35d83954a125e80f8cc6bb21bcb278df1",
+    "approval_observed_utc": "2026-11-17T16:29:23.172568+00:00",
+    "direct_user_approval": {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-completion-20261117T162923Z/USER_APPROVAL.txt",
+      "bytes": 910,
+      "sha256": "703d20eb64362fcdd1884fa37247ef64593a5473c5c38d54b2c41fa09e0199b1"
+    }
+  },
+  "families": [
+    {
+      "family": "base_all",
+      "job_id": "11760341",
+      "checkpoint_ids": [
+        "base/iter_0000100",
+        "base/iter_0000200",
+        "base/iter_0000300",
+        "base/iter_0000400",
+        "base/iter_0000500",
+        "base/iter_0000600",
+        "base/iter_0000700",
+        "base/iter_0000800",
+        "base/iter_0000900",
+        "base/iter_0001000",
+        "base/iter_0001100",
+        "base/iter_0001200",
+        "base/iter_0001300",
+        "base/iter_0001400",
+        "base/iter_0001500",
+        "base/iter_0001600",
+        "base/iter_0001700",
+        "base/iter_0001800"
+      ],
+      "representatives": [
+        "base/iter_0000100",
+        "base/iter_0001800"
+      ],
+      "candidate_parent_manifest_not_assignment": "e9bcb09c102bc0f11703de2eadddc0d1b4b5a0d7df01dd214e49c3d0920ae3c7",
+      "actual_parent_manifest_sha256": null,
+      "actual_full_state_fingerprint": null,
+      "inference_state_complete": false,
+      "claims": {
+        "delivered_adapter_config_tokenizer_bytes": {
+          "status": "VERIFIED",
+          "value": [
+            {
+              "checkpoint": "base/iter_0000100",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "0da8c27848d87d769158d1a9067fd0031b7dbe970ea1b357c0c6ba4aa8ada059",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "7618092e15bd38b4558f59efa340460555600ecb5884fee688a1e4f65582eef6"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "0da8c27848d87d769158d1a9067fd0031b7dbe970ea1b357c0c6ba4aa8ada059"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "9b45fd4d41a6fc405c0d487a001f473c208f9bfa90e7ce94876bf5c3d0684993"
+            },
+            {
+              "checkpoint": "base/iter_0000200",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "75bedd0cc1d46985552608873421993b929810107ba2a5de60a0d3bf181697e0",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "7f70ad88dd43a7405ba51c7210ea9df3be8bd8f7c02fd5819acf887b2f4efbdb"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "75bedd0cc1d46985552608873421993b929810107ba2a5de60a0d3bf181697e0"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "7b07000bcf6ee7f05d03343c0626cf06b1018201e1393c1cd35f75777286f4bd"
+            },
+            {
+              "checkpoint": "base/iter_0000300",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "d2bfa9c92b20507833e4d5eeec17f725a18da10e3d54d29ad0bc2494a0e3fa82",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "288d74d1d71576d5d5171c4fcefee53b7f2a404e9ad35555250ab338b937a8dc"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "d2bfa9c92b20507833e4d5eeec17f725a18da10e3d54d29ad0bc2494a0e3fa82"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "820dde1aa5900ed60d043047dcd2c6e9ce8dea76014c5b63716663eb08e99884"
+            },
+            {
+              "checkpoint": "base/iter_0000400",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "611ca9fc29e561d89ca5976dcd831c283a063d94523d5371cb2edf0354ae9c51",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "46ecb25b7de680c996c3bc4ded86edf4c0f0386f515a27e21862db516a8a1f58"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "611ca9fc29e561d89ca5976dcd831c283a063d94523d5371cb2edf0354ae9c51"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "6fd2e4a8754452b64c4fd90531fec70b8523d360ea741219a510d1bc4ae2125e"
+            },
+            {
+              "checkpoint": "base/iter_0000500",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "93ebcf1f74d70d3c1c0405cb1abc68d5c834e0280f9278043ca22d4c2fe5a6ba",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "0e7c303c1b57354e6c616ffc86e794b7648d2b147f74fd229864302ad3e7cb3d"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "93ebcf1f74d70d3c1c0405cb1abc68d5c834e0280f9278043ca22d4c2fe5a6ba"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "948723e02b72e63b033ba42a0fe57fcc3c02cf4384de0f5159ce9eee98c1931f"
+            },
+            {
+              "checkpoint": "base/iter_0000600",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "a46225254371731d0b2d73408b94f1d7a00a71be0b6558b397e3c7a34e37af82",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "b4c51a62f0c460a3046ec66a632c20bb2fe2ca968698c6487c474ff4265753f7"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "a46225254371731d0b2d73408b94f1d7a00a71be0b6558b397e3c7a34e37af82"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "92e8f5960c5f2237ecb910a6ad56c868436240ad8cbde206555431357ca8c6dc"
+            },
+            {
+              "checkpoint": "base/iter_0000700",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "3b73dba763a2157054403d0bb3414165fdf9cea1e877a72ec7c1e979befa23cf",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "f3563625e174e53f1ddbcaef71abd32afab1452f09bf4c816e6d7121d7617dbb"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "3b73dba763a2157054403d0bb3414165fdf9cea1e877a72ec7c1e979befa23cf"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "2dde59fb64e50f8d482613de0a2ab54c99027da02d868947f59c2eff5223d17b"
+            },
+            {
+              "checkpoint": "base/iter_0000800",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "f6974b3a10d46d4a092b097d27b5dd396ca8b5f9d30561684fd8e8246d23883b",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "96cf3eac543b9a6b201e0c124782236ef7e87b5b8de7b04eb6d2ce07233b84c9"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "f6974b3a10d46d4a092b097d27b5dd396ca8b5f9d30561684fd8e8246d23883b"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "071a9b0ac2ba6cb5a639df49874843c547df76b1bef8408a309eb7af3fcac69f"
+            },
+            {
+              "checkpoint": "base/iter_0000900",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "48383ea37e7f2b31499c108737ffbecb0c2e40012e52b87ddc08e2dd8a888cbd",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "87cffab7c6428e6300fc33e0ee175eb0e7572db5744d58669c4d987d104697a0"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "48383ea37e7f2b31499c108737ffbecb0c2e40012e52b87ddc08e2dd8a888cbd"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "0a3693fded52d6766736ffe064ee61569a6cde24dee8ada201e36d8dd8a57a70"
+            },
+            {
+              "checkpoint": "base/iter_0001000",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "e9fd4c57fddd931f0ea775939c27aa7e2b8ff3233602e86ab80639ede78e590f",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "861feacb0fa1bb95c7151f917e346169047b75b009171645ad740bf4ada2de4f"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "e9fd4c57fddd931f0ea775939c27aa7e2b8ff3233602e86ab80639ede78e590f"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "ed4297ac70ee47f6daf72addda5b63855a2e779fafb25eb627f74f149f277968"
+            },
+            {
+              "checkpoint": "base/iter_0001100",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "40cd4b912d3ff52df98dbd8690520e144420ffc278ea260d42891d973adede58",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "88d4ab60cf538cc72e7d19f6d0f2ac8a7cd4050a7c91c372404c6e3a2bb6d56e"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "40cd4b912d3ff52df98dbd8690520e144420ffc278ea260d42891d973adede58"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "6726de2daa85f90a85be3b2af2cb67f6e61a8cf5ab842b58329a2ce7781b6b3b"
+            },
+            {
+              "checkpoint": "base/iter_0001200",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "b6f7b0e8dee1d9f2fb274ff2a249af3979fa3da82042d91ea8acfd6467e07a4e",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "23a4749bfb4b1bc119f7f4a7a8e9b1d351e63e2e2e8ff7f9df7f301df4f9d535"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "b6f7b0e8dee1d9f2fb274ff2a249af3979fa3da82042d91ea8acfd6467e07a4e"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "f2b945b015e35ab5eec2187775df783a68ac85d79b640d923c6827f2bce9c075"
+            },
+            {
+              "checkpoint": "base/iter_0001300",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "f837838359944085f7094e2219a93cf0929610168173961fa03a808c7247555e",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "f69de1385b7801ef63c2b0f290ad8817bb046d33e5f2102363ae5d21c7d02a4c"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "f837838359944085f7094e2219a93cf0929610168173961fa03a808c7247555e"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "277b544f65f02b9361e8d63c5b8c6f686af4d22dce65bb8c54616971e50e5c29"
+            },
+            {
+              "checkpoint": "base/iter_0001400",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "df1f5b13c7d083a731cb612557855ff5fcfa8eb4a54589511d6740e37f1f46ab",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "2ef746f4761be26147a5b92a0ddb131007434daad27a5be3b81e6c3b79f75962"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "df1f5b13c7d083a731cb612557855ff5fcfa8eb4a54589511d6740e37f1f46ab"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "fb9f9f2bf2594cf620ea6bb2f5456b98d3931a2af89b4f2c8f7df39be18f8f4e"
+            },
+            {
+              "checkpoint": "base/iter_0001500",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "6d619af61d284584251338d9a6ff79a9b1cd713c6cc491d36fd980184456f533",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "6f05b55f61849cd169599bb80089952cc0c9a3db82dce5ae6bb77068f373e271"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "6d619af61d284584251338d9a6ff79a9b1cd713c6cc491d36fd980184456f533"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "588cacad1d22dad08c8ad3b084dabe8c20dcb312a71eb8c73ebb1d3569102881"
+            },
+            {
+              "checkpoint": "base/iter_0001600",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "d58df46fbd4aec1a102c2f3de770bc682e041ff099a3d360fb76d6b6acf808a0",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "953a082c7cb9292c1c603f08e3926a9f19747305341a24dc698578257e699b02"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "d58df46fbd4aec1a102c2f3de770bc682e041ff099a3d360fb76d6b6acf808a0"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "8510569b7097038a0db41cd652a3d4894a305771ac8a6d37217c7d15d6df8eab"
+            },
+            {
+              "checkpoint": "base/iter_0001700",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "ad2c92587f687e4fc57a3c1440df5a92608bfd7e25bf723cd05e18fd58765207",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "46fdbf442bd667220d54db50292a4318da613994b76fcc42f1df35ecc5df87f5"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "ad2c92587f687e4fc57a3c1440df5a92608bfd7e25bf723cd05e18fd58765207"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "2dbe0e9e100eb1a2011ae0c396df1e10c35fcda8da000def3994a52827834828"
+            },
+            {
+              "checkpoint": "base/iter_0001800",
+              "job_id": "11760341",
+              "adapter_payload_sha256": "53180d7be4fa70f86e2f2a7c623f3e73b765e318c50164d1296229c857ed94ce",
+              "delivered_config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "0894a8a7117746c25e53798ec814cdeafc24d65d06b822c2f6615ebc94757e02"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "53180d7be4fa70f86e2f2a7c623f3e73b765e318c50164d1296229c857ed94ce"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39316,
+                  "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "cd937a1198603150b3ace8bec453a8b675e07fd1bcf3af8f6f938882909716f3"
+            }
+          ],
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "Reuse previously verified immutable acquisition hashes; no repeated weight downloads or model-byte hashes."
+        },
+        "saved_model_class": {
+          "status": "VERIFIED",
+          "value": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved declaration only; not an executed source revision."
+        },
+        "declared_pretrained_path": {
+          "status": "VERIFIED",
+          "value": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved declaration only; exact loaded bytes are not established."
+        },
+        "declared_resume_path": {
+          "status": "VERIFIED",
+          "value": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Same MaxEnt-named saved path occurs in all three config families; not proof of execution or precedence."
+        },
+        "saved_finetune": {
+          "status": "VERIFIED",
+          "value": true,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "True in initial families; false in restart family. Preserve the distinction without assigning actual load semantics."
+        },
+        "job_to_delivered_step_range": {
+          "status": "VERIFIED",
+          "value": {
+            "job_id": "11760341",
+            "checkpoint_ids": [
+              "base/iter_0000100",
+              "base/iter_0000200",
+              "base/iter_0000300",
+              "base/iter_0000400",
+              "base/iter_0000500",
+              "base/iter_0000600",
+              "base/iter_0000700",
+              "base/iter_0000800",
+              "base/iter_0000900",
+              "base/iter_0001000",
+              "base/iter_0001100",
+              "base/iter_0001200",
+              "base/iter_0001300",
+              "base/iter_0001400",
+              "base/iter_0001500",
+              "base/iter_0001600",
+              "base/iter_0001700",
+              "base/iter_0001800"
+            ]
+          },
+          "evidence_refs": [
+            "B04_COMPLETION_INTAKE.json",
+            "/workspace/meeting-artifacts/POD_B/B04-completion-20261117T162923Z/evidence/PROGRESS_JOB_ASSOCIATIONS.json"
+          ],
+          "reason": "Progress save events bind job ID to labeled steps; they do not bind exact parent tensors."
+        },
+        "actual_complete_parent_manifest": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_KNOWN_PARENT_BASE.json",
+            "B04_KNOWN_PARENT_MAXENT.json"
+          ],
+          "reason": "No accessible job-bound manifest/load transcript or specific authoritative statement establishes complete present inference state; hidden parent/embedding/output/norm/buffer/merge changes remain unexcluded."
+        },
+        "all_nonadapter_inference_state": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No accessible job-bound manifest/load transcript or specific authoritative statement establishes complete present inference state; hidden parent/embedding/output/norm/buffer/merge changes remain unexcluded."
+        },
+        "actual_loading_precedence_effective_config": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved paths/class/finetune flag do not resolve actual executed overrides and load precedence."
+        },
+        "original_executed_source_runtime": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "B04_RESUME_SOURCE_RECEIPT.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "Candidate backport source is pinned and engineered, but original_job_identity=false; external log audit reports no provenance records."
+        },
+        "authenticated_original_route_R0": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No authenticated original execution basis. A pre-existing adapter fixture would not be required once original source and full state are established."
+        },
+        "independent_original_adapter_reference_R2": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "B04_PRODUCER_FIXTURE_INSTRUCTIONS.md",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No independent authoritative same-state original-route reference supplied. Parent anchors/candidate outputs cannot replace it."
+        },
+        "true_initial_state_Q3": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "MODEL_IDENTITY_BINDINGS.json"
+          ],
+          "reason": "Limits true-start-relative comparisons; not an additional prerequisite for otherwise qualified absolute evaluation."
+        },
+        "actual_valid_token_exposure_Q4": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl"
+          ],
+          "reason": "Saved nominal counters/log token labels do not establish actual valid-token exposure; not an absolute-channel loadability prerequisite."
+        },
+        "optimizer_RNG_training_state_for_inference": {
+          "status": "NOT_NEEDED_FOR_THIS_CHANNEL",
+          "value": null,
+          "evidence_refs": [],
+          "reason": "Not required to evaluate an independently established complete current inference state; no training resume authorized."
+        }
+      },
+      "route_decision": "NO_SCIENTIFIC_LAUNCH",
+      "scientifically_qualified_models": [],
+      "minimum_missing_assertion": "Bind exact actual full parent and any inference-changing state to this job/payload family, and establish actual loading semantics via authenticated source/runtime or independent original-route fixture."
+    },
+    {
+      "family": "maxent_initial",
+      "job_id": "11776574",
+      "checkpoint_ids": [
+        "maxent/iter_0000100",
+        "maxent/iter_0000200",
+        "maxent/iter_0000300",
+        "maxent/iter_0000400",
+        "maxent/iter_0000500",
+        "maxent/iter_0000600",
+        "maxent/iter_0000700",
+        "maxent/iter_0000800",
+        "maxent/iter_0000900",
+        "maxent/iter_0001000",
+        "maxent/iter_0001100",
+        "maxent/iter_0001200",
+        "maxent/iter_0001300",
+        "maxent/iter_0001400",
+        "maxent/iter_0001500",
+        "maxent/iter_0001600"
+      ],
+      "representatives": [
+        "maxent/iter_0000100",
+        "maxent/iter_0001600"
+      ],
+      "candidate_parent_manifest_not_assignment": "b437ae3e7ab9e2845d04d858db63d132a05843867f2ae2bea3243239a28678fd",
+      "actual_parent_manifest_sha256": null,
+      "actual_full_state_fingerprint": null,
+      "inference_state_complete": false,
+      "claims": {
+        "delivered_adapter_config_tokenizer_bytes": {
+          "status": "VERIFIED",
+          "value": [
+            {
+              "checkpoint": "maxent/iter_0000100",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "4230913cae92e412d9c11717937396c7e435c84f20393b9303157e1bee87dd5f",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "e862790c6a348e5df4670a85dfd05ece28d4be612319f179658bbe51ec0abccb"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "4230913cae92e412d9c11717937396c7e435c84f20393b9303157e1bee87dd5f"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "6fbcd20ab23cc308bd90b09aae3b204894caa72c7fb6bf55581f697d9ae6af70"
+            },
+            {
+              "checkpoint": "maxent/iter_0000200",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "567b2373133e44e1cb73d2195f4e8b1d4fccc66c23e306d894c724c0ffa251c0",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "4780c83b6cf6461e95b7d433a61d00b0701c04e6e12910f6ad5be4225dc98ad4"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "567b2373133e44e1cb73d2195f4e8b1d4fccc66c23e306d894c724c0ffa251c0"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "c9a776b54b5db41c0ba5a779892004d5600e4de38383f64f88483f98e8ca61ae"
+            },
+            {
+              "checkpoint": "maxent/iter_0000300",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "255aefc17d30afd77084f1703d7a799eecdb100fcfec16c02e53a6bafedc39d0",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "5a2eada3b18cca2e812725bc86f1887715f0a0cf448ec7bb8ab0be9e1f685051"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "255aefc17d30afd77084f1703d7a799eecdb100fcfec16c02e53a6bafedc39d0"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "345b2addd9bbcafc1157cf061ab1d2322a399328ac91409528d9e773844c1677"
+            },
+            {
+              "checkpoint": "maxent/iter_0000400",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "c30ec254e81c3fc3e16a761f00a3b09bf7bf207cbc1e035abc1e5310ce0f4f72",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "a57b6df2577546a5aba5492e693dd8862ec598b422dda346ad369cdbd55f93e4"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "c30ec254e81c3fc3e16a761f00a3b09bf7bf207cbc1e035abc1e5310ce0f4f72"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "86843a75ea64e443f5d8ec22f9cd485bfb10dde495875cc84e319dec444d8cc2"
+            },
+            {
+              "checkpoint": "maxent/iter_0000500",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "3413adc55c66489f27daccfb986ef8988a6ed1ad59d1b80ec1defef2986713f9",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "36522d4f4b6934388b75883ec64b8a6d8fcc26d86e8d05ff33c4a13d4a310c54"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "3413adc55c66489f27daccfb986ef8988a6ed1ad59d1b80ec1defef2986713f9"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "3e31676e5bbef1ed5aac8e8c8706d190936d8f64fa920bfd66cafbafc6d854be"
+            },
+            {
+              "checkpoint": "maxent/iter_0000600",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "0d82f68f8ce61366ddc89657edfe3beaed105f92ecc5bdd1ce0b30896164fef2",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "784b78667a1345c601e36ffe564a924ec86aadb917be7eabced382dccb95d297"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "0d82f68f8ce61366ddc89657edfe3beaed105f92ecc5bdd1ce0b30896164fef2"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "66a1f9b8c16e1889102ea3f092fd096df5bfda97ec4ed473445051017f029c05"
+            },
+            {
+              "checkpoint": "maxent/iter_0000700",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "2669791f0c7ddf3bd20e5494d87f4e602242fbfdf181e65845590c30fd313bc3",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "c250eb3f9beb0d343fbdf4b824e29bf8db8c2ca5b7d337c81b8133bba132c112"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "2669791f0c7ddf3bd20e5494d87f4e602242fbfdf181e65845590c30fd313bc3"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "db0d57c440e30c0745cec2f68e7a6e77c75b455f73dc8ae287bdaf7544277844"
+            },
+            {
+              "checkpoint": "maxent/iter_0000800",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "ec8f843e943a0147296d7f71945595ee03a57e73aba48bb2bbe5634e9214a7fb",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "96b7689bc879b13ac3fb97284bd294d9315369a9001a9e20b511ce88457ca4eb"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "ec8f843e943a0147296d7f71945595ee03a57e73aba48bb2bbe5634e9214a7fb"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "0995a3958f81258e530f81a73e1376b4736eccf2d03abe14e8b259fd79ce818b"
+            },
+            {
+              "checkpoint": "maxent/iter_0000900",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "4f1a4fbdd28c1e891e79699287c8037ca9fa175ba4fa3118bbe3cd198d9e4ae7",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "7d0dafb6ced279b5c38198bf9e7b18bc62223ec7a1487ae674875aeaff5951ad"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "4f1a4fbdd28c1e891e79699287c8037ca9fa175ba4fa3118bbe3cd198d9e4ae7"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "168d9bf65e877de0cb639d46277fa08d68a9bf56edd776846f94e7496560e34e"
+            },
+            {
+              "checkpoint": "maxent/iter_0001000",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "c208e4ea2ad8a2975f3f97731b591ff0f378a1c66b3f4fdb6ba34363d4809ee7",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "12601242d7351650246c4c5fdee058172250be41d2033cc56a9c7925b0b8f478"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "c208e4ea2ad8a2975f3f97731b591ff0f378a1c66b3f4fdb6ba34363d4809ee7"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "5672af0553268aa50431eea893babf8a86449201ea30f0e51113373a0eaca981"
+            },
+            {
+              "checkpoint": "maxent/iter_0001100",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "4033cbf6999ea1b21c78062c6e72936b4c988bc4fbce68f0aff8f79603164ac3",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "9ddb66f4a10b9fd07f5e5b22ab775a5c0a39db3454ddfddefd46d54e5d857ff2"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "4033cbf6999ea1b21c78062c6e72936b4c988bc4fbce68f0aff8f79603164ac3"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "f0a7190c45d11deb04944936c03a3a2aa7be72ce541780f992b646d223bb83c6"
+            },
+            {
+              "checkpoint": "maxent/iter_0001200",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "c25d85d64ad0f454f7abdf5902d11f006244be2ff18d86fcd1a054e739c562d2",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "b938a2e4128492a8efe7f039313bd15dcd2e39d96dedd4de145de1ce1d2bd482"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "c25d85d64ad0f454f7abdf5902d11f006244be2ff18d86fcd1a054e739c562d2"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "da3210ca32c21b9cac42fc6bc50a9123fd8058b61e8b09ceab18345b48c9f164"
+            },
+            {
+              "checkpoint": "maxent/iter_0001300",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "15238bd96a72cf2e5842e2027a21e9425d0a48a88e5889d0fa1352565331be7e",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "ee8cf914b58a5ce70a2cda2ee3232007b68f95acbb16525362d718485c7b2b46"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "15238bd96a72cf2e5842e2027a21e9425d0a48a88e5889d0fa1352565331be7e"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "2f500dde9ab3e02a7ec0cbb518e1d0a927100f7fbb2aaeea2cdf409c840a13ea"
+            },
+            {
+              "checkpoint": "maxent/iter_0001400",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "3e47975cefe0fd9d2faae54e775e50b130d7cce67d7c31fe3ba066c62a265e02",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "d59f4ae9748b99f53ce5d4ef606bb8bb1b62097d0212c079fd3c7100ff71eca6"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "3e47975cefe0fd9d2faae54e775e50b130d7cce67d7c31fe3ba066c62a265e02"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "0e54f4c2d88651dbcf0575127462f0e5445ff768d451cd442cbe973694c1ed20"
+            },
+            {
+              "checkpoint": "maxent/iter_0001500",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "b6edfdd38c46c11e81d484c86b34ae3307d7f25cb8b60b5a96d90bc61f1a2fb3",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "293c3e5eff62906d6ebd28cc5c0a7783ce2fdaf0239311e41f8b2a85d13688fa"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "b6edfdd38c46c11e81d484c86b34ae3307d7f25cb8b60b5a96d90bc61f1a2fb3"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "c171b2fde775228943e314c631eb291bf31dfe2e219a9f9908b7e4fde220ec3a"
+            },
+            {
+              "checkpoint": "maxent/iter_0001600",
+              "job_id": "11776574",
+              "adapter_payload_sha256": "d27405b8d1ff6127c4fe8065755255c2af4f3d7389eb67e66a5d0ce56245b952",
+              "delivered_config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "4df63ede4036b002a2c8f7619ffdc0a2c2860952aa9207582169b4c9edf01c8c"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "d27405b8d1ff6127c4fe8065755255c2af4f3d7389eb67e66a5d0ce56245b952"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39341,
+                  "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "0257fa57a8c6590c47a8110ad56d8ffecc2f9100cfcac0522089dfb8e627b991"
+            }
+          ],
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "Reuse previously verified immutable acquisition hashes; no repeated weight downloads or model-byte hashes."
+        },
+        "saved_model_class": {
+          "status": "VERIFIED",
+          "value": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved declaration only; not an executed source revision."
+        },
+        "declared_pretrained_path": {
+          "status": "VERIFIED",
+          "value": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved declaration only; exact loaded bytes are not established."
+        },
+        "declared_resume_path": {
+          "status": "VERIFIED",
+          "value": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Same MaxEnt-named saved path occurs in all three config families; not proof of execution or precedence."
+        },
+        "saved_finetune": {
+          "status": "VERIFIED",
+          "value": true,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "True in initial families; false in restart family. Preserve the distinction without assigning actual load semantics."
+        },
+        "job_to_delivered_step_range": {
+          "status": "VERIFIED",
+          "value": {
+            "job_id": "11776574",
+            "checkpoint_ids": [
+              "maxent/iter_0000100",
+              "maxent/iter_0000200",
+              "maxent/iter_0000300",
+              "maxent/iter_0000400",
+              "maxent/iter_0000500",
+              "maxent/iter_0000600",
+              "maxent/iter_0000700",
+              "maxent/iter_0000800",
+              "maxent/iter_0000900",
+              "maxent/iter_0001000",
+              "maxent/iter_0001100",
+              "maxent/iter_0001200",
+              "maxent/iter_0001300",
+              "maxent/iter_0001400",
+              "maxent/iter_0001500",
+              "maxent/iter_0001600"
+            ]
+          },
+          "evidence_refs": [
+            "B04_COMPLETION_INTAKE.json",
+            "/workspace/meeting-artifacts/POD_B/B04-completion-20261117T162923Z/evidence/PROGRESS_JOB_ASSOCIATIONS.json"
+          ],
+          "reason": "Progress save events bind job ID to labeled steps; they do not bind exact parent tensors."
+        },
+        "actual_complete_parent_manifest": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_KNOWN_PARENT_BASE.json",
+            "B04_KNOWN_PARENT_MAXENT.json"
+          ],
+          "reason": "No accessible job-bound manifest/load transcript or specific authoritative statement establishes complete present inference state; hidden parent/embedding/output/norm/buffer/merge changes remain unexcluded."
+        },
+        "all_nonadapter_inference_state": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No accessible job-bound manifest/load transcript or specific authoritative statement establishes complete present inference state; hidden parent/embedding/output/norm/buffer/merge changes remain unexcluded."
+        },
+        "actual_loading_precedence_effective_config": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved paths/class/finetune flag do not resolve actual executed overrides and load precedence."
+        },
+        "original_executed_source_runtime": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "B04_RESUME_SOURCE_RECEIPT.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "Candidate backport source is pinned and engineered, but original_job_identity=false; external log audit reports no provenance records."
+        },
+        "authenticated_original_route_R0": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No authenticated original execution basis. A pre-existing adapter fixture would not be required once original source and full state are established."
+        },
+        "independent_original_adapter_reference_R2": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "B04_PRODUCER_FIXTURE_INSTRUCTIONS.md",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No independent authoritative same-state original-route reference supplied. Parent anchors/candidate outputs cannot replace it."
+        },
+        "true_initial_state_Q3": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "MODEL_IDENTITY_BINDINGS.json"
+          ],
+          "reason": "Limits true-start-relative comparisons; not an additional prerequisite for otherwise qualified absolute evaluation."
+        },
+        "actual_valid_token_exposure_Q4": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl"
+          ],
+          "reason": "Saved nominal counters/log token labels do not establish actual valid-token exposure; not an absolute-channel loadability prerequisite."
+        },
+        "optimizer_RNG_training_state_for_inference": {
+          "status": "NOT_NEEDED_FOR_THIS_CHANNEL",
+          "value": null,
+          "evidence_refs": [],
+          "reason": "Not required to evaluate an independently established complete current inference state; no training resume authorized."
+        }
+      },
+      "route_decision": "NO_SCIENTIFIC_LAUNCH",
+      "scientifically_qualified_models": [],
+      "minimum_missing_assertion": "Bind exact actual full parent and any inference-changing state to this job/payload family, and establish actual loading semantics via authenticated source/runtime or independent original-route fixture."
+    },
+    {
+      "family": "maxent_restart",
+      "job_id": "11803647",
+      "checkpoint_ids": [
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "representatives": [
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "candidate_parent_manifest_not_assignment": "b437ae3e7ab9e2845d04d858db63d132a05843867f2ae2bea3243239a28678fd",
+      "actual_parent_manifest_sha256": null,
+      "actual_full_state_fingerprint": null,
+      "inference_state_complete": false,
+      "claims": {
+        "delivered_adapter_config_tokenizer_bytes": {
+          "status": "VERIFIED",
+          "value": [
+            {
+              "checkpoint": "maxent/iter_0001700",
+              "job_id": "11803647",
+              "adapter_payload_sha256": "da0e45e9b20ad6fa82ea79607f87396b4dc39366ad4830806a11667da176aaa0",
+              "delivered_config_sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "812967685e8938358ff933e09b3a66c5ed1b4f1f8d50bf8107b774d02d6da43a"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "da0e45e9b20ad6fa82ea79607f87396b4dc39366ad4830806a11667da176aaa0"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39342,
+                  "sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "7e4074e32e9c74b907d312e5a5fb88b7167a1acc08c202a75ffaeb090dffc3fd"
+            },
+            {
+              "checkpoint": "maxent/iter_0001800",
+              "job_id": "11803647",
+              "adapter_payload_sha256": "8fba7f205d5809ae0d6676c2189fa7a163fa9f4f97665f3b0bd4c03d99d24c70",
+              "delivered_config_sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812",
+              "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+              "files": [
+                {
+                  "name": ".metadata",
+                  "bytes": 142431,
+                  "sha256": "27658e259aa59d2a8fcc40b8fb95705ce0d0ef5e122529e544a68b6e69a7c9c1"
+                },
+                {
+                  "name": "__0_0.distcp",
+                  "bytes": 173352705,
+                  "sha256": "8fba7f205d5809ae0d6676c2189fa7a163fa9f4f97665f3b0bd4c03d99d24c70"
+                },
+                {
+                  "name": "run_config.yaml",
+                  "bytes": 39342,
+                  "sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812"
+                },
+                {
+                  "name": "tokenizer/tokenizer.json",
+                  "bytes": 10649,
+                  "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+                }
+              ],
+              "manifest_sha256": "b28128192e8da889c9c644506cdccf79546c6c261790ee1f43ea1ef1a221dfb3"
+            }
+          ],
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "Reuse previously verified immutable acquisition hashes; no repeated weight downloads or model-byte hashes."
+        },
+        "saved_model_class": {
+          "status": "VERIFIED",
+          "value": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved declaration only; not an executed source revision."
+        },
+        "declared_pretrained_path": {
+          "status": "VERIFIED",
+          "value": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved declaration only; exact loaded bytes are not established."
+        },
+        "declared_resume_path": {
+          "status": "VERIFIED",
+          "value": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Same MaxEnt-named saved path occurs in all three config families; not proof of execution or precedence."
+        },
+        "saved_finetune": {
+          "status": "VERIFIED",
+          "value": false,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "True in initial families; false in restart family. Preserve the distinction without assigning actual load semantics."
+        },
+        "job_to_delivered_step_range": {
+          "status": "VERIFIED",
+          "value": {
+            "job_id": "11803647",
+            "checkpoint_ids": [
+              "maxent/iter_0001700",
+              "maxent/iter_0001800"
+            ]
+          },
+          "evidence_refs": [
+            "B04_COMPLETION_INTAKE.json",
+            "/workspace/meeting-artifacts/POD_B/B04-completion-20261117T162923Z/evidence/PROGRESS_JOB_ASSOCIATIONS.json"
+          ],
+          "reason": "Progress save events bind job ID to labeled steps; they do not bind exact parent tensors."
+        },
+        "actual_complete_parent_manifest": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_KNOWN_PARENT_BASE.json",
+            "B04_KNOWN_PARENT_MAXENT.json"
+          ],
+          "reason": "No accessible job-bound manifest/load transcript or specific authoritative statement establishes complete present inference state; hidden parent/embedding/output/norm/buffer/merge changes remain unexcluded."
+        },
+        "all_nonadapter_inference_state": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No accessible job-bound manifest/load transcript or specific authoritative statement establishes complete present inference state; hidden parent/embedding/output/norm/buffer/merge changes remain unexcluded."
+        },
+        "actual_loading_precedence_effective_config": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Saved paths/class/finetune flag do not resolve actual executed overrides and load precedence."
+        },
+        "original_executed_source_runtime": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "B04_RESUME_SOURCE_RECEIPT.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "Candidate backport source is pinned and engineered, but original_job_identity=false; external log audit reports no provenance records."
+        },
+        "authenticated_original_route_R0": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No authenticated original execution basis. A pre-existing adapter fixture would not be required once original source and full state are established."
+        },
+        "independent_original_adapter_reference_R2": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "B04_PRODUCER_FIXTURE_INSTRUCTIONS.md",
+            "B04_COMPLETION_INTAKE.json"
+          ],
+          "reason": "No independent authoritative same-state original-route reference supplied. Parent anchors/candidate outputs cannot replace it."
+        },
+        "true_initial_state_Q3": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "MODEL_IDENTITY_BINDINGS.json"
+          ],
+          "reason": "Limits true-start-relative comparisons; not an additional prerequisite for otherwise qualified absolute evaluation."
+        },
+        "actual_valid_token_exposure_Q4": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl"
+          ],
+          "reason": "Saved nominal counters/log token labels do not establish actual valid-token exposure; not an absolute-channel loadability prerequisite."
+        },
+        "optimizer_RNG_training_state_for_inference": {
+          "status": "NOT_NEEDED_FOR_THIS_CHANNEL",
+          "value": null,
+          "evidence_refs": [],
+          "reason": "Not required to evaluate an independently established complete current inference state; no training resume authorized."
+        },
+        "restart_from_delivered_MaxEnt1600": {
+          "status": "UNKNOWN",
+          "value": null,
+          "evidence_refs": [
+            "CHECKPOINT_REGISTRY.jsonl",
+            "B04_KNOWN_ADAPTER_MANIFESTS.json",
+            "B04_COMPLETION_INTAKE.json",
+            "B04_COMPLETION_DRIVE_AUDIT.json"
+          ],
+          "reason": "Progress establishes a new job before1700, not the loaded1600 payload hash. If entire present inference state becomes established, missing continuity alone need not block absolute evaluation."
+        }
+      },
+      "route_decision": "NO_SCIENTIFIC_LAUNCH",
+      "scientifically_qualified_models": [],
+      "minimum_missing_assertion": "Bind exact actual full parent and any inference-changing state to this job/payload family, and establish actual loading semantics via authenticated source/runtime or independent original-route fixture."
+    }
+  ],
+  "qualified_model_ids": [],
+  "qualified_count": 0,
+  "total_models": 36,
+  "claim_status_vocabulary": [
+    "VERIFIED",
+    "CONTRADICTED",
+    "UNKNOWN",
+    "NOT_NEEDED_FOR_THIS_CHANNEL"
+  ],
+  "contradictions_preserved": [
+    "Base saved pretrained path and common MaxEnt-named resume path cannot establish which load took precedence; no actual parent choice is declared contradicted by this ambiguity.",
+    "Restart finetune=false differs from initial finetune=true; no continuity inferred."
+  ],
+  "targeted_intake_closed": true,
+  "reason_for_no_GPU": "No family clears complete-state and R0/R2 route prerequisites; GPU inference cannot determine a historical attachment fact.",
+  "scientific_child_plans": []
+}

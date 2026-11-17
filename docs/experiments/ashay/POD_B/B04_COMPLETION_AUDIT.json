@@ -1,0 +1,54 @@
+{
+  "schema": "POD_B.B04.completion_audit.v1",
+  "observed_utc": "2026-11-17T16:36:46.634501+00:00",
+  "status": "PASS",
+  "eligibility_rows": 36,
+  "families": 3,
+  "family_counts": {
+    "11760341": 18,
+    "11776574": 16,
+    "11803647": 2
+  },
+  "qualified_count": 0,
+  "qualified_model_ids": [],
+  "gate_attempt_rows": 1538,
+  "new_NOT_ATTEMPTED_rows": 36,
+  "prior_gate_records_unchanged": 1502,
+  "qualification_prior_fields_preserved": true,
+  "engineering_promotion": false,
+  "registry_unchanged": true,
+  "new_GPU_seconds": 0,
+  "cumulative_B04_GPU_seconds": 1675.5146971674585,
+  "ledger_history_preserved": true,
+  "protected_refs_unchanged": true,
+  "prompt_edits_preserved": true,
+  "source_code_changed": false,
+  "reused_CPU_tests_passed": 126,
+  "reused_CPU_tests_failures": 0,
+  "reused_CPU_tests_skipped": 0,
+  "focused_live_approval_check": {
+    "status": "PASS",
+    "execution_id": "B04-completion-20261117T162923Z",
+    "plan_sha256": "20bc9cb62c43f6e3b4c2b5d373b64080a019d2cd85dcc083c45aab95413bb46e",
+    "native": false,
+    "torch_imported": false,
+    "ledger_used_seconds": 1675.5146971674585
+  },
+  "focused_closed_approval_check": {
+    "status": "PASS",
+    "closed_approval_rejected": true,
+    "code": "STAGE_NOT_AUTHORIZED",
+    "torch_imported": false,
+    "native_execution_started": false,
+    "initial_harness_error": "First harness imported nonexistent ContractError; corrected to existing GateError. No production code change or native execution."
+  },
+  "shared_locks_observed_free": [
+    "/workspace/meeting-artifacts/evo2-pilot.gpu.lock",
+    "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.lock"
+  ],
+  "GPU_processes": [],
+  "owned_jobs": [],
+  "queued_jobs": [],
+  "B05_B06_files_changed": false,
+  "backup_status": "LOCAL_ONLY_PENDING_B09"
+}

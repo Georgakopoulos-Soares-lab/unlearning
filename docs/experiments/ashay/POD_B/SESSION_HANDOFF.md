@@ -1,3 +1,7 @@
+Current authoritative B04 completion attempt: B04_COMPLETION_HANDOFF.md, B04_IDENTITY_RESOLUTION.json and CURRENT_STATUS.json. Status BLOCKED; WAITING_FOR_STEERING: B04. No B05/B06 authorization.
+
+Previous handoff retained verbatim:
+
 Current authoritative follow-up: B04_UNBLOCK_HANDOFF.md and CURRENT_STATUS.json. Status WAITING_FOR_STEERING: B04; no B05 authorization.
 
 Previously published handoff retained verbatim:

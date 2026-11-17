@@ -1,0 +1,48 @@
+{
+  "schema": "POD_B.B04.completion_resources.v1",
+  "observed_utc": "2026-11-17T16:32:58.512510+00:00",
+  "approval_observed_utc": "2026-11-17T16:29:23.172568+00:00",
+  "fixed_forward_deadline_utc": "2026-11-17T18:11:46+00:00",
+  "fixed_closure_deadline_utc": "2026-11-17T18:56:46+00:00",
+  "deadline_reset": false,
+  "aggregate_GPU_ceiling_seconds": 9000,
+  "planning_threshold_seconds": 7200,
+  "cumulative_B04_GPU_used_seconds": 1675.5146971674585,
+  "aggregate_remaining_GPU_seconds": 7324.4853028325415,
+  "engineering_GPU_ceiling_seconds": 1800,
+  "cumulative_engineering_GPU_used_seconds": 1675.5146971674585,
+  "engineering_remaining_GPU_seconds": 124.48530283254149,
+  "new_engineering_GPU_seconds": 0,
+  "new_scientific_GPU_seconds": 0,
+  "new_model_forwards": 0,
+  "GPU_stage_count": 20,
+  "active_GPU_owner": null,
+  "authoritative_ledger": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/GPU_LEDGER.json",
+    "bytes": 6608,
+    "sha256": "df26dbcc896f57962637e469341ec079a59340be9367605b84b9c7023c021335"
+  },
+  "prior_separate_ledgers_preserved": [
+    {
+      "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
+      "bytes": 1592,
+      "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
+      "bytes": 808,
+      "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
+    }
+  ],
+  "CPU_process_seconds": null,
+  "CPU_process_reason": "Whole interactive intake not cumulatively metered; no numerical test suite rerun",
+  "provider_rental_start": null,
+  "provider_hourly_rate": null,
+  "provider_rental_reason": "Not independently supplied; no hardware/lease changes",
+  "source_code_changes": 0,
+  "reused_CPU_tests": 126,
+  "new_full_suite_tests": 0,
+  "completion_observed_utc": "2026-11-17T16:36:42.753614+00:00",
+  "CPU_evidence_pass_elapsed_since_execution_record_seconds": 439.581046,
+  "elapsed_measurement_scope": "Elapsed wall time since execution receipt creation; not CPU process time or a new approval window"
+}

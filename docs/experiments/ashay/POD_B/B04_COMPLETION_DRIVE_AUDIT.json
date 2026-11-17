@@ -1,0 +1,47 @@
+{
+  "schema": "POD_B.external_Drive_audit.v1",
+  "basis": "External read-only audit reported in the directly approved prompt; raw audit artifacts not supplied locally",
+  "source_prompt": {
+    "path": "POD_B_04_FINISH_QUALIFICATION.md",
+    "bytes": 21573,
+    "sha256": "150e864f0bfbb78aaf8fb0a405aa08af5597729a6489b288f3e5afd282ee851d"
+  },
+  "source_commit": "b5cf141608bc6c6f9c92cf04bec0a7ea060a61e6",
+  "locally_reparsed": false,
+  "locally_rehashed": false,
+  "logs": [
+    {
+      "family": "base",
+      "drive_id": "1Mj8lgqztuC8OFrvtOV2zHBiR1vDJyXDN",
+      "reported_bytes": 49148620,
+      "reported_sha256": "8204f542c7a006b2454dc963b55b333a13a9b53ec1f2e84c5d776d41b09b1502",
+      "reported_complete_records": 428169
+    },
+    {
+      "family": "maxent_initial",
+      "drive_id": "1x6AprDpNd5d755D1AJ5YCXutUEO_pHVN",
+      "reported_bytes": 44306631,
+      "reported_sha256": "1a3d1d32a073b6a8c1686b839c38011c2370544003d1697dbf99efec182456e7",
+      "reported_complete_records": 385974
+    },
+    {
+      "family": "maxent_restart",
+      "drive_id": "1vuSJVKRY0hoJppCSwxe25VMN9CuAy2SA",
+      "reported_bytes": 5417250,
+      "reported_sha256": "091253af36e0820831c7443f767f5bfdd91b7388571fa424b3b299afeae9a778",
+      "reported_complete_records": 46881
+    }
+  ],
+  "reported_total_bytes": 98872501,
+  "reported_unique_scalar_tags_per_file": 245,
+  "reported_checks": [
+    "TFRecord length/payload CRC32C",
+    "protobuf structural checks"
+  ],
+  "reported_non_scalar_provenance_records": false,
+  "reported_conclusion": "No source revision, parent hash or original adapter-output fixture in these three files",
+  "all36_directory_metadata": "External audit reports all36 seven-entry listings and tokenizer pairs match B02",
+  "six_config_bytes": "External audit reports six raw representative config bytes match the three B02 hashes",
+  "scope_limit": "Neither presence nor scalar-log audit authenticates historical full-state attachment; no global absence claim",
+  "numerical_performance_analyzed": false
+}

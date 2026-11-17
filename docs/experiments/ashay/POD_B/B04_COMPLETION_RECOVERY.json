@@ -1,0 +1,28 @@
+{
+  "schema": "POD_B.B04.completion_recovery.v1",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-completion-20261117T162923Z",
+  "local_only": true,
+  "backup_revision": null,
+  "restore_roundtrip_tested": false,
+  "private_index": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-completion-20261117T162923Z/RECOVERY_MANIFEST.json",
+    "bytes": 6692,
+    "sha256": "8a08587cdd1d57a35fe7ba0c2abaaa6558787a41457e1879501a29bd808de271"
+  },
+  "source_snapshot_reused": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/SOURCE_SNAPSHOT_V2.json",
+    "bytes": 7866,
+    "sha256": "ba869cc5a67754420e1f003911a636305c76aa6ec4968b96efb798ecdd297a95"
+  },
+  "prior_runtime_root": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime",
+  "authoritative_ledger": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/GPU_LEDGER.json",
+    "bytes": 6608,
+    "sha256": "df26dbcc896f57962637e469341ec079a59340be9367605b84b9c7023c021335"
+  },
+  "exclusions": [
+    "Final publication/delivery receipt written after commit/push",
+    "Unchanged old runtime/weights and engineering arrays retained at their prior hashed source records"
+  ],
+  "limits": "No new remote private backup; B09 gated; original binary dependencies retained in place"
+}
