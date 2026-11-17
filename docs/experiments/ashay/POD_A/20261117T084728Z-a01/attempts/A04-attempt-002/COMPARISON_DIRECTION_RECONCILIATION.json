@@ -1,0 +1,6 @@
+{
+  "schema": "pod-a-a04-comparison-direction-v1",
+  "before_any_numerical_residuals": true,
+  "diagnosis": "Frozen plan described np.allclose(observed,reference), but recovered original verify_multiretain_smoke.compare invokes np.allclose(reference,value).",
+  "resolution": "Report original reference,value direction, and conservatively require reverse direction as planned also. Both use unchanged atol1e-4/rtol1e-5. No outcomes consulted, no cohort/source/model change."
+}

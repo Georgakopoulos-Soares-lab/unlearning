@@ -1,0 +1,53 @@
+{
+  "schema": "pod-a-a04-owned-job-disposition-v1",
+  "status": "QUIESCENT",
+  "records": [
+    {
+      "receipt": "ACTIVE_GPU_JOB.json",
+      "pid": 22228,
+      "recorded_status": "EXITING_PASS",
+      "same_owned_process_active": false
+    },
+    {
+      "receipt": "UNIT_CONTROLLER_JOB.json",
+      "pid": 20738,
+      "recorded_status": "EXITING_FINISHED",
+      "same_owned_process_active": false
+    },
+    {
+      "receipt": "TRANSFER_JOB.json",
+      "pid": 16190,
+      "recorded_status": "EXITING_SUCCESS",
+      "same_owned_process_active": false
+    },
+    {
+      "receipt": "DIRECT_TRANSFER_REPAIR_JOB.json",
+      "pid": 16652,
+      "recorded_status": "EXITING_SUCCESS",
+      "same_owned_process_active": false
+    },
+    {
+      "receipt": "DIRECT_TRANSFER_REPAIR_002_JOB.json",
+      "pid": 17254,
+      "recorded_status": "EXITING_SUCCESS",
+      "same_owned_process_active": false
+    },
+    {
+      "receipt": "TE_BINDING_BUILD.repair-001.json",
+      "pid": null,
+      "recorded_status": "PASS",
+      "same_owned_process_active": false
+    },
+    {
+      "receipt": "CHECKPOINT_JOB.json",
+      "pid": 22428,
+      "recorded_status": "EXITING_SUCCESS",
+      "same_owned_process_active": false
+    }
+  ],
+  "owned_GPU_lock_released": true,
+  "foreign_processes_untouched": true,
+  "future_dispatchers_created": false,
+  "A05_started": false,
+  "verified_utc": "2026-11-17T15:56:28.248476+00:00"
+}

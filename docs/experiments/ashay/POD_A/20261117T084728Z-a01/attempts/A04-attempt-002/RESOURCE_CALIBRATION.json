@@ -1,0 +1,1064 @@
+{
+  "schema": "pod-a-a04-resources-v1",
+  "units": [
+    {
+      "alias": "base",
+      "variant": "logical1",
+      "qualification_identity": "15329eb490948a358eaa98dfee526994b3edfd8980cb35707d8c77a050519b53",
+      "architecture_instantiation_seconds": 1.7960339259952889,
+      "CPU_native_model_only_load_seconds": 3.44818605499313,
+      "status": "PASS",
+      "wall_seconds": 58.53916646000289,
+      "cpu_process_seconds": 36.441245065000004,
+      "gpu_stage_wall_seconds": 13.789651409999351,
+      "physical_batches": 12,
+      "logical_rows": 12,
+      "physical_rows": 96,
+      "fillers": 84,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 4.510969262999424
+        },
+        {
+          "first_logical_row": 1,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.31848123500094516
+        },
+        {
+          "first_logical_row": 2,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09664045499812346
+        },
+        {
+          "first_logical_row": 3,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09660732399788685
+        },
+        {
+          "first_logical_row": 4,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09758758400130318
+        },
+        {
+          "first_logical_row": 5,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09781230900262017
+        },
+        {
+          "first_logical_row": 6,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09719899600167992
+        },
+        {
+          "first_logical_row": 7,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09573440600070171
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09751288199913688
+        },
+        {
+          "first_logical_row": 9,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10667999900033465
+        },
+        {
+          "first_logical_row": 10,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10963662900030613
+        },
+        {
+          "first_logical_row": 11,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10724433099676389
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 4060086272,
+      "peak_process_RSS_kib": 5770276
+    },
+    {
+      "alias": "base",
+      "variant": "logical8",
+      "qualification_identity": "8d24507aad34e430a797b599541e5b95fb5eed84de3b1114631f5dc628f5c936",
+      "architecture_instantiation_seconds": 1.855295159999514,
+      "CPU_native_model_only_load_seconds": 3.559198593000474,
+      "status": "PASS",
+      "wall_seconds": 61.55665536900051,
+      "cpu_process_seconds": 37.520636429,
+      "gpu_stage_wall_seconds": 10.863898276002146,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 2.2673957589940983
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.3137244589961483
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5768076
+    },
+    {
+      "alias": "base",
+      "variant": "repeat8",
+      "qualification_identity": "468ff00077afb1dcd5e5ed86557e403f3504a3d7546f2ce981c658cae20450e9",
+      "architecture_instantiation_seconds": 1.7291326750055305,
+      "CPU_native_model_only_load_seconds": 3.532217104002484,
+      "status": "PASS",
+      "wall_seconds": 55.69563594799547,
+      "cpu_process_seconds": 35.011414204,
+      "gpu_stage_wall_seconds": 10.396521594004298,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 2.1303573129989672
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.30585060799785424
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5762596
+    },
+    {
+      "alias": "R1",
+      "variant": "logical1",
+      "qualification_identity": "7f76b2c20ad9aa914ab91c66cbf8eea53336944d2a5da8f96a0458e115a535e5",
+      "architecture_instantiation_seconds": 1.8400018219981575,
+      "CPU_native_model_only_load_seconds": 3.3515779199951794,
+      "status": "PASS",
+      "wall_seconds": 58.59025424999709,
+      "cpu_process_seconds": 36.301129434,
+      "gpu_stage_wall_seconds": 11.271715253998991,
+      "physical_batches": 12,
+      "logical_rows": 12,
+      "physical_rows": 96,
+      "fillers": 84,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 2.148823056006222
+        },
+        {
+          "first_logical_row": 1,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.3068566660003853
+        },
+        {
+          "first_logical_row": 2,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09579924999707146
+        },
+        {
+          "first_logical_row": 3,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09749275299691362
+        },
+        {
+          "first_logical_row": 4,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09679497999604791
+        },
+        {
+          "first_logical_row": 5,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09627176899812184
+        },
+        {
+          "first_logical_row": 6,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09714608699869132
+        },
+        {
+          "first_logical_row": 7,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09686285100178793
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09633493100409396
+        },
+        {
+          "first_logical_row": 9,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10552471299888566
+        },
+        {
+          "first_logical_row": 10,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10687350900116144
+        },
+        {
+          "first_logical_row": 11,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10734169799980009
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5747116
+    },
+    {
+      "alias": "R1",
+      "variant": "logical8",
+      "qualification_identity": "991bc7af815f84fb86b6e4e8130f3db08184e3fd557871a4050dcd81830036b2",
+      "architecture_instantiation_seconds": 1.7753401689988095,
+      "CPU_native_model_only_load_seconds": 3.1680963399994653,
+      "status": "PASS",
+      "wall_seconds": 58.23895342399919,
+      "cpu_process_seconds": 34.005267161000006,
+      "gpu_stage_wall_seconds": 11.711164419000852,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 3.804836248003994
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.40186419999372447
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5745536
+    },
+    {
+      "alias": "R1",
+      "variant": "repeat8",
+      "qualification_identity": "aafd5930cce4d1ef122df3430467b90aa9117c2a6f947f1527239236d8c67228",
+      "architecture_instantiation_seconds": 1.7539533249946544,
+      "CPU_native_model_only_load_seconds": 3.1287353499938035,
+      "status": "PASS",
+      "wall_seconds": 54.920540514001914,
+      "cpu_process_seconds": 33.333396066999995,
+      "gpu_stage_wall_seconds": 9.837578012004087,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 2.1366748149957857
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.30579138500615954
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5747324
+    },
+    {
+      "alias": "R4",
+      "variant": "logical1",
+      "qualification_identity": "d5f8e987ceb4a7ae7ecf53fdd4b5e1791a8f16efd2f4f48c88175cc9cc8b5fe0",
+      "architecture_instantiation_seconds": 1.7641790280031273,
+      "CPU_native_model_only_load_seconds": 3.117616209005064,
+      "status": "PASS",
+      "wall_seconds": 58.61938917099906,
+      "cpu_process_seconds": 36.113787412,
+      "gpu_stage_wall_seconds": 11.009492193996266,
+      "physical_batches": 12,
+      "logical_rows": 12,
+      "physical_rows": 96,
+      "fillers": 84,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 2.1761149180019856
+        },
+        {
+          "first_logical_row": 1,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.30715883200173266
+        },
+        {
+          "first_logical_row": 2,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09746157299377955
+        },
+        {
+          "first_logical_row": 3,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09764619699853938
+        },
+        {
+          "first_logical_row": 4,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.0979527119998238
+        },
+        {
+          "first_logical_row": 5,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09676856899750419
+        },
+        {
+          "first_logical_row": 6,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09653574399999343
+        },
+        {
+          "first_logical_row": 7,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09697134300222388
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09726228000363335
+        },
+        {
+          "first_logical_row": 9,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10209023499919567
+        },
+        {
+          "first_logical_row": 10,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10601927300012903
+        },
+        {
+          "first_logical_row": 11,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10741774999769405
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5743444
+    },
+    {
+      "alias": "R4",
+      "variant": "logical8",
+      "qualification_identity": "b8817ef319d24bc94b70270140b032381761ee4602dc8638bce765db16e7009f",
+      "architecture_instantiation_seconds": 1.7193880880004144,
+      "CPU_native_model_only_load_seconds": 3.4869188239972573,
+      "status": "PASS",
+      "wall_seconds": 58.16595223400509,
+      "cpu_process_seconds": 34.752252514000006,
+      "gpu_stage_wall_seconds": 10.498203261995513,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 2.1887450680005713
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.3072880939944298
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5735592
+    },
+    {
+      "alias": "R4",
+      "variant": "repeat8",
+      "qualification_identity": "97e8cc74c1852db2629a9ef32d990c54f0ecd4608f4db8fdcc74d790ab9b7b8e",
+      "architecture_instantiation_seconds": 1.7471134400038864,
+      "CPU_native_model_only_load_seconds": 3.1899012030044105,
+      "status": "PASS",
+      "wall_seconds": 57.35030539100262,
+      "cpu_process_seconds": 34.710645057,
+      "gpu_stage_wall_seconds": 10.516123838999192,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 2.1350186230047257
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.3088575849978952
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5751392
+    },
+    {
+      "alias": "R6",
+      "variant": "logical1",
+      "qualification_identity": "51e6d0c39f895b18c9d42240bcb225c9426710227ede4c664bbfbfabdb0098f1",
+      "architecture_instantiation_seconds": 1.7390512689962634,
+      "CPU_native_model_only_load_seconds": 3.244270051996864,
+      "status": "PASS",
+      "wall_seconds": 57.35441707200516,
+      "cpu_process_seconds": 34.523712463,
+      "gpu_stage_wall_seconds": 11.56720422500075,
+      "physical_batches": 12,
+      "logical_rows": 12,
+      "physical_rows": 96,
+      "fillers": 84,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 2.1694260549993487
+        },
+        {
+          "first_logical_row": 1,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.3124099560009199
+        },
+        {
+          "first_logical_row": 2,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09574808899924392
+        },
+        {
+          "first_logical_row": 3,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09665503699943656
+        },
+        {
+          "first_logical_row": 4,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.0962594189986703
+        },
+        {
+          "first_logical_row": 5,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09726409900031285
+        },
+        {
+          "first_logical_row": 6,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09693463199801045
+        },
+        {
+          "first_logical_row": 7,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09609846599778393
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.09641903299780097
+        },
+        {
+          "first_logical_row": 9,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10374005699850386
+        },
+        {
+          "first_logical_row": 10,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10440176099655218
+        },
+        {
+          "first_logical_row": 11,
+          "logical_rows": 1,
+          "physical_rows": 8,
+          "fillers": 7,
+          "forward_and_capture_seconds": 0.10637474899704102
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5747148
+    },
+    {
+      "alias": "R6",
+      "variant": "logical8",
+      "qualification_identity": "18327e33bc4f98dc3581141bb5fc4f892bc08d93b5cab5ff8c0865b50e60aa41",
+      "architecture_instantiation_seconds": 1.7083055499970214,
+      "CPU_native_model_only_load_seconds": 3.222581750997051,
+      "status": "PASS",
+      "wall_seconds": 59.16862287200638,
+      "cpu_process_seconds": 34.900139709,
+      "gpu_stage_wall_seconds": 10.056155818005209,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 2.160098169995763
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.31035372499900404
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5746476
+    },
+    {
+      "alias": "R6",
+      "variant": "repeat8",
+      "qualification_identity": "2bda946054b8bdc6990d7fe41d72c60a037183f62fd05206abfc3de8ce74c828",
+      "architecture_instantiation_seconds": 1.779197835996456,
+      "CPU_native_model_only_load_seconds": 3.247766701002547,
+      "status": "PASS",
+      "wall_seconds": 57.90665706300206,
+      "cpu_process_seconds": 35.268357359,
+      "gpu_stage_wall_seconds": 10.675455659002182,
+      "physical_batches": 2,
+      "logical_rows": 12,
+      "physical_rows": 16,
+      "fillers": 4,
+      "batch_timings": [
+        {
+          "first_logical_row": 0,
+          "logical_rows": 8,
+          "physical_rows": 8,
+          "fillers": 0,
+          "forward_and_capture_seconds": 2.4216188169957604
+        },
+        {
+          "first_logical_row": 8,
+          "logical_rows": 4,
+          "physical_rows": 8,
+          "fillers": 4,
+          "forward_and_capture_seconds": 0.30913648099522106
+        }
+      ],
+      "peak_GPU_allocated_bytes": 3222700032,
+      "peak_GPU_reserved_bytes": 3997171712,
+      "peak_process_RSS_kib": 5744412
+    }
+  ],
+  "failed_attempts": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/R1/logical1/attempt-001/FAILED.json",
+      "sha256": "24c501f0cde73e6da21b2c23770036dc9378ad0bdc65169cd40a5082489fb8ed",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Unknown owner for serialized TE extra state",
+      "qualification_identity": "ff1de7c05349eb3eb34286f4dfcdcd4b3b0636cd9584ef6a082c5fa324ba2f0a",
+      "source_sha256": "85367ff7fc15063343e61c4f8d93fe437bc31a7f7c4f7595710b8cc20ea5e403",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/R1/logical8/attempt-001/FAILED.json",
+      "sha256": "b2ecfa5d0a5275a8bbbd3da3a0ef90d1e4e8bcb99fb68121e2c600029312b290",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Unknown owner for serialized TE extra state",
+      "qualification_identity": "0c5c4cba19d4f0fe5b2aa211c2ec9c3ac40f1bdd3c3bf0d84d72b20edc9ce4f2",
+      "source_sha256": "85367ff7fc15063343e61c4f8d93fe437bc31a7f7c4f7595710b8cc20ea5e403",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/R1/repeat8/attempt-001/FAILED.json",
+      "sha256": "692fd1656dc38a49ff882d06572d49123db06b62b74fa1c4d187f5c1c716c022",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Unknown owner for serialized TE extra state",
+      "qualification_identity": "2ba7aa1b8b9e34873271776d792a8e0e317a9ee8c7718c6f88c10392021b8dde",
+      "source_sha256": "85367ff7fc15063343e61c4f8d93fe437bc31a7f7c4f7595710b8cc20ea5e403",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-001/FAILED.json",
+      "sha256": "0aa8e286d26db3728c59504b7a674065bf391b4b5bb3a64af3fb008f32fd9c2a",
+      "attempt_category": "PRE_GPU_IDENTITY_GUARD_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "reason": "Source identity mismatch caught before model imports or GPU operation",
+      "replacement": "attempt-002",
+      "new_forwards": 0
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-002/FAILED.json",
+      "sha256": "aa10fe6f35969e91338021b4d73dc9efd48adb3d16ed8ad5e6084f53bea137cb",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Unexplained missing model key: decoder.layers.21.mixer.dense_projection._extra_state",
+      "qualification_identity": "b4fe38e1f756e05e088c18204f5d71add34269704e9c7d2ca02bd232e1bf2bb1",
+      "source_sha256": "7d9816d3cbd8c4f3e3bc8235398b8b65bb1ae1f8798bf1e4b630f78838928af9",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-003/FAILED.json",
+      "sha256": "977adf6778dbba8533e4e0512847fdeeb545172fa4167f82addea0569c7758ca",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Tensor extra state is not serialization of non-tensor None",
+      "qualification_identity": "7c6bfa6d49d94d73028b1a4f73269893a529502e74c057081d66c13089558a13",
+      "source_sha256": "7d9816d3cbd8c4f3e3bc8235398b8b65bb1ae1f8798bf1e4b630f78838928af9",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-004/FAILED.json",
+      "sha256": "51323f4c77c3c119e250fb589a9c7e01f8256ced00c419c84e88ba62cd4a336e",
+      "attempt_category": "DIAGNOSTIC_FAILED",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "AttributeError",
+      "reason": "'RMSNorm' object has no attribute 'fp8_meta'",
+      "qualification_identity": "cce2c2015439cb2f6c33a4a9caa8426200c71c36c70e82831ff3f4d6d5f4aa7b",
+      "source_sha256": "ea179b9434e7a11a9a12aef80614a286238cffadbf402fd3feceb4d60329cb6c",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-005/FAILED.json",
+      "sha256": "05dc234ea5137e8371c3e649b10e1d99060bec5ce2b7700d335451b968f22c11",
+      "attempt_category": "DIAGNOSTIC_COMPLETE",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "RuntimeError",
+      "reason": "Controlled architecture metadata diagnostic completed without inference",
+      "qualification_identity": "da470c3193d9af17a00b193b46da6d8e69f1e006782dd205800f0adfb26d6688",
+      "source_sha256": "482f35807bf672639440552045ed20f839ebac2b463099b5aae462143f9a1369",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-006/FAILED.json",
+      "sha256": "702f6ce1dcd62999734d69ab1c475e34b8779e75942f04b3815dcd9af7b0bb82",
+      "attempt_category": "PRE_GPU_IDENTITY_GUARD_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "reason": "Source guard caught prior reseal assertion; before model imports/GPU",
+      "forwards": 0
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-007/FAILED.json",
+      "sha256": "9b06bed5fc77ee92539da151300deae2e156a9ce169009c0267881ce83dbc708",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Unexplained missing model key: output_layer._extra_state",
+      "qualification_identity": "051785ca5b761d0430d045ea152326c256716122e295f12d3176a883d4457f40",
+      "source_sha256": "7d9816d3cbd8c4f3e3bc8235398b8b65bb1ae1f8798bf1e4b630f78838928af9",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-008/FAILED.json",
+      "sha256": "4d44538e3539e4cad502016bc37669d4dac4a9531acf535f80f17f3b8e51b2df",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Actual load-state exceptions differ",
+      "qualification_identity": "7753748ee5a771dc33ab650c5e8bc4ff847318a12cab73c7c3c356110c534b93",
+      "source_sha256": "7d9816d3cbd8c4f3e3bc8235398b8b65bb1ae1f8798bf1e4b630f78838928af9",
+      "preserve_logs": true,
+      "next_stage_started": false
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/base/logical1/attempt-009/FAILED.json",
+      "sha256": "4ed43fe6f22b927ed7ac6d0cc350a6ae2dcec4f9b177b8cbf1d8aea58b7d5bcd",
+      "attempt_category": "LOADER_METADATA_REJECTION",
+      "qualification_forwards": 0,
+      "status": "FAIL",
+      "exception_type": "ValueError",
+      "reason": "Actual load-state exceptions differ from exact prevalidated metadata and pinned MCore default-None hook",
+      "qualification_identity": "531482d040e9b09cbb3906469a934af360d843783de0d1c09f69ea4b82ac6957",
+      "source_sha256": "85367ff7fc15063343e61c4f8d93fe437bc31a7f7c4f7595710b8cc20ea5e403",
+      "preserve_logs": true,
+      "next_stage_started": false
+    }
+  ],
+  "GPU_accounting": {
+    "schema": "pod-a-a04-reporting-only-gpu-accounting-v1",
+    "reporting_only": true,
+    "time_limit_seconds": null,
+    "events": [
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 51.747765744999924,
+        "gpu_stage_wall_seconds": 5.9856949519962654,
+        "ended_utc": "2026-11-17T15:13:00.561989+00:00",
+        "qualification_identity": "b4fe38e1f756e05e088c18204f5d71add34269704e9c7d2ca02bd232e1bf2bb1"
+      },
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 53.30967890800093,
+        "gpu_stage_wall_seconds": 6.2516356889973395,
+        "ended_utc": "2026-11-17T15:15:17.869228+00:00",
+        "qualification_identity": "7c6bfa6d49d94d73028b1a4f73269893a529502e74c057081d66c13089558a13"
+      },
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 51.82811542000127,
+        "gpu_stage_wall_seconds": 2.0607206900021993,
+        "ended_utc": "2026-11-17T15:17:42.195862+00:00",
+        "qualification_identity": "cce2c2015439cb2f6c33a4a9caa8426200c71c36c70e82831ff3f4d6d5f4aa7b"
+      },
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 49.57196504100284,
+        "gpu_stage_wall_seconds": 1.9540112629983923,
+        "ended_utc": "2026-11-17T15:20:08.743418+00:00",
+        "qualification_identity": "da470c3193d9af17a00b193b46da6d8e69f1e006782dd205800f0adfb26d6688"
+      },
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 53.38049322099687,
+        "gpu_stage_wall_seconds": 5.8396611450007185,
+        "ended_utc": "2026-11-17T15:21:56.253390+00:00",
+        "qualification_identity": "051785ca5b761d0430d045ea152326c256716122e295f12d3176a883d4457f40"
+      },
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 56.9219914360001,
+        "gpu_stage_wall_seconds": 7.73180954700365,
+        "ended_utc": "2026-11-17T15:24:46.393759+00:00",
+        "qualification_identity": "7753748ee5a771dc33ab650c5e8bc4ff847318a12cab73c7c3c356110c534b93"
+      },
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 70.80853967200528,
+        "gpu_stage_wall_seconds": 14.426750752994849,
+        "ended_utc": "2026-11-17T15:28:05.825324+00:00",
+        "qualification_identity": "531482d040e9b09cbb3906469a934af360d843783de0d1c09f69ea4b82ac6957"
+      },
+      {
+        "alias": "base",
+        "variant": "logical1",
+        "status": "PASS",
+        "wall_seconds": 58.58692640099616,
+        "gpu_stage_wall_seconds": 13.834611594000307,
+        "ended_utc": "2026-11-17T15:31:04.264333+00:00",
+        "qualification_identity": "15329eb490948a358eaa98dfee526994b3edfd8980cb35707d8c77a050519b53"
+      },
+      {
+        "alias": "base",
+        "variant": "logical8",
+        "status": "PASS",
+        "wall_seconds": 61.610024724999676,
+        "gpu_stage_wall_seconds": 10.91438042200025,
+        "ended_utc": "2026-11-17T15:32:51.851971+00:00",
+        "qualification_identity": "8d24507aad34e430a797b599541e5b95fb5eed84de3b1114631f5dc628f5c936"
+      },
+      {
+        "alias": "base",
+        "variant": "repeat8",
+        "status": "PASS",
+        "wall_seconds": 55.741647853996255,
+        "gpu_stage_wall_seconds": 10.439845915003389,
+        "ended_utc": "2026-11-17T15:33:50.276605+00:00",
+        "qualification_identity": "468ff00077afb1dcd5e5ed86557e403f3504a3d7546f2ce981c658cae20450e9"
+      },
+      {
+        "alias": "R1",
+        "variant": "logical1",
+        "status": "FAILED",
+        "wall_seconds": 47.194371828998555,
+        "gpu_stage_wall_seconds": 1.9501956640015123,
+        "ended_utc": "2026-11-17T15:35:07.191947+00:00",
+        "qualification_identity": "ff1de7c05349eb3eb34286f4dfcdcd4b3b0636cd9584ef6a082c5fa324ba2f0a"
+      },
+      {
+        "alias": "R1",
+        "variant": "logical8",
+        "status": "FAILED",
+        "wall_seconds": 51.03220234999753,
+        "gpu_stage_wall_seconds": 1.93108959300298,
+        "ended_utc": "2026-11-17T15:36:00.514238+00:00",
+        "qualification_identity": "0c5c4cba19d4f0fe5b2aa211c2ec9c3ac40f1bdd3c3bf0d84d72b20edc9ce4f2"
+      },
+      {
+        "alias": "R1",
+        "variant": "repeat8",
+        "status": "FAILED",
+        "wall_seconds": 51.67930178300594,
+        "gpu_stage_wall_seconds": 2.1911910160051775,
+        "ended_utc": "2026-11-17T15:36:54.427842+00:00",
+        "qualification_identity": "2ba7aa1b8b9e34873271776d792a8e0e317a9ee8c7718c6f88c10392021b8dde"
+      },
+      {
+        "alias": "R1",
+        "variant": "logical1",
+        "status": "PASS",
+        "wall_seconds": 58.6362545019947,
+        "gpu_stage_wall_seconds": 11.315491141998791,
+        "ended_utc": "2026-11-17T15:44:16.778304+00:00",
+        "qualification_identity": "7f76b2c20ad9aa914ab91c66cbf8eea53336944d2a5da8f96a0458e115a535e5"
+      },
+      {
+        "alias": "R1",
+        "variant": "logical8",
+        "status": "PASS",
+        "wall_seconds": 58.28552610800398,
+        "gpu_stage_wall_seconds": 11.755177432001801,
+        "ended_utc": "2026-11-17T15:45:17.324321+00:00",
+        "qualification_identity": "991bc7af815f84fb86b6e4e8130f3db08184e3fd557871a4050dcd81830036b2"
+      },
+      {
+        "alias": "R1",
+        "variant": "repeat8",
+        "status": "PASS",
+        "wall_seconds": 54.96336352299841,
+        "gpu_stage_wall_seconds": 9.877373082003032,
+        "ended_utc": "2026-11-17T15:46:14.468623+00:00",
+        "qualification_identity": "aafd5930cce4d1ef122df3430467b90aa9117c2a6f947f1527239236d8c67228"
+      },
+      {
+        "alias": "R4",
+        "variant": "logical1",
+        "status": "PASS",
+        "wall_seconds": 58.67139161299565,
+        "gpu_stage_wall_seconds": 11.058313952002209,
+        "ended_utc": "2026-11-17T15:47:43.541903+00:00",
+        "qualification_identity": "d5f8e987ceb4a7ae7ecf53fdd4b5e1791a8f16efd2f4f48c88175cc9cc8b5fe0"
+      },
+      {
+        "alias": "R4",
+        "variant": "logical8",
+        "status": "PASS",
+        "wall_seconds": 58.207155301002786,
+        "gpu_stage_wall_seconds": 10.536941129998013,
+        "ended_utc": "2026-11-17T15:48:44.154888+00:00",
+        "qualification_identity": "b8817ef319d24bc94b70270140b032381761ee4602dc8638bce765db16e7009f"
+      },
+      {
+        "alias": "R4",
+        "variant": "repeat8",
+        "status": "PASS",
+        "wall_seconds": 57.38975702300377,
+        "gpu_stage_wall_seconds": 10.553249096003128,
+        "ended_utc": "2026-11-17T15:49:43.797098+00:00",
+        "qualification_identity": "97e8cc74c1852db2629a9ef32d990c54f0ecd4608f4db8fdcc74d790ab9b7b8e"
+      },
+      {
+        "alias": "R6",
+        "variant": "logical1",
+        "status": "PASS",
+        "wall_seconds": 57.39961624800344,
+        "gpu_stage_wall_seconds": 11.609894072003954,
+        "ended_utc": "2026-11-17T15:51:08.972064+00:00",
+        "qualification_identity": "51e6d0c39f895b18c9d42240bcb225c9426710227ede4c664bbfbfabdb0098f1"
+      },
+      {
+        "alias": "R6",
+        "variant": "logical8",
+        "status": "PASS",
+        "wall_seconds": 59.212757047003834,
+        "gpu_stage_wall_seconds": 10.098023708000255,
+        "ended_utc": "2026-11-17T15:52:10.436138+00:00",
+        "qualification_identity": "18327e33bc4f98dc3581141bb5fc4f892bc08d93b5cab5ff8c0865b50e60aa41"
+      },
+      {
+        "alias": "R6",
+        "variant": "repeat8",
+        "status": "PASS",
+        "wall_seconds": 57.95219950700266,
+        "gpu_stage_wall_seconds": 10.718996392999543,
+        "ended_utc": "2026-11-17T15:53:10.619316+00:00",
+        "qualification_identity": "2bda946054b8bdc6990d7fe41d72c60a037183f62fd05206abfc3de8ce74c828"
+      }
+    ],
+    "active_job": null
+  },
+  "elapsed_stage_seconds_at_report": 5053.136155,
+  "owned_artifact_disk_bytes": 51193205760,
+  "provider_persistent_volume_GB": 500,
+  "cost_usd": null,
+  "hourly_rate_usd": null,
+  "rental_start_utc": null,
+  "cost_unknown_reason": "Provider price/rental start not exposed in accepted evidence; no inference or purchase",
+  "GPU_time_is_reporting_only": true,
+  "peak_gpu_allocated_bytes": 3222700032,
+  "peak_gpu_reserved_bytes": 4060086272,
+  "qualification_rows": 144,
+  "qualification_physical_batches": 64,
+  "qualifying_forwards_are_not_scientific_measurements": true,
+  "calibration_limit": "12-row smoke/fillers are preliminary; A05 owns training-only production-representative calibration and coverage forecast"
+}

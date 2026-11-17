@@ -1,0 +1,71 @@
+{
+  "schema": "pod-a-a04-content-identities-v1",
+  "candidates": [
+    {
+      "alias": "base",
+      "candidate_id": "drive-folder:154kF29Cjam2F2rC-ihj6_Oobmm-oNur1",
+      "asset_manifest_sha256": "a6dfc72c7a862d42ecbf5b4d629b1674c5ea4e5c0eb45bfaacb5ba20b832fe72",
+      "asset_completeness": "PASS",
+      "model_tensor_content_sha256": "f801636a12236e5a373cd880fe7c6170abbc47d5e1f065830c597e53bb5fe456",
+      "feature_LM_self_qualification": "PASS",
+      "historical_family_bridge": "PASS",
+      "fixed_base_transfer_runtime_eligibility": "PASS"
+    },
+    {
+      "alias": "R1",
+      "candidate_id": "drive-folder:16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv",
+      "asset_manifest_sha256": "f4a64233e45dbf003244d21d9b808463e5ef4a982073122d0b1cd15aaf51ff22",
+      "asset_completeness": "PASS",
+      "model_tensor_content_sha256": "d17ce6afbdaba64b41152700c95defb483f68953dcc6d60323e71b73c69a9d52",
+      "feature_LM_self_qualification": "PASS",
+      "historical_family_bridge": "PASS",
+      "fixed_base_transfer_runtime_eligibility": "PASS"
+    },
+    {
+      "alias": "R3",
+      "candidate_id": "drive-folder:13EXn9LuTTmqHuYjdIoWQ36Ig27MZ51sI",
+      "asset_manifest_sha256": "7ece3266deac36b414269bac05088b5388cde7218e0732871ab6ebbc312ed6ed",
+      "asset_completeness": "BLOCKED",
+      "model_tensor_content_sha256": null,
+      "feature_LM_self_qualification": "BLOCKED",
+      "historical_family_bridge": "BLOCKED",
+      "fixed_base_transfer_runtime_eligibility": "BLOCKED"
+    },
+    {
+      "alias": "R4",
+      "candidate_id": "drive-folder:1K19CrsvXAk6mIwB1m3xe1epomEHRtEUE",
+      "asset_manifest_sha256": "62b6ba528e8112029ede65064dc18a2c7efb2f9e186c6de20c2399aa4e5af196",
+      "asset_completeness": "PASS",
+      "model_tensor_content_sha256": "35f9135d1ec2828dda03be33c2b7922a075b3bab93f9e25a44b8b6892ddfbd66",
+      "feature_LM_self_qualification": "PASS",
+      "historical_family_bridge": "NOT_APPLICABLE",
+      "fixed_base_transfer_runtime_eligibility": "PASS"
+    },
+    {
+      "alias": "R5",
+      "candidate_id": "drive-folder:1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+      "asset_manifest_sha256": "9d49bb869f8d3759f36cb504388eee2fc0d472c974ca2eb03bd6d14f06bd9221",
+      "asset_completeness": "BLOCKED",
+      "model_tensor_content_sha256": null,
+      "feature_LM_self_qualification": "BLOCKED",
+      "historical_family_bridge": "NOT_APPLICABLE",
+      "fixed_base_transfer_runtime_eligibility": "BLOCKED"
+    },
+    {
+      "alias": "R6",
+      "candidate_id": "drive-folder:1x1ugJ0Cd-ODGVWMHClxJojRZKBQXRf-V",
+      "asset_manifest_sha256": "58411b0144371d52c1ba9fac10edf5ccee41d50dc48d3347b1bc774b8b1621ea",
+      "asset_completeness": "PASS",
+      "model_tensor_content_sha256": "6d5aa972c5bd761be97994b6bfc60683ae742728a0b10d264260df9c78023ac8",
+      "feature_LM_self_qualification": "PASS",
+      "historical_family_bridge": "NOT_APPLICABLE",
+      "fixed_base_transfer_runtime_eligibility": "PASS"
+    }
+  ],
+  "exact_model_tensor_duplicates": [],
+  "duplicate_definition": "Sorted model tensor key+shape+dtype+rawbytes, independent of optimizer/archive format. Config/tokenizer/index remain separate identity components.",
+  "unavailable_content_digest": [
+    "R3",
+    "R5"
+  ]
+}
