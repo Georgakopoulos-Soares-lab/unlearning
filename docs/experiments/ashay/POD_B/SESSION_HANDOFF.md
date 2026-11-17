@@ -1,3 +1,11 @@
+# Current session: B03 complete; B04 not authorized
+
+Read [B03_HANDOFF.md](B03_HANDOFF.md), [RECOVERY_MANIFEST.json](RECOVERY_MANIFEST.json) and [COHORT_RECEIPT.json](COHORT_RECEIPT.json). B03 qualified frozen-data/historical reuse scope only. All36 adapter reconstructions remain blocked; new scores/fits/inference are zero. Only POD_B is writable. No stage queue remains. Original17:33:21UTC scientific cutoff/20:33:21UTC closure remain unchanged. Private artifacts: `/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z`. B04 requires new explicit approval; its prompt has not been read.
+
+Earlier handoffs follow verbatim as historical stage-boundary records, not current authorization.
+
+---
+
 # Current session: B02 complete; B03 not authorized
 
 Read [B02_HANDOFF.md](B02_HANDOFF.md) and [INVENTORY_RECEIPT.json](INVENTORY_RECEIPT.json) for the current state. Artifact root: `/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z`. Only POD_B is writable. All36 reconstructions remain blocked; no numerical science ran in B02. The original17:33:21UTC scientific cutoff and20:33:21UTC closure deadline remain unchanged. No stage-owned queue is active. Next stage requires Ashay's direct approval.

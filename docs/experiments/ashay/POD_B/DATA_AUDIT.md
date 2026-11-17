@@ -1,0 +1,34 @@
+# B03 frozen data and historical reuse
+
+The six-task frozen population is usable unchanged: **22,645 rows**, with exact expected manifest hashes, labels, ordering, groups and splits. B03 opened no new test members, ran no model inference, fitted no probe and produced no new scientific score. H3's1,497 test members are the exact previously analyzed population and remain exploratory. Their prior use is bound to hashed completion/prediction receipts and the same manifest; B03 independently checked saved prediction IDs/labels/groups. All other tasks use only frozen train and official dev.
+
+| Task / role | Train | Dev | Previously analyzed test | Numeric labels |
+| --- | ---: | ---: | ---: | --- |
+| emp_H3 / original H3 task | 11,971 | 1,497 | 1,497 | 0,1 |
+| gue_prom_300_all / broader promoter task | 1,024 | 512 | — | 0,1 |
+| gue_prom_core_all / core promoter | 1,024 | 512 | — | 0,1 |
+| gue_splice_reconstructed / splice classification | 1,024 | 512 | — | 0,1,2 |
+| gue_tf_0 / human TF0 binding task | 1,024 | 512 | — | 0,1 |
+| gue_mouse_0 / mouse TF0 binding task | 1,024 | 512 | — | 0,1 |
+
+`COHORT_RECEIPT.json` contains exact class counts and ordered membership identities. H3 manifest SHA256 is `de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938`; other-five SHA256 is `a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126`. Both match recovered control/R3/qualification copies byte for byte. No cohort was regenerated, resampled, relabeled or reserialized.
+
+The historical canonical group is **SHA256 of the lexicographically smaller sequence and reverse complement**, using the existing uppercaseACGTN representation and A↔T/C↔G/N↔N complement. It is not the minimum of the two sequence digests. The earlier incorrect checker failed before issuing a successful receipt; its log remains historical evidence, not the active definition. B03 independently checked the corrected definition against every frozen row.
+
+There is **zero within-task cross-split exact/RC overlap** and no conflicting-label group. Splice has1,536 rows in1,535 groups. Its preserved two-row dev group `0500b7c28fa4fd9a950cf12de9a6360e89297af42e4ef7cee839bf923de4f8b3` contains IDs `gue_splice_reconstructed:dev.csv:74` and `gue_splice_reconstructed:dev.csv:269`, both label0. It was not deduplicated or reweighted. Source-locus/genome/homology groups remain unavailable. Exact/RC separation does not establish homology independence or absence of pretraining/retain/relearning contamination. No pooled cross-task or homology analysis was introduced.
+
+All **18 saved task/seed fold sets** exist and agree across base/H3, controls and R3. H3 uses3 folds; each other task uses5, totaling84 partitions. Every validation partition is disjoint from its fold's training members and groups, has class coverage, and partitions the authorized training cohort exactly once. No fold reconstruction was needed. Seeds42/17/1234 identify training partitions, not independent intervention replications.
+
+The readout contract is preserved: fold-local StandardScaler, balanced L2 logistic/LBFGS, C0.1/1/10 with smaller-C ties, final all-training refit, tol1e-4, retry2,000→10,000 iterations, optimizer seed42. Numeric class1 remains the binary positive convention; splice uses sorted0/1/2 and macro-OVR AUROC/AP. Exact integer-to-biological-label mappings and named human/mouse TF aliases remain unresolved. No biological identity is inferred from dataset sizes or outcomes. AUROC is the requested primary classification measure; B05 must freeze its comparison/statistical plan before new outcomes. Classification cross-entropy and LM-head next-token loss remain separate channels.
+
+Available historical artifacts cover **three reference models**, each with six tasks, all26 representations and three CV seeds: **1,404 model/task/layer/seed fitted-head entries**. The R3 archive contains468 byte-identical reuse copies of base heads, giving1,872 stored model-head entries plus36 sequence-control entries. B03 checked1,908 stored head/scaler entries (477 unique file hashes), their dimensions/classes/parameters and recorded final convergence. These counts are artifact/fit scopes, not distinct learned functions or independent experiments. No saved head was refitted, and no prediction was reconstructed in B03.
+
+Six feature cache units contain67,935 historical example-model rows in8,493 chunks. B03 checked every chunk's ID/label/group/task/split/length/valid-target vector and the first/last chunk headers for all26 representations. Large feature/loss values were not inspected or freshly hashed; their integrity reuses the historically verified payload plus current receipt/path/size linkage. Small critical artifact hashes totaled320,556,315bytes in the main artifact auditor. Prediction integrity/membership/header checks covered1,134 bundles and3,318 policy-channel views; no probabilities or held-out metrics were recomputed.
+
+The **36 completed controls** are six tasks × three seeds × composition/normalized forward4-mer readouts, with widths4 and256. Their saved feature/population/fold/head identities remain intact. They are sequence-level controls, not independently fitted layer-specific controls. Fixed-base transfer must preserve both the original scaler and head; a similarly named H3/R3 head cannot replace them. A changed biological feature vector is expected in transfer; coordinate/extraction incompatibility is the concern, not unequal feature values.
+
+Existing LM references cover39 model/task/split views across the three historical models. Stored keys are per-sequence `nll_sum`float32 and `n_tokens`int64, with count=length−1 for these recorded routes. Tokens are shifted by one; right-pad positions and filler rows are excluded. B03 checked identity/count vectors and schemas, not loss values or aggregate metrics. Future corpus NLL is sum(loss sums)/sum(valid targets), with PPL=exp(corpus NLL); neither per-sequence PPL averages nor classifier outputs substitute for it.
+
+The historical base tokenizer has256 entries (SHA256 `4783313f9804f545bf8515653cf91549b5f1a507fe5703c7d7279921dd9ec8fb`); H3/R3 use512 (`d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803`). Recorded DNA IDs/pad behavior agree for the relevant route. Matching tokenizer hashes is not required across these distinct historical models. New adapter tokenization/output-head behavior remains a B04 question.
+
+All36 supplied relearning reconstructions remain unqualified and their score coverage remains **0/16,848**. Historical feature arrays cannot be relabeled as supplied-adapter features. B02's runtime/parent questions Q1/Q2 persist; missing true starts/exposure Q3/Q4 limit their own comparison families. The MaxEnt1600→1700 continuation remains unproven. `REUSE_MATRIX.csv` and `RECOVERY_MANIFEST.json` make historical uses and future adapter conditions independent.

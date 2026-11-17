@@ -1,0 +1,4689 @@
+{
+  "schema_version": "POD_B.recovery-manifest.v1",
+  "stage": "B03",
+  "status": "COMPLETE_FROZEN_DATA_RECOVERY_AND_SCOPED_REUSE",
+  "created_utc": "2026-11-17T09:26:58.327098+00:00",
+  "approval": {
+    "stage": "B03",
+    "attempt": 1,
+    "prompt_repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "ref": "POD_B",
+    "commit": "382b2aaa22191e15a8e0db543a66ed25d69297df",
+    "files": [
+      {
+        "path": "POD_B_MASTER.md",
+        "bytes": 10648,
+        "sha256": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512"
+      },
+      {
+        "path": "POD_B_03_RECOVERY.md",
+        "bytes": 36985,
+        "sha256": "0e5b94c67a44461725d8722166e9f15106ee37753d1edea38e41ab58ce188534"
+      },
+      {
+        "path": "override_pod_b_.txt",
+        "bytes": 1376,
+        "sha256": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
+      }
+    ],
+    "approval_verbatim": "https://github.com/ashay-sriv-06/test-prompts-push/blob/POD_B/POD_B_03_RECOVERY.md pull this and 👍 B03. Execute the updated POD_B_03_RECOVERY.md from the\nlatest fetched POD_B prompt commit, pinned with its master.\n\nComplete its recovery, frozen-data and artifact-reuse scope.\nOnly research POD_B is writable. Preserve all existing work.\n\nNo model inference, new probe fits or automatic advancement.\nReport the evidence, remaining blockers and handoff, then stop\nfor my review before B04.",
+    "approval_observed_utc": "2026-11-17T09:07:12.343505+00:00",
+    "user_message_timestamp_exposed": false,
+    "master_and_override_unchanged": true,
+    "research_head_at_entry": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211"
+  },
+  "research_context": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "worktree": "/workspace/wt-POD_B",
+    "branch": "POD_B",
+    "head_at_entry": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211",
+    "implementation_baseline": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+    "prior_scientific_evidence": "cf7b861619d05b8916690471fcd9469ab9d80f75"
+  },
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z",
+  "evidence_map": [
+    {
+      "id": "D1",
+      "type": "fresh_hash_content_and_group_check",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/COHORT_AUDIT_RAW.json",
+        "sha256": "847780e6e373e4aa9cd5884149bc0f8b52c88ada5f2a0562c9fe84b1a2af2c38"
+      },
+      "claim": "22645 exact frozen rows, labels/classes/groups/splits, known duplicate preserved; no cross-split exact/RC overlap.",
+      "limits": "Same authorized manifest membership only; no new test members or biological-label inference; no homology or contamination proof.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D2",
+      "type": "fresh_saved_fold_check",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/COHORT_AUDIT_RAW.json",
+        "sha256": "847780e6e373e4aa9cd5884149bc0f8b52c88ada5f2a0562c9fe84b1a2af2c38"
+      },
+      "claim": "18 saved task/seed fold sets,84 partitions; train-only/disjoint/group-separated/class-covered; identical assignments in all3 roots.",
+      "limits": "No folds reconstructed; these seeds partition existing training examples, not independent intervention replications.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D3",
+      "type": "historical_verified_plus_fresh_linkage",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ARTIFACT_AUDIT_RAW.json",
+        "sha256": "876279c17c937b313ef2e2b647687500db6256725322987ee0b37252b1c2fd26"
+      },
+      "claim": "All five restored payload path sets match their CHECKSUMS manifests; historical verified counts14550/446/8199/86/929.",
+      "limits": "No full archive transfer/rehash/restore or remote-access revalidation; current large feature values and weights not freshly hashed.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D4",
+      "type": "fresh_metadata_identity_vectors_and_boundary_headers",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ARTIFACT_AUDIT_RAW.json",
+        "sha256": "876279c17c937b313ef2e2b647687500db6256725322987ee0b37252b1c2fd26"
+      },
+      "claim": "6 historical feature units,8493 chunks; every ID/label/group/task/split/length/valid-target-count vector checked; boundary headers cover all26 coordinates.",
+      "limits": "Feature/loss values not inspected/recomputed; whole feature bytes inherit historical checksum qualification plus current size/receipt linkage.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D5",
+      "type": "fresh_saved_parameter_and_prediction_membership_check",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ARTIFACT_AUDIT_RAW.json",
+        "sha256": "876279c17c937b313ef2e2b647687500db6256725322987ee0b37252b1c2fd26"
+      },
+      "claim": "1908 stored head entries; parameters/scalers/classes/convergence metadata verified after hash checks;1134 prediction bundles hash/membership/header checked.",
+      "limits": "No new predictions, fits, metrics or all-head numerical reconstruction. Base468 copies insideR3 are not extra fits;477 unique head hashes cover1908 stored entries.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D6",
+      "type": "fresh_control_artifact_identity_and_schema",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ARTIFACT_AUDIT_RAW.json",
+        "sha256": "876279c17c937b313ef2e2b647687500db6256725322987ee0b37252b1c2fd26"
+      },
+      "claim": "36 historical composition/forward-normalized4mer fits, six tasks x three seeds x two readouts; widths4/256.",
+      "limits": "No refitting or layer-specific cloned controls. Later display reuse of a control is not a new independent measurement.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D7",
+      "type": "fresh_anchor_hash_and_pairing_schema_check_with_historical_numerics",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ANCHOR_PAIRING_AUDIT_RAW.json",
+        "sha256": "5dbeca7d6f3980f501d6722a042050bf66b893c036200dd5085797238d13fc9b"
+      },
+      "claim": "7 exact resampling populations match across3 roots;122 saved anchor files match qualification backup members;12/384 rows are exact training members; parent162/28 checks and2 training-head diagnostics reused.",
+      "limits": "No new model forwards, probability reconstruction, metric/bootstrap analysis or adapter qualification. The small training diagnostics are not an all-head audit.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D8",
+      "type": "fresh_source_hash_and_environment_metadata",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/SOURCE_RUNTIME_AUDIT.json",
+        "sha256": "ca4fbb33583bffa06cb9e4bb8f93cbcd428e19b8dea2e57fb97eb81c258f277e"
+      },
+      "claim": "11 baseline evaluator/auditor sources unchanged;27 archived critical sources hashed; all4 historical fitter identities resolve to exact archived source; native Git tracked trees clean at recorded commits.",
+      "limits": "Package versions/clean source identities are not a fresh numerical qualification. Candidate adapter source was not imported/installed.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D9",
+      "type": "historical_immutable_receipts_with_fresh_small_hashes",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/EVIDENCE_INDEX.json",
+        "sha256": "14fe506a6dad619e97f1fa406c57a85a5ec77291ddbdc4ede6051e4e758e4603"
+      },
+      "claim": "Pinned recovery/source/cohort/protocol/backup receipts establish immutable remote dependencies and scope.",
+      "limits": "Historical receipts do not back up new B01/B02/B03 private raw artifacts or installed environments.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    },
+    {
+      "id": "D10",
+      "type": "B02_inherited_unqualified_identity",
+      "source": {
+        "commit": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211",
+        "path": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json",
+        "sha256": "1f3f8138796070d82d64351e82b90bd0f53449b3c46ad8f8040d73c8f00c7c0c"
+      },
+      "claim": "36 adapters still parent/runtime unqualified; three config families and3 job segments;1600->1700 resume edge unproven; Q1-Q4 remain separate.",
+      "limits": "Data reuse does not bind historical base/H3/R3 to the relearning trajectories. R0/R2 mean loader routes, not retain stages.",
+      "inspected_utc": "2026-11-17T09:26:58.327098+00:00"
+    }
+  ],
+  "evidence_levels": {
+    "1": "fresh scoped content/hash/schema verification",
+    "2": "historical verified payload plus current receipt/path/size and identified metadata checks",
+    "3": "presence/header only, integrity conditional",
+    "4": "missing, incompatible or unresolved"
+  },
+  "roots": [
+    {
+      "logical_root": "base_h3",
+      "current_read_only_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z",
+      "portable_path": "${RECOVERY_ROOT}/base_h3",
+      "historical_original_root": "/workspace/meeting-artifacts/multiretain-layers-v1",
+      "immutable_remote": {
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "repository_type": "dataset",
+        "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+        "archive_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+        "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+        "bytes": 10108100047,
+        "payload_root": "multiretain-layers-v1-final-20261110T140836Z"
+      },
+      "status": "PRESENT_HISTORICALLY_VERIFIED_PLUS_B03_SCOPED_CHECKS",
+      "historical_payload_files": 14550,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D9"
+      ],
+      "included": "historical non-weight evidence/cache/source according to receipt",
+      "excludes": "model weights and installed runtime"
+    },
+    {
+      "logical_root": "controls",
+      "current_read_only_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1",
+      "portable_path": "${RECOVERY_ROOT}/controls",
+      "historical_original_root": "/workspace/meeting-artifacts/benign-followup-v1",
+      "immutable_remote": {
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "repository_type": "dataset",
+        "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+        "archive_path": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+        "sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+        "bytes": 47129813,
+        "payload_root": "benign-followup-v1"
+      },
+      "status": "PRESENT_HISTORICALLY_VERIFIED_PLUS_B03_SCOPED_CHECKS",
+      "historical_payload_files": 446,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D9"
+      ],
+      "included": "historical non-weight evidence/cache/source according to receipt",
+      "excludes": "model weights and installed runtime"
+    },
+    {
+      "logical_root": "R3",
+      "current_read_only_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z",
+      "portable_path": "${RECOVERY_ROOT}/R3",
+      "historical_original_root": null,
+      "immutable_remote": {
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "repository_type": "dataset",
+        "revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+        "archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+        "sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+        "bytes": 4412868094,
+        "payload_root": "multiretain-comparison-v1-final-20261110T173945Z"
+      },
+      "status": "PRESENT_HISTORICALLY_VERIFIED_PLUS_B03_SCOPED_CHECKS",
+      "historical_payload_files": 8199,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D9"
+      ],
+      "included": "historical non-weight evidence/cache/source according to receipt",
+      "excludes": "model weights and installed runtime"
+    },
+    {
+      "logical_root": "preservation",
+      "current_read_only_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/preservation/safe-restored/preservation-supplement-v1-final-20261110T211124Z",
+      "portable_path": "${RECOVERY_ROOT}/preservation",
+      "historical_original_root": null,
+      "immutable_remote": {
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "repository_type": "dataset",
+        "revision": "8694a540b5fc987b443ee488b085f753c5c4eb01",
+        "archive_path": "preservation-supplement-v1/20261110T211124Z/preservation-supplement-v1-final-20261110T211124Z.tar.gz",
+        "sha256": "41b492ed74059861b8ddab7d0075cb5a3709cebb22bc36941351500676b908eb",
+        "bytes": 14262042,
+        "payload_root": "preservation-supplement-v1-final-20261110T211124Z"
+      },
+      "status": "PRESENT_HISTORICALLY_VERIFIED_PLUS_B03_SCOPED_CHECKS",
+      "historical_payload_files": 86,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D9"
+      ],
+      "included": "historical non-weight evidence/cache/source according to receipt",
+      "excludes": "model weights and installed runtime"
+    },
+    {
+      "logical_root": "qualification",
+      "current_read_only_path": "/workspace/meeting-artifacts/relearning-benign-v1/fresh-recovery/20261117T070817Z/extracted/relearning-benign-v1-qualification-20261117T070817Z",
+      "portable_path": "${RECOVERY_ROOT}/qualification",
+      "historical_original_root": null,
+      "immutable_remote": {
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "repository_type": "dataset",
+        "revision": "32206eeed1dd9024fc92ecd898be39094840de94",
+        "archive_path": "two-pod-20261116/pod-b/20261117T063321Z/relearning-benign-v1-qualification-20261117T070817Z.tar.gz",
+        "sha256": "bf56f316d3587ce979b797312d2896d4fe942709666aea04d77518e90adbb1dc",
+        "bytes": 5593985967,
+        "payload_root": "relearning-benign-v1-qualification-20261117T070817Z"
+      },
+      "status": "PRESENT_HISTORICALLY_VERIFIED_PLUS_B03_SCOPED_CHECKS",
+      "historical_payload_files": 929,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D9"
+      ],
+      "included": "historical scientific/source metadata; qualification additionally includes36 adapters",
+      "excludes": "parent weights and installed runtime; historical full caches are separate dependencies"
+    },
+    {
+      "logical_root": "preparation",
+      "current_read_only_path": null,
+      "portable_path": "${RECOVERY_ROOT}/preparation",
+      "historical_original_root": null,
+      "immutable_remote": {
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "repository_type": "dataset",
+        "revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+        "archive_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+        "sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+        "bytes": 6963484,
+        "payload_root": "incremental-retain-eval-v1-final-20261110T190751Z"
+      },
+      "status": "REMOTE_ONLY_NOT_REQUIRED_FOR_CURRENT_INPUTS",
+      "historical_payload_files": 131,
+      "evidence_level": 4,
+      "evidence_ids": [
+        "D3",
+        "D9"
+      ],
+      "included": "historical non-weight evidence/cache/source according to receipt",
+      "excludes": "model weights and installed runtime"
+    }
+  ],
+  "root_checks": [
+    {
+      "root": "base_h3",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z",
+      "checksum_manifest_sha256": "b381c43485b40f0e58dec74d74d2faf579cdfbc553ae85608fff20d54598d813",
+      "expected_payload_files": 14550,
+      "all_expected_paths_present": true,
+      "file_count_including_checksum_manifest": 14551,
+      "evidence_level": "historically verified payloads + B03 path/manifest linkage; no full payload rehash"
+    },
+    {
+      "root": "controls",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1",
+      "checksum_manifest_sha256": "237a1ca1e275830c0f73956792a6ff3c3dea91c06caf936b2a8674ab0c08d97a",
+      "expected_payload_files": 446,
+      "all_expected_paths_present": true,
+      "file_count_including_checksum_manifest": 447,
+      "evidence_level": "historically verified payloads + B03 path/manifest linkage; no full payload rehash"
+    },
+    {
+      "root": "R3",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z",
+      "checksum_manifest_sha256": "4bb31aa3e98018db0dc4deea2fb64f102824985594948ba97aa5f7e009a47359",
+      "expected_payload_files": 8199,
+      "all_expected_paths_present": true,
+      "file_count_including_checksum_manifest": 8200,
+      "evidence_level": "historically verified payloads + B03 path/manifest linkage; no full payload rehash"
+    },
+    {
+      "root": "preservation",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/preservation/safe-restored/preservation-supplement-v1-final-20261110T211124Z",
+      "checksum_manifest_sha256": "2b120a4b2e7542ca9f318a2f908cac1d1c987fdd441b47c48ab87bd9c454b0c9",
+      "expected_payload_files": 86,
+      "all_expected_paths_present": true,
+      "file_count_including_checksum_manifest": 87,
+      "evidence_level": "historically verified payloads + B03 path/manifest linkage; no full payload rehash"
+    },
+    {
+      "root": "qualification",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/fresh-recovery/20261117T070817Z/extracted/relearning-benign-v1-qualification-20261117T070817Z",
+      "checksum_manifest_sha256": "7e0f9afe55728f36b0ac3ce54c921b0d35f3411637eb0c431a02ed1ff991a311",
+      "expected_payload_files": 929,
+      "all_expected_paths_present": true,
+      "file_count_including_checksum_manifest": 930,
+      "evidence_level": "historically verified payloads + B03 path/manifest linkage; no full payload rehash"
+    }
+  ],
+  "selective_recoveries": [],
+  "downloads_bytes": 0,
+  "new_archive_restorations": 0,
+  "recovery_decision": "All currently required non-weight dependencies are present and pass scoped checks; no transfer or restore justified. Remote-only preparation is optional, not a missing evaluation input.",
+  "reference_profiles": {
+    "base_h3/H3/base": {
+      "id": "base_h3/H3/base",
+      "current_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/H3/base",
+      "root": "base_h3",
+      "relative_path": "features/H3/base",
+      "source_model_identity": {
+        "runtime": {
+          "torch": "2.8.0+cu128",
+          "transformer-engine": "2.3.0",
+          "transformer-engine-torch": "2.3.0",
+          "bionemo-evo2": "2.4",
+          "megatron-bridge": "0.3.0rc0",
+          "megatron-core": "0.16.0rc0",
+          "tokenizers": "0.22.1",
+          "causal-conv1d": "1.5.4",
+          "source_commits": {
+            "/workspace/bionemo-cu12": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+            "/workspace/megatron-bridge": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+            "/workspace/megatron-bridge/3rdparty/Megatron-LM": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13"
+          }
+        },
+        "checkpoint_shards": [
+          {
+            "name": "__0_0.distcp",
+            "bytes": 39323177,
+            "sha256": "6cee45d8d01c33d2ed4d3c4ce97b66ff20e4bd92e12376a1c3f9186562bee923"
+          },
+          {
+            "name": "__0_1.distcp",
+            "bytes": 39323177,
+            "sha256": "3d6ce2b3f60cf09b1808743c1637b2ff213ae177e55f1c640d5c9adab5e12ff8"
+          },
+          {
+            "name": "__0_10.distcp",
+            "bytes": 39323177,
+            "sha256": "aaae31bd1f05d2ca7459b110c1f98325da9b0d3b53200260d5baddbb6dddcc44"
+          },
+          {
+            "name": "__0_100.distcp",
+            "bytes": 1967657,
+            "sha256": "704921d907d06d878a18de7c2e4f10146fc8a87669a1367fc970ae7d44a643c7"
+          },
+          {
+            "name": "__0_101.distcp",
+            "bytes": 191570,
+            "sha256": "631c6fa7bf90ebd306d98e15a26c67ca2baabf845a049619dcf219c9059d52b4"
+          },
+          {
+            "name": "__0_102.distcp",
+            "bytes": 191570,
+            "sha256": "3036e6468396a312d05c8f1b7851a62e91aaa55a94d57a235615de8f29f4ca84"
+          },
+          {
+            "name": "__0_103.distcp",
+            "bytes": 176845,
+            "sha256": "52becf4bf0b91a6c5f3d2991c476d4c7b80a7e500bda1faa42d0326dc0559d27"
+          },
+          {
+            "name": "__0_104.distcp",
+            "bytes": 176845,
+            "sha256": "5d8757bbba3955088f0bf2de6ae0cba994bd6f151f36316a203d460657c30b76"
+          },
+          {
+            "name": "__0_105.distcp",
+            "bytes": 176845,
+            "sha256": "06c20a163a9d00d0525a4e6ff1c2e129316ceba85c996146906f09d7a24a3a62"
+          },
+          {
+            "name": "__0_106.distcp",
+            "bytes": 176845,
+            "sha256": "eb76ba1633619757faae3c8dc2cb76d04210f9093d6675407316657d0b624ceb"
+          },
+          {
+            "name": "__0_107.distcp",
+            "bytes": 176845,
+            "sha256": "2a17774b0d0ba87e82a4d95539044a942983313c405d83fa932e6254653a35a4"
+          },
+          {
+            "name": "__0_108.distcp",
+            "bytes": 176845,
+            "sha256": "3b8f8e83ac7e52a101da9f4ff61cbbd0074d68a5bbcaf99cbf092040d5bf65b2"
+          },
+          {
+            "name": "__0_109.distcp",
+            "bytes": 176845,
+            "sha256": "36f4f7c5a37b94363f12b1174a232b4566ae1e46c6ddcfb1ffbf97198a516705"
+          },
+          {
+            "name": "__0_11.distcp",
+            "bytes": 39323177,
+            "sha256": "f38bd02a0e195df909608af9fffccfc0dd2d9f92689a4985438da59d9f1e42c1"
+          },
+          {
+            "name": "__0_110.distcp",
+            "bytes": 176845,
+            "sha256": "9d94b520e69a70cfd0382ac0e4052aff2bc0adedaefffd76eaec6b60ea6d99aa"
+          },
+          {
+            "name": "__0_111.distcp",
+            "bytes": 176845,
+            "sha256": "4f8a2e5c88335f1217e897e83b201aa4fc58aa954313cb8d169fcf0b063a0fd2"
+          },
+          {
+            "name": "__0_112.distcp",
+            "bytes": 176845,
+            "sha256": "6c0cfb91eca511d64f5628580a3cf8043108651093ec1eedc06325eb451395db"
+          },
+          {
+            "name": "__0_113.distcp",
+            "bytes": 176845,
+            "sha256": "92ced6ec42a7a36e1c1ef72156306867d0a1dc3cebbd42d118d52db708b042b7"
+          },
+          {
+            "name": "__0_114.distcp",
+            "bytes": 176845,
+            "sha256": "2d565eee98c7e774f6c92cb473c475f795dc2d90c435ae4721a5ace01ca27868"
+          },
+          {
+            "name": "__0_115.distcp",
+            "bytes": 176845,
+            "sha256": "d9ff3a06e39e589c3d6a878fbd4eda0de014b3da9478f51524ece1a445738a3e"
+          },
+          {
+            "name": "__0_116.distcp",
+            "bytes": 176845,
+            "sha256": "01011eba6d278b1faab6b9543207cc7aff9f36b92919f9f58740c4895a8a525e"
+          },
+          {
+            "name": "__0_117.distcp",
+            "bytes": 176845,
+            "sha256": "376afa6fe29dd4df2fef2f862e81968e184bf6ff90185ad945f073e3260a80b6"
+          },
+          {
+            "name": "__0_118.distcp",
+            "bytes": 176845,
+            "sha256": "2e382b8208f16d5754661ac4034f9efad23e8dcedeee7692b5df7d2d7397ff11"
+          },
+          {
+            "name": "__0_119.distcp",
+            "bytes": 174797,
+            "sha256": "e0ead94c0a6cc9a44df0a685325462180788ea707e45e91952556a250baf4938"
+          },
+          {
+            "name": "__0_12.distcp",
+            "bytes": 39323177,
+            "sha256": "84c50d299b1021c75e5bd51926f9058fb9de05eadcbc91fac473d92c4b15eb53"
+          },
+          {
+            "name": "__0_120.distcp",
+            "bytes": 174797,
+            "sha256": "1a711c0b7b036f6560a44b892a0767327cf025a3e6ea051f9fd107c5fa05952e"
+          },
+          {
+            "name": "__0_121.distcp",
+            "bytes": 174797,
+            "sha256": "ba2442bcb0333286c8a58cdeb1cbab0c3e7f892845766725f904ddb505e6e865"
+          },
+          {
+            "name": "__0_122.distcp",
+            "bytes": 173732,
+            "sha256": "ed94b78383b567c83ad295def57739fb2df6dba4d2f6287225f83ec10b2d8a1d"
+          },
+          {
+            "name": "__0_123.distcp",
+            "bytes": 173732,
+            "sha256": "37d7d597be81308e000ddd06f0c20d2d7b6290e6588ab73e6ac9af1c2ff2b084"
+          },
+          {
+            "name": "__0_124.distcp",
+            "bytes": 186348,
+            "sha256": "4436ca92c8efbc8907f674a0c48e3e728935016627a074bbae8def8c67b5e627"
+          },
+          {
+            "name": "__0_125.distcp",
+            "bytes": 186348,
+            "sha256": "921eeeaf4338db91c7dffbc2fbc6e7e80c63e50748a74f5a6b58709cb2d1f6a6"
+          },
+          {
+            "name": "__0_126.distcp",
+            "bytes": 182979,
+            "sha256": "b498b382e1e57c14ff8ae991d294eb92cacbeccd5647155ce591657d98eb755e"
+          },
+          {
+            "name": "__0_127.distcp",
+            "bytes": 182979,
+            "sha256": "02c172a0ff6bbd0bb16bffa42f1fc28ed9714fbad95076b5b2ae5890500b8932"
+          },
+          {
+            "name": "__0_13.distcp",
+            "bytes": 39323177,
+            "sha256": "6e44ed2a767faa11ae31d9e369275161be17e2cd7a9c32c555a40f8badfda70b"
+          },
+          {
+            "name": "__0_14.distcp",
+            "bytes": 39323177,
+            "sha256": "33300f81fe14e9058fba86f689f83952ce8b5282fc003fc1a47484588296c55b"
+          },
+          {
+            "name": "__0_15.distcp",
+            "bytes": 39323177,
+            "sha256": "eb3a5731837e7b7aee50a46af24c75419ceaf3836fa0b3b8828000d1753a2e2f"
+          },
+          {
+            "name": "__0_16.distcp",
+            "bytes": 39323177,
+            "sha256": "580ea2c3fb767804a526672a6c012d7ecdf30b0e7b9fd5ea509c0500fff88c8e"
+          },
+          {
+            "name": "__0_17.distcp",
+            "bytes": 39323177,
+            "sha256": "425a0b1c1802f56df809385b683a421ef297cfcb6c6c259c2ec777ad823d26ea"
+          },
+          {
+            "name": "__0_18.distcp",
+            "bytes": 39323177,
+            "sha256": "93e89788974d53553c14d191fcce9be364646c4753868b83e75270589f8b7027"
+          },
+          {
+            "name": "__0_19.distcp",
+            "bytes": 39323177,
+            "sha256": "2781b96b8e9856861c357b8fb6073e8850b8f69b7fbf4975854aec94a41ac571"
+          },
+          {
+            "name": "__0_2.distcp",
+            "bytes": 39323177,
+            "sha256": "944a82e0d4502f9b0a5c9b8657c36279215667cefd2f572902aab1f50e9bfe97"
+          },
+          {
+            "name": "__0_20.distcp",
+            "bytes": 39323177,
+            "sha256": "20213b2730da8339ee541f22e23da4bcdb93312086c82ff728cd5eaa112b48a3"
+          },
+          {
+            "name": "__0_21.distcp",
+            "bytes": 39323177,
+            "sha256": "b458322f0d9c9fc4e4713ea9dc83070d5920ecc6d350e9e6f4ff0e0f43e1b6f8"
+          },
+          {
+            "name": "__0_22.distcp",
+            "bytes": 39323177,
+            "sha256": "80901cfa920b35732ef211678d68bea2c23580573b584784c26e7f600e51e0b6"
+          },
+          {
+            "name": "__0_23.distcp",
+            "bytes": 39323177,
+            "sha256": "71ae89f0ad54b37d2cfcd80d815a85ea1bcd485e6407d5c4534cdab53d91a100"
+          },
+          {
+            "name": "__0_24.distcp",
+            "bytes": 39323177,
+            "sha256": "1f21d2e16ccf8e7734e2c19d520289749967a557e96806de9a6b849859ffe69c"
+          },
+          {
+            "name": "__0_25.distcp",
+            "bytes": 22119977,
+            "sha256": "7b2198fcc4db21f677dc7c13d22ffe60b5d81ec8a3de86604ae9c9d4df5e0185"
+          },
+          {
+            "name": "__0_26.distcp",
+            "bytes": 22119977,
+            "sha256": "71b743fc2eefb3478951db0e640c2782a770e26943e4c1aab8e78134bbf033b1"
+          },
+          {
+            "name": "__0_27.distcp",
+            "bytes": 22119977,
+            "sha256": "a8236fa041ee75bd6483cf6d5d17014d693e6934d0a1994f90d3aefe5573c288"
+          },
+          {
+            "name": "__0_28.distcp",
+            "bytes": 22119977,
+            "sha256": "026e3389685b9f50d212b46e04705d7d08d0a48b732897bdedbf41f6259890ca"
+          },
+          {
+            "name": "__0_29.distcp",
+            "bytes": 22119977,
+            "sha256": "3a0f6b55e85f1aad2f02ab0ede87ded949c32642ddce2c0ff87f5ae80ab6b989"
+          },
+          {
+            "name": "__0_3.distcp",
+            "bytes": 39323177,
+            "sha256": "713c70f2096feb19d1461158d6ca394a942e47f63c39187e3d9c2dcaf3dc89c5"
+          },
+          {
+            "name": "__0_30.distcp",
+            "bytes": 22119977,
+            "sha256": "891a7704dd1ae1b904898ced36550d08ebe01103026eebd988fa474fd7d9d851"
+          },
+          {
+            "name": "__0_31.distcp",
+            "bytes": 22119977,
+            "sha256": "2f576730cad51f1eb0c83742ea8502c79480f4477efdebaacc343da136a1bef2"
+          },
+          {
+            "name": "__0_32.distcp",
+            "bytes": 22119977,
+            "sha256": "4c3eeacf85b06fa0e35655b1dd98a7a9f751e67f463cc7510dabec74265de2e6"
+          },
+          {
+            "name": "__0_33.distcp",
+            "bytes": 22119977,
+            "sha256": "37182fd3e2d2e57334452d0b3f8a9bbbd4ae10026ddb1b75ffd73ebd884284b4"
+          },
+          {
+            "name": "__0_34.distcp",
+            "bytes": 22119977,
+            "sha256": "c1b7afa2701c7fe866aab60087bcd43836e937f9ca738fe56f457ee48523a74e"
+          },
+          {
+            "name": "__0_35.distcp",
+            "bytes": 22119977,
+            "sha256": "797ef9c11dd4f02fbfa5ae2d501dbb3837db25aac4eb49a66eb797ada1de7bdb"
+          },
+          {
+            "name": "__0_36.distcp",
+            "bytes": 22119977,
+            "sha256": "2036c3ec80b327ac3bde73af14e3e005dc2f40c8801bb30300888452227aedaf"
+          },
+          {
+            "name": "__0_37.distcp",
+            "bytes": 22119977,
+            "sha256": "cd6eb1ca0c4ba5f507f28396293c86a8b5dfd57b5653e8464e5ad74ed114ea81"
+          },
+          {
+            "name": "__0_38.distcp",
+            "bytes": 22119977,
+            "sha256": "9762a13a53d6530a1092965707920e428a923f02d5f8c088a1953b176ce3c99c"
+          },
+          {
+            "name": "__0_39.distcp",
+            "bytes": 22119977,
+            "sha256": "53d621fa5f9d16d6908357ba407cc6e6fb8291a5b48f0dbeac388e345ae367ed"
+          },
+          {
+            "name": "__0_4.distcp",
+            "bytes": 39323177,
+            "sha256": "2b0a4d52e7479fecceae63595b300992f5fc7e0e8411d39d0648cdf3f7b837ab"
+          },
+          {
+            "name": "__0_40.distcp",
+            "bytes": 22119977,
+            "sha256": "6e21499138357431210687e933817e76fec3f4ffe5c899f17f628a4eb80335c5"
+          },
+          {
+            "name": "__0_41.distcp",
+            "bytes": 22119977,
+            "sha256": "2924f66eacf4829b5e48aee78815c0d839cc1bf65822b80e1371d413016beedd"
+          },
+          {
+            "name": "__0_42.distcp",
+            "bytes": 22119977,
+            "sha256": "a2017e0baff65ca4da8abb3c9de2e7706a0f63f7f23c9454a633d9e1939b1dcc"
+          },
+          {
+            "name": "__0_43.distcp",
+            "bytes": 22119977,
+            "sha256": "dad1014b6003d64215187b2bcda0c161ccefac4bec94270bccf2a55decdd59d5"
+          },
+          {
+            "name": "__0_44.distcp",
+            "bytes": 22119977,
+            "sha256": "39bf1afc024f22e962bc685820cee378ccc9dbd3bf39219d0996583d3dac2766"
+          },
+          {
+            "name": "__0_45.distcp",
+            "bytes": 22119977,
+            "sha256": "0002edf350e5824747afff322b30fd626f4427d1bcc21459e3a8c3ce5389a158"
+          },
+          {
+            "name": "__0_46.distcp",
+            "bytes": 22119977,
+            "sha256": "3598b85ddd2240539bbc3518dcc408ad02b9b1aa647d5e9e08ddeffcb3818c9a"
+          },
+          {
+            "name": "__0_47.distcp",
+            "bytes": 22119977,
+            "sha256": "0f582f116b7c631fba929a0706580ee67f12249a12deecc6a46a2b7cca4f4525"
+          },
+          {
+            "name": "__0_48.distcp",
+            "bytes": 22119977,
+            "sha256": "459a2807498cdf49c4232645ce1b974a4ef2c08ba853ca1fc6d00a3ef5889430"
+          },
+          {
+            "name": "__0_49.distcp",
+            "bytes": 22119977,
+            "sha256": "2cb327f285a89444d3d0f414697cb7a9fe608ef12b4eefd7f31acc226f8e6b03"
+          },
+          {
+            "name": "__0_5.distcp",
+            "bytes": 39323177,
+            "sha256": "3934bb022bef6973639dec9793c28b24dc18e58fd4d4ac04b18c3d03ddc8d6fd"
+          },
+          {
+            "name": "__0_50.distcp",
+            "bytes": 19662377,
+            "sha256": "fa5526ab5a7884949ba9c19abdffd0a0709b8aeabeb08a01abfaa3e708f1f3fb"
+          },
+          {
+            "name": "__0_51.distcp",
+            "bytes": 19662377,
+            "sha256": "bb9ef99363841b4f37441705aa19e976333a20c6898628dc05d02368d3c1249f"
+          },
+          {
+            "name": "__0_52.distcp",
+            "bytes": 19662377,
+            "sha256": "72ece74b37c0fe1c8e902e59add750328215a27f1dbea3999f2517917bb9d207"
+          },
+          {
+            "name": "__0_53.distcp",
+            "bytes": 19662377,
+            "sha256": "a27c743fc6b4a43a6c9cb684d0540783e76a288b1aee413268a023942967a22c"
+          },
+          {
+            "name": "__0_54.distcp",
+            "bytes": 19662377,
+            "sha256": "321b6f92de6445f7618aa6a64088cac53fed80f58bc3e23e2968c2101d3f773c"
+          },
+          {
+            "name": "__0_55.distcp",
+            "bytes": 19662377,
+            "sha256": "1421e1998e575e8d0b43050f533ca4e79f8cc921aa0a3efe7be8819f362dee99"
+          },
+          {
+            "name": "__0_56.distcp",
+            "bytes": 19662377,
+            "sha256": "4fb2990c003e2d1732175f1bdde13252c1b7ec6510e4cae25e6297799389c089"
+          },
+          {
+            "name": "__0_57.distcp",
+            "bytes": 19662377,
+            "sha256": "3c6459561ec8892e87ca06a4bd4900b1ff1501b1efe406f9d3171a54da066926"
+          },
+          {
+            "name": "__0_58.distcp",
+            "bytes": 19662377,
+            "sha256": "da4d1e75d910ef6d3fd00fe27adafdad34df58cc2ce063a9ac4e82a289ad9aec"
+          },
+          {
+            "name": "__0_59.distcp",
+            "bytes": 19662377,
+            "sha256": "85333f8539a4e02f3ce4f1af5da1e39f0d75579718e269a1680ed5944710056f"
+          },
+          {
+            "name": "__0_6.distcp",
+            "bytes": 39323177,
+            "sha256": "2e4434692c795e65af86b9e4188e68af8ee95eb3e1f7d0f5672293e2ef95a9b3"
+          },
+          {
+            "name": "__0_60.distcp",
+            "bytes": 19662377,
+            "sha256": "166988db8b697edb6e68cbe8925ccbde5663e8309243557b86591206691d559c"
+          },
+          {
+            "name": "__0_61.distcp",
+            "bytes": 19662377,
+            "sha256": "230dd06af4e4614c4139d0a7f6c6503a82cc055fd6d46a01a0cc4e029896f6c7"
+          },
+          {
+            "name": "__0_62.distcp",
+            "bytes": 19662377,
+            "sha256": "f91825e6d45e52133a272d8139c164d6e54bd4d62236f5991b76504a4fadf4ba"
+          },
+          {
+            "name": "__0_63.distcp",
+            "bytes": 19662377,
+            "sha256": "471853ccce27eafafa2bea09a15839d5b27942de4e5ef220d25af560fe237545"
+          },
+          {
+            "name": "__0_64.distcp",
+            "bytes": 19662377,
+            "sha256": "df77cf16e3cda384b5f8c1bff790d18cab23c50bb5a2a30567f89e357bb27097"
+          },
+          {
+            "name": "__0_65.distcp",
+            "bytes": 19662377,
+            "sha256": "a2604c757b5e7a6799d485bdaf25ca8e40ea34869a58533c052bdbc1a1349776"
+          },
+          {
+            "name": "__0_66.distcp",
+            "bytes": 19662377,
+            "sha256": "1bebb69bbf41071eeca6a01d329dfd8de2acdd01b08c747658eaf65a0aaa2259"
+          },
+          {
+            "name": "__0_67.distcp",
+            "bytes": 19662377,
+            "sha256": "2ed2c7d388b9b9833adc2541879197a05f31ad9784067c9a73d8a528b9f86e75"
+          },
+          {
+            "name": "__0_68.distcp",
+            "bytes": 19662377,
+            "sha256": "c844d57c2256ca7610fe56d3bd7a54584f47637accfe5587aad30e758b5837b1"
+          },
+          {
+            "name": "__0_69.distcp",
+            "bytes": 19662377,
+            "sha256": "d130c4a5e20f3ca48cc9b4ef9b615ad45b12f069308996c174d72518368c2cb0"
+          },
+          {
+            "name": "__0_7.distcp",
+            "bytes": 39323177,
+            "sha256": "76669422e7949d824b48d9365057e47ed3a39998486d28c6b186d7d0803de56f"
+          },
+          {
+            "name": "__0_70.distcp",
+            "bytes": 19662377,
+            "sha256": "0c69be5859f6461e33b716e7d75930ed1323159c0ce6c24d82426daa6b8b85ca"
+          },
+          {
+            "name": "__0_71.distcp",
+            "bytes": 19662377,
+            "sha256": "2f3ac82071eeb4f492a25703a6e78b5ace8b2bfe6a407ea3821c070a6897a493"
+          },
+          {
+            "name": "__0_72.distcp",
+            "bytes": 19662377,
+            "sha256": "08e5e22b8ea9b9bff96dd3adfc2844052de38a7d7e8df40af5638abff006323f"
+          },
+          {
+            "name": "__0_73.distcp",
+            "bytes": 19662377,
+            "sha256": "30ae9fcb77ae6f433878a95f3ac390d6f067aa106f7dd0b1deff2a35fe15751f"
+          },
+          {
+            "name": "__0_74.distcp",
+            "bytes": 19662377,
+            "sha256": "5bb557685d50f7441bcc4612e9affc1bfa9be26e29a15a144cd1124d65e51d84"
+          },
+          {
+            "name": "__0_75.distcp",
+            "bytes": 7374377,
+            "sha256": "8910a8c394c6925bc08f3d24bb340f4f9385eb8d64eb79d02b0dd50843009eec"
+          },
+          {
+            "name": "__0_76.distcp",
+            "bytes": 7374377,
+            "sha256": "e3254fa0d65705f4c8988863455f6d0ff6188466a6f4f66f3e590ecf2312e6a0"
+          },
+          {
+            "name": "__0_77.distcp",
+            "bytes": 7374377,
+            "sha256": "59d2271295a2e53875efa877dd686ffe532ee798cae32056cef37d02a7baca3b"
+          },
+          {
+            "name": "__0_78.distcp",
+            "bytes": 7374377,
+            "sha256": "128be38a47f074f1a952b29946a0fdf0a950614d8355ed9bdfa722f3d3abe881"
+          },
+          {
+            "name": "__0_79.distcp",
+            "bytes": 7374377,
+            "sha256": "32153d3ad06fdc0b0f3fb6a557e9162500ef1f62c4dc34b9d0569a4fdf68e9c0"
+          },
+          {
+            "name": "__0_8.distcp",
+            "bytes": 39323177,
+            "sha256": "b6776505abd1eba858983cefa4f80835d4880a24f9c4ffff21cada61b7a4a7bb"
+          },
+          {
+            "name": "__0_80.distcp",
+            "bytes": 7374377,
+            "sha256": "6b09ff8e35b6c5559712caf05b7c3cf47d304c3856a1770277e702bde79c1b71"
+          },
+          {
+            "name": "__0_81.distcp",
+            "bytes": 7374377,
+            "sha256": "b02b858261100c98e08229afca1edd713fef8a7627dca73adac1a30eee041098"
+          },
+          {
+            "name": "__0_82.distcp",
+            "bytes": 7374377,
+            "sha256": "db50c66abfe9896e9b28a13c15b53fd1b456b0efa61095e03e54d675d311f15c"
+          },
+          {
+            "name": "__0_83.distcp",
+            "bytes": 7374377,
+            "sha256": "8732bdfd8892d24de24f26f0957a0d5a422e93b74dad14256cb5154e6a8c0872"
+          },
+          {
+            "name": "__0_84.distcp",
+            "bytes": 7374377,
+            "sha256": "7b112aa6ed167347f118f8f2ff495cff8b7629f43be50ab5d90000ad17e77c60"
+          },
+          {
+            "name": "__0_85.distcp",
+            "bytes": 7374377,
+            "sha256": "8c581561800c9894b75e7b878332f4c1ae51f50041c471c75d076b2c7d29c228"
+          },
+          {
+            "name": "__0_86.distcp",
+            "bytes": 7374377,
+            "sha256": "a9b81ce7d6ba5bf1423e5a60891af6799b094616a1e98bfb6be6fc92817ede22"
+          },
+          {
+            "name": "__0_87.distcp",
+            "bytes": 7374377,
+            "sha256": "2e8e96ee0c145060480b2bde343008365c7bc51d9d2688fc48d62d4accc8e6bc"
+          },
+          {
+            "name": "__0_88.distcp",
+            "bytes": 7374377,
+            "sha256": "5804ef8e8bb398b621a7685ad4aa5d8a2d3d8a5ac0fd92cfa221ff135dfa4179"
+          },
+          {
+            "name": "__0_89.distcp",
+            "bytes": 7374377,
+            "sha256": "0c4fe357f700a1901a5e0654f24249ca1363af0620a4872fb072d2edbdbf7d33"
+          },
+          {
+            "name": "__0_9.distcp",
+            "bytes": 39323177,
+            "sha256": "037e99176b789ba1311452ab5cae5577292fed1678700da1ab6ad541241922aa"
+          },
+          {
+            "name": "__0_90.distcp",
+            "bytes": 7374377,
+            "sha256": "e166d9c96e32a11457e39b141ef401abaf561e0605332992ed9ebf697a08c2d2"
+          },
+          {
+            "name": "__0_91.distcp",
+            "bytes": 7374377,
+            "sha256": "952c4457e40e3ed4aa94791d883c6447242d939d88281bba0dd3fdbb1b0d8da2"
+          },
+          {
+            "name": "__0_92.distcp",
+            "bytes": 7374377,
+            "sha256": "63dade5ded6d0c6c41c5a89ebea22109f4a4f0714734a9c26845dd527f275e2b"
+          },
+          {
+            "name": "__0_93.distcp",
+            "bytes": 7374377,
+            "sha256": "273ee02c2b7eda8f2d3c3f1f8fcc637b5e9a6fcc70e42dd2583bee340ea3d65f"
+          },
+          {
+            "name": "__0_94.distcp",
+            "bytes": 7374377,
+            "sha256": "477a98076db68984fdfe2fadae8be1b1ddaa3b78668e7d61ba2e3cabf5ab19a7"
+          },
+          {
+            "name": "__0_95.distcp",
+            "bytes": 7374377,
+            "sha256": "3e53fcb6dccad576d1db6491e43afdd914bd7e919838920ffcd8d2b9a98d0023"
+          },
+          {
+            "name": "__0_96.distcp",
+            "bytes": 7374377,
+            "sha256": "d17287f1f1e3dd2c4ad473c7d8e32aaa76067e8edf12b977b861ef6bd52dffc9"
+          },
+          {
+            "name": "__0_97.distcp",
+            "bytes": 7374377,
+            "sha256": "ed93399672d60957fef0cb6704c6933617711638a501461becc7a11907651877"
+          },
+          {
+            "name": "__0_98.distcp",
+            "bytes": 7374377,
+            "sha256": "406aa212264b35881385d863f90e93e2bea64afaf062ad98e8239cb8cb28f894"
+          },
+          {
+            "name": "__0_99.distcp",
+            "bytes": 7374377,
+            "sha256": "7f5094992e8ddf537980682ffca98942c577aa3b2a911622f605725511238faf"
+          }
+        ],
+        "model": "base",
+        "checkpoint": "/workspace/meeting-artifacts/multiretain-layers-v1/checkpoint-assets/base",
+        "checkpoint_metadata_sha256": "5bbdb894bc45e52fbc43d11854386bdb2cda8b0dddee3ac1e8a4156ca1a06470",
+        "config_sha256": "b648cfd2fb11797ade835e82f6dd4c3e7abd0d4256ae4360bd67796d00f198c9",
+        "tokenizer_sha256": "4783313f9804f545bf8515653cf91549b5f1a507fe5703c7d7279921dd9ec8fb",
+        "manifest_sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+        "hooks": [
+          "decoder.layers.0",
+          "decoder.layers.1",
+          "decoder.layers.2",
+          "decoder.layers.3",
+          "decoder.layers.4",
+          "decoder.layers.5",
+          "decoder.layers.6",
+          "decoder.layers.7",
+          "decoder.layers.8",
+          "decoder.layers.9",
+          "decoder.layers.10",
+          "decoder.layers.11",
+          "decoder.layers.12",
+          "decoder.layers.13",
+          "decoder.layers.14",
+          "decoder.layers.15",
+          "decoder.layers.16",
+          "decoder.layers.17",
+          "decoder.layers.18",
+          "decoder.layers.19",
+          "decoder.layers.20",
+          "decoder.layers.21",
+          "decoder.layers.22",
+          "decoder.layers.23",
+          "decoder.layers.24",
+          "decoder.final_norm"
+        ],
+        "schema": "multiretain-all-layers-fixed8-records-v3",
+        "feature_dtype": "float32",
+        "feature_width": 1920,
+        "physical_batch_size": 8,
+        "filler_policy": "pad1 rows of valid length1; all filler outputs excluded",
+        "layer_numbering": "exact zero-indexed module16; meeting layer16 equivalence unresolved",
+        "pool": "mean nucleotide positions; padding excluded",
+        "padding": "right to1000, pad1",
+        "dtype": "checkpoint BF16/FP32 preserved",
+        "attention_backend": "TE unfused",
+        "batch_size": 8,
+        "smoke": false,
+        "smoke_rows": 32,
+        "source_sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "support_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "fixed_batch_source_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "effective_config_sha256": "0f246900711d7d6bf530e75f032cae749d8f527c9a20f5f22f87882bcc1b75d8",
+        "cache_key": "6ef161f60302257471346e3ee825d9a56e0827523e54cc47ff9e3a6af1272dd8"
+      },
+      "identity_sha256": "98d6944cfbfdd11c9d7d077a4e7a6d1252aa75ca30ed80cbad95eaf52f3ef015",
+      "producer_receipt_sha256": "72bde9e6ea5967f9647ef7939a3cfb9c1ffdefb9d23fb70237c765b029961c0c",
+      "layer_registry": [
+        {
+          "array_key": "decoder_layer_0",
+          "module_path": "decoder.layers.0",
+          "zero_based_index": 0,
+          "display_name": "Block 1",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_1",
+          "module_path": "decoder.layers.1",
+          "zero_based_index": 1,
+          "display_name": "Block 2",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_2",
+          "module_path": "decoder.layers.2",
+          "zero_based_index": 2,
+          "display_name": "Block 3",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_3",
+          "module_path": "decoder.layers.3",
+          "zero_based_index": 3,
+          "display_name": "Block 4",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_4",
+          "module_path": "decoder.layers.4",
+          "zero_based_index": 4,
+          "display_name": "Block 5",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_5",
+          "module_path": "decoder.layers.5",
+          "zero_based_index": 5,
+          "display_name": "Block 6",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_6",
+          "module_path": "decoder.layers.6",
+          "zero_based_index": 6,
+          "display_name": "Block 7",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_7",
+          "module_path": "decoder.layers.7",
+          "zero_based_index": 7,
+          "display_name": "Block 8",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_8",
+          "module_path": "decoder.layers.8",
+          "zero_based_index": 8,
+          "display_name": "Block 9",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_9",
+          "module_path": "decoder.layers.9",
+          "zero_based_index": 9,
+          "display_name": "Block 10",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_10",
+          "module_path": "decoder.layers.10",
+          "zero_based_index": 10,
+          "display_name": "Block 11",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_11",
+          "module_path": "decoder.layers.11",
+          "zero_based_index": 11,
+          "display_name": "Block 12",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_12",
+          "module_path": "decoder.layers.12",
+          "zero_based_index": 12,
+          "display_name": "Block 13",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_13",
+          "module_path": "decoder.layers.13",
+          "zero_based_index": 13,
+          "display_name": "Block 14",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_14",
+          "module_path": "decoder.layers.14",
+          "zero_based_index": 14,
+          "display_name": "Block 15",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_15",
+          "module_path": "decoder.layers.15",
+          "zero_based_index": 15,
+          "display_name": "Block 16",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_16",
+          "module_path": "decoder.layers.16",
+          "zero_based_index": 16,
+          "display_name": "Block 17",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_17",
+          "module_path": "decoder.layers.17",
+          "zero_based_index": 17,
+          "display_name": "Block 18",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_18",
+          "module_path": "decoder.layers.18",
+          "zero_based_index": 18,
+          "display_name": "Block 19",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_19",
+          "module_path": "decoder.layers.19",
+          "zero_based_index": 19,
+          "display_name": "Block 20",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_20",
+          "module_path": "decoder.layers.20",
+          "zero_based_index": 20,
+          "display_name": "Block 21",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_21",
+          "module_path": "decoder.layers.21",
+          "zero_based_index": 21,
+          "display_name": "Block 22",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_22",
+          "module_path": "decoder.layers.22",
+          "zero_based_index": 22,
+          "display_name": "Block 23",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_23",
+          "module_path": "decoder.layers.23",
+          "zero_based_index": 23,
+          "display_name": "Block 24",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_24",
+          "module_path": "decoder.layers.24",
+          "zero_based_index": 24,
+          "display_name": "Block 25",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "final_norm",
+          "module_path": "decoder.final_norm",
+          "zero_based_index": null,
+          "display_name": "Final RMSNorm",
+          "width": 1920,
+          "module_type": "RMSNorm",
+          "hook_semantics": "post-final RMSNorm"
+        }
+      ],
+      "row_count": 14965,
+      "chunks": 1871,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D4"
+      ],
+      "current_verification": "all chunk identity/count vectors; all receipt paths/sizes; first/last chunk26-layer headers; historical feature content check reused",
+      "full_feature_byte_hash_fresh": false,
+      "new_adapter_use_condition": "C2"
+    },
+    "base_h3/other_five/base": {
+      "id": "base_h3/other_five/base",
+      "current_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/other_five/base",
+      "root": "base_h3",
+      "relative_path": "features/other_five/base",
+      "source_model_identity": {
+        "runtime": {
+          "torch": "2.8.0+cu128",
+          "transformer-engine": "2.3.0",
+          "transformer-engine-torch": "2.3.0",
+          "bionemo-evo2": "2.4",
+          "megatron-bridge": "0.3.0rc0",
+          "megatron-core": "0.16.0rc0",
+          "tokenizers": "0.22.1",
+          "causal-conv1d": "1.5.4",
+          "source_commits": {
+            "/workspace/bionemo-cu12": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+            "/workspace/megatron-bridge": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+            "/workspace/megatron-bridge/3rdparty/Megatron-LM": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13"
+          }
+        },
+        "checkpoint_shards": [
+          {
+            "name": "__0_0.distcp",
+            "bytes": 39323177,
+            "sha256": "6cee45d8d01c33d2ed4d3c4ce97b66ff20e4bd92e12376a1c3f9186562bee923"
+          },
+          {
+            "name": "__0_1.distcp",
+            "bytes": 39323177,
+            "sha256": "3d6ce2b3f60cf09b1808743c1637b2ff213ae177e55f1c640d5c9adab5e12ff8"
+          },
+          {
+            "name": "__0_10.distcp",
+            "bytes": 39323177,
+            "sha256": "aaae31bd1f05d2ca7459b110c1f98325da9b0d3b53200260d5baddbb6dddcc44"
+          },
+          {
+            "name": "__0_100.distcp",
+            "bytes": 1967657,
+            "sha256": "704921d907d06d878a18de7c2e4f10146fc8a87669a1367fc970ae7d44a643c7"
+          },
+          {
+            "name": "__0_101.distcp",
+            "bytes": 191570,
+            "sha256": "631c6fa7bf90ebd306d98e15a26c67ca2baabf845a049619dcf219c9059d52b4"
+          },
+          {
+            "name": "__0_102.distcp",
+            "bytes": 191570,
+            "sha256": "3036e6468396a312d05c8f1b7851a62e91aaa55a94d57a235615de8f29f4ca84"
+          },
+          {
+            "name": "__0_103.distcp",
+            "bytes": 176845,
+            "sha256": "52becf4bf0b91a6c5f3d2991c476d4c7b80a7e500bda1faa42d0326dc0559d27"
+          },
+          {
+            "name": "__0_104.distcp",
+            "bytes": 176845,
+            "sha256": "5d8757bbba3955088f0bf2de6ae0cba994bd6f151f36316a203d460657c30b76"
+          },
+          {
+            "name": "__0_105.distcp",
+            "bytes": 176845,
+            "sha256": "06c20a163a9d00d0525a4e6ff1c2e129316ceba85c996146906f09d7a24a3a62"
+          },
+          {
+            "name": "__0_106.distcp",
+            "bytes": 176845,
+            "sha256": "eb76ba1633619757faae3c8dc2cb76d04210f9093d6675407316657d0b624ceb"
+          },
+          {
+            "name": "__0_107.distcp",
+            "bytes": 176845,
+            "sha256": "2a17774b0d0ba87e82a4d95539044a942983313c405d83fa932e6254653a35a4"
+          },
+          {
+            "name": "__0_108.distcp",
+            "bytes": 176845,
+            "sha256": "3b8f8e83ac7e52a101da9f4ff61cbbd0074d68a5bbcaf99cbf092040d5bf65b2"
+          },
+          {
+            "name": "__0_109.distcp",
+            "bytes": 176845,
+            "sha256": "36f4f7c5a37b94363f12b1174a232b4566ae1e46c6ddcfb1ffbf97198a516705"
+          },
+          {
+            "name": "__0_11.distcp",
+            "bytes": 39323177,
+            "sha256": "f38bd02a0e195df909608af9fffccfc0dd2d9f92689a4985438da59d9f1e42c1"
+          },
+          {
+            "name": "__0_110.distcp",
+            "bytes": 176845,
+            "sha256": "9d94b520e69a70cfd0382ac0e4052aff2bc0adedaefffd76eaec6b60ea6d99aa"
+          },
+          {
+            "name": "__0_111.distcp",
+            "bytes": 176845,
+            "sha256": "4f8a2e5c88335f1217e897e83b201aa4fc58aa954313cb8d169fcf0b063a0fd2"
+          },
+          {
+            "name": "__0_112.distcp",
+            "bytes": 176845,
+            "sha256": "6c0cfb91eca511d64f5628580a3cf8043108651093ec1eedc06325eb451395db"
+          },
+          {
+            "name": "__0_113.distcp",
+            "bytes": 176845,
+            "sha256": "92ced6ec42a7a36e1c1ef72156306867d0a1dc3cebbd42d118d52db708b042b7"
+          },
+          {
+            "name": "__0_114.distcp",
+            "bytes": 176845,
+            "sha256": "2d565eee98c7e774f6c92cb473c475f795dc2d90c435ae4721a5ace01ca27868"
+          },
+          {
+            "name": "__0_115.distcp",
+            "bytes": 176845,
+            "sha256": "d9ff3a06e39e589c3d6a878fbd4eda0de014b3da9478f51524ece1a445738a3e"
+          },
+          {
+            "name": "__0_116.distcp",
+            "bytes": 176845,
+            "sha256": "01011eba6d278b1faab6b9543207cc7aff9f36b92919f9f58740c4895a8a525e"
+          },
+          {
+            "name": "__0_117.distcp",
+            "bytes": 176845,
+            "sha256": "376afa6fe29dd4df2fef2f862e81968e184bf6ff90185ad945f073e3260a80b6"
+          },
+          {
+            "name": "__0_118.distcp",
+            "bytes": 176845,
+            "sha256": "2e382b8208f16d5754661ac4034f9efad23e8dcedeee7692b5df7d2d7397ff11"
+          },
+          {
+            "name": "__0_119.distcp",
+            "bytes": 174797,
+            "sha256": "e0ead94c0a6cc9a44df0a685325462180788ea707e45e91952556a250baf4938"
+          },
+          {
+            "name": "__0_12.distcp",
+            "bytes": 39323177,
+            "sha256": "84c50d299b1021c75e5bd51926f9058fb9de05eadcbc91fac473d92c4b15eb53"
+          },
+          {
+            "name": "__0_120.distcp",
+            "bytes": 174797,
+            "sha256": "1a711c0b7b036f6560a44b892a0767327cf025a3e6ea051f9fd107c5fa05952e"
+          },
+          {
+            "name": "__0_121.distcp",
+            "bytes": 174797,
+            "sha256": "ba2442bcb0333286c8a58cdeb1cbab0c3e7f892845766725f904ddb505e6e865"
+          },
+          {
+            "name": "__0_122.distcp",
+            "bytes": 173732,
+            "sha256": "ed94b78383b567c83ad295def57739fb2df6dba4d2f6287225f83ec10b2d8a1d"
+          },
+          {
+            "name": "__0_123.distcp",
+            "bytes": 173732,
+            "sha256": "37d7d597be81308e000ddd06f0c20d2d7b6290e6588ab73e6ac9af1c2ff2b084"
+          },
+          {
+            "name": "__0_124.distcp",
+            "bytes": 186348,
+            "sha256": "4436ca92c8efbc8907f674a0c48e3e728935016627a074bbae8def8c67b5e627"
+          },
+          {
+            "name": "__0_125.distcp",
+            "bytes": 186348,
+            "sha256": "921eeeaf4338db91c7dffbc2fbc6e7e80c63e50748a74f5a6b58709cb2d1f6a6"
+          },
+          {
+            "name": "__0_126.distcp",
+            "bytes": 182979,
+            "sha256": "b498b382e1e57c14ff8ae991d294eb92cacbeccd5647155ce591657d98eb755e"
+          },
+          {
+            "name": "__0_127.distcp",
+            "bytes": 182979,
+            "sha256": "02c172a0ff6bbd0bb16bffa42f1fc28ed9714fbad95076b5b2ae5890500b8932"
+          },
+          {
+            "name": "__0_13.distcp",
+            "bytes": 39323177,
+            "sha256": "6e44ed2a767faa11ae31d9e369275161be17e2cd7a9c32c555a40f8badfda70b"
+          },
+          {
+            "name": "__0_14.distcp",
+            "bytes": 39323177,
+            "sha256": "33300f81fe14e9058fba86f689f83952ce8b5282fc003fc1a47484588296c55b"
+          },
+          {
+            "name": "__0_15.distcp",
+            "bytes": 39323177,
+            "sha256": "eb3a5731837e7b7aee50a46af24c75419ceaf3836fa0b3b8828000d1753a2e2f"
+          },
+          {
+            "name": "__0_16.distcp",
+            "bytes": 39323177,
+            "sha256": "580ea2c3fb767804a526672a6c012d7ecdf30b0e7b9fd5ea509c0500fff88c8e"
+          },
+          {
+            "name": "__0_17.distcp",
+            "bytes": 39323177,
+            "sha256": "425a0b1c1802f56df809385b683a421ef297cfcb6c6c259c2ec777ad823d26ea"
+          },
+          {
+            "name": "__0_18.distcp",
+            "bytes": 39323177,
+            "sha256": "93e89788974d53553c14d191fcce9be364646c4753868b83e75270589f8b7027"
+          },
+          {
+            "name": "__0_19.distcp",
+            "bytes": 39323177,
+            "sha256": "2781b96b8e9856861c357b8fb6073e8850b8f69b7fbf4975854aec94a41ac571"
+          },
+          {
+            "name": "__0_2.distcp",
+            "bytes": 39323177,
+            "sha256": "944a82e0d4502f9b0a5c9b8657c36279215667cefd2f572902aab1f50e9bfe97"
+          },
+          {
+            "name": "__0_20.distcp",
+            "bytes": 39323177,
+            "sha256": "20213b2730da8339ee541f22e23da4bcdb93312086c82ff728cd5eaa112b48a3"
+          },
+          {
+            "name": "__0_21.distcp",
+            "bytes": 39323177,
+            "sha256": "b458322f0d9c9fc4e4713ea9dc83070d5920ecc6d350e9e6f4ff0e0f43e1b6f8"
+          },
+          {
+            "name": "__0_22.distcp",
+            "bytes": 39323177,
+            "sha256": "80901cfa920b35732ef211678d68bea2c23580573b584784c26e7f600e51e0b6"
+          },
+          {
+            "name": "__0_23.distcp",
+            "bytes": 39323177,
+            "sha256": "71ae89f0ad54b37d2cfcd80d815a85ea1bcd485e6407d5c4534cdab53d91a100"
+          },
+          {
+            "name": "__0_24.distcp",
+            "bytes": 39323177,
+            "sha256": "1f21d2e16ccf8e7734e2c19d520289749967a557e96806de9a6b849859ffe69c"
+          },
+          {
+            "name": "__0_25.distcp",
+            "bytes": 22119977,
+            "sha256": "7b2198fcc4db21f677dc7c13d22ffe60b5d81ec8a3de86604ae9c9d4df5e0185"
+          },
+          {
+            "name": "__0_26.distcp",
+            "bytes": 22119977,
+            "sha256": "71b743fc2eefb3478951db0e640c2782a770e26943e4c1aab8e78134bbf033b1"
+          },
+          {
+            "name": "__0_27.distcp",
+            "bytes": 22119977,
+            "sha256": "a8236fa041ee75bd6483cf6d5d17014d693e6934d0a1994f90d3aefe5573c288"
+          },
+          {
+            "name": "__0_28.distcp",
+            "bytes": 22119977,
+            "sha256": "026e3389685b9f50d212b46e04705d7d08d0a48b732897bdedbf41f6259890ca"
+          },
+          {
+            "name": "__0_29.distcp",
+            "bytes": 22119977,
+            "sha256": "3a0f6b55e85f1aad2f02ab0ede87ded949c32642ddce2c0ff87f5ae80ab6b989"
+          },
+          {
+            "name": "__0_3.distcp",
+            "bytes": 39323177,
+            "sha256": "713c70f2096feb19d1461158d6ca394a942e47f63c39187e3d9c2dcaf3dc89c5"
+          },
+          {
+            "name": "__0_30.distcp",
+            "bytes": 22119977,
+            "sha256": "891a7704dd1ae1b904898ced36550d08ebe01103026eebd988fa474fd7d9d851"
+          },
+          {
+            "name": "__0_31.distcp",
+            "bytes": 22119977,
+            "sha256": "2f576730cad51f1eb0c83742ea8502c79480f4477efdebaacc343da136a1bef2"
+          },
+          {
+            "name": "__0_32.distcp",
+            "bytes": 22119977,
+            "sha256": "4c3eeacf85b06fa0e35655b1dd98a7a9f751e67f463cc7510dabec74265de2e6"
+          },
+          {
+            "name": "__0_33.distcp",
+            "bytes": 22119977,
+            "sha256": "37182fd3e2d2e57334452d0b3f8a9bbbd4ae10026ddb1b75ffd73ebd884284b4"
+          },
+          {
+            "name": "__0_34.distcp",
+            "bytes": 22119977,
+            "sha256": "c1b7afa2701c7fe866aab60087bcd43836e937f9ca738fe56f457ee48523a74e"
+          },
+          {
+            "name": "__0_35.distcp",
+            "bytes": 22119977,
+            "sha256": "797ef9c11dd4f02fbfa5ae2d501dbb3837db25aac4eb49a66eb797ada1de7bdb"
+          },
+          {
+            "name": "__0_36.distcp",
+            "bytes": 22119977,
+            "sha256": "2036c3ec80b327ac3bde73af14e3e005dc2f40c8801bb30300888452227aedaf"
+          },
+          {
+            "name": "__0_37.distcp",
+            "bytes": 22119977,
+            "sha256": "cd6eb1ca0c4ba5f507f28396293c86a8b5dfd57b5653e8464e5ad74ed114ea81"
+          },
+          {
+            "name": "__0_38.distcp",
+            "bytes": 22119977,
+            "sha256": "9762a13a53d6530a1092965707920e428a923f02d5f8c088a1953b176ce3c99c"
+          },
+          {
+            "name": "__0_39.distcp",
+            "bytes": 22119977,
+            "sha256": "53d621fa5f9d16d6908357ba407cc6e6fb8291a5b48f0dbeac388e345ae367ed"
+          },
+          {
+            "name": "__0_4.distcp",
+            "bytes": 39323177,
+            "sha256": "2b0a4d52e7479fecceae63595b300992f5fc7e0e8411d39d0648cdf3f7b837ab"
+          },
+          {
+            "name": "__0_40.distcp",
+            "bytes": 22119977,
+            "sha256": "6e21499138357431210687e933817e76fec3f4ffe5c899f17f628a4eb80335c5"
+          },
+          {
+            "name": "__0_41.distcp",
+            "bytes": 22119977,
+            "sha256": "2924f66eacf4829b5e48aee78815c0d839cc1bf65822b80e1371d413016beedd"
+          },
+          {
+            "name": "__0_42.distcp",
+            "bytes": 22119977,
+            "sha256": "a2017e0baff65ca4da8abb3c9de2e7706a0f63f7f23c9454a633d9e1939b1dcc"
+          },
+          {
+            "name": "__0_43.distcp",
+            "bytes": 22119977,
+            "sha256": "dad1014b6003d64215187b2bcda0c161ccefac4bec94270bccf2a55decdd59d5"
+          },
+          {
+            "name": "__0_44.distcp",
+            "bytes": 22119977,
+            "sha256": "39bf1afc024f22e962bc685820cee378ccc9dbd3bf39219d0996583d3dac2766"
+          },
+          {
+            "name": "__0_45.distcp",
+            "bytes": 22119977,
+            "sha256": "0002edf350e5824747afff322b30fd626f4427d1bcc21459e3a8c3ce5389a158"
+          },
+          {
+            "name": "__0_46.distcp",
+            "bytes": 22119977,
+            "sha256": "3598b85ddd2240539bbc3518dcc408ad02b9b1aa647d5e9e08ddeffcb3818c9a"
+          },
+          {
+            "name": "__0_47.distcp",
+            "bytes": 22119977,
+            "sha256": "0f582f116b7c631fba929a0706580ee67f12249a12deecc6a46a2b7cca4f4525"
+          },
+          {
+            "name": "__0_48.distcp",
+            "bytes": 22119977,
+            "sha256": "459a2807498cdf49c4232645ce1b974a4ef2c08ba853ca1fc6d00a3ef5889430"
+          },
+          {
+            "name": "__0_49.distcp",
+            "bytes": 22119977,
+            "sha256": "2cb327f285a89444d3d0f414697cb7a9fe608ef12b4eefd7f31acc226f8e6b03"
+          },
+          {
+            "name": "__0_5.distcp",
+            "bytes": 39323177,
+            "sha256": "3934bb022bef6973639dec9793c28b24dc18e58fd4d4ac04b18c3d03ddc8d6fd"
+          },
+          {
+            "name": "__0_50.distcp",
+            "bytes": 19662377,
+            "sha256": "fa5526ab5a7884949ba9c19abdffd0a0709b8aeabeb08a01abfaa3e708f1f3fb"
+          },
+          {
+            "name": "__0_51.distcp",
+            "bytes": 19662377,
+            "sha256": "bb9ef99363841b4f37441705aa19e976333a20c6898628dc05d02368d3c1249f"
+          },
+          {
+            "name": "__0_52.distcp",
+            "bytes": 19662377,
+            "sha256": "72ece74b37c0fe1c8e902e59add750328215a27f1dbea3999f2517917bb9d207"
+          },
+          {
+            "name": "__0_53.distcp",
+            "bytes": 19662377,
+            "sha256": "a27c743fc6b4a43a6c9cb684d0540783e76a288b1aee413268a023942967a22c"
+          },
+          {
+            "name": "__0_54.distcp",
+            "bytes": 19662377,
+            "sha256": "321b6f92de6445f7618aa6a64088cac53fed80f58bc3e23e2968c2101d3f773c"
+          },
+          {
+            "name": "__0_55.distcp",
+            "bytes": 19662377,
+            "sha256": "1421e1998e575e8d0b43050f533ca4e79f8cc921aa0a3efe7be8819f362dee99"
+          },
+          {
+            "name": "__0_56.distcp",
+            "bytes": 19662377,
+            "sha256": "4fb2990c003e2d1732175f1bdde13252c1b7ec6510e4cae25e6297799389c089"
+          },
+          {
+            "name": "__0_57.distcp",
+            "bytes": 19662377,
+            "sha256": "3c6459561ec8892e87ca06a4bd4900b1ff1501b1efe406f9d3171a54da066926"
+          },
+          {
+            "name": "__0_58.distcp",
+            "bytes": 19662377,
+            "sha256": "da4d1e75d910ef6d3fd00fe27adafdad34df58cc2ce063a9ac4e82a289ad9aec"
+          },
+          {
+            "name": "__0_59.distcp",
+            "bytes": 19662377,
+            "sha256": "85333f8539a4e02f3ce4f1af5da1e39f0d75579718e269a1680ed5944710056f"
+          },
+          {
+            "name": "__0_6.distcp",
+            "bytes": 39323177,
+            "sha256": "2e4434692c795e65af86b9e4188e68af8ee95eb3e1f7d0f5672293e2ef95a9b3"
+          },
+          {
+            "name": "__0_60.distcp",
+            "bytes": 19662377,
+            "sha256": "166988db8b697edb6e68cbe8925ccbde5663e8309243557b86591206691d559c"
+          },
+          {
+            "name": "__0_61.distcp",
+            "bytes": 19662377,
+            "sha256": "230dd06af4e4614c4139d0a7f6c6503a82cc055fd6d46a01a0cc4e029896f6c7"
+          },
+          {
+            "name": "__0_62.distcp",
+            "bytes": 19662377,
+            "sha256": "f91825e6d45e52133a272d8139c164d6e54bd4d62236f5991b76504a4fadf4ba"
+          },
+          {
+            "name": "__0_63.distcp",
+            "bytes": 19662377,
+            "sha256": "471853ccce27eafafa2bea09a15839d5b27942de4e5ef220d25af560fe237545"
+          },
+          {
+            "name": "__0_64.distcp",
+            "bytes": 19662377,
+            "sha256": "df77cf16e3cda384b5f8c1bff790d18cab23c50bb5a2a30567f89e357bb27097"
+          },
+          {
+            "name": "__0_65.distcp",
+            "bytes": 19662377,
+            "sha256": "a2604c757b5e7a6799d485bdaf25ca8e40ea34869a58533c052bdbc1a1349776"
+          },
+          {
+            "name": "__0_66.distcp",
+            "bytes": 19662377,
+            "sha256": "1bebb69bbf41071eeca6a01d329dfd8de2acdd01b08c747658eaf65a0aaa2259"
+          },
+          {
+            "name": "__0_67.distcp",
+            "bytes": 19662377,
+            "sha256": "2ed2c7d388b9b9833adc2541879197a05f31ad9784067c9a73d8a528b9f86e75"
+          },
+          {
+            "name": "__0_68.distcp",
+            "bytes": 19662377,
+            "sha256": "c844d57c2256ca7610fe56d3bd7a54584f47637accfe5587aad30e758b5837b1"
+          },
+          {
+            "name": "__0_69.distcp",
+            "bytes": 19662377,
+            "sha256": "d130c4a5e20f3ca48cc9b4ef9b615ad45b12f069308996c174d72518368c2cb0"
+          },
+          {
+            "name": "__0_7.distcp",
+            "bytes": 39323177,
+            "sha256": "76669422e7949d824b48d9365057e47ed3a39998486d28c6b186d7d0803de56f"
+          },
+          {
+            "name": "__0_70.distcp",
+            "bytes": 19662377,
+            "sha256": "0c69be5859f6461e33b716e7d75930ed1323159c0ce6c24d82426daa6b8b85ca"
+          },
+          {
+            "name": "__0_71.distcp",
+            "bytes": 19662377,
+            "sha256": "2f3ac82071eeb4f492a25703a6e78b5ace8b2bfe6a407ea3821c070a6897a493"
+          },
+          {
+            "name": "__0_72.distcp",
+            "bytes": 19662377,
+            "sha256": "08e5e22b8ea9b9bff96dd3adfc2844052de38a7d7e8df40af5638abff006323f"
+          },
+          {
+            "name": "__0_73.distcp",
+            "bytes": 19662377,
+            "sha256": "30ae9fcb77ae6f433878a95f3ac390d6f067aa106f7dd0b1deff2a35fe15751f"
+          },
+          {
+            "name": "__0_74.distcp",
+            "bytes": 19662377,
+            "sha256": "5bb557685d50f7441bcc4612e9affc1bfa9be26e29a15a144cd1124d65e51d84"
+          },
+          {
+            "name": "__0_75.distcp",
+            "bytes": 7374377,
+            "sha256": "8910a8c394c6925bc08f3d24bb340f4f9385eb8d64eb79d02b0dd50843009eec"
+          },
+          {
+            "name": "__0_76.distcp",
+            "bytes": 7374377,
+            "sha256": "e3254fa0d65705f4c8988863455f6d0ff6188466a6f4f66f3e590ecf2312e6a0"
+          },
+          {
+            "name": "__0_77.distcp",
+            "bytes": 7374377,
+            "sha256": "59d2271295a2e53875efa877dd686ffe532ee798cae32056cef37d02a7baca3b"
+          },
+          {
+            "name": "__0_78.distcp",
+            "bytes": 7374377,
+            "sha256": "128be38a47f074f1a952b29946a0fdf0a950614d8355ed9bdfa722f3d3abe881"
+          },
+          {
+            "name": "__0_79.distcp",
+            "bytes": 7374377,
+            "sha256": "32153d3ad06fdc0b0f3fb6a557e9162500ef1f62c4dc34b9d0569a4fdf68e9c0"
+          },
+          {
+            "name": "__0_8.distcp",
+            "bytes": 39323177,
+            "sha256": "b6776505abd1eba858983cefa4f80835d4880a24f9c4ffff21cada61b7a4a7bb"
+          },
+          {
+            "name": "__0_80.distcp",
+            "bytes": 7374377,
+            "sha256": "6b09ff8e35b6c5559712caf05b7c3cf47d304c3856a1770277e702bde79c1b71"
+          },
+          {
+            "name": "__0_81.distcp",
+            "bytes": 7374377,
+            "sha256": "b02b858261100c98e08229afca1edd713fef8a7627dca73adac1a30eee041098"
+          },
+          {
+            "name": "__0_82.distcp",
+            "bytes": 7374377,
+            "sha256": "db50c66abfe9896e9b28a13c15b53fd1b456b0efa61095e03e54d675d311f15c"
+          },
+          {
+            "name": "__0_83.distcp",
+            "bytes": 7374377,
+            "sha256": "8732bdfd8892d24de24f26f0957a0d5a422e93b74dad14256cb5154e6a8c0872"
+          },
+          {
+            "name": "__0_84.distcp",
+            "bytes": 7374377,
+            "sha256": "7b112aa6ed167347f118f8f2ff495cff8b7629f43be50ab5d90000ad17e77c60"
+          },
+          {
+            "name": "__0_85.distcp",
+            "bytes": 7374377,
+            "sha256": "8c581561800c9894b75e7b878332f4c1ae51f50041c471c75d076b2c7d29c228"
+          },
+          {
+            "name": "__0_86.distcp",
+            "bytes": 7374377,
+            "sha256": "a9b81ce7d6ba5bf1423e5a60891af6799b094616a1e98bfb6be6fc92817ede22"
+          },
+          {
+            "name": "__0_87.distcp",
+            "bytes": 7374377,
+            "sha256": "2e8e96ee0c145060480b2bde343008365c7bc51d9d2688fc48d62d4accc8e6bc"
+          },
+          {
+            "name": "__0_88.distcp",
+            "bytes": 7374377,
+            "sha256": "5804ef8e8bb398b621a7685ad4aa5d8a2d3d8a5ac0fd92cfa221ff135dfa4179"
+          },
+          {
+            "name": "__0_89.distcp",
+            "bytes": 7374377,
+            "sha256": "0c4fe357f700a1901a5e0654f24249ca1363af0620a4872fb072d2edbdbf7d33"
+          },
+          {
+            "name": "__0_9.distcp",
+            "bytes": 39323177,
+            "sha256": "037e99176b789ba1311452ab5cae5577292fed1678700da1ab6ad541241922aa"
+          },
+          {
+            "name": "__0_90.distcp",
+            "bytes": 7374377,
+            "sha256": "e166d9c96e32a11457e39b141ef401abaf561e0605332992ed9ebf697a08c2d2"
+          },
+          {
+            "name": "__0_91.distcp",
+            "bytes": 7374377,
+            "sha256": "952c4457e40e3ed4aa94791d883c6447242d939d88281bba0dd3fdbb1b0d8da2"
+          },
+          {
+            "name": "__0_92.distcp",
+            "bytes": 7374377,
+            "sha256": "63dade5ded6d0c6c41c5a89ebea22109f4a4f0714734a9c26845dd527f275e2b"
+          },
+          {
+            "name": "__0_93.distcp",
+            "bytes": 7374377,
+            "sha256": "273ee02c2b7eda8f2d3c3f1f8fcc637b5e9a6fcc70e42dd2583bee340ea3d65f"
+          },
+          {
+            "name": "__0_94.distcp",
+            "bytes": 7374377,
+            "sha256": "477a98076db68984fdfe2fadae8be1b1ddaa3b78668e7d61ba2e3cabf5ab19a7"
+          },
+          {
+            "name": "__0_95.distcp",
+            "bytes": 7374377,
+            "sha256": "3e53fcb6dccad576d1db6491e43afdd914bd7e919838920ffcd8d2b9a98d0023"
+          },
+          {
+            "name": "__0_96.distcp",
+            "bytes": 7374377,
+            "sha256": "d17287f1f1e3dd2c4ad473c7d8e32aaa76067e8edf12b977b861ef6bd52dffc9"
+          },
+          {
+            "name": "__0_97.distcp",
+            "bytes": 7374377,
+            "sha256": "ed93399672d60957fef0cb6704c6933617711638a501461becc7a11907651877"
+          },
+          {
+            "name": "__0_98.distcp",
+            "bytes": 7374377,
+            "sha256": "406aa212264b35881385d863f90e93e2bea64afaf062ad98e8239cb8cb28f894"
+          },
+          {
+            "name": "__0_99.distcp",
+            "bytes": 7374377,
+            "sha256": "7f5094992e8ddf537980682ffca98942c577aa3b2a911622f605725511238faf"
+          }
+        ],
+        "model": "base",
+        "checkpoint": "/workspace/meeting-artifacts/multiretain-layers-v1/checkpoint-assets/base",
+        "checkpoint_metadata_sha256": "5bbdb894bc45e52fbc43d11854386bdb2cda8b0dddee3ac1e8a4156ca1a06470",
+        "config_sha256": "b648cfd2fb11797ade835e82f6dd4c3e7abd0d4256ae4360bd67796d00f198c9",
+        "tokenizer_sha256": "4783313f9804f545bf8515653cf91549b5f1a507fe5703c7d7279921dd9ec8fb",
+        "manifest_sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "hooks": [
+          "decoder.layers.0",
+          "decoder.layers.1",
+          "decoder.layers.2",
+          "decoder.layers.3",
+          "decoder.layers.4",
+          "decoder.layers.5",
+          "decoder.layers.6",
+          "decoder.layers.7",
+          "decoder.layers.8",
+          "decoder.layers.9",
+          "decoder.layers.10",
+          "decoder.layers.11",
+          "decoder.layers.12",
+          "decoder.layers.13",
+          "decoder.layers.14",
+          "decoder.layers.15",
+          "decoder.layers.16",
+          "decoder.layers.17",
+          "decoder.layers.18",
+          "decoder.layers.19",
+          "decoder.layers.20",
+          "decoder.layers.21",
+          "decoder.layers.22",
+          "decoder.layers.23",
+          "decoder.layers.24",
+          "decoder.final_norm"
+        ],
+        "schema": "multiretain-all-layers-fixed8-records-v3",
+        "feature_dtype": "float32",
+        "feature_width": 1920,
+        "physical_batch_size": 8,
+        "filler_policy": "pad1 rows of valid length1; all filler outputs excluded",
+        "layer_numbering": "exact zero-indexed module16; meeting layer16 equivalence unresolved",
+        "pool": "mean nucleotide positions; padding excluded",
+        "padding": "right to1000, pad1",
+        "dtype": "checkpoint BF16/FP32 preserved",
+        "attention_backend": "TE unfused",
+        "batch_size": 8,
+        "smoke": false,
+        "smoke_rows": 32,
+        "source_sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "support_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "fixed_batch_source_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "effective_config_sha256": "0f246900711d7d6bf530e75f032cae749d8f527c9a20f5f22f87882bcc1b75d8",
+        "cache_key": "7014cfcf6fba5d8aa4012ae04cbcf585c4e392fc790bb516ab207881bad8783f"
+      },
+      "identity_sha256": "df33233a0e8f2f4023baceca592f036c6247382d1b1c04384dc5ca7dfe965e90",
+      "producer_receipt_sha256": "908dbc751533f75f37767cfa7089b63a81d220ba2aa024935f55054804426cbd",
+      "layer_registry": [
+        {
+          "array_key": "decoder_layer_0",
+          "module_path": "decoder.layers.0",
+          "zero_based_index": 0,
+          "display_name": "Block 1",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_1",
+          "module_path": "decoder.layers.1",
+          "zero_based_index": 1,
+          "display_name": "Block 2",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_2",
+          "module_path": "decoder.layers.2",
+          "zero_based_index": 2,
+          "display_name": "Block 3",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_3",
+          "module_path": "decoder.layers.3",
+          "zero_based_index": 3,
+          "display_name": "Block 4",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_4",
+          "module_path": "decoder.layers.4",
+          "zero_based_index": 4,
+          "display_name": "Block 5",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_5",
+          "module_path": "decoder.layers.5",
+          "zero_based_index": 5,
+          "display_name": "Block 6",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_6",
+          "module_path": "decoder.layers.6",
+          "zero_based_index": 6,
+          "display_name": "Block 7",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_7",
+          "module_path": "decoder.layers.7",
+          "zero_based_index": 7,
+          "display_name": "Block 8",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_8",
+          "module_path": "decoder.layers.8",
+          "zero_based_index": 8,
+          "display_name": "Block 9",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_9",
+          "module_path": "decoder.layers.9",
+          "zero_based_index": 9,
+          "display_name": "Block 10",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_10",
+          "module_path": "decoder.layers.10",
+          "zero_based_index": 10,
+          "display_name": "Block 11",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_11",
+          "module_path": "decoder.layers.11",
+          "zero_based_index": 11,
+          "display_name": "Block 12",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_12",
+          "module_path": "decoder.layers.12",
+          "zero_based_index": 12,
+          "display_name": "Block 13",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_13",
+          "module_path": "decoder.layers.13",
+          "zero_based_index": 13,
+          "display_name": "Block 14",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_14",
+          "module_path": "decoder.layers.14",
+          "zero_based_index": 14,
+          "display_name": "Block 15",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_15",
+          "module_path": "decoder.layers.15",
+          "zero_based_index": 15,
+          "display_name": "Block 16",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_16",
+          "module_path": "decoder.layers.16",
+          "zero_based_index": 16,
+          "display_name": "Block 17",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_17",
+          "module_path": "decoder.layers.17",
+          "zero_based_index": 17,
+          "display_name": "Block 18",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_18",
+          "module_path": "decoder.layers.18",
+          "zero_based_index": 18,
+          "display_name": "Block 19",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_19",
+          "module_path": "decoder.layers.19",
+          "zero_based_index": 19,
+          "display_name": "Block 20",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_20",
+          "module_path": "decoder.layers.20",
+          "zero_based_index": 20,
+          "display_name": "Block 21",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_21",
+          "module_path": "decoder.layers.21",
+          "zero_based_index": 21,
+          "display_name": "Block 22",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_22",
+          "module_path": "decoder.layers.22",
+          "zero_based_index": 22,
+          "display_name": "Block 23",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_23",
+          "module_path": "decoder.layers.23",
+          "zero_based_index": 23,
+          "display_name": "Block 24",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_24",
+          "module_path": "decoder.layers.24",
+          "zero_based_index": 24,
+          "display_name": "Block 25",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "final_norm",
+          "module_path": "decoder.final_norm",
+          "zero_based_index": null,
+          "display_name": "Final RMSNorm",
+          "width": 1920,
+          "module_type": "RMSNorm",
+          "hook_semantics": "post-final RMSNorm"
+        }
+      ],
+      "row_count": 7680,
+      "chunks": 960,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D4"
+      ],
+      "current_verification": "all chunk identity/count vectors; all receipt paths/sizes; first/last chunk26-layer headers; historical feature content check reused",
+      "full_feature_byte_hash_fresh": false,
+      "new_adapter_use_condition": "C2"
+    },
+    "base_h3/H3/maxent": {
+      "id": "base_h3/H3/maxent",
+      "current_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/H3/maxent",
+      "root": "base_h3",
+      "relative_path": "features/H3/maxent",
+      "source_model_identity": {
+        "runtime": {
+          "torch": "2.8.0+cu128",
+          "transformer-engine": "2.3.0",
+          "transformer-engine-torch": "2.3.0",
+          "bionemo-evo2": "2.4",
+          "megatron-bridge": "0.3.0rc0",
+          "megatron-core": "0.16.0rc0",
+          "tokenizers": "0.22.1",
+          "causal-conv1d": "1.5.4",
+          "source_commits": {
+            "/workspace/bionemo-cu12": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+            "/workspace/megatron-bridge": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+            "/workspace/megatron-bridge/3rdparty/Megatron-LM": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13"
+          }
+        },
+        "checkpoint_shards": [
+          {
+            "name": "__0_0.distcp",
+            "bytes": 15516878934,
+            "sha256": "fd3491475ee64b56b0c24c76ba305b39a0780385ed25b2c92f6729f454447b6c"
+          }
+        ],
+        "model": "maxent",
+        "checkpoint": "/workspace/meeting-artifacts/multiretain-layers-v1/checkpoint-assets/maxent",
+        "checkpoint_metadata_sha256": "77d3d2ab5e342f354bddc8ffbc3df28c02a57095885bbfcadea6d2727d21b634",
+        "config_sha256": "43b18b0e2b9fa7e19e7c7b6d487514ede7400c3fc6176eebab596f9da6f84488",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "manifest_sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+        "hooks": [
+          "decoder.layers.0",
+          "decoder.layers.1",
+          "decoder.layers.2",
+          "decoder.layers.3",
+          "decoder.layers.4",
+          "decoder.layers.5",
+          "decoder.layers.6",
+          "decoder.layers.7",
+          "decoder.layers.8",
+          "decoder.layers.9",
+          "decoder.layers.10",
+          "decoder.layers.11",
+          "decoder.layers.12",
+          "decoder.layers.13",
+          "decoder.layers.14",
+          "decoder.layers.15",
+          "decoder.layers.16",
+          "decoder.layers.17",
+          "decoder.layers.18",
+          "decoder.layers.19",
+          "decoder.layers.20",
+          "decoder.layers.21",
+          "decoder.layers.22",
+          "decoder.layers.23",
+          "decoder.layers.24",
+          "decoder.final_norm"
+        ],
+        "schema": "multiretain-all-layers-fixed8-records-v3",
+        "feature_dtype": "float32",
+        "feature_width": 1920,
+        "physical_batch_size": 8,
+        "filler_policy": "pad1 rows of valid length1; all filler outputs excluded",
+        "layer_numbering": "exact zero-indexed module16; meeting layer16 equivalence unresolved",
+        "pool": "mean nucleotide positions; padding excluded",
+        "padding": "right to1000, pad1",
+        "dtype": "checkpoint BF16/FP32 preserved",
+        "attention_backend": "TE unfused",
+        "batch_size": 8,
+        "smoke": false,
+        "smoke_rows": 32,
+        "source_sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "support_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "fixed_batch_source_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "effective_config_sha256": "0f246900711d7d6bf530e75f032cae749d8f527c9a20f5f22f87882bcc1b75d8",
+        "cache_key": "fb8a8cc79051859e645014112bebc1351fd1e8bdbeb15846791c6c5ef61559fd"
+      },
+      "identity_sha256": "06f459aef8fb0c8547581ec02cbc5d0a4ebd588bd569a2f84c51c5666ec246b1",
+      "producer_receipt_sha256": "a3448d22a6d69ed81f6c36a286cc3135fd67d2163047e21d07a4e99859914fea",
+      "layer_registry": [
+        {
+          "array_key": "decoder_layer_0",
+          "module_path": "decoder.layers.0",
+          "zero_based_index": 0,
+          "display_name": "Block 1",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_1",
+          "module_path": "decoder.layers.1",
+          "zero_based_index": 1,
+          "display_name": "Block 2",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_2",
+          "module_path": "decoder.layers.2",
+          "zero_based_index": 2,
+          "display_name": "Block 3",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_3",
+          "module_path": "decoder.layers.3",
+          "zero_based_index": 3,
+          "display_name": "Block 4",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_4",
+          "module_path": "decoder.layers.4",
+          "zero_based_index": 4,
+          "display_name": "Block 5",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_5",
+          "module_path": "decoder.layers.5",
+          "zero_based_index": 5,
+          "display_name": "Block 6",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_6",
+          "module_path": "decoder.layers.6",
+          "zero_based_index": 6,
+          "display_name": "Block 7",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_7",
+          "module_path": "decoder.layers.7",
+          "zero_based_index": 7,
+          "display_name": "Block 8",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_8",
+          "module_path": "decoder.layers.8",
+          "zero_based_index": 8,
+          "display_name": "Block 9",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_9",
+          "module_path": "decoder.layers.9",
+          "zero_based_index": 9,
+          "display_name": "Block 10",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_10",
+          "module_path": "decoder.layers.10",
+          "zero_based_index": 10,
+          "display_name": "Block 11",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_11",
+          "module_path": "decoder.layers.11",
+          "zero_based_index": 11,
+          "display_name": "Block 12",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_12",
+          "module_path": "decoder.layers.12",
+          "zero_based_index": 12,
+          "display_name": "Block 13",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_13",
+          "module_path": "decoder.layers.13",
+          "zero_based_index": 13,
+          "display_name": "Block 14",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_14",
+          "module_path": "decoder.layers.14",
+          "zero_based_index": 14,
+          "display_name": "Block 15",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_15",
+          "module_path": "decoder.layers.15",
+          "zero_based_index": 15,
+          "display_name": "Block 16",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_16",
+          "module_path": "decoder.layers.16",
+          "zero_based_index": 16,
+          "display_name": "Block 17",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_17",
+          "module_path": "decoder.layers.17",
+          "zero_based_index": 17,
+          "display_name": "Block 18",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_18",
+          "module_path": "decoder.layers.18",
+          "zero_based_index": 18,
+          "display_name": "Block 19",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_19",
+          "module_path": "decoder.layers.19",
+          "zero_based_index": 19,
+          "display_name": "Block 20",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_20",
+          "module_path": "decoder.layers.20",
+          "zero_based_index": 20,
+          "display_name": "Block 21",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_21",
+          "module_path": "decoder.layers.21",
+          "zero_based_index": 21,
+          "display_name": "Block 22",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_22",
+          "module_path": "decoder.layers.22",
+          "zero_based_index": 22,
+          "display_name": "Block 23",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_23",
+          "module_path": "decoder.layers.23",
+          "zero_based_index": 23,
+          "display_name": "Block 24",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_24",
+          "module_path": "decoder.layers.24",
+          "zero_based_index": 24,
+          "display_name": "Block 25",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "final_norm",
+          "module_path": "decoder.final_norm",
+          "zero_based_index": null,
+          "display_name": "Final RMSNorm",
+          "width": 1920,
+          "module_type": "RMSNorm",
+          "hook_semantics": "post-final RMSNorm"
+        }
+      ],
+      "row_count": 14965,
+      "chunks": 1871,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D4"
+      ],
+      "current_verification": "all chunk identity/count vectors; all receipt paths/sizes; first/last chunk26-layer headers; historical feature content check reused",
+      "full_feature_byte_hash_fresh": false,
+      "new_adapter_use_condition": "C2"
+    },
+    "base_h3/other_five/maxent": {
+      "id": "base_h3/other_five/maxent",
+      "current_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/features/other_five/maxent",
+      "root": "base_h3",
+      "relative_path": "features/other_five/maxent",
+      "source_model_identity": {
+        "runtime": {
+          "torch": "2.8.0+cu128",
+          "transformer-engine": "2.3.0",
+          "transformer-engine-torch": "2.3.0",
+          "bionemo-evo2": "2.4",
+          "megatron-bridge": "0.3.0rc0",
+          "megatron-core": "0.16.0rc0",
+          "tokenizers": "0.22.1",
+          "causal-conv1d": "1.5.4",
+          "source_commits": {
+            "/workspace/bionemo-cu12": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+            "/workspace/megatron-bridge": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+            "/workspace/megatron-bridge/3rdparty/Megatron-LM": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13"
+          }
+        },
+        "checkpoint_shards": [
+          {
+            "name": "__0_0.distcp",
+            "bytes": 15516878934,
+            "sha256": "fd3491475ee64b56b0c24c76ba305b39a0780385ed25b2c92f6729f454447b6c"
+          }
+        ],
+        "model": "maxent",
+        "checkpoint": "/workspace/meeting-artifacts/multiretain-layers-v1/checkpoint-assets/maxent",
+        "checkpoint_metadata_sha256": "77d3d2ab5e342f354bddc8ffbc3df28c02a57095885bbfcadea6d2727d21b634",
+        "config_sha256": "43b18b0e2b9fa7e19e7c7b6d487514ede7400c3fc6176eebab596f9da6f84488",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "manifest_sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "hooks": [
+          "decoder.layers.0",
+          "decoder.layers.1",
+          "decoder.layers.2",
+          "decoder.layers.3",
+          "decoder.layers.4",
+          "decoder.layers.5",
+          "decoder.layers.6",
+          "decoder.layers.7",
+          "decoder.layers.8",
+          "decoder.layers.9",
+          "decoder.layers.10",
+          "decoder.layers.11",
+          "decoder.layers.12",
+          "decoder.layers.13",
+          "decoder.layers.14",
+          "decoder.layers.15",
+          "decoder.layers.16",
+          "decoder.layers.17",
+          "decoder.layers.18",
+          "decoder.layers.19",
+          "decoder.layers.20",
+          "decoder.layers.21",
+          "decoder.layers.22",
+          "decoder.layers.23",
+          "decoder.layers.24",
+          "decoder.final_norm"
+        ],
+        "schema": "multiretain-all-layers-fixed8-records-v3",
+        "feature_dtype": "float32",
+        "feature_width": 1920,
+        "physical_batch_size": 8,
+        "filler_policy": "pad1 rows of valid length1; all filler outputs excluded",
+        "layer_numbering": "exact zero-indexed module16; meeting layer16 equivalence unresolved",
+        "pool": "mean nucleotide positions; padding excluded",
+        "padding": "right to1000, pad1",
+        "dtype": "checkpoint BF16/FP32 preserved",
+        "attention_backend": "TE unfused",
+        "batch_size": 8,
+        "smoke": false,
+        "smoke_rows": 32,
+        "source_sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "support_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "fixed_batch_source_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "effective_config_sha256": "0f246900711d7d6bf530e75f032cae749d8f527c9a20f5f22f87882bcc1b75d8",
+        "cache_key": "7081b22b544bfc29ca5348335cf59316c90d6ce3f7f001661cc47e55c1085abb"
+      },
+      "identity_sha256": "460a20e497233dfaecec4254986d4190b112ba2481c5399527c6fa0bbbb98933",
+      "producer_receipt_sha256": "a640f08c5cbb5813d1a6f99f9949b2197562c01d1ad7b16ca2a2968fa4b8c1af",
+      "layer_registry": [
+        {
+          "array_key": "decoder_layer_0",
+          "module_path": "decoder.layers.0",
+          "zero_based_index": 0,
+          "display_name": "Block 1",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_1",
+          "module_path": "decoder.layers.1",
+          "zero_based_index": 1,
+          "display_name": "Block 2",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_2",
+          "module_path": "decoder.layers.2",
+          "zero_based_index": 2,
+          "display_name": "Block 3",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_3",
+          "module_path": "decoder.layers.3",
+          "zero_based_index": 3,
+          "display_name": "Block 4",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_4",
+          "module_path": "decoder.layers.4",
+          "zero_based_index": 4,
+          "display_name": "Block 5",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_5",
+          "module_path": "decoder.layers.5",
+          "zero_based_index": 5,
+          "display_name": "Block 6",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_6",
+          "module_path": "decoder.layers.6",
+          "zero_based_index": 6,
+          "display_name": "Block 7",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_7",
+          "module_path": "decoder.layers.7",
+          "zero_based_index": 7,
+          "display_name": "Block 8",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_8",
+          "module_path": "decoder.layers.8",
+          "zero_based_index": 8,
+          "display_name": "Block 9",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_9",
+          "module_path": "decoder.layers.9",
+          "zero_based_index": 9,
+          "display_name": "Block 10",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_10",
+          "module_path": "decoder.layers.10",
+          "zero_based_index": 10,
+          "display_name": "Block 11",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_11",
+          "module_path": "decoder.layers.11",
+          "zero_based_index": 11,
+          "display_name": "Block 12",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_12",
+          "module_path": "decoder.layers.12",
+          "zero_based_index": 12,
+          "display_name": "Block 13",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_13",
+          "module_path": "decoder.layers.13",
+          "zero_based_index": 13,
+          "display_name": "Block 14",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_14",
+          "module_path": "decoder.layers.14",
+          "zero_based_index": 14,
+          "display_name": "Block 15",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_15",
+          "module_path": "decoder.layers.15",
+          "zero_based_index": 15,
+          "display_name": "Block 16",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_16",
+          "module_path": "decoder.layers.16",
+          "zero_based_index": 16,
+          "display_name": "Block 17",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_17",
+          "module_path": "decoder.layers.17",
+          "zero_based_index": 17,
+          "display_name": "Block 18",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_18",
+          "module_path": "decoder.layers.18",
+          "zero_based_index": 18,
+          "display_name": "Block 19",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_19",
+          "module_path": "decoder.layers.19",
+          "zero_based_index": 19,
+          "display_name": "Block 20",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_20",
+          "module_path": "decoder.layers.20",
+          "zero_based_index": 20,
+          "display_name": "Block 21",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_21",
+          "module_path": "decoder.layers.21",
+          "zero_based_index": 21,
+          "display_name": "Block 22",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_22",
+          "module_path": "decoder.layers.22",
+          "zero_based_index": 22,
+          "display_name": "Block 23",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_23",
+          "module_path": "decoder.layers.23",
+          "zero_based_index": 23,
+          "display_name": "Block 24",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_24",
+          "module_path": "decoder.layers.24",
+          "zero_based_index": 24,
+          "display_name": "Block 25",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "final_norm",
+          "module_path": "decoder.final_norm",
+          "zero_based_index": null,
+          "display_name": "Final RMSNorm",
+          "width": 1920,
+          "module_type": "RMSNorm",
+          "hook_semantics": "post-final RMSNorm"
+        }
+      ],
+      "row_count": 7680,
+      "chunks": 960,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D4"
+      ],
+      "current_verification": "all chunk identity/count vectors; all receipt paths/sizes; first/last chunk26-layer headers; historical feature content check reused",
+      "full_feature_byte_hash_fresh": false,
+      "new_adapter_use_condition": "C2"
+    },
+    "R3/H3/new": {
+      "id": "R3/H3/new",
+      "current_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/features/H3/new",
+      "root": "R3",
+      "relative_path": "features/H3/new",
+      "source_model_identity": {
+        "runtime": {
+          "torch": "2.8.0+cu128",
+          "transformer-engine": "2.3.0",
+          "transformer-engine-torch": "2.3.0",
+          "bionemo-evo2": "2.4",
+          "megatron-bridge": "0.3.0rc0",
+          "megatron-core": "0.16.0rc0",
+          "tokenizers": "0.22.1",
+          "causal-conv1d": "1.5.4",
+          "source_commits": {
+            "/workspace/bionemo-cu12": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+            "/workspace/megatron-bridge": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+            "/workspace/megatron-bridge/3rdparty/Megatron-LM": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13"
+          }
+        },
+        "checkpoint_shards": [
+          {
+            "name": "__0_0.distcp",
+            "bytes": 15516878934,
+            "sha256": "a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0"
+          }
+        ],
+        "model": "supplied_three_source_config_iter2151",
+        "checkpoint": "/workspace/meeting-artifacts/multiretain-comparison-v1/checkpoint-assets",
+        "checkpoint_metadata_sha256": "e40213da560686cd440672f7fe7b0df485beaf65f6c7801dd2032f519d670303",
+        "config_sha256": "43c03d2d23b917656ae0079b4af5f133aa0c48735f703cb68c5e5968187319bf",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "manifest_sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+        "hooks": [
+          "decoder.layers.0",
+          "decoder.layers.1",
+          "decoder.layers.2",
+          "decoder.layers.3",
+          "decoder.layers.4",
+          "decoder.layers.5",
+          "decoder.layers.6",
+          "decoder.layers.7",
+          "decoder.layers.8",
+          "decoder.layers.9",
+          "decoder.layers.10",
+          "decoder.layers.11",
+          "decoder.layers.12",
+          "decoder.layers.13",
+          "decoder.layers.14",
+          "decoder.layers.15",
+          "decoder.layers.16",
+          "decoder.layers.17",
+          "decoder.layers.18",
+          "decoder.layers.19",
+          "decoder.layers.20",
+          "decoder.layers.21",
+          "decoder.layers.22",
+          "decoder.layers.23",
+          "decoder.layers.24",
+          "decoder.final_norm"
+        ],
+        "schema": "multiretain-all-layers-fixed8-records-v3",
+        "feature_dtype": "float32",
+        "feature_width": 1920,
+        "physical_batch_size": 8,
+        "filler_policy": "pad1 rows of valid length1; all filler outputs excluded",
+        "layer_numbering": "exact zero-indexed module16; meeting layer16 equivalence unresolved",
+        "pool": "mean nucleotide positions; padding excluded",
+        "padding": "right to1000, pad1",
+        "dtype": "checkpoint BF16/FP32 preserved",
+        "attention_backend": "TE unfused",
+        "batch_size": 8,
+        "smoke": false,
+        "smoke_rows": 32,
+        "source_sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "support_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "fixed_batch_source_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "effective_config_sha256": "40a5dc321ea8b21f2b6e9f06ba5cc688b3c7684d5ab94938b5e30530bdba5613",
+        "cache_key": "a0a00c12647e3a938f594ba15a5cb36aefa01d610e42c392a655636486571280"
+      },
+      "identity_sha256": "d75361828b7690350c99ad4bfe6a5066e525c74a96fded35919a8a7d961cfd22",
+      "producer_receipt_sha256": "fd85a0ccad83ef219076a31623043afbf922c571f446c90e78097a1c6b5f6136",
+      "layer_registry": [
+        {
+          "array_key": "decoder_layer_0",
+          "module_path": "decoder.layers.0",
+          "zero_based_index": 0,
+          "display_name": "Block 1",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_1",
+          "module_path": "decoder.layers.1",
+          "zero_based_index": 1,
+          "display_name": "Block 2",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_2",
+          "module_path": "decoder.layers.2",
+          "zero_based_index": 2,
+          "display_name": "Block 3",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_3",
+          "module_path": "decoder.layers.3",
+          "zero_based_index": 3,
+          "display_name": "Block 4",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_4",
+          "module_path": "decoder.layers.4",
+          "zero_based_index": 4,
+          "display_name": "Block 5",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_5",
+          "module_path": "decoder.layers.5",
+          "zero_based_index": 5,
+          "display_name": "Block 6",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_6",
+          "module_path": "decoder.layers.6",
+          "zero_based_index": 6,
+          "display_name": "Block 7",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_7",
+          "module_path": "decoder.layers.7",
+          "zero_based_index": 7,
+          "display_name": "Block 8",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_8",
+          "module_path": "decoder.layers.8",
+          "zero_based_index": 8,
+          "display_name": "Block 9",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_9",
+          "module_path": "decoder.layers.9",
+          "zero_based_index": 9,
+          "display_name": "Block 10",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_10",
+          "module_path": "decoder.layers.10",
+          "zero_based_index": 10,
+          "display_name": "Block 11",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_11",
+          "module_path": "decoder.layers.11",
+          "zero_based_index": 11,
+          "display_name": "Block 12",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_12",
+          "module_path": "decoder.layers.12",
+          "zero_based_index": 12,
+          "display_name": "Block 13",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_13",
+          "module_path": "decoder.layers.13",
+          "zero_based_index": 13,
+          "display_name": "Block 14",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_14",
+          "module_path": "decoder.layers.14",
+          "zero_based_index": 14,
+          "display_name": "Block 15",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_15",
+          "module_path": "decoder.layers.15",
+          "zero_based_index": 15,
+          "display_name": "Block 16",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_16",
+          "module_path": "decoder.layers.16",
+          "zero_based_index": 16,
+          "display_name": "Block 17",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_17",
+          "module_path": "decoder.layers.17",
+          "zero_based_index": 17,
+          "display_name": "Block 18",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_18",
+          "module_path": "decoder.layers.18",
+          "zero_based_index": 18,
+          "display_name": "Block 19",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_19",
+          "module_path": "decoder.layers.19",
+          "zero_based_index": 19,
+          "display_name": "Block 20",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_20",
+          "module_path": "decoder.layers.20",
+          "zero_based_index": 20,
+          "display_name": "Block 21",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_21",
+          "module_path": "decoder.layers.21",
+          "zero_based_index": 21,
+          "display_name": "Block 22",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_22",
+          "module_path": "decoder.layers.22",
+          "zero_based_index": 22,
+          "display_name": "Block 23",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_23",
+          "module_path": "decoder.layers.23",
+          "zero_based_index": 23,
+          "display_name": "Block 24",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_24",
+          "module_path": "decoder.layers.24",
+          "zero_based_index": 24,
+          "display_name": "Block 25",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "final_norm",
+          "module_path": "decoder.final_norm",
+          "zero_based_index": null,
+          "display_name": "Final RMSNorm",
+          "width": 1920,
+          "module_type": "RMSNorm",
+          "hook_semantics": "post-final RMSNorm"
+        }
+      ],
+      "row_count": 14965,
+      "chunks": 1871,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D4"
+      ],
+      "current_verification": "all chunk identity/count vectors; all receipt paths/sizes; first/last chunk26-layer headers; historical feature content check reused",
+      "full_feature_byte_hash_fresh": false,
+      "new_adapter_use_condition": "C2"
+    },
+    "R3/other_five/new": {
+      "id": "R3/other_five/new",
+      "current_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/features/other_five/new",
+      "root": "R3",
+      "relative_path": "features/other_five/new",
+      "source_model_identity": {
+        "runtime": {
+          "torch": "2.8.0+cu128",
+          "transformer-engine": "2.3.0",
+          "transformer-engine-torch": "2.3.0",
+          "bionemo-evo2": "2.4",
+          "megatron-bridge": "0.3.0rc0",
+          "megatron-core": "0.16.0rc0",
+          "tokenizers": "0.22.1",
+          "causal-conv1d": "1.5.4",
+          "source_commits": {
+            "/workspace/bionemo-cu12": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+            "/workspace/megatron-bridge": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+            "/workspace/megatron-bridge/3rdparty/Megatron-LM": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13"
+          }
+        },
+        "checkpoint_shards": [
+          {
+            "name": "__0_0.distcp",
+            "bytes": 15516878934,
+            "sha256": "a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0"
+          }
+        ],
+        "model": "supplied_three_source_config_iter2151",
+        "checkpoint": "/workspace/meeting-artifacts/multiretain-comparison-v1/checkpoint-assets",
+        "checkpoint_metadata_sha256": "e40213da560686cd440672f7fe7b0df485beaf65f6c7801dd2032f519d670303",
+        "config_sha256": "43c03d2d23b917656ae0079b4af5f133aa0c48735f703cb68c5e5968187319bf",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "manifest_sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+        "hooks": [
+          "decoder.layers.0",
+          "decoder.layers.1",
+          "decoder.layers.2",
+          "decoder.layers.3",
+          "decoder.layers.4",
+          "decoder.layers.5",
+          "decoder.layers.6",
+          "decoder.layers.7",
+          "decoder.layers.8",
+          "decoder.layers.9",
+          "decoder.layers.10",
+          "decoder.layers.11",
+          "decoder.layers.12",
+          "decoder.layers.13",
+          "decoder.layers.14",
+          "decoder.layers.15",
+          "decoder.layers.16",
+          "decoder.layers.17",
+          "decoder.layers.18",
+          "decoder.layers.19",
+          "decoder.layers.20",
+          "decoder.layers.21",
+          "decoder.layers.22",
+          "decoder.layers.23",
+          "decoder.layers.24",
+          "decoder.final_norm"
+        ],
+        "schema": "multiretain-all-layers-fixed8-records-v3",
+        "feature_dtype": "float32",
+        "feature_width": 1920,
+        "physical_batch_size": 8,
+        "filler_policy": "pad1 rows of valid length1; all filler outputs excluded",
+        "layer_numbering": "exact zero-indexed module16; meeting layer16 equivalence unresolved",
+        "pool": "mean nucleotide positions; padding excluded",
+        "padding": "right to1000, pad1",
+        "dtype": "checkpoint BF16/FP32 preserved",
+        "attention_backend": "TE unfused",
+        "batch_size": 8,
+        "smoke": false,
+        "smoke_rows": 32,
+        "source_sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "support_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "fixed_batch_source_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "effective_config_sha256": "40a5dc321ea8b21f2b6e9f06ba5cc688b3c7684d5ab94938b5e30530bdba5613",
+        "cache_key": "cdd88f34ee3dfda68ac63b15f20605e61b4752669f8457d4fe3d1467165ab40a"
+      },
+      "identity_sha256": "dabf25ab75613d98f8ddca6fb3ddedcc391f1de09a87fd20e75d10a63401f4ca",
+      "producer_receipt_sha256": "e03c98b478dc125a0fd760359a406dfa4582451be600dacb47a3e9b7f816b4f8",
+      "layer_registry": [
+        {
+          "array_key": "decoder_layer_0",
+          "module_path": "decoder.layers.0",
+          "zero_based_index": 0,
+          "display_name": "Block 1",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_1",
+          "module_path": "decoder.layers.1",
+          "zero_based_index": 1,
+          "display_name": "Block 2",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_2",
+          "module_path": "decoder.layers.2",
+          "zero_based_index": 2,
+          "display_name": "Block 3",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_3",
+          "module_path": "decoder.layers.3",
+          "zero_based_index": 3,
+          "display_name": "Block 4",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_4",
+          "module_path": "decoder.layers.4",
+          "zero_based_index": 4,
+          "display_name": "Block 5",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_5",
+          "module_path": "decoder.layers.5",
+          "zero_based_index": 5,
+          "display_name": "Block 6",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_6",
+          "module_path": "decoder.layers.6",
+          "zero_based_index": 6,
+          "display_name": "Block 7",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_7",
+          "module_path": "decoder.layers.7",
+          "zero_based_index": 7,
+          "display_name": "Block 8",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_8",
+          "module_path": "decoder.layers.8",
+          "zero_based_index": 8,
+          "display_name": "Block 9",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_9",
+          "module_path": "decoder.layers.9",
+          "zero_based_index": 9,
+          "display_name": "Block 10",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_10",
+          "module_path": "decoder.layers.10",
+          "zero_based_index": 10,
+          "display_name": "Block 11",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_11",
+          "module_path": "decoder.layers.11",
+          "zero_based_index": 11,
+          "display_name": "Block 12",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_12",
+          "module_path": "decoder.layers.12",
+          "zero_based_index": 12,
+          "display_name": "Block 13",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_13",
+          "module_path": "decoder.layers.13",
+          "zero_based_index": 13,
+          "display_name": "Block 14",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_14",
+          "module_path": "decoder.layers.14",
+          "zero_based_index": 14,
+          "display_name": "Block 15",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_15",
+          "module_path": "decoder.layers.15",
+          "zero_based_index": 15,
+          "display_name": "Block 16",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_16",
+          "module_path": "decoder.layers.16",
+          "zero_based_index": 16,
+          "display_name": "Block 17",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_17",
+          "module_path": "decoder.layers.17",
+          "zero_based_index": 17,
+          "display_name": "Block 18",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_18",
+          "module_path": "decoder.layers.18",
+          "zero_based_index": 18,
+          "display_name": "Block 19",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_19",
+          "module_path": "decoder.layers.19",
+          "zero_based_index": 19,
+          "display_name": "Block 20",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_20",
+          "module_path": "decoder.layers.20",
+          "zero_based_index": 20,
+          "display_name": "Block 21",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_21",
+          "module_path": "decoder.layers.21",
+          "zero_based_index": 21,
+          "display_name": "Block 22",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_22",
+          "module_path": "decoder.layers.22",
+          "zero_based_index": 22,
+          "display_name": "Block 23",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_23",
+          "module_path": "decoder.layers.23",
+          "zero_based_index": 23,
+          "display_name": "Block 24",
+          "width": 1920,
+          "module_type": "HyenaLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "decoder_layer_24",
+          "module_path": "decoder.layers.24",
+          "zero_based_index": 24,
+          "display_name": "Block 25",
+          "width": 1920,
+          "module_type": "TransformerLayer",
+          "hook_semantics": "post-decoder-block residual output"
+        },
+        {
+          "array_key": "final_norm",
+          "module_path": "decoder.final_norm",
+          "zero_based_index": null,
+          "display_name": "Final RMSNorm",
+          "width": 1920,
+          "module_type": "RMSNorm",
+          "hook_semantics": "post-final RMSNorm"
+        }
+      ],
+      "row_count": 7680,
+      "chunks": 960,
+      "evidence_level": 2,
+      "evidence_ids": [
+        "D3",
+        "D4"
+      ],
+      "current_verification": "all chunk identity/count vectors; all receipt paths/sizes; first/last chunk26-layer headers; historical feature content check reused",
+      "full_feature_byte_hash_fresh": false,
+      "new_adapter_use_condition": "C2"
+    }
+  },
+  "reference_roles": {
+    "historical_base_iter1": "historical base reference and unchanged fixed-base readout source; not proven relearning initial state",
+    "historical_H3_only_iter2000": "historical H3-only reference; not proven actual MaxEnt job parent or trajectory zero",
+    "historical_three_source_iter2151": "historical supplied three-source-config reference; not a proven PodB parent/start or an independent intervention replication",
+    "R0_R2": "B02 loader-route identifiers only; do not confuse with retain-stage reference names"
+  },
+  "tokenizers": [
+    {
+      "model": "base",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/base/tokenizer.json",
+      "sha256": "4783313f9804f545bf8515653cf91549b5f1a507fe5703c7d7279921dd9ec8fb",
+      "vocab_entries": 256,
+      "behavior_evidence": "TOKENIZER_QUALIFICATION at baseline: A65 C67 G71 T84 N78; pad1/EOS0; no inserted special tokens; right-pad1000 for this recorded route",
+      "new_adapter_behavior": "B04_UNQUALIFIED"
+    },
+    {
+      "model": "maxent",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/maxent/tokenizer.json",
+      "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "vocab_entries": 512,
+      "behavior_evidence": "TOKENIZER_QUALIFICATION at baseline: A65 C67 G71 T84 N78; pad1/EOS0; no inserted special tokens; right-pad1000 for this recorded route",
+      "new_adapter_behavior": "B04_UNQUALIFIED"
+    }
+  ],
+  "readout_contract": {
+    "folds": "saved exact18 sets; H3 three folds,other5 five folds; seeds42/17/1234",
+    "scaling": "fold-local StandardScaler; final all-training scaler+head fitted historically",
+    "classifier": "balanced L2 logistic / LBFGS",
+    "C": [
+      0.1,
+      1,
+      10
+    ],
+    "tie_break": "smaller C",
+    "tol": 0.0001,
+    "max_iter_retry": [
+      2000,
+      10000
+    ],
+    "optimizer_random_state": 42,
+    "classes": "numeric1 positive for binary; splice sorted0/1/2",
+    "binary_threshold": 0.5,
+    "multiclass_prediction": "argmax sorted classes",
+    "measurement_channels": [
+      "independently_refitted",
+      "unchanged_fixed_base_scaler_AND_head",
+      "sequence_controls",
+      "LM_output_head"
+    ],
+    "fixed_reference_rules": "no scaler refit, head substitution or coordinate drift; equal feature width alone insufficient; biological feature values need not equal across checkpoints"
+  },
+  "reuse_conditions": {
+    "C0": "Exact historical model/population/artifact use only; no new supplied-model score implied",
+    "C1": "Frozen data/folds/sequence controls reusable unchanged; new scoring still requires later-stage approval",
+    "C2": "Historical artifact valid for its exact source model; any new adapter feature/fixed-head/LM use requires B04 model/source/tokenizer/hook/pooling/mask/batch/backend/precision qualification and B05 protocol approval; feature values are allowed to change"
+  },
+  "reuse_matrix": {
+    "path": "REUSE_MATRIX.csv",
+    "sha256": "6db2ac2aac08131ef1228790f0ba2036b5bd52f8489b02e3cf43b7b2fa0767a7",
+    "rows": 5842,
+    "kind_counts": {
+      "frozen_data": 13,
+      "folds": 18,
+      "feature_view": 1014,
+      "head": 1404,
+      "control_fit": 36,
+      "prediction_channel": 3318,
+      "lm_reference": 39
+    },
+    "physical_head_entries_checked": 1908,
+    "historical_model_task_layer_seed_fit_entries": 1404,
+    "extra_exact_base_head_copies_in_R3": 468,
+    "historical_sequence_control_fit_entries": 36,
+    "unique_head_file_hashes_metadata_loaded": 477,
+    "prediction_bundles": 1134,
+    "prediction_channel_views": 3318,
+    "scope": "Rows are scoped artifact/views, not new fits, unique learned functions or independent experiments"
+  },
+  "numerical_anchor_contract": {
+    "smoke_manifest": {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/training_smoke_manifest.jsonl",
+      "sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+      "rows": 12,
+      "all_exact_frozen_training_members": true,
+      "ordered_ids_sha256": "1800b51b5262a453820797b1c42e7e99ca1788bd6d2aca4c77c886b053436ba8"
+    },
+    "training384": {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/throughput_training384.jsonl",
+      "sha256": "9bcfb9fc15a1a48f7a0158c8e4ebf92999cdaaa69bd00574803840643c90da12",
+      "rows": 384,
+      "all_exact_authorized_training": true
+    },
+    "saved_anchor_roots": [
+      {
+        "logical_id": "parent-smokes",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/parent-smokes",
+        "files_hash_verified": 68,
+        "expected_outputs": "historical parent/training-only outputs",
+        "adapter_qualification": false
+      },
+      {
+        "logical_id": "throughput-training384",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/throughput-training384",
+        "files_hash_verified": 54,
+        "expected_outputs": "historical parent/training-only outputs",
+        "adapter_qualification": false
+      }
+    ],
+    "smoke_atol": 0.0001,
+    "smoke_rtol": 1e-05,
+    "saved_probability_audit": 1e-10,
+    "metric_bootstrap_audit": 1e-12,
+    "packaged_training_head_diagnostic": {
+      "rows_per_task": 12,
+      "tasks": [
+        "emp_H3",
+        "gue_splice_reconstructed"
+      ],
+      "historical_gate": 1e-12,
+      "prior_max_delta": 0,
+      "B03_recomputed_predictions": false
+    },
+    "parent_only_comparisons_reused": 162,
+    "training384_comparisons_reused": 28,
+    "variable_physical_batch": "INELIGIBLE",
+    "adapter_original_route_fixture": "MISSING; candidate outputs cannot authenticate themselves"
+  },
+  "lm_contract": {
+    "reference_views": 39,
+    "models": 3,
+    "per_model_rows": 22645,
+    "array_keys": [
+      "nll_sum",
+      "n_tokens"
+    ],
+    "sum_dtype": "float32",
+    "count_dtype": "int64",
+    "semantics": "logits at positions[:-1] against tokens[1:]; targets with position<actual nucleotide length; per-row valid counts length-1; fillers excluded",
+    "corpus_aggregation_later": "sum loss sums / sum valid target counts, then exp(corpus NLL); never average per-sequence PPL",
+    "existing_lm_completion_receipts": "base_h3/R3 probes/{H3,other_five}/{task}/LM_COMPLETE.json",
+    "new_model_output_head_tokenizer_qualification": "B04_REQUIRED",
+    "metric_computations_B03": 0
+  },
+  "pairing_contract": {
+    "join_key": [
+      "frozen_manifest_sha256",
+      "task",
+      "split",
+      "id",
+      "sequence_sha256",
+      "numeric_label",
+      "exact_rc_group",
+      "ordered_population_sha256",
+      "fold_assignment_sha256",
+      "cv_seed",
+      "representation",
+      "policy"
+    ],
+    "resampling": [
+      {
+        "task": "emp_H3",
+        "split": "dev",
+        "copies": [
+          {
+            "root": "base_h3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/dev_resampling.npz",
+            "sha256": "002ec27ac3749826429b1fce1f8859f84c621fe8a17ce057b4d7ad0722c152f4"
+          },
+          {
+            "root": "R3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/H3/emp_H3/dev_resampling.npz",
+            "sha256": "002ec27ac3749826429b1fce1f8859f84c621fe8a17ce057b4d7ad0722c152f4"
+          },
+          {
+            "root": "controls",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/tasks/emp_H3/dev_resampling.npz",
+            "sha256": "002ec27ac3749826429b1fce1f8859f84c621fe8a17ce057b4d7ad0722c152f4"
+          }
+        ],
+        "byte_identical": true,
+        "resamples": 2000,
+        "seed": 20261103,
+        "draw_metrics_computed": false
+      },
+      {
+        "task": "emp_H3",
+        "split": "test",
+        "copies": [
+          {
+            "root": "base_h3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/test_resampling.npz",
+            "sha256": "e6257ef0bc5cdcf15dc1c358f3397478f9961da4a5d4b9d9a62e7a8c90963534"
+          },
+          {
+            "root": "R3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/H3/emp_H3/test_resampling.npz",
+            "sha256": "e6257ef0bc5cdcf15dc1c358f3397478f9961da4a5d4b9d9a62e7a8c90963534"
+          },
+          {
+            "root": "controls",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/tasks/emp_H3/test_resampling.npz",
+            "sha256": "e6257ef0bc5cdcf15dc1c358f3397478f9961da4a5d4b9d9a62e7a8c90963534"
+          }
+        ],
+        "byte_identical": true,
+        "resamples": 2000,
+        "seed": 20261103,
+        "draw_metrics_computed": false
+      },
+      {
+        "task": "gue_mouse_0",
+        "split": "dev",
+        "copies": [
+          {
+            "root": "base_h3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/dev_resampling.npz",
+            "sha256": "20e88aa36d6c4b1f049a9d160e8b31eaa208a960c2d66567afd4305a5c509f1f"
+          },
+          {
+            "root": "R3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_mouse_0/dev_resampling.npz",
+            "sha256": "20e88aa36d6c4b1f049a9d160e8b31eaa208a960c2d66567afd4305a5c509f1f"
+          },
+          {
+            "root": "controls",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/tasks/gue_mouse_0/dev_resampling.npz",
+            "sha256": "20e88aa36d6c4b1f049a9d160e8b31eaa208a960c2d66567afd4305a5c509f1f"
+          }
+        ],
+        "byte_identical": true,
+        "resamples": 2000,
+        "seed": 20261103,
+        "draw_metrics_computed": false
+      },
+      {
+        "task": "gue_prom_300_all",
+        "split": "dev",
+        "copies": [
+          {
+            "root": "base_h3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/dev_resampling.npz",
+            "sha256": "b1497164cfba7ebef14109e86e82b519b9f2d9bf9ee568d45c9fc617d90a08a6"
+          },
+          {
+            "root": "R3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_prom_300_all/dev_resampling.npz",
+            "sha256": "b1497164cfba7ebef14109e86e82b519b9f2d9bf9ee568d45c9fc617d90a08a6"
+          },
+          {
+            "root": "controls",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/tasks/gue_prom_300_all/dev_resampling.npz",
+            "sha256": "b1497164cfba7ebef14109e86e82b519b9f2d9bf9ee568d45c9fc617d90a08a6"
+          }
+        ],
+        "byte_identical": true,
+        "resamples": 2000,
+        "seed": 20261103,
+        "draw_metrics_computed": false
+      },
+      {
+        "task": "gue_prom_core_all",
+        "split": "dev",
+        "copies": [
+          {
+            "root": "base_h3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/dev_resampling.npz",
+            "sha256": "85e88a65e6c304ff1a07dc2425f56c2293929db4348cf8ea2f025f83770a76da"
+          },
+          {
+            "root": "R3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_prom_core_all/dev_resampling.npz",
+            "sha256": "85e88a65e6c304ff1a07dc2425f56c2293929db4348cf8ea2f025f83770a76da"
+          },
+          {
+            "root": "controls",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/tasks/gue_prom_core_all/dev_resampling.npz",
+            "sha256": "85e88a65e6c304ff1a07dc2425f56c2293929db4348cf8ea2f025f83770a76da"
+          }
+        ],
+        "byte_identical": true,
+        "resamples": 2000,
+        "seed": 20261103,
+        "draw_metrics_computed": false
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "split": "dev",
+        "copies": [
+          {
+            "root": "base_h3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/dev_resampling.npz",
+            "sha256": "400821696863e19ab2f96831e21e2433a31e82882cb976d5e556a2a56bf1dcb1"
+          },
+          {
+            "root": "R3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_splice_reconstructed/dev_resampling.npz",
+            "sha256": "400821696863e19ab2f96831e21e2433a31e82882cb976d5e556a2a56bf1dcb1"
+          },
+          {
+            "root": "controls",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/tasks/gue_splice_reconstructed/dev_resampling.npz",
+            "sha256": "400821696863e19ab2f96831e21e2433a31e82882cb976d5e556a2a56bf1dcb1"
+          }
+        ],
+        "byte_identical": true,
+        "resamples": 2000,
+        "seed": 20261103,
+        "draw_metrics_computed": false
+      },
+      {
+        "task": "gue_tf_0",
+        "split": "dev",
+        "copies": [
+          {
+            "root": "base_h3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/dev_resampling.npz",
+            "sha256": "f02f731c6a7ed7162b81c75b4989cbe6629c8b40dca25f06246de09acce311b6"
+          },
+          {
+            "root": "R3",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/gue_tf_0/dev_resampling.npz",
+            "sha256": "f02f731c6a7ed7162b81c75b4989cbe6629c8b40dca25f06246de09acce311b6"
+          },
+          {
+            "root": "controls",
+            "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/tasks/gue_tf_0/dev_resampling.npz",
+            "sha256": "f02f731c6a7ed7162b81c75b4989cbe6629c8b40dca25f06246de09acce311b6"
+          }
+        ],
+        "byte_identical": true,
+        "resamples": 2000,
+        "seed": 20261103,
+        "draw_metrics_computed": false
+      }
+    ],
+    "resample_seed": 20261103,
+    "draws": 2000,
+    "groups": "exact/RC only; preserve within-dev duplicate",
+    "uncertainty_constraints": "paired within same rows/groups; conditional on fitted heads; CV seeds/checkpoint iterations are not independent training replications; no B03 statistics"
+  },
+  "podA_B_comparability_keys": [
+    "full_model_parent_adapter_payload_hashes (unknown bindings stay null)",
+    "task/cohort/split/ordered example IDs/numeric labels/group/fold hashes",
+    "tokenizer and preprocessing identity",
+    "hook/coordinate/pooling/padding/masks/physical-batch/filler/backend/precision",
+    "probe/scaler/control policy and source versions",
+    "metric/threshold/uncertainty/resample identity"
+  ],
+  "peer_inputs": "PENDING; no new peer fetch or message required; do not equate absolute paths across Pods; synthesis later",
+  "B02_comparisons": {
+    "commit": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211",
+    "canonical_status_file": "docs/experiments/ashay/POD_B/DELIVERY_COVERAGE.csv",
+    "sha256": "a5790dc54be74abac7e72fadcfc212054250e09db2ec26c6ac00f1ae45bce8fd",
+    "trajectory_map_sha256": "eedb8128d44103ecb46ea8e21d7f5fc5b014494392f5a4f5c9f073f20016c76c",
+    "job_segments": [
+      "base/11760341",
+      "maxent/11776574",
+      "maxent_restart/11803647"
+    ],
+    "resume1600_to1700": "UNPROVEN; no recategorization in B03",
+    "B05_reduced_coverage_recommendation": "consider both1600 and1700 alongside early/middle/final coverage; old provisional100/500/1000/1400/1800 omits adjacent restart boundary. No subset selected/approved here."
+  },
+  "portable_restore_order": [
+    "1 verify immutable research/prompt commits and dependency receipts",
+    "2 map or safely selectively restore base_h3 and controls to fresh logical roots",
+    "3 map R3 historical cache only when used",
+    "4 preservation supplies original training smoke alias",
+    "5 qualification package supplies adapters/parent smokes/training diagnostics, not parents/runtime",
+    "6 separately bind required parent payload manifests and reconstruct approved environment at B04",
+    "7 verify exact manifests/folds/source identities before any deserialization/use",
+    "8 retain new raw evidence for B09 recovery packaging"
+  ],
+  "portable_restore_safety": "Use exact pinned revision/archive hash/size, sidecar, safe member/path/duplicate/link/special-file and disk bounds, then exact CHECKSUMS coverage; never extract over original roots. No restore ran in B03.",
+  "backup_limits": {
+    "new_public_docs": "researchPOD_B commit after publication",
+    "prompt_text": "immutable prompt commit382b2aaa22191e15a8e0db543a66ed25d69297df; private exact copy also local",
+    "B02_official_source_copies": "public immutable source/blob refs are recorded; local raw copy not added to old private archive",
+    "B01_B02_B03_private_raw_records": "LOCAL_ONLY_PENDING_B09; B02 Drive listings/event bytes are not guaranteed by provider IDs alone",
+    "parent_weights_and_environment": "separate local dependency, excluded from historical/qualification backups; reacquisition identities recorded",
+    "no_new_backup_roundtrip": true
+  },
+  "discrepancies": [
+    {
+      "id": "P1",
+      "scope": "historical absolute paths",
+      "observed": "paths refer to old /workspace roots; verified bytes exist in recovered roots",
+      "status": "RESOLVED_BY_READ_ONLY_MAPPING",
+      "remedy": "logical root + relative path; no aliases/links/rewrites",
+      "owner": "B03"
+    },
+    {
+      "id": "P2",
+      "scope": "sealed extraction status",
+      "observed": "FEATURE_UNIT_COMPLETE status NEW is the historical sealed extractor status; FEATURE_INDEX independently says COMPLETE",
+      "status": "RESOLVED_SOURCE_AND_HASH_LINKAGE",
+      "remedy": "accept documented sealed NEW plus exact completion/files, not name-based readiness",
+      "owner": "B03"
+    },
+    {
+      "id": "P3",
+      "scope": "biological names/groups",
+      "observed": "integer-to-biological-class aliases and locus/genome/homology metadata unavailable",
+      "status": "INTERPRETATION_LIMIT",
+      "remedy": "keep numeric labels/IDs; no relabeling or new homology pipeline",
+      "owner": "B05"
+    },
+    {
+      "id": "Q1_Q2",
+      "scope": "all36 supplied models",
+      "observed": "runtime/original source and per-job hash-bound loaded parents/resumed adapters unresolved",
+      "status": "B04_RECONSTRUCTION_BLOCKED",
+      "remedy": "B02 PROVENANCE_QUESTIONS Q1/Q2 or authoritative original-route training fixture for equivalent-route qualification",
+      "owner": "B04"
+    },
+    {
+      "id": "Q3_Q4",
+      "scope": "start-relative/matched-exposure/difference-in-change",
+      "observed": "true initial states/actual exposure not established",
+      "status": "COMPARISON_SPECIFIC_UNAVAILABLE",
+      "remedy": "B02 Q3/Q4; do not block unrelated technically justified descriptive families",
+      "owner": "B05"
+    },
+    {
+      "id": "P4",
+      "scope": "R3 backbone regeneration",
+      "observed": "historical cached outputs/heads present; R3 weights excluded from historical archives and not reacquired here",
+      "status": "CACHE_REUSE_AVAILABLE_WEIGHT_REGENERATION_NOT_READY",
+      "remedy": "later explicitly authorized weight acquisition only if regeneration is needed; not a required B03 recovery",
+      "owner": "B04"
+    },
+    {
+      "id": "P5",
+      "scope": "preparation supplement",
+      "observed": "131-file preparation package not restored locally; immutable remote/Git identities known; all current necessary inputs exist elsewhere",
+      "status": "REMOTE_ONLY_OPTIONAL",
+      "remedy": "recover selected non-weight file only if a future concrete dependency requires it",
+      "owner": "later approved stage"
+    },
+    {
+      "id": "P6",
+      "scope": "new private B01/B02/B03 raw evidence",
+      "observed": "not included in earlier929-file immutable qualification backup",
+      "status": "LOCAL_ONLY_PENDING_B09",
+      "remedy": "B09-approved packaging/verification; public source/docs/prompt commits independently recoverable",
+      "owner": "B09"
+    }
+  ],
+  "source_runtime": {
+    "evaluator_files": [
+      {
+        "path": "scripts/sayyed/extract_multiretain_fixed.py",
+        "sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/fixed_benign_batch.py",
+        "sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/multiretain_support.py",
+        "sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/fit_multiretain_layers.py",
+        "sha256": "737bbbe38b9ced53e701eb0478a018a3c63b3102682f7903684795ed95cd04e4",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/fit_multiretain_parallel.py",
+        "sha256": "3a79c5dd2d56bf7fbfce855d33cac7398c1ab0466830a819bf9b9d2eb2f5aa3f",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/h3_followup.py",
+        "sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/multiretain_metrics.py",
+        "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/multiretain_independent.py",
+        "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "benign_pilot/data.py",
+        "sha256": "efb9e64f6f744fddf27a289d1427a34362cfe07d89cd4630cb61cbfefca54dd9",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "benign_pilot/extension.py",
+        "sha256": "1f2ff7ac74805829491b9f5c988464e7e75aeffdb4c2e34c948ba74d08557085",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      },
+      {
+        "path": "scripts/sayyed/verify_multiretain_units.py",
+        "sha256": "699289f48b05710f3aac4ab978e269cca78c24c1e73b714e960ef544d443fff1",
+        "baseline_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+        "identical_baseline": true,
+        "read_only_static_inspection": true
+      }
+    ],
+    "native_sources": [
+      {
+        "path": "/workspace/bionemo-cu12",
+        "commit": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+        "tracked_status": "",
+        "tracked_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/workspace/megatron-bridge",
+        "commit": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+        "tracked_status": "",
+        "tracked_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/workspace/megatron-bridge/3rdparty/Megatron-LM",
+        "commit": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13",
+        "tracked_status": "",
+        "tracked_status_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "scientific_venv": "/workspace/venvs/evo2-pilot",
+    "legacy_drivers_executed": false,
+    "source_carryover_required": false,
+    "notes": "Needed baseline extractor/fitter/auditor already exist unchanged; old acquisition/recovery helpers not copied or executed. Historical absolute defaults must be overridden in future authorized invocation.",
+    "archived_critical_sources": [
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/extract_multiretain_fixed.py",
+        "relative_path": "source/scripts/sayyed/extract_multiretain_fixed.py",
+        "sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "bytes": 12101,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/fixed_benign_batch.py",
+        "relative_path": "source/scripts/sayyed/fixed_benign_batch.py",
+        "sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "bytes": 866,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/multiretain_support.py",
+        "relative_path": "source/scripts/sayyed/multiretain_support.py",
+        "sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "bytes": 4047,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/h3_followup.py",
+        "relative_path": "source/scripts/sayyed/h3_followup.py",
+        "sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+        "bytes": 18362,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/fit_multiretain_layers.py",
+        "relative_path": "source/scripts/sayyed/fit_multiretain_layers.py",
+        "sha256": "737bbbe38b9ced53e701eb0478a018a3c63b3102682f7903684795ed95cd04e4",
+        "bytes": 21098,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/fit_multiretain_parallel.py",
+        "relative_path": "source/scripts/sayyed/fit_multiretain_parallel.py",
+        "sha256": "3a79c5dd2d56bf7fbfce855d33cac7398c1ab0466830a819bf9b9d2eb2f5aa3f",
+        "bytes": 22935,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/multiretain_metrics.py",
+        "relative_path": "source/scripts/sayyed/multiretain_metrics.py",
+        "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+        "bytes": 5016,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/multiretain_independent.py",
+        "relative_path": "source/scripts/sayyed/multiretain_independent.py",
+        "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+        "bytes": 3441,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/extract_multiretain_fixed.py",
+        "relative_path": "source/scripts/sayyed/extract_multiretain_fixed.py",
+        "sha256": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+        "bytes": 12101,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/fixed_benign_batch.py",
+        "relative_path": "source/scripts/sayyed/fixed_benign_batch.py",
+        "sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+        "bytes": 866,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/multiretain_support.py",
+        "relative_path": "source/scripts/sayyed/multiretain_support.py",
+        "sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "bytes": 4047,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/h3_followup.py",
+        "relative_path": "source/scripts/sayyed/h3_followup.py",
+        "sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+        "bytes": 18362,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/fit_multiretain_layers.py",
+        "relative_path": "source/scripts/sayyed/fit_multiretain_layers.py",
+        "sha256": "737bbbe38b9ced53e701eb0478a018a3c63b3102682f7903684795ed95cd04e4",
+        "bytes": 21098,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/fit_multiretain_parallel.py",
+        "relative_path": "source/scripts/sayyed/fit_multiretain_parallel.py",
+        "sha256": "3a79c5dd2d56bf7fbfce855d33cac7398c1ab0466830a819bf9b9d2eb2f5aa3f",
+        "bytes": 22935,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/fit_multiretain_new_arm.py",
+        "relative_path": "source/scripts/sayyed/fit_multiretain_new_arm.py",
+        "sha256": "8167aea0ccd9b593dfc62b1bd825dc797bcc4e274cfe3954507b34e14fb8a77a",
+        "bytes": 25523,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/multiretain_metrics.py",
+        "relative_path": "source/scripts/sayyed/multiretain_metrics.py",
+        "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+        "bytes": 5016,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/scripts/sayyed/multiretain_independent.py",
+        "relative_path": "source/scripts/sayyed/multiretain_independent.py",
+        "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+        "bytes": 3441,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/benign_pilot/data.py",
+        "relative_path": "source/benign_pilot/data.py",
+        "sha256": "efb9e64f6f744fddf27a289d1427a34362cfe07d89cd4630cb61cbfefca54dd9",
+        "bytes": 7471,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "R3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/source/benign_pilot/extension.py",
+        "relative_path": "source/benign_pilot/extension.py",
+        "sha256": "1f2ff7ac74805829491b9f5c988464e7e75aeffdb4c2e34c948ba74d08557085",
+        "bytes": 10323,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "controls",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/source/scripts/sayyed/multiretain_support.py",
+        "relative_path": "source/scripts/sayyed/multiretain_support.py",
+        "sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+        "bytes": 4047,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "controls",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/source/scripts/sayyed/h3_followup.py",
+        "relative_path": "source/scripts/sayyed/h3_followup.py",
+        "sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+        "bytes": 18362,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "controls",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/source/scripts/sayyed/multiretain_metrics.py",
+        "relative_path": "source/scripts/sayyed/multiretain_metrics.py",
+        "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+        "bytes": 5016,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "controls",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/source/scripts/sayyed/multiretain_independent.py",
+        "relative_path": "source/scripts/sayyed/multiretain_independent.py",
+        "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+        "bytes": 3441,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "controls",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/source/scripts/sayyed/matched_controls.py",
+        "relative_path": "source/scripts/sayyed/matched_controls.py",
+        "sha256": "98f9099902f269a74c6ed8226ec719d2915bb3fcc9c946b19d9aead68ae7904e",
+        "bytes": 8068,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "controls",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/source/benign_pilot/data.py",
+        "relative_path": "source/benign_pilot/data.py",
+        "sha256": "efb9e64f6f744fddf27a289d1427a34362cfe07d89cd4630cb61cbfefca54dd9",
+        "bytes": 7471,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "controls",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1/source/benign_pilot/extension.py",
+        "relative_path": "source/benign_pilot/extension.py",
+        "sha256": "1f2ff7ac74805829491b9f5c988464e7e75aeffdb4c2e34c948ba74d08557085",
+        "bytes": 10323,
+        "fresh_hash_matches_payload_manifest": true
+      },
+      {
+        "root": "base_h3",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/verify_multiretain_units.py",
+        "relative_path": "source/scripts/sayyed/verify_multiretain_units.py",
+        "sha256": "699289f48b05710f3aac4ab978e269cca78c24c1e73b714e960ef544d443fff1",
+        "bytes": 21675,
+        "fresh_hash_matches_payload_manifest": true
+      }
+    ],
+    "historical_fitter_bindings": [
+      {
+        "root": "base_h3",
+        "group": "H3",
+        "run_identity": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/H3/run_identity.json",
+        "fitter_source_sha256": "737bbbe38b9ced53e701eb0478a018a3c63b3102682f7903684795ed95cd04e4",
+        "matching_archived_files": [
+          "source/scripts/sayyed/fit_multiretain_layers.py"
+        ]
+      },
+      {
+        "root": "base_h3",
+        "group": "other_five",
+        "run_identity": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/run_identity.json",
+        "fitter_source_sha256": "3a79c5dd2d56bf7fbfce855d33cac7398c1ab0466830a819bf9b9d2eb2f5aa3f",
+        "matching_archived_files": [
+          "source/scripts/sayyed/fit_multiretain_parallel.py"
+        ]
+      },
+      {
+        "root": "R3",
+        "group": "H3",
+        "run_identity": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/H3/run_identity.json",
+        "fitter_source_sha256": "8167aea0ccd9b593dfc62b1bd825dc797bcc4e274cfe3954507b34e14fb8a77a",
+        "matching_archived_files": [
+          "source/scripts/sayyed/fit_multiretain_new_arm.py"
+        ]
+      },
+      {
+        "root": "R3",
+        "group": "other_five",
+        "run_identity": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z/probes/other_five/run_identity.json",
+        "fitter_source_sha256": "8167aea0ccd9b593dfc62b1bd825dc797bcc4e274cfe3954507b34e14fb8a77a",
+        "matching_archived_files": [
+          "source/scripts/sayyed/fit_multiretain_new_arm.py"
+        ]
+      }
+    ],
+    "negative_path_query": "verify_multiretain_layers.py absent; resolved actual authoritative verify_multiretain_units.py, not a missing dependency"
+  },
+  "environment_metadata": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "executable": "/workspace/venvs/evo2-pilot/bin/python",
+    "packages_metadata_only": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.5.2",
+      "threadpoolctl": "3.8.0",
+      "torch": "2.8.0+cu128",
+      "transformer-engine": "2.3.0",
+      "transformer-engine-torch": "2.3.0",
+      "bionemo-evo2": "2.4",
+      "megatron-bridge": "0.3.0rc0",
+      "megatron-core": "0.16.0rc0",
+      "tokenizers": "0.22.1",
+      "causal-conv1d": "1.5.4",
+      "flash-attn": "2.8.3"
+    },
+    "historical_lock": "/workspace/meeting-artifacts/relearning-benign-v1/runtime_environment_lock.txt",
+    "historical_lock_sha256": "6b0fcd2f8735394792f00ab3a39bb231dde1b6c14f2c9f8f92b39de938478360",
+    "model_packages_imported": false
+  },
+  "carryover": {
+    "scientific_source_files_copied": 0,
+    "reason": "Required baseline scientific evaluator/auditor already present unchanged; no bulk transfer of old helpers. New audit code remains hashed in private B03 artifacts.",
+    "small_metadata_normalization": "new root-relative mappings, explicit scopes/conditions and receipt summaries; source manifests/folds/labels/features/heads unchanged"
+  },
+  "raw_audits": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/COHORT_AUDIT_RAW.json",
+      "sha256": "847780e6e373e4aa9cd5884149bc0f8b52c88ada5f2a0562c9fe84b1a2af2c38"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ARTIFACT_AUDIT_RAW.json",
+      "sha256": "876279c17c937b313ef2e2b647687500db6256725322987ee0b37252b1c2fd26"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ANCHOR_PAIRING_AUDIT_RAW.json",
+      "sha256": "5dbeca7d6f3980f501d6722a042050bf66b893c036200dd5085797238d13fc9b"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/SOURCE_RUNTIME_AUDIT.json",
+      "sha256": "ca4fbb33583bffa06cb9e4bb8f93cbcd428e19b8dea2e57fb97eb81c258f277e"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/ENVIRONMENT_METADATA.json",
+      "sha256": "919f34229864d9b7d75d59c1b94d54fb86d5251eee4513a811ec5e4376e14120"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/EVIDENCE_INDEX.json",
+      "sha256": "14fe506a6dad619e97f1fa406c57a85a5ec77291ddbdc4ede6051e4e758e4603"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/TRAINING_DIAGNOSTIC_MEMBERSHIP.json",
+      "sha256": "f1cb18bcf5f943af2ac3632905cde3d3dd3d7f12b4fc3ea68b32507f6869cbea"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/PARENT_DEPENDENCY_LINKAGE.json",
+      "sha256": "e685b798385d7bb1886add97e6471e01c0941dd9caf4f58a1b1059167cbaf0eb"
+    }
+  ],
+  "scientific_coverage": {
+    "supplied_model_score_cells": 0,
+    "potential_refit_cells": 16848,
+    "new_model_inferences": 0,
+    "new_features": 0,
+    "new_fits": 0,
+    "new_metrics_or_bootstraps": 0,
+    "new_test_members": 0,
+    "supplied_full_models_qualified": 0,
+    "full_model_reconstructions_blocked": 36
+  },
+  "resource_accounting": {
+    "observed_utc": "2026-11-17T09:29:47.747900+00:00",
+    "stage_wall_start_utc": "2026-11-17T09:07:12.343505+00:00",
+    "measured_cohort_artifact_anchor_cpu_seconds": 43.915712437,
+    "measurement_scope": "these3 bounded audit processes only, not cumulative CPU for entire session",
+    "fresh_artifact_hash_bytes": 320556315,
+    "large_feature_payloads_rehashed": 0,
+    "new_weight_download_bytes": 0,
+    "new_gpu_seconds": 0,
+    "scientific_cutoff_utc": "2026-11-17T17:33:21+00:00",
+    "closure_deadline_utc": "2026-11-17T20:33:21+00:00",
+    "clock_reset": false,
+    "remaining_scientific_seconds": 29013.2521,
+    "remaining_closure_seconds": 39813.2521,
+    "stage_elapsed_wall_seconds": 1355.404395
+  },
+  "validation": {
+    "status": "PASS",
+    "scope": "B03 metadata and recovery/reuse contract; no scientific outcome or adapter numerical qualification",
+    "checks": [
+      "Frozen22645 rows/six tasks, exact hashes/class/group/order and18 saved folds/84 train-only partitions consistent; only prior1497 H3 test members",
+      "5842 scoped matrix rows have unique keys/resolvable roots/hashes/evidence/profiles; all1404 fit scopes and36 controls counted correctly; fixed-base channels retain exact scaler+head",
+      "Historical feature/head/prediction/LM scopes and original numerical gates agree; raw/source/code hashes resolve; original adapter fixture stays missing",
+      "Per-model tokenizer identities256/512 preserved;129 parent file presence is separate from unknown job binding; exact archived fitter and unchanged baseline source links verified",
+      "Data readiness does not change36 reconstruction blockers or any B02 comparison status; new score/inference/fit/test counts remain0; no later-stage approval/queue",
+      "Historical B02 files/other branch refs/prompt deletions/ledgers preserved; diff restricted to8 approved metadata outputs; no raw sequences/weights/private access tokens or CRLF"
+    ],
+    "check_count": 6,
+    "matrix_rows": 5842,
+    "data_rows": 22645
+  },
+  "owned_jobs": [],
+  "next_stage_authorized": false,
+  "later_stage_prompts_read": false,
+  "publication": "External control B03_DELIVERY_VERIFICATION.json records actual commit and verified remote HEAD after push",
+  "preserved_ledger_files": [
+    {
+      "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
+      "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
+      "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
+    }
+  ],
+  "training_diagnostic_membership": [
+    {
+      "task": "emp_H3",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/restored-head-smoke/emp_H3.npz",
+      "sha256": "182b82dd029ca7dd0a12be0caa03954588bc2abe1aece2c8248bbf7cd95684b5",
+      "rows": 12,
+      "all_exact_frozen_training_ids_labels": true,
+      "ordered_ids_sha256": "c2a58dc4987eb8e3bc7a53c8a27f6bec293b35c827e027d816f234cf7c42a849",
+      "prediction_reconstruction_rerun": false
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/restored-head-smoke/gue_splice_reconstructed.npz",
+      "sha256": "60d3b0646d78ecbcbb31ee053542d202960b42e04cc7346f91ffbd9bfaf20ee0",
+      "rows": 12,
+      "all_exact_frozen_training_ids_labels": true,
+      "ordered_ids_sha256": "c7cb60fed4da5d4dd46201a482a44c38f229fa42c88ca4be1067d25021208a13",
+      "prediction_reconstruction_rerun": false
+    }
+  ],
+  "parent_dependency_linkage": {
+    "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/PARENT_DEPENDENCY_LINKAGE.json",
+    "sha256": "e685b798385d7bb1886add97e6471e01c0941dd9caf4f58a1b1059167cbaf0eb",
+    "weights_present_expected_size": 129,
+    "weight_hash_provenance": "historical129-file receipt; no B03 weight rehash",
+    "small_parent_metadata_hashes": [
+      {
+        "model": "base",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/base/.metadata",
+        "bytes": 68735,
+        "sha256": "5bbdb894bc45e52fbc43d11854386bdb2cda8b0dddee3ac1e8a4156ca1a06470"
+      },
+      {
+        "model": "base",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/base/run_config.yaml",
+        "bytes": 23684,
+        "sha256": "b648cfd2fb11797ade835e82f6dd4c3e7abd0d4256ae4360bd67796d00f198c9"
+      },
+      {
+        "model": "base",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/base/tokenizer.json",
+        "bytes": 6708,
+        "sha256": "4783313f9804f545bf8515653cf91549b5f1a507fe5703c7d7279921dd9ec8fb"
+      },
+      {
+        "model": "maxent",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/maxent/.metadata",
+        "bytes": 188675,
+        "sha256": "77d3d2ab5e342f354bddc8ffbc3df28c02a57095885bbfcadea6d2727d21b634"
+      },
+      {
+        "model": "maxent",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/maxent/run_config.yaml",
+        "bytes": 24690,
+        "sha256": "43b18b0e2b9fa7e19e7c7b6d487514ede7400c3fc6176eebab596f9da6f84488"
+      },
+      {
+        "model": "maxent",
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/parents/maxent/tokenizer.json",
+        "bytes": 10649,
+        "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+      }
+    ],
+    "actual_per_job_loaded_parent_assignment": null,
+    "evidence_level": 2
+  },
+  "non_model_profiles": {
+    "data": {
+      "cohort_receipt": "COHORT_RECEIPT.json",
+      "source_definition": "historical exact frozen manifests and saved folds",
+      "state": "USABLE_FROZEN_DATA_NOW"
+    },
+    "sequence_controls": {
+      "source_definition": "benign_pilot.extension.controls; composition4 and normalized forwardACGT4mer256, no reverse-complement pooling",
+      "control_execution": "a745671c8236c5ce6d62bf65c5262909e626d6f2",
+      "policy": "36 historically completed matched fits; immutable scaler/head/labels/folds",
+      "state": "REUSABLE_UNCHANGED_SEQUENCE_CONTROLS"
+    }
+  },
+  "metadata_code": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/audit_cohorts_folds.py",
+      "sha256": "12b51b1278ef422ab17d2af96c4693988cf9f0640f299fc0f0861889992684c5"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/audit_artifacts.py",
+      "sha256": "0f1707fa39b6f9cffc50218cd109f8f150c82ae29f4e22944d16ba6635de0288"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/audit_anchors_pairing.py",
+      "sha256": "c55e476deec227958d0a467673f4344daac3b8789d6b0dccc35ad98224b63678"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/build_deliverables.py",
+      "sha256": "c86b15fcc1234c6e74b3d82ca1bb57f48e9be7bd16e58d73ca522ae02e910817"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/finish_records.py",
+      "sha256": "79ea85115971bfea4b24712fe455a6b2c62c2848bd3b9f5b6fe703a0572a309d"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/validate_b03.py",
+      "sha256": "14eeb7ee91aafb8597c92ec0601f19b375fe19e0310f5a04a0de6e2923fd9ed1"
+    }
+  ],
+  "operational_diagnostics": {
+    "syntax_construction_errors": "Fixed before affected metadata script execution; failed diagnostic logs retained; no source evidence or scientific values changed.",
+    "bounded_negative_path_queries": [
+      "multiretain-layers COMPARISON_PROTOCOL path absent; authoritative PROTOCOL/PROTOCOL_V2 and fixed8 amendment used",
+      "preservation BACKUP_VERIFICATION path absent; exact BACKUP_RECEIPT resolved at pinned commit",
+      "tokenizer missing at historical nested alias; current separately reacquired parents/{base,maxent}/tokenizer.json hashes bind original identities"
+    ],
+    "final_validation_corrections": [
+      "Corrected auditor alias to verify_multiretain_units.py and verified its exact baseline/archive bytes",
+      "Preserved leading porcelain status columns in diff-scope validator; source files/data unchanged"
+    ]
+  },
+  "required_publication_files": [
+    "RECOVERY_MANIFEST.json",
+    "COHORT_RECEIPT.json",
+    "DATA_AUDIT.md",
+    "REUSE_MATRIX.csv",
+    "RUNTIME_REQUIREMENTS.md",
+    "B03_HANDOFF.md",
+    "SESSION_HANDOFF.md",
+    "STATE.json"
+  ],
+  "final_process_status": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/FINAL_PROCESS_STATUS.json",
+  "publication_output_hashes": [
+    {
+      "path": "COHORT_RECEIPT.json",
+      "sha256": "fe5ef851d8de1040edfea683148ccc0ded60a211488d0d8b2992dba0a9e8e2bd"
+    },
+    {
+      "path": "DATA_AUDIT.md",
+      "sha256": "8c21d285b1ebc55b7d48c6a784a09f1dfe378e4dbe766efb7bad9ed84e22fc84"
+    },
+    {
+      "path": "REUSE_MATRIX.csv",
+      "sha256": "6db2ac2aac08131ef1228790f0ba2036b5bd52f8489b02e3cf43b7b2fa0767a7"
+    },
+    {
+      "path": "RUNTIME_REQUIREMENTS.md",
+      "sha256": "2c41a5c82029d8378fc29c603866fa194d93c11e77b08ce6310702612ac9fff3"
+    },
+    {
+      "path": "B03_HANDOFF.md",
+      "sha256": "33ee136117b4a83a194c52f70aba717eac788dbe53e03bd365f78dee02213ca0"
+    }
+  ]
+}

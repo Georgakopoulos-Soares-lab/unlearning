@@ -1,7 +1,7 @@
 {
-  "stage": "B02",
-  "status": "COMPLETE_INVENTORY_SCOPE_WITH_EXTERNAL_RECONSTRUCTION_BLOCKERS",
-  "artifact_root": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z",
+  "stage": "B03",
+  "status": "COMPLETE_FROZEN_DATA_RECOVERY_AND_SCOPED_REUSE",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z",
   "research_context": {
     "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
     "worktree": "/workspace/wt-POD_B",
@@ -19,16 +19,16 @@
     "refs/heads/experiments-ashay-relearning-benign-v1": "cf7b861619d05b8916690471fcd9469ab9d80f75",
     "refs/heads/main": "af92e593162478c8aa40b6303ed0f0e508affac7"
   },
-  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/PROMPT_RECEIPT.json",
-  "prompt_commit": "bf7b468a40f27b528992930ce55a26504ef27683",
+  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/PROMPT_RECEIPT.json",
+  "prompt_commit": "382b2aaa22191e15a8e0db543a66ed25d69297df",
   "current_run_science_gpu_seconds": 0,
   "current_run_new_fits": 0,
   "next_stage_authorized": false,
-  "approved_scope": "B02 expanded post-B01 inventory/source/lineage/metadata reconciliation only",
-  "research_head_at_start": "d5d4f256e09d7939b92ce9404d97047beb53506d",
+  "approved_scope": "Expanded B03 recovery/frozen-data/historical artifact reuse only; no inference/fits/new scores",
+  "research_head_at_start": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211",
   "prompt_hashes": {
     "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
-    "POD_B_02_INVENTORY.md": "958ffca8d6f72043a656742bc5ec8218b58bbaef1f8208925b455c8f9130b21d",
+    "POD_B_03_RECOVERY.md": "0e5b94c67a44461725d8722166e9f15106ee37753d1edea38e41ab58ce188534",
     "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
   },
   "budget": {
@@ -38,9 +38,9 @@
     "scientific_stage_cutoff_utc": "2026-11-17T17:33:21+00:00",
     "session_deadline_utc": "2026-11-17T20:33:21+00:00",
     "clock_reset": false,
-    "observed_utc": "2026-11-17T08:41:53.787601+00:00",
-    "remaining_to_scientific_cutoff_seconds": 34779.539408,
-    "remaining_to_session_deadline_seconds": 45579.539408,
+    "observed_utc": "2026-11-17T09:29:47.747900+00:00",
+    "remaining_to_scientific_cutoff_seconds": 29013.2521,
+    "remaining_to_session_deadline_seconds": 39813.2521,
     "authorized_gpu_stage_seconds": null,
     "null_gpu_allowance_meaning": "No separate fixed stage-seconds cap; stage approval still required",
     "deadline_expired": false,
@@ -72,7 +72,8 @@
     "remaining_scientific_seconds": 31887.212399,
     "remaining_closure_seconds": 42687.212399,
     "metadata_cpu_seconds": "not metered cumulatively; bounded metadata/source parsing only",
-    "private_stage_artifact_bytes_at_close": 7532084
+    "private_stage_artifact_bytes_at_close": 7532084,
+    "b03_elapsed_wall_seconds": 1355.404395
   },
   "prior_source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
   "prior_artifact_root": "/workspace/meeting-artifacts/relearning-benign-v1",
@@ -117,26 +118,15 @@
     "maxent/iter_0001800"
   ],
   "scientific_coverage": {
-    "historical": 36,
-    "base": 18,
-    "maxent": 18,
-    "new": 0,
-    "removed": 0,
-    "changed_listed_metadata": 0,
-    "incomplete_historical_deliveries": 0,
-    "current_weight_byte_identity_freshly_verified": 0,
-    "reconstruction_blocked": 36,
-    "full_models_qualified": 0,
-    "supplied_score_cells": 0,
-    "potential_supplied_score_cells": 16848,
-    "distinct_historical_payload_hashes": 36,
-    "distinct_historical_tensor_fingerprints": 36,
-    "config_hash_families": 3,
-    "tensor_key_shape_dtype_schemas": 1,
-    "observed_jobs": 3,
-    "potential_adjacent_edges": 34,
-    "restart_edges_unproven": 1,
-    "common_step_pairs": 18
+    "supplied_model_score_cells": 0,
+    "potential_refit_cells": 16848,
+    "new_model_inferences": 0,
+    "new_features": 0,
+    "new_fits": 0,
+    "new_metrics_or_bootstraps": 0,
+    "new_test_members": 0,
+    "supplied_full_models_qualified": 0,
+    "full_model_reconstructions_blocked": 36
   },
   "prior_completed_evidence": {
     "parent_smoke_comparisons": 162,
@@ -145,9 +135,9 @@
     "prior_backup_revision": "32206eeed1dd9024fc92ecd898be39094840de94"
   },
   "blockers": [
-    "Actual per-job hash-bound pretrained parent/resumed adapter identities unresolved",
-    "Original runtime source unknown; R2 adapter API statically supported, full runtime/numerics unqualified",
-    "True initial states unavailable for start-relative contrasts; actual exposure unavailable for matched-exposure interpretation"
+    "B04 Q1 original runtime/source and Q2 actual loaded parent/resume identities remain unresolved for36 adapters",
+    "Q3 true starts and Q4 exposure remain comparison-specific B05 limits",
+    "New private B01/B02/B03 evidence not yet remotely packaged; B09 dependency"
   ],
   "owned_scientific_jobs": [],
   "legacy_wrapper": {
@@ -160,20 +150,50 @@
     "after_codex_exit": "Releases role lock and execs an interactive shell; printed resume command is not automatically executed",
     "action": "Preserved wrapper and role lock; current instructions supersede its old initial assignment. Do not invoke old start/resume launchers for new work."
   },
-  "next_stage": "B03",
+  "next_stage": "B04",
   "migration_approved": "Curated small B02 evidence only; no code/result wholesale migration",
-  "migration_performed": "Curated metadata normalized in registry/views only; no scientific code/result migration",
+  "migration_performed": "B03 curated scoped metadata/views only; unchanged scientific sources reused in place; no array/head copy/refit",
   "no_background_stage_queue": true,
   "later_prompts_read": false,
-  "last_checkpoint_utc": "2026-11-17T08:41:53.787601+00:00",
+  "last_checkpoint_utc": "2026-11-17T09:29:47.747900+00:00",
   "completion_receipts": {
     "B01": "docs/experiments/ashay/POD_B/B01_VERIFICATION.json",
-    "B02": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json"
+    "B02": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json",
+    "B03": "docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json"
   },
-  "research_head": "d5d4f256e09d7939b92ce9404d97047beb53506d",
-  "publication_status": "PENDING_B02_PUSH",
-  "delivery_receipt": "/workspace/agent-handoff/POD_B/B02_DELIVERY_VERIFICATION.json",
-  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B02-inventory-20261117T081610Z/PROMPT_RECEIPT.json",
-  "research_head_note": "Pre-publication HEAD; external B02 delivery receipt gives pushed commit",
-  "handoff": "docs/experiments/ashay/POD_B/B02_HANDOFF.md"
+  "research_head": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211",
+  "publication_status": "B03_METADATA_VALIDATION_PASS_PENDING_PUSH",
+  "delivery_receipt": "/workspace/agent-handoff/POD_B/B03_DELIVERY_VERIFICATION.json",
+  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/PROMPT_RECEIPT.json",
+  "research_head_note": "Pre-publication HEAD; B03 external delivery receipt gives actual pushed commit",
+  "handoff": "docs/experiments/ashay/POD_B/B03_HANDOFF.md",
+  "data_readiness": {
+    "rows": 22645,
+    "tasks": 6,
+    "fold_sets": 18,
+    "fold_partitions": 84,
+    "status": "USABLE_UNCHANGED_FROZEN_INPUTS"
+  },
+  "historical_artifact_availability": {
+    "path": "REUSE_MATRIX.csv",
+    "sha256": "6db2ac2aac08131ef1228790f0ba2036b5bd52f8489b02e3cf43b7b2fa0767a7",
+    "rows": 5842,
+    "kind_counts": {
+      "frozen_data": 13,
+      "folds": 18,
+      "feature_view": 1014,
+      "head": 1404,
+      "control_fit": 36,
+      "prediction_channel": 3318,
+      "lm_reference": 39
+    },
+    "physical_head_entries_checked": 1908,
+    "historical_model_task_layer_seed_fit_entries": 1404,
+    "extra_exact_base_head_copies_in_R3": 468,
+    "historical_sequence_control_fit_entries": 36,
+    "unique_head_file_hashes_metadata_loaded": 477,
+    "prediction_bundles": 1134,
+    "prediction_channel_views": 3318,
+    "scope": "Rows are scoped artifact/views, not new fits, unique learned functions or independent experiments"
+  }
 }
