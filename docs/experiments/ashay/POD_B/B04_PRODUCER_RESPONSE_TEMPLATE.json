@@ -1,0 +1,114 @@
+{
+  "schema": "POD_B.producer_response.v1",
+  "is_response_template": true,
+  "authoritative": false,
+  "issuer": null,
+  "statement_utc": null,
+  "statement_source_record": null,
+  "job_ids": [
+    "11760341",
+    "11776574",
+    "11803647"
+  ],
+  "bound_full_state_fingerprints": [],
+  "note": "UNKNOWN is an acceptable response. Evaluator derives tensor/full-state fingerprints only after authoritative component binding. Do not mark a template authoritative.",
+  "known_parent_catalog": {
+    "base": {
+      "manifest_sha256": "e9bcb09c102bc0f11703de2eadddc0d1b4b5a0d7df01dd214e49c3d0920ae3c7",
+      "files": 131,
+      "path": "B04_KNOWN_PARENT_BASE.json"
+    },
+    "maxent": {
+      "manifest_sha256": "b437ae3e7ab9e2845d04d858db63d132a05843867f2ae2bea3243239a28678fd",
+      "files": 4,
+      "path": "B04_KNOWN_PARENT_MAXENT.json"
+    }
+  },
+  "known_adapter_catalog": "B04_KNOWN_ADAPTER_MANIFESTS.json",
+  "jobs": [
+    {
+      "family": "base_all",
+      "job_id": "11760341",
+      "representative": "base/iter_0000100",
+      "actual_parent_manifest_sha256": null,
+      "parent_binding_status": "UNKNOWN",
+      "actual_resumed_adapter_payload_sha256": null,
+      "resume_status": "UNKNOWN",
+      "actual_sources": {
+        "bionemo_revision": null,
+        "evo2_lora_file_sha256": null,
+        "bridge_revision": null,
+        "core_revision": null,
+        "dirty_patch_record": null
+      },
+      "environment_or_container_record": null,
+      "executed_command_or_startup_load_record": null,
+      "load_precedence": null,
+      "backbone_merge_or_nonadapter_changes": "UNKNOWN",
+      "embedding_output_norm_buffer_changes": "UNKNOWN",
+      "unsaved_inference_state": "UNKNOWN",
+      "complete_present_inference_state_established": null,
+      "hidden_inference_state_excluded": null,
+      "statement_scope_and_basis": null,
+      "actual_restart_from_maxent1600_proven": "NOT_APPLICABLE",
+      "true_initial_state_record": null,
+      "actual_valid_token_or_example_exposure_record": null
+    },
+    {
+      "family": "maxent_initial",
+      "job_id": "11776574",
+      "representative": "maxent/iter_0000100",
+      "actual_parent_manifest_sha256": null,
+      "parent_binding_status": "UNKNOWN",
+      "actual_resumed_adapter_payload_sha256": null,
+      "resume_status": "UNKNOWN",
+      "actual_sources": {
+        "bionemo_revision": null,
+        "evo2_lora_file_sha256": null,
+        "bridge_revision": null,
+        "core_revision": null,
+        "dirty_patch_record": null
+      },
+      "environment_or_container_record": null,
+      "executed_command_or_startup_load_record": null,
+      "load_precedence": null,
+      "backbone_merge_or_nonadapter_changes": "UNKNOWN",
+      "embedding_output_norm_buffer_changes": "UNKNOWN",
+      "unsaved_inference_state": "UNKNOWN",
+      "complete_present_inference_state_established": null,
+      "hidden_inference_state_excluded": null,
+      "statement_scope_and_basis": null,
+      "actual_restart_from_maxent1600_proven": "NOT_APPLICABLE",
+      "true_initial_state_record": null,
+      "actual_valid_token_or_example_exposure_record": null
+    },
+    {
+      "family": "maxent_restart",
+      "job_id": "11803647",
+      "representative": "maxent/iter_0001700",
+      "actual_parent_manifest_sha256": null,
+      "parent_binding_status": "UNKNOWN",
+      "actual_resumed_adapter_payload_sha256": null,
+      "resume_status": "UNKNOWN",
+      "actual_sources": {
+        "bionemo_revision": null,
+        "evo2_lora_file_sha256": null,
+        "bridge_revision": null,
+        "core_revision": null,
+        "dirty_patch_record": null
+      },
+      "environment_or_container_record": null,
+      "executed_command_or_startup_load_record": null,
+      "load_precedence": null,
+      "backbone_merge_or_nonadapter_changes": "UNKNOWN",
+      "embedding_output_norm_buffer_changes": "UNKNOWN",
+      "unsaved_inference_state": "UNKNOWN",
+      "complete_present_inference_state_established": null,
+      "hidden_inference_state_excluded": null,
+      "statement_scope_and_basis": null,
+      "actual_restart_from_maxent1600_proven": null,
+      "true_initial_state_record": null,
+      "actual_valid_token_or_example_exposure_record": null
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# Source only after setting absolute paths to a NEW artifact root and pinned runner snapshot.
+: "${POD_B_ARTIFACT_ROOT:?Set the explicit new artifact root}"
+: "${POD_B_RUNNER_ROOT:?Set the immutable runner snapshot root}"
+export PYTHONDONTWRITEBYTECODE=1
+export OMP_NUM_THREADS=4 MKL_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4
+export TORCH_EXTENSIONS_DIR="$POD_B_ARTIFACT_ROOT/cache/torch_extensions"
+export TRITON_CACHE_DIR="$POD_B_ARTIFACT_ROOT/cache/triton"
+export XDG_CACHE_HOME="$POD_B_ARTIFACT_ROOT/cache/xdg"
+export HF_HOME="$POD_B_ARTIFACT_ROOT/cache/hf"
+export TMPDIR="$POD_B_ARTIFACT_ROOT/cache/tmp"
+export CUDA_CACHE_PATH="$POD_B_ARTIFACT_ROOT/cache/cuda"
+export PYTHONPATH="$POD_B_RUNNER_ROOT"
+mkdir -p "$TORCH_EXTENSIONS_DIR" "$TRITON_CACHE_DIR" "$XDG_CACHE_HOME" "$HF_HOME" "$TMPDIR" "$CUDA_CACHE_PATH"
+# This template does not launch a model or extend any approval/window/budget.

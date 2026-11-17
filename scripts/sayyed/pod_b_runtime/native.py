@@ -32,9 +32,11 @@ class NativeBackend:
         self.directory = directory; self.model = None; self.peft = None
         self.generation = 0; self.handles = []; self.adapter_sha = None
         self.initial_parent = None; self.binding = None
+        self.model_forward_invocations=0;self.completed_model_batches=0;self.candidate_binding=None
 
     def load(self, binding: dict) -> None:
         worker_guard()
+        self.candidate_binding=binding
         import torch
         import torch.distributed as dist
         import yaml
@@ -89,6 +91,9 @@ class NativeBackend:
             dist.init_process_group('nccl', init_method='file://'+str((self.directory/'dist_init').resolve()),rank=0,world_size=1)
             parallel_state.initialize_model_parallel(tensor_model_parallel_size=1,pipeline_model_parallel_size=1)
             tensor_parallel.model_parallel_cuda_manual_seed(42)
+            self.resolved_inference_config=dict(provider='bionemo.evo2.models.evo2_provider.Hyena1bModelProvider',
+                kwargs={k:v if isinstance(v,(str,int,float,bool)) or v is None else str(v) for k,v in kwargs.items()})
+            (self.directory/'resolved_inference_config.json').write_text(json.dumps(self.resolved_inference_config,sort_keys=True,separators=(',',':')))
             provider = Hyena1bModelProvider(**kwargs); provider.finalize()
             self.model = provider.provide().to('cuda'); self.model.eval(); self.model.requires_grad_(False)
             complete_state = self.model.state_dict()
@@ -120,6 +125,10 @@ class NativeBackend:
             (self.directory/'loading.json').write_text(json.dumps(dict(parent_root=str(parent_root),parent_declared_vocab=yaml.safe_load((parent_root/'run_config.yaml').read_text())['model']['vocab_size'],native_embedding_shape=[actual_vocab,hidden],delivered_adapter_vocab=cfg.get('vocab_size'),vocab_resolution='Exact native parent tensor shape; no reshape, slice, extra rows, or head replacement',dtype_promotions=promotions,missing=missing,unexpected=unexpected,peft=peft_cfg,runtime_TE_extra_state=[tensor_record(k,v) if torch.is_tensor(v) else dict(key=k,kind='literal_None') for k,v in runtime_extras.items()],runtime_TE_extra_state_policy='Literal None is accepted for native Core output_layer; every emitted TE extra-state tensor must byte-match locally generated pickle.dumps(None) or pickle.dumps({}); no FP8, nonempty state fails; all retained in actual snapshots',resolved_provider={k:str(v) for k,v in vars(provider).items()},delivered_model_fields_not_forwarded={k:str(v) for k,v in cfg.items() if k not in kwargs},explicit_runtime_overrides={k:str(kwargs[k]) for k in ['vocab_size','params_dtype','attention_backend','recompute_granularity','seq_length']}),indent=2))
             del parent, actual
             self.initial_parent = self.parent_snapshot()
+            if binding['mode']=='SCIENTIFIC_QUALIFICATION':
+                require(self.initial_parent['parent_fingerprint']==binding['parent_fingerprint']
+                        and self.initial_parent['output_head_fingerprint']==binding['output_head_fingerprint'],
+                        'BOUND_STATE','Actual parent/head must match before any parent smoke')
             if hasattr(self, "training_rows"):
                 self.parent_baseline = self.forward(self.training_rows,logical_batch_size=8,hooks=True)
                 from .gate import save_result
@@ -168,6 +177,7 @@ class NativeBackend:
         return dict(parent_fingerprint=fingerprint(records),parent_tensors=records,output_head_fingerprint=fingerprint(head))
 
     def snapshot(self):
+        worker_guard()
         import torch
         from megatron.bridge.peft.adapter_wrapper import AdapterWrapper
         result = self.parent_snapshot()
@@ -218,6 +228,7 @@ class NativeBackend:
                         handle=module.register_forward_hook(capture);batch_handles.append(handle);self.handles.append(handle)
                 try:
                     with torch.inference_mode():
+                        self.model_forward_invocations+=1
                         logits=self.model(input_ids=tokens,position_ids=positions,attention_mask=None)
                         require(tuple(logits.shape)==(8,1000,self.contract['vocab_size']),'LOGIT_SHAPE',str(logits.shape))
                         loss=torch.nn.functional.cross_entropy(logits[:,:-1].float().reshape(-1,logits.shape[-1]),tokens[:,1:].reshape(-1),reduction='none').reshape(8,-1)
@@ -226,12 +237,15 @@ class NativeBackend:
                         for k,v in values.items():outputs[k].append(v[:len(rr)].cpu().numpy())
                         for k,v in captured.items():features[k].append(v[:len(rr)].cpu().numpy())
                     torch.cuda.synchronize()
+                    self.completed_model_batches+=1
                 finally:
                     for handle in batch_handles:handle.remove();self.handles.remove(handle)
         finally:
             for handle in self.handles:handle.remove()
             self.handles=[]
-        return dict(ids=[r['id'] for r in rows],sequence_sha256=[hashlib.sha256(r['sequence'].encode()).hexdigest() for r in rows],physical_batch_size=8,logical_batch_size=logical_batch_size,filler_ids=[],hook_calls=calls,features={k:np.concatenate(v) for k,v in features.items()},adapter_branch_calls=branches,**{k:np.concatenate(v) for k,v in outputs.items()})
+        return dict(mode=self.candidate_binding['mode'],scientifically_qualified=False,downstream_eligible=False,
+            candidate_checkpoint_id=self.candidate_binding['checkpoint_id'],candidate_adapter_sha256=self.candidate_binding['adapter_sha256'],
+            candidate_route_id=self.candidate_binding['route_id'],ids=[r['id'] for r in rows],sequence_sha256=[hashlib.sha256(r['sequence'].encode()).hexdigest() for r in rows],physical_batch_size=8,logical_batch_size=logical_batch_size,filler_ids=[],hook_calls=calls,features={k:np.concatenate(v) for k,v in features.items()},adapter_branch_calls=branches,**{k:np.concatenate(v) for k,v in outputs.items()})
 
     def close(self):
         import torch

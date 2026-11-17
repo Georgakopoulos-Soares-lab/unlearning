@@ -1,5 +1,6 @@
 """Mode/budget boundaries and snapshots of real CPU tensors; no native GPU import."""
 import copy
+import importlib.util
 import datetime as dt
 import json
 from pathlib import Path
@@ -77,27 +78,24 @@ class BudgetTests(unittest.TestCase):
 class OwnedControllerTests(unittest.TestCase):
     def test_failed_spawn_charges_and_clears_only_own_new_ledger(self):
         from scripts.sayyed.pod_b_runtime.budget import run_budgeted
+        from tests.test_pod_b_runtime_unblock import ExecutionFixture
         import os
         with tempfile.TemporaryDirectory() as tmp:
-            root=Path(tmp);ledger=root/'GPU_LEDGER.json'
-            state=dict(active=None,used_seconds=7.,engineering_seconds=7.,stages=[],limits=dict(artifact_root=tmp,forward_deadline_utc='2099-01-01T00:00:00+00:00'))
-            ledger.write_text(json.dumps(state))
-            # No GPU workload: mocked lock calls never interfere with a live native owner.
-            with patch('scripts.sayyed.pod_b_runtime.budget.fcntl.flock'),patch('scripts.sayyed.pod_b_runtime.budget.subprocess.Popen',side_effect=OSError('controlled spawn failure')):
-                with self.assertRaises(OSError):run_budgeted(['unused'],ledger=ledger,mode=ENGINEERING,log=root/'log',label='CPU-test',env=dict(os.environ))
+            root=Path(tmp);fixture=ExecutionFixture(root,used=7.,engineering=7.);ledger=fixture.ledger
+            with fixture.live(),patch('scripts.sayyed.pod_b_runtime.budget.fcntl.flock'),patch('scripts.sayyed.pod_b_runtime.budget.subprocess.Popen',side_effect=OSError('controlled spawn failure')):
+                with self.assertRaises(OSError):run_budgeted(['unused'],ledger=ledger,mode=ENGINEERING,log=root/'log',label='CPU-test',env=dict(os.environ),execution_plan=fixture.plan)
             final=json.loads(ledger.read_text());self.assertIsNone(final['active']);self.assertGreater(final['used_seconds'],7.)
-            self.assertEqual(final['stages'][0]['status'],'FAILED_TO_START')
+            self.assertEqual(final['stages'][-1]['status'],'FAILED_TO_START')
     def test_timeout_stops_owned_process_and_accounts_cleanup(self):
         from scripts.sayyed.pod_b_runtime.budget import run_budgeted
-        import os,sys
+        from tests.test_pod_b_runtime_unblock import ExecutionFixture
+        import os
         with tempfile.TemporaryDirectory() as tmp:
-            root=Path(tmp);ledger=root/'GPU_LEDGER.json'
-            ledger.write_text(json.dumps(dict(active=None,used_seconds=0.,engineering_seconds=0.,stages=[],limits=dict(artifact_root=tmp,forward_deadline_utc='2099-01-01T00:00:00+00:00'))))
-            # Pure stdlib sleeping child; mocked shared locks, tiny controller timeout.
-            with patch('scripts.sayyed.pod_b_runtime.budget.fcntl.flock'),patch('scripts.sayyed.pod_b_runtime.budget.allowance',return_value=30.01),patch('scripts.sayyed.pod_b_runtime.budget.subprocess.Popen') as popen:
+            root=Path(tmp);fixture=ExecutionFixture(root,used=0.,engineering=0.);ledger=fixture.ledger
+            with fixture.live(),patch('scripts.sayyed.pod_b_runtime.budget.fcntl.flock'),patch('scripts.sayyed.pod_b_runtime.budget.allowance',return_value=30.01),patch('scripts.sayyed.pod_b_runtime.budget.subprocess.Popen') as popen:
                 fake=popen.return_value;fake.pid=99999999;fake.wait.side_effect=[__import__('subprocess').TimeoutExpired('owned',.01),0];fake.poll.return_value=None
                 with patch('scripts.sayyed.pod_b_runtime.budget.os.killpg') as kill:
-                    result=run_budgeted(['controlled'],ledger=ledger,mode=ENGINEERING,log=root/'log',label='CPU-timeout-test',env=dict(os.environ))
+                    result=run_budgeted(['controlled'],ledger=ledger,mode=ENGINEERING,log=root/'log',label='CPU-timeout-test',env=dict(os.environ),execution_plan=fixture.plan)
                     self.assertEqual(result['status'],'TIMEOUT');self.assertTrue(kill.called)
             final=json.loads(ledger.read_text());self.assertIsNone(final['active']);self.assertGreater(final['used_seconds'],0.)
             self.assertEqual(final['used_seconds'],final['engineering_seconds'])
@@ -117,6 +115,7 @@ class FinalizationBoundaryTests(unittest.TestCase):
 
 
 class ActualTensorSnapshotTests(unittest.TestCase):
+    @unittest.skipUnless(importlib.util.find_spec('torch') is not None,'Torch unavailable for real CPU tensor snapshots')
     def test_fingerprint_observes_parameter_persistent_and_nonpersistent_buffers(self):
         import torch
         from scripts.sayyed.pod_b_runtime.native import NativeBackend

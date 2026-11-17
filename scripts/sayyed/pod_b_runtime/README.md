@@ -1,5 +1,7 @@
-Resumed B04 uses `qualification.py`, `native.py`, `modes.py`, `budget.py` and `finalize.py`. The older `gate.py` interface remains for historical contracts; it does not describe the resumed implementation.
+Current B04 hardening uses `approval.py`, `modes.py`, `budget.py`, `native.py`, `qualification.py` and `finalize.py`. `gate.py` remains the historical interface/utilities. See `docs/experiments/ashay/POD_B/CURRENT_STATUS.json` and B04_UNBLOCK_HANDOFF.md.
 
-Execution requires a pinned B04 plan, reviewed mode, new output directory, frozen training fixture, isolated candidate runtime and the aggregate locked budget controller. Native workers cannot run standalone. Engineering outputs always remain ineligible for scientific consumers, including after successful numerical checks. Actual supplied-model historical bindings remain unresolved.
+A model launch requires the actual current B04/RUNNING control record, direct approval, execution ID, exact plan digest, permitted mode, pinned runner/helper origins, environment and inherited ledger. Workers recheck approval/source/lease before native work. Closed or waiting records never authorize a new run. Use a frozen runner PYTHONPATH, Python -P and the pinned runtime interpreter.
 
-See `docs/experiments/ashay/POD_B/B04_RESUME_RUNTIME.md` and the current resume handoff. No later stage is authorized by these scripts.
+Engineering outputs remain scientifically/downstream ineligible. Scientific R2 requires source-bound full-state/head/config/fixture/reference identities and authoritative independent files before allocation. Finalization checks actual loaded state/contract and separate observed worker execution events. R0 first-reference creation and valid route inheritance retain their independent proof requirements.
+
+`collect_provenance.py` is a standard-library, explicit-path observer; run with Python -S to avoid site startup hooks. It does not import CUDA or authenticate old jobs. `reproduce.py` plus environment.sh.template provide the actual parameterized source/binary-copy recipe. Read B04_UNBLOCK_REPRODUCTION.md for dependencies, reserve arguments and recovery limits. No later stage is authorized.

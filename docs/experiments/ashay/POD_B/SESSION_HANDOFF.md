@@ -1,3 +1,7 @@
+Current authoritative follow-up: B04_UNBLOCK_HANDOFF.md and CURRENT_STATUS.json. Status WAITING_FOR_STEERING: B04; no B05 authorization.
+
+Previously published handoff retained verbatim:
+
 Current status: WAITING_FOR_STEERING: B04. See B04_RESUME_HANDOFF.md, B04_RESUME_RECEIPT.json, B04_CHANNEL_ELIGIBILITY.csv and B04_GOAL_CROSSWALK.md. Only engineering diagnostics completed;0/36 supplied models are scientifically qualified. No later stage is approved.
 
 Previous handoff, retained verbatim:

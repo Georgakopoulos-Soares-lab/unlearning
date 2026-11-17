@@ -1,0 +1,24 @@
+{
+  "initial_CPU_suite_compatibility_errors": 2,
+  "intermediate_CPU_origin_rejections": 4,
+  "final_CPU_tests": {
+    "passed": 126,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "initial_recipe_dry_run": {
+    "status": "REJECTED",
+    "observed_error": "ValueError: Pinned distribution differs: wheel",
+    "source": "Captured tool stderr; stdout file was empty",
+    "remedy": "Separate installed-root lock from broad setuptools-vendored metadata inventory; no packages changed"
+  },
+  "initial_manual_boundary_smoke": {
+    "status": "HARNESS_ASSERTION_WRONG_EXPECTED_ERROR_CODE",
+    "actual_error": "APPROVAL_CONTROL",
+    "expected_error": "EXECUTION_ID",
+    "remedy": "Record the valid earlier rejection accurately; production execution was blocked throughout"
+  },
+  "new_native_failures": 0,
+  "old_native_failure_history_preserved": true
+}

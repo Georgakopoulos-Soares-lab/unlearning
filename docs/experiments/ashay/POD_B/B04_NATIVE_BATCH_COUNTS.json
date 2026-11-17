@@ -1,0 +1,497 @@
+{
+  "final_v7_successful_worker_executions": 12,
+  "final_v7_completed_full_model_batches": 192,
+  "measurement_basis": "Reconstructed, not instrumented. Verified v7 Python source controls and per-output metadata/digests. Six matrices are not six model forwards.",
+  "all_historical_attempts_total": null,
+  "all_historical_attempts_total_reason": "Partial failed attempts were not uniformly instrumented; no new GPU run to fill this counter",
+  "frozen_control_flow_source_records": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/runner-v7/scripts/sayyed/pod_b_runtime/native.py",
+      "bytes": 18571,
+      "sha256": "2cb9f8dc47dcb21190c3ed205c1a1e65650673ce2c6b85ae8e90870f40491a1e"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/runner-v7/scripts/sayyed/pod_b_runtime/qualification.py",
+      "bytes": 10750,
+      "sha256": "96bd15c9ad45c95a4dbff38150bc22b4b45bb67e40976e87db7a7bf630fd48ac"
+    }
+  ],
+  "new_followup_native_forward_invocations": 0,
+  "new_followup_completed_model_batches": 0,
+  "workers": [
+    {
+      "checkpoint": "base/iter_0000100",
+      "phase": "fresh",
+      "completed_full_model_batches": 4,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": false,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-fresh/worker/parent_baseline_before_adapter.json",
+          "sha256": "03197eb5bc53a6480bd6f9eb9c92edd4a849458837169aa13df072c2c147347a",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-fresh/worker/principal.json",
+          "sha256": "039c7d58abb9915e91eb5615cc3e34bb969bbc69268fc756736ef028a15f7f01",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "base/iter_0000100",
+      "phase": "matrix",
+      "completed_full_model_batches": 28,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": true,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/parent_baseline_before_adapter.json",
+          "sha256": "6e9e950ff469d6c80c261d7126e017527c708b4e1c3ec8389ec1ae10f97a75cf",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/principal.json",
+          "sha256": "964385001af14ad56e05b54ffa7434c92f74ca8ae966abe36ca50850ea050eea",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/repeat.json",
+          "sha256": "3bc745ad4f1428b2b7934ab546acfbb33d834bdac51fa4ca53c09a577b37f9a1",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/logical1.json",
+          "sha256": "3695a7b3133a86d4c1ecbf4a3f128c43ee6f4741e407119a60907aed1feb3ae0",
+          "completed_physical_batches": 12
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/filler_perturbation.json",
+          "sha256": "c0acfdf56e06a60e20d69220ac36aa7f86157f7db8b73d9faeda6b83d204e274",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/hookless.json",
+          "sha256": "1c5b3b7b56948975cc2693f76795ae9ea326f7d9f4fe42b385697d72d2d0fe53",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/disabled.json",
+          "sha256": "0ff8d1a7e80f758711a1f3cd6bd1f140d3f95a843109aaa68ab59d4a9f48ac68",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/swap_B.json",
+          "sha256": "c3a934a647a45670aa8d87a7ae52a4e9b5ca7c3320ccbaf3b93f7e6c66accf71",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base100-matrix-v7/worker/swap_A_return.json",
+          "sha256": "a16b30060fa53258f682060d11c756aa8a8cd8bf36d0c8e8a2fe8abdbb4a9a11",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "base/iter_0001800",
+      "phase": "fresh",
+      "completed_full_model_batches": 4,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": false,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-fresh/worker/parent_baseline_before_adapter.json",
+          "sha256": "83179e20870ab0114ae1d7537ba70cc2db8a0772bcb53eae8af634c265235c56",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-fresh/worker/principal.json",
+          "sha256": "e3eec211f4dabfc8296e9484ab1c84dd34f9dc097cf1f97260d6541229313428",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "base/iter_0001800",
+      "phase": "matrix",
+      "completed_full_model_batches": 28,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": true,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/parent_baseline_before_adapter.json",
+          "sha256": "685c1de447be3aac79491d9628c547d44c15aa70c8e735167b6d74b2053b003d",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/principal.json",
+          "sha256": "d892cf7a31bbbf28861a1a2c121661187cb111f1e702091cbb67f0c225a7807b",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/repeat.json",
+          "sha256": "fb96bb4986324a269e3171e33db1cbd3bf7c9fa0dbf3f0f1d3ceb132d2136050",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/logical1.json",
+          "sha256": "787bfe20d2883894ccc24576386102b5a25f05469900a8ac18fa41de8557c81e",
+          "completed_physical_batches": 12
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/filler_perturbation.json",
+          "sha256": "8cd8dfd2975532bf6cfe2a8e33bcb432c72acd31d3d5023559b466f8d1217137",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/hookless.json",
+          "sha256": "706d15d2f197a5edcaccf757629af09d464f5c27e74a6d3bf0023e9660334950",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/disabled.json",
+          "sha256": "ff87f0f2bff86a56ed166c214d5aa58ebed32f2b3ae597b1b562057435e29999",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/swap_B.json",
+          "sha256": "f61087d67b2bb2115b6c35454c9abbddf69641669b103ef12a58a4221e874267",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/base1800-matrix/worker/swap_A_return.json",
+          "sha256": "a098fa8bb332b3814d6064af1ca654745b758cd4a2d70c0a2de0d7800d826e80",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0000100",
+      "phase": "fresh",
+      "completed_full_model_batches": 4,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": false,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-fresh/worker/parent_baseline_before_adapter.json",
+          "sha256": "ca03e81ff3e1c2e27bca30828e6c31caea31f97068291704737b40fcbf4d295f",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-fresh/worker/principal.json",
+          "sha256": "eb4bdbe01037112d2d6aed65ff0964697ef9aff9b71b933c28b1e95a0b76bea0",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0000100",
+      "phase": "matrix",
+      "completed_full_model_batches": 28,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": true,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/parent_baseline_before_adapter.json",
+          "sha256": "5d424c05ef201e289e2fc5da3ebe8cddc40a1ee8f1dc23536022d563a5ea1e61",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/principal.json",
+          "sha256": "729362b1f84108ed2d900caac23cfdb185f3166a4d13b2b519e0365564f76d9e",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/repeat.json",
+          "sha256": "7ccf6d528cd7085b50a3c0b96015a763f178e583d301671b344c3b1a270b9e6b",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/logical1.json",
+          "sha256": "5fd83e3ce7d49a488ecb7c43357b09df3c40c50fff99027492f22bac05fba5e1",
+          "completed_physical_batches": 12
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/filler_perturbation.json",
+          "sha256": "6db2aa79cd15a6adf42baeff2ec326e163b9043b44905cc18ac23078e624f461",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/hookless.json",
+          "sha256": "74fcc6b37219eba0f57f4e782742d6aeca25ec805d8da5250abf696e86a8e2c4",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/disabled.json",
+          "sha256": "3ae275db2e3eed02004d3ffbc92d421ba17185a26fc17a1ebf0c2a5cbceab823",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/swap_B.json",
+          "sha256": "657fc05fd38aa4b0a2ab5361d060910059d067e778386003b62f491957f3ffb4",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent100-matrix/worker/swap_A_return.json",
+          "sha256": "5eb6db2e4cbc90a4ddacd037b0d436282593dda5c6a087ae0077b86846386ba2",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0001600",
+      "phase": "fresh",
+      "completed_full_model_batches": 4,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": false,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-fresh/worker/parent_baseline_before_adapter.json",
+          "sha256": "0e1fe7e143f39b1b6bc400cf1d9a01459e370baa266d067e2a00b87989f810ee",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-fresh/worker/principal.json",
+          "sha256": "77d16b6dbca7b668d13356f4117723faf6127adfffc0d2d7687b6dbd0ec923a4",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0001600",
+      "phase": "matrix",
+      "completed_full_model_batches": 28,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": true,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/parent_baseline_before_adapter.json",
+          "sha256": "dd46cd6cb64c8af37be86a776b45b4caf2e55b9289d70395cf4152286296fd46",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/principal.json",
+          "sha256": "2aeeb90ad59c1677ebb1100ddc8c23c368b7432ce1d23f5ad3037859524bf194",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/repeat.json",
+          "sha256": "b8592fbd2df2041d9e89328ecd0b2b1c91dcc602bea163cb7e543d83dc72d9ce",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/logical1.json",
+          "sha256": "47998e0d8ceaa5c2ea11a979d1621ad16d8e775c921933b96752c2b58ab0685e",
+          "completed_physical_batches": 12
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/filler_perturbation.json",
+          "sha256": "a5124e6526488655cd9e671c6bfbcc7a6d502cb95786773c4c0230948bc8fc37",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/hookless.json",
+          "sha256": "b8ec48bbd95e3c794bbcf858831abbd28a29b91cd95105813cc30864776ce489",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/disabled.json",
+          "sha256": "eb2053b4dd5c9d3e1049631959c6cdaae2869b6e965f67c96951ca256aa31d6c",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/swap_B.json",
+          "sha256": "4bf4adc0ad7911a2b1030072aaea182c7054d628ca13d31962d55a7141556b01",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1600-matrix/worker/swap_A_return.json",
+          "sha256": "0ba2892df61c5d67ac3daafda96fbe5308c1cf1153f1d8306cd81bd4f1c646e6",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0001700",
+      "phase": "fresh",
+      "completed_full_model_batches": 4,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": false,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-fresh/worker/parent_baseline_before_adapter.json",
+          "sha256": "f467d5c81bcb4c699d79a4572774aa2c43e097a59d84e19dfd9bf097e971a9fe",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-fresh/worker/principal.json",
+          "sha256": "41af3f3792af43b767a96ffd31c15711636ebc7dc4cff063a5677f97954d9918",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0001700",
+      "phase": "matrix",
+      "completed_full_model_batches": 28,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": true,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/parent_baseline_before_adapter.json",
+          "sha256": "e8eb2d91ba9bbcb880bce46319ee0fa6d3500e91a5959ecd11d9cf0a70c94dbc",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/principal.json",
+          "sha256": "ec4806c22ae12df286b834b82f074b06ca132d6756ee03051d4969b394782384",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/repeat.json",
+          "sha256": "8d10a2c72b829d9bd8a0b6cb805dce10abfc859fc642cb70344245c24eacaa86",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/logical1.json",
+          "sha256": "17bbe54aae2b73dc2ab8d82934533c3f979ed0a5fa0243a761b0acebf9eefb60",
+          "completed_physical_batches": 12
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/filler_perturbation.json",
+          "sha256": "2d6905d1bacdc0c16f83d6e645cdc74480e1417b9b11b2a8e51a5655b98c54c9",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/hookless.json",
+          "sha256": "68062fbddf006daa639715c9088458a6060aa3b496f185b04b999aee93019747",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/disabled.json",
+          "sha256": "17cae758930bea034ea3d8c022b466e529478aee1607550189326a2a1aaeb945",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/swap_B.json",
+          "sha256": "e28c5d0effa8d593a263a75697b1b0cc0003e9b92aa6bfa25b9089082901a8e4",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1700-matrix/worker/swap_A_return.json",
+          "sha256": "9f1b483f8b22209cb3b3a0448a30e36c97b435a2fcbe83f192972cb0d9fde286",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0001800",
+      "phase": "fresh",
+      "completed_full_model_batches": 4,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": false,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-fresh/worker/parent_baseline_before_adapter.json",
+          "sha256": "165582ce64cd024557e1c5896101c43891072a96ec2201f68c6ffd4959de508a",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-fresh/worker/principal.json",
+          "sha256": "d98464c0931497804bdec454ae9260b3d773981182e2a11fd0e0fa20138083fe",
+          "completed_physical_batches": 2
+        }
+      ]
+    },
+    {
+      "checkpoint": "maxent/iter_0001800",
+      "phase": "matrix",
+      "completed_full_model_batches": 28,
+      "basis": "RECONSTRUCTED_FROM_HASH_VERIFIED_SAVED_OUTPUT_METADATA_AND_FROZEN_V7_CONTROL_FLOW",
+      "includes_candidate_parent_baseline": true,
+      "includes_swap_B": true,
+      "tiny_algebra_calls_excluded": true,
+      "duplicate_plain_parent_baseline_save_not_double_counted": true,
+      "metadata_records": [
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/parent_baseline_before_adapter.json",
+          "sha256": "c315807caec7386e9ab3be8c0d70cfdd98cd653ed1778bbe99b42a0817958675",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/principal.json",
+          "sha256": "8c4b7b7c26fb6dfc3d5218aad1cabc7180a27a4d44bc3a831ca179ca62b876ac",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/repeat.json",
+          "sha256": "10d97390f68e5c3120f4d099a9cfeac1d42aa73893a9cb7e1186f995ce6aed3a",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/logical1.json",
+          "sha256": "e1c4f69f20197a2439bad0afefc4e26e13a90af77e46919b0bca9c8e3b1c7380",
+          "completed_physical_batches": 12
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/filler_perturbation.json",
+          "sha256": "df96ce9eb6031f5bfaeb2e0e3d377c4dd7884bf335a25513986143be5fe0190b",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/hookless.json",
+          "sha256": "2429b51c1a88a42d1fb0f5eb79986fd27e6667fa05978cadc11471c63d44daec",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/disabled.json",
+          "sha256": "fba666d61f7ffb20ae28317f73e37dcc422a16322e15f6332ad8bccc2ca82d46",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/swap_B.json",
+          "sha256": "6a2264050edc7001bd897cb3d2c1d18476fa213a6f49aad134fd4e0597b379ea",
+          "completed_physical_batches": 2
+        },
+        {
+          "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/engineering/maxent1800-matrix/worker/swap_A_return.json",
+          "sha256": "892e2d6dfbe6b73e59f43b951e8ffde3dad41393c7c3bf1f5c25c13c7742fa75",
+          "completed_physical_batches": 2
+        }
+      ]
+    }
+  ]
+}

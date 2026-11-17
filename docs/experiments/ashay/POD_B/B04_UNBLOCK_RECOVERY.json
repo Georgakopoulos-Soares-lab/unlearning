@@ -1,0 +1,43 @@
+{
+  "schema": "POD_B.B04.followup_recovery.v1",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z",
+  "local_only": true,
+  "remote_backup_revision": null,
+  "restore_roundtrip_tested": false,
+  "private_index": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/RECOVERY_MANIFEST.json",
+    "bytes": 22577,
+    "sha256": "90ae5eab579d68eb9cab463ed955dca5b184ba6478c6237804922ad463cd0f3b"
+  },
+  "source_snapshot": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/SOURCE_SNAPSHOT_V2.json",
+    "bytes": 7866,
+    "sha256": "ba869cc5a67754420e1f003911a636305c76aa6ec4968b96efb798ecdd297a95"
+  },
+  "direct_user_approval": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/USER_APPROVAL.txt",
+    "bytes": 735,
+    "sha256": "712d084237540b6452937d80bdb446d601e9177c811eab16ce1da05a951c1f12"
+  },
+  "approval": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/APPROVAL.json",
+    "bytes": 1498,
+    "sha256": "afc529e311440c2d5fe35296b93eef13fad9858a0fb3a49a8b35b87c482febfc"
+  },
+  "plan": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/plans/B04_UNBLOCK_PLAN.json",
+    "bytes": 2139,
+    "sha256": "bbfcd28ef0ab98dc74d21ce9ae368feae9b3f59d4fecc7a42a2ca1eb97c3f190"
+  },
+  "restore_order": [
+    "Verified prior inputs/receipts and v7 arrays/source history",
+    "Trusted retained binary environment and source dependencies",
+    "This repaired snapshot, approval/plan and evidence records",
+    "CPU hash/status validation; no replay of closed approvals",
+    "Only after real proof and a live bound plan, necessary fresh scientific qualification"
+  ],
+  "limits": "No new off-Pod backup, full environment rebuild or restore roundtrip; B09 separately gated",
+  "later_exclusions": [
+    "Final delivery verification written after remote push"
+  ]
+}

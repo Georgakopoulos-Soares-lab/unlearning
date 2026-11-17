@@ -40,6 +40,7 @@ def native_algebra(model):
     The base fixture intentionally returns normalized input distinct from x and
     a separate bias. Native all100 branch execution is checked independently.
     """
+    worker_guard()
     import torch
     from megatron.bridge.peft.utils import ParallelLinearAdapter
     from megatron.bridge.peft.lora_layers import LoRALinear
@@ -67,6 +68,7 @@ def native_algebra(model):
 
 
 def worker(plan,case,directory,phase):
+    event=worker_guard()
     binding,rows,policy,key=preflight(plan,case)
     worker_guard()
     from .native import NativeBackend
@@ -74,7 +76,11 @@ def worker(plan,case,directory,phase):
     torch.set_grad_enabled(False)
     backend=NativeBackend(directory);backend.training_rows=rows
     result=dict(mode=plan['mode'],scientifically_qualified=False,downstream_eligible=False,
-        checkpoint_id=case,reference_policy=policy,cache_key=key,phase=phase,gates={})
+        checkpoint_id=case,reference_policy=policy,cache_key=key,phase=phase,gates={},execution_event=event,
+        execution_origin=dict(kind='NATIVE_FROZEN_BACKEND',module='scripts.sayyed.pod_b_runtime.native',
+            path=str(Path(sys.modules[NativeBackend.__module__].__file__).resolve()),
+            sha256=file_sha(Path(sys.modules[NativeBackend.__module__].__file__))),
+        observed_worker_pid=os.getpid())
     def persist():
         (directory/'RESULT.json').write_text(json.dumps(result,indent=2))
     def save(name,value):return save_result(directory,name,value)
@@ -82,7 +88,12 @@ def worker(plan,case,directory,phase):
         with torch.inference_mode():
             backend.load(binding)
             result['contract']=backend.contract
+            result['resolved_inference_config']=backend.resolved_inference_config
             result['loaded_state']=dict(status='PASS_EXACT_PARENT_ADAPTER_AND_BUFFERS',snapshot=str(directory/'load_01.json'))
+            if plan['mode']==SCIENTIFIC:
+                from .finalize import validate_loaded_result
+                result['actual_snapshot']=backend.snapshot()
+                validate_loaded_result(binding,result)
             principal=backend.forward(rows,logical_batch_size=8,hooks=True)
             validate_forward(principal,rows,backend.contract)
             adapter_activity(principal,dict(adapter_tensor_specs={r['key']:r for r in backend.expected_adapter}))
@@ -91,7 +102,11 @@ def worker(plan,case,directory,phase):
             result['gates']['all100_native_adapter_branch_execution']=dict(pass_=True,calls=principal['adapter_branch_calls'])
             _,lm=independent_lm_reduction(principal)
             result['gates']['independent_float64_lm_diagnostic']=dict(pass_=lm['pass'],checks=[lm],canonical_dtype_unchanged='float32')
-            result['actual_snapshot']=backend.snapshot();persist()
+            result['actual_snapshot']=backend.snapshot()
+            if plan['mode']==SCIENTIFIC:
+                from .finalize import validate_loaded_result
+                validate_loaded_result(binding,result)
+            persist()
             if phase=='matrix':
                 result['native_algebra']=native_algebra(backend.model)
                 result['gates']['native_normalized_input_scale_bias_eval_dropout_disable']=dict(pass_=True)
@@ -123,26 +138,45 @@ def worker(plan,case,directory,phase):
                 else:
                     result['original_agreement']=dict(status='NOT_AVAILABLE' if plan['mode']==ENGINEERING else policy,
                         pass_=None,reason='No external agreement claim from self comparison or a different checkpoint')
+            result['model_forward_invocations']=backend.model_forward_invocations
+            result['completed_model_batches']=backend.completed_model_batches
             result['peak_cuda_memory_bytes']=int(torch.cuda.max_memory_allocated())
             result['all_observed_gates_passed']=all(v['pass_'] for v in result['gates'].values())
             result['status']='ENGINEERING_DIAGNOSTIC_PASS' if result['all_observed_gates_passed'] else 'NATIVE_NUMERICAL_FAILURE'
             if plan['mode']==SCIENTIFIC:result['status']='SCIENTIFIC_GATES_PENDING_FRESH_PROCESS'
             persist()
     except BaseException as exc:
+        result['model_forward_invocations']=backend.model_forward_invocations
+        result['completed_model_batches']=backend.completed_model_batches
         result['status']='NATIVE_EXECUTION_FAILED';result['error']=dict(type=type(exc).__name__,message=str(exc),traceback=traceback.format_exc());persist();raise
     finally:backend.close()
 
 
-def main():
-    ap=argparse.ArgumentParser();ap.add_argument('command',choices=['run','_worker','preflight']);ap.add_argument('--plan',type=Path,required=True);ap.add_argument('--case',required=True);ap.add_argument('--output',type=Path);ap.add_argument('--phase',choices=['matrix','fresh'],default='matrix');args=ap.parse_args()
-    plan=json.loads(args.plan.read_text());binding,rows,policy,key=preflight(plan,args.case)
-    if args.command=='preflight':print(json.dumps(dict(status='PASS_MANIFEST_PREFLIGHT_ONLY',policy=policy,scientifically_qualified=False)));return
+def main(argv=None):
+    from .approval import validate_live,verify_runner,reserve_reason
+    ap=argparse.ArgumentParser();ap.add_argument('command',choices=['run','_worker','preflight'])
+    ap.add_argument('--plan',type=Path,required=True);ap.add_argument('--case',required=True)
+    ap.add_argument('--output',type=Path);ap.add_argument('--phase',choices=['matrix','fresh'],default='matrix')
+    ap.add_argument('--reserve-reason',help='Exact concrete bounded reason frozen in the approved plan reserve field')
+    args=ap.parse_args(argv);plan=json.loads(args.plan.read_text())
+    if args.command!='preflight':
+        validate_live(plan);verify_runner(plan,native=True)
+        if args.command=='_worker':worker_guard()
+    reason=reserve_reason(plan,args.reserve_reason)
+    binding,rows,policy,key=preflight(plan,args.case)
+    if args.command=='preflight':
+        print(json.dumps(dict(status='PASS_MANIFEST_PREFLIGHT_ONLY',policy=policy,scientifically_qualified=False)));return
+    require(args.output is not None,'OUTPUT_PATH','Explicit new output required')
     directory=args.output.resolve();root=Path(plan['artifact_root']).resolve()
-    require(directory.is_relative_to(root/('engineering' if plan['mode']==ENGINEERING else 'scientific')),'MODE_SEPARATION','Disjoint output namespaces required')
+    require(directory.is_relative_to(root/('engineering' if plan['mode']==ENGINEERING else 'scientific')),
+            'MODE_SEPARATION','Disjoint output namespaces required')
     require(not directory.exists(),'OUTPUT_EXISTS',str(directory));directory.mkdir(parents=True)
     if args.command=='_worker':worker(plan,args.case,directory,args.phase);return
-    command=[sys.executable,'-m','scripts.sayyed.pod_b_runtime.qualification','_worker','--plan',str(args.plan),'--case',args.case,'--output',str(directory/'worker'),'--phase',args.phase]
-    receipt=run_budgeted(command,ledger=root/'GPU_LEDGER.json',mode=plan['mode'],log=directory/'worker.log',label=args.case+':'+args.phase,env=dict(os.environ))
+    command=[sys.executable,'-P','-m','scripts.sayyed.pod_b_runtime.qualification','_worker','--plan',str(args.plan),
+             '--case',args.case,'--output',str(directory/'worker'),'--phase',args.phase]
+    if reason is not None:command+=['--reserve-reason',reason]
+    receipt=run_budgeted(command,ledger=Path(plan['ledger_path']),mode=plan['mode'],log=directory/'worker.log',
+        label=args.case+':'+args.phase,env=dict(os.environ),reserve_reason=reason,execution_plan=plan)
     receipt.update(mode=plan['mode'],scientifically_qualified=False,downstream_eligible=False)
     (directory/'CONTROLLER.json').write_text(json.dumps(receipt,indent=2));print(json.dumps(receipt))
     if receipt['returncode']!=0:raise SystemExit(2)

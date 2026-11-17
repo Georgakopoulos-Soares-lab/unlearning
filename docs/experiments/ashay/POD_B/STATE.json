@@ -1,7 +1,7 @@
 {
   "stage": "B04",
   "status": "WAITING_FOR_STEERING: B04",
-  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z",
   "research_context": {
     "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
     "worktree": "/workspace/wt-POD_B",
@@ -19,103 +19,55 @@
     "refs/heads/experiments-ashay-relearning-benign-v1": "cf7b861619d05b8916690471fcd9469ab9d80f75",
     "refs/heads/main": "af92e593162478c8aa40b6303ed0f0e508affac7"
   },
-  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/PROMPT_RECEIPT.json",
-  "prompt_commit": "8f9cc2cdbc3b33cba6693708ac66717fc5d3fcdb",
-  "current_run_science_gpu_seconds": 0,
+  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/PROMPT_RECEIPT.json",
+  "prompt_commit": "7773345c7394362ba63b16355f514b0585cdccf5",
   "current_run_new_fits": 0,
   "next_stage_authorized": false,
-  "approved_scope": "Resumed B04 native implementation and training-only engineering qualification; no training/fits/heldout evaluation/B05",
+  "approved_scope": "B04 CPU gate/evidence remediation and conditional scientifically bound training-only qualification; no repeated v6 assignment, training/fits/heldout evaluation/B05",
   "research_head_at_start": "fc7caa245b7c43ffa57cc44313ef27a67a96aa79",
   "prompt_hashes": {
+    "POD_B_04_UNBLOCK.md": "1d1f6822ce66f7ed890028b51e45e24102b6495310a63890698808088c2d3b11",
     "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
-    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
-    "POD_B_04_RUNTIME (1).md": "ce0aa8cc20c76c2caf779d8102d23101173ecf436e9d8c286b5a22d89026c611"
+    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
   },
   "budget": {
-    "stage": "B04",
-    "mode": "ENGINEERING_DIAGNOSTIC",
-    "scientifically_qualified": false,
-    "downstream_eligible": false,
-    "window_start_utc": "2026-11-17T12:11:46+00:00",
+    "schema": "POD_B.B04.unblock_resources.v1",
+    "approval_observed_utc": "2026-11-17T13:44:06+00:00",
+    "current_observed_utc": "2026-11-17T14:37:12.948098+00:00",
+    "followup_CPU_pass_wall_seconds": 3186.948098,
     "forward_deadline_utc": "2026-11-17T18:11:46+00:00",
     "closure_deadline_utc": "2026-11-17T18:56:46+00:00",
-    "hard_gpu_seconds": 9000,
-    "planning_gpu_seconds": 7200,
-    "engineering_gpu_seconds": 1675.5146971674585,
-    "prior_numbered_B04_gpu_seconds": 0,
-    "historical_separate_gpu_usage": {
-      "qualification": 49.65920904699851,
-      "shared_ledger": 1423.9886059999997
+    "clock_reset": false,
+    "aggregate_gpu_ceiling_seconds": 9000,
+    "gpu_planning_threshold_seconds": 7200,
+    "aggregate_gpu_used_seconds": 1675.5146971674585,
+    "aggregate_gpu_remaining_seconds": 7324.4853028325415,
+    "engineering_gpu_ceiling_seconds": 1800,
+    "engineering_gpu_used_seconds": 1675.5146971674585,
+    "engineering_gpu_remaining_seconds": 124.48530283254149,
+    "new_followup_engineering_gpu_seconds": 0,
+    "new_followup_scientific_gpu_seconds": 0,
+    "authoritative_ledger": {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/GPU_LEDGER.json",
+      "bytes": 6608,
+      "sha256": "df26dbcc896f57962637e469341ec079a59340be9367605b84b9c7023c021335"
     },
-    "parent_choice": {
-      "base": "base",
-      "maxent_pre_restart": "maxent",
-      "maxent_post_restart": "maxent"
-    },
-    "parent_choice_basis": "Delivered configuration parent labels plus existing verified parent manifests; engineering assumption only, no job identity claim, no parent sweep",
-    "representatives": [
-      "base/iter_0000100",
-      "base/iter_0001800",
-      "maxent/iter_0000100",
-      "maxent/iter_0001600",
-      "maxent/iter_0001700",
-      "maxent/iter_0001800"
-    ],
-    "runtime_strategy": "Physical isolated copy of pinned working binary environment and pinned source archives; exact official Evo2LoRA source with minimal source-justified Bridge compatibility backport; new route identity",
-    "historical_identity": "Q1/Q2 unresolved; no new authority supplied; unchanged source/provenance evidence reused",
-    "forbidden": [
-      "training",
-      "probe_fits",
-      "dev_test_inference",
-      "B05",
-      "automatic_advance"
-    ],
-    "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z",
-    "superseded_prior_numbered_B04": {
-      "plan": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/B04_QUALIFICATION_PLAN.json",
-      "plan_sha256": "b7c1294127951860bf689c328f6af2fd5411528427e6f254cbc942103ffacfcd",
-      "budgets": {
-        "total_stage_wall_seconds": 5400,
-        "provenance_pass_seconds": 600,
-        "per_api_seconds": 60,
-        "per_cpu_check_seconds": 600,
-        "per_transfer_seconds": 300,
-        "per_build_seconds": 1800,
-        "per_gpu_job_seconds": 600,
-        "total_gpu_seconds_if_eligible": 1800,
-        "scientific_cutoff": "2026-11-17T17:33:21+00:00",
-        "closure_deadline": "2026-11-17T20:33:21+00:00",
-        "minimum_later_science_reserve_seconds": 14400,
-        "no_clock_reset": true
-      },
-      "actual_gpu_seconds": 0,
-      "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z"
-    },
-    "approval_record": {
-      "approved_stage": "resumed B04",
-      "approved_sha256": "ce0aa8cc20c76c2caf779d8102d23101173ecf436e9d8c286b5a22d89026c611",
-      "start_basis": "First observed UTC in this approval turn; user-message timestamp not exposed",
-      "scope": "Native implementation and qualification; explicit engineering diagnostics while historical identity unbound",
-      "B05_authorized": false
-    },
-    "fixed_new_deadlines": true,
-    "provider": {
-      "termination_deadline": null,
-      "rental_start": null,
-      "hourly_rate": null,
-      "action": "No infrastructure extension/change/shutdown"
-    },
-    "ledger_preservation": [
-      {
-        "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
-        "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
-      },
-      {
-        "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
-        "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
-      }
-    ],
-    "charged_gpu_seconds": 1675.5146971674585
+    "authoritative_ledger_unchanged": true,
+    "authoritative_gpu_stage_count": 20,
+    "GPU_active": null,
+    "measured_final_test_CPU_process_seconds": 5.069300812,
+    "measured_final_test_wall_seconds": 15.560206423004274,
+    "whole_followup_CPU_process_seconds": null,
+    "whole_followup_CPU_process_reason": "Not cumulatively metered across agent/tool processes; final focused-test process measured separately",
+    "provider_rental_start": null,
+    "provider_hourly_rate": null,
+    "provider_rental_wall_seconds": null,
+    "provider_termination_deadline": null,
+    "provider_fields_reason": "Not independently supplied; no rental/hardware/infrastructure changes",
+    "historical_separate_domains": {
+      "shared_prior_gpu_seconds": 1423.9886059999997,
+      "pre_numbered_qualification_gpu_seconds": 49.65920904699851
+    }
   },
   "prior_source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
   "prior_artifact_root": "/workspace/meeting-artifacts/relearning-benign-v1",
@@ -194,18 +146,18 @@
   "migration_performed": "B03 curated scoped metadata/views only; unchanged scientific sources reused in place; no array/head copy/refit",
   "no_background_stage_queue": true,
   "later_prompts_read": false,
-  "last_checkpoint_utc": "2026-11-17T13:00:08.785383+00:00",
+  "last_checkpoint_utc": "2026-11-17T14:37:12.948098+00:00",
   "completion_receipts": {
     "B01": "docs/experiments/ashay/POD_B/B01_VERIFICATION.json",
     "B02": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json",
     "B03": "docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json",
-    "B04": "docs/experiments/ashay/POD_B/B04_RESUME_RECEIPT.json"
+    "B04": "docs/experiments/ashay/POD_B/CURRENT_STATUS.json"
   },
-  "publication_status": "DELIVERY_HEAD_AND_VERIFICATION_RECORDED_EXTERNALLY",
-  "delivery_receipt": "/workspace/agent-handoff/POD_B/B04_RESUME_DELIVERY_VERIFICATION.json",
-  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/PROMPT_RECEIPT.json",
-  "research_head_note": "Actual delivered head is recorded in external B04_RESUME_DELIVERY_VERIFICATION.json; no self-referential commit hash is embedded",
-  "handoff": "docs/experiments/ashay/POD_B/B04_RESUME_HANDOFF.md",
+  "publication_status": "DELIVERY_COMMIT_RECORDED_EXTERNALLY",
+  "delivery_receipt": "/workspace/agent-handoff/POD_B/B04_UNBLOCK_DELIVERY_VERIFICATION.json",
+  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/APPROVAL.json",
+  "research_head_note": "See external B04_UNBLOCK_DELIVERY_VERIFICATION.json for final verified pushed head",
+  "handoff": "docs/experiments/ashay/POD_B/B04_UNBLOCK_HANDOFF.md",
   "data_readiness": {
     "rows": 22645,
     "tasks": 6,
@@ -235,10 +187,9 @@
     "prediction_channel_views": 3318,
     "scope": "Rows are scoped artifact/views, not new fits, unique learned functions or independent experiments"
   },
-  "resume_requirement": "Review B04; supply missing provenance or revised steering and explicit approval. Never auto-advance to B05.",
+  "resume_requirement": "Review B04; authoritative producer facts or separately approved research-protocol steering required. No automatic B05.",
   "resumed_B04_plan": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/plans/EXECUTION_PLAN.json",
   "resumed_B04_previous_state": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/PREVIOUS_STATE.json",
-  "current_run_engineering_gpu_seconds": 1675.5146971674585,
   "owned_engineering_jobs": [],
   "resumed_B04_engineering": {
     "native_matrices_passed": 6,
@@ -267,5 +218,53 @@
     "maxent/iter_0001800"
   ],
   "runtime_status": "NATIVE_ENGINEERING_IMPLEMENTED_SCIENTIFIC_ROUTE_UNBOUND",
-  "research_head_at_resume_entry": "fc7caa245b7c43ffa57cc44313ef27a67a96aa79"
+  "research_head_at_resume_entry": "fc7caa245b7c43ffa57cc44313ef27a67a96aa79",
+  "additional_prompt_source_receipt": "docs/experiments/ashay/POD_B/B04_ADDITIONAL_PROMPT_SOURCE.json",
+  "additional_source_delivery_receipt": "/workspace/agent-handoff/POD_B/B04_ADDITIONAL_SOURCE_DELIVERY_VERIFICATION.json",
+  "execution_id": "B04-unblock-20261117T134406Z",
+  "approved_prompt_sha256": "1d1f6822ce66f7ed890028b51e45e24102b6495310a63890698808088c2d3b11",
+  "execution_plan_path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/plans/B04_UNBLOCK_PLAN.json",
+  "execution_plan_sha256": "a51022fb88c836c0bfe99254519c52cba741375ca14e7129bd7210206de54644",
+  "approval_record": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/APPROVAL.json",
+    "bytes": 1498,
+    "sha256": "afc529e311440c2d5fe35296b93eef13fad9858a0fb3a49a8b35b87c482febfc"
+  },
+  "ledger_path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/GPU_LEDGER.json",
+  "ledger_identity": "88e578b3ebfec6ad71d30e368c37918cce29b049f925796cd4dfebb404f15c20",
+  "permitted_modes": [
+    "CPU_REMEDIATION",
+    "SCIENTIFIC_QUALIFICATION"
+  ],
+  "budget_high_water_used_seconds": 1675.5146971674585,
+  "budget_high_water_engineering_seconds": 1675.5146971674585,
+  "forward_deadline_utc": "2026-11-17T18:11:46+00:00",
+  "closure_deadline_utc": "2026-11-17T18:56:46+00:00",
+  "current_status_index": "docs/experiments/ashay/POD_B/CURRENT_STATUS.json",
+  "research_entry_commit": "6db5c8a0db504f5b1aba1d3cbcc49b41b942293b",
+  "current_execution_plan_sha256": "a51022fb88c836c0bfe99254519c52cba741375ca14e7129bd7210206de54644",
+  "scientifically_qualified_models": 0,
+  "new_followup_model_forwards": 0,
+  "new_followup_GPU_seconds": 0,
+  "CPU_tests": {
+    "passed": 126,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_snapshot": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/SOURCE_SNAPSHOT_V2.json",
+  "current_resources": "docs/experiments/ashay/POD_B/B04_UNBLOCK_RESOURCES.json",
+  "earlier_prompt_hashes_at_unblock_entry": {
+    "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
+    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
+    "POD_B_04_RUNTIME (1).md": "ce0aa8cc20c76c2caf779d8102d23101173ecf436e9d8c286b5a22d89026c611"
+  },
+  "historical_resume_resource_fields": {
+    "current_run_engineering_gpu_seconds": 1675.5146971674585,
+    "current_run_science_gpu_seconds": 0
+  },
+  "B04_cumulative_engineering_gpu_used_seconds": 1675.5146971674585,
+  "new_followup_engineering_gpu_seconds": 0,
+  "new_followup_scientific_gpu_seconds": 0,
+  "prior_B04_resume_budget_record": "/workspace/meeting-artifacts/POD_B/B04-unblock-20261117T134406Z/PREVIOUS_STATE.json"
 }

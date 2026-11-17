@@ -1,0 +1,26 @@
+{
+  "observation": "New guard rejected CPU tests launched from old CWD; module resolution selected an old-worktree helper",
+  "repair": "Use Python -P, a pinned PYTHONPATH and explicit worker cwd=runner_root; validate actual module origins",
+  "helpers": [
+    {
+      "name": "fixed_benign_batch.py",
+      "POD_B_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+      "old_terminal_worktree_sha256": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+      "identical": true
+    },
+    {
+      "name": "multiretain_support.py",
+      "POD_B_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+      "old_terminal_worktree_sha256": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+      "identical": true
+    },
+    {
+      "name": "check_benign_checkpoint_pair.py",
+      "POD_B_sha256": "c552334de0fd68e7b14dd3b320e0b1b220fa6d19727a86a1246714357114401c",
+      "old_terminal_worktree_sha256": "c552334de0fd68e7b14dd3b320e0b1b220fa6d19727a86a1246714357114401c",
+      "identical": true
+    }
+  ],
+  "prior_v6_actual_helper_origins": "Not instrumented; do not infer historical origin from this test",
+  "native_reruns": 0
+}
