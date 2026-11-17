@@ -1,0 +1,223 @@
+{
+  "status": "PASS_EXACT_COHORT_AND_NUMERIC_LABEL_CONSISTENCY",
+  "files": [
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/H3.jsonl",
+      "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+      "rows": 14965
+    },
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/other_five.jsonl",
+      "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+      "rows": 7680
+    }
+  ],
+  "tasks": [
+    {
+      "task": "emp_H3",
+      "counts": {
+        "train": 11971,
+        "dev": 1497,
+        "test": 1497
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "labels_by_split": {
+        "train": {
+          "1": 6150,
+          "0": 5821
+        },
+        "dev": {
+          "0": 735,
+          "1": 762
+        },
+        "test": {
+          "1": 755,
+          "0": 742
+        }
+      },
+      "exact_rc_unique_groups": 14965,
+      "duplicate_groups": [],
+      "cross_split_exact_rc_overlap": {
+        "dev__test": 0,
+        "dev__train": 0,
+        "test__train": 0
+      },
+      "original_sources": [
+        "GUE.zip frozen archive identity in row IDs"
+      ],
+      "biological_positive_label": "Unresolved from these numerical manifests; no relabeling",
+      "source_locus_genome_homology_groups": "Unavailable in supplied frozen manifests"
+    },
+    {
+      "task": "gue_mouse_0",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "labels_by_split": {
+        "train": {
+          "0": 510,
+          "1": 514
+        },
+        "dev": {
+          "1": 250,
+          "0": 262
+        }
+      },
+      "exact_rc_unique_groups": 1536,
+      "duplicate_groups": [],
+      "cross_split_exact_rc_overlap": {
+        "dev__train": 0
+      },
+      "original_sources": [
+        "MAGICS-LAB/DNABERT_2@f25bed9ee20db966dff39e5c1571249d04e36404"
+      ],
+      "biological_positive_label": "Unresolved from these numerical manifests; no relabeling",
+      "source_locus_genome_homology_groups": "Unavailable in supplied frozen manifests"
+    },
+    {
+      "task": "gue_prom_300_all",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "labels_by_split": {
+        "train": {
+          "0": 512,
+          "1": 512
+        },
+        "dev": {
+          "0": 257,
+          "1": 255
+        }
+      },
+      "exact_rc_unique_groups": 1536,
+      "duplicate_groups": [],
+      "cross_split_exact_rc_overlap": {
+        "dev__train": 0
+      },
+      "original_sources": [
+        "MAGICS-LAB/DNABERT_2@f25bed9ee20db966dff39e5c1571249d04e36404"
+      ],
+      "biological_positive_label": "Unresolved from these numerical manifests; no relabeling",
+      "source_locus_genome_homology_groups": "Unavailable in supplied frozen manifests"
+    },
+    {
+      "task": "gue_prom_core_all",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "labels_by_split": {
+        "train": {
+          "0": 513,
+          "1": 511
+        },
+        "dev": {
+          "1": 258,
+          "0": 254
+        }
+      },
+      "exact_rc_unique_groups": 1536,
+      "duplicate_groups": [],
+      "cross_split_exact_rc_overlap": {
+        "dev__train": 0
+      },
+      "original_sources": [
+        "MAGICS-LAB/DNABERT_2@f25bed9ee20db966dff39e5c1571249d04e36404"
+      ],
+      "biological_positive_label": "Unresolved from these numerical manifests; no relabeling",
+      "source_locus_genome_homology_groups": "Unavailable in supplied frozen manifests"
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "labels_by_split": {
+        "train": {
+          "2": 574,
+          "0": 226,
+          "1": 224
+        },
+        "dev": {
+          "2": 289,
+          "1": 111,
+          "0": 112
+        }
+      },
+      "exact_rc_unique_groups": 1535,
+      "duplicate_groups": [
+        {
+          "group": "0500b7c28fa4fd9a950cf12de9a6360e89297af42e4ef7cee839bf923de4f8b3",
+          "rows": 2,
+          "split": "dev"
+        }
+      ],
+      "cross_split_exact_rc_overlap": {
+        "dev__train": 0
+      },
+      "original_sources": [
+        "MAGICS-LAB/DNABERT_2@f25bed9ee20db966dff39e5c1571249d04e36404"
+      ],
+      "biological_positive_label": "Unresolved from these numerical manifests; no relabeling",
+      "source_locus_genome_homology_groups": "Unavailable in supplied frozen manifests"
+    },
+    {
+      "task": "gue_tf_0",
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ],
+      "labels_by_split": {
+        "train": {
+          "0": 513,
+          "1": 511
+        },
+        "dev": {
+          "0": 247,
+          "1": 265
+        }
+      },
+      "exact_rc_unique_groups": 1536,
+      "duplicate_groups": [],
+      "cross_split_exact_rc_overlap": {
+        "dev__train": 0
+      },
+      "original_sources": [
+        "MAGICS-LAB/DNABERT_2@f25bed9ee20db966dff39e5c1571249d04e36404"
+      ],
+      "biological_positive_label": "Unresolved from these numerical manifests; no relabeling",
+      "source_locus_genome_homology_groups": "Unavailable in supplied frozen manifests"
+    }
+  ],
+  "wall_seconds": 0.2292678869998781,
+  "new_dataset_test_members_opened": 0,
+  "interpretation": "Exact/RC exclusion is not source-genome or homology independence. H3 test was previously explored.",
+  "scientific_changes": "None: no resampling, relabeling, replacement, or cohort edits"
+}

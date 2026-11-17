@@ -1,0 +1,272 @@
+{
+  "tasks": {
+    "emp_H3": {
+      "counts": {
+        "train": 11971,
+        "dev": 1497,
+        "test": 1497
+      },
+      "classes": [
+        0,
+        1
+      ]
+    },
+    "gue_mouse_0": {
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ]
+    },
+    "gue_prom_300_all": {
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ]
+    },
+    "gue_prom_core_all": {
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ]
+    },
+    "gue_splice_reconstructed": {
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1,
+        2
+      ]
+    },
+    "gue_tf_0": {
+      "counts": {
+        "train": 1024,
+        "dev": 512
+      },
+      "classes": [
+        0,
+        1
+      ]
+    }
+  },
+  "hooks": [
+    "decoder.layers.0",
+    "decoder.layers.1",
+    "decoder.layers.2",
+    "decoder.layers.3",
+    "decoder.layers.4",
+    "decoder.layers.5",
+    "decoder.layers.6",
+    "decoder.layers.7",
+    "decoder.layers.8",
+    "decoder.layers.9",
+    "decoder.layers.10",
+    "decoder.layers.11",
+    "decoder.layers.12",
+    "decoder.layers.13",
+    "decoder.layers.14",
+    "decoder.layers.15",
+    "decoder.layers.16",
+    "decoder.layers.17",
+    "decoder.layers.18",
+    "decoder.layers.19",
+    "decoder.layers.20",
+    "decoder.layers.21",
+    "decoder.layers.22",
+    "decoder.layers.23",
+    "decoder.layers.24",
+    "decoder.final_norm"
+  ],
+  "hook_enumeration": "25 blocks in downloaded configs; actual model enumeration mandatory",
+  "pooling": "mean over nucleotide positions; right pad 1000, pad1; validate tokenizer before use",
+  "probe": {
+    "policies": [
+      "independent_refit",
+      "fixed_base_scaler_and_head"
+    ],
+    "C": [
+      0.1,
+      1,
+      10
+    ],
+    "penalty": "L2",
+    "class_weight": "balanced",
+    "scaler": "fold-local StandardScaler",
+    "tie_break": "smaller C",
+    "cv_seeds": [
+      42,
+      17,
+      1234
+    ],
+    "cv": "identical StratifiedGroupKFold splits across arms for each seed",
+    "threshold": "binary .5; multiclass sorted numeric class argmax",
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "max_iter_retry": [
+      2000,
+      10000
+    ],
+    "final_estimator_random_state": 42
+  },
+  "metrics": [
+    "binary AUROC",
+    "accuracy",
+    "balanced_accuracy",
+    "binary average_precision",
+    "splice macro OVR AUROC"
+  ],
+  "bootstrap": {
+    "resamples": 2000,
+    "seed": 20261103,
+    "paired": true,
+    "conditional_on_fitted_probes": true,
+    "group": "qualified biological groups if available; otherwise exact/RC groups with explicit limits",
+    "multiplicity": "pointwise exploratory unadjusted; all layers/seeds visible"
+  },
+  "preservation_margins": {},
+  "causal_loss": "single LM-output statistic; summed next-token loss / valid targets; distinct from classifier CE",
+  "heldout_access": "No untouched test member access; restored previously analyzed H3 outputs remain exploratory",
+  "physical_batch_size": 8,
+  "logical_batch_size": 8,
+  "filler_policy": "pad1 filler rows; exclude all filler outputs",
+  "metric_definitions": {
+    "auroc": "binary class1; splice macro one-vs-rest in sorted numeric class order",
+    "accuracy": "binary p(class1)>=.5; splice argmax",
+    "balanced_accuracy": "macro recall",
+    "average_precision": "binary class1; splice mean of per-class one-vs-rest AP",
+    "classification_cross_entropy": "sklearn log_loss float64 probabilities; distinct from LM NLL"
+  },
+  "bootstrap_metrics": [
+    "auroc",
+    "accuracy",
+    "balanced_accuracy",
+    "average_precision",
+    "classification_cross_entropy"
+  ],
+  "bootstrap_loss_metrics": [
+    "causal_nll",
+    "perplexity"
+  ],
+  "bootstrap_invalid": "reject missing-class draws consistently; record valid/invalid counts",
+  "study": "Pod B supplied relearning descriptive evaluation",
+  "status": "PREDECLARED_BEFORE_ANY_DELIVERED_MODEL_SCORING; EXECUTION_BLOCKED",
+  "declared_utc": "2026-11-17T06:59:41.070556+00:00",
+  "implementation_base": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "checkpoint_registry_sha256": "54c734405d0230c0270e64ee53333e0af7bb84d8015c597c73201088bcaaee97",
+  "checkpoint_coverage": {
+    "base_steps": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500,
+      1600,
+      1700,
+      1800
+    ],
+    "maxent_steps": [
+      100,
+      200,
+      300,
+      400,
+      500,
+      600,
+      700,
+      800,
+      900,
+      1000,
+      1100,
+      1200,
+      1300,
+      1400,
+      1500,
+      1600,
+      1700,
+      1800
+    ],
+    "scored_units": 0,
+    "potential_refitted_heads": 16848,
+    "true_step_zero": "not present in supplied trajectory listings"
+  },
+  "primary_anchors": {
+    "representation": [
+      "decoder_layer_16",
+      "final_norm"
+    ],
+    "display_seed": 42,
+    "all_seeds": [
+      42,
+      17,
+      1234
+    ],
+    "interpretation": "exploratory historical anchor; zero-based block16 is seventeenth block"
+  },
+  "comparison_families": {
+    "qualified_parent_relative": "only if exact initialization parent is established",
+    "true_trajectory_start_relative": "unavailable until true start qualifies; step100 is not silently relabeled step0",
+    "matched_step_between_series": "iteration-counter descriptive contrast only; exposure and initialization confounding retained",
+    "within_series_step100_reference": "optional explicitly first-delivered-relative exploratory contrasts; not true-start-relative"
+  },
+  "coverage_selection": {
+    "aim": "all qualified supplied checkpoints",
+    "conditional_balanced_subset_steps": [
+      100,
+      500,
+      1000,
+      1400,
+      1800
+    ],
+    "subset_rule": "If measured new-checkpoint extraction, full fitting/bootstrap/audit and backup forecast cannot fit remaining pre-cutoff window, use the same predefined steps for both series plus any qualified true initial references; never select by scores",
+    "activation_status": "not activated while all checkpoints blocked"
+  },
+  "forbidden": [
+    "backbone/intervention/relearning training",
+    "host-tropism prediction or evaluation",
+    "new test-set opening",
+    "unsanctioned source/runtime substitution"
+  ],
+  "fitting": "separately refitted heads plus compatible fixed-base and qualified own-initial reference heads; reuse exact-compatible prior heads/controls",
+  "new_contrasts": [
+    "conditional qualified-parent relative",
+    "qualified true-start relative",
+    "matched iteration between series"
+  ],
+  "gpu_lock": "/workspace/meeting-artifacts/evo2-pilot.gpu.lock",
+  "runtime_environment_lock_sha256": "6b0fcd2f8735394792f00ab3a39bb231dde1b6c14f2c9f8f92b39de938478360",
+  "manifests": [
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/H3.jsonl",
+      "sha256": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+      "rows": 14965
+    },
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z/manifests/other_five.jsonl",
+      "sha256": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126",
+      "rows": 7680
+    }
+  ]
+}

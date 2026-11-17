@@ -1,0 +1,2246 @@
+{
+  "schema": "pod-b-checkpoint-registry-v1",
+  "created_utc": "2026-11-17T06:49:59.096805+00:00",
+  "delivered_count": 36,
+  "unique_tensor_payloads": 36,
+  "duplicate_groups": [],
+  "wall_seconds": 11.312857619001079,
+  "cpu_process_seconds": 23.222173004000002,
+  "gpu_seconds": 0,
+  "scope": "CPU integrity and metadata qualification; no inference, fitting, or causal lineage proof",
+  "full_registry_sha256": "96ba15ca533d4f5091b6300c5f62c79f8d203ff46fe639e87c73d2f27e404c03",
+  "checkpoints": [
+    {
+      "series": "base",
+      "step": 100,
+      "folder_id": "1gtcGhD2sqru3cYZ7G6xfYg_wAsPu0E9f",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "0da8c27848d87d769158d1a9067fd0031b7dbe970ea1b357c0c6ba4aa8ada059",
+      "tensor_content_fingerprint": "eb223d54bb04c26ac730f41579d4191b541e5097031d3248f41a9c9f842a680a",
+      "consumed_train_samples": 12800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1YjyjE_CWp6G4EQTfciJNj-kalJ0vG9tx",
+          "bytes": 3461,
+          "sha256": "1c5b35f6f2c4e77953a33efff7f19963dd0e2b425691e62fd91f9a289c887d5c"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1vbRe2LKpKNqXFufr4oWRmF6BfTkX-SY0",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1HOyev2YdRZzQon-qdIafw8PJSgNA9A0_",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1lRG6RET_C-6BD6aCXxpO6aLbyyX2GyiF",
+          "bytes": 1767,
+          "sha256": "37d585fa2d131dea64e99944fb69e0f78090bf074f53542a0059a73c237594f0"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1h-g0F1Nscy4ecFuiL3qworOFOW8mqqnU",
+          "bytes": 173352705,
+          "sha256": "0da8c27848d87d769158d1a9067fd0031b7dbe970ea1b357c0c6ba4aa8ada059"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1_4bXOjEaDJlDjaRPLgGYuTO1rTuBwiaS",
+          "bytes": 142431,
+          "sha256": "7618092e15bd38b4558f59efa340460555600ecb5884fee688a1e4f65582eef6"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 200,
+      "folder_id": "1EZkZF0u5tEdmkWQ23RF6LeAcz3Gvotzc",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "75bedd0cc1d46985552608873421993b929810107ba2a5de60a0d3bf181697e0",
+      "tensor_content_fingerprint": "d36c99db1b7d2ab7f8c7f50193899dd347eae8462a9f64470f2bdef40e4d77f2",
+      "consumed_train_samples": 25600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1aNrkc8-NhO7lL8DsneQkP2-hrcOzRKhz",
+          "bytes": 3461,
+          "sha256": "9365743e8fd76f7232fb438e2d92841db8217f262afb078928f60fc43cdc57bb"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1Ljv_ZS2zQ8N9JFeZqMo53AvPGGxyoWB4",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1jEi0ox3DWbFanmpLw8cyE5-tj8QLFe57",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1ftaGcB1qK_eIqcw1ZK1bBlfuKKOR-uAp",
+          "bytes": 1767,
+          "sha256": "d856b40f5ec950167055dad172f79a8aa5ca152ff69fdefa80b90d4446cec720"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1DmVttdOTT0BtjpoV0gY_Gfcd4OMsSgpk",
+          "bytes": 173352705,
+          "sha256": "75bedd0cc1d46985552608873421993b929810107ba2a5de60a0d3bf181697e0"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1iKZHMoQK5WSOERxFdLprWmwCCNkfgNXo",
+          "bytes": 142431,
+          "sha256": "7f70ad88dd43a7405ba51c7210ea9df3be8bd8f7c02fd5819acf887b2f4efbdb"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 300,
+      "folder_id": "13rHtxfKmItNN7jGYbXmOn4nkvP84iHVz",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "d2bfa9c92b20507833e4d5eeec17f725a18da10e3d54d29ad0bc2494a0e3fa82",
+      "tensor_content_fingerprint": "8783735761c13f3f0d0b849f9f447d5cf5a84701351da2ba224a131f01040f8c",
+      "consumed_train_samples": 38400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1sbvQMK8ZJ2oPBWts8cAxcmI8eI-BndZ2",
+          "bytes": 3461,
+          "sha256": "36cd8365ccb7fc76b5fd2adcb82c67b4c043f74cdfbcde079055ab5cad13b809"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1FkCc8UqzRyT0eqPheoSMzvpu5ih2q56K",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1MVJx-dYtDDJ-pL9E9sFYrWc8ZGQjiIN-",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "19wGvuSB1oVzD_3_esTtDxoDEpZn3V6rD",
+          "bytes": 1767,
+          "sha256": "f7202694475c919840f0119d5e2430d53dcd112c860e45d403fd4c2da0c4b9f6"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1nFwF4HqnPdO-WAR_DhZpGfKHEYFR2mq3",
+          "bytes": 173352705,
+          "sha256": "d2bfa9c92b20507833e4d5eeec17f725a18da10e3d54d29ad0bc2494a0e3fa82"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1a2u4tDD9T1dwi6T5CYf0cyBdOecFe3pq",
+          "bytes": 142431,
+          "sha256": "288d74d1d71576d5d5171c4fcefee53b7f2a404e9ad35555250ab338b937a8dc"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 400,
+      "folder_id": "1NrKD9Ex6GN85LYwF3zdmaL0XOxisuPo2",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "611ca9fc29e561d89ca5976dcd831c283a063d94523d5371cb2edf0354ae9c51",
+      "tensor_content_fingerprint": "eb64c9ae2bc5efb2da2896b33bee77218a49c9c89f166b973668e6416554e593",
+      "consumed_train_samples": 51200,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "19WLCONhQlcfeAZDSGh3tOmBXZpqRJYli",
+          "bytes": 3461,
+          "sha256": "9d49bb68e731ad99f7c5ce3aac2defb9b5c8c86695c6c8be2863ac9e3e3e9196"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1eTfSXWy1NnmksI8rFBQfQotHhTfGDd7R",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1PQWKCboAchBQsDO1pmD48jwjObBJSyjE",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "18Tg-tPsLdvJCGIp3o5_7Y47Ti4-NhaXn",
+          "bytes": 1767,
+          "sha256": "01dc3e9a7084f1c8196169f1109c50fd9078602e313f9028f1a2e18ca45399d0"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1yqTtVTQiqgHHW7dbjCmRguOBdndKTPWr",
+          "bytes": 173352705,
+          "sha256": "611ca9fc29e561d89ca5976dcd831c283a063d94523d5371cb2edf0354ae9c51"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1a5mRPyuhtWGfPK5Mb-2LeNqaqq68OTJm",
+          "bytes": 142431,
+          "sha256": "46ecb25b7de680c996c3bc4ded86edf4c0f0386f515a27e21862db516a8a1f58"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 500,
+      "folder_id": "1gXp6E6WchRu46qvJuBoi0guK2D-sx7Lf",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "93ebcf1f74d70d3c1c0405cb1abc68d5c834e0280f9278043ca22d4c2fe5a6ba",
+      "tensor_content_fingerprint": "af31e0d3797cd77c875c254c236988afd3a1894e9a45771f8372af9204139f9c",
+      "consumed_train_samples": 64000,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1aC6gW8S0X3xHLGVT1NYwuRxzb9nqIYvC",
+          "bytes": 3461,
+          "sha256": "1386886719325e5b4102beb34a6f546ac48ff759b7fb6f6b127fd78622f3aafa"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1kNIRnBpTOMN2R7kdQzYZdfWRtrMQ7ESa",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1QxFFB-umbg98_M5K4KYEt7Dkkwe65jqf",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1FWYqw2O-iIW_TZh4I-z082zen_bD0I6D",
+          "bytes": 1767,
+          "sha256": "55fa56a3a39ec10562d6c51f789316bac196531cde4f2a5d9274d490ae42d2e0"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1p3Fv0zWO-jSm2gQizprA98EchHn_Wao7",
+          "bytes": 173352705,
+          "sha256": "93ebcf1f74d70d3c1c0405cb1abc68d5c834e0280f9278043ca22d4c2fe5a6ba"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1fOEYxW0-dyK_PKaZtQJVgdsTZvr36-Sb",
+          "bytes": 142431,
+          "sha256": "0e7c303c1b57354e6c616ffc86e794b7648d2b147f74fd229864302ad3e7cb3d"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 600,
+      "folder_id": "1XtTXw5MGDan4__lLskIZYfQnmVguQVom",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "a46225254371731d0b2d73408b94f1d7a00a71be0b6558b397e3c7a34e37af82",
+      "tensor_content_fingerprint": "6c907a35a3c502a5a7c1059740b09b7fb46d3dfd3a58bc23f2922a272a6dd690",
+      "consumed_train_samples": 76800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "176CO7_3Iu7s7Qq65vrgJKgpP_WNh2PZf",
+          "bytes": 3461,
+          "sha256": "70cd41058c5d54599717ff05651033c330110aec3e14981a93f014309a8895a8"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1WRY4qx6w1kuilSJ-TfRzv58iQz8HBL3D",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1T7lMB4gE8zHXpXkx8Dd2xndq1bHD0I9F",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "18nlOHXmAD4AF0Y7bOAtd7pVDOZrX4sry",
+          "bytes": 1767,
+          "sha256": "071ab4bb7281afbf24c60cc7762b79648ec75d68fd9df7e5b9b3361ecf0e8e21"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1D-JLwHHpdOBjbpemUlSQWMwUxWSFyrrj",
+          "bytes": 173352705,
+          "sha256": "a46225254371731d0b2d73408b94f1d7a00a71be0b6558b397e3c7a34e37af82"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "18kXaGt8QsxMK9bv4hI_c4bShOOELQjGr",
+          "bytes": 142431,
+          "sha256": "b4c51a62f0c460a3046ec66a632c20bb2fe2ca968698c6487c474ff4265753f7"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 700,
+      "folder_id": "1s2hIp6_UArDTtzwmwR4Nz_eFG-vO-q0F",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "3b73dba763a2157054403d0bb3414165fdf9cea1e877a72ec7c1e979befa23cf",
+      "tensor_content_fingerprint": "90dd35c7d9638d9219f644c0d451f1dd0c486e73b90d207a0868421a9eeeb529",
+      "consumed_train_samples": 89600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1Kc0VWjZFJ48LYmmHjGYKnnq8rGxdLIUA",
+          "bytes": 3461,
+          "sha256": "2b8b0841027a385242dd06dd4856fbb5bfd4f50ab89e1beaab461bcfe661332f"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1F6m5HMLRGssuSoEZnoqryVgIOqFeMaov",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1dFN_Ne6MTbM0RElTWZ06_WhRl7LEvM36",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1jnUWGTVelfaYCpXOIpLMKC_kKw5__gH2",
+          "bytes": 1767,
+          "sha256": "e2e031ce4574c958f55211db66165eabac4545fe7611fe0c332bd1f1a0b6ea4c"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1HBRUcqmYY447-ZwQeBZbYn7nXNkIKJ5w",
+          "bytes": 173352705,
+          "sha256": "3b73dba763a2157054403d0bb3414165fdf9cea1e877a72ec7c1e979befa23cf"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1q2DMYqpXrnToIyHGkfKbdi6GB9ZSDg3C",
+          "bytes": 142431,
+          "sha256": "f3563625e174e53f1ddbcaef71abd32afab1452f09bf4c816e6d7121d7617dbb"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 800,
+      "folder_id": "1aKpf1sKFTCl1hVLnyQRrvYNpLDlCv8aC",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "f6974b3a10d46d4a092b097d27b5dd396ca8b5f9d30561684fd8e8246d23883b",
+      "tensor_content_fingerprint": "9ebcd948266d5241783e8cbc5d449af462b28476d80c46d9a1da0f86cbfb4dae",
+      "consumed_train_samples": 102400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1pKbN6lN3xVcuo1_m2ABiXgwtNrHy3W8C",
+          "bytes": 3461,
+          "sha256": "978a8d4429423288895f518caf0033ef98e38e175281a32552b56502ebe4a15b"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1mTMXSz9s41Ufw3cxS0HZUsx190roVcc_",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1OAS3i6hVbk2hiQulVKiGyV7-wOjr2Gsf",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1l_FOVnCFcMRjHQd_PFy6CpgfQB2YS-Fw",
+          "bytes": 1767,
+          "sha256": "01ae324e3d36e2c0316125b85ff9e8ca5e0b8af8842f72aaabdcb8b775eb0e8c"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1EbaVnvkcqKUSos1V89kVSXJ4YC3P8cTf",
+          "bytes": 173352705,
+          "sha256": "f6974b3a10d46d4a092b097d27b5dd396ca8b5f9d30561684fd8e8246d23883b"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1H6ETBZJhn57nIPjF0hQSgoXL2gcpQ9m0",
+          "bytes": 142431,
+          "sha256": "96cf3eac543b9a6b201e0c124782236ef7e87b5b8de7b04eb6d2ce07233b84c9"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 900,
+      "folder_id": "1GVuegA8IBkiZqO7i00t4HspTc0rkaoYi",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "48383ea37e7f2b31499c108737ffbecb0c2e40012e52b87ddc08e2dd8a888cbd",
+      "tensor_content_fingerprint": "6c63ab0964a4931bd407f3a9f3976274f32e54103d312423b034b934b811353d",
+      "consumed_train_samples": 115200,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1aFN437-Er6EzD3bYxKvA9DqfJJEYAsxw",
+          "bytes": 3461,
+          "sha256": "4d47e18fc9f563438a5507863acc3e33525edb91cb6081db78f9dbe6296a2442"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1939YnmbfkOHczZeqbwdrD6ED-S0pcK-p",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "196_5lM4n09q8w5hcW36I_YHs6kfFjbXc",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1xvo04s5PSaHDGuJRYomamqKKu993a0IP",
+          "bytes": 1767,
+          "sha256": "564b6e25bdf8ebf1e02ad6e8a58486af927915394cf05a7d7cf83521b3b4180c"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1IOqNO6peD6a0p9HA3j92mwzfyQ9xsXl2",
+          "bytes": 173352705,
+          "sha256": "48383ea37e7f2b31499c108737ffbecb0c2e40012e52b87ddc08e2dd8a888cbd"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1BFhUSookGDrgyeQzWdyvenUGVNzz2WX3",
+          "bytes": 142431,
+          "sha256": "87cffab7c6428e6300fc33e0ee175eb0e7572db5744d58669c4d987d104697a0"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1000,
+      "folder_id": "1HqRMUj7DscaIHOG04zmAWNIAoQj7B3tA",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "e9fd4c57fddd931f0ea775939c27aa7e2b8ff3233602e86ab80639ede78e590f",
+      "tensor_content_fingerprint": "f6e3177198427dfd3b83efbf3c902de730034f916ba0dfb099489d499c1be70e",
+      "consumed_train_samples": 128000,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1wstg2NBf27_fTRnX8pMNWqgGugHMvG3w",
+          "bytes": 3461,
+          "sha256": "0cd3645dfec8529e9b4b77669ef747ed96791e20a7952f156de6953604fa5ae2"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1O3XHvbG3zqpPHBmb5HTRK2WwZCMw2h52",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1O2kDJWvG_Ks1DqMPqwQhAe4Rop03rUJR",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1D63ZGFQE0Bu6q4PIsaujlgK9U4S2IUoL",
+          "bytes": 1767,
+          "sha256": "faa057bff69d54a523bde08c5479dbf4090823c4cabf3167d33bbd208f705dd5"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1e8xTiCISpSGG8J9fndOqOp17kffR6lqK",
+          "bytes": 173352705,
+          "sha256": "e9fd4c57fddd931f0ea775939c27aa7e2b8ff3233602e86ab80639ede78e590f"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1FrMYHh8bQ6iRH6HRmIZWw6Y0pNjAkG69",
+          "bytes": 142431,
+          "sha256": "861feacb0fa1bb95c7151f917e346169047b75b009171645ad740bf4ada2de4f"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1100,
+      "folder_id": "1b7YSNBYS29khPwu6aLokOPMmsaTEsxCf",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "40cd4b912d3ff52df98dbd8690520e144420ffc278ea260d42891d973adede58",
+      "tensor_content_fingerprint": "890d3389828cb083277ac3862e3a4b850d5ed63263059f0cbf62205fc32562f1",
+      "consumed_train_samples": 140800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1AmFB_1tmnCC52sZS0G4IucDZ9iVIEXHo",
+          "bytes": 3461,
+          "sha256": "5d5a605eac10a4c7463813181f10ca6735a73d2658ec928127050b270a5fbd7f"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "12LzxiuCgImCAWmmEnSlmhnF3NgclxtOj",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "140F-V5vOf4kMuGwmpehc3woakNPhD6wA",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1y8JQ41EfrvpZ4wRgx6JIkkf1jPyZuuwp",
+          "bytes": 1767,
+          "sha256": "7fce8a56e3bdd21ad69b40b0fd26b83be8d03bc581d07e2534801fe06a6c2acc"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1hjASXpTYd3GTvy53kEZL59cEqSh9CTbs",
+          "bytes": 173352705,
+          "sha256": "40cd4b912d3ff52df98dbd8690520e144420ffc278ea260d42891d973adede58"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1w9MKgRwiFsfTPomQx9mv86d69z9WzCeN",
+          "bytes": 142431,
+          "sha256": "88d4ab60cf538cc72e7d19f6d0f2ac8a7cd4050a7c91c372404c6e3a2bb6d56e"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1200,
+      "folder_id": "1Y6m6-GAQ2J2dRdMZvZtMohvtRTgI-pWB",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "b6f7b0e8dee1d9f2fb274ff2a249af3979fa3da82042d91ea8acfd6467e07a4e",
+      "tensor_content_fingerprint": "45c0fd727e2e2bb56f2afe64f94486bdb77119a4981d7008dd29dd3517fd2fec",
+      "consumed_train_samples": 153600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1McjWvicv3oW4HfWM9ChPUQBJUQgO-WJM",
+          "bytes": 3461,
+          "sha256": "460f3366b4cd622abcdf4a32c8ffbe8653377737097cca44f9b208d5ec5d220c"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1U4Nk6Bu4mQl5Ov7WoKm0GAbTT7Fsmhzi",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1r7FeUgifTpWFbjh6WH2R6cVlstCOPIga",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1uyev6Ppode7zUrEOpgQ6k8TDC6NUnAhE",
+          "bytes": 1767,
+          "sha256": "bd54961ef859971a8dee28b6744173510ddacec0321e38e860937be2d9d3fff7"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1R-EFdLufvWXf_p9NDg7e1WeTyexqbwc1",
+          "bytes": 173352705,
+          "sha256": "b6f7b0e8dee1d9f2fb274ff2a249af3979fa3da82042d91ea8acfd6467e07a4e"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1xIuRed7oNz6eFdVTQbHdEtNFMYUpa3ES",
+          "bytes": 142431,
+          "sha256": "23a4749bfb4b1bc119f7f4a7a8e9b1d351e63e2e2e8ff7f9df7f301df4f9d535"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1300,
+      "folder_id": "19fHYGMKz0z2qcJB0zZQOaPZTnZiO8UOg",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "f837838359944085f7094e2219a93cf0929610168173961fa03a808c7247555e",
+      "tensor_content_fingerprint": "cb70535988f019af95d513060757d0b64cb92c197eb064724e38e35453ea6643",
+      "consumed_train_samples": 166400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1YihY7HtbquPtk_YyJkvwyuoX6KM8pBV_",
+          "bytes": 3461,
+          "sha256": "a67e42f01d9afb7b339e9d0cccbda918cb320c1c50f7d40bb285f6bbdda3d061"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1IR9Hfo6bKMP6uk7xqtG2P0vFtfdaEICk",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1VnIQPgBhIJpVRCCfKhK2pbqTiDNr3h_y",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1OIsLr0w5JlNJF-eDKdHPkcO4LuhV-5Bv",
+          "bytes": 1767,
+          "sha256": "552bf4ff780d9465501c566616b948d5f1b4a5f0f185a327de5751aef7d32081"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1sjTqT_B6gtOgm5jM8TeEbY_by1r5D_eV",
+          "bytes": 173352705,
+          "sha256": "f837838359944085f7094e2219a93cf0929610168173961fa03a808c7247555e"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "17zU49WigSPWcRcMZ9UslPBRwwU6eF-V1",
+          "bytes": 142431,
+          "sha256": "f69de1385b7801ef63c2b0f290ad8817bb046d33e5f2102363ae5d21c7d02a4c"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1400,
+      "folder_id": "1iHOpIT65lxTmHoCGslv2VAAMocbhuSnL",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "df1f5b13c7d083a731cb612557855ff5fcfa8eb4a54589511d6740e37f1f46ab",
+      "tensor_content_fingerprint": "dee71bcda9df20a8e0dae7e03c540aeab86e997453333ccdc666febdf0f6604d",
+      "consumed_train_samples": 179200,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1ZT96QPOiAO53Qjk3tMnfjhOQ7iQy7FWn",
+          "bytes": 3461,
+          "sha256": "5d388aa8122750ce8c1534f23e9ab8adf5b3c4303d6761e334fa5d7d61f8b8d3"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "17CmqpaKI8eUJtn2-_HllIncdbaPhO7Vq",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1VQOntZG-jeNRW6GlJtr8aR23E2J4Kbki",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1r0u17i3zov_kwbuawYzMUENchdvWAMB-",
+          "bytes": 1767,
+          "sha256": "ec22bdbaa8e6fcc202a1cfc0880d1d56bc3133b7921f77380a363a7d8789a351"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1pQ-zhcu1u_kcmjn4HKx8rbPGk3sWMCtZ",
+          "bytes": 173352705,
+          "sha256": "df1f5b13c7d083a731cb612557855ff5fcfa8eb4a54589511d6740e37f1f46ab"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "14pOAysUixqHFCVI8fpLwILBoA1hH1zJl",
+          "bytes": 142431,
+          "sha256": "2ef746f4761be26147a5b92a0ddb131007434daad27a5be3b81e6c3b79f75962"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1500,
+      "folder_id": "1we1si3i8CGvqwPrICkFLEaY3VtmCUmdM",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "6d619af61d284584251338d9a6ff79a9b1cd713c6cc491d36fd980184456f533",
+      "tensor_content_fingerprint": "f5e3dc11b4ab1e89348813f11c54a758091554d8b374c6aac2e732e3121fb7fa",
+      "consumed_train_samples": 192000,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1ps8Ss68ivfWU8iXGLt-i3PG-JgUm0DkX",
+          "bytes": 3461,
+          "sha256": "d8f453989b37dc5fdf3b5b47ae39f8f7467e8a07397dd15a0b9128db2793eee5"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1IwwitQQZAXZ4j7O3cCIlYmbWg-vI2V6b",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "18V4KqwbskltBCah_f4-wG2rORddCj67g",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1qdU4lDJaE-J6bbRCzrYyt9ITRrAO2yJ9",
+          "bytes": 1767,
+          "sha256": "6c8b26d879e78606565a4867a2ec69fde8834e13f61f1f187fa4a92c81ef2b9f"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1vpb79H7MFLSAP8N7zF8ytzHeNH1B4bwI",
+          "bytes": 173352705,
+          "sha256": "6d619af61d284584251338d9a6ff79a9b1cd713c6cc491d36fd980184456f533"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1BkgG5adCmIzyMHbaqQwr_xxvIr7ICd6G",
+          "bytes": 142431,
+          "sha256": "6f05b55f61849cd169599bb80089952cc0c9a3db82dce5ae6bb77068f373e271"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1600,
+      "folder_id": "11pR9-73VUgNFQmQTz-Gj3_kTQCFcSkGu",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "d58df46fbd4aec1a102c2f3de770bc682e041ff099a3d360fb76d6b6acf808a0",
+      "tensor_content_fingerprint": "585d6e8a188bce9c28d540c74ed5a9ed9c3e8b956426ddeb3163e95be122de33",
+      "consumed_train_samples": 204800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1OdZZiJ9PWipDdd989RcEIObDwFJHf_0m",
+          "bytes": 3461,
+          "sha256": "2af0d7f7329fc9227b55fcd17c1199939e306872bc472d27035ce6e04dbeb8f3"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1VEg22cAnLYZUZmrqSIU_z8p9l7PpnLNu",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1di4ni55HgI3YX9hnkkH1_JMSonu3iP8U",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1Ef0VOLe5M3KyZeVAqGweq_oAUlPSae6D",
+          "bytes": 1767,
+          "sha256": "ba9810edcd3937a368a570a688246c96a3f75a0eaac724e77853ad5879dfea08"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1jaCg-IzmeuuYTwQ0m3mE0kR0TWo4RX36",
+          "bytes": 173352705,
+          "sha256": "d58df46fbd4aec1a102c2f3de770bc682e041ff099a3d360fb76d6b6acf808a0"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1FLWX_gr7vA1u4DXxBADRc0pYVSSWPHGD",
+          "bytes": 142431,
+          "sha256": "953a082c7cb9292c1c603f08e3926a9f19747305341a24dc698578257e699b02"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1700,
+      "folder_id": "1Rkj_k4wZ6aoDvaV2ZwIM428mGd7cJ9Dt",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "ad2c92587f687e4fc57a3c1440df5a92608bfd7e25bf723cd05e18fd58765207",
+      "tensor_content_fingerprint": "f61c40d88e7c3998d55fc3a283fcb95afc437a60d10ff4fd8d372d81becfdd77",
+      "consumed_train_samples": 217600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1j72neK_NxcJWa8DNMviUNU0LeP6Mz9_x",
+          "bytes": 3461,
+          "sha256": "b4695221e5540edcedb8e84eeead918fda370cd14faf410aed13f4340586dd06"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1agPJJQEAA6GWR-q87RI7RyqxTRPzmE_z",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1Wt7BkMv_zUAax-0UgnkUDzmm9_sjITQY",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1oDzjKj6ja7REjkYjIIGmeA1CVnBZqSW6",
+          "bytes": 1767,
+          "sha256": "bc087505357b0ba7b49e306425dba0b0f3f379aae5cbb8c09a4f5d10ed4d0135"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1bNM_mbTKfWkHF49LcdCpwQnSgOn-920q",
+          "bytes": 173352705,
+          "sha256": "ad2c92587f687e4fc57a3c1440df5a92608bfd7e25bf723cd05e18fd58765207"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1oIbbVFdSWoud2y5JZf386PiixLIC2ZEo",
+          "bytes": 142431,
+          "sha256": "46fdbf442bd667220d54db50292a4318da613994b76fcc42f1df35ecc5df87f5"
+        }
+      ]
+    },
+    {
+      "series": "base",
+      "step": 1800,
+      "folder_id": "1AjVRJIiwmLjRBZgRAZEYd67xlykCnqGZ",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "53180d7be4fa70f86e2f2a7c623f3e73b765e318c50164d1296229c857ed94ce",
+      "tensor_content_fingerprint": "e5f368355aa59892b69111084590ef8e5eaf718c0aeb096c94d576f3aec37a75",
+      "consumed_train_samples": 230400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1vOjHp69ppks_xtP53GnwXMPpQow02Di_",
+          "bytes": 3461,
+          "sha256": "b2b8006f80bd5fc85f7f00dea345cc599df2f29abcc28521521a8b1dbe0ebdb7"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1XiuCaumMH7yKzCFK5v3ONkQzLkkr6yZf",
+          "bytes": 39316,
+          "sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1y7X_JggHsPndeqyJ5O5iAiG017Nw9sWp",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "14O4Jd8rPXMUnbqIoe1MdtCKbapPtmJ3x",
+          "bytes": 1767,
+          "sha256": "2ac206e78028ba24810ff600db19d43c5b26a085494d5501dee708d37c4bc25a"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1JEQr74TCnKm2t4fpUSQPSpkfJShE6sJb",
+          "bytes": 173352705,
+          "sha256": "53180d7be4fa70f86e2f2a7c623f3e73b765e318c50164d1296229c857ed94ce"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1hkdkXz_48tQ8wHgCDpTjxj4FKBHevGdt",
+          "bytes": 142431,
+          "sha256": "0894a8a7117746c25e53798ec814cdeafc24d65d06b822c2f6615ebc94757e02"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 100,
+      "folder_id": "1ky1pPLVbsr7shi__9Yp0dc1kOiKvtstI",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "4230913cae92e412d9c11717937396c7e435c84f20393b9303157e1bee87dd5f",
+      "tensor_content_fingerprint": "c3f5c4633006f9704d2e2545994a6b0af72effde86f087d2d075e0ecf4328e51",
+      "consumed_train_samples": 12800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1LpW5ksv0CfhfHOVFJ9mYjapu-A2lK6VD",
+          "bytes": 3461,
+          "sha256": "1c5b35f6f2c4e77953a33efff7f19963dd0e2b425691e62fd91f9a289c887d5c"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "15VnNQ-nSRgPu4-iRVdEzAr7-yhRnzB-o",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1mOC2CVYg051CkDxt_QaUoyOyXQNbv0R3",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1fX2jDk_oqzrFOLFYC_J9RPmUVsWThFeI",
+          "bytes": 1767,
+          "sha256": "37d585fa2d131dea64e99944fb69e0f78090bf074f53542a0059a73c237594f0"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "10blGGdt58CTgY8Q1BFHi60B6kTY0MSW1",
+          "bytes": 173352705,
+          "sha256": "4230913cae92e412d9c11717937396c7e435c84f20393b9303157e1bee87dd5f"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "164kF-PxddHw3uH3KhUEhSXF7Xz0lyfI6",
+          "bytes": 142431,
+          "sha256": "e862790c6a348e5df4670a85dfd05ece28d4be612319f179658bbe51ec0abccb"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 200,
+      "folder_id": "1nLbN950HHDQSzX8kxPr1HpsADpA4Xh6J",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "567b2373133e44e1cb73d2195f4e8b1d4fccc66c23e306d894c724c0ffa251c0",
+      "tensor_content_fingerprint": "de401b3fa844a6af5bef9fedd0bd562cc30896b8f7c5a645de266d340a8a627a",
+      "consumed_train_samples": 25600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "14lcZuK0ED8rAtjaqmKm0unWLFZ6hyTMh",
+          "bytes": 3461,
+          "sha256": "9365743e8fd76f7232fb438e2d92841db8217f262afb078928f60fc43cdc57bb"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1a6mUAb8ZHp9MB2nQRLD-bmH2IrfPuxOM",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1L2xMsz7lFu1XJigdB_AHIMOyqxhgks9I",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1tAgMatKR1qK0YthNGcrND0GJyqBAsyOn",
+          "bytes": 1767,
+          "sha256": "d856b40f5ec950167055dad172f79a8aa5ca152ff69fdefa80b90d4446cec720"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1d8RmhOdLO8QaRkCLbItS1dhab0pAkLMq",
+          "bytes": 173352705,
+          "sha256": "567b2373133e44e1cb73d2195f4e8b1d4fccc66c23e306d894c724c0ffa251c0"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1tJROL7R4cO0FH4kk17nFHtU-vali0ar6",
+          "bytes": 142431,
+          "sha256": "4780c83b6cf6461e95b7d433a61d00b0701c04e6e12910f6ad5be4225dc98ad4"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 300,
+      "folder_id": "14fBDhyGvwaQe-WE3muwPtCrowL5Q3kEf",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "255aefc17d30afd77084f1703d7a799eecdb100fcfec16c02e53a6bafedc39d0",
+      "tensor_content_fingerprint": "1f320d4674593a53e0180744073b017162c867ada63a1b1a8935906ed2ed059c",
+      "consumed_train_samples": 38400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1UAN56tfbtqwqpYXHFIxqUOZ2ScTHhkIw",
+          "bytes": 3461,
+          "sha256": "36cd8365ccb7fc76b5fd2adcb82c67b4c043f74cdfbcde079055ab5cad13b809"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1p8AwE2MVg_stV1CjoI_mqMsrbZ8d4Znr",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1e8QJ9tp_078ZFrUGl1-V9h3l77aoxb3r",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1ua-ukOXeBdfdKL0sAUeu4PRWsyDs3kjJ",
+          "bytes": 1767,
+          "sha256": "f7202694475c919840f0119d5e2430d53dcd112c860e45d403fd4c2da0c4b9f6"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1oeaTy6NWaVu1EdZdetY1a1xjsrfINdxy",
+          "bytes": 173352705,
+          "sha256": "255aefc17d30afd77084f1703d7a799eecdb100fcfec16c02e53a6bafedc39d0"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1S1jtDZKGFuDlmeAlds7jPCguwx63iJFt",
+          "bytes": 142431,
+          "sha256": "5a2eada3b18cca2e812725bc86f1887715f0a0cf448ec7bb8ab0be9e1f685051"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 400,
+      "folder_id": "1CeDp5_RYCoDQ4EMD4hKjzs4xOaNyPFJ2",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "c30ec254e81c3fc3e16a761f00a3b09bf7bf207cbc1e035abc1e5310ce0f4f72",
+      "tensor_content_fingerprint": "c85dd1e76c379861bccaf2ffaa6a89fc19db7f576d59c9cbef1fe6b8c1c96275",
+      "consumed_train_samples": 51200,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1y8iAu8KJ_bbInQPIEjgD9Lb6jx6IoPRe",
+          "bytes": 3461,
+          "sha256": "9d49bb68e731ad99f7c5ce3aac2defb9b5c8c86695c6c8be2863ac9e3e3e9196"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1HElPZSrb4T7cw_dPEQmCBIkGHtEXs4P-",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1PgSj9ZEFWAa8d3xWrDE0tbQzvOhIJP2u",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1l89riHVYKztMIFEHMSxyiBktxsyGB-Dc",
+          "bytes": 1767,
+          "sha256": "01dc3e9a7084f1c8196169f1109c50fd9078602e313f9028f1a2e18ca45399d0"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1F7U7MRgLyK-tMMatCee95EYZ6s1Lf7Au",
+          "bytes": 173352705,
+          "sha256": "c30ec254e81c3fc3e16a761f00a3b09bf7bf207cbc1e035abc1e5310ce0f4f72"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1fV-H3BgKKzAXa31OLYjG2gYf4yMgaaA6",
+          "bytes": 142431,
+          "sha256": "a57b6df2577546a5aba5492e693dd8862ec598b422dda346ad369cdbd55f93e4"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 500,
+      "folder_id": "1jBn3G6ZzCOpPJe-ZZcnD-6VtF_MRzJej",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "3413adc55c66489f27daccfb986ef8988a6ed1ad59d1b80ec1defef2986713f9",
+      "tensor_content_fingerprint": "39a1ce9691e12c3393118fbd19fc21045c9771718a93e0579e3f074ceca881d8",
+      "consumed_train_samples": 64000,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1OeZZJzaFykNVvPnaK4m-fZFQzfsmzRL_",
+          "bytes": 3461,
+          "sha256": "1386886719325e5b4102beb34a6f546ac48ff759b7fb6f6b127fd78622f3aafa"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1vPFNVEg6Ou58xWUw_5dL9GF9lpDIVvtR",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1aAyy6MxTAmEDioDAck9wD8LwP1Zru848",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1y7020zENBYj6KI9fD9mArYwrQzc-THHc",
+          "bytes": 1767,
+          "sha256": "55fa56a3a39ec10562d6c51f789316bac196531cde4f2a5d9274d490ae42d2e0"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "15qGog8LeoiOUm5Vvm_ltGBjgEOogetkP",
+          "bytes": 173352705,
+          "sha256": "3413adc55c66489f27daccfb986ef8988a6ed1ad59d1b80ec1defef2986713f9"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1KnVwcla8CukvQrjLyqK1tO_IiP2U8wbA",
+          "bytes": 142431,
+          "sha256": "36522d4f4b6934388b75883ec64b8a6d8fcc26d86e8d05ff33c4a13d4a310c54"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 600,
+      "folder_id": "1HvpJowhSov7wb_O8JmA_TJnUxfeh7kG0",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "0d82f68f8ce61366ddc89657edfe3beaed105f92ecc5bdd1ce0b30896164fef2",
+      "tensor_content_fingerprint": "dabc6398692e47178c44ea7c96035f5918256841bf024f605bfe360242250a1e",
+      "consumed_train_samples": 76800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1whoF-NTGIjWwb1hbBA6HxoqWpLfGWxnt",
+          "bytes": 3461,
+          "sha256": "70cd41058c5d54599717ff05651033c330110aec3e14981a93f014309a8895a8"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1A-x7jzvw95VyuQJR5YOGtuqU_6SyjAlj",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1XczaWsJMJAzFAYapv_A-aeqG79eT9Bdr",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1aCngWLPE_64ipDrOqvp7IuD4XVXOt9E2",
+          "bytes": 1767,
+          "sha256": "071ab4bb7281afbf24c60cc7762b79648ec75d68fd9df7e5b9b3361ecf0e8e21"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1-Hc6SRbgg7gN4auJzHlofY84nbq27TKp",
+          "bytes": 173352705,
+          "sha256": "0d82f68f8ce61366ddc89657edfe3beaed105f92ecc5bdd1ce0b30896164fef2"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "11UFuVUm-BNzehl6wAacGX5gsVdTy4DYG",
+          "bytes": 142431,
+          "sha256": "784b78667a1345c601e36ffe564a924ec86aadb917be7eabced382dccb95d297"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 700,
+      "folder_id": "1wv7qvECWasHS0ofdp2McfjOuy4DnevXC",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "2669791f0c7ddf3bd20e5494d87f4e602242fbfdf181e65845590c30fd313bc3",
+      "tensor_content_fingerprint": "1af740b02f4d1e2d8475c0bb824c39545dffaebc38376040c62ad055c6fdb1ba",
+      "consumed_train_samples": 89600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1tII5tnRr89Nzjx8Y9MoFLL8Lo-pFV7od",
+          "bytes": 3461,
+          "sha256": "2b8b0841027a385242dd06dd4856fbb5bfd4f50ab89e1beaab461bcfe661332f"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1J3Smvo6pZxjINOgaWTpspf-vjHJWvkP0",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1rijqmpMmOPFW9t3rg8Tb6ZGBJAYxi0Oi",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1CfrNryWhVuhLa3WB8l5AeR6eQuqgY3pN",
+          "bytes": 1767,
+          "sha256": "e2e031ce4574c958f55211db66165eabac4545fe7611fe0c332bd1f1a0b6ea4c"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1hm-4rEKyI0_d6CzcZyjRtWxxueiI3anF",
+          "bytes": 173352705,
+          "sha256": "2669791f0c7ddf3bd20e5494d87f4e602242fbfdf181e65845590c30fd313bc3"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1C-WPwWktFl0lRlXGb85DEURBVg2XJK2p",
+          "bytes": 142431,
+          "sha256": "c250eb3f9beb0d343fbdf4b824e29bf8db8c2ca5b7d337c81b8133bba132c112"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 800,
+      "folder_id": "1318dEbH7NzaqcNEIzkElF9Y30pRXqrQO",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "ec8f843e943a0147296d7f71945595ee03a57e73aba48bb2bbe5634e9214a7fb",
+      "tensor_content_fingerprint": "8b785b895159798c88b1404f0bfee3a9137434ddd730be05b0cd5062e0382af6",
+      "consumed_train_samples": 102400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1GCVSIamMT-8xCwNFZmePoGR43Vwa6iKe",
+          "bytes": 3461,
+          "sha256": "978a8d4429423288895f518caf0033ef98e38e175281a32552b56502ebe4a15b"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1S46DueaKGRZEw_qP_xZ6cBmdLWsFPrga",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1ZgS3pDkpbaHxxYLTOPRMFmIUu6LgrYhX",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1M3aTt1VQWDormOerudam45kqnvVP7lz4",
+          "bytes": 1767,
+          "sha256": "01ae324e3d36e2c0316125b85ff9e8ca5e0b8af8842f72aaabdcb8b775eb0e8c"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "13zUjWsMlRDT-8EhEgDRmdb-F9PPzoIXr",
+          "bytes": 173352705,
+          "sha256": "ec8f843e943a0147296d7f71945595ee03a57e73aba48bb2bbe5634e9214a7fb"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1-OBoJjWn6b7SpOV4Rf_TqThD02Ojoq7v",
+          "bytes": 142431,
+          "sha256": "96b7689bc879b13ac3fb97284bd294d9315369a9001a9e20b511ce88457ca4eb"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 900,
+      "folder_id": "1bKTf4Gh5KB1f7EEWxPUpFY_ebnGYDRqn",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "4f1a4fbdd28c1e891e79699287c8037ca9fa175ba4fa3118bbe3cd198d9e4ae7",
+      "tensor_content_fingerprint": "696d27eedf0db78dbe84f85338b33e96f745adb8f1c5ceb93547d300e242d4c9",
+      "consumed_train_samples": 115200,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1e8NixF5SowpSvUDkR5S4qs-irbj0Oeys",
+          "bytes": 3461,
+          "sha256": "4d47e18fc9f563438a5507863acc3e33525edb91cb6081db78f9dbe6296a2442"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1dDwkpP-bpRVz4XcAn-klKGgmR2YdAeWz",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1sRswhDk7oIZ26eK98vMIRzqviC7PhKEo",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1ghseT_egMAI677Oa8x0DRiZroPQOnG4v",
+          "bytes": 1767,
+          "sha256": "564b6e25bdf8ebf1e02ad6e8a58486af927915394cf05a7d7cf83521b3b4180c"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1StNggBjNoRz8G9mNwa-er0vVX4-FnU6K",
+          "bytes": 173352705,
+          "sha256": "4f1a4fbdd28c1e891e79699287c8037ca9fa175ba4fa3118bbe3cd198d9e4ae7"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1UTBkza_jqd2DCqEGx03-Uee3RCyfQSjc",
+          "bytes": 142431,
+          "sha256": "7d0dafb6ced279b5c38198bf9e7b18bc62223ec7a1487ae674875aeaff5951ad"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1000,
+      "folder_id": "1J7kHuPtJtUOyx9vqeaBke5qHqRDDswhW",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "c208e4ea2ad8a2975f3f97731b591ff0f378a1c66b3f4fdb6ba34363d4809ee7",
+      "tensor_content_fingerprint": "d9ac3476b9996b4a96e6503d12e548223956e299c3b4c6ac1e6707be61b5f76f",
+      "consumed_train_samples": 128000,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "11l9VJ6WEkI6rlai_6cXmtpXXBL2RZ1Yn",
+          "bytes": 3461,
+          "sha256": "0cd3645dfec8529e9b4b77669ef747ed96791e20a7952f156de6953604fa5ae2"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "13SwaQrcH2SA28LlDFDy6JsX8rE27RUAv",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "10xO4onm48x3W5LaDsudUlFuLW106Mny9",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1Z2YT3lBBhUmAmfQTSQLKVUmpL4bXg8i8",
+          "bytes": 1767,
+          "sha256": "faa057bff69d54a523bde08c5479dbf4090823c4cabf3167d33bbd208f705dd5"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1gaZtBS3_EHo9Ds3W4Ol3k1WC1quFFXbE",
+          "bytes": 173352705,
+          "sha256": "c208e4ea2ad8a2975f3f97731b591ff0f378a1c66b3f4fdb6ba34363d4809ee7"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1TFE0logMTrgUn-nuS1omoE70T5XNGcY_",
+          "bytes": 142431,
+          "sha256": "12601242d7351650246c4c5fdee058172250be41d2033cc56a9c7925b0b8f478"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1100,
+      "folder_id": "1Tqqfkk5bfvMDiKYpFrjScdNKJ9VmR5eS",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "4033cbf6999ea1b21c78062c6e72936b4c988bc4fbce68f0aff8f79603164ac3",
+      "tensor_content_fingerprint": "6f13fb2cbd356b3c134cd5f1fe2e9f33f5849a5dd725b3732897d9470e79671d",
+      "consumed_train_samples": 140800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1BOvDbDuxoacCsMbSIdnkSqBbjnkPrCVe",
+          "bytes": 3461,
+          "sha256": "5d5a605eac10a4c7463813181f10ca6735a73d2658ec928127050b270a5fbd7f"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1xy6DkUs5792GOliYoS5jIb6aBngn2srn",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1iZVn2bICcSP6P_zBb4fUtzfnpDTDmM5E",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1tjydmCT5G_JikwAY1yKp61veVfCPn8k-",
+          "bytes": 1767,
+          "sha256": "7fce8a56e3bdd21ad69b40b0fd26b83be8d03bc581d07e2534801fe06a6c2acc"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1Lm1KP4thzwUKo3wYeK4oiyYVRuSNt4eV",
+          "bytes": 173352705,
+          "sha256": "4033cbf6999ea1b21c78062c6e72936b4c988bc4fbce68f0aff8f79603164ac3"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1zF3x7mWR6m5uShtqBp0Mmg2KOIzU-br2",
+          "bytes": 142431,
+          "sha256": "9ddb66f4a10b9fd07f5e5b22ab775a5c0a39db3454ddfddefd46d54e5d857ff2"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1200,
+      "folder_id": "19NZl8ygss2iwCGpoPX2BUJH28xVc-GOs",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "c25d85d64ad0f454f7abdf5902d11f006244be2ff18d86fcd1a054e739c562d2",
+      "tensor_content_fingerprint": "5e28bf7190bffbe9bc7b97d09460b1e75de0b264d7f79fa1390bdc340dfea5b6",
+      "consumed_train_samples": 153600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "148cUylqdpZrxRvVNn6JSPadGRBclKgXB",
+          "bytes": 3461,
+          "sha256": "460f3366b4cd622abcdf4a32c8ffbe8653377737097cca44f9b208d5ec5d220c"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1kzpY80Pd5sERAuNpvTWfEtZAHGmJMT5d",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1_h_xz6c1I1kLTULYKgNLiFz9uCDbYHy1",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "17aGRE-5A5Q0vWiAuS13nZJF_oPFmP4Y1",
+          "bytes": 1767,
+          "sha256": "bd54961ef859971a8dee28b6744173510ddacec0321e38e860937be2d9d3fff7"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1szc30cCRJAkC3KELj2_OyTg3pGhLjQXL",
+          "bytes": 173352705,
+          "sha256": "c25d85d64ad0f454f7abdf5902d11f006244be2ff18d86fcd1a054e739c562d2"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1iTGmpDLCDgrz-XXsjOiMitDHGJnELbZQ",
+          "bytes": 142431,
+          "sha256": "b938a2e4128492a8efe7f039313bd15dcd2e39d96dedd4de145de1ce1d2bd482"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1300,
+      "folder_id": "1CC73RPsBEBAP8hZVWQyA34P3ClcyY7Nw",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "15238bd96a72cf2e5842e2027a21e9425d0a48a88e5889d0fa1352565331be7e",
+      "tensor_content_fingerprint": "5efd9f7f72a5e83a4cc8231a99d1b9b285054b39bc7c65e7b4685ff5877686b1",
+      "consumed_train_samples": 166400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1WjEt4EYmBoPLgvq64KdEsJZEugV4meuQ",
+          "bytes": 3461,
+          "sha256": "a67e42f01d9afb7b339e9d0cccbda918cb320c1c50f7d40bb285f6bbdda3d061"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1lMXseuMwK6QGkSPHw607dpvPb6_qJiWd",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1wplwUUrDx90ZbrsgqcYMyLRqVau1s_jI",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "104m88csw83yYYrXMPUzbCo2sFB49r5kr",
+          "bytes": 1767,
+          "sha256": "552bf4ff780d9465501c566616b948d5f1b4a5f0f185a327de5751aef7d32081"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1PiJEhljkTxSelItblNZ6WSkUE40hgUnp",
+          "bytes": 173352705,
+          "sha256": "15238bd96a72cf2e5842e2027a21e9425d0a48a88e5889d0fa1352565331be7e"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1eGd5SpqiCzmOAwUcjfK-eeraXK37rg1X",
+          "bytes": 142431,
+          "sha256": "ee8cf914b58a5ce70a2cda2ee3232007b68f95acbb16525362d718485c7b2b46"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1400,
+      "folder_id": "1B_1DxMfFe2Eotv_Z1QHUStZoa4pV2rGv",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "3e47975cefe0fd9d2faae54e775e50b130d7cce67d7c31fe3ba066c62a265e02",
+      "tensor_content_fingerprint": "8251960905ff196b7d8232923ad90712ce5a17f06f7e6e6edd63d0fec704a69c",
+      "consumed_train_samples": 179200,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1WZ8ag5eprTF4sKXRwP_cg-fwfNMDYP5w",
+          "bytes": 3461,
+          "sha256": "5d388aa8122750ce8c1534f23e9ab8adf5b3c4303d6761e334fa5d7d61f8b8d3"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1DtoTZbaRDQJkLbX_koAKVM60szWtvYU9",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1oz30wGhbraDJKvwYSr_tCQH-bM4c1fpC",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1KbT1cbzxDJx3bx5FT2-ZuP27UKoNjDaA",
+          "bytes": 1767,
+          "sha256": "ec22bdbaa8e6fcc202a1cfc0880d1d56bc3133b7921f77380a363a7d8789a351"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1y1s2AIVDAO5zHVn4ldWfZt4XfUcIH8LT",
+          "bytes": 173352705,
+          "sha256": "3e47975cefe0fd9d2faae54e775e50b130d7cce67d7c31fe3ba066c62a265e02"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1j6BAU_tb_7QpMRFgTQ3f5DLSGkLs6pJb",
+          "bytes": 142431,
+          "sha256": "d59f4ae9748b99f53ce5d4ef606bb8bb1b62097d0212c079fd3c7100ff71eca6"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1500,
+      "folder_id": "1WnvP3Uilmj4vWi-0uc-iOZYuafBYva3i",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "b6edfdd38c46c11e81d484c86b34ae3307d7f25cb8b60b5a96d90bc61f1a2fb3",
+      "tensor_content_fingerprint": "ae4093097738ef7de2bc6928f84e3e9ed2f4d6af98ebcae520335aeeb66cf287",
+      "consumed_train_samples": 192000,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1LaS-H0pFw4Wzfk8o3ztM_6RjwoCtnbOa",
+          "bytes": 3461,
+          "sha256": "d8f453989b37dc5fdf3b5b47ae39f8f7467e8a07397dd15a0b9128db2793eee5"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1e7bjq-t7RPop3ZOnOmGBJv-g03-xzq7o",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1QtfU8B1OYxFCTmz17MGW62foLe58Qw7k",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1MVn54OV306GQytWO_WeKHa2WNnh5De8W",
+          "bytes": 1767,
+          "sha256": "6c8b26d879e78606565a4867a2ec69fde8834e13f61f1f187fa4a92c81ef2b9f"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1jnfEON4qNgp0KHfqgAMWodjxnz42G8B5",
+          "bytes": 173352705,
+          "sha256": "b6edfdd38c46c11e81d484c86b34ae3307d7f25cb8b60b5a96d90bc61f1a2fb3"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1347FTpaazfRyisfqgKhcoemVB75WYoQe",
+          "bytes": 142431,
+          "sha256": "293c3e5eff62906d6ebd28cc5c0a7783ce2fdaf0239311e41f8b2a85d13688fa"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1600,
+      "folder_id": "1uuVhfaHmG4KyvCY7D4s_Q2pOG5u7OsFE",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "d27405b8d1ff6127c4fe8065755255c2af4f3d7389eb67e66a5d0ce56245b952",
+      "tensor_content_fingerprint": "cb0c632c1380cdcb139cd42e8733bb89b855e0321d093c4f692751f726170313",
+      "consumed_train_samples": 204800,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1w4x3jAwVCm8DeRjrSmqhQrsVzy163kB3",
+          "bytes": 3461,
+          "sha256": "2af0d7f7329fc9227b55fcd17c1199939e306872bc472d27035ce6e04dbeb8f3"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1Nqd9kkvEOwjv_JurR5McnI3OF7gZ0o2H",
+          "bytes": 39341,
+          "sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1YRThvhj95mQugSEQeTUI3LJ5U8S0GP8Z",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1GEL0BXTlRNCZAZLM1lRi-i9SlPgkUve3",
+          "bytes": 1767,
+          "sha256": "ba9810edcd3937a368a570a688246c96a3f75a0eaac724e77853ad5879dfea08"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "17TY9mQHJnPU9VzoxVZ_3408hezg_UBWT",
+          "bytes": 173352705,
+          "sha256": "d27405b8d1ff6127c4fe8065755255c2af4f3d7389eb67e66a5d0ce56245b952"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1gtrhVxmzrC9GIWEKu9P7yPqxZ7_lxx1a",
+          "bytes": 142431,
+          "sha256": "4df63ede4036b002a2c8f7619ffdc0a2c2860952aa9207582169b4c9edf01c8c"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1700,
+      "folder_id": "15Jn-HO-vhZoY2K8J1wvNXEIIbNqiMd28",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "da0e45e9b20ad6fa82ea79607f87396b4dc39366ad4830806a11667da176aaa0",
+      "tensor_content_fingerprint": "33e6f1d711ed2e41239c270d6266669ec85593d3dfa1af8d27174465421d6e70",
+      "consumed_train_samples": 217600,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "1GmCiqzzWOpOQAG82Szx-AnfBBvlO_qjv",
+          "bytes": 3461,
+          "sha256": "b4695221e5540edcedb8e84eeead918fda370cd14faf410aed13f4340586dd06"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "1RkGfC4IgTF0DN0xBHfGsBlzBvfqwOxqg",
+          "bytes": 39342,
+          "sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1Tdchve0pszQX7W3rnGTrA87jDIE1rIOD",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1g-FnM_D60oYwzwQOtG5Nrpv0sxhEGB5o",
+          "bytes": 1767,
+          "sha256": "bc087505357b0ba7b49e306425dba0b0f3f379aae5cbb8c09a4f5d10ed4d0135"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "1ivmAklPh-KiKQhO1WKTsmrm0_el2qmt3",
+          "bytes": 173352705,
+          "sha256": "da0e45e9b20ad6fa82ea79607f87396b4dc39366ad4830806a11667da176aaa0"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1n6qv0FX-ijbqU5-fznol7eBR54gJeaNY",
+          "bytes": 142431,
+          "sha256": "812967685e8938358ff933e09b3a66c5ed1b4f1f8d50bf8107b774d02d6da43a"
+        }
+      ]
+    },
+    {
+      "series": "maxent",
+      "step": 1800,
+      "folder_id": "1Wrtj93-2hEqr5UsU-zdN2zl1NXdKBNDU",
+      "kind": "adapter_only",
+      "model_tensors": 200,
+      "adapted_modules": 100,
+      "all_finite": true,
+      "weights_sha256": "8fba7f205d5809ae0d6676c2189fa7a163fa9f4f97665f3b0bd4c03d99d24c70",
+      "tensor_content_fingerprint": "6bf999dff36944fda3448a9d44d0af6b16c471f7686f034a0976989e5589f261",
+      "consumed_train_samples": 230400,
+      "declared_parent_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "resume_load_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "declared_loader": "bionemo.evo2.models.evo2_lora.Evo2LoRA",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "architecture": {
+        "num_layers": 25,
+        "hidden_size": 1920,
+        "num_attention_heads": 15
+      },
+      "descriptive_evaluation_status": "BLOCKED_EXACT_ADAPTER_LOADER_QUALIFICATION",
+      "trajectory_initial_status": "NOT_DELIVERED_IN_LISTED_TRAJECTORY_FOLDERS",
+      "actual_parent_lineage": "DECLARED_PATH_ONLY; exact training initialization not independently proven",
+      "input_files": [
+        {
+          "name": "train_state.pt",
+          "drive_id": "14LoRCd6XDjyVQFWZrXznOsZKZ_zaU-cZ",
+          "bytes": 3461,
+          "sha256": "b2b8006f80bd5fc85f7f00dea345cc599df2f29abcc28521521a8b1dbe0ebdb7"
+        },
+        {
+          "name": "run_config.yaml",
+          "drive_id": "16_DBM7R7iTYtmRbjr7kB6086bs2l0oZd",
+          "bytes": 39342,
+          "sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812"
+        },
+        {
+          "name": "metadata.json",
+          "drive_id": "1faNiVUMDVpfrCzlshAPfUiO0ZnyeIKZW",
+          "bytes": 119,
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "name": "common.pt",
+          "drive_id": "1hbrzwtOWrP7FVOI-gnyrTT6EmoVvX4os",
+          "bytes": 1767,
+          "sha256": "2ac206e78028ba24810ff600db19d43c5b26a085494d5501dee708d37c4bc25a"
+        },
+        {
+          "name": "__0_0.distcp",
+          "drive_id": "10vLgW0H-Ce-Lt2G3TuoY1whQPIMQq-7O",
+          "bytes": 173352705,
+          "sha256": "8fba7f205d5809ae0d6676c2189fa7a163fa9f4f97665f3b0bd4c03d99d24c70"
+        },
+        {
+          "name": ".metadata",
+          "drive_id": "1FnaODNCkPE4qNmVa4SmX60lX7RIXXhIW",
+          "bytes": 142431,
+          "sha256": "27658e259aa59d2a8fcc40b8fb95705ce0d0ef5e122529e544a68b6e69a7c9c1"
+        }
+      ]
+    }
+  ]
+}

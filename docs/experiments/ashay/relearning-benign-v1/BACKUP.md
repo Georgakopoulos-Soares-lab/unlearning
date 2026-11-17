@@ -1,0 +1,9 @@
+# Recovery scope
+
+The Pod B qualification package preserves all36 acquired adapter inputs, configs/tokenizers/metadata, full tensor registry, frozen benign manifests, training-only new feature/smoke outputs, timing/audit receipts, source snapshot and explicit blocked coverage. Parent weights and installed environments are excluded; exact129 parent file identities, pinned source commits and runtime reconstruction evidence are included. No historical large feature/probe cache is repackaged.
+
+Full historical reanalysis depends on the existing immutable archives: base/H3 `e75b95d9ca579ddb85fe354bea52bb9a78215b16`, controls `3e1fc6dea176fac609be95ca8834a9b1961274c6`, and R3 `07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3`. Exact paths/bytes/hashes are in the included dependency receipts and the repository's incremental-retain RESTORE_DEPENDENCIES.json. The preservation supplement at8694a540b5fc987b443ee488b085f753c5c4eb01 supplies the original training smoke manifest.
+
+Restore only into a fresh directory. Verify archive/sidecar SHA256 and bytes, reject unsafe/duplicate/link members, safely extract, then verify exact CHECKSUMS.sha256 coverage before loading any serialized heads. Run `source/scripts/sayyed/verify_pod_b_restored_heads.py PAYLOAD_ROOT` with the pinned scientific CPU packages to check the small included binary/multiclass historical-head examples. These are training-only recovery diagnostics, not new supplied-model measurements.
+
+The private upload is confined to `two-pod-20261116/pod-b/20261117T063321Z` in `ashay-sriv/undo-evo2-pilot-backup-20261020`. Repository privacy and write negotiation were checked before writing. The final BACKUP_VERIFICATION.json must identify the immutable uploaded revision, fresh download, safe extraction, all payload hashes and restored-head reconstruction. Packaging alone is not remote recovery verification. No credentials are included.

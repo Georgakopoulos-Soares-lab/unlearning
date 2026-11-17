@@ -1,0 +1,25 @@
+{
+  "execution_git_head": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "drivers_committed_at_execution": false,
+  "files": {
+    "scripts/sayyed/audit_pod_b_cohorts.py": "3a6349a8e511c550047b17b9d5d5961e0199da41bc5329242634418787c91624",
+    "scripts/sayyed/run_pod_b_parent_smokes.py": "8f415a99af095cdb6f7abfdbfd7affcbdd8c39a1756cbeae8aaf87c45373a504",
+    "scripts/sayyed/benchmark_pod_b_training_probes.py": "889e3a25ca0de742c76a3eade21a19844a6276b7bc915cabd996b3f52406a9c3",
+    "scripts/sayyed/qualify_pod_b_checkpoints.py": "316cac1b250a6ccf77a0c784a2ac221fe7685b264d306b928f349f897e376516",
+    "scripts/sayyed/download_pod_b_parents.py": "8d2198e045951603be07d8bf0d2a516e3d3f85339eae7b7539c5c9e07635d863",
+    "scripts/sayyed/materialize_pod_b_asset.py": "a4a449ef86f9d231eb3ed4d92cee65a235977f7446946400282ae06ca4dfb88b",
+    "scripts/sayyed/download_pod_b_assets.py": "74017dfbfbb071ba510d0de8c7e093973f194f9d5548a5b489d25bbf951a4b2c",
+    "scripts/sayyed/recover_pod_b_dependencies.py": "a522d91e68b3af66d6cc94f3b427891cc5ccb1dcb9cb2b1f55c25be3401798cb",
+    "scripts/sayyed/extract_multiretain_fixed.py": "4291924165beb1bf2b80b2e858ec2a44d562d5cd3cede29bc8deb046ae917507",
+    "scripts/sayyed/fixed_benign_batch.py": "c1518dd5dae20d8961be258100f7fa11ffb5197651c44831fd3ee0a1c121d46c",
+    "scripts/sayyed/multiretain_support.py": "18aeb8e4ab3ba02348d5fdb43fae795cee3b3379cfbf338201bf838bb7e729de",
+    "scripts/sayyed/h3_followup.py": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b"
+  },
+  "native_sources": {
+    "/workspace/bionemo-cu12": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+    "/workspace/megatron-bridge": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+    "/workspace/megatron-bridge/3rdparty/Megatron-LM": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13"
+  },
+  "qualification": "Source hashes identify actual new driver content; original computational extractor/fit functions unchanged",
+  "runtime_note": "Torch2.8/cu128, TE2.3, pinned native sources; flash-attn2.8.3 versus old2.8.3.post2, unfused attention selected; training-only smoke establishes compatibility only if it passes"
+}

@@ -1,0 +1,162 @@
+{
+  "scope": "Training-only timing on compatible historical base features; zero delivered-model performance scores",
+  "source_sha256": "889e3a25ca0de742c76a3eade21a19844a6276b7bc915cabd996b3f52406a9c3",
+  "fits": 8,
+  "records": [
+    {
+      "task": "emp_H3",
+      "layer": "decoder_layer_16",
+      "C": 0.1,
+      "training_rows": 7980,
+      "wall_seconds": 1.4709834740006045,
+      "cpu_seconds": 1.362024279,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            187
+          ],
+          "seconds": 1.3201451370005088,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    },
+    {
+      "task": "emp_H3",
+      "layer": "decoder_layer_16",
+      "C": 10.0,
+      "training_rows": 7980,
+      "wall_seconds": 3.9429203609997785,
+      "cpu_seconds": 3.9426790359999995,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            608
+          ],
+          "seconds": 3.933424617000128,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    },
+    {
+      "task": "emp_H3",
+      "layer": "final_norm",
+      "C": 0.1,
+      "training_rows": 7980,
+      "wall_seconds": 0.5613272869995853,
+      "cpu_seconds": 0.5612693999999987,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            70
+          ],
+          "seconds": 0.55152183500104,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    },
+    {
+      "task": "emp_H3",
+      "layer": "final_norm",
+      "C": 10.0,
+      "training_rows": 7980,
+      "wall_seconds": 0.7022488490001706,
+      "cpu_seconds": 0.7022210589999993,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            96
+          ],
+          "seconds": 0.692883076999351,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    },
+    {
+      "task": "gue_tf_0",
+      "layer": "decoder_layer_16",
+      "C": 0.1,
+      "training_rows": 819,
+      "wall_seconds": 0.05987537600049109,
+      "cpu_seconds": 0.059873679000000735,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            84
+          ],
+          "seconds": 0.05533764699976018,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    },
+    {
+      "task": "gue_tf_0",
+      "layer": "decoder_layer_16",
+      "C": 10.0,
+      "training_rows": 819,
+      "wall_seconds": 0.05843189700135554,
+      "cpu_seconds": 0.058433479999999705,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            93
+          ],
+          "seconds": 0.055575420999957714,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    },
+    {
+      "task": "gue_tf_0",
+      "layer": "final_norm",
+      "C": 0.1,
+      "training_rows": 819,
+      "wall_seconds": 0.03773591400022269,
+      "cpu_seconds": 0.037737900000001545,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            54
+          ],
+          "seconds": 0.03481481699964206,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    },
+    {
+      "task": "gue_tf_0",
+      "layer": "final_norm",
+      "C": 10.0,
+      "training_rows": 819,
+      "wall_seconds": 0.06180212300023413,
+      "cpu_seconds": 0.06179432899999959,
+      "attempts": [
+        {
+          "max_iter": 2000,
+          "n_iter": [
+            99
+          ],
+          "seconds": 0.058990437999455025,
+          "warnings": []
+        }
+      ],
+      "converged": true
+    }
+  ],
+  "cv_seed": 42,
+  "blas_threads": 1,
+  "limitations": "Reference timings are provisional; adapter-specific convergence and full bootstrap/audit/IO cost remain unmeasured"
+}
