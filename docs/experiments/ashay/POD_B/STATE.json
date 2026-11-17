@@ -1,7 +1,7 @@
 {
-  "stage": "B03",
-  "status": "COMPLETE_FROZEN_DATA_RECOVERY_AND_SCOPED_REUSE",
-  "artifact_root": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z",
+  "stage": "B04",
+  "status": "BLOCKED_NO_SCIENTIFICALLY_QUALIFIED_ROUTE_OR_PAYLOAD",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z",
   "research_context": {
     "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
     "worktree": "/workspace/wt-POD_B",
@@ -19,17 +19,17 @@
     "refs/heads/experiments-ashay-relearning-benign-v1": "cf7b861619d05b8916690471fcd9469ab9d80f75",
     "refs/heads/main": "af92e593162478c8aa40b6303ed0f0e508affac7"
   },
-  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/PROMPT_RECEIPT.json",
-  "prompt_commit": "382b2aaa22191e15a8e0db543a66ed25d69297df",
+  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/PROMPT_RECEIPT.json",
+  "prompt_commit": "a248257d9610c9b33410c70c22859ca07104f2b5",
   "current_run_science_gpu_seconds": 0,
   "current_run_new_fits": 0,
   "next_stage_authorized": false,
-  "approved_scope": "Expanded B03 recovery/frozen-data/historical artifact reuse only; no inference/fits/new scores",
-  "research_head_at_start": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211",
+  "approved_scope": "B04 identity/runtime/training-only qualification; no training/fits/heldout evaluation",
+  "research_head_at_start": "fc7d4a31d1733caaf0a094fa2bbac7a8606324d3",
   "prompt_hashes": {
     "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
-    "POD_B_03_RECOVERY.md": "0e5b94c67a44461725d8722166e9f15106ee37753d1edea38e41ab58ce188534",
-    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
+    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
+    "POD_B_04_RUNTIME.md": "04c8e9aeeb4c5688d5aa49f332a1a5fb8e8f197fa51cc3b160d99b09f6c95f1a"
   },
   "budget": {
     "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-B.json",
@@ -38,9 +38,9 @@
     "scientific_stage_cutoff_utc": "2026-11-17T17:33:21+00:00",
     "session_deadline_utc": "2026-11-17T20:33:21+00:00",
     "clock_reset": false,
-    "observed_utc": "2026-11-17T09:29:47.747900+00:00",
-    "remaining_to_scientific_cutoff_seconds": 29013.2521,
-    "remaining_to_session_deadline_seconds": 39813.2521,
+    "observed_utc": "2026-11-17T10:31:50.517788+00:00",
+    "remaining_to_scientific_cutoff_seconds": 25290.482212,
+    "remaining_to_session_deadline_seconds": 36090.482212,
     "authorized_gpu_stage_seconds": null,
     "null_gpu_allowance_meaning": "No separate fixed stage-seconds cap; stage approval still required",
     "deadline_expired": false,
@@ -73,7 +73,8 @@
     "remaining_closure_seconds": 42687.212399,
     "metadata_cpu_seconds": "not metered cumulatively; bounded metadata/source parsing only",
     "private_stage_artifact_bytes_at_close": 7532084,
-    "b03_elapsed_wall_seconds": 1355.404395
+    "b03_elapsed_wall_seconds": 1355.404395,
+    "B04_elapsed_wall_seconds": 2032.306837
   },
   "prior_source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
   "prior_artifact_root": "/workspace/meeting-artifacts/relearning-benign-v1",
@@ -120,13 +121,16 @@
   "scientific_coverage": {
     "supplied_model_score_cells": 0,
     "potential_refit_cells": 16848,
-    "new_model_inferences": 0,
-    "new_features": 0,
-    "new_fits": 0,
-    "new_metrics_or_bootstraps": 0,
-    "new_test_members": 0,
-    "supplied_full_models_qualified": 0,
-    "full_model_reconstructions_blocked": 36
+    "qualified_full_models": 0,
+    "identity_blocked_full_models": 36,
+    "planned_representatives": 6,
+    "fresh_CPU_adapter_passes": 6,
+    "native_model_forwards": 0,
+    "native_numerical_comparisons": 0,
+    "new_probe_fits": 0,
+    "optimizer_steps": 0,
+    "heldout_inference": 0,
+    "GPU_seconds": 0
   },
   "prior_completed_evidence": {
     "parent_smoke_comparisons": 162,
@@ -135,9 +139,11 @@
     "prior_backup_revision": "32206eeed1dd9024fc92ecd898be39094840de94"
   },
   "blockers": [
-    "B04 Q1 original runtime/source and Q2 actual loaded parent/resume identities remain unresolved for36 adapters",
-    "Q3 true starts and Q4 exposure remain comparison-specific B05 limits",
-    "New private B01/B02/B03 evidence not yet remotely packaged; B09 dependency"
+    "Q1 actual job-bound original source/runtime/commands missing",
+    "Q2 complete actual parent/extra-state/job association missing; unknown hidden changes not excluded",
+    "Independent original-route adapter fixture missing forR2; verifiedR0 unavailable",
+    "Native backend not implemented/authenticated; gate is contract interface, notB06-ready",
+    "Q3 true starts/Q4 actual exposure remain separate comparison limits"
   ],
   "owned_scientific_jobs": [],
   "legacy_wrapper": {
@@ -155,18 +161,19 @@
   "migration_performed": "B03 curated scoped metadata/views only; unchanged scientific sources reused in place; no array/head copy/refit",
   "no_background_stage_queue": true,
   "later_prompts_read": false,
-  "last_checkpoint_utc": "2026-11-17T09:29:47.747900+00:00",
+  "last_checkpoint_utc": "2026-11-17T10:31:50.517788+00:00",
   "completion_receipts": {
     "B01": "docs/experiments/ashay/POD_B/B01_VERIFICATION.json",
     "B02": "docs/experiments/ashay/POD_B/INVENTORY_RECEIPT.json",
-    "B03": "docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json"
+    "B03": "docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json",
+    "B04": "docs/experiments/ashay/POD_B/B04_RUNTIME_RECEIPT.json"
   },
-  "research_head": "72fb0a9e2bd61a2a2ce3517e173ce8dc91a6c211",
-  "publication_status": "B03_METADATA_VALIDATION_PASS_PENDING_PUSH",
-  "delivery_receipt": "/workspace/agent-handoff/POD_B/B03_DELIVERY_VERIFICATION.json",
-  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z/PROMPT_RECEIPT.json",
-  "research_head_note": "Pre-publication HEAD; B03 external delivery receipt gives actual pushed commit",
-  "handoff": "docs/experiments/ashay/POD_B/B03_HANDOFF.md",
+  "research_head": "fc7d4a31d1733caaf0a094fa2bbac7a8606324d3",
+  "publication_status": "B04_BLOCKED_RESULT_VALIDATED_PENDING_PUSH",
+  "delivery_receipt": "/workspace/agent-handoff/POD_B/B04_DELIVERY_VERIFICATION.json",
+  "stage_approval_receipt": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/PROMPT_RECEIPT.json",
+  "research_head_note": "Pre-publication HEAD; B04 external delivery receipt gives actual published commit",
+  "handoff": "docs/experiments/ashay/POD_B/B04_HANDOFF.md",
   "data_readiness": {
     "rows": 22645,
     "tasks": 6,
@@ -195,5 +202,6 @@
     "prediction_bundles": 1134,
     "prediction_channel_views": 3318,
     "scope": "Rows are scoped artifact/views, not new fits, unique learned functions or independent experiments"
-  }
+  },
+  "resume_requirement": "Missing evidence or scope steering plus fresh explicit B04 approval; no B05 advancement"
 }

@@ -1,0 +1,80 @@
+{
+  "schema": "POD_B.B04_environment.v1",
+  "observed_utc": "2026-11-17T10:21:55.751827+00:00",
+  "scope": "Preserved parent-stack CPU Torch/DCP import and source metadata only; native adapter runtime not constructed or qualified",
+  "interpreter": {
+    "path": "/workspace/venvs/evo2-pilot/bin/python",
+    "version": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "resolved": "/usr/bin/python3.12",
+    "sha256": "e50d468e8b0adfb05733f5b87b3cff34829c4a8c1aea50c865aa8bdfe4bb150f"
+  },
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.8.0",
+    "PyYAML": "6.0.3",
+    "tokenizers": "0.22.1",
+    "transformer-engine": "2.3.0",
+    "transformer-engine-torch": "2.3.0",
+    "bionemo-evo2": "2.4",
+    "megatron-bridge": "0.3.0rc0",
+    "megatron-core": "0.16.0rc0",
+    "causal-conv1d": "1.5.4",
+    "flash-attn": "2.8.3"
+  },
+  "torch_git_version": "a1cb3cc05d46d198467bebbb6e8fba50a325d4e7",
+  "torch_cuda_build": "12.8",
+  "torch_cxx11_abi": true,
+  "torch_build_config": "PyTorch built with:\n  - GCC 13.3\n  - C++ Version: 201703\n  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications\n  - Intel(R) MKL-DNN v3.7.1 (Git Hash 8d263e693366ef8db40acc569cc7d8edf644556d)\n  - OpenMP 201511 (a.k.a. OpenMP 4.5)\n  - LAPACK is enabled (usually provided by MKL)\n  - NNPACK is enabled\n  - CPU capability usage: AVX512\n  - CUDA Runtime 12.8\n  - NVCC architecture flags: -gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90;-gencode;arch=compute_100,code=sm_100;-gencode;arch=compute_120,code=sm_120\n  - CuDNN 91.0.2  (built against CUDA 12.9)\n    - Built with CuDNN 90.8\n  - Magma 2.6.1\n  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=a1cb3cc05d46d198467bebbb6e8fba50a325d4e7, CUDA_VERSION=12.8, CUDNN_VERSION=9.8.0, CXX_COMPILER=/opt/rh/gcc-toolset-13/root/usr/bin/c++, CXX_FLAGS= -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -DC10_NODEPRECATED -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=range-loop-construct -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -faligned-new -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-dangling-reference -Wno-error=dangling-reference -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.8.0, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, USE_XCCL=OFF, USE_XPU=OFF, \n",
+  "binary_identities": [
+    {
+      "path": "/workspace/venvs/evo2-pilot/lib/python3.12/site-packages/torch/_C.cpython-312-x86_64-linux-gnu.so",
+      "bytes": 25481,
+      "sha256": "db1e4f96208c6b297186585a04acee533035705706254ebdd4953fbae6b90224"
+    }
+  ],
+  "nvcc": {
+    "path": "/usr/local/cuda/bin/nvcc",
+    "returncode": 0,
+    "version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2026 NVIDIA Corporation\nBuilt on Fri_May_08_10:53:34_AM_PDT_2026\nCuda compilation tools, release 13.2, V13.2.86\nBuild cuda_13.2.r13.2/compiler.37953736_0\n"
+  },
+  "gpu_hardware": "NVIDIA H100 NVL, 595.112.07, 95830 MiB",
+  "native_source_roots_preserved": [
+    {
+      "path": "/workspace/bionemo-cu12",
+      "commit": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+      "tracked_status": "",
+      "mutated_by_B04": false
+    },
+    {
+      "path": "/workspace/megatron-bridge",
+      "commit": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+      "tracked_status": "",
+      "mutated_by_B04": false
+    },
+    {
+      "path": "/workspace/megatron-bridge/3rdparty/Megatron-LM",
+      "commit": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13",
+      "tracked_status": "",
+      "mutated_by_B04": false
+    }
+  ],
+  "new_environment_created": false,
+  "new_installations": 0,
+  "candidate_adapter_imports": 0,
+  "cuda_context_initialized": false,
+  "cache_policy": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "TORCH_EXTENSIONS_DIR": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/cache/torch_extensions",
+    "TRITON_CACHE_DIR": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/cache/triton",
+    "XDG_CACHE_HOME": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/cache/xdg",
+    "HF_HOME": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/cache/hf"
+  },
+  "reproduction_limits": "No new wheel set/container or candidate binary build was produced. Versions and a Torch_C hash are not a self-contained reproducible native adapter environment.",
+  "reason_native_environment_not_attempted": "No authoritative full-state/source/job binding or original-route adapter fixture; do not build/install arbitrary candidate combinations.",
+  "wall_seconds": 9.460143963002338,
+  "cpu_process_seconds": 2.870238434
+}

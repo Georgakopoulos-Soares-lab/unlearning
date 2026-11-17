@@ -1,0 +1,173 @@
+{
+  "schema": "POD_B.B04_plan.v1",
+  "created_utc": "2026-11-17T10:00:10.439440+00:00",
+  "prompt_commit": "a248257d9610c9b33410c70c22859ca07104f2b5",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z",
+  "routes": {
+    "R0": {
+      "status": "IDENTITY_BLOCKED",
+      "missing": [
+        "actual_job_source_runtime",
+        "actual_full_state_bindings"
+      ]
+    },
+    "R2": {
+      "status": "RUNTIME_BLOCKED",
+      "missing": [
+        "actual_full_state_bindings",
+        "independent_original_route_adapter_fixture"
+      ],
+      "candidate_class_blob": "a79acacbd26139dd617b494ac96f8370ec8cdb85",
+      "candidate_bridge_commit": "fcbb6031103d0ca845c1a54d4fee55ecfcca17b6"
+    }
+  },
+  "representatives": [
+    {
+      "id": "base/iter_0000100",
+      "family": "base_all",
+      "job_id": "11760341",
+      "adapter_sha256": "0da8c27848d87d769158d1a9067fd0031b7dbe970ea1b357c0c6ba4aa8ada059",
+      "config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+      "local_input_root": "/workspace/meeting-artifacts/relearning-benign-v1/checkpoints/base/iter_0000100",
+      "identity_established": false,
+      "approved_binding_sha256": null,
+      "backend_source_sha256": null,
+      "original_reference_sha256": null
+    },
+    {
+      "id": "base/iter_0001800",
+      "family": "base_all",
+      "job_id": "11760341",
+      "adapter_sha256": "53180d7be4fa70f86e2f2a7c623f3e73b765e318c50164d1296229c857ed94ce",
+      "config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+      "local_input_root": "/workspace/meeting-artifacts/relearning-benign-v1/checkpoints/base/iter_0001800",
+      "identity_established": false,
+      "approved_binding_sha256": null,
+      "backend_source_sha256": null,
+      "original_reference_sha256": null
+    },
+    {
+      "id": "maxent/iter_0000100",
+      "family": "maxent_initial",
+      "job_id": "11776574",
+      "adapter_sha256": "4230913cae92e412d9c11717937396c7e435c84f20393b9303157e1bee87dd5f",
+      "config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+      "local_input_root": "/workspace/meeting-artifacts/relearning-benign-v1/checkpoints/maxent/iter_0000100",
+      "identity_established": false,
+      "approved_binding_sha256": null,
+      "backend_source_sha256": null,
+      "original_reference_sha256": null
+    },
+    {
+      "id": "maxent/iter_0001600",
+      "family": "maxent_initial",
+      "job_id": "11776574",
+      "adapter_sha256": "d27405b8d1ff6127c4fe8065755255c2af4f3d7389eb67e66a5d0ce56245b952",
+      "config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+      "local_input_root": "/workspace/meeting-artifacts/relearning-benign-v1/checkpoints/maxent/iter_0001600",
+      "identity_established": false,
+      "approved_binding_sha256": null,
+      "backend_source_sha256": null,
+      "original_reference_sha256": null
+    },
+    {
+      "id": "maxent/iter_0001700",
+      "family": "maxent_restart",
+      "job_id": "11803647",
+      "adapter_sha256": "da0e45e9b20ad6fa82ea79607f87396b4dc39366ad4830806a11667da176aaa0",
+      "config_sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812",
+      "local_input_root": "/workspace/meeting-artifacts/relearning-benign-v1/checkpoints/maxent/iter_0001700",
+      "identity_established": false,
+      "approved_binding_sha256": null,
+      "backend_source_sha256": null,
+      "original_reference_sha256": null
+    },
+    {
+      "id": "maxent/iter_0001800",
+      "family": "maxent_restart",
+      "job_id": "11803647",
+      "adapter_sha256": "8fba7f205d5809ae0d6676c2189fa7a163fa9f4f97665f3b0bd4c03d99d24c70",
+      "config_sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812",
+      "local_input_root": "/workspace/meeting-artifacts/relearning-benign-v1/checkpoints/maxent/iter_0001800",
+      "identity_established": false,
+      "approved_binding_sha256": null,
+      "backend_source_sha256": null,
+      "original_reference_sha256": null
+    }
+  ],
+  "inputs": {
+    "fixture_path": "/workspace/meeting-artifacts/relearning-benign-v1/training_smoke_manifest.jsonl",
+    "fixture_sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+    "ordered_ids_sha256": "1800b51b5262a453820797b1c42e7e99ca1788bd6d2aca4c77c886b053436ba8",
+    "rows": 12,
+    "all_exact_frozen_training": true,
+    "allowed_escalation384_sha256": "9bcfb9fc15a1a48f7a0158c8e4ebf92999cdaaa69bd00574803840643c90da12",
+    "escalation_used": false,
+    "physical_batch": 8,
+    "logical_batches": [
+      1,
+      8
+    ],
+    "padding": 1000,
+    "parent_dependencies": "B03 RECOVERY_MANIFEST parent_dependency_linkage; candidate only, no per-job assignment",
+    "independent_adapter_fixture_available": false
+  },
+  "cpu_work": [
+    "fresh selected adapter/small-file hashes and tensor mapping/finiteness/content fingerprints",
+    "source/API semantics mapping without candidate import",
+    "strict binding/loader/fixture contract, numerical output comparator and executable gated backend interface",
+    "focused negative/retention/mask/algebra tests"
+  ],
+  "gpu_work_condition": "Only after authoritative full-state/source association and R0 or independent R2 reference prerequisites; current all false, so no GPU/model construction/guessed-parent inference",
+  "gate_tolerances": {
+    "smoke_atol": 0.0001,
+    "smoke_rtol": 1e-05,
+    "ids_masks_shapes_counts": "exact",
+    "saved_probability_scope_only": 1e-10,
+    "metric_bootstrap_scope_only": 1e-12
+  },
+  "budgets": {
+    "total_stage_wall_seconds": 5400,
+    "provenance_pass_seconds": 600,
+    "per_api_seconds": 60,
+    "per_cpu_check_seconds": 600,
+    "per_transfer_seconds": 300,
+    "per_build_seconds": 1800,
+    "per_gpu_job_seconds": 600,
+    "total_gpu_seconds_if_eligible": 1800,
+    "scientific_cutoff": "2026-11-17T17:33:21+00:00",
+    "closure_deadline": "2026-11-17T20:33:21+00:00",
+    "minimum_later_science_reserve_seconds": 14400,
+    "no_clock_reset": true
+  },
+  "disk": {
+    "available_bytes": 327704266407936,
+    "expected_new_cpu_evidence_bytes_max": 100000000,
+    "selected_adapter_bytes_read": 1040116230,
+    "new_weight_bytes_to_download": 0,
+    "cpu_peak_ram_bytes_budget": 2000000000,
+    "new_environment_peak_disk_bytes_if_eligible": 30000000000
+  },
+  "isolation": {
+    "preserved_interpreter": "/workspace/venvs/evo2-pilot/bin/python",
+    "cache_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/cache",
+    "new_runtime_created": false,
+    "candidate_installation_currently_eligible": false,
+    "old_environment_mutation_allowed": false,
+    "output_roots": [
+      "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z"
+    ],
+    "shared_gpu_lock": "/workspace/meeting-artifacts/evo2-pilot.gpu.lock",
+    "gpu_lock_acquired": false
+  },
+  "failure_conditions": [
+    "missing state binding or independent reference -> no inference",
+    "stale/missing/corrupt hashes/shards or shape/dtype/map mismatch -> reject",
+    "non-training fixture or old output path -> reject",
+    "new source/tokenizer/parent changes -> invalidate gate",
+    "nonfinite/mask/count/filler/hook/branch/swap/numerical mismatch -> fail; no tolerance change"
+  ],
+  "next_stage_authorized": false,
+  "new_training_or_fits_allowed": false,
+  "new_heldout_evaluation_allowed": false
+}

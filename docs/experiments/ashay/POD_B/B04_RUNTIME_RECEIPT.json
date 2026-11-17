@@ -1,0 +1,388 @@
+{
+  "schema": "POD_B.B04_runtime-receipt.v1",
+  "stage": "B04",
+  "status": "BLOCKED_NO_SCIENTIFICALLY_QUALIFIED_ROUTE_OR_PAYLOAD",
+  "approval": {
+    "stage": "B04",
+    "attempt": 1,
+    "repo": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "ref": "POD_B",
+    "commit": "a248257d9610c9b33410c70c22859ca07104f2b5",
+    "files": [
+      {
+        "path": "POD_B_MASTER.md",
+        "sha256": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
+        "bytes": 10648
+      },
+      {
+        "path": "override_pod_b_.txt",
+        "sha256": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
+        "bytes": 1376
+      },
+      {
+        "path": "POD_B_04_RUNTIME.md",
+        "sha256": "04c8e9aeeb4c5688d5aa49f332a1a5fb8e8f197fa51cc3b160d99b09f6c95f1a",
+        "bytes": 44742
+      }
+    ],
+    "approval_verbatim": "https://github.com/ashay-sriv-06/test-prompts-push/blob/POD_B/POD_B_04_RUNTIME.md pull from here and do the following - 👍 B04. Execute the updated POD_B_04_RUNTIME.md with its\npinned master and branch-ownership override.\n\nComplete the authorized identity, runtime and training-only\nqualification work. Cover all three configuration families\nwhere evidence permits, including the restart boundary.\n\nOnly research POD_B is writable. Preserve existing artifacts\nand environments. No training, probe fitting, held-out\nevaluation or automatic advancement.\n\nReport exact passes, failures and blockers, then stop for\nmy review before B05.",
+    "approval_observed_utc": "2026-11-17T09:57:58.210951+00:00",
+    "user_message_timestamp_exposed": false,
+    "master_and_override_unchanged": true,
+    "research_head_at_entry": "fc7d4a31d1733caaf0a094fa2bbac7a8606324d3"
+  },
+  "research_context": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "branch": "POD_B",
+    "worktree": "/workspace/wt-POD_B",
+    "head_at_entry": "fc7d4a31d1733caaf0a094fa2bbac7a8606324d3"
+  },
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z",
+  "evidence_map": [
+    {
+      "id": "B04.E1",
+      "type": "new_bounded_authoritative_source_refresh",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/DISCOVERY_PASS.json",
+        "sha256": "178633632d7b8a7f3559eb0ad4de0d8dfce9c3422d794f1d52869167f3a40e31"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "9 directly listed relevant folders and unchanged project bionemo@b90fc1853d1d3be79922a98a2649c91c89716637; no newly supplied job/runtime/parent/fixture evidence found.",
+      "limitations": "Scoped search only, not global absence. Four listings directly compare equal to B02 normalized initial records; other locations use current direct listing and prior documented findings. No unrelated datasets/checkpoints traversed."
+    },
+    {
+      "id": "B04.E2",
+      "type": "new_selected_CPU_payload_qualification",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/CPU_ADAPTER_RESULTS.json",
+        "sha256": "2d69704ca153c3c4b627ca14706c3abe6191339b484785f1bf4e1d9ee33ab59a"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "All6 planned adapters freshly hash-match historical inputs and all1200 per-tensor hashes/shapes/dtypes/finiteness;600 module instances. All3 config families and both restart endpoints covered.",
+      "limitations": "Adapter integrity only; no backbone/model load, inference, original-route comparison, runtime or job-parent qualification.129 parent weights were not rehashed because no actual per-job parent assignment is established."
+    },
+    {
+      "id": "B04.E3",
+      "type": "new_inert_source_API_hash_recheck",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/SOURCE_API_PREFLIGHT.json",
+        "sha256": "fa2c68201ce04a278500b4cf069522f62923b5b86243f2afe97c16bdb6e85f88"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "9 official source copies match recorded Git blobs;14 serialized adapter fields supported statically;6 configs rank16/alpha32/pre-dropout.1/params_to_save200.",
+      "limitations": "No candidate module import, constructor or provider/Core/TE/Hyena execution. This does not identify the actual job implementation or justify an unchanged parent-stack drop-in."
+    },
+    {
+      "id": "B04.E4",
+      "type": "new_preserved_CPU_import_and_environment_metadata",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/ENVIRONMENT_LOCK.json",
+        "sha256": "9699f3343b8ae41b8d9cec76699c229589cd562c24c83376725645477eb5e427"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "Existing Torch/DCP CPU import works, Torch_C/interpreter hashes and build metadata recorded, native tracked trees clean, CUDA context never initialized.",
+      "limitations": "No new environment/build/wheel installation. Native adapter ABI/runtime remains unattempted; metadata/package list is not complete environment reproduction."
+    },
+    {
+      "id": "B04.E5",
+      "type": "focused_disposable_CPU_contract_tests",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/logs/contracts-tests.log",
+        "sha256": "ac38a5a9b9db292cc80d9c484523a8a81846733be82bc0b8fa25de774e1e0ca1"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "Final74 tests pass: input/state/tensor/reference rejection, fixed-batch/mask/coordinate/LM checks, tiny algebra and process cleanup.",
+      "limitations": "Synthetic data/backends only. No native adapter algebra, neural forward, authoritative fixture or scientific model qualification. Initial62-test suite also passed; stronger preflight tests prompted the final rerun."
+    },
+    {
+      "id": "B04.E6",
+      "type": "actual_representative_preflight_rejections",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/PREFLIGHT_RESULTS.json",
+        "sha256": "8320fe703945f22a7299e175afe0d3e3d8fcbe7b5a5cda82e24f4b308f26d4e2"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "All6 real representative CLI preflights reject IDENTITY_BLOCKED before backend import/GPU allocation.",
+      "limitations": "Expected control rejection, not6 numerical failures or6 inference attempts. Missing bindings/reference remain external prerequisites."
+    },
+    {
+      "id": "B04.E7",
+      "type": "reused_B03_frozen_input_and_parent_anchor_evidence",
+      "source": {
+        "path": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json",
+        "sha256": "20a715cc44c9023a37ad025e7efff21e448cbf656aa7ac02ba7e506b84fc1b1a"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "B03 frozen data/folds/historical anchors reused; exact12-row training fixture rechecked at B04 entry.384-row escalation not used.",
+      "limitations": "Parent-only162/28 and historical saved-head diagnostics do not qualify supplied adapters. No recovery, fitting, held-out replay or new outputs repeated."
+    }
+  ],
+  "source_files": [
+    {
+      "path": "scripts/sayyed/pod_b_runtime/contracts.py",
+      "sha256": "3ee32e8342a60b642bfc1be72e5576cd7c4f0d828395ffd07a5e491f5a3d30ce"
+    },
+    {
+      "path": "scripts/sayyed/pod_b_runtime/gate.py",
+      "sha256": "cf013e0de573122c4ec9ec09d26a0f2120ece68d93b0d89de1656461efbf2919"
+    },
+    {
+      "path": "tests/test_pod_b_runtime_contracts.py",
+      "sha256": "8471529bb304e58bc0874f3a8bb6a57458c46f36c33c56ed0078f38785f281fa"
+    },
+    {
+      "path": "scripts/sayyed/pod_b_runtime/__init__.py",
+      "sha256": "ec8dbc6414c1159d1e9de0f93914e5fc99b61acf1a4a1be3e5ed1633e0e9c5b0"
+    }
+  ],
+  "plan_sha256": "b7c1294127951860bf689c328f6af2fd5411528427e6f254cbc942103ffacfcd",
+  "counts": {
+    "planned_representatives": 6,
+    "config_families": 3,
+    "fresh_adapter_tensor_checks": 1200,
+    "adapted_module_instances": 600,
+    "real_case_preflight_rejections": 6,
+    "native_model_loads": 0,
+    "native_forward_runs": 0,
+    "real_model_numerical_comparisons": 0,
+    "numerical_model_failures": 0,
+    "numerical_model_passes": 0,
+    "matrix_gates_skipped": 54,
+    "full_models_qualified": 0,
+    "focused_CPU_contract_tests": 74,
+    "focused_CPU_contract_tests_passed": 74
+  },
+  "all_deliveries": 36,
+  "identity_blocked_deliveries": 36,
+  "qualified_deliveries": 0,
+  "routes": {
+    "R0": "IDENTITY_BLOCKED",
+    "R2": "RUNTIME_BLOCKED"
+  },
+  "new_environment_installations": 0,
+  "new_weight_download_bytes": 0,
+  "fixture_escalation384_used": false,
+  "new_native_backend": false,
+  "per_checkpoint_gate_status": "EXECUTABLE_CONTRACT_INTERFACE_TESTED; native backend/source binding and original fixture absent; not B06-ready",
+  "gate_implementation_limits": [
+    "No native inference backend supplied or authenticated; do not call genericLoRA",
+    "Current gate conservatively requires same-state original fixtures for principal/swap cases; route-only inheritance without per-payload independent fixture is not implemented/qualified here",
+    "VerifiedR0 first-reference generation is not enabled without recovered source/full-state binding; do not synthesize it under a candidate",
+    "Metadata provenance truth requires authoritative evidence review; hashes alone cannot prove actual job history"
+  ],
+  "stopping_reason": "One bounded new-evidence pass plus all eligible CPU checks/interfaces/rejection tests completed. No action inside scope can establish missing full-state/source/original-reference facts. No arbitrary version sweep, GPU parent guessing or indefinite waiting.",
+  "resource_accounting": {
+    "observed_utc": "2026-11-17T10:31:50.517788+00:00",
+    "stage_start_utc": "2026-11-17T09:57:58.210951+00:00",
+    "elapsed_wall_seconds": 2032.306837,
+    "selected_bytes_hashed": 1041238896,
+    "CPU_adapter_check_wall_seconds": 17.043357753998862,
+    "CPU_adapter_check_process_seconds": 5.962061282,
+    "CPU_environment_inspection_wall_seconds": 9.460143963002338,
+    "CPU_environment_inspection_process_seconds": 2.870238434,
+    "CPU_test_suite_wall_seconds": 0.646,
+    "cumulative_CPU_seconds": null,
+    "GPU_stage_wall_seconds": 0,
+    "GPU_job_count": 0,
+    "CUDA_peak_allocated_bytes": 0,
+    "CPU_peak_RAM_measured": null,
+    "new_model_training_steps": 0,
+    "new_probe_fits": 0,
+    "new_heldout_scores": 0,
+    "scientific_cutoff": "2026-11-17T17:33:21+00:00",
+    "closure_deadline": "2026-11-17T20:33:21+00:00",
+    "clock_reset": false,
+    "remaining_scientific_seconds": 25290.482212,
+    "remaining_closure_seconds": 36090.482212,
+    "peak_VRAM_scope": "not applicable: no GPU job/context/model created"
+  },
+  "historical_ledgers_preserved": [
+    {
+      "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
+      "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
+      "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6"
+    }
+  ],
+  "owned_jobs": [],
+  "GPU_lock_acquired": false,
+  "next_stage_authorized": false,
+  "later_stage_prompts_read": false,
+  "backup_scope": "New reusable source and sanitized docs recoverable from research commit after push; private B04 tensor receipts/logs/raw listings/code helper snapshots local pendingB09. Old32206ee package excludes newB01-B04 evidence/runtime, but still preserves historical adapters/qualification.",
+  "validation": {
+    "status": "PASS",
+    "scope": "Mechanical B04 evidence and blocked-state honesty; no model numerical qualification",
+    "checks": [
+      "36 unique deliveries/three18-16-2 families and all6 planned representatives accounted; no parent/continuity association invented",
+      "Selected6 fresh byte/per-tensor results match canonical historical identities;1200 tensors/600 module instances; other30 only retain prior integrity",
+      "74 synthetic tests and6 real expected preflight rejections are distinct from0 native attempts/PASS/FAIL; all54 skipped gates have no fabricated numeric errors",
+      "Exact training-only12-row input/tolerances preserved; no384 escalation, native fixture, GPU context/lease, fit/training/heldout score or B05 advancement",
+      "All public structured outputs/eight loader receipts/source/raw-evidence hashes resolve; code and CPU-only checks never imply native equivalence",
+      "Original source trees/B02-B03 records/other refs/prompt deletions/ledgers unchanged; intended docs/source only; no private tokens/raw sequences/weights/environments staged"
+    ],
+    "check_count": 6,
+    "qualified_full_models": 0,
+    "identity_blocked_full_models": 36,
+    "CPU_integrity_passes": 6,
+    "CPU_unit_tests_passed": 74
+  },
+  "publication": "External B04_DELIVERY_VERIFICATION.json records actual published commit/remote HEAD after push",
+  "private_audit_code": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/audit_selected_adapters.py",
+      "sha256": "7b92c562157c5635a613ca54fbd8667f2755cf39df53e6e5a6df890c27ae2051"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/inspect_environment_and_api.py",
+      "sha256": "bf41c8a91776dfcc54ff187b3806d934b0a6af1789f6760f0abd7c43116465ad"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/build_b04_records.py",
+      "sha256": "8fb5830296faab8d4d1462ce1547c8a816af9ed907d05a0d0d554f42c645791a"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/finish_b04.py",
+      "sha256": "8ae357b8aff4f0132298eae004cfcb5a78eb455b7e79c39bd8b136f8969b1a35"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/validate_b04.py",
+      "sha256": "8a709ac408d29f414c038daf8ef82a00584e39fd200e76e2374ad40d6363218f"
+    }
+  ],
+  "raw_evidence": [
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/DISCOVERY_PASS.json",
+      "sha256": "178633632d7b8a7f3559eb0ad4de0d8dfce9c3422d794f1d52869167f3a40e31"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/CPU_ADAPTER_RESULTS.json",
+      "sha256": "2d69704ca153c3c4b627ca14706c3abe6191339b484785f1bf4e1d9ee33ab59a"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/SOURCE_API_PREFLIGHT.json",
+      "sha256": "fa2c68201ce04a278500b4cf069522f62923b5b86243f2afe97c16bdb6e85f88"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/ENVIRONMENT_LOCK.json",
+      "sha256": "9699f3343b8ae41b8d9cec76699c229589cd562c24c83376725645477eb5e427"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/PREFLIGHT_RESULTS.json",
+      "sha256": "8320fe703945f22a7299e175afe0d3e3d8fcbe7b5a5cda82e24f4b308f26d4e2"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/SOURCE_FILES.json",
+      "sha256": "12d1dc0a2ef9a7efb96346c2f7b8e1f77bdf1ab17eaaaf15c7aa8200a686a545"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/ENTRY_EVIDENCE.json",
+      "sha256": "20176c9a9c5934ca2b237efe8a69cae44e79188aeb78305888043c4f33fbcca3"
+    }
+  ],
+  "publication_documents": [
+    "B04_QUALIFICATION_PLAN.json",
+    "ENVIRONMENT_LOCK.json",
+    "MODEL_IDENTITY_BINDINGS.json",
+    "SMOKE_RESULTS.json",
+    "NUMERICAL_FAILURES.md",
+    "CHECKPOINT_QUALIFICATION.jsonl",
+    "B04_DELIVERY_COVERAGE.csv",
+    "B04_EVIDENCE_REQUEST.md",
+    "RUNTIME_REPRODUCTION.md",
+    "B04_RUNTIME_RECEIPT.json",
+    "B04_HANDOFF.md",
+    "SESSION_HANDOFF.md",
+    "STATE.json",
+    "LOADER_RECEIPTS/R0.json",
+    "LOADER_RECEIPTS/R2.json",
+    "LOADER_RECEIPTS/base_iter_0000100.json",
+    "LOADER_RECEIPTS/base_iter_0001800.json",
+    "LOADER_RECEIPTS/maxent_iter_0000100.json",
+    "LOADER_RECEIPTS/maxent_iter_0001600.json",
+    "LOADER_RECEIPTS/maxent_iter_0001700.json",
+    "LOADER_RECEIPTS/maxent_iter_0001800.json"
+  ],
+  "publication_sources": [
+    "scripts/sayyed/pod_b_runtime/contracts.py",
+    "scripts/sayyed/pod_b_runtime/gate.py",
+    "tests/test_pod_b_runtime_contracts.py",
+    "scripts/sayyed/pod_b_runtime/__init__.py"
+  ],
+  "final_process_status": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/FINAL_PROCESS_STATUS.json",
+  "publication_output_hashes": [
+    {
+      "path": "B04_QUALIFICATION_PLAN.json",
+      "sha256": "b7c1294127951860bf689c328f6af2fd5411528427e6f254cbc942103ffacfcd"
+    },
+    {
+      "path": "ENVIRONMENT_LOCK.json",
+      "sha256": "9699f3343b8ae41b8d9cec76699c229589cd562c24c83376725645477eb5e427"
+    },
+    {
+      "path": "MODEL_IDENTITY_BINDINGS.json",
+      "sha256": "4d43d999f180e99323b545ca98ec88162f98ae00e8395d030af4c23b4e36bb3c"
+    },
+    {
+      "path": "SMOKE_RESULTS.json",
+      "sha256": "a1532d140a6982777ca64574a411db5e0083ab3e98aee0e40d925a3dcf80b5c7"
+    },
+    {
+      "path": "NUMERICAL_FAILURES.md",
+      "sha256": "87db9d72d94f23e9fdcec15f449ccfbb21a0e41318cf97ee1f13da5977ad4017"
+    },
+    {
+      "path": "CHECKPOINT_QUALIFICATION.jsonl",
+      "sha256": "8265e7cd4548dddaf258ad21213c2474661e2cff780500d55fc92de0d48dce1d"
+    },
+    {
+      "path": "B04_DELIVERY_COVERAGE.csv",
+      "sha256": "8ba72999e3caae34272378540d81760fc18d8b0d9e908cbb6b0c11e08bce667b"
+    },
+    {
+      "path": "B04_EVIDENCE_REQUEST.md",
+      "sha256": "d2c57255d32a50b3ea292c3f7c4cc03b2f296962f2b657d8292d7bdca3a410da"
+    },
+    {
+      "path": "RUNTIME_REPRODUCTION.md",
+      "sha256": "d223059570cb4c155005c41ec59cfde133c5bbe67ac66b5ed5e5d2811ce87e77"
+    },
+    {
+      "path": "B04_HANDOFF.md",
+      "sha256": "9a4fcf877021f0e5412b770c59fc4acd05083e449c6a2960b50a2879beab6fa4"
+    },
+    {
+      "path": "LOADER_RECEIPTS/R0.json",
+      "sha256": "22b0095e0217022fb4a7eef958f4c8c3169fcf980e51f5a7ec1dc4a0f0c2068c"
+    },
+    {
+      "path": "LOADER_RECEIPTS/R2.json",
+      "sha256": "68fb9f7765d237b2edd8b77c4602e7f74c21492f4fed528817760c2b54ddec35"
+    },
+    {
+      "path": "LOADER_RECEIPTS/base_iter_0000100.json",
+      "sha256": "c6eb7d2e012ff87c55ea56cf982b2a490f59b667b36e5461f69f8885dec88655"
+    },
+    {
+      "path": "LOADER_RECEIPTS/base_iter_0001800.json",
+      "sha256": "8cd2de2c5c899f3a9606acd9ec7516fe4bc5916e975fba1ac6a535d679a1fb3b"
+    },
+    {
+      "path": "LOADER_RECEIPTS/maxent_iter_0000100.json",
+      "sha256": "c686b8435a207310c13b55fc9b379a6f65bddf4dc536f23ff080dcf3609bad3f"
+    },
+    {
+      "path": "LOADER_RECEIPTS/maxent_iter_0001600.json",
+      "sha256": "a43ffce86e5d2dc96520fc2e748ed708b6cd4d4a2d788a273a426a11c979f831"
+    },
+    {
+      "path": "LOADER_RECEIPTS/maxent_iter_0001700.json",
+      "sha256": "3759466e1c528393c8c30f41125529d379f9500bad2292461968601c5df3f6a4"
+    },
+    {
+      "path": "LOADER_RECEIPTS/maxent_iter_0001800.json",
+      "sha256": "61d3d7fe624da55d80783d8d031885e7c7dc982ac0af3ac192d16209b13513ed"
+    }
+  ]
+}

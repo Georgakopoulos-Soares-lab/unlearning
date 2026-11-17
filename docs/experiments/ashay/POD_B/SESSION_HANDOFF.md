@@ -1,3 +1,11 @@
+# Current session: B04 blocked; B05 not authorized
+
+Read [B04_HANDOFF.md](B04_HANDOFF.md), [B04_RUNTIME_RECEIPT.json](B04_RUNTIME_RECEIPT.json) and [B04_EVIDENCE_REQUEST.md](B04_EVIDENCE_REQUEST.md).6 selected CPU integrity checks and74 synthetic contract tests pass, but0 full-model routes/payloads qualify. No native inference/GPU/fitting/held-out evaluation occurred. Actual source/full-state bindings and original adapter reference remain missing. Only POD_B is writable. No owned queue/lock remains; original17:33:21UTC science/20:33:21UTC closure deadlines stand. Resume B04 only after missing evidence/scope steering and fresh explicit approval; B05 has not been read. Artifacts: `/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z`.
+
+Earlier handoffs follow verbatim as historical records; their waiting-stage statements are not current authorization.
+
+---
+
 # Current session: B03 complete; B04 not authorized
 
 Read [B03_HANDOFF.md](B03_HANDOFF.md), [RECOVERY_MANIFEST.json](RECOVERY_MANIFEST.json) and [COHORT_RECEIPT.json](COHORT_RECEIPT.json). B03 qualified frozen-data/historical reuse scope only. All36 adapter reconstructions remain blocked; new scores/fits/inference are zero. Only POD_B is writable. No stage queue remains. Original17:33:21UTC scientific cutoff/20:33:21UTC closure remain unchanged. Private artifacts: `/workspace/meeting-artifacts/POD_B/B03-recovery-20261117T090712Z`. B04 requires new explicit approval; its prompt has not been read.

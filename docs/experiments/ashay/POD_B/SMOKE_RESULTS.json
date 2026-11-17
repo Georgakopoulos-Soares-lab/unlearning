@@ -1,0 +1,566 @@
+{
+  "schema": "POD_B.B04_smoke.v1",
+  "status": "BLOCKED_NO_NATIVE_NUMERICAL_COMPARISON",
+  "fixture": {
+    "fixture_path": "/workspace/meeting-artifacts/relearning-benign-v1/training_smoke_manifest.jsonl",
+    "fixture_sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+    "ordered_ids_sha256": "1800b51b5262a453820797b1c42e7e99ca1788bd6d2aca4c77c886b053436ba8",
+    "rows": 12,
+    "all_exact_frozen_training": true,
+    "allowed_escalation384_sha256": "9bcfb9fc15a1a48f7a0158c8e4ebf92999cdaaa69bd00574803840643c90da12",
+    "escalation_used": false,
+    "physical_batch": 8,
+    "logical_batches": [
+      1,
+      8
+    ],
+    "padding": 1000,
+    "parent_dependencies": "B03 RECOVERY_MANIFEST parent_dependency_linkage; candidate only, no per-job assignment",
+    "independent_adapter_fixture_available": false
+  },
+  "fixture_scope": {
+    "rows": 12,
+    "tasks": {
+      "emp_H3": 2,
+      "gue_prom_300_all": 2,
+      "gue_splice_reconstructed": 2,
+      "gue_mouse_0": 2,
+      "gue_prom_core_all": 2,
+      "gue_tf_0": 2
+    },
+    "length_min": 70,
+    "length_max": 500,
+    "membership_and_hashes_rechecked": true,
+    "new_outputs_generated": false,
+    "coverage_limitation": "Fixture is small and no native route was executed; no sequence-level numerical generalization claim."
+  },
+  "representatives": [
+    {
+      "id": "base/iter_0000100",
+      "family": "base_all",
+      "integrity": "PASS_CPU",
+      "preflight": "IDENTITY_BLOCKED",
+      "gates": [
+        {
+          "gate": "parent_compatibility",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "original_or_equivalent_adapter_forward",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "logical1_vs8_physical8",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "repeatability",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "final_partial_batch",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "hook_neutrality",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "adapter_activity_and_disable",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "A_B_A_swap_isolation",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "fresh_process_reproduction",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        }
+      ]
+    },
+    {
+      "id": "base/iter_0001800",
+      "family": "base_all",
+      "integrity": "PASS_CPU",
+      "preflight": "IDENTITY_BLOCKED",
+      "gates": [
+        {
+          "gate": "parent_compatibility",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "original_or_equivalent_adapter_forward",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "logical1_vs8_physical8",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "repeatability",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "final_partial_batch",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "hook_neutrality",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "adapter_activity_and_disable",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "A_B_A_swap_isolation",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "fresh_process_reproduction",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        }
+      ]
+    },
+    {
+      "id": "maxent/iter_0000100",
+      "family": "maxent_initial",
+      "integrity": "PASS_CPU",
+      "preflight": "IDENTITY_BLOCKED",
+      "gates": [
+        {
+          "gate": "parent_compatibility",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "original_or_equivalent_adapter_forward",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "logical1_vs8_physical8",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "repeatability",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "final_partial_batch",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "hook_neutrality",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "adapter_activity_and_disable",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "A_B_A_swap_isolation",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "fresh_process_reproduction",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        }
+      ]
+    },
+    {
+      "id": "maxent/iter_0001600",
+      "family": "maxent_initial",
+      "integrity": "PASS_CPU",
+      "preflight": "IDENTITY_BLOCKED",
+      "gates": [
+        {
+          "gate": "parent_compatibility",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "original_or_equivalent_adapter_forward",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "logical1_vs8_physical8",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "repeatability",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "final_partial_batch",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "hook_neutrality",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "adapter_activity_and_disable",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "A_B_A_swap_isolation",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "fresh_process_reproduction",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        }
+      ]
+    },
+    {
+      "id": "maxent/iter_0001700",
+      "family": "maxent_restart",
+      "integrity": "PASS_CPU",
+      "preflight": "IDENTITY_BLOCKED",
+      "gates": [
+        {
+          "gate": "parent_compatibility",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "original_or_equivalent_adapter_forward",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "logical1_vs8_physical8",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "repeatability",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "final_partial_batch",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "hook_neutrality",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "adapter_activity_and_disable",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "A_B_A_swap_isolation",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "fresh_process_reproduction",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        }
+      ]
+    },
+    {
+      "id": "maxent/iter_0001800",
+      "family": "maxent_restart",
+      "integrity": "PASS_CPU",
+      "preflight": "IDENTITY_BLOCKED",
+      "gates": [
+        {
+          "gate": "parent_compatibility",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "original_or_equivalent_adapter_forward",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "logical1_vs8_physical8",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "repeatability",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "final_partial_batch",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "hook_neutrality",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "adapter_activity_and_disable",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "A_B_A_swap_isolation",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        },
+        {
+          "gate": "fresh_process_reproduction",
+          "status": "NOT_ATTEMPTED_PREREQUISITE_BLOCKED",
+          "reason": "Unknown actual full state/source and missing independent original-route reference",
+          "comparisons": [],
+          "max_absolute_error": null,
+          "failing_elements": null
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "planned_representatives": 6,
+    "config_families": 3,
+    "fresh_adapter_tensor_checks": 1200,
+    "adapted_module_instances": 600,
+    "real_case_preflight_rejections": 6,
+    "native_model_loads": 0,
+    "native_forward_runs": 0,
+    "real_model_numerical_comparisons": 0,
+    "numerical_model_failures": 0,
+    "numerical_model_passes": 0,
+    "matrix_gates_skipped": 54,
+    "full_models_qualified": 0,
+    "focused_CPU_contract_tests": 74,
+    "focused_CPU_contract_tests_passed": 74
+  },
+  "synthetic_test_scope": {
+    "source": "tests/test_pod_b_runtime_contracts.py",
+    "final_suite_wall_seconds": 0.646,
+    "native_code_tested": false,
+    "algebra": "independent tiny float64 scaling/bias/normalized-input contract, including zero branch; not native kernel equivalence",
+    "same_state_controller": "disposable synthetic backend covers repeat/logical/partial/hook/disable/swap state rejection; not a biological original-route fixture"
+  },
+  "historical_parent_smokes": {
+    "comparisons": 162,
+    "training384_checks": 28,
+    "status": "REUSED_ONLY_FOR_RECORDED_PARENT_SCOPE; NOT_BOUND_TO_SUPPLIED_STATE",
+    "rerun": false
+  },
+  "tolerances": {
+    "smoke_atol": 0.0001,
+    "smoke_rtol": 1e-05,
+    "ids_masks_shapes_counts": "exact",
+    "saved_probability_scope_only": 1e-10,
+    "metric_bootstrap_scope_only": 1e-12
+  },
+  "new_probe_fits": 0,
+  "new_optimizer_steps": 0,
+  "heldout_inference": 0,
+  "new_reference_fixture": false,
+  "new_score_cells": 0,
+  "evidence_ids": [
+    "B04.E2",
+    "B04.E5",
+    "B04.E6",
+    "B04.E7"
+  ]
+}

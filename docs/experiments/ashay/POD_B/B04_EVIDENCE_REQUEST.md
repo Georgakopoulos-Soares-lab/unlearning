@@ -1,0 +1,21 @@
+# Unsent B04 evidence request
+
+This request is drafted for Ashay's review; no collaborator message was sent. All six planned adapter payloads are locally intact and freshly verified, so another blind transfer of36 weights is unnecessary.
+
+| Family / job | Required Q1 source/runtime evidence | Required Q2 inference-state evidence |
+| --- | --- | --- |
+| base_all /11760341 | Executed command, resolved startup/load stdout, exact BioNeMo/Evo2LoRA/Bridge/Core revisions and dirty diff, environment/container or dependency/build identities | Actual pretrained iteration and every inference-relevant shard/hash; actual initial adapter resume or explicit none; any prior merge/base/embedding/output/norm/buffer modification |
+| maxent_initial /11776574 | Same records, or an explicit hash-bound statement that the identical source/runtime was used | Actual H3/other parent file manifest selected then, resumed adapter identity or none, hidden non-adapter changes accounted/excluded |
+| maxent_restart /11803647 | Restart command/effective overrides and source-resolved loading behavior with finetune=false | Actual loaded full parent plus resumed adapter hash, including whether it is delivered MaxEnt1600; any changed inference state |
+
+Existing base conversioniter1/H3iter2000 input manifests may be referenced by their immutable receipts, but directory names, current latest pointers, equal sizes, counters and config declarations cannot provide the per-job binding. An explicit authoritative manifest/source/load receipt associating **all inference state** with each delivered family is the minimum needed. If unknown historical resume is independently shown not to alter any absent backbone/extra state, it can remain a continuity/true-start limitation; that exclusion is not currently established. The1600→1700 continuation must be evidenced separately even if both endpoints later qualify.
+
+For R0, supply the exact original implementation/dependencies and authoritative complete state association. B04 can then implement the faithful native wrapper and generate a training-only original reference with provenance, after renewed stage approval. The new contract gate intentionally ships no guessed native backend.
+
+For R2, if the original environment cannot be reproduced here, provide an **independently authoritative original-route adapter fixture** for the same full state. It must bind parent/adapter/config/source/environment/output-head/tokenizer identities; exact approved12-row manifest SHA256 `42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30` and ordered-ID SHA256 `1800b51b5262a453820797b1c42e7e99ca1788bd6d2aca4c77c886b053436ba8`; token IDs/positions/masks; all26 width1920 pooled coordinates; full-vocabulary LM output information sufficient for the independent reduction; float32 per-row loss sums/int64 valid counts; physical8/logical packing/filler exclusion and original precision/pooling/backend. Give file hashes, source provenance and exact case coverage. Candidate-generated or parent-only outputs cannot authenticate it. A route-level fixture can later support compatible additional payloads only with an explicit qualified-route receipt and their own load/smoke checks, not equality against another checkpoint.
+
+Current gate implementation is deliberately conservative: execution requires pinned same-state original fixtures for principal/swap cases. Route-only inheritance and R0 first-fixture generation still need native-source implementation/qualification once evidence is available. The interface/unit tests are engineering evidence, not permission or proof to proceed with B06.
+
+Keep Q3/Q4 separate: true complete pre-relearning states are needed for true-start/difference-in-change claims; valid-token/unique-example/update/packing/resume accounting is needed for matched-exposure or attribution claims. Missing Q3/Q4 alone need not block otherwise technically valid descriptive endpoint evaluation. Do not provide new hazardous dataset contents, new test populations or learned outputs unrelated to this benign training fixture.
+
+No B05 prompt was read. Resume B04 only after the missing evidence or a concrete scope decision and fresh explicit approval; no automatic polling, installation, fallback parent, stage advancement or message is queued.

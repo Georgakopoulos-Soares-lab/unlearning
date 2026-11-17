@@ -1,0 +1,270 @@
+{
+  "schema": "POD_B.B04_identity.v1",
+  "status": "BLOCKED_NO_FAITHFULLY_BOUND_FULL_MODEL",
+  "families": [
+    {
+      "family": "base_all",
+      "delivery_count": 18,
+      "job_id": "11760341",
+      "config_sha256": "69b1920a8bf46ab226d1282d83ae4ffab75167bb8c9cd8eaeb17b982055083a0",
+      "delivery_ids": [
+        "base/iter_0000100",
+        "base/iter_0000200",
+        "base/iter_0000300",
+        "base/iter_0000400",
+        "base/iter_0000500",
+        "base/iter_0000600",
+        "base/iter_0000700",
+        "base/iter_0000800",
+        "base/iter_0000900",
+        "base/iter_0001000",
+        "base/iter_0001100",
+        "base/iter_0001200",
+        "base/iter_0001300",
+        "base/iter_0001400",
+        "base/iter_0001500",
+        "base/iter_0001600",
+        "base/iter_0001700",
+        "base/iter_0001800"
+      ],
+      "selected_representatives": [
+        "base/iter_0000100",
+        "base/iter_0001800"
+      ],
+      "declared_pretrained_path": "/projects/MENTISLab/unlearning/checkpoints/evo2_1b_base_mbridge",
+      "declared_resume_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "saved_finetune": true,
+      "adapter_state": "All family deliveries historically adapter-only; selected2 freshly verified inB04",
+      "actual_backbone_manifest": null,
+      "actual_job_source_revision": null,
+      "actual_environment_or_container": null,
+      "effective_job_command_and_overrides": null,
+      "actual_resumed_adapter_hash": null,
+      "inference_state_complete": false,
+      "job_association_established": false,
+      "hidden_backbone_merge_or_extra_inference_state_excluded": false,
+      "true_initial_reference": null,
+      "actual_valid_token_exposure": null,
+      "unique_example_exposure": null,
+      "parent_candidates_not_assignments": [
+        "B03 known base conversioniter1",
+        "B03 known H3-onlyiter2000"
+      ],
+      "status": "IDENTITY_BLOCKED",
+      "route_status": {
+        "R0": "IDENTITY_BLOCKED_ORIGINAL_SOURCE_UNKNOWN",
+        "R2": "RUNTIME_BLOCKED_ORIGINAL_REFERENCE_AND_STATE_BINDING_MISSING"
+      },
+      "resume_history_limit": "Unknown resume could still imply a different absent backbone/merge/extra state; therefore it remains an inference-identity blocker here, not merely a trajectory-history gap.",
+      "evidence_ids": [
+        "B04.E1",
+        "B04.E2",
+        "B04.E3",
+        "B04.E7"
+      ]
+    },
+    {
+      "family": "maxent_initial",
+      "delivery_count": 16,
+      "job_id": "11776574",
+      "config_sha256": "5e60857d3dc2781a9bd0664330f1cfc80b3bba1d7e42ea8ec572cf86ae890324",
+      "delivery_ids": [
+        "maxent/iter_0000100",
+        "maxent/iter_0000200",
+        "maxent/iter_0000300",
+        "maxent/iter_0000400",
+        "maxent/iter_0000500",
+        "maxent/iter_0000600",
+        "maxent/iter_0000700",
+        "maxent/iter_0000800",
+        "maxent/iter_0000900",
+        "maxent/iter_0001000",
+        "maxent/iter_0001100",
+        "maxent/iter_0001200",
+        "maxent/iter_0001300",
+        "maxent/iter_0001400",
+        "maxent/iter_0001500",
+        "maxent/iter_0001600"
+      ],
+      "selected_representatives": [
+        "maxent/iter_0000100",
+        "maxent/iter_0001600"
+      ],
+      "declared_pretrained_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "declared_resume_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "saved_finetune": true,
+      "adapter_state": "All family deliveries historically adapter-only; selected2 freshly verified inB04",
+      "actual_backbone_manifest": null,
+      "actual_job_source_revision": null,
+      "actual_environment_or_container": null,
+      "effective_job_command_and_overrides": null,
+      "actual_resumed_adapter_hash": null,
+      "inference_state_complete": false,
+      "job_association_established": false,
+      "hidden_backbone_merge_or_extra_inference_state_excluded": false,
+      "true_initial_reference": null,
+      "actual_valid_token_exposure": null,
+      "unique_example_exposure": null,
+      "parent_candidates_not_assignments": [
+        "B03 known base conversioniter1",
+        "B03 known H3-onlyiter2000"
+      ],
+      "status": "IDENTITY_BLOCKED",
+      "route_status": {
+        "R0": "IDENTITY_BLOCKED_ORIGINAL_SOURCE_UNKNOWN",
+        "R2": "RUNTIME_BLOCKED_ORIGINAL_REFERENCE_AND_STATE_BINDING_MISSING"
+      },
+      "resume_history_limit": "Unknown resume could still imply a different absent backbone/merge/extra state; therefore it remains an inference-identity blocker here, not merely a trajectory-history gap.",
+      "evidence_ids": [
+        "B04.E1",
+        "B04.E2",
+        "B04.E3",
+        "B04.E7"
+      ]
+    },
+    {
+      "family": "maxent_restart",
+      "delivery_count": 2,
+      "job_id": "11803647",
+      "config_sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812",
+      "delivery_ids": [
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "selected_representatives": [
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "declared_pretrained_path": "/projects/MENTISLab/unlearning/results/evo2_maxent/emp_h3_human_host_tropism/checkpoints",
+      "declared_resume_path": "/projects/MENTISLab/unlearning/results/evo2_causal_lm_maxent/lora_host_tropism_maxent/checkpoints",
+      "saved_finetune": false,
+      "adapter_state": "All family deliveries historically adapter-only; selected2 freshly verified inB04",
+      "actual_backbone_manifest": null,
+      "actual_job_source_revision": null,
+      "actual_environment_or_container": null,
+      "effective_job_command_and_overrides": null,
+      "actual_resumed_adapter_hash": null,
+      "inference_state_complete": false,
+      "job_association_established": false,
+      "hidden_backbone_merge_or_extra_inference_state_excluded": false,
+      "true_initial_reference": null,
+      "actual_valid_token_exposure": null,
+      "unique_example_exposure": null,
+      "parent_candidates_not_assignments": [
+        "B03 known base conversioniter1",
+        "B03 known H3-onlyiter2000"
+      ],
+      "status": "IDENTITY_BLOCKED",
+      "route_status": {
+        "R0": "IDENTITY_BLOCKED_ORIGINAL_SOURCE_UNKNOWN",
+        "R2": "RUNTIME_BLOCKED_ORIGINAL_REFERENCE_AND_STATE_BINDING_MISSING"
+      },
+      "resume_history_limit": "Unknown resume could still imply a different absent backbone/merge/extra state; therefore it remains an inference-identity blocker here, not merely a trajectory-history gap.",
+      "evidence_ids": [
+        "B04.E1",
+        "B04.E2",
+        "B04.E3",
+        "B04.E7"
+      ]
+    }
+  ],
+  "restart": {
+    "from": "maxent/iter_0001600",
+    "to": "maxent/iter_0001700",
+    "jobs": [
+      "11776574",
+      "11803647"
+    ],
+    "adapter_bytes_freshly_verified": true,
+    "actual_resumed_adapter_hash": null,
+    "continuity_proven": false,
+    "same_parent_proven": false,
+    "interpretation": "Distinct adapter hashes/counters/finetune flag do not prove transition continuity; endpoint contrast needs both complete states qualified."
+  },
+  "Q1": "Original source/runtime/commands unresolved",
+  "Q2": "Full inference-state/job association and hidden backbone/extra-state exclusion unresolved",
+  "Q3": "True initial states missing; parent-only/disabled adapter/step100 not substituted",
+  "Q4": "Actual exposure missing;128*step not matched exposure",
+  "full_models_qualified": 0,
+  "models_identity_blocked": 36,
+  "no_parent_guessing": true,
+  "evidence_map": [
+    {
+      "id": "B04.E1",
+      "type": "new_bounded_authoritative_source_refresh",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/DISCOVERY_PASS.json",
+        "sha256": "178633632d7b8a7f3559eb0ad4de0d8dfce9c3422d794f1d52869167f3a40e31"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "9 directly listed relevant folders and unchanged project bionemo@b90fc1853d1d3be79922a98a2649c91c89716637; no newly supplied job/runtime/parent/fixture evidence found.",
+      "limitations": "Scoped search only, not global absence. Four listings directly compare equal to B02 normalized initial records; other locations use current direct listing and prior documented findings. No unrelated datasets/checkpoints traversed."
+    },
+    {
+      "id": "B04.E2",
+      "type": "new_selected_CPU_payload_qualification",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/CPU_ADAPTER_RESULTS.json",
+        "sha256": "2d69704ca153c3c4b627ca14706c3abe6191339b484785f1bf4e1d9ee33ab59a"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "All6 planned adapters freshly hash-match historical inputs and all1200 per-tensor hashes/shapes/dtypes/finiteness;600 module instances. All3 config families and both restart endpoints covered.",
+      "limitations": "Adapter integrity only; no backbone/model load, inference, original-route comparison, runtime or job-parent qualification.129 parent weights were not rehashed because no actual per-job parent assignment is established."
+    },
+    {
+      "id": "B04.E3",
+      "type": "new_inert_source_API_hash_recheck",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/SOURCE_API_PREFLIGHT.json",
+        "sha256": "fa2c68201ce04a278500b4cf069522f62923b5b86243f2afe97c16bdb6e85f88"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "9 official source copies match recorded Git blobs;14 serialized adapter fields supported statically;6 configs rank16/alpha32/pre-dropout.1/params_to_save200.",
+      "limitations": "No candidate module import, constructor or provider/Core/TE/Hyena execution. This does not identify the actual job implementation or justify an unchanged parent-stack drop-in."
+    },
+    {
+      "id": "B04.E4",
+      "type": "new_preserved_CPU_import_and_environment_metadata",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/ENVIRONMENT_LOCK.json",
+        "sha256": "9699f3343b8ae41b8d9cec76699c229589cd562c24c83376725645477eb5e427"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "Existing Torch/DCP CPU import works, Torch_C/interpreter hashes and build metadata recorded, native tracked trees clean, CUDA context never initialized.",
+      "limitations": "No new environment/build/wheel installation. Native adapter ABI/runtime remains unattempted; metadata/package list is not complete environment reproduction."
+    },
+    {
+      "id": "B04.E5",
+      "type": "focused_disposable_CPU_contract_tests",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/logs/contracts-tests.log",
+        "sha256": "ac38a5a9b9db292cc80d9c484523a8a81846733be82bc0b8fa25de774e1e0ca1"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "Final74 tests pass: input/state/tensor/reference rejection, fixed-batch/mask/coordinate/LM checks, tiny algebra and process cleanup.",
+      "limitations": "Synthetic data/backends only. No native adapter algebra, neural forward, authoritative fixture or scientific model qualification. Initial62-test suite also passed; stronger preflight tests prompted the final rerun."
+    },
+    {
+      "id": "B04.E6",
+      "type": "actual_representative_preflight_rejections",
+      "source": {
+        "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/PREFLIGHT_RESULTS.json",
+        "sha256": "8320fe703945f22a7299e175afe0d3e3d8fcbe7b5a5cda82e24f4b308f26d4e2"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "All6 real representative CLI preflights reject IDENTITY_BLOCKED before backend import/GPU allocation.",
+      "limitations": "Expected control rejection, not6 numerical failures or6 inference attempts. Missing bindings/reference remain external prerequisites."
+    },
+    {
+      "id": "B04.E7",
+      "type": "reused_B03_frozen_input_and_parent_anchor_evidence",
+      "source": {
+        "path": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/RECOVERY_MANIFEST.json",
+        "sha256": "20a715cc44c9023a37ad025e7efff21e448cbf656aa7ac02ba7e506b84fc1b1a"
+      },
+      "observed_utc": "2026-11-17T10:27:09.946103+00:00",
+      "claim": "B03 frozen data/folds/historical anchors reused; exact12-row training fixture rechecked at B04 entry.384-row escalation not used.",
+      "limitations": "Parent-only162/28 and historical saved-head diagnostics do not qualify supplied adapters. No recovery, fitting, held-out replay or new outputs repeated."
+    }
+  ]
+}

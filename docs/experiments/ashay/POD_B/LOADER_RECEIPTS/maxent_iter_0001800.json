@@ -1,0 +1,68 @@
+{
+  "schema": "POD_B.B04_loader-receipt.v1",
+  "id": "maxent/iter_0001800",
+  "family": "maxent_restart",
+  "job_id": "11803647",
+  "qualification_status": "IDENTITY_BLOCKED",
+  "cpu_integrity_status": "PASS_CPU_ADAPTER_BYTES_AND_TENSORS",
+  "full_model_qualified": false,
+  "files_freshly_hashed": [
+    {
+      "name": "train_state.pt",
+      "bytes": 3461,
+      "sha256": "b2b8006f80bd5fc85f7f00dea345cc599df2f29abcc28521521a8b1dbe0ebdb7"
+    },
+    {
+      "name": "run_config.yaml",
+      "bytes": 39342,
+      "sha256": "7f86c8f52cc04dd053bc466eee151dbef533e9e9257347f9d9ef976d27ec6812"
+    },
+    {
+      "name": "metadata.json",
+      "bytes": 119,
+      "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+    },
+    {
+      "name": "common.pt",
+      "bytes": 1767,
+      "sha256": "2ac206e78028ba24810ff600db19d43c5b26a085494d5501dee708d37c4bc25a"
+    },
+    {
+      "name": "__0_0.distcp",
+      "bytes": 173352705,
+      "sha256": "8fba7f205d5809ae0d6676c2189fa7a163fa9f4f97665f3b0bd4c03d99d24c70"
+    },
+    {
+      "name": ".metadata",
+      "bytes": 142431,
+      "sha256": "27658e259aa59d2a8fcc40b8fb95705ce0d0ef5e122529e544a68b6e69a7c9c1"
+    }
+  ],
+  "model_tensor_count": 200,
+  "adapted_modules": 100,
+  "tensor_finiteness": "PASS_CPU",
+  "per_tensor_historical_content_hash_match": true,
+  "tensor_content_fingerprint": "6bf999dff36944fda3448a9d44d0af6b16c471f7686f034a0976989e5589f261",
+  "tensor_schema_sha256": "38a84e1cd2b75b58e7a6d61fb2114238d17812f7301a5e00e2f5e1091b831e78",
+  "private_tensor_accounting": {
+    "path": "/workspace/meeting-artifacts/POD_B/B04-runtime-20261117T095758Z/evidence/CPU_maxent_iter_0001800.json",
+    "sha256": "b97714cc4d554232c01b75730ce8c4a3923573b0d2457c02f3053e96415c4048"
+  },
+  "actual_parent_fingerprint": null,
+  "inference_relevant_buffers_accounted": false,
+  "adapter_injected_into_model": false,
+  "backbone_invariance_checked": false,
+  "native_branch_execution_checked": false,
+  "numerical_reference": null,
+  "cuda_context_created": false,
+  "next_required_evidence": [
+    "Q1",
+    "Q2",
+    "original-route adapter fixture or verifiedR0 source capable of producing one"
+  ],
+  "evidence_ids": [
+    "B04.E2",
+    "B04.E3",
+    "B04.E6"
+  ]
+}
