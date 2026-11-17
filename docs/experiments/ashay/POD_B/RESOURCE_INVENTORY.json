@@ -1,0 +1,52 @@
+{
+  "recorded_utc": "2026-11-17T07:53:41.460592+00:00",
+  "gpu_csv": "NVIDIA H100 NVL, 595.112.07, 95830 MiB, 0 MiB, 0 %",
+  "gpu_compute_pids": [],
+  "cpu_affinity_count": 128,
+  "cpu_quota_us": 1530000,
+  "cpu_period_us": 100000,
+  "effective_cpu_quota_cores": 15.3,
+  "ram": {
+    "MemTotal": 1623013855232,
+    "MemAvailable": 1538664468480
+  },
+  "cgroup_memory_limit_bytes": 214999998464,
+  "disk_workspace": {
+    "total_bytes": 898491987329024,
+    "used_bytes": 570277640470528,
+    "free_bytes": 328214346858496,
+    "quota_note": "Shared filesystem capacity; no private allocation/quota guarantee"
+  },
+  "tools": {
+    "git": "/usr/bin/git",
+    "tmux": "/usr/bin/tmux",
+    "nvidia-smi": "/usr/bin/nvidia-smi",
+    "nvcc": "/usr/local/cuda/bin/nvcc",
+    "bash": "/usr/bin/bash",
+    "python3": "/workspace/venvs/unlearning-admin-pod-b/bin/python3"
+  },
+  "admin_python": "/workspace/venvs/unlearning-admin-pod-b/bin/python",
+  "scientific_python": "/workspace/venvs/evo2-pilot/bin/python",
+  "scientific_python_exists": true,
+  "installed_scientific_package_metadata": {
+    "torch": "2.8.0+cu128",
+    "transformer-engine": "2.3.0",
+    "transformer-engine-torch": "2.3.0",
+    "bionemo-evo2": "2.4",
+    "megatron-bridge": "0.3.0rc0",
+    "megatron-core": "0.16.0rc0",
+    "causal-conv1d": "1.5.4",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.8.0",
+    "tokenizers": "0.22.1",
+    "flash-attn": "2.8.3"
+  },
+  "scientific_packages_imported_for_inventory": false,
+  "runtime_validated_during_B01": false,
+  "new_installations": 0,
+  "new_model_loads": 0,
+  "new_gpu_seconds": 0
+}

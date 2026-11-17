@@ -10,3 +10,8 @@ Use /workspace/venvs/evo2-pilot/bin/python, pinned original Evo2-1B backend and 
 
 Current requested task and immutable receipt: docs/experiments/ashay/extension/prompt_receipt.json; verbatim text in /workspace/meeting-artifacts/evo2-extension-20261021T0942/PROMPT.txt. Read SESSION_HANDOFF.md in that docs directory before resuming. Update it at useful checkpoints. Never log credentials.
 <!-- ASHAY PROJECT END -->
+
+
+<!-- POD_B CURRENT OWNERSHIP 2026-11-17 -->
+New research work is authorized only on branch `POD_B` in `/workspace/wt-POD_B`. All other branches and worktrees remain read-only. This current user instruction supersedes historical branch/path assignments above. Verify origin, worktree and current branch before every repository mutation. Task prompts come only from the prompts repository branch `POD_B`, pinned at approval time; prompt snapshots stay private outside Git. Each numbered stage requires new explicit approval; finish, report and stop. Current state and reconciliation: `docs/experiments/ashay/POD_B/STATE.json` and `SESSION_HANDOFF.md`. Do not run historical launchers or automatically advance.
+<!-- END POD_B CURRENT OWNERSHIP -->

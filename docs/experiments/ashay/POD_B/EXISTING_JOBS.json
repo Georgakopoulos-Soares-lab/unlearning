@@ -1,0 +1,63 @@
+{
+  "observed_processes": [
+    {
+      "pid": 140,
+      "ppid": 57,
+      "process_name": "jupyter-lab",
+      "matched_script_basenames": []
+    },
+    {
+      "pid": 5102,
+      "ppid": 1,
+      "process_name": "codex",
+      "matched_script_basenames": []
+    },
+    {
+      "pid": 5206,
+      "ppid": 1,
+      "process_name": "codex",
+      "matched_script_basenames": []
+    },
+    {
+      "pid": 5974,
+      "ppid": 1,
+      "process_name": "tmux: server",
+      "matched_script_basenames": []
+    },
+    {
+      "pid": 5975,
+      "ppid": 5974,
+      "process_name": "bash",
+      "matched_script_basenames": [
+        "run_agent.sh"
+      ]
+    },
+    {
+      "pid": 5983,
+      "ppid": 5975,
+      "process_name": "codex",
+      "matched_script_basenames": []
+    },
+    {
+      "pid": 10387,
+      "ppid": 10384,
+      "process_name": "python",
+      "matched_script_basenames": []
+    }
+  ],
+  "old_launcher_processes_found": true,
+  "scientific_or_transfer_workers_found": false,
+  "gpu_compute_processes": [],
+  "actions_taken": "Inspected safe identities only; no signals, termination, old launcher execution, queues, watchers or scheduled work created",
+  "interpretation": "Existing Codex/tmux/Jupyter infrastructure preserved; the current audit Python process is administrative, not a scientific worker",
+  "launcher_classification": {
+    "pid": 5975,
+    "child_codex_pid": 5983,
+    "tmux_session": "unlearning-b",
+    "status": "Existing single-invocation wrapper hosting current interactive Codex; no automatic restart or stage queue",
+    "source_path": "/workspace/unlearning-two-pod-setup/run_agent.sh",
+    "source_sha256": "aa204ea7bec2f837f92476cda2d4d9e1762e78c42861a619a3b56bc3e6a933ab",
+    "after_codex_exit": "Releases role lock and execs an interactive shell; printed resume command is not automatically executed",
+    "action": "Preserved wrapper and role lock; current instructions supersede its old initial assignment. Do not invoke old start/resume launchers for new work."
+  }
+}

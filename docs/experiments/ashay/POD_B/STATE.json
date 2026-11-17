@@ -1,0 +1,148 @@
+{
+  "stage": "B01",
+  "status": "COMPLETE",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B01-reconciliation-20261117T074926Z",
+  "research_context": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "worktree": "/workspace/wt-POD_B",
+    "branch": "POD_B"
+  },
+  "base_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "remote_start_commit": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "bootstrap_context": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "worktree": "/workspace/repos/unlearning-pod-b",
+    "branch": "main"
+  },
+  "bootstrap_scope": "Authorized worktree/local POD_B creation only; all pre-existing local branch refs verified unchanged",
+  "preexisting_local_branch_refs": {
+    "refs/heads/experiments-ashay-relearning-benign-v1": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+    "refs/heads/main": "af92e593162478c8aa40b6303ed0f0e508affac7"
+  },
+  "prompt_receipt": "/workspace/meeting-artifacts/POD_B/B01-reconciliation-20261117T074926Z/PROMPT_RECEIPT.json",
+  "prompt_commit": "903ef4f725301c477a438e721e15568967a8f395",
+  "current_run_science_gpu_seconds": 0,
+  "current_run_new_fits": 0,
+  "next_stage_authorized": false,
+  "approved_scope": "B01 reconciliation only; no experiments or migration of scientific code/results",
+  "research_head_at_start": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "prompt_hashes": {
+    "POD_B_MASTER.md": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512",
+    "override_pod_b_.txt": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149",
+    "POD_B_01_WORKSPACE.md": "ea34e6e04f229c3d60b495ac83c61c7b78566dd9bad9fc2876999aa1c5596f1a",
+    "b01-v2.txt": "79e9ad173260e12a5457893a4e96edf3156c10f45302615a0964d61ad5bedbea"
+  },
+  "budget": {
+    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-B.json",
+    "source_state_sha256": "efb43521cf721738ed04e7f06ec5d1585e5c40f65008f920eff467726d116e9e",
+    "session_window_start_utc": "2026-11-17T06:33:21+00:00",
+    "scientific_stage_cutoff_utc": "2026-11-17T17:33:21+00:00",
+    "session_deadline_utc": "2026-11-17T20:33:21+00:00",
+    "clock_reset": false,
+    "observed_utc": "2026-11-17T07:53:41.460592+00:00",
+    "remaining_to_scientific_cutoff_seconds": 34779.539408,
+    "remaining_to_session_deadline_seconds": 45579.539408,
+    "authorized_gpu_stage_seconds": null,
+    "null_gpu_allowance_meaning": "No separate fixed stage-seconds cap; stage approval still required",
+    "deadline_expired": false,
+    "provider_rental_start": null,
+    "provider_hourly_rate_usd": null,
+    "approval_waiting_consumes_original_window": true,
+    "preserved_ledger_files": [
+      {
+        "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
+        "sha256": "d4e8118962729c561d111fb3c8545120258fc8126fed8a2927f04462b1a35c1b",
+        "active_since": null
+      },
+      {
+        "path": "/workspace/meeting-artifacts/relearning-benign-v1/session_gpu_budget.json",
+        "sha256": "82c5cc16854727947faa781d39b62b7b65733f01b701af684fcc12f37070ddb6",
+        "active_since": null
+      }
+    ]
+  },
+  "prior_source_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75",
+  "prior_artifact_root": "/workspace/meeting-artifacts/relearning-benign-v1",
+  "prior_protocol_sha256": "bf2d192b7e5aa12a6cc655b7ade3b8cef4a64e6de1c8a96071b3bd138e133970",
+  "selected_checkpoint_ids": [],
+  "prior_inventoried_candidate_ids": [
+    "base/iter_0000100",
+    "base/iter_0000200",
+    "base/iter_0000300",
+    "base/iter_0000400",
+    "base/iter_0000500",
+    "base/iter_0000600",
+    "base/iter_0000700",
+    "base/iter_0000800",
+    "base/iter_0000900",
+    "base/iter_0001000",
+    "base/iter_0001100",
+    "base/iter_0001200",
+    "base/iter_0001300",
+    "base/iter_0001400",
+    "base/iter_0001500",
+    "base/iter_0001600",
+    "base/iter_0001700",
+    "base/iter_0001800",
+    "maxent/iter_0000100",
+    "maxent/iter_0000200",
+    "maxent/iter_0000300",
+    "maxent/iter_0000400",
+    "maxent/iter_0000500",
+    "maxent/iter_0000600",
+    "maxent/iter_0000700",
+    "maxent/iter_0000800",
+    "maxent/iter_0000900",
+    "maxent/iter_0001000",
+    "maxent/iter_0001100",
+    "maxent/iter_0001200",
+    "maxent/iter_0001300",
+    "maxent/iter_0001400",
+    "maxent/iter_0001500",
+    "maxent/iter_0001600",
+    "maxent/iter_0001700",
+    "maxent/iter_0001800"
+  ],
+  "scientific_coverage": {
+    "supplied_model_completed_cells": 0,
+    "supplied_model_potential_cells": 16848,
+    "prior_distinct_adapter_payloads": 36,
+    "B01_new_measurements": 0,
+    "B01_new_fits": 0,
+    "B01_new_gpu_seconds": 0
+  },
+  "prior_completed_evidence": {
+    "parent_smoke_comparisons": 162,
+    "training384_checks": 28,
+    "prior_gpu_stage_seconds": 49.65920904699851,
+    "prior_backup_revision": "32206eeed1dd9024fc92ecd898be39094840de94"
+  },
+  "blockers": [
+    "Exact Evo2LoRA inference reconstruction not established for supplied adapters",
+    "Actual pretrained-parent/resume initialization unresolved; both resume paths name MaxEnt",
+    "True trajectory-zero adapter references absent; start-relative contrasts unavailable"
+  ],
+  "owned_scientific_jobs": [],
+  "legacy_wrapper": {
+    "pid": 5975,
+    "child_codex_pid": 5983,
+    "tmux_session": "unlearning-b",
+    "status": "Existing single-invocation wrapper hosting current interactive Codex; no automatic restart or stage queue",
+    "source_path": "/workspace/unlearning-two-pod-setup/run_agent.sh",
+    "source_sha256": "aa204ea7bec2f837f92476cda2d4d9e1762e78c42861a619a3b56bc3e6a933ab",
+    "after_codex_exit": "Releases role lock and execs an interactive shell; printed resume command is not automatically executed",
+    "action": "Preserved wrapper and role lock; current instructions supersede its old initial assignment. Do not invoke old start/resume launchers for new work."
+  },
+  "next_stage": "B02",
+  "migration_approved": false,
+  "migration_performed": false,
+  "no_background_stage_queue": true,
+  "later_prompts_read": false,
+  "last_checkpoint_utc": "2026-11-17T07:53:41.460592+00:00",
+  "completion_receipts": {
+    "workspace": "WORKSPACE_RECEIPT.json",
+    "resource_inventory": "RESOURCE_INVENTORY.json",
+    "prior_evidence_audit": "PRIOR_EVIDENCE_AUDIT.json",
+    "prior_backup_receipt_at_commit": "cf7b861619d05b8916690471fcd9469ab9d80f75:docs/experiments/ashay/relearning-benign-v1/BACKUP_VERIFICATION.json"
+  }
+}
