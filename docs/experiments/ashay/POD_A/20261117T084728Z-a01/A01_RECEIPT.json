@@ -1,0 +1,250 @@
+{
+  "schema": "pod-a-stage-receipt-v1",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A01",
+  "attempt_id": "A01-attempt-001",
+  "status": "PARTIAL",
+  "approval": {
+    "direct_message": "👍 A01\n\nFirst verify every path in PACKAGE_FILES.json and validate SHA256SUMS,\nincluding evidence/ and templates/. Report missing or mismatched files\nbefore any research-repository changes. Execute A01 only, then stop. these prompts over here - https://github.com/ashay-sriv-06/test-prompts-push/tree/POD_A",
+    "message_time_utc": null,
+    "observed_time_utc": "2026-11-17T08:47:28.846181+00:00"
+  },
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_A",
+    "commit": "703934532c8e6e9c300e4a0b0ec6f281c8953fcc",
+    "effective_files": [
+      {
+        "path": "POD_A_MASTER.md",
+        "sha256": "7ed638c1fa912302becedb1096a82ac3d097a6bf07117d738c3604f84c07588b"
+      },
+      {
+        "path": "A01_WORKSPACE_RECONCILIATION.md",
+        "sha256": "11af42677f77c250a489c53324e1b4ebe9fc82b0cae362c2f67c5a8f61d2fbde"
+      },
+      {
+        "path": "SCIENTIFIC_CONTRACT.md",
+        "sha256": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413"
+      },
+      {
+        "path": "ARTIFACT_CONTRACT.md",
+        "sha256": "c58d9567f7dac25b163fbe494fbf9a2e10ed74db0d464f2395bf07ffd1f81f60"
+      },
+      {
+        "path": "SOURCE_NOTES.md",
+        "sha256": "d577f8176a47ddc47b59079393fca6c050795030be379d8e5d5c3bd613282bfa"
+      },
+      {
+        "path": "SOURCE_MANIFEST.json",
+        "sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f"
+      },
+      {
+        "path": "STAGE_MAP.json",
+        "sha256": "1a813e7dab6507be6766cc982b0b6ba5f5d2af962cfee029432c60dc64a5e54b"
+      }
+    ]
+  },
+  "research": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "branch": "POD_A",
+    "worktree": "/workspace/wt-pod-a",
+    "head_before": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+    "head_after": null,
+    "remote_head_before": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+    "remote_matches_before": true,
+    "preexisting_dirty_paths": [],
+    "delivery_note": "Final commit/remote equality sealed in post-push private DELIVERY_RECEIPT.json; this precommit receipt makes no self-hash claim."
+  },
+  "protocol_sha256": "fb973b4b2e7963d5c5e2ae4b02cbe70ab527d9e61e1fbf7d3eee17373c80f29f",
+  "coverage_plan_sha256": null,
+  "budget": {
+    "schema": "pod-a-budget-v1",
+    "observed_utc": "2026-11-17T08:48:27.415555+00:00",
+    "original_start_utc": null,
+    "science_cutoff_utc": null,
+    "deadline_utc": null,
+    "remaining_seconds": null,
+    "elapsed_seconds": null,
+    "wall_hours": 14,
+    "closure_reserve_hours": 3,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "rate_basis": "Not independently supplied; no invoice estimate.",
+    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-A.json",
+    "source_state_exists": false,
+    "setup_records": [
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-A.sh",
+        "bytes": 43647,
+        "mtime_utc": "2026-11-17T06:25:26+00:00",
+        "sha256": "5a8eea5c3716b555fd8e539db7e5b0e7470bcee5693191b4758a0de373624a70",
+        "inode": 114593093
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-A.txt",
+        "bytes": 388,
+        "mtime_utc": "2026-11-17T06:25:25+00:00",
+        "sha256": "72ea95b118b2d936bbddadb56b96919a849c7c71def4157ccd2743c447c9b383",
+        "inode": 114538039
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+        "bytes": 0,
+        "mtime_utc": "2026-11-17T06:24:54+00:00",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "inode": 114292462
+      }
+    ],
+    "container_pid1_start_utc": "2026-11-17T06:14:41.200000+00:00",
+    "provider_start_verified": false,
+    "provisional_container_proxy_only": {
+      "start_utc": "2026-11-17T06:14:41.200000+00:00",
+      "science_cutoff_utc": "2026-11-17T17:14:41.200000+00:00",
+      "deadline_utc": "2026-11-17T20:14:41.200000+00:00",
+      "remaining_seconds_at_observation": 41173.78441,
+      "caveat": "Arithmetic illustration using container process start. Not adopted as original budget or permission; provisioning/rental could predate it."
+    },
+    "historical_prompt_inputs_note": "Unlisted historical 02_SESSION_INPUTS.json contains a 300-minute allowance, no current start; superseded by the current 14-hour controller and not adopted.",
+    "new_scientific_gpu_seconds": 0,
+    "new_inference_units": 0,
+    "new_probe_fits": 0,
+    "compute_blocked": true,
+    "deadline_reset": false
+  },
+  "coverage": {
+    "unit_definition": "A01 numbered administrative requirements; no science",
+    "expected": 8,
+    "new_evidence_collected": 7,
+    "partial": 1,
+    "new_verified_scientific": 0,
+    "reused_validated_scientific": 0,
+    "failed_scientific": 0,
+    "pending_scientific": "A02-A09 not approved"
+  },
+  "outputs": [
+    {
+      "path": "APPROVAL_LOG.jsonl",
+      "bytes": 721,
+      "sha256": "dd10308020fe8d8dccb3490c8a43bd98db9ceae102963c86055587591f0e824d"
+    },
+    {
+      "path": "BUDGET.json",
+      "bytes": 2237,
+      "sha256": "18c7a4021f3d10760a956111947bf214ee4e24cac4ba106f645c8888b9df3c97"
+    },
+    {
+      "path": "CONTROLLER_STATE.json",
+      "bytes": 7379,
+      "sha256": "8d974b61e845d0dcda49c2d6dbad5bdd325f7423318e064123bfbd8e6d7da5e7"
+    },
+    {
+      "path": "COVERAGE.csv",
+      "bytes": 160,
+      "sha256": "eea496661d1fd94b802a1caaf573ace667ab802b7ae7fd0fe523c72614c13512"
+    },
+    {
+      "path": "INSTRUCTION_RECONCILIATION.json",
+      "bytes": 1170,
+      "sha256": "dedeed66fb2a8a402b09fe5b2c4280309c21a181cbefda3933919fe450b454b7"
+    },
+    {
+      "path": "PACKAGE_VALIDATION.json",
+      "bytes": 6548,
+      "sha256": "c238f06efb58a65e324d7ed23ab5a24eeaa1ba89d43741392e720d4678799625"
+    },
+    {
+      "path": "PATHS.json",
+      "bytes": 1064,
+      "sha256": "26d690a9f4943aa3f54e70986a7342b268bcf7bf2c3d8e76c806b1ad6a5a0ff6"
+    },
+    {
+      "path": "PROCESS_INVENTORY.json",
+      "bytes": 8353,
+      "sha256": "32c76284f592f52ac1f64980e9319a85b33666ce58c655c5f9bd28f37c9a2f83"
+    },
+    {
+      "path": "RECONCILIATION.csv",
+      "bytes": 61013,
+      "sha256": "8e2f052802a0ee5a467b8c4f417270754b8ded5198323bebaac8cc45f9594fa4"
+    },
+    {
+      "path": "REMOTE_HANDOFF.json",
+      "bytes": 1582,
+      "sha256": "c6ca4cc06b32270708b602d25debfc332fdf2b38ed4d0ac40fd17e91a555f894"
+    },
+    {
+      "path": "RESUME_MANIFEST.json",
+      "bytes": 5176,
+      "sha256": "489d8940771683abf105815defe96762c27b2bb5d382434332e755e339eeb80f"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 3724,
+      "sha256": "c2545c54dc292ef6a638ca77a9a1f77ea4c8e75b8a6a2f9753ba53b5292c0b3b"
+    },
+    {
+      "path": "SOURCE_EVIDENCE_CHECK.json",
+      "bytes": 5462,
+      "sha256": "d033620437307cd381b366f164caf8a9ad3501670aa22357ee55de65b19d0a61"
+    },
+    {
+      "path": "STAGE_CHECKLIST.json",
+      "bytes": 1147,
+      "sha256": "484552c2629e9fd76ad6a044e468ee34b168fa47bcb2d8a356c9df720ae9abbf"
+    },
+    {
+      "path": "WORKSPACE_AUDIT.json",
+      "bytes": 6535,
+      "sha256": "90f0fa7817b721d966725531a71425380865a8b6c68487c1841e1d3a4b8a592e"
+    }
+  ],
+  "checks": [
+    {
+      "check": "Complete package presence and SHA256",
+      "status": "PASS",
+      "files": 31
+    },
+    {
+      "check": "Pinned research source identities",
+      "status": "PASS",
+      "files": 21
+    },
+    {
+      "check": "Canonical worktree/origin/push/common/branch/ancestry",
+      "status": "PASS"
+    },
+    {
+      "check": "No active research jobs/GPU owners or assignment auto-advancer in inspected surfaces",
+      "status": "PASS"
+    },
+    {
+      "check": "Original budget recovered",
+      "status": "BLOCKED"
+    },
+    {
+      "check": "Historical and other-branch state preservation",
+      "status": "Baseline captured; final comparison required before commit/push"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "ORIGINAL_BUDGET_UNVERIFIED",
+      "scope": "A01 readiness and any substantial subsequent compute",
+      "detail": "state/pod-A.json and timestamped setup completion receipts are absent. Setup lock mtime and PID1 start are evidence of activity, not the original setup argument or verified provider rental start. Definite original start/cutoff/deadline or explicit steering required. No clock reset."
+    }
+  ],
+  "owned_jobs": [],
+  "all_owned_jobs_quiescent": true,
+  "backup_status": "A01 small Git delivery only; private artifact upload/recovery not performed",
+  "resume_manifest_sha256": "489d8940771683abf105815defe96762c27b2bb5d382434332e755e339eeb80f",
+  "suggested_next_prompt_edits": [
+    "Resolve original deadline before approving more work.",
+    "Bind any eventual A02 to this run and distinguish fresh listings from historical missingness."
+  ],
+  "approval_for_next_stage": false,
+  "sealed_utc": "2026-11-17T08:48:30.078234+00:00",
+  "new_gpu_science_seconds": 0,
+  "precommit_revision": 2,
+  "precommit_revision_note": "CSV CRLF normalized to LF after staged whitespace validation; prior seal preserved privately. No scientific bytes changed."
+}
