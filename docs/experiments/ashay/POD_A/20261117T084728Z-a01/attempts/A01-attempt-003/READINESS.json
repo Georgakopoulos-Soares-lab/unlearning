@@ -1,0 +1,41 @@
+{
+  "schema": "pod-a-a01-readiness-v1",
+  "run_id": "20261117T084728Z-a01",
+  "attempt_id": "A01-attempt-003",
+  "a01_status": "COMPLETE",
+  "workspace_ready": true,
+  "ownership_ready": true,
+  "budget_amendment_recorded": true,
+  "original_budget_fabricated": false,
+  "prior_work_preserved": true,
+  "all_a01_effective_prompt_checks_pass": true,
+  "whole_package_integrity_pass": false,
+  "a01_readiness": "READY_FOR_ADMINISTRATIVE_CLOSURE_ONLY",
+  "scientific_scheduling_allowed": false,
+  "a02_ready": false,
+  "a02_started": false,
+  "future_stage_approved": false,
+  "next_stage_blockers": [
+    {
+      "id": "A02_PACKAGE_CHECKSUM_MISMATCH",
+      "scope": "Any future A02 execution",
+      "file": "A02_CHECKPOINT_INVENTORY.md",
+      "expected_sha256": "2614bb546d56cc17713a7258904a107115fbb72eecafbe51b66fb55016d0427e",
+      "actual_sha256": "978277f9225d71d06b486799a5f72be5da2870d9118b56260e04c3727f6114bd",
+      "repair": "User-managed prompt package needs a matching checksum before any A02 approval/execution."
+    },
+    {
+      "id": "SCIENCE_CUTOFF_PASSED",
+      "scope": "New scientific scheduling",
+      "cutoff_utc": "2026-11-17T06:45:00+00:00",
+      "detail": "Only closure/admin time remains; no new science. Later stages need direct approval and sufficient permitted time."
+    }
+  ],
+  "new_scientific_units": 0,
+  "reused_validated_scientific_units": 0,
+  "scientific_jobs_owned": [],
+  "gpu_locks_owned": [],
+  "deadline_utc": "2026-11-17T09:45:00+00:00",
+  "science_cutoff_utc": "2026-11-17T06:45:00+00:00",
+  "next_state": "WAITING_FOR_STEERING: A01"
+}

@@ -1,0 +1,278 @@
+{
+  "schema": "pod-a-stage-receipt-v1",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A01",
+  "attempt_id": "A01-attempt-003",
+  "resumed_from_attempt": "A01-attempt-002",
+  "status": "COMPLETE",
+  "scope": "Administrative readiness and explicit deadline amendment only",
+  "approval": {
+    "stage": "A01",
+    "attempt_id": "A01-attempt-003",
+    "direct_message": "👍 A01\n\nBudget steering: I explicitly authorize this run until\n[2026-11-17 01:45, PST  timezone and UTC-8 offset].\nReserve the final three hours for closure.\n\nRecord this as my explicit deadline amendment. Do not invent\nthe original start or restart a 14-hour clock.\n\nResume A01 to resolve the budget and finish its readiness handoff.\nPreserve previous work and reuse unchanged verified evidence.\nDo not start A02. Report readiness and stop.",
+    "message_time_utc": null,
+    "observed_time_utc": "2026-11-17T09:32:21.687325+00:00",
+    "prompt_commit": "181b85786b9e3683e4a463dcc0f9795d2f7a8455",
+    "prior_state_sha256": "6460811023b80fafb0bb85392cdf9529480b2642b42c58bec82fb18c3c2753cc",
+    "research_head": "89f73fa65b7667cbd5cb1731cde21c7080883c76",
+    "budget_amendment": {
+      "deadline_utc": "2026-11-17T09:45:00+00:00",
+      "closure_reserve_hours": 3
+    },
+    "a02_prohibited": true
+  },
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_A",
+    "commit": "181b85786b9e3683e4a463dcc0f9795d2f7a8455",
+    "effective_files": [
+      {
+        "path": "POD_A_MASTER.md",
+        "sha256": "7ed638c1fa912302becedb1096a82ac3d097a6bf07117d738c3604f84c07588b"
+      },
+      {
+        "path": "A01_WORKSPACE_RECONCILIATION.md",
+        "sha256": "11af42677f77c250a489c53324e1b4ebe9fc82b0cae362c2f67c5a8f61d2fbde"
+      },
+      {
+        "path": "SCIENTIFIC_CONTRACT.md",
+        "sha256": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413"
+      },
+      {
+        "path": "ARTIFACT_CONTRACT.md",
+        "sha256": "c58d9567f7dac25b163fbe494fbf9a2e10ed74db0d464f2395bf07ffd1f81f60"
+      },
+      {
+        "path": "SOURCE_NOTES.md",
+        "sha256": "d577f8176a47ddc47b59079393fca6c050795030be379d8e5d5c3bd613282bfa"
+      },
+      {
+        "path": "SOURCE_MANIFEST.json",
+        "sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f"
+      },
+      {
+        "path": "STAGE_MAP.json",
+        "sha256": "1a813e7dab6507be6766cc982b0b6ba5f5d2af962cfee029432c60dc64a5e54b"
+      }
+    ]
+  },
+  "research": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "branch": "POD_A",
+    "worktree": "/workspace/wt-pod-a",
+    "head_before": "89f73fa65b7667cbd5cb1731cde21c7080883c76",
+    "remote_head_before": "89f73fa65b7667cbd5cb1731cde21c7080883c76",
+    "preexisting_dirty_paths": [],
+    "head_after": null,
+    "delivery_note": "Final commit/remote equality in separate post-push private receipt."
+  },
+  "prior_state_sha256": "6460811023b80fafb0bb85392cdf9529480b2642b42c58bec82fb18c3c2753cc",
+  "budget": {
+    "schema": "pod-a-budget-v1",
+    "observed_utc": "2026-11-17T09:32:21.687325+00:00",
+    "original_start_utc": null,
+    "science_cutoff_utc": "2026-11-17T06:45:00+00:00",
+    "deadline_utc": "2026-11-17T09:45:00+00:00",
+    "remaining_seconds": 758.312675,
+    "elapsed_seconds": null,
+    "wall_hours": 14,
+    "closure_reserve_hours": 3,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "rate_basis": "Not independently supplied; no invoice estimate.",
+    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-A.json",
+    "source_state_exists": false,
+    "setup_records": [
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-A.txt",
+        "bytes": 388,
+        "mtime_utc": "2026-11-17T06:25:25+00:00",
+        "sha256": "72ea95b118b2d936bbddadb56b96919a849c7c71def4157ccd2743c447c9b383"
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-A.sh",
+        "bytes": 43647,
+        "mtime_utc": "2026-11-17T06:25:26+00:00",
+        "sha256": "5a8eea5c3716b555fd8e539db7e5b0e7470bcee5693191b4758a0de373624a70"
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+        "bytes": 0,
+        "mtime_utc": "2026-11-17T06:24:54+00:00",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "container_pid1_start_utc": "2026-11-17T06:14:41.200000+00:00",
+    "provider_start_verified": false,
+    "provisional_container_proxy_only": {
+      "start_utc": "2026-11-17T06:14:41.200000+00:00",
+      "science_cutoff_utc": "2026-11-17T17:14:41.200000+00:00",
+      "deadline_utc": "2026-11-17T20:14:41.200000+00:00",
+      "remaining_seconds_at_observation": 40185.598509,
+      "caveat": "Arithmetic illustration using container process start. Not adopted as original budget or permission; provisioning/rental could predate it."
+    },
+    "historical_prompt_inputs_note": "Unlisted historical 02_SESSION_INPUTS.json contains a 300-minute allowance, no current start; superseded by the current 14-hour controller and not adopted.",
+    "new_scientific_gpu_seconds": 0,
+    "new_inference_units": 0,
+    "new_probe_fits": 0,
+    "compute_blocked": true,
+    "deadline_reset": false,
+    "attempt_id": "A01-attempt-003",
+    "elapsed_since_previous_observation_seconds": 988.185936,
+    "original_science_cutoff_utc": null,
+    "original_deadline_utc": null,
+    "original_budget_status": "UNRECOVERED_NOT_INVENTED",
+    "effective_deadline_utc": "2026-11-17T09:45:00+00:00",
+    "effective_scientific_cutoff_utc": "2026-11-17T06:45:00+00:00",
+    "remaining_scientific_seconds": 0,
+    "in_closure_reserve": true,
+    "clock_restarted": false,
+    "budget_blocker_resolved_by": "Direct user deadline amendment, not recovered original timestamps",
+    "compute_block_reason": "The amended scientific cutoff has already passed. A01 administrative closeout only."
+  },
+  "budget_amendment_sha256": "60073715a2675d0b00c249b4fc58210af7dd178d8d8c1bd9b6367d34b72660e1",
+  "readiness_sha256": "a7e99bfbda16417970ea27dfd6b25d8fa64afe4b4e859f076bdc0dee8a233041",
+  "coverage": {
+    "administrative_requirements": 8,
+    "completed_or_reused": 8,
+    "scientific_new": 0,
+    "scientific_reused_validated": 0,
+    "scientific_failed": 0,
+    "later_stages": "NOT_STARTED_NOT_APPROVED"
+  },
+  "outputs": [
+    {
+      "path": "APPROVAL_LOG.jsonl",
+      "bytes": 2341,
+      "sha256": "125f6e6892a67d1e7f2b7ee97260ebef3f4b3b477bf4d3e6210c704b4ff07f2d"
+    },
+    {
+      "path": "BUDGET.json",
+      "bytes": 2867,
+      "sha256": "4747f2e4e4523980a9dc623cfa1788beb9fa2793c7bd508b9889e5b5b2f3cc8e"
+    },
+    {
+      "path": "BUDGET_AMENDMENT.json",
+      "bytes": 1494,
+      "sha256": "60073715a2675d0b00c249b4fc58210af7dd178d8d8c1bd9b6367d34b72660e1"
+    },
+    {
+      "path": "CONTROLLER_STATE.json",
+      "bytes": 9763,
+      "sha256": "2540671c18796cb3621e09ab4f49e1d04750fb68605e61e6fa8cf2b44f69ad82"
+    },
+    {
+      "path": "COVERAGE.csv",
+      "bytes": 199,
+      "sha256": "2e60ac95ce6dffd8e68c14be918a11a099225dcd4110b565b7685155afc37aca"
+    },
+    {
+      "path": "INSTRUCTION_RECONCILIATION.json",
+      "bytes": 1170,
+      "sha256": "dedeed66fb2a8a402b09fe5b2c4280309c21a181cbefda3933919fe450b454b7"
+    },
+    {
+      "path": "PACKAGE_VALIDATION.json",
+      "bytes": 10753,
+      "sha256": "31a1e6a18a2c9690e39f35aca49cc410d6e43069ef8a2b8190566fefb316a9a4"
+    },
+    {
+      "path": "PATHS.json",
+      "bytes": 1366,
+      "sha256": "5b1351e6d00c25358505658cd6a9bda5219655edadd08a5721a0514c857e51ae"
+    },
+    {
+      "path": "PROCESS_INVENTORY.json",
+      "bytes": 8497,
+      "sha256": "7ecd32fe9a1c8c08c3cf48269f31200c0befb763c127a0ca207889dfb203d18b"
+    },
+    {
+      "path": "READINESS.json",
+      "bytes": 1588,
+      "sha256": "a7e99bfbda16417970ea27dfd6b25d8fa64afe4b4e859f076bdc0dee8a233041"
+    },
+    {
+      "path": "RECONCILIATION.csv",
+      "bytes": 61063,
+      "sha256": "81decc4452f4cb7e54e90b2b4cc6da878a3fa5dd66d7238cba2c60700d3451b6"
+    },
+    {
+      "path": "REMOTE_HANDOFF.json",
+      "bytes": 2136,
+      "sha256": "18ddb24ff5271c5b0db556c7ae39a5c39849aeb43821d9c9bdce0d795bc1cdcf"
+    },
+    {
+      "path": "RESUME_MANIFEST.json",
+      "bytes": 6698,
+      "sha256": "25c609d265ecb715c468290b9d1843f0ed22d507a4230f8e4c590558d332d438"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 3645,
+      "sha256": "928cf19d48387c204f864799f91394556b6644697f3eb4a1f58150c9a3acf8d0"
+    },
+    {
+      "path": "SOURCE_EVIDENCE_CHECK.json",
+      "bytes": 5462,
+      "sha256": "d033620437307cd381b366f164caf8a9ad3501670aa22357ee55de65b19d0a61"
+    },
+    {
+      "path": "STAGE_CHECKLIST.json",
+      "bytes": 1168,
+      "sha256": "ab6ee0ac12e4e1090fcb872eb4f92f06910ca1874a9698faa49b5346914fa775"
+    },
+    {
+      "path": "WORKSPACE_AUDIT.json",
+      "bytes": 7193,
+      "sha256": "a25f96eb862b924c3e9981ef2de05085f1e145d0c0fb8b36b5ad6f62ded5f89a"
+    }
+  ],
+  "checks": [
+    {
+      "check": "A01 effective prompt files and supporting metadata",
+      "status": "PASS_UNCHANGED"
+    },
+    {
+      "check": "Whole package presence/checksums",
+      "status": "FAIL_A02_ONLY",
+      "present": 31,
+      "matching": 30
+    },
+    {
+      "check": "Explicit deadline amendment conversion, 3h reserve, original unknowns preserved",
+      "status": "PASS"
+    },
+    {
+      "check": "Canonical workspace and owned-job quiescence",
+      "status": "PASS"
+    },
+    {
+      "check": "Prior attempt seals verified/reused",
+      "status": "PASS"
+    }
+  ],
+  "blockers": [],
+  "next_stage_blockers": [
+    {
+      "id": "A02_PACKAGE_CHECKSUM_MISMATCH",
+      "scope": "Any future A02 execution",
+      "file": "A02_CHECKPOINT_INVENTORY.md",
+      "expected_sha256": "2614bb546d56cc17713a7258904a107115fbb72eecafbe51b66fb55016d0427e",
+      "actual_sha256": "978277f9225d71d06b486799a5f72be5da2870d9118b56260e04c3727f6114bd",
+      "repair": "User-managed prompt package needs a matching checksum before any A02 approval/execution."
+    },
+    {
+      "id": "SCIENCE_CUTOFF_PASSED",
+      "scope": "New scientific scheduling",
+      "cutoff_utc": "2026-11-17T06:45:00+00:00",
+      "detail": "Only closure/admin time remains; no new science. Later stages need direct approval and sufficient permitted time."
+    }
+  ],
+  "owned_jobs": [],
+  "all_owned_jobs_quiescent": true,
+  "backup_status": "A01 small Git handoff only; no new scientific payload/private backup",
+  "resume_manifest_sha256": "25c609d265ecb715c468290b9d1843f0ed22d507a4230f8e4c590558d332d438",
+  "approval_for_next_stage": false,
+  "sealed_utc": "2026-11-17T09:32:23.866404+00:00"
+}
