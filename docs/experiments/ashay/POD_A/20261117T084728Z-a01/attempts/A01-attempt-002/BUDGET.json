@@ -1,0 +1,54 @@
+{
+  "schema": "pod-a-budget-v1",
+  "observed_utc": "2026-11-17T09:04:55.601491+00:00",
+  "original_start_utc": null,
+  "science_cutoff_utc": null,
+  "deadline_utc": null,
+  "remaining_seconds": null,
+  "elapsed_seconds": null,
+  "wall_hours": 14,
+  "closure_reserve_hours": 3,
+  "provider_rental_start_utc": null,
+  "provider_hourly_rate_usd": null,
+  "cost_usd": null,
+  "rate_basis": "Not independently supplied; no invoice estimate.",
+  "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-A.json",
+  "source_state_exists": false,
+  "setup_records": [
+    {
+      "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-A.txt",
+      "bytes": 388,
+      "mtime_utc": "2026-11-17T06:25:25+00:00",
+      "sha256": "72ea95b118b2d936bbddadb56b96919a849c7c71def4157ccd2743c447c9b383"
+    },
+    {
+      "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-A.sh",
+      "bytes": 43647,
+      "mtime_utc": "2026-11-17T06:25:26+00:00",
+      "sha256": "5a8eea5c3716b555fd8e539db7e5b0e7470bcee5693191b4758a0de373624a70"
+    },
+    {
+      "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+      "bytes": 0,
+      "mtime_utc": "2026-11-17T06:24:54+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "container_pid1_start_utc": "2026-11-17T06:14:41.200000+00:00",
+  "provider_start_verified": false,
+  "provisional_container_proxy_only": {
+    "start_utc": "2026-11-17T06:14:41.200000+00:00",
+    "science_cutoff_utc": "2026-11-17T17:14:41.200000+00:00",
+    "deadline_utc": "2026-11-17T20:14:41.200000+00:00",
+    "remaining_seconds_at_observation": 40185.598509,
+    "caveat": "Arithmetic illustration using container process start. Not adopted as original budget or permission; provisioning/rental could predate it."
+  },
+  "historical_prompt_inputs_note": "Unlisted historical 02_SESSION_INPUTS.json contains a 300-minute allowance, no current start; superseded by the current 14-hour controller and not adopted.",
+  "new_scientific_gpu_seconds": 0,
+  "new_inference_units": 0,
+  "new_probe_fits": 0,
+  "compute_blocked": true,
+  "deadline_reset": false,
+  "attempt_id": "A01-attempt-002",
+  "elapsed_since_previous_observation_seconds": 988.185936
+}

@@ -1,0 +1,176 @@
+{
+  "schema": "pod-a-workspace-audit-v1",
+  "observed_utc": "2026-11-17T09:04:55.601491+00:00",
+  "server": {
+    "hostname_sha256": "fb2fdc69e74171312390fd4a80c7e4b4e9e118859ed1823f06e4904b22b80462",
+    "boot_id_sha256": "9a0da30dba9393153ff51d2a2af0b275472313fd5e8811eb5f3f5a1e1cf2e5bc",
+    "runpod_pod_id_sha256": "190433a38ad55f0284da26e2f7b3b81ec000efabf134af993fd996c1478baee5",
+    "assignment_basis": "Direct current user Pod A assignment plus dedicated matching worktree/origin and setup-A records; not independent provider-account verification.",
+    "timezone": "UTC",
+    "container_start_utc": "2026-11-17T06:14:41.200000+00:00"
+  },
+  "paths": {
+    "schema": "pod-a-paths-v1",
+    "run_id": "20261117T084728Z-a01",
+    "owner": "POD_A",
+    "research_worktree": "/workspace/wt-pod-a",
+    "research_common_directory": "/workspace/repos/unlearning-pod-a/.git",
+    "prompt_cache": "/workspace/test-prompts-push/.git",
+    "prompt_cache_note": "Existing isolated single-branch clone, exact origin verified; no additional remote prompt fetch after pinning. Tracked prompt files unchanged.",
+    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01",
+    "reports": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01",
+    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01",
+    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01",
+    "private_backup_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "private_backup_prefix": "POD_A/20261117T084728Z-a01/<stage>/<attempt-id>/",
+    "gpu_lock": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+    "gpu_lock_status": "NOT_CREATED_NOT_ACQUIRED_NO_GPU_WORK",
+    "path_isolation_verified": true
+  },
+  "research": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "push_urls": [
+      "https://github.com/Georgakopoulos-Soares-lab/unlearning.git"
+    ],
+    "branch": "POD_A",
+    "head_before": "bb61c73f923026b8cca8bd7f8dc3a2dbf01bc8f6",
+    "upstream": "origin/POD_A",
+    "common_directory": "/workspace/repos/unlearning-pod-a/.git",
+    "realpath": "/workspace/wt-pod-a",
+    "preexisting_dirty_paths": [],
+    "remote_head_before": "bb61c73f923026b8cca8bd7f8dc3a2dbf01bc8f6",
+    "starting_handoff_is_ancestor": true,
+    "worktrees": [
+      "worktree /workspace/repos/unlearning-pod-a",
+      "HEAD af92e593162478c8aa40b6303ed0f0e508affac7",
+      "branch refs/heads/main",
+      "",
+      "worktree /workspace/wt-pod-a",
+      "HEAD b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+      "branch refs/heads/POD_A"
+    ],
+    "main_clone": {
+      "head": "af92e593162478c8aa40b6303ed0f0e508affac7",
+      "status_entries": 1149,
+      "status_sha256": "5ee89ac0230231401cdc8d17bb436de898f40e5f6545f9335b16699bd9ce3259",
+      "index_entries": 0,
+      "index_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "explanation": "Pre-existing no-checkout clone: empty index and no working files, so status reports staged deletions. Preserved byte-for-byte; no checkout/reset/repair performed."
+    }
+  },
+  "prompts": {
+    "origin": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_A",
+    "commit": "703934532c8e6e9c300e4a0b0ec6f281c8953fcc",
+    "origin_differs_from_research": true,
+    "tracked_files_modified": false
+  },
+  "resources": {
+    "cpu_affinity": 128,
+    "cpu_quota_us": 1530000,
+    "cpu_period_us": 100000,
+    "effective_cpu_quota": 15.3,
+    "cgroup_memory_limit_bytes": 214999998464,
+    "cgroup_memory_used_bytes": 1195851776,
+    "gpu": {
+      "returncode": 0,
+      "stdout": "0, NVIDIA H100 NVL, 95830, 0, 0",
+      "stderr": ""
+    },
+    "gpu_compute_apps": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "disk": {
+      "/workspace": {
+        "total": 898491987329024,
+        "used": 570812081045504,
+        "free": 327679906283520
+      },
+      "/tmp": {
+        "total": 107374182400,
+        "used": 905265152,
+        "free": 106468917248
+      },
+      "/dev/shm": {
+        "total": 107000000512,
+        "used": 0,
+        "free": 107000000512
+      }
+    },
+    "disk_limit_note": "Shared FUSE filesystem free bytes are not provider volume quota; quota unknown. Administrative files only."
+  },
+  "mounts": [
+    {
+      "mountpoint": "/",
+      "filesystem": "overlay",
+      "device": "0:86",
+      "options": "rw,relatime"
+    },
+    {
+      "mountpoint": "/dev/shm",
+      "filesystem": "tmpfs",
+      "device": "0:141",
+      "options": "rw,nosuid,nodev,noexec,relatime"
+    },
+    {
+      "mountpoint": "/workspace",
+      "filesystem": "fuse",
+      "device": "0:57",
+      "options": "rw,nosuid,nodev,relatime"
+    }
+  ],
+  "local_scan": {
+    "root": "/workspace",
+    "files_inspected_by_name": 1610,
+    "git_worktrees": [
+      "/workspace/test-prompts-push",
+      "/workspace/wt-pod-a",
+      "/workspace/repos/unlearning-pod-a"
+    ],
+    "payload_or_lock_matches": [
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+        "bytes": 0
+      }
+    ],
+    "excluded": [
+      ".git",
+      ".cache",
+      "venvs",
+      "node_modules",
+      "__pycache__",
+      "agent-handoff"
+    ],
+    "no_local_scientific_payload_found_within_scope": true
+  },
+  "environment_candidates": [
+    {
+      "path": "/workspace/venvs/pod-a-tools",
+      "python_exists": true,
+      "qualification": "ADMIN_ONLY_UNQUALIFIED_FOR_SCIENCE"
+    },
+    {
+      "path": "/workspace/venvs/unlearning-admin-pod-a",
+      "python_exists": true,
+      "qualification": "ADMIN_ONLY_UNQUALIFIED_FOR_SCIENCE"
+    }
+  ],
+  "historical_scientific_environment_exists": false,
+  "github_authenticated": true,
+  "HF_auth_status": "Prior user reported success; no fresh HF/API/network call in A01. A03 verifies private read/write access.",
+  "blockers": [
+    {
+      "id": "ORIGINAL_BUDGET_UNVERIFIED",
+      "scope": "A01 readiness and any substantial subsequent compute",
+      "detail": "state/pod-A.json and timestamped setup completion receipts are absent. Setup lock mtime and PID1 start are evidence of activity, not the original setup argument or verified provider rental start. Definite original start/cutoff/deadline or explicit steering required. No clock reset."
+    }
+  ],
+  "attempt_id": "A01-attempt-002",
+  "prior_evidence_rechecked": {
+    "prior_public_payload_files": 16,
+    "prior_private_files": 86,
+    "prior_delivery_receipt_sha256": "741c1884ce3542361d0dd2b9c6cddbde275f00288e9084a4c950e0f66a70c82a"
+  }
+}

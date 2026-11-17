@@ -1,0 +1,218 @@
+{
+  "schema": "pod-a-process-inventory-v1",
+  "observed_utc": "2026-11-17T09:04:55.601491+00:00",
+  "processes": [
+    {
+      "pid": 1,
+      "ppid": 0,
+      "comm": "docker-init",
+      "cwd": "/",
+      "start_ticks": 996320,
+      "start_utc": "2026-11-17T06:14:41.200000+00:00",
+      "command_sha256": "8668ab6a69aa0e0a4b04fafad70c6c8ad470a5c75c4763faa12fd877750f14af",
+      "classification": "CURRENT_A01_CONTROL_SESSION",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 57,
+      "ppid": 1,
+      "comm": "start.sh",
+      "cwd": "/",
+      "start_ticks": 996350,
+      "start_utc": "2026-11-17T06:14:41.500000+00:00",
+      "command_sha256": "7bc3dbb44b9e48780b4931c184bb1c0d00ab7b82be91b19c1747f369f656e6b7",
+      "classification": "INFRASTRUCTURE_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 92,
+      "ppid": 1,
+      "comm": "nginx",
+      "cwd": "/",
+      "start_ticks": 996355,
+      "start_utc": "2026-11-17T06:14:41.550000+00:00",
+      "command_sha256": "425d48232fe80cc4dd919c5cd3e209e5add5c55c52f0412ad15a3e2eae68a95c",
+      "classification": "INFRASTRUCTURE_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 116,
+      "ppid": 1,
+      "comm": "sshd",
+      "cwd": "/",
+      "start_ticks": 996399,
+      "start_utc": "2026-11-17T06:14:41.990000+00:00",
+      "command_sha256": "3cf42ddf90e572bc24bf6bbf5670308cfdca841f4623a5678c2681136e056cb9",
+      "classification": "INFRASTRUCTURE_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 122,
+      "ppid": 57,
+      "comm": "jupyter-lab",
+      "cwd": "/",
+      "start_ticks": 996401,
+      "start_utc": "2026-11-17T06:14:42.010000+00:00",
+      "command_sha256": "48c24d0df84688ceab53eab5204d25a1b0bc142a8865dad5be984ace7098deaa",
+      "classification": "INFRASTRUCTURE_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 131,
+      "ppid": 57,
+      "comm": "sleep",
+      "cwd": "/",
+      "start_ticks": 996602,
+      "start_utc": "2026-11-17T06:14:44.020000+00:00",
+      "command_sha256": "21e7b0eb0fbfc14a8eab229ae46632be62b33a26ffc0692960b9786c4008934b",
+      "classification": "INFRASTRUCTURE_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 180,
+      "ppid": 1,
+      "comm": "gotty",
+      "cwd": "/",
+      "start_ticks": 997907,
+      "start_utc": "2026-11-17T06:14:57.070000+00:00",
+      "command_sha256": "b84092f26160549a9270c29cf7051158d4b7b4bf84a3fd5f57e11b38b210efe0",
+      "classification": "INFRASTRUCTURE_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 357,
+      "ppid": 180,
+      "comm": "bash",
+      "cwd": "/",
+      "start_ticks": 1051108,
+      "start_utc": "2026-11-17T06:23:49.080000+00:00",
+      "command_sha256": "29f1e0e08e9fe0b0a7179177e4bb2a3e27e87310c05c207e6fa70da7632207e1",
+      "classification": "CURRENT_INTERACTIVE_TRANSPORT_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 5227,
+      "ppid": 1,
+      "comm": "tmux: server",
+      "cwd": "/",
+      "start_ticks": 1268391,
+      "start_utc": "2026-11-17T07:00:01.910000+00:00",
+      "command_sha256": "e4daf211059f3289754c2f1455da7b7edafcb511912274b5f867ea3b3c316e72",
+      "classification": "CURRENT_A01_CONTROL_SESSION",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 5228,
+      "ppid": 5227,
+      "comm": "bash",
+      "cwd": "/workspace",
+      "start_ticks": 1268392,
+      "start_utc": "2026-11-17T07:00:01.920000+00:00",
+      "command_sha256": "70458f7ab64acaa2f17d502161ce831a64212cf7493447837f259e696b0f6cf1",
+      "classification": "CURRENT_A01_CONTROL_SESSION",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 5389,
+      "ppid": 5228,
+      "comm": "codex",
+      "cwd": "/workspace",
+      "start_ticks": 1506820,
+      "start_utc": "2026-11-17T07:39:46.200000+00:00",
+      "command_sha256": "95b5e080b0e5909ddad57363cef28d6bc40f18ac9c266d1ab5ba025193df2bd9",
+      "classification": "CURRENT_A01_CONTROL_SESSION",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 5514,
+      "ppid": 180,
+      "comm": "bash",
+      "cwd": "/",
+      "start_ticks": 1507741,
+      "start_utc": "2026-11-17T07:39:55.410000+00:00",
+      "command_sha256": "29f1e0e08e9fe0b0a7179177e4bb2a3e27e87310c05c207e6fa70da7632207e1",
+      "classification": "CURRENT_INTERACTIVE_TRANSPORT_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 5518,
+      "ppid": 5514,
+      "comm": "tmux: client",
+      "cwd": "/",
+      "start_ticks": 1509118,
+      "start_utc": "2026-11-17T07:40:09.180000+00:00",
+      "command_sha256": "98181b9e4c1efb83196b0d0c1a7d90d5bdf182023933c226c3aefc8a89d4a4d0",
+      "classification": "CURRENT_INTERACTIVE_TRANSPORT_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 5545,
+      "ppid": 5389,
+      "comm": "codex-code-mode",
+      "cwd": "/workspace",
+      "start_ticks": 1517712,
+      "start_utc": "2026-11-17T07:41:35.120000+00:00",
+      "command_sha256": "82de6461445c8fce7312f26e183ecdab6f27e59c47760e4e25c523a0b8c4f621",
+      "classification": "CURRENT_INTERACTIVE_TRANSPORT_PRESERVE",
+      "action": "PRESERVED"
+    },
+    {
+      "pid": 7471,
+      "ppid": 5389,
+      "comm": "python",
+      "cwd": "/workspace",
+      "start_ticks": 2017656,
+      "start_utc": "2026-11-17T09:04:54.560000+00:00",
+      "command_sha256": "3f9990e5cba47a076696ac8daaf9e2e617dbd2d4e70a9da01e42bdb7be94d430",
+      "classification": "CURRENT_A01_CONTROL_SESSION",
+      "action": "PRESERVED"
+    }
+  ],
+  "tmux_panes": {
+    "returncode": 0,
+    "stdout": "pod-a:0.0 pid=5228 command=codex path=/workspace dead=0",
+    "stderr": ""
+  },
+  "tmux_sessions": {
+    "returncode": 0,
+    "stdout": "pod-a 1794898802 1",
+    "stderr": ""
+  },
+  "tmux_configuration_checks": [
+    {
+      "command": "show-hooks",
+      "returncode": 0,
+      "sha256": "1fa22d1f297af5b3f38c6595775b6b986c25c8322c0ea7ed404bfdf41a69af8e",
+      "assignment_or_autorun_pattern": false
+    },
+    {
+      "command": "show-options",
+      "returncode": 0,
+      "sha256": "be6f555918cdf8095a04ca10cc492219945bc03742c8765e587051fa05a80dd4",
+      "assignment_or_autorun_pattern": false
+    }
+  ],
+  "scheduler_metadata": [
+    {
+      "path": "/etc/cron.d/e2scrub_all",
+      "sha256": "d4df081b982b23e66cac7102f9d91032f296caf13031991d90af44ee6cbf6e3b",
+      "assignment_pattern_present": false
+    }
+  ],
+  "kernel_lock_snapshot": "10: POSIX  ADVISORY  READ 5389 00:56:10759844084 128 128\n11: POSIX  ADVISORY  READ 5389 00:56:10739086836 1073741826 1073742335\n15: FLOCK  ADVISORY  WRITE 5389 00:56:11812852450 0 EOF\n16: POSIX  ADVISORY  READ 5389 00:56:10759844086 128 128\n17: POSIX  ADVISORY  READ 5389 00:56:10737432397 1073741826 1073742335\n26: POSIX  ADVISORY  READ 5389 00:56:10739083998 128 128\n27: POSIX  ADVISORY  READ 5389 00:56:10739083989 1073741826 1073742335\n31: POSIX  ADVISORY  READ 5389 00:56:10739083988 128 128\n32: POSIX  ADVISORY  READ 5389 00:56:10739083980 1073741826 1073742335\n35: FLOCK  ADVISORY  WRITE 5389 00:56:30066680438 0 EOF\n36: POSIX  ADVISORY  READ 5389 00:56:10759844088 128 128\n37: POSIX  ADVISORY  READ 5389 00:56:10739083983 1073741826 1073742335\n49: FLOCK  ADVISORY  WRITE 5389 00:56:10739086813 0 EOF",
+  "setup_lock": {
+    "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+    "active_owner_found": false,
+    "action": "PRESERVED_NOT_REMOVED"
+  },
+  "gpu_compute_apps": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "owned_scientific_jobs": [],
+  "owned_scientific_locks": [],
+  "owned_autoadvancers_found": false,
+  "all_owned_scientific_jobs_quiescent": true,
+  "interpretation": "Codex ancestor PID and its code-mode child belong to this interactive A01 session. tmux/interactive shells and infrastructure are preserved. No research worker, active download, assignment scheduler or automatic stage dispatcher observed in listed surfaces. No process was terminated."
+}

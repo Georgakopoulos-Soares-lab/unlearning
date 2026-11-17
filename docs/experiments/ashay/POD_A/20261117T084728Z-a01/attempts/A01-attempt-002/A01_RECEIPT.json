@@ -1,0 +1,251 @@
+{
+  "schema": "pod-a-stage-receipt-v1",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A01",
+  "attempt_id": "A01-attempt-002",
+  "resumed_from_attempt": "A01-attempt-001",
+  "status": "PARTIAL",
+  "approval": {
+    "stage": "A01",
+    "attempt_id": "A01-attempt-002",
+    "direct_message": "👍 A01\n\nFirst verify every path in PACKAGE_FILES.json and validate SHA256SUMS,\nincluding evidence/ and templates/. Report missing or mismatched files\nbefore any research-repository changes. Execute A01 only, then stop.",
+    "message_time_utc": null,
+    "observed_time_utc": "2026-11-17T09:04:55.601491+00:00",
+    "prompt_commit": "703934532c8e6e9c300e4a0b0ec6f281c8953fcc",
+    "prior_state_sha256": "8d974b61e845d0dcda49c2d6dbad5bdd325f7423318e064123bfbd8e6d7da5e7",
+    "research_head": "bb61c73f923026b8cca8bd7f8dc3a2dbf01bc8f6",
+    "execution_scope": "Resume A01 administrative checks only; no repeated scientific work"
+  },
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_A",
+    "commit": "703934532c8e6e9c300e4a0b0ec6f281c8953fcc",
+    "effective_files": [
+      {
+        "path": "POD_A_MASTER.md",
+        "sha256": "7ed638c1fa912302becedb1096a82ac3d097a6bf07117d738c3604f84c07588b"
+      },
+      {
+        "path": "A01_WORKSPACE_RECONCILIATION.md",
+        "sha256": "11af42677f77c250a489c53324e1b4ebe9fc82b0cae362c2f67c5a8f61d2fbde"
+      },
+      {
+        "path": "SCIENTIFIC_CONTRACT.md",
+        "sha256": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413"
+      },
+      {
+        "path": "ARTIFACT_CONTRACT.md",
+        "sha256": "c58d9567f7dac25b163fbe494fbf9a2e10ed74db0d464f2395bf07ffd1f81f60"
+      },
+      {
+        "path": "SOURCE_NOTES.md",
+        "sha256": "d577f8176a47ddc47b59079393fca6c050795030be379d8e5d5c3bd613282bfa"
+      },
+      {
+        "path": "SOURCE_MANIFEST.json",
+        "sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f"
+      },
+      {
+        "path": "STAGE_MAP.json",
+        "sha256": "1a813e7dab6507be6766cc982b0b6ba5f5d2af962cfee029432c60dc64a5e54b"
+      }
+    ]
+  },
+  "research": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "branch": "POD_A",
+    "worktree": "/workspace/wt-pod-a",
+    "head_before": "bb61c73f923026b8cca8bd7f8dc3a2dbf01bc8f6",
+    "remote_head_before": "bb61c73f923026b8cca8bd7f8dc3a2dbf01bc8f6",
+    "preexisting_dirty_paths": [],
+    "head_after": null,
+    "delivery_note": "Final commit/equality in versioned private post-push DELIVERY_RECEIPT.json."
+  },
+  "prior_state_sha256": "8d974b61e845d0dcda49c2d6dbad5bdd325f7423318e064123bfbd8e6d7da5e7",
+  "prior_manifest_path_mapping": {
+    "canonical_first_attempt_root_files": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A01-attempt-001",
+    "unchanged_other_paths": "Relative to original control root"
+  },
+  "protocol_sha256": "fb973b4b2e7963d5c5e2ae4b02cbe70ab527d9e61e1fbf7d3eee17373c80f29f",
+  "coverage_plan_sha256": null,
+  "coverage": {
+    "administrative_requirements": 8,
+    "satisfied_or_rechecked": 7,
+    "partial": 1,
+    "scientific_new": 0,
+    "scientific_reused_validated": 0,
+    "scientific_failed": 0,
+    "future_stages": "NOT_STARTED_NOT_APPROVED"
+  },
+  "budget": {
+    "schema": "pod-a-budget-v1",
+    "observed_utc": "2026-11-17T09:04:55.601491+00:00",
+    "original_start_utc": null,
+    "science_cutoff_utc": null,
+    "deadline_utc": null,
+    "remaining_seconds": null,
+    "elapsed_seconds": null,
+    "wall_hours": 14,
+    "closure_reserve_hours": 3,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "rate_basis": "Not independently supplied; no invoice estimate.",
+    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-A.json",
+    "source_state_exists": false,
+    "setup_records": [
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-A.txt",
+        "bytes": 388,
+        "mtime_utc": "2026-11-17T06:25:25+00:00",
+        "sha256": "72ea95b118b2d936bbddadb56b96919a849c7c71def4157ccd2743c447c9b383"
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-A.sh",
+        "bytes": 43647,
+        "mtime_utc": "2026-11-17T06:25:26+00:00",
+        "sha256": "5a8eea5c3716b555fd8e539db7e5b0e7470bcee5693191b4758a0de373624a70"
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+        "bytes": 0,
+        "mtime_utc": "2026-11-17T06:24:54+00:00",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "container_pid1_start_utc": "2026-11-17T06:14:41.200000+00:00",
+    "provider_start_verified": false,
+    "provisional_container_proxy_only": {
+      "start_utc": "2026-11-17T06:14:41.200000+00:00",
+      "science_cutoff_utc": "2026-11-17T17:14:41.200000+00:00",
+      "deadline_utc": "2026-11-17T20:14:41.200000+00:00",
+      "remaining_seconds_at_observation": 40185.598509,
+      "caveat": "Arithmetic illustration using container process start. Not adopted as original budget or permission; provisioning/rental could predate it."
+    },
+    "historical_prompt_inputs_note": "Unlisted historical 02_SESSION_INPUTS.json contains a 300-minute allowance, no current start; superseded by the current 14-hour controller and not adopted.",
+    "new_scientific_gpu_seconds": 0,
+    "new_inference_units": 0,
+    "new_probe_fits": 0,
+    "compute_blocked": true,
+    "deadline_reset": false,
+    "attempt_id": "A01-attempt-002",
+    "elapsed_since_previous_observation_seconds": 988.185936
+  },
+  "outputs": [
+    {
+      "path": "APPROVAL_LOG.jsonl",
+      "bytes": 1401,
+      "sha256": "693d1d67c2bed62142e0471baf895b9ecfda06fe5f018ac8bf74f27da64cfea8"
+    },
+    {
+      "path": "BUDGET.json",
+      "bytes": 2255,
+      "sha256": "a321a1fcb0e01a1aeba6d59425616716858e11993cf7372d26747373c0f1721d"
+    },
+    {
+      "path": "CONTROLLER_STATE.json",
+      "bytes": 8244,
+      "sha256": "6460811023b80fafb0bb85392cdf9529480b2642b42c58bec82fb18c3c2753cc"
+    },
+    {
+      "path": "COVERAGE.csv",
+      "bytes": 192,
+      "sha256": "c87aabb62b362142d068a0c8fb45c3664ae8492681bf6b9cee9c536a7b4bafb9"
+    },
+    {
+      "path": "INSTRUCTION_RECONCILIATION.json",
+      "bytes": 1170,
+      "sha256": "dedeed66fb2a8a402b09fe5b2c4280309c21a181cbefda3933919fe450b454b7"
+    },
+    {
+      "path": "PACKAGE_VALIDATION.json",
+      "bytes": 6677,
+      "sha256": "151a6efa62341ffee0f761f88139c16cb8931f043869f47f34dbe3ff8a4ce52f"
+    },
+    {
+      "path": "PATHS.json",
+      "bytes": 1366,
+      "sha256": "711ca48189e02bdc79dd60aca2ef6fd1aee4ae1dce51c9d5b1219129fceac281"
+    },
+    {
+      "path": "PROCESS_INVENTORY.json",
+      "bytes": 7893,
+      "sha256": "ba87bd827aba7fdb6e269e4175377aa73bdef7043e83d2834392c3afb5c432b1"
+    },
+    {
+      "path": "RECONCILIATION.csv",
+      "bytes": 61013,
+      "sha256": "8e2f052802a0ee5a467b8c4f417270754b8ded5198323bebaac8cc45f9594fa4"
+    },
+    {
+      "path": "REMOTE_HANDOFF.json",
+      "bytes": 1717,
+      "sha256": "774e9b718280c5fc8f8871efc868102cc1631dda85ca555232a3e0983d1686de"
+    },
+    {
+      "path": "RESUME_MANIFEST.json",
+      "bytes": 5713,
+      "sha256": "ab1750c769f64f3cbe44ee262af581de8e939e11d6b01c54e8cb59cf9466806a"
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 3219,
+      "sha256": "cd88933451b109f788a16ecbc837fba6df503dc433f5234ae2a9af94f2606834"
+    },
+    {
+      "path": "SOURCE_EVIDENCE_CHECK.json",
+      "bytes": 5462,
+      "sha256": "d033620437307cd381b366f164caf8a9ad3501670aa22357ee55de65b19d0a61"
+    },
+    {
+      "path": "STAGE_CHECKLIST.json",
+      "bytes": 1147,
+      "sha256": "484552c2629e9fd76ad6a044e468ee34b168fa47bcb2d8a356c9df720ae9abbf"
+    },
+    {
+      "path": "WORKSPACE_AUDIT.json",
+      "bytes": 6569,
+      "sha256": "152ec31dbf306cb89d7121c0a0c094d3d4935d277bff268b1749cec71e763a18"
+    }
+  ],
+  "checks": [
+    {
+      "check": "31 package files / seven evidence / two templates",
+      "status": "PASS"
+    },
+    {
+      "check": "Prior public/private payload seals",
+      "status": "PASS",
+      "public_payload_files": 16,
+      "private_files": 86
+    },
+    {
+      "check": "Worktree/origins/branch/common/ancestry/server",
+      "status": "PASS"
+    },
+    {
+      "check": "Preserve jobs; GPU idle; no owned stage dispatcher",
+      "status": "PASS"
+    },
+    {
+      "check": "Original budget recovered",
+      "status": "BLOCKED"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "ORIGINAL_BUDGET_UNVERIFIED",
+      "scope": "A01 readiness and any substantial subsequent compute",
+      "detail": "state/pod-A.json and timestamped setup completion receipts are absent. Setup lock mtime and PID1 start are evidence of activity, not the original setup argument or verified provider rental start. Definite original start/cutoff/deadline or explicit steering required. No clock reset."
+    }
+  ],
+  "owned_jobs": [],
+  "all_owned_jobs_quiescent": true,
+  "backup_status": "Small branch delivery only; no scientific private backup/restore",
+  "resume_manifest_sha256": "ab1750c769f64f3cbe44ee262af581de8e939e11d6b01c54e8cb59cf9466806a",
+  "suggested_next_prompt_edits": [
+    "Resolve original budget; then request a separately approved A02 tied to this stable run."
+  ],
+  "approval_for_next_stage": false,
+  "sealed_utc": "2026-11-17T09:04:57.969650+00:00"
+}
