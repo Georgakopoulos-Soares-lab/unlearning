@@ -1,0 +1,110 @@
+{
+  "schema": "pod-a-a07-stage-receipt-v1",
+  "status": "COMPLETE",
+  "completion_meaning": "Approved producer scope complete; independent release verification is deferred to separately approved A08",
+  "run_id": "20261117T084728Z-a01",
+  "attempt_id": "A07-attempt-001",
+  "prompt_commit": "28231013b20eb83951e1f689d1faeb781231ef48",
+  "input_research_commit": "a641ca0c8fcc534295d40cd19f65ddc1579128d2",
+  "approval": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/APPROVAL_RECORD.json",
+    "bytes": 1766,
+    "sha256": "cafb4d73e91edb931f008f61b9a09e1000eb118331d013ba82c3f29d6ed8c887"
+  },
+  "package": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/PACKAGE_VERIFICATION.json",
+    "bytes": 9932,
+    "sha256": "338488884124ff5654e14dd19ebfa6c7b67a4589c5ad6a38facf8fd02c67c5c9"
+  },
+  "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+  "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "new_final_heads": 780,
+  "new_fixed_base_applications": 780,
+  "planned_optimizer_fits": 12480,
+  "actual_optimizer_fits": 12512,
+  "supplemental_A07_refits": 0,
+  "new_dev_metric_rows": 7800,
+  "new_paired_rows": 16800,
+  "new_LM_units": 0,
+  "GPU_work": 0,
+  "historical_heads_reused": 1404,
+  "A06_H3_heads_reused": 156,
+  "controls_reused_once": 36,
+  "relevant_other_five_controls": 30,
+  "production_head_artifacts_available": 2340,
+  "full_head_universe": 3276,
+  "R2_pending_cells": 468,
+  "R5_pending_cells": 468,
+  "R3_live_bridge": "PENDING_AFFECTED_NEW_CONTRASTS",
+  "A04_status": "PARTIAL",
+  "A06_schema_repair": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/A06_REPORT_SCHEMA_REPAIR.json",
+    "bytes": 23087,
+    "sha256": "d9aeadee371d7a961fc70946d0201f450329a97724c6b92ff8f2e2015e1e8785"
+  },
+  "producer_validation": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/PRODUCER_VALIDATION.json",
+    "bytes": 987,
+    "sha256": "c240e00a2124c753664fd72976dc64517acce21cfd230a3ac1c3343b292c59b5"
+  },
+  "new_output_status": "COMPLETE_UNVERIFIED",
+  "A08_audit_plan": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/A08_AUDIT_HANDOFF_PLAN.json",
+    "bytes": 43295,
+    "sha256": "e69bdc8b42f349df874ddd2e5e21264cae1053520ba4b8304881d835a32295ca"
+  },
+  "backup": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_VERIFICATION.json",
+    "bytes": 60345,
+    "sha256": "3192c6896f0aa7659c2048e0fb8df12179285431f4371d62c19255ce2b22ee26"
+  },
+  "recovery_panel_paths": 40,
+  "recovery_scope_limit": "Representative CPU reconstruction, not all-unit independent release verification or GPU recreation",
+  "external_blockers": [
+    "R2 identity/delivery",
+    "R5 native qualification and downstreamwork",
+    "R3livebridge foraffectednewcrossruntimecomparisons"
+  ],
+  "blockers_to_A07_approved_scope": [],
+  "owned_jobs": "QUIESCENT",
+  "administrative_services": {
+    "observer_status": "ACTIVE",
+    "reviewer_status": "DRAFT_ONLY",
+    "publisher_status": "BLOCKED"
+  },
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A07 only; stop before A08",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "4c1082bbfd40ad1b2e77db51eddc30433de6e8d5b772c4b35c71fad17b61ccae"
+  },
+  "resource_report": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/FIT_RESOURCE_REPORT.json",
+    "bytes": 34724,
+    "sha256": "d82da37a8de7ddb3c86354ff6ca2e77ac480052b86c2a44889bba664f60fb8c6"
+  },
+  "next_state": "WAITING_FOR_APPROVAL: A08",
+  "A08_started": false,
+  "completed_utc": "2026-11-18T06:51:24.136921+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "pod-a-a07-view-provenance-v1",
+  "new_A07_tables": {
+    "files": [
+      "RESULTS_LONG.csv",
+      "PAIRED_CONTRASTS.csv",
+      "TASK_LAYER_SEED_VIEW.csv"
+    ],
+    "receipt_root": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001",
+    "measurement_attempt": "A07-attempt-001",
+    "ingestion_status": "NEW_IN_A07"
+  },
+  "A06_reused_views": {
+    "files": [
+      "A06_H3_RESULTS.reused.csv",
+      "LM_RESULTS.reused_A06.csv",
+      "A06_PAIRED_CONTRASTS.normalized.v1.csv"
+    ],
+    "receipt_root": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-001",
+    "measurement_attempt": "A06-attempt-001",
+    "measurement_lineage": "NEW relative to A06 production",
+    "ingestion_status": "REUSED_IN_A07",
+    "source_research_commit": "a641ca0c8fcc534295d40cd19f65ddc1579128d2"
+  },
+  "historical_reference_paths": "Exact A03 restored consumers and immutable archive/member locators in HISTORICAL_DEPENDENCIES.json; do not resolve old receipt paths against the A07 producer root",
+  "coverage_semantics": "stage/attempt/new_production retain measurement provenance for inherited rows; measurement_attempt and ingestion_status explicitly distinguish reuse from780newA07heads and780newA07applications"
+}

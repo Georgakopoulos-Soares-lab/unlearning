@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "cause": "Source of the publication guard matched its own broad private-key regular-expression literal; no credential bytes found",
+  "matched_files": [
+    "CODE/stage_drivers/deliver.py",
+    "CODE/stage_drivers/seal_publication.py"
+  ],
+  "repair": "Match actual standard private-key header variants, rejecting real headers while accepting the regex source literal",
+  "tests": {
+    "all_six_standard_private_key_header_forms_rejected": true,
+    "guard_source_literal_not_false_positive": true,
+    "HF_token_detection_retained": true
+  },
+  "numerical_source_or_results_changed": false
+}

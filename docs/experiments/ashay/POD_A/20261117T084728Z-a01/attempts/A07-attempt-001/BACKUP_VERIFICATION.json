@@ -1,0 +1,1507 @@
+{
+  "status": "PASS",
+  "scope": "All780new producer heads,780fixed-base applications, predictions,full bootstrap arrays,CV traces and source/receipts in10append-only task archives; full-byte fresh verification plus40representative probability/metric paths",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "private_at_write_and_closeout": true,
+  "archives": [
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R4",
+      "task": "gue_tf_0",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "415c42416791a3d67e95ad82cf5be2ea7d694ca2",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_tf_0-checkpoint-001/A07-R4-gue_tf_0-checkpoint-001.tar.gz",
+      "archive_sha256": "ba6e1246d42d1ee97ad537443168546d21720cc76939f93049b1a0a680ecc77f",
+      "archive_bytes": 41573423,
+      "member_manifest_sha256": "a640cbf4ea8d5a74019453e54fef4916a9f9333791431fe58d6f7dac37f09c6d",
+      "all_files_verified": 712,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R4",
+            "task": "gue_tf_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_tf_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_tf_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_tf_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_tf_0-fresh-001/consumer/A07-R4-gue_tf_0-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_tf_0/dev/chunk_000000/COMPLETE.json",
+            "sha256": "5d6b9188bd18e25e05ee3a5d14cfa8c31db410f9e2ca93154fdd9b019a4ab673"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_tf_0/dev/chunk_000256/COMPLETE.json",
+            "sha256": "3aaed9dc55936b2f083c2e01d0ed426caa1ff6f9ff0ec6ded63c3435dbe319d7"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_tf_0-fresh-001/consumer/A07-R4-gue_tf_0-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_tf_0-fresh-001/consumer/A07-R4-gue_tf_0-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_tf_0"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R4.json",
+        "bytes": 3955,
+        "sha256": "bae4912f7f9e2ff2665e2e18d1b20bf98ea78b1d5565e70a6d1ca959ad437da3"
+      },
+      "compression_seconds": 2.8106285560061224,
+      "upload_seconds": 2.379194232998998,
+      "fresh_download_seconds": 1.0304620300012175,
+      "all_member_verification_seconds": 8.206347654995625,
+      "completed_utc": "2026-11-18T06:28:42.477643+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R4",
+      "task": "gue_prom_core_all",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "b84c35efbb69703b06b899c293e5969aa6bf4088",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_prom_core_all-checkpoint-001/A07-R4-gue_prom_core_all-checkpoint-001.tar.gz",
+      "archive_sha256": "36ee8823d5498e03c43a517c248b91db3a32508a75c989d664d6df69f12b8033",
+      "archive_bytes": 41052513,
+      "member_manifest_sha256": "3c3faaf8ee466fa53a55e4f5898420437a09c027bdf2b7ca30422406f1c64767",
+      "all_files_verified": 720,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R4",
+            "task": "gue_prom_core_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_prom_core_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 8.881784197001252e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_prom_core_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 5.551115123125783e-17,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_prom_core_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_core_all-fresh-001/consumer/A07-R4-gue_prom_core_all-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_prom_core_all/dev/chunk_000000/COMPLETE.json",
+            "sha256": "9f4a6f11ba07e293bb03c7e6e20d96f5b168d4d18ebd97ffdd1bd37d62be9380"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_prom_core_all/dev/chunk_000256/COMPLETE.json",
+            "sha256": "35719cb8127743d95885e3838bdd132d613d8f8b2c21cca4e956281289e6d944"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_core_all-fresh-001/consumer/A07-R4-gue_prom_core_all-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_core_all-fresh-001/consumer/A07-R4-gue_prom_core_all-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_prom_core_all"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R4.json",
+        "bytes": 3955,
+        "sha256": "bae4912f7f9e2ff2665e2e18d1b20bf98ea78b1d5565e70a6d1ca959ad437da3"
+      },
+      "compression_seconds": 2.756990825990215,
+      "upload_seconds": 2.2838356230058707,
+      "fresh_download_seconds": 1.2650516600115225,
+      "all_member_verification_seconds": 7.669365604000632,
+      "completed_utc": "2026-11-18T06:30:46.928801+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R4",
+      "task": "gue_prom_300_all",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "34352093c689b76b6059fe09ca79bbe20812a7a1",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_prom_300_all-checkpoint-001/A07-R4-gue_prom_300_all-checkpoint-001.tar.gz",
+      "archive_sha256": "c4eac79b5ae1a9282724007a5a81569136a9ee98b7b9506346d035543dcabdfc",
+      "archive_bytes": 40763009,
+      "member_manifest_sha256": "edcee0e341a092a1199c69d89cc39d997d2d298cc57db4ea4d1bef3c1c249061",
+      "all_files_verified": 726,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R4",
+            "task": "gue_prom_300_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_prom_300_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 2.220446049250313e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_prom_300_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_prom_300_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_300_all-fresh-001/consumer/A07-R4-gue_prom_300_all-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_prom_300_all/dev/chunk_000000/COMPLETE.json",
+            "sha256": "427e3aa5ba2d18d62a62c8b201edeb6074c45700e7ce6dbb775b7b40930ba53e"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_prom_300_all/dev/chunk_000256/COMPLETE.json",
+            "sha256": "b0082a839cd34e35275e515e7432948b4416489462d4da0e8afe022199d90f4e"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_300_all-fresh-001/consumer/A07-R4-gue_prom_300_all-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_300_all-fresh-001/consumer/A07-R4-gue_prom_300_all-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_prom_300_all"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R4.json",
+        "bytes": 3955,
+        "sha256": "bae4912f7f9e2ff2665e2e18d1b20bf98ea78b1d5565e70a6d1ca959ad437da3"
+      },
+      "compression_seconds": 2.6772265969921136,
+      "upload_seconds": 2.253620254996349,
+      "fresh_download_seconds": 1.0288661439990392,
+      "all_member_verification_seconds": 8.23636037799588,
+      "completed_utc": "2026-11-18T06:32:19.733649+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R4",
+      "task": "gue_splice_reconstructed",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "e54916f11f2f97ce0d707d64dac27122b4f7ed88",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_splice_reconstructed-checkpoint-001/A07-R4-gue_splice_reconstructed-checkpoint-001.tar.gz",
+      "archive_sha256": "591cb1b540a025accc42f9124b21bb7ddce2cde90e53ce2d8012d37fc6524607",
+      "archive_bytes": 46774714,
+      "member_manifest_sha256": "7999b7dc024ce744a8b74d84bfba8b5f244b2f65e565d15887210785fd416fb6",
+      "all_files_verified": 733,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R4",
+            "task": "gue_splice_reconstructed",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_splice_reconstructed",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_splice_reconstructed",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_splice_reconstructed",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_splice_reconstructed-fresh-001/consumer/A07-R4-gue_splice_reconstructed-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_splice_reconstructed/dev/chunk_000000/COMPLETE.json",
+            "sha256": "61340204b247d1cc9eae95e90b79b2ca8f328796d22153384b0eda33fe169b7b"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_splice_reconstructed/dev/chunk_000256/COMPLETE.json",
+            "sha256": "0ce50c92235a9408c9581e70e8309c171c7a6b011e2f64deaf35428d1b854ac8"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_splice_reconstructed-fresh-001/consumer/A07-R4-gue_splice_reconstructed-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_splice_reconstructed-fresh-001/consumer/A07-R4-gue_splice_reconstructed-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_splice_reconstructed"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R4.json",
+        "bytes": 3955,
+        "sha256": "bae4912f7f9e2ff2665e2e18d1b20bf98ea78b1d5565e70a6d1ca959ad437da3"
+      },
+      "compression_seconds": 3.2654466099920683,
+      "upload_seconds": 2.379773730004672,
+      "fresh_download_seconds": 1.5484770750044845,
+      "all_member_verification_seconds": 8.542637724996894,
+      "completed_utc": "2026-11-18T06:35:48.506783+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R4",
+      "task": "gue_mouse_0",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "2e6f86cf100788d22934ea59fe5710179ef3b270",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_mouse_0-checkpoint-001/A07-R4-gue_mouse_0-checkpoint-001.tar.gz",
+      "archive_sha256": "88d7faedd12cae4bb28c0bd6c00e6100b68a9db2a2c08dc5c74302d6a3e2bde1",
+      "archive_bytes": 41339450,
+      "member_manifest_sha256": "dc812a492fc715ca06211138c7e0b31f905bc3ea71bb0979ab275f6348d27652",
+      "all_files_verified": 741,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R4",
+            "task": "gue_mouse_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_mouse_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 8.881784197001252e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_mouse_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R4",
+            "task": "gue_mouse_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_mouse_0-fresh-001/consumer/A07-R4-gue_mouse_0-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_mouse_0/dev/chunk_000000/COMPLETE.json",
+            "sha256": "af6781e9b520875abfa322c3a8cfdc223317197d3aa23593b70ff793cf7bb760"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R4/gue_mouse_0/dev/chunk_000256/COMPLETE.json",
+            "sha256": "aafdd2d1000b57c9458ef434c761cf3059391060bfabffce3654d84e6ed2e326"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_mouse_0-fresh-001/consumer/A07-R4-gue_mouse_0-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_mouse_0-fresh-001/consumer/A07-R4-gue_mouse_0-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_mouse_0"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R4.json",
+        "bytes": 3955,
+        "sha256": "bae4912f7f9e2ff2665e2e18d1b20bf98ea78b1d5565e70a6d1ca959ad437da3"
+      },
+      "compression_seconds": 2.9532926169922575,
+      "upload_seconds": 2.225290902002598,
+      "fresh_download_seconds": 1.0391771600116044,
+      "all_member_verification_seconds": 8.405770436991588,
+      "completed_utc": "2026-11-18T06:37:27.722993+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R6",
+      "task": "gue_tf_0",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "10bf4e4b63cff370eaee147f0225a8b46096151b",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_tf_0-checkpoint-001/A07-R6-gue_tf_0-checkpoint-001.tar.gz",
+      "archive_sha256": "cc55c2915021c7e719932c08c278268d2c20056a4c8040dd059c124c2808926f",
+      "archive_bytes": 41675050,
+      "member_manifest_sha256": "bb66eebb754d6877a9b16a503acb02de0fe22772eca84b035ba27d027636d5d7",
+      "all_files_verified": 748,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R6",
+            "task": "gue_tf_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_tf_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_tf_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_tf_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_tf_0-fresh-001/consumer/A07-R6-gue_tf_0-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_tf_0/dev/chunk_000000/COMPLETE.json",
+            "sha256": "d0f677eb06d0629c2548965158fd72483d310b30c5021a9dd02de50b91acd261"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_tf_0/dev/chunk_000256/COMPLETE.json",
+            "sha256": "3109ab27a0bc753c23001803cbb4991c231462e7691587b836e11ffbbb30376e"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_tf_0-fresh-001/consumer/A07-R6-gue_tf_0-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_tf_0-fresh-001/consumer/A07-R6-gue_tf_0-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_tf_0"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R6.json",
+        "bytes": 3954,
+        "sha256": "50921a904af536de63c01b14db808b9ddd184ccac4a2677f4e4015487709e0f0"
+      },
+      "compression_seconds": 3.061398994992487,
+      "upload_seconds": 2.4796956700010924,
+      "fresh_download_seconds": 1.2883998149918625,
+      "all_member_verification_seconds": 8.601697374004289,
+      "completed_utc": "2026-11-18T06:39:23.632550+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R6",
+      "task": "gue_prom_core_all",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "27ba3f4528b4a5159af31bd91f4d70d4db493c9e",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_prom_core_all-checkpoint-001/A07-R6-gue_prom_core_all-checkpoint-001.tar.gz",
+      "archive_sha256": "87efbfcd5b826061e677f8c590cd7e822fd5fdce3fb5fb579af201919bd05c5e",
+      "archive_bytes": 41144558,
+      "member_manifest_sha256": "38aa0c24d5c63c371d691180322027bc936cc5678b20925842fb20990cc35087",
+      "all_files_verified": 754,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R6",
+            "task": "gue_prom_core_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_prom_core_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 8.881784197001252e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_prom_core_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_prom_core_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_core_all-fresh-001/consumer/A07-R6-gue_prom_core_all-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_prom_core_all/dev/chunk_000000/COMPLETE.json",
+            "sha256": "f37326d732e7608eeb4a29e037e03ac789fb668422c6ca10715fcbb1e99e6853"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_prom_core_all/dev/chunk_000256/COMPLETE.json",
+            "sha256": "47b60374a29a9f062925582492f076db2e61aead880a695f7834c341ca28bffa"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_core_all-fresh-001/consumer/A07-R6-gue_prom_core_all-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_core_all-fresh-001/consumer/A07-R6-gue_prom_core_all-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_prom_core_all"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R6.json",
+        "bytes": 3954,
+        "sha256": "50921a904af536de63c01b14db808b9ddd184ccac4a2677f4e4015487709e0f0"
+      },
+      "compression_seconds": 2.7280035370058613,
+      "upload_seconds": 2.274954660999356,
+      "fresh_download_seconds": 0.9932562390022213,
+      "all_member_verification_seconds": 8.416184205008904,
+      "completed_utc": "2026-11-18T06:40:53.773280+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R6",
+      "task": "gue_prom_300_all",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "f33705b94ff80eefb668c500515142e2c5566c57",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_prom_300_all-checkpoint-001/A07-R6-gue_prom_300_all-checkpoint-001.tar.gz",
+      "archive_sha256": "a0a07ca8aace68395372fbe094798b5bb7a05824056dad21b8cd7054c31362e6",
+      "archive_bytes": 40725635,
+      "member_manifest_sha256": "4884312a1b49267ace7beecbfd0c840644d2a6cad8a8b7e521f5e9841de4d8f2",
+      "all_files_verified": 761,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R6",
+            "task": "gue_prom_300_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 2.7755575615628914e-17,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_prom_300_all",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_prom_300_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_prom_300_all",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_300_all-fresh-001/consumer/A07-R6-gue_prom_300_all-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_prom_300_all/dev/chunk_000000/COMPLETE.json",
+            "sha256": "f13a7bd0de81852fec4b1593d2ec5b78df2d69609301f7d6b6d2c704b78d9571"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_prom_300_all/dev/chunk_000256/COMPLETE.json",
+            "sha256": "e17d4626a3ffc748cbabf904a046f37b1de75e57b9480a96897576d65944767c"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_300_all-fresh-001/consumer/A07-R6-gue_prom_300_all-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_300_all-fresh-001/consumer/A07-R6-gue_prom_300_all-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_prom_300_all"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R6.json",
+        "bytes": 3954,
+        "sha256": "50921a904af536de63c01b14db808b9ddd184ccac4a2677f4e4015487709e0f0"
+      },
+      "compression_seconds": 2.2061708760011243,
+      "upload_seconds": 2.3986573919974035,
+      "fresh_download_seconds": 1.0985715560091194,
+      "all_member_verification_seconds": 8.61004029600008,
+      "completed_utc": "2026-11-18T06:42:22.651182+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R6",
+      "task": "gue_splice_reconstructed",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "baa6ed9dfdcc59783945b036909f0e23aeb1f0a1",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_splice_reconstructed-checkpoint-001/A07-R6-gue_splice_reconstructed-checkpoint-001.tar.gz",
+      "archive_sha256": "6d40a7f00b0d569dbae1a5102c0f462dc35f423720db1683cd061ff5df74c808",
+      "archive_bytes": 46891345,
+      "member_manifest_sha256": "c38d6284b9030df929fd53491efd1c317322278e52243e73e3f3e33a09664c19",
+      "all_files_verified": 767,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R6",
+            "task": "gue_splice_reconstructed",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_splice_reconstructed",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 5.551115123125783e-17,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_splice_reconstructed",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_splice_reconstructed",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_splice_reconstructed-fresh-001/consumer/A07-R6-gue_splice_reconstructed-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_splice_reconstructed/dev/chunk_000000/COMPLETE.json",
+            "sha256": "b16c58abb672f97168ebafa1c02152134114af105d6263e60c784ac20fa1466b"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_splice_reconstructed/dev/chunk_000256/COMPLETE.json",
+            "sha256": "b5da08eb77b8ab2db5c9599b381b8282efe916e283d1297f328cd09a4679df0e"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_splice_reconstructed-fresh-001/consumer/A07-R6-gue_splice_reconstructed-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_splice_reconstructed-fresh-001/consumer/A07-R6-gue_splice_reconstructed-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_splice_reconstructed"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R6.json",
+        "bytes": 3954,
+        "sha256": "50921a904af536de63c01b14db808b9ddd184ccac4a2677f4e4015487709e0f0"
+      },
+      "compression_seconds": 2.2852659780037357,
+      "upload_seconds": 2.3316675480018603,
+      "fresh_download_seconds": 1.1478099579981063,
+      "all_member_verification_seconds": 9.246378609997919,
+      "completed_utc": "2026-11-18T06:45:34.486140+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v1",
+      "status": "PASS",
+      "candidate": "R6",
+      "task": "gue_mouse_0",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "private_at_write_and_closeout": true,
+      "revision": "b3b0dbec18a573c714c2b16ce88f8584be6d2800",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_mouse_0-checkpoint-001/A07-R6-gue_mouse_0-checkpoint-001.tar.gz",
+      "archive_sha256": "6303ba802fea91a92ae1f046b52ce386b17dd9f959fcaee5a9aa41314e53ef25",
+      "archive_bytes": 41277608,
+      "member_manifest_sha256": "1762139f395479a2a4c641bd74f7163bb68f3a230ca65b10469270cdb8f4862e",
+      "all_files_verified": 773,
+      "fresh_download": true,
+      "force_download": true,
+      "new_A07_consumer_and_cache": true,
+      "safe_exact_member_set": true,
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "candidate": "R6",
+            "task": "gue_mouse_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_mouse_0",
+            "representation": "decoder_layer_16",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_mouse_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "independent_refit",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 1.1102230246251565e-16,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "candidate": "R6",
+            "task": "gue_mouse_0",
+            "representation": "final_norm",
+            "seed": 42,
+            "policy": "fixed_original_base",
+            "probability_max_abs": 0.0,
+            "metric_max_abs": 0.0,
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_mouse_0-fresh-001/consumer/A07-R6-gue_mouse_0-checkpoint-001",
+        "reused_verified_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "feature_chunks": [
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_mouse_0/dev/chunk_000000/COMPLETE.json",
+            "sha256": "26a2668e01648eab231f70bbcedd2048c5cec3b33147f85bbb736904306289e3"
+          },
+          {
+            "receipt_relative_path": "artifacts/features/R6/gue_mouse_0/dev/chunk_000256/COMPLETE.json",
+            "sha256": "203a9cdb43c302997627d947c2b60518e598dec6410b9f9d8bd1eaa12d11af9e"
+          }
+        ],
+        "producer_paths_used": false,
+        "GPU_initialization": false,
+        "independent_release_status": "PENDING_A08; representative recovery is not full-grid verification"
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_mouse_0-fresh-001/consumer/A07-R6-gue_mouse_0-checkpoint-001/artifacts/code/restore_check.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_mouse_0-fresh-001/consumer/A07-R6-gue_mouse_0-checkpoint-001",
+        "--features-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_mouse_0"
+      ],
+      "producer_path_substitution": false,
+      "reused_immutable_A06_consumer_receipt": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/REUSED_A06_CONSUMER_R6.json",
+        "bytes": 3954,
+        "sha256": "50921a904af536de63c01b14db808b9ddd184ccac4a2677f4e4015487709e0f0"
+      },
+      "compression_seconds": 2.8945986840117257,
+      "upload_seconds": 2.648577808009577,
+      "fresh_download_seconds": 1.0648809760023141,
+      "all_member_verification_seconds": 8.309450311993714,
+      "completed_utc": "2026-11-18T06:47:05.130992+00:00"
+    }
+  ],
+  "archive_bytes": 423217305,
+  "all_new_archive_members_verified": 7435,
+  "representative_panel_paths": 40,
+  "probability_max_abs": 0.0,
+  "metric_max_abs": 8.881784197001252e-16,
+  "all_grid_independent_release_verification": "NOT_PERFORMED_PENDING_A08",
+  "reused_feature_dependencies": [
+    {
+      "status": "PASS",
+      "reused_existing_fresh_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+      "archive_dependency": {
+        "schema": "pod-a-a06-incremental-backup-v1",
+        "status": "PASS",
+        "candidate": "R4",
+        "group": "other_five",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "private_at_write_and_closeout": true,
+        "revision": "17ede5e428390fc8fa611af9f9f856648741815c",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R4/other_five-checkpoint-001/A06-R4-other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "1b484caaf7ba4d251198b3116101cf4d8f397d88b9aa943c4cb9fb1d0e1c9ff5",
+        "archive_bytes": 1370093265,
+        "member_manifest_sha256": "400757ac8bf23adabd2fbf21e13ac1ea180d1f5a269faf91db708bebb48381e0",
+        "all_files_verified": 214,
+        "fresh_download": true,
+        "force_download": true,
+        "new_consumer_and_cache": true,
+        "safe_exact_member_set": true,
+        "CPU_restored_checks": {
+          "status": "PASS",
+          "candidate": "R4",
+          "group": "other_five",
+          "restored_head_checks": [],
+          "restored_LM_aggregations": [
+            {
+              "task": "gue_tf_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_tf_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            }
+          ],
+          "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+          "GPU_loads": 0,
+          "external_producer_paths_used": false
+        },
+        "restore_command": [
+          "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001/artifacts/code/restore_check.py",
+          "--root",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+          "--candidate",
+          "R4",
+          "--group",
+          "other_five"
+        ],
+        "producer_path_substitution": false,
+        "compression_seconds": 28.819456239012652,
+        "upload_seconds": 6.420078795999871,
+        "fresh_download_seconds": 4.735264282004209,
+        "extract_all_hash_seconds": 14.365317874995526,
+        "excluded_historical_archives_repacked": 0,
+        "GPU_restoration_runs": 0,
+        "completed_utc": "2026-11-18T03:46:15.481282+00:00"
+      },
+      "all_files_reverified": 213,
+      "member_manifest_sha256": "400757ac8bf23adabd2fbf21e13ac1ea180d1f5a269faf91db708bebb48381e0",
+      "reverification_utc": "2026-11-18T06:28:22.720365+00:00",
+      "new_download": false,
+      "producer_substitution": false
+    },
+    {
+      "status": "PASS",
+      "reused_existing_fresh_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+      "archive_dependency": {
+        "schema": "pod-a-a06-incremental-backup-v1",
+        "status": "PASS",
+        "candidate": "R6",
+        "group": "other_five",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "private_at_write_and_closeout": true,
+        "revision": "278dc904401424964d54508c076d23fea486a45a",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R6/other_five-checkpoint-001/A06-R6-other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "d318b509d12bcada8306c177a6e1229b4abd324e8f61ce269c32dc63c34523e0",
+        "archive_bytes": 1368607085,
+        "member_manifest_sha256": "fd572609df3211c7c02254c31d65cc3cba79977c271cbff60ce85abe1ad0b65a",
+        "all_files_verified": 227,
+        "fresh_download": true,
+        "force_download": true,
+        "new_consumer_and_cache": true,
+        "safe_exact_member_set": true,
+        "CPU_restored_checks": {
+          "status": "PASS",
+          "candidate": "R6",
+          "group": "other_five",
+          "restored_head_checks": [],
+          "restored_LM_aggregations": [
+            {
+              "task": "gue_tf_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_tf_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            }
+          ],
+          "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+          "GPU_loads": 0,
+          "external_producer_paths_used": false
+        },
+        "restore_command": [
+          "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001/artifacts/code/restore_check.py",
+          "--root",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+          "--candidate",
+          "R6",
+          "--group",
+          "other_five"
+        ],
+        "producer_path_substitution": false,
+        "compression_seconds": 28.743493566988036,
+        "upload_seconds": 6.445376542993472,
+        "fresh_download_seconds": 4.70588619299815,
+        "extract_all_hash_seconds": 12.947660286998143,
+        "excluded_historical_archives_repacked": 0,
+        "GPU_restoration_runs": 0,
+        "completed_utc": "2026-11-18T04:20:52.467220+00:00"
+      },
+      "all_files_reverified": 226,
+      "member_manifest_sha256": "fd572609df3211c7c02254c31d65cc3cba79977c271cbff60ce85abe1ad0b65a",
+      "reverification_utc": "2026-11-18T06:39:02.600504+00:00",
+      "new_download": false,
+      "producer_substitution": false
+    }
+  ],
+  "model_GPU_runtime_recreated": false
+}

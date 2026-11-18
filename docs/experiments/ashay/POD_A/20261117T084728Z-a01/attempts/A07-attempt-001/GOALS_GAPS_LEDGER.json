@@ -1,0 +1,62 @@
+{
+  "questions": [
+    {
+      "question": "Task retention before/after config declaration",
+      "evidence": [
+        "RESULTS_LONG.csv",
+        "PAIRED_CONTRASTS.csv",
+        "INCLUSION_EXPOSURE_PLAN.csv",
+        "LM_RESULTS.reused_A06.csv"
+      ],
+      "status": "PROVISIONAL_PENDING_A08",
+      "limits": "Planned inclusion, config declaration and actual exposure differ; no causal/unseen-data claim"
+    },
+    {
+      "question": "Stability of already retained tasks",
+      "evidence": [
+        "A06_H3_RESULTS.reused.csv",
+        "RESULTS_LONG.csv",
+        "PAIRED_CONTRASTS.csv"
+      ],
+      "limits": "Pointwise intervals conditional on fitted heads; no equivalence/noninferiority claim"
+    },
+    {
+      "question": "Layer dependence and fixed vs refitted readout",
+      "evidence": [
+        "RESULTS_LONG.csv",
+        "SEED_DIAGNOSTICS.csv"
+      ],
+      "limits": "All26 layers and3CVseeds preserved; predeclared anchors not best-score selection; no independent intervention replication"
+    },
+    {
+      "question": "Controls",
+      "evidence": [
+        "CONTROL_REUSE_MAP.json",
+        "PAIRED_CONTRASTS.csv"
+      ],
+      "limits": "36 unique historical fits,30 relevant here; no candidate-specific control refits"
+    }
+  ],
+  "full_head_universe": 3276,
+  "historical_heads": 1404,
+  "A06_verified_H3_heads": 156,
+  "A07_producer_complete_pending_A08": 780,
+  "production_artifacts_total": 2340,
+  "R2_pending": 468,
+  "R5_pending": 468,
+  "R3_bridge": "Pending for affected new cross-runtime contrasts; historical domain valid",
+  "adjacent_edges": [
+    "R2-R1",
+    "R3-R2",
+    "R4-R3",
+    "R5-R4",
+    "R6-R5"
+  ],
+  "nonadjacent_R6_R4": "Predeclared A08 only",
+  "actual_parents_objectives_exposure_realized_token_budgets": null,
+  "unknown_reason": "No supplied evidence closes these gaps",
+  "A04_status": "PARTIAL",
+  "LM_primary_universe": 49,
+  "LM_evidence_available": 35,
+  "LM_external_pending": 14
+}

@@ -1,0 +1,255 @@
+test_bad_hash_and_wrong_fixed_head (__main__.ContractTests.test_bad_hash_and_wrong_fixed_head) ... ERROR
+test_binary_threshold_tie (__main__.ContractTests.test_binary_threshold_tie) ... ok
+test_binary_ties_and_absent_class_draw (__main__.ContractTests.test_binary_ties_and_absent_class_draw) ... ok
+test_cross_stage (__main__.ContractTests.test_cross_stage) ... ERROR
+test_duplicate_sequences_distinct_ids_and_group_folds (__main__.ContractTests.test_duplicate_sequences_distinct_ids_and_group_folds) ... ERROR
+test_escape_path (__main__.ContractTests.test_escape_path) ... ERROR
+test_extra_cache_member_rejected (__main__.ContractTests.test_extra_cache_member_rejected) ... ERROR
+test_fold_missing_complement_rejected (__main__.ContractTests.test_fold_missing_complement_rejected) ... ERROR
+test_group_leakage_rejected (__main__.ContractTests.test_group_leakage_rejected) ... ERROR
+test_multiclass_argmax_tie (__main__.ContractTests.test_multiclass_argmax_tie) ... ok
+test_partial_write_preserved (__main__.ContractTests.test_partial_write_preserved) ... ok
+test_permuted_classes_rejected (__main__.ContractTests.test_permuted_classes_rejected) ... ERROR
+test_probability_normalization_failure (__main__.ContractTests.test_probability_normalization_failure) ... ERROR
+test_row_order_mismatch (__main__.ContractTests.test_row_order_mismatch) ... ERROR
+test_sealed_output_never_overwritten (__main__.ContractTests.test_sealed_output_never_overwritten) ... ERROR
+test_single_writer_lock (__main__.ContractTests.test_single_writer_lock) ... /usr/lib/python3.12/traceback.py:241: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmpo59a4bh6/unit.lock' mode='a' encoding='UTF-8'>
+  tb.tb_frame.clear()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_splice_tied_macro_and_absent_class (__main__.ContractTests.test_splice_tied_macro_and_absent_class) ... ok
+test_valid_seal_resume_and_corrupt_cache (__main__.ContractTests.test_valid_seal_resume_and_corrupt_cache) ... ERROR
+test_wrong_cache_identity (__main__.ContractTests.test_wrong_cache_identity) ... ERROR
+test_wrong_candidate (__main__.ContractTests.test_wrong_candidate) ... ERROR
+test_wrong_task (__main__.ContractTests.test_wrong_task) ... ERROR
+test_zero_variance_float32_scaler_binary_and_multiclass (__main__.ContractTests.test_zero_variance_float32_scaler_binary_and_multiclass) ... ok
+
+======================================================================
+ERROR: test_bad_hash_and_wrong_fixed_head (__main__.ContractTests.test_bad_hash_and_wrong_fixed_head)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 57, in test_bad_hash_and_wrong_fixed_head
+    with self.assertRaises(AssertionError):check_ref({'path':str(p),'bytes':p.stat().st_size,'sha256':'0'*64})
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 20, in check_ref
+    p=Path(e['path']);require(p.is_file() and not p.is_symlink() and p.stat().st_size==e['bytes'] and sha(p)==e['sha256'],'Dependency changed: '+str(p));return p
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Dependency changed: /tmp/tmpxw5yocr1/base.joblib
+
+======================================================================
+ERROR: test_cross_stage (__main__.ContractTests.test_cross_stage)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 51, in test_cross_stage
+    with self.assertRaises(AssertionError):stage_spec('R4',TASKS[0],'final_norm',42,'A08')
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 39, in stage_spec
+    require(stage=='A07' and CFG['stage']=='A07','Cross-stage dispatch denied');require(alias in ['R4','R6'] and task in TASKS and key in LAYERS and seed in SEEDS,'Unapproved unit');return '/'.join([alias,task,key,'seed'+str(seed)])
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Cross-stage dispatch denied
+
+======================================================================
+ERROR: test_duplicate_sequences_distinct_ids_and_group_folds (__main__.ContractTests.test_duplicate_sequences_distinct_ids_and_group_folds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 36, in test_duplicate_sequences_distinct_ids_and_group_folds
+    m,f=self.fixture();out=validate_folds(f,m,5,np.array([0,1]));self.assertEqual(len(out),5)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 61, in validate_folds
+    a,b=np.array([index[v] for v in tr]),np.array([index[v] for v in va]);require(set(meta['groups'][a]).isdisjoint(meta['groups'][b]),'Fold group leakage');require(np.array_equal(np.unique(meta['labels'][a]),classes) and np.array_equal(np.unique(meta['labels'][b]),classes),'Missing fold class');out.append((a,b))
+                                                                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Missing fold class
+
+======================================================================
+ERROR: test_escape_path (__main__.ContractTests.test_escape_path)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 53, in test_escape_path
+    with self.assertRaises(AssertionError):owned(A/'../outside',A)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/production_contract.py", line 13, in owned
+    p=Path(p);root=Path(root).resolve();require(p.resolve().is_relative_to(root) and p.resolve()!=root,'Write-path escape');require(not p.is_symlink(),'Symlink output rejected');return p
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Write-path escape
+
+======================================================================
+ERROR: test_extra_cache_member_rejected (__main__.ContractTests.test_extra_cache_member_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 80, in test_extra_cache_member_rejected
+    with self.assertRaises(AssertionError):verify_seal(root,{})
+                                           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 28, in verify_seal
+    require(len(paths)==len(set(paths)),'Duplicate sealed members');require(set(paths)=={str(p.relative_to(root)) for p in root.rglob('*') if p.is_file() and p.name!='COMPLETE.json'},'Unexpected unsealed members');return j
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unexpected unsealed members
+
+======================================================================
+ERROR: test_fold_missing_complement_rejected (__main__.ContractTests.test_fold_missing_complement_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 42, in test_fold_missing_complement_rejected
+    with self.assertRaises(AssertionError):validate_folds(f,m,5,np.array([0,1]))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 60, in validate_folds
+    tr,va=f['train_ids'],f['validation_ids'];require(len(set(tr))==len(tr) and len(set(va))==len(va) and set(tr).isdisjoint(va) and set(tr)|set(va)==allids,'Fold membership/complement differs')
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Fold membership/complement differs
+
+======================================================================
+ERROR: test_group_leakage_rejected (__main__.ContractTests.test_group_leakage_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 39, in test_group_leakage_rejected
+    with self.assertRaises(AssertionError):validate_folds(f,m,5,np.array([0,1]))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 61, in validate_folds
+    a,b=np.array([index[v] for v in tr]),np.array([index[v] for v in va]);require(set(meta['groups'][a]).isdisjoint(meta['groups'][b]),'Fold group leakage');require(np.array_equal(np.unique(meta['labels'][a]),classes) and np.array_equal(np.unique(meta['labels'][b]),classes),'Missing fold class');out.append((a,b))
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Fold group leakage
+
+======================================================================
+ERROR: test_permuted_classes_rejected (__main__.ContractTests.test_permuted_classes_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 26, in test_permuted_classes_rejected
+    with self.assertRaises(AssertionError):validate_prob(np.full((3,3),1/3),np.array([0,1,2]),np.array([2,1,0]))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 42, in validate_prob
+    require(np.array_equal(classes,np.unique(y)),'Unsorted or mismatched class columns');require(p.dtype==np.float64 and p.shape==(len(y),len(classes)) and np.isfinite(p).all() and np.all((p>=0)&(p<=1)) and np.allclose(p.sum(1),1,atol=1e-12,rtol=0),'Invalid probability support')
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unsorted or mismatched class columns
+
+======================================================================
+ERROR: test_probability_normalization_failure (__main__.ContractTests.test_probability_normalization_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 24, in test_probability_normalization_failure
+    with self.assertRaises(AssertionError):validate_prob(np.ones((3,3)),np.array([0,1,2]),np.array([0,1,2]))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 42, in validate_prob
+    require(np.array_equal(classes,np.unique(y)),'Unsorted or mismatched class columns');require(p.dtype==np.float64 and p.shape==(len(y),len(classes)) and np.isfinite(p).all() and np.all((p>=0)&(p<=1)) and np.allclose(p.sum(1),1,atol=1e-12,rtol=0),'Invalid probability support')
+                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid probability support
+
+======================================================================
+ERROR: test_row_order_mismatch (__main__.ContractTests.test_row_order_mismatch)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 45, in test_row_order_mismatch
+    with self.assertRaises(AssertionError):pair(z,m,np.array([0,1]))
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 44, in pair
+    for n in ['ids','labels','groups','sequence_sha256']:require(np.array_equal(z[n],meta[n]),'Pairing/order differs: '+n)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Pairing/order differs: ids
+
+======================================================================
+ERROR: test_sealed_output_never_overwritten (__main__.ContractTests.test_sealed_output_never_overwritten)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 76, in test_sealed_output_never_overwritten
+    with self.assertRaises(AssertionError):new_work(root)
+                                           ^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 32, in new_work
+    require(not (root/'COMPLETE.json').exists(),'Cannot replace sealed output');q=A/'quarantine'/root.relative_to(A);q=q.with_name(q.name+'-'+uuid.uuid4().hex);q.parent.mkdir(parents=True,exist_ok=True);os.replace(root,q)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Cannot replace sealed output
+
+======================================================================
+ERROR: test_valid_seal_resume_and_corrupt_cache (__main__.ContractTests.test_valid_seal_resume_and_corrupt_cache)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 62, in test_valid_seal_resume_and_corrupt_cache
+    with self.assertRaises(AssertionError):verify_seal(root,ident)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 27, in verify_seal
+    p=owned(root/e['path'],root);require(p.is_file() and p.stat().st_size==e['bytes'] and sha(p)==e['sha256'],'Corrupt sealed cache/unit member: '+str(p));paths.append(e['path'])
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Corrupt sealed cache/unit member: /tmp/tmpgl97fn1g/values.npz
+
+======================================================================
+ERROR: test_wrong_cache_identity (__main__.ContractTests.test_wrong_cache_identity)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 66, in test_wrong_cache_identity
+    with self.assertRaises(AssertionError):verify_seal(root,{'stage':'A08'})
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 24, in verify_seal
+    if identity is not None:require(j['identity']==identity,'Sealed scientific identity mismatch')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Sealed scientific identity mismatch
+
+======================================================================
+ERROR: test_wrong_candidate (__main__.ContractTests.test_wrong_candidate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 47, in test_wrong_candidate
+    with self.assertRaises(AssertionError):stage_spec('R5',TASKS[0],'final_norm',42)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 39, in stage_spec
+    require(stage=='A07' and CFG['stage']=='A07','Cross-stage dispatch denied');require(alias in ['R4','R6'] and task in TASKS and key in LAYERS and seed in SEEDS,'Unapproved unit');return '/'.join([alias,task,key,'seed'+str(seed)])
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unapproved unit
+
+======================================================================
+ERROR: test_wrong_task (__main__.ContractTests.test_wrong_task)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/test_other_five.py", line 49, in test_wrong_task
+    with self.assertRaises(AssertionError):stage_spec('R4','emp_H3','final_norm',42)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/other_five_common.py", line 39, in stage_spec
+    require(stage=='A07' and CFG['stage']=='A07','Cross-stage dispatch denied');require(alias in ['R4','R6'] and task in TASKS and key in LAYERS and seed in SEEDS,'Unapproved unit');return '/'.join([alias,task,key,'seed'+str(seed)])
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/qualification_contract.py", line 9, in require
+    if not v:raise ValueError(msg)
+             ^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unapproved unit
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.115s
+
+FAILED (errors=15)

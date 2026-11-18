@@ -1,0 +1,21 @@
+# A07 handoff — producer scope COMPLETE
+
+Run `20261117T084728Z-a01`, attempt `A07-attempt-001`. Approved prompt `28231013b20eb83951e1f689d1faeb781231ef48`; A06 research handoff `a641ca0c8fcc534295d40cd19f65ddc1579128d2`. Coverage `0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4`; protocol `73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7`. The no-deadline amendment remains active; unknown original/rental starts, rate and cost remain null.
+
+Completed **780 new final probes** and **780 unchanged original-base applications**, R4 then R6, all five other tasks ×26 representations ×3 CV seeds. The final-head training plan was12,480 optimizer fits; actual count **12512**, retries **32**. There were zero extra A07 audit refits, GPU forwards, LM runs or control fits. Original-base scaler/head hashes stayed unchanged. Splice uses numeric classes0/1/2,512dev rows and511exact/RC groups. All other tasks retain512dev groups. Frozen fivefold TRAIN memberships and float32 transform semantics were preserved.
+
+**7,800 dev metric rows** and **16,800 paired metric rows** are explicitly provisional COMPLETE_UNVERIFIED with producer_validation PASS. All expected Cartesian keys, sealed members, class/row identity and serialized probabilities passed producer checks. The initial metadata-selected binary/splice units passed representative independent saved-output checks and are included among780, not extra fits. A08 still owns independent all-unit reconstruction, every released metric/draw/interval check, and the prospectively frozen60-unit fresh-refit panel. No A08 work has started.
+
+A06's original6,776-row PAIRED_CONTRASTS omitted required lineage. That failure remains visible; the versioned A07 normalized derivative adds receipt-derived measurement provenance while preserving every original key, original field string and ordering. NEW is relative to A06 measurement; REUSED_IN_A07 is separate ingestion status. No original A06 bytes or scientific values were changed.
+
+Reuse remains1404historical heads +156verified A06H3 heads +780new A07 heads =2340production head artifacts out of3276. R2 remains468pending identity/delivery, R5 remains468pending qualification/downstreamwork, R3 historical domain remains valid with affected new cross-runtime comparisons bridge-gated. A04 stays PARTIAL. All five true adjacent edges remain explicit and unresolved where endpoints are missing. R6−R4 stays a predeclared nonadjacent A08 analysis, not an individual retain-addition effect. Actual parents, exposure and realized budgets remain unknown. LM remains35available primary units of49, no layer/seed multiplication; A06's14primary and12TRAIN diagnostics are unchanged.
+
+Ten append-only private task archives passed fresh forced download, exact safe member-set validation and all-member checksums. Representative restored checks covered both candidates ×all five tasks ×layer16/final_norm ×seed42 ×both policies:40probability/metric paths, including splice multiclass. Probability max residual **0**, metric max residual **8.8817841970012523e-16**. Fresh A07 consumers used reverified immutable A06 restored feature consumers, never original producer feature paths. This verifies CPU recovery of the stated panel; model/GPU runtime recreation is excluded and exact reacquisition dependencies remain linked.
+
+Scientific/backup workers have exited and owned locks are free. Observer `ACTIVE`, reviewer DRAFT_ONLY, publisher BLOCKED; administrative monitoring cannot change the active pin or start another stage. See FIT_RESOURCE_REPORT and RESOURCE_LEDGER for measured resources and actual CLI vectors in PRODUCTION_COMMANDS.
+
+All layers/seeds/policies and adverse/flat effects remain in provisional tables; predeclared seed42anchor displays were not selected using scores. Intervals are pointwise exploratory conditional on heads. No causal, biological-independence, unseen-data, equivalence or forgetting claim is established.
+
+Next: separately approve reviewed A08. Reuse all completed work, execute the frozen independent audit and only then release/interpret new A07 measurements. Preserve pending checkpoint/bridge gaps. Do not repeat A06 extraction or A07 production fits.
+
+WAITING_FOR_APPROVAL: A08

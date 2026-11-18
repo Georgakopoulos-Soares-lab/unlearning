@@ -1,0 +1,805 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-11-18T06:51:18.417770+00:00",
+  "attempt_elapsed_wall_seconds": 2255.512547,
+  "initial_binary_splice_gate_fits_included_in780": true,
+  "production_final_heads": 780,
+  "planned_optimizer_fits": 12480,
+  "actual_optimizer_fits": 12512,
+  "retry_optimizer_fits": 32,
+  "supplemental_audit_refits_under_A07": 0,
+  "fit_phase_wall_seconds": 795.5367851869523,
+  "cache_phase_wall_seconds": 73.58036222899682,
+  "measured_probe_pipeline_child_CPU_seconds": 8653.62546,
+  "CPU_accounting_basis": "Per task producer subprocess reports cumulative child usage after its cache+fit phases; count only its final fit snapshot, plus initial production invocation, to avoid double-counting cache CPU. Per-unit worker CPU is reported separately. Backup/controller CPU not included.",
+  "whole_stage_CPU_seconds_including_backup_controller": null,
+  "all_unit_CPU_process_seconds": 8578.179554217,
+  "all_unit_wall_seconds_sum_not_elapsed": 1470.3486664547527,
+  "max_unit_peak_RSS_kib": 214204,
+  "compression_seconds": 27.63902327598771,
+  "upload_seconds": 23.655267822017777,
+  "fresh_download_seconds": 11.504952613031492,
+  "all_archive_member_hash_seconds": 84.24423259598552,
+  "archive_uploaded_bytes": 423217305,
+  "fresh_downloaded_archive_bytes": 423217305,
+  "CPU_workers_max": 2,
+  "BLAS_threads_per_worker": 4,
+  "per_worker_address_space_limit_bytes": 34359738368,
+  "GPU_work_seconds": 0,
+  "new_GPU_forwards": 0,
+  "original_start": null,
+  "rental_start": null,
+  "hourly_rate": null,
+  "cost": null,
+  "total_deadline": null,
+  "science_cutoff": null,
+  "closure_reserve": null,
+  "forecast": "No A07 production units remain. A08/A09 require separate approvals; their elapsed/resource forecasts remain uncertain and do not constitute cutoffs.",
+  "resource_preflight": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/RESOURCE_PREFLIGHT.json",
+    "bytes": 904,
+    "sha256": "33d36b2bcdf15954375c7f6f5d8af9599e501ea9b03317f7610082db5f013030"
+  },
+  "job_records": [
+    {
+      "name": "fit-R6-gue_mouse_0-001",
+      "stage": "A07",
+      "pid": 45039,
+      "proc_start_ticks": "9822579",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_mouse_0"
+      ],
+      "command_sha256": "43b081f1d9f32070064c8e8a9e4bd664c82ed3ad71f1893eb306588a10f15c2a",
+      "started_utc": "2026-11-18T06:45:44.781494+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:46:36.716538+00:00",
+      "wall_seconds": 51.93866181799967,
+      "children_CPU_user_seconds": 529.088514,
+      "children_CPU_system_seconds": 5.686754,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_mouse_0-001.stdout.jsonl",
+        "bytes": 22457,
+        "sha256": "2567109d7fef67d383b4740322596bc351ece72211a79083ab6fa99802fd687f"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_mouse_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R6-gue_mouse_0-001",
+      "stage": "A07",
+      "pid": 45035,
+      "proc_start_ticks": "9821563",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_mouse_0"
+      ],
+      "command_sha256": "ace06c16b8c9fbfdd3498d23e52742ba037628315c6811fb9733ef26f28642de",
+      "started_utc": "2026-11-18T06:45:34.621323+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:45:44.755276+00:00",
+      "wall_seconds": 10.137854596003308,
+      "children_CPU_user_seconds": 3.7782970000000002,
+      "children_CPU_system_seconds": 0.9522039999999999,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_mouse_0-001.stdout.jsonl",
+        "bytes": 197,
+        "sha256": "728ce9a6a2442029ce00ef9fbb86f1522b2685bf612c76cb0e560ed7f578ec8d"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_mouse_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R6-gue_splice_reconstructed-001",
+      "stage": "A07",
+      "pid": 44910,
+      "proc_start_ticks": "9803299",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_splice_reconstructed"
+      ],
+      "command_sha256": "f60b5308df1bf8bd7fdb533bc61b8ccb06d8e72ea1662b5121e577e827aff403",
+      "started_utc": "2026-11-18T06:42:31.978686+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:45:06.331054+00:00",
+      "wall_seconds": 154.35694764798973,
+      "children_CPU_user_seconds": 1908.382317,
+      "children_CPU_system_seconds": 8.516596,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_splice_reconstructed-001.stdout.jsonl",
+        "bytes": 23453,
+        "sha256": "6624f9a0201876bba883a684ae61f07a6b49d4478630c30b2900ff154babeb1a"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_splice_reconstructed-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R6-gue_splice_reconstructed-001",
+      "stage": "A07",
+      "pid": 44906,
+      "proc_start_ticks": "9802382",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_splice_reconstructed"
+      ],
+      "command_sha256": "3a18801ad33315ca57c27cb7f51c97edc2112ead220ba157221a69e8d414afe1",
+      "started_utc": "2026-11-18T06:42:22.811805+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:42:31.944728+00:00",
+      "wall_seconds": 9.137300015005167,
+      "children_CPU_user_seconds": 3.729122,
+      "children_CPU_system_seconds": 0.9502229999999999,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_splice_reconstructed-001.stdout.jsonl",
+        "bytes": 223,
+        "sha256": "54fc9b2b137407fad07a276514273a898e4b08b05973db25d5b24046e4aab8e1"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_splice_reconstructed-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R6-gue_prom_300_all-001",
+      "stage": "A07",
+      "pid": 44668,
+      "proc_start_ticks": "9794388",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_prom_300_all"
+      ],
+      "command_sha256": "0330361690c9ce7adb3052d60531fa1848555f4e85106d21e17dedcf20042da3",
+      "started_utc": "2026-11-18T06:41:02.878038+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:41:54.211286+00:00",
+      "wall_seconds": 51.33741771899804,
+      "children_CPU_user_seconds": 512.078411,
+      "children_CPU_system_seconds": 6.118517,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_prom_300_all-001.stdout.jsonl",
+        "bytes": 22852,
+        "sha256": "0621a70305f58f9dedee5dc075a5ea5124f5eb7c71b367cbe0978ae1ef182ba9"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_prom_300_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R6-gue_prom_300_all-001",
+      "stage": "A07",
+      "pid": 44662,
+      "proc_start_ticks": "9793490",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_prom_300_all"
+      ],
+      "command_sha256": "5e4b4acbefcabc02f95754d60f4afafee6494be71eec53ed36de4834f91ef757",
+      "started_utc": "2026-11-18T06:40:53.890582+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:41:02.850968+00:00",
+      "wall_seconds": 8.963624819996767,
+      "children_CPU_user_seconds": 3.606935,
+      "children_CPU_system_seconds": 1.107481,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_prom_300_all-001.stdout.jsonl",
+        "bytes": 207,
+        "sha256": "2ec67d97cedebbb914101297dfa5d36585430a572242fd9aa3a0593ef08dc860"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_prom_300_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R6-gue_prom_core_all-001",
+      "stage": "A07",
+      "pid": 44582,
+      "proc_start_ticks": "9785393",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_prom_core_all"
+      ],
+      "command_sha256": "dd9c131df29fc9cd4de761b73e18c15ff50b40577958b46465f0761c345f4d74",
+      "started_utc": "2026-11-18T06:39:32.924237+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:40:25.462886+00:00",
+      "wall_seconds": 52.54290516999026,
+      "children_CPU_user_seconds": 521.023278,
+      "children_CPU_system_seconds": 6.832149,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_prom_core_all-001.stdout.jsonl",
+        "bytes": 22917,
+        "sha256": "d7e82535a338a48ccc5327e36ea18608905105b466758a0cc549f2a2fc8d08e0"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_prom_core_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R6-gue_prom_core_all-001",
+      "stage": "A07",
+      "pid": 44578,
+      "proc_start_ticks": "9784478",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_prom_core_all"
+      ],
+      "command_sha256": "5e82f785328a7bf762fd82033d804dbe8e729c84c8f863ef2a5aca27198ada8d",
+      "started_utc": "2026-11-18T06:39:23.776640+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:39:32.891740+00:00",
+      "wall_seconds": 9.11910336499568,
+      "children_CPU_user_seconds": 3.725149,
+      "children_CPU_system_seconds": 1.085152,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_prom_core_all-001.stdout.jsonl",
+        "bytes": 209,
+        "sha256": "fffe74f45b6cc76352f1d00e701f2c7e605027671c711f7c3695ec8b7cd3d286"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_prom_core_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R6-gue_tf_0-001",
+      "stage": "A07",
+      "pid": 44484,
+      "proc_start_ticks": "9775569",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_tf_0"
+      ],
+      "command_sha256": "3c4b323296e147b82c3ff58e22855087c531ad1b987f59aacc247b0362809bbd",
+      "started_utc": "2026-11-18T06:37:54.681551+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:38:50.761295+00:00",
+      "wall_seconds": 56.08387843199307,
+      "children_CPU_user_seconds": 577.830419,
+      "children_CPU_system_seconds": 7.056146,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_tf_0-001.stdout.jsonl",
+        "bytes": 22218,
+        "sha256": "c1e9a3709fac96f6d99fde3b1d670c9c7b79855801118150de400bbc2eec50fb"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R6-gue_tf_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R6-gue_tf_0-001",
+      "stage": "A07",
+      "pid": 44477,
+      "proc_start_ticks": "9774715",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R6",
+        "--task",
+        "gue_tf_0"
+      ],
+      "command_sha256": "0036c21a8cf8c48cf99186f8c32e0772d8b8bf12f66a9151116ad1eda729a654",
+      "started_utc": "2026-11-18T06:37:46.140223+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:37:54.652113+00:00",
+      "wall_seconds": 8.516209876004723,
+      "children_CPU_user_seconds": 3.553101,
+      "children_CPU_system_seconds": 0.8814599999999999,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_tf_0-001.stdout.jsonl",
+        "bytes": 191,
+        "sha256": "1b0c177607085c49fba886cdbca45d4267901ee82ad83d17ee4fe3d41fcddd12"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R6-gue_tf_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R4-gue_mouse_0-001",
+      "stage": "A07",
+      "pid": 43986,
+      "proc_start_ticks": "9763834",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_mouse_0"
+      ],
+      "command_sha256": "1f3849471536644c911751601a26f054ac2df65252ef15fad42de6b0ca53eeb0",
+      "started_utc": "2026-11-18T06:35:57.332047+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:36:58.837952+00:00",
+      "wall_seconds": 61.50936701100727,
+      "children_CPU_user_seconds": 621.288595,
+      "children_CPU_system_seconds": 7.302784,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_mouse_0-001.stdout.jsonl",
+        "bytes": 22461,
+        "sha256": "290b371442df949823d8dbc222f69a12fa7084c0d203d4f2e1211956cb5854a3"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_mouse_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R4-gue_mouse_0-001",
+      "stage": "A07",
+      "pid": 43971,
+      "proc_start_ticks": "9762967",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_mouse_0"
+      ],
+      "command_sha256": "87b726ee72b0e46754e13da677c5d2987dbf58166eec3ab7f76961d6efc78139",
+      "started_utc": "2026-11-18T06:35:48.658229+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:35:57.306001+00:00",
+      "wall_seconds": 8.651948725004331,
+      "children_CPU_user_seconds": 3.678393,
+      "children_CPU_system_seconds": 0.917829,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_mouse_0-001.stdout.jsonl",
+        "bytes": 197,
+        "sha256": "62b41733627a09b9cc39c9412234331c025c8d23f55ea6bcf9510f3a3124b69d"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_mouse_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R4-gue_splice_reconstructed-001",
+      "stage": "A07",
+      "pid": 43840,
+      "proc_start_ticks": "9742212",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_splice_reconstructed"
+      ],
+      "command_sha256": "9a2782c80f4d27318b7ec00adff47b2fac11d6a30409c217f883592d7fe46d41",
+      "started_utc": "2026-11-18T06:32:21.117900+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:35:19.031367+00:00",
+      "wall_seconds": 177.9176076429867,
+      "children_CPU_user_seconds": 2085.692033,
+      "children_CPU_system_seconds": 10.590393,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_splice_reconstructed-001.stdout.jsonl",
+        "bytes": 23337,
+        "sha256": "d9cc13466c1fdea0c54d555bb82d9f2839a9840c37195a3bca64da3459dc5803"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_splice_reconstructed-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R4-gue_splice_reconstructed-001",
+      "stage": "A07",
+      "pid": 43836,
+      "proc_start_ticks": "9742086",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_splice_reconstructed"
+      ],
+      "command_sha256": "22689d75c6b42fe4441cad24c4f039e423fc6e1711edfb96b578b199b7670c28",
+      "started_utc": "2026-11-18T06:32:19.857636+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:32:21.088393+00:00",
+      "wall_seconds": 1.2343035340018105,
+      "children_CPU_user_seconds": 0.733686,
+      "children_CPU_system_seconds": 0.127023,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_splice_reconstructed-001.stdout.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_splice_reconstructed-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R4-gue_prom_300_all-001",
+      "stage": "A07",
+      "pid": 43761,
+      "proc_start_ticks": "9733632",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_prom_300_all"
+      ],
+      "command_sha256": "2ea75451e713e0cac48f9219a92ad46ce09ee209d5adf64b6c52efb102f4147f",
+      "started_utc": "2026-11-18T06:30:55.315938+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:31:52.819192+00:00",
+      "wall_seconds": 57.50792368699331,
+      "children_CPU_user_seconds": 559.971981,
+      "children_CPU_system_seconds": 7.74493,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_prom_300_all-001.stdout.jsonl",
+        "bytes": 22841,
+        "sha256": "425297acb3a302ab80eb8e1c6b86def5c00a5a3d15bcf5cc5fc23eeec3cd3d5b"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_prom_300_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R4-gue_prom_300_all-001",
+      "stage": "A07",
+      "pid": 43750,
+      "proc_start_ticks": "9732807",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_prom_300_all"
+      ],
+      "command_sha256": "b11870af578ce9a339f5d07c6fdfffb8046c36a44e6fb0c0308c281456db0f7a",
+      "started_utc": "2026-11-18T06:30:47.061493+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:30:55.283112+00:00",
+      "wall_seconds": 8.225359557996853,
+      "children_CPU_user_seconds": 3.365373,
+      "children_CPU_system_seconds": 0.950448,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_prom_300_all-001.stdout.jsonl",
+        "bytes": 207,
+        "sha256": "71a185a0581ba8490db4bfb7dc71d38b7c217376c2790d92102790e087ad1112"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_prom_300_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R4-gue_prom_core_all-001",
+      "stage": "A07",
+      "pid": 43681,
+      "proc_start_ticks": "9724157",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_prom_core_all"
+      ],
+      "command_sha256": "add56c162e9ee29b8e9ba45316a951bc8020ca9efb9b75c236f7794507723635",
+      "started_utc": "2026-11-18T06:29:20.559022+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:30:19.901207+00:00",
+      "wall_seconds": 59.346819254002185,
+      "children_CPU_user_seconds": 585.847721,
+      "children_CPU_system_seconds": 7.951243,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_prom_core_all-001.stdout.jsonl",
+        "bytes": 22912,
+        "sha256": "6429b9ae83b42d01bfe7942e6a730b201073b7d63807d5fc1ce7861343108e03"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_prom_core_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R4-gue_prom_core_all-001",
+      "stage": "A07",
+      "pid": 43677,
+      "proc_start_ticks": "9723311",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_prom_core_all"
+      ],
+      "command_sha256": "ea3e3f5c2f143e209f966a1c6617905cb47782e3b60257812223c3bedf87a849",
+      "started_utc": "2026-11-18T06:29:12.108032+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:29:20.530724+00:00",
+      "wall_seconds": 8.429853170993738,
+      "children_CPU_user_seconds": 3.783873,
+      "children_CPU_system_seconds": 0.930295,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_prom_core_all-001.stdout.jsonl",
+        "bytes": 209,
+        "sha256": "44a7ce133e9de6b9833197c292a9460e67a87f20608edc78c3bdbb2c096d1d31"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_prom_core_all-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "fit-R4-gue_tf_0-001",
+      "stage": "A07",
+      "pid": 43552,
+      "proc_start_ticks": "9703187",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_tf_0"
+      ],
+      "command_sha256": "c50c28f20b6ef60260e1ab49547399ff4a60d684af0565653084d53b61b3c8d5",
+      "started_utc": "2026-11-18T06:25:50.867040+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:26:51.876012+00:00",
+      "wall_seconds": 61.01239324599737,
+      "children_CPU_user_seconds": 611.006509,
+      "children_CPU_system_seconds": 6.366185,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_tf_0-001.stdout.jsonl",
+        "bytes": 22105,
+        "sha256": "9bd83ea97581779c431ac035ce246401ecd274a3dcf0e210d1c9473cffa54b06"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/fit-R4-gue_tf_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "cache-R4-gue_tf_0-001",
+      "stage": "A07",
+      "pid": 43548,
+      "proc_start_ticks": "9703069",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/build_other_five_cache.py",
+        "--candidate",
+        "R4",
+        "--task",
+        "gue_tf_0"
+      ],
+      "command_sha256": "87165affa73df00d3f1b5f95cff8c9d6053ad7525cf44e951648a7c14cf967c1",
+      "started_utc": "2026-11-18T06:25:49.679743+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:25:50.841059+00:00",
+      "wall_seconds": 1.164804568994441,
+      "children_CPU_user_seconds": 0.7144459999999999,
+      "children_CPU_system_seconds": 0.141251,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_tf_0-001.stdout.jsonl",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/cache-R4-gue_tf_0-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "initial-production-001",
+      "stage": "A07",
+      "pid": 43384,
+      "proc_start_ticks": "9697637",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+        "--stage",
+        "A07",
+        "--unit",
+        "R4/gue_tf_0/final_norm/seed42",
+        "--unit",
+        "R4/gue_splice_reconstructed/final_norm/seed42"
+      ],
+      "command_sha256": "1501f8cdd8133a327882e3e2a9517a0d8de985a4dfae28acee75f9ab8df4d48a",
+      "started_utc": "2026-11-18T06:24:55.367658+00:00",
+      "status": "EXITED_PASS",
+      "source_identity_sha256": "4007e46af0119c4a4c5d9b70d71b53cb50e7bdaf612034b08384057122f589b6",
+      "allowed_scope": "Finite approved A07 units only",
+      "GPU_work": 0,
+      "exit_code": 0,
+      "completed_utc": "2026-11-18T06:25:07.347355+00:00",
+      "wall_seconds": 11.982863558994723,
+      "children_CPU_user_seconds": 66.223395,
+      "children_CPU_system_seconds": 1.02659,
+      "stdout": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/initial-production-001.stdout.jsonl",
+        "bytes": 574,
+        "sha256": "14492616b5bf7b1dbf2a9dc501356ca377eb05fdc273da99f1e54dea36ea9f3e"
+      },
+      "stderr": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/logs/initial-production-001.stderr.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "storage_sample_bytes": 146674648775,
+  "storage_growth_since_preflight_bytes": 4939107254,
+  "cgroup_RAM_closeout_bytes": 111731474432
+}

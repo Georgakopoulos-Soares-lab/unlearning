@@ -1,0 +1,1421 @@
+{
+  "status": "REUSED_VALIDATED",
+  "unique_control_fits_all_six_tasks": 36,
+  "relevant_other_five_fits": 30,
+  "new_control_fits": 0,
+  "predeclared_anchors": [
+    "decoder.layers.16",
+    "decoder.final_norm"
+  ],
+  "CV_seeds": [
+    42,
+    17,
+    1234
+  ],
+  "comparison_metric_rows": 1200,
+  "original_control_index": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/CONTROL_REUSE_INDEX.json",
+    "bytes": 65552,
+    "sha256": "5352e77a7984ed985ba2f79e53fab9092335abc0f049956d70b6bddb1da6716a"
+  },
+  "units": [
+    {
+      "task": "emp_H3",
+      "control": "composition",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/features.npz",
+        "sha256": "62d065ef28dc8f89c1c7c509efcccb9fddadc22046b79ed917660746cee078a7",
+        "bytes": 4208759
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed42/COMPLETE.json",
+        "sha256": "d7658b5e2047c7bba75b854a201d14a1274f598fe5991137a012db536e050621",
+        "bytes": 846
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed42/model.joblib",
+        "sha256": "df47dcce012b3e45548778963a5e94c999f2c709e7facf449702c24259a03af6",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed42/dev_predictions.npz",
+            "sha256": "6c04e124ed53e53c1045042315a773bd5e820463d322195105d4c0f14173908f",
+            "bytes": 101714
+          }
+        },
+        {
+          "split": "test",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed42/test_predictions.npz",
+            "sha256": "63e3695953454f71272438187bfcc351c6946e2fd51a86e12526614db4d0d46b",
+            "bytes": 101759
+          }
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "control": "composition",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/features.npz",
+        "sha256": "62d065ef28dc8f89c1c7c509efcccb9fddadc22046b79ed917660746cee078a7",
+        "bytes": 4208759
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed17/COMPLETE.json",
+        "sha256": "c9d67d47dc3f0b1cb079b0923effc56d9db1b50c9a154bbb7957a94acaf1d107",
+        "bytes": 846
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed17/model.joblib",
+        "sha256": "ed434cc2ea303ca9575b5f5cc6e31acbe2b887cc6b6beae48de3b0fd0ae45585",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 3.3306690738754696e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed17/dev_predictions.npz",
+            "sha256": "8f746bb1226e655bfeac5794d99bf6050a868111e553b057d97dbeb9b4022aaf",
+            "bytes": 101731
+          }
+        },
+        {
+          "split": "test",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 2.220446049250313e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed17/test_predictions.npz",
+            "sha256": "f7e732ef4216e34900414f8342519dab22f1197302a899f7da02608b7226388e",
+            "bytes": 101753
+          }
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "control": "composition",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/features.npz",
+        "sha256": "62d065ef28dc8f89c1c7c509efcccb9fddadc22046b79ed917660746cee078a7",
+        "bytes": 4208759
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed1234/COMPLETE.json",
+        "sha256": "49716c7f73bfb2f54158a6e2412c0af63d52d9ddfc72b7d6a6cc24e91223dedc",
+        "bytes": 848
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed1234/model.joblib",
+        "sha256": "df47dcce012b3e45548778963a5e94c999f2c709e7facf449702c24259a03af6",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed1234/dev_predictions.npz",
+            "sha256": "6c04e124ed53e53c1045042315a773bd5e820463d322195105d4c0f14173908f",
+            "bytes": 101714
+          }
+        },
+        {
+          "split": "test",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/composition/seed1234/test_predictions.npz",
+            "sha256": "63e3695953454f71272438187bfcc351c6946e2fd51a86e12526614db4d0d46b",
+            "bytes": 101759
+          }
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "control": "4mer",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/features.npz",
+        "sha256": "62d065ef28dc8f89c1c7c509efcccb9fddadc22046b79ed917660746cee078a7",
+        "bytes": 4208759
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed42/COMPLETE.json",
+        "sha256": "e5b3b8a8143d6f73e064ba56a423c2383408fc52a9596c14b6a11528562a5c28",
+        "bytes": 839
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed42/model.joblib",
+        "sha256": "dc20b4365bc95853ec9b7a457f7432bdc21f646798b90805b1720978ef2faafb",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed42/dev_predictions.npz",
+            "sha256": "c49d29824b0959ab57907770caee4535153af31d92d71757098a0a4941c4d4b2",
+            "bytes": 101817
+          }
+        },
+        {
+          "split": "test",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 5.551115123125783e-17,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed42/test_predictions.npz",
+            "sha256": "13c166e96bd1e5a8797c99d702106153201b352608b36ef800c7620fb01e80b6",
+            "bytes": 101814
+          }
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "control": "4mer",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/features.npz",
+        "sha256": "62d065ef28dc8f89c1c7c509efcccb9fddadc22046b79ed917660746cee078a7",
+        "bytes": 4208759
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed17/COMPLETE.json",
+        "sha256": "0c1a11aca07b4d6b804930d373e757d96c9598bf23bb9ebe4ae08f9865e71f38",
+        "bytes": 839
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed17/model.joblib",
+        "sha256": "dc20b4365bc95853ec9b7a457f7432bdc21f646798b90805b1720978ef2faafb",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed17/dev_predictions.npz",
+            "sha256": "c49d29824b0959ab57907770caee4535153af31d92d71757098a0a4941c4d4b2",
+            "bytes": 101817
+          }
+        },
+        {
+          "split": "test",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 5.551115123125783e-17,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed17/test_predictions.npz",
+            "sha256": "13c166e96bd1e5a8797c99d702106153201b352608b36ef800c7620fb01e80b6",
+            "bytes": 101814
+          }
+        }
+      ]
+    },
+    {
+      "task": "emp_H3",
+      "control": "4mer",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/features.npz",
+        "sha256": "62d065ef28dc8f89c1c7c509efcccb9fddadc22046b79ed917660746cee078a7",
+        "bytes": 4208759
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed1234/COMPLETE.json",
+        "sha256": "6bc959d12531ace7fd4be7348bddfbcf67a40aaf7049b43e50ac51cdb328154e",
+        "bytes": 841
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed1234/model.joblib",
+        "sha256": "dc20b4365bc95853ec9b7a457f7432bdc21f646798b90805b1720978ef2faafb",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed1234/dev_predictions.npz",
+            "sha256": "c49d29824b0959ab57907770caee4535153af31d92d71757098a0a4941c4d4b2",
+            "bytes": 101817
+          }
+        },
+        {
+          "split": "test",
+          "rows": 1497,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 5.551115123125783e-17,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/emp_H3/4mer/seed1234/test_predictions.npz",
+            "sha256": "13c166e96bd1e5a8797c99d702106153201b352608b36ef800c7620fb01e80b6",
+            "bytes": 101814
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "control": "composition",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/features.npz",
+        "sha256": "703dd596aaf251a5fd9cb6a812e388aa45ef3f073618df8b21f4e96947c1ebf1",
+        "bytes": 298726
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed42/COMPLETE.json",
+        "sha256": "a3f7a04e4bcfc6358486d8c139e9b73917aa74968b3e36b3d8b1ae9ca97406aa",
+        "bytes": 565
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed42/model.joblib",
+        "sha256": "515081e1a631d21fa2048b231ec912d78f7bc1a6406702e4ddd7abcf06dfe8d1",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed42/dev_predictions.npz",
+            "sha256": "80360b0506a77b110898282439514b88656227f6791657292cebc8f0997f48d2",
+            "bytes": 35018
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "control": "composition",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/features.npz",
+        "sha256": "703dd596aaf251a5fd9cb6a812e388aa45ef3f073618df8b21f4e96947c1ebf1",
+        "bytes": 298726
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed17/COMPLETE.json",
+        "sha256": "4fdc97dc7b0afa8a227009d8fdc88b5caa38787b61cfd03e02127c9a9f1868fa",
+        "bytes": 565
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed17/model.joblib",
+        "sha256": "820e93deb42bc786d06ae3b719eef39ca2d4a0685504fb36e9f07fe3f9f83ed8",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed17/dev_predictions.npz",
+            "sha256": "68ae629c7e313528a49b808ca1bfafa760e052f60b0b5d9915abd0a60c81382b",
+            "bytes": 35020
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "control": "composition",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/features.npz",
+        "sha256": "703dd596aaf251a5fd9cb6a812e388aa45ef3f073618df8b21f4e96947c1ebf1",
+        "bytes": 298726
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed1234/COMPLETE.json",
+        "sha256": "e10028ffb81e162c9779eea324e4f1c79e648dfb542d74908f57045d64540b66",
+        "bytes": 567
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed1234/model.joblib",
+        "sha256": "515081e1a631d21fa2048b231ec912d78f7bc1a6406702e4ddd7abcf06dfe8d1",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/composition/seed1234/dev_predictions.npz",
+            "sha256": "80360b0506a77b110898282439514b88656227f6791657292cebc8f0997f48d2",
+            "bytes": 35018
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "control": "4mer",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/features.npz",
+        "sha256": "703dd596aaf251a5fd9cb6a812e388aa45ef3f073618df8b21f4e96947c1ebf1",
+        "bytes": 298726
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed42/COMPLETE.json",
+        "sha256": "2671d216da94a3088c6df02cefad36bddd0ccab86f4e48b863524bcb24bb0af5",
+        "bytes": 558
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed42/model.joblib",
+        "sha256": "5e8322ab0e07c6f2b13f4b77eb2ba3aebcb892a7118143ba35a68bfdefa2d423",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed42/dev_predictions.npz",
+            "sha256": "1bae0d984d8b7e9b521efaf7986f8196112654d21c51be29189b75841ba719a1",
+            "bytes": 35369
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "control": "4mer",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/features.npz",
+        "sha256": "703dd596aaf251a5fd9cb6a812e388aa45ef3f073618df8b21f4e96947c1ebf1",
+        "bytes": 298726
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed17/COMPLETE.json",
+        "sha256": "d482b44df7e7cd8c1086204fd11eb582d9e533aa8baee0217c96f96e41f6ba95",
+        "bytes": 558
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed17/model.joblib",
+        "sha256": "5e8322ab0e07c6f2b13f4b77eb2ba3aebcb892a7118143ba35a68bfdefa2d423",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed17/dev_predictions.npz",
+            "sha256": "1bae0d984d8b7e9b521efaf7986f8196112654d21c51be29189b75841ba719a1",
+            "bytes": 35369
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_tf_0",
+      "control": "4mer",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/features.npz",
+        "sha256": "703dd596aaf251a5fd9cb6a812e388aa45ef3f073618df8b21f4e96947c1ebf1",
+        "bytes": 298726
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed1234/COMPLETE.json",
+        "sha256": "cc97d55793ee4bf91a78fb1e82fb98cd02a7c29c4852f25a164476218d9338b9",
+        "bytes": 560
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed1234/model.joblib",
+        "sha256": "5e8322ab0e07c6f2b13f4b77eb2ba3aebcb892a7118143ba35a68bfdefa2d423",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_tf_0/4mer/seed1234/dev_predictions.npz",
+            "sha256": "1bae0d984d8b7e9b521efaf7986f8196112654d21c51be29189b75841ba719a1",
+            "bytes": 35369
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "control": "composition",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/features.npz",
+        "sha256": "fef4a0819bc429c4ba2fe87e31bb04b55cd3d35810d7ec978679676f0b5465e7",
+        "bytes": 273907
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed42/COMPLETE.json",
+        "sha256": "151495c43aa5c16519a59719498db3057141fbafa16bf4b3dc6d2cba949dec93",
+        "bytes": 574
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed42/model.joblib",
+        "sha256": "e893beea9713ead26cd36de23fb7cf9e48aa2abff35b2d21653b799060fd11c2",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed42/dev_predictions.npz",
+            "sha256": "2ebba1e6d67895004711c7634effbe222b09f2465ce479c0292f08446f294084",
+            "bytes": 35521
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "control": "composition",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/features.npz",
+        "sha256": "fef4a0819bc429c4ba2fe87e31bb04b55cd3d35810d7ec978679676f0b5465e7",
+        "bytes": 273907
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed17/COMPLETE.json",
+        "sha256": "c2377232b3adcbf19b9815defe99bcad42f7bd7cf89c85c42b9defe3526e3b12",
+        "bytes": 574
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed17/model.joblib",
+        "sha256": "e8fab83ed9ccecd9c7f429637a66d7f298a7696506f6406bd355e8cc93a24b67",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed17/dev_predictions.npz",
+            "sha256": "69a035730851560d8a65f2a3cef779b176d62f1d6cbb9fc74e9ba79c86ae96ca",
+            "bytes": 35517
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "control": "composition",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/features.npz",
+        "sha256": "fef4a0819bc429c4ba2fe87e31bb04b55cd3d35810d7ec978679676f0b5465e7",
+        "bytes": 273907
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed1234/COMPLETE.json",
+        "sha256": "da2e132eb46704413d2194506d470176e5c401630af58e73deceba8c7f047945",
+        "bytes": 576
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed1234/model.joblib",
+        "sha256": "e893beea9713ead26cd36de23fb7cf9e48aa2abff35b2d21653b799060fd11c2",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/composition/seed1234/dev_predictions.npz",
+            "sha256": "2ebba1e6d67895004711c7634effbe222b09f2465ce479c0292f08446f294084",
+            "bytes": 35521
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "control": "4mer",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/features.npz",
+        "sha256": "fef4a0819bc429c4ba2fe87e31bb04b55cd3d35810d7ec978679676f0b5465e7",
+        "bytes": 273907
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed42/COMPLETE.json",
+        "sha256": "5048605b1ea0f3eb4b8ee8b2ab9914d98a7603a720666dc07f30b4e3f5cca048",
+        "bytes": 567
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed42/model.joblib",
+        "sha256": "9fddda35f757edba1008eb0741da4bb21b694a3c11d0b4793a1ad85aa8d81074",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed42/dev_predictions.npz",
+            "sha256": "1ef57ff0b96279834d97bf80babaa437fe8b50fbdd08ce6170ec010e63390bcd",
+            "bytes": 35734
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "control": "4mer",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/features.npz",
+        "sha256": "fef4a0819bc429c4ba2fe87e31bb04b55cd3d35810d7ec978679676f0b5465e7",
+        "bytes": 273907
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed17/COMPLETE.json",
+        "sha256": "a514ec1c776dfc471f550f542085d386162b5bd00c1c2b5dc5e405d436604887",
+        "bytes": 567
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed17/model.joblib",
+        "sha256": "9fddda35f757edba1008eb0741da4bb21b694a3c11d0b4793a1ad85aa8d81074",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed17/dev_predictions.npz",
+            "sha256": "1ef57ff0b96279834d97bf80babaa437fe8b50fbdd08ce6170ec010e63390bcd",
+            "bytes": 35734
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_core_all",
+      "control": "4mer",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/features.npz",
+        "sha256": "fef4a0819bc429c4ba2fe87e31bb04b55cd3d35810d7ec978679676f0b5465e7",
+        "bytes": 273907
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed1234/COMPLETE.json",
+        "sha256": "2b8f81c37292ed7ad580349e1059d51cbcf2c12c11af5e019258dcede8c769a6",
+        "bytes": 569
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed1234/model.joblib",
+        "sha256": "9fddda35f757edba1008eb0741da4bb21b694a3c11d0b4793a1ad85aa8d81074",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_core_all/4mer/seed1234/dev_predictions.npz",
+            "sha256": "1ef57ff0b96279834d97bf80babaa437fe8b50fbdd08ce6170ec010e63390bcd",
+            "bytes": 35734
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "control": "composition",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/features.npz",
+        "sha256": "04c61b71fedd333cd01c7b1b9fab80da70b040f9de749ab665c322b99e9ade19",
+        "bytes": 390172
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed42/COMPLETE.json",
+        "sha256": "faf9aef313d75d0478e25b4a020e8b439585d572006a8f17b699ac503ed9f214",
+        "bytes": 573
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed42/model.joblib",
+        "sha256": "fe17ed9bdaf509ec7284627941fe0f7cf6ae02a96c8c1b81fcf583f4647c6a92",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed42/dev_predictions.npz",
+            "sha256": "0b4ad9a35486a3b2a511908f9651655427a293a9bc63bb756559e4d85eb0e751",
+            "bytes": 35589
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "control": "composition",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/features.npz",
+        "sha256": "04c61b71fedd333cd01c7b1b9fab80da70b040f9de749ab665c322b99e9ade19",
+        "bytes": 390172
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed17/COMPLETE.json",
+        "sha256": "18c8e617f54540f16b3a0fbf61aa0c674bbf07d5bc98ffe4c86c8cddf2a3bb8d",
+        "bytes": 573
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed17/model.joblib",
+        "sha256": "fe17ed9bdaf509ec7284627941fe0f7cf6ae02a96c8c1b81fcf583f4647c6a92",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed17/dev_predictions.npz",
+            "sha256": "0b4ad9a35486a3b2a511908f9651655427a293a9bc63bb756559e4d85eb0e751",
+            "bytes": 35589
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "control": "composition",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/features.npz",
+        "sha256": "04c61b71fedd333cd01c7b1b9fab80da70b040f9de749ab665c322b99e9ade19",
+        "bytes": 390172
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed1234/COMPLETE.json",
+        "sha256": "b09f0026fe145a36c9177ae0d8d446cf24ad8cadfb95b690c82f8e557034834b",
+        "bytes": 575
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed1234/model.joblib",
+        "sha256": "fe17ed9bdaf509ec7284627941fe0f7cf6ae02a96c8c1b81fcf583f4647c6a92",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/composition/seed1234/dev_predictions.npz",
+            "sha256": "0b4ad9a35486a3b2a511908f9651655427a293a9bc63bb756559e4d85eb0e751",
+            "bytes": 35589
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "control": "4mer",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/features.npz",
+        "sha256": "04c61b71fedd333cd01c7b1b9fab80da70b040f9de749ab665c322b99e9ade19",
+        "bytes": 390172
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed42/COMPLETE.json",
+        "sha256": "c39de358e68bc5c844690ec7c9d7235a4bf0d143b1461b66b5fedcd2c01a4b0f",
+        "bytes": 566
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed42/model.joblib",
+        "sha256": "96c8cd08d5a053bba730ba1c4efd12522c92bd5a70552194d11264932cfcb4ab",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed42/dev_predictions.npz",
+            "sha256": "6f82bbd40a7b69458c6a5a84415c582b7422b92bea9140193d44970d6644174f",
+            "bytes": 35648
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "control": "4mer",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/features.npz",
+        "sha256": "04c61b71fedd333cd01c7b1b9fab80da70b040f9de749ab665c322b99e9ade19",
+        "bytes": 390172
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed17/COMPLETE.json",
+        "sha256": "f781b77e98e6b365d4f2dd3f2094b336e2670bcfe11006bfa7a62c4d017efa34",
+        "bytes": 566
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed17/model.joblib",
+        "sha256": "96c8cd08d5a053bba730ba1c4efd12522c92bd5a70552194d11264932cfcb4ab",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed17/dev_predictions.npz",
+            "sha256": "6f82bbd40a7b69458c6a5a84415c582b7422b92bea9140193d44970d6644174f",
+            "bytes": 35648
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_prom_300_all",
+      "control": "4mer",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/features.npz",
+        "sha256": "04c61b71fedd333cd01c7b1b9fab80da70b040f9de749ab665c322b99e9ade19",
+        "bytes": 390172
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed1234/COMPLETE.json",
+        "sha256": "db7a8135c4b411e618ef2b8e9800c8b622085323722731f370e7d589a23d71fb",
+        "bytes": 568
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed1234/model.joblib",
+        "sha256": "96c8cd08d5a053bba730ba1c4efd12522c92bd5a70552194d11264932cfcb4ab",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_prom_300_all/4mer/seed1234/dev_predictions.npz",
+            "sha256": "6f82bbd40a7b69458c6a5a84415c582b7422b92bea9140193d44970d6644174f",
+            "bytes": 35648
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "control": "composition",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/features.npz",
+        "sha256": "8de1b6cf14ae48e341850aa9a7c6c0ec3b5f02baeaeadce9db60586ba0b32667",
+        "bytes": 418348
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed42/COMPLETE.json",
+        "sha256": "2d1bfcbb09a1d28f5bce673acd40117d50f80c633d56019178a85803004f04af",
+        "bytes": 581
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed42/model.joblib",
+        "sha256": "6988465f98b012bfa6fc54674ecbea526213386fbf4226a286a79c3f5e72a132",
+        "bytes": 1585
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed42/dev_predictions.npz",
+            "sha256": "da23078602ddb7d567b6f9b29513b3a0fe546693d380af33e333d673afe4f9e8",
+            "bytes": 39474
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "control": "composition",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/features.npz",
+        "sha256": "8de1b6cf14ae48e341850aa9a7c6c0ec3b5f02baeaeadce9db60586ba0b32667",
+        "bytes": 418348
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed17/COMPLETE.json",
+        "sha256": "eaeee9c3e79719fd82b1c4417fcd35e02bfc9935401989cb1a790af9246b44f0",
+        "bytes": 581
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed17/model.joblib",
+        "sha256": "6988465f98b012bfa6fc54674ecbea526213386fbf4226a286a79c3f5e72a132",
+        "bytes": 1585
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed17/dev_predictions.npz",
+            "sha256": "da23078602ddb7d567b6f9b29513b3a0fe546693d380af33e333d673afe4f9e8",
+            "bytes": 39474
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "control": "composition",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/features.npz",
+        "sha256": "8de1b6cf14ae48e341850aa9a7c6c0ec3b5f02baeaeadce9db60586ba0b32667",
+        "bytes": 418348
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed1234/COMPLETE.json",
+        "sha256": "29a7d3bff8f626d5b6d84f2fccc1899d3a8dc868820ce79c42ac6f0910ab822b",
+        "bytes": 583
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed1234/model.joblib",
+        "sha256": "6988465f98b012bfa6fc54674ecbea526213386fbf4226a286a79c3f5e72a132",
+        "bytes": 1585
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/composition/seed1234/dev_predictions.npz",
+            "sha256": "da23078602ddb7d567b6f9b29513b3a0fe546693d380af33e333d673afe4f9e8",
+            "bytes": 39474
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "control": "4mer",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/features.npz",
+        "sha256": "8de1b6cf14ae48e341850aa9a7c6c0ec3b5f02baeaeadce9db60586ba0b32667",
+        "bytes": 418348
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed42/COMPLETE.json",
+        "sha256": "37c765c71606f0ed97be06d34f457fe737994bb979c757b06b0c8a7b392a29be",
+        "bytes": 574
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed42/model.joblib",
+        "sha256": "5d164378e615099ebb3dbf2ab130a14b9ff0e09edc85fe78b3474053468d3f7b",
+        "bytes": 13681
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed42/dev_predictions.npz",
+            "sha256": "9fdc82e9d292344df55bc10b0d70918ef46eb81a266a527ab24a41115f6342f3",
+            "bytes": 39658
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "control": "4mer",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/features.npz",
+        "sha256": "8de1b6cf14ae48e341850aa9a7c6c0ec3b5f02baeaeadce9db60586ba0b32667",
+        "bytes": 418348
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed17/COMPLETE.json",
+        "sha256": "534e610e4c30a9d8e2a4c0a2ee0d9edebc5c153c047cb0c2add87c160cd11ce7",
+        "bytes": 574
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed17/model.joblib",
+        "sha256": "5d164378e615099ebb3dbf2ab130a14b9ff0e09edc85fe78b3474053468d3f7b",
+        "bytes": 13681
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed17/dev_predictions.npz",
+            "sha256": "9fdc82e9d292344df55bc10b0d70918ef46eb81a266a527ab24a41115f6342f3",
+            "bytes": 39658
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "control": "4mer",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/features.npz",
+        "sha256": "8de1b6cf14ae48e341850aa9a7c6c0ec3b5f02baeaeadce9db60586ba0b32667",
+        "bytes": 418348
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed1234/COMPLETE.json",
+        "sha256": "70ea532ee368312f35377059e101eacd5617171ccdaf50ec4d0ee3f0ffd58c58",
+        "bytes": 576
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed1234/model.joblib",
+        "sha256": "5d164378e615099ebb3dbf2ab130a14b9ff0e09edc85fe78b3474053468d3f7b",
+        "bytes": 13681
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_splice_reconstructed/4mer/seed1234/dev_predictions.npz",
+            "sha256": "9fdc82e9d292344df55bc10b0d70918ef46eb81a266a527ab24a41115f6342f3",
+            "bytes": 39658
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "control": "composition",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/features.npz",
+        "sha256": "a08a73351ceee9141405e383aaaaf9417dbe014629ce5cfa2d0022953271b938",
+        "bytes": 298469
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed42/COMPLETE.json",
+        "sha256": "a7d3e8e56b1183c6af061a3acdd496093f8848828333dc797c3939f974263ff3",
+        "bytes": 568
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed42/model.joblib",
+        "sha256": "d12311a38e11f429c38b5c04c1591994f94558715f7289306b6ff170807589b5",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed42/dev_predictions.npz",
+            "sha256": "f2ae1166c7e9b6a4ad7ff7fc1a84b4c2a4441d6f8c638c6c591778387b26bab9",
+            "bytes": 34878
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "control": "composition",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/features.npz",
+        "sha256": "a08a73351ceee9141405e383aaaaf9417dbe014629ce5cfa2d0022953271b938",
+        "bytes": 298469
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed17/COMPLETE.json",
+        "sha256": "15a09676a8fcb80a256756d2d4c4bfc66a8485624bb9d5ad493d9e174cae0208",
+        "bytes": 568
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed17/model.joblib",
+        "sha256": "8ef66bc525ac6f6ec1ec0a69b0dd12bcf9ceeb964de149df8104602b810bc173",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed17/dev_predictions.npz",
+            "sha256": "85292d5ee06de8d26574c7d7c3841b239f67fb32942ff448cc3a9d03bf87f971",
+            "bytes": 34894
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "control": "composition",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "ACGT counts / canonical total",
+      "feature_width": 4,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/features.npz",
+        "sha256": "a08a73351ceee9141405e383aaaaf9417dbe014629ce5cfa2d0022953271b938",
+        "bytes": 298469
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed1234/COMPLETE.json",
+        "sha256": "c444f9e311553474a3fb3d0a9245452ca35138f7abb15c50e25a4cfb010ee497",
+        "bytes": 570
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed1234/model.joblib",
+        "sha256": "e084e7f2b75348881113de4aea95e2b5c33d060666a743d9cb347a5274232ec4",
+        "bytes": 1489
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 0.0,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/composition/seed1234/dev_predictions.npz",
+            "sha256": "6d7f16b8a4ba01135ba28d5b4d3f3f6360b87c494e030e18e97fe275ec0b64e4",
+            "bytes": 34893
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "control": "4mer",
+      "seed": 42,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/features.npz",
+        "sha256": "a08a73351ceee9141405e383aaaaf9417dbe014629ce5cfa2d0022953271b938",
+        "bytes": 298469
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed42/COMPLETE.json",
+        "sha256": "c810d1aa65e2e035f7906f6039fff7a03c5a7c8c3b28b9b4480c44b560c92429",
+        "bytes": 561
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed42/model.joblib",
+        "sha256": "ea64837763b04efd66d212baab54d632b4ab63583d6c4a30f9669c047b891677",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed42/dev_predictions.npz",
+            "sha256": "87401d78a2bddddf4164fdf3debb9f637f8777c19b510bcf848ab18864c9cb3a",
+            "bytes": 35459
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "control": "4mer",
+      "seed": 17,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/features.npz",
+        "sha256": "a08a73351ceee9141405e383aaaaf9417dbe014629ce5cfa2d0022953271b938",
+        "bytes": 298469
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed17/COMPLETE.json",
+        "sha256": "0ce77209d4f4a0ed0bcbdbd5a117980e3118ec6059ea742df81782e93c4b43c8",
+        "bytes": 561
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed17/model.joblib",
+        "sha256": "ea64837763b04efd66d212baab54d632b4ab63583d6c4a30f9669c047b891677",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed17/dev_predictions.npz",
+            "sha256": "87401d78a2bddddf4164fdf3debb9f637f8777c19b510bcf848ab18864c9cb3a",
+            "bytes": 35459
+          }
+        }
+      ]
+    },
+    {
+      "task": "gue_mouse_0",
+      "control": "4mer",
+      "seed": 1234,
+      "status": "PASS",
+      "feature_definition": "Normalized overlapping forward-strand ACGT4mers in lexicographic order; no RC aggregation",
+      "feature_width": 256,
+      "feature_definition_recomputed_exactly": true,
+      "feature_reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/features.npz",
+        "sha256": "a08a73351ceee9141405e383aaaaf9417dbe014629ce5cfa2d0022953271b938",
+        "bytes": 298469
+      },
+      "receipt": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed1234/COMPLETE.json",
+        "sha256": "7774d2b37e2e8d4610ed15888ed9a7dcb95af12be2108e5d4fae726d34466385",
+        "bytes": 563
+      },
+      "head": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed1234/model.joblib",
+        "sha256": "ea64837763b04efd66d212baab54d632b4ab63583d6c4a30f9669c047b891677",
+        "bytes": 9553
+      },
+      "records": [
+        {
+          "split": "dev",
+          "rows": 512,
+          "max_probability_residual": 0.0,
+          "max_metric_residual": 1.1102230246251565e-16,
+          "predictions": {
+            "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1/tasks/gue_mouse_0/4mer/seed1234/dev_predictions.npz",
+            "sha256": "87401d78a2bddddf4164fdf3debb9f637f8777c19b510bcf848ab18864c9cb3a",
+            "bytes": 35459
+          }
+        }
+      ]
+    }
+  ]
+}
