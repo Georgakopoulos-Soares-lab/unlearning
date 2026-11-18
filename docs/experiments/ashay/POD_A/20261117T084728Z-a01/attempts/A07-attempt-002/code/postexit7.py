@@ -2,23 +2,27 @@
 from common7 import *
 from finish7 import quiet,STATUS,NEXT
 from protect_final7 import public_proof
-import csv,ast,gzip
+import csv,ast,gzip,io
 
 def main():
  no_science_imports();proof=public_proof();final=read(C/'FINAL_CLOSEOUT.json');assert final['stage_status']==STATUS and final['next_state']==NEXT and final['metadata_delivery_commit']==proof['commit'] and final['receipt_fresh_readback']=='PASS';state=quiet();frozen=read(C/'CPU_SOURCE_IDENTITY.json')
  for e in frozen['files']:assert sha(A/'code'/e['path'])==e['sha256']
  assert sha(C/'A07_EXECUTION_MANIFEST.json')==frozen['input_unit_manifest']['sha256'] and sha(C/'A07_INPUTS.json')==frozen['input_identity_sha256']
- parsed={'JSON':0,'CSV':0,'Python':0,'gzip':0};files=[]
+ parsed={'JSON':0,'CSV':0,'Python':0,'gzip':0,'JSONL':0};files=[]
  for p in D.rglob('*'):
   if not p.is_file():continue
   assert p.stat().st_size>0 and not p.is_symlink();files.append(str(p.relative_to(D)))
   if p.suffix=='.json':read(p);parsed['JSON']+=1
+  elif p.suffix=='.jsonl':
+   for line in p.read_text().splitlines():json.loads(line)
+   parsed['JSONL']+=1
   elif p.suffix=='.csv':
    with p.open() as f:r=csv.DictReader(f);assert r.fieldnames and next(r,None) is not None
    parsed['CSV']+=1
   elif p.suffix=='.py':ast.parse(p.read_text());parsed['Python']+=1
   elif p.suffix=='.gz':
-   with gzip.open(p,'rt') as f:assert f.read(1)
+   content=gzip.decompress(p.read_bytes());r=csv.DictReader(io.StringIO(content.decode()));assert r.fieldnames and next(r,None) is not None
+   if p.name in ['RESULTS_LONG.csv.gz','PAIRED_CONTRASTS.csv.gz']:assert content==(p.with_suffix('')).read_bytes()
    parsed['gzip']+=1
  receipts=list((A/'probes/R5').glob('*/*/seed*/COMPLETE.json'));assert len(receipts)==390
  assert len(read(D/'PROBE_INDEX.json')['units'])==390 and read(D/'PUBLICATION_VALIDATION.json')['unique_logical_ids']==12300
