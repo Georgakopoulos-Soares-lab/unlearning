@@ -1,0 +1,49 @@
+{
+  "GPU_allowed_seconds": 0,
+  "approval_first_observed_utc": "2026-11-18T02:56:21+00:00",
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z",
+  "branch": "POD_B",
+  "closure_deadline_utc": "2026-11-18T05:26:21+00:00",
+  "direct_user_approval": "Remain the POD_B research executor. Keep the prompts repository\nread-only; the separate ChatGPT reviewer handles prompt updates.\n\nAPPROVE B04-ADAPTER-TRAJECTORY using\nPOD_B_B04_ADAPTER_TRAJECTORY.md and apply\nPOD_B_EXECUTOR_REPORTING_AMENDMENT.md from prompts commit:\nebf6d7e9837ea8f2a6abaaeae13bcaa628c701b8\n\nI authorize its CPU-only supporting analysis and a fresh\n150-minute attempt window, including 30 minutes for closure.\nZero GPU compute; preserve all cumulative budgets.\n\nPush meaningful progress and the final handoff only to research\nPOD_B. Stop after this analysis. Family qualification and later\nstages remain separately gated.",
+  "direct_user_approval_record": {
+    "bytes": 640,
+    "path": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z/USER_APPROVAL.txt",
+    "sha256": "736caa9098cd81c34aada395dc7dfc15bac1dd21fc61417799d68ee06cf35c91"
+  },
+  "documentation_root": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/adapter-trajectory-20261118",
+  "execution_id": "B04-adapter-trajectory-20261118T025621Z",
+  "forward_CPU_scheduling_cutoff_utc": "2026-11-18T04:56:21+00:00",
+  "git_common_dir": "/workspace/repos/unlearning-pod-b/.git",
+  "mode": "CPU_PARAMETER_ANALYSIS_ONLY",
+  "next_stage_authorized": false,
+  "prompt_branch": "POD_B",
+  "prompt_commit": "ebf6d7e9837ea8f2a6abaaeae13bcaa628c701b8",
+  "prompt_files": [
+    {
+      "bytes": 20633,
+      "path": "POD_B_B04_ADAPTER_TRAJECTORY.md",
+      "sha256": "ce93d4d147473c1c3816a30a3b145af4281de7693f6cedc67ec8a3cb5c14a78f"
+    },
+    {
+      "bytes": 2939,
+      "path": "POD_B_EXECUTOR_REPORTING_AMENDMENT.md",
+      "sha256": "079ab22be0af8fde8095412c676b3253e0f39314fef541388274e7cd3a5b51d8"
+    },
+    {
+      "bytes": 10648,
+      "path": "POD_B_MASTER.md",
+      "sha256": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512"
+    },
+    {
+      "bytes": 1376,
+      "path": "override_pod_b_.txt",
+      "sha256": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
+    }
+  ],
+  "prompt_repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+  "research_entry_commit": "25ce015dba76e1263f56c4a07b9ca813f31d39de",
+  "schema": "POD_B.adapter_trajectory.approval.v1",
+  "scientifically_qualified_models": 0,
+  "window_amendment": "This CPU supporting attempt only; no old GPU deadline reset or budget increase",
+  "worktree": "/workspace/wt-POD_B"
+}

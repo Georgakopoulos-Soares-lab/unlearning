@@ -1,0 +1,409 @@
+{
+  "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+  "diagnostic_history": {
+    "bytes": 451,
+    "path": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z/evidence/DIAGNOSTIC_HISTORY.json",
+    "sha256": "7668279548fc78fda4452b69d56f13ae71ee64ba486916a35276e41aaa409e28"
+  },
+  "model_inference": 0,
+  "new_GPU_seconds": 0,
+  "prior126_runtime_suite_rerun": false,
+  "real_dense_validation": {
+    "CPU_process_seconds": 1.374812514,
+    "all36_strict_chunk_extents_checked": true,
+    "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+    "atol": 1e-12,
+    "cases": 18,
+    "checks": [
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          1920
+        ],
+        "left": "base/iter_0000100",
+        "module": "decoder.layers.0.mixer.dense.adapter",
+        "right": "base/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "dense",
+        "working_dense_bytes": 88473600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          5760,
+          1920
+        ],
+        "left": "base/iter_0000100",
+        "module": "decoder.layers.0.mixer.dense_projection.adapter",
+        "right": "base/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "dense_projection",
+        "working_dense_bytes": 265420800
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          10240,
+          1920
+        ],
+        "left": "base/iter_0000100",
+        "module": "decoder.layers.0.mlp.linear_fc1.adapter",
+        "right": "base/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_fc1",
+        "working_dense_bytes": 471859200
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          5120
+        ],
+        "left": "base/iter_0000100",
+        "module": "decoder.layers.0.mlp.linear_fc2.adapter",
+        "right": "base/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_fc2",
+        "working_dense_bytes": 235929600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          1920
+        ],
+        "left": "base/iter_0000100",
+        "module": "decoder.layers.3.self_attention.linear_proj.adapter",
+        "right": "base/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_proj",
+        "working_dense_bytes": 88473600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          5760,
+          1920
+        ],
+        "left": "base/iter_0000100",
+        "module": "decoder.layers.3.self_attention.linear_qkv.adapter",
+        "right": "base/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_qkv",
+        "working_dense_bytes": 265420800
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          1920
+        ],
+        "left": "maxent/iter_0000100",
+        "module": "decoder.layers.0.mixer.dense.adapter",
+        "right": "maxent/iter_0001600",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "dense",
+        "working_dense_bytes": 88473600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          5760,
+          1920
+        ],
+        "left": "maxent/iter_0000100",
+        "module": "decoder.layers.0.mixer.dense_projection.adapter",
+        "right": "maxent/iter_0001600",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "dense_projection",
+        "working_dense_bytes": 265420800
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          10240,
+          1920
+        ],
+        "left": "maxent/iter_0000100",
+        "module": "decoder.layers.0.mlp.linear_fc1.adapter",
+        "right": "maxent/iter_0001600",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_fc1",
+        "working_dense_bytes": 471859200
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          5120
+        ],
+        "left": "maxent/iter_0000100",
+        "module": "decoder.layers.0.mlp.linear_fc2.adapter",
+        "right": "maxent/iter_0001600",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_fc2",
+        "working_dense_bytes": 235929600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          1920
+        ],
+        "left": "maxent/iter_0000100",
+        "module": "decoder.layers.3.self_attention.linear_proj.adapter",
+        "right": "maxent/iter_0001600",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_proj",
+        "working_dense_bytes": 88473600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          5760,
+          1920
+        ],
+        "left": "maxent/iter_0000100",
+        "module": "decoder.layers.3.self_attention.linear_qkv.adapter",
+        "right": "maxent/iter_0001600",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_qkv",
+        "working_dense_bytes": 265420800
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          1920
+        ],
+        "left": "maxent/iter_0001700",
+        "module": "decoder.layers.0.mixer.dense.adapter",
+        "right": "maxent/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "dense",
+        "working_dense_bytes": 88473600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          5760,
+          1920
+        ],
+        "left": "maxent/iter_0001700",
+        "module": "decoder.layers.0.mixer.dense_projection.adapter",
+        "right": "maxent/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "dense_projection",
+        "working_dense_bytes": 265420800
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          10240,
+          1920
+        ],
+        "left": "maxent/iter_0001700",
+        "module": "decoder.layers.0.mlp.linear_fc1.adapter",
+        "right": "maxent/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_fc1",
+        "working_dense_bytes": 471859200
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          5120
+        ],
+        "left": "maxent/iter_0001700",
+        "module": "decoder.layers.0.mlp.linear_fc2.adapter",
+        "right": "maxent/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_fc2",
+        "working_dense_bytes": 235929600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          1920,
+          1920
+        ],
+        "left": "maxent/iter_0001700",
+        "module": "decoder.layers.3.self_attention.linear_proj.adapter",
+        "right": "maxent/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_proj",
+        "working_dense_bytes": 88473600
+      },
+      {
+        "full_dense_fields": [
+          "norm",
+          "distance",
+          "inner_product",
+          "cosine",
+          "symmetric_relative"
+        ],
+        "full_dense_shape": [
+          5760,
+          1920
+        ],
+        "left": "maxent/iter_0001700",
+        "module": "decoder.layers.3.self_attention.linear_qkv.adapter",
+        "right": "maxent/iter_0001800",
+        "spectral_scope": "Independent dense first64x64,not full-matrix dense SVD",
+        "status": "PASS",
+        "target_type": "linear_qkv",
+        "working_dense_bytes": 265420800
+      }
+    ],
+    "max_absolute_difference": 5.115907697472721e-13,
+    "max_relative_difference_nonzero_reference": 8.346070051164628e-13,
+    "max_relative_difference_scope": "Only comparisons with reference magnitude>atol;zero-reference relative error is undefined,not divided by tiny sentinel",
+    "max_tolerance_scaled_error": 0.009966438909622373,
+    "model_imported": false,
+    "new_GPU_seconds": 0,
+    "peak_RSS_bytes": 531013632,
+    "rtol": 5e-11,
+    "status": "PASS",
+    "torch_imported": false,
+    "wall_seconds": 1.5453107100038324,
+    "zero_reference_comparisons": 18
+  },
+  "scientific_qualification": 0,
+  "source_phase_history": {
+    "bytes": 492,
+    "path": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z/evidence/SOURCE_PHASE_HISTORY.json",
+    "sha256": "772d085075ce921a6ac842c7f6ce495a39a696e501fef3fde5fefc646086b9f9"
+  },
+  "status": "PASS_PRE_BULK",
+  "synthetic_tests": {
+    "failed": 0,
+    "log": {
+      "bytes": 2258,
+      "path": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z/evidence/ALGEBRA_TESTS_03.log",
+      "sha256": "96b9de33e49357a45413ee24b502ba9b4ab50744edd52d190f88ab791232a61f"
+    },
+    "passed": 17,
+    "skipped": 0
+  }
+}

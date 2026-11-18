@@ -1,0 +1,23 @@
+{
+  "B04_identity_and_route_qualified": false,
+  "facts": [
+    "Saved rank16,alpha32,scale2 and dropout0.1 in all36 configs",
+    "Pinned candidate LoRA constructs identity activation,uses linear_out@linear_in and alpha/dim",
+    "Logical checkpoint chunks assembled to exact historical per-tensor hashes,including GLU chunks",
+    "Products describe complete serialized tensor extents,not authenticated original runtime global model effects"
+  ],
+  "global_aggregation": "Fixed100 serialized module-coordinate concatenation;not function/representation space",
+  "records": [
+    {
+      "bytes": 11884,
+      "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/runtime/src/bridge/src/megatron/bridge/peft/lora.py",
+      "sha256": "6c0397c74261d6abe2b24712537286b5fafa30fedcd1442198007a986ea32397"
+    },
+    {
+      "bytes": 27483,
+      "path": "/workspace/megatron-bridge/src/megatron/bridge/peft/utils.py",
+      "sha256": "ccbc2c4d0795df2ea02d9c7d342c8ed08ef68b553a8255b0f75acd21104639e1"
+    }
+  ],
+  "status": "SOURCE_SUPPORTED_BUT_ORIGINAL_JOB_UNBOUND"
+}
