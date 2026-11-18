@@ -1,22 +1,22 @@
 # A07 R5 other-five — RUNNING
 
-gue_prom_300_all: 78 heads and applications accepted; fresh task recovery PASS (12 paths, 240 paired vectors).
+gue_splice_reconstructed: 78 heads and applications accepted; fresh task recovery PASS (12 paths, 240 paired vectors).
 
-Observed UTC: 2026-11-18T22:23:15.648730+00:00. Prompt `112bd37081f5e55896057c6046195e8603c5e751`; A06 input handoff `ba340d0f4706b1941f62a4d6256bf78ab99030eb`.
+Observed UTC: 2026-11-18T22:27:20.475383+00:00. Prompt `112bd37081f5e55896057c6046195e8603c5e751`; A06 input handoff `ba340d0f4706b1941f62a4d6256bf78ab99030eb`.
 
 | Measure | Count |
 |---|---:|
 | planned_heads | 390 |
-| producer_heads | 235 |
-| producer_applications | 235 |
-| prediction_paths | 470 |
+| producer_heads | 312 |
+| producer_applications | 312 |
+| prediction_paths | 624 |
 | independently_released_new_heads | 0 |
-| recovery_protected_heads | 234 |
-| recovered_panel_paths | 36 |
-| remaining_heads | 155 |
-| initial_solver_calls | 3760 |
-| actual_solver_calls | 3760 |
-| retries | 0 |
+| recovery_protected_heads | 312 |
+| recovered_panel_paths | 48 |
+| remaining_heads | 78 |
+| initial_solver_calls | 4992 |
+| actual_solver_calls | 5010 |
+| retries | 18 |
 | historical_released_heads | 2418 |
 | historical_released_applications | 2418 |
 | primary_LM_reused | 42 |

@@ -1,0 +1,217 @@
+{
+  "schema": "pod-a-a07-task-backup-v2",
+  "status": "PASS",
+  "task": "gue_splice_reconstructed",
+  "candidate": "R5",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "revision": "1c2877a214d78955c88d1791710f0a9654365aea",
+  "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-002/R5/gue_splice_reconstructed-checkpoint-001/A07-R5-gue_splice_reconstructed-checkpoint-001.tar.gz",
+  "archive_sha256": "df5abac485a07257727316d2d124bef1cefc9936a93ac22d2aeb90b7b56f993d",
+  "archive_bytes": 90221813,
+  "member_manifest_sha256": "09921f9c42f451f119fad0e6cb3921cf2a944ad6dce2855eba4a4a66cc4feaa6",
+  "all_files_verified": 1591,
+  "fresh_download": true,
+  "force_download": true,
+  "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer",
+  "CPU_restored_checks": {
+    "status": "PASS",
+    "checks": [
+      {
+        "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed42",
+        "policy": "independent_refit",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed42",
+        "policy": "fixed_original_base",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed17",
+        "policy": "independent_refit",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed17",
+        "policy": "fixed_original_base",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234",
+        "policy": "independent_refit",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234",
+        "policy": "fixed_original_base",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/final_norm/seed42",
+        "policy": "independent_refit",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/final_norm/seed42",
+        "policy": "fixed_original_base",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/final_norm/seed17",
+        "policy": "independent_refit",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/final_norm/seed17",
+        "policy": "fixed_original_base",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/final_norm/seed1234",
+        "policy": "independent_refit",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/final_norm/seed1234",
+        "policy": "fixed_original_base",
+        "rows": 512,
+        "groups": 511,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "status": "PASS"
+      }
+    ],
+    "paired_vectors": 240,
+    "paired_values": 480000,
+    "max_abs_residuals": {
+      "probability": 0.0,
+      "point_metric": 4.440892098500626e-16,
+      "marginal_draw": 3.3306690738754696e-16,
+      "paired_draw": 4.440892098500626e-16,
+      "CI": 3.191891195797325e-16
+    },
+    "worst_units": {
+      "probability": "R5/gue_splice_reconstructed/final_norm/seed1234/fixed_original_base",
+      "point_metric": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/fixed_original_base/control_kmer4/classification_cross_entropy",
+      "marginal_draw": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/independent_refit/average_precision",
+      "CI": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/independent_refit/base/average_precision",
+      "paired_draw": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/fixed_original_base/base/average_precision"
+    },
+    "refits": 0,
+    "producer_paths_used": false,
+    "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer",
+    "reused_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+    "inherited_dependency_new_download": false,
+    "independent_release": "PENDING_A08",
+    "GPU_runtime_recreated": false
+  },
+  "restore_command": [
+    "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+    "-B",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer/artifacts/code/restore7.py",
+    "--root",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer",
+    "--dependency-map",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/DEPENDENCY_MAP.json",
+    "--task",
+    "gue_splice_reconstructed"
+  ],
+  "private_at_write_and_closeout": true,
+  "inherited_feature_dependency": {
+    "A06_feature_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+    "member_manifest_sha256": "2341e6655b623d104006fb54316c9e0825533e57e6207d0c052e855a3ad4b1f0",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "revision": "d413378e035ab290d40622817f8dab439ad7c35f",
+    "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-002/R5/other_five-checkpoint-001/A06-R5_other_five-checkpoint-001.tar.gz",
+    "archive_sha256": "d8d1faebd0cff6cab349b9c797cc07e46611aaac59f1ea0272277f6075b3c52d",
+    "new_download": false
+  },
+  "inherited_dependency_new_download": false,
+  "producer_path_substitution": false,
+  "compression_seconds": 6.552885871002218,
+  "upload_seconds": 3.3760033329890575,
+  "fresh_download_seconds": 1.36821217200486,
+  "all_member_verification_seconds": 7.60788475399022,
+  "restore_check_seconds": 5.287559307005722,
+  "completed_utc": "2026-11-18T22:27:17.627573+00:00"
+}
