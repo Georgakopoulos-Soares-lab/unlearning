@@ -78,5 +78,15 @@
   "all_saved_outputs": true,
   "probability_atol": 1e-10,
   "metrics_bootstrap_atol": 1e-12,
-  "selection": "Metadata-selected before new GPU/fit outcomes"
+  "selection": "Metadata-selected before new GPU/fit outcomes",
+  "matched_control_hooks": [
+    "decoder.layers.16",
+    "decoder.final_norm"
+  ],
+  "matched_control_seeds": [
+    42,
+    17,
+    1234
+  ],
+  "fixed_policy_R1_reference": "prob_h3_only_fixed_base, same original pretrained base scaler/head"
 }

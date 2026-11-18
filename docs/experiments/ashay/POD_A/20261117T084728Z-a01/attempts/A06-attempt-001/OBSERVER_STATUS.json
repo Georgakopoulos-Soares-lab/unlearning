@@ -1,0 +1,35 @@
+{
+  "observer_status": "ACTIVE",
+  "reviewer_status": "DRAFT_ONLY",
+  "publisher_status": "BLOCKED",
+  "cadence_seconds": 1200,
+  "service": "tmux:pod-a-prompt-observer",
+  "pid": 33071,
+  "proc_start_ticks": "8476919",
+  "active_approved_pin": "c519b1aa37d0d8334b0b2e1d83a671c6c0eb7ab5",
+  "observed_prompt_commit": "c519b1aa37d0d8334b0b2e1d83a671c6c0eb7ab5",
+  "effective_changed_from_active": [],
+  "last_successful_tick": "2026-11-18T03:01:30.547247+00:00",
+  "latest_attempt": {
+    "status": "PASS",
+    "observed_utc": "2026-11-18T03:01:30.547247+00:00",
+    "commit": "c519b1aa37d0d8334b0b2e1d83a671c6c0eb7ab5",
+    "science_execution": false
+  },
+  "health": "ACTIVE",
+  "newer_error_than_success": false,
+  "versioned_source_sha256": "638b149d96a1b7f948ba2320d2fce4a7f5fea46be50023e13231600c79ab7bb3",
+  "previous_source_preserved_at": "/workspace/agent-handoff/POD_A/review-loop/versions/A05-observer-001",
+  "maintenance_tests": 11,
+  "real_readonly_fetch_tick": "PASS",
+  "stage_dispatch": false,
+  "publication": false,
+  "stop_command": "touch /workspace/agent-handoff/POD_A/review-loop/STOP",
+  "pause_command": "touch /workspace/agent-handoff/POD_A/review-loop/DISABLED",
+  "restart_command": "Only after confirmed owned exit and explicit steering/recorded maintenance, remove owned STOP flag and tmux new-session -d -s pod-a-prompt-observer \"/usr/bin/python3 /workspace/agent-handoff/POD_A/review-loop/review_loop.v2.py serve\"",
+  "missing_components": [
+    "Isolated model reviewer",
+    "Restricted prompt publisher credential"
+  ],
+  "maintained_utc": "2026-11-18T03:05:26.064415+00:00"
+}

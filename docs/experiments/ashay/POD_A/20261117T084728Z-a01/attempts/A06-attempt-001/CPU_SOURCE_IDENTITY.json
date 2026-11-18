@@ -1,0 +1,37 @@
+{
+  "schema": "pod-a-a06-cpu-scientific-source-v1",
+  "files": [
+    {
+      "path": "h3_common.py",
+      "sha256": "043501ef0bbbcde4481c314449f143e63e21391a39a9e33207bf2de9fe81abe3"
+    },
+    {
+      "path": "fit_h3.py",
+      "sha256": "d5123d3177f93a040a77bb3fafb2b5eafee4c273a1ccb156e31414ecd43d2125"
+    },
+    {
+      "path": "audit_h3.py",
+      "sha256": "343fa21d1a0ce9bec140aa267d2a589b89a957937db602bfa44d39ea2fb33aca"
+    },
+    {
+      "path": "producer_metrics.py",
+      "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a"
+    },
+    {
+      "path": "independent_math.py",
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "build_h3_cache.py",
+      "sha256": "514b2d02f1e7fc3c2530ff6e172f18cab34638a2f90491c60400a83374a00d95"
+    }
+  ],
+  "producer_math": "Exact inherited multiretain_metrics.py",
+  "independent_math": "Exact inherited pairwise win/threshold implementation from A03",
+  "training_policy": "Unchanged frozen balanced L2 LBFGS grouped CV; independent direct scaler/logreg audit route",
+  "tests": {
+    "count": 4,
+    "status": "PASS",
+    "log_sha256": "d93e3f822852caa7f80b762cad662bff3fbac848c8ba01a7cc13c0ec66470ec0"
+  }
+}

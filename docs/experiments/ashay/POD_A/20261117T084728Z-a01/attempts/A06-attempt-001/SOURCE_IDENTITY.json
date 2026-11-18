@@ -1,0 +1,46 @@
+{
+  "schema": "pod-a-a06-source-v1",
+  "qualified_source_identity_sha256": "e72bb12601855339bf4497d3854cbd90e1f052d1def08a7ed4bcbb1da2192c1c",
+  "qualified_environment_sha256": "401c96fdeb59783bf20954b153b24edaf913b87aa3d7607e1cc32c088d3ca294",
+  "inference_files": [
+    {
+      "path": "qualification_contract.py",
+      "bytes": 11685,
+      "sha256": "cdce1c4d2e6f75c2c2bd761e764ebc640a6907e184cf7483555184b5b935cd70"
+    },
+    {
+      "path": "native_loader.py",
+      "bytes": 7529,
+      "sha256": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304"
+    },
+    {
+      "path": "production_contract.py",
+      "bytes": 6143,
+      "sha256": "06ce2349a35af00ce3ecb3de635b2e78d23065177ada428d66f80ac4f5f5c30e"
+    },
+    {
+      "path": "runtime_model.py",
+      "bytes": 4829,
+      "sha256": "97dd7bdd7a2708f3ad41549dc3c196741a5af37ec1e1d2dbf922ade7f211015e"
+    },
+    {
+      "path": "run_extraction.py",
+      "bytes": 12331,
+      "sha256": "405063534ae0d8d7e02837f0d55777d90ac8b674881b9a637d66796ab04251d5"
+    }
+  ],
+  "adapter_diff_sha256": "8b849de09b792c461b97a0b57f8bd89537f47ba12cfea42b8da382453117a9f7",
+  "unchanged_numerical_primitives": [
+    "qualification_contract.py",
+    "native_loader.py"
+  ],
+  "architecture_and_provider": "Copied exactly from qualified A04 init, approved content digest asserted",
+  "orchestration_changes": [
+    "Finite A06 task/split units",
+    "One writer and atomic256-row chunks",
+    "Content-verified resume/quarantine",
+    "Frozen approval/plan/source/native/fold/base-head identity checks",
+    "Per-candidate H3 recovery gate before other-five"
+  ],
+  "semantic_changes": false
+}
