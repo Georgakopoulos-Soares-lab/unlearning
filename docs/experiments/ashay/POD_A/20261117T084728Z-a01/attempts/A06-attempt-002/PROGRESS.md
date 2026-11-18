@@ -1,13 +1,13 @@
 # A06-attempt-002 — RUNNING
 
-Pinned package/A05 seals/native R5 assets/environment/private access/capacity PASS. New scientific source is being validated; no production has started.
+Adapter TRAIN parity/repeat PASS:81 bidirectional comparisons, zero maximum residual.35 implementation/CPU tests plus2 duplicate-unit/archive tests PASS. H3 production is running; other-five remains locked pending full H3 audit and fresh recovery.
 
-Observed UTC: 2026-11-18T20:29:33.055167+00:00 (local display UTC). Approved prompt `4ff94e09b72a02d6e3082af064669c98adda6008`; coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`.
+Observed UTC: 2026-11-18T20:41:34.522384+00:00 (local display UTC). Approved prompt `4ff94e09b72a02d6e3082af064669c98adda6008`; coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`.
 
 | Goal | Full target | New verified/sealed | Historical reused | Pending beyond completed | Evidence |
 |---|---:|---:|---:|---:|---|
-| Final heads | 3276 | 0 | 2340 | 858 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
-| Fixed-base applications | 3276 | 0 | 2340 | 858 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
+| Final heads | 3276 | 0 | 2340 | 936 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
+| Fixed-base applications | 3276 | 0 | 2340 | 936 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
 | Primary LM | 49 | 0 | 35 | 14 | [LM_INDEX.json](LM_INDEX.json) |
 | Shared controls | 36 | 0 | 36 | 0 | [../A05-attempt-002/REUSE_MATRIX.csv](../A05-attempt-002/REUSE_MATRIX.csv) |
 | A06 feature bundles | 13 | 0 | 0 | 13 | [EXTRACTION_INDEX.json](EXTRACTION_INDEX.json) |

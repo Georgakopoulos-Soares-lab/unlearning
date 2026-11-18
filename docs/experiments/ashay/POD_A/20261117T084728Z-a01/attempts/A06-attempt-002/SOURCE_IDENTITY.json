@@ -1,0 +1,55 @@
+{
+  "schema": "pod-a-a06-r5-adapter-source-v2",
+  "inference_files": [
+    {
+      "path": "common6.py",
+      "bytes": 5222,
+      "sha256": "9cdabcdbee15c46a495388ac99a931b5181d45fed529dc60d7ae2d1c25705d65"
+    },
+    {
+      "path": "scope6.py",
+      "bytes": 2935,
+      "sha256": "69734b34d3dee9fb0ed6b364a471be840cdfe975279ab8ec16f8a8bcf5a74d94"
+    },
+    {
+      "path": "production_contract.py",
+      "bytes": 6046,
+      "sha256": "7fb98afd9336bfba1032633cbcf7521d7d51b6c2e0373b32a82b5d61d1c04cc5"
+    },
+    {
+      "path": "qualification_contract.py",
+      "bytes": 11685,
+      "sha256": "cdce1c4d2e6f75c2c2bd761e764ebc640a6907e184cf7483555184b5b935cd70"
+    },
+    {
+      "path": "native_loader.py",
+      "bytes": 7529,
+      "sha256": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304"
+    },
+    {
+      "path": "runtime_model.py",
+      "bytes": 4829,
+      "sha256": "97dd7bdd7a2708f3ad41549dc3c196741a5af37ec1e1d2dbf922ade7f211015e"
+    },
+    {
+      "path": "run_extraction.py",
+      "bytes": 12443,
+      "sha256": "091a173a1b7eaf594fc66527fe0ef4e0d3a3e1390f2422ba95f7b15823445980"
+    }
+  ],
+  "CPU_source_identity_sha256": "61bc0471e0ea793ef2c8be3529d0990390c97be7786c6144c1ed14a97dbb5eb8",
+  "qualified_original_A04_source_sha256": "e72bb12601855339bf4497d3854cbd90e1f052d1def08a7ed4bcbb1da2192c1c",
+  "qualified_environment_sha256": "401c96fdeb59783bf20954b153b24edaf913b87aa3d7607e1cc32c088d3ca294",
+  "prior_A06_adapter_source_sha256": "066b663eb9326df998baabc6da7785c26452bc957a6a4102f140d77d9828d12a",
+  "new_source_identity_is_distinct_from_original": true,
+  "numerical_primitives_byte_identical": [
+    "native_loader.py",
+    "qualification_contract.py",
+    "runtime_model.py",
+    "producer_metrics.py",
+    "independent_math.py"
+  ],
+  "frozen_after_tests": true,
+  "subsequent_numerical_change_requires_invalidation_and_requalification": true,
+  "observed_utc": "2026-11-18T20:33:45.440989+00:00"
+}

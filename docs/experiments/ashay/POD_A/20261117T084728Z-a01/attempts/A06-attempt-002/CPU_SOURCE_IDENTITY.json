@@ -1,0 +1,73 @@
+{
+  "schema": "pod-a-a06-r5-CPU-source-v2",
+  "files": [
+    {
+      "path": "scope6.py",
+      "bytes": 2935,
+      "sha256": "69734b34d3dee9fb0ed6b364a471be840cdfe975279ab8ec16f8a8bcf5a74d94"
+    },
+    {
+      "path": "production_contract.py",
+      "bytes": 6046,
+      "sha256": "7fb98afd9336bfba1032633cbcf7521d7d51b6c2e0373b32a82b5d61d1c04cc5"
+    },
+    {
+      "path": "qualification_contract.py",
+      "bytes": 11685,
+      "sha256": "cdce1c4d2e6f75c2c2bd761e764ebc640a6907e184cf7483555184b5b935cd70"
+    },
+    {
+      "path": "h3_common.py",
+      "bytes": 3815,
+      "sha256": "89de743e09ad16035e915b31d73e23caa53b3c4a704d08d31ece04ca2d53b74c"
+    },
+    {
+      "path": "producer_metrics.py",
+      "bytes": 5016,
+      "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a"
+    },
+    {
+      "path": "independent_math.py",
+      "bytes": 3441,
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "fit_h3.py",
+      "bytes": 9118,
+      "sha256": "45b08006df637ee74d6394512b77bf15bc9698d8fe9b5c8957f825bd35358619"
+    },
+    {
+      "path": "audit_h3.py",
+      "bytes": 10936,
+      "sha256": "5d36f3038c9e8ba4fdad08c845bcff465b7ee0e94ca920be16928adcdaaff07e"
+    },
+    {
+      "path": "verify_paired_draws.py",
+      "bytes": 2760,
+      "sha256": "81ba787da8000916f0bcfc82785cfb70ac0a87f160eb7b3ab09c5c9455404da8"
+    },
+    {
+      "path": "build_h3_cache.py",
+      "bytes": 2502,
+      "sha256": "262780d9cb5aab6d7f7896febd209ac471017e044d6e08920ae09f63b421edd1"
+    },
+    {
+      "path": "lm_records.py",
+      "bytes": 8418,
+      "sha256": "7f3d0b26e2476e08fba19aad842d9ac4e2af5c9af63fe1854df283e06c2f8548"
+    }
+  ],
+  "environment_fingerprint": {
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.7.2",
+      "joblib": "1.5.2",
+      "threadpoolctl": "3.8.0"
+    }
+  },
+  "probe_selection_transform_arithmetic_unchanged": true,
+  "change_scope": "Owned R5 control/candidate/finite-unit guards and audit artifact retention; LM marginal-only implementation. No parameter/metric/scale/selection change.",
+  "test_validation_sha256": "e68e83a316808188dc8cf039cad4acfe75a4ee9e44b2ccefd252670245ce044d"
+}

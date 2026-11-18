@@ -1,0 +1,308 @@
+--- prior_A06/audit_h3.py
++++ R5_A06/audit_h3.py
+@@ -41,6 +41,7 @@
+  # Saved StandardScaler must equal TRAIN-only moments, independent of saved producer summary.
+  scaler_check=StandardScaler().fit(xtrain);require(np.array_equal(model[0].mean_,scaler_check.mean_) and np.array_equal(model[0].scale_,scaler_check.scale_),'Final scaler not fitted on exact TRAIN rows')
+  for a,b in folds:require(not set(trainmeta['groups'][a])&set(trainmeta['groups'][b]),'Fold group leakage')
++ trace=read(unit/'CV.json');finalfit=read(unit/'FINAL_FIT.json');require([t['C'] for t in trace]==[.1,1.,10.] and all(len(t['scores'])==3 and t['mean_auroc']==float(np.mean(t['scores'])) for t in trace),'CV trace schema/mean differs');require(max(trace,key=lambda t:(t['mean_auroc'],-t['C']))['C']==finalfit['C']==model[-1].C,'Recorded C/tie/model disagreement')
+  selected_panel=key in ['decoder_layer_16','final_norm'];fresh=None;fresh_report=None
+  if selected_panel:
+   candidates=[]
+@@ -73,12 +74,17 @@
+      ck=digest({'p':hashlib.sha256(refprob.tobytes()).hexdigest(),'draws':sha(drawpath),'reference':refname})+'.npz';refboot,refvalid=independent_distribution(refprob,meta['labels'],weights,ck);refpoint,_=independent_metrics(meta['labels'],refprob,np.array([0,1]),np.ones((1,len(refprob))));common=valid&refvalid
+      for metric in METRICS:
+       delta=boot[metric][common]-refboot[metric][common];ci=np.quantile(delta,[.025,.975]);row=next(r for r in saved['paired_contrasts'] if r['split']==split and r['policy']==policy and r['reference']==refname and r['metric']==metric);maxinterval=max(maxinterval,residual(ci,[row['ci_low'],row['ci_high']],1e-12,'Independent paired contrast interval'));maxmetric=max(maxmetric,residual([point[metric][0]-refpoint[metric][0]],[row['difference']],1e-12,'Independent paired point delta'));require(row['valid']==int(common.sum()) and row['invalid']==int((~common).sum()),'Paired missing-class accounting mismatch')
++ if fresh is not None:
++  fresh_root=A/'audit-refits'/alias/key/('seed'+str(seed));fresh_root.mkdir(parents=True,exist_ok=True);require(not (fresh_root/'COMPLETE.json').exists(),'Existing independent refit preserved');joblib.dump(fresh,fresh_root/'independent_scaler_head.joblib');put(fresh_root/'FULL_CV_REFIT.json',fresh_report);put(fresh_root/'COMPLETE.json',{'status':'PASS','unit_id':alias+'/emp_H3/'+key+'/seed'+str(seed),'audit_kind':'INDEPENDENT_FULL_CV_AND_FINAL_REFIT','original_producer_sha256':sha(unit/'PRODUCER_COMPLETE.json'),'fold_sha256':sha(foldpath),'files':file_refs(fresh_root),'initial_solver_calls':10,'actual_solver_calls':sum(len(v) for c in fresh_report['candidates'] for v in c['attempts'])+len(fresh_report['final_attempts']),'production_replaced':False});fresh_report['independent_artifact_sha256']=sha(fresh_root/'COMPLETE.json')
+  audit={'status':'PASS','candidate':alias,'key':key,'seed':seed,'producer_sha256':sha(unit/'PRODUCER_COMPLETE.json'),'all_probability_paths':4,'probability_max_abs':maxprob,'metric_max_abs':maxmetric,'bootstrap_draw_max_abs':maxbootstrap,'interval_max_abs':maxinterval,'bootstrap_policy_draws_checked':audited,'train_only_scaler_moments_exact':True,'fold_group_leakage':0,'fresh_refit':fresh_report,'wall_seconds':time.monotonic()-t,'completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};put(unit/'AUDIT.json',audit);put(unit/'COMPLETE.json',{'schema':'pod-a-a06-h3-verified-unit-v1','status':'VERIFIED','candidate':alias,'task':'emp_H3','key':key,'seed':seed,'production_heads':1,'fixed_base_applications':1,'producer_sha256':sha(unit/'PRODUCER_COMPLETE.json'),'audit_sha256':sha(unit/'AUDIT.json'),'completed_utc':audit['completed_utc']});return {k:audit[k] for k in ['status','candidate','key','seed','probability_max_abs','metric_max_abs','interval_max_abs','wall_seconds']}
+ def main(alias):
+- specs=[(alias,k,s) for k in LAYERS for s in SEEDS]
++ from scope6 import authorize
++ authorize(alias)
++ from scope6 import h3_specs
++ specs=h3_specs(alias)
+  with UnitLock(A/'h3'/alias/'auditor.lock'):
+   with threadpool_limits(limits=4):
+    with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+     for result in pool.map(audit_one,specs):print(json.dumps(result),flush=True)
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R4','R6'],required=True);main(p.parse_args().candidate)
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R5'],required=True);main(p.parse_args().candidate)
+--- prior_A06/build_h3_cache.py
++++ R5_A06/build_h3_cache.py
+@@ -3,6 +3,8 @@
+ from h3_common import *
+ from production_contract import verify_chunk,validate_rows
+ def main(alias):
++ from scope6 import authorize
++ authorize(alias)
+  for split in ['train','dev','test']:
+   unit=next(u for u in INPUTS['extraction_units'] if u['candidate']==alias and u['task']=='emp_H3' and u['split']==split);rows=validate_rows([json.loads(l) for l in Path(unit['manifest']['path']).read_text().splitlines()],'emp_H3',split);bundle_root=A/'features'/alias/'emp_H3'/split;bundle=read(bundle_root/'COMPLETE.json');require(bundle['status']=='PASS','H3 extraction incomplete');out=A/'h3-cache'/alias/split
+   if (out/'COMPLETE.json').exists():
+@@ -18,4 +20,4 @@
+   for m in maps.values():m.flush()
+   del maps;np.savez_compressed(out/'metadata.npz',**{k:np.concatenate(v) for k,v in meta.items()});receipt={'status':'PASS','candidate':alias,'split':split,'rows':len(rows),'input_bundle_sha256':sha(bundle_root/'COMPLETE.json'),'source_sha256':sha(__file__),'files':file_refs(out),'derived_cache_excluded_from_backup':'Reconstruct exactly from included verified chunks; samefloat32 values, no numerical transformation'};put(out/'COMPLETE.json',receipt);print(json.dumps({'event':'H3_CACHE_SEALED','candidate':alias,'split':split,'rows':len(rows)}),flush=True)
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R4','R6'],required=True);main(p.parse_args().candidate)
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R5'],required=True);main(p.parse_args().candidate)
+--- prior_A06/common6.py
++++ R5_A06/common6.py
+@@ -0,0 +1,49 @@
++"""Isolated metadata-only A05 attempt. No model/fit/effect imports or stage dispatcher."""
++from pathlib import Path
++import csv,datetime,hashlib,json,os,subprocess,sys
++C=Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002');cfg=json.loads((C/'RUN_CONFIG.json').read_text());A=Path(cfg['artifacts']);REC=Path(cfg['recovery']);D=Path(cfg['docs']);R=Path(cfg['root_control']);B=Path(cfg['run_docs']);W=Path(cfg['worktree']);D3=D.parent/'A03-attempt-001';D4=D.parent/'A04-attempt-004';D50=D.parent/'A05-attempt-001';D6=D.parent/'A06-attempt-001';D7=D.parent/'A07-attempt-001';D8=D.parent/'A08-attempt-001';D9=D.parent/'A09-attempt-001';C4=C.parent/'A04-attempt-004';A4=A.parent/'A04-attempt-004';A6=A.parent/'A06-attempt-001';A7=A.parent/'A07-attempt-001';A8=A.parent/'A08-attempt-001';REPO='ashay-sriv/undo-evo2-pilot-backup-20261020';MIRROR='ashay-sriv/unlearning-checkpoint-mirror'
++TASKS=['emp_H3','gue_tf_0','gue_prom_core_all','gue_prom_300_all','gue_splice_reconstructed','gue_mouse_0'];SEEDS=[42,17,1234];HOOKS=[f'decoder.layers.{i}' for i in range(25)]+['decoder.final_norm'];POLICIES=['independent_refit','fixed_original_base'];METRICS=['auroc','average_precision','accuracy','balanced_accuracy','classification_cross_entropy'];ANCHORS=['decoder.layers.16','decoder.final_norm']
++def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
++def read(p):return json.loads(Path(p).read_text())
++def sha(p):
++ with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
++def bh(b):return hashlib.sha256(b).hexdigest()
++def digest(v):return bh(json.dumps(v,sort_keys=True,separators=(',',':'),allow_nan=False).encode())
++def atomic(p,b):
++ p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);q=p.with_name('.'+p.name+'.tmp');q.write_bytes(b);os.replace(q,p)
++def put(p,v):
++ if not isinstance(v,(dict,list)):raise TypeError('JSON object/array required')
++ atomic(p,(json.dumps(v,indent=2,allow_nan=False)+'\n').encode())
++def md(p,v):
++ if not isinstance(v,str) or not v.startswith('# ') or '\n\n' not in v:raise TypeError('Plain Markdown required')
++ atomic(p,(v.rstrip()+'\n').encode())
++def git(*args,cwd=W):return subprocess.check_output(['git','-C',str(cwd),*args],text=True).strip()
++def gitb(*args,cwd=W):return subprocess.check_output(['git','-C',str(cwd),*args])
++def owned(path):
++ p=Path(path)
++ if p.is_absolute() or '..' in p.parts or '\\' in path or str(p)!=path:return False
++ return path.startswith(str(D.relative_to(W))+'/') or path in [str((B/n).relative_to(W)) for n in cfg['allowed_root_files']]
++def guard(dirty=True,head=None):
++ assert W.resolve()==W and git('rev-parse','--show-toplevel')==str(W) and git('branch','--show-current')=='POD_A' and str(Path(git('rev-parse','--git-common-dir')).resolve())==cfg['common_git_directory'];assert git('remote','get-url','origin')==git('remote','get-url','--push','origin')=='https://github.com/Georgakopoulos-Soares-lab/unlearning.git'
++ M=Path('/workspace/repos/unlearning-pod-a');assert gitb('ls-files','--stage','-z',cwd=M)==(C/'MAIN_INDEX_BEFORE.z').read_bytes() and gitb('status','--porcelain=v1','-z',cwd=M)==(C/'MAIN_STATUS_BEFORE.z').read_bytes();before=dict(l.split() for l in (C/'REFS_BEFORE.txt').read_text().splitlines());after=dict(l.split() for l in git('for-each-ref','--format=%(refname) %(objectname)').splitlines());allowed={'refs/heads/POD_A','refs/remotes/origin/POD_A'};assert {k:v for k,v in before.items() if k not in allowed}=={k:v for k,v in after.items() if k not in allowed}
++ deliveries=[read(p) for p in C.glob('GIT_DELIVERY.*.json')];expected=max(deliveries,key=lambda j:j['delivered_utc'])['commit'] if deliveries else cfg['research_head_before'];actual=git('rev-parse','HEAD');assert actual==(head or expected),'Unreconciled research HEAD'
++ for name,tree in read(C/'PRESERVATION_BASELINE.json')['existing_attempt_tree_ids'].items():assert git('rev-parse',actual+':'+str((B/'attempts'/name).relative_to(W)))==tree
++ status=gitb('status','--porcelain=v1','-z','--untracked-files=all');assert dirty or not status
++ for e in status.split(b'\0'):
++  if e:assert owned(e[3:].decode()),'Unowned concurrent change'
++ return {'status':'PASS','head':actual,'branch':'POD_A','canonical_worktree':str(W),'main_index_status_and_other_refs_unchanged':True,'all_prior_attempt_trees_unchanged':True}
++def publish(name,value):
++ guard();p=D/name;assert p.resolve().is_relative_to(D.resolve())
++ if p.suffix=='.md':md(p,value.decode() if isinstance(value,bytes) else value)
++ elif isinstance(value,(dict,list)):put(p,value)
++ elif isinstance(value,bytes):atomic(p,value)
++ else:atomic(p,value.encode())
++def table(name,rows,fields=None):
++ guard();p=D/name;p.parent.mkdir(parents=True,exist_ok=True);q=p.with_name('.'+p.name+'.tmp')
++ with q.open('w',newline='') as f:w=csv.DictWriter(f,fieldnames=fields or list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
++ os.replace(q,p)
++def no_science_imports():assert not any(n in sys.modules for n in ['torch','sklearn','joblib','bionemo','megatron'])
++def reporting_splits(task):return ['dev','test_exploratory'] if task=='emp_H3' else ['dev']
++def original_split(split):return 'test' if split=='test_exploratory' else split
++
++D5=D.parent/'A05-attempt-002'
+--- prior_A06/fit_h3.py
++++ R5_A06/fit_h3.py
+@@ -63,10 +63,13 @@
+   put(root/'RESULTS.json',{'metrics':result_rows,'paired_contrasts':contrast_rows,'interpretation':'Pointwise exploratory paired exact/RC-group bootstrap, conditional on heads; no causal/multiplicity/equivalence or biological independence claim'})
+  receipt={'schema':'pod-a-a06-h3-producer-v1','status':'PASS','candidate':alias,'task':'emp_H3','representation':key,'seed':seed,'head_count':1,'fixed_base_application_count':1,'original_base_head':{'path':str(original),'sha256':sha(original)},'fold_sha256':sha(fold_path),'CPU_source_identity_sha256':sha(C/'CPU_SOURCE_IDENTITY.json'),'coverage_plan_sha256':CFG['coverage_plan_sha256'],'protocol_sha256':CFG['protocol_sha256'],'new_solver_fits':sum(len(at) for c in candidates for at in c['convergence'])+len(attempts),'files':file_refs(root),'wall_seconds':time.monotonic()-start,'CPU_process_seconds':time.process_time()-cpu,'peak_RSS_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};put(root/'PRODUCER_COMPLETE.json',receipt);return {'candidate':alias,'layer':key,'seed':seed,'status':'PRODUCER_PASS','wall_seconds':receipt['wall_seconds']}
+ def main(alias):
++ from scope6 import authorize
++ authorize(alias)
+  for split in ['train','dev','test']:require((A/'h3-cache'/alias/split/'COMPLETE.json').exists(),'H3 cache incomplete')
+- specs=[(alias,key,seed) for key in LAYERS for seed in SEEDS]
++ from scope6 import h3_specs
++ specs=h3_specs(alias)
+  with UnitLock(A/'h3'/alias/'producer.lock'):
+   with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+    for result in pool.map(fit_one,specs):print(json.dumps(result),flush=True)
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R4','R6'],required=True);main(p.parse_args().candidate)
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R5'],required=True);main(p.parse_args().candidate)
+--- prior_A06/h3_common.py
++++ R5_A06/h3_common.py
+@@ -2,7 +2,7 @@
+ import hashlib,json,os
+ import numpy as np
+ from production_contract import read,put,digest,sha,require,LAYERS
+-C=Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001');CFG=read(C/'RUN_CONFIG.json');A=Path(CFG['artifacts']);R=Path(CFG['root_control']);C03=R/'attempts/A03-attempt-001';INPUTS=read(C/'A06_INPUTS.json');H=Path('/workspace/recovery/POD_A')/R.name/'A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z';CONTROL=Path('/workspace/recovery/POD_A')/R.name/'A03-attempt-001/restored/controls/benign-followup-v1';SEEDS=[42,17,1234];METRICS=['auroc','average_precision','accuracy','balanced_accuracy','classification_cross_entropy']
++C=Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002');CFG=read(C/'RUN_CONFIG.json');A=Path(CFG['artifacts']);R=Path(CFG['root_control']);C03=R/'attempts/A03-attempt-001';INPUTS=read(C/'A06_INPUTS.json');from scope6 import authorize;authorize('R5');H=Path('/workspace/recovery/POD_A')/R.name/'A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z';CONTROL=Path('/workspace/recovery/POD_A')/R.name/'A03-attempt-001/restored/controls/benign-followup-v1';SEEDS=[42,17,1234];METRICS=['auroc','average_precision','accuracy','balanced_accuracy','classification_cross_entropy']
+ OLD_MAP={}
+ for dep,root in [('base_R1',H),('controls',CONTROL)]:
+  for e in read(C03/('PAYLOAD_CHECKSUMS_'+dep+'.json'))['files']:OLD_MAP[str(root/e['path'])]=e
+--- prior_A06/lm_records.py
++++ R5_A06/lm_records.py
+@@ -1,48 +1,45 @@
+-"""Actual causal-head LM sufficient-statistic aggregation and independent paired checks."""
+-import argparse,math,datetime
++"""R5 actual causal LM marginal statistics only. All LM pairs belong to A08."""
++import argparse,math,datetime,time
+ from h3_common import *
+-def old_statistics(alias,group):
+- out=A/'reference-LM'/alias/(group+'.npz');out.parent.mkdir(parents=True,exist_ok=True)
+- if out.exists():
+-  with np.load(out,allow_pickle=False) as z:return {k:z[k] for k in z.files}
+- folder=H/'features'/group/('base' if alias=='base' else 'maxent');fields=['ids','task','split','labels','groups','sequence_sha256','nll_sum','n_tokens'];parts={k:[] for k in fields}
+- for p in sorted(folder.glob('chunk_*.npz')):
+-  checked_old(p)
+-  with np.load(p,allow_pickle=False) as z:
+-   for k in fields:parts[k].append(z[k])
+- result={k:np.concatenate(v) for k,v in parts.items()};np.savez_compressed(out,**result);return result
++from scope6 import authorize
++def canonical_input(kind,source_sha256,cohort_sha256,ordered_ids_sha256):
++ require(kind in ['RAW_COHORT_MANIFEST','EXTRACTION_BUNDLE_RECEIPT'],'Unknown LM provenance kind');require(all(isinstance(v,str) and len(v)==64 for v in [source_sha256,cohort_sha256,ordered_ids_sha256]),'Incomplete typed LM identity')
++ if kind=='RAW_COHORT_MANIFEST':require(source_sha256==cohort_sha256,'Historical raw manifest mismatch')
++ return {'raw_cohort_sha256':cohort_sha256,'ordered_ids_sha256':ordered_ids_sha256}
+ def draw_weights(task,split,ids,groups):
+  group='H3' if task=='emp_H3' else 'other_five';p=checked_old(H/'probes'/group/task/(split+'_resampling.npz'))
+  with np.load(p,allow_pickle=False) as z:
+-  names,inverse=np.unique(groups,return_inverse=True);require(np.array_equal(z['ids'],ids) and np.array_equal(z['group_names'],names) and np.array_equal(z['row_groups'],inverse),'LM paired draw row/group mismatch');draw=z['group_draws'];require(draw.shape==(2000,len(names)),'Wrong LM bootstrap draws');weights=np.stack([np.bincount(d,minlength=len(names)) for d in draw])[:,inverse]
++  names,inverse=np.unique(groups,return_inverse=True);require(np.array_equal(z['ids'],ids) and np.array_equal(z['group_names'],names) and np.array_equal(z['row_groups'],inverse),'LM saved draw order/group identity mismatch');require(int(z['seed'])==20261103,'Wrong LM saved draw seed');draw=z['group_draws'];require(draw.shape==(2000,len(names)),'Wrong LM saved draw population');weights=np.stack([np.bincount(d,minlength=len(names)) for d in draw])[:,inverse]
+  return weights,p
+ def independently_aggregate(losses,counts,weights=None):
+  losses=np.asarray(losses,dtype=np.float64);counts=np.asarray(counts,dtype=np.float64);nll=math.fsum(losses.tolist())/math.fsum(counts.tolist())
+  if weights is None:return nll,None
+- values=np.array([math.fsum((losses*w).tolist())/math.fsum((counts*w).tolist()) for w in weights]);return nll,values
++ return nll,np.array([math.fsum((losses*w).tolist())/math.fsum((counts*w).tolist()) for w in weights])
++def exponent(values):
++ values=np.asarray(values,dtype=np.float64);out=np.full(values.shape,np.nan);ok=values<=math.log(np.finfo(np.float64).max);out[ok]=np.exp(values[ok]);return out,ok
+ def main(alias,group):
+- selected=[u for u in INPUTS['extraction_units'] if u['candidate']==alias and (u['task']=='emp_H3')==(group=='H3')];old={r:old_statistics(r,group) for r in ['base','R1']};units=[]
++ authorize(alias);require(group in ['H3','other_five'],'Unknown LM task group');start=time.monotonic();selected=[u for u in INPUTS['extraction_units'] if u['candidate']==alias and (u['task']=='emp_H3')==(group=='H3')];units=[]
+  for unit in selected:
+-  root=A/'features'/alias/unit['task']/unit['split'];done=read(root/'COMPLETE.json');require(done['status']=='PASS','LM extraction incomplete');parts={k:[] for k in ['ids','labels','groups','sequence_sha256','lengths','nll_sum','n_tokens']}
+-  for e in done['chunks']:
+-   chunk=A/e['path'];receipt=read(chunk/'COMPLETE.json');require(sha(chunk/'COMPLETE.json')==e['receipt_sha256'],'LM input receipt changed')
+-   p=chunk/'features_and_lm.npz';require(sha(p)==receipt['files'][0]['sha256'],'LM input payload changed')
+-   with np.load(p,allow_pickle=False) as z:
+-    for k in parts:parts[k].append(z[k])
+-  arr={k:np.concatenate(v) for k,v in parts.items()};require(len(arr['ids'])==unit['rows'] and digest(arr['ids'].tolist())==unit['ordered_ids_sha256'],'LM row identity mismatch');require(arr['nll_sum'].dtype==np.float32 and np.array_equal(arr['n_tokens'],arr['lengths']-1),'LM dtype/shift/count mismatch');loss=arr['nll_sum'].astype(np.float64);count=arr['n_tokens'].astype(np.float64);require(np.isfinite(loss).all() and np.all(count>0),'Invalid LM sufficient statistics');point=float(loss.sum(dtype=np.float64)/count.sum(dtype=np.float64));ipoint,_=independently_aggregate(loss,count);require(abs(point-ipoint)<=1e-12,'LM independent corpus NLL discrepancy');ppl=float(np.exp(point));primary=unit['split']!='train';results=[];contrasts=[];distributions={};maxres=abs(point-ipoint)
+-  if primary:
+-   weights,dp=draw_weights(unit['task'],unit['split'],arr['ids'],arr['groups']);nll=(weights@loss)/(weights@count);_,ind=independently_aggregate(loss,count,weights);maxres=max(maxres,float(np.max(np.abs(nll-ind))));require(maxres<=1e-12,'LM independent every-draw NLL discrepancy');dist={'causal_nll':nll,'perplexity':np.exp(nll)};distributions.update(dist)
+-   for metric,pvalue in [('causal_nll',point),('perplexity',ppl)]:
+-    values=dist[metric];indvalues=ind if metric=='causal_nll' else np.exp(ind);require(np.max(np.abs(values-indvalues))<=1e-12,'LM transformed bootstrap discrepancy');ci=np.quantile(values,[.025,.975]);ici=np.quantile(indvalues,[.025,.975]);require(np.max(np.abs(ci-ici))<=1e-12,'LM interval discrepancy');results.append({'checkpoint_alias':alias,'checkpoint_content_id':INPUTS['checkpoint_identities'][alias]['model_tensor_content_sha256'],'lineage':'NEW','task':unit['task'],'split':'test_exploratory' if unit['split']=='test' else unit['split'],'representation':'N/A','CV_seed':'N/A','policy':'actual_causal_head','metric':metric,'estimate':pvalue,'sample_count':len(loss),'group_count':len(np.unique(arr['groups'])),'target_count':int(count.sum()),'ci_low':float(ci[0]),'ci_high':float(ci[1]),'bootstrap_attempted':2000,'bootstrap_valid':2000,'bootstrap_invalid':0,'status':'VERIFIED','missing_reason':None,'protocol_sha256':CFG['protocol_sha256'],'input_sha256':sha(root/'COMPLETE.json'),'prediction_sha256':None,'receipt':str(Path('lm')/alias/unit['task']/unit['split']/'COMPLETE.json')})
+-   for refname,ref in old.items():
+-    mask=(ref['task']==unit['task'])&(ref['split']==unit['split']);rr={k:ref[k][mask] for k in ref if k not in ['task','split']}
+-    for k in ['ids','labels','groups','sequence_sha256','n_tokens']:require(np.array_equal(rr[k],arr[k]),'LM historical exact pairing differs '+k)
+-    rl=rr['nll_sum'].astype(np.float64);rc=rr['n_tokens'].astype(np.float64);refnll=float(rl.sum()/rc.sum());refdist=(weights@rl)/(weights@rc);ir,ib=independently_aggregate(rl,rc,weights);require(abs(ir-refnll)<=1e-12 and np.max(np.abs(ib-refdist))<=1e-12,'LM independent reference aggregation discrepancy')
+-    for metric,delta,indelta,pdelta in [('causal_nll',nll-refdist,ind-ib,point-refnll),('perplexity',np.exp(nll)-np.exp(refdist),np.exp(ind)-np.exp(ib),ppl-float(np.exp(refnll)))]:
+-     require(np.max(np.abs(delta-indelta))<=1e-12,'LM paired every-draw discrepancy');ci=np.quantile(delta,[.025,.975]);ici=np.quantile(indelta,[.025,.975]);require(np.max(np.abs(ci-ici))<=1e-12,'LM paired interval discrepancy');distributions[refname+'__'+metric]=delta;contrasts.append({'candidate':alias,'reference':refname,'task':unit['task'],'split':unit['split'],'metric':metric,'difference':pdelta,'ci_low':float(ci[0]),'ci_high':float(ci[1]),'attempted':2000,'valid':2000,'invalid':0,'direction':'target-reference','orientation':'lower','status':'VERIFIED','protocol_sha256':CFG['protocol_sha256'],'draw_sha256':sha(dp)})
+-  out=A/'lm'/alias/unit['task']/unit['split'];out.mkdir(parents=True,exist_ok=True);require(not (out/'COMPLETE.json').exists(),'LM unit already sealed; use verified index rather than overwrite');np.savez_compressed(out/'sufficient_statistics.npz',**arr)
+-  if primary:np.savez_compressed(out/'bootstrap.npz',**distributions)
+-  report={'status':'VERIFIED','candidate':alias,'task':unit['task'],'split':unit['split'],'primary_reporting_unit':primary,'rows':len(loss),'targets':int(count.sum()),'NLL':point,'PPL':ppl,'independent_max_abs_NLL':maxres,'metrics':results,'paired_contrasts':contrasts,'input_bundle_sha256':sha(root/'COMPLETE.json'),'source_sha256':sha(__file__),'precision':'float32 per-example sums; float64 corpus aggregation; independent math.fsum','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};put(out/'RESULTS.json',report);put(out/'COMPLETE.json',{'status':'VERIFIED','input_bundle_sha256':sha(root/'COMPLETE.json'),'files':file_refs(out)});units.append({'candidate':alias,'task':unit['task'],'split':unit['split'],'primary_reporting_unit':primary,'status':'VERIFIED','receipt':str((out/'COMPLETE.json').relative_to(A)),'receipt_sha256':sha(out/'COMPLETE.json'),'rows':len(loss),'targets':int(count.sum())});print(json.dumps({'event':'LM_VERIFIED','candidate':alias,'task':unit['task'],'split':unit['split'],'rows':len(loss),'reporting':primary}),flush=True)
+- index=read(C/'LM_INDEX.json') if (C/'LM_INDEX.json').exists() else {'units':[]};index['units']=[u for u in index['units'] if not (u['candidate']==alias and (u['task']=='emp_H3')==(group=='H3'))]+units;put(C/'LM_INDEX.json',index)
++  root=A/'features'/alias/unit['task']/unit['split'];done=read(root/'COMPLETE.json');require(done['status']=='PASS','Unsealed LM source bundle');out=A/'lm'/alias/unit['task']/unit['split']
++  if (out/'COMPLETE.json').exists():
++   seal=read(out/'COMPLETE.json');require(seal['input_bundle_sha256']==sha(root/'COMPLETE.json') and seal['source_sha256']==sha(__file__),'Stale LM result seal');verify_refs(out,seal);report=read(out/'RESULTS.json')
++  else:
++   require(not out.exists(),'Partial LM output preserved; quarantine before a controlled retry');parts={k:[] for k in ['ids','labels','groups','sequence_sha256','lengths','nll_sum','n_tokens']}
++   for e in done['chunks']:
++    chunk=A/e['path'];receipt=read(chunk/'COMPLETE.json');require(sha(chunk/'COMPLETE.json')==e['receipt_sha256'],'Changed LM chunk seal');p=chunk/'features_and_lm.npz';require(sha(p)==receipt['files'][0]['sha256'],'Changed LM chunk payload')
++    with np.load(p,allow_pickle=False) as z:
++     for k in parts:parts[k].append(z[k])
++   arr={k:np.concatenate(v) for k,v in parts.items()};require(len(arr['ids'])==unit['rows'] and digest(arr['ids'].tolist())==unit['ordered_ids_sha256'],'Wrong LM ordered rows');require(arr['nll_sum'].dtype==np.float32 and np.array_equal(arr['n_tokens'],arr['lengths']-1),'LM float32 sums/causal target count mismatch');loss=arr['nll_sum'].astype(np.float64);count=arr['n_tokens'].astype(np.float64);require(np.isfinite(loss).all() and (count>0).all(),'Invalid LM sufficient statistics');point=float(loss.sum(dtype=np.float64)/count.sum(dtype=np.float64));indpoint,_=independently_aggregate(loss,count);require(abs(point-indpoint)<=1e-12,'Independent LM corpus NLL discrepancy');pointp,pointok=exponent(np.array([point]));ppl=float(pointp[0]) if pointok[0] else None;primary=unit['split']!='train';results=[];distributions={};maxnll=abs(point-indpoint);maxppl=0.;draw_ref=None
++   if primary:
++    weights,dp=draw_weights(unit['task'],unit['split'],arr['ids'],arr['groups']);nll=(weights@loss)/(weights@count);_,ind=independently_aggregate(loss,count,weights);maxnll=max(maxnll,float(np.max(np.abs(nll-ind))));require(maxnll<=1e-12,'Independent every-draw LM NLL discrepancy');pv,pok=exponent(nll);iv,iok=exponent(ind);require(np.array_equal(pok,iok),'LM overflow validity mismatch');maxppl=float(np.max(np.abs(pv[pok]-iv[pok]))) if pok.any() else 0.;require(maxppl<=1e-12,'Independent every-draw PPL discrepancy');distributions={'causal_nll':nll,'perplexity':pv,'perplexity_valid':pok};draw_ref={'path':str(dp),'bytes':dp.stat().st_size,'sha256':sha(dp)}
++    for metric,value,dist,indist,valid in [('causal_nll',point,nll,ind,np.ones(2000,dtype=bool)),('perplexity',ppl,pv,iv,pok)]:
++     ci=np.quantile(dist[valid],[.025,.975]) if valid.any() else [None,None];ici=np.quantile(indist[valid],[.025,.975]) if valid.any() else [None,None]
++     if valid.any():require(np.max(np.abs(np.asarray(ci)-np.asarray(ici)))<=1e-12,'Independent LM interval discrepancy')
++     results.append({'checkpoint_alias':alias,'checkpoint_content_id':INPUTS['checkpoint_identities'][alias]['model_tensor_content_sha256'],'task':unit['task'],'split':'test_exploratory' if unit['split']=='test' else unit['split'],'representation':'N/A','CV_seed':'N/A','policy':'actual_causal_head','metric':metric,'estimate':value,'ci_low':None if ci[0] is None else float(ci[0]),'ci_high':None if ci[1] is None else float(ci[1]),'missing_reason':None if value is not None else 'PPL overflow; finite corpus NLL retained','ci_missing_reason':None if valid.any() else 'All transformed draws overflow','sample_count':len(loss),'group_count':len(np.unique(arr['groups'])),'target_count':int(count.sum()),'bootstrap_attempted':2000,'bootstrap_valid':int(valid.sum()),'bootstrap_invalid':int((~valid).sum()),'status':'VERIFIED','protocol_sha256':CFG['protocol_sha256'],'coverage_plan_sha256':CFG['coverage_plan_sha256'],'draw_sha256':sha(dp),'prediction_hash_kind':'LM_SUFFICIENT_STATISTICS_FILE','input_hash_kind':'EXTRACTION_BUNDLE_RECEIPT','input_sha256':sha(root/'COMPLETE.json')})
++   out.mkdir(parents=True);np.savez_compressed(out/'sufficient_statistics.npz',**arr)
++   if primary:np.savez_compressed(out/'bootstrap.npz',**distributions)
++   report={'status':'VERIFIED','candidate':alias,'task':unit['task'],'split':unit['split'],'primary_reporting_unit':primary,'rows':len(loss),'targets':int(count.sum()),'total_loss_sum_float64':float(loss.sum(dtype=np.float64)),'NLL':point,'PPL':ppl,'PPL_missing_reason':None if ppl is not None else 'Overflow; finite NLL retained','independent_max_abs_NLL':maxnll,'independent_max_abs_PPL_draws':maxppl,'metrics':results,'paired_contrasts':[],'paired_LM_computation_authorized':False,'input_bundle_sha256':sha(root/'COMPLETE.json'),'canonical_input_identity':canonical_input('EXTRACTION_BUNDLE_RECEIPT',sha(root/'COMPLETE.json'),unit['parent_manifest']['sha256'],unit['ordered_ids_sha256']),'source_sha256':sha(__file__),'draw_reference':draw_ref,'precision':'float32 per-example sums; float64 corpus aggregation; independent math.fsum','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};put(out/'RESULTS.json',report);put(out/'COMPLETE.json',{'status':'VERIFIED','input_bundle_sha256':sha(root/'COMPLETE.json'),'source_sha256':sha(__file__),'files':file_refs(out)})
++  units.append({'candidate':alias,'task':unit['task'],'split':unit['split'],'primary_reporting_unit':report['primary_reporting_unit'],'status':'VERIFIED','receipt':str((out/'COMPLETE.json').relative_to(A)),'receipt_sha256':sha(out/'COMPLETE.json'),'rows':report['rows'],'targets':report['targets']});print(json.dumps({'event':'LM_VERIFIED','task':unit['task'],'split':unit['split'],'rows':report['rows'],'primary':report['primary_reporting_unit']}),flush=True)
++ index=read(C/'LM_INDEX.json') if (C/'LM_INDEX.json').exists() else {'units':[]};index['units']=[u for u in index['units'] if (u['task']=='emp_H3')!=(group=='H3')]+units;index['paired_LM_rows']=0;index['last_group_wall_seconds']=time.monotonic()-start;put(C/'LM_INDEX.json',index)
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R4','R6'],required=True);p.add_argument('--group',choices=['H3','other_five'],required=True);a=p.parse_args();main(a.candidate,a.group)
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R5'],required=True);p.add_argument('--group',choices=['H3','other_five'],required=True);args=p.parse_args();main(args.candidate,args.group)
+--- prior_A06/production_contract.py
++++ R5_A06/production_contract.py
+@@ -49,8 +49,8 @@
+  for p in root.glob('.*.work-*'):
+   require(not p.is_symlink(),'Symlink temporary rejected');os.replace(p,quarantine/(p.name+'-'+uuid.uuid4().hex))
+ def require_gate(candidate,task,control):
+- if task=='emp_H3':return
+- p=Path(control)/('H3_GATE_'+candidate+'.json');require(p.is_file(),'Other-five extraction denied before H3 gate');j=read(p);require(j['status']=='PASS' and j['candidate']==candidate and j['backup_status']=='PASS','Unpassed/unprotected H3 gate')
++ from scope6 import verify_gate
++ return verify_gate(candidate,task,control)
+ def process_identity(pid,start):
+  p=Path('/proc')/str(pid)/'stat';return p.exists() and p.read_text().split()[21]==str(start)
+ class UnitLock:
+@@ -60,6 +60,8 @@
+
+ def safe_archive_members(members,root_name):
+  from pathlib import PurePosixPath
++ names=set()
+  for member in members:
++  require(member.name not in names,'Duplicate archive member');names.add(member.name)
+   p=PurePosixPath(member.name);require(not p.is_absolute() and '..' not in p.parts and p.parts and p.parts[0]==root_name and (member.isfile() or member.isdir()) and not member.issym() and not member.islnk(),'Unsafe archive member')
+  return True
+--- prior_A06/run_extraction.py
++++ R5_A06/run_extraction.py
+@@ -6,19 +6,19 @@
+ from qualification_contract import componentwise,independent_cross_entropy,validate_manifest
+ def stamp():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+ def preflight(args):
+- c=Path(args.control).resolve();require(c==Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001'),'Unapproved control root');require(re.fullmatch(r'[A-Za-z0-9_-]+',args.run_label) is not None,'Unsafe run label');cfg=read(c/'RUN_CONFIG.json');a=Path(cfg['artifacts']);require(cfg['stage']=='A06' and cfg['prompt_commit']==args.prompt_commit,'Wrong stage/pin');approval=read(c/'APPROVAL_RECORD.json');require(approval['stage']=='A06' and approval['prompt_commit']==args.prompt_commit,'No matching direct approval receipt');require(cfg['coverage_plan_sha256']==args.coverage_sha256==approval['coverage_plan_sha256'],'Coverage hash differs');inp=read(c/'A06_INPUTS.json');require(args.candidate in ['R4','R6'],'Unknown checkpoint');require(Path(args.output_root).resolve()==(a/('parity' if args.mode=='parity' else 'features')).resolve(),'Wrong output root');require(args.group in ['H3','other_five'],'Unknown group')
+- sys.path.insert(0,str(a/'stage_drivers'));from research_guard import guard;guard(allow_dirty=True)
++ c=Path(args.control).resolve();require(c==Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002'),'Unapproved control root');require(re.fullmatch(r'[A-Za-z0-9_-]+',args.run_label) is not None,'Unsafe run label');cfg=read(c/'RUN_CONFIG.json');a=Path(cfg['artifacts']);require(cfg['stage']=='A06' and cfg['prompt_commit']==args.prompt_commit,'Wrong stage/pin');approval=read(c/'APPROVAL_RECORD.json');require(approval['stage']=='A06' and approval['prompt_commit']==args.prompt_commit,'No matching direct approval receipt');require(cfg['coverage_plan_sha256']==args.coverage_sha256==approval['coverage_plan_sha256'],'Coverage hash differs');inp=read(c/'A06_INPUTS.json');require(args.candidate in ['R5'],'Unknown checkpoint');require(Path(args.output_root).resolve()==(a/('parity' if args.mode=='parity' else 'features')).resolve(),'Wrong output root');require(args.group in ['H3','other_five'],'Unknown group')
++ from common6 import guard;guard();from scope6 import authorize;authorize(args.candidate)
+  source=read(c/'SOURCE_IDENTITY.json')
+  for e in source['inference_files']:require(sha(a/'code'/e['path'])==e['sha256'],'Adapter source changed before inference')
+  require(read(c/'SYNTHETIC_VALIDATION.json')['status']=='PASS','Synthetic adapter validation absent')
+  if args.mode=='extraction':
+   parity=read(c/('ADAPTER_PARITY_'+args.candidate+'.json'));require(parity['status']=='PASS' and parity['source_identity_sha256']==sha(c/'SOURCE_IDENTITY.json'),'Unqualified adapter source/candidate')
+- units=[u for u in inp['extraction_units'] if u['candidate']==args.candidate and (u['task']=='emp_H3')==(args.group=='H3')]
++ units=[] if args.mode=='parity' else [u for u in inp['extraction_units'] if u['candidate']==args.candidate and (u['task']=='emp_H3')==(args.group=='H3')]
+  for u in units:
+   require_gate(args.candidate,u['task'],c)
+   p=Path(u['manifest']['path']);require(sha(p)==u['manifest']['sha256'],'Cohort byte identity changed');require(sha(u['parent_manifest']['path'])==u['parent_manifest']['sha256'],'Parent cohort changed')
+   rr=validate_rows([json.loads(l) for l in p.read_text().splitlines()],u['task'],u['split']);require(digest([r['id'] for r in rr])==u['ordered_ids_sha256'],'Row order changed')
+- if args.mode=='parity':require(args.group=='H3','Parity is frozen TRAIN-only fixture')
++ if args.mode=='parity':require(args.group=='H3','Parity is frozen TRAIN-only fixture');require(sha(inp['training_smoke']['path'])==inp['training_smoke']['sha256'],'TRAIN fixture changed')
+  assets=inp['assets'][args.candidate];cache=read(c/'ASSET_STAT_CACHE.json')
+  for e in assets:
+   p=Path(e['path']);s=p.stat();st=[s.st_dev,s.st_ino,s.st_size,s.st_mtime_ns,s.st_ctime_ns];require(s.st_size==e['bytes'],'Native asset size changed')
+@@ -74,4 +74,4 @@
+    with (c/'RESOURCE_LEDGER.jsonl').open('a') as ledger:ledger.write(json.dumps({**job,'wall_seconds':time.monotonic()-start,'CPU_process_seconds':time.process_time()-cpu,'cost':None,'time_caps':None})+'\n')
+  print(json.dumps({'status':status,'candidate':candidate,'mode':mode,'group':args.group,'new_forwards':physical}),flush=True)
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--control',required=True);p.add_argument('--prompt-commit',required=True);p.add_argument('--coverage-sha256',required=True);p.add_argument('--candidate',required=True,choices=['R4','R6']);p.add_argument('--mode',required=True,choices=['parity','extraction']);p.add_argument('--group',required=True,choices=['H3','other_five']);p.add_argument('--output-root',required=True);p.add_argument('--run-label',required=True);main(p.parse_args())
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--control',required=True);p.add_argument('--prompt-commit',required=True);p.add_argument('--coverage-sha256',required=True);p.add_argument('--candidate',required=True,choices=['R5']);p.add_argument('--mode',required=True,choices=['parity','extraction']);p.add_argument('--group',required=True,choices=['H3','other_five']);p.add_argument('--output-root',required=True);p.add_argument('--run-label',required=True);main(p.parse_args())
+--- prior_A06/scope6.py
++++ R5_A06/scope6.py
+@@ -0,0 +1,20 @@
++"""Direct-approval, immutable-manifest and stage-owned write guards; no model import."""
++from pathlib import Path
++import json,hashlib,os
++C=Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002')
++PIN='4ff94e09b72a02d6e3082af064669c98adda6008';PLAN='06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3';MODEL='9cab388a46a873902317ff022ab0b9a43d3e42c8753d3842837f74f5dd474259'
++def require(v,why):
++ if not v:raise ValueError(why)
++def read(p):return json.loads(Path(p).read_text())
++def sha(p):
++ with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
++def authorize(candidate):
++ require(candidate=='R5','Only R5 authorized');cfg=read(C/'RUN_CONFIG.json');ap=read(C/'APPROVAL_RECORD.json');inp=read(C/'A06_INPUTS.json');require(cfg['stage']==ap['stage']=='A06' and cfg['attempt_id']==ap['attempt_id']=='A06-attempt-002','Wrong stage/attempt');require(cfg['prompt_commit']==ap['prompt_commit']==PIN and cfg['coverage_plan_sha256']==ap['coverage_plan_sha256']==PLAN,'Stale prompt/plan');require(ap.get('direct_user_message','').startswith('👍 A06 at '+PIN),'No exact direct approval');require(sha(C/'APPROVAL_RECORD.json')==inp['approval']['sha256'],'Approval receipt changed');require(inp['checkpoint_identities']['R5']['model_tensor_content_sha256']==MODEL,'Wrong R5 content');require(Path(cfg['control']).resolve()==C and Path(cfg['artifacts']).resolve()==Path('/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002'),'Historical/root escape');return cfg,inp
++def h3_specs(candidate):
++ authorize(candidate);manifest=read(C/'A06_EXECUTION_MANIFEST.json');units=manifest['H3_head_application_units'];specs=[(candidate,e['array_key'],e['seed']) for e in units];require(len(specs)==78 and len(set(specs))==78 and all(e['owner_stage']=='A06' and e['task']=='emp_H3' and e['coverage_plan_sha256']==PLAN for e in units),'Wrong H3 finite unit set');return specs
++def verify_gate(candidate,task,control):
++ require(candidate=='R5','Foreign candidate gate');require(Path(control).resolve()==C,'Wrong gate control')
++ if task=='emp_H3':return
++ require(task in ['gue_tf_0','gue_prom_core_all','gue_prom_300_all','gue_splice_reconstructed','gue_mouse_0'],'Unknown task');p=C/'H3_GATE_R5.json';require(p.is_file(),'Other-five denied before H3 gate');j=read(p);require(j.get('status')=='PASS' and j.get('candidate')=='R5' and j.get('backup_status')=='PASS' and j.get('coverage_plan_sha256')==PLAN and j.get('model_content_sha256')==MODEL,'Unpassed/stale/unprotected R5 gate');require(all(j.get('components',{}).get(k) is True for k in ['adapter','features','heads78','applications78','all_unit_audit','six_full_CV_refits','LM','private_fresh_recovery']),'Incomplete technical gate')
++ for e in j.get('local_dependencies',[]):require(sha(e['path'])==e['sha256'],'Gate dependency changed')
++ require(len(j.get('local_dependencies',[]))>=3,'Missing exact gate dependency seals')
+--- prior_A06/verify_paired_draws.py
++++ R5_A06/verify_paired_draws.py
+@@ -6,6 +6,8 @@
+ from independent_math import reconstruct,metrics
+ from audit_h3 import independent_distribution,residual
+ def main(alias):
++ from scope6 import authorize
++ authorize(alias)
+  maximum=0.;arrays=0;draw_values=0;units=0
+  for key in LAYERS:
+   for seed in SEEDS:
+@@ -25,5 +27,5 @@
+    units+=1
+  report={'status':'PASS','candidate':alias,'verified_H3_units':units,'paired_draw_arrays_verified':arrays,'paired_draw_values_verified':draw_values,'max_abs_residual':maximum,'tolerance':1e-12,'source_sha256':sha(__file__),'core_audits_reused':'Core probability, metric, target-bootstrap and interval audits unchanged; this adds every saved paired-difference array','completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};put(C/('H3_AUDIT_SUPPLEMENT_'+alias+'.json'),report);print(json.dumps(report))
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',required=True,choices=['R4','R6']);a=p.parse_args()
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',required=True,choices=['R5']);a=p.parse_args()
+  with threadpool_limits(limits=4):main(a.candidate)

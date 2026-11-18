@@ -1,0 +1,3658 @@
+{
+  "status": "PASS",
+  "candidate": "R5",
+  "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+  "CPU_source_identity_sha256": "61bc0471e0ea793ef2c8be3529d0990390c97be7786c6144c1ed14a97dbb5eb8",
+  "manifest_sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+  "physical_batch": 8,
+  "logical_batch": 8,
+  "atol": 0.0001,
+  "rtol": 1e-05,
+  "comparisons": [
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_0",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0006337540107779205,
+        "worst_reference": -0.0006337540107779205,
+        "worst_allowed_abs_error": 0.00010000633754010778,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0006337540107779205,
+        "worst_reference": -0.0006337540107779205,
+        "worst_allowed_abs_error": 0.00010000633754010778,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_1",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0005206757341511548,
+        "worst_reference": -0.0005206757341511548,
+        "worst_allowed_abs_error": 0.00010000520675734152,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0005206757341511548,
+        "worst_reference": -0.0005206757341511548,
+        "worst_allowed_abs_error": 0.00010000520675734152,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_2",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.00039981151348911226,
+        "worst_reference": 0.00039981151348911226,
+        "worst_allowed_abs_error": 0.00010000399811513489,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.00039981151348911226,
+        "worst_reference": 0.00039981151348911226,
+        "worst_allowed_abs_error": 0.00010000399811513489,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_3",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004169640131294727,
+        "worst_reference": 0.004169640131294727,
+        "worst_allowed_abs_error": 0.00010004169640131296,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004169640131294727,
+        "worst_reference": 0.004169640131294727,
+        "worst_allowed_abs_error": 0.00010004169640131296,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_4",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.0035351193509995937,
+        "worst_reference": 0.0035351193509995937,
+        "worst_allowed_abs_error": 0.00010003535119351,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.0035351193509995937,
+        "worst_reference": 0.0035351193509995937,
+        "worst_allowed_abs_error": 0.00010003535119351,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_5",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004374411888420582,
+        "worst_reference": 0.004374411888420582,
+        "worst_allowed_abs_error": 0.0001000437441188842,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004374411888420582,
+        "worst_reference": 0.004374411888420582,
+        "worst_allowed_abs_error": 0.0001000437441188842,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_6",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004339636769145727,
+        "worst_reference": 0.004339636769145727,
+        "worst_allowed_abs_error": 0.00010004339636769147,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004339636769145727,
+        "worst_reference": 0.004339636769145727,
+        "worst_allowed_abs_error": 0.00010004339636769147,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_7",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007171183824539185,
+        "worst_reference": 0.007171183824539185,
+        "worst_allowed_abs_error": 0.0001000717118382454,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007171183824539185,
+        "worst_reference": 0.007171183824539185,
+        "worst_allowed_abs_error": 0.0001000717118382454,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_8",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004245889373123646,
+        "worst_reference": 0.004245889373123646,
+        "worst_allowed_abs_error": 0.00010004245889373124,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004245889373123646,
+        "worst_reference": 0.004245889373123646,
+        "worst_allowed_abs_error": 0.00010004245889373124,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_9",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.018771164119243622,
+        "worst_reference": 0.018771164119243622,
+        "worst_allowed_abs_error": 0.00010018771164119243,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.018771164119243622,
+        "worst_reference": 0.018771164119243622,
+        "worst_allowed_abs_error": 0.00010018771164119243,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_10",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.011965889483690262,
+        "worst_reference": 0.011965889483690262,
+        "worst_allowed_abs_error": 0.0001001196588948369,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.011965889483690262,
+        "worst_reference": 0.011965889483690262,
+        "worst_allowed_abs_error": 0.0001001196588948369,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_11",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.021333102136850357,
+        "worst_reference": 0.021333102136850357,
+        "worst_allowed_abs_error": 0.0001002133310213685,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.021333102136850357,
+        "worst_reference": 0.021333102136850357,
+        "worst_allowed_abs_error": 0.0001002133310213685,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_12",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.025415999814867973,
+        "worst_reference": 0.025415999814867973,
+        "worst_allowed_abs_error": 0.00010025415999814869,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.025415999814867973,
+        "worst_reference": 0.025415999814867973,
+        "worst_allowed_abs_error": 0.00010025415999814869,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_13",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007335531525313854,
+        "worst_reference": 0.007335531525313854,
+        "worst_allowed_abs_error": 0.00010007335531525315,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007335531525313854,
+        "worst_reference": 0.007335531525313854,
+        "worst_allowed_abs_error": 0.00010007335531525315,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_14",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.00579107878729701,
+        "worst_reference": -0.00579107878729701,
+        "worst_allowed_abs_error": 0.00010005791078787297,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.00579107878729701,
+        "worst_reference": -0.00579107878729701,
+        "worst_allowed_abs_error": 0.00010005791078787297,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_15",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.006430632434785366,
+        "worst_reference": -0.006430632434785366,
+        "worst_allowed_abs_error": 0.00010006430632434785,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.006430632434785366,
+        "worst_reference": -0.006430632434785366,
+        "worst_allowed_abs_error": 0.00010006430632434785,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_16",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.039496637880802155,
+        "worst_reference": -0.039496637880802155,
+        "worst_allowed_abs_error": 0.00010039496637880803,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.039496637880802155,
+        "worst_reference": -0.039496637880802155,
+        "worst_allowed_abs_error": 0.00010039496637880803,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_17",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.013717112131416798,
+        "worst_reference": -0.013717112131416798,
+        "worst_allowed_abs_error": 0.00010013717112131417,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.013717112131416798,
+        "worst_reference": -0.013717112131416798,
+        "worst_allowed_abs_error": 0.00010013717112131417,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_18",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.04448878765106201,
+        "worst_reference": -0.04448878765106201,
+        "worst_allowed_abs_error": 0.00010044488787651062,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.04448878765106201,
+        "worst_reference": -0.04448878765106201,
+        "worst_allowed_abs_error": 0.00010044488787651062,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_19",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.08833570778369904,
+        "worst_reference": -0.08833570778369904,
+        "worst_allowed_abs_error": 0.000100883357077837,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.08833570778369904,
+        "worst_reference": -0.08833570778369904,
+        "worst_allowed_abs_error": 0.000100883357077837,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_20",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.17370742559432983,
+        "worst_reference": -0.17370742559432983,
+        "worst_allowed_abs_error": 0.0001017370742559433,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.17370742559432983,
+        "worst_reference": -0.17370742559432983,
+        "worst_allowed_abs_error": 0.0001017370742559433,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_21",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.2623855173587799,
+        "worst_reference": -0.2623855173587799,
+        "worst_allowed_abs_error": 0.00010262385517358781,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.2623855173587799,
+        "worst_reference": -0.2623855173587799,
+        "worst_allowed_abs_error": 0.00010262385517358781,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_22",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 6.537769317626953,
+        "worst_reference": 6.537769317626953,
+        "worst_allowed_abs_error": 0.00016537769317626956,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 6.537769317626953,
+        "worst_reference": 6.537769317626953,
+        "worst_allowed_abs_error": 0.00016537769317626956,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_23",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "decoder_layer_24",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "final_norm",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.13089992105960846,
+        "worst_reference": -0.13089992105960846,
+        "worst_allowed_abs_error": 0.00010130899921059609,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.13089992105960846,
+        "worst_reference": -0.13089992105960846,
+        "worst_allowed_abs_error": 0.00010130899921059609,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "fresh_vs_A04_R5_logical8",
+      "array": "nll_sum",
+      "status": "PASS",
+      "shape": [
+        12
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 12,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0
+        ],
+        "worst_observed": 325.375732421875,
+        "worst_reference": 325.375732421875,
+        "worst_allowed_abs_error": 0.00335375732421875,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 12,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0
+        ],
+        "worst_observed": 325.375732421875,
+        "worst_reference": 325.375732421875,
+        "worst_allowed_abs_error": 0.00335375732421875,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_0",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0006337540107779205,
+        "worst_reference": -0.0006337540107779205,
+        "worst_allowed_abs_error": 0.00010000633754010778,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0006337540107779205,
+        "worst_reference": -0.0006337540107779205,
+        "worst_allowed_abs_error": 0.00010000633754010778,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_1",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0005206757341511548,
+        "worst_reference": -0.0005206757341511548,
+        "worst_allowed_abs_error": 0.00010000520675734152,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0005206757341511548,
+        "worst_reference": -0.0005206757341511548,
+        "worst_allowed_abs_error": 0.00010000520675734152,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_2",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.00039981151348911226,
+        "worst_reference": 0.00039981151348911226,
+        "worst_allowed_abs_error": 0.00010000399811513489,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.00039981151348911226,
+        "worst_reference": 0.00039981151348911226,
+        "worst_allowed_abs_error": 0.00010000399811513489,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_3",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004169640131294727,
+        "worst_reference": 0.004169640131294727,
+        "worst_allowed_abs_error": 0.00010004169640131296,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004169640131294727,
+        "worst_reference": 0.004169640131294727,
+        "worst_allowed_abs_error": 0.00010004169640131296,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_4",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.0035351193509995937,
+        "worst_reference": 0.0035351193509995937,
+        "worst_allowed_abs_error": 0.00010003535119351,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.0035351193509995937,
+        "worst_reference": 0.0035351193509995937,
+        "worst_allowed_abs_error": 0.00010003535119351,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_5",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004374411888420582,
+        "worst_reference": 0.004374411888420582,
+        "worst_allowed_abs_error": 0.0001000437441188842,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004374411888420582,
+        "worst_reference": 0.004374411888420582,
+        "worst_allowed_abs_error": 0.0001000437441188842,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_6",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004339636769145727,
+        "worst_reference": 0.004339636769145727,
+        "worst_allowed_abs_error": 0.00010004339636769147,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004339636769145727,
+        "worst_reference": 0.004339636769145727,
+        "worst_allowed_abs_error": 0.00010004339636769147,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_7",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007171183824539185,
+        "worst_reference": 0.007171183824539185,
+        "worst_allowed_abs_error": 0.0001000717118382454,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007171183824539185,
+        "worst_reference": 0.007171183824539185,
+        "worst_allowed_abs_error": 0.0001000717118382454,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_8",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004245889373123646,
+        "worst_reference": 0.004245889373123646,
+        "worst_allowed_abs_error": 0.00010004245889373124,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004245889373123646,
+        "worst_reference": 0.004245889373123646,
+        "worst_allowed_abs_error": 0.00010004245889373124,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_9",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.018771164119243622,
+        "worst_reference": 0.018771164119243622,
+        "worst_allowed_abs_error": 0.00010018771164119243,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.018771164119243622,
+        "worst_reference": 0.018771164119243622,
+        "worst_allowed_abs_error": 0.00010018771164119243,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_10",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.011965889483690262,
+        "worst_reference": 0.011965889483690262,
+        "worst_allowed_abs_error": 0.0001001196588948369,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.011965889483690262,
+        "worst_reference": 0.011965889483690262,
+        "worst_allowed_abs_error": 0.0001001196588948369,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_11",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.021333102136850357,
+        "worst_reference": 0.021333102136850357,
+        "worst_allowed_abs_error": 0.0001002133310213685,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.021333102136850357,
+        "worst_reference": 0.021333102136850357,
+        "worst_allowed_abs_error": 0.0001002133310213685,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_12",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.025415999814867973,
+        "worst_reference": 0.025415999814867973,
+        "worst_allowed_abs_error": 0.00010025415999814869,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.025415999814867973,
+        "worst_reference": 0.025415999814867973,
+        "worst_allowed_abs_error": 0.00010025415999814869,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_13",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007335531525313854,
+        "worst_reference": 0.007335531525313854,
+        "worst_allowed_abs_error": 0.00010007335531525315,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007335531525313854,
+        "worst_reference": 0.007335531525313854,
+        "worst_allowed_abs_error": 0.00010007335531525315,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_14",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.00579107878729701,
+        "worst_reference": -0.00579107878729701,
+        "worst_allowed_abs_error": 0.00010005791078787297,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.00579107878729701,
+        "worst_reference": -0.00579107878729701,
+        "worst_allowed_abs_error": 0.00010005791078787297,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_15",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.006430632434785366,
+        "worst_reference": -0.006430632434785366,
+        "worst_allowed_abs_error": 0.00010006430632434785,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.006430632434785366,
+        "worst_reference": -0.006430632434785366,
+        "worst_allowed_abs_error": 0.00010006430632434785,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_16",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.039496637880802155,
+        "worst_reference": -0.039496637880802155,
+        "worst_allowed_abs_error": 0.00010039496637880803,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.039496637880802155,
+        "worst_reference": -0.039496637880802155,
+        "worst_allowed_abs_error": 0.00010039496637880803,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_17",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.013717112131416798,
+        "worst_reference": -0.013717112131416798,
+        "worst_allowed_abs_error": 0.00010013717112131417,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.013717112131416798,
+        "worst_reference": -0.013717112131416798,
+        "worst_allowed_abs_error": 0.00010013717112131417,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_18",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.04448878765106201,
+        "worst_reference": -0.04448878765106201,
+        "worst_allowed_abs_error": 0.00010044488787651062,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.04448878765106201,
+        "worst_reference": -0.04448878765106201,
+        "worst_allowed_abs_error": 0.00010044488787651062,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_19",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.08833570778369904,
+        "worst_reference": -0.08833570778369904,
+        "worst_allowed_abs_error": 0.000100883357077837,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.08833570778369904,
+        "worst_reference": -0.08833570778369904,
+        "worst_allowed_abs_error": 0.000100883357077837,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_20",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.17370742559432983,
+        "worst_reference": -0.17370742559432983,
+        "worst_allowed_abs_error": 0.0001017370742559433,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.17370742559432983,
+        "worst_reference": -0.17370742559432983,
+        "worst_allowed_abs_error": 0.0001017370742559433,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_21",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.2623855173587799,
+        "worst_reference": -0.2623855173587799,
+        "worst_allowed_abs_error": 0.00010262385517358781,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.2623855173587799,
+        "worst_reference": -0.2623855173587799,
+        "worst_allowed_abs_error": 0.00010262385517358781,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_22",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 6.537769317626953,
+        "worst_reference": 6.537769317626953,
+        "worst_allowed_abs_error": 0.00016537769317626956,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 6.537769317626953,
+        "worst_reference": 6.537769317626953,
+        "worst_allowed_abs_error": 0.00016537769317626956,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_23",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "decoder_layer_24",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "final_norm",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.13089992105960846,
+        "worst_reference": -0.13089992105960846,
+        "worst_allowed_abs_error": 0.00010130899921059609,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.13089992105960846,
+        "worst_reference": -0.13089992105960846,
+        "worst_allowed_abs_error": 0.00010130899921059609,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "repeat_vs_A04_R5_repeat8",
+      "array": "nll_sum",
+      "status": "PASS",
+      "shape": [
+        12
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 12,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0
+        ],
+        "worst_observed": 325.375732421875,
+        "worst_reference": 325.375732421875,
+        "worst_allowed_abs_error": 0.00335375732421875,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 12,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0
+        ],
+        "worst_observed": 325.375732421875,
+        "worst_reference": 325.375732421875,
+        "worst_allowed_abs_error": 0.00335375732421875,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_0",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0006337540107779205,
+        "worst_reference": -0.0006337540107779205,
+        "worst_allowed_abs_error": 0.00010000633754010778,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0006337540107779205,
+        "worst_reference": -0.0006337540107779205,
+        "worst_allowed_abs_error": 0.00010000633754010778,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_1",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0005206757341511548,
+        "worst_reference": -0.0005206757341511548,
+        "worst_allowed_abs_error": 0.00010000520675734152,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.0005206757341511548,
+        "worst_reference": -0.0005206757341511548,
+        "worst_allowed_abs_error": 0.00010000520675734152,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_2",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.00039981151348911226,
+        "worst_reference": 0.00039981151348911226,
+        "worst_allowed_abs_error": 0.00010000399811513489,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.00039981151348911226,
+        "worst_reference": 0.00039981151348911226,
+        "worst_allowed_abs_error": 0.00010000399811513489,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_3",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004169640131294727,
+        "worst_reference": 0.004169640131294727,
+        "worst_allowed_abs_error": 0.00010004169640131296,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004169640131294727,
+        "worst_reference": 0.004169640131294727,
+        "worst_allowed_abs_error": 0.00010004169640131296,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_4",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.0035351193509995937,
+        "worst_reference": 0.0035351193509995937,
+        "worst_allowed_abs_error": 0.00010003535119351,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.0035351193509995937,
+        "worst_reference": 0.0035351193509995937,
+        "worst_allowed_abs_error": 0.00010003535119351,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_5",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004374411888420582,
+        "worst_reference": 0.004374411888420582,
+        "worst_allowed_abs_error": 0.0001000437441188842,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004374411888420582,
+        "worst_reference": 0.004374411888420582,
+        "worst_allowed_abs_error": 0.0001000437441188842,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_6",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004339636769145727,
+        "worst_reference": 0.004339636769145727,
+        "worst_allowed_abs_error": 0.00010004339636769147,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004339636769145727,
+        "worst_reference": 0.004339636769145727,
+        "worst_allowed_abs_error": 0.00010004339636769147,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_7",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007171183824539185,
+        "worst_reference": 0.007171183824539185,
+        "worst_allowed_abs_error": 0.0001000717118382454,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007171183824539185,
+        "worst_reference": 0.007171183824539185,
+        "worst_allowed_abs_error": 0.0001000717118382454,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_8",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004245889373123646,
+        "worst_reference": 0.004245889373123646,
+        "worst_allowed_abs_error": 0.00010004245889373124,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.004245889373123646,
+        "worst_reference": 0.004245889373123646,
+        "worst_allowed_abs_error": 0.00010004245889373124,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_9",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.018771164119243622,
+        "worst_reference": 0.018771164119243622,
+        "worst_allowed_abs_error": 0.00010018771164119243,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.018771164119243622,
+        "worst_reference": 0.018771164119243622,
+        "worst_allowed_abs_error": 0.00010018771164119243,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_10",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.011965889483690262,
+        "worst_reference": 0.011965889483690262,
+        "worst_allowed_abs_error": 0.0001001196588948369,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.011965889483690262,
+        "worst_reference": 0.011965889483690262,
+        "worst_allowed_abs_error": 0.0001001196588948369,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_11",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.021333102136850357,
+        "worst_reference": 0.021333102136850357,
+        "worst_allowed_abs_error": 0.0001002133310213685,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.021333102136850357,
+        "worst_reference": 0.021333102136850357,
+        "worst_allowed_abs_error": 0.0001002133310213685,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_12",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.025415999814867973,
+        "worst_reference": 0.025415999814867973,
+        "worst_allowed_abs_error": 0.00010025415999814869,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.025415999814867973,
+        "worst_reference": 0.025415999814867973,
+        "worst_allowed_abs_error": 0.00010025415999814869,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_13",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007335531525313854,
+        "worst_reference": 0.007335531525313854,
+        "worst_allowed_abs_error": 0.00010007335531525315,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 0.007335531525313854,
+        "worst_reference": 0.007335531525313854,
+        "worst_allowed_abs_error": 0.00010007335531525315,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_14",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.00579107878729701,
+        "worst_reference": -0.00579107878729701,
+        "worst_allowed_abs_error": 0.00010005791078787297,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.00579107878729701,
+        "worst_reference": -0.00579107878729701,
+        "worst_allowed_abs_error": 0.00010005791078787297,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_15",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.006430632434785366,
+        "worst_reference": -0.006430632434785366,
+        "worst_allowed_abs_error": 0.00010006430632434785,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.006430632434785366,
+        "worst_reference": -0.006430632434785366,
+        "worst_allowed_abs_error": 0.00010006430632434785,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_16",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.039496637880802155,
+        "worst_reference": -0.039496637880802155,
+        "worst_allowed_abs_error": 0.00010039496637880803,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.039496637880802155,
+        "worst_reference": -0.039496637880802155,
+        "worst_allowed_abs_error": 0.00010039496637880803,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_17",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.013717112131416798,
+        "worst_reference": -0.013717112131416798,
+        "worst_allowed_abs_error": 0.00010013717112131417,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.013717112131416798,
+        "worst_reference": -0.013717112131416798,
+        "worst_allowed_abs_error": 0.00010013717112131417,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_18",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.04448878765106201,
+        "worst_reference": -0.04448878765106201,
+        "worst_allowed_abs_error": 0.00010044488787651062,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.04448878765106201,
+        "worst_reference": -0.04448878765106201,
+        "worst_allowed_abs_error": 0.00010044488787651062,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_19",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.08833570778369904,
+        "worst_reference": -0.08833570778369904,
+        "worst_allowed_abs_error": 0.000100883357077837,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.08833570778369904,
+        "worst_reference": -0.08833570778369904,
+        "worst_allowed_abs_error": 0.000100883357077837,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_20",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.17370742559432983,
+        "worst_reference": -0.17370742559432983,
+        "worst_allowed_abs_error": 0.0001017370742559433,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.17370742559432983,
+        "worst_reference": -0.17370742559432983,
+        "worst_allowed_abs_error": 0.0001017370742559433,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_21",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.2623855173587799,
+        "worst_reference": -0.2623855173587799,
+        "worst_allowed_abs_error": 0.00010262385517358781,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.2623855173587799,
+        "worst_reference": -0.2623855173587799,
+        "worst_allowed_abs_error": 0.00010262385517358781,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_22",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 6.537769317626953,
+        "worst_reference": 6.537769317626953,
+        "worst_allowed_abs_error": 0.00016537769317626956,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": 6.537769317626953,
+        "worst_reference": 6.537769317626953,
+        "worst_allowed_abs_error": 0.00016537769317626956,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_23",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "decoder_layer_24",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -5540936771698688.0,
+        "worst_reference": -5540936771698688.0,
+        "worst_allowed_abs_error": 55409367716.986984,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "final_norm",
+      "status": "PASS",
+      "shape": [
+        12,
+        1920
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.13089992105960846,
+        "worst_reference": -0.13089992105960846,
+        "worst_allowed_abs_error": 0.00010130899921059609,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_observed": -0.13089992105960846,
+        "worst_reference": -0.13089992105960846,
+        "worst_allowed_abs_error": 0.00010130899921059609,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    {
+      "comparison": "new_repeat_vs_new_first",
+      "array": "nll_sum",
+      "status": "PASS",
+      "shape": [
+        12
+      ],
+      "forward": {
+        "status": "PASS",
+        "denominator": 12,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0
+        ],
+        "worst_observed": 325.375732421875,
+        "worst_reference": 325.375732421875,
+        "worst_allowed_abs_error": 0.00335375732421875,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "reverse": {
+        "status": "PASS",
+        "denominator": 12,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0
+        ],
+        "worst_observed": 325.375732421875,
+        "worst_reference": 325.375732421875,
+        "worst_allowed_abs_error": 0.00335375732421875,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    }
+  ],
+  "raw_heldout_inputs_opened": false,
+  "production_forwards": 0,
+  "completed_utc": "2026-11-18T20:38:02.475993+00:00",
+  "new_parity_forwards": 4,
+  "new_parity_real_rows": 24,
+  "new_parity_fillers": 8,
+  "numerical_comparison_rows": 81,
+  "all_26_hooks_and_actual_LM": true,
+  "same_corresponding_packing": true
+}
