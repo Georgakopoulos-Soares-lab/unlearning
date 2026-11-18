@@ -1,4 +1,4 @@
-# A05 coverage amendment — PLAN_VALIDATED_PENDING_PROTECTION
+# A05 coverage amendment — COMPLETE_FOR_R5_PLAN
 
 The R5 plan is frozen at coverage SHA256 `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3` under prompt commit `c59892c19c8abbdd0ceed61da0876d4195bb1c7b`. Read [coverage](COVERAGE_PLAN.json), [finite execution manifest](R5_EXECUTION_MANIFEST.json), [validation](PLAN_VALIDATION.json), [receipt](A05_RECEIPT.json) and [required future prompt changes](NEXT_PROMPT_RECOMMENDATIONS.md).
 
@@ -12,4 +12,4 @@ This A05 produced zero scientific measurements, fits, forwards, predictions, eff
 
 Observer, reviewer scheduler and publisher remain STOPPED. Pod remains running. No deadline, GPU cap or closure reserve; original/rental start, rate and cost remain null. Current capacity passes the conservative forecast and must be checked again before future production. The package's34 hashes pass; its unchanged legacy validator rejects the A07 heading, recorded separately in LEGACY_FORMAT_VALIDATOR.json.
 
-A05 protection and delivery verification are still in progress; no future stage is authorized.
+WAITING_FOR_APPROVAL: A06. R5 plan frozen; revised A06 prompt and direct approval required. No A06 work started.
