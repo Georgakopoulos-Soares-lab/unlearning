@@ -1,0 +1,102 @@
+{
+  "schema": "pod-a-a06-incremental-backup-v1",
+  "status": "PASS",
+  "candidate": "R6",
+  "group": "H3",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "private_at_write_and_closeout": true,
+  "revision": "23efc7b40f2df86c8e1195600c572ed191c64f29",
+  "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R6/H3-checkpoint-001/A06-R6-H3-checkpoint-001.tar.gz",
+  "archive_sha256": "d2565fd892a38f3ca96c8b457fe19af45bfa7b468a57191bb8c56e261fa7709d",
+  "archive_bytes": 2858721949,
+  "member_manifest_sha256": "ec549201bfddd476843c255293b4a3abd9a6e95d73f54e4a2e7f8b4b7062bd35",
+  "all_files_verified": 1120,
+  "fresh_download": true,
+  "force_download": true,
+  "new_consumer_and_cache": true,
+  "safe_exact_member_set": true,
+  "CPU_restored_checks": {
+    "status": "PASS",
+    "candidate": "R6",
+    "group": "H3",
+    "restored_head_checks": [
+      {
+        "key": "decoder_layer_16",
+        "seed": 42,
+        "split": "dev",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 4.440892098500626e-16
+      },
+      {
+        "key": "decoder_layer_16",
+        "seed": 42,
+        "split": "test",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 4.440892098500626e-16
+      },
+      {
+        "key": "final_norm",
+        "seed": 42,
+        "split": "dev",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 1.1102230246251565e-16
+      },
+      {
+        "key": "final_norm",
+        "seed": 42,
+        "split": "test",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 2.220446049250313e-16
+      }
+    ],
+    "restored_LM_aggregations": [
+      {
+        "task": "emp_H3",
+        "split": "train",
+        "rows": 11971,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "emp_H3",
+        "split": "test",
+        "rows": 1497,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "emp_H3",
+        "split": "dev",
+        "rows": 1497,
+        "NLL_abs_residual": 0.0
+      }
+    ],
+    "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001",
+    "GPU_loads": 0,
+    "external_producer_paths_used": false
+  },
+  "restore_command": [
+    "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001/artifacts/code/restore_check.py",
+    "--root",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001",
+    "--candidate",
+    "R6",
+    "--group",
+    "H3"
+  ],
+  "producer_path_substitution": false,
+  "compression_seconds": 63.23208861499734,
+  "upload_seconds": 9.816902160993777,
+  "fresh_download_seconds": 8.755736862003687,
+  "extract_all_hash_seconds": 37.55225347500527,
+  "excluded_historical_archives_repacked": 0,
+  "GPU_restoration_runs": 0,
+  "completed_utc": "2026-11-18T04:12:39.485223+00:00"
+}
