@@ -1,0 +1,93 @@
+{
+  "checks": [
+    {
+      "check": "unsafe_relative:'../escape'",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "unsafe_relative:'/absolute'",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "unsafe_relative:'a/../../escape'",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "unsafe_relative:'a\\\\b'",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "unsafe_relative:''",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "unsafe_relative:'.'",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "unsafe_relative:'../../x'",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "traversal",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "absolute",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "symlink",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "hardlink",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "metadata_namespace_injection",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "duplicate_canonical_path",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "wrong_object_content",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "object_namespace_injection",
+      "exception_type": "ValueError",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "check": "outside_sentinel_unchanged",
+      "status": "PASS"
+    },
+    {
+      "check": "no_symlinks_created_in_fixtures",
+      "status": "PASS"
+    }
+  ],
+  "models_imported": false,
+  "passed": 17,
+  "scientific_tests_rerun": false,
+  "scope": "Small synthetic byte/path fixtures only; original archives and worktrees unchanged",
+  "source_sha256": "aaebfa44921b2abcdfd6cbef432bdd5de6b62a43f994527b6f9a23ef199f088d",
+  "status": "PASS"
+}

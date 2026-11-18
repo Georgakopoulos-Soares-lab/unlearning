@@ -1,0 +1,85 @@
+{
+  "canonical_visible_records": 1449,
+  "checks": [
+    {
+      "check": "private_transcript_identity:base",
+      "status": "PASS"
+    },
+    {
+      "check": "every_public_tool_digest_resolves:base",
+      "missing": [],
+      "private_tool_records": 1263,
+      "public_events": 1263,
+      "status": "PASS",
+      "unresolved": []
+    },
+    {
+      "check": "all_canonical_record_counts_match_register:base",
+      "observed": {
+        "custom_tool_call/None": 628,
+        "custom_tool_call_output/None": 627,
+        "function_call/None": 4,
+        "function_call_output/None": 4,
+        "message/assistant": 121,
+        "message/user": 24
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "no_hidden_instruction_reasoning_records_exported:base",
+      "forbidden_source_lines": [],
+      "status": "PASS"
+    },
+    {
+      "check": "source_line_order_and_nonoverlap:base",
+      "maximum": 6533,
+      "minimum": 8,
+      "register_cutoff": 6534,
+      "status": "PASS"
+    },
+    {
+      "check": "raw_session_omission_and_token_status_explicit:base",
+      "status": "PASS"
+    },
+    {
+      "check": "private_transcript_identity:tail",
+      "status": "PASS"
+    },
+    {
+      "check": "every_public_tool_digest_resolves:tail",
+      "missing": [],
+      "private_tool_records": 38,
+      "public_events": 38,
+      "status": "PASS",
+      "unresolved": []
+    },
+    {
+      "check": "all_canonical_record_counts_match_register:tail",
+      "observed": {
+        "custom_tool_call/None": 19,
+        "custom_tool_call_output/None": 19,
+        "message/assistant": 3
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "no_hidden_instruction_reasoning_records_exported:tail",
+      "forbidden_source_lines": [],
+      "status": "PASS"
+    },
+    {
+      "check": "source_line_order_and_nonoverlap:tail",
+      "maximum": 6811,
+      "minimum": 6535,
+      "register_cutoff": 6812,
+      "status": "PASS"
+    },
+    {
+      "check": "raw_session_omission_and_token_status_explicit:tail",
+      "status": "PASS"
+    }
+  ],
+  "public_private_tool_digest_joins": 1301,
+  "scope": "Available bounded visible exports only; omitted earlier/unrecorded/internal/after-cutoff material not invented. This verifies canonical joins,not every original raw secret-bearing session line.",
+  "status": "PASS"
+}

@@ -1,0 +1,85 @@
+{
+  "checks": [
+    {
+      "check": "final_backed_manifest_identity",
+      "status": "PASS"
+    },
+    {
+      "bytes": 46484340213,
+      "check": "every_materialized_file_freshly_rehashed",
+      "errors": [],
+      "files": 74029,
+      "status": "PASS"
+    },
+    {
+      "check": "no_missing_extra_restored_files",
+      "extra": [],
+      "missing": [],
+      "status": "PASS"
+    },
+    {
+      "check": "all_required_object_references_resolve_and_extras_have_retained_provenance",
+      "missing": [],
+      "objects": 35849,
+      "required_references": 35655,
+      "retained_superseded_objects": 194,
+      "status": "PASS",
+      "superseded_scope": "Original immutable parts retained across corrected scanner versions; extra bytes must be referenced by the preserved initial backed-file manifest,never silently substituted for current required files.",
+      "unexplained_extra": []
+    },
+    {
+      "check": "all_ten_parts_and_total_object_count_match_manifest",
+      "objects": 35849,
+      "parts": 10,
+      "status": "PASS"
+    },
+    {
+      "check": "coverage_counts_match_main_manifest",
+      "status": "PASS"
+    },
+    {
+      "check": "all_auxiliary_files_and_no_extras",
+      "errors": [],
+      "extra": [],
+      "files": 110,
+      "status": "PASS"
+    },
+    {
+      "check": "auxiliary_manifest_hash",
+      "status": "PASS"
+    },
+    {
+      "check": "all_initial_unique_A_sources_covered",
+      "initial_A": 73854,
+      "missing": [],
+      "status": "PASS"
+    },
+    {
+      "check": "initial_catalog_class_counts",
+      "observed": {
+        "A": 73854,
+        "B": 25680,
+        "C": 34224
+      },
+      "status": "PASS"
+    },
+    {
+      "check": "all_original_committed_git_blobs_retained_by_remote_commit",
+      "entries": 1730,
+      "missing_or_changed": [],
+      "status": "PASS"
+    },
+    {
+      "check": "restoration_created_no_symlinks",
+      "status": "PASS"
+    }
+  ],
+  "failures": [],
+  "materialized_files_rehashed": true,
+  "objects": 35849,
+  "observed_utc": "2026-11-18T16:48:26.823010+00:00",
+  "regular_bytes": 46484340213,
+  "regular_files": 74029,
+  "status": "PASS",
+  "symlink_metadata": 43
+}
