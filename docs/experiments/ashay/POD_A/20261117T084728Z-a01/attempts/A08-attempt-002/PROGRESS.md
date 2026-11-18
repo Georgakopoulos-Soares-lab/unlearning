@@ -1,13 +1,13 @@
 # R5 A08 — RUNNING
 
-gue_prom_core_all:78 independent unit audits,6 full-CV refits and12-path fresh recovery PASS.
+gue_prom_300_all:78 independent unit audits,6 full-CV refits and12-path fresh recovery PASS.
 
-Observed UTC/local UTC: 2026-11-18T23:15:36.065786+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
+Observed UTC/local UTC: 2026-11-18T23:17:13.742295+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
 
 | Goal | Target | New PASS | Historical reused | Pending | Evidence |
 |---|---:|---:|---:|---:|---|
-| R5 independent audits | 390 | 156 | 0 | 234 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
-| Frozen audit refits | 30 | 12 | 6 | 18 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
+| R5 independent audits | 390 | 234 | 0 | 156 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
+| Frozen audit refits | 30 | 18 | 6 | 12 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
 | New adjacent classifier rows | 16380 | 0 | 0 | 16380 | [CONTRAST_EXECUTION_MANIFEST.json](CONTRAST_EXECUTION_MANIFEST.json) |
 | New paired LM rows | 70 | 0 | 0 | 70 | [CONTRAST_EXECUTION_MANIFEST.json](CONTRAST_EXECUTION_MANIFEST.json) |
 | Primary LM measurements | 49 | 0 | 42 | 7 | [../A06-attempt-002/LM_INDEX.json](../A06-attempt-002/LM_INDEX.json) |
