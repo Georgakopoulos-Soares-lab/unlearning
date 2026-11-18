@@ -1,0 +1,48 @@
+{
+  "schema": "pod-a-a07-cpu-scientific-source-v1",
+  "files": [
+    {
+      "path": "other_five_common.py",
+      "sha256": "29a418dc6bb2ce0f528bb65b47c1011a0d41f785a4d99bfd5e88b7fb3d9c9e72"
+    },
+    {
+      "path": "build_other_five_cache.py",
+      "sha256": "e8190e40de943a682b55881ec8fda671ec1f78895fbe4e99a1d7feba4c7228e9"
+    },
+    {
+      "path": "fit_other_five.py",
+      "sha256": "ba0bcccd51b9e9d366dc6117babed6c34cd5605ae4b800ed2de6415f10919dc0"
+    },
+    {
+      "path": "producer_metrics.py",
+      "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a"
+    },
+    {
+      "path": "independent_math.py",
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "production_contract.py",
+      "sha256": "06ce2349a35af00ce3ecb3de635b2e78d23065177ada428d66f80ac4f5f5c30e"
+    },
+    {
+      "path": "qualification_contract.py",
+      "sha256": "cdce1c4d2e6f75c2c2bd761e764ebc640a6907e184cf7483555184b5b935cd70"
+    }
+  ],
+  "inherited_producer_math_sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+  "inherited_independent_math_sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+  "frozen_before_first_production_fit": true,
+  "input_unit_manifest": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/A07_EXECUTION_MANIFEST.json",
+    "bytes": 3474127,
+    "sha256": "91e028970db828a76426306d8c9737b3cefde93fb880b51f850fe89e2e26968b"
+  },
+  "adapter_validation": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/ADAPTER_VALIDATION.json",
+    "bytes": 1083,
+    "sha256": "afc32ae2ba1ffefb21109cf028db88b7e14d952dd13bf8fbba80584478f3f477"
+  },
+  "numerical_policy": "Exact frozen scaler/solver/C/tie/fold/float32 transform semantics; task-aware fivefold and sorted-class macro metrics",
+  "A08_refits_executed": 0
+}
