@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "run": "tests.001",
+      "tests": 26,
+      "synthetic_solver_calls": 2,
+      "outcome": "PASS_WITH_ResourceWarning_in_rejected_lock_test",
+      "diagnosis": "Lock acquisition rejection left descriptor unclosed; corrected before source freeze"
+    },
+    {
+      "run": "tests.002",
+      "tests": 26,
+      "synthetic_solver_calls": 2,
+      "outcome": "PASS_NO_WARNINGS",
+      "reason": "Requalification after lock cleanup fix"
+    }
+  ],
+  "total_synthetic_solver_calls": 4,
+  "real_production_solver_calls_exclude_synthetic": true,
+  "frozen_qualification_receipt_counts_latest_suite_only": true
+}

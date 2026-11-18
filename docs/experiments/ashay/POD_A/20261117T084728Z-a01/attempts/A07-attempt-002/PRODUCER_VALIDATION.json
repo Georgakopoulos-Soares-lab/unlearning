@@ -1,0 +1,79 @@
+{
+  "status": "PASS",
+  "heads": 390,
+  "applications": 390,
+  "dev_policy_paths": 780,
+  "initial_binary_multiclass_gate": {
+    "status": "PASS",
+    "checks": [
+      {
+        "unit_id": "R5/gue_tf_0/final_norm/seed42",
+        "producer_receipt_sha256": "f3b7c1095594c62c5f217a6312d90ba0cd0b32294d44adf768ed6fd17653b5fd",
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 1.1102230246251565e-16,
+        "classes": [
+          0,
+          1
+        ],
+        "rows": 512,
+        "groups": 512,
+        "counts_as_ordinary_production_unit": true,
+        "additional_refits": 0
+      },
+      {
+        "unit_id": "R5/gue_splice_reconstructed/final_norm/seed42",
+        "producer_receipt_sha256": "7f2dbac93e048409444ae05a08f839dc8c90844358e760e76fbee47f406eb204",
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 1.1102230246251565e-16,
+        "classes": [
+          0,
+          1,
+          2
+        ],
+        "rows": 512,
+        "groups": 511,
+        "counts_as_ordinary_production_unit": true,
+        "additional_refits": 0
+      }
+    ],
+    "does_not_replace_A08_all_unit_independent_audit": true,
+    "queue_released": "Remaining finite A07 units only",
+    "observed_utc": "2026-11-18T22:15:20.171856+00:00"
+  },
+  "unit_members_all_hashed": true,
+  "convergence": {
+    "status": "PASS",
+    "final_heads": 390,
+    "initial_solver_calls": 6240,
+    "actual_solver_calls": 6258,
+    "retries": 18,
+    "unresolved_convergence_failures": 0,
+    "warnings_by_category": {
+      "ConvergenceWarning": 18
+    },
+    "synthetic_fits_separate": 4,
+    "A08_refits_executed": 0,
+    "all_2000_to_10000_retries_bound_to_actual_warning": true
+  },
+  "exact_table_keys": {
+    "status": "PASS",
+    "marginal_rows": 3900,
+    "paired_rows": 8400,
+    "base_R1_pairs": 7800,
+    "control_pairs": 600,
+    "unique_logical_ids": 12300,
+    "exact_A05_key_set_equal": true,
+    "missing_keys": 0,
+    "extra_keys": 0,
+    "duplicate_keys": 0,
+    "key_generator_sha256": "c73c4ec46c7e48bef24068b82c35257f789c769e3ff88f37ad677fda9d5f6706",
+    "producer_output_values_preserved": true,
+    "independent_audit_status": "PENDING_A08",
+    "table_sha256s": {
+      "RESULTS_LONG.csv": "bd302b65a51c2cf82e1896e0db23ce534dd1d132bf311d5e1206d4c520ec3463",
+      "PAIRED_CONTRASTS.csv": "758c370bbff185cf6725c718cdf2cf745aee76a648a241b8ac5c1d52ac239288"
+    }
+  },
+  "independent_full_grid_audit": "PENDING_A08",
+  "recovery": "PASS_60_PATHS_1200_PAIRED_VECTORS"
+}

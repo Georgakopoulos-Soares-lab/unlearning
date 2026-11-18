@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "tasks": [
+    {
+      "task": "gue_tf_0",
+      "recovery_receipt_sha256": "1bd2a5d216d388d545559e3c7c28686c95dcf72924e9a2cb68763ae4e64cc32f",
+      "counts_derived_from_validated_frozen_restore_loops_and_receipt": true,
+      "probability_arrays": 12,
+      "probability_scalar_comparisons": 12288,
+      "point_metric_comparisons": 300,
+      "marginal_draw_vectors": 60,
+      "marginal_draw_scalar_comparisons": 120000,
+      "paired_draw_vectors": 240,
+      "paired_draw_scalar_comparisons": 480000,
+      "CI_endpoint_comparisons": 600,
+      "validity_mask_boolean_comparisons": 120000,
+      "max_abs_residuals": {
+        "probability": 0.0,
+        "point_metric": 2.220446049250313e-16,
+        "marginal_draw": 3.3306690738754696e-16,
+        "paired_draw": 5.551115123125783e-16,
+        "CI": 2.220446049250313e-16
+      },
+      "worst_units_by_check": {
+        "probability": "R5/gue_tf_0/final_norm/seed1234/fixed_original_base",
+        "point_metric": "R5/gue_tf_0/decoder_layer_16/seed1234/fixed_original_base/control_kmer4/average_precision",
+        "marginal_draw": "R5/gue_tf_0/decoder_layer_16/seed1234/independent_refit/average_precision",
+        "CI": "R5/gue_tf_0/final_norm/seed1234/independent_refit/R1/average_precision",
+        "paired_draw": "R5/gue_tf_0/decoder_layer_16/seed1234/independent_refit/base/average_precision"
+      }
+    },
+    {
+      "task": "gue_prom_core_all",
+      "recovery_receipt_sha256": "2f7dc66d4e6d9f3bf85c63a7dd932678ce5e53e04b809541a9d13569982c9b4e",
+      "counts_derived_from_validated_frozen_restore_loops_and_receipt": true,
+      "probability_arrays": 12,
+      "probability_scalar_comparisons": 12288,
+      "point_metric_comparisons": 300,
+      "marginal_draw_vectors": 60,
+      "marginal_draw_scalar_comparisons": 120000,
+      "paired_draw_vectors": 240,
+      "paired_draw_scalar_comparisons": 480000,
+      "CI_endpoint_comparisons": 600,
+      "validity_mask_boolean_comparisons": 120000,
+      "max_abs_residuals": {
+        "probability": 0.0,
+        "point_metric": 8.881784197001252e-16,
+        "marginal_draw": 3.3306690738754696e-16,
+        "paired_draw": 5.551115123125783e-16,
+        "CI": 3.3306690738754696e-16
+      },
+      "worst_units_by_check": {
+        "probability": "R5/gue_prom_core_all/final_norm/seed1234/fixed_original_base",
+        "point_metric": "R5/gue_prom_core_all/decoder_layer_16/seed1234/fixed_original_base/control_kmer4/classification_cross_entropy",
+        "marginal_draw": "R5/gue_prom_core_all/final_norm/seed1234/fixed_original_base/average_precision",
+        "CI": "R5/gue_prom_core_all/decoder_layer_16/seed1234/fixed_original_base/control_composition/average_precision",
+        "paired_draw": "R5/gue_prom_core_all/final_norm/seed1234/fixed_original_base/control_kmer4/average_precision"
+      }
+    },
+    {
+      "task": "gue_prom_300_all",
+      "recovery_receipt_sha256": "c19fc98c066af5efd3445604c37f3467b9dbbea1795f0329e96a474e8c1c3ae7",
+      "counts_derived_from_validated_frozen_restore_loops_and_receipt": true,
+      "probability_arrays": 12,
+      "probability_scalar_comparisons": 12288,
+      "point_metric_comparisons": 300,
+      "marginal_draw_vectors": 60,
+      "marginal_draw_scalar_comparisons": 120000,
+      "paired_draw_vectors": 240,
+      "paired_draw_scalar_comparisons": 480000,
+      "CI_endpoint_comparisons": 600,
+      "validity_mask_boolean_comparisons": 120000,
+      "max_abs_residuals": {
+        "probability": 0.0,
+        "point_metric": 1.7763568394002505e-15,
+        "marginal_draw": 4.440892098500626e-16,
+        "paired_draw": 5.551115123125783e-16,
+        "CI": 2.220446049250313e-16
+      },
+      "worst_units_by_check": {
+        "probability": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base",
+        "point_metric": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base/R1/classification_cross_entropy",
+        "marginal_draw": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base/average_precision",
+        "CI": "R5/gue_prom_300_all/final_norm/seed1234/independent_refit/control_kmer4/average_precision",
+        "paired_draw": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base/control_composition/average_precision"
+      }
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "recovery_receipt_sha256": "a4b47aee507253e44a17c05d86030937470f84c692110201a7e5f81bfdd4b78a",
+      "counts_derived_from_validated_frozen_restore_loops_and_receipt": true,
+      "probability_arrays": 12,
+      "probability_scalar_comparisons": 18432,
+      "point_metric_comparisons": 300,
+      "marginal_draw_vectors": 60,
+      "marginal_draw_scalar_comparisons": 120000,
+      "paired_draw_vectors": 240,
+      "paired_draw_scalar_comparisons": 480000,
+      "CI_endpoint_comparisons": 600,
+      "validity_mask_boolean_comparisons": 120000,
+      "max_abs_residuals": {
+        "probability": 0.0,
+        "point_metric": 4.440892098500626e-16,
+        "marginal_draw": 3.3306690738754696e-16,
+        "paired_draw": 4.440892098500626e-16,
+        "CI": 3.191891195797325e-16
+      },
+      "worst_units_by_check": {
+        "probability": "R5/gue_splice_reconstructed/final_norm/seed1234/fixed_original_base",
+        "point_metric": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/fixed_original_base/control_kmer4/classification_cross_entropy",
+        "marginal_draw": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/independent_refit/average_precision",
+        "CI": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/independent_refit/base/average_precision",
+        "paired_draw": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/fixed_original_base/base/average_precision"
+      }
+    },
+    {
+      "task": "gue_mouse_0",
+      "recovery_receipt_sha256": "8c4c020d046fca63d08d4c5155bd72db7ca072f71c9ae7e6ba0727976c99c957",
+      "counts_derived_from_validated_frozen_restore_loops_and_receipt": true,
+      "probability_arrays": 12,
+      "probability_scalar_comparisons": 12288,
+      "point_metric_comparisons": 300,
+      "marginal_draw_vectors": 60,
+      "marginal_draw_scalar_comparisons": 120000,
+      "paired_draw_vectors": 240,
+      "paired_draw_scalar_comparisons": 480000,
+      "CI_endpoint_comparisons": 600,
+      "validity_mask_boolean_comparisons": 120000,
+      "max_abs_residuals": {
+        "probability": 0.0,
+        "point_metric": 8.881784197001252e-16,
+        "marginal_draw": 4.440892098500626e-16,
+        "paired_draw": 5.551115123125783e-16,
+        "CI": 3.3306690738754696e-16
+      },
+      "worst_units_by_check": {
+        "probability": "R5/gue_mouse_0/final_norm/seed1234/fixed_original_base",
+        "point_metric": "R5/gue_mouse_0/decoder_layer_16/seed1234/fixed_original_base/R1/classification_cross_entropy",
+        "marginal_draw": "R5/gue_mouse_0/decoder_layer_16/seed1234/independent_refit/average_precision",
+        "CI": "R5/gue_mouse_0/decoder_layer_16/seed1234/fixed_original_base/base/average_precision",
+        "paired_draw": "R5/gue_mouse_0/decoder_layer_16/seed1234/independent_refit/control_composition/average_precision"
+      }
+    }
+  ],
+  "unique_panel_prediction_metric_paths": 60,
+  "unique_panel_paired_vectors": 1200,
+  "separate_isolation_test": "PRODUCER_PATH_DENIAL_TEST.json repeats one12-path/240-vector panel under active producer-path denial, no new fit",
+  "tolerances": {
+    "probabilities": 1e-10,
+    "points_draws_CIs": 1e-12
+  }
+}

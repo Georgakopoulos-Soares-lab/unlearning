@@ -1,0 +1,7 @@
+# A08 readiness and required scope
+
+Bind actual A07 delivery, this prompt `112bd37081f5e55896057c6046195e8603c5e751`, coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`, CPU source SHA `87cd616e81b17bad1cc77ff5dafa385969a380c4190db511d5718fd5599c1c26`, exact390-unit manifest and five private checkpoints. New390 heads/applications remain COMPLETE_UNVERIFIED. A08 has not started. Require separate direct approval and a revised prompt bound to the actual delivery.
+
+Independently reconstruct all390 units/both policies and every marginal/paired draw from saved outputs; audit all folds, selection traces, typed provenance and tolerances. Execute only the frozen30 full-CV-plus-final refits (all5tasks × layer16/final_norm ×3seeds;480 initial solver calls), reusing all6 completed H3 audit refits and historical released results. No new extraction, historical fitting, control fitting, replacement draws or model training.
+
+Then calculate only predeclared eligible16380 adjacent classifier rows for R4−R3, R5−R4 and R6−R5 and70 paired LM rows across five frozen families from saved outputs. Keep both R2-dependent adjacent gaps, R3 domain-specific1092classifier/7LM eligibility and nonadjacent R3−R1/R6−R4 labels explicit. Preserve original evidence/lineage, no-deadline amendment, observer STOPPED and separate subsequent-stage gate. Do not edit prompt contracts as a scientific executor.

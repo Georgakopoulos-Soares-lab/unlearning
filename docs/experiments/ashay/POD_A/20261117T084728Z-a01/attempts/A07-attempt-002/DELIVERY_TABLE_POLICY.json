@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Only the two canonical sanitized aggregate CSV reports may be up to50MiB; all other files retain20MiB limit. Raw sequences/arrays/predictions/heads/weights remain forbidden.",
+  "reason": "Required8400-row typed-provenance/full-precision paired table exceeds inherited A06 helper20MiB assumption; no package contract sets that assumption. No scientific bytes changed to repair delivery.",
+  "sizes": {
+    "RESULTS_LONG.csv": 12532347,
+    "PAIRED_CONTRASTS.csv": 35530337
+  },
+  "lossless_gzip_mirrors_verified": true,
+  "report_only_failure_log": "Preserved privately as finish.001.stderr.log",
+  "all_fits_audits_and_scientific_seals_reused": true
+}

@@ -1,0 +1,1051 @@
+{
+  "status": "PASS",
+  "checkpoints": [
+    {
+      "schema": "pod-a-a07-task-backup-v2",
+      "status": "PASS",
+      "task": "gue_tf_0",
+      "candidate": "R5",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "b274c384ee7f42fef82b036006e4cc8e341b4836",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-002/R5/gue_tf_0-checkpoint-001/A07-R5-gue_tf_0-checkpoint-001.tar.gz",
+      "archive_sha256": "a56b5af08df06672d65b51c4d8308ed12ae8b39cd975d51927021b4b4d4140c2",
+      "archive_bytes": 79518439,
+      "member_manifest_sha256": "c772718c755ee3aa9d6477dbb6c22d0dee89da10257eb5aa05899e95835bbb55",
+      "all_files_verified": 1588,
+      "fresh_download": true,
+      "force_download": true,
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_tf_0-fresh-001/consumer",
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "unit_id": "R5/gue_tf_0/decoder_layer_16/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/decoder_layer_16/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/decoder_layer_16/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/decoder_layer_16/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/decoder_layer_16/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/decoder_layer_16/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/final_norm/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/final_norm/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/final_norm/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/final_norm/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/final_norm/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_tf_0/final_norm/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "paired_vectors": 240,
+        "paired_values": 480000,
+        "max_abs_residuals": {
+          "probability": 0.0,
+          "point_metric": 2.220446049250313e-16,
+          "marginal_draw": 3.3306690738754696e-16,
+          "paired_draw": 5.551115123125783e-16,
+          "CI": 2.220446049250313e-16
+        },
+        "worst_units": {
+          "probability": "R5/gue_tf_0/final_norm/seed1234/fixed_original_base",
+          "point_metric": "R5/gue_tf_0/decoder_layer_16/seed1234/fixed_original_base/control_kmer4/average_precision",
+          "marginal_draw": "R5/gue_tf_0/decoder_layer_16/seed1234/independent_refit/average_precision",
+          "CI": "R5/gue_tf_0/final_norm/seed1234/independent_refit/R1/average_precision",
+          "paired_draw": "R5/gue_tf_0/decoder_layer_16/seed1234/independent_refit/base/average_precision"
+        },
+        "refits": 0,
+        "producer_paths_used": false,
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_tf_0-fresh-001/consumer",
+        "reused_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "inherited_dependency_new_download": false,
+        "independent_release": "PENDING_A08",
+        "GPU_runtime_recreated": false
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_tf_0-fresh-001/consumer/artifacts/code/restore7.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_tf_0-fresh-001/consumer",
+        "--dependency-map",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_tf_0-fresh-001/DEPENDENCY_MAP.json",
+        "--task",
+        "gue_tf_0"
+      ],
+      "private_at_write_and_closeout": true,
+      "inherited_feature_dependency": {
+        "A06_feature_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "member_manifest_sha256": "2341e6655b623d104006fb54316c9e0825533e57e6207d0c052e855a3ad4b1f0",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "revision": "d413378e035ab290d40622817f8dab439ad7c35f",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-002/R5/other_five-checkpoint-001/A06-R5_other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "d8d1faebd0cff6cab349b9c797cc07e46611aaac59f1ea0272277f6075b3c52d",
+        "new_download": false
+      },
+      "inherited_dependency_new_download": false,
+      "producer_path_substitution": false,
+      "compression_seconds": 7.458808447991032,
+      "upload_seconds": 3.4822201520146336,
+      "fresh_download_seconds": 1.697209539997857,
+      "all_member_verification_seconds": 8.020187121990602,
+      "restore_check_seconds": 5.024035110982368,
+      "completed_utc": "2026-11-18T22:18:37.974651+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v2",
+      "status": "PASS",
+      "task": "gue_prom_core_all",
+      "candidate": "R5",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "d2ed1a67fb338d300dbe5bf934896f9179629899",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-002/R5/gue_prom_core_all-checkpoint-001/A07-R5-gue_prom_core_all-checkpoint-001.tar.gz",
+      "archive_sha256": "8e85a70880b88962d61c1c235db3c9c7f948ddb2a8f6532c4e7b312e73119dc6",
+      "archive_bytes": 78620133,
+      "member_manifest_sha256": "5598f76348da9c5147f749c949615fb8856e558ccb7dccbfbfd0192a69cddb3e",
+      "all_files_verified": 1588,
+      "fresh_download": true,
+      "force_download": true,
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_core_all-fresh-001/consumer",
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "unit_id": "R5/gue_prom_core_all/decoder_layer_16/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/decoder_layer_16/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/decoder_layer_16/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/decoder_layer_16/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/decoder_layer_16/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/decoder_layer_16/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/final_norm/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/final_norm/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/final_norm/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/final_norm/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/final_norm/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_core_all/final_norm/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "paired_vectors": 240,
+        "paired_values": 480000,
+        "max_abs_residuals": {
+          "probability": 0.0,
+          "point_metric": 8.881784197001252e-16,
+          "marginal_draw": 3.3306690738754696e-16,
+          "paired_draw": 5.551115123125783e-16,
+          "CI": 3.3306690738754696e-16
+        },
+        "worst_units": {
+          "probability": "R5/gue_prom_core_all/final_norm/seed1234/fixed_original_base",
+          "point_metric": "R5/gue_prom_core_all/decoder_layer_16/seed1234/fixed_original_base/control_kmer4/classification_cross_entropy",
+          "marginal_draw": "R5/gue_prom_core_all/final_norm/seed1234/fixed_original_base/average_precision",
+          "CI": "R5/gue_prom_core_all/decoder_layer_16/seed1234/fixed_original_base/control_composition/average_precision",
+          "paired_draw": "R5/gue_prom_core_all/final_norm/seed1234/fixed_original_base/control_kmer4/average_precision"
+        },
+        "refits": 0,
+        "producer_paths_used": false,
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_core_all-fresh-001/consumer",
+        "reused_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "inherited_dependency_new_download": false,
+        "independent_release": "PENDING_A08",
+        "GPU_runtime_recreated": false
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_core_all-fresh-001/consumer/artifacts/code/restore7.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_core_all-fresh-001/consumer",
+        "--dependency-map",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_core_all-fresh-001/DEPENDENCY_MAP.json",
+        "--task",
+        "gue_prom_core_all"
+      ],
+      "private_at_write_and_closeout": true,
+      "inherited_feature_dependency": {
+        "A06_feature_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "member_manifest_sha256": "2341e6655b623d104006fb54316c9e0825533e57e6207d0c052e855a3ad4b1f0",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "revision": "d413378e035ab290d40622817f8dab439ad7c35f",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-002/R5/other_five-checkpoint-001/A06-R5_other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "d8d1faebd0cff6cab349b9c797cc07e46611aaac59f1ea0272277f6075b3c52d",
+        "new_download": false
+      },
+      "inherited_dependency_new_download": false,
+      "producer_path_substitution": false,
+      "compression_seconds": 8.530610050016548,
+      "upload_seconds": 2.861889986990718,
+      "fresh_download_seconds": 1.4421479489828926,
+      "all_member_verification_seconds": 8.185074047010858,
+      "restore_check_seconds": 4.874145118985325,
+      "completed_utc": "2026-11-18T22:20:59.034907+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v2",
+      "status": "PASS",
+      "task": "gue_prom_300_all",
+      "candidate": "R5",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "525d75f7b62a94d32083ea160fe1c209c3c41466",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-002/R5/gue_prom_300_all-checkpoint-001/A07-R5-gue_prom_300_all-checkpoint-001.tar.gz",
+      "archive_sha256": "0ae8bb5274f997c5d6d3971eb9e1a8cfc914cb96be2f4efca89667725e9b5b5d",
+      "archive_bytes": 78152335,
+      "member_manifest_sha256": "dffdad6d511026f71b683fd09125b63872d27bbf08d888efafba9e8120190e4c",
+      "all_files_verified": 1590,
+      "fresh_download": true,
+      "force_download": true,
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_300_all-fresh-001/consumer",
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "unit_id": "R5/gue_prom_300_all/decoder_layer_16/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/decoder_layer_16/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/decoder_layer_16/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/decoder_layer_16/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/decoder_layer_16/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/decoder_layer_16/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/final_norm/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/final_norm/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/final_norm/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/final_norm/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/final_norm/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_prom_300_all/final_norm/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "paired_vectors": 240,
+        "paired_values": 480000,
+        "max_abs_residuals": {
+          "probability": 0.0,
+          "point_metric": 1.7763568394002505e-15,
+          "marginal_draw": 4.440892098500626e-16,
+          "paired_draw": 5.551115123125783e-16,
+          "CI": 2.220446049250313e-16
+        },
+        "worst_units": {
+          "probability": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base",
+          "point_metric": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base/R1/classification_cross_entropy",
+          "marginal_draw": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base/average_precision",
+          "CI": "R5/gue_prom_300_all/final_norm/seed1234/independent_refit/control_kmer4/average_precision",
+          "paired_draw": "R5/gue_prom_300_all/final_norm/seed1234/fixed_original_base/control_composition/average_precision"
+        },
+        "refits": 0,
+        "producer_paths_used": false,
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_300_all-fresh-001/consumer",
+        "reused_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "inherited_dependency_new_download": false,
+        "independent_release": "PENDING_A08",
+        "GPU_runtime_recreated": false
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_300_all-fresh-001/consumer/artifacts/code/restore7.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_300_all-fresh-001/consumer",
+        "--dependency-map",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_prom_300_all-fresh-001/DEPENDENCY_MAP.json",
+        "--task",
+        "gue_prom_300_all"
+      ],
+      "private_at_write_and_closeout": true,
+      "inherited_feature_dependency": {
+        "A06_feature_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "member_manifest_sha256": "2341e6655b623d104006fb54316c9e0825533e57e6207d0c052e855a3ad4b1f0",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "revision": "d413378e035ab290d40622817f8dab439ad7c35f",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-002/R5/other_five-checkpoint-001/A06-R5_other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "d8d1faebd0cff6cab349b9c797cc07e46611aaac59f1ea0272277f6075b3c52d",
+        "new_download": false
+      },
+      "inherited_dependency_new_download": false,
+      "producer_path_substitution": false,
+      "compression_seconds": 5.547071379987756,
+      "upload_seconds": 3.4440888430108316,
+      "fresh_download_seconds": 1.382058215996949,
+      "all_member_verification_seconds": 7.545202723995317,
+      "restore_check_seconds": 4.652499060990522,
+      "completed_utc": "2026-11-18T22:23:12.769600+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v2",
+      "status": "PASS",
+      "task": "gue_splice_reconstructed",
+      "candidate": "R5",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "1c2877a214d78955c88d1791710f0a9654365aea",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-002/R5/gue_splice_reconstructed-checkpoint-001/A07-R5-gue_splice_reconstructed-checkpoint-001.tar.gz",
+      "archive_sha256": "df5abac485a07257727316d2d124bef1cefc9936a93ac22d2aeb90b7b56f993d",
+      "archive_bytes": 90221813,
+      "member_manifest_sha256": "09921f9c42f451f119fad0e6cb3921cf2a944ad6dce2855eba4a4a66cc4feaa6",
+      "all_files_verified": 1591,
+      "fresh_download": true,
+      "force_download": true,
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer",
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/final_norm/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/final_norm/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/final_norm/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/final_norm/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/final_norm/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_splice_reconstructed/final_norm/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 511,
+            "classes": [
+              0,
+              1,
+              2
+            ],
+            "status": "PASS"
+          }
+        ],
+        "paired_vectors": 240,
+        "paired_values": 480000,
+        "max_abs_residuals": {
+          "probability": 0.0,
+          "point_metric": 4.440892098500626e-16,
+          "marginal_draw": 3.3306690738754696e-16,
+          "paired_draw": 4.440892098500626e-16,
+          "CI": 3.191891195797325e-16
+        },
+        "worst_units": {
+          "probability": "R5/gue_splice_reconstructed/final_norm/seed1234/fixed_original_base",
+          "point_metric": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/fixed_original_base/control_kmer4/classification_cross_entropy",
+          "marginal_draw": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/independent_refit/average_precision",
+          "CI": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/independent_refit/base/average_precision",
+          "paired_draw": "R5/gue_splice_reconstructed/decoder_layer_16/seed1234/fixed_original_base/base/average_precision"
+        },
+        "refits": 0,
+        "producer_paths_used": false,
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer",
+        "reused_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "inherited_dependency_new_download": false,
+        "independent_release": "PENDING_A08",
+        "GPU_runtime_recreated": false
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer/artifacts/code/restore7.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/consumer",
+        "--dependency-map",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_splice_reconstructed-fresh-001/DEPENDENCY_MAP.json",
+        "--task",
+        "gue_splice_reconstructed"
+      ],
+      "private_at_write_and_closeout": true,
+      "inherited_feature_dependency": {
+        "A06_feature_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "member_manifest_sha256": "2341e6655b623d104006fb54316c9e0825533e57e6207d0c052e855a3ad4b1f0",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "revision": "d413378e035ab290d40622817f8dab439ad7c35f",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-002/R5/other_five-checkpoint-001/A06-R5_other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "d8d1faebd0cff6cab349b9c797cc07e46611aaac59f1ea0272277f6075b3c52d",
+        "new_download": false
+      },
+      "inherited_dependency_new_download": false,
+      "producer_path_substitution": false,
+      "compression_seconds": 6.552885871002218,
+      "upload_seconds": 3.3760033329890575,
+      "fresh_download_seconds": 1.36821217200486,
+      "all_member_verification_seconds": 7.60788475399022,
+      "restore_check_seconds": 5.287559307005722,
+      "completed_utc": "2026-11-18T22:27:17.627573+00:00"
+    },
+    {
+      "schema": "pod-a-a07-task-backup-v2",
+      "status": "PASS",
+      "task": "gue_mouse_0",
+      "candidate": "R5",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "3e10944f8b68a43efe4376da3ffdef25a72bee8c",
+      "archive_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-002/R5/gue_mouse_0-checkpoint-001/A07-R5-gue_mouse_0-checkpoint-001.tar.gz",
+      "archive_sha256": "5a00939003e6f03663c9c9e68de73afb83c772518ca0c55f1150c84cff59af6e",
+      "archive_bytes": 79035525,
+      "member_manifest_sha256": "ffd17723d34c5dbec1f5b9bc5906a6b4bb268ab86e954a5625bacdf7f9aa6370",
+      "all_files_verified": 1593,
+      "fresh_download": true,
+      "force_download": true,
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_mouse_0-fresh-001/consumer",
+      "CPU_restored_checks": {
+        "status": "PASS",
+        "checks": [
+          {
+            "unit_id": "R5/gue_mouse_0/decoder_layer_16/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/decoder_layer_16/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/decoder_layer_16/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/decoder_layer_16/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/decoder_layer_16/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/decoder_layer_16/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/final_norm/seed42",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/final_norm/seed42",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/final_norm/seed17",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/final_norm/seed17",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/final_norm/seed1234",
+            "policy": "independent_refit",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          },
+          {
+            "unit_id": "R5/gue_mouse_0/final_norm/seed1234",
+            "policy": "fixed_original_base",
+            "rows": 512,
+            "groups": 512,
+            "classes": [
+              0,
+              1
+            ],
+            "status": "PASS"
+          }
+        ],
+        "paired_vectors": 240,
+        "paired_values": 480000,
+        "max_abs_residuals": {
+          "probability": 0.0,
+          "point_metric": 8.881784197001252e-16,
+          "marginal_draw": 4.440892098500626e-16,
+          "paired_draw": 5.551115123125783e-16,
+          "CI": 3.3306690738754696e-16
+        },
+        "worst_units": {
+          "probability": "R5/gue_mouse_0/final_norm/seed1234/fixed_original_base",
+          "point_metric": "R5/gue_mouse_0/decoder_layer_16/seed1234/fixed_original_base/R1/classification_cross_entropy",
+          "marginal_draw": "R5/gue_mouse_0/decoder_layer_16/seed1234/independent_refit/average_precision",
+          "CI": "R5/gue_mouse_0/decoder_layer_16/seed1234/fixed_original_base/base/average_precision",
+          "paired_draw": "R5/gue_mouse_0/decoder_layer_16/seed1234/independent_refit/control_composition/average_precision"
+        },
+        "refits": 0,
+        "producer_paths_used": false,
+        "new_A07_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_mouse_0-fresh-001/consumer",
+        "reused_A06_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "inherited_dependency_new_download": false,
+        "independent_release": "PENDING_A08",
+        "GPU_runtime_recreated": false
+      },
+      "restore_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_mouse_0-fresh-001/consumer/artifacts/code/restore7.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_mouse_0-fresh-001/consumer",
+        "--dependency-map",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-002/R5-gue_mouse_0-fresh-001/DEPENDENCY_MAP.json",
+        "--task",
+        "gue_mouse_0"
+      ],
+      "private_at_write_and_closeout": true,
+      "inherited_feature_dependency": {
+        "A06_feature_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "member_manifest_sha256": "2341e6655b623d104006fb54316c9e0825533e57e6207d0c052e855a3ad4b1f0",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "revision": "d413378e035ab290d40622817f8dab439ad7c35f",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-002/R5/other_five-checkpoint-001/A06-R5_other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "d8d1faebd0cff6cab349b9c797cc07e46611aaac59f1ea0272277f6075b3c52d",
+        "new_download": false
+      },
+      "inherited_dependency_new_download": false,
+      "producer_path_substitution": false,
+      "compression_seconds": 5.9818562119908165,
+      "upload_seconds": 2.774024220998399,
+      "fresh_download_seconds": 1.3491883570095524,
+      "all_member_verification_seconds": 7.917349805997219,
+      "restore_check_seconds": 4.399133549974067,
+      "completed_utc": "2026-11-18T22:29:36.839946+00:00"
+    }
+  ],
+  "new_task_archives": 5,
+  "all_new_archives_fresh_downloaded": true,
+  "restored_prediction_metric_paths": 60,
+  "restored_paired_vectors": 1200,
+  "restored_paired_values": 2400000,
+  "all_included_member_hashes_checked": 7950,
+  "sampled_recovery_not_full_A08_audit": true,
+  "inherited_feature_new_download": false,
+  "GPU_runtime_recreation": "UNTESTED_EXCLUDED"
+}

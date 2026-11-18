@@ -1,0 +1,9 @@
+# Portable private A07 recovery
+
+BACKUP_VERIFICATION.json pins five task archives in the existing private dataset. For each, download its exact revision/path into a new cache; verify size, SHA256, safe exact regular-file member set and every member digest. archive7.safe_extract rejects duplicates, traversal, links, absolute paths, normalized aliases and unlisted members.
+
+Each archive contains 78 producer units, complete CV/head/prediction/bootstrap artifacts, small saved original-base heads, fold/draw/reference objects, source/environment/approval snapshots and cache metadata/seals. Unchanged large A06 feature chunks are referenced by their pinned archive revision and SHA, not repacked. The inherited fresh A06 consumer was rehashed and explicitly reused; this is not another download.
+
+Run frozen CPU Python `-B <new-consumer>/artifacts/code/restore7.py --root <new-consumer> --dependency-map <immutable-map.json> --task <task>`. The map contains A06_feature_consumer and member_manifest_sha256 from REUSED_A06_FEATURE_CONSUMER.json. Restore reads only consumer-relative new objects and explicit verified inherited consumer members, never producer paths. It reconstructs layer16/final_norm × three seeds × both policies for each task, with all metrics and all four references/2000 saved grouped draws: 12 paths and240 complete paired vectors per task,60/1200 total. No fitting occurs. All paired vectors, common validity masks and intervals are checked at1e-12; probabilities at1e-10.
+
+The later metadata archive deterministically regenerates all12300 A05 keys and table descriptor joins. CPU recovery does not establish full GPU/runtime recreation or replace A08 full-unit independent release/30 CV refits. Separate final receipt binds scientific and later metadata commits without self-hash cycles.

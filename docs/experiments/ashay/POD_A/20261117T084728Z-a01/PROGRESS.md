@@ -1,8 +1,8 @@
-# A07 R5 other-five — RUNNING
+# A07 R5 other-five — COMPLETE_FOR_R5_OTHER_FIVE_PRODUCTION
 
-gue_mouse_0: 78 heads and applications accepted; fresh task recovery PASS (12 paths, 240 paired vectors).
+All390 R5 heads/applications, exact12300 keys and five fresh recoveries PASS; full independent release awaits A08.
 
-Observed UTC: 2026-11-18T22:29:40.123891+00:00. Prompt `112bd37081f5e55896057c6046195e8603c5e751`; A06 input handoff `ba340d0f4706b1941f62a4d6256bf78ab99030eb`.
+Observed UTC: 2026-11-18T22:34:31.496290+00:00. Prompt `112bd37081f5e55896057c6046195e8603c5e751`; A06 input handoff `ba340d0f4706b1941f62a4d6256bf78ab99030eb`.
 
 | Measure | Count |
 |---|---:|
@@ -36,4 +36,4 @@ No deadline, GPU cap or closure reserve; original start, rental start, rate and 
 
 See [inputs](attempts/A07-attempt-002/A07_INPUTS.json), [manifest](attempts/A07-attempt-002/A07_EXECUTION_MANIFEST.json), [expected keys](attempts/A07-attempt-002/EXPECTED_TABLE_KEYS.json), [audit plan](attempts/A07-attempt-002/A08_AUDIT_HANDOFF_PLAN.json), and [source](attempts/A07-attempt-002/CPU_SOURCE_IDENTITY.json).
 
-Next: Continue the finite R5 A07 queue only.
+Next: Separate direct A08 approval required; no automatic resume.

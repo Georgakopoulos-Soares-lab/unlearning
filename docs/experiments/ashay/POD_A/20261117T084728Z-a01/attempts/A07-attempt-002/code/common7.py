@@ -1,4 +1,4 @@
-"""Isolated metadata-only A05 attempt. No model/fit/effect imports or stage dispatcher."""
+"""A07 metadata ownership and repository guards. No model imports or stage dispatcher."""
 from pathlib import Path
 import csv,datetime,hashlib,json,os,subprocess,sys
 C=Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-002');cfg=json.loads((C/'RUN_CONFIG.json').read_text());A=Path(cfg['artifacts']);REC=Path(cfg['recovery']);D=Path(cfg['docs']);R=Path(cfg['root_control']);B=Path(cfg['run_docs']);W=Path(cfg['worktree']);D3=D.parent/'A03-attempt-001';D4=D.parent/'A04-attempt-004';D50=D.parent/'A05-attempt-001';D6=D.parent/'A06-attempt-001';D7=D.parent/'A07-attempt-001';D8=D.parent/'A08-attempt-001';D9=D.parent/'A09-attempt-001';C4=C.parent/'A04-attempt-004';A4=A.parent/'A04-attempt-004';A6=A.parent/'A06-attempt-001';A7=A.parent/'A07-attempt-001';A8=A.parent/'A08-attempt-001';REPO='ashay-sriv/undo-evo2-pilot-backup-20261020';MIRROR='ashay-sriv/unlearning-checkpoint-mirror'

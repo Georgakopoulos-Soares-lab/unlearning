@@ -1,10 +1,10 @@
 {
-  "event_id": "6e360f56-bc8c-4dc9-9d17-0f6824b34dda",
+  "event_id": "4460df13-962b-4d00-afa4-5afa03c6e28c",
   "run_id": "20261117T084728Z-a01",
   "stage": "A07",
   "attempt_id": "A07-attempt-002",
-  "event_type": "RUNNING",
-  "observed_utc": "2026-11-18T22:29:40.123891+00:00",
+  "event_type": "COMPLETE_FOR_R5_OTHER_FIVE_PRODUCTION",
+  "observed_utc": "2026-11-18T22:34:31.496290+00:00",
   "prompt_commit": "112bd37081f5e55896057c6046195e8603c5e751",
   "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
   "counts": {
@@ -32,8 +32,8 @@
     "new_control_fits": 0,
     "new_adjacent_rows": 0
   },
-  "message": "gue_mouse_0: 78 heads and applications accepted; fresh task recovery PASS (12 paths, 240 paired vectors).",
-  "next_allowed_action": "Continue the finite R5 A07 queue only",
+  "message": "All390 R5 heads/applications, exact12300 keys and five fresh recoveries PASS; full independent release awaits A08.",
+  "next_allowed_action": "Separate direct A08 approval required; no automatic resume",
   "observer": "STOPPED",
   "time_policy": {
     "schema": "pod-a-time-policy-v3",
@@ -63,7 +63,7 @@
   },
   "current_stage": "A07",
   "current_attempt": "attempts/A07-attempt-002",
-  "status": "RUNNING",
+  "status": "COMPLETE_FOR_R5_OTHER_FIVE_PRODUCTION",
   "automatic_resume": false,
   "A08_started": false,
   "source_identity_sha256": "87cd616e81b17bad1cc77ff5dafa385969a380c4190db511d5718fd5599c1c26",
