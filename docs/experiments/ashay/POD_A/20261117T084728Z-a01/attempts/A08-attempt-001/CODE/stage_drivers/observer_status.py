@@ -1,0 +1,6 @@
+"""Sole guarded publisher of sealed A07 progress; never dispatches science."""
+from common import *
+from research_guard import guard
+import argparse,time,collections
+def observer():
+ root=Path('/workspace/agent-handoff/POD_A/review-loop');hb=read(root/'heartbeat.json');er=read(root/'last_error.json') if (root/'last_error.json').exists() else None;proc=Path('/proc')/str(hb['pid'])/'stat';alive=proc.exists() and proc.read_text().split()[2]!='Z' and proc.read_text().split()[21]==str(hb['proc_start_ticks']);flags=[p.name for p in [root/'STOP',root/'DISABLED'] if p.exists()];age=time.time()-datetime.datetime.fromisoformat(hb['observed_utc']).timestamp();newer=bool(er and er.get('observed_utc','')>hb['observed_utc']);status={'observer_status':'ACTIVE' if alive and age<=1500 and not flags and not newer else 'BLOCKED','reviewer_status':'DRAFT_ONLY','publisher_status':'BLOCKED','cadence_seconds':1200,'pid':hb['pid'],'proc_start_ticks':hb['proc_start_ticks'],'process_identity_alive':alive,'last_successful_tick':hb['observed_utc'],'heartbeat_age_seconds':age,'active_approved_pin':hb['active_approved_pin'],'observed_prompt_commit':hb['commit'],'newer_error_than_success':newer,'last_error':er,'stop_disable_flags':flags,'no_duplicate_launched':True,'refreshed_utc':now()};put(C/'OBSERVER_STATUS.json',status);return status

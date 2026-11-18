@@ -1,0 +1,398 @@
+{
+  "schema": "pod-a-stage-receipt-v1",
+  "template_only": false,
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A08",
+  "attempt_id": "A08-attempt-001",
+  "status": "VERIFIED_READY_FOR_DELIVERY",
+  "scientific_scope": "COMPLETE_QUALIFIED_AVAILABLE_ENDPOINTS",
+  "full_project_status": "PARTIAL_EXTERNAL_DEPENDENCIES",
+  "A04_status": "PARTIAL",
+  "approval": {
+    "direct_user_approval": "\ud83d\udc4d A08 at e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef, go ahead",
+    "message_time_utc": null,
+    "observed_utc": "2026-11-18T08:49:25.672412+00:00",
+    "prompt_commit": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
+    "effective_hashes": {
+      "POD_A_MASTER.md": "ed13c09a74917165c5cf8c9c3a12483fbcdae56116d0ac3a8033014f913419b0",
+      "A08_VERIFICATION_ANALYSIS.md": "535c9fd582e98db3469d81b291d03091575825198488ff67df56d08a87946a98",
+      "SCIENTIFIC_CONTRACT.md": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413",
+      "ARTIFACT_CONTRACT.md": "f34f276d5b884f1e16588ae2bd40c1a5c00c8b155ee53e4b7ffcd39c3590c594",
+      "POD_A_PROGRESS_REPORTING.md": "70637a2e42a1720c8ec9f41cbf0293297e3e0606f451bd8218082660d75ec202",
+      "POD_A_REVIEW_LOOP.md": "c5b1a6f9b6990e26f5089607f1c0163333aefb406a5caff8cf7ee1da9d48fce0"
+    },
+    "attempt_id": "A08-attempt-001",
+    "research_input_commit": "de1ac64f7b5f9748a868564baf637e8c06dbb667",
+    "prior_controller_state_sha256": "f3c588653b63119151fb60812e94d23803a0a0be6bcc67515bc1460173261bea",
+    "stage": "A08",
+    "no_A09_authorization": true
+  },
+  "prompt_commit": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
+  "research": {
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "branch": "POD_A",
+    "head_before": "de1ac64f7b5f9748a868564baf637e8c06dbb667",
+    "scientific_parent_at_assembly": "676c81ac8f203139d6d99054ba168c9e0b085804",
+    "exact_delivery_commit": "Separate post-push receipt",
+    "other_refs_main_preserved": true
+  },
+  "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "budget": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A08 only; stop before A09",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
+  },
+  "coverage": {
+    "full_head_universe": 3276,
+    "new_production_heads": 0,
+    "new_independently_audited_A07_heads": 780,
+    "new_fixed_probability_paths": 780,
+    "all_probability_paths": 1560,
+    "reused_historical_heads": 1404,
+    "reused_A06_H3_heads": 156,
+    "released_existing_heads": 2340,
+    "R2_pending_heads": 468,
+    "R5_pending_heads": 468,
+    "failed_heads_or_audits": 0,
+    "fixed_application_universe": 3276,
+    "available_fixed_applications": 2340,
+    "primary_LM_available": 35,
+    "primary_LM_universe": 49,
+    "unique_controls_reused": 36,
+    "full_ledger_units": 6637
+  },
+  "all_unit_audit": {
+    "schema": "pod-a-a08-all-unit-audit-v1",
+    "status": "PASS",
+    "source_identity_sha256": "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3",
+    "units_tested": 780,
+    "probability_paths_tested": 1560,
+    "marginal_metric_rows": 7800,
+    "paired_metric_rows": 16800,
+    "probability_max_abs": 0.0,
+    "metric_max_abs": 3.552713678800501e-15,
+    "bootstrap_draw_max_abs": 7.771561172376096e-16,
+    "interval_max_abs": 4.3021142204224816e-16,
+    "probability_tolerance": 1e-10,
+    "metric_draw_interval_tolerance": 1e-12,
+    "failures": [],
+    "per_unit_evidence": "AUDIT_UNIT_RECORDS.jsonl plus immutable private per-unit COMPLETE and NUMERICAL_AUDIT records",
+    "new_production_heads": 0,
+    "original_producer_seals_modified": false,
+    "checks_not_performed": [
+      "GPU re-extraction or model recreation",
+      "All780independentCVrefits; exactly60prospective units refitted",
+      "Untouched test access",
+      "New biological/homology grouping or causal training controls"
+    ]
+  },
+  "sampled_refit_audit": {
+    "status": "PASS",
+    "prospective_panel_sha256": "e69bdc8b42f349df874ddd2e5e21264cae1053520ba4b8304881d835a32295ca",
+    "sampled_refit_units": 60,
+    "planned_optimizer_fits": 960,
+    "actual_optimizer_fits": 960,
+    "convergence_retries": 0,
+    "CV_score_max_abs": 0.0,
+    "probability_max_abs": 0.0,
+    "metric_max_abs": 1.1102230246251565e-16,
+    "coefficient_max_abs_diagnostic": 0.0,
+    "new_production_heads": 0,
+    "all_head_refitting_claim": false
+  },
+  "new_analysis": {
+    "status": "PASS",
+    "source_identity_sha256": "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3",
+    "predeclared_nonadjacent_only": true,
+    "families": {
+      "R6_minus_R4": {
+        "sealed_units": 546,
+        "released_rows": 5460,
+        "point_max_abs": 2.6645352591003757e-15,
+        "every_draw_max_abs": 6.661338147750939e-16,
+        "interval_max_abs": 4.3368086899420177e-16,
+        "attempted_values": 10920000,
+        "valid_values": 10920000,
+        "status": "PASS"
+      },
+      "LM_R6_minus_R4": {
+        "sealed_units": 7,
+        "released_rows": 14,
+        "point_max_abs": 0.0,
+        "every_draw_max_abs": 0.0,
+        "interval_max_abs": 0,
+        "attempted_values": 28000,
+        "valid_values": 28000,
+        "status": "PASS"
+      }
+    },
+    "GPU_or_LM_forwards": 0,
+    "new_fitting": 0,
+    "failed_units": 0,
+    "all_unit_draw_masks_and_values_checked": true,
+    "no_new_R3_cross_runtime_effects": true
+  },
+  "figures": {
+    "count": 31,
+    "validation": {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/FIGURE_VALIDATION.json",
+      "bytes": 57680,
+      "sha256": "1fce6db5e682d55a5130c40d6991001abe22617a71d30267b515a4af4c181d51"
+    }
+  },
+  "checks_not_performed": [
+    "GPU/model/LM forwards",
+    "Independent refitting outside prospective60unit panel",
+    "New untouched tests",
+    "R2/R5 backfill",
+    "R3 live bridge",
+    "New policy/inferential families/controls fitting",
+    "PodB/relearning/unlearning or causal mixture identification"
+  ],
+  "backup_status": {
+    "schema": "pod-a-a08-backup-verification-v1",
+    "status": "PASS",
+    "new_scientific_archives": 3,
+    "all_member_files_verified": 5496,
+    "archive_bytes": 428425234,
+    "force_fresh_cache_and_separate_consumers": true,
+    "exact_safe_member_sets": true,
+    "candidate_probability_metric_paths": 40,
+    "restored_audit_refit_artifacts_checked": 2,
+    "candidate_panel": "R4/R6 x every other-five task x layer16/final_norm x seed42 x both policies; includes binary and three-class splice",
+    "candidate_probability_max_abs": 0.0,
+    "candidate_metric_max_abs": 0.0,
+    "new_contrast_restore": {
+      "status": "PASS",
+      "restored_new_classifier_contrast": "gue_tf_0/layer16/seed42/bothpolicies/all5metrics/all2000draws",
+      "classifier_max_abs": 0.0,
+      "restored_new_LM_contrast": "gue_tf_0/dev/NLL_and_PPL",
+      "LM_point_max_abs": 0.0,
+      "original_producer_paths_used": false,
+      "GPU_work": 0
+    },
+    "revisions": {
+      "R4": "d10c34a50b37bb8f12782b6b2684611953110db1",
+      "R6": "9a398582de6287f28f1bccfdea6fd3753072929b",
+      "analysis": "5da5c27920eb1aeaa7abc0bf4963a5d3e6feb56e"
+    },
+    "GPU_recreation_claim": false,
+    "all_grid_fresh_refit_claim": false,
+    "final_report_metadata_recovery": "Separate post-push full-member readback receipt"
+  },
+  "all_owned_jobs_quiescent": true,
+  "owned_jobs": [
+    {
+      "name": "analysis-LM-001",
+      "pid": 54446,
+      "proc_start_ticks": "10815767",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "analysis-emp_H3-001",
+      "pid": 53743,
+      "proc_start_ticks": "10787340",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "analysis-gue_mouse_0-001",
+      "pid": 54424,
+      "proc_start_ticks": "10812849",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "analysis-gue_prom_300_all-001",
+      "pid": 54112,
+      "proc_start_ticks": "10804986",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "analysis-gue_prom_core_all-001",
+      "pid": 54092,
+      "proc_start_ticks": "10802215",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "analysis-gue_splice_reconstructed-001",
+      "pid": 54403,
+      "proc_start_ticks": "10808842",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "analysis-gue_tf_0-001",
+      "pid": 54071,
+      "proc_start_ticks": "10799355",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R4-gue_mouse_0-001",
+      "pid": 51322,
+      "proc_start_ticks": "10716013",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R4-gue_prom_300_all-001",
+      "pid": 51266,
+      "proc_start_ticks": "10709181",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R4-gue_prom_core_all-001",
+      "pid": 50964,
+      "proc_start_ticks": "10704730",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R4-gue_splice_reconstructed-001",
+      "pid": 51295,
+      "proc_start_ticks": "10712460",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R4-gue_tf_0-001",
+      "pid": 50779,
+      "proc_start_ticks": "10679774",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R6-gue_mouse_0-001",
+      "pid": 52608,
+      "proc_start_ticks": "10751872",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R6-gue_prom_300_all-001",
+      "pid": 52543,
+      "proc_start_ticks": "10745435",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R6-gue_prom_core_all-001",
+      "pid": 52249,
+      "proc_start_ticks": "10741236",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R6-gue_splice_reconstructed-001",
+      "pid": 52572,
+      "proc_start_ticks": "10748632",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "audit-R6-gue_tf_0-001",
+      "pid": 52223,
+      "proc_start_ticks": "10738074",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "initial-independent-audit-001",
+      "pid": 50439,
+      "proc_start_ticks": "10661149",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "sampled-refits-R4-001",
+      "pid": 51624,
+      "proc_start_ticks": "10720416",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    },
+    {
+      "name": "sampled-refits-R6-001",
+      "pid": 52910,
+      "proc_start_ticks": "10755988",
+      "recorded_state": "EXITED_PASS",
+      "same_process_still_running": false,
+      "exit_code": 0
+    }
+  ],
+  "observer": {
+    "observer_status": "ACTIVE",
+    "reviewer_status": "DRAFT_ONLY",
+    "publisher_status": "BLOCKED",
+    "cadence_seconds": 1200,
+    "pid": 33071,
+    "proc_start_ticks": "8476919",
+    "process_identity_alive": true,
+    "last_successful_tick": "2026-11-18T10:03:00.931925+00:00",
+    "heartbeat_age_seconds": 788.5025181770325,
+    "active_approved_pin": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
+    "observed_prompt_commit": "b2a4d6914349ee4737e7d4d590efc46b3e4f3110",
+    "newer_error_than_success": false,
+    "last_error": {
+      "observed_utc": "2026-11-18T06:22:15.198247+00:00",
+      "error_type": "KeyError",
+      "returncode": null,
+      "status": "ERROR",
+      "science_execution": false
+    },
+    "stop_disable_flags": [],
+    "no_duplicate_launched": true,
+    "refreshed_utc": "2026-11-18T10:16:09.434487+00:00"
+  },
+  "resume_manifest_sha256": "005892178b368260908723a90f4f18586300ce15ad369da59c5c98ab1975b755",
+  "approval_for_next_stage": false,
+  "A09_started": false,
+  "next_state": "WAITING_FOR_APPROVAL: A09",
+  "delivery_gate": "Public raw Git bytes and post-push metadata protection pending; later proof must PASS before final completion is reported",
+  "assembled_utc": "2026-11-18T10:18:39.454548+00:00"
+}

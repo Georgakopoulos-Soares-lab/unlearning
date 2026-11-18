@@ -1,0 +1,31 @@
+{
+  "schema": "pod-a-a08-backup-verification-v1",
+  "status": "PASS",
+  "new_scientific_archives": 3,
+  "all_member_files_verified": 5496,
+  "archive_bytes": 428425234,
+  "force_fresh_cache_and_separate_consumers": true,
+  "exact_safe_member_sets": true,
+  "candidate_probability_metric_paths": 40,
+  "restored_audit_refit_artifacts_checked": 2,
+  "candidate_panel": "R4/R6 x every other-five task x layer16/final_norm x seed42 x both policies; includes binary and three-class splice",
+  "candidate_probability_max_abs": 0.0,
+  "candidate_metric_max_abs": 0.0,
+  "new_contrast_restore": {
+    "status": "PASS",
+    "restored_new_classifier_contrast": "gue_tf_0/layer16/seed42/bothpolicies/all5metrics/all2000draws",
+    "classifier_max_abs": 0.0,
+    "restored_new_LM_contrast": "gue_tf_0/dev/NLL_and_PPL",
+    "LM_point_max_abs": 0.0,
+    "original_producer_paths_used": false,
+    "GPU_work": 0
+  },
+  "revisions": {
+    "R4": "d10c34a50b37bb8f12782b6b2684611953110db1",
+    "R6": "9a398582de6287f28f1bccfdea6fd3753072929b",
+    "analysis": "5da5c27920eb1aeaa7abc0bf4963a5d3e6feb56e"
+  },
+  "GPU_recreation_claim": false,
+  "all_grid_fresh_refit_claim": false,
+  "final_report_metadata_recovery": "Separate post-push full-member readback receipt"
+}

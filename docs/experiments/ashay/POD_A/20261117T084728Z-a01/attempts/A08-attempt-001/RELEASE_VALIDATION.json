@@ -1,0 +1,72 @@
+{
+  "status": "PASS",
+  "scope": "A08 qualified complete released report; full project remains partial",
+  "tables": [
+    {
+      "table": "VERIFIED_METRICS.csv",
+      "rows": 27300,
+      "unique_keys": 27300,
+      "types_provenance_status_counts": "PASS"
+    },
+    {
+      "table": "logical_PAIRED_CONTRASTS",
+      "rows": 45360,
+      "unique_keys": 45360,
+      "types_provenance_status_counts": "PASS"
+    },
+    {
+      "table": "LM_METRICS_VERIFIED.csv",
+      "rows": 70,
+      "unique_keys": 70,
+      "types_provenance_status_counts": "PASS"
+    },
+    {
+      "table": "LM_CONTRASTS_VERIFIED.csv",
+      "rows": 112,
+      "unique_keys": 112,
+      "types_provenance_status_counts": "PASS"
+    },
+    {
+      "table": "CONTROL_METRICS_REUSED.csv",
+      "rows": 210,
+      "unique_keys": 210,
+      "types_provenance_status_counts": "PASS"
+    }
+  ],
+  "complete_classifier_keyspace": 27300,
+  "complete_new_contrast_keys": 5460,
+  "pending_adjacent_classifier_keys": 27300,
+  "pending_adjacent_LM_keys": 70,
+  "paired_point_join_max_abs": 3.552713678800501e-15,
+  "LM_point_join_max_abs": 4.440892098500626e-16,
+  "new_LM_manual_interval_max_abs": 0.0,
+  "figure_count": 31,
+  "plotted_released_records": 30886,
+  "JSON_files_parsed": 35,
+  "JSONL_files_parsed": 4,
+  "CSV_files_parsed": 24,
+  "Python_sources_parsed": 32,
+  "relative_Markdown_links_checked": 24,
+  "public_payload_extensions_and_secret_scan": "PASS",
+  "duplicate_keys_or_dropped_keys": 0,
+  "scientific_jobs": "QUIESCENT",
+  "guard": {
+    "status": "PASS",
+    "worktree": "/workspace/wt-pod-a",
+    "common_git_directory": "/workspace/repos/unlearning-pod-a/.git",
+    "branch": "POD_A",
+    "origin": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+    "head": "676c81ac8f203139d6d99054ba168c9e0b085804",
+    "main_index_and_status_unchanged": true,
+    "other_refs_unchanged": true,
+    "dirty_scope_allowed": true,
+    "scoped_paths": [
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001",
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/LATEST_A08.json",
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/PROGRESS.md",
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/CONTROLLER_LATEST.json"
+    ],
+    "AGENTS_reconciliation": "Current explicit userA08 approval and pinnedstage supersede historicalAGENTS oldbranch/venv/timeledger instructions; historical artifacts/ledgers remainread-only"
+  },
+  "validated_utc": "2026-11-18T10:19:11.756956+00:00"
+}

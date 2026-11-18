@@ -1,6 +1,6 @@
 # A08 progress — RUNNING
 
-Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T09:32:18.175887+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `5a0e9197b258c7c55f341f8eb49dedc9d851549f`. No A09 execution.
+Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T10:16:33.056010+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `676c81ac8f203139d6d99054ba168c9e0b085804`. No A09 execution.
 
 ## Goals
 
@@ -9,14 +9,14 @@ Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T09:32:18.
 | Other-five all-unit audits |780|780|0|
 | Saved probability paths |1560|1560|0|
 | Prospective sampled fresh refits |60|60|0|
-| Nonadjacent R6−R4 classifier rows |5460|0|5460|
+| Nonadjacent R6−R4 classifier rows |5460|5460|0|
 | Nonadjacent LM rows |14|14|0|
 
 Full coverage remains3276heads and3276fixed applications,49primary LMunits and36sharedcontrols. Six tasks,26representations,threeCVseeds,bothpolicies remain frozen. There are1404historical heads,156A06H3heads,780A07producer heads and936external R2/R5 gaps.
 
 ## This attempt
 
-Full predeclared nonadjacent classifier andLM families passed; analysis payload freshly recovered. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
+Verified complete tables,31rendered inspected figures,explicit pending edges; corrected report analysis-counter path without changing scientific receipts; final delivery checks. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
 
 | Candidate/task | Independent audit units passed | Expected |
 |---|---:|---:|
