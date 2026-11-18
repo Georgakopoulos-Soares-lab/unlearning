@@ -1,0 +1,357 @@
+{
+  "schema": "pod-a-a05-r5-coverage-plan-v2",
+  "run_id": "20261117T084728Z-a01",
+  "attempt_id": "A05-attempt-002",
+  "prompt_commit": "c59892c19c8abbdd0ceed61da0876d4195bb1c7b",
+  "A05_prompt_sha256": "793207430b438f305b5b14590cbd65199875512b281da9042181d1b94b2e8685",
+  "status": "FROZEN_PLAN_ONLY_NO_NEW_MEASUREMENTS",
+  "original_protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "original_coverage_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "proposal_sha256": "27cbc1fddf44b0682d1245b722649c21b6f0a9cffbcd3b7be6edd123f25d5d8d",
+  "qualification_overlay_sha256": "7d9782cd2a6e831485cb10eef4861ae2565684704277a6f8b45e3bc3a9984fd5",
+  "scientific_subset_sha256": "d40c44dfc5e5d8e61e1436fc50984486f5619b0958613175a9fde04f793d6ea9",
+  "table_key_design_sha256": "b4412da03cf39e5f742691d86f7f04f7eee56b4ee106e3ca341d4f5da3fad2aa",
+  "tasks": [
+    "emp_H3",
+    "gue_tf_0",
+    "gue_prom_core_all",
+    "gue_prom_300_all",
+    "gue_splice_reconstructed",
+    "gue_mouse_0"
+  ],
+  "representations": [
+    "decoder.layers.0",
+    "decoder.layers.1",
+    "decoder.layers.2",
+    "decoder.layers.3",
+    "decoder.layers.4",
+    "decoder.layers.5",
+    "decoder.layers.6",
+    "decoder.layers.7",
+    "decoder.layers.8",
+    "decoder.layers.9",
+    "decoder.layers.10",
+    "decoder.layers.11",
+    "decoder.layers.12",
+    "decoder.layers.13",
+    "decoder.layers.14",
+    "decoder.layers.15",
+    "decoder.layers.16",
+    "decoder.layers.17",
+    "decoder.layers.18",
+    "decoder.layers.19",
+    "decoder.layers.20",
+    "decoder.layers.21",
+    "decoder.layers.22",
+    "decoder.layers.23",
+    "decoder.layers.24",
+    "decoder.final_norm"
+  ],
+  "seeds": [
+    42,
+    17,
+    1234
+  ],
+  "policies": [
+    "independent_refit",
+    "fixed_original_base"
+  ],
+  "R5_model_identity": {
+    "alias": "R5",
+    "candidate_id": "drive-folder:1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+    "selected_iteration": 2000,
+    "source_folder_id": "1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+    "original_native_file_id": "1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq",
+    "native_sha256": "5fbb3feadcdabc32885a5d0bfa4d9a2127a2ac057271892ccba9aa7e9a54748c",
+    "native_bytes": 15516878934,
+    "native_digest_origin": "fresh manifest/provider-bound digest",
+    "native_historical_equality": false,
+    "model_tensor_content_sha256": "9cab388a46a873902317ff022ab0b9a43d3e42c8753d3842837f74f5dd474259",
+    "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+    "mirror_native_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/__0_0.distcp",
+    "config_sha256": "06dbf45c508649c7d49487d83a44aea4e2b786c0ff95a108ce063183597063a1",
+    "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+    "all_eight_assets": [
+      {
+        "relative_path": "metadata.json",
+        "file_id": "1RWAfliFZQpfDQCph0dcGnQj-x1-BuGRD",
+        "bytes": 119,
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/metadata.json"
+      },
+      {
+        "relative_path": "tokenizer/tokenizer_config.json",
+        "file_id": "1tRL3X9ng-NLjp3qfUS3rL_1_s_GYq2N2",
+        "bytes": 361,
+        "sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/tokenizer/tokenizer_config.json"
+      },
+      {
+        "relative_path": "common.pt",
+        "file_id": "1TqKZ5FFWbmYNRx7hdCDcG7OFxpzVqbRw",
+        "bytes": 1767,
+        "sha256": "fe6dc5bab81be6a7691367b6243d4bb5c4700428ece9e30642dfebc272c0546c",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/common.pt"
+      },
+      {
+        "relative_path": "train_state.pt",
+        "file_id": "1B2SXKNooZMsetz6F2NFcqRRTu7r-U37I",
+        "bytes": 3461,
+        "sha256": "d9dce934deef3a82c38b23970d5f146af5b299494bacaf659f1f1a01b8371333",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/train_state.pt"
+      },
+      {
+        "relative_path": "tokenizer/tokenizer.json",
+        "file_id": "1pTtgmwNR14dv__x_RWb3ZYSaLq930c7J",
+        "bytes": 10649,
+        "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/tokenizer/tokenizer.json"
+      },
+      {
+        "relative_path": "run_config.yaml",
+        "file_id": "1eSFDw5KDD7U1nPuUIkVOXP_E-bduwNoz",
+        "bytes": 25717,
+        "sha256": "06dbf45c508649c7d49487d83a44aea4e2b786c0ff95a108ce063183597063a1",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/run_config.yaml"
+      },
+      {
+        "relative_path": ".metadata",
+        "file_id": "1_aWYKismedEVROTh07emIA206GVsgpoI",
+        "bytes": 188725,
+        "sha256": "ebfd32e8ffeebd04a64a53307284c459a4b12863a9c51319fad0ceec7e17f781",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/.metadata"
+      },
+      {
+        "relative_path": "__0_0.distcp",
+        "file_id": "1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq",
+        "bytes": 15516878934,
+        "sha256": "5fbb3feadcdabc32885a5d0bfa4d9a2127a2ac057271892ccba9aa7e9a54748c",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/__0_0.distcp"
+      }
+    ],
+    "qualification_status": "PASS",
+    "payload_integrity_status": "PASS",
+    "payload_durable_reference_status": "PASS_VERIFIED_IMMUTABLE_PRIVATE_MIRROR",
+    "new_evidence_recovery_status": "PASS",
+    "heldout_forward_rows": 0
+  },
+  "full_universe": {
+    "final_head": 3276,
+    "fixed_base_application": 3276,
+    "primary_LM": 49,
+    "shared_control": 36
+  },
+  "full_ledger_units": 6637,
+  "existing_released": {
+    "final_heads": 2340,
+    "fixed_applications": 2340,
+    "primary_LM": 35,
+    "shared_controls": 36
+  },
+  "R5_proposed": {
+    "final_heads": 468,
+    "fixed_applications": 468,
+    "primary_LM": 7,
+    "extraction_bundles": 13,
+    "real_rows": 22645,
+    "TRAIN_LM_diagnostics": 6,
+    "audit_refits_separate": 36
+  },
+  "conditional_after_R5_verified": {
+    "final_heads": 2808,
+    "fixed_applications": 2808,
+    "primary_LM": 42,
+    "shared_controls": 36
+  },
+  "R2_pending": {
+    "final_heads": 468,
+    "fixed_applications": 468,
+    "primary_LM": 7,
+    "admitted": false
+  },
+  "reuse_edges": [
+    {
+      "candidate": "base",
+      "heads": 468,
+      "applications": 468,
+      "primary_LM": 7,
+      "release": "REUSED_VALIDATED",
+      "artifact_original_protocol_sha256s": [
+        "ee8bcd6d2c6e9c0f60a457f4ed10eff44dbcb23c80167ee2009e752857a355a6"
+      ],
+      "artifact_original_coverage_sha256s": [
+        "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4"
+      ],
+      "artifact_original_source_sha256s": [
+        "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3"
+      ],
+      "source_input_catalog_sha256": "f4a584a900ba56c0f3c1e4a896f9b56afd89ebdccd6d568b38fbb930935f9a73",
+      "old_A09_release_table_index": {
+        "repository": "Georgakopoulos-Soares-lab/unlearning",
+        "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+        "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/TABLE_INDEX.json",
+        "bytes": 12795,
+        "sha256": "2513c298bd5345cb5665bb4d44a18b2f3d5e735a068f57617c4a774d7dc3f676"
+      },
+      "lineage_relabelled": false
+    },
+    {
+      "candidate": "R1",
+      "heads": 468,
+      "applications": 468,
+      "primary_LM": 7,
+      "release": "REUSED_VALIDATED",
+      "artifact_original_protocol_sha256s": [
+        "ee8bcd6d2c6e9c0f60a457f4ed10eff44dbcb23c80167ee2009e752857a355a6"
+      ],
+      "artifact_original_coverage_sha256s": [
+        "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4"
+      ],
+      "artifact_original_source_sha256s": [
+        "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3"
+      ],
+      "source_input_catalog_sha256": "f4a584a900ba56c0f3c1e4a896f9b56afd89ebdccd6d568b38fbb930935f9a73",
+      "old_A09_release_table_index": {
+        "repository": "Georgakopoulos-Soares-lab/unlearning",
+        "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+        "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/TABLE_INDEX.json",
+        "bytes": 12795,
+        "sha256": "2513c298bd5345cb5665bb4d44a18b2f3d5e735a068f57617c4a774d7dc3f676"
+      },
+      "lineage_relabelled": false
+    },
+    {
+      "candidate": "R3",
+      "heads": 468,
+      "applications": 468,
+      "primary_LM": 7,
+      "release": "REUSED_VALIDATED",
+      "artifact_original_protocol_sha256s": [
+        "d6fb5417f2d383a40e0de97f1c12a3ff679c39a9cc0296d4c68e4c9532537462"
+      ],
+      "artifact_original_coverage_sha256s": [
+        "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4"
+      ],
+      "artifact_original_source_sha256s": [
+        "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3"
+      ],
+      "source_input_catalog_sha256": "f4a584a900ba56c0f3c1e4a896f9b56afd89ebdccd6d568b38fbb930935f9a73",
+      "old_A09_release_table_index": {
+        "repository": "Georgakopoulos-Soares-lab/unlearning",
+        "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+        "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/TABLE_INDEX.json",
+        "bytes": 12795,
+        "sha256": "2513c298bd5345cb5665bb4d44a18b2f3d5e735a068f57617c4a774d7dc3f676"
+      },
+      "lineage_relabelled": false
+    },
+    {
+      "candidate": "R4",
+      "heads": 468,
+      "applications": 468,
+      "primary_LM": 7,
+      "release": "REUSED_VALIDATED",
+      "artifact_original_protocol_sha256s": [
+        "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7"
+      ],
+      "artifact_original_coverage_sha256s": [
+        "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4"
+      ],
+      "artifact_original_source_sha256s": [
+        "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3"
+      ],
+      "source_input_catalog_sha256": "f4a584a900ba56c0f3c1e4a896f9b56afd89ebdccd6d568b38fbb930935f9a73",
+      "old_A09_release_table_index": {
+        "repository": "Georgakopoulos-Soares-lab/unlearning",
+        "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+        "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/TABLE_INDEX.json",
+        "bytes": 12795,
+        "sha256": "2513c298bd5345cb5665bb4d44a18b2f3d5e735a068f57617c4a774d7dc3f676"
+      },
+      "lineage_relabelled": false
+    },
+    {
+      "candidate": "R6",
+      "heads": 468,
+      "applications": 468,
+      "primary_LM": 7,
+      "release": "REUSED_VALIDATED",
+      "artifact_original_protocol_sha256s": [
+        "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7"
+      ],
+      "artifact_original_coverage_sha256s": [
+        "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4"
+      ],
+      "artifact_original_source_sha256s": [
+        "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3"
+      ],
+      "source_input_catalog_sha256": "f4a584a900ba56c0f3c1e4a896f9b56afd89ebdccd6d568b38fbb930935f9a73",
+      "old_A09_release_table_index": {
+        "repository": "Georgakopoulos-Soares-lab/unlearning",
+        "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+        "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/TABLE_INDEX.json",
+        "bytes": 12795,
+        "sha256": "2513c298bd5345cb5665bb4d44a18b2f3d5e735a068f57617c4a774d7dc3f676"
+      },
+      "lineage_relabelled": false
+    }
+  ],
+  "expected_semantic_unit_ids_sha256": "084e395483b28bf1e1cd8af7d6ec6e5c5a139388a487b4b5012558a155be66fe",
+  "new_production_candidate_only": "R5",
+  "ownership": {
+    "A06": "R5 H3 78 heads/apps, all-unit audit, six full-CV audit refits, LM/fresh private recovery; technical PASS, then other-five extraction",
+    "A07": "R5 other-five 390 heads/apps only; complete_unverified producer seals",
+    "A08": "All new units independent audit; reuse sufficient H3 checks; 30 full-CV other-five audit refits; eligible new contrasts",
+    "A09": "New versioned report, gallery, recovery and guarded delivery; old A09 immutable"
+  },
+  "other_five_gate_required": [
+    "direct_A06_approval",
+    "production_adapter_qualified",
+    "H3_features_sealed",
+    "H3_78_heads_complete",
+    "H3_78_fixed_applications_complete",
+    "H3_all_unit_independent_audit_PASS",
+    "H3_six_refit_checks_PASS",
+    "H3_LM_PASS",
+    "H3_private_fresh_recovery_PASS"
+  ],
+  "gate_based_on_performance_direction": false,
+  "separate_direct_future_stage_approvals_required": true,
+  "stale_A06_A09_prompts_executable": false,
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A05-attempt-002 R5 coverage amendment and R3 comparison eligibility metadata only; stop before A06",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
+  },
+  "observer": "STOPPED",
+  "new_science_in_A05": 0
+}

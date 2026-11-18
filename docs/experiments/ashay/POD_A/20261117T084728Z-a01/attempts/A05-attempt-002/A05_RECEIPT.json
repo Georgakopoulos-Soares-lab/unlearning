@@ -1,0 +1,116 @@
+{
+  "schema": "pod-a-a05-coverage-amendment-receipt-v2",
+  "status": "PLAN_VALIDATED_PENDING_PROTECTION",
+  "run_id": "20261117T084728Z-a01",
+  "attempt_id": "A05-attempt-002",
+  "prompt_commit": "c59892c19c8abbdd0ceed61da0876d4195bb1c7b",
+  "A05_prompt_sha256": "793207430b438f305b5b14590cbd65199875512b281da9042181d1b94b2e8685",
+  "research_input_commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+  "A04_input_qualification_commit": "906e808af4b61eeb7f8b229fea30e735f1cf818f",
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "original_protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "original_coverage_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "qualification_overlay_sha256": "7d9782cd2a6e831485cb10eef4861ae2565684704277a6f8b45e3bc3a9984fd5",
+  "effective_inputs_sha256": "6730863826bd28410a1a2133ab30dd7ccf33ad12e57d85d44e364bf539574dcb",
+  "prior_A09_report_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd",
+  "prior_A09_final_metadata_commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e",
+  "existing": {
+    "heads": 2340,
+    "applications": 2340,
+    "primary_LM": 35,
+    "controls": 36
+  },
+  "proposed_R5": {
+    "heads": 468,
+    "applications": 468,
+    "primary_LM": 7,
+    "bundles": 13,
+    "real_rows": 22645,
+    "audit_refits_separate": 36
+  },
+  "conditional_after_R5": {
+    "heads": 2808,
+    "applications": 2808,
+    "primary_LM": 42,
+    "controls": 36
+  },
+  "full_universe": {
+    "heads": 3276,
+    "applications": 3276,
+    "primary_LM": 49,
+    "controls": 36,
+    "ledger": 6637
+  },
+  "R2_pending": {
+    "heads": 468,
+    "applications": 468,
+    "primary_LM": 7
+  },
+  "R3_saved_output_eligibility": {
+    "classifier_policy_domains": 1092,
+    "LM_task_splits": 7,
+    "status": "ELIGIBLE_FOR_SAVED_OUTPUT_COMPARISON_PENDING_NEW_A08_AUDIT",
+    "whole_heldout_runtime_numerical_equality_claimed": false
+  },
+  "new_classifier_marginal_keys": 5460,
+  "new_classifier_paired_keys": 28140,
+  "new_LM_marginal_keys": 14,
+  "new_LM_paired_keys": 70,
+  "metadata_validation_checks": 79,
+  "all_package_hashes_PASS": true,
+  "legacy_format_only_diagnostic": "FAIL: A07 missing Authority and prerequisites\n",
+  "new_models_forwards_fits_predictions_effects_draws": 0,
+  "no_new_heldout_access": true,
+  "independent_old_audits_repeated": false,
+  "full_project_and_A04": "PARTIAL_R2_UNRESOLVED",
+  "full_installed_GPU_runtime_recreation": "UNTESTED",
+  "backup": null,
+  "jobs_and_services": {
+    "status": "PASS",
+    "observer_status": "STOPPED",
+    "reviewer_scheduler_status": "STOPPED_NOT_RUNNING",
+    "publisher_status": "STOPPED_NOT_RUNNING_PREVIOUSLY_BLOCKED",
+    "prior_observer_pid": 33071,
+    "prior_start_ticks": "8476919",
+    "prior_identity_alive": false,
+    "replacement_or_scientific_workers": [],
+    "locks_available": [
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/service.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/observer.lock"
+    ],
+    "observed_utc": "2026-11-18T19:11:32.047528+00:00",
+    "observer_restarted": false,
+    "GPU_work": 0,
+    "pod_left_running": true
+  },
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A05-attempt-002 R5 coverage amendment and R3 comparison eligibility metadata only; stop before A06",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
+  },
+  "A06_started": false,
+  "next_state": "Continue A05 metadata protection/delivery only",
+  "observed_utc": "2026-11-18T19:11:34.769019+00:00"
+}

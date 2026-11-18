@@ -1,0 +1,147 @@
+{
+  "schema": "pod-a-a05-table-key-design-v1",
+  "tasks": [
+    "emp_H3",
+    "gue_tf_0",
+    "gue_prom_core_all",
+    "gue_prom_300_all",
+    "gue_splice_reconstructed",
+    "gue_mouse_0"
+  ],
+  "representations": [
+    "decoder.layers.0",
+    "decoder.layers.1",
+    "decoder.layers.2",
+    "decoder.layers.3",
+    "decoder.layers.4",
+    "decoder.layers.5",
+    "decoder.layers.6",
+    "decoder.layers.7",
+    "decoder.layers.8",
+    "decoder.layers.9",
+    "decoder.layers.10",
+    "decoder.layers.11",
+    "decoder.layers.12",
+    "decoder.layers.13",
+    "decoder.layers.14",
+    "decoder.layers.15",
+    "decoder.layers.16",
+    "decoder.layers.17",
+    "decoder.layers.18",
+    "decoder.layers.19",
+    "decoder.layers.20",
+    "decoder.layers.21",
+    "decoder.layers.22",
+    "decoder.layers.23",
+    "decoder.layers.24",
+    "decoder.final_norm"
+  ],
+  "seeds": [
+    42,
+    17,
+    1234
+  ],
+  "policies": [
+    "independent_refit",
+    "fixed_original_base"
+  ],
+  "metrics": [
+    "auroc",
+    "average_precision",
+    "accuracy",
+    "balanced_accuracy",
+    "classification_cross_entropy"
+  ],
+  "anchors": [
+    "decoder.layers.16",
+    "decoder.final_norm"
+  ],
+  "reporting_splits": {
+    "emp_H3": [
+      "dev",
+      "test_exploratory"
+    ],
+    "gue_tf_0": [
+      "dev"
+    ],
+    "gue_prom_core_all": [
+      "dev"
+    ],
+    "gue_prom_300_all": [
+      "dev"
+    ],
+    "gue_splice_reconstructed": [
+      "dev"
+    ],
+    "gue_mouse_0": [
+      "dev"
+    ]
+  },
+  "endpoint_content_ids": {
+    "base": "f801636a12236e5a373cd880fe7c6170abbc47d5e1f065830c597e53bb5fe456",
+    "R1": "d17ce6afbdaba64b41152700c95defb483f68953dcc6d60323e71b73c69a9d52",
+    "R4": "35f9135d1ec2828dda03be33c2b7922a075b3bab93f9e25a44b8b6892ddfbd66",
+    "R6": "6d5aa972c5bd761be97994b6bfc60683ae742728a0b10d264260df9c78023ac8",
+    "R3": "756654479ef80ada70808224c3ee0da605b5bd2dbf434837dd38353012c0c8be",
+    "R5": "9cab388a46a873902317ff022ab0b9a43d3e42c8753d3842837f74f5dd474259"
+  },
+  "control_heads": {
+    "composition|emp_H3|42": "df47dcce012b3e45548778963a5e94c999f2c709e7facf449702c24259a03af6",
+    "composition|emp_H3|17": "ed434cc2ea303ca9575b5f5cc6e31acbe2b887cc6b6beae48de3b0fd0ae45585",
+    "composition|emp_H3|1234": "df47dcce012b3e45548778963a5e94c999f2c709e7facf449702c24259a03af6",
+    "kmer4|emp_H3|42": "dc20b4365bc95853ec9b7a457f7432bdc21f646798b90805b1720978ef2faafb",
+    "kmer4|emp_H3|17": "dc20b4365bc95853ec9b7a457f7432bdc21f646798b90805b1720978ef2faafb",
+    "kmer4|emp_H3|1234": "dc20b4365bc95853ec9b7a457f7432bdc21f646798b90805b1720978ef2faafb",
+    "composition|gue_tf_0|42": "515081e1a631d21fa2048b231ec912d78f7bc1a6406702e4ddd7abcf06dfe8d1",
+    "composition|gue_tf_0|17": "820e93deb42bc786d06ae3b719eef39ca2d4a0685504fb36e9f07fe3f9f83ed8",
+    "composition|gue_tf_0|1234": "515081e1a631d21fa2048b231ec912d78f7bc1a6406702e4ddd7abcf06dfe8d1",
+    "kmer4|gue_tf_0|42": "5e8322ab0e07c6f2b13f4b77eb2ba3aebcb892a7118143ba35a68bfdefa2d423",
+    "kmer4|gue_tf_0|17": "5e8322ab0e07c6f2b13f4b77eb2ba3aebcb892a7118143ba35a68bfdefa2d423",
+    "kmer4|gue_tf_0|1234": "5e8322ab0e07c6f2b13f4b77eb2ba3aebcb892a7118143ba35a68bfdefa2d423",
+    "composition|gue_prom_core_all|42": "e893beea9713ead26cd36de23fb7cf9e48aa2abff35b2d21653b799060fd11c2",
+    "composition|gue_prom_core_all|17": "e8fab83ed9ccecd9c7f429637a66d7f298a7696506f6406bd355e8cc93a24b67",
+    "composition|gue_prom_core_all|1234": "e893beea9713ead26cd36de23fb7cf9e48aa2abff35b2d21653b799060fd11c2",
+    "kmer4|gue_prom_core_all|42": "9fddda35f757edba1008eb0741da4bb21b694a3c11d0b4793a1ad85aa8d81074",
+    "kmer4|gue_prom_core_all|17": "9fddda35f757edba1008eb0741da4bb21b694a3c11d0b4793a1ad85aa8d81074",
+    "kmer4|gue_prom_core_all|1234": "9fddda35f757edba1008eb0741da4bb21b694a3c11d0b4793a1ad85aa8d81074",
+    "composition|gue_prom_300_all|42": "fe17ed9bdaf509ec7284627941fe0f7cf6ae02a96c8c1b81fcf583f4647c6a92",
+    "composition|gue_prom_300_all|17": "fe17ed9bdaf509ec7284627941fe0f7cf6ae02a96c8c1b81fcf583f4647c6a92",
+    "composition|gue_prom_300_all|1234": "fe17ed9bdaf509ec7284627941fe0f7cf6ae02a96c8c1b81fcf583f4647c6a92",
+    "kmer4|gue_prom_300_all|42": "96c8cd08d5a053bba730ba1c4efd12522c92bd5a70552194d11264932cfcb4ab",
+    "kmer4|gue_prom_300_all|17": "96c8cd08d5a053bba730ba1c4efd12522c92bd5a70552194d11264932cfcb4ab",
+    "kmer4|gue_prom_300_all|1234": "96c8cd08d5a053bba730ba1c4efd12522c92bd5a70552194d11264932cfcb4ab",
+    "composition|gue_splice_reconstructed|42": "6988465f98b012bfa6fc54674ecbea526213386fbf4226a286a79c3f5e72a132",
+    "composition|gue_splice_reconstructed|17": "6988465f98b012bfa6fc54674ecbea526213386fbf4226a286a79c3f5e72a132",
+    "composition|gue_splice_reconstructed|1234": "6988465f98b012bfa6fc54674ecbea526213386fbf4226a286a79c3f5e72a132",
+    "kmer4|gue_splice_reconstructed|42": "5d164378e615099ebb3dbf2ab130a14b9ff0e09edc85fe78b3474053468d3f7b",
+    "kmer4|gue_splice_reconstructed|17": "5d164378e615099ebb3dbf2ab130a14b9ff0e09edc85fe78b3474053468d3f7b",
+    "kmer4|gue_splice_reconstructed|1234": "5d164378e615099ebb3dbf2ab130a14b9ff0e09edc85fe78b3474053468d3f7b",
+    "composition|gue_mouse_0|42": "d12311a38e11f429c38b5c04c1591994f94558715f7289306b6ff170807589b5",
+    "composition|gue_mouse_0|17": "8ef66bc525ac6f6ec1ec0a69b0dd12bcf9ceeb964de149df8104602b810bc173",
+    "composition|gue_mouse_0|1234": "e084e7f2b75348881113de4aea95e2b5c33d060666a743d9cb347a5274232ec4",
+    "kmer4|gue_mouse_0|42": "ea64837763b04efd66d212baab54d632b4ab63583d6c4a30f9669c047b891677",
+    "kmer4|gue_mouse_0|17": "ea64837763b04efd66d212baab54d632b4ab63583d6c4a30f9669c047b891677",
+    "kmer4|gue_mouse_0|1234": "ea64837763b04efd66d212baab54d632b4ab63583d6c4a30f9669c047b891677"
+  },
+  "original_protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "new_classifier_families": [
+    "R5_minus_base",
+    "R5_minus_R1",
+    "R4_minus_R3",
+    "R5_minus_R4",
+    "R6_minus_R5",
+    "R5_minus_control_composition",
+    "R5_minus_control_kmer4"
+  ],
+  "blocked_families": [
+    "R2_minus_R1",
+    "R3_minus_R2"
+  ],
+  "retained_nonadjacent": [
+    "R3_minus_R1",
+    "R6_minus_R4"
+  ],
+  "R3_conditional_eligibility": "ELIGIBLE_FOR_SAVED_OUTPUT_COMPARISON",
+  "source_metric_name": "average_precision; AP is display label only",
+  "old_R3_empty_content_ids": "Preserve old field; content binding is overlay, never edit source rows"
+}

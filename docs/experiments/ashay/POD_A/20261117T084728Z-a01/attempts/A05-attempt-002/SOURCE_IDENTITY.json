@@ -1,0 +1,83 @@
+{
+  "schema": "pod-a-a05-planning-source-v1",
+  "scope": "Metadata-only planning and recovery; no scientific adapter qualified by this code",
+  "files": [
+    {
+      "path": "code/closeout5.py",
+      "bytes": 12240,
+      "sha256": "6410558bbd0e8f32ec0babbd96e33aafa5322aa4e866c2ea385e49a708661c27"
+    },
+    {
+      "path": "code/common5.py",
+      "bytes": 5191,
+      "sha256": "5af2aca1c039773bb2aab5891fa58ea2628bf0ac379ecfe09c5e55efed689aa7"
+    },
+    {
+      "path": "code/delivery5.py",
+      "bytes": 3374,
+      "sha256": "f76454de2dc41e1835325e9d827d61d1147827070334257e8db349a2e0b646f4"
+    },
+    {
+      "path": "code/dependencies5.py",
+      "bytes": 8730,
+      "sha256": "a32113eef2a0bf22b4280ff4189097c8484962dd293bb0ed17fbce5a3eaa897c"
+    },
+    {
+      "path": "code/keys5.py",
+      "bytes": 4707,
+      "sha256": "c73c4ec46c7e48bef24068b82c35257f789c769e3ff88f37ad677fda9d5f6706"
+    },
+    {
+      "path": "code/metadata_contract5.py",
+      "bytes": 5044,
+      "sha256": "88e1a866a7354004b76c42a772885895c6d826792dea482220316a62343b3235"
+    },
+    {
+      "path": "code/plan5.py",
+      "bytes": 40998,
+      "sha256": "902486a28230201e337d57c6cec14081944b800c8ad8ecb4a646e3cdda176aa4"
+    },
+    {
+      "path": "code/preflight5.py",
+      "bytes": 13016,
+      "sha256": "167e38e2bf27e26c7b56a243af65d2a68a41174ed9a860e4ac869eda8ffd46f3"
+    },
+    {
+      "path": "code/protect5.py",
+      "bytes": 9245,
+      "sha256": "85d087d8623ee5bc940de7ac7cdac239933483bdcf76e4f63c71bd015d0dbdcc"
+    },
+    {
+      "path": "code/reconcile5.py",
+      "bytes": 12898,
+      "sha256": "a93762044ed0e234371c3631abab88f9a42812a191d0cc751e36a7583f5595f1"
+    },
+    {
+      "path": "code/refine5.py",
+      "bytes": 2435,
+      "sha256": "9b3dea1568b5f693a0ee3401092bb68ebfad531a51a07338c3acef3071c81be8"
+    },
+    {
+      "path": "code/restore5.py",
+      "bytes": 6817,
+      "sha256": "74c89534e9ec6ffc7559f8e216df4ca80f0f92105176718c05c1f02e10d6ff73"
+    },
+    {
+      "path": "code/validate5.py",
+      "bytes": 9662,
+      "sha256": "186a158bbb595e54b1e767c3d3ac7c5ff0c5d8dccf938615c59f66c1a46a8c9d"
+    }
+  ],
+  "runtime": {
+    "metadata_interpreter": "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+    "tools_interpreter": "/workspace/venvs/pod-a-tools/bin/python"
+  },
+  "forbidden_scientific_imports": [
+    "torch",
+    "sklearn",
+    "joblib",
+    "bionemo",
+    "megatron"
+  ],
+  "original_scientific_source_unchanged": true
+}

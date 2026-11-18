@@ -1,105 +1,68 @@
 {
-  "schema": "pod-a-current-terminal-state-v3",
-  "stage": "A04",
-  "attempt_id": "A04-attempt-004",
-  "status": "PARTIAL_FULL_A04_COMPLETE_R3_R5_SCOPE",
-  "qualified_scope": {
-    "status": "PASS_R3_R5_QUALIFICATION",
-    "full_A04_status": "PARTIAL",
-    "full_project_status": "PARTIAL",
-    "new_variants": 6,
-    "new_comparison_rows": 189,
-    "preserved_variants": 12,
-    "preserved_comparison_rows": 378,
-    "combined_passed_variants": 18,
-    "combined_passed_comparison_rows": 567,
-    "seven_slot_plan_variants": 21,
-    "seven_slot_plan_rows": 621,
-    "R2_pending_variants": 3,
-    "R2_pending_rows": 54,
-    "R3_rows": 135,
-    "R3_historical_bridge_rows": 81,
-    "R5_rows": 54,
-    "feature_coordinates_compared": 4193280,
-    "LM_values_compared": 84,
-    "maximum_absolute_residuals": {
-      "R3": 1.52587890625e-05,
-      "R5": 6.103515625e-05
-    },
-    "all_primary_and_reverse_violations": 0,
-    "atol": 0.0001,
-    "rtol": 1e-05,
-    "all_comparison_rows_pass": true,
-    "new_production_scores": 0,
-    "new_probe_fits": 0,
-    "heldout_forwards": 0,
-    "evidence_recovery_status": "PASS",
-    "native_payload_recovery_status": "PASS_VERIFIED_IMMUTABLE_MIRRORS",
-    "accepted_R3_R5_scope_status": "COMPLETE"
-  },
-  "current_owned_job_disposition": {
-    "status": "PASS",
-    "observed_utc": "2026-11-18T17:41:33.346484+00:00",
-    "scientific_and_acquisition_and_evidence_jobs": "QUIESCENT",
-    "recorded_jobs": [
-      {
-        "record": "TRANSFER_JOB.json",
-        "pid": 73136,
-        "start_ticks": "13551050",
-        "identity_alive": false
-      },
-      {
-        "record": "QUALIFICATION_CONTROLLER_JOB.json",
-        "pid": 74349,
-        "start_ticks": "13579135",
-        "identity_alive": false
-      },
-      {
-        "record": "ACTIVE_GPU_JOB.json",
-        "pid": 77425,
-        "start_ticks": "13616076",
-        "identity_alive": false
-      },
-      {
-        "record": "EVIDENCE_RECOVERY_JOB.json",
-        "pid": 80983,
-        "start_ticks": "13737394",
-        "identity_alive": false
-      }
-    ],
-    "unregistered_owned_workers": [],
-    "locks_verified_available": [
-      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
-      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/qualification-controller.lock",
-      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/report.lock",
-      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/publish.lock",
-      "/workspace/agent-handoff/POD_A/review-loop/service.lock",
-      "/workspace/agent-handoff/POD_A/review-loop/observer.lock"
-    ],
-    "administrative_services": {
-      "observer_status": "STOPPED",
-      "prior_pid": 33071,
-      "prior_start_ticks": "8476919",
-      "identity_alive": false,
-      "reviewer_status": "DRAFT_ONLY_NOT_RUNNING",
-      "publisher_status": "BLOCKED_NOT_RUNNING",
-      "restarted": false,
-      "observed_utc": "2026-11-18T17:41:33.348800+00:00"
-    },
-    "current_finite_administrative_process": {
-      "pid": 81210,
-      "start_ticks": "13757340"
-    },
-    "pod_left_running": true
-  },
-  "new_qualification_commit": "906e808af4b61eeb7f8b229fea30e735f1cf818f",
-  "evidence_backup_revision": "5c4fd12f1df0fc96a056e2bad8d83b34822a6bff",
-  "evidence_backup_sha256": "1286c91b9e941b395f9a1c5d189e733c755e8407dd0da19e448602a9d4ece565",
-  "A05_proposal_sha256": "27cbc1fddf44b0682d1245b722649c21b6f0a9cffbcd3b7be6edd123f25d5d8d",
-  "A05_proposal_protected": true,
-  "A05_approved": false,
+  "schema": "pod-a-current-handoff-v4",
+  "status": "PLAN_VALIDATED_PENDING_PROTECTION",
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "current_stage": "A05",
+  "attempt_id": "A05-attempt-002",
+  "A06_started": false,
   "automatic_resume": false,
-  "new_production_scores": 0,
-  "pod_left_running": true,
-  "future_delivery_binding": "Separate post-push/private final receipt names current metadata commit and final service/job state"
+  "completed_exclusions": [
+    "A01-A09 prior attempts",
+    "A04 R3/R5 qualification",
+    "A05 checksum/identity/R3 metadata reconciliation",
+    "A05 frozen workload/key enumeration/audit panels"
+  ],
+  "remaining_A05": [
+    "planning-only backup fresh recovery",
+    "final Git exact byte/remote proof"
+  ],
+  "future_stage_prerequisites": [
+    "Revised validated A06 prompt binds new coverage/model/source/environment and new attempt roots",
+    "Fresh direct A06 approval",
+    "TRAIN-only production-adapter qualification before any production"
+  ],
+  "input_recovery_graph": "RECOVERY_DEPENDENCY_GRAPH.json",
+  "backup": null,
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A05-attempt-002 R5 coverage amendment and R3 comparison eligibility metadata only; stop before A06",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
+  },
+  "observer": "STOPPED",
+  "next_state": "CONTINUE_A05_ONLY",
+  "run_id": "20261117T084728Z-a01",
+  "owner": "POD_A",
+  "current_attempt": "attempts/A05-attempt-002",
+  "current_progress": "attempts/A05-attempt-002/PROGRESS.md",
+  "current_handoff": "attempts/A05-attempt-002/SESSION_HANDOFF.md",
+  "previous_A09": {
+    "status": "COMPLETED_PRIOR_AVAILABLE_SCOPE",
+    "report": "attempts/A09-attempt-001/RESULTS.md",
+    "gallery": "attempts/A09-attempt-001/FIGURE_GALLERY.md",
+    "report_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd"
+  },
+  "new_A05_scientific_measurements": 0,
+  "observed_utc": "2026-11-18T19:11:46.142366+00:00",
+  "entrypoint_kind": "TERMINAL_STATE_RECEIPT.json"
 }

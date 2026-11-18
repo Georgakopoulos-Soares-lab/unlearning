@@ -1,0 +1,69 @@
+{
+  "status": "PASS_REVIEW_WITH_REQUIRED_FUTURE_ADAPTATIONS",
+  "interfaces": [
+    {
+      "stage": "A06",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-001/code/run_extraction.py",
+      "sha256": "405063534ae0d8d7e02837f0d55777d90ac8b674881b9a637d66796ab04251d5",
+      "parser_arguments_as_text": [
+        "p.add_argument('--control',required=True)",
+        "p.add_argument('--prompt-commit',required=True)",
+        "p.add_argument('--coverage-sha256',required=True)",
+        "p.add_argument('--candidate',required=True,choices=['R4','R6'])",
+        "p.add_argument('--mode',required=True,choices=['parity','extraction'])",
+        "p.add_argument('--group',required=True,choices=['H3','other_five'])",
+        "p.add_argument('--output-root',required=True)",
+        "p.add_argument('--run-label',required=True)"
+      ],
+      "inspection": "AST/TEXT_ONLY_NOT_IMPORTED_OR_EXECUTED",
+      "current_R5_executable": false
+    },
+    {
+      "stage": "A06",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-001/code/fit_h3.py",
+      "sha256": "1878c07fc64e8182cb26a68084669a220b8f4ec2d5826a3812353c6e6ed33093",
+      "parser_arguments_as_text": [
+        "p.add_argument('--candidate',choices=['R4','R6'],required=True)"
+      ],
+      "inspection": "AST/TEXT_ONLY_NOT_IMPORTED_OR_EXECUTED",
+      "current_R5_executable": false
+    },
+    {
+      "stage": "A06",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-001/code/audit_h3.py",
+      "sha256": "eeccf0b7f3161e6e5518029aeccff916df804e4e0fcb1923b3d79d5cce48e748",
+      "parser_arguments_as_text": [
+        "p.add_argument('--candidate',choices=['R4','R6'],required=True)"
+      ],
+      "inspection": "AST/TEXT_ONLY_NOT_IMPORTED_OR_EXECUTED",
+      "current_R5_executable": false
+    },
+    {
+      "stage": "A07",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001/code/fit_other_five.py",
+      "sha256": "ba0bcccd51b9e9d366dc6117babed6c34cd5605ae4b800ed2de6415f10919dc0",
+      "parser_arguments_as_text": [
+        "p.add_argument('--stage',choices=['A07'],required=True)",
+        "p.add_argument('--candidate',choices=['R4','R6'])",
+        "p.add_argument('--task',choices=TASKS)",
+        "p.add_argument('--unit',action='append')"
+      ],
+      "inspection": "AST/TEXT_ONLY_NOT_IMPORTED_OR_EXECUTED",
+      "current_R5_executable": false
+    }
+  ],
+  "hardcoded_roots": [
+    "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001",
+    "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001",
+    "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-001",
+    "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001"
+  ],
+  "hardcoded_candidates": [
+    "R4",
+    "R6"
+  ],
+  "old_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "new_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "scientific_adapter_qualified_for_R5": false,
+  "reason": "Old extraction parser restricts R4/R6 and A06-attempt-001, old plan/prompt roots. Fit/audit modules hardcode prior controls; importing fit/audit brings scientific packages. Parsing hypothetical commands does not qualify adapter. Future approved A06 must parameterize owned new roots/R5 identity and validate TRAIN parity before production."
+}

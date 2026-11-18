@@ -1,0 +1,339 @@
+{
+  "status": "PASS",
+  "test_count": 79,
+  "cases": [
+    {
+      "case": "direct approval exact new attempt/prompt bytes",
+      "status": "PASS"
+    },
+    {
+      "case": "replayed approval prompt_commit",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "replayed approval attempt_id",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "replayed approval A05_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "exact complete identity accepted without release claim",
+      "status": "PASS"
+    },
+    {
+      "case": "wrong/incomplete model_content_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete cohort_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete ordered_identity_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete classes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete policy",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete draw_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete manifest_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete coverage_plan_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete producer_status",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong/incomplete candidate",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "extra task",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "extra seed",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "changed policy",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "historical/unsafe write rejected docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/result.json",
+      "status": "PASS"
+    },
+    {
+      "case": "historical/unsafe write rejected docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A05-attempt-002/../A03-attempt-001/x",
+      "status": "PASS"
+    },
+    {
+      "case": "historical/unsafe write rejected /workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A05-attempt-002/x",
+      "status": "PASS"
+    },
+    {
+      "case": "historical/unsafe write rejected docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A05-attempt-002//x",
+      "status": "PASS"
+    },
+    {
+      "case": "complete technical gate accepted",
+      "status": "PASS"
+    },
+    {
+      "case": "other-five gate missing direct_A06_approval",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing production_adapter_qualified",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing H3_features_sealed",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing H3_78_heads_complete",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing H3_78_fixed_applications_complete",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing H3_all_unit_independent_audit_PASS",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing H3_six_refit_checks_PASS",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing H3_LM_PASS",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-five gate missing H3_private_fresh_recovery_PASS",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "R3 all domain evidence eligible",
+      "status": "PASS"
+    },
+    {
+      "case": "R3 TRAIN bridge alone insufficient",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency native_config_tokenizer_identity",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency historical_source_runtime_hook_semantics",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency TRAIN_bridge",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency ordered_cohort_classes",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency saved_fold",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency original_base_head",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency saved_draws",
+      "status": "PASS"
+    },
+    {
+      "case": "failed R3 dependency historical_independent_release",
+      "status": "PASS"
+    },
+    {
+      "case": "forbidden probability member untouched",
+      "status": "PASS"
+    },
+    {
+      "case": "explicit scientific-array read blocked",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "exact metadata pair passes",
+      "status": "PASS"
+    },
+    {
+      "case": "metadata mismatch ids",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "metadata mismatch labels",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "metadata mismatch groups",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "metadata mismatch sequence_sha256",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "metadata mismatch classes",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "silent row intersection",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "stale seal wrong digest",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "valid metadata seal",
+      "status": "PASS"
+    },
+    {
+      "case": "corruption/stale size",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "full exact6637 coverage set",
+      "status": "PASS"
+    },
+    {
+      "case": "R2 missing943",
+      "status": "PASS"
+    },
+    {
+      "case": "R5 proposed943",
+      "status": "PASS"
+    },
+    {
+      "case": "old4751 preserved",
+      "status": "PASS"
+    },
+    {
+      "case": "duplicate unit",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "exact33684 derived table keys",
+      "status": "PASS"
+    },
+    {
+      "case": "deterministic canonical compressed table",
+      "status": "PASS"
+    },
+    {
+      "case": "expected table byte sha",
+      "status": "PASS"
+    },
+    {
+      "case": "exact5460 marginal rows",
+      "status": "PASS"
+    },
+    {
+      "case": "exact28140 paired classifier rows",
+      "status": "PASS"
+    },
+    {
+      "case": "LM14 points70pairs no layerseed",
+      "status": "PASS"
+    },
+    {
+      "case": "13 bundles22645rows89chunks2833forwards19fillers",
+      "status": "PASS"
+    },
+    {
+      "case": "468 frozen heads7020 initialsolvercalls",
+      "status": "PASS"
+    },
+    {
+      "case": "predeclared36 fullCV audits540initialcalls",
+      "status": "PASS"
+    },
+    {
+      "case": "no old scientific import",
+      "status": "PASS"
+    },
+    {
+      "case": "source metric AP canonical average_precision",
+      "status": "PASS"
+    },
+    {
+      "case": "scientific continuity independent subset reconstruction",
+      "status": "PASS"
+    },
+    {
+      "case": "original hashes unchanged",
+      "status": "PASS"
+    },
+    {
+      "case": "safe exact archive accepted",
+      "status": "PASS"
+    },
+    {
+      "case": "archive traversal",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "archive symlink",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "archive duplicate",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "archive missing member",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "archive corrupt member",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "archive extra member",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "scope": "Synthetic/metadata identity, authority, safety gates, deterministic finite key enumeration and scientific continuity; zero scientific computation",
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "new_scientific_measurements": 0,
+  "wall_seconds": 2.116725183004746,
+  "legacy_validator": {
+    "status": "LEGACY_HEADING_OR_FORMAT_LIMITATION",
+    "exit_code": 1,
+    "argv": [
+      "/workspace/venvs/pod-a-tools/bin/python",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A05-attempt-002/package/validate_package.py",
+      "--strict-file-set"
+    ],
+    "exact_diagnostic": "FAIL: A07 missing Authority and prerequisites\n",
+    "all_34_actual_package_hashes_pass": true,
+    "package_bytes_unchanged": true,
+    "not_a_checksum_waiver": true
+  }
+}

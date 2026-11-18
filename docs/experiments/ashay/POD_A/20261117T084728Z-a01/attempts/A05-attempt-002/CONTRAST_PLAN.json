@@ -1,0 +1,100 @@
+{
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "families": [
+    {
+      "family": "R5_minus_base",
+      "target": "R5",
+      "reference": "base",
+      "adjacent": false,
+      "status": "WAITING_R5_PRODUCTION_AND_AUDIT",
+      "classifier_rows": 5460,
+      "LM_rows": 14,
+      "target_reference_policy_pairing": "Same policy for learned endpoints; unchanged base-own equivalence reused from A03/A08 receipts",
+      "reference_content_id": "f801636a12236e5a373cd880fe7c6170abbc47d5e1f065830c597e53bb5fe456"
+    },
+    {
+      "family": "R5_minus_R1",
+      "target": "R5",
+      "reference": "R1",
+      "adjacent": false,
+      "status": "WAITING_R5_PRODUCTION_AND_AUDIT",
+      "classifier_rows": 5460,
+      "LM_rows": 14,
+      "target_reference_policy_pairing": "Same policy for learned endpoints; unchanged base-own equivalence reused from A03/A08 receipts",
+      "reference_content_id": "d17ce6afbdaba64b41152700c95defb483f68953dcc6d60323e71b73c69a9d52"
+    },
+    {
+      "family": "R4_minus_R3",
+      "target": "R4",
+      "reference": "R3",
+      "adjacent": true,
+      "status": "ELIGIBLE_SAVED_OUTPUTS_PENDING_A08_AUDIT",
+      "classifier_rows": 5460,
+      "LM_rows": 14,
+      "target_reference_policy_pairing": "Same policy for learned endpoints; unchanged base-own equivalence reused from A03/A08 receipts",
+      "reference_content_id": "756654479ef80ada70808224c3ee0da605b5bd2dbf434837dd38353012c0c8be"
+    },
+    {
+      "family": "R5_minus_R4",
+      "target": "R5",
+      "reference": "R4",
+      "adjacent": true,
+      "status": "WAITING_R5_PRODUCTION_AND_AUDIT",
+      "classifier_rows": 5460,
+      "LM_rows": 14,
+      "target_reference_policy_pairing": "Same policy for learned endpoints; unchanged base-own equivalence reused from A03/A08 receipts",
+      "reference_content_id": "35f9135d1ec2828dda03be33c2b7922a075b3bab93f9e25a44b8b6892ddfbd66"
+    },
+    {
+      "family": "R6_minus_R5",
+      "target": "R6",
+      "reference": "R5",
+      "adjacent": true,
+      "status": "WAITING_R5_PRODUCTION_AND_AUDIT",
+      "classifier_rows": 5460,
+      "LM_rows": 14,
+      "target_reference_policy_pairing": "Same policy for learned endpoints; unchanged base-own equivalence reused from A03/A08 receipts",
+      "reference_content_id": "9cab388a46a873902317ff022ab0b9a43d3e42c8753d3842837f74f5dd474259"
+    }
+  ],
+  "controls": {
+    "names": [
+      "composition",
+      "kmer4"
+    ],
+    "anchors": [
+      "decoder.layers.16",
+      "decoder.final_norm"
+    ],
+    "rows": 840,
+    "reference_policy": "control",
+    "new_control_fits": 0
+  },
+  "blocked_R2_edges": [
+    "R2_minus_R1",
+    "R3_minus_R2"
+  ],
+  "blocked_exact_key_slots": 10948,
+  "preserved_nonadjacent": [
+    "R3_minus_R1",
+    "R6_minus_R4"
+  ],
+  "direction": "target minus reference in every draw; lower better for CE/NLL/PPL, higher for remaining metrics",
+  "draws": {
+    "count": 2000,
+    "seed": 20261103,
+    "new_resampling": false,
+    "exact_ordered_identity_join": true,
+    "common_missing_class_mask": true,
+    "record_attempted_valid_invalid": true,
+    "interval": "Pointwise exploratory unadjusted conditional on fitted heads",
+    "LM": "Resampled sums/counts and exp(corpus NLL); never mean per-example PPL",
+    "forbidden": [
+      "silent intersection",
+      "CI-endpoint subtraction",
+      "fabricated zero",
+      "new resampling population"
+    ]
+  },
+  "new_effects_computed_A05": 0
+}

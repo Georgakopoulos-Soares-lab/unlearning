@@ -1,0 +1,83 @@
+{
+  "status": "REVIEW_ONLY_NO_DISPATCH",
+  "runtime_interpreter_exists": true,
+  "commands": [
+    {
+      "stage": "A06",
+      "status": "DOCUMENTED_NOT_EXECUTED_REQUIRES_STAGE_IMPLEMENTATION_AND_APPROVAL",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "REVISED_A06_FULL_COMMIT_REQUIRED",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "parity",
+        "--group",
+        "H3",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features",
+        "--run-label",
+        "R5-parity-H3"
+      ],
+      "precondition": "New R5/root-parameterized adapter qualified on approved TRAIN panel; H3 complete technical PASS before other_five"
+    },
+    {
+      "stage": "A06",
+      "status": "DOCUMENTED_NOT_EXECUTED_REQUIRES_STAGE_IMPLEMENTATION_AND_APPROVAL",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "REVISED_A06_FULL_COMMIT_REQUIRED",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "extraction",
+        "--group",
+        "H3",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features",
+        "--run-label",
+        "R5-extraction-H3"
+      ],
+      "precondition": "New R5/root-parameterized adapter qualified on approved TRAIN panel; H3 complete technical PASS before other_five"
+    },
+    {
+      "stage": "A06",
+      "status": "DOCUMENTED_NOT_EXECUTED_REQUIRES_STAGE_IMPLEMENTATION_AND_APPROVAL",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "REVISED_A06_FULL_COMMIT_REQUIRED",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "extraction",
+        "--group",
+        "other_five",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features",
+        "--run-label",
+        "R5-extraction-other_five"
+      ],
+      "precondition": "New R5/root-parameterized adapter qualified on approved TRAIN panel; H3 complete technical PASS before other_five"
+    }
+  ],
+  "resume": "Rerun owning-stage controller only against immutable finite manifest and matching seal identities, skip validated completed units. Never use old A06/A07 commands as-is.",
+  "A07_A08_A09": "New stage-owned controllers/CLI approval arguments and implementation hashes must be defined in revised stage prompts; do not invent qualified CLI flags or future prompt hashes."
+}

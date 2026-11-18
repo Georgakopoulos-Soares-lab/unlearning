@@ -1,40 +1,28 @@
 {
-  "schema": "pod-a-a04-recovery-state-v1",
-  "current_stage": "A04",
-  "run_id": "20261117T084728Z-a01",
-  "attempt_id": "A04-attempt-004",
-  "status": "PARTIAL",
-  "scope": "R3/R5 immutable-mirror recovery; 12 TRAIN rows only; R2 discovery excluded",
-  "prompt_commit": "a64008eb44543dfea92644f96b0129c1a1c661fe",
-  "amendment_commit": "07b284aec7fbdd9764597f46cc41226a46db435e",
-  "effective_hashes": {
-    "A04_RUNTIME_LOADING.md": "574a904543facb63e48dd9ab93cddce7898c5dc7be42f8cf2ccee968edb5784b",
-    "a9.5.md": "d0e31342c665f0fbee0703fe728706dbd4b38cc7a1a23aa627a9775c40b9c729"
-  },
-  "unit_counts": {
-    "new_qualification_variants_sealed": 6,
-    "new_comparison_rows_passed": 189,
-    "new_comparison_rows_failed": 0,
-    "preserved_qualification_variants": 12,
-    "preserved_comparison_rows": 378,
-    "verified_mirror_assets": 16,
-    "expected_mirror_assets": 16,
-    "new_production_scores": 0,
-    "new_probe_heads": 0,
-    "heldout_forwards": 0,
-    "R2_pending_variants": 3,
-    "R2_pending_comparison_rows": 54
-  },
-  "administrative_services": {
-    "observer_status": "STOPPED",
-    "prior_pid": 33071,
-    "prior_start_ticks": "8476919",
-    "identity_alive": false,
-    "reviewer_status": "DRAFT_ONLY_NOT_RUNNING",
-    "publisher_status": "BLOCKED_NOT_RUNNING",
-    "restarted": false,
-    "observed_utc": "2026-11-18T17:41:45.571752+00:00"
-  },
+  "schema": "pod-a-current-handoff-v4",
+  "status": "PLAN_VALIDATED_PENDING_PROTECTION",
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "current_stage": "A05",
+  "attempt_id": "A05-attempt-002",
+  "A06_started": false,
+  "automatic_resume": false,
+  "completed_exclusions": [
+    "A01-A09 prior attempts",
+    "A04 R3/R5 qualification",
+    "A05 checksum/identity/R3 metadata reconciliation",
+    "A05 frozen workload/key enumeration/audit panels"
+  ],
+  "remaining_A05": [
+    "planning-only backup fresh recovery",
+    "final Git exact byte/remote proof"
+  ],
+  "future_stage_prerequisites": [
+    "Revised validated A06 prompt binds new coverage/model/source/environment and new attempt roots",
+    "Fresh direct A06 approval",
+    "TRAIN-only production-adapter qualification before any production"
+  ],
+  "input_recovery_graph": "RECOVERY_DEPENDENCY_GRAPH.json",
+  "backup": null,
   "time_policy": {
     "schema": "pod-a-time-policy-v3",
     "status": "ACTIVE_USER_SUPERSESSION",
@@ -52,7 +40,7 @@
     "purchases_authorized": false,
     "no_clock_reset": true,
     "separate_stage_approval_required": true,
-    "current_direct_stage": "New A04-attempt-004: R3/R5 mirror recovery and training-only qualification; no R2 discovery; stop before A05",
+    "current_direct_stage": "A05-attempt-002 R5 coverage amendment and R3 comparison eligibility metadata only; stop before A06",
     "source": {
       "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
       "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
@@ -61,16 +49,20 @@
     "historical_records_preserved": true,
     "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
   },
-  "previous_A09_release": {
-    "status": "COMPLETE_QUALIFIED_REPORTING_SAVED_ANALYSIS",
-    "full_project_status": "PARTIAL",
-    "metadata_commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e",
-    "report_delivery_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd",
-    "path": "attempts/A09-attempt-001/SESSION_HANDOFF.md",
-    "unchanged_historical_release": true
+  "observer": "STOPPED",
+  "next_state": "CONTINUE_A05_ONLY",
+  "run_id": "20261117T084728Z-a01",
+  "owner": "POD_A",
+  "current_attempt": "attempts/A05-attempt-002",
+  "current_progress": "attempts/A05-attempt-002/PROGRESS.md",
+  "current_handoff": "attempts/A05-attempt-002/SESSION_HANDOFF.md",
+  "previous_A09": {
+    "status": "COMPLETED_PRIOR_AVAILABLE_SCOPE",
+    "report": "attempts/A09-attempt-001/RESULTS.md",
+    "gallery": "attempts/A09-attempt-001/FIGURE_GALLERY.md",
+    "report_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd"
   },
-  "scientific_job_state": "QUIESCENT",
-  "next_allowed_action": "Review protected A05 scope proposal; no automatic stage start",
-  "automatic_resume": false,
-  "observed_utc": "2026-11-18T17:41:45.627391+00:00"
+  "new_A05_scientific_measurements": 0,
+  "observed_utc": "2026-11-18T19:11:46.142366+00:00",
+  "entrypoint_kind": "CONTROLLER_LATEST.json"
 }

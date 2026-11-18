@@ -1,0 +1,105 @@
+{
+  "schema": "pod-a-a05-production-forecast-v1",
+  "measured_source_receipts": [
+    {
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+      "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001/RESOURCE_MEASUREMENTS.json",
+      "bytes": 175918,
+      "sha256": "f63516162e40508a1aee5a21b1d5cf56d93d3b27a53a3bce53b1bf544210d5d5"
+    },
+    {
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+      "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/FIT_RESOURCE_REPORT.json",
+      "bytes": 34724,
+      "sha256": "d82da37a8de7ddb3c86354ff6ca2e77ac480052b86c2a44889bba664f60fb8c6"
+    },
+    {
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "commit": "c482de3af2ab0f0f0210b6f7dc43b87b2fcf1c1a",
+      "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/AUDIT_REFIT_RECEIPT.json",
+      "bytes": 107373,
+      "sha256": "17707b2fd2321dba830334eab03951a6700946ecab400cfb923d0733143281d0"
+    }
+  ],
+  "measured_extraction_jobs": [
+    {
+      "candidate": "R6",
+      "group": "other_five",
+      "new_physical_forwards": 960,
+      "new_real_rows": 7680,
+      "wall_seconds": 240.46082761599973,
+      "peak_GPU_allocated_bytes": 3213561344,
+      "peak_GPU_reserved_bytes": 3984588800,
+      "peak_RSS_kib": 5734748
+    },
+    {
+      "candidate": "R6",
+      "group": "H3",
+      "new_physical_forwards": 1873,
+      "new_real_rows": 14965,
+      "wall_seconds": 377.9801445960038,
+      "peak_GPU_allocated_bytes": 3213561344,
+      "peak_GPU_reserved_bytes": 3984588800,
+      "peak_RSS_kib": 5733204
+    },
+    {
+      "candidate": "R4",
+      "group": "other_five",
+      "new_physical_forwards": 960,
+      "new_real_rows": 7680,
+      "wall_seconds": 248.065113559991,
+      "peak_GPU_allocated_bytes": 3213561344,
+      "peak_GPU_reserved_bytes": 3984588800,
+      "peak_RSS_kib": 5716372
+    },
+    {
+      "candidate": "R4",
+      "group": "H3",
+      "new_physical_forwards": 1873,
+      "new_real_rows": 14965,
+      "wall_seconds": 362.18305660699843,
+      "peak_GPU_allocated_bytes": 3213561344,
+      "peak_GPU_reserved_bytes": 3984588800,
+      "peak_RSS_kib": 5746320
+    }
+  ],
+  "R5_equal_workload_extraction_wall_observed_analog_range_seconds": [
+    602.6438842229982,
+    626.0452581559948
+  ],
+  "R5_extraction_planning_allowance_seconds": [
+    451.9829131672486,
+    1565.113145389987
+  ],
+  "synchronized_forward_capture_analog_half_seconds": 313.1081847911046,
+  "qualification_timing_excluded": true,
+  "measured_A07_780_heads_fit_phase_wall_seconds": 795.5367851869523,
+  "measured_A07_780_heads_cache_wall_seconds": 73.58036222899682,
+  "R5_390_head_linear_fit_extrapolation_seconds": 397.76839259347616,
+  "R5_fit_planning_range_seconds": [
+    198.88419629673808,
+    1193.3051777804285
+  ],
+  "measured_A07_retries": 32,
+  "R5_production_initial_solver_calls": 7020,
+  "R5_audit_refit_initial_solver_calls_separate": 540,
+  "A06_prior_H3_all_unit_audit_wall_sum_seconds": 262.80112336300954,
+  "A07_prior_backup_measured": {
+    "compression_seconds": 27.63902327598771,
+    "upload_seconds": 23.655267822017777,
+    "fresh_download_seconds": 11.504952613031492,
+    "all_archive_member_hash_seconds": 84.24423259598552,
+    "archive_uploaded_bytes": 423217305
+  },
+  "uncertainty": "R5 difficulty/convergence/compression/network unknown; analog ranges are planning allowances, not confidence intervals, deadlines, caps or promises. Re-measure in approved owning stages.",
+  "unforecasted": "New A08 three adjacent classifier/LM families and versioned A09 rendering vary; use chunked measured receipts and capacity checks, no promise. Audit verification cannot be omitted for speed.",
+  "measured_A08_60_full_CV_audit_refit_unit_wall_sum_seconds_not_elapsed": 95.45500673196511,
+  "R5_30_full_CV_other_five_refit_linear_unit_wall_sum_seconds": 47.72750336598256,
+  "R5_30_full_CV_other_five_refit_planning_unit_wall_range_seconds": [
+    23.86375168299128,
+    143.18251009794767
+  ],
+  "audit_timing_basis": "Prior60 independently full-CV refit units/960 initial solver calls; R5 other-five30/480, H3six/60 separate. Unit-wall sum differs from pipeline elapsed. Metadata timings only; no audit refit repeated."
+}
