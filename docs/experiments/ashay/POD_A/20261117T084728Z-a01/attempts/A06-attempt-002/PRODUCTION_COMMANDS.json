@@ -1,0 +1,257 @@
+{
+  "status": "ACTUALLY_EXECUTED_AND_EXIT_VERIFIED",
+  "commands": [
+    {
+      "invocation": "H3-LM-001",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/lm_records.py",
+        "--candidate",
+        "R5",
+        "--group",
+        "H3"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "7f3d0b26e2476e08fba19aad842d9ac4e2af5c9af63fe1854df283e06c2f8548",
+      "pid": 99269,
+      "proc_start_ticks": "14875259",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "H3-audit-001",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/audit_h3.py",
+        "--candidate",
+        "R5"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "5d36f3038c9e8ba4fdad08c845bcff465b7ee0e94ca920be16928adcdaaff07e",
+      "pid": 99709,
+      "proc_start_ticks": "14966918",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "H3-cache-001",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/build_h3_cache.py",
+        "--candidate",
+        "R5"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "262780d9cb5aab6d7f7896febd209ac471017e044d6e08920ae09f63b421edd1",
+      "pid": 99230,
+      "proc_start_ticks": "14872232",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "H3-fit-001",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/fit_h3.py",
+        "--candidate",
+        "R5"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "45b08006df637ee74d6394512b77bf15bc9698d8fe9b5c8957f825bd35358619",
+      "pid": 99323,
+      "proc_start_ticks": "14886700",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "H3-paired-draws-001",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/verify_paired_draws.py",
+        "--candidate",
+        "R5"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "81ba787da8000916f0bcfc82785cfb70ac0a87f160eb7b3ab09c5c9455404da8",
+      "pid": 99812,
+      "proc_start_ticks": "14978533",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "H3-production-001",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "4ff94e09b72a02d6e3082af064669c98adda6008",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "extraction",
+        "--group",
+        "H3",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features",
+        "--run-label",
+        "H3-production-001"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "091a173a1b7eaf594fc66527fe0ef4e0d3a3e1390f2422ba95f7b15823445980",
+      "pid": 98236,
+      "proc_start_ticks": "14823062",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "other-five-LM-001",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/lm_records.py",
+        "--candidate",
+        "R5",
+        "--group",
+        "other_five"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "7f3d0b26e2476e08fba19aad842d9ac4e2af5c9af63fe1854df283e06c2f8548",
+      "pid": 101501,
+      "proc_start_ticks": "15068737",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "other-five-production-001",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "4ff94e09b72a02d6e3082af064669c98adda6008",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "extraction",
+        "--group",
+        "other_five",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features",
+        "--run-label",
+        "other-five-production-001"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "091a173a1b7eaf594fc66527fe0ef4e0d3a3e1390f2422ba95f7b15823445980",
+      "pid": 101228,
+      "proc_start_ticks": "15037761",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "parity-001",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "4ff94e09b72a02d6e3082af064669c98adda6008",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "parity",
+        "--group",
+        "H3",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/parity",
+        "--run-label",
+        "parity-001"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "091a173a1b7eaf594fc66527fe0ef4e0d3a3e1390f2422ba95f7b15823445980",
+      "pid": 97555,
+      "proc_start_ticks": "14793359",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "repeat-001",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "4ff94e09b72a02d6e3082af064669c98adda6008",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "parity",
+        "--group",
+        "H3",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/parity",
+        "--run-label",
+        "repeat-001"
+      ],
+      "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+      "scientific_script_sha256": "091a173a1b7eaf594fc66527fe0ef4e0d3a3e1390f2422ba95f7b15823445980",
+      "pid": 97823,
+      "proc_start_ticks": "14807839",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "RESTORE_JOB_R5_H3",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-I",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_H3-fresh-001/consumer/artifacts/code/restore_panel6.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_H3-fresh-001/consumer",
+        "--group",
+        "H3"
+      ],
+      "consumer_source_sha256": "6c0a2ba44bc07c4ddc6c860cab463b4a3424837b97cf06bd60c5c2af69213fdd",
+      "pid": 100356,
+      "proc_start_ticks": "15019112",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    },
+    {
+      "invocation": "RESTORE_JOB_R5_other_five",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-I",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer/artifacts/code/restore_panel6.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+        "--group",
+        "other_five"
+      ],
+      "consumer_source_sha256": "6c0a2ba44bc07c4ddc6c860cab463b4a3424837b97cf06bd60c5c2af69213fdd",
+      "pid": 101670,
+      "proc_start_ticks": "15079097",
+      "exit_code": 0,
+      "status": "COMPLETED_EXCLUDED_FROM_REPLAY"
+    }
+  ],
+  "scientific_units_complete_do_not_replay": true,
+  "CPU_limits": {
+    "workers_max": 2,
+    "BLAS_threads_each": 4,
+    "AS_limit_per_worker_bytes": 34359738368
+  },
+  "observer": "STOPPED",
+  "A07_started": false
+}
