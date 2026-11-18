@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "research_commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e",
+  "attempts_git_tree": "e5029debcab7b0ff5984907f0ccd6aac556bf5ac",
+  "historical_root_files": [
+    {
+      "path": "SESSION_HANDOFF.md",
+      "bytes": 3724,
+      "sha256": "c2545c54dc292ef6a638ca77a9a1f77ea4c8e75b8a6a2f9753ba53b5292c0b3b"
+    },
+    {
+      "path": "RESUME_MANIFEST.json",
+      "bytes": 5176,
+      "sha256": "489d8940771683abf105815defe96762c27b2bb5d382434332e755e339eeb80f"
+    },
+    {
+      "path": "REMOTE_HANDOFF.json",
+      "bytes": 1582,
+      "sha256": "c6ca4cc06b32270708b602d25debfc332fdf2b38ed4d0ac40fd17e91a555f894"
+    },
+    {
+      "path": "OUTPUT_SHA256SUMS",
+      "bytes": 1377,
+      "sha256": "4d11f37a9a73c058cb13b692ab2f3253d55dc137e86b751f6e07d4425b971aac"
+    }
+  ],
+  "A01_root_checksum_current_match": [
+    {
+      "path": "A01_RECEIPT.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "APPROVAL_LOG.jsonl",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "BUDGET.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "CONTROLLER_STATE.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "COVERAGE.csv",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "INSTRUCTION_RECONCILIATION.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "PACKAGE_VALIDATION.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "PATHS.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "PROCESS_INVENTORY.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "RECONCILIATION.csv",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "REMOTE_HANDOFF.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "RESUME_MANIFEST.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "SESSION_HANDOFF.md",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "SOURCE_EVIDENCE_CHECK.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "STAGE_CHECKLIST.json",
+      "matches_historical_A01_manifest": true
+    },
+    {
+      "path": "WORKSPACE_AUDIT.json",
+      "matches_historical_A01_manifest": true
+    }
+  ],
+  "A09_final_closeout": {
+    "schema": "pod-a-a09-final-closeout-v1",
+    "status": "PASS",
+    "terminal_status": "STOPPED: POD_A HANDOFF DELIVERED",
+    "scientific_commit": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
+    "report_delivery_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd",
+    "metadata_commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e",
+    "payload_revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+    "final_metadata_revision": "1c67008e57d3ce1e0fa6f3b8765b677fc15e47ef",
+    "final_metadata_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/delivery-001/a09-delivery-metadata-001.tar.gz",
+    "final_metadata_sha256": "df45f9b56aa63b8c0e80acc3633f25ad85a68f06e70e6777ab6b0f28c9688375",
+    "receipt_revision": "1704cc06417069cfbc3b3a2c7cbec4e8a584eaf4",
+    "receipt_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/delivery-001/A09_DELIVERY_RECEIPT.final.json",
+    "receipt_sha256": "41022ed96b5a80112a5362ec361c0fa5749275768748dc629e2760a2cb114762",
+    "receipt_upload_and_force_fresh_readback_seconds": 4.8133429379959125,
+    "receipt_bytes_verified": true,
+    "administrative_services": {
+      "schema": "pod-a-a09-owned-observer-stop-v1",
+      "status": "PASS",
+      "observer_status": "STOPPED",
+      "pid": 33071,
+      "proc_start_ticks": "8476919",
+      "identity_verified_before_stop": true,
+      "identity_alive_after_stop": false,
+      "graceful_STOP_file": "/workspace/agent-handoff/POD_A/review-loop/STOP",
+      "no_signal_or_unrelated_process_stop": true,
+      "locks_verified_free": [
+        "/workspace/agent-handoff/POD_A/review-loop/service.lock",
+        "/workspace/agent-handoff/POD_A/review-loop/observer.lock",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/report.lock"
+      ],
+      "reviewer_status": "DRAFT_ONLY",
+      "publisher_status": "BLOCKED",
+      "tmux_session_exists_after_stop": false,
+      "owned_scientific_jobs": "QUIESCENT",
+      "other_owned_python_jobs": [],
+      "pod_left_running": true,
+      "completed_utc": "2026-11-18T11:51:08.005117+00:00"
+    },
+    "scope_booleans": {
+      "QUALIFIED_ANALYSIS_COMPLETE": true,
+      "FULL_INCREMENTAL_SEQUENCE_COMPLETE": false,
+      "REPORT_DELIVERED": true,
+      "GIT_DELIVERED": true,
+      "RECOVERY_VERIFIED_FOR_SAVED_ANALYSIS": true,
+      "FULL_GPU_RECREATION_VERIFIED": false,
+      "OWNED_SCIENTIFIC_JOBS_QUIESCENT": true
+    },
+    "full_project_status": "PARTIAL",
+    "A04_status": "PARTIAL",
+    "completed_utc": "2026-11-18T11:51:12.888317+00:00"
+  },
+  "A09_final_receipt_sha256": "41022ed96b5a80112a5362ec361c0fa5749275768748dc629e2760a2cb114762",
+  "preserve_all_A01_A09_attempt_outputs": true
+}

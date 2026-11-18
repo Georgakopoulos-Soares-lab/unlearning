@@ -1,0 +1,105 @@
+{
+  "schema": "pod-a-resume-manifest-v1",
+  "run_id": "20261117T084728Z-a01",
+  "stopped_stage": "A01",
+  "attempt_id": "A01-attempt-001",
+  "requires_new_direct_approval": true,
+  "required_approval": "A01 steering and fresh resumed-attempt approval; then separate A02 approval only after A01 readiness.",
+  "prompt_commit": "703934532c8e6e9c300e4a0b0ec6f281c8953fcc",
+  "research_commit_before_delivery": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "paths": {
+    "schema": "pod-a-paths-v1",
+    "run_id": "20261117T084728Z-a01",
+    "owner": "POD_A",
+    "research_worktree": "/workspace/wt-pod-a",
+    "research_common_directory": "/workspace/repos/unlearning-pod-a/.git",
+    "prompt_cache": "/workspace/test-prompts-push/.git",
+    "prompt_cache_note": "Existing isolated single-branch clone, exact origin verified; no additional remote prompt fetch after pinning. Tracked prompt files unchanged.",
+    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01",
+    "reports": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01",
+    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01",
+    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01",
+    "private_backup_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "private_backup_prefix": "POD_A/20261117T084728Z-a01/<stage>/<attempt-id>/",
+    "gpu_lock": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+    "gpu_lock_status": "NOT_CREATED_NOT_ACQUIRED_NO_GPU_WORK",
+    "path_isolation_verified": true
+  },
+  "budget": {
+    "schema": "pod-a-budget-v1",
+    "observed_utc": "2026-11-17T08:48:27.415555+00:00",
+    "original_start_utc": null,
+    "science_cutoff_utc": null,
+    "deadline_utc": null,
+    "remaining_seconds": null,
+    "elapsed_seconds": null,
+    "wall_hours": 14,
+    "closure_reserve_hours": 3,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "rate_basis": "Not independently supplied; no invoice estimate.",
+    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-A.json",
+    "source_state_exists": false,
+    "setup_records": [
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-A.sh",
+        "bytes": 43647,
+        "mtime_utc": "2026-11-17T06:25:26+00:00",
+        "sha256": "5a8eea5c3716b555fd8e539db7e5b0e7470bcee5693191b4758a0de373624a70",
+        "inode": 114593093
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-A.txt",
+        "bytes": 388,
+        "mtime_utc": "2026-11-17T06:25:25+00:00",
+        "sha256": "72ea95b118b2d936bbddadb56b96919a849c7c71def4157ccd2743c447c9b383",
+        "inode": 114538039
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+        "bytes": 0,
+        "mtime_utc": "2026-11-17T06:24:54+00:00",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "inode": 114292462
+      }
+    ],
+    "container_pid1_start_utc": "2026-11-17T06:14:41.200000+00:00",
+    "provider_start_verified": false,
+    "provisional_container_proxy_only": {
+      "start_utc": "2026-11-17T06:14:41.200000+00:00",
+      "science_cutoff_utc": "2026-11-17T17:14:41.200000+00:00",
+      "deadline_utc": "2026-11-17T20:14:41.200000+00:00",
+      "remaining_seconds_at_observation": 41173.78441,
+      "caveat": "Arithmetic illustration using container process start. Not adopted as original budget or permission; provisioning/rental could predate it."
+    },
+    "historical_prompt_inputs_note": "Unlisted historical 02_SESSION_INPUTS.json contains a 300-minute allowance, no current start; superseded by the current 14-hour controller and not adopted.",
+    "new_scientific_gpu_seconds": 0,
+    "new_inference_units": 0,
+    "new_probe_fits": 0,
+    "compute_blocked": true,
+    "deadline_reset": false
+  },
+  "completed_receipts": [],
+  "missing_units_in_priority_order": [
+    "Resolve ORIGINAL_BUDGET_UNVERIFIED without resetting original window.",
+    "Recheck this same run’s sealed receipts/processes/worktree and adopt definite deadline on a new A01 approval.",
+    "Finish A01 readiness; request separate A02 approval."
+  ],
+  "downloads": [],
+  "automatic_resume": false,
+  "blockers": [
+    {
+      "id": "ORIGINAL_BUDGET_UNVERIFIED",
+      "scope": "A01 readiness and any substantial subsequent compute",
+      "detail": "state/pod-A.json and timestamped setup completion receipts are absent. Setup lock mtime and PID1 start are evidence of activity, not the original setup argument or verified provider rental start. Definite original start/cutoff/deadline or explicit steering required. No clock reset."
+    }
+  ],
+  "required_additional_time_seconds": null,
+  "exact_commands_checked_against_cli": [
+    "git -C /workspace/wt-pod-a status --porcelain=v1 --untracked-files=all",
+    "git -C /workspace/wt-pod-a ls-remote origin refs/heads/POD_A",
+    "nvidia-smi --query-compute-apps=pid,process_name,used_memory --format=csv,noheader,nounits"
+  ],
+  "command_note": "Diagnostic commands only; no science launch command is authorized or supplied."
+}
