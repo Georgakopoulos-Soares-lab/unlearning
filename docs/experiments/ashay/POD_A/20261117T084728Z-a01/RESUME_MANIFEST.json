@@ -1,272 +1,33 @@
 {
-  "schema": "pod-a-current-resume-manifest-v2",
+  "schema": "pod-a-current-handoff-v3-resume_manifest",
   "owner": "POD_A",
   "run_id": "20261117T084728Z-a01",
-  "current_stage": "A09",
-  "stopped_stage": "A09",
-  "attempt_id": "A09-attempt-001",
-  "status": "COMPLETE_QUALIFIED_REPORT_AND_SAVED_ANALYSIS_HANDOFF",
-  "full_project_status": "PARTIAL",
-  "A04_status": "PARTIAL",
-  "terminal_status": "STOPPED: POD_A HANDOFF DELIVERED",
-  "administrative_closeout_attempt": "POST_END-attempt-001",
-  "administrative_prompt_commit": "a64008eb44543dfea92644f96b0129c1a1c661fe",
-  "administrative_prompt_sha256": "ddcb6757746ddf6d6e18327a813928315b087433de4df137047d5889ef786a1d",
-  "A09_prompt_commit": "ff579ad98b7970213c97cf0bb86fa2017cfa126e",
-  "scientific_commit": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
-  "report_delivery_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd",
-  "metadata_commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e",
-  "administrative_delivery_commit": null,
-  "administrative_commit_null_reason": "The containing commit is identified by separate post-push/private delivery proof; no self-hash cycle",
-  "scope_booleans": {
-    "QUALIFIED_ANALYSIS_COMPLETE": true,
-    "FULL_INCREMENTAL_SEQUENCE_COMPLETE": false,
-    "REPORT_DELIVERED": true,
-    "GIT_DELIVERED": true,
-    "RECOVERY_VERIFIED_FOR_SAVED_ANALYSIS": true,
-    "FULL_GPU_RECREATION_VERIFIED": false,
-    "OWNED_SCIENTIFIC_JOBS_QUIESCENT": true
+  "current_stage": "A04",
+  "attempt_id": "A04-attempt-004",
+  "status": "RUNNING",
+  "current_attempt": "attempts/A04-attempt-004",
+  "scope": "R3/R5 immutable-mirror recovery; 12 TRAIN rows only; R2 discovery excluded",
+  "current_progress": "attempts/A04-attempt-004/PROGRESS.md",
+  "previous_A09_release": {
+    "status": "COMPLETE_QUALIFIED_REPORTING_SAVED_ANALYSIS",
+    "full_project_status": "PARTIAL",
+    "metadata_commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e",
+    "report_delivery_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd",
+    "path": "attempts/A09-attempt-001/SESSION_HANDOFF.md",
+    "unchanged_historical_release": true
   },
-  "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
-  "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
-  "coverage": {
-    "planned_heads": 3276,
-    "available_heads_reused": 2340,
-    "planned_fixed_applications": 3276,
-    "available_fixed_applications_reused": 2340,
-    "new_A09_measurements": 0,
-    "new_fits": 0,
-    "new_forwards": 0,
-    "new_draws": 0,
-    "R2_pending_heads": 468,
-    "R5_pending_heads": 468,
-    "primary_LM_available": 35,
-    "primary_LM_universe": 49,
-    "controls_reused": 36,
-    "failed_scientific_cells": 0,
-    "pending_ledger_units": 1886,
-    "classifier_marginal_rows": 27300,
-    "classifier_paired_rows": 45360,
-    "LM_point_rows": 70,
-    "LM_paired_rows": 112,
-    "figure_pairs_reused": 31,
-    "plot_uses_checked": 30886
-  },
-  "authoritative_A09_outputs": {
-    "RESULTS.md": {
-      "path": "attempts/A09-attempt-001/RESULTS.md",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RESULTS.md",
-      "bytes": 25085,
-      "sha256": "67ea0db43e0ddd2c482f3b920a77611b57a4ebf4b929d00386df3b5e6b20b23b",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "ONE_PAGE_SUMMARY.md": {
-      "path": "attempts/A09-attempt-001/ONE_PAGE_SUMMARY.md",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/ONE_PAGE_SUMMARY.md",
-      "bytes": 2922,
-      "sha256": "376e81a6438572df33428344dbb49b4af2ec20aa910fc645cc0ce19cfa6e04ff",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "FIGURE_GALLERY.md": {
-      "path": "attempts/A09-attempt-001/FIGURE_GALLERY.md",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/FIGURE_GALLERY.md",
-      "bytes": 14955,
-      "sha256": "d509528d6b44ba56a51c4f7e06eb69f659f31d3ddb2f5da15739ba2ec5832529",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "RESTORE.md": {
-      "path": "attempts/A09-attempt-001/RESTORE.md",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RESTORE.md",
-      "bytes": 4459,
-      "sha256": "06decd6c4428de5839796395114ee012426fe5b4f95d180be8fbc0e434e4879b",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "BACKUP_MANIFEST.json": {
-      "path": "attempts/A09-attempt-001/BACKUP_MANIFEST.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/BACKUP_MANIFEST.json",
-      "bytes": 108239,
-      "sha256": "c748b72c011fa13e3b7adda6e706b8037c21c0d1f017ebcb29449c9995355353",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "BACKUP_VERIFICATION.json": {
-      "path": "attempts/A09-attempt-001/BACKUP_VERIFICATION.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/BACKUP_VERIFICATION.json",
-      "bytes": 5235,
-      "sha256": "9b7728ec333f5c47d000f41f056d157ccd924709fad3cf8f9e4a37a60039001d",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "FRESH_RESTORE_CHECK.json": {
-      "path": "attempts/A09-attempt-001/FRESH_RESTORE_CHECK.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/FRESH_RESTORE_CHECK.json",
-      "bytes": 10349,
-      "sha256": "9acc961a1f9dc0e372f5ab383cd585a61eb9f9ce54d5abebc099bef970531182",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "RECOVERY_DEPENDENCY_GRAPH.json": {
-      "path": "attempts/A09-attempt-001/RECOVERY_DEPENDENCY_GRAPH.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RECOVERY_DEPENDENCY_GRAPH.json",
-      "bytes": 203637,
-      "sha256": "fbea2c755063dd1852d88c21b31b1e0b9bed672fb13f8bed0cf970f647207498",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "REACQUISITION_MAP.json": {
-      "path": "attempts/A09-attempt-001/REACQUISITION_MAP.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/REACQUISITION_MAP.json",
-      "bytes": 8518,
-      "sha256": "9aa1a9f411bb3deb424c8525fcacb8730b49daab48c3312a6a42fe86c2647345",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "RESUME_MANIFEST.json": {
-      "path": "attempts/A09-attempt-001/RESUME_MANIFEST.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RESUME_MANIFEST.json",
-      "bytes": 227187,
-      "sha256": "b85fb19a5fee577c96a26cac666c1b1cb509402539a48024fa4f4b3e144899ce",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "MISSING_INPUTS_DRAFT.md": {
-      "path": "attempts/A09-attempt-001/MISSING_INPUTS_DRAFT.md",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/MISSING_INPUTS_DRAFT.md",
-      "bytes": 3610,
-      "sha256": "72bf4fdb3bf01837f817b87eb9082b5f068598bb62e62f77376824ea121969db",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "MISSING_UNIT_KEYS.csv": {
-      "path": "attempts/A09-attempt-001/MISSING_UNIT_KEYS.csv",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/MISSING_UNIT_KEYS.csv",
-      "bytes": 1070797,
-      "sha256": "55defdc27cd97767b45181ffb42172afed513e045d7df1cbd5d51a5c82fc364b",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "TABLE_INDEX.json": {
-      "path": "attempts/A09-attempt-001/TABLE_INDEX.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/TABLE_INDEX.json",
-      "bytes": 12795,
-      "sha256": "2513c298bd5345cb5665bb4d44a18b2f3d5e735a068f57617c4a774d7dc3f676",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "GOALS_STATUS.csv": {
-      "path": "attempts/A09-attempt-001/GOALS_STATUS.csv",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/GOALS_STATUS.csv",
-      "bytes": 2905,
-      "sha256": "f30f5a293a358cd2e8660ab4d3fc9b01431050aad23b80e44b13ebbfb53c4daf",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "A09_RECEIPT.json": {
-      "path": "attempts/A09-attempt-001/A09_RECEIPT.json",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/A09_RECEIPT.json",
-      "bytes": 23091,
-      "sha256": "dc0617e738dccc3ae77c0e8daf844fc958cc6af4a5e11af0ae8de49738b816d1",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    },
-    "OUTPUT_SHA256SUMS": {
-      "path": "attempts/A09-attempt-001/OUTPUT_SHA256SUMS",
-      "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/OUTPUT_SHA256SUMS",
-      "bytes": 6793,
-      "sha256": "753d3cfeed573622e9b2ad8f04f0a674fea2721bc6ed9ab76621b6634f6f78f2",
-      "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-    }
-  },
-  "immutable_private_backups": [
-    {
-      "kind": "A09_saved_analysis_payload",
-      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
-      "revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
-      "path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/checkpoint-001/a09-report-checkpoint-001.tar.gz",
-      "bytes": 4679828,
-      "sha256": "5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a",
-      "member_manifest_sha256": "dd8bfe0e4a2cd3b6fb442effc6a796b67ac3ff2d81e7d66271108eb8c46e352b"
-    },
-    {
-      "kind": "A09_final_metadata",
-      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
-      "revision": "1c67008e57d3ce1e0fa6f3b8765b677fc15e47ef",
-      "path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/delivery-001/a09-delivery-metadata-001.tar.gz",
-      "bytes": 2468493,
-      "sha256": "df45f9b56aa63b8c0e80acc3633f25ad85a68f06e70e6777ab6b0f28c9688375",
-      "member_manifest_sha256": "4ed8754be8ab2dc6593d002daf01c7fc5b75eca97df67560769d19326ab96765"
-    },
-    {
-      "kind": "A09_final_delivery_receipt",
-      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
-      "revision": "1704cc06417069cfbc3b3a2c7cbec4e8a584eaf4",
-      "path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/delivery-001/A09_DELIVERY_RECEIPT.final.json",
-      "bytes": 10584,
-      "sha256": "41022ed96b5a80112a5362ec361c0fa5749275768748dc629e2760a2cb114762"
-    }
-  ],
-  "private_receipt_fresh_readback": {
-    "status": "PASS",
-    "scope": "Fresh exact A09 final metadata receipt object only; no scientific payload transferred or consumer rerun",
-    "revision": "1704cc06417069cfbc3b3a2c7cbec4e8a584eaf4",
-    "path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/delivery-001/A09_DELIVERY_RECEIPT.final.json",
-    "sha256": "41022ed96b5a80112a5362ec361c0fa5749275768748dc629e2760a2cb114762",
-    "private": true,
-    "force_download": true,
-    "observed_utc": "2026-11-18T16:36:08.320188+00:00"
-  },
-  "recovery_scope": {
-    "A09_payload_files_hashed": 254,
-    "A09_final_metadata_files_hashed": 317,
-    "saved_prediction_metric_paths": 8,
-    "saved_audit_refit_artifacts": 2,
-    "classifier_saved_draw_delta_values": 20000,
-    "LM_saved_draw_delta_values": 4000,
-    "prediction_metric_draw_and_interval_residuals": 0.0,
-    "dependency_nodes": 42,
-    "proof_reused_from_A09": true,
-    "new_scientific_recovery_or_audit_executed": false,
-    "model_weights_and_installed_runtime_excluded": true,
-    "full_GPU_recreation_verified": false
-  },
-  "current_terminal_observation": {
-    "schema": "pod-a-fresh-terminal-state-v1",
-    "status": "PASS",
-    "observed_utc": "2026-11-18T16:36:07.168120+00:00",
+  "previous_admin_closeout_commit": "23d6497c0ba10abde9e83d836078b2f8d10cb668",
+  "administrative_services": {
     "observer_status": "STOPPED",
-    "prior_observer_pid": 33071,
-    "prior_observer_proc_start_ticks": "8476919",
-    "prior_observer_identity_alive": false,
-    "fresh_proc_scan_owned_observers": [],
-    "fresh_proc_scan_owned_workers": [],
-    "scientific_jobs": "QUIESCENT",
+    "prior_pid": 33071,
+    "prior_start_ticks": "8476919",
+    "identity_alive": false,
     "reviewer_status": "DRAFT_ONLY_NOT_RUNNING",
     "publisher_status": "BLOCKED_NOT_RUNNING",
-    "locks": [
-      {
-        "path": "/workspace/agent-handoff/POD_A/review-loop/service.lock",
-        "state": "EXCLUSIVE_LOCK_AVAILABLE"
-      },
-      {
-        "path": "/workspace/agent-handoff/POD_A/review-loop/observer.lock",
-        "state": "EXCLUSIVE_LOCK_AVAILABLE"
-      },
-      {
-        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/report.lock",
-        "state": "EXCLUSIVE_LOCK_AVAILABLE"
-      },
-      {
-        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/final-delivery.lock",
-        "state": "EXCLUSIVE_LOCK_AVAILABLE"
-      },
-      {
-        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
-        "state": "EXCLUSIVE_LOCK_AVAILABLE"
-      }
-    ],
-    "observer_tmux_session_exists": false,
-    "STOP_flag_exists": true,
-    "historical_heartbeat_utc": "2026-11-18T11:43:22.024650+00:00",
-    "heartbeat_is_historical_not_current_liveness": true,
-    "observer_restarted": false,
-    "pod_left_running": true,
-    "current_administrative_process": {
-      "pid": 71677,
-      "proc_start_ticks": "13364755",
-      "scope": "This finite metadata closeout only"
-    }
+    "restarted": false,
+    "observed_utc": "2026-11-18T17:13:00.422006+00:00"
   },
-  "historical_service_snapshots": "ACTIVE service values inside immutable A05-A09 receipts describe their observation times. The current state is the fresh /proc, PID/start and lock check above.",
-  "budget": {
+  "time_policy": {
     "schema": "pod-a-time-policy-v3",
     "status": "ACTIVE_USER_SUPERSESSION",
     "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
@@ -283,7 +44,7 @@
     "purchases_authorized": false,
     "no_clock_reset": true,
     "separate_stage_approval_required": true,
-    "current_direct_stage": "A09 only; terminal handoff; no automatic restart",
+    "current_direct_stage": "New A04-attempt-004: R3/R5 mirror recovery and training-only qualification; no R2 discovery; stop before A05",
     "source": {
       "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
       "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
@@ -292,54 +53,10 @@
     "historical_records_preserved": true,
     "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
   },
+  "new_production_measurements": 0,
   "automatic_resume": false,
-  "new_fits_or_forwards_authorized": false,
-  "requires_new_direct_approval_for_additional_science": true,
-  "required_approval": "Only if more work is requested: fresh explicit identity/qualification/bridge/backfill scope for each needed stage, or a revised scoped controller. No A10 exists.",
-  "blockers": [
-    "R2delivery/unique admission",
-    "R5native qualification/downstream evidence",
-    "R3live bridge for affected new contrasts",
-    "Unknown training ancestry/objective/exposure/source-label metadata"
-  ],
-  "exact_missing_unit_count": 1886,
-  "exact_missing_unit_index": {
-    "path": "attempts/A09-attempt-001/MISSING_UNIT_KEYS.csv",
-    "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/MISSING_UNIT_KEYS.csv",
-    "bytes": 1070797,
-    "sha256": "55defdc27cd97767b45181ffb42172afed513e045d7df1cbd5d51a5c82fc364b",
-    "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-  },
-  "remaining_science": "R2 and R5 each 468 heads plus separate corresponding fixed applications; 14 primary LM units; all five adjacent comparisons; R3 live bridge for affected new contrasts; ancestry/objective/exposure/source-label gaps.",
-  "restore_entry": {
-    "path": "attempts/A09-attempt-001/RESTORE.md",
-    "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RESTORE.md",
-    "bytes": 4459,
-    "sha256": "06decd6c4428de5839796395114ee012426fe5b4f95d180be8fbc0e434e4879b",
-    "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-  },
-  "further_work_running": false,
-  "peer_filesystem_assumed_shared": false,
-  "new_admin_private_proof": "A separate immutable POST_END delivery archive/receipt is produced after this Git commit, without mutating A01-A09.",
-  "observed_utc": "2026-11-18T16:36:12.483507+00:00",
-  "completed_work_excluded": "All existing2340heads and2340applications,35LMunits,36controls; A08all780audits/60refits/derived families; all reports/figures after terminal completion",
-  "missing_unit_ids_in_priority_order": "See immutable exact MISSING_UNIT_KEYS.csv and A09 RESUME_MANIFEST.json; no completed units are rescheduled.",
-  "future_recovery_command_documented_not_executed": [
-    "/workspace/venvs/pod-a-tools/bin/python",
-    "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/code/restore.py",
-    "--backup",
-    "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/BACKUP_MANIFEST.json",
-    "--destination",
-    "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/manual-consumer-001",
-    "--use-recorded-dependencies"
-  ],
-  "fresh_server_setup": {
-    "path": "attempts/A09-attempt-001/RESTORE.md",
-    "url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/6552b2488525dd5fc5da4b30c1eff16c7712153e/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RESTORE.md",
-    "bytes": 4459,
-    "sha256": "06decd6c4428de5839796395114ee012426fe5b4f95d180be8fbc0e434e4879b",
-    "commit": "6552b2488525dd5fc5da4b30c1eff16c7712153e"
-  },
-  "no_current_A01_budget_blocker": true,
-  "no_clock_reset": true
+  "next_allowed_action": "A04 R3/R5 recovery and qualification only",
+  "preserved_previous_entrypoints": "attempts/A04-attempt-004/preserved-prior-run-root",
+  "observed_utc": "2026-11-18T17:13:24.974139+00:00",
+  "terminal_state_note": "Current A04 attempt is RUNNING; prior A09 terminal delivery is historical"
 }

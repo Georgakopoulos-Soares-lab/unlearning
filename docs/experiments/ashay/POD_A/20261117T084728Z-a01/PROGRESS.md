@@ -1,57 +1,40 @@
-# A09 progress — COMPLETE
+# A04 R3/R5 mirror recovery — RUNNING
 
-Run `20261117T084728Z-a01`, attempt `A09-attempt-001`. Observed UTC `2026-11-18T11:49:33.835954+00:00`; display timezone UTC. Direct approval pins prompt `ff579ad98b7970213c97cf0bb86fa2017cfa126e`. Accepted A08 research `a0c09062c9f4cd625769130b1b85ea0ddc38d840`; current publication parent `409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd`. Scientific measurement queue is quiescent; only finite reporting/recovery work is authorized.
+Run `20261117T084728Z-a01`, attempt `A04-attempt-004`. Observed UTC `2026-11-18T17:13:00.476426+00:00`. Approved A04 package `a64008eb44543dfea92644f96b0129c1a1c661fe` and exact `a9.5.md` amendment `07b284aec7fbdd9764597f46cc41226a46db435e` are pinned. Scope is acquisition and training-only qualification of selected R3/R5; R2 discovery is excluded. The observer remains STOPPED.
 
-## Goals and coverage
+## Goals and finite units
 
-| Goal | Target | New A09 science | Verified reused | Running science | Pending | Failed | Evidence / gap |
-|---|---:|---:|---:|---:|---:|---:|---|
-| Production heads, six tasks × 26 hooks × three seeds | 3276 | 0 | 2340 | 0 | 936 | 0 | [Coverage](attempts/A09-attempt-001/COVERAGE.csv); R2/R5 each 468 |
-| Unchanged-base applications, separate universe | 3276 | 0 | 2340 | 0 | 936 | 0 | Same frozen policies, no new fitting |
-| Primary causal LM units | 49 | 0 | 35 | 0 | 14 | 0 | [Table index](attempts/A09-attempt-001/TABLE_INDEX.json); no layer/seed axis |
-| Shared input control fits | 36 | 0 | 36 | 0 | 0 | 0 | Repeated displays are not new fits |
-| A08 independent saved-output audits | 780 | 0 | 780 | 0 | 0 | 0 | [Audit releases](attempts/A09-attempt-001/AUDIT_RELEASE_STATUS.csv) |
-| A08 sampled independent refits | 60 | 0 | 60 | 0 | 0 | 0 | 960 historical optimizer fits, not all-head refitting |
-| R6−R4 paired rows, classifier / LM | 5460 / 14 | 0 | 5460 / 14 | 0 | 0 | 0 | Predeclared NONADJACENT family |
-| Figure pairs | 31 | 0 | 31 | 0 | 0 | 0 | [Gallery](attempts/A09-attempt-001/FIGURE_GALLERY.md); all seeds/layers retained |
-| Fresh A09 saved-analysis recovery | Eight paths + two refit heads + contrasts | 0 | Fresh all-member + eight-path/two-head/contrast PASS | 0 | 0 | 0 | [Recovery](attempts/A09-attempt-001/BACKUP_VERIFICATION.json) |
+| Goal | Target | New sealed/verified | Reused verified | Pending / limitation | Evidence |
+|---|---:|---:|---:|---|---|
+| Original mirror assets | 16 | 16 | Included separately by transfer receipt | Missing exact assets only | [Downloads](attempts/A04-attempt-004/DOWNLOAD_RECEIPTS.json) |
+| New R3/R5 qualification variants | 6 | 0 | 0 | Features and LM gates remain separate | [Plan](attempts/A04-attempt-004/RECOVERY_PLAN.json) |
+| R3 historical + self-comparison rows | 135 | 0 | 0 | Exact same-checkpoint bridge | [Numerical results](attempts/A04-attempt-004/SMOKE_RESULTS.json) |
+| R5 self-comparison rows | 54 | 0 | 0 | No historical R5 equality claim | [Numerical results](attempts/A04-attempt-004/SMOKE_RESULTS.json) |
+| base/R1/R4/R6 qualification | 12 variants / 378 rows | 0 | 12 / 378 | No repeated GPU sweep | [Preserved units](attempts/A04-attempt-004/PRESERVED_QUALIFICATION_UNITS.json) |
+| Seven-endpoint qualification plan | 21 variants / 621 rows | 0 / 0 | 12 / 378 | R2 3 variants / 54 rows stay pending | [Coverage proposal](attempts/A04-attempt-004/A05_REQUIREMENTS.md) |
+| Production heads, six tasks × 26 hooks × three seeds | 3276 | 0 | 2340 | R2/R5 production remains unmeasured | [Historical A09](attempts/A04-attempt-004/../A09-attempt-001/TABLE_INDEX.json) |
+| Separate unchanged-base applications | 3276 | 0 | 2340 | Both policies preserved | Historical A09 |
+| Primary LM production units | 49 | 0 | 35 | Training smoke is not production LM | Historical A09 |
+| Shared DNA controls | 36 | 0 | 36 | No fitting this attempt | Historical A09 |
+| Paired uncertainty / independent metric verification | Frozen prior families | 0 | A08/A09 verified release | No new draws or scientific contrasts | Historical A09 |
+| New evidence private recovery | One bounded checkpoint | PENDING | Prior proofs reused | Immutable weight mirrors referenced without duplicate archives | [Recovery](attempts/A04-attempt-004/BACKUP_VERIFICATION.json) |
 
 ## This attempt
 
-Qualified reporting and force-fresh saved-analysis recovery PASS; report exact-byte Git proof PASS. Protect final metadata and stop the owned observer; no further science.
+All 16 exact mirror assets PASS: 31,033,757,868 native-shard bytes freshly transferred; 461,125 sidecar bytes reused after SHA/MD5 checks. Original layouts preserved, 33 software checks PASS; missing six TRAIN qualification variants now executing.
 
-A09 adds reports, presentation repairs and scoped recovery checks. It adds **zero scientific measurements, fits, forwards, bootstrap draws or interval families**. The historical handoff, frozen audit-plan statuses and typed control aliases are repaired only in A09-owned derivatives.
+There are zero new downstream scientific performance measurements, production extractions, probe fits, held-out forwards, bootstrap draws or scientific contrasts. Qualification uses only the frozen 12 TRAINING rows, all 26 hooks, physical batch 8, unchanged pooling/tokenization/precision and actual causal LM. Smoke residuals are numerical gates and do not rank model capabilities. The six tasks, 26 representations, three CV seeds, both policies, 36 controls, true LM and uncertainty standards remain frozen for any future approved production proposal.
 
-## Scientific findings and limits
+## Historical release and missing scope
 
-The verified A08 tables show readout-policy divergence, mixed R6−R4 effects and LM/probe disagreement. [Results](attempts/A09-attempt-001/RESULTS.md) uses both predeclared anchors, both policies and every seed/layer in the linked tables. All intervals remain pointwise and unadjusted, conditional on fitted heads; seed ranges are not confidence intervals. Higher scores before supplied configuration declaration do not establish unseen-training-data generalization. Missing parents, objectives and realized exposure prevent causal mixture attribution or an optimality/forgetting claim.
+The completed [A09 report](attempts/A04-attempt-004/../A09-attempt-001/RESULTS.md) and [gallery](attempts/A04-attempt-004/../A09-attempt-001/FIGURE_GALLERY.md) remain immutable historical release at `6552b2488525dd5fc5da4b30c1eff16c7712153e`. The full 3276-head experiment and A04 remain PARTIAL while R2 is unresolved. All five adjacent families remain unmeasured in this attempt; qualification can change future eligibility only. R3−R1 and R6−R4 remain nonadjacent. Realized exposure, parent/objective and source-label interpretation gaps remain explicit; runtime PASS cannot establish forgetting or causal retain-mixture effects.
 
-## Dependencies and reproducibility
+## Reproducibility, resources and processes
 
-The full 6637-unit ledger remains intact. R2 identity/delivery, R5 qualification and the R3 live-runtime bridge are distinct gaps. All five adjacent edges remain pending/blocked; R6−R4 cannot replace them. Historical R3 stays in its accepted domain and H3 exploratory test stays separate. A04 remains PARTIAL.
+[Package](attempts/A04-attempt-004/PACKAGE_VERIFICATION.json), [approval](attempts/A04-attempt-004/APPROVAL_RECORD.json), [mirror identity](attempts/A04-attempt-004/MIRROR_IDENTITY_VERIFICATION.json), [runtime lock](attempts/A04-attempt-004/ENVIRONMENT_LOCK.json) and [source](attempts/A04-attempt-004/SOURCE_IDENTITY.json) bind this attempt. Numerical source remains `e72bb12601855339bf4497d3854cbd90e1f052d1def08a7ed4bcbb1da2192c1c`; environment remains `401c96fdeb59783bf20954b153b24edaf913b87aa3d7607e1cc32c088d3ca294`. [Resource plan](attempts/A04-attempt-004/RESOURCE_PLAN.json) uses fresh provider capacity and cgroup/GPU observations. One GPU qualification process and bounded CPU/BLAS workers only. No original/rental start, rate or cost is invented. No deadline, GPU cap or closure reserve is reinstated.
 
-[Inputs](attempts/A09-attempt-001/A09_INPUTS.json), [finite plan](attempts/A09-attempt-001/A09_EXECUTION_MANIFEST.json), [input checks](attempts/A09-attempt-001/INPUT_VALIDATION.json), [events](attempts/A09-attempt-001/PROGRESS_EVENTS.jsonl) and [source](attempts/A09-attempt-001/SOURCE_IDENTITY.json) bind coverage `0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4` and protocol `73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7`. Recovery references immutable dependencies rather than repacking history.
-
-## Resources and processes
-
-At most two CPU workers × four BLAS threads and a 32-GiB address-space ceiling. Zero GPU work or purchases. Actual measurements and process identities are in [resource closeout](attempts/A09-attempt-001/RESOURCE_CLOSEOUT.json). Original/rental starts, rate and cost remain null. No deadline, science cutoff or closure reserve was reinstated.
-
-Observer **ACTIVE**; reviewer **DRAFT_ONLY**; publisher **BLOCKED**. Administrative services cannot approve or advance science. This run's owned observer will stop after verified terminal delivery; the Pod stays running.
+Observer **STOPPED**; reviewer **DRAFT_ONLY/not running**; publisher **BLOCKED/not running**. No scheduler is restarted. Owned transfer/GPU jobs are recorded separately by PID/start identity. The Pod stays running.
 
 ## Next action
 
-Terminal handoff; no further work without a new explicitly scoped approval. The [resume manifest](attempts/A09-attempt-001/RESUME_MANIFEST.json) and [restore instructions](attempts/A09-attempt-001/RESTORE.md) exclude completed work. No A10 or automatic restart is authorized.
-
-## Stage history
-
-| Stage | Status |
-|---|---|
-| A01 | Accepted |
-| A02 | Accepted PARTIAL |
-| A03 | Accepted |
-| A04 | PARTIAL |
-| A05 | COMPLETE |
-| A06 | Completed qualified subset; reporting exception preserved |
-| A07 | COMPLETE producer |
-| A08 | COMPLETE qualified analysis |
-| A09 | COMPLETE reporting/recovery |
+A04 R3/R5 recovery and qualification only. A protected proposal is required before a new A05 approval. No A05, production backfill, perturbation, Pod B work or replacement training runs here.

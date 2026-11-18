@@ -1,0 +1,101 @@
+{
+  "status": "PREFLIGHT_AND_PAYLOAD_INTEGRITY_PASS",
+  "targets": [
+    "R3",
+    "R5"
+  ],
+  "R2": "NOT_IN_SCOPE_NO_DISCOVERY",
+  "units": [
+    {
+      "checkpoint": "R3",
+      "variant": "logical1",
+      "logical_batch": 1,
+      "physical_batch": 8,
+      "train_rows": 12
+    },
+    {
+      "checkpoint": "R3",
+      "variant": "logical8",
+      "logical_batch": 8,
+      "physical_batch": 8,
+      "train_rows": 12
+    },
+    {
+      "checkpoint": "R3",
+      "variant": "repeat8",
+      "logical_batch": 8,
+      "physical_batch": 8,
+      "train_rows": 12
+    },
+    {
+      "checkpoint": "R5",
+      "variant": "logical1",
+      "logical_batch": 1,
+      "physical_batch": 8,
+      "train_rows": 12
+    },
+    {
+      "checkpoint": "R5",
+      "variant": "logical8",
+      "logical_batch": 8,
+      "physical_batch": 8,
+      "train_rows": 12
+    },
+    {
+      "checkpoint": "R5",
+      "variant": "repeat8",
+      "logical_batch": 8,
+      "physical_batch": 8,
+      "train_rows": 12
+    }
+  ],
+  "new_comparison_rows": 189,
+  "R3_comparison_rows": 135,
+  "R5_comparison_rows": 54,
+  "preserved_variants": 12,
+  "preserved_comparison_rows": 378,
+  "training_manifest_sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+  "smoke_atol": 0.0001,
+  "smoke_rtol": 1e-05,
+  "GPU_jobs": 1,
+  "CPU_workers": 1,
+  "BLAS_threads": 4,
+  "phases": [
+    "Verify small pinned mirror manifests/receipts and original Drive identity",
+    "Check resource capacity/private backup access/runtime source identity",
+    "Reuse exact local files or download only missing immutable assets",
+    "Execute missing six training-only variants sequentially and compare all hooks/LM/R3 historical anchors",
+    "Fresh metadata+CPU evidence recovery, guarded publication and A05 proposal"
+  ],
+  "weight_replication": "Use immutable verified mirrors; do not duplicate large archives unnecessarily",
+  "retry_policy": "At most two evidence-based retries per unchanged transient cause; stop permission/quota/mismatch failures; continue independent target",
+  "cost_usd": null,
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "New A04-attempt-004: R3/R5 mirror recovery and training-only qualification; no R2 discovery; stop before A05",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
+  },
+  "asset_layout": "Original eight-file delivery retained; owned flattened-tokenizer hardlink view for the unchanged executor",
+  "qualification_plan": "QUALIFICATION_PLAN.json"
+}
