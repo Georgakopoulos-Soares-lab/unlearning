@@ -1,0 +1,115 @@
+{
+  "schema": "pod-a-a04-report-QA-v1",
+  "status": "PASS_PREFLIGHT_PENDING_RECOVERY",
+  "new_variants": 6,
+  "new_comparison_rows": 189,
+  "R3_comparison_rows": 135,
+  "R3_historical_rows": 81,
+  "R5_comparison_rows": 54,
+  "feature_coordinates": 4193280,
+  "LM_values": 84,
+  "all_bidirectional_violations": 0,
+  "reused_variants": 12,
+  "reused_rows": 378,
+  "combined_variants": 18,
+  "combined_rows": 567,
+  "seven_slot_plan_variants": 21,
+  "seven_slot_plan_rows": 621,
+  "R2_pending_variants": 3,
+  "R2_pending_rows": 54,
+  "independent_LM_aggregate_rechecks": [
+    {
+      "alias": "R3",
+      "variant": "logical1",
+      "status": "PASS",
+      "independent_float64_loss_sum": 3168.445732116699,
+      "valid_target_count": 2722,
+      "corpus_NLL": 1.1640138619091474,
+      "PPL": 3.2027629588483144,
+      "NLL_abs_residual": 0.0,
+      "PPL_abs_residual": 0.0
+    },
+    {
+      "alias": "R3",
+      "variant": "logical8",
+      "status": "PASS",
+      "independent_float64_loss_sum": 3168.44571685791,
+      "valid_target_count": 2722,
+      "corpus_NLL": 1.1640138563034204,
+      "PPL": 3.2027629408944995,
+      "NLL_abs_residual": 0.0,
+      "PPL_abs_residual": 0.0
+    },
+    {
+      "alias": "R3",
+      "variant": "repeat8",
+      "status": "PASS",
+      "independent_float64_loss_sum": 3168.44571685791,
+      "valid_target_count": 2722,
+      "corpus_NLL": 1.1640138563034204,
+      "PPL": 3.2027629408944995,
+      "NLL_abs_residual": 0.0,
+      "PPL_abs_residual": 0.0
+    },
+    {
+      "alias": "R5",
+      "variant": "logical1",
+      "status": "PASS",
+      "independent_float64_loss_sum": 3062.6287841796875,
+      "valid_target_count": 2722,
+      "corpus_NLL": 1.1251391565685847,
+      "PPL": 3.0806455111501143,
+      "NLL_abs_residual": 0.0,
+      "PPL_abs_residual": 0.0
+    },
+    {
+      "alias": "R5",
+      "variant": "logical8",
+      "status": "PASS",
+      "independent_float64_loss_sum": 3062.628662109375,
+      "valid_target_count": 2722,
+      "corpus_NLL": 1.1251391117227683,
+      "PPL": 3.0806453729960546,
+      "NLL_abs_residual": 0.0,
+      "PPL_abs_residual": 0.0
+    },
+    {
+      "alias": "R5",
+      "variant": "repeat8",
+      "status": "PASS",
+      "independent_float64_loss_sum": 3062.628662109375,
+      "valid_target_count": 2722,
+      "corpus_NLL": 1.1251391117227683,
+      "PPL": 3.0806453729960546,
+      "NLL_abs_residual": 0.0,
+      "PPL_abs_residual": 0.0
+    }
+  ],
+  "all_previous_attempt_trees_unchanged": true,
+  "preserved_previous_run_root_files": 7,
+  "public_sources_parsed": 18,
+  "Markdown_links_resolved": 42,
+  "pending_links": [
+    "BACKUP_VERIFICATION.json",
+    "BACKUP_VERIFICATION.json",
+    "BACKUP_VERIFICATION.json",
+    "BACKUP_VERIFICATION.json"
+  ],
+  "required_outputs_missing": [
+    "BACKUP_VERIFICATION.json"
+  ],
+  "privacy": "PASS",
+  "qualified_source_unchanged": true,
+  "guard": {
+    "status": "PASS",
+    "head": "eaaaceeb3e42a14f140ab9ba43f925815cd65b00",
+    "branch": "POD_A",
+    "worktree": "/workspace/wt-pod-a",
+    "main_index_status_and_other_refs_unchanged": true,
+    "previous_A01_A09_attempt_trees_unchanged": true
+  },
+  "new_production_scores": 0,
+  "new_probe_fits": 0,
+  "heldout_forwards": 0,
+  "checked_utc": "2026-11-18T17:33:35.675076+00:00"
+}

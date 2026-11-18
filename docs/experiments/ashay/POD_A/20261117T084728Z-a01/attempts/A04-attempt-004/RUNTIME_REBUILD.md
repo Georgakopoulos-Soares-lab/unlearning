@@ -1,0 +1,5 @@
+# Runtime and exact-source reuse
+
+Reuse the unchanged qualified environment `/workspace/venvs/pod-a-a04-attempt-002`. SOURCE_IDENTITY.json remains SHA256 `e72bb12601855339bf4497d3854cbd90e1f052d1def08a7ed4bcbb1da2192c1c`; ENVIRONMENT_LOCK.json remains `401c96fdeb59783bf20954b153b24edaf913b87aa3d7607e1cc32c088d3ca294`. Preflight matched the full distribution multiset, original pip-freeze, and pinned BioNeMo/Bridge/Megatron source commits. All six new units bind those exact identities. Base keeps its preserved earlier source and path-equivalence proof. No environment reinstall, numerical repair, quantization or tolerance change was performed.
+
+The original [rebuild recipe](../A04-attempt-002/RUNTIME_REBUILD.md) and original build/source/wheel receipts remain authoritative dependencies. Full fresh-server GPU/runtime rebuilding was not executed. `owned_adapter.patch.json` in CODE is a lossless source-data representation; decode its UTF-8 content and verify original_sha256 to recover the exact native patch. The private evidence checkpoint retains the original `.patch` file and complete code.

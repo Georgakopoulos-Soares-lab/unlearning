@@ -1,0 +1,2917 @@
+{
+  "status": "PASS",
+  "unique_empty_entries_per_checkpoint": 102,
+  "unique_new_checkpoint_entries": 204,
+  "units": [
+    {
+      "alias": "R3",
+      "variant": "logical1",
+      "empty_serialized_entries_proven": 102,
+      "actual_missing_non_tensor_metadata": 101,
+      "native_inventory_sha256": "c55c31ac6dbf5ceb60e7e66e35e909539aa8d3db97462561ce588b920e551133",
+      "MCore_and_TE_specific_proof": "Qualified typed-owner + canonical empty payload checks; no wildcard key omission",
+      "entries": null
+    },
+    {
+      "alias": "R3",
+      "variant": "logical8",
+      "empty_serialized_entries_proven": 102,
+      "actual_missing_non_tensor_metadata": 101,
+      "native_inventory_sha256": "c55c31ac6dbf5ceb60e7e66e35e909539aa8d3db97462561ce588b920e551133",
+      "MCore_and_TE_specific_proof": "Qualified typed-owner + canonical empty payload checks; no wildcard key omission",
+      "entries": [
+        {
+          "key": "decoder.layers.0.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.0.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.0.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.0.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.final_norm._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "output_layer._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "non-tensor None",
+            "learned_tensor_values": 0,
+            "storage_sha256": "c20eda907b941627ef97d88277cdcf62b64d2461714332e47f0315ea70606dc0",
+            "storage_bytes": 1261
+          },
+          "MCore_TE_compatibility_owner": true
+        }
+      ]
+    },
+    {
+      "alias": "R3",
+      "variant": "repeat8",
+      "empty_serialized_entries_proven": 102,
+      "actual_missing_non_tensor_metadata": 101,
+      "native_inventory_sha256": "c55c31ac6dbf5ceb60e7e66e35e909539aa8d3db97462561ce588b920e551133",
+      "MCore_and_TE_specific_proof": "Qualified typed-owner + canonical empty payload checks; no wildcard key omission",
+      "entries": null
+    },
+    {
+      "alias": "R5",
+      "variant": "logical1",
+      "empty_serialized_entries_proven": 102,
+      "actual_missing_non_tensor_metadata": 101,
+      "native_inventory_sha256": "06a94560081e51b756da22c5235050ca15dea10c22d1a670217f1daf8e64b748",
+      "MCore_and_TE_specific_proof": "Qualified typed-owner + canonical empty payload checks; no wildcard key omission",
+      "entries": null
+    },
+    {
+      "alias": "R5",
+      "variant": "logical8",
+      "empty_serialized_entries_proven": 102,
+      "actual_missing_non_tensor_metadata": 101,
+      "native_inventory_sha256": "06a94560081e51b756da22c5235050ca15dea10c22d1a670217f1daf8e64b748",
+      "MCore_and_TE_specific_proof": "Qualified typed-owner + canonical empty payload checks; no wildcard key omission",
+      "entries": [
+        {
+          "key": "decoder.layers.0.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.0.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.0.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.0.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.1.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.2.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.3.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.4.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.5.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.6.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.7.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.8.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.9.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.10.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.11.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.12.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.13.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.14.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.15.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.16.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.17.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.18.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.19.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.20.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.21.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.22.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mixer.dense_projection._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mixer.dense._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.23.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.self_attention.linear_proj._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.self_attention.linear_qkv._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.mlp.linear_fc1._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.layers.24.mlp.linear_fc2._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "decoder.final_norm._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "empty uint8 metadata container",
+            "learned_tensor_values": 0,
+            "serialized_bytes_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "storage_sha256": "1e52448b4b0bee5f618322fb56008db0fa6b7750d4cf6ab3221fa8c5e816a790",
+            "storage_bytes": 1513
+          },
+          "MCore_TE_compatibility_owner": false
+        },
+        {
+          "key": "output_layer._extra_state/shard_0_1",
+          "type": "BytesStorageMetadata",
+          "reason": "Verified singleton native metadata wrapper contains only non-tensor None/emptydict; confirmed TE owner or exact MCore TEcompatibilityNone",
+          "empty_non_tensor_payload_proof": {
+            "wrapper": "singleton TP1 ShardedObject list",
+            "payload": "non-tensor None",
+            "learned_tensor_values": 0,
+            "storage_sha256": "c20eda907b941627ef97d88277cdcf62b64d2461714332e47f0315ea70606dc0",
+            "storage_bytes": 1261
+          },
+          "MCore_TE_compatibility_owner": true
+        }
+      ]
+    },
+    {
+      "alias": "R5",
+      "variant": "repeat8",
+      "empty_serialized_entries_proven": 102,
+      "actual_missing_non_tensor_metadata": 101,
+      "native_inventory_sha256": "06a94560081e51b756da22c5235050ca15dea10c22d1a670217f1daf8e64b748",
+      "MCore_and_TE_specific_proof": "Qualified typed-owner + canonical empty payload checks; no wildcard key omission",
+      "entries": null
+    }
+  ]
+}

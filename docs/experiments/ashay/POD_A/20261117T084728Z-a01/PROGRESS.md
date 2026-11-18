@@ -1,17 +1,17 @@
 # A04 R3/R5 mirror recovery — RUNNING
 
-Run `20261117T084728Z-a01`, attempt `A04-attempt-004`. Observed UTC `2026-11-18T17:13:00.476426+00:00`. Approved A04 package `a64008eb44543dfea92644f96b0129c1a1c661fe` and exact `a9.5.md` amendment `07b284aec7fbdd9764597f46cc41226a46db435e` are pinned. Scope is acquisition and training-only qualification of selected R3/R5; R2 discovery is excluded. The observer remains STOPPED.
+Run `20261117T084728Z-a01`, attempt `A04-attempt-004`. Observed UTC `2026-11-18T17:31:14.543847+00:00`. Approved A04 package `a64008eb44543dfea92644f96b0129c1a1c661fe` and exact `a9.5.md` amendment `07b284aec7fbdd9764597f46cc41226a46db435e` are pinned. Scope is acquisition and training-only qualification of selected R3/R5; R2 discovery is excluded. The observer remains STOPPED.
 
 ## Goals and finite units
 
 | Goal | Target | New sealed/verified | Reused verified | Pending / limitation | Evidence |
 |---|---:|---:|---:|---|---|
 | Original mirror assets | 16 | 16 | Included separately by transfer receipt | Missing exact assets only | [Downloads](attempts/A04-attempt-004/DOWNLOAD_RECEIPTS.json) |
-| New R3/R5 qualification variants | 6 | 0 | 0 | Features and LM gates remain separate | [Plan](attempts/A04-attempt-004/RECOVERY_PLAN.json) |
-| R3 historical + self-comparison rows | 135 | 0 | 0 | Exact same-checkpoint bridge | [Numerical results](attempts/A04-attempt-004/SMOKE_RESULTS.json) |
-| R5 self-comparison rows | 54 | 0 | 0 | No historical R5 equality claim | [Numerical results](attempts/A04-attempt-004/SMOKE_RESULTS.json) |
+| New R3/R5 qualification variants | 6 | 6 | 0 | Features and LM gates remain separate | [Plan](attempts/A04-attempt-004/RECOVERY_PLAN.json) |
+| R3 historical + self-comparison rows | 135 | 135 | 0 | Exact same-checkpoint bridge | [Numerical results](attempts/A04-attempt-004/SMOKE_RESULTS.json) |
+| R5 self-comparison rows | 54 | 54 | 0 | No historical R5 equality claim | [Numerical results](attempts/A04-attempt-004/SMOKE_RESULTS.json) |
 | base/R1/R4/R6 qualification | 12 variants / 378 rows | 0 | 12 / 378 | No repeated GPU sweep | [Preserved units](attempts/A04-attempt-004/PRESERVED_QUALIFICATION_UNITS.json) |
-| Seven-endpoint qualification plan | 21 variants / 621 rows | 0 / 0 | 12 / 378 | R2 3 variants / 54 rows stay pending | [Coverage proposal](attempts/A04-attempt-004/A05_REQUIREMENTS.md) |
+| Seven-endpoint qualification plan | 21 variants / 621 rows | 6 / 189 | 12 / 378 | R2 3 variants / 54 rows stay pending | [Coverage proposal](attempts/A04-attempt-004/A05_REQUIREMENTS.md) |
 | Production heads, six tasks × 26 hooks × three seeds | 3276 | 0 | 2340 | R2/R5 production remains unmeasured | [Historical A09](attempts/A04-attempt-004/../A09-attempt-001/TABLE_INDEX.json) |
 | Separate unchanged-base applications | 3276 | 0 | 2340 | Both policies preserved | Historical A09 |
 | Primary LM production units | 49 | 0 | 35 | Training smoke is not production LM | Historical A09 |
@@ -21,7 +21,7 @@ Run `20261117T084728Z-a01`, attempt `A04-attempt-004`. Observed UTC `2026-11-18T
 
 ## This attempt
 
-All 16 exact mirror assets PASS: 31,033,757,868 native-shard bytes freshly transferred; 461,125 sidecar bytes reused after SHA/MD5 checks. Original layouts preserved, 33 software checks PASS; missing six TRAIN qualification variants now executing.
+R3/R5 TRAIN qualification complete: six first-attempt variants, 189/189 bidirectional comparisons PASS, including R3 historical bridge. GPU jobs exited; evidence recovery and final A05 proposal protection remain.
 
 There are zero new downstream scientific performance measurements, production extractions, probe fits, held-out forwards, bootstrap draws or scientific contrasts. Qualification uses only the frozen 12 TRAINING rows, all 26 hooks, physical batch 8, unchanged pooling/tokenization/precision and actual causal LM. Smoke residuals are numerical gates and do not rank model capabilities. The six tasks, 26 representations, three CV seeds, both policies, 36 controls, true LM and uncertainty standards remain frozen for any future approved production proposal.
 
@@ -38,3 +38,17 @@ Observer **STOPPED**; reviewer **DRAFT_ONLY/not running**; publisher **BLOCKED/n
 ## Next action
 
 A04 R3/R5 recovery and qualification only. A protected proposal is required before a new A05 approval. No A05, production backfill, perturbation, Pod B work or replacement training runs here.
+
+## Stage history (receipt-based, no fabricated continuous timeline)
+
+| Stage | Accepted historical state / current scope |
+|---|---|
+| A01 | Readiness accepted after explicit time-policy steering |
+| A02 | Partial inventory accepted; R2 unresolved |
+| A03 | Historical evidence/cohort recovery accepted |
+| A04 | Reopened R3/R5-only recovery in attempt004; R2 excluded |
+| A05 | Original R4/R6 protocol/coverage freeze preserved |
+| A06 | Qualified R4/R6 production subset; reporting repair preserved |
+| A07 | Remaining R4/R6 producer work accepted |
+| A08 | Qualified numerical audit / R6-R4 analysis complete |
+| A09 | Qualified report and saved-analysis handoff delivered; immutable release |

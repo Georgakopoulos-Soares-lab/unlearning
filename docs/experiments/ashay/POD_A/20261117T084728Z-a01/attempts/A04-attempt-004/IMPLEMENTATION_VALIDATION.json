@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "tests": 33,
+  "tests": 40,
   "logs": [
     {
       "kind": "qualification",
@@ -15,6 +15,13 @@
       "status": "PASS",
       "log": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-004/logs/tests.assets.stderr.log",
       "sha256": "fa9e4fa93cb00c2d42e774cec87f9cc030fff37b4d06868ccf92b53b5e75cf15"
+    },
+    {
+      "kind": "restore_safety",
+      "tests": 7,
+      "status": "PASS",
+      "log": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-004/logs/tests.restore.stderr.log",
+      "sha256": "433255320efe9708003a2c319074c090009ae4760dd61edca7ca1fa2e6a4af4f"
     }
   ],
   "scope": "Unchanged qualification contracts plus exact-path/revision/full-SHA/provider-MD5 asset boundaries; synthetic checks do not substitute for actual GPU qualification"
