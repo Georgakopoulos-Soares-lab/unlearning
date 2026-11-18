@@ -1,16 +1,16 @@
 # A06-attempt-002 — RUNNING
 
-Adapter TRAIN parity/repeat PASS:81 bidirectional comparisons, zero maximum residual.35 implementation/CPU tests plus2 duplicate-unit/archive tests PASS. H3 production is running; other-five remains locked pending full H3 audit and fresh recovery.
+H3 live independent audit PASS for78 heads/78 applications/312 paths; six full-CV refits PASS; all6.72million paired-draw values checked within1e-12. H3 private checkpoint/fresh recovery in progress; other-five locked.
 
-Observed UTC: 2026-11-18T20:41:34.522384+00:00 (local display UTC). Approved prompt `4ff94e09b72a02d6e3082af064669c98adda6008`; coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`.
+Observed UTC: 2026-11-18T21:13:04.163264+00:00 (local display UTC). Approved prompt `4ff94e09b72a02d6e3082af064669c98adda6008`; coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`.
 
 | Goal | Full target | New verified/sealed | Historical reused | Pending beyond completed | Evidence |
 |---|---:|---:|---:|---:|---|
-| Final heads | 3276 | 0 | 2340 | 936 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
-| Fixed-base applications | 3276 | 0 | 2340 | 936 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
-| Primary LM | 49 | 0 | 35 | 14 | [LM_INDEX.json](LM_INDEX.json) |
+| Final heads | 3276 | 78 | 2340 | 858 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
+| Fixed-base applications | 3276 | 78 | 2340 | 858 | [H3_HEAD_INDEX.json](H3_HEAD_INDEX.json) |
+| Primary LM | 49 | 2 | 35 | 12 | [LM_INDEX.json](LM_INDEX.json) |
 | Shared controls | 36 | 0 | 36 | 0 | [../A05-attempt-002/REUSE_MATRIX.csv](../A05-attempt-002/REUSE_MATRIX.csv) |
-| A06 feature bundles | 13 | 0 | 0 | 13 | [EXTRACTION_INDEX.json](EXTRACTION_INDEX.json) |
+| A06 feature bundles | 13 | 3 | 0 | 10 | [EXTRACTION_INDEX.json](EXTRACTION_INDEX.json) |
 
 R5 only: all26 representations, physical8, three CV seeds, both policies. H3 owns78 heads/applications and six independent full-CV audit refits. Other-five classification390 units belongs to A07; no other-five extraction before exact H3 technical/recovery PASS. No paired LM or adjacent contrasts in A06. R2 remains unadmitted; accepted R3 saved-output eligibility is preserved.
 

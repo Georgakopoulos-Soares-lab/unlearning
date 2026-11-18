@@ -1,0 +1,76 @@
+{
+  "original_A05_audit_plan_sha256": "81a6901cd3f821f4a6293ccaea43539a0cac6c4a15c86584e0b9226d84dbea61",
+  "prospective_panel": [
+    {
+      "unit_id": "R5/emp_H3/decoder.layers.16/42",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 42,
+      "owner_stage": "A06",
+      "audit": "INDEPENDENT_FULL_CV_AND_FINAL_REFIT",
+      "initial_optimizer_fits": 10,
+      "production_head_replaced": false,
+      "selection_basis": "All tasks \u00d7 both predeclared anchors \u00d7 all three seeds, before any R5 scores"
+    },
+    {
+      "unit_id": "R5/emp_H3/decoder.layers.16/17",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 17,
+      "owner_stage": "A06",
+      "audit": "INDEPENDENT_FULL_CV_AND_FINAL_REFIT",
+      "initial_optimizer_fits": 10,
+      "production_head_replaced": false,
+      "selection_basis": "All tasks \u00d7 both predeclared anchors \u00d7 all three seeds, before any R5 scores"
+    },
+    {
+      "unit_id": "R5/emp_H3/decoder.layers.16/1234",
+      "task": "emp_H3",
+      "representation": "decoder.layers.16",
+      "seed": 1234,
+      "owner_stage": "A06",
+      "audit": "INDEPENDENT_FULL_CV_AND_FINAL_REFIT",
+      "initial_optimizer_fits": 10,
+      "production_head_replaced": false,
+      "selection_basis": "All tasks \u00d7 both predeclared anchors \u00d7 all three seeds, before any R5 scores"
+    },
+    {
+      "unit_id": "R5/emp_H3/decoder.final_norm/42",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 42,
+      "owner_stage": "A06",
+      "audit": "INDEPENDENT_FULL_CV_AND_FINAL_REFIT",
+      "initial_optimizer_fits": 10,
+      "production_head_replaced": false,
+      "selection_basis": "All tasks \u00d7 both predeclared anchors \u00d7 all three seeds, before any R5 scores"
+    },
+    {
+      "unit_id": "R5/emp_H3/decoder.final_norm/17",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 17,
+      "owner_stage": "A06",
+      "audit": "INDEPENDENT_FULL_CV_AND_FINAL_REFIT",
+      "initial_optimizer_fits": 10,
+      "production_head_replaced": false,
+      "selection_basis": "All tasks \u00d7 both predeclared anchors \u00d7 all three seeds, before any R5 scores"
+    },
+    {
+      "unit_id": "R5/emp_H3/decoder.final_norm/1234",
+      "task": "emp_H3",
+      "representation": "decoder.final_norm",
+      "seed": 1234,
+      "owner_stage": "A06",
+      "audit": "INDEPENDENT_FULL_CV_AND_FINAL_REFIT",
+      "initial_optimizer_fits": 10,
+      "production_head_replaced": false,
+      "selection_basis": "All tasks \u00d7 both predeclared anchors \u00d7 all three seeds, before any R5 scores"
+    }
+  ],
+  "sampled_units": 6,
+  "all_unit_probability_metric_draw_interval_checks": true,
+  "all_paired_draw_supplement_required": true,
+  "initial_audit_solver_calls": 60,
+  "production_heads_separate": 78
+}
