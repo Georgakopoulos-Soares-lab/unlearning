@@ -1,0 +1,28 @@
+{
+  "schema": "pod-a-a09-environment-v1",
+  "status": "PASS",
+  "python": "3.12.3",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.8.0"
+  },
+  "cpu_executable": "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+  "GPU_visibility": "Disabled for workers",
+  "ordinary_workers_max": 2,
+  "BLAS_threads_per_worker": 4,
+  "RLIMIT_AS_bytes": 34359738368,
+  "no_installs_or_upgrades": true,
+  "inherited_A08_environment": {
+    "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/ENVIRONMENT_CHECK.json",
+    "bytes": 1003,
+    "sha256": "2dc117b094c3c96f44221483e23d3acaecbf075d762d97afc6f8ed928cb707e8"
+  },
+  "plot_environment_reused": {
+    "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/FIGURE_ENVIRONMENT.json",
+    "bytes": 848,
+    "sha256": "586b043330dbb337cb07abd353aeb8f0258f39050f38ea9c00032edf2e057122"
+  }
+}

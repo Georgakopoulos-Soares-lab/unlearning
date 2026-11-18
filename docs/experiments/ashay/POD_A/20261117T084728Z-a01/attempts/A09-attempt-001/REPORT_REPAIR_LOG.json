@@ -1,0 +1,99 @@
+{
+  "schema": "pod-a-a09-report-repair-log-v1",
+  "status": "PASS",
+  "version": "A09-presentation-v1",
+  "repairs": [
+    {
+      "repair": "Readable historical Markdown",
+      "source": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SESSION_HANDOFF.md",
+        "bytes": 4365,
+        "sha256": "e192c5776b58bed61ee8b722ec96473a0d890c8c6ae9c0d9c227fb5bf701ef5d"
+      },
+      "source_type": "JSON_ENCODED_STRING",
+      "derivative": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/HISTORICAL_A08_HANDOFF.readable.v1.md",
+        "bytes": 4727,
+        "sha256": "607c441329078a8b28d3e1b77fda4c3786820f4f468cec97f6fb11bf2097e1ac"
+      },
+      "transformation": "A09-presentation-v1",
+      "changes": "Decode one JSON string, annotate historical status, translate relative links to immutable A08 directory",
+      "scientific_values_changed": false,
+      "source_preserved": true
+    },
+    {
+      "repair": "Current audit status",
+      "source_plan": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/AUDIT_SCOPE_MATRIX.csv",
+        "bytes": 190968,
+        "sha256": "3188e10a79fb06ca50d4411b60abf980040525972d6ea44df5ec8d172c6dc7b8"
+      },
+      "source_overlay": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/VERIFICATION_OVERLAY.json",
+        "bytes": 941180,
+        "sha256": "03fa13cfd04ae52edcd7788dc45a7a672fb1b58cd01615dd4c2aebbd8d83a2ec"
+      },
+      "source_audit": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/NUMERICAL_AUDIT.json",
+        "bytes": 389726,
+        "sha256": "0e29ea22a06fe22efa546da5792541e65cbe654dc01bf5261e94d44969977377"
+      },
+      "source_refits": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/AUDIT_REFIT_RECEIPT.json",
+        "bytes": 107373,
+        "sha256": "17707b2fd2321dba830334eab03951a6700946ecab400cfb923d0733143281d0"
+      },
+      "derivative": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/AUDIT_RELEASE_STATUS.csv",
+        "bytes": 604672,
+        "sha256": "bfd1d2a3c7befb47052e1b568ecb5a905f757aab6f6d87fc17ca97c14e3cd9cf"
+      },
+      "unit_keys": 780,
+      "sampled_refits": 60,
+      "all_unit_audits": 780,
+      "source_preserved": true,
+      "no_all_head_refit_claim": true,
+      "scientific_values_changed": false
+    },
+    {
+      "repair": "Typed control endpoint alias join",
+      "source": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/PAIRED_CONTRASTS.H3_reused.csv",
+        "bytes": 12385254,
+        "sha256": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b"
+      },
+      "control_points": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/CONTROL_METRICS_REUSED.csv",
+        "bytes": 246832,
+        "sha256": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e"
+      },
+      "control_identity_index": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/CONTROL_REUSE_INDEX.json",
+        "bytes": 65552,
+        "sha256": "5352e77a7984ed985ba2f79e53fab9092335abc0f049956d70b6bddb1da6716a"
+      },
+      "alias_map": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/ENDPOINT_ALIAS_MAP.csv",
+        "bytes": 611608,
+        "sha256": "69784fe33b3fc05e746390ac0e2b0e0bcd75c6ce3025336df4d2b0845902a267"
+      },
+      "derivative": {
+        "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/PAIRED_CONTRASTS.H3_canonical.v1.csv",
+        "bytes": 17382408,
+        "sha256": "d4d7e523035978e1a1886a1c4fce51aa7ded258c1974a5a921bd6596043dbfe3"
+      },
+      "affected_rows": 480,
+      "total_preserved_rows": 6720,
+      "unique_affected_full_keys": 480,
+      "protected_numerical_origin_fields_sha256": "5b6dcbc95665db6fa2f3ecc1ec6a5d9836806a5ddf3f097cf07fc70e3a4481bd",
+      "original_ids_retained": true,
+      "original_all_other_fields_strings_and_order_preserved": true,
+      "paired_point_max_abs": 0.0,
+      "source_preserved": true,
+      "scientific_values_changed": false
+    }
+  ],
+  "no_producer_seals_rewritten": true,
+  "no_new_scientific_measurements": true,
+  "created_utc": "2026-11-18T11:17:30.847170+00:00"
+}

@@ -1,0 +1,936 @@
+{
+  "status": "PASS",
+  "all31PNG_PDF_pairs_hash_checked": true,
+  "figures": [
+    {
+      "name": "dev/profiles_auroc",
+      "files": [
+        {
+          "path": "figures/dev/profiles_auroc.png",
+          "bytes": 511515,
+          "sha256": "51e7446ac2a2d1dc51699e0e3fef63decb9dafd66a08c1defb6c8febd37d0867"
+        },
+        {
+          "path": "figures/dev/profiles_auroc.pdf",
+          "bytes": 35300,
+          "sha256": "6672a8d4bb1a8c08a56d97702d2de92b13e31ecde7c272797d942605d68a4580"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 3768,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/anchors_auroc",
+      "files": [
+        {
+          "path": "figures/dev/anchors_auroc.png",
+          "bytes": 324497,
+          "sha256": "befd674b8d37348efce78301cdb3105af53e350531d6bd5cb691a0d0e60b6b99"
+        },
+        {
+          "path": "figures/dev/anchors_auroc.pdf",
+          "bytes": 46472,
+          "sha256": "bed69318bd328dfa143e8667248b218c26418a659ffac4b694f2e27d28ef8ac3"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 96,
+      "caption": "Seed 42 and layer 16/final norm were predeclared, not selected using scores. Intervals are conditional on fitted heads and unadjusted across the grid; all seeds remain in released tables.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/R6_minus_R4_auroc",
+      "files": [
+        {
+          "path": "figures/dev/R6_minus_R4_auroc.png",
+          "bytes": 720948,
+          "sha256": "4251cee4a21b42e3f37c23374f548baee91cbfb1701a5eefe20226ebf9d5a119"
+        },
+        {
+          "path": "figures/dev/R6_minus_R4_auroc.pdf",
+          "bytes": 36129,
+          "sha256": "215ced0d6d82ccf72505954259fb15e95cabf0270223404f464cb99f52d72343"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 936,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/profiles_auroc",
+      "files": [
+        {
+          "path": "figures/exploratory_test/profiles_auroc.png",
+          "bytes": 109963,
+          "sha256": "c4392627ffdada262019230ecc1bd9e3081e3d180f877caf7b3d0edd2fc315f9"
+        },
+        {
+          "path": "figures/exploratory_test/profiles_auroc.pdf",
+          "bytes": 21754,
+          "sha256": "c0b1fac89c202f0526730c4e494904d25fb728b34fad317ffebde0df1f364614"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 628,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/R6_minus_R4_auroc",
+      "files": [
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_auroc.png",
+          "bytes": 133826,
+          "sha256": "6dedcae296d895d700974d11862ed167fc09416f0c21cf5269f16f97cd95333e"
+        },
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_auroc.pdf",
+          "bytes": 23913,
+          "sha256": "50359259ff6db3986a0034d23a024d0162c6a56c51fb5ca13d38bea70e30f144"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 156,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/profiles_average_precision",
+      "files": [
+        {
+          "path": "figures/dev/profiles_average_precision.png",
+          "bytes": 547259,
+          "sha256": "991f19c199d3ef3eff721c83f80e3d55621783b7ca04feb550cc11e98a88a97d"
+        },
+        {
+          "path": "figures/dev/profiles_average_precision.pdf",
+          "bytes": 35245,
+          "sha256": "487a75f18d542747020998939609eade9a6c5bf19acfef463a26b139d404ef5f"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 3768,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/anchors_average_precision",
+      "files": [
+        {
+          "path": "figures/dev/anchors_average_precision.png",
+          "bytes": 325447,
+          "sha256": "a2214aedb636de66ed414047d0bd5c6da94f56a01bef0aa15bcc9d3e9c722fbd"
+        },
+        {
+          "path": "figures/dev/anchors_average_precision.pdf",
+          "bytes": 45841,
+          "sha256": "819f16c4b7aa3576c694f64bcc6b435a0416041d415bd759305486ba97d3a6b5"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 96,
+      "caption": "Seed 42 and layer 16/final norm were predeclared, not selected using scores. Intervals are conditional on fitted heads and unadjusted across the grid; all seeds remain in released tables.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/R6_minus_R4_average_precision",
+      "files": [
+        {
+          "path": "figures/dev/R6_minus_R4_average_precision.png",
+          "bytes": 781025,
+          "sha256": "be4b4016d7569fc1dfe6c3d03d21d0ca8b2aec1d11e86ac3686fed51c7f4bb77"
+        },
+        {
+          "path": "figures/dev/R6_minus_R4_average_precision.pdf",
+          "bytes": 36276,
+          "sha256": "99ef2f7da4fc5793934c57c77cfbde31a6ef31ed0d354d5cf428430513974671"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 936,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/profiles_average_precision",
+      "files": [
+        {
+          "path": "figures/exploratory_test/profiles_average_precision.png",
+          "bytes": 117171,
+          "sha256": "c83d7301b20ca896d7993897890b8171dbfbf5ada14a2a714ee21312e962a313"
+        },
+        {
+          "path": "figures/exploratory_test/profiles_average_precision.pdf",
+          "bytes": 21209,
+          "sha256": "eadafec61664b597a097a971a4f9ed76298da709b676d711a9833ee9b3c3774d"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 628,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/R6_minus_R4_average_precision",
+      "files": [
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_average_precision.png",
+          "bytes": 146156,
+          "sha256": "ff767b12f36349c5e3983eb07a733541cf954faaeca4fef30dc6e26e85338d53"
+        },
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_average_precision.pdf",
+          "bytes": 23864,
+          "sha256": "ced54629c57c8880a63894ada26272e2a2866f3db2707bae4c498aa1879cb89b"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 156,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/profiles_accuracy",
+      "files": [
+        {
+          "path": "figures/dev/profiles_accuracy.png",
+          "bytes": 556173,
+          "sha256": "cf7988be39bc4cb769636cb39082cd49798bda03af41aab921ce5bb5d603aed9"
+        },
+        {
+          "path": "figures/dev/profiles_accuracy.pdf",
+          "bytes": 33608,
+          "sha256": "a39d15b00de7e113c0f723a32dac040b05275360e1dbb903f9897292cab66263"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 3768,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/anchors_accuracy",
+      "files": [
+        {
+          "path": "figures/dev/anchors_accuracy.png",
+          "bytes": 321884,
+          "sha256": "3238ad9dfad93814df12791b520998ec404e684498f2f8a09f0e20426deb721b"
+        },
+        {
+          "path": "figures/dev/anchors_accuracy.pdf",
+          "bytes": 45225,
+          "sha256": "19aac5f9a096afee7e7e14dff0f2bbf2ab3a3583a7cc6b95b32b8396fb1b6d17"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 96,
+      "caption": "Seed 42 and layer 16/final norm were predeclared, not selected using scores. Intervals are conditional on fitted heads and unadjusted across the grid; all seeds remain in released tables.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/R6_minus_R4_accuracy",
+      "files": [
+        {
+          "path": "figures/dev/R6_minus_R4_accuracy.png",
+          "bytes": 822329,
+          "sha256": "cdccc30f4f1a276f9b8aa5f9d60f11f692d7b190bb26461dcc682c3414f410d6"
+        },
+        {
+          "path": "figures/dev/R6_minus_R4_accuracy.pdf",
+          "bytes": 34675,
+          "sha256": "2e9dbf75c33e837db997b085ccea277ae05abe14f3a92120776faeb7d40d98a4"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 936,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/profiles_accuracy",
+      "files": [
+        {
+          "path": "figures/exploratory_test/profiles_accuracy.png",
+          "bytes": 119062,
+          "sha256": "39e044a99b8f91bfada38b291b48e36b092723532a80d1673ac9684965c61225"
+        },
+        {
+          "path": "figures/exploratory_test/profiles_accuracy.pdf",
+          "bytes": 21020,
+          "sha256": "ff649c8203848f5af0eb845ea651db834337f9cf8c6c46bcb46c38012d42ed92"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 628,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/R6_minus_R4_accuracy",
+      "files": [
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_accuracy.png",
+          "bytes": 165435,
+          "sha256": "08b737a053333dd5e33c9255a934c3768c939f6ad655a8e30806b7aa0bc1c104"
+        },
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_accuracy.pdf",
+          "bytes": 23637,
+          "sha256": "2e4fab08b3718b5fc06debfd1a085c3ef35beb7e8b632ee769e520d28b83ac20"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 156,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/profiles_balanced_accuracy",
+      "files": [
+        {
+          "path": "figures/dev/profiles_balanced_accuracy.png",
+          "bytes": 581317,
+          "sha256": "4181eb3034ce3daeaf14f63ff52a8d9119b2f339c69174e5c0f6e5f994a56db1"
+        },
+        {
+          "path": "figures/dev/profiles_balanced_accuracy.pdf",
+          "bytes": 35291,
+          "sha256": "fc32511f331b9f0c0eb5306e8e29bf4089826a3818adecf9995bfd9475e0f147"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 3768,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/anchors_balanced_accuracy",
+      "files": [
+        {
+          "path": "figures/dev/anchors_balanced_accuracy.png",
+          "bytes": 319225,
+          "sha256": "ae51ed597ff304d7a79ba787cf281c11568ff9398e736e95da00fc1a431884af"
+        },
+        {
+          "path": "figures/dev/anchors_balanced_accuracy.pdf",
+          "bytes": 45564,
+          "sha256": "99a19185f012d9fbffacd71a92b18c80a0efe3be3cd64f308de772c67182b0ac"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 96,
+      "caption": "Seed 42 and layer 16/final norm were predeclared, not selected using scores. Intervals are conditional on fitted heads and unadjusted across the grid; all seeds remain in released tables.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/R6_minus_R4_balanced_accuracy",
+      "files": [
+        {
+          "path": "figures/dev/R6_minus_R4_balanced_accuracy.png",
+          "bytes": 859700,
+          "sha256": "7d1cde8213dd3ca2452f4e2dc13437a2bcfda60c93bc01979254ed193b6d61e2"
+        },
+        {
+          "path": "figures/dev/R6_minus_R4_balanced_accuracy.pdf",
+          "bytes": 36247,
+          "sha256": "4cdfc3b149bf7ec8d515d1d9ac31e4bd94ad3639bbd3972bbeb7de7289d5881d"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 936,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/profiles_balanced_accuracy",
+      "files": [
+        {
+          "path": "figures/exploratory_test/profiles_balanced_accuracy.png",
+          "bytes": 124044,
+          "sha256": "fcdf5767ac0d8203e5c54ff02aebda979d62e72204d7afde5f5489db97b9fb22"
+        },
+        {
+          "path": "figures/exploratory_test/profiles_balanced_accuracy.pdf",
+          "bytes": 21394,
+          "sha256": "0f45a255457fd64a49d09b11c6fa976b36c7880161d89d6da478425de0f14f46"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 628,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/R6_minus_R4_balanced_accuracy",
+      "files": [
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_balanced_accuracy.png",
+          "bytes": 167212,
+          "sha256": "e58b7aecfadf4b685fabed51f6fe2a6cee8fd45610320e98c81c714e22af67c0"
+        },
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_balanced_accuracy.pdf",
+          "bytes": 24113,
+          "sha256": "5e17bf057a5db73bec834ad35f76ae043291d1e5209fd6d3e52513f8af6f9dc6"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 156,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/profiles_classification_cross_entropy",
+      "files": [
+        {
+          "path": "figures/dev/profiles_classification_cross_entropy.png",
+          "bytes": 806704,
+          "sha256": "20f72419405fb8b3d2aeefa0c30d9313cc9fd4024c7be5d5e23856964e3e0200"
+        },
+        {
+          "path": "figures/dev/profiles_classification_cross_entropy.pdf",
+          "bytes": 37480,
+          "sha256": "c533ae29733e75d610ed16346bdb086bad88a13f5f785a9e4290ce73992f9cbf"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 3768,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/anchors_classification_cross_entropy",
+      "files": [
+        {
+          "path": "figures/dev/anchors_classification_cross_entropy.png",
+          "bytes": 313470,
+          "sha256": "0208c422b774b6fae545a662b79bda32b3d391f3c554e9ccd37a88ad8aeb70f3"
+        },
+        {
+          "path": "figures/dev/anchors_classification_cross_entropy.pdf",
+          "bytes": 45701,
+          "sha256": "b7378f3aac7aafdde0ab7530598f067c624f2e9cb2e98921fdc6acf0f76abb26"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 96,
+      "caption": "Seed 42 and layer 16/final norm were predeclared, not selected using scores. Intervals are conditional on fitted heads and unadjusted across the grid; all seeds remain in released tables.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/R6_minus_R4_classification_cross_entropy",
+      "files": [
+        {
+          "path": "figures/dev/R6_minus_R4_classification_cross_entropy.png",
+          "bytes": 778806,
+          "sha256": "0c852a2f7799b215c1c7e9a67639deb701983388d86934b1f88bb7544c7797bc"
+        },
+        {
+          "path": "figures/dev/R6_minus_R4_classification_cross_entropy.pdf",
+          "bytes": 36066,
+          "sha256": "26b077ff04250432ac36d8158c04399bec4b471692599e97a497b975ec8e9ed9"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 936,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/profiles_classification_cross_entropy",
+      "files": [
+        {
+          "path": "figures/exploratory_test/profiles_classification_cross_entropy.png",
+          "bytes": 147710,
+          "sha256": "e0e111f058bab5b71b4d205c70c3f3cdbc8d835bfef82497a9b71e4a6aef5b79"
+        },
+        {
+          "path": "figures/exploratory_test/profiles_classification_cross_entropy.pdf",
+          "bytes": 22074,
+          "sha256": "c346db3f7cc834e75e5921d6a94f70a9e32ab69a8b71251fd99b26ee762b77fa"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 628,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Qualified endpoints; shared input controls do not create extra fits",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/R6_minus_R4_classification_cross_entropy",
+      "files": [
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_classification_cross_entropy.png",
+          "bytes": 154345,
+          "sha256": "dca67edd0ced505fb6f15112fcc55b1cb8c18533c3cec493430fad14680a586c"
+        },
+        {
+          "path": "figures/exploratory_test/R6_minus_R4_classification_cross_entropy.pdf",
+          "bytes": 23828,
+          "sha256": "eecab3f46a8ca1284066a2fadae7f47e31356f2eb2d5ea50fc297f9a5029cbc4"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 156,
+      "caption": "All 26 hooks and 3 seeds shown. Shading is seed 42 pointwise bootstrap CI, not seed spread or a simultaneous band. R6\u2212R4 is nonadjacent and cannot replace missing adjacent edges.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "historical_domain/profiles_auroc",
+      "files": [
+        {
+          "path": "figures/historical_domain/profiles_auroc.png",
+          "bytes": 450462,
+          "sha256": "7ee5625c6f2ce2b18e97d271844c3477c528234e6ab9f3df5a8c861fbdacd31a"
+        },
+        {
+          "path": "figures/historical_domain/profiles_auroc.pdf",
+          "bytes": 32470,
+          "sha256": "3103a31b103a3d142cc6c394139d869c20eef0318b25d292ed6f12991fe87495"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 2808,
+      "caption": "All 26 representations and 3 CV seeds. Bold seed 42; thin 17/1234. Seed spread is not a confidence band. Layer16 is the 17th block. Horizontal shared controls are point displays; paired control inference remains limited to predeclared anchors. Historical domain only: base/R1/R3; no bridge to current R4/R6 effects",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/anchors__controls_auroc",
+      "files": [
+        {
+          "path": "figures/dev/anchors__controls_auroc.png",
+          "bytes": 319818,
+          "sha256": "3839c25f403a3dc70406a6b0abde48cde7f6de57c7eb1b7a2c44c01be6327c01"
+        },
+        {
+          "path": "figures/dev/anchors__controls_auroc.pdf",
+          "bytes": 46041,
+          "sha256": "10689d2ffb0807ec0361b4f1bd6d185f3079ec1097de8af574e820f2bd38602e"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 96,
+      "caption": "Seed 42 and layer 16/final norm were predeclared, not selected using scores. Intervals are conditional on fitted heads and unadjusted across the grid; all seeds remain in released tables.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/LM_within_task",
+      "files": [
+        {
+          "path": "figures/dev/LM_within_task.png",
+          "bytes": 358279,
+          "sha256": "5f4731df9f96e0d5c7d6db57a121f4bc807359e02a881de690a37eca216fe2af"
+        },
+        {
+          "path": "figures/dev/LM_within_task.pdf",
+          "bytes": 34467,
+          "sha256": "3816aad1bce838690d99238e697af57d33b037190e46b62df488b8ac2fd42e73"
+        }
+      ],
+      "axes": 12,
+      "source_rows": 48,
+      "caption": "Corpus NLL=sum(loss)/sum(targets); PPL=exp(NLL). Historical marginal CIs not present in inherited point tables; current R4/R6CIs reused. No averaging sequence perplexities or across-task capability score.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "dev/LM_R6_minus_R4",
+      "files": [
+        {
+          "path": "figures/dev/LM_R6_minus_R4.png",
+          "bytes": 84727,
+          "sha256": "e6d93a22343f4b70fea36024f8ef52c72d70e3a2856608a20c99e901dc96c453"
+        },
+        {
+          "path": "figures/dev/LM_R6_minus_R4.pdf",
+          "bytes": 25012,
+          "sha256": "85b89d270fea8d626b77061bc5b0662ee91bcfad6b31707944b4a5d828b1c5e1"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 12,
+      "caption": "No representation/CVseed axis; seven primary split units,14metrics for this new contrast family. Classification cross-entropy is a different output.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "exploratory_test/LM_R6_minus_R4",
+      "files": [
+        {
+          "path": "figures/exploratory_test/LM_R6_minus_R4.png",
+          "bytes": 56307,
+          "sha256": "abb25c391e72388eae2e578956ac8f21cc1ea426e7cb7b44c49ffaa4e639fc2c"
+        },
+        {
+          "path": "figures/exploratory_test/LM_R6_minus_R4.pdf",
+          "bytes": 21019,
+          "sha256": "9824b8a4447a8cdde9d281eb722f76ac527d88f076f29a67956f9755c8090f3c"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 2,
+      "caption": "No representation/CVseed axis; seven primary split units,14metrics for this new contrast family. Classification cross-entropy is a different output.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    },
+    {
+      "name": "coverage/availability_and_missing_edges",
+      "files": [
+        {
+          "path": "figures/coverage/availability_and_missing_edges.png",
+          "bytes": 162327,
+          "sha256": "072b727023ab95034c48b3b3ecae72fc89b174c6a94dfe6aa0d701fe4bf16525"
+        },
+        {
+          "path": "figures/coverage/availability_and_missing_edges.pdf",
+          "bytes": 24211,
+          "sha256": "8b492bf7fa19f125f9feedc651db4fb59470aff692d0aa4a8d479521330382e6"
+        }
+      ],
+      "axes": 2,
+      "source_rows": 0,
+      "caption": "Each colored task/endpoint cell represents26 representations x 3 seeds. A04 remains PARTIAL; no full-project completion or inferred trajectory through missing stages.",
+      "all_plotted_values_from_released_tables": true,
+      "source_tables": {
+        "VERIFIED_METRICS.csv": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+        "CONTROL_METRICS_REUSED.csv": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e",
+        "LM_METRICS_VERIFIED.csv": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88",
+        "LM_CONTRASTS_VERIFIED.csv": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02",
+        "PAIRED_CONTRASTS.csv": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a",
+        "PAIRED_CONTRASTS.H3_reused.csv": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b",
+        "PAIRED_CONTRASTS.historical.csv": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d",
+        "PAIRED_CONTRASTS.R6_minus_R4.csv": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      }
+    }
+  ],
+  "no_rerendering": true,
+  "plot_data": {
+    "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/PLOT_DATA/plotted_values.csv",
+    "bytes": 21979886,
+    "sha256": "a2874762ae9c95edac9770148c0df925e83f8befe79247009d4f082c1113bd97"
+  },
+  "representatives_inspected_full_size": [
+    "dev/profiles_auroc",
+    "dev/R6_minus_R4_auroc",
+    "dev/anchors__controls_auroc",
+    "dev/LM_R6_minus_R4",
+    "coverage/availability_and_missing_edges",
+    "historical_domain/profiles_auroc",
+    "exploratory_test/R6_minus_R4_auroc"
+  ],
+  "visual_checks": [
+    "Axes/legends/titles visible",
+    "Both policies and all tasks",
+    "Nonadjacent explicitly labeled",
+    "Shared control anchor restrictions",
+    "LM separate and lower favorable",
+    "Coverage missing edges visible",
+    "R3historical separate",
+    "Exposed H3test exploratory separate"
+  ],
+  "inspected_utc": "2026-11-18T11:33:20.611825+00:00",
+  "source": {
+    "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/FIGURE_VALIDATION.json",
+    "bytes": 57680,
+    "sha256": "1fce6db5e682d55a5130c40d6991001abe22617a71d30267b515a4af4c181d51"
+  }
+}

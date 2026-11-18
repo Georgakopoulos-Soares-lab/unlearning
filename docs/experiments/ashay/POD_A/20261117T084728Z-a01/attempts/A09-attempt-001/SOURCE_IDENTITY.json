@@ -1,0 +1,125 @@
+{
+  "schema": "pod-a-a09-source-snapshot-v1",
+  "status": "QUALIFIED_CONSUMER_FROZEN_REPORT_HELPERS_VERSIONED",
+  "version": "A09-source-002",
+  "files": [
+    {
+      "path": "common.py",
+      "bytes": 2366,
+      "sha256": "cd88eff16c2e03577080815507dbbefc69a1e3c83ec1cb16c2a856fc42695f1c"
+    },
+    {
+      "path": "consumer.py",
+      "bytes": 11919,
+      "sha256": "f94904d13ba7ae1564764b8dd9de39ce157638ef6cf33ec97add79625c5d8390"
+    },
+    {
+      "path": "deliver.py",
+      "bytes": 2277,
+      "sha256": "4240af18e7aa97337396424f36f73570d77d96ceed3aa6f0b039fe926405076a"
+    },
+    {
+      "path": "dependencies.py",
+      "bytes": 13467,
+      "sha256": "edc1d051f829e1b9b9263089241610f9d05a3b16d8f085039c197ff60a1ed505"
+    },
+    {
+      "path": "handoff.py",
+      "bytes": 20484,
+      "sha256": "541412cc3d651dea9eb5eeaae2ec8b23c098107c13551b0aad577f53579242bd"
+    },
+    {
+      "path": "independent_math.py",
+      "bytes": 3441,
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "payload.py",
+      "bytes": 4789,
+      "sha256": "c4bc37e8e21056ae8d0f032de3cd281bc86be237baadf82ff2b2b82ec16c6aea"
+    },
+    {
+      "path": "progress.py",
+      "bytes": 7956,
+      "sha256": "2620f7297fdeda4149974e7ee12a4ec91ef8010b41d5232bd095fd7ecb0880b8"
+    },
+    {
+      "path": "repairs.py",
+      "bytes": 10176,
+      "sha256": "9716655b9260689a49ecb19a2b430801b53bf699e9badfc991b70db86894b7b7"
+    },
+    {
+      "path": "reports.py",
+      "bytes": 38924,
+      "sha256": "878f9c165a6a2878d79f5bb57e22cca182af466ac20fd609b7a994102c504801"
+    },
+    {
+      "path": "research_guard.py",
+      "bytes": 2684,
+      "sha256": "58d6037a5d84d141f875cb5509365050186685b001112ced173394409c4944eb"
+    },
+    {
+      "path": "restore.py",
+      "bytes": 5977,
+      "sha256": "4a223f63f9634865f5494e4c49b0585997d75ed942f2dd7b4bae3ba41b9f43cb"
+    },
+    {
+      "path": "test_reporting.py",
+      "bytes": 3345,
+      "sha256": "4e1b3827395d16a2095ff591716c5c48a41a4443343765c50028ed0974d7b3b3"
+    },
+    {
+      "path": "test_restore.py",
+      "bytes": 2221,
+      "sha256": "1c9d90fc5471f89608b092782138778b9372866ea1a6606541764c8b04e72676"
+    },
+    {
+      "path": "validate.py",
+      "bytes": 10393,
+      "sha256": "4f47ef7414eac3ece90c497ffb27fde83c529ef252ad80fb5bb2a3fb7098feb7"
+    }
+  ],
+  "inherited_independent_math": {
+    "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/code/independent_math.py",
+    "bytes": 3441,
+    "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+  },
+  "numerical_library_copy_byte_identical": true,
+  "no_new_fit_or_model_code": true,
+  "plan": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/A09_EXECUTION_MANIFEST.json",
+    "bytes": 4113,
+    "sha256": "7dcc09f2aa9dca718169d37952ad3c44a03c66931ef9a3e04ea3c8da09f3161e"
+  },
+  "environment": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/ENVIRONMENT_CHECK.json",
+    "bytes": 1020,
+    "sha256": "08da52f5f8457f3fb28a69d3ad4af8a8f717918e208493a4b6f0ab1f5ebacb65"
+  },
+  "qualification": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/IMPLEMENTATION_VALIDATION.json",
+    "bytes": 703,
+    "sha256": "d0ad6481058462efb7a5cebcc10b4c151e9b7c67adc71948ab58a956777ce049"
+  },
+  "source_commit_before_delivery": "a0c09062c9f4cd625769130b1b85ea0ddc38d840",
+  "created_utc": "2026-11-18T11:37:12.999087+00:00",
+  "frozen_consumer_files": [
+    {
+      "path": "consumer.py",
+      "sha256": "f94904d13ba7ae1564764b8dd9de39ce157638ef6cf33ec97add79625c5d8390"
+    },
+    {
+      "path": "independent_math.py",
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "restore.py",
+      "sha256": "4a223f63f9634865f5494e4c49b0585997d75ed942f2dd7b4bae3ba41b9f43cb"
+    }
+  ],
+  "consumer_qualification": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/CONSUMER_SOURCE_QUALIFICATION.json",
+    "bytes": 1631,
+    "sha256": "5d68af2f5c9c2239c6b3e5277608ce1961d498909feb62e8f8a3411138529e24"
+  }
+}

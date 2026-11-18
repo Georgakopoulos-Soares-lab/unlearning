@@ -1,0 +1,131 @@
+{
+  "schema": "pod-a-a09-report-recovery-plan-v1",
+  "stage": "A09",
+  "prompt_commit": "ff579ad98b7970213c97cf0bb86fa2017cfa126e",
+  "input_research_commit": "a0c09062c9f4cd625769130b1b85ea0ddc38d840",
+  "no_new_measurements": true,
+  "approved_panels": {
+    "saved_prediction_metric_paths": [
+      {
+        "candidate": "R4",
+        "task": "gue_tf_0",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "independent_refit"
+      },
+      {
+        "candidate": "R4",
+        "task": "gue_tf_0",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "fixed_original_base"
+      },
+      {
+        "candidate": "R4",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "independent_refit"
+      },
+      {
+        "candidate": "R4",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "fixed_original_base"
+      },
+      {
+        "candidate": "R6",
+        "task": "gue_tf_0",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "independent_refit"
+      },
+      {
+        "candidate": "R6",
+        "task": "gue_tf_0",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "fixed_original_base"
+      },
+      {
+        "candidate": "R6",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "independent_refit"
+      },
+      {
+        "candidate": "R6",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.final_norm",
+        "seed": 42,
+        "split": "dev",
+        "policy": "fixed_original_base"
+      }
+    ],
+    "restored_A08_audit_refits": [
+      "R4/gue_tf_0/final_norm/seed42",
+      "R6/gue_tf_0/final_norm/seed42"
+    ],
+    "new_classifier_contrast": "gue_tf_0/dev/decoder_layer_16/seed42/bothpolicies/fivemetrics/all2000saved_draws",
+    "LM_contrast": "gue_tf_0/dev/NLL_perplexity_point_and_saved_dists"
+  },
+  "recovery_scope_count": 8,
+  "ordinary_workers_max": 2,
+  "BLAS_threads_per_worker": 4,
+  "new_fits_forwards_draws": 0,
+  "tolerances": {
+    "probability": 1e-10,
+    "metric_draw_interval": 1e-12
+  },
+  "repair_scope": [
+    "Decode immutable A08handoff into readable derivative; typed Markdown writer regression test",
+    "780unit exact plan-overlay-audit-refit-archive join",
+    "480H3control rows full-identity alias map, numerical invariance"
+  ],
+  "deliverables": [
+    "RESULTS.md",
+    "ONE_PAGE_SUMMARY.md",
+    "METHODS_AND_LIMITS.md",
+    "FIGURE_GALLERY.md",
+    "TEAM_UPDATE_DRAFT.md",
+    "GOALS_STATUS.csv",
+    "CLAIMS_TO_EVIDENCE.csv",
+    "COVERAGE.csv",
+    "TABLE_INDEX.json",
+    "DATA_DICTIONARY.md",
+    "REPORT_REPAIR_LOG.json",
+    "AUDIT_RELEASE_STATUS.csv",
+    "ENDPOINT_ALIAS_MAP.csv",
+    "HISTORICAL_A08_HANDOFF.readable.v1.md",
+    "RECOVERY_DEPENDENCY_GRAPH.json",
+    "RECOVERY_COVERAGE.csv",
+    "BACKUP_MANIFEST.json",
+    "BACKUP_VERIFICATION.json",
+    "FRESH_RESTORE_CHECK.json",
+    "RESTORE.md",
+    "REACQUISITION_MAP.json",
+    "MISSING_INPUTS_DRAFT.md",
+    "REPORT_VALIDATION.json",
+    "OUTPUT_SHA256SUMS",
+    "RESOURCE_CLOSEOUT.json",
+    "RESUME_MANIFEST.json",
+    "REMOTE_HANDOFF.json",
+    "SESSION_HANDOFF.md",
+    "A09_RECEIPT.json"
+  ],
+  "inherited_figure_pairs": 31,
+  "inherited_plot_rows": 30886,
+  "table_copy_policy": "Immutable A08references plus scoped canonical H3control derivative; no unnecessary full combined export",
+  "retry_policy": "At most one diagnosed transient transfer retry; never integrity/quota retry loop",
+  "terminal_boundary": "STOPPED: POD_A HANDOFF DELIVERED only after saved-analysis recovery/public/private delivery pass; stop owned administrative loop then; leave Pod running",
+  "A10_or_backfill_authorized": false
+}
