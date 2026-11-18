@@ -1,6 +1,6 @@
 {
   "schema": "pod-a-a09-report-validation-v1",
-  "status": "PASS_PREFLIGHT_PENDING_DELIVERY",
+  "status": "PASS",
   "all_three_repairs_pass": true,
   "logical_paired_keys": 45360,
   "marginal_classifier_keys": 27300,
@@ -18,34 +18,20 @@
   "pending_ledger_units": 1886,
   "pending_classifier_edge_keys": 27300,
   "pending_LM_edge_keys": 70,
-  "JSON_files_parsed": 22,
+  "JSON_files_parsed": 31,
   "CSV_files_parsed": 13,
-  "Python_sources_parsed": 13,
-  "Markdown_links_resolved": 139,
+  "Python_sources_parsed": 20,
+  "Markdown_links_resolved": 145,
   "planned_outputs_pending": [
-    "BACKUP_MANIFEST.json",
-    "BACKUP_VERIFICATION.json",
-    "FRESH_RESTORE_CHECK.json",
-    "REPORT_VALIDATION.json",
-    "OUTPUT_SHA256SUMS",
-    "RESOURCE_CLOSEOUT.json",
-    "REMOTE_HANDOFF.json",
-    "A09_RECEIPT.json"
+    "OUTPUT_SHA256SUMS"
   ],
-  "planned_links_pending": [
-    "BACKUP_VERIFICATION.json",
-    "BACKUP_VERIFICATION.json",
-    "RESOURCE_CLOSEOUT.json",
-    "BACKUP_MANIFEST.json",
-    "FRESH_RESTORE_CHECK.json",
-    "RESOURCE_CLOSEOUT.json"
-  ],
+  "planned_links_pending": [],
   "privacy_scan": "PASS",
   "numerical_tolerances_unchanged": true,
   "new_scientific_measurements": 0,
   "guard": {
     "status": "PASS",
-    "head": "a0c09062c9f4cd625769130b1b85ea0ddc38d840",
+    "head": "e69206b0f48d713c9a856fcaa22bfe48a98f1b9e",
     "worktree": "/workspace/wt-pod-a",
     "common_git_directory": "/workspace/repos/unlearning-pod-a/.git",
     "branch": "POD_A",
@@ -58,5 +44,5 @@
       "docs/experiments/ashay/POD_A/20261117T084728Z-a01/LATEST_A09.json"
     ]
   },
-  "validated_utc": "2026-11-18T11:36:24.820566+00:00"
+  "validated_utc": "2026-11-18T11:48:47.560816+00:00"
 }

@@ -1,0 +1,472 @@
+{
+  "schema": "pod-a-stage-receipt-v1",
+  "template_only": false,
+  "owner": "POD_A",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A09",
+  "attempt_id": "A09-attempt-001",
+  "status": "REPORT_RECOVERY_READY_FOR_FINAL_GIT_DELIVERY",
+  "full_project_status": "PARTIAL",
+  "A04_status": "PARTIAL",
+  "approval": {
+    "stage": "A09",
+    "attempt_id": "A09-attempt-001",
+    "direct_message": "\ud83d\udc4d A09 at ff579ad98b7970213c97cf0bb86fa2017cfa126e",
+    "message_time_utc": null,
+    "observed_time_utc": "2026-11-18T11:00:41.677275+00:00",
+    "prompt_repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "prompt_branch": "POD_A",
+    "prompt_commit": "ff579ad98b7970213c97cf0bb86fa2017cfa126e",
+    "fetched_branch_head": "ff579ad98b7970213c97cf0bb86fa2017cfa126e",
+    "fetch_count": 1,
+    "approval_for_other_stages": false,
+    "original_start_utc": null,
+    "no_deadline_amendment_preserved": true,
+    "effective_hashes": {
+      "A01_WORKSPACE_RECONCILIATION.md": "11af42677f77c250a489c53324e1b4ebe9fc82b0cae362c2f67c5a8f61d2fbde",
+      "A02_CHECKPOINT_INVENTORY.md": "978277f9225d71d06b486799a5f72be5da2870d9118b56260e04c3727f6114bd",
+      "A03_RECOVERY_DATA_AUDIT.md": "c65e8b3a4ab7e0d4e2fb05a9d7c14481491b7e05dfcc8e5d23f89ebe35926e8a",
+      "A04_RUNTIME_LOADING.md": "574a904543facb63e48dd9ab93cddce7898c5dc7be42f8cf2ccee968edb5784b",
+      "A05_PROTOCOL_COVERAGE_FREEZE.md": "6c871d8361a7f0155c1b1a56359573502cdb43f4748807c7e850266e4ff14dcf",
+      "A06_EXTRACTION_H3_GATE.md": "8d9af815f3b08248a3b39819a464f646cebd8062b0f69a2503f716b1bdb25693",
+      "A07_PROBES_FIXED_REFERENCE.md": "9495365fccaf2d34b09f132df533cfbdac3eb57cf83b7125b0d8d2e57abf33d0",
+      "A08_VERIFICATION_ANALYSIS.md": "535c9fd582e98db3469d81b291d03091575825198488ff67df56d08a87946a98",
+      "A09_REPORTING_RECOVERY.md": "04b6d181e3e4044c7ffefd0edf20772d1c751c6ecf7348fff4b223f43c0c3a4d",
+      "ARTIFACT_CONTRACT.md": "f34f276d5b884f1e16588ae2bd40c1a5c00c8b155ee53e4b7ffcd39c3590c594",
+      "CONTROLLER_ACCEPTANCE_CASES.md": "7fb279295c10e0023466f97361616e2cd5451dc5e6f85afa46061ec45b868ea5",
+      "GOALS_COVERAGE.md": "6c1fd5f6326f66e292b05ba065631b4a7e42a2a3c1d9721895dd48c3b7a84e8c",
+      "PACKAGE_FILES.json": "17b4c9bc3e9377900350863114dc30d50c894d4815d405236b384326074bb321",
+      "POD_A_FOLLOW_ON_SCOPE.md": "efe31e69ad5488bf92440c947a779eb463478956e4cd0514a942c82fee945087",
+      "POD_A_MASTER.md": "ed13c09a74917165c5cf8c9c3a12483fbcdae56116d0ac3a8033014f913419b0",
+      "POD_A_PROGRESS_REPORTING.md": "70637a2e42a1720c8ec9f41cbf0293297e3e0606f451bd8218082660d75ec202",
+      "POD_A_REVIEW_LOOP.md": "c5b1a6f9b6990e26f5089607f1c0163333aefb406a5caff8cf7ee1da9d48fce0",
+      "README.md": "2b90d98325a6a3e92c4d2955e8c82b7f52c17bd0c5e96c8bf98aa2120ad21675",
+      "SCIENTIFIC_CONTRACT.md": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413",
+      "SOURCE_MANIFEST.json": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f",
+      "SOURCE_NOTES.md": "9c4bd2d89815b65d66f99fa6e3411123918ad918a33a7c9d407eb04f38842e1a",
+      "STAGE_MAP.json": "f6f0f9f8bb5bcf710c716d795dc943768eb3c87a996e47799b34d68a27b39815",
+      "VALIDATION.md": "79f2df2186918643db6feaec32277e6a2035f86c7f4bc7520f30247dfebde65b",
+      "evidence/HISTORICAL_COMPARISON_PROTOCOL.json": "fb973b4b2e7963d5c5e2ae4b02cbe70ab527d9e61e1fbf7d3eee17373c80f29f",
+      "evidence/HISTORICAL_DATA_EVIDENCE_GAPS.md": "e1777d97e756c5a0fe7aa534284cd7155fa61e3ff56e805108099a685bab6b16",
+      "evidence/HISTORICAL_INCREMENTAL_RESULTS.md": "a961e05a63e3a2a231f1ed5e999eec47cfc6cc9a504e4b6d821727a180317d5e",
+      "evidence/HISTORICAL_RESTORE_DEPENDENCIES.json": "25040588f64f4087bb70ec2a360ea745aa131e0c88a78b33740b581bf8237695",
+      "evidence/HISTORICAL_RESUME.md": "ab64768730488d6e0fe678e210384fde3748426cc1cd580521c639b0e56df826",
+      "evidence/RANKED_TASK_SOURCE.md": "2e18d3dfd5a54aca946dd9e6bd1e1342098fe83ba215b63ed825bb49191ad44a",
+      "evidence/USER_GOALS_SOURCE.txt": "453f8d5c9457c46aa1347e36200cd692096ccfda879dfa6af234cbe52fb6d81b",
+      "revisions/20261117_A05_LOOP_SOURCES.json": "de35d83d8f515652031edbe4225cd00029e16bab7448f30cf3442bed4372eb46",
+      "templates/RESUME_MANIFEST_TEMPLATE.json": "fb147356e9052d33c64f2f4dda97bba996280b8ce0acfcf41b572fb325ecbfab",
+      "templates/STAGE_RECEIPT_TEMPLATE.json": "878c12be7aa85a0c0c2c403ce9c577f31b174ef266b9d447261643d36ed9927b",
+      "validate_package.py": "162111f9766790dd4b1426e133b29e167a1bc0f79cd1f1d4eebe281555163386"
+    },
+    "prior_state_sha256": "fe1fd54ffdc02b5ad6f6bbdcfbd4398be1925f2735913fcb8983ad4ad4a122ee",
+    "research_head": "a0c09062c9f4cd625769130b1b85ea0ddc38d840"
+  },
+  "prompt_commit": "ff579ad98b7970213c97cf0bb86fa2017cfa126e",
+  "scientific_commit": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
+  "research_input_commit": "a0c09062c9f4cd625769130b1b85ea0ddc38d840",
+  "report_delivery_commit": null,
+  "metadata_commit": null,
+  "payload_revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+  "receipt_revision": null,
+  "scope_booleans": {
+    "QUALIFIED_ANALYSIS_COMPLETE": true,
+    "FULL_INCREMENTAL_SEQUENCE_COMPLETE": false,
+    "REPORT_DELIVERED": false,
+    "GIT_DELIVERED": false,
+    "RECOVERY_VERIFIED_FOR_SAVED_ANALYSIS": true,
+    "FULL_GPU_RECREATION_VERIFIED": false,
+    "OWNED_SCIENTIFIC_JOBS_QUIESCENT": true
+  },
+  "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "budget": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A09 only; terminal handoff; no automatic restart",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
+  },
+  "coverage": {
+    "planned_heads": 3276,
+    "available_heads_reused": 2340,
+    "planned_fixed_applications": 3276,
+    "available_fixed_applications_reused": 2340,
+    "new_A09_measurements": 0,
+    "new_fits": 0,
+    "new_forwards": 0,
+    "new_draws": 0,
+    "R2_pending_heads": 468,
+    "R5_pending_heads": 468,
+    "primary_LM_available": 35,
+    "primary_LM_universe": 49,
+    "controls_reused": 36,
+    "failed_scientific_cells": 0,
+    "pending_ledger_units": 1886,
+    "classifier_marginal_rows": 27300,
+    "classifier_paired_rows": 45360,
+    "LM_point_rows": 70,
+    "LM_paired_rows": 112,
+    "figure_pairs_reused": 31,
+    "plot_uses_checked": 30886
+  },
+  "requested_accepted_scope": "Report/repair exactly existing qualified evidence and frozen8path/two savedrefit/selectedcontrast recovery; no new production science",
+  "presentation_repairs": {
+    "schema": "pod-a-a09-report-repair-log-v1",
+    "status": "PASS",
+    "version": "A09-presentation-v1",
+    "repairs": [
+      {
+        "repair": "Readable historical Markdown",
+        "source": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SESSION_HANDOFF.md",
+          "bytes": 4365,
+          "sha256": "e192c5776b58bed61ee8b722ec96473a0d890c8c6ae9c0d9c227fb5bf701ef5d"
+        },
+        "source_type": "JSON_ENCODED_STRING",
+        "derivative": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/HISTORICAL_A08_HANDOFF.readable.v1.md",
+          "bytes": 4727,
+          "sha256": "607c441329078a8b28d3e1b77fda4c3786820f4f468cec97f6fb11bf2097e1ac"
+        },
+        "transformation": "A09-presentation-v1",
+        "changes": "Decode one JSON string, annotate historical status, translate relative links to immutable A08 directory",
+        "scientific_values_changed": false,
+        "source_preserved": true
+      },
+      {
+        "repair": "Current audit status",
+        "source_plan": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/AUDIT_SCOPE_MATRIX.csv",
+          "bytes": 190968,
+          "sha256": "3188e10a79fb06ca50d4411b60abf980040525972d6ea44df5ec8d172c6dc7b8"
+        },
+        "source_overlay": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/VERIFICATION_OVERLAY.json",
+          "bytes": 941180,
+          "sha256": "03fa13cfd04ae52edcd7788dc45a7a672fb1b58cd01615dd4c2aebbd8d83a2ec"
+        },
+        "source_audit": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/NUMERICAL_AUDIT.json",
+          "bytes": 389726,
+          "sha256": "0e29ea22a06fe22efa546da5792541e65cbe654dc01bf5261e94d44969977377"
+        },
+        "source_refits": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/AUDIT_REFIT_RECEIPT.json",
+          "bytes": 107373,
+          "sha256": "17707b2fd2321dba830334eab03951a6700946ecab400cfb923d0733143281d0"
+        },
+        "derivative": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/AUDIT_RELEASE_STATUS.csv",
+          "bytes": 604672,
+          "sha256": "bfd1d2a3c7befb47052e1b568ecb5a905f757aab6f6d87fc17ca97c14e3cd9cf"
+        },
+        "unit_keys": 780,
+        "sampled_refits": 60,
+        "all_unit_audits": 780,
+        "source_preserved": true,
+        "no_all_head_refit_claim": true,
+        "scientific_values_changed": false
+      },
+      {
+        "repair": "Typed control endpoint alias join",
+        "source": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/PAIRED_CONTRASTS.H3_reused.csv",
+          "bytes": 12385254,
+          "sha256": "e4a2a2113caa096c7ecff394e2f0894a4c74798e3ca9eef50a1eb10935de0d7b"
+        },
+        "control_points": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/CONTROL_METRICS_REUSED.csv",
+          "bytes": 246832,
+          "sha256": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e"
+        },
+        "control_identity_index": {
+          "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/CONTROL_REUSE_INDEX.json",
+          "bytes": 65552,
+          "sha256": "5352e77a7984ed985ba2f79e53fab9092335abc0f049956d70b6bddb1da6716a"
+        },
+        "alias_map": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/ENDPOINT_ALIAS_MAP.csv",
+          "bytes": 611608,
+          "sha256": "69784fe33b3fc05e746390ac0e2b0e0bcd75c6ce3025336df4d2b0845902a267"
+        },
+        "derivative": {
+          "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/PAIRED_CONTRASTS.H3_canonical.v1.csv",
+          "bytes": 17382408,
+          "sha256": "d4d7e523035978e1a1886a1c4fce51aa7ded258c1974a5a921bd6596043dbfe3"
+        },
+        "affected_rows": 480,
+        "total_preserved_rows": 6720,
+        "unique_affected_full_keys": 480,
+        "protected_numerical_origin_fields_sha256": "5b6dcbc95665db6fa2f3ecc1ec6a5d9836806a5ddf3f097cf07fc70e3a4481bd",
+        "original_ids_retained": true,
+        "original_all_other_fields_strings_and_order_preserved": true,
+        "paired_point_max_abs": 0.0,
+        "source_preserved": true,
+        "scientific_values_changed": false
+      }
+    ],
+    "no_producer_seals_rewritten": true,
+    "no_new_scientific_measurements": true,
+    "created_utc": "2026-11-18T11:17:30.847170+00:00"
+  },
+  "focused_tests": {
+    "status": "PASS",
+    "reporting_writer_identity_tests": 10,
+    "safe_archive_tests": 6,
+    "total": 19,
+    "scientific_fits": 0,
+    "logs": [
+      {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/logs/test_reporting.stderr.log",
+        "bytes": 1071,
+        "sha256": "82d35075b92e0a91f63e5a406a2c3bd84f39140d260797c8357d419d9c24793d"
+      },
+      {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/logs/test_restore.stderr.log",
+        "bytes": 574,
+        "sha256": "e07c8794ed3389049db8715ef78acf4211fa34a320c0557c88e6059ea3206d87"
+      },
+      {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/logs/test_delivery_safety.stderr.log",
+        "bytes": 383,
+        "sha256": "442aba9ec68dc64f2eabeb438cb47c0edae9e94d1bdf589d49e9416a504da99f"
+      },
+      {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/logs/test_reporting.writer_fix.stderr.log",
+        "bytes": 1071,
+        "sha256": "82d35075b92e0a91f63e5a406a2c3bd84f39140d260797c8357d419d9c24793d"
+      }
+    ],
+    "consumer_panel_qualification": {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/CONSUMER_SOURCE_QUALIFICATION.json",
+      "bytes": 1631,
+      "sha256": "5d68af2f5c9c2239c6b3e5277608ce1961d498909feb62e8f8a3411138529e24"
+    },
+    "delivery_safety_tests": 3,
+    "delivery_tests_scope": "Real disposable Git FF rejection/local preservation; exclusive flock; idempotent event replay. No project branches modified."
+  },
+  "backup_verification": {
+    "schema": "pod-a-a09-backup-verification-v1",
+    "status": "PASS",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "payload_revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+    "archive_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/checkpoint-001/a09-report-checkpoint-001.tar.gz",
+    "archive_bytes": 4679828,
+    "archive_sha256": "5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a",
+    "member_manifest_sha256": "dd8bfe0e4a2cd3b6fb442effc6a796b67ac3ff2d81e7d66271108eb8c46e352b",
+    "all_included_files_verified": 254,
+    "force_fresh_download": true,
+    "new_empty_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001/payload-consumer/A09-report-payload-002",
+    "safe_exact_member_set": true,
+    "saved_prediction_paths": 8,
+    "restored_audit_refit_heads": 2,
+    "probability_max_abs": 0.0,
+    "metric_max_abs": 0.0,
+    "classifier_contrast": {
+      "unit": "gue_tf_0/dev/layer16/seed42/bothpolicies/5metrics/2000saved_draws",
+      "attempted_delta_values": 20000,
+      "point_max_abs": 0.0,
+      "every_draw_max_abs": 0.0,
+      "interval_max_abs": 0.0
+    },
+    "LM_contrast": {
+      "unit": "gue_tf_0/dev/NLL_and_perplexity",
+      "attempted_delta_values": 4000,
+      "point_max_abs": 0.0,
+      "every_draw_max_abs": 0.0,
+      "interval_max_abs": 0.0,
+      "aggregation_crosscheck_max_abs": 0.0
+    },
+    "figure_files_restored_and_checked": 62,
+    "table_sources_restored_and_checked": [
+      {
+        "file": "../A08-attempt-001/VERIFIED_METRICS.csv",
+        "rows": 27300,
+        "sha256": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02"
+      },
+      {
+        "file": "../A08-attempt-001/CONTROL_METRICS_REUSED.csv",
+        "rows": 210,
+        "sha256": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e"
+      },
+      {
+        "file": "../A08-attempt-001/LM_METRICS_VERIFIED.csv",
+        "rows": 70,
+        "sha256": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88"
+      },
+      {
+        "file": "../A08-attempt-001/LM_CONTRASTS_VERIFIED.csv",
+        "rows": 112,
+        "sha256": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02"
+      },
+      {
+        "file": "../A08-attempt-001/PAIRED_CONTRASTS.csv",
+        "rows": 16800,
+        "sha256": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a"
+      },
+      {
+        "file": "PAIRED_CONTRASTS.H3_canonical.v1.csv",
+        "rows": 6720,
+        "sha256": "d4d7e523035978e1a1886a1c4fce51aa7ded258c1974a5a921bd6596043dbfe3"
+      },
+      {
+        "file": "../A08-attempt-001/PAIRED_CONTRASTS.historical.csv",
+        "rows": 16380,
+        "sha256": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d"
+      },
+      {
+        "file": "../A08-attempt-001/PAIRED_CONTRASTS.R6_minus_R4.csv",
+        "rows": 5460,
+        "sha256": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+      },
+      {
+        "file": "COVERAGE.csv",
+        "rows": 6637,
+        "sha256": "60ebc2e88a1002a046db4b159bdde447221b5accfa7044f33561dabc38071c2f"
+      },
+      {
+        "file": "PENDING_ADJACENT_CONTRASTS.csv",
+        "rows": 27300,
+        "sha256": "c06dd7a31ae3114de85363ced7bc98e7b3f39664e86f4619a7a1232019644199"
+      },
+      {
+        "file": "PENDING_ADJACENT_LM.csv",
+        "rows": 70,
+        "sha256": "6ca0c20132fd4d7faaf917ad033955a3a7443d63c96157705e665bf3eedb0f09"
+      },
+      {
+        "file": "INCLUSION_EXPOSURE_PLAN.csv",
+        "rows": 36,
+        "sha256": "e09a44a9be9ae289d6514462ae688aad520b824769d9036da8ca91f6d34a3fc2"
+      },
+      {
+        "file": "COMPARABILITY_MATRIX.csv",
+        "rows": 16,
+        "sha256": "f6f3e718cea471bc978bc93200b4d7274e168c724af2e4abad12602b7e06dd0d"
+      },
+      {
+        "file": "../A08-attempt-001/POLICY_POINT_DIFFERENCES.csv",
+        "rows": 5460,
+        "sha256": "6216ecb3ad5e847f55b0b8b41f48fbb16fa5d8016ace504f831b9d8ff369ef83"
+      },
+      {
+        "file": "../A08-attempt-001/SEED_SENSITIVITY.csv",
+        "rows": 2600,
+        "sha256": "4d9bb488a1bb345f217aa2a0044e1ffadaf6bced2321dff09b16caa80107369e"
+      },
+      {
+        "file": "../A08-attempt-001/SEED_DIAGNOSTICS.csv",
+        "rows": 780,
+        "sha256": "f58d26e34fbd0569194f7f6feb16f6d9ff667167166e2c60c6acb63437641faa"
+      },
+      {
+        "file": "../A08-attempt-001/PREDECLARED_ANCHORS.csv",
+        "rows": 240,
+        "sha256": "62d2c5b84707dc45dd5cfbb28318276e5b093d1901385de5f0d206cf17db4c7b"
+      },
+      {
+        "file": "../A08-attempt-001/TASK_ENTRY_ANALYSIS.csv",
+        "rows": 240,
+        "sha256": "4964091aeaed180962b674241db8863d1d5b3afcfa52f2177e717d83ebae01dd"
+      }
+    ],
+    "inherited_dependencies": {
+      "nodes": 42,
+      "current_remote_and_local": "PASS",
+      "bytes_rehashed": 26330207751,
+      "new_inherited_metadata_transfer_bytes": 23723880,
+      "other_large_dependency_transfers": 0,
+      "prior_fresh_proofs_reused": true
+    },
+    "A08_40path_recovery_is_prior_evidence_not_new_replication": true,
+    "QUALIFIED_ANALYSIS_COMPLETE": true,
+    "FULL_INCREMENTAL_SEQUENCE_COMPLETE": false,
+    "RECOVERY_VERIFIED_FOR_SAVED_ANALYSIS": true,
+    "FULL_GPU_RECREATION_VERIFIED": false,
+    "scope": "New A09allmembers plus frozen8paths/two savedrefits/oneclassifiercontrast everydraw/oneLMcontrast; no fitting/forwards/newdraws",
+    "completed_utc": "2026-11-18T11:40:36.068522+00:00"
+  },
+  "fresh_restore_check": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/FRESH_RESTORE_CHECK.json",
+    "bytes": 10349,
+    "sha256": "9acc961a1f9dc0e372f5ab383cd585a61eb9f9ce54d5abebc099bef970531182"
+  },
+  "guard": {
+    "status": "PASS",
+    "head": "e69206b0f48d713c9a856fcaa22bfe48a98f1b9e",
+    "worktree": "/workspace/wt-pod-a",
+    "common_git_directory": "/workspace/repos/unlearning-pod-a/.git",
+    "branch": "POD_A",
+    "main_index_and_status_unchanged": true,
+    "other_refs_unchanged": true,
+    "owned_paths": [
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001",
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/PROGRESS.md",
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/CONTROLLER_LATEST.json",
+      "docs/experiments/ashay/POD_A/20261117T084728Z-a01/LATEST_A09.json"
+    ]
+  },
+  "resource_closeout": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RESOURCE_CLOSEOUT.json",
+    "bytes": 4870,
+    "sha256": "a50a06192fbaf54c76220d00fb0b5e7a04058c7b2f364da6470892c6bd78741f"
+  },
+  "owned_jobs_quiescent": true,
+  "administrative_services": {
+    "observer_status": "ACTIVE",
+    "reviewer_status": "DRAFT_ONLY",
+    "publisher_status": "BLOCKED",
+    "observer_pid": 33071,
+    "observer_start_ticks": "8476919",
+    "heartbeat_utc": "2026-11-18T11:23:18.059749+00:00",
+    "heartbeat_age_seconds": 1140.748116016388,
+    "owned_service_alive": true,
+    "no_new_service_launched": true,
+    "observed_utc": "2026-11-18T11:42:18.808093+00:00"
+  },
+  "source": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/SOURCE_IDENTITY.json",
+    "bytes": 4549,
+    "sha256": "0114d396fd9be3804f6d8d9d23ff667b1f5d98e068eba4c049ec400427d9fb8a"
+  },
+  "resume_manifest_sha256": "09d01e5e579ca055f2d5ad12013c935875238dfa04acf87f62646426649e378c",
+  "outputs": [
+    "RESULTS.md",
+    "ONE_PAGE_SUMMARY.md",
+    "METHODS_AND_LIMITS.md",
+    "FIGURE_GALLERY.md",
+    "TABLE_INDEX.json",
+    "CLAIMS_TO_EVIDENCE.csv",
+    "BACKUP_MANIFEST.json",
+    "RESTORE.md",
+    "REMOTE_HANDOFF.json"
+  ],
+  "blockers": [
+    "R2delivery/unique admission",
+    "R5native qualification/downstream evidence",
+    "R3live bridge for affected new contrasts",
+    "Unknown training ancestry/objective/exposure/source-label metadata"
+  ],
+  "further_work_authorized": false,
+  "completed_local_report_recovery_utc": "2026-11-18T11:42:42.917606+00:00",
+  "terminal_action_pending": "Verify final public/private delivery then stop owned observer; leave Pod running"
+}

@@ -1,12 +1,17 @@
 {
   "schema": "pod-a-a09-source-snapshot-v1",
   "status": "QUALIFIED_CONSUMER_FROZEN_REPORT_HELPERS_VERSIONED",
-  "version": "A09-source-002",
+  "version": "A09-source-003",
   "files": [
     {
+      "path": "backup.py",
+      "bytes": 6398,
+      "sha256": "5d3f3193ae49b37b1f52fb92e9d86f367bf2a64b53a0c29f46f6313738f2d4d0"
+    },
+    {
       "path": "common.py",
-      "bytes": 2366,
-      "sha256": "cd88eff16c2e03577080815507dbbefc69a1e3c83ec1cb16c2a856fc42695f1c"
+      "bytes": 2382,
+      "sha256": "1b6f04fd76de88fc8167ef05fdb88f7b7fb32fcbeed6ef0178872c38c7f41d06"
     },
     {
       "path": "consumer.py",
@@ -40,8 +45,8 @@
     },
     {
       "path": "progress.py",
-      "bytes": 7956,
-      "sha256": "2620f7297fdeda4149974e7ee12a4ec91ef8010b41d5232bd095fd7ecb0880b8"
+      "bytes": 8348,
+      "sha256": "bfa75325269197f441c3e81099cf6ae87e9e98d8e2b59b33d99968f0356c7b72"
     },
     {
       "path": "repairs.py",
@@ -62,6 +67,11 @@
       "path": "restore.py",
       "bytes": 5977,
       "sha256": "4a223f63f9634865f5494e4c49b0585997d75ed942f2dd7b4bae3ba41b9f43cb"
+    },
+    {
+      "path": "test_delivery_safety.py",
+      "bytes": 2669,
+      "sha256": "469233218394bd5f2f22f2604911d0beb8c4ddb41309f173aab5e88d1fc8df18"
     },
     {
       "path": "test_reporting.py",
@@ -98,11 +108,11 @@
   },
   "qualification": {
     "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/IMPLEMENTATION_VALIDATION.json",
-    "bytes": 703,
-    "sha256": "d0ad6481058462efb7a5cebcc10b4c151e9b7c67adc71948ab58a956777ce049"
+    "bytes": 1559,
+    "sha256": "37f546f3a8d4f2833e0569bdd479578e8879c47f583513a0e3421ccf97e66fcf"
   },
   "source_commit_before_delivery": "a0c09062c9f4cd625769130b1b85ea0ddc38d840",
-  "created_utc": "2026-11-18T11:37:12.999087+00:00",
+  "created_utc": "2026-11-18T11:40:14.838690+00:00",
   "frozen_consumer_files": [
     {
       "path": "consumer.py",

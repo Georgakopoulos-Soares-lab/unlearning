@@ -4,7 +4,7 @@
   "run_id": "20261117T084728Z-a01",
   "stopped_stage": "A09",
   "attempt_id": "A09-attempt-001",
-  "status": "TERMINAL_REPORT_RECOVERY_IN_PROGRESS",
+  "status": "TERMINAL_REPORT_AND_SAVED_RECOVERY_READY_FINAL_DELIVERY_PENDING",
   "requires_new_direct_approval": true,
   "required_approval": "Only if further work is requested: new explicitly scoped identity/qualification/backfill or perturbation approval; no A10 exists",
   "prompt_commit": "ff579ad98b7970213c97cf0bb86fa2017cfa126e",
@@ -3822,5 +3822,13 @@
     "Unknown training ancestry/objective/exposure/source-label metadata"
   ],
   "automatic_resume": false,
-  "new_fits_or_forwards_authorized": false
+  "new_fits_or_forwards_authorized": false,
+  "payload_revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+  "payload_archive_sha256": "5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a",
+  "fresh_saved_analysis_proof": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/FRESH_RESTORE_CHECK.json",
+    "bytes": 10349,
+    "sha256": "9acc961a1f9dc0e372f5ab383cd585a61eb9f9ce54d5abebc099bef970531182"
+  },
+  "required_new_science_approval_only_if_more_work_requested": true
 }

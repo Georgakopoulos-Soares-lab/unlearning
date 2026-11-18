@@ -2,7 +2,7 @@
   "status": "PASS",
   "reporting_writer_identity_tests": 10,
   "safe_archive_tests": 6,
-  "total": 16,
+  "total": 19,
   "scientific_fits": 0,
   "logs": [
     {
@@ -14,7 +14,23 @@
       "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/logs/test_restore.stderr.log",
       "bytes": 574,
       "sha256": "e07c8794ed3389049db8715ef78acf4211fa34a320c0557c88e6059ea3206d87"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/logs/test_delivery_safety.stderr.log",
+      "bytes": 383,
+      "sha256": "442aba9ec68dc64f2eabeb438cb47c0edae9e94d1bdf589d49e9416a504da99f"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/logs/test_reporting.writer_fix.stderr.log",
+      "bytes": 1071,
+      "sha256": "82d35075b92e0a91f63e5a406a2c3bd84f39140d260797c8357d419d9c24793d"
     }
   ],
-  "consumer_panel_qualification": "Pending separate saved-data test; no new fitting"
+  "consumer_panel_qualification": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/CONSUMER_SOURCE_QUALIFICATION.json",
+    "bytes": 1631,
+    "sha256": "5d68af2f5c9c2239c6b3e5277608ce1961d498909feb62e8f8a3411138529e24"
+  },
+  "delivery_safety_tests": 3,
+  "delivery_tests_scope": "Real disposable Git FF rejection/local preservation; exclusive flock; idempotent event replay. No project branches modified."
 }

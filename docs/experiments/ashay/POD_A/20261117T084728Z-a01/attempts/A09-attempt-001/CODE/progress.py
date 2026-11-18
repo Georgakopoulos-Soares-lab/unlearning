@@ -5,11 +5,17 @@ import argparse,fcntl,time
 def service():
  root=Path('/workspace/agent-handoff/POD_A/review-loop');h=read(root/'heartbeat.json');p=Path('/proc')/str(h['pid'])/'stat';alive=p.exists() and p.read_text().split()[2]!='Z' and p.read_text().split()[21]==h['proc_start_ticks'];age=time.time()-datetime.datetime.fromisoformat(h['observed_utc']).timestamp();stopped=(root/'STOP').exists() and not alive
  return {'observer_status':'STOPPED' if stopped else 'ACTIVE' if alive and age<1500 else 'BLOCKED','reviewer_status':'DRAFT_ONLY','publisher_status':'BLOCKED','observer_pid':h['pid'],'observer_start_ticks':h['proc_start_ticks'],'heartbeat_utc':h['observed_utc'],'heartbeat_age_seconds':age,'owned_service_alive':alive,'no_new_service_launched':True,'observed_utc':now()}
+def append_event_once(path,event):
+ fingerprint=digest({k:event[k] for k in ['event_type','prompt_commit','unit_counts','next_allowed_action']});prior=[json.loads(l) for l in path.read_text().splitlines()] if path.exists() else []
+ if any(e.get('event_fingerprint')==fingerprint for e in prior):return False
+ event['event_fingerprint']=fingerprint
+ with path.open('a') as f:f.write(json.dumps(event)+'\n')
+ return True
 def update(event,status='RUNNING'):
  with (C/'report.lock').open('a') as lock:
   fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB);obs=service();put(C/'SERVICE_STATUS.json',obs);state=read(C/'CONTROLLER_STATE.json');state.update(status=status,scientific_job_state='QUIESCENT',observed_utc=now(),administrative_service_state=obs,unit_counts={'new_scientific_measurements':0,'new_fits':0,'new_forwards':0,'available_heads_reused':2340,'available_fixed_applications_reused':2340,'pending_R2_heads':468,'pending_R5_heads':468,'LM_primary_reused':35,'LM_primary_pending':14,'controls_reused':36,'figure_pairs_reused':31},next_allowed_action='A09 finite reporting and recovery only' if status=='RUNNING' else 'Terminal handoff; no further work without a new explicitly scoped approval');put(C/'CONTROLLER_STATE.json',state);put(R/'CONTROLLER_STATE.json',state)
   p=C/'PROGRESS_EVENTS.jsonl';count=sum(1 for _ in p.open()) if p.exists() else 0;e={'schema_version':1,'event_id':'A09-'+str(count+1).zfill(5),'run_id':R.name,'stage':'A09','attempt_id':C.name,'event_type':event,'observed_utc':now(),'approval_reference':str(C/'APPROVAL_RECORD.json'),'prompt_commit':cfg['prompt_commit'],'effective_hashes':read(C/'APPROVAL_RECORD.json')['effective_hashes'],'research_parent':git('rev-parse','HEAD'),'protocol_hash':cfg['protocol_sha256'],'unit_counts':state['unit_counts'],'evidence_paths':['A09_INPUTS.json','INPUT_VALIDATION.json','A09_EXECUTION_MANIFEST.json'],'blockers':['Full sequence: R2delivery/admission, R5qualification, R3livebridge; parent/exposure metadata unknown'],'scientific_job_state':'QUIESCENT','administrative_service_state':obs,'next_allowed_action':state['next_allowed_action']}
-  with p.open('a') as f:f.write(json.dumps(e)+'\n')
+  append_event_once(p,e)
   md=f'''# A09 progress — {status}
 
 Run `{R.name}`, attempt `{C.name}`. Observed UTC `{now()}`; display timezone UTC. Direct approval pins prompt `{cfg['prompt_commit']}`. Accepted A08 research `{cfg['research_head_before']}`; current publication parent `{git('rev-parse','HEAD')}`. Scientific measurement queue is quiescent; only finite reporting/recovery work is authorized.

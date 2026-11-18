@@ -1,0 +1,2131 @@
+{
+  "schema": "pod-a-a09-backup-manifest-v1",
+  "status": "PASS",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "private": true,
+  "revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+  "archive_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/checkpoint-001/a09-report-checkpoint-001.tar.gz",
+  "archive_sha256": "5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a",
+  "archive_bytes": 4679828,
+  "member_manifest_sha256": "dd8bfe0e4a2cd3b6fb442effc6a796b67ac3ff2d81e7d66271108eb8c46e352b",
+  "payload_root_name": "A09-report-payload-002",
+  "compression_seconds": 0.750520385990967,
+  "upload_seconds": 1.4346879020013148,
+  "source_qualification": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/CONSUMER_SOURCE_QUALIFICATION.json",
+    "bytes": 1631,
+    "sha256": "5d68af2f5c9c2239c6b3e5277608ce1961d498909feb62e8f8a3411138529e24"
+  },
+  "dependency_graph": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/RECOVERY_DEPENDENCY_GRAPH.json",
+    "bytes": 97077,
+    "sha256": "238e0eaca5b6a68c17da8151ef33deef3820d29849df4ebde53e30fe2f7d4035"
+  },
+  "dependency_refs": [
+    {
+      "id": "historical/base_R1",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "remote_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "bytes": 10108100047,
+      "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z",
+      "member_manifest_sha256": "b381c43485b40f0e58dec74d74d2faf579cdfbc553ae85608fff20d54598d813",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/RESTORE_base_R1.json",
+        "bytes": 2355,
+        "sha256": "fc60d42547de2939249aff4dd7114a2fec566f6629b3bac25e7d76a4ac4a2c17"
+      },
+      "prior_restore_completed_utc": "2026-11-17T12:32:21.059796+00:00",
+      "member_index": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_base_R1.json",
+      "dependencies": [],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 10108100047,
+        "remote_LFS_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+        "remote_blob_id": "a455009d52266c2fbd7015bf235a19ce558f6a32",
+        "checked_utc": "2026-11-18T11:14:31.038387+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 14550,
+        "bytes_hashed": 11287043808,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z",
+        "member_index": {
+          "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_base_R1.json",
+          "bytes": 2850619,
+          "sha256": "66066e149da1b25a8d220d52a1e4ad0591cc9f4805ac76d2a2021bdbcfad6822"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 120.81622568699822
+      }
+    },
+    {
+      "id": "historical/controls",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "remote_path": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "bytes": 47129813,
+      "sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1",
+      "member_manifest_sha256": "237a1ca1e275830c0f73956792a6ff3c3dea91c06caf936b2a8674ab0c08d97a",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/RESTORE_controls.json",
+        "bytes": 2319,
+        "sha256": "c680e751da63758e2a02cc4e5f6072c01374eddf9ebd180496a01ae1940ef12f"
+      },
+      "prior_restore_completed_utc": "2026-11-17T12:32:27.870491+00:00",
+      "member_index": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_controls.json",
+      "dependencies": [],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 47129813,
+        "remote_LFS_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+        "remote_blob_id": "579996835a08c146e84bc60a88f10e0e3a984f70",
+        "checked_utc": "2026-11-18T11:14:31.117510+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 446,
+        "bytes_hashed": 77722408,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1",
+        "member_index": {
+          "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_controls.json",
+          "bytes": 83316,
+          "sha256": "43cc9a2945ebeb7c690ffde23793e56544e7d2c5fcf292f35d3adda217b32e52"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 3.2902921609929763
+      }
+    },
+    {
+      "id": "historical/R3",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+      "remote_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "bytes": 4412868094,
+      "sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z",
+      "member_manifest_sha256": "4bb31aa3e98018db0dc4deea2fb64f102824985594948ba97aa5f7e009a47359",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/RESTORE_R3.json",
+        "bytes": 2368,
+        "sha256": "821e14f27b291400258196ee05771e03f1d26028eb8eb0ef5d5b94bdc0473a6b"
+      },
+      "prior_restore_completed_utc": "2026-11-17T12:35:49.067243+00:00",
+      "member_index": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_R3.json",
+      "dependencies": [],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 4412868094,
+        "remote_LFS_sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+        "remote_blob_id": "d2ad73c77e2f5713623fbc8238e6589540aa94a2",
+        "checked_utc": "2026-11-18T11:14:31.200744+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 8199,
+        "bytes_hashed": 5002011992,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z",
+        "member_index": {
+          "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_R3.json",
+          "bytes": 1606323,
+          "sha256": "6aa823c3816175179bc0b90639c1141dd27dcfb1fffce9bb27e79902e06bc163"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 64.89752978799515
+      }
+    },
+    {
+      "id": "historical/preparation",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+      "remote_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+      "bytes": 6963484,
+      "sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation/incremental-retain-eval-v1-final-20261110T190751Z",
+      "member_manifest_sha256": "abd040298f415c50c91a072e83e621d4be612aa1f9163920fcb95f8bedc0d510",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/RESTORE_preparation.json",
+        "bytes": 2391,
+        "sha256": "47bf846b526626cb346da48eee5d04307332575a21d2933b3e6de441d93b5f56"
+      },
+      "prior_restore_completed_utc": "2026-11-17T12:35:51.628312+00:00",
+      "member_index": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_preparation.json",
+      "dependencies": [],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 6963484,
+        "remote_LFS_sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+        "remote_blob_id": "f52a41b2d85f6aaf27cbdb6a57e221ba2eb03c61",
+        "checked_utc": "2026-11-18T11:14:31.267194+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 131,
+        "bytes_hashed": 36761412,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation/incremental-retain-eval-v1-final-20261110T190751Z",
+        "member_index": {
+          "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_preparation.json",
+          "bytes": 22281,
+          "sha256": "03364e829bb460d52ff6ca5844c247e915ceb891aba7b7850226b4568865b8f4"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 0.8216311779979151
+      }
+    },
+    {
+      "id": "A02-attempt-001",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "24c8dad8b4375cf921740981d90aabe9d1f5785b",
+      "remote_path": "POD_A/20261117T084728Z-a01/A02/A02-attempt-001/evidence-001/a02-provenance.tar.gz",
+      "bytes": 684458,
+      "sha256": "04b7672dc0ccb19301006f290f9766bedc1858ba6425ada825ca29be14b9b41f",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A02-attempt-001/evidence-001/extracted/a02-provenance",
+      "member_manifest_sha256": null,
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A02-attempt-001/BACKUP_VERIFICATION.json",
+        "bytes": 2791,
+        "sha256": "867749172561954806fb8d7eae219db3526b90bcc1211289270cb37c5b92cb69"
+      },
+      "prior_restore_completed_utc": "2026-11-17T10:29:19.728762+00:00",
+      "member_index": null,
+      "dependencies": [],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 684458,
+        "remote_LFS_sha256": "04b7672dc0ccb19301006f290f9766bedc1858ba6425ada825ca29be14b9b41f",
+        "remote_blob_id": "fd3e0527a9ebe3155cee2e60392dccf24a971374",
+        "checked_utc": "2026-11-18T11:14:31.321229+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 345,
+        "bytes_hashed": 5627230,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A02-attempt-001/evidence-001/extracted/a02-provenance",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A02-attempt-001/evidence-001/extracted/a02-provenance/PAYLOAD_MANIFEST.json",
+          "bytes": 63348,
+          "sha256": "027d6e308c174438361377af2f68f1c6fba8a4acefb664d281263f9e9d11e78b"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 1.827622427008464
+      }
+    },
+    {
+      "id": "A03-attempt-001",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "01ce0121650fb9668499de67027e3bdb63e0b5ca",
+      "remote_path": "POD_A/20261117T084728Z-a01/A03/A03-attempt-001/checkpoint-001/a03-checkpoint-001.tar.gz",
+      "bytes": 21292878,
+      "sha256": "b2ca94959e0d28695817c2f811711429487d70fa9a6f0a58b64524df7f246d9b",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/checkpoint-fresh-consumer-001/A03-checkpoint-001",
+      "member_manifest_sha256": "e5bf2db74cac8fb287ba80c06f7e0d5db1350860863071f483bd286a92ab1c0c",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/BACKUP_VERIFICATION.json",
+        "bytes": 3323,
+        "sha256": "3d6a5701e21d4eb41473fecbaf9ebc179d7eca526ef2994ad4338a3f506fa30e"
+      },
+      "prior_restore_completed_utc": "2026-11-17T12:57:15.005250+00:00",
+      "member_index": null,
+      "dependencies": [
+        "historical/base_R1",
+        "historical/R3",
+        "historical/controls",
+        "historical/preparation"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 21292878,
+        "remote_LFS_sha256": "b2ca94959e0d28695817c2f811711429487d70fa9a6f0a58b64524df7f246d9b",
+        "remote_blob_id": "6564f2269bf82c0df8cc162813cceb9db83a0fbe",
+        "checked_utc": "2026-11-18T11:14:31.380115+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 118,
+        "bytes_hashed": 37175747,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/checkpoint-fresh-consumer-001/A03-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/checkpoint-fresh-consumer-001/A03-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 21394,
+          "sha256": "e5bf2db74cac8fb287ba80c06f7e0d5db1350860863071f483bd286a92ab1c0c"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 0.6605967930081533
+      }
+    },
+    {
+      "id": "A04-attempt-002",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "5e32de857cb9a289f6def0536e8dc55cd3885f96",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-002/checkpoint-001/a04-checkpoint-001.tar.gz",
+      "bytes": 48326169,
+      "sha256": "fcf6e74b99e5be0a19ab188d266fe09313690a2c6461a74a6967a30a04ca64cb",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001",
+      "member_manifest_sha256": "6e39921a849d00563da8d088b2d85d4321165d602acdd7b3a8c42dbb79bbfcce",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/BACKUP_VERIFICATION.json",
+        "bytes": 3844,
+        "sha256": "4a6e80b02eacc495fd240871e742cb32350daa45d20c540c61f468bd039f2db4"
+      },
+      "prior_restore_completed_utc": "2026-11-17T15:55:11.095655+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A03-attempt-001"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 48326169,
+        "remote_LFS_sha256": "fcf6e74b99e5be0a19ab188d266fe09313690a2c6461a74a6967a30a04ca64cb",
+        "remote_blob_id": "8b29fd59f9c54883ec56b71486b2517b7f91abae",
+        "checked_utc": "2026-11-18T11:14:31.440625+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 490,
+        "bytes_hashed": 65115939,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 93436,
+          "sha256": "6e39921a849d00563da8d088b2d85d4321165d602acdd7b3a8c42dbb79bbfcce"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 3.1787753630051157
+      }
+    },
+    {
+      "id": "A04-attempt-003",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "08b72cd87d48b22b229ddadba4f9bba43062d24b",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/checkpoint-001/a04-recovery-checkpoint-001.tar.gz",
+      "bytes": 447539,
+      "sha256": "8877c3019dbddebb6759cd5a713a3af703a14e33654d8be57ec822a856cb508f",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/checkpoint-fresh-consumer-001/A04-recovery-checkpoint-001",
+      "member_manifest_sha256": "255eebfad45abffbd619151b6615bb394261edb2fd050f2bd16f2f4305ffe757",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/BACKUP_VERIFICATION.json",
+        "bytes": 3376,
+        "sha256": "dba15481d646e8a588be67beec4cac81584989888d77a6efff8eb75db1534e6b"
+      },
+      "prior_restore_completed_utc": "2026-11-17T17:47:41.497357+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A04-attempt-002",
+        "A04/sidecar/0",
+        "A04/sidecar/1",
+        "A04/sidecar/2",
+        "A04/sidecar/3",
+        "A04/sidecar/4",
+        "A04/sidecar/5",
+        "A04/sidecar/6",
+        "A04/sidecar/7",
+        "A04/sidecar/8",
+        "A04/sidecar/9",
+        "A04/sidecar/10",
+        "A04/sidecar/11",
+        "A04/sidecar/12",
+        "A04/sidecar/13"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 447539,
+        "remote_LFS_sha256": "8877c3019dbddebb6759cd5a713a3af703a14e33654d8be57ec822a856cb508f",
+        "remote_blob_id": "eed042027f4066b8370820738d52a20d4b80ee1b",
+        "checked_utc": "2026-11-18T11:14:31.516551+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 225,
+        "bytes_hashed": 2551411,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/checkpoint-fresh-consumer-001/A04-recovery-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/checkpoint-fresh-consumer-001/A04-recovery-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 40832,
+          "sha256": "255eebfad45abffbd619151b6615bb394261edb2fd050f2bd16f2f4305ffe757"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 1.3140102370089153
+      }
+    },
+    {
+      "id": "A05-attempt-001",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "dd7b366b9bc49e3597a7715a9ed5fd70e1b3cf51",
+      "remote_path": "POD_A/20261117T084728Z-a01/A05/A05-attempt-001/checkpoint-001/a05-checkpoint-001.tar.gz",
+      "bytes": 15260381,
+      "sha256": "df3a7aa5367c77f9c60615af8024650b2e0848d5714e1e9b798cf8e59c6d3b4d",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A05-attempt-001/fresh-consumer-001/A05-checkpoint-001",
+      "member_manifest_sha256": "cd1c8f8ed189f248fc1615cad9d8bad88a50ebd9df55ad867ce3ac35b5167981",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A05-attempt-001/BACKUP_VERIFICATION.json",
+        "bytes": 6962,
+        "sha256": "949c082c8d11156d030b33dc51de62556eaabf2d4c5b97e4e39b7dad81494591"
+      },
+      "prior_restore_completed_utc": "2026-11-18T01:50:14.836332+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A04-attempt-003"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 15260381,
+        "remote_LFS_sha256": "df3a7aa5367c77f9c60615af8024650b2e0848d5714e1e9b798cf8e59c6d3b4d",
+        "remote_blob_id": "27feeaf713990ed6ac37300eebebf650418fdf9e",
+        "checked_utc": "2026-11-18T11:14:31.597324+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 107,
+        "bytes_hashed": 20154673,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A05-attempt-001/fresh-consumer-001/A05-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A05-attempt-001/fresh-consumer-001/A05-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 17964,
+          "sha256": "cd1c8f8ed189f248fc1615cad9d8bad88a50ebd9df55ad867ce3ac35b5167981"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 0.6417914939956972
+      }
+    },
+    {
+      "id": "A06/R4_H3",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "f80810ba91c63f275918ded14ee358c1dd136b46",
+      "remote_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R4/H3-checkpoint-001/A06-R4-H3-checkpoint-001.tar.gz",
+      "bytes": 2858606025,
+      "sha256": "e42eef1460cf8e91c2d7e4801b55d121920c8ddc04f227cf321533a20638ee8e",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001",
+      "member_manifest_sha256": "bd996e0b39fff684d06f2e4476a87de43ef93bdb23074e1667cd045522f7e45a",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001/BACKUP_R4_H3.json",
+        "bytes": 3150,
+        "sha256": "557fc055b1eef549f4b4de616830a93d721ae15ca27667d218ddd4d1c0ebea29"
+      },
+      "prior_restore_completed_utc": "2026-11-18T03:33:58.272333+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A05-attempt-001",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 2858606025,
+        "remote_LFS_sha256": "e42eef1460cf8e91c2d7e4801b55d121920c8ddc04f227cf321533a20638ee8e",
+        "remote_blob_id": "cb19d2682e501184c24e4d57a2175d3933d6aa2c",
+        "checked_utc": "2026-11-18T11:14:31.677507+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1103,
+        "bytes_hashed": 2877520224,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 209257,
+          "sha256": "bd996e0b39fff684d06f2e4476a87de43ef93bdb23074e1667cd045522f7e45a"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 14.020791197996004
+      }
+    },
+    {
+      "id": "A06/R4_other_five",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "17ede5e428390fc8fa611af9f9f856648741815c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R4/other_five-checkpoint-001/A06-R4-other_five-checkpoint-001.tar.gz",
+      "bytes": 1370093265,
+      "sha256": "1b484caaf7ba4d251198b3116101cf4d8f397d88b9aa943c4cb9fb1d0e1c9ff5",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+      "member_manifest_sha256": "400757ac8bf23adabd2fbf21e13ac1ea180d1f5a269faf91db708bebb48381e0",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001/BACKUP_R4_other_five.json",
+        "bytes": 3281,
+        "sha256": "00d9060f1b008d994581fa74ee024d9915e677360395c84fd22157c3030047b8"
+      },
+      "prior_restore_completed_utc": "2026-11-18T03:46:15.481282+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A05-attempt-001",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 1370093265,
+        "remote_LFS_sha256": "1b484caaf7ba4d251198b3116101cf4d8f397d88b9aa943c4cb9fb1d0e1c9ff5",
+        "remote_blob_id": "15ad6b0c32326ec2b2bb46afa4f75bc97c4d0bb5",
+        "checked_utc": "2026-11-18T11:14:31.765390+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 213,
+        "bytes_hashed": 1380046633,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 39674,
+          "sha256": "400757ac8bf23adabd2fbf21e13ac1ea180d1f5a269faf91db708bebb48381e0"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.640961391996825
+      }
+    },
+    {
+      "id": "A06/R6_H3",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "23efc7b40f2df86c8e1195600c572ed191c64f29",
+      "remote_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R6/H3-checkpoint-001/A06-R6-H3-checkpoint-001.tar.gz",
+      "bytes": 2858721949,
+      "sha256": "d2565fd892a38f3ca96c8b457fe19af45bfa7b468a57191bb8c56e261fa7709d",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001",
+      "member_manifest_sha256": "ec549201bfddd476843c255293b4a3abd9a6e95d73f54e4a2e7f8b4b7062bd35",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001/BACKUP_R6_H3.json",
+        "bytes": 3147,
+        "sha256": "2087a53e6842cbbb4e8f02d0bac1e6110dc2f599c19f588d7fa20fbf82e21600"
+      },
+      "prior_restore_completed_utc": "2026-11-18T04:12:39.485223+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A05-attempt-001",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 2858721949,
+        "remote_LFS_sha256": "d2565fd892a38f3ca96c8b457fe19af45bfa7b468a57191bb8c56e261fa7709d",
+        "remote_blob_id": "5d98ac65336fcf969b8441f1c184bdbbcb92a9dc",
+        "checked_utc": "2026-11-18T11:14:31.869244+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1119,
+        "bytes_hashed": 2877716626,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 212082,
+          "sha256": "ec549201bfddd476843c255293b4a3abd9a6e95d73f54e4a2e7f8b4b7062bd35"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 13.374617446010234
+      }
+    },
+    {
+      "id": "A06/R6_other_five",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "278dc904401424964d54508c076d23fea486a45a",
+      "remote_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R6/other_five-checkpoint-001/A06-R6-other_five-checkpoint-001.tar.gz",
+      "bytes": 1368607085,
+      "sha256": "d318b509d12bcada8306c177a6e1229b4abd324e8f61ce269c32dc63c34523e0",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+      "member_manifest_sha256": "fd572609df3211c7c02254c31d65cc3cba79977c271cbff60ce85abe1ad0b65a",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-001/BACKUP_R6_other_five.json",
+        "bytes": 3280,
+        "sha256": "c49537f924e6339c2bc3b32930475301aa715e97b66f3fa9d9957f3d6d9760be"
+      },
+      "prior_restore_completed_utc": "2026-11-18T04:20:52.467220+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A05-attempt-001",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 1368607085,
+        "remote_LFS_sha256": "d318b509d12bcada8306c177a6e1229b4abd324e8f61ce269c32dc63c34523e0",
+        "remote_blob_id": "0b1eb3e81ea4e4f19804bc7a22527d454da198fb",
+        "checked_utc": "2026-11-18T11:14:31.966545+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 226,
+        "bytes_hashed": 1378630111,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 41974,
+          "sha256": "fd572609df3211c7c02254c31d65cc3cba79977c271cbff60ce85abe1ad0b65a"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.815210579006816
+      }
+    },
+    {
+      "id": "A07/R4_gue_mouse_0",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "2e6f86cf100788d22934ea59fe5710179ef3b270",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_mouse_0-checkpoint-001/A07-R4-gue_mouse_0-checkpoint-001.tar.gz",
+      "bytes": 41339450,
+      "sha256": "88d7faedd12cae4bb28c0bd6c00e6100b68a9db2a2c08dc5c74302d6a3e2bde1",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_mouse_0-fresh-001/consumer/A07-R4-gue_mouse_0-checkpoint-001",
+      "member_manifest_sha256": "dc812a492fc715ca06211138c7e0b31f905bc3ea71bb0979ab275f6348d27652",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R4_gue_mouse_0.json",
+        "bytes": 4521,
+        "sha256": "111999d85fff51fa37ae350c515cc1167cc98798fcf6c946d6e77cbd18f15a81"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:37:27.722993+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R4_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 41339450,
+        "remote_LFS_sha256": "88d7faedd12cae4bb28c0bd6c00e6100b68a9db2a2c08dc5c74302d6a3e2bde1",
+        "remote_blob_id": "c108bcb6bd85d1ff60bb1fc9791143727454f0a9",
+        "checked_utc": "2026-11-18T11:14:32.054988+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 740,
+        "bytes_hashed": 57601796,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_mouse_0-fresh-001/consumer/A07-R4-gue_mouse_0-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_mouse_0-fresh-001/consumer/A07-R4-gue_mouse_0-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 148587,
+          "sha256": "dc812a492fc715ca06211138c7e0b31f905bc3ea71bb0979ab275f6348d27652"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 5.204220829997212
+      }
+    },
+    {
+      "id": "A07/R4_gue_prom_300_all",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "34352093c689b76b6059fe09ca79bbe20812a7a1",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_prom_300_all-checkpoint-001/A07-R4-gue_prom_300_all-checkpoint-001.tar.gz",
+      "bytes": 40763009,
+      "sha256": "c4eac79b5ae1a9282724007a5a81569136a9ee98b7b9506346d035543dcabdfc",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_300_all-fresh-001/consumer/A07-R4-gue_prom_300_all-checkpoint-001",
+      "member_manifest_sha256": "edcee0e341a092a1199c69d89cc39d997d2d298cc57db4ea4d1bef3c1c249061",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R4_gue_prom_300_all.json",
+        "bytes": 4562,
+        "sha256": "4df6f24cd3ffa9d2107c377a9105315a2333abe15ebfb48c43b615be21afde3c"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:32:19.733649+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R4_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 40763009,
+        "remote_LFS_sha256": "c4eac79b5ae1a9282724007a5a81569136a9ee98b7b9506346d035543dcabdfc",
+        "remote_blob_id": "c6c5223f8cc2faa1e1ff9bfec9eed24d59177fb3",
+        "checked_utc": "2026-11-18T11:14:32.145372+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 725,
+        "bytes_hashed": 57017411,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_300_all-fresh-001/consumer/A07-R4-gue_prom_300_all-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_300_all-fresh-001/consumer/A07-R4-gue_prom_300_all-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 149009,
+          "sha256": "edcee0e341a092a1199c69d89cc39d997d2d298cc57db4ea4d1bef3c1c249061"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.693886298991856
+      }
+    },
+    {
+      "id": "A07/R4_gue_prom_core_all",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "b84c35efbb69703b06b899c293e5969aa6bf4088",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_prom_core_all-checkpoint-001/A07-R4-gue_prom_core_all-checkpoint-001.tar.gz",
+      "bytes": 41052513,
+      "sha256": "36ee8823d5498e03c43a517c248b91db3a32508a75c989d664d6df69f12b8033",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_core_all-fresh-001/consumer/A07-R4-gue_prom_core_all-checkpoint-001",
+      "member_manifest_sha256": "3c3faaf8ee466fa53a55e4f5898420437a09c027bdf2b7ca30422406f1c64767",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R4_gue_prom_core_all.json",
+        "bytes": 4616,
+        "sha256": "fbc03c2cc892f1d57ccd5fe4e2557684e875205fbbf09f45f0dbe2ce387b79f4"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:30:46.928801+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R4_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 41052513,
+        "remote_LFS_sha256": "36ee8823d5498e03c43a517c248b91db3a32508a75c989d664d6df69f12b8033",
+        "remote_blob_id": "3a6d2e753966547ee6249d611636a38a189d49d0",
+        "checked_utc": "2026-11-18T11:14:32.224039+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 719,
+        "bytes_hashed": 57294063,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_core_all-fresh-001/consumer/A07-R4-gue_prom_core_all-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_prom_core_all-fresh-001/consumer/A07-R4-gue_prom_core_all-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 148563,
+          "sha256": "3c3faaf8ee466fa53a55e4f5898420437a09c027bdf2b7ca30422406f1c64767"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.529095315010636
+      }
+    },
+    {
+      "id": "A07/R4_gue_splice_reconstructed",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e54916f11f2f97ce0d707d64dac27122b4f7ed88",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_splice_reconstructed-checkpoint-001/A07-R4-gue_splice_reconstructed-checkpoint-001.tar.gz",
+      "bytes": 46774714,
+      "sha256": "591cb1b540a025accc42f9124b21bb7ddce2cde90e53ce2d8012d37fc6524607",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_splice_reconstructed-fresh-001/consumer/A07-R4-gue_splice_reconstructed-checkpoint-001",
+      "member_manifest_sha256": "7999b7dc024ce744a8b74d84bfba8b5f244b2f65e565d15887210785fd416fb6",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R4_gue_splice_reconstructed.json",
+        "bytes": 4706,
+        "sha256": "07c95ef633cea340d270fe4eaca273b51307c70cc75820a26442c169dba26c5a"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:35:48.506783+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R4_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 46774714,
+        "remote_LFS_sha256": "591cb1b540a025accc42f9124b21bb7ddce2cde90e53ce2d8012d37fc6524607",
+        "remote_blob_id": "576c371ba82c69e638f773e35d10613db5581b08",
+        "checked_utc": "2026-11-18T11:14:32.306443+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 732,
+        "bytes_hashed": 63209890,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_splice_reconstructed-fresh-001/consumer/A07-R4-gue_splice_reconstructed-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_splice_reconstructed-fresh-001/consumer/A07-R4-gue_splice_reconstructed-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 155254,
+          "sha256": "7999b7dc024ce744a8b74d84bfba8b5f244b2f65e565d15887210785fd416fb6"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.553925143001834
+      }
+    },
+    {
+      "id": "A07/R4_gue_tf_0",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "415c42416791a3d67e95ad82cf5be2ea7d694ca2",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R4/gue_tf_0-checkpoint-001/A07-R4-gue_tf_0-checkpoint-001.tar.gz",
+      "bytes": 41573423,
+      "sha256": "ba6e1246d42d1ee97ad537443168546d21720cc76939f93049b1a0a680ecc77f",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_tf_0-fresh-001/consumer/A07-R4-gue_tf_0-checkpoint-001",
+      "member_manifest_sha256": "a640cbf4ea8d5a74019453e54fef4916a9f9333791431fe58d6f7dac37f09c6d",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R4_gue_tf_0.json",
+        "bytes": 4474,
+        "sha256": "a7eedf118e52999b428284e92679423be69c6519c007eb9c61a3660fd06d480a"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:28:42.477643+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R4_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 41573423,
+        "remote_LFS_sha256": "ba6e1246d42d1ee97ad537443168546d21720cc76939f93049b1a0a680ecc77f",
+        "remote_blob_id": "65ec16dfb2eac80888573ce88d82d6c78ccc1f34",
+        "checked_utc": "2026-11-18T11:14:32.400679+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 711,
+        "bytes_hashed": 57743815,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_tf_0-fresh-001/consumer/A07-R4-gue_tf_0-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R4-gue_tf_0-fresh-001/consumer/A07-R4-gue_tf_0-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 141557,
+          "sha256": "a640cbf4ea8d5a74019453e54fef4916a9f9333791431fe58d6f7dac37f09c6d"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.4051966889965115
+      }
+    },
+    {
+      "id": "A07/R6_gue_mouse_0",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "b3b0dbec18a573c714c2b16ce88f8584be6d2800",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_mouse_0-checkpoint-001/A07-R6-gue_mouse_0-checkpoint-001.tar.gz",
+      "bytes": 41277608,
+      "sha256": "6303ba802fea91a92ae1f046b52ce386b17dd9f959fcaee5a9aa41314e53ef25",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_mouse_0-fresh-001/consumer/A07-R6-gue_mouse_0-checkpoint-001",
+      "member_manifest_sha256": "1762139f395479a2a4c641bd74f7163bb68f3a230ca65b10469270cdb8f4862e",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R6_gue_mouse_0.json",
+        "bytes": 4503,
+        "sha256": "264cdd89f2ba607cdab2437dd215839ab2b33f54e703816529a514b0e9e6b517"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:47:05.130992+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R6_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 41277608,
+        "remote_LFS_sha256": "6303ba802fea91a92ae1f046b52ce386b17dd9f959fcaee5a9aa41314e53ef25",
+        "remote_blob_id": "daac8917585aff254af8ac8ac77d6e97e42f8545",
+        "checked_utc": "2026-11-18T11:14:32.492446+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 772,
+        "bytes_hashed": 57591648,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_mouse_0-fresh-001/consumer/A07-R6-gue_mouse_0-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_mouse_0-fresh-001/consumer/A07-R6-gue_mouse_0-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 154250,
+          "sha256": "1762139f395479a2a4c641bd74f7163bb68f3a230ca65b10469270cdb8f4862e"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.951217833004193
+      }
+    },
+    {
+      "id": "A07/R6_gue_prom_300_all",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "f33705b94ff80eefb668c500515142e2c5566c57",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_prom_300_all-checkpoint-001/A07-R6-gue_prom_300_all-checkpoint-001.tar.gz",
+      "bytes": 40725635,
+      "sha256": "a0a07ca8aace68395372fbe094798b5bb7a05824056dad21b8cd7054c31362e6",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_300_all-fresh-001/consumer/A07-R6-gue_prom_300_all-checkpoint-001",
+      "member_manifest_sha256": "4884312a1b49267ace7beecbfd0c840644d2a6cad8a8b7e521f5e9841de4d8f2",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R6_gue_prom_300_all.json",
+        "bytes": 4602,
+        "sha256": "4cdb8ed616481bc5188865185955c310b8c50fe177975336e23ea163bbbf28da"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:42:22.651182+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R6_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 40725635,
+        "remote_LFS_sha256": "a0a07ca8aace68395372fbe094798b5bb7a05824056dad21b8cd7054c31362e6",
+        "remote_blob_id": "a85e2b3a31b6e47758b28f7263f21a89146642f4",
+        "checked_utc": "2026-11-18T11:14:32.581583+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 760,
+        "bytes_hashed": 57046654,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_300_all-fresh-001/consumer/A07-R6-gue_prom_300_all-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_300_all-fresh-001/consumer/A07-R6-gue_prom_300_all-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 155200,
+          "sha256": "4884312a1b49267ace7beecbfd0c840644d2a6cad8a8b7e521f5e9841de4d8f2"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 4.786904818000039
+      }
+    },
+    {
+      "id": "A07/R6_gue_prom_core_all",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "27ba3f4528b4a5159af31bd91f4d70d4db493c9e",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_prom_core_all-checkpoint-001/A07-R6-gue_prom_core_all-checkpoint-001.tar.gz",
+      "bytes": 41144558,
+      "sha256": "87efbfcd5b826061e677f8c590cd7e822fd5fdce3fb5fb579af201919bd05c5e",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_core_all-fresh-001/consumer/A07-R6-gue_prom_core_all-checkpoint-001",
+      "member_manifest_sha256": "38aa0c24d5c63c371d691180322027bc936cc5678b20925842fb20990cc35087",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R6_gue_prom_core_all.json",
+        "bytes": 4579,
+        "sha256": "61ac818e4fc889f6042ee3dab17efffb6065523086902a560dd57115e7076bf7"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:40:53.773280+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R6_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 41144558,
+        "remote_LFS_sha256": "87efbfcd5b826061e677f8c590cd7e822fd5fdce3fb5fb579af201919bd05c5e",
+        "remote_blob_id": "a8ded14aecf79e0d6ed28faa54a01fe79c7c937b",
+        "checked_utc": "2026-11-18T11:14:32.665191+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 753,
+        "bytes_hashed": 57461953,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_core_all-fresh-001/consumer/A07-R6-gue_prom_core_all-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_prom_core_all-fresh-001/consumer/A07-R6-gue_prom_core_all-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 154576,
+          "sha256": "38aa0c24d5c63c371d691180322027bc936cc5678b20925842fb20990cc35087"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 5.390614604999428
+      }
+    },
+    {
+      "id": "A07/R6_gue_splice_reconstructed",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "baa6ed9dfdcc59783945b036909f0e23aeb1f0a1",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_splice_reconstructed-checkpoint-001/A07-R6-gue_splice_reconstructed-checkpoint-001.tar.gz",
+      "bytes": 46891345,
+      "sha256": "6d40a7f00b0d569dbae1a5102c0f462dc35f423720db1683cd061ff5df74c808",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_splice_reconstructed-fresh-001/consumer/A07-R6-gue_splice_reconstructed-checkpoint-001",
+      "member_manifest_sha256": "c38d6284b9030df929fd53491efd1c317322278e52243e73e3f3e33a09664c19",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R6_gue_splice_reconstructed.json",
+        "bytes": 4744,
+        "sha256": "a0834f44987eeb36739d4e6f043522b187072957befcfffd1ae3bd53295ddf23"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:45:34.486140+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R6_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 46891345,
+        "remote_LFS_sha256": "6d40a7f00b0d569dbae1a5102c0f462dc35f423720db1683cd061ff5df74c808",
+        "remote_blob_id": "0c11e0bb3effc3b3d290edb4317f82d21f9a961d",
+        "checked_utc": "2026-11-18T11:14:32.752162+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 766,
+        "bytes_hashed": 63380786,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_splice_reconstructed-fresh-001/consumer/A07-R6-gue_splice_reconstructed-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_splice_reconstructed-fresh-001/consumer/A07-R6-gue_splice_reconstructed-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 161281,
+          "sha256": "c38d6284b9030df929fd53491efd1c317322278e52243e73e3f3e33a09664c19"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 5.513186805997975
+      }
+    },
+    {
+      "id": "A07/R6_gue_tf_0",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "10bf4e4b63cff370eaee147f0225a8b46096151b",
+      "remote_path": "POD_A/20261117T084728Z-a01/A07/A07-attempt-001/R6/gue_tf_0-checkpoint-001/A07-R6-gue_tf_0-checkpoint-001.tar.gz",
+      "bytes": 41675050,
+      "sha256": "cc55c2915021c7e719932c08c278268d2c20056a4c8040dd059c124c2808926f",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_tf_0-fresh-001/consumer/A07-R6-gue_tf_0-checkpoint-001",
+      "member_manifest_sha256": "bb66eebb754d6877a9b16a503acb02de0fe22772eca84b035ba27d027636d5d7",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/BACKUP_R6_gue_tf_0.json",
+        "bytes": 4436,
+        "sha256": "ba062c8af843e5dc82006cea7afe0d82b0e871662a21328a874a41cc57e3b28d"
+      },
+      "prior_restore_completed_utc": "2026-11-18T06:39:23.632550+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A06/R6_other_five",
+        "historical/base_R1",
+        "historical/controls"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 41675050,
+        "remote_LFS_sha256": "cc55c2915021c7e719932c08c278268d2c20056a4c8040dd059c124c2808926f",
+        "remote_blob_id": "d966cd946c306100d5112f7dad68b63e4c6bc8a5",
+        "checked_utc": "2026-11-18T11:14:32.838960+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 747,
+        "bytes_hashed": 57926865,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_tf_0-fresh-001/consumer/A07-R6-gue_tf_0-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001/R6-gue_tf_0-fresh-001/consumer/A07-R6-gue_tf_0-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 147921,
+          "sha256": "bb66eebb754d6877a9b16a503acb02de0fe22772eca84b035ba27d027636d5d7"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 5.890169431004324
+      }
+    },
+    {
+      "id": "A08/R4",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "d10c34a50b37bb8f12782b6b2684611953110db1",
+      "remote_path": "POD_A/20261117T084728Z-a01/A08/A08-attempt-001/R4-checkpoint-001/A08-R4-checkpoint-001.tar.gz",
+      "bytes": 179918975,
+      "sha256": "bdc5884a259900cc91a139480012a569637a9632b7c0fe87e66c388c9e1443df",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/R4-fresh-001/consumer/A08-R4-checkpoint-001",
+      "member_manifest_sha256": "6cd215d6c0401c087a448c4909725a978846fb6341173282e6f4c05faec2b8bc",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/BACKUP_R4.json",
+        "bytes": 8320,
+        "sha256": "1bc96aac79580af01ae56eaa6b98ee3e0c5a8ba0b9dbd31a7ff9a8b5c406b35f"
+      },
+      "prior_restore_completed_utc": "2026-11-18T09:17:11.345045+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A07/R4_gue_prom_300_all",
+        "A07/R4_gue_mouse_0",
+        "A07/R4_gue_tf_0",
+        "A07/R4_gue_prom_core_all",
+        "A07/R4_gue_splice_reconstructed",
+        "A06/R4_other_five"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 179918975,
+        "remote_LFS_sha256": "bdc5884a259900cc91a139480012a569637a9632b7c0fe87e66c388c9e1443df",
+        "remote_blob_id": "5456dcafe7989535ebf1597bf12b87cd838a9bc5",
+        "checked_utc": "2026-11-18T11:14:32.924365+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1840,
+        "bytes_hashed": 192311697,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/R4-fresh-001/consumer/A08-R4-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/R4-fresh-001/consumer/A08-R4-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 394189,
+          "sha256": "6cd215d6c0401c087a448c4909725a978846fb6341173282e6f4c05faec2b8bc"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 12.60631223898963
+      }
+    },
+    {
+      "id": "A08/R6",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "9a398582de6287f28f1bccfdea6fd3753072929b",
+      "remote_path": "POD_A/20261117T084728Z-a01/A08/A08-attempt-001/R6-checkpoint-001/A08-R6-checkpoint-001.tar.gz",
+      "bytes": 180115610,
+      "sha256": "8250d61baad68e6d8f0de42b7ae9939159c2a038f18e0c25003628218e02c1cd",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/R6-fresh-001/consumer/A08-R6-checkpoint-001",
+      "member_manifest_sha256": "0e45a8e296dfbb8b263b7c4504986dd30b6802f0082cfd5ec610a43e18f48155",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/BACKUP_R6.json",
+        "bytes": 8319,
+        "sha256": "178de6f46164277e3120b54eb1357f0284bb0f4c0341557cf67d09cfa88962c0"
+      },
+      "prior_restore_completed_utc": "2026-11-18T09:23:05.710856+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A07/R6_gue_splice_reconstructed",
+        "A07/R6_gue_prom_300_all",
+        "A07/R6_gue_mouse_0",
+        "A07/R6_gue_prom_core_all",
+        "A07/R6_gue_tf_0",
+        "A06/R6_other_five"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 180115610,
+        "remote_LFS_sha256": "8250d61baad68e6d8f0de42b7ae9939159c2a038f18e0c25003628218e02c1cd",
+        "remote_blob_id": "225059f262097e0721969ab9d107a7d937dc222a",
+        "checked_utc": "2026-11-18T11:14:33.021407+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1858,
+        "bytes_hashed": 192704418,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/R6-fresh-001/consumer/A08-R6-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/R6-fresh-001/consumer/A08-R6-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 397353,
+          "sha256": "0e45a8e296dfbb8b263b7c4504986dd30b6802f0082cfd5ec610a43e18f48155"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 12.663426180006354
+      }
+    },
+    {
+      "id": "A08/analysis",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "5da5c27920eb1aeaa7abc0bf4963a5d3e6feb56e",
+      "remote_path": "POD_A/20261117T084728Z-a01/A08/A08-attempt-001/analysis-checkpoint-001/A08-analysis-checkpoint-001.tar.gz",
+      "bytes": 68390649,
+      "sha256": "12eb4fe1f93f8b126c6af7bd481fc73712d9991ee70d9ce41fa45ea482105155",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/analysis-fresh-001/consumer/A08-analysis-checkpoint-001",
+      "member_manifest_sha256": "cf2d5c00551383e4441e2c63dc26363963da7ddbbc2b10d6e9817a8310229dc0",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/BACKUP_analysis.json",
+        "bytes": 1889,
+        "sha256": "304b73c4da670c64d6f978669ffb338317bbb2999788795e757581b1796a07fa"
+      },
+      "prior_restore_completed_utc": "2026-11-18T09:32:16.845958+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A08/R4",
+        "A08/R6",
+        "A06/R4_H3",
+        "A06/R6_H3",
+        "A06/R4_other_five",
+        "A06/R6_other_five"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 68390649,
+        "remote_LFS_sha256": "12eb4fe1f93f8b126c6af7bd481fc73712d9991ee70d9ce41fa45ea482105155",
+        "remote_blob_id": "0d11d6023ca02fcf343637b060f98fca96313ee1",
+        "checked_utc": "2026-11-18T11:14:33.107976+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1795,
+        "bytes_hashed": 91134724,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/analysis-fresh-001/consumer/A08-analysis-checkpoint-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001/analysis-fresh-001/consumer/A08-analysis-checkpoint-001/MEMBER_MANIFEST.json",
+          "bytes": 395695,
+          "sha256": "cf2d5c00551383e4441e2c63dc26363963da7ddbbc2b10d6e9817a8310229dc0"
+        },
+        "new_transfer": false,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 10.786127226994722
+      }
+    },
+    {
+      "id": "A08/final_metadata",
+      "kind": "archive",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "cd0f9c8e370733648a590a84cfd0195de3f285da",
+      "remote_path": "POD_A/20261117T084728Z-a01/A08/A08-attempt-001/delivery-001/a08-delivery-metadata-001.tar.gz",
+      "bytes": 23723880,
+      "sha256": "46dcf414f0f3ccae19354bc8645bad580336ec7823ccd4ee628d5580b9a88923",
+      "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/inherited-A08-metadata-fresh-001/consumer/A08-delivery-metadata-001",
+      "member_manifest_sha256": null,
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/DELIVERY_RECEIPT.json",
+        "bytes": 3158,
+        "sha256": "c360cfeac432813218acc92ca5d4c5ba155e4b237da4adb9fe72a925382738ee"
+      },
+      "prior_restore_completed_utc": "2026-11-18T10:27:26.167423+00:00",
+      "member_index": null,
+      "dependencies": [
+        "A08/R4",
+        "A08/R6",
+        "A08/analysis",
+        "A03-attempt-001",
+        "A04-attempt-003",
+        "A05-attempt-001"
+      ],
+      "required_for": "Saved feature/readout analysis and provenance; excluded weights are not claimed recovered",
+      "new_A09_inherited_metadata_download": true,
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 23723880,
+        "remote_LFS_sha256": "46dcf414f0f3ccae19354bc8645bad580336ec7823ccd4ee628d5580b9a88923",
+        "remote_blob_id": "ae1ffccdcaebd8adb1f90405438fcd301cfaa756",
+        "checked_utc": "2026-11-18T11:14:33.203962+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 412,
+        "bytes_hashed": 219239534,
+        "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/inherited-A08-metadata-fresh-001/consumer/A08-delivery-metadata-001",
+        "member_index": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/inherited-A08-metadata-fresh-001/consumer/A08-delivery-metadata-001/MEMBER_MANIFEST.json",
+          "bytes": 74051,
+          "sha256": "72a70562813eb371855df1aebf54028e634fc9df72e19dbd141bb1d13026ad0c"
+        },
+        "new_transfer": true,
+        "prior_fresh_restore_proof_reused": true,
+        "seconds": 2.958674057997996,
+        "attribution": "A09force-fresh inherited metadata archive; other dependency consumers reused prior force-fresh proof"
+      }
+    },
+    {
+      "id": "A08/final_delivery_receipt",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "95d8f257f0d5705e0918016bb1888d6d211e6eb1",
+      "remote_path": "POD_A/20261117T084728Z-a01/A08/A08-attempt-001/delivery-001/A08_DELIVERY_RECEIPT.final.json",
+      "sha256": "c360cfeac432813218acc92ca5d4c5ba155e4b237da4adb9fe72a925382738ee",
+      "bytes": 3158,
+      "local_file": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/DELIVERY_RECEIPT.json",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/FINAL_CLOSEOUT.json",
+        "bytes": 659,
+        "sha256": "40d3b0980ec4fd7831abc49b02df423784ec75baeacddfb1407f0b75f674681b"
+      },
+      "dependencies": [
+        "A08/final_metadata"
+      ],
+      "required_for": "Exact final A08 research commit and metadata archive binding",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 3158,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "4b77674a9747c2878ff72729fb1894b13d04efa3",
+        "checked_utc": "2026-11-18T11:14:33.293740+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 3158,
+        "local_path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/DELIVERY_RECEIPT.json",
+        "new_transfer": false,
+        "seconds": 0.0030107939965091646
+      }
+    },
+    {
+      "id": "A04/sidecar/0",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/run_config.yaml",
+      "bytes": 25256,
+      "sha256": "43c03d2d23b917656ae0079b4af5f133aa0c48735f703cb68c5e5968187319bf",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/run_config.yaml",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 25256,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "94adb0dd4f6d9202c051fd931c85368b83e03114",
+        "checked_utc": "2026-11-18T11:14:33.396072+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 25256,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/run_config.yaml",
+        "new_transfer": false,
+        "seconds": 0.005594970993115567
+      }
+    },
+    {
+      "id": "A04/sidecar/1",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/tokenizer.json",
+      "bytes": 10649,
+      "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/tokenizer.json",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 10649,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "5e15d8a811b5264bfb314bc975b5b2d28a578d93",
+        "checked_utc": "2026-11-18T11:14:33.506048+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 10649,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/tokenizer.json",
+        "new_transfer": false,
+        "seconds": 0.002683858008822426
+      }
+    },
+    {
+      "id": "A04/sidecar/2",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/tokenizer_config.json",
+      "bytes": 361,
+      "sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/tokenizer_config.json",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 361,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "f0c4d1f755d97c4295daf0be9548082e8c92f0e2",
+        "checked_utc": "2026-11-18T11:14:33.598150+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 361,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/tokenizer_config.json",
+        "new_transfer": false,
+        "seconds": 0.002895212994189933
+      }
+    },
+    {
+      "id": "A04/sidecar/3",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/metadata.json",
+      "bytes": 119,
+      "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/metadata.json",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 119,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "c9dbde0bcf4d2d993122dcc7d6bcb1eef8b6fb77",
+        "checked_utc": "2026-11-18T11:14:33.684744+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 119,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/metadata.json",
+        "new_transfer": false,
+        "seconds": 0.0029615230014314875
+      }
+    },
+    {
+      "id": "A04/sidecar/4",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/.metadata",
+      "bytes": 188713,
+      "sha256": "e40213da560686cd440672f7fe7b0df485beaf65f6c7801dd2032f519d670303",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/.metadata",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 188713,
+        "remote_LFS_sha256": "e40213da560686cd440672f7fe7b0df485beaf65f6c7801dd2032f519d670303",
+        "remote_blob_id": "2975c436499ea38d9a2ac85a7fd7f2ddbd563738",
+        "checked_utc": "2026-11-18T11:14:33.772807+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 188713,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/.metadata",
+        "new_transfer": false,
+        "seconds": 0.00635852399864234
+      }
+    },
+    {
+      "id": "A04/sidecar/5",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/run_config.yaml",
+      "bytes": 25717,
+      "sha256": "06dbf45c508649c7d49487d83a44aea4e2b786c0ff95a108ce063183597063a1",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/run_config.yaml",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 25717,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "1280547154051f2c8c6279c2689cf3c8e9262765",
+        "checked_utc": "2026-11-18T11:14:33.839583+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 25717,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/run_config.yaml",
+        "new_transfer": false,
+        "seconds": 0.0028714619984384626
+      }
+    },
+    {
+      "id": "A04/sidecar/6",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/tokenizer.json",
+      "bytes": 10649,
+      "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/tokenizer.json",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 10649,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "5e15d8a811b5264bfb314bc975b5b2d28a578d93",
+        "checked_utc": "2026-11-18T11:14:33.925892+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 10649,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/tokenizer.json",
+        "new_transfer": false,
+        "seconds": 0.0029622930014738813
+      }
+    },
+    {
+      "id": "A04/sidecar/7",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/tokenizer_config.json",
+      "bytes": 361,
+      "sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/tokenizer_config.json",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 361,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "f0c4d1f755d97c4295daf0be9548082e8c92f0e2",
+        "checked_utc": "2026-11-18T11:14:33.992787+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 361,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/tokenizer_config.json",
+        "new_transfer": false,
+        "seconds": 0.0029092619952280074
+      }
+    },
+    {
+      "id": "A04/sidecar/8",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/metadata.json",
+      "bytes": 119,
+      "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/metadata.json",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "GIT_BLOB_ID_AND_LOCAL_SHA256",
+        "remote_size": 119,
+        "remote_LFS_sha256": null,
+        "remote_blob_id": "c9dbde0bcf4d2d993122dcc7d6bcb1eef8b6fb77",
+        "checked_utc": "2026-11-18T11:14:34.061917+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 119,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/metadata.json",
+        "new_transfer": false,
+        "seconds": 0.0025778969866223633
+      }
+    },
+    {
+      "id": "A04/sidecar/9",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/.metadata",
+      "bytes": 188725,
+      "sha256": "ebfd32e8ffeebd04a64a53307284c459a4b12863a9c51319fad0ceec7e17f781",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/.metadata",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 188725,
+        "remote_LFS_sha256": "ebfd32e8ffeebd04a64a53307284c459a4b12863a9c51319fad0ceec7e17f781",
+        "remote_blob_id": "0a60fbf9b295c19d32d4ff2d331d31ef3014481c",
+        "checked_utc": "2026-11-18T11:14:34.143471+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 188725,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/.metadata",
+        "new_transfer": false,
+        "seconds": 0.005538551005884074
+      }
+    },
+    {
+      "id": "A04/sidecar/10",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/train_state.pt",
+      "bytes": 3461,
+      "sha256": "fe3d6e3efb8d2fe2fcc6d7b7dd4b905fc0101d59000e70b08dac6a8ac23d90e7",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/train_state.pt",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 3461,
+        "remote_LFS_sha256": "fe3d6e3efb8d2fe2fcc6d7b7dd4b905fc0101d59000e70b08dac6a8ac23d90e7",
+        "remote_blob_id": "d6325e19ace6afc4d931e5821bf7fed98adf9f15",
+        "checked_utc": "2026-11-18T11:14:34.235228+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 3461,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/train_state.pt",
+        "new_transfer": false,
+        "seconds": 0.005224544001976028
+      }
+    },
+    {
+      "id": "A04/sidecar/11",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/common.pt",
+      "bytes": 1767,
+      "sha256": "94e53392bce71573529316bb8ec45b2415f076c00e680d05d7fa103fad1821be",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/common.pt",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 1767,
+        "remote_LFS_sha256": "94e53392bce71573529316bb8ec45b2415f076c00e680d05d7fa103fad1821be",
+        "remote_blob_id": "78d4fd39ed837693afb540998f08fe147e7cd13a",
+        "checked_utc": "2026-11-18T11:14:34.327496+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 1767,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R3/common.pt",
+        "new_transfer": false,
+        "seconds": 0.005347407000954263
+      }
+    },
+    {
+      "id": "A04/sidecar/12",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/train_state.pt",
+      "bytes": 3461,
+      "sha256": "d9dce934deef3a82c38b23970d5f146af5b299494bacaf659f1f1a01b8371333",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/train_state.pt",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 3461,
+        "remote_LFS_sha256": "d9dce934deef3a82c38b23970d5f146af5b299494bacaf659f1f1a01b8371333",
+        "remote_blob_id": "8a60169b913fe7f155f480b8df08c21e49d24570",
+        "checked_utc": "2026-11-18T11:14:34.413572+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 3461,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/train_state.pt",
+        "new_transfer": false,
+        "seconds": 0.008860430010827258
+      }
+    },
+    {
+      "id": "A04/sidecar/13",
+      "kind": "object",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "c1376f4d58e763ef4a8460c195ea2e185e4f738c",
+      "remote_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/common.pt",
+      "bytes": 1767,
+      "sha256": "fe6dc5bab81be6a7691367b6243d4bb5c4700428ece9e30642dfebc272c0546c",
+      "local_file": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/common.pt",
+      "prior_fresh_restore_proof": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/PAYLOAD_RECOVERY_INDEX.json",
+        "bytes": 14725,
+        "sha256": "773c2174e63eab25c831b7414ec3cb302450b2ad7481a23d1a6acb6aceacaf89"
+      },
+      "dependencies": [],
+      "required_for": "Historical qualification sidecar metadata only; not native model payloads",
+      "current_remote": {
+        "status": "PASS",
+        "route": "LFS_SHA256_AND_SIZE",
+        "remote_size": 1767,
+        "remote_LFS_sha256": "fe6dc5bab81be6a7691367b6243d4bb5c4700428ece9e30642dfebc272c0546c",
+        "remote_blob_id": "d7453946bb1de654286ee09ce03acbc73f6ff79b",
+        "checked_utc": "2026-11-18T11:14:34.501915+00:00",
+        "new_payload_transfer": false
+      },
+      "current_local": {
+        "status": "PASS",
+        "files_checked": 1,
+        "bytes_hashed": 1767,
+        "local_path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/payload-sidecars-fresh-cache-001/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/c1376f4d58e763ef4a8460c195ea2e185e4f738c/POD_A/20261117T084728Z-a01/A04/A04-attempt-003/recovered-payloads-001/R5/common.pt",
+        "new_transfer": false,
+        "seconds": 0.0053384659986477345
+      }
+    }
+  ],
+  "inherited_scientific_bytes_repacked": 0,
+  "payload_snapshot_semantics": "Immutable report/code/control snapshot before backup/delivery receipts; later metadata receipts are protected separately without recursively resealing",
+  "model_weights_and_installed_runtime_excluded": true,
+  "FULL_GPU_RECREATION_VERIFIED": false,
+  "fresh_restore": {
+    "schema": "pod-a-a09-fresh-restore-v1",
+    "status": "PASS",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "payload_revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+    "archive_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/checkpoint-001/a09-report-checkpoint-001.tar.gz",
+    "archive_sha256": "5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a",
+    "archive_bytes": 4679828,
+    "fresh_empty_destination": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001",
+    "fresh_consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001/payload-consumer/A09-report-payload-002",
+    "force_download": true,
+    "safe_exact_member_set": true,
+    "all_payload_files_verified": 254,
+    "payload_uncompressed_bytes": 44137809,
+    "consumer_checks": {
+      "schema": "pod-a-a09-fresh-consumer-panel-v1",
+      "status": "PASS",
+      "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001/payload-consumer/A09-report-payload-002",
+      "payload_member_files_checked": 253,
+      "payload_bytes_checked": 44096020,
+      "deterministic_panel_source": "Frozen A09_EXECUTION_MANIFEST before recovery outcomes",
+      "saved_prediction_metric_paths": [
+        {
+          "candidate": "R4",
+          "task": "gue_tf_0",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "independent_refit",
+          "rows": 512,
+          "groups": 512,
+          "class_count": 2,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R4",
+          "task": "gue_tf_0",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "fixed_original_base",
+          "rows": 512,
+          "groups": 512,
+          "class_count": 2,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R4",
+          "task": "gue_splice_reconstructed",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "independent_refit",
+          "rows": 512,
+          "groups": 511,
+          "class_count": 3,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R4",
+          "task": "gue_splice_reconstructed",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "fixed_original_base",
+          "rows": 512,
+          "groups": 511,
+          "class_count": 3,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R6",
+          "task": "gue_tf_0",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "independent_refit",
+          "rows": 512,
+          "groups": 512,
+          "class_count": 2,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R6",
+          "task": "gue_tf_0",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "fixed_original_base",
+          "rows": 512,
+          "groups": 512,
+          "class_count": 2,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R6",
+          "task": "gue_splice_reconstructed",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "independent_refit",
+          "rows": 512,
+          "groups": 511,
+          "class_count": 3,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R6",
+          "task": "gue_splice_reconstructed",
+          "split": "dev",
+          "representation": "decoder.final_norm",
+          "seed": 42,
+          "policy": "fixed_original_base",
+          "rows": 512,
+          "groups": 511,
+          "class_count": 3,
+          "probability_max_abs": 0.0,
+          "metric_max_abs": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "path_count": 8,
+      "restored_A08_refit_artifacts": [
+        {
+          "candidate": "R4",
+          "restored_artifact": "artifacts/refits/R4/gue_tf_0/final_norm/seed42/audit_head.joblib",
+          "probability_max_abs": 0.0,
+          "fitting_performed": false,
+          "status": "PASS"
+        },
+        {
+          "candidate": "R6",
+          "restored_artifact": "artifacts/refits/R6/gue_tf_0/final_norm/seed42/audit_head.joblib",
+          "probability_max_abs": 0.0,
+          "fitting_performed": false,
+          "status": "PASS"
+        }
+      ],
+      "new_refitting": 0,
+      "new_model_or_LM_forwards": 0,
+      "new_bootstrap_draws": 0,
+      "probability_max_abs": 0.0,
+      "metric_max_abs": 0.0,
+      "classifier_contrast": {
+        "unit": "gue_tf_0/dev/layer16/seed42/bothpolicies/5metrics/2000saved_draws",
+        "attempted_delta_values": 20000,
+        "point_max_abs": 0.0,
+        "every_draw_max_abs": 0.0,
+        "interval_max_abs": 0.0
+      },
+      "LM_contrast": {
+        "unit": "gue_tf_0/dev/NLL_and_perplexity",
+        "attempted_delta_values": 4000,
+        "point_max_abs": 0.0,
+        "every_draw_max_abs": 0.0,
+        "interval_max_abs": 0.0,
+        "aggregation_crosscheck_max_abs": 0.0
+      },
+      "restored_public_tables_checked": [
+        {
+          "file": "../A08-attempt-001/VERIFIED_METRICS.csv",
+          "rows": 27300,
+          "sha256": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02"
+        },
+        {
+          "file": "../A08-attempt-001/CONTROL_METRICS_REUSED.csv",
+          "rows": 210,
+          "sha256": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e"
+        },
+        {
+          "file": "../A08-attempt-001/LM_METRICS_VERIFIED.csv",
+          "rows": 70,
+          "sha256": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88"
+        },
+        {
+          "file": "../A08-attempt-001/LM_CONTRASTS_VERIFIED.csv",
+          "rows": 112,
+          "sha256": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02"
+        },
+        {
+          "file": "../A08-attempt-001/PAIRED_CONTRASTS.csv",
+          "rows": 16800,
+          "sha256": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a"
+        },
+        {
+          "file": "PAIRED_CONTRASTS.H3_canonical.v1.csv",
+          "rows": 6720,
+          "sha256": "d4d7e523035978e1a1886a1c4fce51aa7ded258c1974a5a921bd6596043dbfe3"
+        },
+        {
+          "file": "../A08-attempt-001/PAIRED_CONTRASTS.historical.csv",
+          "rows": 16380,
+          "sha256": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d"
+        },
+        {
+          "file": "../A08-attempt-001/PAIRED_CONTRASTS.R6_minus_R4.csv",
+          "rows": 5460,
+          "sha256": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+        },
+        {
+          "file": "COVERAGE.csv",
+          "rows": 6637,
+          "sha256": "60ebc2e88a1002a046db4b159bdde447221b5accfa7044f33561dabc38071c2f"
+        },
+        {
+          "file": "PENDING_ADJACENT_CONTRASTS.csv",
+          "rows": 27300,
+          "sha256": "c06dd7a31ae3114de85363ced7bc98e7b3f39664e86f4619a7a1232019644199"
+        },
+        {
+          "file": "PENDING_ADJACENT_LM.csv",
+          "rows": 70,
+          "sha256": "6ca0c20132fd4d7faaf917ad033955a3a7443d63c96157705e665bf3eedb0f09"
+        },
+        {
+          "file": "INCLUSION_EXPOSURE_PLAN.csv",
+          "rows": 36,
+          "sha256": "e09a44a9be9ae289d6514462ae688aad520b824769d9036da8ca91f6d34a3fc2"
+        },
+        {
+          "file": "COMPARABILITY_MATRIX.csv",
+          "rows": 16,
+          "sha256": "f6f3e718cea471bc978bc93200b4d7274e168c724af2e4abad12602b7e06dd0d"
+        },
+        {
+          "file": "../A08-attempt-001/POLICY_POINT_DIFFERENCES.csv",
+          "rows": 5460,
+          "sha256": "6216ecb3ad5e847f55b0b8b41f48fbb16fa5d8016ace504f831b9d8ff369ef83"
+        },
+        {
+          "file": "../A08-attempt-001/SEED_SENSITIVITY.csv",
+          "rows": 2600,
+          "sha256": "4d9bb488a1bb345f217aa2a0044e1ffadaf6bced2321dff09b16caa80107369e"
+        },
+        {
+          "file": "../A08-attempt-001/SEED_DIAGNOSTICS.csv",
+          "rows": 780,
+          "sha256": "f58d26e34fbd0569194f7f6feb16f6d9ff667167166e2c60c6acb63437641faa"
+        },
+        {
+          "file": "../A08-attempt-001/PREDECLARED_ANCHORS.csv",
+          "rows": 240,
+          "sha256": "62d2c5b84707dc45dd5cfbb28318276e5b093d1901385de5f0d206cf17db4c7b"
+        },
+        {
+          "file": "../A08-attempt-001/TASK_ENTRY_ANALYSIS.csv",
+          "rows": 240,
+          "sha256": "4964091aeaed180962b674241db8863d1d5b3afcfa52f2177e717d83ebae01dd"
+        }
+      ],
+      "restored_figure_files_checked": 62,
+      "restored_plot_data_records": 30886,
+      "required_dependency_files_rechecked_before_use": 129,
+      "original_producer_paths_used": false,
+      "prior_A08_40path_panel_reused_not_reexecuted": true,
+      "GPU_recreation_claim": false,
+      "CPU_environment": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "scikit-learn": "1.7.2",
+        "joblib": "1.5.2",
+        "threadpoolctl": "3.8.0"
+      },
+      "wall_seconds": 7.888954635011032,
+      "CPU_seconds": 7.4145519040000005,
+      "pid": 66789,
+      "proc_start_ticks": "11590734"
+    },
+    "consumer_command": [
+      "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001/payload-consumer/A09-report-payload-002/code/consumer.py",
+      "--root",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001/payload-consumer/A09-report-payload-002",
+      "--context",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001/TRANSLATED_DEPENDENCY_CONTEXT.json"
+    ],
+    "prior_dependency_proofs_reused": true,
+    "new_full_dependency_transfer": false,
+    "transfers": [
+      {
+        "path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/checkpoint-001/a09-report-checkpoint-001.tar.gz",
+        "revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+        "bytes": 4679828,
+        "sha256": "5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a",
+        "force_download": true
+      }
+    ],
+    "private_at_read_and_closeout": true,
+    "wall_seconds": 12.155971812011558
+  },
+  "restore_command": [
+    "/workspace/venvs/pod-a-tools/bin/python",
+    "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/code/restore.py",
+    "--backup",
+    "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/BACKUP_UPLOADED.json",
+    "--destination",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001",
+    "--use-recorded-dependencies"
+  ],
+  "private_at_write_read_and_closeout": true,
+  "new_payload_fresh_restore_seconds": 13.088483336992795,
+  "all_member_files_verified": 254,
+  "completed_utc": "2026-11-18T11:40:35.050231+00:00"
+}

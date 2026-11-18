@@ -1,0 +1,141 @@
+{
+  "schema": "pod-a-a09-backup-verification-v1",
+  "status": "PASS",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "payload_revision": "b075c823c1918bd9f0db4657644dfbe7a6abeb44",
+  "archive_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-001/checkpoint-001/a09-report-checkpoint-001.tar.gz",
+  "archive_bytes": 4679828,
+  "archive_sha256": "5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a",
+  "member_manifest_sha256": "dd8bfe0e4a2cd3b6fb442effc6a796b67ac3ff2d81e7d66271108eb8c46e352b",
+  "all_included_files_verified": 254,
+  "force_fresh_download": true,
+  "new_empty_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-001/report-fresh-001/payload-consumer/A09-report-payload-002",
+  "safe_exact_member_set": true,
+  "saved_prediction_paths": 8,
+  "restored_audit_refit_heads": 2,
+  "probability_max_abs": 0.0,
+  "metric_max_abs": 0.0,
+  "classifier_contrast": {
+    "unit": "gue_tf_0/dev/layer16/seed42/bothpolicies/5metrics/2000saved_draws",
+    "attempted_delta_values": 20000,
+    "point_max_abs": 0.0,
+    "every_draw_max_abs": 0.0,
+    "interval_max_abs": 0.0
+  },
+  "LM_contrast": {
+    "unit": "gue_tf_0/dev/NLL_and_perplexity",
+    "attempted_delta_values": 4000,
+    "point_max_abs": 0.0,
+    "every_draw_max_abs": 0.0,
+    "interval_max_abs": 0.0,
+    "aggregation_crosscheck_max_abs": 0.0
+  },
+  "figure_files_restored_and_checked": 62,
+  "table_sources_restored_and_checked": [
+    {
+      "file": "../A08-attempt-001/VERIFIED_METRICS.csv",
+      "rows": 27300,
+      "sha256": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02"
+    },
+    {
+      "file": "../A08-attempt-001/CONTROL_METRICS_REUSED.csv",
+      "rows": 210,
+      "sha256": "030a78ad53b5c124f9a430bebe0b53d27ca3c7fba36a8cc6f75d34fbde865e4e"
+    },
+    {
+      "file": "../A08-attempt-001/LM_METRICS_VERIFIED.csv",
+      "rows": 70,
+      "sha256": "2319e5a0d39a13dd6afee384e0dcfe23ef82fd06bc7031e0accfe37c8a5fff88"
+    },
+    {
+      "file": "../A08-attempt-001/LM_CONTRASTS_VERIFIED.csv",
+      "rows": 112,
+      "sha256": "80f40c85d7b5a97c12b3e0d27aa796a19d558b8ad195afc228fa15f8e7704e02"
+    },
+    {
+      "file": "../A08-attempt-001/PAIRED_CONTRASTS.csv",
+      "rows": 16800,
+      "sha256": "73bb97216dafdcbe7f7ce7c434b2f8d0ea12d7ae8d86798dd6d4798b6b9b964a"
+    },
+    {
+      "file": "PAIRED_CONTRASTS.H3_canonical.v1.csv",
+      "rows": 6720,
+      "sha256": "d4d7e523035978e1a1886a1c4fce51aa7ded258c1974a5a921bd6596043dbfe3"
+    },
+    {
+      "file": "../A08-attempt-001/PAIRED_CONTRASTS.historical.csv",
+      "rows": 16380,
+      "sha256": "1e4992bf0c0c107c77bd7537114e5fddbf1b35cc9ee3400d23c4a2f425ba6b2d"
+    },
+    {
+      "file": "../A08-attempt-001/PAIRED_CONTRASTS.R6_minus_R4.csv",
+      "rows": 5460,
+      "sha256": "0bd1d76835c9354f67ad308f9501d2204025b89fa42dee5f45b90096cf5b85cf"
+    },
+    {
+      "file": "COVERAGE.csv",
+      "rows": 6637,
+      "sha256": "60ebc2e88a1002a046db4b159bdde447221b5accfa7044f33561dabc38071c2f"
+    },
+    {
+      "file": "PENDING_ADJACENT_CONTRASTS.csv",
+      "rows": 27300,
+      "sha256": "c06dd7a31ae3114de85363ced7bc98e7b3f39664e86f4619a7a1232019644199"
+    },
+    {
+      "file": "PENDING_ADJACENT_LM.csv",
+      "rows": 70,
+      "sha256": "6ca0c20132fd4d7faaf917ad033955a3a7443d63c96157705e665bf3eedb0f09"
+    },
+    {
+      "file": "INCLUSION_EXPOSURE_PLAN.csv",
+      "rows": 36,
+      "sha256": "e09a44a9be9ae289d6514462ae688aad520b824769d9036da8ca91f6d34a3fc2"
+    },
+    {
+      "file": "COMPARABILITY_MATRIX.csv",
+      "rows": 16,
+      "sha256": "f6f3e718cea471bc978bc93200b4d7274e168c724af2e4abad12602b7e06dd0d"
+    },
+    {
+      "file": "../A08-attempt-001/POLICY_POINT_DIFFERENCES.csv",
+      "rows": 5460,
+      "sha256": "6216ecb3ad5e847f55b0b8b41f48fbb16fa5d8016ace504f831b9d8ff369ef83"
+    },
+    {
+      "file": "../A08-attempt-001/SEED_SENSITIVITY.csv",
+      "rows": 2600,
+      "sha256": "4d9bb488a1bb345f217aa2a0044e1ffadaf6bced2321dff09b16caa80107369e"
+    },
+    {
+      "file": "../A08-attempt-001/SEED_DIAGNOSTICS.csv",
+      "rows": 780,
+      "sha256": "f58d26e34fbd0569194f7f6feb16f6d9ff667167166e2c60c6acb63437641faa"
+    },
+    {
+      "file": "../A08-attempt-001/PREDECLARED_ANCHORS.csv",
+      "rows": 240,
+      "sha256": "62d2c5b84707dc45dd5cfbb28318276e5b093d1901385de5f0d206cf17db4c7b"
+    },
+    {
+      "file": "../A08-attempt-001/TASK_ENTRY_ANALYSIS.csv",
+      "rows": 240,
+      "sha256": "4964091aeaed180962b674241db8863d1d5b3afcfa52f2177e717d83ebae01dd"
+    }
+  ],
+  "inherited_dependencies": {
+    "nodes": 42,
+    "current_remote_and_local": "PASS",
+    "bytes_rehashed": 26330207751,
+    "new_inherited_metadata_transfer_bytes": 23723880,
+    "other_large_dependency_transfers": 0,
+    "prior_fresh_proofs_reused": true
+  },
+  "A08_40path_recovery_is_prior_evidence_not_new_replication": true,
+  "QUALIFIED_ANALYSIS_COMPLETE": true,
+  "FULL_INCREMENTAL_SEQUENCE_COMPLETE": false,
+  "RECOVERY_VERIFIED_FOR_SAVED_ANALYSIS": true,
+  "FULL_GPU_RECREATION_VERIFIED": false,
+  "scope": "New A09allmembers plus frozen8paths/two savedrefits/oneclassifiercontrast everydraw/oneLMcontrast; no fitting/forwards/newdraws",
+  "completed_utc": "2026-11-18T11:40:36.068522+00:00"
+}
