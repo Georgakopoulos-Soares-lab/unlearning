@@ -1,8 +1,8 @@
 # R5 A08 — RUNNING
 
-gue_mouse_0:78 independent unit audits,6 full-CV refits and12-path fresh recovery PASS.
+All390 R5 units and30 prospective full-CV refits pass;24.6M attempted marginal/paired values independently checked; five task recoveries PASS.
 
-Observed UTC/local UTC: 2026-11-18T23:20:52.247466+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
+Observed UTC/local UTC: 2026-11-18T23:21:14.767279+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
 
 | Goal | Target | New PASS | Historical reused | Pending | Evidence |
 |---|---:|---:|---:|---:|---|
