@@ -1,0 +1,191 @@
+--- historical-A08/audit_common.py
++++ owned-R5-A08/audit_common.py
+@@ -4,7 +4,7 @@
+ VERSIONS={'numpy':'2.5.4','scipy':'1.18.1','scikit-learn':'1.7.2','joblib':'1.5.2','threadpoolctl':'3.8.0'}
+ assert sys.version_info[:3]==(3,12,3) and {k:importlib.metadata.version(k) for k in VERSIONS}==VERSIONS,'Frozen CPU runtime drift'
+ import numpy as np
+-C=Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001');CFG=json.loads((C/'RUN_CONFIG.json').read_text());A=Path(CFG['artifacts']);R=Path(CFG['root_control']);D=Path(CFG['docs']);A7=A.parent/'A07-attempt-001';A6=A.parent/'A06-attempt-001';D7=D.parent/'A07-attempt-001';D6=D.parent/'A06-attempt-001';C3=R/'attempts/A03-attempt-001';C6=R/'attempts/A06-attempt-001';C7=R/'attempts/A07-attempt-001'
++C=Path('/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-002');CFG=json.loads((C/'RUN_CONFIG.json').read_text());A=Path(CFG['artifacts']);R=Path(CFG['root_control']);D=Path(CFG['docs']);A7=A.parent/'A07-attempt-002';A6=A.parent/'A06-attempt-002';D7=D.parent/'A07-attempt-002';D6=D.parent/'A06-attempt-002';C3=R/'attempts/A03-attempt-001';C6=R/'attempts/A06-attempt-002';C7=R/'attempts/A07-attempt-002'
+ H=Path('/workspace/recovery/POD_A')/R.name/'A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z';CONTROL=H.parent.parent/'controls/benign-followup-v1'
+ TASKS=['gue_tf_0','gue_prom_core_all','gue_prom_300_all','gue_splice_reconstructed','gue_mouse_0'];ALL_TASKS=['emp_H3']+TASKS;LAYERS=['decoder_layer_'+str(i) for i in range(25)]+['final_norm'];SEEDS=[42,17,1234];POLICIES=['independent_refit','fixed_original_base'];METRICS=['auroc','average_precision','accuracy','balanced_accuracy','classification_cross_entropy']
+ def require(condition,message):
+@@ -25,7 +25,11 @@
+  p=Path(p);require(not p.is_symlink() and p.resolve().is_relative_to(Path(root).resolve()) and p.resolve()!=Path(root).resolve(),'Output path escape');return p
+ class Lock:
+  def __init__(self,p):self.path=owned(p)
+- def __enter__(self):self.path.parent.mkdir(parents=True,exist_ok=True);self.fd=self.path.open('a');fcntl.flock(self.fd,fcntl.LOCK_EX|fcntl.LOCK_NB);return self
++ def __enter__(self):
++  self.path.parent.mkdir(parents=True,exist_ok=True);self.fd=self.path.open('a')
++  try:fcntl.flock(self.fd,fcntl.LOCK_EX|fcntl.LOCK_NB)
++  except BaseException:self.fd.close();raise
++  return self
+  def __exit__(self,*args):fcntl.flock(self.fd,fcntl.LOCK_UN);self.fd.close()
+ def file_entries(root):return [{'path':str(p.relative_to(root)),'bytes':p.stat().st_size,'sha256':sha(p)} for p in sorted(Path(root).rglob('*')) if p.is_file() and p.name!='COMPLETE.json']
+ def validate_members(root,receipt):
+@@ -43,10 +47,13 @@
+ def seal(tmp,root,receipt):
+  require(not root.exists(),'Concurrent output publication');receipt={**receipt,'files':file_entries(tmp)};os.replace(tmp,root);put(root/'COMPLETE.json',receipt);return receipt
+ def source_check():
++ require(CFG['stage']=='A08' and CFG['prompt_commit']=='d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad' and CFG['coverage_plan_sha256']=='06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3','Wrong stage, approved pin or plan');require(read(C/'A08_INPUTS.json')['R5_identity']['model_tensor_content_sha256']=='9cab388a46a873902317ff022ab0b9a43d3e42c8753d3842837f74f5dd474259','Wrong candidate content');require(sha(C/'APPROVAL_RECORD.json')==read(C/'A08_INPUTS.json')['approval_sha256'],'Approval receipt drift')
++ require(sha(C/'A08_INPUTS.json')==read(C/'SOURCE_IDENTITY.json')['input_sha256'] and sha(C/'A08_EXECUTION_MANIFEST.json')==read(C/'SOURCE_IDENTITY.json')['manifest_sha256'],'Audit input/manifest identity drift')
+  j=read(C/'SOURCE_IDENTITY.json');require(j['status']=='FROZEN','Audit source not qualified')
+  for e in j['files']:require(sha(A/'code'/e['path'])==e['sha256'],'Audit source changed after freeze')
+  return sha(C/'SOURCE_IDENTITY.json')
+-def classes_for(task):return np.array([0,1,2] if task=='gue_splice_reconstructed' else [0,1])
++def classes_for(task):
++ require(task in ALL_TASKS,'Unknown task');return np.array([0,1,2] if task=='gue_splice_reconstructed' else [0,1])
+ def canonical(key):return 'decoder.final_norm' if key=='final_norm' else key.replace('decoder_layer_','decoder.layers.')
+ def array_sha(x):return digest({'dtype':str(x.dtype),'shape':list(x.shape),'raw_sha256':hashlib.sha256(x.tobytes()).hexdigest()})
+ def probabilities_valid(p,y,classes):
+@@ -55,6 +62,7 @@
+  for k in ['ids','labels','groups','sequence_sha256']:require(np.array_equal(z[k],meta[k]),'Cohort/row order mismatch: '+k)
+  require(np.array_equal(z['classes'],classes),'Permuted class columns')
+ def features(alias,task,split,key):
++ require(alias=='R5' and task in TASKS and split in ['train','dev'] and key in LAYERS,'Outside new R5 other-five audit feature scope')
+  root=(A6/'h3-cache'/alias/split) if task=='emp_H3' else (A7/'cache'/alias/task/split);receipt=read(root/'COMPLETE.json')
+  for name in [key+'.npy','metadata.npz']:
+   e=next(e for e in receipt['files'] if e['path']==name);require(sha(root/name)==e['sha256'],'Feature cache member drift')
+@@ -78,7 +86,7 @@
+ def draw_weights(task,split,meta):
+  p=old(task_root(task)/(split+'_resampling.npz'))
+  with np.load(p,allow_pickle=False) as z:
+-  names,inverse=np.unique(meta['groups'],return_inverse=True);require(np.array_equal(z['ids'],meta['ids']) and np.array_equal(z['group_names'],names) and np.array_equal(z['row_groups'],inverse) and int(z['seed'])==20261103,'Draw population/order/seed mismatch');draw=z['group_draws'];require(draw.dtype==np.int32 and draw.shape==(2000,len(names)),'Draw shape/dtype mismatch');expected=np.random.default_rng(20261103).integers(len(names),size=draw.shape,dtype=np.int32);require(np.array_equal(draw,expected),'Saved draw bytes do not match frozen generator convention');weights=np.zeros((2000,len(names)),dtype=np.int64)
++  names,inverse=np.unique(meta['groups'],return_inverse=True);require(np.array_equal(z['ids'],meta['ids']) and np.array_equal(z['group_names'],names) and np.array_equal(z['row_groups'],inverse) and int(z['seed'])==20261103,'Draw population/order/seed mismatch');draw=z['group_draws'];require(draw.dtype==np.int32 and draw.shape==(2000,len(names)),'Draw shape/dtype mismatch');require(np.all((draw>=0)&(draw<len(names))),'Saved group index outside population');weights=np.zeros((2000,len(names)),dtype=np.int64)
+   for i,d in enumerate(draw):np.add.at(weights[i],d,1)
+   return weights[:,inverse],p
+ def historical_refs(task,key,seed,split,meta):
+@@ -91,4 +99,4 @@
+   for k in ['ids','labels','groups']:require(np.array_equal(z[k],meta[k]),'Control row/label/group mismatch')
+   require(np.array_equal(z['classes'],classes_for(task)),'Control classes differ');return z['probabilities'],p
+ def unit_spec(uid,stage='A08'):
+- require(stage=='A08' and CFG['stage']=='A08','Cross-stage dispatch denied');manifest=read(C/'A08_EXECUTION_MANIFEST.json');found=[u for u in manifest['audit_units'] if u['unit_id']==uid];require(len(found)==1,'Unit outside finite A08 manifest');return found[0]
++ require(stage=='A08' and CFG['stage']=='A08','Cross-stage dispatch denied');manifest=read(C/'A08_EXECUTION_MANIFEST.json');require(uid.startswith('R5/') and '/emp_H3/' not in uid,'Outside R5 other-five audit scope');found=[u for u in manifest['audit_units'] if u['unit_id']==uid];require(len(found)==1,'Unit outside finite A08 manifest');return found[0]
+--- historical-A08/audit_units.py
++++ owned-R5-A08/audit_units.py
+@@ -36,7 +36,7 @@
+     require(len(c['fold_aurocs'])==5 and all(np.isfinite(c['fold_aurocs'])) and c['mean_auroc']==float(np.mean(c['fold_aurocs'])),'CV aggregation mismatch');require(len(c['convergence'])==5,'CV attempts missing')
+     for attempts in c['convergence']:retries+=check_attempts(attempts)
+    retries+=check_attempts(final['attempts']);selected=max(cv,key=lambda e:(e['mean_auroc'],-e['C']))['C'];require(selected==pr['selected_C']==final['selected_C'] and pr['actual_optimizer_fits']==16+retries,'Selection/retry accounting failed')
+-   model=joblib.load(p_root/'head.joblib');basepath=checked(s['original_base_head']);base=joblib.load(basepath);basehash=sha(basepath);require(np.array_equal(model[-1].classes_,classes) and np.array_equal(base[-1].classes_,classes) and model[0].n_features_in_==1920 and base[0].n_features_in_==1920,'Head class/width mismatch');mean=np.mean(x,axis=0,dtype=np.float64);variance=np.var(x,axis=0,dtype=np.float64);mean_error=float(np.max(np.abs(mean-model[0].mean_)));var_error=float(np.max(np.abs(variance-model[0].var_)));require(np.allclose(mean,model[0].mean_,rtol=1e-12,atol=1e-12) and np.allclose(variance,model[0].var_,rtol=1e-12,atol=1e-12) and int(model[0].n_samples_seen_)==1024,'Final scaler TRAIN moments mismatch')
++   model=joblib.load(p_root/'head.joblib');basepath=checked(s['original_base_head']);base=joblib.load(basepath);basehash=sha(basepath);require(np.array_equal(model[-1].classes_,classes) and np.array_equal(base[-1].classes_,classes) and model[0].n_features_in_==1920 and base[0].n_features_in_==1920,'Head class/width mismatch');mean=np.mean(x,axis=0,dtype=np.float64);variance=np.var(x,axis=0,dtype=np.float64);mean_error=float(np.max(np.abs(mean-model[0].mean_)));var_error=float(np.max(np.abs(variance-model[0].var_)));require(np.allclose(mean,model[0].mean_,rtol=0,atol=1e-12) and np.allclose(variance,model[0].var_,rtol=0,atol=1e-12) and int(model[0].n_samples_seen_)==1024,'Final scaler TRAIN moments mismatch')
+    parameter_hash=digest({'scaler_mean':array_sha(model[0].mean_),'scaler_var':array_sha(model[0].var_),'scaler_scale':array_sha(model[0].scale_),'coef':array_sha(model[-1].coef_),'intercept':array_sha(model[-1].intercept_),'classes':classes.tolist()});require(parameter_hash==final['parameter_content_sha256']==pr['parameter_content_sha256'],'Parameter content signature mismatch');head=model[-1];require(head.C==selected and head.solver=='lbfgs' and head.class_weight=='balanced' and head.penalty=='l2' and head.tol==1e-4 and head.random_state==42 and head.max_iter==final['attempts'][-1]['max_iter'],'Saved estimator configuration differs');paramhash=digest({'scaler_mean':array_sha(model[0].mean_),'scaler_var':array_sha(model[0].var_),'scaler_scale':array_sha(model[0].scale_),'coef':array_sha(head.coef_),'intercept':array_sha(head.intercept_),'classes':classes.tolist()});require(paramhash==final['parameter_content_sha256']==pr['parameter_content_sha256'],'Parameter content hash mismatch')
+    reconstructed={p:reconstruct(head,xx) for p,head in [('independent_refit',model),('fixed_original_base',base)]};maxp=0.;worst={};saved_array_hashes={}
+    np.savez_compressed(tmp/'independent_predictions.npz',**{k:dev[k] for k in ['ids','labels','groups','sequence_sha256']},classes=classes,**reconstructed)
+@@ -49,14 +49,14 @@
+     for policy,p in reconstructed.items():
+      point,pvalid=metrics(dev['labels'],p,classes,np.ones((1,len(p))));require(pvalid.all(),'Undefined point metric');boot,valid=metrics(dev['labels'],p,classes,w);require(np.array_equal(valid,saved['valid']),'Bootstrap validity mask differs');valid_all=valid if valid_all is None else valid_all&valid;pointvalues[policy]={m:float(point[m][0]) for m in METRICS}
+      for m in METRICS:
+-      row=mrows[policy,m];require(row['prediction_array_sha256']==saved_array_hashes[policy] and row['input_sha256']==decache['sha256'] and row['sample_count']==len(dev['ids']) and row['group_count']==len(np.unique(dev['groups'])),'Marginal provenance/count mismatch');maxpoint=max(maxpoint,residual([point[m][0]],[row['estimate']]));maxdraw=max(maxdraw,residual(boot[m],saved[policy+'__'+m],valid));require(np.isnan(saved[policy+'__'+m][~valid]).all(),'Invalid draws must remain undefined');ci=np.quantile(boot[m][valid],[.025,.975]);maxci=max(maxci,residual(ci,[row['ci_low'],row['ci_high']]));require(row['bootstrap_attempted']==2000 and row['bootstrap_valid']==int(valid.sum()) and row['bootstrap_invalid']==int((~valid).sum()),'Marginal draw counts mismatch');arrays[policy+'__'+m]=boot[m];tested.append({'kind':'marginal','policy':policy,'reference':None,'metric':m,'attempted':2000,'valid':int(valid.sum()),'invalid':int((~valid).sum())})
+-     refs={'base':historical['prob_base_refit'],'R1':historical['prob_h3_only_refit' if policy=='independent_refit' else 'prob_h3_only_fixed_base']};origins={n:ref(histpath) for n in refs}
++      row=mrows[policy,m];require(row['prediction_array_sha256']==saved_array_hashes[policy] and row['input_sha256']==decache['sha256'] and row['sample_count']==len(dev['ids']) and row['group_count']==len(np.unique(dev['groups'])),'Marginal provenance/count mismatch');maxpoint=max(maxpoint,residual([point[m][0]],[row['estimate']]));maxdraw=max(maxdraw,residual(boot[m],saved[policy+'__'+m],valid));require(np.isnan(saved[policy+'__'+m][~valid]).all(),'Invalid draws must remain undefined');ci=np.quantile(boot[m][valid],[.025,.975],method='linear');maxci=max(maxci,residual(ci,[row['ci_low'],row['ci_high']]));require(row['bootstrap_attempted']==2000 and row['bootstrap_valid']==int(valid.sum()) and row['bootstrap_invalid']==int((~valid).sum()),'Marginal draw counts mismatch');arrays[policy+'__'+m]=boot[m];tested.append({'kind':'marginal','policy':policy,'reference':None,'metric':m,'attempted':2000,'valid':int(valid.sum()),'invalid':int((~valid).sum())})
++     refs={'base':historical['prob_base_refit'],'R1':historical['prob_h3_only_refit' if policy=='independent_refit' else 'prob_h3_only_fixed_base']};origins={n:ref(histpath)|{'array_selector':'prob_base_refit' if n=='base' else ('prob_h3_only_refit' if policy=='independent_refit' else 'prob_h3_only_fixed_base')} for n in refs}
+      if key in ['decoder_layer_16','final_norm']:
+       for kind in ['composition','kmer4']:v,path=controls(task,kind,seed,'dev',dev);refs['control_'+kind]=v;origins['control_'+kind]=ref(path)
+      for name,rp in refs.items():
+       probabilities_valid(rp,dev['labels'],classes);rp_point,rvalid=metrics(dev['labels'],rp,classes,np.ones((1,len(rp))));rd,rv,rc=distribution(rp,dev,classes,w,drawpath,'control' if name.startswith('control_') else policy,origins[name]);require(np.array_equal(valid,rv),'Paired missing-class masks differ');refreceipts.append(rc)
+       for m in METRICS:
+-       row=crows[policy,name,m];require(row['reference_prediction_sha256']==origins[name]['sha256'] and row['reference_prediction_array_sha256']==array_sha(rp) and row['draw_sha256']==sha(drawpath),'Reference probability/draw identity mismatch');delta=boot[m]-rd[m];keyname=policy+'__minus_'+name+'__'+m;maxpoint=max(maxpoint,residual([point[m][0]-rp_point[m][0]],[row['estimate']]));maxdraw=max(maxdraw,residual(delta,saved[keyname],valid));require(np.isnan(saved[keyname][~valid]).all(),'Invalid paired draws must remain undefined');ci=np.quantile(delta[valid],[.025,.975]);maxci=max(maxci,residual(ci,[row['ci_low'],row['ci_high']]));require(row['bootstrap_attempted']==2000 and row['bootstrap_valid']==int(valid.sum()) and row['bootstrap_invalid']==int((~valid).sum()),'Paired draw count mismatch');arrays[keyname]=delta;tested.append({'kind':'paired','policy':policy,'reference':name,'metric':m,'attempted':2000,'valid':int(valid.sum()),'invalid':int((~valid).sum())})
++       row=crows[policy,name,m];require(row['reference_prediction_sha256']==origins[name]['sha256'] and row['reference_prediction_array_sha256']==array_sha(rp) and row['draw_sha256']==sha(drawpath),'Reference probability/draw identity mismatch');delta=boot[m]-rd[m];keyname=policy+'__minus_'+name+'__'+m;maxpoint=max(maxpoint,residual([point[m][0]-rp_point[m][0]],[row['estimate']]));maxdraw=max(maxdraw,residual(delta,saved[keyname],valid));require(np.isnan(saved[keyname][~valid]).all(),'Invalid paired draws must remain undefined');ci=np.quantile(delta[valid],[.025,.975],method='linear');maxci=max(maxci,residual(ci,[row['ci_low'],row['ci_high']]));require(row['bootstrap_attempted']==2000 and row['bootstrap_valid']==int(valid.sum()) and row['bootstrap_invalid']==int((~valid).sum()),'Paired draw count mismatch');arrays[keyname]=delta;tested.append({'kind':'paired','policy':policy,'reference':name,'metric':m,'attempted':2000,'valid':int(valid.sum()),'invalid':int((~valid).sum())})
+    np.savez_compressed(tmp/'independent_predictions.npz',**{k:dev[k] for k in ['ids','labels','groups','sequence_sha256']},classes=classes,**reconstructed);np.savez_compressed(tmp/'bootstrap_independent.npz',valid=valid_all,**arrays)
+    audit_record={'schema':'pod-a-a08-independent-unit-audit-v1','status':'PASS','unit_id':uid,'producer_receipt':spec['producer_receipt'],'audit_source_sha256':src,'probability_paths':2,'probability_max_abs':maxp,'worst_probability_coordinates':worst,'metric_max_abs':maxpoint,'bootstrap_draw_max_abs':maxdraw,'interval_max_abs':maxci,'scaler_mean_max_abs':mean_error,'scaler_variance_max_abs':var_error,'fold_sha256':sha(fp),'fold_count':5,'selected_C':selected,'producer_retry_count':retries,'producer_optimizer_fits':16+retries,'new_production_fits':0,'distribution_checks':tested,'attempted_distribution_values':sum(e['attempted'] for e in tested),'valid_distribution_values':sum(e['valid'] for e in tested),'invalid_distribution_values':sum(e['invalid'] for e in tested),'independent_point_values':pointvalues,'reference_distribution_receipts':refreceipts,'rows':512,'groups':len(np.unique(dev['groups'])),'class_order':classes.tolist(),'sampled_refit_required':spec['sampled_refit_required'],'sampled_refit_executed_here':False,'wall_seconds':time.monotonic()-t,'CPU_process_seconds':time.process_time()-cpu,'peak_RSS_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss,'completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};put(tmp/'NUMERICAL_AUDIT.json',audit_record);seal(tmp,root,{'status':'PASS','identity':identity});return {k:audit_record[k] for k in ['status','unit_id','probability_max_abs','metric_max_abs','bootstrap_draw_max_abs','interval_max_abs','wall_seconds']}
+   except BaseException as exc:
+@@ -69,4 +69,4 @@
+   with threadpool_limits(limits=4),concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+    for result in pool.map(audit,ids):print(json.dumps(result),flush=True)
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--stage',choices=['A08'],required=True);p.add_argument('--candidate',choices=['R4','R6']);p.add_argument('--task',choices=TASKS);p.add_argument('--unit',action='append');main(p.parse_args())
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--stage',choices=['A08'],required=True);p.add_argument('--candidate',choices=['R5']);p.add_argument('--task',choices=TASKS);p.add_argument('--unit',action='append');main(p.parse_args())
+--- historical-A08/refit_panel.py
++++ owned-R5-A08/refit_panel.py
+@@ -1,4 +1,4 @@
+-"""Exactly sixty prospective independent audit refits; never replace production heads."""
++"""Exactly thirty prospective independent audit refits; never replace production heads."""
+ from audit_common import *
+ import argparse,concurrent.futures,time,warnings,resource,traceback,datetime
+ import joblib
+@@ -20,7 +20,7 @@
+   if not convergence:return make_pipeline(scaler,head),attempts
+  raise ValueError('FAILED_CONVERGENCE: '+json.dumps(attempts))
+ def refit(uid):
+- spec=unit_spec(uid);require(spec['sampled_refit_required'],'Outside prospective60unit refitpanel');source=source_check();auditroot=A/'audits'/uid;require(read(auditroot/'COMPLETE.json')['status']=='PASS','All-unit audit prerequisite failed');alias,task,key,ss=uid.split('/');seed=int(ss[4:]);root=A/'refits'/uid;identity={'stage':'A08','unit_id':uid,'source_sha256':source,'producer':spec['producer_receipt'],'audit_receipt_sha256':sha(auditroot/'COMPLETE.json'),'panel_manifest_sha256':sha(C/'A08_EXECUTION_MANIFEST.json')}
++ spec=unit_spec(uid);require(spec['sampled_refit_required'],'Outside prospective30unit refitpanel');source=source_check();auditroot=A/'audits'/uid;require(read(auditroot/'COMPLETE.json')['status']=='PASS','All-unit audit prerequisite failed');alias,task,key,ss=uid.split('/');seed=int(ss[4:]);root=A/'refits'/uid;identity={'stage':'A08','unit_id':uid,'source_sha256':source,'producer':spec['producer_receipt'],'audit_receipt_sha256':sha(auditroot/'COMPLETE.json'),'panel_manifest_sha256':sha(C/'A08_EXECUTION_MANIFEST.json')}
+  with Lock(A/'locks/refit'/(uid+'.lock')):
+   if (root/'COMPLETE.json').exists():seal_check(root,identity);return read(root/'AUDIT_REFIT.json')
+   tmp=workdir(root);t=time.monotonic();cpu=time.process_time()
+@@ -39,7 +39,7 @@
+   except Exception as exc:
+    failure={'status':'FAILED','unit_id':uid,'reason':str(exc),'traceback':traceback.format_exc()};put(tmp/'FAILED.json',failure);q=A/'quarantine/refits'/uid;q=q.with_name(q.name+'-'+uuid.uuid4().hex);q.parent.mkdir(parents=True,exist_ok=True);os.replace(tmp,q);return failure
+ if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--stage',choices=['A08'],required=True);p.add_argument('--candidate',choices=['R4','R6'],required=True);v=p.parse_args();source_check();manifest=read(C/'A08_EXECUTION_MANIFEST.json');ids=[u['unit_id'] for u in manifest['audit_units'] if u['candidate']==v.candidate and u['sampled_refit_required']];require(len(ids)==30,'Panel cardinality mismatch');resource.setrlimit(resource.RLIMIT_AS,(32*1024**3,32*1024**3))
++ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--stage',choices=['A08'],required=True);p.add_argument('--candidate',choices=['R5'],required=True);p.add_argument('--task',choices=TASKS);v=p.parse_args();source_check();manifest=read(C/'A08_EXECUTION_MANIFEST.json');ids=[u['unit_id'] for u in manifest['audit_units'] if u['candidate']==v.candidate and u['sampled_refit_required'] and (v.task is None or u['task']==v.task)];require(len(ids)==(30 if v.task is None else 6),'Panel cardinality mismatch');resource.setrlimit(resource.RLIMIT_AS,(32*1024**3,32*1024**3))
+  with Lock(A/'locks/pipeline.lock'):
+   with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+    for result in pool.map(refit,ids):print(json.dumps(result),flush=True)
+--- historical-A08/analysis_pairs.py
++++ owned-R5-A08/analysis_pairs.py
+@@ -1,60 +1,7 @@
+-"""Predeclared R6-minus-R4 saved-output analysis; independent paired checks, no GPU."""
+-from audit_common import *
+-from audit_units import distribution,residual
+-from independent_math import metrics
+-from rank_crosscheck import bootstrap_metrics,point_metrics
+-import argparse,concurrent.futures,resource,datetime,time,math,traceback
+-def endpoint(alias,task,key,seed,split):
+- archive_split='test' if split=='test_exploratory' else split
+- if task=='emp_H3':
+-  root=A6/'h3'/alias/key/('seed'+str(seed));receipt=read(root/'COMPLETE.json');require(receipt['status']=='VERIFIED','Unreleased H3 endpoint');require(sha(root/'PRODUCER_COMPLETE.json')==receipt['producer_sha256'] and sha(root/'AUDIT.json')==receipt['audit_sha256'],'H3 audit/producer links differ');producer=read(root/'PRODUCER_COMPLETE.json');validate_members(root,{**producer,'files':producer['files']+[ref(root/'PRODUCER_COMPLETE.json')|{'path':'PRODUCER_COMPLETE.json'},ref(root/'AUDIT.json')|{'path':'AUDIT.json'}]});path=root/(archive_split+'_predictions.npz');expected=next(e for e in producer['files'] if e['path']==path.name);require(sha(path)==expected['sha256'],'H3 prediction member changed');auditref=ref(root/'AUDIT.json');producerref=ref(root/'COMPLETE.json')
+- else:
+-  uid=f'{alias}/{task}/{key}/seed{seed}';spec=unit_spec(uid);root=A/'audits'/uid;receipt=read(root/'COMPLETE.json');require(receipt['status']=='PASS','Unreleased other-five endpoint');validate_members(root,receipt)
+-  if spec['sampled_refit_required']:require(read(A/'refits'/uid/'COMPLETE.json')['status']=='PASS','Sampled refit release gate not passed')
+-  path=root/'independent_predictions.npz';auditref=ref(root/'COMPLETE.json');producerref=spec['producer_receipt']
+- with np.load(path,allow_pickle=False) as z:meta={k:z[k] for k in ['ids','labels','groups','sequence_sha256']};cls=z['classes'];probs={p:z[p] for p in POLICIES}
+- for p in probs.values():probabilities_valid(p,meta['labels'],cls)
+- return probs,meta,cls,{'prediction':ref(path),'audit':auditref,'producer':producerref}
+-def classifier(pair):
+- task,split,key,seed=pair;uid=f'{task}/{split}/{key}/seed{seed}';source=source_check();root=A/'analysis/R6_minus_R4'/uid;t=time.monotonic()
+- with Lock(A/'locks/analysis'/(uid+'.lock')):
+-  try:
+-   p6,meta,cls,origin6=endpoint('R6',task,key,seed,split);p4,meta4,cls4,origin4=endpoint('R4',task,key,seed,split);paired({**meta4,'classes':cls4},meta,cls);w,dp=draw_weights(task,'test' if split=='test_exploratory' else split,meta);identity={'stage':'A08','family':'R6_minus_R4','unit_id':uid,'source':source,'R6':origin6,'R4':origin4,'draw':ref(dp),'protocol':CFG['protocol_sha256']}
+-   if (root/'COMPLETE.json').exists():seal_check(root,identity);return read(root/'ANALYSIS.json')
+-   tmp=workdir(root);rows=[];arrays={};maxdraw=0.;maxpoint=0.;maxci=0.;I=read(C/'A08_INPUTS.json');checkpoints=read(C7/'A07_INPUTS.json')['checkpoint_identities']
+-   for policy in POLICIES:
+-    v6,valid6,rc6=distribution(p6[policy],meta,cls,w,dp,policy,origin6);v4,valid4,rc4=distribution(p4[policy],meta,cls,w,dp,policy,origin4);require(np.array_equal(valid6,valid4),'Endpoint draw class masks differ');valid=valid6&valid4;ind6,_=metrics(meta['labels'],p6[policy],cls,np.ones((1,len(meta['ids']))));ind4,_=metrics(meta['labels'],p4[policy],cls,np.ones((1,len(meta['ids']))));rank6,rv6=bootstrap_metrics(meta['labels'],p6[policy],cls,w);rank4,rv4=bootstrap_metrics(meta['labels'],p4[policy],cls,w);require(np.array_equal(valid,rv6&rv4),'Independent/rank paired masks differ');pt6,_=point_metrics(meta['labels'],p6[policy],cls);pt4,_=point_metrics(meta['labels'],p4[policy],cls)
+-    for m in METRICS:
+-     delta=v6[m]-v4[m];other=rank6[m]-rank4[m];maxdraw=max(maxdraw,residual(delta,other,valid));point=float(ind6[m][0]-ind4[m][0]);maxpoint=max(maxpoint,residual([point],[pt6[m]-pt4[m]]));ci=np.quantile(delta[valid],[.025,.975]);maxci=max(maxci,residual(ci,np.quantile(other[valid],[.025,.975])));arrays[policy+'__'+m]=delta;rows.append({'checkpoint_alias':'R6','checkpoint_content_id':checkpoints['R6']['model_tensor_content_sha256'],'target_endpoint_id':checkpoints['R6']['candidate_id'],'reference':'R4','reference_content_id':checkpoints['R4']['model_tensor_content_sha256'],'reference_endpoint_id':checkpoints['R4']['candidate_id'],'task':task,'split':split,'representation':canonical(key),'CV_seed':seed,'policy':policy,'reference_policy':policy,'metric':m,'direction':'target-reference','metric_orientation':'lower' if m=='classification_cross_entropy' else 'higher','estimate':point,'ci_low':float(ci[0]),'ci_high':float(ci[1]),'sample_count':len(meta['ids']),'group_count':len(np.unique(meta['groups'])),'target_count':None,'bootstrap_attempted':2000,'bootstrap_valid':int(valid.sum()),'bootstrap_invalid':int((~valid).sum()),'status':'VERIFIED','missing_reason':None,'lineage':'NEW_DERIVED_ANALYSIS','measurement_attempt':C.name,'target_measurement_attempt':'A06-attempt-001' if task=='emp_H3' else 'A07-attempt-001','reference_measurement_attempt':'A06-attempt-001' if task=='emp_H3' else 'A07-attempt-001','ingestion_status':'DERIVED_IN_A08','ancestry_status':'UNKNOWN','exposure_status':'UNKNOWN','adjacent':False,'family':'PREDECLARED_NONADJACENT_R6_MINUS_R4','protocol_sha256':CFG['protocol_sha256'],'coverage_plan_sha256':CFG['coverage_plan_sha256'],'source_sha256':source,'target_prediction_sha256':origin6['prediction']['sha256'],'reference_prediction_sha256':origin4['prediction']['sha256'],'draw_sha256':sha(dp),'producer_receipt_sha256':origin6['producer']['sha256'],'reference_producer_receipt_sha256':origin4['producer']['sha256'],'target_audit_receipt_sha256':origin6['audit']['sha256'],'reference_audit_receipt_sha256':origin4['audit']['sha256'],'audit_receipt':str((root/'COMPLETE.json').relative_to(A)),'contrast_id':digest({'family':'R6_minus_R4','task':task,'split':split,'representation':key,'seed':seed,'policy':policy,'protocol':CFG['protocol_sha256']})})
+-   np.savez_compressed(tmp/'paired_draws.npz',valid=valid,**arrays);record={'status':'PASS','unit_id':uid,'rows':rows,'point_max_abs':maxpoint,'draw_max_abs':maxdraw,'interval_max_abs':maxci,'attempted_values':len(rows)*2000,'valid_values':len(rows)*int(valid.sum()),'wall_seconds':time.monotonic()-t};put(tmp/'ANALYSIS.json',record);seal(tmp,root,{'status':'PASS','identity':identity});return {k:record[k] for k in ['status','unit_id','point_max_abs','draw_max_abs','interval_max_abs','wall_seconds']}
+-  except BaseException as exc:
+-   failure={'status':'FAILED','unit_id':uid,'reason':str(exc),'traceback':traceback.format_exc()};out=A/'analysis-failures'/(digest(uid)+'.json');put(out,failure);return failure
+-def lm_endpoint(alias,task,split):
+- archive_split='test' if split=='test_exploratory' else split;root=A6/'lm'/alias/task/archive_split;expected=next(u for u in read(C6/'LM_INDEX.json')['units'] if (u['candidate'],u['task'],u['split'])==(alias,task,archive_split));require(sha(root/'COMPLETE.json')==expected['receipt_sha256'],'LM receipt identity mismatch');receipt=read(root/'COMPLETE.json');require(receipt['status']=='VERIFIED','LM endpoint not released');validate_members(root,receipt)
+- with np.load(root/'sufficient_statistics.npz',allow_pickle=False) as z:meta={k:z[k] for k in z.files}
+- require(meta['nll_sum'].dtype==np.float32 and meta['n_tokens'].dtype==np.int64 and np.array_equal(meta['n_tokens'],meta['lengths']-1) and np.isfinite(meta['nll_sum']).all() and np.all(meta['n_tokens']>0),'Causal LM sum/count/length invariant failed');return meta,ref(root/'COMPLETE.json'),read(root/'RESULTS.json')
++"""Saved-output-only numeric primitives and finite predeclared contrast runner."""
++import math
++import numpy as np
++
+ def lm_numbers(meta,draw,weights):
+- require(np.isfinite(meta['nll_sum']).all() and np.all(meta['n_tokens']>0),'Nonfinite LM loss or nonpositive targets')
++ if not np.isfinite(meta['nll_sum']).all() or np.any(meta['n_tokens']<=0):raise ValueError('Nonfinite LM loss or invalid target counts')
+  names,inverse=np.unique(meta['groups'],return_inverse=True);group_loss=[math.fsum(float(x) for x in meta['nll_sum'][inverse==g]) for g in range(len(names))];group_tokens=[sum(int(x) for x in meta['n_tokens'][inverse==g]) for g in range(len(names))];point=math.fsum(float(x) for x in meta['nll_sum'])/sum(int(x) for x in meta['n_tokens']);ratio=np.array([math.fsum(group_loss[int(g)] for g in d)/sum(group_tokens[int(g)] for g in d) for d in draw]);other=(weights@meta['nll_sum'].astype(np.float64))/(weights@meta['n_tokens']);return point,ratio,other
+-def lm(pair):
+- task,split=pair;uid=task+'/'+split;root=A/'analysis/LM_R6_minus_R4'/uid;src=source_check()
+- with Lock(A/'locks/LM-analysis'/(uid+'.lock')):
+-  m6,r6,result6=lm_endpoint('R6',task,split);m4,r4,result4=lm_endpoint('R4',task,split)
+-  for k in ['ids','labels','groups','sequence_sha256','lengths','n_tokens']:require(np.array_equal(m6[k],m4[k]),'LM endpoint pairing mismatch')
+-  w,dp=draw_weights(task,'test' if split=='test_exploratory' else split,m6);identity={'stage':'A08','source':src,'unit_id':uid,'R6':r6,'R4':r4,'draw':ref(dp),'protocol':CFG['protocol_sha256']}
+-  if (root/'COMPLETE.json').exists():seal_check(root,identity);return read(root/'ANALYSIS.json')
+-  tmp=workdir(root);names,inverse=np.unique(m6['groups'],return_inverse=True)
+-  with np.load(dp,allow_pickle=False) as z:draw=z['group_draws']
+-  distributions={};points={};maxpoint=0.;maxdraw=0.
+-  for alias,meta,original in [('R6',m6,result6),('R4',m4,result4)]:
+-   sums=meta['nll_sum'].astype(np.float64);counts=meta['n_tokens'];point,ratio,other=lm_numbers(meta,draw,w);require(abs(point-original['NLL'])<=1e-12,'Reused LM point aggregation differs');maxdraw=max(maxdraw,residual(ratio,other));require(max(point,float(ratio.max()),float(other.max()))<math.log(np.finfo(np.float64).max),'PPL_OVERFLOW: affected metric must be explicitly UNDEFINED, not zero');distributions[alias]={'causal_nll':ratio,'perplexity':np.exp(ratio)};points[alias]={'causal_nll':point,'perplexity':math.exp(point)};maxpoint=max(maxpoint,residual([point],[float(np.sum(sums,dtype=np.float64)/np.sum(counts,dtype=np.int64))]));maxdraw=max(maxdraw,residual(np.exp(ratio),np.exp(other)))
+-  checkpoints=read(C7/'A07_INPUTS.json')['checkpoint_identities'];rows=[];arrays={};valid=np.ones(2000,dtype=bool)
+-  for metric in ['causal_nll','perplexity']:
+-   delta=distributions['R6'][metric]-distributions['R4'][metric];ci=np.quantile(delta,[.025,.975]);arrays[metric]=delta;rows.append({'checkpoint_alias':'R6','checkpoint_content_id':checkpoints['R6']['model_tensor_content_sha256'],'target_endpoint_id':checkpoints['R6']['candidate_id'],'reference':'R4','reference_content_id':checkpoints['R4']['model_tensor_content_sha256'],'reference_endpoint_id':checkpoints['R4']['candidate_id'],'task':task,'split':split,'representation':None,'CV_seed':None,'policy':'actual_causal_head','reference_policy':'actual_causal_head','metric':metric,'direction':'target-reference','metric_orientation':'lower','estimate':points['R6'][metric]-points['R4'][metric],'ci_low':float(ci[0]),'ci_high':float(ci[1]),'sample_count':len(m6['ids']),'group_count':len(names),'target_count':int(m6['n_tokens'].sum()),'bootstrap_attempted':2000,'bootstrap_valid':2000,'bootstrap_invalid':0,'status':'VERIFIED','missing_reason':None,'lineage':'NEW_DERIVED_ANALYSIS','measurement_attempt':C.name,'target_measurement_attempt':'A06-attempt-001','reference_measurement_attempt':'A06-attempt-001','ingestion_status':'DERIVED_IN_A08','ancestry_status':'UNKNOWN','exposure_status':'UNKNOWN','adjacent':False,'family':'PREDECLARED_NONADJACENT_R6_MINUS_R4_LM','protocol_sha256':CFG['protocol_sha256'],'coverage_plan_sha256':CFG['coverage_plan_sha256'],'source_sha256':src,'target_prediction_sha256':r6['sha256'],'reference_prediction_sha256':r4['sha256'],'draw_sha256':sha(dp),'producer_receipt_sha256':r6['sha256'],'reference_producer_receipt_sha256':r4['sha256'],'target_audit_receipt_sha256':r6['sha256'],'reference_audit_receipt_sha256':r4['sha256'],'audit_receipt':str((root/'COMPLETE.json').relative_to(A)),'contrast_id':digest({'family':'R6_minus_R4_LM','task':task,'split':split,'protocol':CFG['protocol_sha256']})})
+-  np.savez_compressed(tmp/'paired_draws.npz',valid=valid,**arrays);record={'status':'PASS','unit_id':uid,'rows':rows,'point_max_abs':maxpoint,'draw_max_abs':maxdraw,'attempted_values':4000,'valid_values':4000,'LM_reexecution':False,'producer_endpoints':[r6,r4]};put(tmp/'ANALYSIS.json',record);seal(tmp,root,{'status':'PASS','identity':identity});return {'status':'PASS','unit_id':uid,'point_max_abs':maxpoint,'draw_max_abs':maxdraw}
+-if __name__=='__main__':
+- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--stage',choices=['A08'],required=True);p.add_argument('--kind',choices=['classifier','LM'],required=True);p.add_argument('--task',choices=ALL_TASKS);v=p.parse_args();require(v.stage=='A08','Stage guard');source_check();resource.setrlimit(resource.RLIMIT_AS,(32*1024**3,32*1024**3));manifest=read(C/'A08_EXECUTION_MANIFEST.json')
+- specs=sorted({(e['task'],e['split'],e['representation'],e['CV_seed']) for e in manifest['analysis_keys'] if v.task is None or e['task']==v.task}) if v.kind=='classifier' else sorted({(e['task'],e['split']) for e in manifest['analysis_LM_keys'] if v.task is None or e['task']==v.task})
+- with Lock(A/'locks/pipeline.lock'):
+-  with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+-   for result in pool.map(classifier if v.kind=='classifier' else lm,specs):print(json.dumps(result),flush=True)

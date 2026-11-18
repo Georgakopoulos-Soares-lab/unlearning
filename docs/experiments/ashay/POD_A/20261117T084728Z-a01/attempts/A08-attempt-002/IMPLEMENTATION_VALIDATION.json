@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "synthetic_and_adversarial_tests": 32,
+  "synthetic_solver_calls": 2,
+  "real_audit_refits_so_far": 0,
+  "test_log_sha256": "6378920cdb6bbc506e93205124f3abc1c5271211b8a269103a18c1bcfcf3f29b",
+  "test_sources": {
+    "test_audit.py": "6e7c5ec4fb2264d1d24d8433f86578cde6426ecf356ecda7498fd664c9493796",
+    "test_scope8.py": "841e3efafa46f481653c7be2cdbf59eb5092216d69bc3effe205118cd763340f"
+  },
+  "reviewed_numerical_independence": "Direct float32 scaler/coef reconstruction; pairwise win AUROC and threshold AP; saved-index multiplicities via add.at, distinct from producer rank aggregation/bincount; no producer orchestration invoked",
+  "additional_post_test_review": "Task-only partitioning of predeclared six panel units and explicit existing linear quantile default, no changed mathematical calculation"
+}
