@@ -4,7 +4,7 @@
   "run_id": "20261117T084728Z-a01",
   "stage": "A08",
   "attempt_id": "A08-attempt-001",
-  "status": "VERIFIED_READY_FOR_DELIVERY",
+  "status": "COMPLETE",
   "scientific_scope": "COMPLETE_QUALIFIED_AVAILABLE_ENDPOINTS",
   "full_project_status": "PARTIAL_EXTERNAL_DEPENDENCIES",
   "A04_status": "PARTIAL",
@@ -389,10 +389,124 @@
     "no_duplicate_launched": true,
     "refreshed_utc": "2026-11-18T10:16:09.434487+00:00"
   },
-  "resume_manifest_sha256": "005892178b368260908723a90f4f18586300ce15ad369da59c5c98ab1975b755",
+  "resume_manifest_sha256": "6d05d421024f0ba0f496d0395cf90247be86a6afdbca40bf0096c992661d97c0",
   "approval_for_next_stage": false,
   "A09_started": false,
   "next_state": "WAITING_FOR_APPROVAL: A09",
-  "delivery_gate": "Public raw Git bytes and post-push metadata protection pending; later proof must PASS before final completion is reported",
-  "assembled_utc": "2026-11-18T10:18:39.454548+00:00"
+  "delivery_gate": "Scientific public payload exact-byte verified; final later metadata commit and separate private metadata recovery receipt bind delivery identities",
+  "assembled_utc": "2026-11-18T10:18:39.454548+00:00",
+  "scientific_publication_commit": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
+  "scientific_public_manifest_sha256": "dcb01559482bf1bad9299fff5eb35134e01a6c876373beda0fa17dbcb0ed635a",
+  "scientific_public_file_count": 165,
+  "delivery_proof": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SCIENTIFIC_POST_PUSH_PROOF.json",
+    "bytes": 1743,
+    "sha256": "b82f67731fde733030dacea3dd8524dbfb38f1378d53bc6eda6fb4198528f909"
+  },
+  "completed_utc": "2026-11-18T10:20:54.931041+00:00",
+  "requested_coverage": {
+    "all_unit_audits": 780,
+    "probability_paths": 1560,
+    "sampled_refits": 60,
+    "new_classifier_contrasts": 5460,
+    "new_LM_contrasts": 14
+  },
+  "accepted_coverage": {
+    "all_unit_audits": 780,
+    "probability_paths": 1560,
+    "sampled_refits": 60,
+    "new_classifier_contrasts": 5460,
+    "new_LM_contrasts": 14
+  },
+  "outputs": [
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/TABLE_PARTITIONS.json",
+      "bytes": 2525,
+      "sha256": "729a77573caab5e6c63620620144efcb22d21198347dc755a38adb20a0c61e2f"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/RESULT_SCHEMAS.json",
+      "bytes": 5546,
+      "sha256": "d39219842b28e064b2c74ff31ccd839ba1cb7f24f3b0e2789932277d773fdb11"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/NUMERICAL_AUDIT.json",
+      "bytes": 389726,
+      "sha256": "0e29ea22a06fe22efa546da5792541e65cbe654dc01bf5261e94d44969977377"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/AUDIT_REFIT_RECEIPT.json",
+      "bytes": 107373,
+      "sha256": "17707b2fd2321dba830334eab03951a6700946ecab400cfb923d0733143281d0"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/DERIVED_ANALYSIS_AUDIT.json",
+      "bytes": 434429,
+      "sha256": "dff560bad9586d23536bff4a4ce2e480602f99585dc66cafcf0a8fadff464459"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/ANALYSIS.md",
+      "bytes": 10556,
+      "sha256": "a85d64ccb78bbe6928e25effa3fde43473758456cdbe46ebf6bb598ed5110100"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/FIGURE_VALIDATION.json",
+      "bytes": 57680,
+      "sha256": "1fce6db5e682d55a5130c40d6991001abe22617a71d30267b515a4af4c181d51"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/REMOTE_HANDOFF.json",
+      "bytes": 42526,
+      "sha256": "09284d5ff3bfad85d2810de5b41669fd5efa2fe5c1e4513e9e693bfb4cb3b860"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SOURCE_SUPPLEMENT.json",
+      "bytes": 6134,
+      "sha256": "3eadaa028c8d03ac84798d543646b14a045edf689609fbc920eb5498f8f14c1c"
+    }
+  ],
+  "checks": [
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/PRESERVATION_VERIFICATION.json",
+      "bytes": 2489,
+      "sha256": "e173362ab5ba2c2bf5b293aea7c7b5fc00b37052cf8147b1c66ff8228faebf95"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/IMPLEMENTATION_VALIDATION.json",
+      "bytes": 1467,
+      "sha256": "60020882d28a7501f530285e7078642e182a60de4dab9ebc92e7286d01eeb8b7"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/BOOTSTRAP_AUDIT.json",
+      "bytes": 722,
+      "sha256": "f07171aa851e8c6ff780bd477790deb4e72a2d787fa2c5f499080becf4cf8286"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/REPORT_POLICY_NORMALIZATION.json",
+      "bytes": 900,
+      "sha256": "51820f2b9476d7e1f80675fc3c051a9a64bd2d8674687a59d0bec2a7daeaa331"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/REPORT_PROVENANCE_NORMALIZATION.json",
+      "bytes": 2646,
+      "sha256": "df475186c16b90d1bb93f66fedf14e3a943fb54eb11a6c0ad3a474a4a67391ff"
+    },
+    {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/JOB_DISPOSITION.json",
+      "bytes": 5532,
+      "sha256": "7092aa65165737d9b2a2f3692ca0810190f379ffcc6f0894f99e0594f5f98763"
+    }
+  ],
+  "timings": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/RESOURCE_MEASUREMENTS.json",
+    "bytes": 34891,
+    "sha256": "0b01889197e8a76a7042944612e6cfc90f961f1c3f99352da666bc73f1f92a47"
+  },
+  "blockers": [
+    "External full-project R2/R5 gaps and R3live bridge",
+    "Unknown training ancestry/objective/exposure/budgets"
+  ],
+  "code_commit": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
+  "supplemental_reporting_code_commit": "Exact final metadata commit bound by separate immutable delivery receipt",
+  "suggested_next_prompt_edits": "NEXT_PROMPT_RECOMMENDATIONS.md"
 }

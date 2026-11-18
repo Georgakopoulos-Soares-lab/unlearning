@@ -1,6 +1,6 @@
-# A08 progress — RUNNING
+# A08 progress — COMPLETE
 
-Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T10:16:33.056010+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `676c81ac8f203139d6d99054ba168c9e0b085804`. No A09 execution.
+Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T10:20:58.190814+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `73930ca070d5de8fd8c32491d23e8e082e37a6ef`. No A09 execution.
 
 ## Goals
 
@@ -16,7 +16,7 @@ Full coverage remains3276heads and3276fixed applications,49primary LMunits and36
 
 ## This attempt
 
-Verified complete tables,31rendered inspected figures,explicit pending edges; corrected report analysis-counter path without changing scientific receipts; final delivery checks. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
+Completed all780independent audits,60sampled refits,5460new classifier/14LMrows,31inspected figures,threefresh scientific restores and exact public delivery. Readout-policy divergence and mixed R6−R4 outcomes are documented in ANALYSIS.md; full project remains PARTIAL. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
 
 | Candidate/task | Independent audit units passed | Expected |
 |---|---:|---:|
@@ -49,4 +49,4 @@ Zero GPU work; at most2CPUworkers x4BLASthreads,32GiBaddress-space ceiling perwo
 
 ## Next action
 
-Complete finite A08 only; A09 requires separate approval.
+WAITING_FOR_APPROVAL: A09.

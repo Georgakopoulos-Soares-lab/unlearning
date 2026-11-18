@@ -3,7 +3,7 @@
   "run_id": "20261117T084728Z-a01",
   "stage": "A08",
   "attempt_id": "A08-attempt-001",
-  "status": "RUNNING",
+  "status": "COMPLETE",
   "prompt_commit": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
   "effective_hashes": {
     "POD_A_MASTER.md": "ed13c09a74917165c5cf8c9c3a12483fbcdae56116d0ac3a8033014f913419b0",
@@ -14,8 +14,8 @@
     "POD_A_REVIEW_LOOP.md": "c5b1a6f9b6990e26f5089607f1c0163333aefb406a5caff8cf7ee1da9d48fce0"
   },
   "approval_reference": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/APPROVAL_RECORD.json",
-  "scientific_job_state": "QUIET",
-  "next_allowed_action": "Complete finite A08 only; A09 requires separate approval",
+  "scientific_job_state": "QUIESCENT",
+  "next_allowed_action": "WAITING_FOR_APPROVAL: A09",
   "A09_started": false,
   "time_policy": {
     "schema": "pod-a-time-policy-v3",
@@ -90,8 +90,8 @@
     "cpu_venv": "/workspace/venvs/a03-cpu-audit-20261117",
     "tools_venv": "/workspace/venvs/pod-a-tools"
   },
-  "research_head": "de1ac64f7b5f9748a868564baf637e8c06dbb667",
-  "observed_utc": "2026-11-18T10:16:33.018049+00:00",
+  "research_head": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
+  "observed_utc": "2026-11-18T10:20:58.155123+00:00",
   "owned_job": null,
   "unit_counts": {
     "A07_production_heads_reused": 780,
@@ -117,7 +117,7 @@
     "proc_start_ticks": "8476919",
     "process_identity_alive": true,
     "last_successful_tick": "2026-11-18T10:03:00.931925+00:00",
-    "heartbeat_age_seconds": 809.5440368652344,
+    "heartbeat_age_seconds": 1075.5019419193268,
     "active_approved_pin": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
     "observed_prompt_commit": "b2a4d6914349ee4737e7d4d590efc46b3e4f3110",
     "newer_error_than_success": false,
@@ -130,6 +130,115 @@
     },
     "stop_disable_flags": [],
     "no_duplicate_launched": true,
-    "refreshed_utc": "2026-11-18T10:16:30.475974+00:00"
-  }
+    "refreshed_utc": "2026-11-18T10:20:56.433876+00:00"
+  },
+  "owner": "POD_A",
+  "server_identity": {
+    "cwd": "/workspace/wt-pod-a",
+    "shared_with_PodB": false
+  },
+  "research_head_semantics": "Observed scientific commit; later metadata commit bound by separate delivery receipt",
+  "approved_input_head": "de1ac64f7b5f9748a868564baf637e8c06dbb667",
+  "dirty_baseline": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/DIRTY_BEFORE.z",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "source_identity": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SOURCE_IDENTITY.json",
+    "bytes": 1962,
+    "sha256": "be22697b08b34927b415e2559250e2846c32de4047049db76557fadf5123b1e3"
+  },
+  "runtime_environment": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/ENVIRONMENT_CHECK.json",
+    "bytes": 1003,
+    "sha256": "2dc117b094c3c96f44221483e23d3acaecbf075d762d97afc6f8ed928cb707e8"
+  },
+  "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "selected_checkpoint_ids": {
+    "R4": {
+      "alias": "R4",
+      "candidate_id": "drive-folder:1K19CrsvXAk6mIwB1m3xe1epomEHRtEUE",
+      "asset_manifest_sha256": "62b6ba528e8112029ede65064dc18a2c7efb2f9e186c6de20c2399aa4e5af196",
+      "asset_completeness": "PASS",
+      "model_tensor_content_sha256": "35f9135d1ec2828dda03be33c2b7922a075b3bab93f9e25a44b8b6892ddfbd66",
+      "feature_LM_self_qualification": "PASS",
+      "historical_family_bridge": "NOT_APPLICABLE",
+      "fixed_base_transfer_runtime_eligibility": "PASS",
+      "new_report_attempt": "A04-attempt-003",
+      "numerical_status": "REUSED_VALIDATED",
+      "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+      "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+      "current_full_payload_recovery": "NOT_IN_SCOPE_PRESERVED_ENDPOINT",
+      "provider_native_revision": null
+    },
+    "R6": {
+      "alias": "R6",
+      "candidate_id": "drive-folder:1x1ugJ0Cd-ODGVWMHClxJojRZKBQXRf-V",
+      "asset_manifest_sha256": "58411b0144371d52c1ba9fac10edf5ccee41d50dc48d3347b1bc774b8b1621ea",
+      "asset_completeness": "PASS",
+      "model_tensor_content_sha256": "6d5aa972c5bd761be97994b6bfc60683ae742728a0b10d264260df9c78023ac8",
+      "feature_LM_self_qualification": "PASS",
+      "historical_family_bridge": "NOT_APPLICABLE",
+      "fixed_base_transfer_runtime_eligibility": "PASS",
+      "new_report_attempt": "A04-attempt-003",
+      "numerical_status": "REUSED_VALIDATED",
+      "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+      "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+      "current_full_payload_recovery": "NOT_IN_SCOPE_PRESERVED_ENDPOINT",
+      "provider_native_revision": null
+    }
+  },
+  "approval": {
+    "direct_user_approval": "\ud83d\udc4d A08 at e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef, go ahead",
+    "message_time_utc": null,
+    "observed_utc": "2026-11-18T08:49:25.672412+00:00",
+    "prompt_commit": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
+    "effective_hashes": {
+      "POD_A_MASTER.md": "ed13c09a74917165c5cf8c9c3a12483fbcdae56116d0ac3a8033014f913419b0",
+      "A08_VERIFICATION_ANALYSIS.md": "535c9fd582e98db3469d81b291d03091575825198488ff67df56d08a87946a98",
+      "SCIENTIFIC_CONTRACT.md": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413",
+      "ARTIFACT_CONTRACT.md": "f34f276d5b884f1e16588ae2bd40c1a5c00c8b155ee53e4b7ffcd39c3590c594",
+      "POD_A_PROGRESS_REPORTING.md": "70637a2e42a1720c8ec9f41cbf0293297e3e0606f451bd8218082660d75ec202",
+      "POD_A_REVIEW_LOOP.md": "c5b1a6f9b6990e26f5089607f1c0163333aefb406a5caff8cf7ee1da9d48fce0"
+    },
+    "attempt_id": "A08-attempt-001",
+    "research_input_commit": "de1ac64f7b5f9748a868564baf637e8c06dbb667",
+    "prior_controller_state_sha256": "f3c588653b63119151fb60812e94d23803a0a0be6bcc67515bc1460173261bea",
+    "stage": "A08",
+    "no_A09_authorization": true
+  },
+  "completion_receipts": [
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/NUMERICAL_AUDIT.json",
+      "bytes": 389726,
+      "sha256": "0e29ea22a06fe22efa546da5792541e65cbe654dc01bf5261e94d44969977377"
+    },
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/AUDIT_REFIT_RECEIPT.json",
+      "bytes": 107373,
+      "sha256": "17707b2fd2321dba830334eab03951a6700946ecab400cfb923d0733143281d0"
+    },
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/DERIVED_ANALYSIS_AUDIT.json",
+      "bytes": 434429,
+      "sha256": "dff560bad9586d23536bff4a4ce2e480602f99585dc66cafcf0a8fadff464459"
+    },
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/BACKUP_VERIFICATION.json",
+      "bytes": 1251,
+      "sha256": "c2ec6d77424a5431066452c7a5ef818bb60d7498745a5706856f61ac83d3c34b"
+    },
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/JOB_DISPOSITION.json",
+      "bytes": 5532,
+      "sha256": "7092aa65165737d9b2a2f3692ca0810190f379ffcc6f0894f99e0594f5f98763"
+    }
+  ],
+  "blockers": [
+    "External full-project R2/R5 gaps and R3live bridge",
+    "Unknown training ancestry/objective/exposure/budgets"
+  ],
+  "all_owned_scientific_jobs_quiescent": true
 }
