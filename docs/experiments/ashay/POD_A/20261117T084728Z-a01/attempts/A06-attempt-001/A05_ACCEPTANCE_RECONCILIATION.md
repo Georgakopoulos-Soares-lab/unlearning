@@ -1,0 +1,7 @@
+# A05 acceptance reconciliation
+
+The exact A05 receipt, frozen protocol/coverage plan and42-file manifest verify at54736bb938aa204c45ea5f9a3c0d2e996dc35577. CHECKPOINT_READINESS.json supplies per-checkpoint delivery/loading/qualification/bridge status; CONTRAST_PLAN.json preserves16deduplicated logical contrasts including allfive adjacent gaps; COVERAGE.csv retains3276heads,3276fixed applications,49LMunits and36controls. AUDIT_PLAN/RESULT_SCHEMAS/RESOURCE_PLAN/COMMAND_REVIEW/RESUME_MANIFEST and private recovery are parsed and accepted within their stated domains. No A05 bytes are rewritten.
+
+Historical base/R1 LM rows have cosmetic generic reason text mentioning future approval; actual REUSED_VALIDATED status and sealed LM receipts control A06 derived descriptions. R3 historical results remain reusable; its live bridge gates affected new contrasts. R2/R5 gaps remain468heads each, with no recovery activated. This A06 admits only R4/R6.
+
+Task/split separation corrects the prior aggregate packing estimate5662 to5666production forwards for45290real rows/26bundles/676representation matrices/9043507200raw feature bytes. This is operational batching, not a cohort/protocol/coverage amendment. Additional adapter parity/repeat forwards and retries are counted separately. Each candidate requires its78H3refit/fixed-base/audit/recovery gate before other-five extraction. A07 fitting is not authorized.
