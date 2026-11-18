@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "persistent_capacity_bytes": 500000000000,
+  "workspace_allocated_bytes": 218384590848,
+  "conservative_additional_peak_bytes": 63215091798,
+  "reserved_free_headroom_bytes": 50000000000,
+  "CPU_quota": 15.3,
+  "RAM_limit_bytes": 214999998464,
+  "GPU": "NVIDIA H100 NVL, 95830 MiB, 595.112.07",
+  "GPU_owners": [],
+  "CPU_workers": 2,
+  "BLAS_threads_each": 4,
+  "per_worker_AS_limit_bytes": 34359738368,
+  "observed_utc": "2026-11-18T20:27:02.334957+00:00",
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A06 R5-only adapter qualification, H3 production/audit/recovery, remaining extraction/LM. Stop before A07.",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "99684f0b57ab83c90144b34a3940556c3b5ab6667b8436a9399a87a189702456"
+  }
+}

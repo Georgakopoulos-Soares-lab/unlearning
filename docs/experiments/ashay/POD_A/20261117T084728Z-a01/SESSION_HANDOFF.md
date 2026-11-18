@@ -1,9 +1,7 @@
-# Pod A current handoff — A05 R5 coverage amendment
+# Pod A current handoff — new R5 A06
 
-Current attempt: [A05-attempt-002](attempts/A05-attempt-002/SESSION_HANDOFF.md), status COMPLETE_FOR_R5_PLAN. Coverage-plan SHA256 `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`.
+Current status: RUNNING. Read [A06 progress](attempts/A06-attempt-002/PROGRESS.md), [A06 handoff](attempts/A06-attempt-002/SESSION_HANDOFF.md) and [inputs](attempts/A06-attempt-002/A06_INPUTS.json).
 
-The prior completed [A09 report](attempts/A09-attempt-001/RESULTS.md), [gallery](attempts/A09-attempt-001/FIGURE_GALLERY.md) and [recovery](attempts/A09-attempt-001/RESTORE.md) remain unchanged. All prior attempts are immutable; previous root pointers are preserved in the new attempt.
+The prior [A09 report](attempts/A09-attempt-001/RESULTS.md) and [A05 plan](attempts/A05-attempt-002/SESSION_HANDOFF.md) remain immutable. Observer stopped, no deadline/cap/reserve, Pod running.
 
-No new scientific measurements in A05. R5 proposed468 heads/468 fixed applications/7 LM; current2340 heads and2340 applications remain released. R2 unresolved. Observer stopped; Pod running; no deadline/cap/reserve.
-
-WAITING_FOR_APPROVAL: A06. R5 plan frozen; revised A06 prompt and direct approval required. No A06 work started.
+Continue A06 finite owned units only. A07 has not started.

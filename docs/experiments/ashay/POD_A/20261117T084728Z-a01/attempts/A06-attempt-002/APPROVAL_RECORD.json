@@ -1,0 +1,14 @@
+{
+  "schema": "pod-a-direct-stage-approval-v2",
+  "stage": "A06",
+  "attempt_id": "A06-attempt-002",
+  "prompt_commit": "4ff94e09b72a02d6e3082af064669c98adda6008",
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "A06_prompt_sha256": "71e481635763d36bc69e86021ca4b63085ad945514c252d97df1cca51fd5ec18",
+  "observed_utc": "2026-11-18T20:23:26.149164+00:00",
+  "message_timestamp_utc": null,
+  "research_parent": "53991bd9679943fc774dfaad770a42e7cd125a68",
+  "prior_state_sha256": "018296b6316ced93a58da86b86b5640723e1e68fea901a360c6462c4fc3682d5",
+  "direct_user_message": "\ud83d\udc4d A06 at 4ff94e09b72a02d6e3082af064669c98adda6008\n\nApprove a new R5-only A06 attempt following A05-attempt-002.\n\nBind coverage-plan SHA256:\n06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3\n\nUse the A05 research handoff at:\n53991bd9679943fc774dfaad770a42e7cd125a68\n\nComplete the approved adapter qualification, H3 gate,\nremaining extraction, LM verification and private recovery.\n\nPreserve previous results and the no-deadline amendment.\nKeep the observer stopped. Stop before A07. go ham -",
+  "instruction_reconciliation": "Current user pin/R5 scope supersedes historical AGENTS branch, default prompt and environment guidance. Runtime/science unchanged; focused A06 TRAIN parity and exact previously examined H3 test members authorized. No observer setup, later stage, other candidates or stale deadline."
+}
