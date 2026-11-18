@@ -1,0 +1,38 @@
+{
+  "schema": "pod-a-a05-audit-plan-v1",
+  "full_saved_checks": "Every released head/scaler/classes/features reconstructs saved probabilities independently; every metric and exact paired draw interval reconstructed from arrays",
+  "sampled_refits": "Metadata-selected fixed task/layer/seed/checkpoint cells chosen before scores; not all-head refit. Use exact TRAIN folds and current matching CPU versions",
+  "H3_gate": {
+    "per_candidate_heads": 78,
+    "policies": [
+      "independent_refit",
+      "fixed_original_base"
+    ],
+    "all_layers": 26,
+    "seeds": [
+      42,
+      17,
+      1234
+    ],
+    "must_pass_before": "any other-five extraction for that candidate",
+    "low_score": "Preserve as scientific result, never a technical exclusion"
+  },
+  "probability_tolerance": 1e-10,
+  "metric_bootstrap_tolerance": 1e-12,
+  "runtime_tolerances": {
+    "atol": 0.0001,
+    "rtol": 1e-05
+  },
+  "tolerance_changes": "Forbidden after discrepancy",
+  "pairing": "Exact ordered IDs/labels/groups/classes/cohort/folds; no intersections",
+  "bootstrap": {
+    "draws": 2000,
+    "seed": 20261103,
+    "reuse": "Exact saved arrays/group ordering when compatible; fresh same procedure if new population approved",
+    "missing_class": "Common validity mask for both endpoints; reject missing required classes; attempted/valid/invalid recorded",
+    "LM": "Float64 sums/counts inside each identical group draw, then exponentiate"
+  },
+  "coverage": "All3,276expectedheads;156new H3 units inA06;780remaining inA07;936missing R2/R5 retained",
+  "historical_failures": "Adverse physical1 gate stays retained/ineligible; no semantic runtime changes; R3 cross-runtime bridge pending",
+  "claims": "No causal mixture/optimality/independent intervention replications/equivalence/forgetting; exactRC groups do not prove biological independence"
+}

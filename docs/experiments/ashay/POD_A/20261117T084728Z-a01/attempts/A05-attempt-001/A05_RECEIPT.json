@@ -1,0 +1,84 @@
+{
+  "schema": "pod-a-a05-receipt-v1",
+  "status": "COMPLETE_PLANNING",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A05",
+  "attempt_id": "A05-attempt-001",
+  "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2",
+  "prompt_sha256": "6c871d8361a7f0155c1b1a56359573502cdb43f4748807c7e850266e4ff14dcf",
+  "input_research_commit": "18a59fdc9f99d6ad0acb0d7ce34bcd88bd846281",
+  "A04_status": "PARTIAL",
+  "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "coverage": {
+    "head_rows": 3276,
+    "reused": 1404,
+    "new_proposed": 936,
+    "pending_R2": 468,
+    "pending_R5": 468,
+    "H3_A06": 156,
+    "other_five_A07": 780,
+    "controls": 36,
+    "LM": 49,
+    "all_coverage_rows": 6637
+  },
+  "new_evidence": {
+    "calibration_tasks": 2,
+    "calibration_solver_fits": 32,
+    "calibration_final_TRAIN_fits": 2,
+    "new_production_final_heads": 0,
+    "new_scientific_measurements": 0,
+    "new_GPU_runs": 0,
+    "new_heldout_predictions": 0,
+    "validation_tests": 24
+  },
+  "reused_evidence": {
+    "historical_final_heads": 1404,
+    "controls": 36,
+    "runtime_variants": 12,
+    "runtime_comparison_rows": 378
+  },
+  "services": {
+    "observer_status": "ACTIVE",
+    "reviewer_status": "DRAFT_ONLY",
+    "publisher_status": "BLOCKED"
+  },
+  "pending": [
+    "R2 identity/delivery + separate admission/qualification",
+    "R5 native delivery + A04 qualification",
+    "R3 live qualification and cross-runtime historical bridge for affected contrasts",
+    "Isolated reviewer model runner and restricted publisher credential"
+  ],
+  "science_jobs": "QUIESCENT",
+  "A06_started": false,
+  "next_state": "WAITING_FOR_APPROVAL: A06",
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A05 only; stop before A06",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "9bd329c0abce8e01f5fe6dc10682603ce8bcd36462fff77d69d957a896524619"
+  },
+  "sealed_scientific_plan_utc": "2026-11-18T01:48:56.611208+00:00",
+  "backup_status": "See separate BACKUP_VERIFICATION.json; current receipt does not assert an upload before verification",
+  "delivery_commit": "Recorded separately to avoid self-reference"
+}

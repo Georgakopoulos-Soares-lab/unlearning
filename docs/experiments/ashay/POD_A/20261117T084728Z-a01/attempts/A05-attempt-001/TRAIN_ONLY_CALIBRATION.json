@@ -1,0 +1,249 @@
+{
+  "status": "PASS_BOUNDED_TRAIN_ONLY",
+  "new_GPU_runs": 0,
+  "GPU_timing_evidence": "REUSED_VALIDATED A04 R4/R6 logical8 and fresh repeat8, all26hooks/actualLM, same physical8/rightpad1000. Tiny12-row qualification is not sustained production throughput.",
+  "GPU_receipts": [
+    {
+      "alias": "R4",
+      "variant": "logical8",
+      "receipt": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/R4/logical8/attempt-001/RESOURCE_MEASUREMENTS.json",
+        "bytes": 842,
+        "sha256": "97bddf26529ff95a12f35bf006e202e058820d5c5483feb80b4c9f415f5d1c7b"
+      },
+      "measurement": {
+        "architecture_instantiation_seconds": 1.7193880880004144,
+        "CPU_native_model_only_load_seconds": 3.4869188239972573,
+        "status": "PASS",
+        "wall_seconds": 58.16595223400509,
+        "cpu_process_seconds": 34.752252514000006,
+        "gpu_stage_wall_seconds": 10.498203261995513,
+        "physical_batches": 2,
+        "logical_rows": 12,
+        "physical_rows": 16,
+        "fillers": 4,
+        "batch_timings": [
+          {
+            "first_logical_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "forward_and_capture_seconds": 2.1887450680005713
+          },
+          {
+            "first_logical_row": 8,
+            "logical_rows": 4,
+            "physical_rows": 8,
+            "fillers": 4,
+            "forward_and_capture_seconds": 0.3072880939944298
+          }
+        ],
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_process_RSS_kib": 5735592
+      }
+    },
+    {
+      "alias": "R4",
+      "variant": "repeat8",
+      "receipt": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/R4/repeat8/attempt-001/RESOURCE_MEASUREMENTS.json",
+        "bytes": 836,
+        "sha256": "95ac0b7b6cb3aafed01728e06ce34b4ff00f006bfc08b00ffa704825e54a3247"
+      },
+      "measurement": {
+        "architecture_instantiation_seconds": 1.7471134400038864,
+        "CPU_native_model_only_load_seconds": 3.1899012030044105,
+        "status": "PASS",
+        "wall_seconds": 57.35030539100262,
+        "cpu_process_seconds": 34.710645057,
+        "gpu_stage_wall_seconds": 10.516123838999192,
+        "physical_batches": 2,
+        "logical_rows": 12,
+        "physical_rows": 16,
+        "fillers": 4,
+        "batch_timings": [
+          {
+            "first_logical_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "forward_and_capture_seconds": 2.1350186230047257
+          },
+          {
+            "first_logical_row": 8,
+            "logical_rows": 4,
+            "physical_rows": 8,
+            "fillers": 4,
+            "forward_and_capture_seconds": 0.3088575849978952
+          }
+        ],
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_process_RSS_kib": 5751392
+      }
+    },
+    {
+      "alias": "R6",
+      "variant": "logical8",
+      "receipt": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/R6/logical8/attempt-001/RESOURCE_MEASUREMENTS.json",
+        "bytes": 835,
+        "sha256": "53acd41cfebb3fb0bcc1f5ecb6df900d4e8410b24eb92d79c46505ba821c2eff"
+      },
+      "measurement": {
+        "architecture_instantiation_seconds": 1.7083055499970214,
+        "CPU_native_model_only_load_seconds": 3.222581750997051,
+        "status": "PASS",
+        "wall_seconds": 59.16862287200638,
+        "cpu_process_seconds": 34.900139709,
+        "gpu_stage_wall_seconds": 10.056155818005209,
+        "physical_batches": 2,
+        "logical_rows": 12,
+        "physical_rows": 16,
+        "fillers": 4,
+        "batch_timings": [
+          {
+            "first_logical_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "forward_and_capture_seconds": 2.160098169995763
+          },
+          {
+            "first_logical_row": 8,
+            "logical_rows": 4,
+            "physical_rows": 8,
+            "fillers": 4,
+            "forward_and_capture_seconds": 0.31035372499900404
+          }
+        ],
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_process_RSS_kib": 5746476
+      }
+    },
+    {
+      "alias": "R6",
+      "variant": "repeat8",
+      "receipt": {
+        "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/qualification/R6/repeat8/attempt-001/RESOURCE_MEASUREMENTS.json",
+        "bytes": 835,
+        "sha256": "8419fd6e3f65068d527535aea18e99b2b016d9a0911fee64f76d88b8a6f02ec1"
+      },
+      "measurement": {
+        "architecture_instantiation_seconds": 1.779197835996456,
+        "CPU_native_model_only_load_seconds": 3.247766701002547,
+        "status": "PASS",
+        "wall_seconds": 57.90665706300206,
+        "cpu_process_seconds": 35.268357359,
+        "gpu_stage_wall_seconds": 10.675455659002182,
+        "physical_batches": 2,
+        "logical_rows": 12,
+        "physical_rows": 16,
+        "fillers": 4,
+        "batch_timings": [
+          {
+            "first_logical_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "forward_and_capture_seconds": 2.4216188169957604
+          },
+          {
+            "first_logical_row": 8,
+            "logical_rows": 4,
+            "physical_rows": 8,
+            "fillers": 4,
+            "forward_and_capture_seconds": 0.30913648099522106
+          }
+        ],
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_process_RSS_kib": 5744412
+      }
+    }
+  ],
+  "startup_and_transfer": "Receipts record startup wall, native CPU load, architecture and aggregate GPU-stage; H2D and hook-vs-model overhead not isolated. No invented measurements.",
+  "steady_short_batch_seconds": [
+    0.3072880939944298,
+    0.3088575849978952,
+    0.31035372499900404,
+    0.30913648099522106
+  ],
+  "identified_first_batch_warmup_seconds": [
+    2.1887450680005713,
+    2.1350186230047257,
+    2.160098169995763,
+    2.4216188169957604
+  ],
+  "steady_median_seconds": 0.3089970329965581,
+  "steady_min_max_seconds": [
+    0.3072880939944298,
+    0.31035372499900404
+  ],
+  "CPU": {
+    "scope": "2 predetermined TRAIN-only tasks, final_norm seed42; established grouped folds; no GPU/new production extraction or released performance",
+    "source_sha256": "3b40c39a11242c9d5c94bf00d3880b96e2a7d3f0eec7cce81b3675dbf451ec7c",
+    "tasks": [
+      {
+        "task": "gue_tf_0",
+        "kind": "NON_PRODUCTION_TRAIN_ONLY_CALIBRATION",
+        "rows": 1024,
+        "checkpoint": "historical base",
+        "layer": "decoder.final_norm",
+        "seed": 42,
+        "CPU_wall_seconds": 0.8101845619967207,
+        "CPU_process_seconds": 4.488438896,
+        "hash_read_decompress_seconds": 1.615895658993395,
+        "feature_bytes": 7864320,
+        "fold_ref": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/folds_seed42.json",
+          "bytes": 172672,
+          "sha256": "8d2a1bbf96b2546fdcefe559684226e0d5cca8b7ac1aabe4cbafa17b769af783"
+        },
+        "ordered_ids_sha256": "545d960f0aef56e1f64a935807f41e32aa9789857faa3e085b2d8e752938f5a1",
+        "solver_fits": 16,
+        "nominal_solver_fits": 16,
+        "selected_C": 10.0,
+        "new_production_heads": 0,
+        "heldout_rows_read": 0,
+        "model_saved": false
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "kind": "NON_PRODUCTION_TRAIN_ONLY_CALIBRATION",
+        "rows": 1024,
+        "checkpoint": "historical base",
+        "layer": "decoder.final_norm",
+        "seed": 42,
+        "CPU_wall_seconds": 6.369196234998526,
+        "CPU_process_seconds": 44.453300982,
+        "hash_read_decompress_seconds": 2.0745736840035534,
+        "feature_bytes": 7864320,
+        "fold_ref": {
+          "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/folds_seed42.json",
+          "bytes": 254707,
+          "sha256": "4675e4e6dd2af2abbbc149206c6ba39744d08cd90396ebf7ff97f66fd510ff50"
+        },
+        "ordered_ids_sha256": "337e65f883a103698a67c479725ab09463905fd7e59b782051c7daa8bce9a653",
+        "solver_fits": 16,
+        "nominal_solver_fits": 16,
+        "selected_C": 10.0,
+        "new_production_heads": 0,
+        "heldout_rows_read": 0,
+        "model_saved": false
+      }
+    ],
+    "calibration_final_fits": 2,
+    "solver_fits": 32,
+    "threads": 4,
+    "CPU_peak_RSS_kib": 424900,
+    "feature_read_scope": "Only exact8-row chunks wholly inside chosen TRAIN tasks; non-training manifest lines not JSON-decoded; no dev/test arrays opened"
+  },
+  "heldout_forward_rows": 0,
+  "production_extraction_rows": 0,
+  "production_final_heads": 0,
+  "compression_upload_restore": "Measured during current bounded private backup, separate BACKUP_VERIFICATION.json",
+  "finite_workload": "No new GPU calibration necessary: qualified relevant timing exists; CPU2tasks x1layer x1seed x(15CVfits+1fullTRAINfit)"
+}

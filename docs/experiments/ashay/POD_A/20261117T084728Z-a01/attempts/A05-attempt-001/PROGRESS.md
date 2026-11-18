@@ -1,5 +1,5 @@
 # A05 progress — RUNNING
-Observed UTC: 2026-11-18T01:39:50.929195+00:00. Prompt pin `eb861427378e14aedce307348fa9eab3fa989ca2`. Research source `18a59fdc9f99d6ad0acb0d7ce34bcd88bd846281`.
+Observed UTC: 2026-11-18T01:49:16.948432+00:00. Prompt pin `eb861427378e14aedce307348fa9eab3fa989ca2`. Research source `f299a2a308c27ca0f31aa6eef8950a749098c4d2`.
 
 | Goal | Target | New verified | Historical reused | Running | Pending / other | Failed | Evidence |
 |---|---|---|---|---|---|---|---|
@@ -14,9 +14,9 @@ Observed UTC: 2026-11-18T01:39:50.929195+00:00. Prompt pin `eb861427378e14aedce3
 
 A04 remains PARTIAL. R4/R6 are accepted for planning; R2 identity/delivery, R3 live/historical bridge, and R5 live qualification stay separate. All five adjacent contrasts retain unavailable endpoints.
 
-What changed: START. Zero new scientific measurements and zero production heads. Training-only calibration is NON_PRODUCTION. No new scientific findings yet.
+What changed: PLAN_FROZEN. Zero new scientific measurements and zero production heads. Training-only calibration is NON_PRODUCTION. No new scientific findings yet.
 
-Reproducibility: protocol `None`; exact cohorts and folds are bound in INPUT_VERIFICATION.json; completed downstream work is reused. See output manifest and immutable backup receipt when sealed.
+Reproducibility: protocol `73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7`; exact cohorts and folds are bound in INPUT_VERIFICATION.json; completed downstream work is reused. See output manifest and immutable backup receipt when sealed.
 
 Resources: no new GPU execution; existing 12 qualification timing receipts reused. CPU calibration and transfer accounting appear in TRAIN_ONLY_CALIBRATION.json and RESOURCE_PLAN.json. Original/rental starts, price and cost remain null; no total deadline/cap/reserve.
 

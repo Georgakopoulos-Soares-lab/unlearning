@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "observer_status": "ACTIVE",
+  "reviewer_status": "DRAFT_ONLY",
+  "publisher_status": "BLOCKED",
+  "cadence_seconds": 1200,
+  "host_identity_sha256": "fb2fdc69e74171312390fd4a80c7e4b4e9e118859ed1823f06e4904b22b80462",
+  "runtime": "Python3.12 deterministic observer; tmux3.4 persistent session; user systemd offline",
+  "service_paths": "/workspace/agent-handoff/POD_A/review-loop",
+  "observer_cache": "/workspace/repos/pod-a-observer-cache.git",
+  "service_id": "tmux:pod-a-prompt-observer",
+  "real_fetch_test": "PASS",
+  "last_successful_tick": "2026-11-18T01:39:35.387748+00:00",
+  "first_observed_prompt_commit": "9726e6cc0cd7ee8939eefd202107459802201ed2",
+  "active_stage_pin_unchanged": "eb861427378e14aedce307348fa9eab3fa989ca2",
+  "next_tick_epoch": 1794967175.3877687,
+  "credential_scope": "Existing host Git authentication used only by deterministic fixed-origin/ref fetch observer; credential bytes never read/copied. Reviewer has no access; scoped publisher credential absent.",
+  "missing_inputs": [
+    "Isolated supported model runtime with enforced evidence-only filesystem/process/network access",
+    "Separately provisioned prompts-repository-restricted publisher credential"
+  ],
+  "allowed_publish_paths": [
+    "ONE next not-active canonical stage file",
+    "its SHA256SUMS entry",
+    "new immutable reviews/<review-id>/"
+  ],
+  "start_command": "tmux new-session -d -s pod-a-prompt-observer \"/usr/bin/python3 /workspace/agent-handoff/POD_A/review-loop/review_loop.py serve\"",
+  "status_command": "tmux has-session -t pod-a-prompt-observer; cat /workspace/agent-handoff/POD_A/review-loop/heartbeat.json",
+  "pause_command": "touch /workspace/agent-handoff/POD_A/review-loop/DISABLED",
+  "resume_command": "rm /workspace/agent-handoff/POD_A/review-loop/DISABLED",
+  "stop_command": "touch /workspace/agent-handoff/POD_A/review-loop/STOP",
+  "restart_command": "Remove owned STOP flag after confirming old process exited, then execute start_command",
+  "model_calls_performed": 0,
+  "prompt_publications": 0,
+  "observer_real_network_tests": 1,
+  "draft_validation_tests": "Recorded separately; fixture tests are not live publication/model proofs",
+  "science_dispatch_available": false,
+  "reboot_autostart": false,
+  "created_utc": "2026-11-18T01:39:35.427307+00:00"
+}

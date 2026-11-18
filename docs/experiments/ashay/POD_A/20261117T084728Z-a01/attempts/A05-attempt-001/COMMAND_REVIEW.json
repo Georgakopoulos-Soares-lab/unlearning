@@ -1,0 +1,71 @@
+{
+  "commands": [
+    {
+      "label": "plan_validator_help",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A05-attempt-001/code/plan_cli.py",
+        "--help"
+      ],
+      "status": "PASS_HELP_ONLY",
+      "stdout_sha256": "1338994ecbafb0fc94057c5b45c2956d3941e4f3cec61b1265005cc55cc811b7"
+    },
+    {
+      "label": "cpu_calibration_help",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A05-attempt-001/code/cpu_calibration.py",
+        "--help"
+      ],
+      "status": "PASS_HELP_ONLY",
+      "stdout_sha256": "a438fcd3f56389308b4312d1e505fbce6382e29a8eb61e99ca1ba5a7e7d20896"
+    },
+    {
+      "label": "qualified_A04_worker_help",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A04-attempt-002/code/run_qualification.py",
+        "--help"
+      ],
+      "status": "PASS_HELP_ONLY",
+      "stdout_sha256": "5e84f2c987256faeeb72e8f6a737f920fe7bb04eca468528b4c7a76bf4cfa842"
+    },
+    {
+      "label": "observer_help",
+      "argv": [
+        "/usr/bin/python3",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A05-attempt-001/code/review_loop.py",
+        "--help"
+      ],
+      "status": "PASS_HELP_ONLY",
+      "stdout_sha256": "582f0c04ce9d6f648968db5099ab443c6f94fdc16734c23dfb834d24cfcfc98c"
+    },
+    {
+      "label": "actual_frozen_plan_validation",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A05-attempt-001/code/plan_cli.py",
+        "--plan",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A05-attempt-001/publication/COVERAGE_PLAN.json",
+        "--coverage",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A05-attempt-001/publication/COVERAGE.csv",
+        "--expected-plan-sha256",
+        "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4"
+      ],
+      "status": "PASS_READ_ONLY",
+      "result": {
+        "status": "PASS",
+        "full_heads": 3276,
+        "proposed": 936,
+        "H3_heads_A06": 156,
+        "remaining_heads_A07": 780,
+        "controls": 36,
+        "all_rows": 6637,
+        "next_proposed_gate": "R4/H3_EXTRACTION",
+        "execution": "NOT_STARTED; direct A06 approval required"
+      }
+    }
+  ],
+  "production_launcher_status": "IMPLEMENT_DURING_APPROVED_A06",
+  "reason": "Qualified A04 CLI is limited to12-row qualification, not production. Do not pass a new manifest to it or launch legacy orchestration importing superseded timers. A06 must implement/scoped-test chunk/H3-gate adapter preserving qualified math before approved production. No production command is falsely claimed verified here."
+}

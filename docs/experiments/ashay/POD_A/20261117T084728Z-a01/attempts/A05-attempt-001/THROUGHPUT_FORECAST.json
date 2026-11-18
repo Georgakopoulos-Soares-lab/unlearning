@@ -1,0 +1,33 @@
+{
+  "planned_real_rows": 45290,
+  "physical8_batches": 5662,
+  "new_heads": 936,
+  "H3_heads_A06": 156,
+  "other_five_heads_A07": 780,
+  "nominal_solver_fits": 14040,
+  "worst_retry_solver_fits": 28080,
+  "extraction_forward_seconds_lower": 1739.8651881964615,
+  "extraction_forward_seconds_upper_proxy": 1757.222790944361,
+  "extraction_conservative_2x_proxy_seconds": 3514.445581888722,
+  "CPU_serial_calibration_proxy_seconds": [
+    758.3327500289306,
+    5961.56767595862
+  ],
+  "CPU_H3_limitation": "H3 has11971 TRAIN rows (11.69x1024), 3folds instead of5; solver convergence/layer/checkpoint may dominate. No claim that small-task CPU proxy bounds H3 runtime. Reuse historical H3 CV timing evidence for planning only.",
+  "all_hook_feature_raw_bytes": 9043507200,
+  "production_IO_compression_upload_seconds": null,
+  "reason_missing": "Small metadata roundtrip measured in backup; no large-array sustained transfer benchmark or production run authorized. Do not extrapolate tiny upload latency into9GB transfer guarantee.",
+  "GPU_load_seconds_evidence": [
+    3.4869188239972573,
+    3.1899012030044105,
+    3.222581750997051,
+    3.247766701002547
+  ],
+  "hardware_speed_claim": false,
+  "measured_vs_extrapolated": "All forecast counts exact arithmetic; times are extrapolated proxies with explicit uncertainty, not deadlines/caps",
+  "calibration_dependency": {
+    "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A05-attempt-001/publication/TRAIN_ONLY_CALIBRATION.json",
+    "bytes": 9436,
+    "sha256": "c45f53fea73fdda1662e6d44dc62ca070d003c7f83172873831529c90ab1b165"
+  }
+}

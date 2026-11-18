@@ -1,0 +1,621 @@
+{
+  "schema": "pod-a-protocol-a05-v1",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A05",
+  "attempt_id": "A05-attempt-001",
+  "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2",
+  "research_input_commit": "18a59fdc9f99d6ad0acb0d7ce34bcd88bd846281",
+  "source_identity_sha256": "e72bb12601855339bf4497d3854cbd90e1f052d1def08a7ed4bcbb1da2192c1c",
+  "environment_lock_sha256": "401c96fdeb59783bf20954b153b24edaf913b87aa3d7607e1cc32c088d3ca294",
+  "original_base_source_sha256": "b5628c7fefa457aa272a6a3b6cff45b63fd6f03635397a5383150c5b38548e1c",
+  "tasks": [
+    "emp_H3",
+    "gue_tf_0",
+    "gue_prom_core_all",
+    "gue_prom_300_all",
+    "gue_splice_reconstructed",
+    "gue_mouse_0"
+  ],
+  "representations": [
+    "decoder.layers.0",
+    "decoder.layers.1",
+    "decoder.layers.2",
+    "decoder.layers.3",
+    "decoder.layers.4",
+    "decoder.layers.5",
+    "decoder.layers.6",
+    "decoder.layers.7",
+    "decoder.layers.8",
+    "decoder.layers.9",
+    "decoder.layers.10",
+    "decoder.layers.11",
+    "decoder.layers.12",
+    "decoder.layers.13",
+    "decoder.layers.14",
+    "decoder.layers.15",
+    "decoder.layers.16",
+    "decoder.layers.17",
+    "decoder.layers.18",
+    "decoder.layers.19",
+    "decoder.layers.20",
+    "decoder.layers.21",
+    "decoder.layers.22",
+    "decoder.layers.23",
+    "decoder.layers.24",
+    "decoder.final_norm"
+  ],
+  "width": 1920,
+  "seeds": [
+    42,
+    17,
+    1234
+  ],
+  "cohorts": {
+    "H3": "de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938",
+    "other_five": "a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126"
+  },
+  "counts": {
+    "emp_H3": {
+      "train": 11971,
+      "dev": 1497,
+      "test": 1497
+    },
+    "gue_tf_0": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_prom_core_all": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_prom_300_all": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_splice_reconstructed": {
+      "train": 1024,
+      "dev": 512
+    },
+    "gue_mouse_0": {
+      "train": 1024,
+      "dev": 512
+    }
+  },
+  "folds": [
+    {
+      "task": "emp_H3",
+      "seed": 42,
+      "folds": 3,
+      "training_rows": 11971,
+      "validation_coverage": 11971,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/folds_seed42.json",
+        "sha256": "e5a0ccf33f3c31f971e09351fb2fb4c349251a24a736ad38de56b70eac4bc944",
+        "bytes": 4025030
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "emp_H3",
+      "seed": 17,
+      "folds": 3,
+      "training_rows": 11971,
+      "validation_coverage": 11971,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/folds_seed17.json",
+        "sha256": "f7ecc6ec878a00c8244b167da11a529b7582cfcbd8a62608afefd814c35fcf3f",
+        "bytes": 4025030
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "emp_H3",
+      "seed": 1234,
+      "folds": 3,
+      "training_rows": 11971,
+      "validation_coverage": 11971,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/H3/emp_H3/folds_seed1234.json",
+        "sha256": "00a1b8a590129d2118dbdbbe3561bad75a12ed2d7fa32480f0e2b17365c51b72",
+        "bytes": 4025030
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 42,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/folds_seed42.json",
+        "sha256": "8d2a1bbf96b2546fdcefe559684226e0d5cca8b7ac1aabe4cbafa17b769af783",
+        "bytes": 172672
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 17,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/folds_seed17.json",
+        "sha256": "376df6aa74287b05841af4512dd3617e44f17470b870f6cdb34798b6f76ed05b",
+        "bytes": 172672
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_tf_0",
+      "seed": 1234,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_tf_0/folds_seed1234.json",
+        "sha256": "d4d6b459c222031e4d1791066cbb22e9d668e956366f5993b366d0abc7b4633c",
+        "bytes": 172672
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 42,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/folds_seed42.json",
+        "sha256": "2215c6d1dabfa14cd8f4a805965a2b467623b5f4d7ee56d7114a97ae9bdab985",
+        "bytes": 219297
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 17,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/folds_seed17.json",
+        "sha256": "7c675ede1fc899b9dc1eca17b181f465d72094fbd6893beca43c332e1916fb55",
+        "bytes": 219297
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_prom_core_all",
+      "seed": 1234,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_core_all/folds_seed1234.json",
+        "sha256": "f51c3dc0bf2f090c2b7b538562b4df984c93fd5d99ac508b55cf54292da4481c",
+        "bytes": 219297
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 42,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/folds_seed42.json",
+        "sha256": "63851c3468fc18d6df201da9f54232103f99bdabcced148fb81a855c14869fb0",
+        "bytes": 214192
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 17,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/folds_seed17.json",
+        "sha256": "f09b6b75586bb9ff27bddd40629926f421b541f7fb161089e3b6d4f55f41a155",
+        "bytes": 214192
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_prom_300_all",
+      "seed": 1234,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_prom_300_all/folds_seed1234.json",
+        "sha256": "3dee726af6729130b88bf1b7c083166d93b59b148f456db3b185c29581516acb",
+        "bytes": 214192
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 42,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/folds_seed42.json",
+        "sha256": "4675e4e6dd2af2abbbc149206c6ba39744d08cd90396ebf7ff97f66fd510ff50",
+        "bytes": 254707
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 17,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/folds_seed17.json",
+        "sha256": "a4d2f8975eb1becf8d7a15c9dd9161167c3c05c777c7976dfd09ae83b67f964d",
+        "bytes": 254707
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "seed": 1234,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_splice_reconstructed/folds_seed1234.json",
+        "sha256": "5aefc1a7806ddea84937cc016878c4100878321327bfb8df99021380395e5049",
+        "bytes": 254707
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 42,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/folds_seed42.json",
+        "sha256": "a6f2e156a4cebb6e08c0cbcf20379dc3abff26c1f9fc5f7a105547768cb5e64a",
+        "bytes": 183622
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 17,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/folds_seed17.json",
+        "sha256": "95f1467de6f8797e5c2782aea0320ecdd1c69e98b9140e49e62bbd5f5a94ba4d",
+        "bytes": 183622
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    },
+    {
+      "task": "gue_mouse_0",
+      "seed": 1234,
+      "folds": 5,
+      "training_rows": 1024,
+      "validation_coverage": 1024,
+      "within_fold_rc_overlap": 0,
+      "same_across_base_R1_R3_controls": true,
+      "reference": {
+        "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/probes/other_five/gue_mouse_0/folds_seed1234.json",
+        "sha256": "f063ad15fb3a06f39138008a46ce7ef6f5bc20c36cf9be2f96fa9d59bb4a3f25",
+        "bytes": 183622
+      },
+      "scaler_fitting_evidence": "Fold-local scaler in hash-verified historical source plus sealed CV/convergence traces; individual per-fold scalers were not saved"
+    }
+  ],
+  "fixed_reference_index": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/FIXED_REFERENCE_INDEX.json",
+    "bytes": 591479,
+    "sha256": "1e189a430072e8d8b8d96b8b5026776f6b031b382df2334c34e0255b85a6b4db"
+  },
+  "controls_index": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/CONTROL_REUSE_INDEX.json",
+    "bytes": 65552,
+    "sha256": "5352e77a7984ed985ba2f79e53fab9092335abc0f049956d70b6bddb1da6716a"
+  },
+  "labels": {
+    "binary_positive": 1,
+    "threshold": 0.5,
+    "splice_classes": [
+      0,
+      1,
+      2
+    ],
+    "splice_auroc": "macro one-vs-rest with sorted numeric class columns",
+    "splice_AP": "mean per-class AP",
+    "splice_decision": "argmax sorted class columns",
+    "biological_semantics": "Unresolved; no numeric relabeling"
+  },
+  "runtime": {
+    "physical_batch": 8,
+    "logical_batch": 8,
+    "fillers": "Required physical8, excluded from all IDs/counts/features/losses",
+    "tokenization": "Ordinal ACGTN; no BOS/EOS; qualified arm-specific tokenizer/head",
+    "padding": "right1000, pad1",
+    "pooling": "mean over valid nucleotide positions",
+    "precision": "BF16/FP32; stored features float32",
+    "attention": "TE unfused",
+    "strict_loading": "Exactly qualified typed metadata exceptions; all tensors mapped and values checked",
+    "qualified_checkpoint_metadata": [
+      {
+        "alias": "base",
+        "candidate_id": "drive-folder:154kF29Cjam2F2rC-ihj6_Oobmm-oNur1",
+        "asset_manifest_sha256": "a6dfc72c7a862d42ecbf5b4d629b1674c5ea4e5c0eb45bfaacb5ba20b832fe72",
+        "asset_completeness": "PASS",
+        "model_tensor_content_sha256": "f801636a12236e5a373cd880fe7c6170abbc47d5e1f065830c597e53bb5fe456",
+        "feature_LM_self_qualification": "PASS",
+        "historical_family_bridge": "PASS",
+        "fixed_base_transfer_runtime_eligibility": "PASS",
+        "new_report_attempt": "A04-attempt-003",
+        "numerical_status": "REUSED_VALIDATED",
+        "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+        "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+        "current_full_payload_recovery": "NOT_IN_SCOPE_PRESERVED_ENDPOINT",
+        "provider_native_revision": null
+      },
+      {
+        "alias": "R1",
+        "candidate_id": "drive-folder:16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv",
+        "asset_manifest_sha256": "f4a64233e45dbf003244d21d9b808463e5ef4a982073122d0b1cd15aaf51ff22",
+        "asset_completeness": "PASS",
+        "model_tensor_content_sha256": "d17ce6afbdaba64b41152700c95defb483f68953dcc6d60323e71b73c69a9d52",
+        "feature_LM_self_qualification": "PASS",
+        "historical_family_bridge": "PASS",
+        "fixed_base_transfer_runtime_eligibility": "PASS",
+        "new_report_attempt": "A04-attempt-003",
+        "numerical_status": "REUSED_VALIDATED",
+        "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+        "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+        "current_full_payload_recovery": "NOT_IN_SCOPE_PRESERVED_ENDPOINT",
+        "provider_native_revision": null
+      },
+      {
+        "alias": "R3",
+        "candidate_id": "drive-folder:13EXn9LuTTmqHuYjdIoWQ36Ig27MZ51sI",
+        "asset_manifest_sha256": "7ece3266deac36b414269bac05088b5388cde7218e0732871ab6ebbc312ed6ed",
+        "asset_completeness": "BLOCKED",
+        "model_tensor_content_sha256": null,
+        "feature_LM_self_qualification": "BLOCKED",
+        "historical_family_bridge": "BLOCKED",
+        "fixed_base_transfer_runtime_eligibility": "BLOCKED",
+        "new_report_attempt": "A04-attempt-003",
+        "numerical_status": "BLOCKED",
+        "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+        "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+        "current_full_payload_recovery": "BLOCKED_NATIVE_PAYLOAD;14TARGET_SIDECARS_VERIFIED",
+        "provider_native_revision": "0B5Q-Vlo1rn8VU3dyM0pFcmxMQStwWFp1T051dHY5bWlhZHdjPQ"
+      },
+      {
+        "alias": "R4",
+        "candidate_id": "drive-folder:1K19CrsvXAk6mIwB1m3xe1epomEHRtEUE",
+        "asset_manifest_sha256": "62b6ba528e8112029ede65064dc18a2c7efb2f9e186c6de20c2399aa4e5af196",
+        "asset_completeness": "PASS",
+        "model_tensor_content_sha256": "35f9135d1ec2828dda03be33c2b7922a075b3bab93f9e25a44b8b6892ddfbd66",
+        "feature_LM_self_qualification": "PASS",
+        "historical_family_bridge": "NOT_APPLICABLE",
+        "fixed_base_transfer_runtime_eligibility": "PASS",
+        "new_report_attempt": "A04-attempt-003",
+        "numerical_status": "REUSED_VALIDATED",
+        "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+        "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+        "current_full_payload_recovery": "NOT_IN_SCOPE_PRESERVED_ENDPOINT",
+        "provider_native_revision": null
+      },
+      {
+        "alias": "R5",
+        "candidate_id": "drive-folder:1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+        "asset_manifest_sha256": "9d49bb869f8d3759f36cb504388eee2fc0d472c974ca2eb03bd6d14f06bd9221",
+        "asset_completeness": "BLOCKED",
+        "model_tensor_content_sha256": null,
+        "feature_LM_self_qualification": "BLOCKED",
+        "historical_family_bridge": "NOT_APPLICABLE",
+        "fixed_base_transfer_runtime_eligibility": "BLOCKED",
+        "new_report_attempt": "A04-attempt-003",
+        "numerical_status": "BLOCKED",
+        "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+        "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+        "current_full_payload_recovery": "BLOCKED_NATIVE_PAYLOAD;14TARGET_SIDECARS_VERIFIED",
+        "provider_native_revision": "0B5Q-Vlo1rn8VYVZndzhsNUVUVzZOSVduaHFwVkdWUzVydnUwPQ"
+      },
+      {
+        "alias": "R6",
+        "candidate_id": "drive-folder:1x1ugJ0Cd-ODGVWMHClxJojRZKBQXRf-V",
+        "asset_manifest_sha256": "58411b0144371d52c1ba9fac10edf5ccee41d50dc48d3347b1bc774b8b1621ea",
+        "asset_completeness": "PASS",
+        "model_tensor_content_sha256": "6d5aa972c5bd761be97994b6bfc60683ae742728a0b10d264260df9c78023ac8",
+        "feature_LM_self_qualification": "PASS",
+        "historical_family_bridge": "NOT_APPLICABLE",
+        "fixed_base_transfer_runtime_eligibility": "PASS",
+        "new_report_attempt": "A04-attempt-003",
+        "numerical_status": "REUSED_VALIDATED",
+        "numerical_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-002/A04_RECEIPT.json",
+        "numerical_receipt_sha256": "cff26abe9222ab6908deacbd9a855605091802b3ce167a3f7ccc80ede6dba9bd",
+        "current_full_payload_recovery": "NOT_IN_SCOPE_PRESERVED_ENDPOINT",
+        "provider_native_revision": null
+      },
+      {
+        "alias": "R2",
+        "candidate_id": null,
+        "content_id": null,
+        "asset_manifest_sha256": null,
+        "model_tensor_content_sha256": null,
+        "numerical_status": "BLOCKED_SELECTION",
+        "current_full_payload_recovery": "BLOCKED_SELECTION",
+        "historical_family_bridge": "NOT_APPLICABLE",
+        "fixed_base_transfer_runtime_eligibility": "BLOCKED",
+        "reason": "No uniquely supported candidate admitted; logical plan slot only, not an invented model identity."
+      }
+    ]
+  },
+  "probe": {
+    "scaler": "StandardScaler fit on training fold only; final on all train",
+    "penalty": "l2",
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "C": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "tol": 0.0001,
+    "max_iter_attempts": [
+      2000,
+      10000
+    ],
+    "random_state": 42,
+    "cv_folds": {
+      "emp_H3": 3,
+      "others": 5
+    },
+    "selection": "Arithmetic mean of fold AUROC, binary class1 or sorted-class macro OVR; exact float ties select smaller C",
+    "selection_code": {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/fit_multiretain_layers.py",
+      "bytes": 21098,
+      "sha256": "737bbbe38b9ced53e701eb0478a018a3c63b3102682f7903684795ed95cd04e4"
+    },
+    "training_code": {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/h3_followup.py",
+      "bytes": 18362,
+      "sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b"
+    },
+    "auc_code": {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/fit_maxent_extension.py",
+      "bytes": 7501,
+      "sha256": "0a5d25572d5f2f3477ccabbf25599322117a2754d677d7bda59a332a87d36779"
+    },
+    "fixed_policy": "Exact original pretrained-base scaler/head unchanged, without target normalization, retraining or reference substitution"
+  },
+  "metrics": [
+    "auroc",
+    "average_precision",
+    "accuracy",
+    "balanced_accuracy",
+    "classification_cross_entropy"
+  ],
+  "LM": {
+    "head": "Actual qualified causal output head",
+    "shift": "position t predicts nucleotide t+1",
+    "targets": "L-1 valid nucleotide targets; fillers/padding excluded",
+    "example_sum": "float32",
+    "corpus_sum_count": "float64",
+    "NLL": "sum(loss_sum)/sum(target_count)",
+    "PPL": "exp(corpus NLL); explicit overflow status",
+    "axes": "checkpoint/task/split only; no representation/CVseed",
+    "classification_loss_distinct": true
+  },
+  "uncertainty": {
+    "draws": 2000,
+    "seed": 20261103,
+    "unit": "exact/RC group",
+    "pairing": "Identical ordered IDs, labels, groups, class columns, cohort/protocol and exact saved draw array/group ordering",
+    "missing_class_rule": "Same draw validity mask for both endpoints; reject draw missing any required class; record attempted/valid/invalid",
+    "estimator": "Within-draw target minus reference, 2.5/97.5 percentiles; LM summed loss/target ratio recomputed each draw",
+    "claims": "Pointwise exploratory conditional on saved fitted heads; unadjusted. CV seed ranges separate. No equivalence/noninferiority/causal or intervention replication claim",
+    "code": {
+      "path": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z/source/scripts/sayyed/multiretain_metrics.py",
+      "bytes": 5016,
+      "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a"
+    }
+  },
+  "numerical_gates": {
+    "saved_probability_atol": 1e-10,
+    "metric_bootstrap_atol": 1e-12,
+    "runtime_smoke_atol": 0.0001,
+    "runtime_smoke_rtol": 1e-05
+  },
+  "H3_test": "Previously examined exploratory only, A03 historical eligibility inherited; A05 no semantic heldout reads or predictions",
+  "immutable_evidence": {
+    "A03_data_audit": {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/DATA_AUDIT.json",
+      "bytes": 21213,
+      "sha256": "ae0800179006b747ebb5240dd441a15965628a7b497a35e818f8436473b6f364"
+    },
+    "A03_structural_reuse": {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/STRUCTURAL_REUSE_AUDIT.json",
+      "bytes": 3232,
+      "sha256": "c4650b96fff0f61f5c7523908c09441315bbcc0f442485844d0ed0771aa2b5d0"
+    },
+    "A04_receipt": {
+      "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A04-attempt-003/A04_RECEIPT.json",
+      "bytes": 2935,
+      "sha256": "d761a5544c811a294ac1a251527f6e190f2cd55e747e3f520abdd1ea90b1eced"
+    }
+  },
+  "scope": "Protocol and full coverage proposal; no production inference/fitting/heldout prediction in A05",
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A05 only; stop before A06",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "9bd329c0abce8e01f5fe6dc10682603ce8bcd36462fff77d69d957a896524619"
+  }
+}
