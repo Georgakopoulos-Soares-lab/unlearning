@@ -1,0 +1,181 @@
+{
+  "NEW_IDENTITY_EVIDENCE": "NONE",
+  "available_evidence_IDs": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S25",
+    "S26"
+  ],
+  "execution_authorized": false,
+  "existing_request_path": "docs/experiments/ashay/POD_B/B04_PRODUCER_REQUEST_DELTA.md",
+  "family_eligibility": [
+    {
+      "actual_full_state_fingerprint": null,
+      "actual_parent_manifest_sha256": null,
+      "available_evidence_IDs": [
+        "S02",
+        "S03",
+        "S13",
+        "S17",
+        "S20"
+      ],
+      "candidate_manifest_not_actual_assignment": "e9bcb09c102bc0f11703de2eadddc0d1b4b5a0d7df01dd214e49c3d0920ae3c7",
+      "current_state_complete": false,
+      "eligibility": "BLOCKED_EXTERNAL_EVIDENCE",
+      "eligible_channels": [],
+      "family": "base_all",
+      "history_limits_only": [
+        "True initial state Q3",
+        "Actual valid-token exposure Q4"
+      ],
+      "job_id": "11760341",
+      "missing_current_state_and_route": [
+        "Exact complete CURRENT parent/nonadapter inference state bound to actual job/payload",
+        "Authenticated original source/loading/config/runtime semantics for R0,or complete-state independent original-route same-state evidence for R2"
+      ],
+      "payload_count": 18,
+      "priority": 1,
+      "proposed_early_late_pair": [
+        "base/iter_0000100",
+        "base/iter_0001800"
+      ],
+      "scientifically_qualified_IDs": []
+    },
+    {
+      "actual_full_state_fingerprint": null,
+      "actual_parent_manifest_sha256": null,
+      "available_evidence_IDs": [
+        "S02",
+        "S03",
+        "S13",
+        "S17",
+        "S20"
+      ],
+      "candidate_manifest_not_actual_assignment": "b437ae3e7ab9e2845d04d858db63d132a05843867f2ae2bea3243239a28678fd",
+      "current_state_complete": false,
+      "eligibility": "BLOCKED_EXTERNAL_EVIDENCE",
+      "eligible_channels": [],
+      "family": "maxent_initial",
+      "history_limits_only": [
+        "True initial state Q3",
+        "Actual valid-token exposure Q4"
+      ],
+      "job_id": "11776574",
+      "missing_current_state_and_route": [
+        "Exact complete CURRENT parent/nonadapter inference state bound to actual job/payload",
+        "Authenticated original source/loading/config/runtime semantics for R0,or complete-state independent original-route same-state evidence for R2"
+      ],
+      "payload_count": 16,
+      "priority": 2,
+      "proposed_early_late_pair": [
+        "maxent/iter_0000100",
+        "maxent/iter_0001600"
+      ],
+      "scientifically_qualified_IDs": []
+    },
+    {
+      "actual_full_state_fingerprint": null,
+      "actual_parent_manifest_sha256": null,
+      "available_evidence_IDs": [
+        "S02",
+        "S03",
+        "S13",
+        "S17",
+        "S20"
+      ],
+      "candidate_manifest_not_actual_assignment": "b437ae3e7ab9e2845d04d858db63d132a05843867f2ae2bea3243239a28678fd",
+      "current_state_complete": false,
+      "eligibility": "BLOCKED_EXTERNAL_EVIDENCE",
+      "eligible_channels": [],
+      "family": "maxent_restart",
+      "history_limits_only": [
+        "True initial state Q3",
+        "Actual valid-token exposure Q4",
+        "Exact1600\u21921700 resume continuity"
+      ],
+      "job_id": "11803647",
+      "missing_current_state_and_route": [
+        "Exact complete CURRENT parent/nonadapter inference state bound to actual job/payload",
+        "Authenticated original source/loading/config/runtime semantics for R0,or complete-state independent original-route same-state evidence for R2"
+      ],
+      "payload_count": 2,
+      "priority": 3,
+      "proposed_early_late_pair": [
+        "maxent/iter_0001700",
+        "maxent/iter_0001800"
+      ],
+      "scientifically_qualified_IDs": []
+    }
+  ],
+  "first_pair_priority": [
+    [
+      "base/iter_0000100",
+      "base/iter_0001800"
+    ],
+    [
+      "maxent/iter_0000100",
+      "maxent/iter_0001600"
+    ],
+    [
+      "maxent/iter_0001700",
+      "maxent/iter_0001800"
+    ]
+  ],
+  "fixed_family_priority": [
+    "base_all",
+    "maxent_initial",
+    "maxent_restart"
+  ],
+  "future_GPU_allocation": null,
+  "future_GPU_deadlines": null,
+  "intended_first_pair": null,
+  "intended_first_pair_reason": "All three families blocked; no pair selected/executable. First proposed pair after base family resolves is base100/1800; skip blocked families in fixed priority without outcome-based selection.",
+  "minimum_useful_partial_scope": "One fully qualified payload may be reported as partial; no waived scientific gates or same-parent isolation requirements.",
+  "next_action": "Obtain the existing request exact CURRENT state and loading assertions for at least one family.",
+  "next_prompt_path": "POD_B_NEXT_04_QUALIFICATION.md",
+  "next_prompt_read": false,
+  "next_stage_authorized": false,
+  "no_new_budget_allocated": true,
+  "old_B04_aggregate_cap_seconds": 9000,
+  "old_B04_closure_deadline_utc": "2026-11-17T18:56:46Z",
+  "old_B04_cumulative_GPU_seconds": 1675.5146971674585,
+  "old_B04_engineering_ceiling_seconds": 1800,
+  "old_B04_forward_deadline_utc": "2026-11-17T18:11:46Z",
+  "old_B04_planning_threshold_seconds": 7200,
+  "old_GPU_deadlines_expired": true,
+  "other_stages_may_borrow_B04_allowance": false,
+  "protocol_sha256": "4b8852fd0e4e9d9fa41b5a23d3839e0c265ab33a42a4a941b814434f89326f19",
+  "qualified_channels": [],
+  "schema": "POD_B.alignment.next_attempt.v1",
+  "scientifically_qualified_IDs": [],
+  "scientifically_qualified_models": 0,
+  "status": "BLOCKED_EXTERNAL_EVIDENCE",
+  "unmet_gates": [
+    "Current complete inference state bound to at least one actual family",
+    "Original authenticated R0 or independently validated equivalent R2 loading semantics",
+    "Fresh direct B04 qualification approval with successor-context/fresh matrix-process gates",
+    "Exact fresh absolute forward/closure deadlines,closure reserve,occupied-GPU caps,CPU/concurrency limits and shared cumulative accounting"
+  ]
+}
