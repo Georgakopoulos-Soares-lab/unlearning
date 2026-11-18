@@ -1,14 +1,14 @@
 # R5 A08 — RUNNING
 
-All390 R5 units and30 prospective full-CV refits pass;24.6M attempted marginal/paired values independently checked; five task recoveries PASS.
+R4_minus_R3:5460 paired classifier rows verified by two numerical routes;420 anchor vectors freshly recovered.
 
-Observed UTC/local UTC: 2026-11-18T23:21:14.767279+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
+Observed UTC/local UTC: 2026-11-18T23:41:52.667617+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
 
 | Goal | Target | New PASS | Historical reused | Pending | Evidence |
 |---|---:|---:|---:|---:|---|
 | R5 independent audits | 390 | 390 | 0 | 0 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
 | Frozen audit refits | 30 | 30 | 6 | 0 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
-| New adjacent classifier rows | 16380 | 0 | 0 | 16380 | [CONTRAST_EXECUTION_MANIFEST.json](CONTRAST_EXECUTION_MANIFEST.json) |
+| New adjacent classifier rows | 16380 | 5460 | 0 | 10920 | [CONTRAST_EXECUTION_MANIFEST.json](CONTRAST_EXECUTION_MANIFEST.json) |
 | New paired LM rows | 70 | 0 | 0 | 70 | [CONTRAST_EXECUTION_MANIFEST.json](CONTRAST_EXECUTION_MANIFEST.json) |
 | Primary LM measurements | 49 | 0 | 42 | 7 | [../A06-attempt-002/LM_INDEX.json](../A06-attempt-002/LM_INDEX.json) |
 | Shared controls | 36 | 0 | 36 | 0 | [../A07-attempt-002/CONTROL_REUSE_MAP.json](../A07-attempt-002/CONTROL_REUSE_MAP.json) |
