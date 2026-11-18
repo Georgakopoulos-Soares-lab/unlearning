@@ -50,6 +50,115 @@
       ],
       "inspection": "AST/TEXT_ONLY_NOT_IMPORTED_OR_EXECUTED",
       "current_R5_executable": false
+    },
+    {
+      "stage": "A08",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/code/audit_units.py",
+      "sha256": "fe381b9e7bb59a18d82d6d62a2b9a253cd442a02b46e61dad1b1791b49747dca",
+      "bytes": 13973,
+      "parser_arguments_as_text": [
+        "p.add_argument('--stage',choices=['A08'],required=True)",
+        "p.add_argument('--candidate',choices=['R4','R6'])",
+        "p.add_argument('--task',choices=TASKS)",
+        "p.add_argument('--unit',action='append')"
+      ],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
+    },
+    {
+      "stage": "A08",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/code/analysis_pairs.py",
+      "sha256": "bf2ed7a955b15bae8b405a6afaea44f83e7f10b47932e0ed256abcf55f6449a8",
+      "bytes": 13226,
+      "parser_arguments_as_text": [
+        "p.add_argument('--stage',choices=['A08'],required=True)",
+        "p.add_argument('--kind',choices=['classifier','LM'],required=True)",
+        "p.add_argument('--task',choices=ALL_TASKS)"
+      ],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
+    },
+    {
+      "stage": "A08",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/code/refit_panel.py",
+      "sha256": "2718b5ab3bcc02526a3c4904ca55bbf0c1ec2a8c584a6df75c844af3bd3cc46d",
+      "bytes": 6291,
+      "parser_arguments_as_text": [
+        "p.add_argument('--stage',choices=['A08'],required=True)",
+        "p.add_argument('--candidate',choices=['R4','R6'],required=True)"
+      ],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
+    },
+    {
+      "stage": "A08",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/code/restore_audit.py",
+      "sha256": "b03f15d936492442b68a76e10d9f302407fdad3b08bf1735747cdc1724c53c1b",
+      "bytes": 5572,
+      "parser_arguments_as_text": [
+        "p.add_argument('--root',type=Path,required=True)",
+        "p.add_argument('--candidate',choices=['R4','R6'])",
+        "p.add_argument('--analysis',action='store_true')"
+      ],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
+    },
+    {
+      "stage": "A08",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/code/plot_verified.py",
+      "sha256": "0b0b1882bb8160286ac63b9e8ee259640404278c7f03208f24d85099686ce95f",
+      "bytes": 16421,
+      "parser_arguments_as_text": [
+        "p.add_argument('--docs',type=Path,required=True)"
+      ],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
+    },
+    {
+      "stage": "A09",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/code/reports.py",
+      "sha256": "878f9c165a6a2878d79f5bb57e22cca182af466ac20fd609b7a994102c504801",
+      "bytes": 38924,
+      "parser_arguments_as_text": [],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
+    },
+    {
+      "stage": "A09",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/code/validate.py",
+      "sha256": "4f47ef7414eac3ece90c497ffb27fde83c529ef252ad80fb5bb2a3fb7098feb7",
+      "bytes": 10393,
+      "parser_arguments_as_text": [
+        "p.add_argument('--final',action='store_true')",
+        "p.add_argument('--seal',action='store_true')"
+      ],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
+    },
+    {
+      "stage": "A09",
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-001/code/closeout.py",
+      "sha256": "fbf86602e2e7952b862fcf3bc6129f6cf46a083047675522a2cf012c511c73b8",
+      "bytes": 9727,
+      "parser_arguments_as_text": [],
+      "inspection": "AST_TEXT_ONLY_NO_IMPORT_EXECUTION",
+      "R5_executable_as_is": false,
+      "original_source_identity_receipt": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A09-attempt-001/SOURCE_IDENTITY.json",
+      "required_change": "Parameterize new owned roots, exact plan/approval/source bindings and R5 finite units; update comparison/report families without modifying old attempts."
     }
   ],
   "hardcoded_roots": [
@@ -65,5 +174,7 @@
   "old_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
   "new_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
   "scientific_adapter_qualified_for_R5": false,
-  "reason": "Old extraction parser restricts R4/R6 and A06-attempt-001, old plan/prompt roots. Fit/audit modules hardcode prior controls; importing fit/audit brings scientific packages. Parsing hypothetical commands does not qualify adapter. Future approved A06 must parameterize owned new roots/R5 identity and validate TRAIN parity before production."
+  "reason": "Old extraction parser restricts R4/R6 and A06-attempt-001, old plan/prompt roots. Fit/audit modules hardcode prior controls; importing fit/audit brings scientific packages. Parsing hypothetical commands does not qualify adapter. Future approved A06 must parameterize owned new roots/R5 identity and validate TRAIN parity before production.",
+  "A08_limitations": "audit_units/refit/restore parsers restrict R4/R6. audit_common hardcodes prior roots/plan. analysis_pairs has classifier/LM options but old endpoint families and roots; new R4-R3/R5-R4/R6-R5 require exact typed endpoint/draw joins, release gates and independent checks.",
+  "A09_limitations": "reports and closeout have no stage CLI; common module owns old roots/counts/report source mappings. New version must bind only approved released/reused rows and preserve old exports; validation parser --final/--seal does not grant approval."
 }
