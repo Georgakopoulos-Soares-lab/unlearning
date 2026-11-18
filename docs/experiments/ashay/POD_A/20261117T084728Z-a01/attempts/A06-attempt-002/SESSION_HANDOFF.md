@@ -1,6 +1,6 @@
 # R5 A06 complete — extraction and independently verified H3 gate
 
-Status COMPLETE_FOR_R5_EXTRACTION_AND_H3_GATE. Prompt `4ff94e09b72a02d6e3082af064669c98adda6008`; coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Read [receipt](A06_RECEIPT.json), [verification](A06_VERIFICATION.json), [tables](RESULTS_LONG.csv), [paired effects](PAIRED_CONTRASTS.csv), [LM](LM_RESULTS.csv), [private recovery](BACKUP_VERIFICATION.json) and [A07 inputs](A07_INPUT_PACKAGE.json).
+Status COMPLETE_FOR_R5_EXTRACTION_AND_H3_GATE. Prompt `4ff94e09b72a02d6e3082af064669c98adda6008`; coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Read [predeclared H3 findings](H3_FINDINGS.md), [stage history](STAGE_HISTORY.csv), [receipt](A06_RECEIPT.json), [verification](A06_VERIFICATION.json), [tables](RESULTS_LONG.csv), [paired effects](PAIRED_CONTRASTS.csv), [LM](LM_RESULTS.csv), [private recovery](BACKUP_VERIFICATION.json) and [A07 inputs](A07_INPUT_PACKAGE.json).
 
 New: all13 extraction bundles/22645 real rows/89 chunks/338 representation matrices/2833 production physical8 forwards/19 fillers;78 H3 heads and78 unchanged-base applications;312 independently checked prediction paths;1560 marginals/3360 H3 paired classifier rows; six separate full-CV audit refits;7 primary LM units/14 marginal rows and6 TRAIN diagnostics. No other-five classifier fits/applications, adjacent effects or paired LM calculations occurred. H3 technical and fresh private recovery PASS preceded other-five extraction.
 
