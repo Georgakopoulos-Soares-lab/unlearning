@@ -1,0 +1,662 @@
+{
+  "A03_historical_restores": {
+    "schema": "pod-a-a03-restore-validation-v1",
+    "dependencies": [
+      {
+        "dependency_id": "base_R1",
+        "status": "VERIFIED",
+        "archive_revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+        "archive_path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+        "expected_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+        "expected_bytes": 10108100047,
+        "started_utc": "2026-11-17T12:25:18.097551+00:00",
+        "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+        "download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 56.781146217999776
+          }
+        ],
+        "sidecar_download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 0.27127542100060964
+          }
+        ],
+        "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e75b95d9ca579ddb85fe354bea52bb9a78215b16/multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+        "archive_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+        "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e75b95d9ca579ddb85fe354bea52bb9a78215b16/multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz.sha256",
+        "sidecar_sha256": "df8fe6f179c80d3a214ad1d847684c50c7cf390b9ba370c9ac3814faf772e49b",
+        "archive_size_and_hash": "PASS",
+        "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+        "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z",
+        "regular_files": 14551,
+        "payload_files_hash_verified": 14550,
+        "checksum_manifest_self_sha256": "b381c43485b40f0e58dec74d74d2faf579cdfbc553ae85608fff20d54598d813",
+        "exact_member_coverage": true,
+        "uncompressed_bytes": 11288882782,
+        "safe_member_check": "PASS",
+        "restored_file_hashes": "PASS",
+        "historical_payload_read_only": true,
+        "completed_utc": "2026-11-17T12:32:21.059796+00:00",
+        "wall_seconds": 422.96226119399944,
+        "cpu_process_seconds": 204.913432977
+      },
+      {
+        "dependency_id": "controls",
+        "status": "VERIFIED",
+        "archive_revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+        "archive_path": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+        "expected_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+        "expected_bytes": 47129813,
+        "started_utc": "2026-11-17T12:32:21.090111+00:00",
+        "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+        "download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 0.8202480639993155
+          }
+        ],
+        "sidecar_download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 0.23026459899847396
+          }
+        ],
+        "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/3e1fc6dea176fac609be95ca8834a9b1961274c6/benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+        "archive_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+        "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/3e1fc6dea176fac609be95ca8834a9b1961274c6/benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz.sha256",
+        "sidecar_sha256": "a9cfccdee552d8c13bdd0708cf4d74ba99b74254d4f80480b813e2f6d44832be",
+        "archive_size_and_hash": "PASS",
+        "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+        "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/controls/benign-followup-v1",
+        "regular_files": 447,
+        "payload_files_hash_verified": 446,
+        "checksum_manifest_self_sha256": "237a1ca1e275830c0f73956792a6ff3c3dea91c06caf936b2a8674ab0c08d97a",
+        "exact_member_coverage": true,
+        "uncompressed_bytes": 77774927,
+        "safe_member_check": "PASS",
+        "restored_file_hashes": "PASS",
+        "historical_payload_read_only": true,
+        "completed_utc": "2026-11-17T12:32:27.870491+00:00",
+        "wall_seconds": 6.780387609996978,
+        "cpu_process_seconds": 1.7830425820000073
+      },
+      {
+        "dependency_id": "R3",
+        "status": "VERIFIED",
+        "archive_revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+        "archive_path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+        "expected_sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+        "expected_bytes": 4412868094,
+        "started_utc": "2026-11-17T12:32:27.897959+00:00",
+        "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+        "download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 27.155149278001772
+          }
+        ],
+        "sidecar_download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 0.35602552599812043
+          }
+        ],
+        "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3/multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+        "archive_sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+        "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3/multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz.sha256",
+        "sidecar_sha256": "c14541270e412b96b0b50d9f5d9867ddb16bbe8213ed878daf91d4d56aab20a5",
+        "archive_size_and_hash": "PASS",
+        "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+        "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/R3/multiretain-comparison-v1-final-20261110T173945Z",
+        "regular_files": 8200,
+        "payload_files_hash_verified": 8199,
+        "checksum_manifest_self_sha256": "4bb31aa3e98018db0dc4deea2fb64f102824985594948ba97aa5f7e009a47359",
+        "exact_member_coverage": true,
+        "uncompressed_bytes": 5003047603,
+        "safe_member_check": "PASS",
+        "restored_file_hashes": "PASS",
+        "historical_payload_read_only": true,
+        "completed_utc": "2026-11-17T12:35:49.067243+00:00",
+        "wall_seconds": 201.16930421699726,
+        "cpu_process_seconds": 89.399038768
+      },
+      {
+        "dependency_id": "preparation",
+        "status": "VERIFIED",
+        "archive_revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+        "archive_path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+        "expected_sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+        "expected_bytes": 6963484,
+        "started_utc": "2026-11-17T12:35:49.105091+00:00",
+        "fresh_cache_namespace": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache",
+        "download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 0.5612100759972236
+          }
+        ],
+        "sidecar_download_attempts": [
+          {
+            "attempt": 1,
+            "status": "DOWNLOADED_OR_EXACT_CACHE",
+            "seconds": 0.2503159309999319
+          }
+        ],
+        "local_archive": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e9710c11d54c23e9081b15e63a6616f2a4214797/incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+        "archive_sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+        "local_sidecar": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/hf-cache/datasets--ashay-sriv--undo-evo2-pilot-backup-20261020/snapshots/e9710c11d54c23e9081b15e63a6616f2a4214797/incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz.sha256",
+        "sidecar_sha256": "94f8ea5d9375c19e57053d3e1b20775220b206fe37f42ca4a676cc1214c91421",
+        "archive_size_and_hash": "PASS",
+        "retrieval": "Fresh remote retrieval into new A03 cache; library partial resume permitted only by immutable revision/ETag.",
+        "payload_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/restored/preparation/incremental-retain-eval-v1-final-20261110T190751Z",
+        "regular_files": 132,
+        "payload_files_hash_verified": 131,
+        "checksum_manifest_self_sha256": "abd040298f415c50c91a072e83e621d4be612aa1f9163920fcb95f8bedc0d510",
+        "exact_member_coverage": true,
+        "uncompressed_bytes": 36774527,
+        "safe_member_check": "PASS",
+        "restored_file_hashes": "PASS",
+        "historical_payload_read_only": true,
+        "completed_utc": "2026-11-17T12:35:51.628312+00:00",
+        "wall_seconds": 2.5232306819962105,
+        "cpu_process_seconds": 0.6065566320000357
+      }
+    ],
+    "total_verified_uncompressed_bytes": 16406479839,
+    "status": "PASS",
+    "scope": "All archive and all restored member bytes; numerical reuse audit is separate."
+  },
+  "A03_backup_graph": {
+    "schema": "pod-a-a03-backup-verification-v1",
+    "status": "PASS",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "repository_type": "dataset",
+    "private_at_write": true,
+    "private_at_closeout": true,
+    "revision": "01ce0121650fb9668499de67027e3bdb63e0b5ca",
+    "archive_path": "POD_A/20261117T084728Z-a01/A03/A03-attempt-001/checkpoint-001/a03-checkpoint-001.tar.gz",
+    "sidecar_path": "POD_A/20261117T084728Z-a01/A03/A03-attempt-001/checkpoint-001/a03-checkpoint-001.tar.gz.sha256",
+    "archive_bytes": 21292878,
+    "archive_sha256": "b2ca94959e0d28695817c2f811711429487d70fa9a6f0a58b64524df7f246d9b",
+    "fresh_download": true,
+    "force_download": true,
+    "new_consumer_and_cache": true,
+    "all_included_files_verified": 119,
+    "payload_files": 118,
+    "checksum_manifest_self_sha256": "e5bf2db74cac8fb287ba80c06f7e0d5db1350860863071f483bd286a92ab1c0c",
+    "exact_member_set": true,
+    "safe_restore": "PASS; no links/devices/traversal/duplicate normalized names",
+    "fresh_consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/checkpoint-fresh-consumer-001/A03-checkpoint-001",
+    "representative_reconstruction": {
+      "status": "PASS",
+      "checkpoint_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/checkpoint-fresh-consumer-001/A03-checkpoint-001",
+      "executed_code": "/workspace/recovery/POD_A/20261117T084728Z-a01/A03-attempt-001/checkpoint-fresh-consumer-001/A03-checkpoint-001/audit_code/a03_representative.py",
+      "executed_code_sha256": "6687ee232a4f9648e296a546b2d56ba632858f999b60abc719d3eeb90e923760",
+      "task": "gue_tf_0",
+      "split": "dev",
+      "layer": "final_norm",
+      "seed": 42,
+      "rows": 512,
+      "probability_max_residual": 0.0,
+      "metric_max_residual": 0.0,
+      "head_sha256": "28eb7e7e1b2e32061b64c778e59a2d641abc245efd63bf797f975b663280bef5",
+      "inherited_chunk_count": 64,
+      "source_scope": "New A03 checkpoint all bytes freshly downloaded and restored; computation uses its restored code/mapping plus already freshly retrieved/all-byte-verified inherited historical archive payloads. Historical14.58GB archives were not redownloaded for this small check.",
+      "not_full_A09_or_GPU_recovery": true
+    },
+    "inherited_archive_bytes_repacked": 0,
+    "inherited_dependencies": "RECOVERY_DEPENDENCIES.json, four immutable archives; representative reads their already freshly retrieved/verified local payloads",
+    "exclusions": [
+      "All model weights/checkpoint objects",
+      "Installed CPU/GPU runtime/credential and account stores",
+      "Large inherited scientific features/heads/predictions/draws, referenced by exact immutable archive identity",
+      "A02 raw provider caches; already sealed in A02 checkpoint",
+      "Untouched test data; training bundle contains only12previously authorized train rows"
+    ],
+    "scope": "All new checkpoint bytes and one restored-code/mapping saved-head reconstruction; no fullA09 or GPU reproduction",
+    "post_upload_receipt_rule": "This verification/delivery receipt is produced after sealing/upload; it is published separately, outside the archive self-hash cycle",
+    "wall_seconds": 9.0858062039988,
+    "cpu_process_seconds": 1.505557653,
+    "completed_utc": "2026-11-17T12:57:15.005250+00:00",
+    "source_sha256": "1e99de7bd108172c3e6684f33be46284ef45b2175f4d06919277c2bdcce5ed8d"
+  },
+  "A06_checkpoint_graph": {
+    "status": "PASS",
+    "scope": "Four incremental A06 phase archives, all included bytes freshly downloaded/member-hashed; portable representative restored H3 heads/metrics and all26bundle LM aggregations",
+    "checkpoints": [
+      {
+        "schema": "pod-a-a06-incremental-backup-v1",
+        "status": "PASS",
+        "candidate": "R4",
+        "group": "H3",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "private_at_write_and_closeout": true,
+        "revision": "f80810ba91c63f275918ded14ee358c1dd136b46",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R4/H3-checkpoint-001/A06-R4-H3-checkpoint-001.tar.gz",
+        "archive_sha256": "e42eef1460cf8e91c2d7e4801b55d121920c8ddc04f227cf321533a20638ee8e",
+        "archive_bytes": 2858606025,
+        "member_manifest_sha256": "bd996e0b39fff684d06f2e4476a87de43ef93bdb23074e1667cd045522f7e45a",
+        "all_files_verified": 1104,
+        "fresh_download": true,
+        "force_download": true,
+        "new_consumer_and_cache": true,
+        "safe_exact_member_set": true,
+        "CPU_restored_checks": {
+          "status": "PASS",
+          "candidate": "R4",
+          "group": "H3",
+          "restored_head_checks": [
+            {
+              "key": "decoder_layer_16",
+              "seed": 42,
+              "split": "dev",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 8.881784197001252e-16
+            },
+            {
+              "key": "decoder_layer_16",
+              "seed": 42,
+              "split": "test",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 4.440892098500626e-16
+            },
+            {
+              "key": "final_norm",
+              "seed": 42,
+              "split": "dev",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 1.6653345369377348e-16
+            },
+            {
+              "key": "final_norm",
+              "seed": 42,
+              "split": "test",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 6.661338147750939e-16
+            }
+          ],
+          "restored_LM_aggregations": [
+            {
+              "task": "emp_H3",
+              "split": "train",
+              "rows": 11971,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "emp_H3",
+              "split": "test",
+              "rows": 1497,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "emp_H3",
+              "split": "dev",
+              "rows": 1497,
+              "NLL_abs_residual": 0.0
+            }
+          ],
+          "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001",
+          "GPU_loads": 0,
+          "external_producer_paths_used": false
+        },
+        "restore_command": [
+          "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001/artifacts/code/restore_check.py",
+          "--root",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001",
+          "--candidate",
+          "R4",
+          "--group",
+          "H3"
+        ],
+        "producer_path_substitution": false,
+        "compression_seconds": 61.506608387993765,
+        "upload_seconds": 11.623162228002911,
+        "fresh_download_seconds": 9.187650473002577,
+        "extract_all_hash_seconds": 37.432026214999496,
+        "excluded_historical_archives_repacked": 0,
+        "GPU_restoration_runs": 0,
+        "completed_utc": "2026-11-18T03:33:58.272333+00:00"
+      },
+      {
+        "schema": "pod-a-a06-incremental-backup-v1",
+        "status": "PASS",
+        "candidate": "R4",
+        "group": "other_five",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "private_at_write_and_closeout": true,
+        "revision": "17ede5e428390fc8fa611af9f9f856648741815c",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R4/other_five-checkpoint-001/A06-R4-other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "1b484caaf7ba4d251198b3116101cf4d8f397d88b9aa943c4cb9fb1d0e1c9ff5",
+        "archive_bytes": 1370093265,
+        "member_manifest_sha256": "400757ac8bf23adabd2fbf21e13ac1ea180d1f5a269faf91db708bebb48381e0",
+        "all_files_verified": 214,
+        "fresh_download": true,
+        "force_download": true,
+        "new_consumer_and_cache": true,
+        "safe_exact_member_set": true,
+        "CPU_restored_checks": {
+          "status": "PASS",
+          "candidate": "R4",
+          "group": "other_five",
+          "restored_head_checks": [],
+          "restored_LM_aggregations": [
+            {
+              "task": "gue_tf_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_tf_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            }
+          ],
+          "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+          "GPU_loads": 0,
+          "external_producer_paths_used": false
+        },
+        "restore_command": [
+          "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001/artifacts/code/restore_check.py",
+          "--root",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+          "--candidate",
+          "R4",
+          "--group",
+          "other_five"
+        ],
+        "producer_path_substitution": false,
+        "compression_seconds": 28.819456239012652,
+        "upload_seconds": 6.420078795999871,
+        "fresh_download_seconds": 4.735264282004209,
+        "extract_all_hash_seconds": 14.365317874995526,
+        "excluded_historical_archives_repacked": 0,
+        "GPU_restoration_runs": 0,
+        "completed_utc": "2026-11-18T03:46:15.481282+00:00"
+      },
+      {
+        "schema": "pod-a-a06-incremental-backup-v1",
+        "status": "PASS",
+        "candidate": "R6",
+        "group": "H3",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "private_at_write_and_closeout": true,
+        "revision": "23efc7b40f2df86c8e1195600c572ed191c64f29",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R6/H3-checkpoint-001/A06-R6-H3-checkpoint-001.tar.gz",
+        "archive_sha256": "d2565fd892a38f3ca96c8b457fe19af45bfa7b468a57191bb8c56e261fa7709d",
+        "archive_bytes": 2858721949,
+        "member_manifest_sha256": "ec549201bfddd476843c255293b4a3abd9a6e95d73f54e4a2e7f8b4b7062bd35",
+        "all_files_verified": 1120,
+        "fresh_download": true,
+        "force_download": true,
+        "new_consumer_and_cache": true,
+        "safe_exact_member_set": true,
+        "CPU_restored_checks": {
+          "status": "PASS",
+          "candidate": "R6",
+          "group": "H3",
+          "restored_head_checks": [
+            {
+              "key": "decoder_layer_16",
+              "seed": 42,
+              "split": "dev",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 4.440892098500626e-16
+            },
+            {
+              "key": "decoder_layer_16",
+              "seed": 42,
+              "split": "test",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 4.440892098500626e-16
+            },
+            {
+              "key": "final_norm",
+              "seed": 42,
+              "split": "dev",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 1.1102230246251565e-16
+            },
+            {
+              "key": "final_norm",
+              "seed": 42,
+              "split": "test",
+              "rows": 1497,
+              "policies": 2,
+              "probability_max_abs": 0.0,
+              "metric_max_abs": 2.220446049250313e-16
+            }
+          ],
+          "restored_LM_aggregations": [
+            {
+              "task": "emp_H3",
+              "split": "train",
+              "rows": 11971,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "emp_H3",
+              "split": "test",
+              "rows": 1497,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "emp_H3",
+              "split": "dev",
+              "rows": 1497,
+              "NLL_abs_residual": 0.0
+            }
+          ],
+          "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001",
+          "GPU_loads": 0,
+          "external_producer_paths_used": false
+        },
+        "restore_command": [
+          "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001/artifacts/code/restore_check.py",
+          "--root",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-H3-fresh-001/consumer/A06-R6-H3-checkpoint-001",
+          "--candidate",
+          "R6",
+          "--group",
+          "H3"
+        ],
+        "producer_path_substitution": false,
+        "compression_seconds": 63.23208861499734,
+        "upload_seconds": 9.816902160993777,
+        "fresh_download_seconds": 8.755736862003687,
+        "extract_all_hash_seconds": 37.55225347500527,
+        "excluded_historical_archives_repacked": 0,
+        "GPU_restoration_runs": 0,
+        "completed_utc": "2026-11-18T04:12:39.485223+00:00"
+      },
+      {
+        "schema": "pod-a-a06-incremental-backup-v1",
+        "status": "PASS",
+        "candidate": "R6",
+        "group": "other_five",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "private_at_write_and_closeout": true,
+        "revision": "278dc904401424964d54508c076d23fea486a45a",
+        "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R6/other_five-checkpoint-001/A06-R6-other_five-checkpoint-001.tar.gz",
+        "archive_sha256": "d318b509d12bcada8306c177a6e1229b4abd324e8f61ce269c32dc63c34523e0",
+        "archive_bytes": 1368607085,
+        "member_manifest_sha256": "fd572609df3211c7c02254c31d65cc3cba79977c271cbff60ce85abe1ad0b65a",
+        "all_files_verified": 227,
+        "fresh_download": true,
+        "force_download": true,
+        "new_consumer_and_cache": true,
+        "safe_exact_member_set": true,
+        "CPU_restored_checks": {
+          "status": "PASS",
+          "candidate": "R6",
+          "group": "other_five",
+          "restored_head_checks": [],
+          "restored_LM_aggregations": [
+            {
+              "task": "gue_tf_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_tf_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_splice_reconstructed",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_core_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_prom_300_all",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "train",
+              "rows": 1024,
+              "NLL_abs_residual": 0.0
+            },
+            {
+              "task": "gue_mouse_0",
+              "split": "dev",
+              "rows": 512,
+              "NLL_abs_residual": 0.0
+            }
+          ],
+          "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+          "GPU_loads": 0,
+          "external_producer_paths_used": false
+        },
+        "restore_command": [
+          "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001/artifacts/code/restore_check.py",
+          "--root",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R6-other_five-fresh-001/consumer/A06-R6-other_five-checkpoint-001",
+          "--candidate",
+          "R6",
+          "--group",
+          "other_five"
+        ],
+        "producer_path_substitution": false,
+        "compression_seconds": 28.743493566988036,
+        "upload_seconds": 6.445376542993472,
+        "fresh_download_seconds": 4.70588619299815,
+        "extract_all_hash_seconds": 12.947660286998143,
+        "excluded_historical_archives_repacked": 0,
+        "GPU_restoration_runs": 0,
+        "completed_utc": "2026-11-18T04:20:52.467220+00:00"
+      }
+    ],
+    "excluded": "Native model weights/installed runtime; historical large archives referenced through immutable inherited recovery graph; derived matrix caches rebuildable from chunks",
+    "no_GPU_recreation_claim": true,
+    "paired_array_supplements": "H3_AUDIT_SUPPLEMENT_R4/R6 protected in final metadata receipt; core H3 gate checks preceded other-five extraction"
+  },
+  "historical_payloads_repacked": false,
+  "original_base_fold_draw_reference_map": "A07_EXECUTION_MANIFEST.json",
+  "backbone_runtime_recreation": "Excluded from A07; exact A04/A06 asset/runtime recipes remain linked by immutable receipt hashes"
+}

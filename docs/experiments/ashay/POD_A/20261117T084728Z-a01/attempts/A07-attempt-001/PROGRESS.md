@@ -1,21 +1,21 @@
 # A07 progress — RUNNING
 
-Run `20261117T084728Z-a01`, attempt `A07-attempt-001`, observed UTC `2026-11-18T06:37:28.409478+00:00`. Direct A07 approval pins `28231013b20eb83951e1f689d1faeb781231ef48` and accepts A06 handoff `a641ca0c8fcc534295d40cd19f65ddc1579128d2`. Current research parent `373c0c18efed06f1a0ba8170187596403f455760`. No A08 execution.
+Run `20261117T084728Z-a01`, attempt `A07-attempt-001`, observed UTC `2026-11-18T06:47:06.282288+00:00`. Direct A07 approval pins `28231013b20eb83951e1f689d1faeb781231ef48` and accepts A06 handoff `a641ca0c8fcc534295d40cd19f65ddc1579128d2`. Current research parent `6cbc48dd121bf8840cfbff0853e6ebfb1abd2ceb`. No A08 execution.
 
 ## Goals
 
 | Goal | Target | New producer-complete | Prior reused | A07 remaining | External/pending verification |
 |---|---:|---:|---:|---:|---:|
-| Final heads | 3276 | 390 | 1560 | 390 | 936 |
-| Fixed-base applications | 3276 | 390 | 1560 | 390 | 936 |
+| Final heads | 3276 | 780 | 1560 | 0 | 936 |
+| Fixed-base applications | 3276 | 780 | 1560 | 0 | 936 |
 | Controls | 36 | 0 | 36 | 0 | 0 |
 | Primary LM units | 49 | 0 | 35 | 0 | 14 |
 | A07 independent release audit | 780 | 0 | 0 | 0 | 780 |
-| A07 private recovery | 780 | 0 | 0 | 0 | 390 |
+| A07 private recovery | 780 | 0 | 0 | 0 | 780 |
 
 ## This attempt
 
-R4 all five task batches producer-complete and privately restored; A08 verification pending. 390/780 final probes and 390/780 unchanged-base applications are sealed; 0 failed-attempt records retained. All new measurements remain COMPLETE_UNVERIFIED with producer validation PASS; A08 owns independent release verification. A06’s original paired-table lineage omission is preserved and repaired only in the versioned derivative.
+R6 all five task batches producer-complete and privately restored; A08 verification pending. 780/780 final probes and 780/780 unchanged-base applications are sealed; 0 failed-attempt records retained. All new measurements remain COMPLETE_UNVERIFIED with producer validation PASS; A08 owns independent release verification. A06’s original paired-table lineage omission is preserved and repaired only in the versioned derivative.
 
 | Candidate/task | Completed final heads | Expected |
 |---|---:|---:|
@@ -24,11 +24,11 @@ R4 all five task batches producer-complete and privately restored; A08 verificat
 | R4/gue_prom_300_all | 78 | 78 |
 | R4/gue_splice_reconstructed | 78 | 78 |
 | R4/gue_mouse_0 | 78 | 78 |
-| R6/gue_tf_0 | 0 | 78 |
-| R6/gue_prom_core_all | 0 | 78 |
-| R6/gue_prom_300_all | 0 | 78 |
-| R6/gue_splice_reconstructed | 0 | 78 |
-| R6/gue_mouse_0 | 0 | 78 |
+| R6/gue_tf_0 | 78 | 78 |
+| R6/gue_prom_core_all | 78 | 78 |
+| R6/gue_prom_300_all | 78 | 78 |
+| R6/gue_splice_reconstructed | 78 | 78 |
+| R6/gue_mouse_0 | 78 | 78 |
 
 ## Scientific findings
 
@@ -44,7 +44,7 @@ Coverage-plan `0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4`
 
 ## Resources and processes
 
-Zero GPU work. At most2 CPU workers,4 BLAS threads each,32GiB address-space allowance each. Original/rental starts, hourly rate and cost remain null; no deadline or reserve. Resource and process identities are recorded in stage receipts. Observer BLOCKED; reviewer DRAFT_ONLY; publisher BLOCKED, separately from scientific jobs.
+Zero GPU work. At most2 CPU workers,4 BLAS threads each,32GiB address-space allowance each. Original/rental starts, hourly rate and cost remain null; no deadline or reserve. Resource and process identities are recorded in stage receipts. Observer ACTIVE; reviewer DRAFT_ONLY; publisher BLOCKED, separately from scientific jobs.
 
 ## Next action
 
