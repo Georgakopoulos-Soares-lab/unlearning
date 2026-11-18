@@ -1,6 +1,6 @@
 # A08 progress — RUNNING
 
-Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T09:23:07.042911+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `478938beae407448cc94b3f307c405db11341d26`. No A09 execution.
+Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T09:32:18.175887+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `5a0e9197b258c7c55f341f8eb49dedc9d851549f`. No A09 execution.
 
 ## Goals
 
@@ -10,13 +10,13 @@ Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T09:23:07.
 | Saved probability paths |1560|1560|0|
 | Prospective sampled fresh refits |60|60|0|
 | Nonadjacent R6−R4 classifier rows |5460|0|5460|
-| Nonadjacent LM rows |14|0|14|
+| Nonadjacent LM rows |14|14|0|
 
 Full coverage remains3276heads and3276fixed applications,49primary LMunits and36sharedcontrols. Six tasks,26representations,threeCVseeds,bothpolicies remain frozen. There are1404historical heads,156A06H3heads,780A07producer heads and936external R2/R5 gaps.
 
 ## This attempt
 
-R6390all-unit audits and30prospective refits passed; private checkpoint freshly restored. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
+Full predeclared nonadjacent classifier andLM families passed; analysis payload freshly recovered. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
 
 | Candidate/task | Independent audit units passed | Expected |
 |---|---:|---:|
