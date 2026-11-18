@@ -1,14 +1,14 @@
 # A08 progress — RUNNING
 
-Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T09:08:09.736351+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `de1ac64f7b5f9748a868564baf637e8c06dbb667`. No A09 execution.
+Run `20261117T084728Z-a01`; attempt `A08-attempt-001`; UTC `2026-11-18T09:17:11.989625+00:00`. Direct A08 approval pins `e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef`. Input research `de1ac64f7b5f9748a868564baf637e8c06dbb667`. Current research parent `1610e7a7137ee1fe039d33c47912d330d545e8e5`. No A09 execution.
 
 ## Goals
 
 | Goal | Target | Sealed independent PASS | Remaining |
 |---|---:|---:|---:|
-| Other-five all-unit audits |780|2|778|
-| Saved probability paths |1560|4|1556|
-| Prospective sampled fresh refits |60|0|60|
+| Other-five all-unit audits |780|390|390|
+| Saved probability paths |1560|780|780|
+| Prospective sampled fresh refits |60|30|30|
 | Nonadjacent R6−R4 classifier rows |5460|0|5460|
 | Nonadjacent LM rows |14|0|14|
 
@@ -16,15 +16,15 @@ Full coverage remains3276heads and3276fixed applications,49primary LMunits and36
 
 ## This attempt
 
-Pinned approval and finite scope verified; private inputs and backup access passed; 27 synthetic tests qualified independent source; first binary and splice audits passed. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
+R4390all-unit audits and30prospective refits passed; private checkpoint freshly restored. 0 failed audit attempt records are retained. No producer outputs are replaced. Unit numerical audit,60-unit sampled audit,analysis eligibility,recovery anddelivery are separate gates.
 
 | Candidate/task | Independent audit units passed | Expected |
 |---|---:|---:|
-| R4/gue_tf_0 | 1 |78|
-| R4/gue_prom_core_all | 0 |78|
-| R4/gue_prom_300_all | 0 |78|
-| R4/gue_splice_reconstructed | 1 |78|
-| R4/gue_mouse_0 | 0 |78|
+| R4/gue_tf_0 | 78 |78|
+| R4/gue_prom_core_all | 78 |78|
+| R4/gue_prom_300_all | 78 |78|
+| R4/gue_splice_reconstructed | 78 |78|
+| R4/gue_mouse_0 | 78 |78|
 | R6/gue_tf_0 | 0 |78|
 | R6/gue_prom_core_all | 0 |78|
 | R6/gue_prom_300_all | 0 |78|
