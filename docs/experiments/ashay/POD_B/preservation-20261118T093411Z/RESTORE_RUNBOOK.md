@@ -1,4 +1,4 @@
-Preservation attempt `preservation-20261118T093411Z`. Research entry `6b4c927a845e73f62bd1f38fcb19bad773352c5b`. Prompt `8d7647bc2bef18f4f369ac76905b99e62abb2d0f:Preserve, document, and back up.md`, SHA256 `8917b3a037eb399329094c8570ef552f95374043210fa8a9c10478fcb0602817`. Status **IN_PROGRESS**.
+Preservation attempt `preservation-20261118T093411Z`. Research entry `6b4c927a845e73f62bd1f38fcb19bad773352c5b`. Prompt `8d7647bc2bef18f4f369ac76905b99e62abb2d0f:Preserve, document, and back up.md`, SHA256 `8917b3a037eb399329094c8570ef552f95374043210fa8a9c10478fcb0602817`. Status **PRESERVATION_COMPLETE_PENDING_INDEPENDENT_VERIFICATION**.
 
 Restore only into a fresh directory,with no writes into an active worktree/environment and no replay of historical approvals or locks.
 
@@ -12,4 +12,17 @@ Restore only into a fresh directory,with no writes into an active worktree/envir
 8. Verify sanitized transcript counts,all retained failures/diagnostics and the redaction/omission register. The raw secret-bearing session is intentionally not a recovery artifact. Obtain operator evidence of Jupyter credential revocation/rotation separately.
 9. Give an independent verifier the exact Git commit,HF revision/prefix,all manifests,exclusion register and this runbook. Under separate explicit CPU-only verification approval,they should perform a fresh pinned download,independently check archive/object/file hashes and safe extraction,resolve transitive coverage and compare claimed completeness against omissions. Require a clear pass/partial report before any retirement decision. Their verification must not start scientific stages,change services,delete data or shut down the Pod.
 
-Exact offline helper commands and final manifest names are filled in after the part/readback manifest is finalized. This is a restoration guide,not authority to resume B04/B05 or run any scientific command.
+Exact offline verification command after pinned download (Python3.11+ and zstd required; use fresh paths):
+
+```bash
+python -B scripts/sayyed/restore_pod_b_preservation.py \
+  --manifest /fresh/download/POD_B/preservation/20261118T093411Z/MANIFEST.json \
+  --manifest-sha256 d6e886fc27ee80b1fc673c1292ae0c57b3addc1feb8789728553a2a4d5a5c43c \
+  --download-root /fresh/download/POD_B/preservation/20261118T093411Z \
+  --output /fresh/verified-pod-b
+```
+
+To materialize every regular file as well,repeat with a different fresh output directory and add `--restore-files`. Symlinks remain metadata-only. Never target an existing directory. Download all filenames listed in MANIFEST.json from dataset `ashay-sriv/undo-evo2-pilot-backup-20261020`,revision `836c443a000948aa4541d667a9e79127cfd8000b`,prefix `POD_B/preservation/20261118T093411Z` using an authorized existing Hugging Face client. Supply no credential in command arguments or logs. The authenticated download must pin each hf_hub_download `revision` argument to that exact SHA. Verify the top-level manifest SHA before trusting its filenames,then every compressed archive hash. The executor's complete download/verify implementation is retained privately as upload_and_verify.py for review; it is not a command to upload again.
+ This is a restoration guide,not authority to resume B04/B05 or run any scientific command.
+
+Closure metadata must be downloaded separately from revision `65da6cf06c1497cd17396a688b66f4acdff134f0` at the same prefix. Verify `CLOSURE_MANIFEST.json` SHA256 `7799b5e020a39a66a0d35fccae7d840fa769c1c67a5e76fb17ef1ce1fe87b998` and `closure-metadata.tar.zst` SHA256 `d8044fe3723697848cf64a3e454dfe2837031c38e3ae4d6885ec0f7f7f4051ab` (48,589 bytes). Inspect only safe regular members in a fresh directory and check all 36 recorded file hashes against the closure manifest. Never substitute this supplement for the main object archive. Final Git files supersede the dated closure documentation snapshot for publication pointers; the main source/object manifest is unchanged.

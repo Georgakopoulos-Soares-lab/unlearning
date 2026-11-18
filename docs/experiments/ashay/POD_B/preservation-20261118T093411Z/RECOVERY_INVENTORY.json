@@ -1,4 +1,5 @@
 {
+  "C_reproduction_proofs": "Private CLASS_C_REPRODUCTION_PROOFS.json with exact source dependencies;180 pytest-rewritten caches promoted to A.",
   "Git_tree_inventory": {
     "path": "/workspace/meeting-artifacts/POD_B/preservation-20261118T093411Z/GIT_TREE_INVENTORY.json",
     "sha256": "5d7342113656b7a733dc5d633de7587edff3b5ac28473bd42e2da80b264a3f7d"
@@ -9,6 +10,11 @@
     "C": "Reproducible only under recorded exact source/interpreter/input dependencies and instructions",
     "D": "Unavailable,unresolved,credential/policy-excluded or otherwise not portable; explicit gaps retained"
   },
+  "closure_supplement": {
+    "manifest_path": "POD_B/preservation/20261118T093411Z/CLOSURE_MANIFEST.json",
+    "manifest_sha256": "7799b5e020a39a66a0d35fccae7d840fa769c1c67a5e76fb17ef1ce1fe87b998",
+    "revision": "65da6cf06c1497cd17396a688b66f4acdff134f0"
+  },
   "complete_file_catalog": {
     "private_path": "/workspace/meeting-artifacts/POD_B/preservation-20261118T093411Z/RECOVERY_FILE_INVENTORY.jsonl",
     "relative_restore_paths": true,
@@ -16,6 +22,20 @@
     "sha_scope": "New backed-file manifest has fresh SHA256; reused B records preserve prior exact content digests and distinguish no fresh local rehash"
   },
   "entries": 133758,
+  "final_new_coverage": {
+    "all_sources_preserved_in_place": true,
+    "backed_regular_file_bytes": 46484340213,
+    "backed_unique_source_paths": 74072,
+    "expected_unique_source_paths": 74072,
+    "missing_required_files": [],
+    "original_inventory_entries": 133758,
+    "promoted_pytest_rewritten_bytecode": 180,
+    "regular_files": 74029,
+    "scanner_unresolved": [],
+    "scientific_models_qualified": 0,
+    "status": "PASS",
+    "symlink_metadata": 43
+  },
   "initial_class_bytes": {
     "A": 45568763713,
     "B": 55061772023,
@@ -26,6 +46,7 @@
     "B": 25680,
     "C": 34224
   },
+  "optional_historical_dependency": "preparation is an optional remote-only historical archive,not a prerequisite involving Pod A two-retain R2.",
   "research_entry_commit": "6b4c927a845e73f62bd1f38fcb19bad773352c5b",
   "roots": [
     {
