@@ -1,0 +1,477 @@
+{
+  "Git_tree_inventory": {
+    "path": "/workspace/meeting-artifacts/POD_B/preservation-20261118T093411Z/GIT_TREE_INVENTORY.json",
+    "sha256": "5d7342113656b7a733dc5d633de7587edff3b5ac28473bd42e2da80b264a3f7d"
+  },
+  "classification": {
+    "A": "Unique/local dependency must be preserved; backed/sanitized status comes from final backed-file manifest",
+    "B": "Already remotely backed at exact immutable revision/path/hash and prior content manifest; fresh remote LFS metadata checked",
+    "C": "Reproducible only under recorded exact source/interpreter/input dependencies and instructions",
+    "D": "Unavailable,unresolved,credential/policy-excluded or otherwise not portable; explicit gaps retained"
+  },
+  "complete_file_catalog": {
+    "private_path": "/workspace/meeting-artifacts/POD_B/preservation-20261118T093411Z/RECOVERY_FILE_INVENTORY.jsonl",
+    "relative_restore_paths": true,
+    "sha256": "ad23d2a78677aed9d91417eb2ef5577c43c6eca5989075c98d3e9ba113a501a0",
+    "sha_scope": "New backed-file manifest has fresh SHA256; reused B records preserve prior exact content digests and distinguish no fresh local rehash"
+  },
+  "entries": 133758,
+  "initial_class_bytes": {
+    "A": 45568763713,
+    "B": 55061772023,
+    "C": 2456769748
+  },
+  "initial_class_counts": {
+    "A": 73854,
+    "B": 25680,
+    "C": 34224
+  },
+  "research_entry_commit": "6b4c927a845e73f62bd1f38fcb19bad773352c5b",
+  "roots": [
+    {
+      "bytes": 13831076556,
+      "class_counts": {
+        "A": 36176,
+        "B": 655,
+        "C": 16154
+      },
+      "entries": 52985,
+      "id": "POD_B_artifacts",
+      "kind": "evidence",
+      "path": "/workspace/meeting-artifacts/POD_B",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 45226,
+      "class_counts": {
+        "A": 15
+      },
+      "entries": 15,
+      "id": "POD_B_controls",
+      "kind": "controls",
+      "path": "/workspace/agent-handoff/POD_B",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 79360643233,
+      "class_counts": {
+        "A": 1121,
+        "B": 25025,
+        "C": 2
+      },
+      "entries": 26148,
+      "id": "historical_relearning",
+      "kind": "historical_inputs",
+      "path": "/workspace/meeting-artifacts/relearning-benign-v1",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 9675333010,
+      "class_counts": {
+        "A": 30744,
+        "C": 16113
+      },
+      "entries": 46857,
+      "id": "scientific_environment",
+      "kind": "environment",
+      "path": "/workspace/venvs/evo2-pilot",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 47587650,
+      "class_counts": {
+        "A": 1298,
+        "C": 1039
+      },
+      "entries": 2337,
+      "id": "administrative_environment",
+      "kind": "environment",
+      "path": "/workspace/venvs/unlearning-admin-pod-b",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 40961954,
+      "class_counts": {
+        "A": 1124,
+        "C": 15
+      },
+      "entries": 1139,
+      "id": "original_bionemo_source",
+      "kind": "source",
+      "path": "/workspace/bionemo-cu12",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 70283073,
+      "class_counts": {
+        "A": 2714,
+        "C": 328
+      },
+      "entries": 3042,
+      "id": "original_bridge_source",
+      "kind": "source",
+      "path": "/workspace/megatron-bridge",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 8020928,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "system_python_binary",
+      "kind": "system_runtime",
+      "path": "/usr/bin/python3.12",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 53250456,
+      "class_counts": {
+        "A": 642,
+        "C": 573
+      },
+      "entries": 1215,
+      "id": "system_python_stdlib",
+      "kind": "system_runtime",
+      "path": "/usr/lib/python3.12",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 1592,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "shared_GPU_ledger",
+      "kind": "ledger",
+      "path": "/workspace/meeting-artifacts/evo2-pilot.gpu-budget.json",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 154,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_setup_pod_b.sh",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/setup_pod_b.sh",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 4209,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_setup_common.sh",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/setup_common.sh",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 1932,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_run_agent.sh",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/run_agent.sh",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 1573,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_launch.sh",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/launch.sh",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 9150,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_configure_workspace.py",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/configure_workspace.py",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 757,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_check_backup_access.py",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/check_backup_access.py",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 827,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_VALIDATION.md",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/VALIDATION.md",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 1060,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_SHA256SUMS",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/SHA256SUMS",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 6403,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_README.md",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/README.md",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 11839,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_RANKED_PLAN.md",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/RANKED_PLAN.md",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 4557,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_POD_B_START.md",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/POD_B_START.md",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 11236,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_COMMON_CONTEXT.md",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/COMMON_CONTEXT.md",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 0,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_state_agent-B.lock",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/state/agent-B.lock",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 1640,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_state_setup-receipt-B-20261117T063519500669Z.json",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/state/setup-receipt-B-20261117T063519500669Z.json",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 2434,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_state_pod-B.json",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/state/pod-B.json",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 43647,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_state_codex-installer-B.sh",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-B.sh",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 388,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_state_admin-packages-B.txt",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-B.txt",
+      "status": "INVENTORIED"
+    },
+    {
+      "bytes": 0,
+      "class_counts": {
+        "A": 1
+      },
+      "entries": 1,
+      "id": "setup_state_setup-B.lock",
+      "kind": "setup",
+      "path": "/workspace/unlearning-two-pod-setup/state/setup-B.lock",
+      "status": "INVENTORIED"
+    }
+  ],
+  "schema": "POD_B.preservation.recovery_inventory.v1",
+  "status": "INVENTORIED_BEFORE_COPY",
+  "token_revocation_evidenced": false,
+  "transitive_dependencies": [
+    {
+      "bytes": 10108100047,
+      "content_readback_this_attempt": false,
+      "exclusions": "model weights and installed runtime",
+      "historical_payload_files": 14550,
+      "id": "base_h3",
+      "local_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/base_h3_archive/multiretain-layers-v1-final-20261110T140836Z",
+      "path": "multiretain-layers-v1/20261110T140836Z/multiretain-layers-v1-final-20261110T140836Z.tar.gz",
+      "payload_root": "multiretain-layers-v1-final-20261110T140836Z",
+      "prior_scope": "historical non-weight evidence/cache/source according to receipt",
+      "remote_pinned_metadata_check": "PASS_LFS_SHA256_AND_SIZE",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e75b95d9ca579ddb85fe354bea52bb9a78215b16",
+      "sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+      "verification_scope": "Fresh pinned remote object metadata plus prior byte-verification receipts; not a new full archive download"
+    },
+    {
+      "bytes": 47129813,
+      "content_readback_this_attempt": false,
+      "exclusions": "model weights and installed runtime",
+      "historical_payload_files": 446,
+      "id": "controls",
+      "local_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/controls_archive/benign-followup-v1",
+      "path": "benign-followup-v1/20261110-matched-controls/benign-followup-v1-recovery-20261110.tar.gz",
+      "payload_root": "benign-followup-v1",
+      "prior_scope": "historical non-weight evidence/cache/source according to receipt",
+      "remote_pinned_metadata_check": "PASS_LFS_SHA256_AND_SIZE",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "3e1fc6dea176fac609be95ca8834a9b1961274c6",
+      "sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+      "verification_scope": "Fresh pinned remote object metadata plus prior byte-verification receipts; not a new full archive download"
+    },
+    {
+      "bytes": 4412868094,
+      "content_readback_this_attempt": false,
+      "exclusions": "model weights and installed runtime",
+      "historical_payload_files": 8199,
+      "id": "R3",
+      "local_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/R3_archive/multiretain-comparison-v1-final-20261110T173945Z",
+      "path": "multiretain-comparison-v1/20261110T173945Z/multiretain-comparison-v1-final-20261110T173945Z.tar.gz",
+      "payload_root": "multiretain-comparison-v1-final-20261110T173945Z",
+      "prior_scope": "historical non-weight evidence/cache/source according to receipt",
+      "remote_pinned_metadata_check": "PASS_LFS_SHA256_AND_SIZE",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "07fd0fd6e07a5c9bbc9b25bb6fb293ea24de87b3",
+      "sha256": "d4682ac4f1891965b1d69213ecf80e3e86e35a857439d7eb9d5e6a64925d414e",
+      "verification_scope": "Fresh pinned remote object metadata plus prior byte-verification receipts; not a new full archive download"
+    },
+    {
+      "bytes": 14262042,
+      "content_readback_this_attempt": false,
+      "exclusions": "model weights and installed runtime",
+      "historical_payload_files": 86,
+      "id": "preservation",
+      "local_path": "/workspace/meeting-artifacts/relearning-benign-v1/recovery/preservation/safe-restored/preservation-supplement-v1-final-20261110T211124Z",
+      "path": "preservation-supplement-v1/20261110T211124Z/preservation-supplement-v1-final-20261110T211124Z.tar.gz",
+      "payload_root": "preservation-supplement-v1-final-20261110T211124Z",
+      "prior_scope": "historical non-weight evidence/cache/source according to receipt",
+      "remote_pinned_metadata_check": "PASS_LFS_SHA256_AND_SIZE",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "8694a540b5fc987b443ee488b085f753c5c4eb01",
+      "sha256": "41b492ed74059861b8ddab7d0075cb5a3709cebb22bc36941351500676b908eb",
+      "verification_scope": "Fresh pinned remote object metadata plus prior byte-verification receipts; not a new full archive download"
+    },
+    {
+      "bytes": 5593985967,
+      "content_readback_this_attempt": false,
+      "exclusions": "parent weights and installed runtime; historical full caches are separate dependencies",
+      "historical_payload_files": 929,
+      "id": "qualification",
+      "local_path": "/workspace/meeting-artifacts/relearning-benign-v1/fresh-recovery/20261117T070817Z/extracted/relearning-benign-v1-qualification-20261117T070817Z",
+      "path": "two-pod-20261116/pod-b/20261117T063321Z/relearning-benign-v1-qualification-20261117T070817Z.tar.gz",
+      "payload_root": "relearning-benign-v1-qualification-20261117T070817Z",
+      "prior_scope": "historical scientific/source metadata; qualification additionally includes36 adapters",
+      "remote_pinned_metadata_check": "PASS_LFS_SHA256_AND_SIZE",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "32206eeed1dd9024fc92ecd898be39094840de94",
+      "sha256": "bf56f316d3587ce979b797312d2896d4fe942709666aea04d77518e90adbb1dc",
+      "verification_scope": "Fresh pinned remote object metadata plus prior byte-verification receipts; not a new full archive download"
+    },
+    {
+      "bytes": 6963484,
+      "content_readback_this_attempt": false,
+      "exclusions": "model weights and installed runtime",
+      "historical_payload_files": 131,
+      "id": "preparation",
+      "local_path": null,
+      "path": "incremental-retain-eval-v1/20261110T190751Z/incremental-retain-eval-v1-final-20261110T190751Z.tar.gz",
+      "payload_root": "incremental-retain-eval-v1-final-20261110T190751Z",
+      "prior_scope": "historical non-weight evidence/cache/source according to receipt",
+      "remote_pinned_metadata_check": "PASS_LFS_SHA256_AND_SIZE",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "e9710c11d54c23e9081b15e63a6616f2a4214797",
+      "sha256": "e3740f89d60869f262a97e10d72f6b5924c3f46f85d1eb799e10c0c78d326714",
+      "verification_scope": "Fresh pinned remote object metadata plus prior byte-verification receipts; not a new full archive download"
+    },
+    {
+      "bytes": 6423429,
+      "content_readback_this_attempt": false,
+      "exclusions": [
+        "cache/*.npz",
+        "original DCP payloads already backed up",
+        "full parent models",
+        "environments",
+        "credentials",
+        "post-upload receipt and final delivery verification"
+      ],
+      "historical_payload_files": 233,
+      "id": "adapter_trajectory",
+      "local_path": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z/backup-bundle",
+      "path": "POD_B/adapter-trajectory/20261118T025621Z/adapter-trajectory-evidence.tar.gz",
+      "prior_scope": "This attempt unique evidence and public analysis before final backup receipt/delivery. Not model/environment restoration or B09.",
+      "remote_pinned_metadata_check": "PASS_LFS_SHA256_AND_SIZE",
+      "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+      "revision": "16211cea4b6cf7ff3ec2248750c7d3403f593963",
+      "sha256": "cf858a5431da68e78204b5f0ea856232f8cd53974170bda0ebea7514314194c8",
+      "verification_scope": "Fresh pinned remote object metadata plus prior byte-verification receipts; not a new full archive download"
+    }
+  ],
+  "unavailable_scientific_dependencies": [
+    "Authenticated actual per-job full parent/nonadapter-state assignment",
+    "Authenticated original loading semantics or independent original-route same-state evidence",
+    "True starts and actual exposure for their distinct contrasts"
+  ]
+}

@@ -1,0 +1,15 @@
+Preservation attempt `preservation-20261118T093411Z`. Research entry `6b4c927a845e73f62bd1f38fcb19bad773352c5b`. Prompt `8d7647bc2bef18f4f369ac76905b99e62abb2d0f:Preserve, document, and back up.md`, SHA256 `8917b3a037eb399329094c8570ef552f95374043210fa8a9c10478fcb0602817`. Status **IN_PROGRESS**.
+
+| Claim | Exact evidence / calculation | Scope and limits |
+|---|---|---|
+| Scientific qualified supplied models:0/36; no qualified IDs/channels | B04_IDENTITY_RESOLUTION.json; B04_COMPLETION_ELIGIBILITY.csv; alignment-20261118T065716Z/NEXT_ATTEMPT.json | Existing receipts only; integrity/planning/geometry are not numerical scientific qualification |
+| 36 distinct adapter deliveries;7200 logical BF16 tensors verified in adapter analysis | adapter-trajectory-20261118/INPUT_MANIFEST.json; ANALYSIS_SPEC.json; DUPLICATE_SUMMARY.json | Delivered adapter bytes only; actual full parents and job-bound semantics unresolved |
+| 100 modules,3600 point rows,8600 edge/module rows,86 kinds/84 distinct pairs | adapter-trajectory-20261118/MODULE_METRICS.csv; EDGE_METRICS.csv; OUTPUT_TABLE_MANIFEST.json | Complete registered parameter comparison set,not all630 possible pairs; no final_norm adapter |
+| Endpoint/first-delivered U norm ratios:base14.655634,MaxEnt20.974664 | adapter-trajectory-20261118/CHECKPOINT_SUMMARY.csv; TRAJECTORY_ANALYSIS.md; magnitude_trajectory.pdf | Declared U=2BA; first delivered100 is not true stepzero; not capability/exposure |
+| MaxEnt1600→1700 U distance0.429428978,cosine0.999736116,within-job median ratio0.867604 | adapter-trajectory-20261118/GLOBAL_EDGE_METRICS.csv; RESTART_BOUNDARY.md; restart_neighborhood.pdf | No exceptional upward parameter jump; no proof which model/state was resumed |
+| 17 focused tests,18 real dense cases and full executor Gram audit passed | adapter-trajectory-20261118/VALIDATION.json; INDEPENDENT_GRAM_AUDIT.json | Real dense spectral validation used64×64 slices; prior external reviewer did not retrieve full EDGE_METRICS.csv and did not independently verify every table |
+| Conditional six-task,26-coordinate,three-seed protocol frozen | PROTOCOL_FROZEN.json; B05_HANDOFF.md; B05_VALIDATION.json | Planning validation only; no supplied throughput calibration,features,fits or scores |
+| Frozen22645 rows,18 saved fold sets/84 partitions; historical reference artifacts recovered at scoped checks | COHORT_RECEIPT.json; RECOVERY_MANIFEST.json D1-D9; B03_HANDOFF.md | No new biological outcome analysis here; historical head/cache reuse does not create supplied-model scores |
+| Cumulative B04 occupied GPU seconds1675.5146971674585 remains unchanged | B04_COMPLETION_RESOURCES.json; B04_COMPLETION_AUDIT.json; authoritative GPU_LEDGER.json | Entirely prior engineering; this task adds0GPUseconds and no new scientific allowance |
+
+All quantitative scientific/geometry claims above are reused from named existing receipts. No new statistics,probes,forwards or geometry were run during preservation. Preservation byte hashes and archive/file counts are integrity measurements only.

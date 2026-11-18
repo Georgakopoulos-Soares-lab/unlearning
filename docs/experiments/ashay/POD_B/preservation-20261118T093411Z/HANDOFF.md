@@ -1,0 +1,11 @@
+Preservation attempt `preservation-20261118T093411Z`. Research entry `6b4c927a845e73f62bd1f38fcb19bad773352c5b`. Prompt `8d7647bc2bef18f4f369ac76905b99e62abb2d0f:Preserve, document, and back up.md`, SHA256 `8917b3a037eb399329094c8570ef552f95374043210fa8a9c10478fcb0602817`. Status **IN_PROGRESS**.
+
+Preservation handoff is in progress until the final upload/readback,coverage validation and publication receipts are complete. README.md is the entry point. CURRENT_STATE.md separates completed prerequisites,engineering,parameter geometry and scientifically unqualified supplied models; RESULTS_AND_CLAIMS.md binds claims to evidence. RECOVERY_INVENTORY/BACKUP_MANIFEST and the private full manifests define actual recoverability; use RESTORE_RUNBOOK.md without executing scientific code.
+
+Scientific supplied-model qualification remains0/36; qualified IDs/channels are empty. Parameter analysis is COMPLETE. No unqualified supplied model has established benign capability scores. New current-state/loading evidence for at least one family remains the scientific dependency. Original R0 authentication remains possible; equivalent-route R2 requires independent original-route same-state evidence and differs from Pod A's two-retain checkpoint R2. One supported family can advance independently only under a fresh explicit approval and valid deadline/accounting context.
+
+The preservation window and zero-GPU scope do not revive expired scientific clocks or grant B04/B05/B06-B09 execution. Original private/public artifacts,branches,processes,environments,approval/ledger histories and prompts are preserved. No deletion,shutdown,service change,new paid resource,background stage queue or automatic resume is authorized.
+
+Token-remediation status: UNVERIFIED; no operator revocation receipt is available. The prior exposure is redacted without reproducing its value. Services/credentials were not modified.
+
+This executor's fresh pinned readback is an initial integrity check. A separately approved independent verifier must inspect the final exact Git/HF identities,full transitive coverage,file/chunk hashes,safe restoration,redactions/exclusions and runtime prerequisites. Retirement remains an operator decision after that review; do not terminate or delete anything automatically.

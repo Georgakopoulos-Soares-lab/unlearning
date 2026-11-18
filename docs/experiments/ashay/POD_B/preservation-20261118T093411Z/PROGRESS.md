@@ -1,0 +1,5 @@
+Preservation attempt `preservation-20261118T093411Z`. Research entry `6b4c927a845e73f62bd1f38fcb19bad773352c5b`. Prompt `8d7647bc2bef18f4f369ac76905b99e62abb2d0f:Preserve, document, and back up.md`, SHA256 `8917b3a037eb399329094c8570ef552f95374043210fa8a9c10478fcb0602817`. Status **IN_PROGRESS**.
+
+Completed: immutable approval/ownership/window receipt; complete recovery inventory before copying; exact older archive dependency/visibility checks; actual environment/source/system metadata. Content-addressed byte packing,credential/container scanning,readback and final handoff are tracked by their receipts; no completion is claimed from an upload progress bar.
+
+Scientific qualification remains0/36; no capability score,forward,fit,calibration or scientific stage is authorized. Prior ledgers/controls and all historical work are preserved. Token revocation is unverified and requires separate operator remediation. New parts and initial readback status are in BACKUP_MANIFEST.json. No automatic continuation/shutdown follows this task.
