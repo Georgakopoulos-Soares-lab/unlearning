@@ -1,29 +1,64 @@
 {
-  "BLAS_threads_per_worker": 1,
-  "CPU_cutoff_utc": "2026-11-18T04:56:21+00:00",
-  "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
-  "approved_prompt_commit": "ebf6d7e9837ea8f2a6abaaeae13bcaa628c701b8",
-  "approved_prompt_path": "POD_B_B04_ADAPTER_TRAJECTORY.md",
-  "approved_prompt_sha256": "ce93d4d147473c1c3816a30a3b145af4281de7693f6cedc67ec8a3cb5c14a78f",
-  "backup_status": "NEW_ATTEMPT_RAW_EVIDENCE_LOCAL_ONLY;backup closure pending",
-  "closure_utc": "2026-11-18T05:26:21+00:00",
-  "first_module_peak_RSS_bytes": 56516608,
-  "first_module_wall_seconds": 0.42035452400159556,
-  "geometry_modules_completed": 1,
-  "geometry_modules_expected": 100,
-  "milestone": "All36 inputs verified;algebra+dense references validated;first module measured;bulk and reports next",
+  "CPU_scheduling_cutoff_utc": "2026-11-18T04:56:21+00:00",
+  "adapter_analysis_status": "COMPLETE",
+  "attempt_start_utc": "2026-11-18T02:56:21+00:00",
+  "backup_status": "PASS_FRESH_PINNED_READBACK",
+  "blockers": [
+    "Original parent/full nonadapter state, actual job-bound operator/loading route and exact restart source remain unresolved; these block scientific supplied-model qualification."
+  ],
+  "checkpoint_module_rows_completed": 3600,
+  "checkpoint_module_rows_expected": 3600,
+  "closure_deadline_utc": "2026-11-18T05:26:21+00:00",
+  "distinct_checkpoint_pairs": 84,
+  "edge_module_rows_completed": 8600,
+  "edge_module_rows_expected": 8600,
+  "global_edge_kinds": 86,
+  "missing_units": 0,
+  "modules_completed": 100,
+  "modules_expected": 100,
   "new_GPU_seconds": 0,
   "new_fits": 0,
   "new_heldout_forwards": 0,
+  "next_action": "Obtain producer evidence binding all three job families to their exact full parent state and original loading/operator route, including the exact resumed checkpoint for job11803647; separate direct approval required for qualification.",
   "next_stage_authorized": false,
-  "payloads_verified": 36,
-  "planned_CPU_workers": 4,
-  "real_dense_cases_passed": 18,
-  "schema": "POD_B.adapter_trajectory.progress.v1",
+  "owned_jobs": [],
+  "payloads_completed": 36,
+  "payloads_expected": 36,
+  "preserved_cumulative_B04_GPU_seconds": 1675.5146971674585,
+  "progress_push_commit": "784a554a6bd14b4724d9388f5c8dcbbd84f3246c",
+  "prompt_branch": "POD_B",
+  "prompt_commit": "ebf6d7e9837ea8f2a6abaaeae13bcaa628c701b8",
+  "prompt_files": [
+    {
+      "bytes": 20633,
+      "path": "POD_B_B04_ADAPTER_TRAJECTORY.md",
+      "sha256": "ce93d4d147473c1c3816a30a3b145af4281de7693f6cedc67ec8a3cb5c14a78f"
+    },
+    {
+      "bytes": 2939,
+      "path": "POD_B_EXECUTOR_REPORTING_AMENDMENT.md",
+      "sha256": "079ab22be0af8fde8095412c676b3253e0f39314fef541388274e7cd3a5b51d8"
+    },
+    {
+      "bytes": 10648,
+      "path": "POD_B_MASTER.md",
+      "sha256": "19732aec818dd1cd9eb1371beb5ac5429296e936d80a6b541bf3573d41eaa512"
+    },
+    {
+      "bytes": 1376,
+      "path": "override_pod_b_.txt",
+      "sha256": "5981375b7c4a71a96ac5b38c3e3666276436c955d490b7863338a1276660c149"
+    }
+  ],
+  "prompt_repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+  "qualified_IDs": [],
+  "qualified_channels": [],
+  "research_entry_commit": "25ce015dba76e1263f56c4a07b9ca813f31d39de",
+  "scientific_model_qualification_status": "BLOCKED_UNCHANGED",
   "scientifically_qualified_models": 0,
+  "scientifically_qualified_models_expected": 36,
+  "spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
   "stage": "B04-ADAPTER-TRAJECTORY",
-  "status": "IN_PROGRESS",
-  "synthetic_tests_passed": 17,
-  "tensors_verified": 7200,
-  "updated_utc": "2026-11-18T03:17:31.953590+00:00"
+  "status": "COMPLETE",
+  "updated_utc": "2026-11-18T03:34:25.238613+00:00"
 }

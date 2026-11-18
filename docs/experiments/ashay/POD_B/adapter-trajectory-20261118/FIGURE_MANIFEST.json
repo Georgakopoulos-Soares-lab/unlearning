@@ -1,0 +1,126 @@
+{
+  "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+  "figures": [
+    {
+      "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+      "description": "All18 saved checkpoints per series; MaxEnt segments are not connected across1600\u21921700",
+      "files": [
+        {
+          "bytes": 18229,
+          "path": "magnitude_trajectory.svg",
+          "sha256": "5faa357b3948c5dd1aa20dbddac839e73115a4e7da959492198136a0285d17c1"
+        },
+        {
+          "bytes": 21064,
+          "path": "magnitude_trajectory.pdf",
+          "sha256": "544d24040a49ce2ef7f844b339662bfdaa7b78457823b58ba30c359b2a2aa653"
+        },
+        {
+          "bytes": 156656,
+          "path": "magnitude_trajectory.png",
+          "sha256": "097edd74cfe8f9f21251200ca4ea8555521eee31219c93032518869803f01dd2"
+        }
+      ],
+      "name": "magnitude_trajectory",
+      "source_tables": [
+        {
+          "path": "CHECKPOINT_SUMMARY.csv",
+          "sha256": "8b32a321f66275af200e3dca0a0060c0e747eba024d042b36ede777d15091202"
+        }
+      ]
+    },
+    {
+      "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+      "description": "All17 actual adjacent edges per series; star marks the cross-job parameter comparison,not a causal restart effect",
+      "files": [
+        {
+          "bytes": 17217,
+          "path": "adjacent_distance.svg",
+          "sha256": "34c1ecdf3ad2c45524e1ea5b1a761db8f13275be8eefccaef720061bdabfa7e6"
+        },
+        {
+          "bytes": 21275,
+          "path": "adjacent_distance.pdf",
+          "sha256": "5bc72163e32dfa7e0ead564988b3615c1fa10e6f8ff0ab9c536c89c4e61481d0"
+        },
+        {
+          "bytes": 135646,
+          "path": "adjacent_distance.png",
+          "sha256": "e125fa7df45cd1193d9ed0e9667de49fd5c5479f94c59c0dc3626630dd65bc6f"
+        }
+      ],
+      "name": "adjacent_distance",
+      "source_tables": [
+        {
+          "path": "GLOBAL_EDGE_METRICS.csv",
+          "sha256": "6dc08509585fef7d19197e22c29ab875aa044c8d8c85d93deebd84096ab0daab"
+        }
+      ]
+    },
+    {
+      "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+      "description": "Shared logarithmic color scale for all25 blocks\u00d717 adjacent edges in both series; MaxEnt1700 column outlined",
+      "files": [
+        {
+          "bytes": 39007,
+          "path": "step_by_block.svg",
+          "sha256": "e7f6d75f60360f39ab4fb794467ba05d35dd6337f2182c21bce8c676c6c95390"
+        },
+        {
+          "bytes": 33484,
+          "path": "step_by_block.pdf",
+          "sha256": "f0c4ac5d3bffaa98d069d5b3db68e1f72341c73ba51806c32eb570976e520227"
+        },
+        {
+          "bytes": 161619,
+          "path": "step_by_block.png",
+          "sha256": "38153708bf12a97196a54b5b5b04642c87fa5ca624bcdbe59281762d81fd053b"
+        }
+      ],
+      "name": "step_by_block",
+      "source_tables": [
+        {
+          "path": "BLOCK_EDGE_SUMMARY.csv",
+          "sha256": "797f071393afeade958b964598464fc2ebf874b38c4f7ae06120b8ba557386da"
+        }
+      ]
+    },
+    {
+      "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+      "description": "Predeclared three-edge neighborhood with six-type squared-distance composition; no p-value or continuity inference",
+      "files": [
+        {
+          "bytes": 22815,
+          "path": "restart_neighborhood.svg",
+          "sha256": "6089dc15c62591ae35c371a53601b9f375b5057367c39872432f828a6f66173a"
+        },
+        {
+          "bytes": 21973,
+          "path": "restart_neighborhood.pdf",
+          "sha256": "474f467a6f8619f996072e6801d5ba2bb6d427b74488c70326d183bdcfe639dd"
+        },
+        {
+          "bytes": 181148,
+          "path": "restart_neighborhood.png",
+          "sha256": "3ffd5617bf85f9ed65e2c7ad59b9545d1b5c9f7fa429a9683c3e7c4c78bb4b40"
+        }
+      ],
+      "name": "restart_neighborhood",
+      "source_tables": [
+        {
+          "path": "GLOBAL_EDGE_METRICS.csv",
+          "sha256": "6dc08509585fef7d19197e22c29ab875aa044c8d8c85d93deebd84096ab0daab"
+        },
+        {
+          "path": "TARGET_EDGE_SUMMARY.csv",
+          "sha256": "1d52d76a4e5376acee63eaeaa9a083017e101c5b92675351467ba1eb38c0fa13"
+        }
+      ]
+    }
+  ],
+  "model_qualification_unchanged": 0,
+  "plot_code_sha256": "e0fff570a06fc4de419011dfac8af8e5b0ef0ee1bcea3801c3dbbde451de2006",
+  "plot_scope": "Parameter products only; no task labels/sequences/held-out outputs/model inference",
+  "schema": "POD_B.adapter_trajectory.figures.v1",
+  "zero_color": "Masked zero cells if any; not converted to a positive distance"
+}

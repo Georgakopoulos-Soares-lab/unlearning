@@ -1,0 +1,59 @@
+{
+  "BLAS_threads_per_process": 1,
+  "CPU_accounting_scope": "Measured phases only. Not an exact cumulative attempt CPU total: test invocations, previous validation diagnostic, plotting, packaging and orchestration also used CPU.",
+  "CUDA_VISIBLE_DEVICES": "",
+  "as_of_utc": "2026-11-18T03:32:12.216144+00:00",
+  "attempt_start_utc": "2026-11-18T02:56:21+00:00",
+  "closed_within_window": true,
+  "closure_deadline_utc": "2026-11-18T05:26:21+00:00",
+  "closure_reserve_seconds": 1800,
+  "closure_utc": "2026-11-18T03:34:25.238613+00:00",
+  "cumulative_GPU_ceiling_seconds": 9000,
+  "elapsed_attempt_wall_seconds": 2284.238613,
+  "forward_scheduling_cutoff_utc": "2026-11-18T04:56:21+00:00",
+  "maximum_workers": 4,
+  "model_inference": 0,
+  "new_GPU_seconds": 0,
+  "new_fits": 0,
+  "new_heldout_forwards": 0,
+  "old_GPU_deadlines_reset": false,
+  "old_GPU_ledger": {
+    "bytes": 6608,
+    "path": "/workspace/meeting-artifacts/POD_B/B04-resume-20261117T121146Z/GPU_LEDGER.json",
+    "sha256": "df26dbcc896f57962637e469341ec079a59340be9367605b84b9c7023c021335"
+  },
+  "old_ledgers_amended": false,
+  "owned_jobs": [],
+  "phases": {
+    "bulk_geometry": {
+      "coordinator_CPU_process_seconds": 1.681575316,
+      "wall_seconds": 17.255306186008966,
+      "worker_CPU_process_seconds": 48.65407126000001,
+      "worker_peak_RSS_max_bytes": 113053696
+    },
+    "first_unit_benchmark": {
+      "CPU_process_seconds": 0.3497785,
+      "peak_RSS_bytes": 56516608,
+      "wall_seconds": 0.42035452400159556
+    },
+    "independent_audit": {
+      "coordinator_CPU_process_seconds": 0.43455997100000004,
+      "wall_seconds": 5.637076525003067,
+      "worker_CPU_process_seconds": 11.010201403,
+      "worker_peak_RSS_max_bytes": 98258944
+    },
+    "input_preparation": {
+      "CPU_process_seconds": 15.026341969,
+      "peak_RSS_bytes": 567980032,
+      "wall_seconds": 30.61644185500336
+    },
+    "real_dense_reference": {
+      "CPU_process_seconds": 1.374812514,
+      "peak_RSS_bytes": 531013632,
+      "wall_seconds": 1.5453107100038324
+    }
+  },
+  "preserved_cumulative_B04_GPU_seconds": 1675.5146971674585,
+  "spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+  "window_limit_seconds": 9000
+}

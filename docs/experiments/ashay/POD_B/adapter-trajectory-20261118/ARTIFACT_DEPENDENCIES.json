@@ -1,0 +1,33 @@
+{
+  "artifact_root": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z",
+  "documentation_root": "/workspace/wt-POD_B/docs/experiments/ashay/POD_B/adapter-trajectory-20261118",
+  "full_model_restorable": false,
+  "new_backup_receipt": "BACKUP_VERIFICATION.json (written after upload and fresh pinned readback)",
+  "prior_adapter_backup": {
+    "bytes": 5593985967,
+    "path": "two-pod-20261116/pod-b/20261117T063321Z/relearning-benign-v1-qualification-20261117T070817Z.tar.gz",
+    "private": true,
+    "repo_type": "dataset",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "revision": "32206eeed1dd9024fc92ecd898be39094840de94",
+    "scope": "Existing36adapterinputsandhistoricalregistry;notfullparentorenvironment",
+    "sha256": "bf56f316d3587ce979b797312d2896d4fe942709666aea04d77518e90adbb1dc"
+  },
+  "private_unique_evidence": [
+    "prompts/",
+    "APPROVAL.json",
+    "USER_APPROVAL.txt",
+    "PRESERVATION_BASELINE.json",
+    "INPUT_MANIFEST.json",
+    "results/",
+    "evidence/",
+    "source-snapshot/",
+    "source-snapshot-v2/",
+    "validate_real.py",
+    "build_closure.py"
+  ],
+  "public_layer": "Reports, all metric tables, figures, manifests, sanitized tests and source on research POD_B",
+  "reason": "Original full parent and job-bound state still unresolved",
+  "regenerable_cache_excluded": "cache/*.npz: lossless BF16-to-FP32 factors,about1.77GB; reproduce from validated original adapters,not unique measurements",
+  "spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3"
+}

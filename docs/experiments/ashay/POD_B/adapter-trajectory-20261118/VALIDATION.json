@@ -1,13 +1,82 @@
 {
+  "all_owned_geometry_audit_workers_exited": true,
   "analysis_spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+  "backup_verification_sha256": "cbf46f9f08619263444fdabfc8254d486f2e8bc2e6f9738595465a69c567dd8a",
+  "bulk": {
+    "CPU_workers": 4,
+    "checkpoint_module_rows": 3600,
+    "coordinator_CPU_process_seconds": 1.681575316,
+    "edge_module_rows": 8600,
+    "global_edges": 86,
+    "modules": 100,
+    "new_GPU_seconds": 0,
+    "new_fits": 0,
+    "new_heldout_forwards": 0,
+    "payloads": 36,
+    "scientifically_qualified_models": 0,
+    "source_sha256": "488d0a6744f01772442c37614ac7d73620d52253aee0632f0ab6e3a029b995cb",
+    "spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+    "status": "COMPLETE",
+    "unique_checkpoint_pairs": 84,
+    "wall_seconds": 17.255306186008966,
+    "worker_CPU_process_seconds": 48.65407126000001,
+    "worker_peak_RSS_max_bytes": 113053696,
+    "worker_pids": [
+      32791,
+      32794,
+      32795,
+      32796
+    ]
+  },
+  "closed_analysis_utc": "2026-11-18T03:32:12.216144+00:00",
+  "diagnostic_clarification": "Initial spec-generator syntax and NumPy-bool JSON serialization were corrected before successful output; initial real-reference relative-error diagnostic at zero was replaced by undefined-zero count and tolerance-scaled error. Raw prior logs/results retained; no numeric formula/tolerance change.",
   "diagnostic_history": {
     "bytes": 451,
     "path": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z/evidence/DIAGNOSTIC_HISTORY.json",
     "sha256": "7668279548fc78fda4452b69d56f13ae71ee64ba486916a35276e41aaa409e28"
   },
+  "figure_exports_hash_verified": 12,
+  "figure_manifest_sha256": "d25a75f1febcab5195c04a458c0d5459e614a60eaf2ec326ff37a4a63e544416",
+  "figure_source_bindings_verified": 5,
+  "figure_visual_review": "All four PNGs reviewed; initial colorbar overlap corrected and initial exports preserved privately",
+  "final_preservation_check_utc": "2026-11-18T03:34:26.226968+00:00",
+  "independent_Gram_audit": {
+    "coordinator_CPU_process_seconds": 0.43455997100000004,
+    "edge_rows_verified": 8600,
+    "global_edge_checks": 86,
+    "global_point_checks": 36,
+    "independent_method": "FP64 Gram/trace identities,without importing production point/pair/aggregation functions; dense selected real/synthetic references separately validated",
+    "max_fraction_of_predeclared_roundoff_bound": 0.008756169426469245,
+    "negative_Gram_roundoff_cases": 0,
+    "new_GPU_seconds": 0,
+    "numerically_zero_products": 0,
+    "point_checks": 3600,
+    "source_sha256": "391a1abad4ec79550d5cb4e161b9617e5930f4d9f527a0ced5beee2940caacf1",
+    "spec_sha256": "9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3",
+    "status": "PASS",
+    "unique_pair_checks": 8400,
+    "wall_seconds": 5.637076525003067,
+    "worker_CPU_process_seconds": 11.010201403,
+    "worker_peak_RSS_max_bytes": 98258944,
+    "worker_pids": [
+      32892,
+      32895,
+      32896,
+      32897
+    ],
+    "zero_A_tensors": 0,
+    "zero_B_tensors": 0
+  },
   "model_inference": 0,
+  "model_qualification_unchanged": true,
   "new_GPU_seconds": 0,
+  "new_fits": 0,
+  "new_heldout_forwards": 0,
+  "owned_workers_exited": true,
   "prior126_runtime_suite_rerun": false,
+  "protected_files_unchanged": 126,
+  "qualified_IDs": [],
+  "qualified_channels": [],
   "real_dense_validation": {
     "CPU_process_seconds": 1.374812514,
     "all36_strict_chunk_extents_checked": true,
@@ -390,12 +459,13 @@
     "zero_reference_comparisons": 18
   },
   "scientific_qualification": 0,
+  "source_identity_checks": "PASS",
   "source_phase_history": {
     "bytes": 492,
     "path": "/workspace/meeting-artifacts/POD_B/B04-adapter-trajectory-20261118T025621Z/evidence/SOURCE_PHASE_HISTORY.json",
     "sha256": "772d085075ce921a6ac842c7f6ce495a39a696e501fef3fde5fefc646086b9f9"
   },
-  "status": "PASS_PRE_BULK",
+  "status": "PASS",
   "synthetic_tests": {
     "failed": 0,
     "log": {
@@ -405,5 +475,56 @@
     },
     "passed": 17,
     "skipped": 0
+  },
+  "table_coverage": {
+    "missing_units": 0,
+    "status": "PASS",
+    "tables": {
+      "BLOCK_EDGE_SUMMARY.csv": {
+        "bytes": 484324,
+        "rows": 2150,
+        "sha256": "797f071393afeade958b964598464fc2ebf874b38c4f7ae06120b8ba557386da"
+      },
+      "BLOCK_SUMMARY.csv": {
+        "bytes": 146993,
+        "rows": 900,
+        "sha256": "8b36fe1f488b81a3ab4a283dc8e7e38a3468b0e61b444d9b429787c6b7dbfa85"
+      },
+      "CHECKPOINT_SUMMARY.csv": {
+        "bytes": 8184,
+        "rows": 36,
+        "sha256": "8b32a321f66275af200e3dca0a0060c0e747eba024d042b36ede777d15091202"
+      },
+      "EDGE_METRICS.csv": {
+        "bytes": 4295687,
+        "rows": 8600,
+        "sha256": "aeca5b6edc27570131a4d806c1e4736c7af09b90cc8e987d6f272a8aaea7969b"
+      },
+      "GLOBAL_EDGE_METRICS.csv": {
+        "bytes": 31399,
+        "rows": 86,
+        "sha256": "6dc08509585fef7d19197e22c29ab875aa044c8d8c85d93deebd84096ab0daab"
+      },
+      "MODULE_METRICS.csv": {
+        "bytes": 3400140,
+        "rows": 3600,
+        "sha256": "4242c766a8640a7a2845f5e9fe332e10ea324625158f47547a6130602a12f56d"
+      },
+      "TARGET_EDGE_SUMMARY.csv": {
+        "bytes": 123798,
+        "rows": 516,
+        "sha256": "1d52d76a4e5376acee63eaeaa9a083017e101c5b92675351467ba1eb38c0fa13"
+      },
+      "TARGET_SUMMARY.csv": {
+        "bytes": 38432,
+        "rows": 216,
+        "sha256": "069e9158d3065279dcc8c42770482171638b01380960caff2ce905f85c344b91"
+      },
+      "ZERO_TENSOR_AUDIT.csv": {
+        "bytes": 520529,
+        "rows": 3600,
+        "sha256": "17c4f192ccc00a28d04acd51374f4bb9e351ed4f23ef62e2336726d9607c8a4a"
+      }
+    }
   }
 }
