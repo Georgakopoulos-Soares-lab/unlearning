@@ -6,7 +6,7 @@
   "stage": "A04",
   "status": "PARTIAL",
   "accepted_scoped_qualification_status": "PASS_R3_R5",
-  "accepted_scope_recovery_status": "PENDING",
+  "accepted_scope_recovery_status": "PASS",
   "full_A04_status": "PARTIAL",
   "full_project_status": "PARTIAL",
   "reason_full_scope_partial": "R2 remains unidentified and current amendment excludes its discovery/qualification",
@@ -37,7 +37,7 @@
     ],
     "instruction_reconciliation": "Current direct execution request adopts the exact a9.5 amendment. It narrows the approved A04 recovery edition and supersedes old AGENTS branch/default-prompt and old stage-only write guards for these owned A04/root-current paths. No historical prompt is executed as shell and no future stage is authorized."
   },
-  "new_qualification_commit": null,
+  "new_qualification_commit": "906e808af4b61eeb7f8b229fea30e735f1cf818f",
   "new_qualification_commit_null_reason": "Post-push receipt names the commit containing this evidence; no self-reference",
   "metadata_commit": null,
   "A09_scientific_commit": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
@@ -74,7 +74,9 @@
     "new_production_scores": 0,
     "new_probe_fits": 0,
     "heldout_forwards": 0,
-    "evidence_recovery_status": "PENDING"
+    "evidence_recovery_status": "PASS",
+    "native_payload_recovery_status": "PASS_VERIFIED_IMMUTABLE_MIRRORS",
+    "accepted_R3_R5_scope_status": "COMPLETE"
   },
   "targets": [
     {
@@ -161,7 +163,7 @@
       "qualification_status": "PASS",
       "payload_integrity_status": "PASS",
       "payload_durable_reference_status": "PASS_VERIFIED_IMMUTABLE_PRIVATE_MIRROR",
-      "new_evidence_recovery_status": "PENDING",
+      "new_evidence_recovery_status": "PASS",
       "heldout_forward_rows": 0
     },
     {
@@ -248,7 +250,7 @@
       "qualification_status": "PASS",
       "payload_integrity_status": "PASS",
       "payload_durable_reference_status": "PASS_VERIFIED_IMMUTABLE_PRIVATE_MIRROR",
-      "new_evidence_recovery_status": "PENDING",
+      "new_evidence_recovery_status": "PASS",
       "heldout_forward_rows": 0
     }
   ],
@@ -842,15 +844,316 @@
   "R3_historical_bridge": "PASS_81_ROWS_TRAIN_ONLY",
   "qualified_A05_proposal": {
     "path": "A05_PROPOSAL.json",
-    "sha256": "4c8d1129264c434440ae74193d949c272f7142ecb4ebd45043ce59a5d132c8bf",
-    "protected": false,
+    "sha256": "27cbc1fddf44b0682d1245b722649c21b6f0a9cffbcd3b7be6edd123f25d5d8d",
+    "protected": true,
     "approved": false
   },
-  "resource_calibration_sha256": "e524135129a9181022247ca94550792234377fed57922b25af64780b32b79652",
+  "resource_calibration_sha256": "80927d28db30c5f79d58e9fd311839e96899aa387cb88b2d91f148997d1a1635",
   "scientific_jobs": "QUIESCENT",
   "observer_status": "STOPPED",
   "observer_restarted": false,
   "cost_usd": null,
   "next_stage_started": false,
-  "observed_utc": "2026-11-18T17:30:22.069475+00:00"
+  "observed_utc": "2026-11-18T17:30:22.069475+00:00",
+  "metadata_commit_binding": "Separate post-push/final private receipt names the later metadata commit; no self-reference",
+  "evidence_backup_revision": "5c4fd12f1df0fc96a056e2bad8d83b34822a6bff",
+  "evidence_backup_sha256": "1286c91b9e941b395f9a1c5d189e733c755e8407dd0da19e448602a9d4ece565",
+  "evidence_member_manifest_sha256": "b724ec4bf4f16a5399cf663216d663cda45bde3c4b7bf20004e081c004ec790e",
+  "evidence_recovery_status": "PASS",
+  "native_payload_recovery_status": "PASS_VERIFIED_IMMUTABLE_MIRRORS",
+  "qualified_scope_summary": {
+    "status": "PASS_R3_R5_QUALIFICATION",
+    "full_A04_status": "PARTIAL",
+    "full_project_status": "PARTIAL",
+    "new_variants": 6,
+    "new_comparison_rows": 189,
+    "preserved_variants": 12,
+    "preserved_comparison_rows": 378,
+    "combined_passed_variants": 18,
+    "combined_passed_comparison_rows": 567,
+    "seven_slot_plan_variants": 21,
+    "seven_slot_plan_rows": 621,
+    "R2_pending_variants": 3,
+    "R2_pending_rows": 54,
+    "R3_rows": 135,
+    "R3_historical_bridge_rows": 81,
+    "R5_rows": 54,
+    "feature_coordinates_compared": 4193280,
+    "LM_values_compared": 84,
+    "maximum_absolute_residuals": {
+      "R3": 1.52587890625e-05,
+      "R5": 6.103515625e-05
+    },
+    "all_primary_and_reverse_violations": 0,
+    "atol": 0.0001,
+    "rtol": 1e-05,
+    "all_comparison_rows_pass": true,
+    "new_production_scores": 0,
+    "new_probe_fits": 0,
+    "heldout_forwards": 0,
+    "evidence_recovery_status": "PASS",
+    "native_payload_recovery_status": "PASS_VERIFIED_IMMUTABLE_MIRRORS",
+    "accepted_R3_R5_scope_status": "COMPLETE"
+  },
+  "accepted_R3_R5_scope_status": "COMPLETE",
+  "A05_proposal_sha256": "27cbc1fddf44b0682d1245b722649c21b6f0a9cffbcd3b7be6edd123f25d5d8d",
+  "A05_proposal_ready_protected": true,
+  "owned_job_disposition": {
+    "status": "PASS",
+    "observed_utc": "2026-11-18T17:41:33.346484+00:00",
+    "scientific_and_acquisition_and_evidence_jobs": "QUIESCENT",
+    "recorded_jobs": [
+      {
+        "record": "TRANSFER_JOB.json",
+        "pid": 73136,
+        "start_ticks": "13551050",
+        "identity_alive": false
+      },
+      {
+        "record": "QUALIFICATION_CONTROLLER_JOB.json",
+        "pid": 74349,
+        "start_ticks": "13579135",
+        "identity_alive": false
+      },
+      {
+        "record": "ACTIVE_GPU_JOB.json",
+        "pid": 77425,
+        "start_ticks": "13616076",
+        "identity_alive": false
+      },
+      {
+        "record": "EVIDENCE_RECOVERY_JOB.json",
+        "pid": 80983,
+        "start_ticks": "13737394",
+        "identity_alive": false
+      }
+    ],
+    "unregistered_owned_workers": [],
+    "locks_verified_available": [
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/qualification-controller.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/report.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/publish.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/service.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/observer.lock"
+    ],
+    "administrative_services": {
+      "observer_status": "STOPPED",
+      "prior_pid": 33071,
+      "prior_start_ticks": "8476919",
+      "identity_alive": false,
+      "reviewer_status": "DRAFT_ONLY_NOT_RUNNING",
+      "publisher_status": "BLOCKED_NOT_RUNNING",
+      "restarted": false,
+      "observed_utc": "2026-11-18T17:41:33.348800+00:00"
+    },
+    "current_finite_administrative_process": {
+      "pid": 81210,
+      "start_ticks": "13757340"
+    },
+    "pod_left_running": true
+  },
+  "automatic_resume": false,
+  "closure_observed_utc": "2026-11-18T17:41:38.658223+00:00",
+  "accepted_scope_status": "COMPLETE",
+  "new_evidence_backup": {
+    "schema": "pod-a-a04-backup-verification-v1",
+    "status": "PASS",
+    "evidence_revision": "5c4fd12f1df0fc96a056e2bad8d83b34822a6bff",
+    "archive_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-004/checkpoint-001/a04-recovery-checkpoint-004-001.tar.gz",
+    "archive_bytes": 20783253,
+    "archive_sha256": "1286c91b9e941b395f9a1c5d189e733c755e8407dd0da19e448602a9d4ece565",
+    "member_manifest_sha256": "b724ec4bf4f16a5399cf663216d663cda45bde3c4b7bf20004e081c004ec790e",
+    "all_member_files_verified": 387,
+    "force_fresh_download": true,
+    "fresh_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001/consumer/A04-recovery-checkpoint-004-001",
+    "CPU_saved_training_recovery": {
+      "schema": "pod-a-a04-fresh-evidence-restore-v1",
+      "status": "PASS",
+      "payload_revision": "5c4fd12f1df0fc96a056e2bad8d83b34822a6bff",
+      "archive_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-004/checkpoint-001/a04-recovery-checkpoint-004-001.tar.gz",
+      "archive_sha256": "1286c91b9e941b395f9a1c5d189e733c755e8407dd0da19e448602a9d4ece565",
+      "force_fresh_download": true,
+      "new_empty_cache_and_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001",
+      "all_member_files_verified": 387,
+      "uncompressed_bytes": 27465904,
+      "restored_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001/consumer/A04-recovery-checkpoint-004-001",
+      "safe_exact_member_set": true,
+      "CPU_command": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001/consumer/A04-recovery-checkpoint-004-001/artifacts/code/compare4.py",
+        "--control",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001/consumer/A04-recovery-checkpoint-004-001/control",
+        "--artifacts",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001/consumer/A04-recovery-checkpoint-004-001/artifacts",
+        "--report",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001/CPU-comparison",
+        "--anchor-root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-004/evidence-fresh-001/consumer/A04-recovery-checkpoint-004-001/anchors"
+      ],
+      "CPU_comparison_results_identical_to_producer": true,
+      "CPU_comparison_CSV_identical_to_producer": true,
+      "restored_variants": 6,
+      "comparison_rows": 189,
+      "feature_coordinates_compared": 4193280,
+      "LM_values_compared": 84,
+      "actual_logit_witness_rows": 72,
+      "R3_anchor_source": "Three restored same-checkpoint TRAIN anchor bundles",
+      "only_restored_analysis_inputs_used": true,
+      "original_producer_array_paths_used": false,
+      "GPU_recreation_tested": false,
+      "new_forwards_or_fits": 0,
+      "model_weights_in_this_archive": false,
+      "weights_are_verified_immutable_mirror_dependencies": true,
+      "private_at_read_and_closeout": true,
+      "wall_seconds": 6.81457129100454
+    },
+    "native_payload_recovery_status": "PASS_VERIFIED_IMMUTABLE_MIRROR_REFERENCES",
+    "native_payload_repository": "ashay-sriv/unlearning-checkpoint-mirror",
+    "native_payload_target_count": 2,
+    "native_payload_assets": 16,
+    "native_original_layout_preserved": true,
+    "native_local_new_bytes_fully_verified": 31033757868,
+    "sidecar_local_reuse_bytes_fully_verified": 461125,
+    "current_remote_all_asset_identity_binding": {
+      "status": "PASS",
+      "files": [
+        {
+          "alias": "R3",
+          "relative_path": "metadata.json",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "alias": "R3",
+          "relative_path": "tokenizer/tokenizer_config.json",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914"
+        },
+        {
+          "alias": "R3",
+          "relative_path": "common.pt",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "94e53392bce71573529316bb8ec45b2415f076c00e680d05d7fa103fad1821be"
+        },
+        {
+          "alias": "R3",
+          "relative_path": "train_state.pt",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "fe3d6e3efb8d2fe2fcc6d7b7dd4b905fc0101d59000e70b08dac6a8ac23d90e7"
+        },
+        {
+          "alias": "R3",
+          "relative_path": "tokenizer/tokenizer.json",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+        },
+        {
+          "alias": "R3",
+          "relative_path": "run_config.yaml",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "43c03d2d23b917656ae0079b4af5f133aa0c48735f703cb68c5e5968187319bf"
+        },
+        {
+          "alias": "R3",
+          "relative_path": ".metadata",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "e40213da560686cd440672f7fe7b0df485beaf65f6c7801dd2032f519d670303"
+        },
+        {
+          "alias": "R3",
+          "relative_path": "__0_0.distcp",
+          "revision": "c6d9107f52f6f7e0dbe83022b6de9153b783ed41",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "a401c810f6479c090de26550b785e22a50280d15f4ef920f1f237b4a41df3ac0"
+        },
+        {
+          "alias": "R5",
+          "relative_path": "metadata.json",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+        },
+        {
+          "alias": "R5",
+          "relative_path": "tokenizer/tokenizer_config.json",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914"
+        },
+        {
+          "alias": "R5",
+          "relative_path": "common.pt",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "fe6dc5bab81be6a7691367b6243d4bb5c4700428ece9e30642dfebc272c0546c"
+        },
+        {
+          "alias": "R5",
+          "relative_path": "train_state.pt",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "d9dce934deef3a82c38b23970d5f146af5b299494bacaf659f1f1a01b8371333"
+        },
+        {
+          "alias": "R5",
+          "relative_path": "tokenizer/tokenizer.json",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803"
+        },
+        {
+          "alias": "R5",
+          "relative_path": "run_config.yaml",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable Git blob SHA1 + current full local SHA256/MD5",
+          "sha256": "06dbf45c508649c7d49487d83a44aea4e2b786c0ff95a108ce063183597063a1"
+        },
+        {
+          "alias": "R5",
+          "relative_path": ".metadata",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "ebfd32e8ffeebd04a64a53307284c459a4b12863a9c51319fad0ceec7e17f781"
+        },
+        {
+          "alias": "R5",
+          "relative_path": "__0_0.distcp",
+          "revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+          "status": "PASS",
+          "identity_method": "remote immutable LFS SHA256 + current full local SHA256/MD5",
+          "sha256": "5fbb3feadcdabc32885a5d0bfa4d9a2127a2ac057271892ccba9aa7e9a54748c"
+        }
+      ],
+      "all_16_remote_asset_identities_bound_to_current_verified_local_bytes": true,
+      "no_large_retransfer": true,
+      "observed_utc": "2026-11-18T17:13:01.374940+00:00"
+    },
+    "no_redundant_large_weight_upload": true,
+    "no_second_GPU_sweep": true,
+    "full_installed_GPU_runtime_rebuild_tested": false,
+    "completed_utc": "2026-11-18T17:38:33.079209+00:00"
+  }
 }

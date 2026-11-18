@@ -17,3 +17,7 @@ Obtain the research commit named by the separate final delivery receipt, and rea
 The CPU check reruns exactly189 saved-array comparison rows: all26hooks plus LM, bidirectional logical/repeat checks, all three R3 historical anchors and actual-logit CE witnesses. It requires identical result JSON and CSV to the producer, zero tolerance violations, the original atol1e-4/rtol1e-5 and no Torch/model forward. This recovers qualification evidence, not production performance, missing R2, or the installed GPU runtime. Raw arrays/training sequences remain private.
 
 For native assets, [checkpoint identities](CHECKPOINT_IDENTITIES.json) and [payload index](PAYLOAD_RECOVERY_INDEX.json) give all eight original relative paths, Drive IDs/revisions, immutable HF revisions, byte sizes and hashes. A future explicitly approved GPU recreation would reacquire only missing exact files from those revisions, preserve native layout and use the [qualified runtime recipe](RUNTIME_REBUILD.md). This stage does not launch such a rebuild after successful qualification.
+
+## Recorded transfer and CPU packages
+
+[TRANSFER_ENVIRONMENT_LOCK.json](TRANSFER_ENVIRONMENT_LOCK.json) records actual transfer-SDK package versions and the exact CPU Python/NumPy interpreter used. The installed GPU runtime remains a separately excluded rebuild dependency.

@@ -4,13 +4,13 @@
   "run_id": "20261117T084728Z-a01",
   "current_stage": "A04",
   "attempt_id": "A04-attempt-004",
-  "status": "QUALIFIED_SCOPE_RECOVERY_PENDING",
+  "status": "WAITING_FOR_APPROVAL_A05_PROTECTED_QUALIFIED_SUBSET",
   "full_A04_status": "PARTIAL",
   "full_project_status": "PARTIAL",
   "approved_package_commit": "a64008eb44543dfea92644f96b0129c1a1c661fe",
   "amendment_commit": "07b284aec7fbdd9764597f46cc41226a46db435e",
   "A09_historical_release": "../A09-attempt-001/SESSION_HANDOFF.md",
-  "new_qualification_commit": null,
+  "new_qualification_commit": "906e808af4b61eeb7f8b229fea30e735f1cf818f",
   "metadata_commit": null,
   "commit_binding": "Separate post-push/private delivery proof avoids self-hash cycles",
   "qualification_receipt": "A04_RECEIPT.json",
@@ -44,7 +44,9 @@
     "new_production_scores": 0,
     "new_probe_fits": 0,
     "heldout_forwards": 0,
-    "evidence_recovery_status": "PENDING"
+    "evidence_recovery_status": "PASS",
+    "native_payload_recovery_status": "PASS_VERIFIED_IMMUTABLE_MIRRORS",
+    "accepted_R3_R5_scope_status": "COMPLETE"
   },
   "native_payload_durable_mirrors": {
     "status": "PASS",
@@ -482,12 +484,12 @@
     "private_at_closeout": true
   },
   "new_evidence_backup": "BACKUP_MANIFEST.json",
-  "new_evidence_backup_status": "PENDING",
+  "new_evidence_backup_status": "PASS",
   "restore": "RESTORE.md",
   "missing_inputs": "MISSING_INPUTS_DRAFT.md",
   "A05_proposal": "A05_PROPOSAL.json",
-  "A05_proposal_sha256": "4c8d1129264c434440ae74193d949c272f7142ecb4ebd45043ce59a5d132c8bf",
-  "A05_proposal_ready_protected": false,
+  "A05_proposal_sha256": "27cbc1fddf44b0682d1245b722649c21b6f0a9cffbcd3b7be6edd123f25d5d8d",
+  "A05_proposal_ready_protected": true,
   "automatic_resume": false,
   "new_stage_authorized": false,
   "observer_status": "STOPPED",
@@ -518,5 +520,69 @@
     "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
     "historical_records_preserved": true,
     "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
-  }
+  },
+  "metadata_commit_binding": "Separate post-push/final private receipt names the later metadata commit; no self-reference",
+  "evidence_backup_revision": "5c4fd12f1df0fc96a056e2bad8d83b34822a6bff",
+  "evidence_backup_sha256": "1286c91b9e941b395f9a1c5d189e733c755e8407dd0da19e448602a9d4ece565",
+  "evidence_member_manifest_sha256": "b724ec4bf4f16a5399cf663216d663cda45bde3c4b7bf20004e081c004ec790e",
+  "evidence_recovery_status": "PASS",
+  "native_payload_recovery_status": "PASS_VERIFIED_IMMUTABLE_MIRRORS",
+  "accepted_R3_R5_scope_status": "COMPLETE",
+  "owned_job_disposition": {
+    "status": "PASS",
+    "observed_utc": "2026-11-18T17:41:33.346484+00:00",
+    "scientific_and_acquisition_and_evidence_jobs": "QUIESCENT",
+    "recorded_jobs": [
+      {
+        "record": "TRANSFER_JOB.json",
+        "pid": 73136,
+        "start_ticks": "13551050",
+        "identity_alive": false
+      },
+      {
+        "record": "QUALIFICATION_CONTROLLER_JOB.json",
+        "pid": 74349,
+        "start_ticks": "13579135",
+        "identity_alive": false
+      },
+      {
+        "record": "ACTIVE_GPU_JOB.json",
+        "pid": 77425,
+        "start_ticks": "13616076",
+        "identity_alive": false
+      },
+      {
+        "record": "EVIDENCE_RECOVERY_JOB.json",
+        "pid": 80983,
+        "start_ticks": "13737394",
+        "identity_alive": false
+      }
+    ],
+    "unregistered_owned_workers": [],
+    "locks_verified_available": [
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/qualification-controller.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/report.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/publish.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/service.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/observer.lock"
+    ],
+    "administrative_services": {
+      "observer_status": "STOPPED",
+      "prior_pid": 33071,
+      "prior_start_ticks": "8476919",
+      "identity_alive": false,
+      "reviewer_status": "DRAFT_ONLY_NOT_RUNNING",
+      "publisher_status": "BLOCKED_NOT_RUNNING",
+      "restarted": false,
+      "observed_utc": "2026-11-18T17:41:33.348800+00:00"
+    },
+    "current_finite_administrative_process": {
+      "pid": 81210,
+      "start_ticks": "13757340"
+    },
+    "pod_left_running": true
+  },
+  "next_stage_started": false,
+  "closure_observed_utc": "2026-11-18T17:41:39.469795+00:00"
 }

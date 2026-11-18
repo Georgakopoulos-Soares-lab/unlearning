@@ -15,3 +15,7 @@ Prepare a new A05 prompt on the prompts repository through Ashay's separately au
 Preserve six tasks/all26 representations/seeds42,17,1234, physical8/preprocessing/pooling, both policies, shared36 controls, actual causal LM, paired2000saved-draw conventions and numerical gates. Keep exact/RC grouping, historical R3 domain/provenance and exposed H3 exploratory-test labels. Training parent/objective/dataset-version/sampler/realized-exposure/source-label unknowns remain; qualification is not causal mixture, equivalence, optimality or forgetting evidence. No held-out forward, production score, fitting, new contrast or perturbation occurred in this attempt.
 
 No deadline/cap/reserve is reinstated. Unknown original/rental start, rate and cost remain null. Observer and scheduler remain stopped; no purchases or shutdown. This file is a reviewable proposal, not approval.
+
+## Verified protection binding
+
+New qualification commit `906e808af4b61eeb7f8b229fea30e735f1cf818f`; private evidence revision `5c4fd12f1df0fc96a056e2bad8d83b34822a6bff`, SHA256 `1286c91b9e941b395f9a1c5d189e733c755e8407dd0da19e448602a9d4ece565`; all387members and exact189-row CPU reproduction PASS. Proposal version2 SHA256 `27cbc1fddf44b0682d1245b722649c21b6f0a9cffbcd3b7be6edd123f25d5d8d`. The separate final delivery receipt binds the later metadata commit. This proposal is protected and reviewable, and remains unapproved.

@@ -1,6 +1,6 @@
-# A04 R3/R5 mirror recovery — RUNNING
+# A04 R3/R5 mirror recovery — PARTIAL
 
-Run `20261117T084728Z-a01`, attempt `A04-attempt-004`. Observed UTC `2026-11-18T17:31:14.543847+00:00`. Approved A04 package `a64008eb44543dfea92644f96b0129c1a1c661fe` and exact `a9.5.md` amendment `07b284aec7fbdd9764597f46cc41226a46db435e` are pinned. Scope is acquisition and training-only qualification of selected R3/R5; R2 discovery is excluded. The observer remains STOPPED.
+Run `20261117T084728Z-a01`, attempt `A04-attempt-004`. Observed UTC `2026-11-18T17:41:45.639136+00:00`. Approved A04 package `a64008eb44543dfea92644f96b0129c1a1c661fe` and exact `a9.5.md` amendment `07b284aec7fbdd9764597f46cc41226a46db435e` are pinned. Scope is acquisition and training-only qualification of selected R3/R5; R2 discovery is excluded. The observer remains STOPPED.
 
 ## Goals and finite units
 
@@ -17,11 +17,11 @@ Run `20261117T084728Z-a01`, attempt `A04-attempt-004`. Observed UTC `2026-11-18T
 | Primary LM production units | 49 | 0 | 35 | Training smoke is not production LM | Historical A09 |
 | Shared DNA controls | 36 | 0 | 36 | No fitting this attempt | Historical A09 |
 | Paired uncertainty / independent metric verification | Frozen prior families | 0 | A08/A09 verified release | No new draws or scientific contrasts | Historical A09 |
-| New evidence private recovery | One bounded checkpoint | PENDING | Prior proofs reused | Immutable weight mirrors referenced without duplicate archives | [Recovery](BACKUP_VERIFICATION.json) |
+| New evidence private recovery | One bounded checkpoint | PASS | Prior proofs reused | Immutable weight mirrors referenced without duplicate archives | [Recovery](BACKUP_VERIFICATION.json) |
 
 ## This attempt
 
-R3/R5 TRAIN qualification complete: six first-attempt variants, 189/189 bidirectional comparisons PASS, including R3 historical bridge. GPU jobs exited; evidence recovery and final A05 proposal protection remain.
+R3/R5 recovery scope COMPLETE and protected: six new variants/189 comparison rows PASS, R3 historical bridge PASS,387 private members and exact restored CPU reproduction PASS. Overall A04 PARTIAL due R2; review A05 proposal only.
 
 There are zero new downstream scientific performance measurements, production extractions, probe fits, held-out forwards, bootstrap draws or scientific contrasts. Qualification uses only the frozen 12 TRAINING rows, all 26 hooks, physical batch 8, unchanged pooling/tokenization/precision and actual causal LM. Smoke residuals are numerical gates and do not rank model capabilities. The six tasks, 26 representations, three CV seeds, both policies, 36 controls, true LM and uncertainty standards remain frozen for any future approved production proposal.
 
@@ -37,7 +37,7 @@ Observer **STOPPED**; reviewer **DRAFT_ONLY/not running**; publisher **BLOCKED/n
 
 ## Next action
 
-A04 R3/R5 recovery and qualification only. A protected proposal is required before a new A05 approval. No A05, production backfill, perturbation, Pod B work or replacement training runs here.
+Review protected A05 scope proposal; no automatic stage start. A protected proposal is required before a new A05 approval. No A05, production backfill, perturbation, Pod B work or replacement training runs here.
 
 ## Stage history (receipt-based, no fabricated continuous timeline)
 
@@ -52,3 +52,7 @@ A04 R3/R5 recovery and qualification only. A protected proposal is required befo
 | A07 | Remaining R4/R6 producer work accepted |
 | A08 | Qualified numerical audit / R6-R4 analysis complete |
 | A09 | Qualified report and saved-analysis handoff delivered; immutable release |
+
+## Plan versus released status
+
+QUALIFICATION_PLAN.json and RECOVERY_PLAN.json are preserved pre-execution plans. Their pending cells are historical planning state; [PLAN_STATE_CROSSWALK.json](PLAN_STATE_CROSSWALK.json) points to the current 21-row qualification matrix, six completed unit receipts and separate recovery proof.

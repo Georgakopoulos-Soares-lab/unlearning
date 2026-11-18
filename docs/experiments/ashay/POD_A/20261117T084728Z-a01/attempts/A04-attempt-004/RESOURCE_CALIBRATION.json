@@ -396,5 +396,68 @@
       "peak_GPU_reserved_bytes": 3997171712,
       "peak_process_RSS_kib": 5743544
     }
-  ]
+  ],
+  "closure_observed_utc": "2026-11-18T17:41:41.295744+00:00",
+  "attempt_elapsed_wall_seconds_at_closure": 2465.224968,
+  "evidence_archive_bytes": 20783253,
+  "evidence_compression_seconds": 1.2100134119973518,
+  "evidence_upload_seconds": 2.711697639024351,
+  "evidence_fresh_restore_wall_seconds": 7.768669629003853,
+  "owned_job_disposition": {
+    "status": "PASS",
+    "observed_utc": "2026-11-18T17:41:33.346484+00:00",
+    "scientific_and_acquisition_and_evidence_jobs": "QUIESCENT",
+    "recorded_jobs": [
+      {
+        "record": "TRANSFER_JOB.json",
+        "pid": 73136,
+        "start_ticks": "13551050",
+        "identity_alive": false
+      },
+      {
+        "record": "QUALIFICATION_CONTROLLER_JOB.json",
+        "pid": 74349,
+        "start_ticks": "13579135",
+        "identity_alive": false
+      },
+      {
+        "record": "ACTIVE_GPU_JOB.json",
+        "pid": 77425,
+        "start_ticks": "13616076",
+        "identity_alive": false
+      },
+      {
+        "record": "EVIDENCE_RECOVERY_JOB.json",
+        "pid": 80983,
+        "start_ticks": "13737394",
+        "identity_alive": false
+      }
+    ],
+    "unregistered_owned_workers": [],
+    "locks_verified_available": [
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/qualification-controller.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/report.lock",
+      "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A04-attempt-004/publish.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/service.lock",
+      "/workspace/agent-handoff/POD_A/review-loop/observer.lock"
+    ],
+    "administrative_services": {
+      "observer_status": "STOPPED",
+      "prior_pid": 33071,
+      "prior_start_ticks": "8476919",
+      "identity_alive": false,
+      "reviewer_status": "DRAFT_ONLY_NOT_RUNNING",
+      "publisher_status": "BLOCKED_NOT_RUNNING",
+      "restarted": false,
+      "observed_utc": "2026-11-18T17:41:33.348800+00:00"
+    },
+    "current_finite_administrative_process": {
+      "pid": 81210,
+      "start_ticks": "13757340"
+    },
+    "pod_left_running": true
+  },
+  "remaining_scientific_jobs": 0,
+  "installed_GPU_rebuild_tested": false
 }
