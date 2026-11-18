@@ -1,19 +1,42 @@
 {
-  "final_retirement_recommendation": "PENDING",
-  "fresh_remote_bytes_verified": 46031923968,
-  "fresh_remote_files_verified": 21,
-  "full_restore": "PASS_74029_FILES_INDEPENDENTLY_REHASHED",
-  "independent_source_coverage": "PASS_74072_A_PATHS_AND_25680_B_IDENTITIES",
+  "decisions": {
+    "credential_remediation": "UNVERIFIED",
+    "recovery_coverage": "COMPLETE_FOR_DECLARED_SANITIZED_POD_B_SCOPE",
+    "recovery_integrity": "PASS",
+    "scientific_readiness": "BLOCKED_0_OF_36"
+  },
   "new_GPU_seconds": 0,
-  "new_fits": 0,
-  "new_forwards": 0,
   "next_stage_authorized": false,
-  "preservation_commit": "60ffbf8cd1d139ba6708df27841111e11ecd8c05",
-  "prompt_commit": "4de4c43cd9c9053d6c67ecd5605f831804e9d96b",
-  "prompt_sha256": "eba36df3c854490a3720b984c92cdcc22ac40f7f73392e241d16aef9771db64d",
-  "scientifically_qualified_models": 0,
-  "sensitive_content_audit": "IN_PROGRESS_NOT_A_FINAL_PRIVACY_PASS",
+  "owned_jobs": [],
   "shutdown_authorized": false,
-  "status": "BYTE_INTEGRITY_AND_DECLARED_COVERAGE_PASS_CONTENT_AUDIT_RUNNING",
-  "summary_arithmetic_checks_passed": 95
+  "status": "COMPLETE",
+  "verified_counts": {
+    "canonical_visible_records": 1449,
+    "class_B_inventory_entries": 25680,
+    "class_C_dependencies": {
+      "Git_metadata": 3,
+      "bytecode": 34005,
+      "derived_adapter_factors": 36
+    },
+    "closure_payload_files": 36,
+    "closure_regular_members_including_manifest": 37,
+    "current_required_object_identities": 35655,
+    "fresh_remote_HF_bytes": 46031923968,
+    "fresh_remote_HF_files": 21,
+    "main_objects": 35849,
+    "main_regular_bytes": 46484340213,
+    "main_regular_files": 74029,
+    "main_symlink_metadata": 43,
+    "older_archives": 7,
+    "older_payload_files_with_embedded_checksums": 24574,
+    "older_regular_bytes": 22889557728,
+    "older_regular_files_including_checksums": 24581,
+    "public_private_tool_digest_joins": 1301,
+    "restore_safety_checks": 17,
+    "retained_superseded_objects": 194,
+    "single_stream_compressed_members_verified": 119,
+    "summary_arithmetic_and_record_checks": 95,
+    "superseded_old_file_versions": 379,
+    "transformed_current_files": 116
+  }
 }

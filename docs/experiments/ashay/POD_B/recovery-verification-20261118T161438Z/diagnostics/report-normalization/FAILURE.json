@@ -1,0 +1,8 @@
+{
+  "expected": "Every historical dependency descriptor has payload_root",
+  "observed": "The adapter-trajectory archive uses a flat root and its descriptor omits this optional field.",
+  "exception_type": "KeyError",
+  "field": "payload_root",
+  "affected_scope": "Report normalization only; recovery artifacts/checks unchanged",
+  "repair": "Require identity keys but retain optional descriptor fields only when present."
+}

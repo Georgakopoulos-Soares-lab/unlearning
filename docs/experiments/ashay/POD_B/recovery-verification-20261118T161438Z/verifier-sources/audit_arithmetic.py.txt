@@ -1,0 +1,84 @@
+"""Recompute existing headline arithmetic from remotely restored CSV summaries only."""
+from pathlib import Path
+import csv,json,hashlib,math,statistics,collections,datetime
+R=Path(__file__).parent;P=R/'arithmetic-inputs/public';G=R/'git-checkout/docs/experiments/ashay/POD_B';checks=[];failures=[];values={}
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def check(name,ok,**kw):
+ d=dict(check=name,status='PASS'if ok else 'FAIL',**kw);checks.append(d)
+ if not ok:failures.append(d)
+def near(a,b):return math.isclose(a,b,rel_tol=5e-10,abs_tol=1e-12)
+def table(name):return list(csv.DictReader((P/name).open()))
+spec=json.loads((P/'ANALYSIS_SPEC.json').read_text());spec_sha=sha(P/'ANALYSIS_SPEC.json');check('analysis_spec_identity',spec_sha=='9471098adb38e70a9f9ede6dbe5782a4e379af7bfb697b1fe4b43ae48882bff3')
+manifest=json.loads((P/'OUTPUT_TABLE_MANIFEST.json').read_text())
+for name,e in manifest['tables'].items():
+ p=P/name;check('table_identity_and_rows:'+name,sha(p)==e['sha256']and p.stat().st_size==e['bytes']and len(table(name))==e['rows'])
+points=table('MODULE_METRICS.csv');edges=table('EDGE_METRICS.csv');cp=table('CHECKPOINT_SUMMARY.csv');global_edges=table('GLOBAL_EDGE_METRICS.csv');units={x['module']for x in points};point_groups=collections.defaultdict(list);edge_groups=collections.defaultdict(list)
+for x in points:point_groups[x['checkpoint']].append(x)
+for x in edges:edge_groups[x['edge_id']].append(x)
+check('fixed_36_checkpoint_100_module_3600_point_inventory',len(cp)==36 and len(points)==3600 and len(units)==100 and len(point_groups)==36 and all(len(xs)==100 and {x['module']for x in xs}==units for xs in point_groups.values())and len({(x['checkpoint'],x['module'])for x in points})==3600)
+check('registered_86_edge_kinds_84_pairs_8600_rows',len(global_edges)==86 and len(edges)==8600 and len(edge_groups)==86 and len({tuple(sorted((x['left'],x['right'])))for x in global_edges})==84 and all(len(xs)==100 and {x['module']for x in xs}==units for xs in edge_groups.values())and len({(x['edge_id'],x['module'])for x in edges})==8600)
+check('all_rows_bind_frozen_spec',all(x['spec_sha256']==spec_sha for x in points+edges+cp+global_edges))
+point_fail=[]
+for x in cp:
+ xs=point_groups[x['checkpoint']]
+ if not near(math.sqrt(math.fsum(float(y['U_norm'])**2 for y in xs)),float(x['U_norm'])):point_fail.append(x['checkpoint'])
+check('all_36_global_point_norms_reaggregate',not point_fail,failures=point_fail)
+edge_fail=[]
+cpmap={x['checkpoint']:x for x in cp}
+for x in global_edges:
+ xs=edge_groups[x['edge_id']];distance=math.sqrt(math.fsum(float(y['U_distance'])**2 for y in xs));inner=math.fsum(float(y['U_inner'])for y in xs);nl=float(cpmap[x['left']]['U_norm']);nr=float(cpmap[x['right']]['U_norm'])
+ if not all([near(distance,float(x['U_distance'])),near(inner,float(x['U_inner'])),near(inner/(nl*nr),float(x['U_cosine'])),near(2*distance/(nl+nr),float(x['U_relative_distance']))]):edge_fail.append(x['edge_id'])
+check('all_86_global_edge_summary_aggregates',not edge_fail,failures=edge_fail)
+for series,expected in [('base',14.655634),('maxent',20.974664)]:
+ xs=sorted([x for x in cp if x['series']==series],key=lambda x:int(x['step']));ratio=float(xs[-1]['U_norm'])/float(xs[0]['U_norm']);values[series+'_endpoint_first_norm_ratio']=ratio
+ check('endpoint_ratio:'+series,abs(ratio-expected)<0.5e-6,observed=ratio,published_rounded=expected)
+ check('monotone_delivered_magnitudes:'+series,all(float(b['U_norm'])>float(a['U_norm'])for a,b in zip(xs,xs[1:])))
+adj=[x for x in global_edges if x['kind']=='adjacent'and x['left_series']=='maxent'];boundary=next(x for x in adj if x['left_step']=='1600'and x['right_step']=='1700');within=[x for x in adj if x['left_job']==x['right_job']];median=statistics.median(float(x['U_distance'])for x in within);ratio=float(boundary['U_distance'])/median;rank=1+sum(float(x['U_distance'])>float(boundary['U_distance'])for x in adj)
+values['restart']=dict(distance=float(boundary['U_distance']),cosine=float(boundary['U_cosine']),relative=float(boundary['U_relative_distance']),within_job_median=median,boundary_median_ratio=ratio,descending_rank=rank,adjacent_edges=len(adj),within_job_edges=len(within))
+check('restart_17_adjacent_16_within_job_comparators',len(adj)==17 and len(within)==16 and boundary['left_job']!=boundary['right_job'])
+check('restart_headline_arithmetic',abs(float(boundary['U_distance'])-0.429428978)<0.5e-9 and abs(float(boundary['U_cosine'])-0.999736116)<0.5e-9 and abs(ratio-0.867604494993)<0.5e-12 and rank==16,observed=values['restart'])
+check('scale_2_parameterization_in_tables',all(near(float(x['U_norm']),2*float(x['P_norm']))for x in points)and all(near(float(x['U_distance']),2*float(x['P_distance']))for x in edges))
+check('25_blocks_six_target_types',len({x['block']for x in points})==25 and len({x['target_type']for x in points})==6)
+check('516_numerically_agreeing_module_edge_rows',sum(x['numerical_product_agreement']=='True'for x in edges)==516)
+fig=json.loads((P/'FIGURE_MANIFEST.json').read_text());nf=0;ns=0
+for f in fig['figures']:
+ for item in f['files']:
+  p=P/item['path'];check('figure_identity:'+item['path'],p.is_file()and sha(p)==item['sha256']and p.stat().st_size==item['bytes']);nf+=1
+ for item in f['source_tables']:
+  p=P/item['path'];check('figure_source:'+item['path'],p.is_file()and sha(p)==item['sha256']);ns+=1
+check('all_four_figures_12_exports_five_table_bindings',len(fig['figures'])==4 and nf==12 and ns==5)
+inputs=json.loads((P/'INPUT_MANIFEST.json').read_text());deliveries=inputs['inputs'];check('36_distinct_payloads_and_7200_recorded_tensors',len(deliveries)==36 and len({x['payload']['sha256']for x in deliveries})==36 and len({x['tensor_content_fingerprint']for x in deliveries})==36 and sum(x['tensor_count']for x in deliveries)==7200)
+check('family_counts_18_16_2',dict(collections.Counter(x['family']for x in cp))=={'base_all':18,'maxent_initial':16,'maxent_restart':2})
+v=json.loads((P/'VALIDATION.json').read_text());gram=json.loads((P/'INDEPENDENT_GRAM_AUDIT.json').read_text());check('prior_validation_receipt_scopes_resolve',gram['status']=='PASS'and gram['edge_rows_verified']==8600 and v['real_dense_validation']['cases']==18 and v['new_GPU_seconds']==0 and v['model_inference']==0 and v['qualified_IDs']==[])
+q=list(csv.DictReader((G/'B04_COMPLETION_ELIGIBILITY.csv').open()));check('36_full_models_still_unqualified_all_three_channels_blocked',len(q)==36 and all(x['scientifically_qualified']=='False'and x['downstream_eligible']=='False'and all(x[k]=='BLOCKED'for k in ['scientific_features','scientific_fixed_base_transfer','scientific_LM'])for x in q))
+b=json.loads((G/'B05_STATE.json').read_text());check('B05_conditional_plan_only_no_calibration_or_execution',b['mode']=='PLAN_ONLY'and b['planning_status']=='COMPLETE_CONDITIONAL'and b['qualified_models']==0 and b['executable_units']==[]and b['calibration_status']=='NOT_AUTHORIZED_NOT_RUN'and not b['next_stage_authorized'])
+check('frozen_protocol_sha256_unchanged',sha(G/'PROTOCOL_FROZEN.json')=='4b8852fd0e4e9d9fa41b5a23d3839e0c265ab33a42a4a941b814434f89326f19');check('16848_refit_cells_arithmetic',36*6*26*3==16848)
+for item in json.loads((G/'B05_PACKAGE_MANIFEST.json').read_text())['files']:
+ p=R/'git-checkout'/item['path'];check('frozen_B05_package_file:'+item['path'],p.is_file()and sha(p)==item['sha256']and p.stat().st_size==item['bytes'])
+# Additional published headlines checked against existing scalar summaries.
+check('exact_frozen_point_and_edge_sets',set(point_groups)=={x['id']for x in spec['checkpoints']}and set(edge_groups)=={x['edge_id']for x in spec['edges']})
+check('rank_and_zero_headlines',all(int(x['numerical_rank'])==16 and x['numerical_zero']=='False'and x['exact_factor_zero']=='False'for x in points))
+stable=[float(x['stable_rank'])for x in points];energy=[int(x['energy90_rank'])for x in points]
+check('stable_rank_range_headline',abs(min(stable)-1.000139)<0.5e-6 and abs(max(stable)-10.244676)<0.5e-6 and min(energy)==1 and max(energy)==14)
+for series,expect in [('base',{'linear_fc1':51.1373,'dense_projection':29.4636}),('maxent',{'linear_fc1':50.3377,'dense_projection':30.3933})]:
+ xs=point_groups[series+'/iter_0001800'];total=math.fsum(float(x['U_norm'])**2 for x in xs)
+ for target,pct in expect.items():
+  observed=100*math.fsum(float(x['U_norm'])**2 for x in xs if x['target_type']==target)/total
+  check('endpoint_target_fraction:'+series+':'+target,abs(observed-pct)<0.00005,observed_percent=observed,published_rounded_percent=pct)
+conditional=[x for x in global_edges if x['left_series']!=x['right_series']]
+check('18_same_step_conditional_cross_series_edges',len(conditional)==18 and all(x['left_step']==x['right_step']for x in conditional))
+cos=[float(x['U_cosine'])for x in conditional];check('cross_series_cosine_range',abs(min(cos)-0.022635)<0.5e-6 and abs(max(cos)-0.380801)<0.5e-6)
+check('no_exact_factor_identities_in_registered_edges',all(x['exact_same_factors']=='False'for x in edges))
+boundary_rows=edge_groups[boundary['edge_id']];den=math.fsum(float(x['U_distance'])**2 for x in boundary_rows)
+for target,pct in {'dense':6.457087,'dense_projection':34.750689,'linear_fc1':47.915861,'linear_fc2':8.229419,'linear_proj':0.247443,'linear_qkv':2.399501}.items():
+ observed=100*math.fsum(float(x['U_distance'])**2 for x in boundary_rows if x['target_type']==target)/den
+ check('restart_target_fraction:'+target,abs(observed-pct)<0.5e-6,observed_percent=observed)
+check('boundary_all100_nonzero_six_below_tolerance',all(float(x['U_distance'])>0 for x in boundary_rows)and sum(x['numerical_product_agreement']=='True'for x in boundary_rows)==6)
+syn=v['synthetic_tests'];test_log=R/'arithmetic-inputs/private/evidence/ALGEBRA_TESTS_03.log'
+check('17_prior_focused_tests_receipt_and_exact_log',syn['passed']==17 and syn['failed']==0 and syn['skipped']==0 and test_log.is_file()and sha(test_log)==syn['log']['sha256'])
+rd=v['real_dense_validation'];check('18_prior_dense_cases_with_bounded_spectral_scope',rd['status']=='PASS'and rd['cases']==18 and rd['max_absolute_difference']<5.12e-13 and all('64x64'in x['spectral_scope']for x in rd['checks']))
+protocol=json.loads((G/'PROTOCOL_FROZEN.json').read_text());check('frozen_protocol_six_tasks_26_coordinates_three_seeds_22645_rows',len(protocol['task_order'])==6 and len(protocol['representation_contract']['keys'])==26 and protocol['probe']['CV_seeds']==[42,17,1234]and protocol['populations_total_rows']==22645 and protocol['probe']['fold_sets']==18 and protocol['probe']['partitions']==84)
+check('unchanged_fixed_base_scaler_and_head_and_causal_LM_contracts','unchanged_fixed_base_scaler_AND_head'in protocol['probe']['policies']and protocol['LM']['output']=='Actual qualified next-token LM head; not hidden-layer or classifier loss'and protocol['LM']['corpus_NLL']=='sum_i float64(nll_sum_i) / sum_i int64(n_tokens_i)'and protocol['LM']['PPL']=='exp(corpus_NLL)'and protocol['LM']['layer_seed_multiplier']==1)
+result=dict(status='PASS'if not failures else 'FAIL',scope='Existing restored summary-table arithmetic, counts, file identities and historical receipt inspection; no factor arrays/model loads/production geometry/full Gram/probes/scoring',checks=checks,failures=failures,headline_arithmetic=values,checks_not_performed=['No raw factor or tensor arithmetic','No full Gram audit rerun','No model import/environment activation/GPU/fitting','No new scientific validation or capability scores','No assertion that unknown job parent/loading/restart provenance is resolved'],scientifically_qualified_models=0,new_GPU_seconds=0,new_forwards=0,new_fits=0,observed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+(R/'SCIENTIFIC_RECORD_AUDIT.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print(json.dumps(dict(status=result['status'],checks=len(checks),failures=failures,headline_arithmetic=values),indent=2))
+if failures:raise SystemExit(1)

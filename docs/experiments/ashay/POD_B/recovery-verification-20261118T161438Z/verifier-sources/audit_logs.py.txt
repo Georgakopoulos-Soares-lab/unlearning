@@ -1,0 +1,25 @@
+"""Verify public event digests against fresh restored private canonical records."""
+from pathlib import Path
+import json,hashlib,re,collections
+R=Path(__file__).parent;G=R/'git-checkout/docs/experiments/ashay/POD_B/preservation-20261118T093411Z';checks=[]
+def check(name,ok,**kw):checks.append(dict(check=name,status='PASS'if ok else 'FAIL',**kw))
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+previous_last=0;total_tools=0;total_records=0
+for suffix,private,public,register in [
+ ('base',R/'main-restored/metadata/sanitized-transcript.jsonl','logs/session-001.md','REDACTION_AND_OMISSION_REGISTER.json'),
+ ('tail',R/'dependency-restores/closure/metadata/closure/private/sanitized-transcript-tail.jsonl','logs/session-tail-001.md','REDACTION_AND_OMISSION_REGISTER_TAIL.json')]:
+ reg=json.loads((G/register).read_text());check('private_transcript_identity:'+suffix,private.is_file()and sha(private)==reg['private_sanitized_transcript']['sha256']and private.stat().st_size==reg['private_sanitized_transcript']['bytes'])
+ rows=[json.loads(line)for line in private.open()];types=collections.Counter();digests=set();lines=[];forbidden=[]
+ for row in rows:
+  payload=row['payload'];kind=payload['type'];role=payload.get('role');types[kind+'/'+str(role)]+=1;lines.append(row['source_line'])
+  if kind in ['analysis','reasoning']or role in ['system','developer']or payload.get('channel')=='analysis':forbidden.append(row['source_line'])
+  if kind!='message':digests.add(hashlib.sha256(json.dumps(row,sort_keys=True,separators=(',',':'),ensure_ascii=False).encode()).hexdigest())
+ listed=re.findall(r'Sanitized record SHA256 `([0-9a-f]{64})`',(G/public).read_text());check('every_public_tool_digest_resolves:'+suffix,set(listed)==digests and len(listed)==len(digests),public_events=len(listed),private_tool_records=len(digests),missing=list(sorted(digests-set(listed))),unresolved=list(sorted(set(listed)-digests)))
+ check('all_canonical_record_counts_match_register:'+suffix,dict(types)==reg['canonical_visible_counts'],observed=dict(types))
+ check('no_hidden_instruction_reasoning_records_exported:'+suffix,not forbidden,forbidden_source_lines=forbidden)
+ check('source_line_order_and_nonoverlap:'+suffix,lines==sorted(set(lines))and min(lines)>previous_last and max(lines)<=reg['source_lines'],minimum=min(lines),maximum=max(lines),register_cutoff=reg['source_lines'])
+ previous_last=reg['source_lines'];total_tools+=len(listed);total_records+=len(rows)
+ check('raw_session_omission_and_token_status_explicit:'+suffix,reg['raw_session_uploaded']is False and reg['hidden_reasoning_exported']is False and reg['token_remediation'].startswith('UNVERIFIED'))
+result=dict(status='PASS'if all(x['status']=='PASS'for x in checks)else 'FAIL',checks=checks,canonical_visible_records=total_records,public_private_tool_digest_joins=total_tools,scope='Available bounded visible exports only; omitted earlier/unrecorded/internal/after-cutoff material not invented. This verifies canonical joins,not every original raw secret-bearing session line.')
+(R/'LOG_AUDIT.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print(json.dumps(dict(status=result['status'],records=total_records,tool_joins=total_tools,checks=len(checks))))
+if result['status']!='PASS':raise SystemExit(1)

@@ -1,0 +1,85 @@
+"""Independent bounded credential scan; reports identities/categories, never values."""
+from pathlib import Path
+import collections,hashlib,json,re,zipfile,tarfile,io,datetime
+R=Path(__file__).parent
+A=json.loads((R/'APPROVAL_AND_WINDOW.json').read_text());CUTOFF=datetime.datetime.fromisoformat(A['new_transfer_cutoff'])
+patterns=[('service_credential',re.compile(rb'(?<![A-Za-z0-9_])(?:hf_[A-Za-z0-9]{20,}|gh[pousr]_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|sk-(?:proj-)?[A-Za-z0-9_-]{20,}|AIza[A-Za-z0-9_-]{30,}|xox[baprs]-[A-Za-z0-9-]{15,})')),
+ ('credential_assignment',re.compile(rb'(?i)(?<![A-Za-z0-9_])(?:IdentityProvider\.token|ServerApp\.token|HF_TOKEN|HUGGING_FACE_HUB_TOKEN|GITHUB_TOKEN|OPENAI_API_KEY|AWS_SECRET_ACCESS_KEY|GOOGLE_API_KEY|ACCESS_TOKEN|REFRESH_TOKEN|API_TOKEN|API_KEY|PASSWORD|SECRET_ACCESS_KEY)[\x22\x27]?\s*(?:=|:)\s*[\x22\x27]?[A-Za-z0-9_./+~=-]{16,}')),
+ ('authorization',re.compile(rb'(?i:\bBearer)\s+[A-Za-z0-9_./+~=-]{16,}|\bBasic\s+[A-Za-z0-9+/]{20,}={0,2}')),
+ ('private_key',re.compile(rb'-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----[\r\n]+[A-Za-z0-9+/=\r\n]{40,}-----END (?:RSA |EC |OPENSSH )?PRIVATE KEY-----')),
+ ('signed_URL',re.compile(rb'https?://[^\s<>\x22\x27?]+\?[^\s<>\x22\x27]*(?:X-Amz-|X-Goog-|Signature=|\b(?:token|sig|access_token)=)[^\s<>\x22\x27]*',re.I)),
+ ('URL_password',re.compile(rb'(?:https?|ftp)://[A-Za-z0-9._~%!$&()*+,;=-]+:[A-Za-z0-9._~%!$&()*+,;=:-]+@[A-Za-z0-9.-]+(?::[0-9]+)?(?:/[^\s<>\x22\x27]*)?'))]
+gates={'service_credential':(b'hf_',b'ghp_',b'gho_',b'ghu_',b'ghs_',b'ghr_',b'github_pat_',b'sk-',b'aiza',b'xox'),'credential_assignment':(b'token',b'api',b'password',b'secret_access_key'),'authorization':(b'bearer',b'basic'),'private_key':(b'private key-----',),'signed_URL':(b'http',),'URL_password':(b'://',)}
+known=set()
+for p in Path('/proc').iterdir():
+ if not p.name.isdigit():continue
+ try:
+  if (p/'comm').read_text().strip()not in ['jupyter-lab','jupyter-server']:continue
+  for arg in (p/'cmdline').read_bytes().split(b'\0'):
+   if arg.startswith((b'--IdentityProvider.token=',b'--ServerApp.token=')):
+    val=arg.split(b'=',1)[1]
+    if len(val)>=8:known.add(val)
+ except (PermissionError,OSError):pass
+hits=[];allow=collections.Counter();scan_bytes=0;nested_members=0;seen=set();sources=0;errors=[]
+# Only the exact preserved primary-source-documented Arrow localhost example.
+placeholder_sha='c3041321d032006327497a14d863531e2baa6eee0bcbd106fc9e3842e8aa9574'
+def checkpoint(status):
+ payload=dict(status=status,all_regular_sources_considered=sources,distinct_content_policy_pairs=len(seen),scan_bytes=scan_bytes,nested_members_scanned=nested_members,credential_candidate_findings=hits,errors=errors,matching_values_printed=False,observed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+ (R/'PRIVACY_AUDIT_PARTIAL.json').write_text(json.dumps(payload,sort_keys=True,indent=2)+'\n')
+def bounded():
+ if datetime.datetime.now(datetime.timezone.utc)>=CUTOFF:
+  checkpoint('INCOMPLETE_TIME_LIMIT');raise TimeoutError('Preservation verification closure reserve reached')
+def stream(f,label,public=False):
+ global scan_bytes
+ tail=b'';local=set()
+ while data:=f.read(4*1024*1024):
+  bounded();scan_bytes+=len(data);block=tail+data;low=block.lower()
+  for val in known:
+   if val in block:local.add(('known_live_credential',hashlib.sha256(val).hexdigest()))
+  for category,regex in patterns:
+   if not any(g in low for g in gates[category]):continue
+   for match in regex.finditer(block):
+    digest=hashlib.sha256(match.group()).hexdigest()
+    if category=='URL_password'and digest==placeholder_sha:allow['exact_documented_Arrow_localhost_example']+=1;continue
+    local.add((category,digest))
+  if public and re.search(rb'(?i)(?<![A-Za-z])[ACGTN]{40,}(?![A-Za-z])',block):local.add(('private_sequence_literal','VALUE_NOT_RECORDED'))
+  tail=block[-16384:]
+ for category,digest in sorted(local):hits.append(dict(path=label,category=category,match_sha256=digest))
+def scan_file(p,identity,public=False):
+ global sources,nested_members
+ bounded();sources+=1
+ key=(identity,public)
+ if key in seen:return
+ seen.add(key)
+ with p.open('rb')as f:stream(f,str(p.relative_to(R)),public)
+ try:
+  if zipfile.is_zipfile(p):
+   with zipfile.ZipFile(p)as z:
+    names=set()
+    for info in z.infolist():
+     if info.is_dir():continue
+     if info.filename in names:errors.append(dict(path=str(p.relative_to(R)),type='DUPLICATE_ZIP_MEMBER',member=info.filename))
+     names.add(info.filename);nested_members+=1
+     if info.flag_bits&1:errors.append(dict(path=str(p.relative_to(R)),type='ENCRYPTED_ZIP_MEMBER'));continue
+     with z.open(info)as f:stream(f,str(p.relative_to(R))+'!'+info.filename,public)
+  elif p.name.endswith(('.tar.gz','.tgz','.tar.bz2','.tar.xz'))or p.suffix=='.tar':
+   with tarfile.open(p,'r:*')as t:
+    for info in t:
+     if info.isfile():
+      nested_members+=1
+      with t.extractfile(info)as f:stream(f,str(p.relative_to(R))+'!'+info.name,public)
+ except (OSError,ValueError,zipfile.BadZipFile,tarfile.TarError,RuntimeError)as e:errors.append(dict(path=str(p.relative_to(R)),exception_type=type(e).__name__,type='NESTED_INSPECTION_FAILED'))
+rows=[json.loads(line)for line in (R/'main-restored/metadata/FINAL_BACKED_FILE_MANIFEST.jsonl').open()]
+for i,row in enumerate(rows,1):
+ if row['backed_kind']=='regular_file':scan_file(R/'main-restored/restored-files'/row['archive_path'],row['sha256'])
+ if i%5000==0:
+  checkpoint('IN_PROGRESS');print('SCANNED_MAIN',i,'unique',len(seen),'candidate_hits',len(hits),flush=True)
+for name in ['main-restored/metadata','dependency-restores','git-checkout']:
+ root=R/name
+ for p in root.rglob('*'):
+  if not p.is_file():continue
+  # Case-sensitive public Git records receive the additional private-sequence rule.
+  with p.open('rb')as f:identity=hashlib.file_digest(f,'sha256').hexdigest()
+  scan_file(p,identity,public=name=='git-checkout')
+result=dict(status='PASS'if not hits and not errors else 'REVIEW_REQUIRED',all_regular_sources_considered=sources,distinct_content_policy_pairs=len(seen),scan_bytes=scan_bytes,nested_members_scanned=nested_members,credential_candidate_findings=hits,errors=errors,exact_documented_placeholder_allowances=dict(allow),matching_values_printed=False,operator_token_revocation='UNVERIFIED',scope='Fresh remotely restored regular files/metadata/transitive dependency contents and scoped Git docs/scripts; content hashes deduplicated within each private/public policy. ZIP/tar members inspected without deserialization or execution.',observed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+(R/'PRIVACY_AUDIT.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items()if k not in ['credential_candidate_findings','errors']},indent=2));print('CANDIDATES',len(hits),'ERRORS',len(errors))

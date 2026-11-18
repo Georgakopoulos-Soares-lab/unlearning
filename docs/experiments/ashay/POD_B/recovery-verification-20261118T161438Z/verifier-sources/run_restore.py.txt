@@ -1,0 +1,20 @@
+from pathlib import Path
+import json,subprocess,time,datetime,os
+R=Path(__file__).parent;A=json.loads((R/'APPROVAL_AND_WINDOW.json').read_text())
+while True:
+ if datetime.datetime.now(datetime.timezone.utc)>=datetime.datetime.fromisoformat(A['new_transfer_cutoff']):raise RuntimeError('CUTOFF')
+ p=R/'DOWNLOAD_RESULTS.json'
+ if p.exists():
+  d=json.loads(p.read_text())
+  if d['status']=='FAIL':raise RuntimeError('DOWNLOADS_FAILED')
+  if d['status']=='PASS':break
+ time.sleep(2)
+base=R/'downloads/836c443a000948aa4541d667a9e79127cfd8000b/POD_B/preservation/20261118T093411Z'
+helper=R/'remote-instructions/scripts/sayyed/restore_pod_b_preservation.py'
+print('START_PUBLISHED_RUNBOOK_RESTORE',datetime.datetime.now(datetime.timezone.utc).isoformat(),flush=True)
+with (R/'published-helper.stdout').open('w')as out,(R/'published-helper.stderr').open('w')as err:
+ subprocess.run(['/workspace/venvs/evo2-pilot/bin/python','-B',str(helper),'--manifest',str(base/'MANIFEST.json'),'--manifest-sha256','d6e886fc27ee80b1fc673c1292ae0c57b3addc1feb8789728553a2a4d5a5c43c','--download-root',str(base),'--output',str(R/'main-restored'),'--restore-files'],check=True,stdout=out,stderr=err)
+print('PUBLISHED_RUNBOOK_RESTORE_PASS',datetime.datetime.now(datetime.timezone.utc).isoformat(),flush=True)
+with (R/'dependencies.stdout').open('w')as out,(R/'dependencies.stderr').open('w')as err:
+ subprocess.run(['/workspace/venvs/evo2-pilot/bin/python','-B',str(R/'restore_dependencies.py')],check=True,stdout=out,stderr=err)
+print('DEPENDENCY_EXTRACTION_PASS',datetime.datetime.now(datetime.timezone.utc).isoformat(),flush=True)

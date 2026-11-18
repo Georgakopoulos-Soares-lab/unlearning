@@ -1,0 +1,52 @@
+"""Independent safe byte extraction of exact remotely downloaded dependencies."""
+from pathlib import Path,PurePosixPath
+import json,hashlib,tarfile,datetime,subprocess
+R=Path(__file__).parent;A=json.loads((R/'APPROVAL_AND_WINDOW.json').read_text());M=json.loads((R/'remote-instructions/docs/experiments/ashay/POD_B/preservation-20261118T093411Z/BACKUP_MANIFEST.json').read_text())
+def dump(n,d):(R/n).write_text(json.dumps(d,sort_keys=True,indent=2)+'\n')
+def safe(v):
+ p=PurePosixPath(v)
+ if not v or p.is_absolute()or '..' in p.parts or '\\'in v or '\x00'in v:raise ValueError('UNSAFE_PATH')
+ return Path(*p.parts)
+def sha(p):
+ with p.open('rb')as f:return hashlib.file_digest(f,'sha256').hexdigest()
+def extract(name,path,zstd=False):
+ out=R/'dependency-restores'/name;out.mkdir(parents=True,exist_ok=False);rows=[];seen=set();dirs=set();links=[]
+ proc=subprocess.Popen(['zstd','-d','-q','-c','--',str(path)],stdout=subprocess.PIPE)if zstd else None
+ t=tarfile.open(fileobj=proc.stdout,mode='r|')if zstd else tarfile.open(path,'r|gz')
+ try:
+  for m in t:
+   if datetime.datetime.now(datetime.timezone.utc)>=datetime.datetime.fromisoformat(A['new_transfer_cutoff']):raise RuntimeError('CLOSURE_RESERVE')
+   rel=safe(m.name);key=rel.as_posix()
+   if m.isdir():
+    if key in seen:raise ValueError('FILE_DIRECTORY_COLLISION')
+    dirs.add(key);continue
+   if key in seen or key in dirs:raise ValueError('DUPLICATE_OR_COLLIDING_MEMBER')
+   seen.add(key)
+   if not m.isfile():
+    links.append(dict(path=key,type=m.type.decode(errors='replace'),target=m.linkname));continue
+   if m.size<0:raise ValueError('NEGATIVE_SIZE')
+   dest=out/rel;dest.parent.mkdir(parents=True,exist_ok=True);h=hashlib.sha256();n=0
+   with t.extractfile(m)as f,dest.open('xb')as target:
+    while data:=f.read(4*1024*1024):h.update(data);target.write(data);n+=len(data)
+   if n!=m.size:raise ValueError('MEMBER_SIZE_MISMATCH')
+   rows.append(dict(path=key,bytes=n,sha256=h.hexdigest()))
+ finally:
+  t.close()
+  if proc:
+   proc.stdout.close()
+   if proc.wait()!=0:raise RuntimeError('ZSTD_FAILED')
+ with (R/(name+'-MEMBER_INDEX.jsonl')).open('w')as f:
+  for row in rows:f.write(json.dumps(row,sort_keys=True)+'\n')
+ return dict(id=name,status='PASS'if not links else 'SAFE_EXTRACTION_WITH_DEFERRED_LINKS',regular_files=len(rows),regular_bytes=sum(x['bytes']for x in rows),symlinks_or_specials_deferred=links,root=str(out),member_index_sha256=sha(R/(name+'-MEMBER_INDEX.jsonl')))
+results=[];errors=[]
+for d in M['transitive_dependencies']:
+ try:
+  p=R/'downloads'/d['revision']/d['path'];assert sha(p)==d['sha256']and p.stat().st_size==d['bytes'];res=extract(d['id'],p);res['remote_revision']=d['revision'];results.append(res);print(json.dumps(res),flush=True)
+ except Exception as e:errors.append(dict(id=d['id'],status='FAIL',exception_type=type(e).__name__));print(json.dumps(errors[-1]),flush=True)
+ dump('DEPENDENCY_RESTORES.json',dict(status='IN_PROGRESS',results=results,errors=errors))
+c=M['closure_supplement']
+try:
+ p=R/'downloads'/c['revision']/c['archive_path'];assert sha(p)==c['archive_sha256']and p.stat().st_size==c['archive_bytes'];res=extract('closure',p,True);results.append(res);print(json.dumps(res),flush=True)
+except Exception as e:errors.append(dict(id='closure',status='FAIL',exception_type=type(e).__name__))
+dump('DEPENDENCY_RESTORES.json',dict(status='PASS'if not errors else 'FAIL',results=results,errors=errors))
+if errors:raise SystemExit(1)

@@ -1,3 +1,9 @@
+Current recovery verification: [HANDOFF.md](recovery-verification-20261118T161438Z/HANDOFF.md) and [VERIFICATION_RECEIPT.json](recovery-verification-20261118T161438Z/VERIFICATION_RECEIPT.json). Recovery integrity PASS; declared sanitized Pod B coverage complete; scientific readiness BLOCKED (0/36); credential remediation UNVERIFIED. B05 remains conditional planning only. No science resume,stage queue,retirement,deletion or shutdown is authorized. Exact preservation commit 60ffbf8cd1d139ba6708df27841111e11ecd8c05 and all HF revisions are pinned in the receipt. The final retirement decision belongs to Ashay.
+
+The following earlier handoffs remain verbatim dated history; their stage-authorization statements are not current execution authority.
+
+---
+
 Current authoritative B04 completion attempt: B04_COMPLETION_HANDOFF.md, B04_IDENTITY_RESOLUTION.json and CURRENT_STATUS.json. Status BLOCKED; WAITING_FOR_STEERING: B04. No B05/B06 authorization.
 
 Previous handoff retained verbatim:

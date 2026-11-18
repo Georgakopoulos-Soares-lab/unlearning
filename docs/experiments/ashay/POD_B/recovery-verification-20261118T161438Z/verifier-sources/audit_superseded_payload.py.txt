@@ -1,0 +1,24 @@
+"""Reconstruct and inspect retained superseded diagnostic object versions."""
+from pathlib import Path,PurePosixPath
+import ast,json,hashlib,datetime
+R=Path(__file__).parent;MAIN=R/'main-restored';M=MAIN/'metadata';scanner=R/'audit_privacy.py';tree=ast.parse(scanner.read_text());prefix=[]
+for node in tree.body:
+ if isinstance(node,ast.Assign)and any(isinstance(t,ast.Name)and t.id=='rows'for t in node.targets):break
+ prefix.append(node)
+ns={'__file__':str(scanner),'__name__':'reviewed_private_scanner_functions'};exec(compile(ast.Module(body=prefix,type_ignores=[]),str(scanner),'exec'),ns)
+current=[json.loads(x)for x in (M/'FINAL_BACKED_FILE_MANIFEST.jsonl').open()];refs={c['sha256']for row in current for c in row.get('chunks',[])};objects={p.name for p in (MAIN/'objects').glob('*/*')if p.is_file()};extra=objects-refs;covered=set();restored=[];errors=[];out=R/'superseded-diagnostics-restored';out.mkdir(exist_ok=False)
+for line in (M/'BACKED_FILE_MANIFEST.jsonl').open():
+ row=json.loads(line);chunks=row.get('chunks',[])
+ if not any(c['sha256']in extra for c in chunks):continue
+ rel=PurePosixPath(row['archive_path']);assert not rel.is_absolute()and '..'not in rel.parts and '\\'not in str(rel)
+ dest=out/Path(*rel.parts);dest.parent.mkdir(parents=True,exist_ok=True);h=hashlib.sha256();size=0
+ with dest.open('xb')as target:
+  for c in chunks:
+   ns['bounded']();p=MAIN/'objects'/c['sha256'][:2]/c['sha256'];assert p.stat().st_size==c['bytes']
+   with p.open('rb')as f:
+    while data:=f.read(4*1024*1024):target.write(data);h.update(data);size+=len(data)
+   covered.add(c['sha256'])
+ assert size==row['backed_bytes']and h.hexdigest()==row['sha256']
+ ns['scan_file'](dest,row['sha256']);restored.append(dict(source=row['source'],path=str(dest.relative_to(R)),bytes=size,sha256=h.hexdigest(),scope='Superseded sanitized scanner diagnostic version; never the current required file identity'))
+result=dict(status='PASS'if covered>=extra and not ns['hits']and not ns['errors']else 'REVIEW_REQUIRED',superseded_object_count=len(extra),superseded_objects_covered=len(extra&covered),uncovered_objects=sorted(extra-covered),reconstructed_old_file_versions=len(restored),reconstructed_file_bytes=sum(x['bytes']for x in restored),scanner_source_sha256=hashlib.sha256(scanner.read_bytes()).hexdigest(),scan_bytes=ns['scan_bytes'],nested_members_scanned=ns['nested_members'],findings=ns['hits'],errors=ns['errors'],exact_documented_placeholder_allowances=dict(ns['allow']),files=restored,matching_values_printed=False,observed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+(R/'SUPERSEDED_OBJECT_PRIVACY_AUDIT.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items()if k not in ['files','findings','errors']},indent=2));print('FINDINGS',len(result['findings']),'ERRORS',len(result['errors']))

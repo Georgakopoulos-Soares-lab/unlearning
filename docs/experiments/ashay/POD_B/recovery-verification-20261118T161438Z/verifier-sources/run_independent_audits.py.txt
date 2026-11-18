@@ -1,0 +1,16 @@
+from pathlib import Path
+import json,datetime,time,subprocess
+R=Path(__file__).parent;A=json.loads((R/'APPROVAL_AND_WINDOW.json').read_text())
+while True:
+ if datetime.datetime.now(datetime.timezone.utc)>=datetime.datetime.fromisoformat(A['new_transfer_cutoff']):raise RuntimeError('CUTOFF')
+ p=R/'DEPENDENCY_RESTORES.json'
+ if p.exists():
+  d=json.loads(p.read_text())
+  if d['status']=='FAIL':raise RuntimeError('DEPENDENCY_RESTORE_FAILED')
+  if d['status']=='PASS':break
+ time.sleep(2)
+for script in ['audit_main.py','audit_privacy.py']:
+ print('START',script,datetime.datetime.now(datetime.timezone.utc).isoformat(),flush=True)
+ with (R/(script+'.stdout')).open('w')as out,(R/(script+'.stderr')).open('w')as err:
+  proc=subprocess.run(['/workspace/venvs/evo2-pilot/bin/python','-B',str(R/script)],stdout=out,stderr=err)
+ print('EXIT',script,proc.returncode,datetime.datetime.now(datetime.timezone.utc).isoformat(),flush=True)

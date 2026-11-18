@@ -1,0 +1,53 @@
+from pathlib import Path
+import ast,json,hashlib,subprocess,re,datetime,os
+R=Path(__file__).parent;W=Path('/workspace/wt-POD_B');O=W/'docs/experiments/ashay/POD_B/recovery-verification-20261118T161438Z';A=json.loads((R/'APPROVAL_AND_WINDOW.json').read_text());B=json.loads((R/'PROTECTED_BASELINE.json').read_text())
+def sha(p):
+ with Path(p).open('rb')as f:return hashlib.file_digest(f,'sha256').hexdigest()
+def g(root,*args):return subprocess.check_output(['git','--no-optional-locks','-C',str(root),*args])
+assert g(W,'branch','--show-current').decode().strip()=='POD_B'and g(W,'remote','get-url','origin').decode().strip()=='https://github.com/Georgakopoulos-Soares-lab/unlearning.git'and Path(g(W,'rev-parse','--git-common-dir').decode().strip()).resolve()==Path('/workspace/repos/unlearning-pod-b/.git')and Path(g(W,'rev-parse','--show-toplevel').decode().strip())==W
+head=g(W,'rev-parse','HEAD').decode().strip();assert head==json.loads((R/'PROGRESS_PUBLICATION.json').read_text())['commit'];assert g(W,'ls-remote','origin','refs/heads/POD_B').decode().split()[0]==head
+for e in B['protected_files']:assert sha(e['path'])==e['sha256']
+heads=g(W,'for-each-ref','--format=%(refname) %(objectname)','refs/heads').decode().splitlines();assert [x for x in heads if not x.startswith('refs/heads/POD_B ')]==[x for x in B['research_heads']if not x.startswith('refs/heads/POD_B ')]
+P=Path('/workspace/repos/test-prompts-push-pod-b');assert hashlib.sha256(g(P,'status','--porcelain=v1')).hexdigest()==B['prompt_dirty_sha256'];assert g(P,'for-each-ref','--format=%(refname) %(objectname)','refs/heads').decode().splitlines()==B['prompt_heads']
+assert sha(W/'docs/experiments/ashay/POD_B/PROTOCOL_FROZEN.json')=='4b8852fd0e4e9d9fa41b5a23d3839e0c265ab33a42a4a941b814434f89326f19'
+changed=g(W,'diff','--name-only',A['preservation_commit']).decode().splitlines();allowed=lambda p:p.startswith('docs/experiments/ashay/POD_B/recovery-verification-20261118T161438Z/')or p in ['docs/experiments/ashay/POD_B/SESSION_HANDOFF.md','docs/experiments/ashay/POD_B/RECOVERY_VERIFICATION_CURRENT.json'];assert all(allowed(x)for x in changed)
+# Import only the reviewed byte-scanner definitions,not its archive traversal.
+scanner=R/'audit_privacy.py';nodes=[]
+for n in ast.parse(scanner.read_text()).body:
+ if isinstance(n,ast.Assign)and any(isinstance(t,ast.Name)and t.id=='rows'for t in n.targets):break
+ nodes.append(n)
+ns={'__file__':str(scanner),'__name__':'final_public_privacy_review'};exec(compile(ast.Module(body=nodes,type_ignores=[]),str(scanner),'exec'),ns)
+paths=[p for p in O.rglob('*')if p.is_file()]+[W/'docs/experiments/ashay/POD_B/SESSION_HANDOFF.md',W/'docs/experiments/ashay/POD_B/RECOVERY_VERIFICATION_CURRENT.json']
+for p in paths:
+ with p.open('rb')as f:ns['stream'](f,str(p.relative_to(W)),True)
+ if p.suffix=='.json':json.loads(p.read_text())
+ if p.name.endswith('.py.txt'):ast.parse(p.read_text())
+assert not ns['hits'],dict(privacy_candidate_count=len(ns['hits']),categories=sorted({x['category']for x in ns['hits']}))
+broken=[]
+for p in O.glob('*.md'):
+ for target in re.findall(r'\[[^\]]+\]\(([^)]+)\)',p.read_text()):
+  if target.startswith(('https:','http:','#','mailto:')):continue
+  dest=p.parent/target.split('#',1)[0]
+  if not dest.exists():broken.append(dict(file=p.name,target=target))
+assert not broken,broken
+for e in json.loads((O/'VERIFIER_SOURCE_MANIFEST.json').read_text())['files']:assert sha(O/e['path'])==e['sha256']
+original=subprocess.check_output(['git','-C',str(R/'remote-git'),'show',A['preservation_commit']+':docs/experiments/ashay/POD_B/SESSION_HANDOFF.md']);assert (W/'docs/experiments/ashay/POD_B/SESSION_HANDOFF.md').read_bytes().endswith(original)
+owned=[]
+for p in Path('/proc').iterdir():
+ if not p.name.isdigit()or int(p.name)==os.getpid():continue
+ try:
+  if(p/'comm').read_text().strip()!='python':continue
+  for arg in (p/'cmdline').read_bytes().split(b'\0'):
+   if arg.startswith(str(R).encode()+b'/')and arg.endswith(b'.py'):owned.append(dict(pid=int(p.name),script=Path(arg.decode()).name))
+ except (OSError,PermissionError):pass
+assert not owned,owned
+receipt=json.loads((O/'VERIFICATION_RECEIPT.json').read_text());assert receipt['decisions']==dict(recovery_integrity='PASS',recovery_coverage='COMPLETE_FOR_DECLARED_SANITIZED_POD_B_SCOPE',scientific_readiness='BLOCKED_0_OF_36',credential_remediation='UNVERIFIED');assert receipt['verified_counts']['summary_arithmetic_and_record_checks']==95 and receipt['verified_counts']['main_regular_files']==74029 and not receipt['unresolved_privacy_candidates']
+now=datetime.datetime.now(datetime.timezone.utc);assert now<datetime.datetime.fromisoformat(A['closure_deadline'])
+result=dict(status='PASS',observed_utc=now.isoformat(),public_files_scanned=len(paths),public_credential_candidates=0,public_private_sequence_candidates=0,JSON_and_source_syntax='PASS',local_report_links='PASS',source_snapshot_hashes='PASS',all_seven_protected_controls_unchanged=True,other_research_heads_unchanged=True,prompt_HEAD_refs_dirty_state_unchanged=True,frozen_protocol_unchanged=True,historical_handoff_body_verbatim=True,source_change_scope='verification docs and current handoff/pointer only',owned_background_workers=[],new_GPU_seconds=0,new_forwards=0,new_fits=0,elapsed_wall_seconds=(now-datetime.datetime.fromisoformat(A['first_observed_utc'])).total_seconds(),retirement_or_shutdown_authorized=False)
+(R/'FINAL_PUBLIC_VALIDATION.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');(O/'FINAL_PUBLIC_VALIDATION.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n')
+p=O/'PUBLIC_PACKAGE_MANIFEST.json';data=json.loads(p.read_text());data['files']=[dict(path=str(q.relative_to(W)),bytes=q.stat().st_size,sha256=sha(q))for q in sorted(O.rglob('*'))if q.is_file()and q!=p]
+for item in [data['current_pointer'],data['updated_session_handoff']]:item['sha256']=sha(W/item['path'])
+p.write_text(json.dumps(data,sort_keys=True,indent=2)+'\n')
+for item in data['files']+[data['current_pointer'],data['updated_session_handoff']]:assert sha(W/item['path'])==item['sha256']
+subprocess.run(['git','-C',str(W),'diff','--check'],check=True)
+print(json.dumps(result,indent=2))

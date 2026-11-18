@@ -1,0 +1,59 @@
+{
+  "actual_token_revocation": "UNVERIFIED",
+  "adjudicated": [
+    {
+      "category": "credential_assignment",
+      "decision": "PYTHON_EXPRESSION_NOT_CREDENTIAL_LITERAL",
+      "embedded_string_or_bytes_literals": 0,
+      "evidence": "The matcher consumed an unquoted Python expression/identifier; AST inspection confirms no embedded string/bytes credential. The overall old source version remains a superseded sanitizer diagnostic,not a runnable environment.",
+      "expression_AST_type": "Call",
+      "file_sha256": "05a0ddafaadcb53a0ae2a91414b2314e4d6d4bfd051dcba6557e3144cad11cf5",
+      "line_number": 1079,
+      "match_sha256": "38c464d16aa584d497591c09fadad1a4e7a6c0b6261513e00e412ce7335c8496",
+      "matching_values_printed": false,
+      "path": "superseded-diagnostics-restored/POD_B_artifacts/B04-resume-20261117T121146Z/runtime/venv/lib/python3.12/site-packages/wandb/sdk/launch/runner/kubernetes_runner.py"
+    },
+    {
+      "category": "credential_assignment",
+      "decision": "PYTHON_EXPRESSION_NOT_CREDENTIAL_LITERAL",
+      "embedded_string_or_bytes_literals": 0,
+      "evidence": "The matcher consumed an unquoted Python expression/identifier; AST inspection confirms no embedded string/bytes credential. The overall old source version remains a superseded sanitizer diagnostic,not a runnable environment.",
+      "expression_AST_type": "Name",
+      "file_sha256": "ea6c73398d04e8855e490aefa520a0c7df17c2827f11ea42113af6829329f0f4",
+      "line_number": 909,
+      "match_sha256": "f79fd87399a55ee0be4b144b455b8aad326698548d96392b44c6799de1b9217a",
+      "matching_values_printed": false,
+      "path": "superseded-diagnostics-restored/administrative_environment/lib/python3.12/site-packages/huggingface_hub/cli/inference_endpoints.py"
+    },
+    {
+      "category": "credential_assignment",
+      "decision": "DOCUMENTED_PUBLIC_MOCK_PLACEHOLDER",
+      "evidence": "Exact assignment appears in official huggingface_hub v0.36.0 source and the restored _get_mocked_oauth_info function.",
+      "file_sha256": "ef9c9af6da07c42d1644ab0b380236d760abb2c4634d2c6cd7a98759634c6f7c",
+      "line_number": 433,
+      "match_sha256": "22cbcc358dcf97c50be84f3166186c8982af720829bee785468af0bc278f4a0b",
+      "matching_values_printed": false,
+      "path": "main-restored/restored-files/POD_B_artifacts/B04-resume-20261117T121146Z/runtime/venv/lib/python3.12/site-packages/huggingface_hub/_oauth.py",
+      "primary_response_sha256": "a3bc09c41bc26b644263d4018f813bcf1a082eb09b06ee1a8562969017be5229",
+      "primary_source": "https://github.com/huggingface/huggingface_hub/blob/5af5644f7234135d1e1ee4780ffb9be99a3c2102/src/huggingface_hub/_oauth.py"
+    },
+    {
+      "category": "credential_assignment",
+      "decision": "DOCUMENTED_PUBLIC_MOCK_PLACEHOLDER",
+      "evidence": "Exact assignment appears in official huggingface_hub v0.36.0 source and the restored _get_mocked_oauth_info function.",
+      "file_sha256": "4bc7af11df092c91f3f898928c61f85a2222fc0ee80e8c7fc47ec4f6b3752627",
+      "line_number": 433,
+      "match_sha256": "22cbcc358dcf97c50be84f3166186c8982af720829bee785468af0bc278f4a0b",
+      "matching_values_printed": false,
+      "path": "main-restored/restored-files/administrative_environment/lib/python3.12/site-packages/huggingface_hub/_oauth.py",
+      "primary_response_sha256": "a3bc09c41bc26b644263d4018f813bcf1a082eb09b06ee1a8562969017be5229",
+      "primary_source": "https://github.com/huggingface/huggingface_hub/blob/5af5644f7234135d1e1ee4780ffb9be99a3c2102/src/huggingface_hub/_oauth.py"
+    }
+  ],
+  "archive_or_manifest_modified": false,
+  "observed_utc": "2026-11-18T17:32:03.880741+00:00",
+  "scan_source": "PRIVACY_AUDIT.json",
+  "scanner_results_preserved": true,
+  "status": "PASS",
+  "unresolved": []
+}

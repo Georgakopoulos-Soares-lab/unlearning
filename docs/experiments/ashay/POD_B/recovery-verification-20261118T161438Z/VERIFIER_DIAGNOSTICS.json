@@ -1,0 +1,31 @@
+{
+  "issues": [
+    {
+      "affected_scope": "New verifier assertion only; source protocol/archives/tables unchanged",
+      "expected": "The literal word causal in protocol LM metadata",
+      "failed_evidence": "diagnostics/LM-wording-assumption",
+      "id": "VERIFIER-LM-001",
+      "observed": "The protocol explicitly specifies qualified next-token LM head, token-weighted NLL and exp(NLL); it does not use that literal word.",
+      "repair": "Inspect the exact next-token/corpus-NLL/PPL/layer-seed contracts rather than search for a descriptive synonym.",
+      "status": "CORRECTED_AND_95_CHECKS_PASS"
+    },
+    {
+      "affected_scope": "Supplemental decoder coverage only; exact archive/member hashes already passed.",
+      "expected": "Standard single-stream gzip/bzip2/xz/zlib headers",
+      "failed_evidence": "diagnostics/legacy-ZF-codec",
+      "id": "VERIFIER-CODEC-001",
+      "observed": "Four historical joblib .gz fixtures use the documented ZF wrapper and optional legacy extra-space header.",
+      "repair": "Read archived official joblib read_zfile/compressor definitions; add bounded stdlib zlib decoding of the header/payload without importing joblib,pickle or arrays.",
+      "status": "CORRECTED_AND_ALL_119_STREAMS_PASS"
+    },
+    {
+      "affected_scope": "Report generation only",
+      "expected": "Optional payload_root on all descriptors",
+      "failed_evidence": "diagnostics/report-normalization",
+      "id": "REPORT-OPTIONAL-ROOT-001",
+      "observed": "Adapter archive has a verified flat root and omits this field",
+      "repair": "Preserve optional fields when present; all required identity keys retained.",
+      "status": "CORRECTED_AND_REPORT_BUILD_PASS"
+    }
+  ]
+}

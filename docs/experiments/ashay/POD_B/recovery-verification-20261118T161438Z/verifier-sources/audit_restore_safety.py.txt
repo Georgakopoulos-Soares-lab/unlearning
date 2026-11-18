@@ -1,0 +1,34 @@
+"""Independent adversarial checks of the published offline archive reader."""
+from pathlib import Path
+import importlib.util,json,tarfile,io,subprocess,hashlib,tempfile
+R=Path(__file__).parent;source=R/'remote-instructions/scripts/sayyed/restore_pod_b_preservation.py';spec=importlib.util.spec_from_file_location('published_byte_restorer',source);mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod);rows=[]
+def rejected(name,fn):
+ try:fn()
+ except ValueError as e:rows.append(dict(check=name,status='PASS_REJECTED',exception_type=type(e).__name__));return
+ rows.append(dict(check=name,status='FAIL_ACCEPTED'))
+for value in ['../escape','/absolute','a/../../escape','a\\b','', '.', '../../x']:
+ rejected('unsafe_relative:'+repr(value),lambda v=value:mod.safe_relative(v))
+base=Path(tempfile.mkdtemp(prefix='verification-safety-',dir=R));outside=base/'escape';outside.write_bytes(b'UNCHANGED_SENTINEL')
+def archive(case,members,objects):
+ buf=io.BytesIO()
+ with tarfile.open(fileobj=buf,mode='w')as t:
+  for name,kind,data in members:
+   info=tarfile.TarInfo(name);info.type=kind
+   if kind==tarfile.REGTYPE:info.size=len(data);t.addfile(info,io.BytesIO(data))
+   else:info.linkname='../../escape';t.addfile(info)
+ data=subprocess.check_output(['zstd','-q','-c'],input=buf.getvalue());p=base/(case+'.tar.zst');p.write_bytes(data);out=base/(case+'-output');out.mkdir();e=dict(bytes=len(data),sha256=hashlib.sha256(data).hexdigest())
+ return lambda:mod.checked_archive(p,e,out,objects,set())
+for name,members,objects in [
+ ('traversal',[('../escape',tarfile.REGTYPE,b'ATTEMPT')],False),
+ ('absolute',[('/tmp/forbidden-restore-verification',tarfile.REGTYPE,b'ATTEMPT')],False),
+ ('symlink',[('metadata/link',tarfile.SYMTYPE,b'')],False),
+ ('hardlink',[('metadata/link',tarfile.LNKTYPE,b'')],False),
+ ('metadata_namespace_injection',[('objects/xx/injected',tarfile.REGTYPE,b'X')],False),
+ ('duplicate_canonical_path',[('metadata/a/file',tarfile.REGTYPE,b'A'),('metadata/a/./file',tarfile.REGTYPE,b'B')],False),
+ ('wrong_object_content',[('objects/'+'0'*2+'/'+'0'*64,tarfile.REGTYPE,b'WRONG')],True),
+ ('object_namespace_injection',[('metadata/unexpected',tarfile.REGTYPE,b'X')],True)]:
+ rejected(name,archive(name,members,objects))
+rows.append(dict(check='outside_sentinel_unchanged',status='PASS'if outside.read_bytes()==b'UNCHANGED_SENTINEL'else 'FAIL'))
+rows.append(dict(check='no_symlinks_created_in_fixtures',status='PASS'if not any(x.is_symlink()for x in base.rglob('*'))else 'FAIL'))
+result=dict(status='PASS'if all(x['status'].startswith('PASS')for x in rows)else 'FAIL',checks=rows,passed=sum(x['status'].startswith('PASS')for x in rows),source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),scientific_tests_rerun=False,models_imported=False,scope='Small synthetic byte/path fixtures only; original archives and worktrees unchanged')
+(R/'RESTORE_SAFETY_AUDIT.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print(json.dumps(dict(status=result['status'],checks=len(rows))))

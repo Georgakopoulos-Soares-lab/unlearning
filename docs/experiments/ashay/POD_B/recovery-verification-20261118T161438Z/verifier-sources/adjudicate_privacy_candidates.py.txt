@@ -1,0 +1,28 @@
+"""Document exact non-secret regex candidates without exposing matching values."""
+from pathlib import Path
+import ast,json,hashlib,re,datetime
+R=Path(__file__).parent;rows=[];pattern=re.compile(rb'(?i)(?<![A-Za-z0-9_])(?:IdentityProvider\.token|ServerApp\.token|HF_TOKEN|HUGGING_FACE_HUB_TOKEN|GITHUB_TOKEN|OPENAI_API_KEY|AWS_SECRET_ACCESS_KEY|GOOGLE_API_KEY|ACCESS_TOKEN|REFRESH_TOKEN|API_TOKEN|API_KEY|PASSWORD|SECRET_ACCESS_KEY)[\x22\x27]?\s*(?:=|:)\s*[\x22\x27]?[A-Za-z0-9_./+~=-]{16,}')
+primary=(R/'primary-source-hf-oauth-pinned.txt').read_bytes();mock_sha='22cbcc358dcf97c50be84f3166186c8982af720829bee785468af0bc278f4a0b';assert any(hashlib.sha256(m.group()).hexdigest()==mock_sha for m in pattern.finditer(primary))
+items=json.loads((R/'SUPERSEDED_OBJECT_PRIVACY_AUDIT.json').read_text())['findings']
+partial=R/'PRIVACY_AUDIT.json'
+if not partial.exists():partial=R/'PRIVACY_AUDIT_PARTIAL.json'
+items+=json.loads(partial.read_text())['credential_candidate_findings']
+known={mock_sha,'38c464d16aa584d497591c09fadad1a4e7a6c0b6261513e00e412ce7335c8496','f79fd87399a55ee0be4b144b455b8aad326698548d96392b44c6799de1b9217a'}
+unresolved=[]
+for item in items:
+ if item['category']!='credential_assignment'or item['match_sha256']not in known:unresolved.append(item);continue
+ data=(R/item['path']).read_bytes();matches=[m for m in pattern.finditer(data)if hashlib.sha256(m.group()).hexdigest()==item['match_sha256']];assert matches
+ for m in matches:
+  line_number=data[:m.start()].count(b'\n')+1;line=data.splitlines()[line_number-1].decode().strip()
+  base=dict(path=item['path'],category=item['category'],match_sha256=item['match_sha256'],file_sha256=hashlib.sha256(data).hexdigest(),line_number=line_number,matching_values_printed=False)
+  if item['match_sha256']==mock_sha:
+   tree=ast.parse(data);names=[n.name for n in ast.walk(tree)if isinstance(n,ast.FunctionDef)and n.lineno<=line_number<=n.end_lineno];assert '_get_mocked_oauth_info'in names
+   rows.append(dict(base,decision='DOCUMENTED_PUBLIC_MOCK_PLACEHOLDER',evidence='Exact assignment appears in official huggingface_hub v0.36.0 source and the restored _get_mocked_oauth_info function.',primary_source='https://github.com/huggingface/huggingface_hub/blob/5af5644f7234135d1e1ee4780ffb9be99a3c2102/src/huggingface_hub/_oauth.py',primary_response_sha256=hashlib.sha256(primary).hexdigest()))
+  else:
+   if line.startswith('secret_data ='):
+    node=ast.parse(line).body[0].value.values[0]
+   else:node=ast.parse('{'+line+'}').body[0].value.values[0]
+   literals=[n for n in ast.walk(node)if isinstance(n,ast.Constant)and isinstance(n.value,(str,bytes))];assert isinstance(node,(ast.Call,ast.Name,ast.Attribute))and not literals
+   rows.append(dict(base,decision='PYTHON_EXPRESSION_NOT_CREDENTIAL_LITERAL',expression_AST_type=type(node).__name__,embedded_string_or_bytes_literals=0,evidence='The matcher consumed an unquoted Python expression/identifier; AST inspection confirms no embedded string/bytes credential. The overall old source version remains a superseded sanitizer diagnostic,not a runnable environment.'))
+result=dict(status='PASS'if not unresolved else 'REVIEW_REQUIRED',adjudicated=rows,unresolved=unresolved,scan_source=str(partial.name),scanner_results_preserved=True,archive_or_manifest_modified=False,actual_token_revocation='UNVERIFIED',observed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat())
+(R/'PRIVACY_CANDIDATE_ADJUDICATION.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print(json.dumps(dict(status=result['status'],adjudicated=len(rows),unresolved=len(unresolved),matching_values_printed=False)))

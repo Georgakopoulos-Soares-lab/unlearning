@@ -1,0 +1,35 @@
+"""Scan single-stream compressed members as opaque bytes,never unpickle."""
+from pathlib import Path
+import ast,json,gzip,bz2,lzma,zlib,io,hashlib,datetime
+R=Path(__file__).parent;scanner=R/'audit_privacy.py';tree=ast.parse(scanner.read_text());nodes=[]
+for node in tree.body:
+ if isinstance(node,ast.Assign)and any(isinstance(t,ast.Name)and t.id=='rows'for t in node.targets):break
+ nodes.append(node)
+ns={'__file__':str(scanner),'__name__':'reviewed_compressed_stream_scanner'};exec(compile(ast.Module(body=nodes,type_ignores=[]),str(scanner),'exec'),ns)
+items=[]
+for line in (R/'main-restored/metadata/FINAL_BACKED_FILE_MANIFEST.jsonl').open():
+ row=json.loads(line)
+ if row['backed_kind']=='regular_file':items.append((R/'main-restored/restored-files'/row['archive_path'],row['sha256']))
+for dep in ['base_h3','controls','R3','preservation','qualification','preparation','adapter_trajectory','closure']:
+ for line in (R/(dep+'-MEMBER_INDEX.jsonl')).open():
+  row=json.loads(line);items.append((R/'dependency-restores'/dep/row['path'],row['sha256']))
+results=[];errors=[];seen=set()
+for p,digest in items:
+ name=p.name.lower()
+ if not name.endswith(('.gz','.bz2','.xz','.zlib','.lzma'))or name.endswith(('.tar.gz','.tar.bz2','.tar.xz')):continue
+ if digest in seen:continue
+ seen.add(digest);ns['bounded']()
+ try:
+  header=p.open('rb').read(8)
+  if header.startswith(b'\x1f\x8b'):f=gzip.open(p,'rb');codec='gzip'
+  elif header.startswith(b'BZh'):f=bz2.open(p,'rb');codec='bzip2'
+  elif header.startswith(b'\xfd7zXZ\x00')or name.endswith('.lzma'):f=lzma.open(p,'rb');codec='xz/lzma'
+  elif header[:1]==b'x':
+   # Joblib historical .gz fixtures sometimes use a zlib stream.
+   raw=p.read_bytes();obj=zlib.decompressobj();data=obj.decompress(raw,64*1024*1024+1);assert len(data)<=64*1024*1024 and obj.eof;f=io.BytesIO(data);codec='zlib'
+  else:raise ValueError('UNRECOGNIZED_SINGLE_STREAM_HEADER')
+  before=ns['scan_bytes']
+  with f:ns['stream'](f,str(p.relative_to(R))+'!OPAQUE_DECOMPRESSED_BYTES')
+  results.append(dict(path=str(p.relative_to(R)),compressed_sha256=digest,codec=codec,decompressed_bytes_scanned=ns['scan_bytes']-before,status='PASS'))
+ except (OSError,ValueError,AssertionError,lzma.LZMAError,zlib.error)as e:errors.append(dict(path=str(p.relative_to(R)),compressed_sha256=digest,exception_type=type(e).__name__,status='REVIEW_REQUIRED'))
+result=dict(status='PASS'if not ns['hits']and not errors else 'REVIEW_REQUIRED',unique_compressed_streams=len(results),results=results,findings=ns['hits'],errors=errors,matching_values_printed=False,pickle_or_array_deserialization=False,scope='Single-stream gzip/bzip2/xz/lzma/zlib environment fixture/data bytes,complementing main ZIP/tar and superseded object scans',observed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat());(R/'COMPRESSED_STREAM_PRIVACY_AUDIT.json').write_text(json.dumps(result,sort_keys=True,indent=2)+'\n');print(json.dumps(dict(status=result['status'],streams=len(results),findings=len(ns['hits']),errors=len(errors))))

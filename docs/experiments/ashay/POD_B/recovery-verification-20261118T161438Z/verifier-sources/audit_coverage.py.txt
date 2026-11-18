@@ -1,0 +1,113 @@
+"""Resolve declared A/B/C coverage using fresh remote restores only."""
+from pathlib import Path,PurePosixPath
+import collections,hashlib,json,posixpath,re,datetime
+R=Path(__file__).parent;MAIN=R/'main-restored';META=MAIN/'metadata';G=R/'git-checkout';checks=[];failures=[]
+def sha(p):
+ with p.open('rb')as f:return hashlib.file_digest(f,'sha256').hexdigest()
+def check(name,ok,**kw):
+ d=dict(check=name,status='PASS'if ok else 'FAIL',**kw);checks.append(d)
+ if not ok:failures.append(d)
+def dump(n,d):(R/n).write_text(json.dumps(d,sort_keys=True,indent=2)+'\n')
+manifest=json.loads((R/'remote-instructions/docs/experiments/ashay/POD_B/preservation-20261118T093411Z/BACKUP_MANIFEST.json').read_text());deps=manifest['transitive_dependencies'];indexes={};all_hashes=collections.defaultdict(list)
+for d in deps:
+ rows=[json.loads(line)for line in (R/(d['id']+'-MEMBER_INDEX.jsonl')).open()];indexes[d['id']]=collections.defaultdict(list)
+ for row in rows:
+  indexes[d['id']][(row['sha256'],row['bytes'])].append(row['path']);all_hashes[(row['sha256'],row['bytes'])].append(str(R/'dependency-restores'/d['id']/row['path']))
+ indexes[d['id']][(d['sha256'],d['bytes'])].append('REMOTE_COMPRESSED_ARCHIVE')
+main_rows=[json.loads(line)for line in (META/'FINAL_BACKED_FILE_MANIFEST.jsonl').open()];sources={x['source']:x for x in main_rows};catalog=[json.loads(line)for line in (META/'RECOVERY_FILE_INVENTORY.jsonl').open()];catalog_map={x['source']:x for x in catalog};B=[];missing=[]
+for row in catalog:
+ if row['classification']!='B':continue
+ key=(row.get('expected_sha256'),row['bytes']);candidates=indexes[row['dependency']].get(key,[])
+ if not candidates:missing.append(dict(source=row['source'],dependency=row['dependency'],expected_sha256=row.get('expected_sha256'),expected_bytes=row['bytes']))
+ B.append(dict(source=row['source'],dependency=row['dependency'],sha256=row.get('expected_sha256'),bytes=row['bytes'],remote_candidates=candidates,status='PASS'if candidates else 'MISSING'))
+check('all_25680_class_B_sources_resolve_in_expected_remote_dependency',not missing and len(B)==25680,checked=len(B),missing=missing)
+# Independently check the exact additional paths declared before byte copying.
+additional=json.loads((META/'ADDITIONAL_REQUIRED_INVENTORY.json').read_text());entries=additional['entries'];absent=[x['source']for x in entries if x['source']not in sources];check('all_promoted_pytest_and_external_targets_backed',not absent,entries=len(entries),missing=absent)
+supp=json.loads((META/'SUPPLEMENTAL_INVENTORY_BEFORE_COPY.json').read_text());absent=[p for p in supp['paths']if p not in sources];check('all_36_static_runtime_dependencies_backed',not absent,paths=len(supp['paths']),missing=absent)
+expected_sources={x['source']for x in catalog if x['classification']=='A'}|{x['source']for x in entries}|set(supp['paths'])
+check('exact_declared_unique_source_set_no_missing_or_extras',set(sources)==expected_sources,expected=len(expected_sources),actual=len(sources),missing=sorted(expected_sources-set(sources)),extra=sorted(set(sources)-expected_sources))
+links={}
+for x in main_rows:
+ if x['backed_kind']=='symlink_metadata':links[x['source']]=posixpath.normpath(x['link_target']if x['link_target'].startswith('/')else posixpath.join(posixpath.dirname(x['source']),x['link_target']))
+def resolve(path):
+ for _ in range(12):
+  if path in sources and sources[path]['backed_kind']=='regular_file':return True
+  if path in catalog_map and catalog_map[path]['classification']=='B':return catalog_map[path]['source']not in {x['source']for x in missing}
+  prefix=next((x for x in sorted(links,key=len,reverse=True)if path==x or path.startswith(x+'/')),None)
+  if prefix is None:return False
+  path=posixpath.normpath(links[prefix]+path[len(prefix):])
+ return False
+proof=json.loads((META/'CLASS_C_REPRODUCTION_PROOFS.json').read_text());c_bad=[];kind_counts=collections.Counter()
+for e in proof['entries']:
+ kind=e['class_C_kind'];kind_counts[kind]+=1
+ if not e.get('instruction'):c_bad.append(dict(source=e['source'],reason='MISSING_REPRODUCTION_INSTRUCTION'))
+ if kind=='bytecode'and not resolve(e['reproduction_source']):c_bad.append(dict(source=e['source'],required_source=e['reproduction_source'],reason='SOURCE_NOT_RECOVERABLE'))
+ if kind=='derived_adapter_factors'and e['original_input_dependency']!='qualification@32206eeed1dd9024fc92ecd898be39094840de94':c_bad.append(dict(source=e['source'],reason='UNPINNED_ORIGINAL_INPUT'))
+check('class_C_declared_source_dependencies_available',not c_bad,kind_counts=dict(kind_counts),missing=c_bad,scope='Availability/instructions only; caches/Git metadata not regenerated and old container identities not invented.')
+# Complete checksum manifests in older archives, without interpreting arrays.
+checksum_results=[]
+for d in deps:
+ root=R/'dependency-restores'/d['id'];idx={x['path']:x for x in [json.loads(line)for line in (R/(d['id']+'-MEMBER_INDEX.jsonl')).open()]};found=[];errs=[]
+ for path,item in idx.items():
+  p=root/path;name=p.name
+  if name in ['SHA256SUMS','SHA256SUMS.txt','sha256sums.txt','checksums.sha256','CHECKSUMS.sha256']:
+   n=0
+   for line in p.read_text().splitlines():
+    if not line.strip():continue
+    match=re.match(r'^([0-9a-fA-F]{64})\s+[*]?(.*)$',line)
+    if not match:errs.append(dict(manifest=path,reason='UNPARSED_CHECKSUM_LINE'));continue
+    h,rel=match.groups();candidates=[p.parent/rel,root/rel];target=next((x for x in candidates if x.is_file()and x.resolve().is_relative_to(root.resolve())),None)
+    if target is None or sha(target)!=h.lower():errs.append(dict(manifest=path,relative_path=rel,reason='MISSING_OR_BAD_CHECKSUM'))
+    n+=1
+   found.append(dict(path=path,checked=n,format='SHA256SUMS'))
+  if name in ['FILE_MANIFEST.json','CHECKSUM_MANIFEST.json']:
+   meta=json.loads(p.read_text());entries=meta.get('files',[])if isinstance(meta,dict)else meta
+   if not isinstance(entries,list):continue
+   n=0
+   for e in entries:
+    if not isinstance(e,dict)or not all(k in e for k in ['path','sha256','bytes']):continue
+    rel=e['path'];candidates=[p.parent/rel,root/rel];target=next((x for x in candidates if x.is_file()and x.resolve().is_relative_to(root.resolve())),None)
+    if target is None or sha(target)!=e['sha256']or target.stat().st_size!=e['bytes']:errs.append(dict(manifest=path,relative_path=rel,reason='MISSING_OR_BAD_MANIFEST_FILE'))
+    n+=1
+   found.append(dict(path=path,checked=n,format='JSON_FILE_MANIFEST'))
+ check('embedded_checksums:'+d['id'],bool(found)and not errs,manifests=found,errors=errs,actual_regular_files=len(idx),prior_payload_file_claim=d['historical_payload_files'])
+ checksum_results.append(dict(id=d['id'],manifests=found,errors=errs))
+c=manifest['closure_supplement'];cm=json.loads((R/'downloads'/c['revision']/c['manifest_path']).read_text());closure=R/'dependency-restores/closure';expected=set();errs=[]
+for e in cm['files']:
+ p=closure/e['path'];expected.add(e['path'])
+ if not p.is_file()or p.stat().st_size!=e['bytes']or sha(p)!=e['sha256']:errs.append(e['path'])
+actual={p.relative_to(closure).as_posix()for p in closure.rglob('*')if p.is_file()};self_path='metadata/closure/CLOSURE_MANIFEST.json';self_copy=closure/self_path;self_ok=self_copy.is_file()and sha(self_copy)==c['manifest_sha256']and cm['self_excluded']is True;check('closure_36_payload_files_plus_exact_embedded_self_manifest',not errs and len(expected)==36 and actual==expected|{self_path}and self_ok,payload_files=len(expected),total_regular_members=len(actual),embedded_self_manifest=self_path,embedded_self_manifest_hash_verified=self_ok,bad=errs,missing=sorted(expected-actual),unexplained_extra=sorted(actual-expected-{self_path}))
+for row in main_rows:
+ if row['backed_kind']=='regular_file':all_hashes[(row['sha256'],row['backed_bytes'])].append(str(MAIN/'restored-files'/row['archive_path']))
+inputs=json.loads((R/'arithmetic-inputs/public/INPUT_MANIFEST.json').read_text());unresolved=[]
+for inp in inputs['inputs']:
+ for field in ['payload','metadata']:
+  expected_sha=inp[field]['sha256'];size=inp[field].get('bytes');matches=[x for (h,n),paths in all_hashes.items()if h==expected_sha and (size is None or size==n)for x in paths]
+  if not matches:unresolved.append(dict(checkpoint=inp['checkpoint'],field=field,expected_sha256=expected_sha))
+check('all_36_original_adapter_payloads_and_metadata_resolve_by_hash',not unresolved,checks=72,missing=unresolved,scope='Raw byte availability only; tensors not deserialized or scientifically qualified.')
+for name,expected_count in [('B04_KNOWN_PARENT_BASE.json',131),('B04_KNOWN_PARENT_MAXENT.json',4)]:
+ d=json.loads((G/'docs/experiments/ashay/POD_B'/name).read_text());absent=[dict(name=x['name'],expected_sha256=x['sha256'],expected_bytes=x['bytes'])for x in d['files']if (x['sha256'],x['bytes'])not in all_hashes]
+ check('candidate_parent_bytes:'+name,len(d['files'])==expected_count and not absent and d['actual_job_assignment']is None,files=len(d['files']),missing=absent,actual_job_assignment=None,scope='Byte recovery only; these remain unbound candidate parents.')
+# Verify the original public package against its own immutable committed manifest.
+original=G/'docs/experiments/ashay/POD_B/preservation-20261118T093411Z';package=json.loads((original/'PACKAGE_MANIFEST.json').read_text());errors=[]
+for e in package['files']+[package['restore_tool'],package['pointer']]:
+ p=G/e['path']
+ if not p.is_file()or sha(p)!=e['sha256']or ('bytes'in e and p.stat().st_size!=e['bytes']):errors.append(e['path'])
+check('all_27_original_public_package_file_hashes',not errors,files=len(package['files'])+2,errors=errors)
+env=['evo2-pilot_0.json','unlearning-admin-pod-b_1.json','venv_2.json','SOURCE_REVISIONS_AND_PATCHES.json','SYSTEM_SHARED_LIBRARIES.json','SYSTEM_AND_ENVIRONMENTS.json','OS_PACKAGES.tsv'];check('all_environment_version_source_patch_system_records_present',all((META/'metadata'/p).is_file()for p in env),files=env,limitation='No model imports/environment activation; future compatible GPU runtime remains untested.')
+# Code identities named by geometry receipts must resolve in remotely restored bytes.
+code_hashes={}
+for p in list((R/'arithmetic-inputs').rglob('*.py'))+list((G/'scripts/sayyed').rglob('*.py')):code_hashes.setdefault(sha(p),[]).append(str(p.relative_to(R)))
+for name,key in [('FIGURE_MANIFEST.json','plot_code_sha256'),('INDEPENDENT_GRAM_AUDIT.json','source_sha256')]:
+ d=json.loads((R/'arithmetic-inputs/public'/name).read_text());check('future_source_code_identity:'+name,d[key]in code_hashes,sha256=d[key],paths=code_hashes.get(d[key],[]))
+links_bad=[];entry=G/'docs/experiments/ashay/POD_B/preservation-20261118T093411Z'
+for name in ['README.md','HANDOFF.md','OPEN_DEPENDENCIES.md','ENVIRONMENT_AND_REPRODUCTION.md','RESTORE_RUNBOOK.md']:
+ p=entry/name
+ for link in re.findall(r'\[[^\]]+\]\(([^)]+)\)',p.read_text()):
+  if link.startswith(('http:','https:','#','mailto:')):continue
+  target=link.split('#',1)[0]
+  if not(p.parent/target).is_file():links_bad.append(dict(file=name,target=target))
+check('entrypoint_relative_links_resolve',not links_bad,broken=links_bad)
+dump('CLASS_B_RESOLUTION.json',dict(entries=B,missing=missing));dump('TRANSITIVE_CHECKSUM_AUDIT.json',checksum_results);dump('COVERAGE_INDEPENDENT_AUDIT.json',dict(status='PASS'if not failures else 'FAIL',checks=checks,failures=failures,class_B_sources=len(B),class_C_dependencies=dict(kind_counts),observed_utc=datetime.datetime.now(datetime.timezone.utc).isoformat()))
+print(json.dumps(dict(status='PASS'if not failures else 'FAIL',checks=len(checks),failures=failures),indent=2))
+if failures:raise SystemExit(1)
