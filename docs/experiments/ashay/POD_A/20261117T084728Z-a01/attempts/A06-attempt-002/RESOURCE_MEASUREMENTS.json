@@ -1,6 +1,6 @@
 {
   "status": "MEASURED",
-  "observed_utc": "2026-11-18T21:06:24.769259+00:00",
+  "observed_utc": "2026-11-18T21:24:23.860801+00:00",
   "GPU_jobs": [
     {
       "status": "PASS",
@@ -36,6 +36,21 @@
       "status": "PASS",
       "candidate": "R5",
       "mode": "extraction",
+      "group": "other_five",
+      "new_physical_forwards": 960,
+      "new_real_rows": 7680,
+      "fillers": 0,
+      "wall_seconds": 222.87666593000176,
+      "CPU_process_seconds": 193.051207441,
+      "peak_GPU_allocated_bytes": 3213561344,
+      "peak_GPU_reserved_bytes": 3984588800,
+      "peak_RSS_kib": 5746668,
+      "completed_utc": "2026-11-18T21:18:41.395864+00:00"
+    },
+    {
+      "status": "PASS",
+      "candidate": "R5",
+      "mode": "extraction",
       "group": "H3",
       "new_physical_forwards": 1873,
       "new_real_rows": 14965,
@@ -48,15 +63,15 @@
       "completed_utc": "2026-11-18T20:45:18.265454+00:00"
     }
   ],
-  "production_forwards": 1873,
-  "production_real_rows": 14965,
+  "production_forwards": 2833,
+  "production_real_rows": 22645,
   "production_fillers": 19,
   "qualification_forwards_separate": 4,
   "qualification_real_rows_separate": 24,
-  "GPU_stage_wall_seconds_including_loading_IO": 366.80096605300787,
+  "GPU_stage_wall_seconds_including_loading_IO": 589.6776319830096,
   "qualification_wall_seconds_separate": 155.91979214799358,
-  "synchronized_forward_capture_seconds": 202.55920889010304,
-  "physical_batch_median_seconds": 0.10617603998980485,
+  "synchronized_forward_capture_seconds": 305.8444126326649,
+  "physical_batch_median_seconds": 0.10564870000234805,
   "max_GPU_allocated_bytes": 3213561344,
   "max_GPU_reserved_bytes": 3984588800,
   "production_H3_final_heads": 78,
@@ -70,6 +85,64 @@
   "BLAS_threads_each": 4,
   "CPU_worker_AS_limit_bytes": 34359738368,
   "supervised_command_wall_records": [
+    {
+      "pid": 101501,
+      "proc_start_ticks": "15068737",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/lm_records.py",
+        "--candidate",
+        "R5",
+        "--group",
+        "other_five"
+      ],
+      "kind": "CPU",
+      "status": "PASS_EXIT",
+      "exit_code": 0,
+      "wall_seconds": 2.587624922976829
+    },
+    {
+      "pid": 101228,
+      "proc_start_ticks": "15037761",
+      "argv": [
+        "/workspace/venvs/pod-a-a04-attempt-002/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py",
+        "--control",
+        "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002",
+        "--prompt-commit",
+        "4ff94e09b72a02d6e3082af064669c98adda6008",
+        "--coverage-sha256",
+        "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+        "--candidate",
+        "R5",
+        "--mode",
+        "extraction",
+        "--group",
+        "other_five",
+        "--output-root",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features",
+        "--run-label",
+        "other-five-production-001"
+      ],
+      "kind": "GPU",
+      "status": "PASS_EXIT",
+      "exit_code": 0,
+      "wall_seconds": 226.78889569299645
+    },
+    {
+      "pid": 99812,
+      "proc_start_ticks": "14978533",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/verify_paired_draws.py",
+        "--candidate",
+        "R5"
+      ],
+      "kind": "CPU",
+      "status": "PASS_EXIT",
+      "exit_code": 0,
+      "wall_seconds": 56.06340810499387
+    },
     {
       "pid": 99709,
       "proc_start_ticks": "14966918",
@@ -213,9 +286,28 @@
       "wall_seconds": 97.20474574202672
     }
   ],
-  "workspace_allocated_bytes": 224668375040,
+  "workspace_allocated_bytes": 244410255360,
   "provider_capacity_bytes": 500000000000,
-  "transfer_records": [],
+  "transfer_records": [
+    {
+      "group": "other_five",
+      "logical_archive_bytes": 1369199272,
+      "compression_seconds": 29.78365103699616,
+      "upload_seconds": 7.808011538989376,
+      "fresh_download_seconds": 5.340071261016419,
+      "all_member_hash_seconds": 7.638177885004552,
+      "fresh_computational_seconds": 9.859337923000567
+    },
+    {
+      "group": "H3",
+      "logical_archive_bytes": 2876679519,
+      "compression_seconds": 62.461141551000765,
+      "upload_seconds": 13.985179567011073,
+      "fresh_download_seconds": 9.572410913999192,
+      "all_member_hash_seconds": 20.116834745014785,
+      "fresh_computational_seconds": 28.06135104902205
+    }
+  ],
   "original_start_utc": null,
   "rental_start_utc": null,
   "rate": null,

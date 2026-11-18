@@ -1,0 +1,9 @@
+# Commands actually executed in A06
+
+All supervised job specifications and exit/PID/start/source receipts are retained privately under control/jobs and in final metadata. GPU extractor: `/workspace/venvs/pod-a-a04-attempt-002/bin/python /workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/code/run_extraction.py --control /workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002 --prompt-commit 4ff94e09b72a02d6e3082af064669c98adda6008 --coverage-sha256 06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3 --candidate R5 --mode parity|extraction --group H3|other_five --output-root /workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/parity|features --run-label <unique-owned-label>`. Actual argv are recorded individually; the alternatives here summarize those tested invocations.
+
+CPU commands used `/workspace/venvs/a03-cpu-audit-20261117/bin/python` with build_h3_cache.py/fit_h3.py/audit_h3.py/verify_paired_draws.py `--candidate R5`, and lm_records.py `--candidate R5 --group H3|other_five`. Parent worker6.py accepts one immutable job JSON, removes remote-credential environment variables and supervises exit; CPU children inherit32GiB AS/4BLAS limits, with at most2 fitting/audit workers. It dispatches no other stage.
+
+Private checkpoint command: tools Python backup6.py H3 or other_five. The latter follows the sealed H3 gate. Restored computation uses the freshly extracted restore_panel6.py under CPU Python isolated mode `-I --root <new-consumer> --group H3|other_five`. No fitting occurs during restore.
+
+All scientific A06 units are complete and excluded from automatic rerun. Any missing/corrupt owned unit requires exact seal/source validation and scoped quarantine/retry with a new invocation label; preserve original evidence. Do not run stale R4/R6 launchers or prelaunch A07.

@@ -1,0 +1,7 @@
+# Revised A07 requirements
+
+Bind this actual A06 handoff and coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`, A07_INPUT_PACKAGE.json SHA256 `d260e347739a50314de211259a22f3e6e89209fb4fb15243d1a2bce30a5047d9`, exact10 R5 bundle seals and both private scientific checkpoints. Allocate the next unused A07 attempt and enforce its own roots, stage approval, input/source identity and finite390-unit list. Old A07 R4/R6 parsers/roots/old plan are incompatible; parameterize and validate before any fitting. Do not invent a future prompt SHA or approval.
+
+Fit only390 other-five R5 heads and apply390 original base pipelines. Preserve saved fivefold grouped memberships, seeds42/17/1234, all26 hooks, float32 scaler-transform semantics, balancedL2LBFGS/C grid/selection/ties/convergence retries, classes and exact2000 saved group draws. Produce3900 marginals and8400 base/R1/anchor-control paired rows under the frozen A05 logical IDs. No base/R1/R3/R4/R6/control/H3 refits or new GPU work. Keep producer COMPLETE_UNVERIFIED distinct from independent A08 release.
+
+Reuse verified A06 H3 outputs/audits and all7 primary LM units; no H3/audit/LM rerun solely because another stage begins. A08 owns30 full-CV other-five audit refits, all-unit numerical verification and the newly eligible adjacent/LM contrasts. Keep R2 gaps, R3 domain-specific eligibility, exact source/coverage lineage, ancestry/exposure unknowns, no-deadline amendment, stopped observer and separate stage approvals. Stop before A08.

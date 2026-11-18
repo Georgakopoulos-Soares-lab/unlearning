@@ -1,0 +1,53 @@
+{
+  "schema": "pod-a-a06-R5-H3-gate-v2",
+  "status": "PASS",
+  "candidate": "R5",
+  "model_content_sha256": "9cab388a46a873902317ff022ab0b9a43d3e42c8753d3842837f74f5dd474259",
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+  "CPU_source_identity_sha256": "61bc0471e0ea793ef2c8be3529d0990390c97be7786c6144c1ed14a97dbb5eb8",
+  "backup_status": "PASS",
+  "backup_revision": "d07b494ec35ad76cd623fbe3256e395462f0891c",
+  "backup_archive_sha256": "8a33b9e52a9168c6b1282c9cc01851a4d51343b621298068d38634958fcebc98",
+  "components": {
+    "adapter": true,
+    "features": true,
+    "heads78": true,
+    "applications78": true,
+    "all_unit_audit": true,
+    "six_full_CV_refits": true,
+    "LM": true,
+    "private_fresh_recovery": true
+  },
+  "local_dependencies": [
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002/ADAPTER_VALIDATION.json",
+      "sha256": "ba51d6055a19a82cc4db31aa55d8ff7e83cc631d43d94e4db9190f6c66d811e3"
+    },
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002/H3_RELEASE_AUDIT.json",
+      "sha256": "f05627b9753b7efc991aa36053a115897fdca21eea673f36d786a0dab2d406cf"
+    },
+    {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002/BACKUP_R5_H3.json",
+      "sha256": "9c29390b33680e14275d60b4a81bfbeab22a07fb7662741abf77fe46da55e610"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features/R5/emp_H3/train/COMPLETE.json",
+      "sha256": "b588da4279e4dc360af195bf4b25b04bac24cf59d58885fc3d42f32f95d992f8"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features/R5/emp_H3/dev/COMPLETE.json",
+      "sha256": "afaa8e6a7974a9c6214f4f837ef8515249f7887b72664e7c8507191077144594"
+    },
+    {
+      "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A06-attempt-002/features/R5/emp_H3/test/COMPLETE.json",
+      "sha256": "b1a7b97ff918c29722214e3bf41e659fcb235d1b6ef51538ed5a08874d97355f"
+    }
+  ],
+  "gate_uses_scientific_score_direction": false,
+  "created_utc": "2026-11-18T21:14:04.421975+00:00",
+  "all_other_five_extraction_at_gate_creation": false,
+  "current_recovery_status": "PASS",
+  "live_numerical_receipt_recovery_marker": "Original PENDING marker is historical at numerical-audit creation; new current gate/backup PASS supersedes it without rewriting its bytes."
+}

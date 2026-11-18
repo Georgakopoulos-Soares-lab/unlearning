@@ -1,0 +1,219 @@
+{
+  "schema": "pod-a-a06-r5-verification-v2",
+  "status": "PASS",
+  "candidate": "R5",
+  "new_adapter_parity": "81 bidirectional same-R5 TRAIN arrays, max residual0",
+  "synthetic_tests": 35,
+  "additional_guard_tests": 2,
+  "bundles": 13,
+  "real_rows": 22645,
+  "chunks": 89,
+  "representation_matrices": 338,
+  "physical_forwards": 2833,
+  "fillers": 19,
+  "H3_heads": 78,
+  "fixed_applications": 78,
+  "prediction_paths_live_verified": 312,
+  "H3_full_CV_audit_refits": 6,
+  "H3_target_metric_rows": 1560,
+  "H3_paired_rows": 3360,
+  "H3_paired_draw_values_independently_checked": 6720000,
+  "primary_LM_units": 7,
+  "LM_marginal_rows": 14,
+  "TRAIN_LM_diagnostics": 6,
+  "new_LM_pairs": 0,
+  "new_adjacent_pairs": 0,
+  "other_five_classifier_fits_or_applications": 0,
+  "H3_gate_before_other_five": true,
+  "fresh_H3_panel_prediction_paths": 24,
+  "fresh_H3_paired_draw_arrays": 480,
+  "fresh_full_CV_audit_artifacts": 6,
+  "fresh_other_five_all_matrix_checks": 260,
+  "all_private_archive_member_hashes": "PASS",
+  "numerical_tolerances": {
+    "probabilities": 1e-10,
+    "metrics_draws_CIs": 1e-12,
+    "separate_TRAIN_smoke_atol": 0.0001,
+    "separate_TRAIN_smoke_rtol": 1e-05
+  },
+  "H3_numerical_evidence": {
+    "status": "PASS",
+    "candidate": "R5",
+    "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+    "source_identity_sha256": "06752139d8c655457629394be35c89b2a09ffa1f5fb483c1a1aabe43b4008593",
+    "CPU_source_identity_sha256": "61bc0471e0ea793ef2c8be3529d0990390c97be7786c6144c1ed14a97dbb5eb8",
+    "heads": 78,
+    "applications": 78,
+    "prediction_paths": 312,
+    "marginal_rows": 1560,
+    "paired_rows": 3360,
+    "initial_production_solver_calls": 780,
+    "actual_production_solver_calls": 791,
+    "full_CV_audit_refits": 6,
+    "initial_audit_solver_calls": 60,
+    "actual_audit_solver_calls": 60,
+    "probability_max_abs": 0.0,
+    "metric_max_abs": 5.329070518200751e-15,
+    "target_bootstrap_max_abs": 3.3306690738754696e-16,
+    "interval_max_abs": 4.3281350725621337e-16,
+    "every_paired_draw_check": {
+      "status": "PASS",
+      "candidate": "R5",
+      "verified_H3_units": 78,
+      "paired_draw_arrays_verified": 3360,
+      "paired_draw_values_verified": 6720000,
+      "max_abs_residual": 6.661338147750939e-16,
+      "tolerance": 1e-12,
+      "source_sha256": "81ba787da8000916f0bcfc82785cfb70ac0a87f160eb7b3ab09c5c9455404da8",
+      "core_audits_reused": "Core probability, metric, target-bootstrap and interval audits unchanged; this adds every saved paired-difference array",
+      "completed_utc": "2026-11-18T21:06:00.281653+00:00"
+    },
+    "H3_LM": "PASS_3_SPLITS_2_PRIMARY",
+    "independent_audit_wall_unit_sum_seconds": 148.1281145979301,
+    "fresh_recovery_status": "PENDING",
+    "new_other_five_classifier_fits": 0,
+    "new_adjacent_or_LM_pairs": 0,
+    "completed_utc": "2026-11-18T21:08:17.221898+00:00"
+  },
+  "exact_table_key_validation": {
+    "status": "PASS",
+    "exact_A05_owned_key_set": true,
+    "marginal_rows": 1560,
+    "classifier_paired_rows": 3360,
+    "LM_marginal_rows": 14,
+    "total_unique_logical_ids": 4934,
+    "other_five_classifier_rows": 0,
+    "paired_LM_rows": 0,
+    "adjacent_rows": 0,
+    "expected_keys_generator_original_sha256": "c73c4ec46c7e48bef24068b82c35257f789c769e3ff88f37ad677fda9d5f6706",
+    "copied_generator_sha256": "c73c4ec46c7e48bef24068b82c35257f789c769e3ff88f37ad677fda9d5f6706",
+    "typed_artifact_descriptors": 503,
+    "all_release_and_recovery_gates_PASS": true,
+    "no_old_source_rows_or_seals_modified": true,
+    "output_table_sha256s": {
+      "RESULTS_LONG.csv": "4d67a3af2518e63cd0feb4faa643ddae77c91ce900fa53ae01dc062a2a2033c5",
+      "PAIRED_CONTRASTS.csv": "b5d9cd7f82322abd0dc9416013c746a7b492982be0f17b5356b943c468ffbc8b",
+      "LM_RESULTS.csv": "9cd0beaf275616403838bfa5796a16bc570d6d1895f1b1e23b7d3af635a4107e"
+    },
+    "full_project_new_coverage": {
+      "heads": 2418,
+      "applications": 2418,
+      "primary_LM": 42,
+      "controls": 36
+    },
+    "remaining_R5_heads_and_applications_each": 390,
+    "R2_missing_heads_and_applications_each": 468
+  },
+  "CPU_recovery_not_GPU_recreation": true,
+  "old_attempts_preserved": true,
+  "process_state": {
+    "status": "PASS",
+    "observer": "STOPPED",
+    "reviewer_scheduler": "STOPPED",
+    "publisher": "STOPPED",
+    "prior_observer_identity_alive": false,
+    "owned_scientific_workers": [],
+    "locks_free": true,
+    "pod_left_running": true,
+    "observed_utc": "2026-11-18T21:22:45.558752+00:00",
+    "all_supervised_processes_exit_confirmed": [
+      {
+        "pid": 101501,
+        "start_ticks": "15068737",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "ca6abea057799be5baa09fffe8640074c17a5e09229e4a3449eb743e1f29edad"
+      },
+      {
+        "pid": 101228,
+        "start_ticks": "15037761",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "1c2537de01f92a6e9316f6016889a6ef77064ac290a47edb21bbc3c9fc0ee39d"
+      },
+      {
+        "pid": 99812,
+        "start_ticks": "14978533",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "29aefbb74e4afef5b93fed45528644daffd6f4e96c3253d142c5b6b238a5f032"
+      },
+      {
+        "pid": 99709,
+        "start_ticks": "14966918",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "9fbf215306f320bf56b5ae35c4effb179ab5c792dfcbb87c9046cc333e1b7bb3"
+      },
+      {
+        "pid": 99323,
+        "start_ticks": "14886700",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "ec90eaa651516475428ee2b8a582bf27a5a272040fdcc735f964b92ed9ab9b95"
+      },
+      {
+        "pid": 99230,
+        "start_ticks": "14872232",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "ddb6894f5fd7384bb09a2c5a1b2e160d5a5cd0f79f6a28f605a8103ae2a6833f"
+      },
+      {
+        "pid": 99269,
+        "start_ticks": "14875259",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "7a697fad023009bb03bea2d33f0ad4cdbe710472406fedf0026ae83cf2c0abfd"
+      },
+      {
+        "pid": 98236,
+        "start_ticks": "14823062",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "6f9ececaa0a6b21011a8448034ef08cc7aef038736fdd698cde8cc52fc8bdffe"
+      },
+      {
+        "pid": 97823,
+        "start_ticks": "14807839",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "b7971a54f2bc1520b2bc4d42c386343119a114a7885b1b7f29b357fab68cf968"
+      },
+      {
+        "pid": 97555,
+        "start_ticks": "14793359",
+        "exit_code": 0,
+        "status": "EXIT_CONFIRMED",
+        "command_sha256": "69470f3e387def4c6a3d2e00e611a68167dfc8178e8fc950877f2a1a89f267ea"
+      }
+    ],
+    "owned_execution_locks_free": true
+  },
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A06 R5-only adapter qualification, H3 production/audit/recovery, remaining extraction/LM. Stop before A07.",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "99684f0b57ab83c90144b34a3940556c3b5ab6667b8436a9399a87a189702456"
+  }
+}
