@@ -1,19 +1,19 @@
 # A06 progress — RUNNING
 
-Observed UTC 2026-11-18T03:18:08.465604+00:00; run 20261117T084728Z-a01; attempt A06-attempt-001. Prompt `c519b1aa37d0d8334b0b2e1d83a671c6c0eb7ab5`. Coverage-plan `0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4`. Source research parent `eae2f55ff1a2fd7405aca556a1a0346bb00c295b`.
+Observed UTC 2026-11-18T03:31:20.099043+00:00; run 20261117T084728Z-a01; attempt A06-attempt-001. Prompt `c519b1aa37d0d8334b0b2e1d83a671c6c0eb7ab5`. Coverage-plan `0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4`. Source research parent `e65e2a6bc5cfd34488a5b20384da0ebc87333e9c`.
 
 | Goal | Target | New sealed | Historical reused | Remaining / blocker |
 |---|---:|---:|---:|---|
-| Final head universe | 3276 | 0 H3 | 1404 | 156 H3 in A06;780 in A07;936 R2/R5 external |
+| Final head universe | 3276 | 78 independently verified H3; 0 awaiting audit | 1404 | 78 H3 in A06;780 in A07;936 R2/R5 external |
 | Fixed-base applications | 156 H3 in A06 | Bound to completed head receipts | Existing original-base heads | No new fixed-policy fits |
 | Six-task all26 extraction | 45290 rows,26bundles,676matrices | 14965rows;3bundles | Reuse old reference data | 30325rows pending |
 | Matched controls | 36 fits once | 0 fits | 36 | Never multiplied by candidate/layer |
-| True causal LM | 14 new dev/H3-test units | 0 | 21 historical units | TRAIN diagnostics counted separately |
+| True causal LM | 14 new dev/H3-test units | 2 | 21 historical units | TRAIN diagnostics counted separately |
 | Paired uncertainty | 2000 draws,seed20261103 | Released only after independent audit | Exact saved H3 draws/references | Conditional exploratory intervals |
 | Independent H3 audits | 156 heads,both policies/splits +12refits | 0candidate gates | A03/A04 evidence reused | Per-candidate gate before other-five |
 | Private recovery | Every new costly unit | See BACKUP_VERIFICATION | Prior immutable dependency graph | No recovery claim before fresh readback |
 
-What changed: R4 H3:14965rows,1873physical8forwards,sealed all26hooks/LM;78H3heads fitting. Other-five andR6production remain gated.. Runtime parity/synthetic checks are not new scientific performance. Scientific findings appear only in verified result tables, with dev and previously examined exploratory H3 test separate. No score-based exclusions; adverse and flat results are retained.
+What changed: 78R4H3heads/78fixed applications independently verified;6prescribedfreshrefits PASS;H3actualLMindependentaggregation PASS;private checkpoint verifying before gate unlock.. Runtime parity/synthetic checks are not new scientific performance. Scientific findings appear only in verified result tables, with dev and previously examined exploratory H3 test separate. No score-based exclusions; adverse and flat results are retained.
 
 R4 then R6; physical8 with fillers excluded,all26hooks,width1920,seeds42/17/1234,both policies and actual LM remain frozen. A04 remains PARTIAL. R2/R5 gaps and R3 live cross-runtime bridge remain separate. All five adjacent contrasts remain explicit; no interpolation. No other-five classifier fitting under A06.
 
