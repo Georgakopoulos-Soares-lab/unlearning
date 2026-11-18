@@ -1,6 +1,6 @@
 # Pod A A09 handoff
 
-**Qualified available-checkpoint analysis is complete; full R1–R6 science and A04 remain PARTIAL.** A09 is finishing its finite report/recovery delivery. This is plain UTF-8 Markdown with real newlines, validated by typed writer regression tests.
+**Qualified available-checkpoint analysis is complete; full R1–R6 science and A04 remain PARTIAL.** A09 report delivery and saved-analysis recovery have passed. This is plain UTF-8 Markdown with real newlines, validated by typed writer regression tests.
 
 Run `20261117T084728Z-a01`, attempt `A09-attempt-001`. Approved prompt `ff579ad98b7970213c97cf0bb86fa2017cfa126e`. Scientific input `73930ca070d5de8fd8c32491d23e8e082e37a6ef`; A08 final metadata `a0c09062c9f4cd625769130b1b85ea0ddc38d840`. Coverage `0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4` and protocol `73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7` remain frozen. Actual final report/metadata commits and private revisions are named in separate post-push/final receipts to avoid self-hash cycles.
 
@@ -28,4 +28,8 @@ No A10 exists. Further identity/qualification/backfill requires fresh scoped app
 
 The no-deadline amendment remains active. Original/rental starts, rate and cost are unknown, never zero or a reset clock. At most two CPU workers × four threads, 32-GiB per-worker address-space ceiling; no GPU work or purchases. [Resource closeout](RESOURCE_CLOSEOUT.json) and the final private delivery receipt record actual job/transfer/lock disposition. After verified terminal delivery the owned observer stops; unrelated infrastructure and the Pod remain running.
 
-Terminal status is certified only by A09_RECEIPT.json and separate remote/private proofs, not by this prose alone.
+Report delivery is certified by [A09 receipt](A09_RECEIPT.json) and [exact-byte post-push proof](POST_PUSH_PROOF.json). The proof names the report commit; the separate immutable final private receipt binds the later metadata commit and actual observer stop. No automatic resume is authorized.
+
+## Verified delivery
+
+Report commit `409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd`; private saved-analysis payload revision `b075c823c1918bd9f0db4657644dfbe7a6abeb44`, SHA256 `5ee9327b0c67a4875e18dc4bf9e398eb9f772a09674d4714dc7fbb5f3911d84a`. All 254 included files, eight prediction/metric paths, two saved audit-refit artifacts and the frozen classifier/LM contrast draws passed. Probability, metric and every-draw residuals were zero. This is saved-analysis recovery; model weights and full GPU recreation are excluded. Full-project and A04 status remain PARTIAL.

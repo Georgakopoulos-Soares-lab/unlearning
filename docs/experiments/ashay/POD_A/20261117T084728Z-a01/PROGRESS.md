@@ -1,6 +1,6 @@
-# A09 progress — RUNNING
+# A09 progress — COMPLETE
 
-Run `20261117T084728Z-a01`, attempt `A09-attempt-001`. Observed UTC `2026-11-18T11:37:13.652578+00:00`; display timezone UTC. Direct approval pins prompt `ff579ad98b7970213c97cf0bb86fa2017cfa126e`. Accepted A08 research `a0c09062c9f4cd625769130b1b85ea0ddc38d840`; current publication parent `a0c09062c9f4cd625769130b1b85ea0ddc38d840`. Scientific measurement queue is quiescent; only finite reporting/recovery work is authorized.
+Run `20261117T084728Z-a01`, attempt `A09-attempt-001`. Observed UTC `2026-11-18T11:49:33.835954+00:00`; display timezone UTC. Direct approval pins prompt `ff579ad98b7970213c97cf0bb86fa2017cfa126e`. Accepted A08 research `a0c09062c9f4cd625769130b1b85ea0ddc38d840`; current publication parent `409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd`. Scientific measurement queue is quiescent; only finite reporting/recovery work is authorized.
 
 ## Goals and coverage
 
@@ -14,11 +14,11 @@ Run `20261117T084728Z-a01`, attempt `A09-attempt-001`. Observed UTC `2026-11-18T
 | A08 sampled independent refits | 60 | 0 | 60 | 0 | 0 | 0 | 960 historical optimizer fits, not all-head refitting |
 | R6−R4 paired rows, classifier / LM | 5460 / 14 | 0 | 5460 / 14 | 0 | 0 | 0 | Predeclared NONADJACENT family |
 | Figure pairs | 31 | 0 | 31 | 0 | 0 | 0 | [Gallery](attempts/A09-attempt-001/FIGURE_GALLERY.md); all seeds/layers retained |
-| Fresh A09 saved-analysis recovery | Eight paths + two refit heads + contrasts | 0 | Prior proof separately attributed | 0 | Current check until sealed | 0 | [Recovery](attempts/A09-attempt-001/BACKUP_VERIFICATION.json) |
+| Fresh A09 saved-analysis recovery | Eight paths + two refit heads + contrasts | 0 | Fresh all-member + eight-path/two-head/contrast PASS | 0 | 0 | 0 | [Recovery](attempts/A09-attempt-001/BACKUP_VERIFICATION.json) |
 
 ## This attempt
 
-Three presentation repairs PASS; all45360paired keys and420claim rows join exactly;42dependency identities and26.33GBlocal bytes verified; eight-path CPUconsumer locally qualified, remote fresh recovery pending
+Qualified reporting and force-fresh saved-analysis recovery PASS; report exact-byte Git proof PASS. Protect final metadata and stop the owned observer; no further science.
 
 A09 adds reports, presentation repairs and scoped recovery checks. It adds **zero scientific measurements, fits, forwards, bootstrap draws or interval families**. The historical handoff, frozen audit-plan statuses and typed control aliases are repaired only in A09-owned derivatives.
 
@@ -40,7 +40,7 @@ Observer **ACTIVE**; reviewer **DRAFT_ONLY**; publisher **BLOCKED**. Administrat
 
 ## Next action
 
-A09 finite reporting and recovery only. The [resume manifest](attempts/A09-attempt-001/RESUME_MANIFEST.json) and [restore instructions](attempts/A09-attempt-001/RESTORE.md) exclude completed work. No A10 or automatic restart is authorized.
+Terminal handoff; no further work without a new explicitly scoped approval. The [resume manifest](attempts/A09-attempt-001/RESUME_MANIFEST.json) and [restore instructions](attempts/A09-attempt-001/RESTORE.md) exclude completed work. No A10 or automatic restart is authorized.
 
 ## Stage history
 
@@ -54,4 +54,4 @@ A09 finite reporting and recovery only. The [resume manifest](attempts/A09-attem
 | A06 | Completed qualified subset; reporting exception preserved |
 | A07 | COMPLETE producer |
 | A08 | COMPLETE qualified analysis |
-| A09 | RUNNING reporting/recovery |
+| A09 | COMPLETE reporting/recovery |

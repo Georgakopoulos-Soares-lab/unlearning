@@ -4,13 +4,13 @@
   "run_id": "20261117T084728Z-a01",
   "attempt_id": "A09-attempt-001",
   "stage": "A09",
-  "status": "READY_FOR_FINAL_DELIVERY",
+  "status": "TERMINAL_HANDOFF_DELIVERED",
   "full_project_status": "PARTIAL",
   "A04_status": "PARTIAL",
   "scientific_commit": "73930ca070d5de8fd8c32491d23e8e082e37a6ef",
   "A08_metadata_commit": "a0c09062c9f4cd625769130b1b85ea0ddc38d840",
   "milestone_report_commit": "e69206b0f48d713c9a856fcaa22bfe48a98f1b9e",
-  "report_delivery_commit": null,
+  "report_delivery_commit": "409e860f03dc0b4a78fd47e6e83bd6ca8d0f34fd",
   "metadata_commit": null,
   "future_commit_identity": "Separate post-push/private delivery receipts; no self-hash cycle",
   "prompt_commit": "ff579ad98b7970213c97cf0bb86fa2017cfa126e",
@@ -55,8 +55,8 @@
   "scope_booleans": {
     "QUALIFIED_ANALYSIS_COMPLETE": true,
     "FULL_INCREMENTAL_SEQUENCE_COMPLETE": false,
-    "REPORT_DELIVERED": false,
-    "GIT_DELIVERED": false,
+    "REPORT_DELIVERED": true,
+    "GIT_DELIVERED": true,
     "RECOVERY_VERIFIED_FOR_SAVED_ANALYSIS": true,
     "FULL_GPU_RECREATION_VERIFIED": false,
     "OWNED_SCIENTIFIC_JOBS_QUIESCENT": true
@@ -511,5 +511,8 @@
     "terminal_observer_stop_order": "After verified final Git/private delivery, stop only this run observer and record actual PID/start-time exit; do not shutdown Pod"
   },
   "terminal_service_stop_pending_verified_delivery": true,
-  "next_action": "Finish exact Git/private delivery, then stop owned observer and scientific executor; no A10"
+  "next_action": "Finish exact Git/private delivery, then stop owned observer and scientific executor; no A10",
+  "post_push_proof": "POST_PUSH_PROOF.json",
+  "final_receipt_binding": "Separate immutable private final receipt binds later metadata commit and actual observer stop without a self-hash cycle",
+  "further_work_authorized": false
 }
