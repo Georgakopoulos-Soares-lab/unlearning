@@ -1,0 +1,174 @@
+{
+  "schema": "pod-a-a07-R5-inputs-v2",
+  "status": "PASS",
+  "stage": "A07",
+  "prompt_commit": "112bd37081f5e55896057c6046195e8603c5e751",
+  "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
+  "A06_handoff_commit": "ba340d0f4706b1941f62a4d6256bf78ab99030eb",
+  "A06_packet": {
+    "path": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002/A07_INPUT_PACKAGE.json",
+    "bytes": 485949,
+    "sha256": "d260e347739a50314de211259a22f3e6e89209fb4fb15243d1a2bce30a5047d9"
+  },
+  "approved_model": {
+    "alias": "R5",
+    "candidate_id": "drive-folder:1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+    "selected_iteration": 2000,
+    "source_folder_id": "1KHImFndr3EbrYSWEip64rzi7G2-11cJE",
+    "original_native_file_id": "1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq",
+    "native_sha256": "5fbb3feadcdabc32885a5d0bfa4d9a2127a2ac057271892ccba9aa7e9a54748c",
+    "native_bytes": 15516878934,
+    "native_digest_origin": "fresh manifest/provider-bound digest",
+    "native_historical_equality": false,
+    "model_tensor_content_sha256": "9cab388a46a873902317ff022ab0b9a43d3e42c8753d3842837f74f5dd474259",
+    "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+    "mirror_native_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/__0_0.distcp",
+    "config_sha256": "06dbf45c508649c7d49487d83a44aea4e2b786c0ff95a108ce063183597063a1",
+    "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+    "all_eight_assets": [
+      {
+        "relative_path": "metadata.json",
+        "file_id": "1RWAfliFZQpfDQCph0dcGnQj-x1-BuGRD",
+        "bytes": 119,
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/metadata.json"
+      },
+      {
+        "relative_path": "tokenizer/tokenizer_config.json",
+        "file_id": "1tRL3X9ng-NLjp3qfUS3rL_1_s_GYq2N2",
+        "bytes": 361,
+        "sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/tokenizer/tokenizer_config.json"
+      },
+      {
+        "relative_path": "common.pt",
+        "file_id": "1TqKZ5FFWbmYNRx7hdCDcG7OFxpzVqbRw",
+        "bytes": 1767,
+        "sha256": "fe6dc5bab81be6a7691367b6243d4bb5c4700428ece9e30642dfebc272c0546c",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/common.pt"
+      },
+      {
+        "relative_path": "train_state.pt",
+        "file_id": "1B2SXKNooZMsetz6F2NFcqRRTu7r-U37I",
+        "bytes": 3461,
+        "sha256": "d9dce934deef3a82c38b23970d5f146af5b299494bacaf659f1f1a01b8371333",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/train_state.pt"
+      },
+      {
+        "relative_path": "tokenizer/tokenizer.json",
+        "file_id": "1pTtgmwNR14dv__x_RWb3ZYSaLq930c7J",
+        "bytes": 10649,
+        "sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/tokenizer/tokenizer.json"
+      },
+      {
+        "relative_path": "run_config.yaml",
+        "file_id": "1eSFDw5KDD7U1nPuUIkVOXP_E-bduwNoz",
+        "bytes": 25717,
+        "sha256": "06dbf45c508649c7d49487d83a44aea4e2b786c0ff95a108ce063183597063a1",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/run_config.yaml"
+      },
+      {
+        "relative_path": ".metadata",
+        "file_id": "1_aWYKismedEVROTh07emIA206GVsgpoI",
+        "bytes": 188725,
+        "sha256": "ebfd32e8ffeebd04a64a53307284c459a4b12863a9c51319fad0ceec7e17f781",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/.metadata"
+      },
+      {
+        "relative_path": "__0_0.distcp",
+        "file_id": "1_jOs9Yjkoenbjc6YnGtyFO6KdBqNJ6Lq",
+        "bytes": 15516878934,
+        "sha256": "5fbb3feadcdabc32885a5d0bfa4d9a2127a2ac057271892ccba9aa7e9a54748c",
+        "mirror_revision": "51c3e51596684a5ce40a7fa6c9cb9dc97780477c",
+        "mirror_path": "POD_A/exact-drive-recovery-20261117/R5/bab3e891acff2209d5e1/__0_0.distcp"
+      }
+    ],
+    "qualification_status": "PASS",
+    "payload_integrity_status": "PASS",
+    "payload_durable_reference_status": "PASS_VERIFIED_IMMUTABLE_PRIVATE_MIRROR",
+    "new_evidence_recovery_status": "PASS",
+    "heldout_forward_rows": 0,
+    "asset_manifest_sha256": "2467a73a2bb4b4678e87e80dc134cb3a2c7f1ac3f6f19c88c759e81969a33640",
+    "asset_manifest_object": "A06 exact eight resolved local/native/provider/mirror entries, distinct from old candidate-registry manifest"
+  },
+  "feature_dependency": {
+    "status": "PASS",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "revision": "d413378e035ab290d40622817f8dab439ad7c35f",
+    "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-002/R5/other_five-checkpoint-001/A06-R5_other_five-checkpoint-001.tar.gz",
+    "archive_sha256": "d8d1faebd0cff6cab349b9c797cc07e46611aaac59f1ea0272277f6075b3c52d",
+    "archive_bytes": 1369199272,
+    "consumer_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer",
+    "member_manifest_sha256": "2341e6655b623d104006fb54316c9e0825533e57e6207d0c052e855a3ad4b1f0",
+    "all_included_members_rehashed": 252,
+    "prior_force_fresh_recovery_reused": true,
+    "new_archive_download": false,
+    "producer_file_substitution": false,
+    "observed_utc": "2026-11-18T22:04:45.354438+00:00"
+  },
+  "feature_dependency_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer/artifacts",
+  "source_manifest_root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-002/R5_other_five-fresh-001/consumer/manifests",
+  "A06_inputs": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002/A06_INPUTS.json",
+    "bytes": 59619,
+    "sha256": "94969ebb518f404ef30570e0907d6c3c606bace0ec6a4eaa7828958543c6d0a1"
+  },
+  "reference_endpoint_ids": {
+    "base": "drive-folder:154kF29Cjam2F2rC-ihj6_Oobmm-oNur1",
+    "R1": "drive-folder:16yYFVcs7DvpOXR6ezrjVkwrLhepIycxv"
+  },
+  "historical_dependency_graph": {
+    "repository": "Georgakopoulos-Soares-lab/unlearning",
+    "commit": "53991bd9679943fc774dfaad770a42e7cd125a68",
+    "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A05-attempt-002/RECOVERY_DEPENDENCY_GRAPH.json",
+    "sha256": "ae086450683f2c50e72c84556c657c9231be0a238fb9c583db2894dfbff8564f"
+  },
+  "old_reference_indexes": {
+    "base_R1": {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_base_R1.json",
+      "bytes": 2850619,
+      "sha256": "66066e149da1b25a8d220d52a1e4ad0591cc9f4805ac76d2a2021bdbcfad6822"
+    },
+    "controls": {
+      "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/PAYLOAD_CHECKSUMS_controls.json",
+      "bytes": 83316,
+      "sha256": "43cc9a2945ebeb7c690ffde23793e56544e7d2c5fcf292f35d3adda217b32e52"
+    }
+  },
+  "approval_sha256": "bc066a3c20b5fe060c6710713a496b0bf29e3353ca1e45c785cd7ee753bda753",
+  "H3_LM_science_recomputed": false,
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
+    "original_start_utc": null,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A07 R5-only390 other-five heads and390 original-base applications, paired evidence/private recovery; stop before A08.",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
+    },
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "c096024dd3d64a235622f5d921d2f4fd4992f131e2320c823bb60b6856dfae97"
+  }
+}

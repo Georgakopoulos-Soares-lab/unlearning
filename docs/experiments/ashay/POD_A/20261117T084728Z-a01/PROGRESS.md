@@ -1,25 +1,39 @@
-# A06-attempt-002 — COMPLETE_FOR_R5_EXTRACTION_AND_H3_GATE
+# A07 R5 other-five — RUNNING
 
-All R5 extraction, H3 verification and both fresh private scientific recoveries PASS.390 other-five fits/applications remain for separately approved revised A07.
+Package, A06 handoff and 26 adapter checks PASS; frozen CPU source; production starting.
 
-Observed UTC: 2026-11-18T21:24:49.980854+00:00 (local display UTC). Approved prompt `4ff94e09b72a02d6e3082af064669c98adda6008`; coverage `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`.
+Observed UTC: 2026-11-18T22:14:12.882930+00:00. Prompt `112bd37081f5e55896057c6046195e8603c5e751`; A06 input handoff `ba340d0f4706b1941f62a4d6256bf78ab99030eb`.
 
-| Goal | Full target | New verified/sealed | Historical reused | Pending beyond completed | Evidence |
-|---|---:|---:|---:|---:|---|
-| Final heads | 3276 | 78 | 2340 | 858 | [H3_HEAD_INDEX.json](attempts/A06-attempt-002/H3_HEAD_INDEX.json) |
-| Fixed-base applications | 3276 | 78 | 2340 | 858 | [H3_HEAD_INDEX.json](attempts/A06-attempt-002/H3_HEAD_INDEX.json) |
-| Primary LM | 49 | 7 | 35 | 7 | [LM_INDEX.json](attempts/A06-attempt-002/LM_INDEX.json) |
-| Shared controls | 36 | 0 | 36 | 0 | [../A05-attempt-002/REUSE_MATRIX.csv](attempts/A06-attempt-002/../A05-attempt-002/REUSE_MATRIX.csv) |
-| A06 feature bundles | 13 | 13 | 0 | 0 | [EXTRACTION_INDEX.json](attempts/A06-attempt-002/EXTRACTION_INDEX.json) |
+| Measure | Count |
+|---|---:|
+| planned_heads | 390 |
+| producer_heads | 0 |
+| producer_applications | 0 |
+| prediction_paths | 0 |
+| independently_released_new_heads | 0 |
+| recovery_protected_heads | 0 |
+| recovered_panel_paths | 0 |
+| remaining_heads | 390 |
+| initial_solver_calls | 0 |
+| actual_solver_calls | 0 |
+| retries | 0 |
+| historical_released_heads | 2418 |
+| historical_released_applications | 2418 |
+| primary_LM_reused | 42 |
+| shared_controls_reused | 36 |
+| R2_heads_missing | 468 |
+| R2_applications_missing | 468 |
+| R2_primary_LM_missing | 7 |
+| new_GPU_forwards | 0 |
+| new_H3_fits | 0 |
+| new_LM_aggregations | 0 |
+| new_control_fits | 0 |
+| new_adjacent_rows | 0 |
 
-R5 only: all26 representations, physical8, three CV seeds, both policies. H3 owns78 heads/applications and six independent full-CV audit refits. Other-five classification390 units belongs to A07; no other-five extraction before exact H3 technical/recovery PASS. No paired LM or adjacent contrasts in A06. R2 remains unadmitted; accepted R3 saved-output eligibility is preserved.
+All new units remain COMPLETE_UNVERIFIED pending A08. Producer acceptance and sampled computational recovery do not release the full grid. Original A06 H3/LM and prior attempts remain immutable. R2 gaps and domain-specific R3 eligibility persist.
 
-Scientific findings are reported only after numerical verification in RESULTS_LONG.csv/PAIRED_CONTRASTS.csv/LM_RESULTS.csv. Before those seals there are no released new performance findings. Dev and previously examined H3 test stay separate and exploratory. No causal retain-diversity, unseen-task generalization, equivalence, biological-independence or forgetting claims.
+No deadline, GPU cap or closure reserve; original start, rental start, rate and cost remain unknown. CPU only, two workers, four BLAS threads each, 32 GiB AS each. Observer/reviewer/scheduler/publisher stay stopped; Pod stays running. No A08 execution.
 
-Reproducibility: [inputs](attempts/A06-attempt-002/A06_INPUTS.json), [finite manifest](attempts/A06-attempt-002/A06_EXECUTION_MANIFEST.json), [approval](attempts/A06-attempt-002/APPROVAL_RECORD.json), [original A05 plan](attempts/A06-attempt-002/../A05-attempt-002/COVERAGE_PLAN.json). Native payloads and unchanged source/environment are reused; exact new source hashes and TRAIN parity precede production. [Resources](attempts/A06-attempt-002/RESOURCE_PREFLIGHT.json), private recovery and owned PID/start/lock records distinguish live audit from representative fresh recovery.
+See [inputs](attempts/A07-attempt-002/A07_INPUTS.json), [manifest](attempts/A07-attempt-002/A07_EXECUTION_MANIFEST.json), [expected keys](attempts/A07-attempt-002/EXPECTED_TABLE_KEYS.json), [audit plan](attempts/A07-attempt-002/A08_AUDIT_HANDOFF_PLAN.json), and [source](attempts/A07-attempt-002/CPU_SOURCE_IDENTITY.json).
 
-Observer, reviewer scheduler and publisher remain STOPPED. One GPU worker, at most two CPU workers/four BLAS threads each/32 GiB AS each. No deadline, GPU cap or closure reserve; unknown original/rental starts, rate and cost remain null. No purchases or Pod shutdown.
-
-Prior [A09 report](attempts/A06-attempt-002/../A09-attempt-001/RESULTS.md) and [A05 amendment](attempts/A06-attempt-002/../A05-attempt-002/SESSION_HANDOFF.md) remain immutable. A01–A05 and prior A06–A09 retain their recorded completed/partial statuses; current A06 is this new R5 attempt. No automatic next-stage dispatch.
-
-Next: Separate revised A07 prompt and direct approval required.
+Next: Continue the finite R5 A07 queue only.
