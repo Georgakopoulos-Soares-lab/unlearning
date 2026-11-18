@@ -1,21 +1,21 @@
 # A07 R5 other-five — RUNNING
 
-Package, A06 handoff and 26 adapter checks PASS; frozen CPU source; production starting.
+gue_tf_0: 78 heads and applications accepted; fresh task recovery PASS (12 paths, 240 paired vectors).
 
-Observed UTC: 2026-11-18T22:14:12.882930+00:00. Prompt `112bd37081f5e55896057c6046195e8603c5e751`; A06 input handoff `ba340d0f4706b1941f62a4d6256bf78ab99030eb`.
+Observed UTC: 2026-11-18T22:18:40.858077+00:00. Prompt `112bd37081f5e55896057c6046195e8603c5e751`; A06 input handoff `ba340d0f4706b1941f62a4d6256bf78ab99030eb`.
 
 | Measure | Count |
 |---|---:|
 | planned_heads | 390 |
-| producer_heads | 0 |
-| producer_applications | 0 |
-| prediction_paths | 0 |
+| producer_heads | 79 |
+| producer_applications | 79 |
+| prediction_paths | 158 |
 | independently_released_new_heads | 0 |
-| recovery_protected_heads | 0 |
-| recovered_panel_paths | 0 |
-| remaining_heads | 390 |
-| initial_solver_calls | 0 |
-| actual_solver_calls | 0 |
+| recovery_protected_heads | 78 |
+| recovered_panel_paths | 12 |
+| remaining_heads | 311 |
+| initial_solver_calls | 1264 |
+| actual_solver_calls | 1264 |
 | retries | 0 |
 | historical_released_heads | 2418 |
 | historical_released_applications | 2418 |
