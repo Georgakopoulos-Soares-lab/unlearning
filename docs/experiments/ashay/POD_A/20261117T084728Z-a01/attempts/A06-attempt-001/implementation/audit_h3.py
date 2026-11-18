@@ -8,6 +8,7 @@ from sklearn.exceptions import ConvergenceWarning
 from sklearn.metrics import roc_auc_score
 from threadpoolctl import threadpool_limits
 from h3_common import *
+from production_contract import UnitLock
 from independent_math import reconstruct,metrics as independent_metrics
 def independent_distribution(p,y,weights,key):
  out=A/'independent-reference-cache'/key;out.parent.mkdir(parents=True,exist_ok=True)
@@ -31,7 +32,7 @@ def predict_parts(scaler,head,x):
 def residual(a,b,tol,why):
  require(np.shape(a)==np.shape(b),'Shape mismatch: '+why);aa=np.asarray(a);bb=np.asarray(b);require(not np.isinf(aa).any() and not np.isinf(bb).any(),'Infinite residual input: '+why);require(np.array_equal(np.isnan(aa),np.isnan(bb)),'Undefined values mismatch: '+why);ok=np.isfinite(aa)&np.isfinite(bb);d=float(np.max(np.abs(aa[ok]-bb[ok]))) if ok.any() else 0.;require(d<=tol,why+' residual '+str(d));return d
 def audit_one(spec):
- alias,key,seed=spec;unit=A/'h3'/alias/key/('seed'+str(seed));producer=read(unit/'PRODUCER_COMPLETE.json');verify_refs(unit,producer)
+ alias,key,seed=spec;unit=A/'h3'/alias/key/('seed'+str(seed));producer=read(unit/'PRODUCER_COMPLETE.json');verify_refs(unit,producer);require(producer['CPU_source_identity_sha256']==sha(C/'CPU_SOURCE_IDENTITY.json'),'Changed CPU source identity')
  if (unit/'COMPLETE.json').exists():
   final=read(unit/'COMPLETE.json');require(final['producer_sha256']==sha(unit/'PRODUCER_COMPLETE.json'),'Changed H3 producer');return {'candidate':alias,'key':key,'seed':seed,'status':'REUSED_VERIFIED'}
  t=time.monotonic();model=joblib.load(unit/'head.joblib');base_path=checked_old(producer['original_base_head']['path']);require(sha(base_path)==producer['original_base_head']['sha256'],'Fixed-base head changed');base=joblib.load(base_path);require(np.array_equal(model[-1].classes_,[0,1]) and np.array_equal(base[-1].classes_,[0,1]),'Class inversion');saved=read(unit/'RESULTS.json');maxprob=0.;maxmetric=0.;maxbootstrap=0.;maxinterval=0.;audited=0
@@ -75,8 +76,9 @@ def audit_one(spec):
  audit={'status':'PASS','candidate':alias,'key':key,'seed':seed,'producer_sha256':sha(unit/'PRODUCER_COMPLETE.json'),'all_probability_paths':4,'probability_max_abs':maxprob,'metric_max_abs':maxmetric,'bootstrap_draw_max_abs':maxbootstrap,'interval_max_abs':maxinterval,'bootstrap_policy_draws_checked':audited,'train_only_scaler_moments_exact':True,'fold_group_leakage':0,'fresh_refit':fresh_report,'wall_seconds':time.monotonic()-t,'completed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat()};put(unit/'AUDIT.json',audit);put(unit/'COMPLETE.json',{'schema':'pod-a-a06-h3-verified-unit-v1','status':'VERIFIED','candidate':alias,'task':'emp_H3','key':key,'seed':seed,'production_heads':1,'fixed_base_applications':1,'producer_sha256':sha(unit/'PRODUCER_COMPLETE.json'),'audit_sha256':sha(unit/'AUDIT.json'),'completed_utc':audit['completed_utc']});return {k:audit[k] for k in ['status','candidate','key','seed','probability_max_abs','metric_max_abs','interval_max_abs','wall_seconds']}
 def main(alias):
  specs=[(alias,k,s) for k in LAYERS for s in SEEDS]
- with threadpool_limits(limits=4):
-  with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
-   for result in pool.map(audit_one,specs):print(json.dumps(result),flush=True)
+ with UnitLock(A/'h3'/alias/'auditor.lock'):
+  with threadpool_limits(limits=4):
+   with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+    for result in pool.map(audit_one,specs):print(json.dumps(result),flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R4','R6'],required=True);main(p.parse_args().candidate)

@@ -7,11 +7,11 @@
     },
     {
       "path": "fit_h3.py",
-      "sha256": "d5123d3177f93a040a77bb3fafb2b5eafee4c273a1ccb156e31414ecd43d2125"
+      "sha256": "1878c07fc64e8182cb26a68084669a220b8f4ec2d5826a3812353c6e6ed33093"
     },
     {
       "path": "audit_h3.py",
-      "sha256": "343fa21d1a0ce9bec140aa267d2a589b89a957937db602bfa44d39ea2fb33aca"
+      "sha256": "eeccf0b7f3161e6e5518029aeccff916df804e4e0fcb1923b3d79d5cce48e748"
     },
     {
       "path": "producer_metrics.py",
@@ -32,6 +32,7 @@
   "tests": {
     "count": 4,
     "status": "PASS",
-    "log_sha256": "d93e3f822852caa7f80b762cad662bff3fbac848c8ba01a7cc13c0ec66470ec0"
-  }
+    "log_sha256": "e636c6da138556558ff98bfad96217016c1cf3b2ffd04cf92a95711edbe6ecf5"
+  },
+  "preproduction_lock_hardening": "One producer and one independent auditor lock per candidate; fixed unique units, at most2CPUworkers x4BLAS threads"
 }

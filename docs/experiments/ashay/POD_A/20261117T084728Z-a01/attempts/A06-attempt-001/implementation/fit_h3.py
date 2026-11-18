@@ -8,6 +8,7 @@ from sklearn.exceptions import ConvergenceWarning
 from sklearn.metrics import roc_auc_score
 from threadpoolctl import threadpool_limits
 from h3_common import *
+from production_contract import UnitLock
 from producer_metrics import point_metrics,bootstrap_metrics
 def train(x,y,c):
  attempts=[]
@@ -64,7 +65,8 @@ def fit_one(spec):
 def main(alias):
  for split in ['train','dev','test']:require((A/'h3-cache'/alias/split/'COMPLETE.json').exists(),'H3 cache incomplete')
  specs=[(alias,key,seed) for key in LAYERS for seed in SEEDS]
- with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
-  for result in pool.map(fit_one,specs):print(json.dumps(result),flush=True)
+ with UnitLock(A/'h3'/alias/'producer.lock'):
+  with concurrent.futures.ProcessPoolExecutor(max_workers=2) as pool:
+   for result in pool.map(fit_one,specs):print(json.dumps(result),flush=True)
 if __name__=='__main__':
  p=argparse.ArgumentParser(description=__doc__);p.add_argument('--candidate',choices=['R4','R6'],required=True);main(p.parse_args().candidate)

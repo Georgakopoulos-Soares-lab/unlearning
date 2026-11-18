@@ -1,0 +1,107 @@
+{
+  "schema": "pod-a-a06-incremental-backup-v1",
+  "status": "PASS",
+  "candidate": "R4",
+  "group": "other_five",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "private_at_write_and_closeout": true,
+  "revision": "17ede5e428390fc8fa611af9f9f856648741815c",
+  "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R4/other_five-checkpoint-001/A06-R4-other_five-checkpoint-001.tar.gz",
+  "archive_sha256": "1b484caaf7ba4d251198b3116101cf4d8f397d88b9aa943c4cb9fb1d0e1c9ff5",
+  "archive_bytes": 1370093265,
+  "member_manifest_sha256": "400757ac8bf23adabd2fbf21e13ac1ea180d1f5a269faf91db708bebb48381e0",
+  "all_files_verified": 214,
+  "fresh_download": true,
+  "force_download": true,
+  "new_consumer_and_cache": true,
+  "safe_exact_member_set": true,
+  "CPU_restored_checks": {
+    "status": "PASS",
+    "candidate": "R4",
+    "group": "other_five",
+    "restored_head_checks": [],
+    "restored_LM_aggregations": [
+      {
+        "task": "gue_tf_0",
+        "split": "train",
+        "rows": 1024,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_tf_0",
+        "split": "dev",
+        "rows": 512,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "split": "train",
+        "rows": 1024,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_splice_reconstructed",
+        "split": "dev",
+        "rows": 512,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_prom_core_all",
+        "split": "train",
+        "rows": 1024,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_prom_core_all",
+        "split": "dev",
+        "rows": 512,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_prom_300_all",
+        "split": "train",
+        "rows": 1024,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_prom_300_all",
+        "split": "dev",
+        "rows": 512,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_mouse_0",
+        "split": "train",
+        "rows": 1024,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "gue_mouse_0",
+        "split": "dev",
+        "rows": 512,
+        "NLL_abs_residual": 0.0
+      }
+    ],
+    "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+    "GPU_loads": 0,
+    "external_producer_paths_used": false
+  },
+  "restore_command": [
+    "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001/artifacts/code/restore_check.py",
+    "--root",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-other_five-fresh-001/consumer/A06-R4-other_five-checkpoint-001",
+    "--candidate",
+    "R4",
+    "--group",
+    "other_five"
+  ],
+  "producer_path_substitution": false,
+  "compression_seconds": 28.819456239012652,
+  "upload_seconds": 6.420078795999871,
+  "fresh_download_seconds": 4.735264282004209,
+  "extract_all_hash_seconds": 14.365317874995526,
+  "excluded_historical_archives_repacked": 0,
+  "GPU_restoration_runs": 0,
+  "completed_utc": "2026-11-18T03:46:15.481282+00:00"
+}

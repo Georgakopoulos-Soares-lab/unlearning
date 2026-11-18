@@ -1,0 +1,102 @@
+{
+  "schema": "pod-a-a06-incremental-backup-v1",
+  "status": "PASS",
+  "candidate": "R4",
+  "group": "H3",
+  "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+  "private_at_write_and_closeout": true,
+  "revision": "f80810ba91c63f275918ded14ee358c1dd136b46",
+  "archive_path": "POD_A/20261117T084728Z-a01/A06/A06-attempt-001/R4/H3-checkpoint-001/A06-R4-H3-checkpoint-001.tar.gz",
+  "archive_sha256": "e42eef1460cf8e91c2d7e4801b55d121920c8ddc04f227cf321533a20638ee8e",
+  "archive_bytes": 2858606025,
+  "member_manifest_sha256": "bd996e0b39fff684d06f2e4476a87de43ef93bdb23074e1667cd045522f7e45a",
+  "all_files_verified": 1104,
+  "fresh_download": true,
+  "force_download": true,
+  "new_consumer_and_cache": true,
+  "safe_exact_member_set": true,
+  "CPU_restored_checks": {
+    "status": "PASS",
+    "candidate": "R4",
+    "group": "H3",
+    "restored_head_checks": [
+      {
+        "key": "decoder_layer_16",
+        "seed": 42,
+        "split": "dev",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 8.881784197001252e-16
+      },
+      {
+        "key": "decoder_layer_16",
+        "seed": 42,
+        "split": "test",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 4.440892098500626e-16
+      },
+      {
+        "key": "final_norm",
+        "seed": 42,
+        "split": "dev",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 1.6653345369377348e-16
+      },
+      {
+        "key": "final_norm",
+        "seed": 42,
+        "split": "test",
+        "rows": 1497,
+        "policies": 2,
+        "probability_max_abs": 0.0,
+        "metric_max_abs": 6.661338147750939e-16
+      }
+    ],
+    "restored_LM_aggregations": [
+      {
+        "task": "emp_H3",
+        "split": "train",
+        "rows": 11971,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "emp_H3",
+        "split": "test",
+        "rows": 1497,
+        "NLL_abs_residual": 0.0
+      },
+      {
+        "task": "emp_H3",
+        "split": "dev",
+        "rows": 1497,
+        "NLL_abs_residual": 0.0
+      }
+    ],
+    "root": "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001",
+    "GPU_loads": 0,
+    "external_producer_paths_used": false
+  },
+  "restore_command": [
+    "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001/artifacts/code/restore_check.py",
+    "--root",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A06-attempt-001/R4-H3-fresh-001/consumer/A06-R4-H3-checkpoint-001",
+    "--candidate",
+    "R4",
+    "--group",
+    "H3"
+  ],
+  "producer_path_substitution": false,
+  "compression_seconds": 61.506608387993765,
+  "upload_seconds": 11.623162228002911,
+  "fresh_download_seconds": 9.187650473002577,
+  "extract_all_hash_seconds": 37.432026214999496,
+  "excluded_historical_archives_repacked": 0,
+  "GPU_restoration_runs": 0,
+  "completed_utc": "2026-11-18T03:33:58.272333+00:00"
+}
