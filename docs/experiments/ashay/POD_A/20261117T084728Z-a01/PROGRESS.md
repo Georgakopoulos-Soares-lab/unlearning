@@ -1,6 +1,6 @@
 # POD_A run progress
 
-Updated 2026-11-18T03:48:01.139081+00:00; stable run 20261117T084728Z-a01. Historical event logs are receipt backfills, not invented continuous history.
+Updated 2026-11-18T03:59:33.897555+00:00; stable run 20261117T084728Z-a01. Historical event logs are receipt backfills, not invented continuous history.
 
 | Stage | Status | Evidence |
 |---|---|---|
@@ -14,4 +14,4 @@ Updated 2026-11-18T03:48:01.139081+00:00; stable run 20261117T084728Z-a01. Histo
 | A08 | NOT_STARTED | Separate direct approval required |
 | A09 | NOT_STARTED | Separate direct approval required |
 
-Full3276heads:1404historical reused;78new H3 sealed;78H3 pending;780other-five fits await A07;936R2/R5external. Controls36reused once. New extraction22645/45290rows. Scientific results, qualification, verification and recovery are distinct in current progress. No observer/reviewer can advance stages.
+Full3276heads:1404historical reused;78new H3 sealed;78H3 pending;780other-five fits await A07;936R2/R5external. Controls36reused once. New extraction37610/45290rows. Scientific results, qualification, verification and recovery are distinct in current progress. No observer/reviewer can advance stages.
