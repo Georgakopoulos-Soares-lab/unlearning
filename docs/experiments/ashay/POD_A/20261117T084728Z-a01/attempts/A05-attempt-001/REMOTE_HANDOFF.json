@@ -1,0 +1,152 @@
+{
+  "owner": "POD_A",
+  "run_id": "20261117T084728Z-a01",
+  "stage": "A05",
+  "status": "COMPLETE_ACCEPTED_PLAN",
+  "input_research_commit": "18a59fdc9f99d6ad0acb0d7ce34bcd88bd846281",
+  "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2",
+  "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
+  "new_production_heads": 0,
+  "reused_heads": 1404,
+  "proposed_R4_R6_heads": 936,
+  "pending_R2_R5_heads": 936,
+  "A04_status": "PARTIAL",
+  "backup": {
+    "schema": "pod-a-a05-backup-verification-v1",
+    "status": "PASS",
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "private_at_write_and_closeout": true,
+    "revision": "dd7b366b9bc49e3597a7715a9ed5fd70e1b3cf51",
+    "archive_path": "POD_A/20261117T084728Z-a01/A05/A05-attempt-001/checkpoint-001/a05-checkpoint-001.tar.gz",
+    "archive_sha256": "df3a7aa5367c77f9c60615af8024650b2e0848d5714e1e9b798cf8e59c6d3b4d",
+    "archive_bytes": 15260381,
+    "member_manifest_sha256": "cd1c8f8ed189f248fc1615cad9d8bad88a50ebd9df55ad867ce3ac35b5167981",
+    "all_included_files_verified": 108,
+    "fresh_download": true,
+    "force_download": true,
+    "new_cache_and_consumer": true,
+    "safe_member_check_and_exact_set": true,
+    "restored_plan_validation": {
+      "status": "PASS",
+      "full_heads": 3276,
+      "proposed": 936,
+      "H3_heads_A06": 156,
+      "remaining_heads_A07": 780,
+      "controls": 36,
+      "all_rows": 6637,
+      "next_proposed_gate": "R4/H3_EXTRACTION",
+      "execution": "NOT_STARTED; direct A06 approval required"
+    },
+    "restored_training_associations": {
+      "status": "PASS",
+      "TRAIN_only_associations": [
+        {
+          "task": "gue_tf_0",
+          "rows": 1024,
+          "status": "PASS"
+        },
+        {
+          "task": "gue_splice_reconstructed",
+          "rows": 1024,
+          "status": "PASS"
+        }
+      ],
+      "GPU_runs": 0,
+      "heldout_rows": 0
+    },
+    "restored_CPU_command": [
+      "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A05-attempt-001/fresh-consumer-001/A05-checkpoint-001/code/plan_cli.py",
+      "--plan",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A05-attempt-001/fresh-consumer-001/A05-checkpoint-001/public/COVERAGE_PLAN.json",
+      "--coverage",
+      "/workspace/recovery/POD_A/20261117T084728Z-a01/A05-attempt-001/fresh-consumer-001/A05-checkpoint-001/public/COVERAGE.csv",
+      "--expected-plan-sha256",
+      "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4"
+    ],
+    "exclusions": {
+      "scope": "A05 frozen plan, source, bounded training-only CPU calibration and provenance. No new production science.",
+      "excluded": [
+        "Credentials/account stores",
+        "Installed runtime and checkpoint weights",
+        "Historical large feature/head/prediction/bootstrap archives, referenced by immutable A03/A04 dependency graph",
+        "Administrative persistent cache (.git), credential helpers and unrelated host state"
+      ],
+      "inherited_A04": {
+        "schema": "pod-a-a04-recovery-backup-verification-v1",
+        "status": "PASS_BOUNDED_METADATA_RECOVERY",
+        "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+        "private_at_write_and_closeout": true,
+        "revision": "08b72cd87d48b22b229ddadba4f9bba43062d24b",
+        "archive_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/checkpoint-001/a04-recovery-checkpoint-001.tar.gz",
+        "sidecar_path": "POD_A/20261117T084728Z-a01/A04/A04-attempt-003/checkpoint-001/a04-recovery-checkpoint-001.tar.gz.sha256",
+        "archive_bytes": 447539,
+        "archive_sha256": "8877c3019dbddebb6759cd5a713a3af703a14e33654d8be57ec822a856cb508f",
+        "member_manifest_sha256": "255eebfad45abffbd619151b6615bb394261edb2fd050f2bd16f2f4305ffe757",
+        "all_included_files_verified": 226,
+        "fresh_download": true,
+        "force_download": true,
+        "new_consumer_and_cache": true,
+        "safe_restore_and_exact_member_set": true,
+        "restored_CPU_status": "PASS",
+        "restored_CPU_comparison_rows": 54,
+        "restored_CPU_witness_rows": 12,
+        "restored_CPU_fullrow_sum_checks": 2,
+        "CPU_scope": "Reused inherited R1 repeat+historical features/LM, actual-logit witnesses and14freshsidecardependencyhashes; notnewqualification",
+        "restored_CPU_report_sha256": "4d93962453702780337346e4bd4eb768b70f73132dbc699cb38ef385d51ae513",
+        "restored_CPU_command": [
+          "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/checkpoint-fresh-consumer-001/A04-recovery-checkpoint-001/artifacts/recovery_code/verify_restored_recovery.py",
+          "--root",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-003/checkpoint-fresh-consumer-001/A04-recovery-checkpoint-001",
+          "--inherited-dependency",
+          "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001"
+        ],
+        "inherited_dependency": "/workspace/recovery/POD_A/20261117T084728Z-a01/A04-attempt-002/checkpoint-fresh-consumer-001/A04-checkpoint-001",
+        "inherited_archive_repacked_bytes": 0,
+        "native_payload_recovery_status": "BLOCKED",
+        "native_payloads_recovered": 0,
+        "sidecar_payload_recovery_index": "PAYLOAD_RECOVERY_INDEX.json",
+        "exclusions": {
+          "schema": "pod-a-a04-recovery-checkpoint-exclusions-v1",
+          "native_model_payloads": "R3/R5 notobtained(providerquota/transportceiling); R2 notadmitted. No newnativepayloadarchive or GPU recovery claimed.",
+          "new_selected_sidecars": "Exact14files at c1376f4d58e763ef4a8460c195ea2e185e4f738c, freshfullbyteverified, seecontrol/PAYLOAD_RECOVERY_INDEX.json. Referenced instead of anotherpayloadcopy.",
+          "inherited_science": "Previous A04boundedcheckpoint5e32de857cb9a289f6def0536e8dc55cd3885f96 and its A03graph remain immutable dependencies; no old arrays or largearchives repacked.",
+          "installed_runtime": "Excluded; exactunchangedsource/env/rebuild recipe and livemetadatachecks included",
+          "credentials_and_unrelated_inputs": "Excluded",
+          "recovery_scope": "All newincludedbytes plus restored-code representativeCPUchecks of exactinherited R1 smokes/LMwitnesses and sidecardependencyhashes. Not a fullscientific or GPUrebuild recovery."
+        },
+        "GPU_recovery_runs": 0,
+        "wall_seconds": 7.136003365005308,
+        "completed_utc": "2026-11-17T17:47:41.497357+00:00",
+        "post_upload_rule": "Proof and finalGitdeliverymetadata protected separately to avoidselfhashcycle"
+      },
+      "inherited_A03": {
+        "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A03-attempt-001/BACKUP_VERIFICATION.json",
+        "bytes": 3323,
+        "sha256": "3d6a5701e21d4eb41473fecbaf9ebc179d7eca526ef2994ad4338a3f506fa30e"
+      },
+      "restored_computation": "Execute restored plan validator; verify all included bytes and TRAIN-only feature array associations. No held-out access, model load or refit."
+    },
+    "compression_seconds": 0.5918662600015523,
+    "upload_seconds": 2.1276207079936285,
+    "fresh_download_seconds": 0.9449577869963832,
+    "extract_and_all_hash_seconds": 1.3415177790011512,
+    "large_production_transfer_rate_not_established": true,
+    "new_production_heads": 0,
+    "GPU_runs": 0,
+    "scientific_job_state": "QUIESCENT",
+    "completed_utc": "2026-11-18T01:50:14.836332+00:00",
+    "self_hash_rule": "Final verification/delivery receipt protected in separate post-seal metadata object"
+  },
+  "services": {
+    "observer_status": "ACTIVE",
+    "reviewer_status": "DRAFT_ONLY",
+    "publisher_status": "BLOCKED"
+  },
+  "resume": "RESUME_MANIFEST.json",
+  "next_state": "WAITING_FOR_APPROVAL: A06",
+  "automatic_advance": false,
+  "final_delivery_commit": "Separate post-push immutable delivery receipt"
+}

@@ -1,6 +1,6 @@
 {
   "schema": "pod-a-a05-receipt-v1",
-  "status": "COMPLETE_PLANNING",
+  "status": "COMPLETE",
   "run_id": "20261117T084728Z-a01",
   "stage": "A05",
   "attempt_id": "A05-attempt-001",
@@ -79,6 +79,9 @@
     "previous_record_sha256": "9bd329c0abce8e01f5fe6dc10682603ce8bcd36462fff77d69d957a896524619"
   },
   "sealed_scientific_plan_utc": "2026-11-18T01:48:56.611208+00:00",
-  "backup_status": "See separate BACKUP_VERIFICATION.json; current receipt does not assert an upload before verification",
-  "delivery_commit": "Recorded separately to avoid self-reference"
+  "backup_status": "PASS:108includedfiles freshly downloaded, exact member/hash checks, restored plan and2048TRAIN-row associations; no GPU restore claim",
+  "delivery_commit": "Recorded separately to avoid self-reference",
+  "completion_scope": "A05 accepted R4/R6 protocol/coverage freeze and bounded training-only calibration; separate service limitations retained",
+  "completed_utc": "2026-11-18T01:51:37.798523+00:00",
+  "wall_seconds_observed_attempt": 1099.91087
 }
