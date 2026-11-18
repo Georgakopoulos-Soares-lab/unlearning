@@ -20,10 +20,12 @@
       "split": "train",
       "rows_expected": 11971,
       "physical_forwards_expected": 1497,
-      "status": "PENDING",
-      "rows_verified": 0,
-      "chunks": 0,
-      "receipt_sha256": null
+      "status": "VERIFIED",
+      "rows_verified": 11971,
+      "chunks": 47,
+      "receipt_sha256": "bd8b7c611629ab24531b235de51b50e0bdb943501969fc97f4c7b82433534da0",
+      "receipt": "features/R6/emp_H3/train/COMPLETE.json",
+      "raw_feature_bytes": 2390369280
     },
     {
       "candidate": "R4",
@@ -44,10 +46,12 @@
       "split": "dev",
       "rows_expected": 1497,
       "physical_forwards_expected": 188,
-      "status": "PENDING",
-      "rows_verified": 0,
-      "chunks": 0,
-      "receipt_sha256": null
+      "status": "VERIFIED",
+      "rows_verified": 1497,
+      "chunks": 6,
+      "receipt_sha256": "da169fe8baa5995a5dedf30412b6cadd0cc00ec166bb6ae238172a82f30d3f91",
+      "receipt": "features/R6/emp_H3/dev/COMPLETE.json",
+      "raw_feature_bytes": 298920960
     },
     {
       "candidate": "R4",
@@ -68,10 +72,12 @@
       "split": "test",
       "rows_expected": 1497,
       "physical_forwards_expected": 188,
-      "status": "PENDING",
-      "rows_verified": 0,
-      "chunks": 0,
-      "receipt_sha256": null
+      "status": "VERIFIED",
+      "rows_verified": 1497,
+      "chunks": 6,
+      "receipt_sha256": "403814ddccd381213876554e0c3bc40a0f2d6a97d45f7538a8594077955d13cd",
+      "receipt": "features/R6/emp_H3/test/COMPLETE.json",
+      "raw_feature_bytes": 298920960
     },
     {
       "candidate": "R4",
@@ -315,9 +321,9 @@
     }
   ],
   "expected_rows": 45290,
-  "verified_rows": 22645,
+  "verified_rows": 37610,
   "expected_bundles": 26,
-  "verified_bundles": 13,
+  "verified_bundles": 16,
   "expected_matrices": 676,
   "expected_raw_feature_bytes": 9043507200,
   "physical_forwards_expected": 5666,
