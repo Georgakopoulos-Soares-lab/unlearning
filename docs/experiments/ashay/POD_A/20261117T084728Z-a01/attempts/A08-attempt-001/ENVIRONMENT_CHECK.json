@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "python": "3.12.3",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.8.0"
+  },
+  "BLAS": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "/workspace/venvs/a03-cpu-audit-20261117/lib/python3.12/site-packages/numpy.libs/libscipy_openblas64_-f48b354e.so",
+      "version": "0.3.34.106.0",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "CPU_workers": 2,
+  "BLAS_threads_per_worker": 4,
+  "worker_address_space_limit_bytes": 34359738368,
+  "CUDA_VISIBLE_DEVICES": "",
+  "package_changes": false,
+  "qualified_inherited_CPU_identity": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/CPU_ENVIRONMENT_CHECK.json",
+    "bytes": 276,
+    "sha256": "68d3af6202b687f4b2fe270b2c2097ad0c93bb66e68115b94397f9d60990d979"
+  }
+}

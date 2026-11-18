@@ -1,0 +1,54 @@
+{
+  "schema": "pod-a-a08-audit-source-v1",
+  "status": "FROZEN",
+  "version": "audit-source-001",
+  "files": [
+    {
+      "path": "audit_common.py",
+      "sha256": "e4cff3c2a5803ff98298a7c52c75f34bd46f4aa86039592bf566052cc1be7490"
+    },
+    {
+      "path": "independent_math.py",
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "rank_crosscheck.py",
+      "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a"
+    },
+    {
+      "path": "audit_units.py",
+      "sha256": "fe381b9e7bb59a18d82d6d62a2b9a253cd442a02b46e61dad1b1791b49747dca"
+    },
+    {
+      "path": "refit_panel.py",
+      "sha256": "2718b5ab3bcc02526a3c4904ca55bbf0c1ec2a8c584a6df75c844af3bd3cc46d"
+    },
+    {
+      "path": "analysis_pairs.py",
+      "sha256": "bf2ed7a955b15bae8b405a6afaea44f83e7f10b47932e0ed256abcf55f6449a8"
+    }
+  ],
+  "implementation_validation": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/IMPLEMENTATION_VALIDATION.json",
+    "bytes": 1467,
+    "sha256": "60020882d28a7501f530285e7078642e182a60de4dab9ebc92e7286d01eeb8b7"
+  },
+  "environment": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/ENVIRONMENT_CHECK.json",
+    "bytes": 1003,
+    "sha256": "2dc117b094c3c96f44221483e23d3acaecbf075d762d97afc6f8ed928cb707e8"
+  },
+  "execution_manifest": {
+    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/A08_EXECUTION_MANIFEST.json",
+    "bytes": 6494275,
+    "sha256": "39f0ab845ce58852b6d7af1c31eeafd1bfaefe133861c141c4f83a304a94d38a"
+  },
+  "frozen_utc": "2026-11-18T09:05:18.909902+00:00",
+  "source_changes_require_new_version_and_dependent_audit_invalidation": true,
+  "producer_source_immutable": true,
+  "tolerances": {
+    "probability_atol": 1e-10,
+    "metric_bootstrap_interval_atol": 1e-12,
+    "probability_normalization_atol": 1e-12
+  }
+}

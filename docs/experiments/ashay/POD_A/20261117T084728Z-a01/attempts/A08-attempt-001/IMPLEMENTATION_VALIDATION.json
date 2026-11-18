@@ -1,0 +1,36 @@
+{
+  "schema": "pod-a-a08-implementation-validation-v1",
+  "status": "PASS",
+  "synthetic_tests": 27,
+  "synthetic_fixture_fits": 2,
+  "log": {
+    "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/logs/implementation_tests.log",
+    "bytes": 2787,
+    "sha256": "438412c16a892ea4c1950fa59131e6c7c02f22590cb29b4b0088183f5ed44dff"
+  },
+  "test_source": {
+    "path": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001/code/test_audit.py",
+    "bytes": 7425,
+    "sha256": "bf5e1d1389f6608c4d15c3c4a1b548f936bb737f52cd9740590f576af0883c91"
+  },
+  "all_owned_modules_parse": true,
+  "independent_math": "Direct float32 scaler reconstruction; float64 pairwise AUROC and threshold AP; independent integer group counts; separate rank-based crosscheck for newly derived analyses",
+  "covered": [
+    "binary and sorted three-class ties",
+    "zero-variance float32 scaling vs frozen sklearn",
+    "missing-class draw masks",
+    "threshold and argmax ties",
+    "class/row/group permutation rejection",
+    "duplicate group shared multiplicity",
+    "nonfinite inputs",
+    "wrong member/base-head hashes",
+    "stale identities and extra cache files",
+    "atomic partial preservation and sealed resume",
+    "one writer lock",
+    "foreign unit/stage/path rejection",
+    "LM corpus ratio vs sequence-PPL averaging and invalid targets"
+  ],
+  "real_production_fits": 0,
+  "sampled_refits_executed": 0,
+  "GPU_work": 0
+}

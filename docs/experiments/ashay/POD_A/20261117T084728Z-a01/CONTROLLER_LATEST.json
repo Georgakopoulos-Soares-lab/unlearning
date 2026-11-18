@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
   "run_id": "20261117T084728Z-a01",
-  "stage": "A07",
-  "attempt_id": "A07-attempt-001",
-  "status": "COMPLETE",
-  "prompt_commit": "28231013b20eb83951e1f689d1faeb781231ef48",
+  "stage": "A08",
+  "attempt_id": "A08-attempt-001",
+  "status": "RUNNING",
+  "prompt_commit": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
   "effective_hashes": {
     "POD_A_MASTER.md": "ed13c09a74917165c5cf8c9c3a12483fbcdae56116d0ac3a8033014f913419b0",
-    "A07_PROBES_FIXED_REFERENCE.md": "9495365fccaf2d34b09f132df533cfbdac3eb57cf83b7125b0d8d2e57abf33d0",
+    "A08_VERIFICATION_ANALYSIS.md": "535c9fd582e98db3469d81b291d03091575825198488ff67df56d08a87946a98",
     "SCIENTIFIC_CONTRACT.md": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413",
     "ARTIFACT_CONTRACT.md": "f34f276d5b884f1e16588ae2bd40c1a5c00c8b155ee53e4b7ffcd39c3590c594",
     "POD_A_PROGRESS_REPORTING.md": "70637a2e42a1720c8ec9f41cbf0293297e3e0606f451bd8218082660d75ec202",
     "POD_A_REVIEW_LOOP.md": "c5b1a6f9b6990e26f5089607f1c0163333aefb406a5caff8cf7ee1da9d48fce0"
   },
-  "approval_reference": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/APPROVAL_RECORD.json",
+  "approval_reference": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/APPROVAL_RECORD.json",
   "scientific_job_state": "QUIET",
-  "next_allowed_action": "A07 approved finite CPU production only",
-  "A08_started": false,
+  "next_allowed_action": "Complete finite A08 only; A09 requires separate approval",
+  "A09_started": false,
   "time_policy": {
     "schema": "pod-a-time-policy-v3",
     "status": "ACTIVE_USER_SUPERSESSION",
@@ -34,31 +34,31 @@
     "purchases_authorized": false,
     "no_clock_reset": true,
     "separate_stage_approval_required": true,
-    "current_direct_stage": "A07 only; stop before A08",
+    "current_direct_stage": "A08 only; stop before A09",
     "source": {
       "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
       "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
     },
     "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
     "historical_records_preserved": true,
-    "previous_record_sha256": "4c1082bbfd40ad1b2e77db51eddc30433de6e8d5b772c4b35c71fad17b61ccae"
+    "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
   },
   "paths": {
-    "schema": "pod-a-a07-config-v1",
+    "schema": "pod-a-a08-config-v1",
     "run_id": "20261117T084728Z-a01",
-    "attempt_id": "A07-attempt-001",
-    "stage": "A07",
-    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001",
+    "attempt_id": "A08-attempt-001",
+    "stage": "A08",
+    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001",
     "root_control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01",
-    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A07-attempt-001",
-    "docs": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001",
+    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-001",
+    "docs": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001",
     "worktree": "/workspace/wt-pod-a",
-    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01/A07-attempt-001",
-    "research_head_before": "a641ca0c8fcc534295d40cd19f65ddc1579128d2",
-    "prompt_commit": "28231013b20eb83951e1f689d1faeb781231ef48",
+    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01/A08-attempt-001",
+    "research_head_before": "de1ac64f7b5f9748a868564baf637e8c06dbb667",
+    "prompt_commit": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
     "coverage_plan_sha256": "0845be199a96d3bdcfa4d7ac990263120f8a43c506e499b2d69f22c7b59c3eb4",
     "protocol_sha256": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
-    "started_utc": "2026-11-18T06:13:42.905190+00:00",
+    "started_utc": "2026-11-18T08:49:25.672412+00:00",
     "approval_message_time_utc": null,
     "time_policy": {
       "schema": "pod-a-time-policy-v3",
@@ -77,30 +77,36 @@
       "purchases_authorized": false,
       "no_clock_reset": true,
       "separate_stage_approval_required": true,
-      "current_direct_stage": "A07 only; stop before A08",
+      "current_direct_stage": "A08 only; stop before A09",
       "source": {
         "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
         "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
       },
       "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
       "historical_records_preserved": true,
-      "previous_record_sha256": "4c1082bbfd40ad1b2e77db51eddc30433de6e8d5b772c4b35c71fad17b61ccae"
+      "previous_record_sha256": "1ac0782c7166c6fb83a303f7da9cee7a94a7a62974335bc47033a7b2cdb0f2e5"
     },
     "runtime_venv": "/workspace/venvs/pod-a-a04-attempt-002",
     "cpu_venv": "/workspace/venvs/a03-cpu-audit-20261117",
     "tools_venv": "/workspace/venvs/pod-a-tools"
   },
-  "research_head": "a641ca0c8fcc534295d40cd19f65ddc1579128d2",
-  "observed_utc": "2026-11-18T06:53:11.510808+00:00",
+  "research_head": "de1ac64f7b5f9748a868564baf637e8c06dbb667",
+  "observed_utc": "2026-11-18T09:08:09.695067+00:00",
+  "owned_job": null,
   "unit_counts": {
-    "new_final_heads_producer_complete": 780,
-    "new_fixed_base_applications": 780,
-    "remaining_A07": 0,
-    "new_independently_verified": 0,
-    "A06_H3_reused": 156,
+    "A07_production_heads_reused": 780,
+    "all_unit_independent_audits_passed": 2,
+    "probability_paths_checked": 4,
+    "sampled_refits_passed": 0,
+    "sampled_refits_expected": 60,
+    "audit_units_remaining": 778,
+    "new_production_heads": 0,
+    "R6_minus_R4_classifier_rows": 0,
+    "R6_minus_R4_LM_rows": 0,
     "historical_heads_reused": 1404,
-    "external_R2_pending": 468,
-    "external_R5_pending": 468
+    "A06_H3_heads_reused": 156,
+    "R2_pending": 468,
+    "R5_pending": 468
   },
   "administrative_service_state": {
     "observer_status": "ACTIVE",
@@ -110,10 +116,10 @@
     "pid": 33071,
     "proc_start_ticks": "8476919",
     "process_identity_alive": true,
-    "last_successful_tick": "2026-11-18T06:42:19.201341+00:00",
-    "heartbeat_age_seconds": 651.1956322193146,
-    "active_approved_pin": "28231013b20eb83951e1f689d1faeb781231ef48",
-    "observed_prompt_commit": "28231013b20eb83951e1f689d1faeb781231ef48",
+    "last_successful_tick": "2026-11-18T09:02:49.128335+00:00",
+    "heartbeat_age_seconds": 320.55242824554443,
+    "active_approved_pin": "e5c8b2b7af7530399e2a00f6e2d4c94c43af65ef",
+    "observed_prompt_commit": "b2a4d6914349ee4737e7d4d590efc46b3e4f3110",
     "newer_error_than_success": false,
     "last_error": {
       "observed_utc": "2026-11-18T06:22:15.198247+00:00",
@@ -124,13 +130,6 @@
     },
     "stop_disable_flags": [],
     "no_duplicate_launched": true,
-    "refreshed_utc": "2026-11-18T06:53:10.396991+00:00"
-  },
-  "owned_job": null,
-  "next_state": "WAITING_FOR_APPROVAL: A08",
-  "completion_receipt": {
-    "path": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A07-attempt-001/A07_RECEIPT.json",
-    "bytes": 5045,
-    "sha256": "4ecf06ef134b67382481a7134255d8aa69139855334d5d6f277c89687edca0b8"
+    "refreshed_utc": "2026-11-18T09:08:09.680775+00:00"
   }
 }
