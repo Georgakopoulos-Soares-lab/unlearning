@@ -1,6 +1,6 @@
 # POD_A run progress
 
-Updated 2026-11-18T04:20:31.394342+00:00; stable run 20261117T084728Z-a01. Historical event logs are receipt backfills, not invented continuous history.
+Updated 2026-11-18T04:25:18.884855+00:00; stable run 20261117T084728Z-a01. Historical event logs are receipt backfills, not invented continuous history.
 
 | Stage | Status | Evidence |
 |---|---|---|
@@ -9,7 +9,7 @@ Updated 2026-11-18T04:20:31.394342+00:00; stable run 20261117T084728Z-a01. Histo
 | A03 | Verified historical recovery/data/reuse | attempts/A03-attempt-001/PROGRESS.md |
 | A04 | PARTIAL | attempts/A04-attempt-003/PROGRESS.md |
 | A05 | COMPLETE accepted planning | attempts/A05-attempt-001/PROGRESS.md |
-| A06 | RUNNING | [Current progress](attempts/A06-attempt-001/PROGRESS.md) |
+| A06 | COMPLETE | [Current progress](attempts/A06-attempt-001/PROGRESS.md) |
 | A07 | NOT_STARTED | Separate direct approval required |
 | A08 | NOT_STARTED | Separate direct approval required |
 | A09 | NOT_STARTED | Separate direct approval required |
