@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "repairs": [
+    {
+      "transformation": "Current release overlay",
+      "original_measurements_statuses_and_all_fields_preserved_by_immutable_source_rows": true,
+      "new_effective_state": "VERIFIED",
+      "scope": "Prior R5 producer seals remain COMPLETE_UNVERIFIED; A08 release overlay remains distinct"
+    },
+    {
+      "transformation": "R3 identity overlay",
+      "original_empty_content_fields_untouched": true,
+      "effective_tensor_content_id": "756654479ef80ada70808224c3ee0da605b5bd2dbf434837dd38353012c0c8be",
+      "eligibility": "1092 classifier and7LM approved saved-output domains only"
+    },
+    {
+      "transformation": "LM reporting terminology",
+      "original_field": "primary_LM42",
+      "reader_facing": "36dev+6previously_examined_H3_test",
+      "old_field_preserved": true
+    },
+    {
+      "transformation": "Historical canonical control aliases",
+      "action": "Reused exact A09-attempt-001 repair and row order; no reapplication or scientific change"
+    },
+    {
+      "transformation": "A09 full-release bijective row index",
+      "scope": "Legacy rows with no logical ID receive stable context-only legacy-v1 IDs; existing logical IDs preserved",
+      "values_enter_identity": false
+    }
+  ],
+  "no_new_measurement_or_inference": true
+}

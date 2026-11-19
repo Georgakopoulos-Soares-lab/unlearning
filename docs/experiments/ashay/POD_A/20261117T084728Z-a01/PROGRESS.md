@@ -1,8 +1,8 @@
 # A09 RUNNING
 
-Pinned package and359 committed A08 files verified; private access and frozen24/60/6 recovery plan PASS.
+Exact106526-row integrated release and33684-key amendment PASS;42 private archive identities and16489 saved files reverified. Six evidence-linked findings prepared; new report recovery pending.
 
-Run `20261117T084728Z-a01`, attempt `A09-attempt-002`. Observed UTC: 2026-11-19T01:44:26.750126+00:00. Direct approval and its preview binding are in [approval](attempts/A09-attempt-002/APPROVAL_RECORD.json). Pinned prompt `2a837ba3a183caf72529b891d52ba08637cc8398`.
+Run `20261117T084728Z-a01`, attempt `A09-attempt-002`. Observed UTC: 2026-11-19T02:02:30.622660+00:00. Direct approval and its preview binding are in [approval](attempts/A09-attempt-002/APPROVAL_RECORD.json). Pinned prompt `2a837ba3a183caf72529b891d52ba08637cc8398`.
 
 | Goal | Target | Current evidence | Remaining |
 |---|---:|---|---|
