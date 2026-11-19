@@ -1,164 +1,66 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
+  "event_id": "b1b78b3f300a49c492b7ca1fc4c4a6d5ba20a97f3f8c99f1dbd7b650c1e2aa2a",
   "run_id": "20261117T084728Z-a01",
-  "server": {
-    "hostname_sha256": "fb2fdc69e74171312390fd4a80c7e4b4e9e118859ed1823f06e4904b22b80462",
-    "boot_id_sha256": "9a0da30dba9393153ff51d2a2af0b275472313fd5e8811eb5f3f5a1e1cf2e5bc",
-    "runpod_pod_id_sha256": "190433a38ad55f0284da26e2f7b3b81ec000efabf134af993fd996c1478baee5",
-    "assignment_basis": "Direct current user Pod A assignment plus dedicated matching worktree/origin and setup-A records; not independent provider-account verification.",
-    "timezone": "UTC",
-    "container_start_utc": "2026-11-17T06:14:41.200000+00:00"
+  "stage": "A09",
+  "attempt_id": "A09-attempt-002",
+  "event_type": "RUNNING",
+  "observed_utc": "2026-11-19T01:44:26.750126+00:00",
+  "approval_reference": "APPROVAL_RECORD.json",
+  "prompt_commit": "2a837ba3a183caf72529b891d52ba08637cc8398",
+  "effective_hashes": {
+    "prompt": "1909d6403baf85960000057bd34a6f151116114a21d3ab507d8dd19a697b4426",
+    "coverage": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3"
   },
-  "worktree": "/workspace/wt-pod-a",
-  "current_stage": "A01",
-  "attempt_id": "A01-attempt-001",
-  "status": "PARTIAL",
-  "lifecycle": "WAITING_FOR_STEERING",
-  "lifecycle_history": [
-    "APPROVAL_RECEIVED",
-    "PINNED",
-    "PREREQUISITES_CHECKED",
-    "RUNNING_ADMIN_DIAGNOSTICS_ONLY",
-    "PARTIAL",
-    "WAITING_FOR_STEERING"
+  "research_parent": "5eed0985d84c6f2d925a6700baaac3efd6d27426",
+  "protocol_hash": "73648f333dd619b2305a5bf22ff185292addc9071c7aa9de5188c23f9e2c1cf7",
+  "unit_counts": {
+    "new_scientific_measurements": 0,
+    "new_fits": 0,
+    "new_GPU_forwards": 0,
+    "planned_recovery_prediction_paths": 24,
+    "planned_recovery_classifier_vectors": 60,
+    "planned_recovery_LM_vectors": 6
+  },
+  "evidence_paths": [
+    "A09_EXECUTION_MANIFEST.json",
+    "INPUT_VALIDATION.json"
   ],
-  "approval": {
-    "direct_message": "👍 A01\n\nFirst verify every path in PACKAGE_FILES.json and validate SHA256SUMS,\nincluding evidence/ and templates/. Report missing or mismatched files\nbefore any research-repository changes. Execute A01 only, then stop. these prompts over here - https://github.com/ashay-sriv-06/test-prompts-push/tree/POD_A",
-    "message_time_utc": null,
-    "observed_time_utc": "2026-11-17T08:47:28.846181+00:00"
-  },
-  "prompt": {
-    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
-    "branch": "POD_A",
-    "commit": "703934532c8e6e9c300e4a0b0ec6f281c8953fcc",
-    "effective_files": [
-      {
-        "path": "POD_A_MASTER.md",
-        "sha256": "7ed638c1fa912302becedb1096a82ac3d097a6bf07117d738c3604f84c07588b"
-      },
-      {
-        "path": "A01_WORKSPACE_RECONCILIATION.md",
-        "sha256": "11af42677f77c250a489c53324e1b4ebe9fc82b0cae362c2f67c5a8f61d2fbde"
-      },
-      {
-        "path": "SCIENTIFIC_CONTRACT.md",
-        "sha256": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413"
-      },
-      {
-        "path": "ARTIFACT_CONTRACT.md",
-        "sha256": "c58d9567f7dac25b163fbe494fbf9a2e10ed74db0d464f2395bf07ffd1f81f60"
-      },
-      {
-        "path": "SOURCE_NOTES.md",
-        "sha256": "d577f8176a47ddc47b59079393fca6c050795030be379d8e5d5c3bd613282bfa"
-      },
-      {
-        "path": "SOURCE_MANIFEST.json",
-        "sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f"
-      },
-      {
-        "path": "STAGE_MAP.json",
-        "sha256": "1a813e7dab6507be6766cc982b0b6ba5f5d2af962cfee029432c60dc64a5e54b"
-      }
-    ]
-  },
-  "research_head_before": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
-  "dirty_baseline": [],
-  "prior_state_sha256": null,
-  "source_evidence_manifest_sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f",
-  "runtime_sha256": null,
-  "protocol_sha256": "fb973b4b2e7963d5c5e2ae4b02cbe70ab527d9e61e1fbf7d3eee17373c80f29f",
-  "protocol_status": "Historical evidence only, current runtime/coverage not qualified",
-  "coverage_plan_sha256": null,
-  "selected_checkpoint_ids": [],
-  "budget": {
-    "schema": "pod-a-budget-v1",
-    "observed_utc": "2026-11-17T08:48:27.415555+00:00",
+  "blockers": [],
+  "scientific_job_state": "No fitting or forwards; finite A09 reporting/recovery only",
+  "administrative_service_state": "ALL_STOPPED",
+  "next_allowed_action": "Complete only A09 reporting/recovery and terminal closure",
+  "message": "Pinned package and359 committed A08 files verified; private access and frozen24/60/6 recovery plan PASS.",
+  "status": "RUNNING",
+  "current_stage": "A09",
+  "current_attempt": "attempts/A09-attempt-002",
+  "automatic_resume": false,
+  "time_policy": {
+    "schema": "pod-a-time-policy-v3",
+    "status": "ACTIVE_USER_SUPERSESSION",
+    "supersedes_without_rewriting_history": "Prior wall-clock deadlines, science cutoffs, fixed closure reserves, rental-duration assumptions and self-imposed GPU-time caps",
     "original_start_utc": null,
-    "science_cutoff_utc": null,
-    "deadline_utc": null,
-    "remaining_seconds": null,
-    "elapsed_seconds": null,
-    "wall_hours": 14,
-    "closure_reserve_hours": 3,
     "provider_rental_start_utc": null,
     "provider_hourly_rate_usd": null,
     "cost_usd": null,
-    "rate_basis": "Not independently supplied; no invoice estimate.",
-    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-A.json",
-    "source_state_exists": false,
-    "setup_records": [
-      {
-        "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-A.sh",
-        "bytes": 43647,
-        "mtime_utc": "2026-11-17T06:25:26+00:00",
-        "sha256": "5a8eea5c3716b555fd8e539db7e5b0e7470bcee5693191b4758a0de373624a70",
-        "inode": 114593093
-      },
-      {
-        "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-A.txt",
-        "bytes": 388,
-        "mtime_utc": "2026-11-17T06:25:25+00:00",
-        "sha256": "72ea95b118b2d936bbddadb56b96919a849c7c71def4157ccd2743c447c9b383",
-        "inode": 114538039
-      },
-      {
-        "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
-        "bytes": 0,
-        "mtime_utc": "2026-11-17T06:24:54+00:00",
-        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "inode": 114292462
-      }
-    ],
-    "container_pid1_start_utc": "2026-11-17T06:14:41.200000+00:00",
-    "provider_start_verified": false,
-    "provisional_container_proxy_only": {
-      "start_utc": "2026-11-17T06:14:41.200000+00:00",
-      "science_cutoff_utc": "2026-11-17T17:14:41.200000+00:00",
-      "deadline_utc": "2026-11-17T20:14:41.200000+00:00",
-      "remaining_seconds_at_observation": 41173.78441,
-      "caveat": "Arithmetic illustration using container process start. Not adopted as original budget or permission; provisioning/rental could predate it."
+    "active_hard_deadline_utc": null,
+    "active_science_cutoff_utc": null,
+    "active_fixed_closure_reserve_hours": null,
+    "active_self_imposed_gpu_seconds_cap": null,
+    "tracking": "Reporting only; no total-wall/GPU cap or closure reserve",
+    "numerical_integrity_privacy_storage_ownership_and_separate_stage_gates_retained": true,
+    "purchases_authorized": false,
+    "no_clock_reset": true,
+    "separate_stage_approval_required": true,
+    "current_direct_stage": "A09 available-checkpoint reporting and saved-analysis recovery only; terminal stop.",
+    "source": {
+      "user_request": "Read PASTE_INTO_CODEX.md and go ham; adopted exact pinned A05 instructions",
+      "prompt_commit": "eb861427378e14aedce307348fa9eab3fa989ca2"
     },
-    "historical_prompt_inputs_note": "Unlisted historical 02_SESSION_INPUTS.json contains a 300-minute allowance, no current start; superseded by the current 14-hour controller and not adopted.",
-    "new_scientific_gpu_seconds": 0,
-    "new_inference_units": 0,
-    "new_probe_fits": 0,
-    "compute_blocked": true,
-    "deadline_reset": false
+    "inherited_record_sha256": "3c1bc50a7d78fb7c4a3691e1260c2d6a8a44b0d90a020b4dc8070fac2affa486",
+    "historical_records_preserved": true,
+    "previous_record_sha256": "a9e96e6cb7c60592351fdee55d0ff6e87d746a68fdc0aec1ce73eee039cacd65"
   },
-  "paths": {
-    "schema": "pod-a-paths-v1",
-    "run_id": "20261117T084728Z-a01",
-    "owner": "POD_A",
-    "research_worktree": "/workspace/wt-pod-a",
-    "research_common_directory": "/workspace/repos/unlearning-pod-a/.git",
-    "prompt_cache": "/workspace/test-prompts-push/.git",
-    "prompt_cache_note": "Existing isolated single-branch clone, exact origin verified; no additional remote prompt fetch after pinning. Tracked prompt files unchanged.",
-    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01",
-    "reports": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01",
-    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01",
-    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01",
-    "private_backup_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
-    "private_backup_prefix": "POD_A/20261117T084728Z-a01/<stage>/<attempt-id>/",
-    "gpu_lock": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
-    "gpu_lock_status": "NOT_CREATED_NOT_ACQUIRED_NO_GPU_WORK",
-    "path_isolation_verified": true
-  },
-  "owned_scientific_processes": [],
-  "owned_scientific_locks": [],
-  "completion_receipts": [
-    {
-      "path": "A01_RECEIPT.json",
-      "scope": "Partial administrative A01 attempt; hash in external delivery receipt"
-    }
-  ],
-  "blockers": [
-    {
-      "id": "ORIGINAL_BUDGET_UNVERIFIED",
-      "scope": "A01 readiness and any substantial subsequent compute",
-      "detail": "state/pod-A.json and timestamped setup completion receipts are absent. Setup lock mtime and PID1 start are evidence of activity, not the original setup argument or verified provider rental start. Definite original start/cutoff/deadline or explicit steering required. No clock reset."
-    }
-  ],
-  "next_recommended_action": "Resolve original deadline and resume A01 only on direct steering.",
-  "future_stage_permission": false
+  "A10_started": false,
+  "entrypoint": "CONTROLLER_STATE.json"
 }

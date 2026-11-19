@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "run_id": "20261117T084728Z-a01",
+  "server": {
+    "hostname_sha256": "fb2fdc69e74171312390fd4a80c7e4b4e9e118859ed1823f06e4904b22b80462",
+    "boot_id_sha256": "9a0da30dba9393153ff51d2a2af0b275472313fd5e8811eb5f3f5a1e1cf2e5bc",
+    "runpod_pod_id_sha256": "190433a38ad55f0284da26e2f7b3b81ec000efabf134af993fd996c1478baee5",
+    "assignment_basis": "Direct current user Pod A assignment plus dedicated matching worktree/origin and setup-A records; not independent provider-account verification.",
+    "timezone": "UTC",
+    "container_start_utc": "2026-11-17T06:14:41.200000+00:00"
+  },
+  "worktree": "/workspace/wt-pod-a",
+  "current_stage": "A01",
+  "attempt_id": "A01-attempt-001",
+  "status": "PARTIAL",
+  "lifecycle": "WAITING_FOR_STEERING",
+  "lifecycle_history": [
+    "APPROVAL_RECEIVED",
+    "PINNED",
+    "PREREQUISITES_CHECKED",
+    "RUNNING_ADMIN_DIAGNOSTICS_ONLY",
+    "PARTIAL",
+    "WAITING_FOR_STEERING"
+  ],
+  "approval": {
+    "direct_message": "👍 A01\n\nFirst verify every path in PACKAGE_FILES.json and validate SHA256SUMS,\nincluding evidence/ and templates/. Report missing or mismatched files\nbefore any research-repository changes. Execute A01 only, then stop. these prompts over here - https://github.com/ashay-sriv-06/test-prompts-push/tree/POD_A",
+    "message_time_utc": null,
+    "observed_time_utc": "2026-11-17T08:47:28.846181+00:00"
+  },
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "branch": "POD_A",
+    "commit": "703934532c8e6e9c300e4a0b0ec6f281c8953fcc",
+    "effective_files": [
+      {
+        "path": "POD_A_MASTER.md",
+        "sha256": "7ed638c1fa912302becedb1096a82ac3d097a6bf07117d738c3604f84c07588b"
+      },
+      {
+        "path": "A01_WORKSPACE_RECONCILIATION.md",
+        "sha256": "11af42677f77c250a489c53324e1b4ebe9fc82b0cae362c2f67c5a8f61d2fbde"
+      },
+      {
+        "path": "SCIENTIFIC_CONTRACT.md",
+        "sha256": "285b987ef23c7598b9c633a3d7cac495b6877b9e0301db92962078d0ca17e413"
+      },
+      {
+        "path": "ARTIFACT_CONTRACT.md",
+        "sha256": "c58d9567f7dac25b163fbe494fbf9a2e10ed74db0d464f2395bf07ffd1f81f60"
+      },
+      {
+        "path": "SOURCE_NOTES.md",
+        "sha256": "d577f8176a47ddc47b59079393fca6c050795030be379d8e5d5c3bd613282bfa"
+      },
+      {
+        "path": "SOURCE_MANIFEST.json",
+        "sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f"
+      },
+      {
+        "path": "STAGE_MAP.json",
+        "sha256": "1a813e7dab6507be6766cc982b0b6ba5f5d2af962cfee029432c60dc64a5e54b"
+      }
+    ]
+  },
+  "research_head_before": "b70594de8ed4ca0917c6ada866b16f0e34c8b0a3",
+  "dirty_baseline": [],
+  "prior_state_sha256": null,
+  "source_evidence_manifest_sha256": "d1cf5576f13687cbea62174fa7ab8f4870b81da6574ee292c76b1ea97c26d32f",
+  "runtime_sha256": null,
+  "protocol_sha256": "fb973b4b2e7963d5c5e2ae4b02cbe70ab527d9e61e1fbf7d3eee17373c80f29f",
+  "protocol_status": "Historical evidence only, current runtime/coverage not qualified",
+  "coverage_plan_sha256": null,
+  "selected_checkpoint_ids": [],
+  "budget": {
+    "schema": "pod-a-budget-v1",
+    "observed_utc": "2026-11-17T08:48:27.415555+00:00",
+    "original_start_utc": null,
+    "science_cutoff_utc": null,
+    "deadline_utc": null,
+    "remaining_seconds": null,
+    "elapsed_seconds": null,
+    "wall_hours": 14,
+    "closure_reserve_hours": 3,
+    "provider_rental_start_utc": null,
+    "provider_hourly_rate_usd": null,
+    "cost_usd": null,
+    "rate_basis": "Not independently supplied; no invoice estimate.",
+    "source_state_path": "/workspace/unlearning-two-pod-setup/state/pod-A.json",
+    "source_state_exists": false,
+    "setup_records": [
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/codex-installer-A.sh",
+        "bytes": 43647,
+        "mtime_utc": "2026-11-17T06:25:26+00:00",
+        "sha256": "5a8eea5c3716b555fd8e539db7e5b0e7470bcee5693191b4758a0de373624a70",
+        "inode": 114593093
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/admin-packages-A.txt",
+        "bytes": 388,
+        "mtime_utc": "2026-11-17T06:25:25+00:00",
+        "sha256": "72ea95b118b2d936bbddadb56b96919a849c7c71def4157ccd2743c447c9b383",
+        "inode": 114538039
+      },
+      {
+        "path": "/workspace/unlearning-two-pod-setup/state/setup-A.lock",
+        "bytes": 0,
+        "mtime_utc": "2026-11-17T06:24:54+00:00",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "inode": 114292462
+      }
+    ],
+    "container_pid1_start_utc": "2026-11-17T06:14:41.200000+00:00",
+    "provider_start_verified": false,
+    "provisional_container_proxy_only": {
+      "start_utc": "2026-11-17T06:14:41.200000+00:00",
+      "science_cutoff_utc": "2026-11-17T17:14:41.200000+00:00",
+      "deadline_utc": "2026-11-17T20:14:41.200000+00:00",
+      "remaining_seconds_at_observation": 41173.78441,
+      "caveat": "Arithmetic illustration using container process start. Not adopted as original budget or permission; provisioning/rental could predate it."
+    },
+    "historical_prompt_inputs_note": "Unlisted historical 02_SESSION_INPUTS.json contains a 300-minute allowance, no current start; superseded by the current 14-hour controller and not adopted.",
+    "new_scientific_gpu_seconds": 0,
+    "new_inference_units": 0,
+    "new_probe_fits": 0,
+    "compute_blocked": true,
+    "deadline_reset": false
+  },
+  "paths": {
+    "schema": "pod-a-paths-v1",
+    "run_id": "20261117T084728Z-a01",
+    "owner": "POD_A",
+    "research_worktree": "/workspace/wt-pod-a",
+    "research_common_directory": "/workspace/repos/unlearning-pod-a/.git",
+    "prompt_cache": "/workspace/test-prompts-push/.git",
+    "prompt_cache_note": "Existing isolated single-branch clone, exact origin verified; no additional remote prompt fetch after pinning. Tracked prompt files unchanged.",
+    "control": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01",
+    "reports": "/workspace/wt-pod-a/docs/experiments/ashay/POD_A/20261117T084728Z-a01",
+    "artifacts": "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01",
+    "recovery": "/workspace/recovery/POD_A/20261117T084728Z-a01",
+    "private_backup_repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "private_backup_prefix": "POD_A/20261117T084728Z-a01/<stage>/<attempt-id>/",
+    "gpu_lock": "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/GPU_EXECUTION.lock",
+    "gpu_lock_status": "NOT_CREATED_NOT_ACQUIRED_NO_GPU_WORK",
+    "path_isolation_verified": true
+  },
+  "owned_scientific_processes": [],
+  "owned_scientific_locks": [],
+  "completion_receipts": [
+    {
+      "path": "A01_RECEIPT.json",
+      "scope": "Partial administrative A01 attempt; hash in external delivery receipt"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "ORIGINAL_BUDGET_UNVERIFIED",
+      "scope": "A01 readiness and any substantial subsequent compute",
+      "detail": "state/pod-A.json and timestamped setup completion receipts are absent. Setup lock mtime and PID1 start are evidence of activity, not the original setup argument or verified provider rental start. Definite original start/cutoff/deadline or explicit steering required. No clock reset."
+    }
+  ],
+  "next_recommended_action": "Resolve original deadline and resume A01 only on direct steering.",
+  "future_stage_permission": false
+}
