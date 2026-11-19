@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "point_source_tables": [
+    {
+      "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A08-attempt-001/VERIFIED_METRICS.csv",
+      "commit": "7a94b6712ea641ae938c41c39f8e82a193f72592",
+      "sha256": "2d54bee02e69b0c9b94a8281f9d21f976c827efbe8a6b34cae2bef92b0f06e02",
+      "rows": 27300,
+      "scope": "HISTORICAL_RELEASE_REUSED"
+    },
+    {
+      "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A06-attempt-002/RESULTS_LONG.csv",
+      "commit": "7a94b6712ea641ae938c41c39f8e82a193f72592",
+      "sha256": "4d67a3af2518e63cd0feb4faa643ddae77c91ce900fa53ae01dc062a2a2033c5",
+      "rows": 1560,
+      "scope": "REUSED_R5_H3_A06"
+    },
+    {
+      "path": "docs/experiments/ashay/POD_A/20261117T084728Z-a01/attempts/A07-attempt-002/RESULTS_LONG.csv",
+      "commit": "7a94b6712ea641ae938c41c39f8e82a193f72592",
+      "sha256": "bd302b65a51c2cf82e1896e0db23ce534dd1d132bf311d5e1206d4c520ec3463",
+      "rows": 3900,
+      "scope": "INDEPENDENTLY_RELEASED_R5_A08"
+    }
+  ],
+  "all_point_rows": 32760,
+  "all_adjacent_rows": 16380,
+  "all_new_LM_rows": 70,
+  "R5_base_R1_control_rows": 11760,
+  "coverage_policy": "Missing R2 has no invented point and is never bridged with a line",
+  "primary_split": "dev",
+  "separate_exploratory_split": "emp_H3/test_exploratory"
+}

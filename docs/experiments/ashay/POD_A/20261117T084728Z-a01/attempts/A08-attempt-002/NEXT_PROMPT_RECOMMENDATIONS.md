@@ -1,0 +1,7 @@
+# A09 reporting-only readiness
+
+Require separate direct A09 approval of a revised prompt bound to this actual delivery, prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`, plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`, audit source `c8b52f5cfdd343bc4f67f8903ff67cfcaac177291014e2cb4fae2b2e32fdb2ba` and contrast source `21b74cc2e9d7fa75adec0451da11928aa1587e680d3c921d312a19eeb5c1c065`. Use TABLE_PARTITIONS.json, exact33684 amendment keys, independently releasedR5 overlays, ANALYSIS.md and the publication assets/plot-data without rerunning A08 science. Preserve old A09 as immutable history; allocate a new owned attempt.
+
+Assemble the incremental-retain report with all six tasks, layers, seeds and both readout policies; all16380 newly verified adjacent classifier effects and70 paired actual-LM effects; the six evidence-linked findings and adverse/inconclusive results; separate exploratory H3 test; explicit R2 and training-exposure/lineage/GPU-recreation limitations. CV seeds are not checkpoint-training replicates and policy point gaps carry no new inferential family.
+
+Nine private payload checkpoints plus later final metadata/receipt protect this scope. Reuse their exact revisions/hashes and existing inherited consumers with explicit mapping. No new model forwards, production/control fitting, source/data changes, R2 backfill, perturbation/saliency work, Pod B work or automatic stage dispatch. Keep services stopped, Pod running and the no-deadline amendment. Stop at the explicitly approved A09 reporting/closure boundary.

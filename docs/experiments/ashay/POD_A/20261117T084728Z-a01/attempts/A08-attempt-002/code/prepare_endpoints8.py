@@ -1,0 +1,30 @@
+"""Freeze metadata-only typed endpoint bindings after the exact R5 release gate."""
+from common8 import *
+from provenance8 import Registry
+
+def ref(p):
+ p=Path(p);return {'path':str(p),'bytes':p.stat().st_size,'sha256':sha(p)}
+def main():
+ guard();assert read(C/'AUDIT_QUEUE_RESULT.json')['status']=='PASS';reg=Registry();catalog=read(C/'HISTORICAL_ENDPOINT_CATALOG.json')['units'];by={(e['checkpoint_alias'],e['task'],e['split'],e['representation'],str(e['CV_seed']),e['policy']):e for e in catalog};r3=read(C5/'R3_COMPARABILITY.json');domains={(d['task'],d['split'],d['representation'],str(d['seed']),d['policy']):d for d in r3['domains']};units=[];allcoords={(u['task'],u['split'],u['representation'],u['CV_seed']) for u in read(C/'CONTRAST_EXECUTION_MANIFEST.json')['classifier_units']}
+ for alias in ['R3','R4','R5','R6']:
+  for task,split,hook,seedstr in sorted(allcoords):
+   seed=int(seedstr);key='final_norm' if hook=='decoder.final_norm' else hook.replace('decoder.layers.','decoder_layer_');uid=f'{alias}/{task}/{key}/seed{seed}';storage='test' if split=='test_exploratory' else split;item={'candidate':alias,'task':task,'split':split,'storage_split':storage,'representation':hook,'array_key':key,'seed':seed,'unit_id':uid,'effective_content_id':read(C/'A08_INPUTS.json')['endpoint_content_ids'][alias],'selectors':{},'release_receipts':{},'original_source_policies':{},'original_content_id':None,'original_producer_protocol_sha256':None}
+   for policy in POLICIES:
+    if alias!='R5':
+     old=by[alias,task,split,hook,seedstr,policy];p=Path(old['prediction_file']['path']);assert sha(p)==old['prediction_file']['sha256'];selector=old['probability_member_selector'];producer=Path(old['producer_receipt']);audit=Path(old['audit_receipt']);audit=audit if audit.is_absolute() else A.parent/'A08-attempt-001'/audit
+     assert sha(producer)==old['producer_receipt_sha256'] and sha(audit)==old['audit_receipt_sha256'];item.update(original_content_id=old['checkpoint_content_id'],original_producer_protocol_sha256=old['original_producer_protocol_sha256'],measurement_attempt='HISTORICAL_NOVEMBER10' if alias=='R3' else ('A06-attempt-001' if task=='emp_H3' else 'A07-attempt-001'),source_sha256=old['measurement_source_sha256'] or old['source_sha256'],endpoint_id=old['original_endpoint_id']);item['original_source_policies'][policy]=old['source_policy']
+     if alias in ['R3','R4']:
+      d=domains[task,split,hook,seedstr,policy];assert d['status']=='ELIGIBLE_FOR_SAVED_OUTPUT_COMPARISON';assert old['prediction_file']['sha256']==d['R3_reference_prediction_sha256' if alias=='R3' else 'R4_target_prediction_sha256'];item['R3_domain_digest']=digest(d)
+    else:
+     root=A6/'h3/R5'/key/('seed'+str(seed)) if task=='emp_H3' else A7/'probes'/uid;p=root/(storage+'_predictions.npz');selector=policy;producer=root/('PRODUCER_COMPLETE.json' if task=='emp_H3' else 'COMPLETE.json');audit=root/'AUDIT.json' if task=='emp_H3' else A/'audits'/uid/'COMPLETE.json';assert read(audit)['status']=='PASS';item.update(original_content_id=read(C/'A08_INPUTS.json')['endpoint_content_ids']['R5'],original_producer_protocol_sha256=cfg['protocol_sha256'],measurement_attempt='A06-attempt-002' if task=='emp_H3' else 'A07-attempt-002',source_sha256=sha(C6/'SOURCE_IDENTITY.json') if task=='emp_H3' else sha(C7/'CPU_SOURCE_IDENTITY.json'),endpoint_id=read(C/'A08_INPUTS.json')['R5_identity']['candidate_id']);item['original_source_policies'][policy]=policy
+     if task!='emp_H3' and key in ['decoder_layer_16','final_norm']:assert read(A/'refits'/uid/'COMPLETE.json')['status']=='PASS'
+    item['selectors'][policy]=selector;item['release_receipts'][policy]=reg.descriptor(audit,'INDEPENDENT_AUDIT_RECEIPT');item['producer_receipt']=reg.descriptor(producer,'ORIGINAL_PRODUCER_RECEIPT');item['prediction']=reg.descriptor(p,'CLASSIFIER_PROBABILITY_NPZ_FILE');item['live_prediction']=ref(p)
+   hroot=Path('/workspace/recovery/POD_A')/R.name/'A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z';dp=hroot/('probes/H3' if task=='emp_H3' else 'probes/other_five')/task/(storage+'_resampling.npz');item['draw']=reg.descriptor(dp,'SAVED_GROUP_BOOTSTRAP_DRAWS')
+   item['raw_cohort_sha256']='de2c348126fa84771ceeff38225703231848ac860f8b59a3ed41d9eb0b3f0938' if task=='emp_H3' else 'a270dd76f1a007b7685c012ca2c2a5bdcdbf67da1122f12c81caf292ae9c4126'
+   units.append(item)
+ assert len(units)==2184
+ lm=[]
+ for e in read(C/'LM_ENDPOINT_CATALOG.json')['units']:
+  p=Path(e['prediction_locator'].split('#')[0]);kind=e['prediction_hash_kind'];selector=e['prediction_locator'].split('#',1)[1] if '#' in e['prediction_locator'] else 'nll_sum,n_tokens';assert sha(p)==e['prediction_sha256'];producer=Path(e['producer_receipt']);assert sha(producer)==e['producer_receipt_sha256'];hroot=Path('/workspace/recovery/POD_A')/R.name/'A03-attempt-001/restored/base_R1/multiretain-layers-v1-final-20261110T140836Z';group='H3' if e['task']=='emp_H3' else 'other_five';storage='test' if e['split']=='test_exploratory' else e['split'];raw=hroot/'manifests'/(group+'.jsonl');dp=hroot/('probes/H3' if group=='H3' else 'probes/other_five')/e['task']/(storage+'_resampling.npz');lm.append(e|{'prediction_descriptor':reg.descriptor(p,kind,selector),'producer_descriptor':reg.descriptor(producer,'ORIGINAL_LM_PRODUCER_RECEIPT'),'raw_cohort':reg.descriptor(raw,'RAW_COHORT_MANIFEST'),'draw':reg.descriptor(dp,'SAVED_GROUP_BOOTSTRAP_DRAWS'),'live_prediction':ref(p)})
+ assert len(lm)==42;put(C/'ENDPOINT_BINDINGS.json',{'status':'FROZEN','classifier_units':units,'LM_units':lm,'R3_domains_1092_preserved':True,'original_R3_empty_content_id_preserved':True,'effective_R3_tensor_overlay':read(C/'A08_INPUTS.json')['endpoint_content_ids']['R3'],'R3_eligibility_source':reg.descriptor(D5/'R3_COMPARABILITY.json','DOMAIN_ELIGIBILITY_RECEIPT'),'all_inherited_consumer_reuse_not_new_download':True});put(C/'INHERITED_IMMUTABLE_MAP.json',reg.immutable_map());put(C/'INPUT_PROVENANCE_REGISTRY.json',{'artifacts':reg.artifacts,'validation':reg.validate()});print('ENDPOINT_BINDINGS_FROZEN '+str(len(units))+' '+str(len(lm)))
+if __name__=='__main__':main()

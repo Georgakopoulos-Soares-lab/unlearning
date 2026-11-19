@@ -1,13 +1,13 @@
-# R5 A08 — RUNNING
+# R5 A08 — COMPLETE_FOR_R5_INDEPENDENT_RELEASE_AND_ELIGIBLE_INCREMENTAL_ANALYSIS
 
-All16380 new adjacent classifier and70 paired LM rows verified;1260 classifier and70 LM vectors freshly recovered. Tables/analysis/figures/final delivery remain.
+All scoped A08 science, recovery, exact-key release, analysis and visually checked figures PASS; stop before A09.
 
-Observed UTC/local UTC: 2026-11-18T23:56:10.069981+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
+Observed UTC/local UTC: 2026-11-19T00:28:01.685243+00:00. Current direct execution request is recorded verbatim in [approval](APPROVAL_RECORD.json). Prompt `d0d06888c3f4fa7aaa7fa20e0d1f24acde1990ad`; plan `06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3`. Observer/reviewer/scheduler/publisher STOPPED.
 
 | Goal | Target | New PASS | Historical reused | Pending | Evidence |
 |---|---:|---:|---:|---:|---|
 | R5 independent audits | 390 | 390 | 0 | 0 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
-| Frozen audit refits | 30 | 30 | 6 | 0 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
+| Full-CV audit refits (30 new + 6 H3 reused) | 36 | 30 | 6 | 0 | [A08_EXECUTION_MANIFEST.json](A08_EXECUTION_MANIFEST.json) |
 | New adjacent classifier rows | 16380 | 16380 | 0 | 0 | [CONTRAST_EXECUTION_MANIFEST.json](CONTRAST_EXECUTION_MANIFEST.json) |
 | New paired LM rows | 70 | 70 | 0 | 0 | [CONTRAST_EXECUTION_MANIFEST.json](CONTRAST_EXECUTION_MANIFEST.json) |
 | Primary LM measurements | 49 | 0 | 42 | 7 | [../A06-attempt-002/LM_INDEX.json](../A06-attempt-002/LM_INDEX.json) |
@@ -15,7 +15,7 @@ Observed UTC/local UTC: 2026-11-18T23:56:10.069981+00:00. Current direct executi
 
 Producer/independent-audit/refit/recovery states are separate. All six tasks,26 representations,3 CV seeds and both policies remain in their frozen scope. New R5 other-five release requires unit audit and required panel refit; A07 producer seals remain unchanged. No unsealed work is reported as passed.
 
-Scientific findings: no new released A08 analysis claim at this preparation milestone; later verified findings appear in ANALYSIS.md and exact-key table partitions. New measurements are zero: no model/LM forward or replacement production head. A08 derives saved-output comparisons only.
+Scientific findings: six evidence-linked descriptive findings, including adverse and inconclusive cells, are in [ANALYSIS.md](ANALYSIS.md). Exact values, paired intervals and logical IDs are linked through TABLE_PARTITIONS.json. [Stage history](STAGE_HISTORY.csv) preserves the recorded A01–A09 receipt statuses; the old A09 is immutable history, not this attempt executing A09. New measurements are zero: no model/LM forward or replacement production head. A08 derives saved-output comparisons only.
 
 Coverage before new release:2808 producer heads/applications,2418 released each. Completing390 audits raises release to2808/3276 each; R2 remains missing468 heads/applications and7 LM. Old R3 domain-specific eligibility1092classifier/7LM is preserved; ancestry/exposure/biological independence and causal retain-diversity claims remain limited. H3 test is previously examined exploratory and separate from primary dev.
 
@@ -23,4 +23,4 @@ Reproducibility: [inputs](A08_INPUTS.json), [manifest](A08_EXECUTION_MANIFEST.js
 
 Prior [A06](../A06-attempt-002/SESSION_HANDOFF.md), [A07](../A07-attempt-002/SESSION_HANDOFF.md), [historical A08](../A08-attempt-001/SESSION_HANDOFF.md) and [A09](../A09-attempt-001/SESSION_HANDOFF.md) remain immutable. A01–A05 retain prior receipts/statuses. No historical science is rerun to repair metadata. No A09 execution.
 
-Next: Continue only the finite approved A08 scope.
+Next: Separate direct A09 approval required; no automatic resume.

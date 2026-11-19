@@ -1,0 +1,26 @@
+{
+  "status": "REPORT_ONLY_IMPORT_REPAIR",
+  "failed_source_sha256": "5088a7f89b2af4fc46f08a84d7781999867382a49a1d45302bb021457bb04107",
+  "failed_job": {
+    "pid": 144504,
+    "proc_start_ticks": "16159212",
+    "argv": [
+      "/workspace/venvs/pod-a-a08-figures/bin/python",
+      "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A08-attempt-002/code/plot_analysis8.py",
+      "--stage",
+      "A08"
+    ],
+    "command_sha256": "25e7b61daf066469250fc0ed968dc97bfaea1a949843117a89a3c416b71374d4",
+    "script_sha256": "5088a7f89b2af4fc46f08a84d7781999867382a49a1d45302bb021457bb04107",
+    "started_utc": "2026-11-19T00:21:51.116999+00:00",
+    "status": "FAILED_EXIT",
+    "credential_environment_removed": true,
+    "GPU_disabled": true,
+    "AS_bytes": 34359738368,
+    "exit_code": 1,
+    "wall_seconds": 37.51899668198894,
+    "completed_utc": "2026-11-19T00:22:28.628040+00:00"
+  },
+  "reason": "Missing math import in interval rendering; no numeric source or plot-data changes",
+  "scientific_recomputations": 0
+}

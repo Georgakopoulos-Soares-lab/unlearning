@@ -1,0 +1,16 @@
+{
+  "status": "METADATA_CONTROL_FIX",
+  "old_launcher_sha256": "d4b6bc784c39a65647aeb0e14cf94cc769572f1e5e39ff4f95eae15390f94294",
+  "new_launcher_sha256": "3b8ebc24432122e70bf548db2aeac20502f2acf08a759b89dc53e06bb19efee2",
+  "cause": "Exit-record path was inadvertently inside fit/audit-only condition; other finite scripts completed but record write raised UnboundLocalError",
+  "affected_job_ids": [
+    "normalize-lm-001",
+    "adjacent-R4_minus_R3-001"
+  ],
+  "science_argv_environment_limits_and_source_unchanged": true,
+  "numerical_sources_modified": false,
+  "computation_repeated": false,
+  "original_failure_preserved": true,
+  "unrecorded_child_exit_code_will_remain_null": true,
+  "observed_utc": "2026-11-18T23:31:27.343636+00:00"
+}

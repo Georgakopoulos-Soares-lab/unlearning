@@ -1,0 +1,10 @@
+family,adjacent,status,new_classifier_rows,new_LM_rows,blocked_classifier_rows,blocked_LM_rows,reason
+R4_minus_R3,True,VERIFIED_IN_A08,5460,14,0,0,
+R5_minus_R4,True,VERIFIED_IN_A08,5460,14,0,0,
+R6_minus_R5,True,VERIFIED_IN_A08,5460,14,0,0,
+R5_minus_base,False,A07_BASELINE_CLASSIFIERS_AUDITED_NEW_LM_PAIRED,0,14,0,0,Classifier rows retain original A06/A07 measurement lineage
+R5_minus_R1,False,A07_BASELINE_CLASSIFIERS_AUDITED_NEW_LM_PAIRED,0,14,0,0,Classifier rows retain original A06/A07 measurement lineage
+R2_minus_R1,True,MISSING_R2,0,0,5460,14,"R2 remains unadmitted; no interpolation, discovery or substituted checkpoint"
+R3_minus_R2,True,MISSING_R2,0,0,5460,14,"R2 remains unadmitted; no interpolation, discovery or substituted checkpoint"
+R3_minus_R1,False,REUSED_NONADJACENT_HISTORICAL_RELEASE,0,0,0,0,Completed historical family reused without recomputation
+R6_minus_R4,False,REUSED_NONADJACENT_HISTORICAL_RELEASE,0,0,0,0,Completed historical family reused without recomputation

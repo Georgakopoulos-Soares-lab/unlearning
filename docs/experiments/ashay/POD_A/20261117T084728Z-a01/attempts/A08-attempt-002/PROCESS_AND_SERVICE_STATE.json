@@ -7,5 +7,143 @@
   "scientific_workers": [],
   "locks_free": true,
   "pod_left_running": true,
-  "observed_utc": "2026-11-18T23:03:24.986636+00:00"
+  "observed_utc": "2026-11-19T00:26:37.294213+00:00",
+  "owned_jobs_exit_confirmed": [
+    {
+      "job_id": "paired-LM-points-001",
+      "pid": 130325,
+      "proc_start_ticks": "15997495",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "e66ce777139f13a116ffbfd0eacd4f979a806cd6b088307597bb8675ef630ab8"
+    },
+    {
+      "job_id": "paired-LM-001",
+      "pid": 130242,
+      "proc_start_ticks": "15995787",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "75d4bbb841787932fbe562fbe960853f80629c1308a24bef2ee9feac2e59b454"
+    },
+    {
+      "job_id": "adjacent-R6_minus_R5-001",
+      "pid": 129447,
+      "proc_start_ticks": "15959191",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "fc0713bdf1b689734686fec6b20a48401d6e723361ad9153e6fbb0a909afba67"
+    },
+    {
+      "job_id": "adjacent-R5_minus_R4-001",
+      "pid": 128638,
+      "proc_start_ticks": "15921539",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "d6ac928a23519e061b03123d550b81ef78b3c9f37dd16dffc33496ea6f5c5eb8"
+    },
+    {
+      "job_id": "adjacent-R4_minus_R3-001",
+      "pid": 127717,
+      "proc_start_ticks": "15849286",
+      "exit_code": null,
+      "state": "EXIT_CONFIRMED_SEALED_SCIENCE_PASS_WRAPPER_RECORD_REPAIRED",
+      "command_sha256": "dd66d685afc7774a2403d2c9ececb3cb4c650f84b81451c8642fb6de45bc43d1"
+    },
+    {
+      "job_id": "normalize-lm-001",
+      "pid": 127616,
+      "proc_start_ticks": "15835413",
+      "exit_code": null,
+      "state": "EXIT_CONFIRMED_SEALED_SCIENCE_PASS_WRAPPER_RECORD_REPAIRED",
+      "command_sha256": "949caab9fc76ce23639c8d7a76b65d6c1a5d4c0e50ccc3ffce2fdb5f8cf18444"
+    },
+    {
+      "job_id": "refit-gue_mouse_0-001",
+      "pid": 126049,
+      "proc_start_ticks": "15789001",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "90690d39a56e0a84ea77eb348ede125e9604f9e187b58920c10a4a524c4486d7"
+    },
+    {
+      "job_id": "audit-gue_mouse_0-001",
+      "pid": 125960,
+      "proc_start_ticks": "15785061",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "4d1cc0366e0006cdc3cdc94d64a870028538d0de837ac5d1c0f6b6acb4b66ace"
+    },
+    {
+      "job_id": "refit-gue_splice_reconstructed-001",
+      "pid": 125219,
+      "proc_start_ticks": "15777402",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "07d0fe9c9f1464a5f7370f443659c8bcdd470dd19e07d38e3563bfa061167f1f"
+    },
+    {
+      "job_id": "audit-gue_splice_reconstructed-001",
+      "pid": 125124,
+      "proc_start_ticks": "15773467",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "a54a404906484d937c50eb444a45ad28ca1e3da831881d467a368c204fc9a241"
+    },
+    {
+      "job_id": "refit-gue_prom_300_all-001",
+      "pid": 124389,
+      "proc_start_ticks": "15767281",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "0c41ac4cd3bbc8008150b6987cc58e2552d311befb9b5247271b09c261ff6087"
+    },
+    {
+      "job_id": "audit-gue_prom_300_all-001",
+      "pid": 124300,
+      "proc_start_ticks": "15763649",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "d94cd42492dc6d3fd4aece895abcf1c71f6807f089ba7835b90f795e795fe3f9"
+    },
+    {
+      "job_id": "refit-gue_prom_core_all-001",
+      "pid": 123545,
+      "proc_start_ticks": "15757676",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "cbcf7475cef7304fd779d2f3b00353b5b9f880fda2f2e8cffd2f4c99f604bcb2"
+    },
+    {
+      "job_id": "audit-gue_prom_core_all-001",
+      "pid": 123457,
+      "proc_start_ticks": "15754063",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "e13e5acb9605407d8517a344c2d24000e4c356e7f9ceeb7c59e74cdc5f1f66b4"
+    },
+    {
+      "job_id": "refit-gue_tf_0-001",
+      "pid": 122677,
+      "proc_start_ticks": "15735493",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "4a0f7bd0b5a58d527ae3b78a61c8a873d16c7fa7823d16eb825bed1b3aa3e9c7"
+    },
+    {
+      "job_id": "audit-gue_tf_0-001",
+      "pid": 122566,
+      "proc_start_ticks": "15725394",
+      "exit_code": 0,
+      "state": "PASS_EXIT",
+      "command_sha256": "25d58eaf7e2c19ac2b0d84d300775fa2e2b01d36568aeeddcc226b6ecbedb8cc"
+    }
+  ],
+  "exact_child_exit_codes_unavailable_for": [
+    "adjacent-R4_minus_R3-001",
+    "normalize-lm-001"
+  ],
+  "unavailable_exit_codes_not_fabricated": true,
+  "supervisor_repair_receipt_sha256": "ca5507a71071179dfe6c2d7fb46acb1620388cf4fe1fc3070d5cbb22033a1c64",
+  "owned_locks_checked": 8099,
+  "all_owned_locks_free": true
 }

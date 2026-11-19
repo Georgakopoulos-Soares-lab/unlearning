@@ -1,10 +1,11 @@
 """One finite declared A08 command, supervised to exit; never a stage dispatcher."""
 from common8 import *
 import resource,re,time
-ALLOWED={'audit_units.py','refit_panel.py','run_classifier8.py','normalize_lm8.py','run_lm8.py'}
+ALLOWED={'audit_units.py','refit_panel.py','run_classifier8.py','normalize_lm8.py','run_lm8.py','verify_LM_points8.py'}
 def main(jobfile):
  guard();jobfile=Path(jobfile);assert jobfile.resolve().is_relative_to((C/'jobs').resolve()) and jobfile.suffix=='.json';j=read(jobfile);assert j['stage']=='A08' and j['candidate']=='R5' and j['coverage_plan_sha256']==cfg['coverage_plan_sha256'] and j['prompt_commit']==cfg['prompt_commit'];assert j['source_identity_file'] in ['SOURCE_IDENTITY.json','CONTRAST_SOURCE_IDENTITY.json'];assert j['source_identity_sha256']==sha(C/j['source_identity_file']);argv=j['argv'];script=Path(argv[1]);assert script.parent==A/'code' and script.name in ALLOWED and sha(script)==j['script_sha256'];assert j['kind']=='CPU' and argv[0]==cfg['cpu_venv']+'/bin/python';assert '--stage' in argv and argv[argv.index('--stage')+1]=='A08'
- if script.name in ['audit_units.py','refit_panel.py']:assert '--candidate' in argv and argv[argv.index('--candidate')+1]=='R5';out=C/'jobs'/(jobfile.stem+'.result.json');assert not out.exists(),'Invocation identity already used; preserve diagnostic and explicitly allocate retry'
+ if script.name in ['audit_units.py','refit_panel.py']:assert '--candidate' in argv and argv[argv.index('--candidate')+1]=='R5'
+ out=C/'jobs'/(jobfile.stem+'.result.json');assert not out.exists(),'Invocation identity already used; preserve diagnostic and explicitly allocate retry'
  env={k:v for k,v in os.environ.items() if not re.search(r'TOKEN|SECRET|PASSWORD|API_KEY|ACCESS_KEY|AUTH_SOCK|CREDENTIAL',k,re.I)};env.update(CUDA_VISIBLE_DEVICES='',OMP_NUM_THREADS='4',OPENBLAS_NUM_THREADS='4',MKL_NUM_THREADS='4',TOKENIZERS_PARALLELISM='false');start=time.monotonic();logs=A/'logs';stdout=logs/(jobfile.stem+'.stdout.log');stderr=logs/(jobfile.stem+'.stderr.log');pre=None
  if j['kind']=='CPU':
   def bound():resource.setrlimit(resource.RLIMIT_AS,(32*1024**3,32*1024**3))

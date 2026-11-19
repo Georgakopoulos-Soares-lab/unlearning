@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "figure_families": 12,
+  "standalone_assets": 36,
+  "formats": [
+    "pdf",
+    "png",
+    "svg"
+  ],
+  "visually_inspected_figures": [
+    "profiles_dev_auroc",
+    "profiles_dev_average_precision",
+    "profiles_dev_accuracy",
+    "profiles_dev_balanced_accuracy",
+    "profiles_dev_classification_cross_entropy",
+    "profiles_exploratory_H3_auroc",
+    "coverage_map",
+    "task_entry_declarations",
+    "adjacent_anchor_AUROC",
+    "R5_matched_reference_AUROC",
+    "LM_primary_dev",
+    "LM_exploratory_H3_test"
+  ],
+  "inspection_method": "Direct rendered image inspection and remaining-assets contact sheet; affected panels individually reinspected after shorter axis labels",
+  "checks": [
+    "Legible axes/titles/legends without clipping or overlap",
+    "All comparable axes consistent, deltas directed target minus reference with zero lines",
+    "Primary dev and exploratory H3 test explicitly separate",
+    "R2 visibly missing with no interpolated trajectory",
+    "All layers and three CV seeds retained",
+    "Actual LM loss separate from classifier CE",
+    "Source-value integration checked independently, fixed absolute tolerance1e-12"
+  ],
+  "publication_integration": {
+    "status": "PASS",
+    "independent_endpoint_points_vs_released_plot_values": 21840,
+    "max_absolute_point_difference": 2.6645352591003757e-15,
+    "adjacent_point_telescoping_checks": 5460,
+    "max_absolute_telescoping_residual": 2.6645352591003757e-15,
+    "tolerance_absolute": 1e-12,
+    "relative_tolerance": 0,
+    "LM_comparability_domains": 35,
+    "new_inferential_families": 0,
+    "new_model_forward_refit_or_bootstrap_runs": 0
+  },
+  "initial_render_missing_math_import_repaired": true,
+  "axis_label_crowding_repaired_in_four_panels_only": true,
+  "science_recomputed": 0,
+  "observed_utc": "2026-11-19T00:26:32.565782+00:00",
+  "SVG_trailing_whitespace_normalized_after_visual_inspection": {
+    "XML_semantic_structure_identical": true,
+    "PDF_PNG_unchanged": true,
+    "source_data_unchanged": true
+  }
+}
