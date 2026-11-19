@@ -3,13 +3,13 @@
   "run_id": "20261117T084728Z-a01",
   "stage": "A09",
   "attempt_id": "A09-attempt-002",
-  "status": "LOCAL_READY_RECOVERY_VERIFIED_PENDING_GIT_REPORT_DELIVERY",
+  "status": "COMPLETE_FOR_AVAILABLE_CHECKPOINT_REPORT_AND_RECOVERY",
   "current_attempt": "attempts/A09-attempt-002",
   "prompt_commit": "2a837ba3a183caf72529b891d52ba08637cc8398",
   "prompt_sha256": "1909d6403baf85960000057bd34a6f151116114a21d3ab507d8dd19a697b4426",
   "coverage_plan_sha256": "06d290bdc76404a8dcfe25da6f057fc78f868364cc1d2e8aa6df77791f0bdfa3",
   "inherited_scientific_commit": "cbe1db7a9ae6b4d6528ebdf034f917dfa0684e4c",
-  "report_delivery_commit": null,
+  "report_delivery_commit": "ec7c27a2a4b8b8ec4ff37552060c3617a006a889",
   "metadata_commit": "Resolved by separately private-protected FINAL_CLOSEOUT.json; this metadata never names its own future hash",
   "report_payload": {
     "archive_bytes": 59156218,
@@ -23,8 +23,8 @@
   "AVAILABLE_CHECKPOINT_ANALYSIS_COMPLETE": true,
   "FULL_INCREMENTAL_SEQUENCE_COMPLETE": false,
   "CAUSAL_TRAINING_COMPARABILITY_ESTABLISHED": false,
-  "REPORT_DELIVERED": false,
-  "GIT_DELIVERED": false,
+  "REPORT_DELIVERED": true,
+  "GIT_DELIVERED": true,
   "SAVED_ANALYSIS_RECOVERY_VERIFIED": true,
   "FULL_GPU_RECREATION_VERIFIED": false,
   "OWNED_JOBS_QUIESCENT": true,
@@ -37,7 +37,7 @@
     "owned_scientific_workers": [],
     "checked_locks_free": true,
     "pod_left_running": true,
-    "observed_utc": "2026-11-19T02:30:32.977579+00:00"
+    "observed_utc": "2026-11-19T02:32:41.175952+00:00"
   },
   "full_project_and_A04_status": "PARTIAL",
   "time_policy": {
@@ -69,7 +69,7 @@
   "automatic_resume": false,
   "next_action": "STOP; wait for fresh explicitly scoped approval",
   "A10_started": false,
-  "observed_utc": "2026-11-19T02:31:17.209099+00:00",
+  "observed_utc": "2026-11-19T02:32:56.007523+00:00",
   "entrypoint": "TERMINAL_STATE_RECEIPT.json",
   "terminal_handoff": "attempts/A09-attempt-002/SESSION_HANDOFF.md"
 }

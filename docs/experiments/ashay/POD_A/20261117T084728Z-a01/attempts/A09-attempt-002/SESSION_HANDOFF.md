@@ -1,6 +1,6 @@
 # Pod A A09 terminal handoff
 
-LOCAL_READY_RECOVERY_VERIFIED_PENDING_GIT_REPORT_DELIVERY. Full project/A04 remains PARTIAL.
+COMPLETE_FOR_AVAILABLE_CHECKPOINT_REPORT_AND_RECOVERY. Full project/A04 remains PARTIAL.
 
 Read [the report](RESULTS.md), [standalone PDF](REPORT.pdf), [one-page summary](ONE_PAGE_SUMMARY.md), [four main figures and inherited appendix](FIGURE_GALLERY.md), [saved-analysis recovery proof](FRESH_RESTORE_CHECK.json) and [restore commands](RESTORE.md).
 
@@ -8,7 +8,7 @@ Available science:2808/3276 heads and separately2808/3276 unchanged-base applica
 
 New recovery is24 saved prediction/metric paths,60 classifier vectors and6 LM vectors (2000 existing draws each);106526 scientific keys,33684 amendment keys and plot values regenerated; one main figure rendered under producer-tree denial. All new archive members verified. Inherited scientific recovery proofs are reused, not relabeled as new runs. Full GPU/runtime recreation is untested.
 
-Exact prompt `2a837ba3a183caf72529b891d52ba08637cc8398`; inherited science `cbe1db7a9ae6b4d6528ebdf034f917dfa0684e4c`. Final report Git delivery is the remaining administrative step; no additional science is needed.
+Exact prompt `2a837ba3a183caf72529b891d52ba08637cc8398`; inherited science `cbe1db7a9ae6b4d6528ebdf034f917dfa0684e4c`. Report delivery `ec7c27a2a4b8b8ec4ff37552060c3617a006a889`; the later metadata commit and separate private receipt are identified in FINAL_CLOSEOUT.json and the final user handoff.
 
 Observer/reviewer/scheduler/publisher STOPPED, no owned scientific workers, no automatic resume or next stage. The Pod remains running. No-deadline amendment preserved; original/rental starts,rate and cost remain unknown.
 
