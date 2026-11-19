@@ -1,0 +1,502 @@
+{
+  "status": "PASS_VISUALLY_INSPECTED",
+  "figures": [
+    {
+      "name": "main_coverage",
+      "caption": "Coverage and declarations are separate evidence. Gray is missing or unknown, never a zero performance score. Before declaration does not mean unseen examples.",
+      "files": [
+        {
+          "path": "figures/main_coverage.pdf",
+          "bytes": 22813,
+          "sha256": "cdab788aa3e5b9693a0632a72b5ed032f7f318b73f243c19b0a61ee3b327be9b"
+        },
+        {
+          "path": "figures/main_coverage.png",
+          "bytes": 195355,
+          "sha256": "91b8f8f0855167973f03c08611e0dc661ef513a38cde091cd92584e1561dc26b"
+        },
+        {
+          "path": "figures/main_coverage.svg",
+          "bytes": 32270,
+          "sha256": "18105656e4f67dcc3d45e0f4d63b7f922fb68a421d5ab0ed1d4ecef12cd67a59"
+        }
+      ],
+      "source_rows": {
+        "path": "figures/data/main_coverage.csv",
+        "rows": 84,
+        "sha256": "ba0728f3ab5a3bd3bca629029eb2d40bd2aca0b1779a167f37a21ee8b3b5dc8d"
+      }
+    },
+    {
+      "name": "main_task_entry",
+      "caption": "Both predeclared anchors, policies and all three CV seeds are shown. Intervals are unadjusted and conditional on fitted heads; overlapping identical seed results are not independent training replications.",
+      "files": [
+        {
+          "path": "figures/main_task_entry.pdf",
+          "bytes": 24425,
+          "sha256": "3f12a4513db7302f5ac4d6ff88f7d33e256795e6300c84a9b8c16f3ac2015d7d"
+        },
+        {
+          "path": "figures/main_task_entry.png",
+          "bytes": 196166,
+          "sha256": "ee6cffa77d760f544e608abb7d904f2a709a4957d1a6fdaee40684603f51b7cd"
+        },
+        {
+          "path": "figures/main_task_entry.svg",
+          "bytes": 51485,
+          "sha256": "8bbb0f0d88d067b0ef910dfcb5107c0d38cd3d538eb36e733019a6c208409699"
+        }
+      ],
+      "source_rows": {
+        "path": "figures/data/main_task_entry.csv",
+        "rows": 36,
+        "sha256": "41b63315026488b7cfbf8cbfdcb864f166324c5854c152a8ea9034dfe8c9c8fe"
+      }
+    },
+    {
+      "name": "main_profiles_policy",
+      "caption": "All three task-entry tasks; all six available checkpoints,26 representations and three CV seeds. R5 policy-gap curves subtract matched point estimates only. Full six-task profiles are in the inherited appendix.",
+      "files": [
+        {
+          "path": "figures/main_profiles_policy.pdf",
+          "bytes": 31738,
+          "sha256": "54cde5d33f8cea781597da3a53911370948e565c2a0173ee25c8ef025e3e706d"
+        },
+        {
+          "path": "figures/main_profiles_policy.png",
+          "bytes": 426887,
+          "sha256": "d7e99d9b31ef5c90fd676803cfe28bdcba8fcaf611855db29b04a3d2e9af16c6"
+        },
+        {
+          "path": "figures/main_profiles_policy.svg",
+          "bytes": 158350,
+          "sha256": "5dc6b6105e4f4a257d54d418a201dc80aeb4c1b19fd030673bb5263270aeb29c"
+        }
+      ],
+      "source_rows": {
+        "path": "figures/data/main_profiles_policy.csv",
+        "rows": 3042,
+        "sha256": "3f9527216795800d4d22883aea25c288730ecb6f0153e72ad6009c7f11133ba3"
+      }
+    },
+    {
+      "name": "main_LM_adjacent",
+      "caption": "All six tasks and three eligible adjacent transitions. Lower NLL is favorable. No pooled task-capability score, new LM evaluation or new confidence-interval family.",
+      "files": [
+        {
+          "path": "figures/main_LM_adjacent.pdf",
+          "bytes": 23872,
+          "sha256": "8b84b2fb0867717d6e0db4e95e34ab36987c63636f5028ad2c7c941ed684ff09"
+        },
+        {
+          "path": "figures/main_LM_adjacent.png",
+          "bytes": 163151,
+          "sha256": "086b5cdbd6f0e06242417025b1feb86e1bbcac9db666980bb83e3d078eeaa231"
+        },
+        {
+          "path": "figures/main_LM_adjacent.svg",
+          "bytes": 34805,
+          "sha256": "8c8f3f2c3f35f692025d73b1352e37d31e211635efbc538400ece29ee43b7679"
+        }
+      ],
+      "source_rows": {
+        "path": "figures/data/main_LM_adjacent.csv",
+        "rows": 18,
+        "sha256": "e4f5b85c403248f94625e0d92eb39c462189966f42cfa77d2d880b23ece1607a"
+      }
+    }
+  ],
+  "source_sha256": "c2510b16cb6cacf0630b67652992c2c6f5d8fee47e8aa8915cbdaffbbf8e8d30",
+  "code_sha256": "6c0bbb7202cb97f95f5ada2f6221d50e905f6e3c14f3768080145a92b5736687",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.4",
+  "wall_seconds": 4.541685200005304,
+  "CPU_seconds": 4.105946177,
+  "source_input": "plot_data/main_figures.json",
+  "unchanged_A08_appendix": {
+    "status": "PASS_VISUALLY_INSPECTED",
+    "figure_count": 12,
+    "figures": [
+      {
+        "name": "profiles_dev_auroc",
+        "caption": "Every line is a released checkpoint/readout at one CV seed. Seed styles are not confidence bands or independently trained checkpoints. No R2 trajectory or best-layer selection is drawn.",
+        "files": [
+          {
+            "path": "figures/profiles_dev_auroc.pdf",
+            "bytes": 39356,
+            "sha256": "6d85022890232f7e0f8ceb9037c50b0832447240909ddf79e765d8acc4af1a3f"
+          },
+          {
+            "path": "figures/profiles_dev_auroc.png",
+            "bytes": 690385,
+            "sha256": "4e06bedd19fc8653f9c0a5863496b894abaa2b9139d36036fa3b83911ace9f73"
+          },
+          {
+            "path": "figures/profiles_dev_auroc.svg",
+            "bytes": 261281,
+            "sha256": "696ea914def664f085602660538ea34aea904d6c5da4ba53c9ba2d1e1bf332d3"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/profiles_dev_auroc.csv",
+          "rows": 5616,
+          "sha256": "d4aaaa0ac404431bcb8aff058a564f0e6eaa48ab4042f0d36f732bb8f06df8b8"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "profiles_dev_average_precision",
+        "caption": "Every line is a released checkpoint/readout at one CV seed. Seed styles are not confidence bands or independently trained checkpoints. No R2 trajectory or best-layer selection is drawn.",
+        "files": [
+          {
+            "path": "figures/profiles_dev_average_precision.pdf",
+            "bytes": 39919,
+            "sha256": "8a54ee346e14a23f9526aa1f8a15a3b0b9089a67082f854a65cd3d314983cbfc"
+          },
+          {
+            "path": "figures/profiles_dev_average_precision.png",
+            "bytes": 725744,
+            "sha256": "07f4004ab17955254f5032c57e186d685bff7a90a62c82fbe1cac088a8e5cdb6"
+          },
+          {
+            "path": "figures/profiles_dev_average_precision.svg",
+            "bytes": 261083,
+            "sha256": "0183de9447390c0435e40a7f69a2cff0ca73d96fd1334df43e3de916beda95dc"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/profiles_dev_average_precision.csv",
+          "rows": 5616,
+          "sha256": "3b611d84d0152e3a1dcdbd23f8796158a207a6644368098367f3607a05aff80a"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "profiles_dev_accuracy",
+        "caption": "Every line is a released checkpoint/readout at one CV seed. Seed styles are not confidence bands or independently trained checkpoints. No R2 trajectory or best-layer selection is drawn.",
+        "files": [
+          {
+            "path": "figures/profiles_dev_accuracy.pdf",
+            "bytes": 36351,
+            "sha256": "0c4d61078fa263ebfe6a3ca65f56297a2958b1d853daf85b1f532d759913e596"
+          },
+          {
+            "path": "figures/profiles_dev_accuracy.png",
+            "bytes": 748421,
+            "sha256": "4cc2981e80db7f449f1df7586c4b70aaf9499f9ed9ee93ccec02af0ad1999893"
+          },
+          {
+            "path": "figures/profiles_dev_accuracy.svg",
+            "bytes": 261213,
+            "sha256": "baa01a7b8f968227cc475a38eb679a9e04d0d2ed1e0a84c12d7475a24ba25b05"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/profiles_dev_accuracy.csv",
+          "rows": 5616,
+          "sha256": "a19cda62442546c3d519ca5c35e94c30a096696f202072bc8daecda52dde7d69"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "profiles_dev_balanced_accuracy",
+        "caption": "Every line is a released checkpoint/readout at one CV seed. Seed styles are not confidence bands or independently trained checkpoints. No R2 trajectory or best-layer selection is drawn.",
+        "files": [
+          {
+            "path": "figures/profiles_dev_balanced_accuracy.pdf",
+            "bytes": 39278,
+            "sha256": "4161f12e7d3807350dd19c7eea4f6006b15dd4cd9c3751202002109ccf779354"
+          },
+          {
+            "path": "figures/profiles_dev_balanced_accuracy.png",
+            "bytes": 771153,
+            "sha256": "34978d5ca448b19b73059fea1c26aebd54597e40070df81bc592ec50484993c7"
+          },
+          {
+            "path": "figures/profiles_dev_balanced_accuracy.svg",
+            "bytes": 261199,
+            "sha256": "ef953ce7272df9178fb955bc688b3ad20bd27b709f3c8b0f9f260426d8b198b4"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/profiles_dev_balanced_accuracy.csv",
+          "rows": 5616,
+          "sha256": "b66deedc61b55a238489b217d69eb9fbd9b6727d365f2f6c77e03ee7a685ff88"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "profiles_dev_classification_cross_entropy",
+        "caption": "Every line is a released checkpoint/readout at one CV seed. Seed styles are not confidence bands or independently trained checkpoints. No R2 trajectory or best-layer selection is drawn.",
+        "files": [
+          {
+            "path": "figures/profiles_dev_classification_cross_entropy.pdf",
+            "bytes": 39312,
+            "sha256": "f393f1ca70b59eece8bf51291937581565d050a28aacc0c0433502cf96a4f2e1"
+          },
+          {
+            "path": "figures/profiles_dev_classification_cross_entropy.png",
+            "bytes": 682252,
+            "sha256": "c78da34dc0659e47e1b7e5a4015f892bc599fb1a11c5e9125457f6fad132e5c2"
+          },
+          {
+            "path": "figures/profiles_dev_classification_cross_entropy.svg",
+            "bytes": 254938,
+            "sha256": "aa8320498b477a29d5509776393c7e1dbedc31520693b6ea5cb211069c8dc95c"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/profiles_dev_classification_cross_entropy.csv",
+          "rows": 5616,
+          "sha256": "afcac93a3b7d58a35855551d34d961cb155e303f15c7ca849c9883c09dbfb92f"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "profiles_exploratory_H3_auroc",
+        "caption": "Every line is a released checkpoint/readout at one CV seed. Seed styles are not confidence bands or independently trained checkpoints. No R2 trajectory or best-layer selection is drawn.",
+        "files": [
+          {
+            "path": "figures/profiles_exploratory_H3_auroc.pdf",
+            "bytes": 22775,
+            "sha256": "871c95d9217599f3d8d71e3d75099b4de6429f81ade3a15f5ba303b8d95ba9a4"
+          },
+          {
+            "path": "figures/profiles_exploratory_H3_auroc.png",
+            "bytes": 142936,
+            "sha256": "02804d302cc2e57a55f5f9655e1eb208d453b45ecffb68951338d88f64e917b5"
+          },
+          {
+            "path": "figures/profiles_exploratory_H3_auroc.svg",
+            "bytes": 49627,
+            "sha256": "0807367792901379460ad9b8aa123fba20b7e23aa4792ef8ae9b4dbd1429d679"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/profiles_exploratory_H3_auroc.csv",
+          "rows": 936,
+          "sha256": "a1c434d81809a9a2d74591edde5570051242bf3a8e050fda310b98c0dfc097fc"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "coverage_map",
+        "caption": "Each released task cell contains26 representations\u00d73 CV seeds. H3 test adds reporting records, not additional fitted heads. R2 missingness is not a zero performance score.",
+        "files": [
+          {
+            "path": "figures/coverage_map.pdf",
+            "bytes": 19790,
+            "sha256": "842915590564eb0e70bb229f518dcbe2ccdcdfae5670439977398e77e5eb6f8d"
+          },
+          {
+            "path": "figures/coverage_map.png",
+            "bytes": 105708,
+            "sha256": "88314046c0a87b5d9eec927f95b8218c9ad96bc22c9ce88bb33db273439e02e9"
+          },
+          {
+            "path": "figures/coverage_map.svg",
+            "bytes": 24610,
+            "sha256": "acd8b04be08979bd692a9aca0b4e28cc1ea0d5ddfcc36dbe253d9e7818a37134"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/coverage_map.csv",
+          "rows": 42,
+          "sha256": "fa23c12af8d2d8915d3a11aeda699da3b17a1e6170902e46c3f9a2163e56a096"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "task_entry_declarations",
+        "caption": "Declaration colors reflect supplied configuration evidence only. Missing R2 is unknown, not absence; no biological or training-exposure inference is made.",
+        "files": [
+          {
+            "path": "figures/task_entry_declarations.pdf",
+            "bytes": 21273,
+            "sha256": "07429d4378e7a51d6e6c63609d4a438e19d5c398f425ef3288e60f9a69115639"
+          },
+          {
+            "path": "figures/task_entry_declarations.png",
+            "bytes": 76238,
+            "sha256": "c6242b1b60f90609a3618fb0644a2d50b19938af9f1064e6b26e3c0f9e3d2c19"
+          },
+          {
+            "path": "figures/task_entry_declarations.svg",
+            "bytes": 15684,
+            "sha256": "9f1781babe291eb936dee629e1d57266ae5b9dd76574ca2274d9e051ff054e85"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/task_entry_declarations.csv",
+          "rows": 42,
+          "sha256": "33a8a8f7f48563aab85bc05a4ead603af6a6767c090dd08fd33b8faeee902284"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "adjacent_anchor_AUROC",
+        "caption": "Dots are point estimates; vertical lines are pointwise exploratory unadjusted95% saved-group-bootstrap intervals conditional on fitted heads. Every anchor/CV seed/policy is shown; intervals crossing zero are inconclusive. R2-dependent edges remain missing.",
+        "files": [
+          {
+            "path": "figures/adjacent_anchor_AUROC.pdf",
+            "bytes": 46972,
+            "sha256": "851e2d509895420891637cda119b0a236772af23364b4caa4d7d6fdb6e21d5a0"
+          },
+          {
+            "path": "figures/adjacent_anchor_AUROC.png",
+            "bytes": 362793,
+            "sha256": "e636f9ebe081c1dbe7f06d88dda342b8de311f8d625c5cdee1e4a75c5fa045e5"
+          },
+          {
+            "path": "figures/adjacent_anchor_AUROC.svg",
+            "bytes": 235227,
+            "sha256": "2498aa5c6999c9a34958329f34c2233bf6497700e4cccba377766dccd4562a39"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/adjacent_anchor_AUROC.csv",
+          "rows": 216,
+          "sha256": "69c5e22263035d85da068f3a05998993271d1c4236be12b659c71ab9bbae4d22"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "R5_matched_reference_AUROC",
+        "caption": "Dots are point estimates; vertical lines are pointwise exploratory unadjusted95% saved-group-bootstrap intervals conditional on fitted heads. Every anchor/CV seed/policy is shown; intervals crossing zero are inconclusive. R2-dependent edges remain missing.",
+        "files": [
+          {
+            "path": "figures/R5_matched_reference_AUROC.pdf",
+            "bytes": 56834,
+            "sha256": "014559f29eaec5a8dcb8726f64537913db2c96f4a5074de677b7ad15f8223321"
+          },
+          {
+            "path": "figures/R5_matched_reference_AUROC.png",
+            "bytes": 434014,
+            "sha256": "7fac34b19a027f02aa36662e698714faa30300fa0a594ff742217e8b0fe2a2a2"
+          },
+          {
+            "path": "figures/R5_matched_reference_AUROC.svg",
+            "bytes": 308282,
+            "sha256": "8947be147f15f0163adcb5341fabc1e3208659ad58c81479019c7fa5f3d4e975"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/R5_matched_reference_AUROC.csv",
+          "rows": 288,
+          "sha256": "1ad3c78a47c7c01bdced8bb9e719bcae0e38eeafc489c545edd17829437cf361"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "LM_primary_dev",
+        "caption": "Corpus NLL is summed saved causal loss divided by valid targets; PPL is exp(corpus NLL). Within-task paired group-bootstrap intervals; no layer/CV axis or cross-task capability average.",
+        "files": [
+          {
+            "path": "figures/LM_primary_dev.pdf",
+            "bytes": 33924,
+            "sha256": "7110f2d26777182cdacf0c4c51d7e7195ef2bd5b3f01ab2e78a4e1467c8543ba"
+          },
+          {
+            "path": "figures/LM_primary_dev.png",
+            "bytes": 282552,
+            "sha256": "175b6e24154e948ba0e6ff302ee121983e153bb7f9dcb4009642362443b20856"
+          },
+          {
+            "path": "figures/LM_primary_dev.svg",
+            "bytes": 116563,
+            "sha256": "b29da70160d1c2a3d132552ac43367166c106b511e6605b09f5fbfbe3865a10f"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/LM_primary_dev.csv",
+          "rows": 60,
+          "sha256": "402a483fc077eb234a1b5053af8eba74e4f2f543275579e1739efaf1500c9836"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      },
+      {
+        "name": "LM_exploratory_H3_test",
+        "caption": "Corpus NLL is summed saved causal loss divided by valid targets; PPL is exp(corpus NLL). Within-task paired group-bootstrap intervals; no layer/CV axis or cross-task capability average.",
+        "files": [
+          {
+            "path": "figures/LM_exploratory_H3_test.pdf",
+            "bytes": 20663,
+            "sha256": "63230481493c4cf81bf3a0e0db8c0b4ba083cb6f6d1bccfb2546f784c8b053b2"
+          },
+          {
+            "path": "figures/LM_exploratory_H3_test.png",
+            "bytes": 66321,
+            "sha256": "34d5bd51734d96545cbceb7f52e724ebbf7238dcda2cec8d67d2408c433725b9"
+          },
+          {
+            "path": "figures/LM_exploratory_H3_test.svg",
+            "bytes": 23062,
+            "sha256": "154bc4313019241be1ae9378f1be5e0294f3b642d4ebeabbda8fcfad9a1a1fd7"
+          }
+        ],
+        "plot_data": {
+          "path": "figures/data/LM_exploratory_H3_test.csv",
+          "rows": 10,
+          "sha256": "97bebb276ca68857b81d3057cc485ac2473bf453339c1f93087575f82a64f2e4"
+        },
+        "all_values_from_released_aggregate_rows": true,
+        "all_comparable_axes_include_data_and_intervals": true
+      }
+    ],
+    "plot_source_files": {
+      "plot_data/LM_contrasts.csv": "51dd41b9e8d555ebd572176e15806e04b6ffd5af5f5fc00919f2b17bdf0b8c7f",
+      "plot_data/R4_minus_R3_emp_H3.csv": "5b0e54d09c71c87c49834658bab78576f30a783193c76ed19a0dc1fe7edbb975",
+      "plot_data/R4_minus_R3_gue_mouse_0.csv": "a6d8dcfa2c2bfb2138ea52336d336453ef277aa05a9ede764ce91950fe6a5e15",
+      "plot_data/R4_minus_R3_gue_prom_300_all.csv": "9216cb313596aea0ed90ab943cf969f1541c3b8b66cfe4b7ceef9c3084bd31b3",
+      "plot_data/R4_minus_R3_gue_prom_core_all.csv": "cb68c522ccaf0c6a7f4974b140ea3e4bc5ce7ebbf3a4883e9bf0fa53d59f3c78",
+      "plot_data/R4_minus_R3_gue_splice_reconstructed.csv": "ff917323646693e3b2063d524fd0c5979a5cb834f8f29a4dda222967c3714a35",
+      "plot_data/R4_minus_R3_gue_tf_0.csv": "ceda4f5fcfd8e0c45855c17bf4855994d068651451be7939cfa0fc437cb06e3f",
+      "plot_data/R5_base_R1_controls.csv": "c59cc7cd03f5a1e247204e608412030b574397d1768c385257010b153851dbdf",
+      "plot_data/R5_minus_R4_emp_H3.csv": "8d21d714e7fa7c8e70fd1c512805345b4e48096085fa52e35b31c7036cb3a6ea",
+      "plot_data/R5_minus_R4_gue_mouse_0.csv": "dae15003bf56187d4657c27ade68c90ed7578044e9bd2ca57317c3b79106fb17",
+      "plot_data/R5_minus_R4_gue_prom_300_all.csv": "78f6976673a09bc5387a539cef1cb26393f90b63c0a2edf6c5bcc1ed9ef7468e",
+      "plot_data/R5_minus_R4_gue_prom_core_all.csv": "b5733e039d81f9a26927c2289f2f2da0fad3fde9fb174c7eeb969ccde9ab592b",
+      "plot_data/R5_minus_R4_gue_splice_reconstructed.csv": "e64be8d751a22b920c997ad18bd56aeadb7ac0f4b85811ea713877da808fc8ff",
+      "plot_data/R5_minus_R4_gue_tf_0.csv": "31f3677037865b99d73e7dd4ab85a76ad70c2841bd0629ecd6473ac3c0b0475f",
+      "plot_data/R6_minus_R5_emp_H3.csv": "edc67d2e47d7b0fe21cd6ee08bc3284a4bcefc370332da6fc7b34a5150115bce",
+      "plot_data/R6_minus_R5_gue_mouse_0.csv": "40c56d521bd881842f98f9cc331459f2deec917c77d65dfb9bdb2a1c379f8a3a",
+      "plot_data/R6_minus_R5_gue_prom_300_all.csv": "96170353c595617be13de5a5ad1cf701690b4aa920d92deaf6bd6617d12a6832",
+      "plot_data/R6_minus_R5_gue_prom_core_all.csv": "bd7278779e4f7602cf3f371fe24b655f237c7c82836a6714a9d089263d5621dd",
+      "plot_data/R6_minus_R5_gue_splice_reconstructed.csv": "5fab8c101eca17ef186dc266c16400e21448bc0fc56b9760dbba3e7a41643e61",
+      "plot_data/R6_minus_R5_gue_tf_0.csv": "c4ce4ff88432a34bbcc4ff9f47c2f45fc40e70b621cd545d61c6891ad00085e8",
+      "plot_data/points_emp_H3.csv": "86f89c2350d6cc125c6ad9ab2536b871cc3fe1792b5e2967f88fe3a6258bce03",
+      "plot_data/points_gue_mouse_0.csv": "a86c90d64c02da5fcae6c020b7ff869e5292c8806da505eeaa0203dc9e67e5f6",
+      "plot_data/points_gue_prom_300_all.csv": "0833b3dee8d463f227b7b666dd71c55e65e3e75398f77d2df2a7e7b187e5e91f",
+      "plot_data/points_gue_prom_core_all.csv": "3860c2e0dc1f911cc8e0f6266d3fddb10432a7161312117ca8325c3f3872ac39",
+      "plot_data/points_gue_splice_reconstructed.csv": "91096808e7756d9652308c0a3a83e15ee47537372ce925671dc3eee4ff2c9182",
+      "plot_data/points_gue_tf_0.csv": "ae50cdaa1e6989ed6b23f82bcfc4317b1e34b1ae6e6b0802fe350929d42a7f7a"
+    },
+    "formats": [
+      "pdf",
+      "png",
+      "svg"
+    ],
+    "all_primary_figures_dev_only": true,
+    "exploratory_H3_test_separate": true,
+    "no_missing_R2_interpolation": true,
+    "all_three_CV_seeds_identifiable": true,
+    "seed_ranges_are_not_CI_bands": true,
+    "no_new_scientific_measurements": true,
+    "render_wall_seconds": 24.497864860022673,
+    "render_CPU_seconds": 9.664569012,
+    "matplotlib_version": "3.11.2",
+    "numpy_version": "2.5.4",
+    "plot_code_sha256": "9c8b341e9b675ddbfb9b58a0bedc733d39779a53755791c69a45f0d97e38cdf8"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "valid immutable source row accepted",
+      "status": "PASS",
+      "expected_rejection": false
+    },
+    {
+      "case": "changed canonical estimate rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "changed canonical policy rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "changed canonical A09_scientific_key_sha256 rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "changed canonical A09_row_id rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "changed original source value rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "outcome never enters canonical identity",
+      "status": "PASS",
+      "expected_rejection": false
+    },
+    {
+      "case": "duplicate canonical keys rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "valid immutable member accepted",
+      "status": "PASS",
+      "expected_rejection": false
+    },
+    {
+      "case": "missing required dependency rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "wrong object kind rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "path escape rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "symlink escape rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "corrupt hash rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "wrong archive revision rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "wrong research branch rejected before mutation",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "wrong origin rejected before mutation",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "concurrent publisher lock rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "valid exact-member archive accepted",
+      "status": "PASS",
+      "expected_rejection": false
+    },
+    {
+      "case": "archive absolute rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "archive traversal rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "archive duplicate rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "archive symlink rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "archive undeclared rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "missing declared archive member rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    },
+    {
+      "case": "interrupted truncated archive rejected",
+      "status": "PASS",
+      "expected_rejection": true
+    }
+  ],
+  "case_count": 26,
+  "new_fits_forwards_draws_or_numerical_audits": 0,
+  "qualification_scope": "New source/key/path/archive/publication contracts only; unchanged A08 numerical qualifications reused"
+}

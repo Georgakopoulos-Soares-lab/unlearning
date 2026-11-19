@@ -1,16 +1,18 @@
 # Available-checkpoint findings — one-page summary
 
-The available base/R1/R3/R4/R5/R6 evaluation is complete at its verified scope. Full project/A04 remains PARTIAL: R2 is missing. No new scientific measurements were added for this report.
+The verified evaluation covers base, R1, R3, R4, R5, R6 across six frozen benign tasks. Available-checkpoint analysis is complete; full project/A04 remains PARTIAL because R2 is missing. A09 adds reporting and saved-analysis recovery, with zero new scientific measurements.
 
-- Promoter 300, R4 − R3: final-norm AUROC changes by +0.114244 [+0.084795, +0.145774] with a refitted readout and +0.255253 [+0.205964, +0.305867] with the unchanged-base readout. Layer16 changes are +0.013642 [+0.001516, +0.028299] and +0.345678 [+0.284006, +0.410378], respectively.
-- Splice, R5 − R4: layer16 AUROC changes by +0.025240 [+0.000367, +0.051418] refitted and +0.043496 [+0.013195, +0.074566] unchanged-base. At final norm the refitted change is -0.016351 [-0.054497, +0.023364] and the unchanged-base change is -0.019161 [-0.052629, +0.014412]. Both final-norm intervals cross zero.
-- Mouse TF0, R6 − R5: final-norm AUROC declines by -0.095802 [-0.139971, -0.050811] refitted and -0.058260 [-0.095603, -0.020690] unchanged-base. Absolute refitted AUROC is base 0.610656, R5 0.844656 and R6 0.748855. R6 remains above base in this displayed setting.
-- R5 H3 at layer16: refitted AUROC is 0.956395 while the unchanged-base readout gives 0.826049. A new readout can discriminate labels better than the unchanged original-base function on the same saved representation.
-- Before mouse TF0 is declared in the supplied R5 retain configuration, final-norm R5 − base AUROC is +0.234000 [+0.183358, +0.284065] refitted and +0.217450 [+0.167218, +0.267655] unchanged-base.
-- Actual LM loss gives a distinct view: splice R5 − R4 corpus NLL is -0.097867 [-0.109963, -0.085428] despite inconclusive final-norm classifier change. Mouse R6 − R5 NLL is +0.007193 [+0.003977, +0.010630]. R6 − R5 NLL is positive on each of the six dev tasks, with each existing pointwise interval above zero.
+- **Promoter300:** R4−R3 final-norm/seed42 refitted ΔAUROC is +0.114244 [0.084795,0.145774].
+- **Splice:** R5−R4 layer16/seed42 refitted ΔAUROC is +0.025240 [0.000367,0.051418]; the final-norm interval crosses zero and remains inconclusive.
+- **Mouse TF0:** R6−R5 final-norm/seed42 refitted ΔAUROC is −0.095802 [−0.139971,−0.050811]. R6 still exceeds base at this anchor: 0.748855 versus 0.610656.
+- **Readout policy:** R5 H3 layer16/seed42 AUROC is 0.956395 refitted versus 0.826049 with the unchanged-base readout. This is a descriptive policy comparison, with no new policy-gap interval.
+- **Before declaration:** R5 mouse final-norm/seed42 ΔAUROC versus base is +0.234000 refitted and +0.217450 unchanged-base. Supplied-config declarations do not establish actual training exposure.
+- **Actual LM:** splice R5−R4 NLL changes by −0.097867, while mouse R6−R5 changes by +0.007193. Lower is better. R6−R5 dev NLL worsens on all six tasks under their individual pointwise intervals; no pooled or family-wide test is claimed.
 
-These are descriptive supplied-checkpoint comparisons. Existing pointwise intervals are exploratory/unadjusted; one checkpoint per configuration and unknown training lineage/exposure prevent attributing effects to added task sources. All layers,seeds,policies,controls and separate H3 exploratory test remain accessible.
+Existing intervals are pointwise exploratory, unadjusted and conditional on fitted heads. Three CV seeds are not checkpoint-training replicates. One checkpoint per configuration and unknown exact lineage/exposure limit causal interpretation. No result establishes forgetting, an optimal mixture or a universally best checkpoint.
 
-Coverage:2,808/3,276 heads and separate applications;36 controls;36dev +6exploratory-test LM units out of49planned. Only R2-dependent adjacent edges remain missing. Recovery is24saved prediction paths,60classifier vectors and6LM vectors plus all-file integrity; full GPU recreation remains untested.
+Coverage: 2,808/3,276 heads and separate applications, 36 shared controls, 36 dev plus 6 previously examined H3-test LM units out of 49 planned. R2 remains missing 468 heads,468 applications and 7 LM units; its two dependent edges have 10,948 missing classifier/LM slots. R3 and R5 are admitted and evaluated within the documented domains.
 
-[Full results](RESULTS.md) · [Figures](FIGURE_GALLERY.md) · [Methods/limits](METHODS_AND_LIMITS.md) · [Complete tables](TABLE_INDEX.json) · [Source claims](CLAIMS_TO_EVIDENCE.csv)
+The new A09 consumer checks 24 saved prediction paths, 60 existing classifier vectors and 6 LM vectors, regenerates report keys/plot data and renders a main figure with producer paths denied. Actual outcomes and residuals are in the fresh-restore receipt; full GPU recreation remains untested.
+
+[Full report](RESULTS.md) · [PDF](REPORT.pdf) · [Figures](FIGURE_GALLERY.md) · [Exact claims](CLAIMS_TO_EVIDENCE.csv) · [Complete tables](TABLE_INDEX.json) · [Recovery](FRESH_RESTORE_CHECK.json)

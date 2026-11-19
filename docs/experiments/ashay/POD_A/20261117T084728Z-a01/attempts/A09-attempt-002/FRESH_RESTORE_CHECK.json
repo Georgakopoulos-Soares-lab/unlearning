@@ -1,0 +1,742 @@
+{
+  "status": "PASS",
+  "report_payload": {
+    "archive_bytes": 59156218,
+    "archive_sha256": "361e97b6a38eb8eb4c1dce4eebc4b4338ca478efabf4dcf2b91b085c9e88dae9",
+    "member_manifest_sha256": "076903e0983d61830efbd3efc99a577cd2b0f5c50abd84927c18e81da10aa616",
+    "members": 910,
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "revision": "9833f5f2af2a34d2b5d63d1738f0979d57cb835a",
+    "archive_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-002/report-001/A09-report-payload-001.tar.gz"
+  },
+  "fresh_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer",
+  "force_download": true,
+  "archive_size_sha256": "PASS",
+  "all_members_verified": 910,
+  "fresh_download_seconds": 1.4359478859987576,
+  "all_member_hash_seconds": 7.660106907016598,
+  "numeric_consumer": {
+    "status": "PASS",
+    "prediction_paths": 24,
+    "classifier_vectors": 60,
+    "LM_vectors": 6,
+    "paired_attempted_values": 132000,
+    "comparison_counts": {
+      "probability": 34504,
+      "point": 186,
+      "draw": 132000,
+      "CI": 132
+    },
+    "max_abs_residuals": {
+      "probability": 0.0,
+      "point": 8.881784197001252e-16,
+      "draw": 0.0,
+      "CI": 0.0
+    },
+    "worst_private_units": {
+      "probability": "gue_tf_0/decoder.layers.16/fixed_original_base",
+      "point": "gue_prom_core_all/decoder.layers.16/fixed_original_base/classification_cross_entropy",
+      "draw": "a67cf643119ba6d257e1dae8d4f2eea19f3ff046c85848e380a77fca90417b63",
+      "CI": "a67cf643119ba6d257e1dae8d4f2eea19f3ff046c85848e380a77fca90417b63"
+    },
+    "canonical_report_keys_regenerated": 106526,
+    "source_row_hash_and_value_joins": 106526,
+    "R5_amendment_keys_regenerated": 33684,
+    "coverage_declaration_cells_regenerated": 84,
+    "display_plot_source_joins": 2968,
+    "descriptive_policy_gap_checks": 234,
+    "historical_typed_LM_routes": [
+      "R3/gue_prom_300_all/dev"
+    ],
+    "checks": [
+      {
+        "kind": "prediction",
+        "task": "emp_H3",
+        "representation": "decoder.final_norm",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "emp_H3",
+        "representation": "decoder.final_norm",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "emp_H3",
+        "representation": "decoder.layers.16",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "emp_H3",
+        "representation": "decoder.layers.16",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_mouse_0",
+        "representation": "decoder.final_norm",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_mouse_0",
+        "representation": "decoder.final_norm",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_mouse_0",
+        "representation": "decoder.layers.16",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_mouse_0",
+        "representation": "decoder.layers.16",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_300_all",
+        "representation": "decoder.final_norm",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_300_all",
+        "representation": "decoder.final_norm",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_300_all",
+        "representation": "decoder.layers.16",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_300_all",
+        "representation": "decoder.layers.16",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_core_all",
+        "representation": "decoder.final_norm",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_core_all",
+        "representation": "decoder.final_norm",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_core_all",
+        "representation": "decoder.layers.16",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_prom_core_all",
+        "representation": "decoder.layers.16",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.final_norm",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.final_norm",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.layers.16",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.layers.16",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_tf_0",
+        "representation": "decoder.final_norm",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_tf_0",
+        "representation": "decoder.final_norm",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_tf_0",
+        "representation": "decoder.layers.16",
+        "policy": "independent_refit",
+        "status": "PASS"
+      },
+      {
+        "kind": "prediction",
+        "task": "gue_tf_0",
+        "representation": "decoder.layers.16",
+        "policy": "fixed_original_base",
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "7cf9f9c9910034136987c8f070cf07209b49d1f22da0424c7a391283c6861f17",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "8c57151a349ffd752b7bd27bdcd1158a122b14fe37109d710714492a50aa2d73",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "bbd2d964245351ac00390cb5d769181c8eb6754e670d2a87f03156480e942d3c",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "f7b91eba2bb9cfb1055f65994e2a9fe5c9b3320fea1867390e518dd45a7ba294",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "8aeb512d865c3e07b25e8f6b13880b8bafd6a14c7037454268f22bb3dbd43db0",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "2789f30aa78d95e4290f3284ebf6d2489a84c79b7e3c255cad538a42ca2477e1",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "3315bda1cd798771c56ef1ed7030aae5c4e8a69ea0a95d64f946c23769b940db",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "add2174c86fdb2e66cde378536390549dc0aa081ecae3f370146e847cf4b2126",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "9e423e970a8db9616b378a8773d94cde92402632edbb7bc9d6ef5de9f56adec1",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "7825df937ff39eb308374f231fbe6f29c052bf439c19521e39ff3fe0750e3ca2",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "8cd255ac1f61128148d977d58fec446bebf93355fa225a6f085b36539c771761",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "9e9ec507e52efb6c63ee2df37ff0a15e36b907a9e55ab6d8c6690002b67e1451",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "3045d8eb54299983e73c41495cc34b0e878a462de45459aa5b9f31b0152c797f",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "b6e5d5d58fcc91cc3cc46834cb08cbfadfaa1b79d645158c9b274a39c1d236b8",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "6842314d70768b403b9a7343ac3421ad59c74b9d8b2cd4092626d681c8424c1a",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "5fc6b9aae0f20baa5cba807243d77f8b13692db5306e4d877b7276da4b02d759",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "f391363e7b5fb9add70db58312b23919baab50720f84e015fc35c92310e759b5",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "835e82e77126bce19ec1b6f47d376897d037394b66055091363657c2a8a38ea9",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "ae4f85b6a9ee3b8e64b8049de0381a4292d99ee12db868f11a32b8e8450f1279",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "2937565b258bcb399b59a6e2178d50a7b06dc681af4bded604c1ccc3b8e309fb",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "6efb89ffd494210ed05eefbc6f3cf0d1bae676aef2b00ae82d569ac9829783d1",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "410fc269a1effc250acbf32418d1343f32ad13536aeb696b521030c2980b9c37",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "3d8ace8e9f7ab31ae0e7ea652b941b34e45997b4fc6d321f1930b97eff381df7",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "2f482103fcef33bb0e2289dcd582f1a0775555b5ff42d909ba3c574b10cbaced",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "b6168b765fa3cc9269650b49625b99ba578ebabbd88223e9f33642bda3337145",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "d23baad71ea7f24196bc2d3ab720fec9ea159d34b776c8baa30df63b7798a55e",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "25e3563d94300934ae094a0e805de315691e27f326fcb770ae647073f5955cd6",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "9b6c9019f3a7350531e947c6589ab72df5ef38ae32d0b8a8c4e702bf1cc096a6",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "8d10617f57931b6c954a603aa76a6c57a5082e305dcf4425b7f0e5747564b943",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "fd1d865b665415324370cfc3df86d8ce923bae5066eddbe94b878fbf1152f349",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "b09313e2fb4f20bc714ca8fc945c3edec115e56763ae89d6f964a1bf9f39d8d8",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "b34f2bded75aa69d64b14e7ca0b57597aa9926500dea935686e9eb0cfd5043fb",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "6d556d739c488d0d8178bb69b31eeae24b7ce2feeba0b5218820c6859dbd2dc0",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "ac1b75c2dba5831dea1fa165140e0a723880c98f221ffa290d6186e8318fd10c",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "725360ecb26c1df4ac17d6ae40bf9fe04b0da73f071ffd9afe4517eea3e7e1c4",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "342a4ec9fd7fbca329c05d1ea2cbc32cc0c919fe279adcc028082960ad22b0dd",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "c57d747b51e0d7e88a0efda6cfc930a35662c1905a7f39ccae99e125740f2cf4",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "f6424096370e16a809028a5cecabae820d30c8414b613f3de132a382cb5a08fa",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "dbb1045b25e072b9c390c2e29387a2587ec361883c5dcbcac1d2ed59e86b822a",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "3be4ca3df64da647421faea3a13da57c4d596862d3d55f313046617d3c72464c",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "32a1abf93929ddcc7ef0ebf563aa734242b9e35dc73e61d65790af1ff45b13a1",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "f5570a0970f2c68706ae047232c5e3ab293c0ef397048b33cd3360e0db0a2f23",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "12b9356920b25b6f36f770639f5da974ea1804a2565b682963281a1a6455aaa9",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "c76326610b41c8d4442ea90a2fc5bc5d60740d7431eaf494a62643503800770e",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "433c2887411010a184c142d3a06f2f1330a4dced1740cbdf207a1cb3f33d8095",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "fe340dd079abf684f8ae9f91af352f80b7dc314e0d4adc882d84697083a3f08e",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "2f64780baf5a4b5a183d10ab87fd76818b61f03eb8b6b40eb2135d773cdfe8e8",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "9c1366eea372a14b4091c5bf4491b88c1cfd76b93e13acb80ac5a8580e4ca0e1",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "064c37f339f10e412b5f48f276730ffc2154024509c1c84be1fcd713aa05ae8f",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "a67c6d41b349829ca77b4807fb9113f7e85f1b03da49d53ccd8cd57b7e9c26bc",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "9cf7025c5f17e27d4e3dc5e609644f6a40a068c2133450f8a156bfd7652890b0",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "9bd32467cf8d6edc7850f6cf267e6c483272b922035a401914d86f2b4bfc217b",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "e8d56b50624b2e7949a3eb669351efdefb0b992516e7826f3f53e9556e1ecf74",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "f5e61054b220ff7b3986531e5ed5e25141e71ed1218dffdcb27c484cf1203cab",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "3f5618ad229b1d792d67b161c34198692b599ce96d3a78da475e1e25eb5b1b25",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "104a08d557d5a26a0b895745084ba303bb73b8e1a4a5a83b37cb85be05c77b8e",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "f4aef6bfe90484f8089a6637b73d4ac0b1a5ab9fd36f39eb6bcc273241be2c90",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "6a3875272e0825fbb674b0abc1c14e26b028ad11ec7c18e3c64711d7dfcffd28",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "ea89594031c7e2b8f7ce08fe08ba11c6a49a14ee8ffd6c15609a25931a21f295",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "classifier_vector",
+        "logical_id": "aecc59a4eaf02d83df77f20eacee5bd2b07c8972739b85478e5b5f0405686895",
+        "valid": 2000,
+        "attempted": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "LM_vector",
+        "logical_id": "83eb80b95a5383a0da4f66488ac1b3326c3d171ce3868297ea2f5fe00e5a8926",
+        "attempted": 2000,
+        "valid": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "LM_vector",
+        "logical_id": "120bba5cd4454c4e5f77e926d0cd5d8ab5ff3e9ff706507909484286bc0d2292",
+        "attempted": 2000,
+        "valid": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "LM_vector",
+        "logical_id": "d85cc593bfdf181e4fe4a57fb589473ec2a6b2bb6120b4c5227662871dc1561b",
+        "attempted": 2000,
+        "valid": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "LM_vector",
+        "logical_id": "10e69669ea35f7f4f4d009d4b417f6cf131d699ded2c1a67f05defcd4fadcce0",
+        "attempted": 2000,
+        "valid": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "LM_vector",
+        "logical_id": "b48a5512223d32f1a5753034295c209a5de0dd30190a770445b547c71518d8f1",
+        "attempted": 2000,
+        "valid": 2000,
+        "status": "PASS"
+      },
+      {
+        "kind": "LM_vector",
+        "logical_id": "a67cf643119ba6d257e1dae8d4f2eea19f3ff046c85848e380a77fca90417b63",
+        "attempted": 2000,
+        "valid": 2000,
+        "status": "PASS"
+      }
+    ],
+    "new_fits_model_forwards_or_draws": 0,
+    "producer_paths_used": false,
+    "GPU_recreation_verified": false,
+    "wall_seconds": 18.120648470998276,
+    "CPU_seconds": 20.46160039,
+    "producer_path_denial_active": true,
+    "sentinel_rejection_proven": true
+  },
+  "figure_consumer": {
+    "status": "PASS",
+    "figure": "main_coverage",
+    "source_rows_regenerated": true,
+    "coverage_declaration_cells": 84,
+    "rendered_output": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/rendered",
+    "matplotlib": "3.11.2",
+    "new_science": 0,
+    "producer_path_denial_active": true,
+    "sentinel_rejection_proven": true
+  },
+  "jobs": [
+    {
+      "label": "numeric-consumer-001",
+      "pid": 178710,
+      "proc_start_ticks": "16914636",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer/code/restore9.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 19.20401607902022,
+      "GPU_visibility": "DISABLED",
+      "credential_and_producer_PYTHONPATH_removed": true
+    },
+    {
+      "label": "figure-consumer-001",
+      "pid": 178718,
+      "proc_start_ticks": "16916557",
+      "argv": [
+        "/workspace/venvs/pod-a-a08-figures/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer/code/render_consumer9.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer",
+        "--output",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/rendered"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.733941151003819,
+      "GPU_visibility": "DISABLED",
+      "credential_and_producer_PYTHONPATH_removed": true
+    }
+  ],
+  "all_new_payload_members_verified": true,
+  "producer_paths_denied": true,
+  "inherited_new_download_bytes": 0,
+  "full_GPU_recreation": false
+}

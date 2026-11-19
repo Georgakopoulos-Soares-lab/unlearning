@@ -13,8 +13,12 @@ def read(p):return json.loads(Path(p).read_text())
 def digest(v):return hashlib.sha256(json.dumps(v,sort_keys=True,separators=(',',':'),allow_nan=False).encode()).hexdigest()
 def sha(p):
  with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
-def main(root):
- start=time.monotonic();cpu=time.process_time();identity=read(root/'control/IDENTITY_CONTEXT.json');binding=read(root/'control/RECOVERY_INPUT_BINDINGS.json');mapping=binding['immutable_saved_outputs'];pub=root/'public';index=read(pub/'TABLE_INDEX.json');scientific={};keyids=set();source_index={e['source_id']:e for e in read(pub/'SOURCE_TABLE_INDEX.json')['sources']};source_files=read(root/'IMMUTABLE_SOURCE_FILES.json')['files'];original_cache={};source_joins=0
+def main(root,translation=None):
+ start=time.monotonic();cpu=time.process_time();identity=read(root/'control/IDENTITY_CONTEXT.json');binding=read(root/'control/RECOVERY_INPUT_BINDINGS.json');mapping=binding['immutable_saved_outputs']
+ if translation is not None:
+  for ah,newroot in translation.items():
+   assert ah in mapping['archives'];path=Path(newroot).resolve();assert path.exists() and ('/consumer' in str(path) or '/restored/' in str(path));mapping['archives'][ah]['consumer_root']=str(path)
+ pub=root/'public';index=read(pub/'TABLE_INDEX.json');scientific={};keyids=set();source_index={e['source_id']:e for e in read(pub/'SOURCE_TABLE_INDEX.json')['sources']};source_files=read(root/'IMMUTABLE_SOURCE_FILES.json')['files'];original_cache={};source_joins=0
  for p in index['partitions']:
   path=pub/p['path'];assert sha(path)==p['sha256'];rs=list(csv.DictReader(path.open()));assert len(rs)==p['rows']
   for r in rs:
@@ -87,7 +91,7 @@ def main(root):
  assert sum(e['kind']=='prediction' for e in checks)==24 and sum(e['kind']=='classifier_vector' for e in checks)==60 and sum(e['kind']=='LM_vector' for e in checks)==6
  return {'status':'PASS','prediction_paths':24,'classifier_vectors':60,'LM_vectors':6,'paired_attempted_values':132000,'comparison_counts':counts,'max_abs_residuals':maxima,'worst_private_units':worst,'canonical_report_keys_regenerated':len(scientific),'source_row_hash_and_value_joins':source_joins,'R5_amendment_keys_regenerated':33684,'coverage_declaration_cells_regenerated':84,'display_plot_source_joins':joined,'descriptive_policy_gap_checks':len(plot['policy_gaps']),'historical_typed_LM_routes':raw_routes,'checks':checks,'new_fits_model_forwards_or_draws':0,'producer_paths_used':False,'GPU_recreation_verified':False,'wall_seconds':time.monotonic()-start,'CPU_seconds':time.process_time()-cpu}
 if __name__=='__main__':
- parser=argparse.ArgumentParser();parser.add_argument('--root',type=Path,required=True);a=parser.parse_args();events=[]
+ parser=argparse.ArgumentParser();parser.add_argument('--root',type=Path,required=True);parser.add_argument('--dependency-roots',type=Path);a=parser.parse_args();events=[]
  def deny(event,args):
   if event in ['open','os.listdir','os.scandir'] and args and isinstance(args[0],(str,bytes,os.PathLike)):
    p=os.path.abspath(os.fsdecode(args[0]))
@@ -96,4 +100,4 @@ if __name__=='__main__':
  try:open('/workspace/meeting-artifacts/A09-producer-denial-sentinel','rb')
  except PermissionError:pass
  else:raise AssertionError('Producer denial sentinel not rejected')
- out=main(a.root);assert len(events)==1;out['producer_path_denial_active']=True;out['sentinel_rejection_proven']=True;print(json.dumps(out,allow_nan=False))
+ out=main(a.root,read(a.dependency_roots) if a.dependency_roots else None);assert len(events)==1;out['producer_path_denial_active']=True;out['sentinel_rejection_proven']=True;print(json.dumps(out,allow_nan=False))

@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "new_report_payload": {
+    "archive_bytes": 59156218,
+    "archive_sha256": "361e97b6a38eb8eb4c1dce4eebc4b4338ca478efabf4dcf2b91b085c9e88dae9",
+    "member_manifest_sha256": "076903e0983d61830efbd3efc99a577cd2b0f5c50abd84927c18e81da10aa616",
+    "members": 910,
+    "repository": "ashay-sriv/undo-evo2-pilot-backup-20261020",
+    "revision": "9833f5f2af2a34d2b5d63d1738f0979d57cb835a",
+    "archive_path": "POD_A/20261117T084728Z-a01/A09/A09-attempt-002/report-001/A09-report-payload-001.tar.gz"
+  },
+  "fresh_consumer": "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer",
+  "all_members_verified": 910,
+  "force_download": true,
+  "all_member_checksums": "PASS",
+  "producer_paths_denied": true,
+  "CPU_panel": {
+    "prediction_paths": 24,
+    "classifier_vectors": 60,
+    "LM_vectors": 6,
+    "saved_draws_per_vector": 2000
+  },
+  "inherited_new_download_bytes": 0,
+  "inherited_remote_archive_identities": 43,
+  "inherited_rehashed_distinct_files": 16489,
+  "inherited_rehashed_bytes": 719216425,
+  "A08_appendix_assets_rehashed": 36,
+  "GPU_recreation": false,
+  "executed_command": [
+    "/workspace/venvs/pod-a-tools/bin/python",
+    "-B",
+    "/workspace/meeting-artifacts/POD_A/20261117T084728Z-a01/A09-attempt-002/code/fetch_restore9.py",
+    "--receipt",
+    "/workspace/agent-handoff/POD_A/20261117T084728Z-a01/attempts/A09-attempt-002/REPORT_PAYLOAD_UPLOADED.json",
+    "--destination",
+    "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001",
+    "--cpu-python",
+    "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+    "--plot-python",
+    "/workspace/venvs/pod-a-a08-figures/bin/python"
+  ],
+  "jobs": [
+    {
+      "label": "numeric-consumer-001",
+      "pid": 178710,
+      "proc_start_ticks": "16914636",
+      "argv": [
+        "/workspace/venvs/a03-cpu-audit-20261117/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer/code/restore9.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 19.20401607902022,
+      "GPU_visibility": "DISABLED",
+      "credential_and_producer_PYTHONPATH_removed": true
+    },
+    {
+      "label": "figure-consumer-001",
+      "pid": 178718,
+      "proc_start_ticks": "16916557",
+      "argv": [
+        "/workspace/venvs/pod-a-a08-figures/bin/python",
+        "-B",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer/code/render_consumer9.py",
+        "--root",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/consumer",
+        "--output",
+        "/workspace/recovery/POD_A/20261117T084728Z-a01/A09-attempt-002/report-fresh-001/rendered"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.733941151003819,
+      "GPU_visibility": "DISABLED",
+      "credential_and_producer_PYTHONPATH_removed": true
+    }
+  ],
+  "source_bound_numeric_residuals": {
+    "probability": 0.0,
+    "point": 8.881784197001252e-16,
+    "draw": 0.0,
+    "CI": 0.0
+  },
+  "inherited_proofs_not_reexecuted": true
+}

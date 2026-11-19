@@ -53,7 +53,7 @@ def main(source,out,only=None):
    ax=axes[i,2]
    for seed in SEEDS:
     line=sorted([r for r in gaps if r['task']==task and str(r['CV_seed'])==str(seed)],key=lambda r:26 if r['representation']=='decoder.final_norm' else int(r['representation'].rsplit('.',1)[1]));assert len(line)==26;ax.plot([26 if r['representation']=='decoder.final_norm' else int(r['representation'].rsplit('.',1)[1]) for r in line],[float(r['estimate']) for r in line],color=COLORS['R5'],ls=STYLES[seed],lw=1.0);used.extend(line)
-   ax.axhline(0,color='black',lw=.7);ax.set_ylim(-1,1);ax.set_title(LABEL[task]+' · R5 policy gap',loc='left');ax.set_ylabel('Refitted − unchanged-base AUROC')
+   ax.axhline(0,color='black',lw=.7);ax.set_ylim(-1,1);ax.set_title(LABEL[task]+' · R5 policy gap',loc='left');ax.set_ylabel('ΔAUROC (point gap)')
    for ax in axes[i]:
     ax.set_xticks([0,8,16,24,26],['0','8','16','24','FN']);ax.axvline(25,color='#aaaaaa',lw=.5);ax.grid(axis='y',alpha=.15)
     if i==2:ax.set_xlabel('Decoder block 0–24; FN = final norm')
@@ -63,7 +63,7 @@ def main(source,out,only=None):
   for j,(family,_) in enumerate(data['transitions']):
    ax=axes[j]
    for y,task in enumerate(data['tasks']):
-    r=next(r for r in rs if r['family']==family and r['task']==task);color=COLORS[family.split('_')[0]];pt,lo,hi=[float(r[k]) for k in ['estimate','ci_low','ci_high']];ax.hlines(y,lo,hi,color=color,lw=1.4);ax.scatter(pt,y,color=color,s=32,zorder=3);ax.text(.02,y+.20,f'{pt:+.4f}',transform=ax.get_yaxis_transform(),ha='left',fontsize=8,color='#333333')
+    r=next(r for r in rs if r['family']==family and r['task']==task);color=COLORS[family.split('_')[0]];pt,lo,hi=[float(r[k]) for k in ['estimate','ci_low','ci_high']];ax.hlines(y,lo,hi,color=color,lw=1.4);ax.scatter(pt,y,color=color,s=32,zorder=3);ax.text(.98,y+.20,f'{pt:+.4f}',transform=ax.get_yaxis_transform(),ha='right',fontsize=8,color='#333333')
    ax.axvline(0,color='black',lw=.8);ax.set_xlim(-limit,limit);ax.set_ylim(5.65,-.65);ax.set_yticks(range(6),[LABEL[t] for t in data['tasks']]);ax.set_title(family.replace('_minus_','−'),loc='left');ax.set_xlabel('Δ corpus NLL (lower is better)');ax.grid(axis='x',alpha=.15)
   fig.suptitle('Actual LM loss gives a distinct view of the same checkpoints\nDev only; existing pointwise exploratory intervals; each task remains separate',fontsize=15,x=.04,ha='left');fig.text(.04,.03,'NLL uses the actual autoregressive head. Perplexity is exp(NLL), not independent corroborating evidence.\nThese comparisons do not isolate the effect of adding a retain source.',fontsize=10);fig.tight_layout(rect=(0,.13,1,.83),w_pad=2);save(fig,'main_LM_adjacent','All six tasks and three eligible adjacent transitions. Lower NLL is favorable. No pooled task-capability score, new LM evaluation or new confidence-interval family.',rs)
  funcs={'main_coverage':coverage,'main_task_entry':task_entry,'main_profiles_policy':profiles,'main_LM_adjacent':lm}

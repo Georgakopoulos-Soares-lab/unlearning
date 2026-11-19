@@ -1,8 +1,8 @@
-# A09 RUNNING
+# A09 LOCAL_READY
 
-Exact106526-row integrated release and33684-key amendment PASS;42 private archive identities and16489 saved files reverified. Six evidence-linked findings prepared; new report recovery pending.
+Full106526-row report,14-page PDF,4 main families and new24/60/6 fresh recovery PASS; final guarded Git delivery.
 
-Run `20261117T084728Z-a01`, attempt `A09-attempt-002`. Observed UTC: 2026-11-19T02:02:30.622660+00:00. Direct approval and its preview binding are in [approval](APPROVAL_RECORD.json). Pinned prompt `2a837ba3a183caf72529b891d52ba08637cc8398`.
+Run `20261117T084728Z-a01`, attempt `A09-attempt-002`. Observed UTC: 2026-11-19T02:31:05.461737+00:00. Direct approval and its preview binding are in [approval](APPROVAL_RECORD.json). Pinned prompt `2a837ba3a183caf72529b891d52ba08637cc8398`.
 
 | Goal | Target | Current evidence | Remaining |
 |---|---:|---|---|
