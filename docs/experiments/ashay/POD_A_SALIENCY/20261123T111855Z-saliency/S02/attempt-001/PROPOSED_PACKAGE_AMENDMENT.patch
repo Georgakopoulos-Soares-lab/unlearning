@@ -1,0 +1,883 @@
+--- a/S03_RECOVERY_RUNTIME_QUALIFICATION.md
++++ b/S03_RECOVERY_RUNTIME_QUALIFICATION.md
+@@ -57,3 +57,9 @@
+ ## Boundary and next dependency
+ 
+ Next is S04, under a separate direct approval after its required inputs pass. This prompt file is a specification, not standing execution authority. R2 is excluded; no raw forget data, new interventions, checkpoint training or Pod B relearning.
++
++## Prospective amendment1.1.0
++
++Amended guard semantics: backup_route_identified at entry means only destination/private-state/authentication metadata. private_write_readback_verified is distinct and must resolve through the authorized unique-prefix upload/fresh-download/hash/privacy test before substantial compute. Recover/qualify exact original-base scalers/heads and affected scopes as qualified_base_heads in S03. Record a concrete resume_binding (pins, receipts, unfinished work/transfers, owned PID/start/boot identities, unresolved scope and next action) after live reconciliation; no duplicate writer. Use the phase action guard, not a global write-permission claim.
++
++Private roundtrip proof binding: before substantial compute, private_roundtrip_binding names the exact sanitized receipt path/hash, route ID, immutable revision and unique run prefix. The receipt must verify private destination, fresh download, equal upload/download bytes and exact expected/downloaded SHA256. The action guard reads and verifies the sealed receipt, not just an input status. Keep sensitive destination locators in private evidence.
+--- a/S04_PROTOCOL_COVERAGE_FREEZE.md
++++ b/S04_PROTOCOL_COVERAGE_FREEZE.md
+@@ -55,3 +55,7 @@
+ ## Boundary and next dependency
+ 
+ Next is S05, under a separate direct approval after its required inputs pass. This prompt file is a specification, not standing execution authority. R2 is excluded; no raw forget data, new interventions, checkpoint training or Pod B relearning.
++
++## Prospective amendment1.1.0
++
++Amended closure: bind qualified_base_heads from S03 by exact original-base identities and per-candidate/policy reuse. Initial frozen_audit_panel, frozen_H3_audit_subset and frozen_contrast_plan all resolve here before producer outcomes. Seal their paths/hashes in S04 receipt output_sha256; controller frozen_artifact_bindings bind that exact receipt SHA, candidate scope and no-outcomes-at-freeze record. Validate --entry S04 --action close before accepting/publishing closure. No later panel/family selection may masquerade as revalidation.
+--- a/S05_H3_EXTRACTION_PROBE_GATE.md
++++ b/S05_H3_EXTRACTION_PROBE_GATE.md
+@@ -54,3 +54,7 @@
+ ## Boundary and next dependency
+ 
+ Next is S06, under a separate direct approval after its required inputs pass. This prompt file is a specification, not standing execution authority. R2 is excluded; no raw forget data, new interventions, checkpoint training or Pod B relearning.
++
++## Prospective amendment1.1.0
++
++Amended entry explicitly requires qualified_base_heads, original frozen_audit_panel, frozen_H3_audit_subset and frozen_contrast_plan, with S04 receipt-bound seals and candidate-scoped eligibility. A missing/incompatible original-base head blocks that affected application; do not refit/replace it or silently broaden scope. No favorable-score gate.
+--- a/S07_REMAINING_PROBES_FIXED_BASE.md
++++ b/S07_REMAINING_PROBES_FIXED_BASE.md
+@@ -48,3 +48,7 @@
+ ## Boundary and next dependency
+ 
+ Next is S08, under a separate direct approval after its required inputs pass. This prompt file is a specification, not standing execution authority. R2 is excluded; no raw forget data, new interventions, checkpoint training or Pod B relearning.
++
++## Prospective amendment1.1.0
++
++Amended continuity: qualified_base_heads were recovered/qualified in S03 and bound in S04 before S05. Consume the same original-base scaler/head identities and reuse scopes unchanged; S07 does not first establish them or replace/recenter/refit them.
+--- a/S08_INDEPENDENT_VERIFICATION.md
++++ b/S08_INDEPENDENT_VERIFICATION.md
+@@ -48,3 +48,7 @@
+ ## Boundary and next dependency
+ 
+ Next is S09, under a separate direct approval after its required inputs pass. This prompt file is a specification, not standing execution authority. R2 is excluded; no raw forget data, new interventions, checkpoint training or Pod B relearning.
++
++## Prospective amendment1.1.0
++
++Amended continuity: the audit panel/H3 subset and contrast family were initially frozen and sealed in S04 before outcomes. Verify exact original artifact/receipt hashes and candidate scopes. Revalidation is not authority to choose a different panel/family/favorable subset.
+--- a/S09_LAYERWISE_SWEEP_ANALYSIS.md
++++ b/S09_LAYERWISE_SWEEP_ANALYSIS.md
+@@ -53,3 +53,7 @@
+ ## Boundary and next dependency
+ 
+ Next is S10, under a separate direct approval after its required inputs pass. This prompt file is a specification, not standing execution authority. R2 is excluded; no raw forget data, new interventions, checkpoint training or Pod B relearning.
++
++## Prospective amendment1.1.0
++
++Amended continuity: consume and verify original S04 frozen comparison family and audit binding; do not retrospectively select favorable contrasts or panels. Any prospective amendment needs explicit authority, a new identity and outcome-exposure statement.
+--- a/S_ARTIFACT_CONTRACT.md
++++ b/S_ARTIFACT_CONTRACT.md
+@@ -33,3 +33,7 @@
+ Safe restoration requires exact revision/archive size/hash and complete member hash set, no traversal/absolute paths/symlink/hardlink/devices/duplicates or unbounded expansion. Use a new consumer directory, deny producer fallback, map dependencies immutably. All included bytes checked; CPU computational audit is its explicit prospective panel, not all-head refitting or full GPU recreation. Weights/runtime exclusions require exact reacquisition identities/hashes and recipe. Full GPU recreation remains unproven until actually executed in later scope.
+ 
+ Avoid self-reference: seal content, upload/verify immutable payload, then publish a separate receipt; final Git commit cannot contain its own future hash. Delivery receipt lives outside that commit or in a later separately described object. Stage closure reports actual science/recovery/verification coverage and external gaps, verified remote reachability and owned-process disposition. Never claim green from file existence or upload exit alone.
++
++## Prospective amendment1.1.0
++
++Versioned amendments distinguish backup route identity from verified private roundtrip. Resume reconciliation requires run/phase/attempt/package/supplement pins, completed seals, unfinished queue/transfers, owned PID plus start/boot identity, scoped unknowns, next action/prerequisites and single-writer proof at entry/checkpoint/interruption/handoff. Git evidence remains Git-specific; remote_evidence is a separate provider schema with nullable revisions and explicit reasons, typed declared/local digests and source byte locators. Never fabricate provider/Git/weight identities. Freeze bindings remain S04-receipt bound and unchanged through verification/analysis.
+--- a/S_RESULT_SCHEMAS.json
++++ b/S_RESULT_SCHEMAS.json
+@@ -1,6 +1,6 @@
+ {
+   "$schema": "https://json-schema.org/draft/2020-12/schema",
+-  "$id": "urn:pod-a-saliency:results:1.0.0",
++  "$id": "urn:pod-a-saliency:results:1.1.0",
+   "$defs": {
+     "evidence": {
+       "type": "object",
+@@ -622,6 +622,237 @@
+         "owned_processes",
+         "next_phase_approved"
+       ]
++    },
++    "remote_evidence": {
++      "type": "object",
++      "properties": {
++        "schema_version": {
++          "const": "s-remote-evidence-v1"
++        },
++        "evidence_id": {
++          "type": "string",
++          "minLength": 1
++        },
++        "provider": {
++          "const": "Google Drive"
++        },
++        "provider_object_id": {
++          "type": "string",
++          "minLength": 1
++        },
++        "drive_id": {
++          "type": [
++            "string",
++            "null"
++          ]
++        },
++        "parent_object_ids": {
++          "type": "array",
++          "uniqueItems": true,
++          "items": {
++            "type": "string"
++          }
++        },
++        "shortcut_target_id": {
++          "type": [
++            "string",
++            "null"
++          ]
++        },
++        "relative_alias_paths": {
++          "type": "array",
++          "uniqueItems": true,
++          "items": {
++            "type": "string"
++          }
++        },
++        "object_name": {
++          "type": "string"
++        },
++        "mime_type": {
++          "type": [
++            "string",
++            "null"
++          ]
++        },
++        "reported_size_bytes": {
++          "type": [
++            "integer",
++            "null"
++          ],
++          "minimum": 0
++        },
++        "provider_revision": {
++          "type": [
++            "string",
++            "null"
++          ]
++        },
++        "provider_version": {
++          "type": [
++            "string",
++            "null"
++          ]
++        },
++        "modified_time": {
++          "type": [
++            "string",
++            "null"
++          ]
++        },
++        "observation_start_utc": {
++          "type": "string"
++        },
++        "observation_end_utc": {
++          "type": "string"
++        },
++        "null_reasons": {
++          "type": "object",
++          "additionalProperties": {
++            "type": "string",
++            "minLength": 1
++          }
++        },
++        "checksums": {
++          "type": "array",
++          "items": {
++            "type": "object",
++            "properties": {
++              "algorithm": {
++                "enum": [
++                  "MD5",
++                  "SHA1",
++                  "SHA256",
++                  "OTHER"
++                ]
++              },
++              "digest": {
++                "type": "string",
++                "minLength": 1
++              },
++              "origin": {
++                "enum": [
++                  "provider_declared",
++                  "locally_computed_sidecar"
++                ]
++              },
++              "verification_status": {
++                "enum": [
++                  "DECLARED_NOT_LOCALLY_VERIFIED",
++                  "EXACT_SIDECAR_BYTES_HASHED"
++                ]
++              }
++            },
++            "additionalProperties": false,
++            "required": [
++              "algorithm",
++              "digest",
++              "origin",
++              "verification_status"
++            ]
++          }
++        },
++        "retrieval_status": {
++          "enum": [
++            "METADATA_ONLY",
++            "SIDECAR_DOWNLOADED",
++            "EXCLUDED",
++            "ACCESS_DENIED",
++            "UNSUPPORTED",
++            "PARTIAL"
++          ]
++        },
++        "local_sidecar_sha256": {
++          "type": [
++            "string",
++            "null"
++          ],
++          "pattern": "^[0-9a-f]{64}$"
++        },
++        "local_sidecar_bytes": {
++          "type": [
++            "integer",
++            "null"
++          ],
++          "minimum": 0,
++          "maximum": 1048576
++        },
++        "source_locator": {
++          "type": "object",
++          "properties": {
++            "route": {
++              "type": "string"
++            },
++            "provider_object_id": {
++              "type": "string"
++            },
++            "provider_revision": {
++              "type": [
++                "string",
++                "null"
++              ]
++            },
++            "metadata_field": {
++              "type": [
++                "string",
++                "null"
++              ]
++            },
++            "sidecar_line_or_field": {
++              "type": [
++                "string",
++                "null"
++              ]
++            }
++          },
++          "additionalProperties": false,
++          "required": [
++            "route",
++            "provider_object_id",
++            "provider_revision",
++            "metadata_field",
++            "sidecar_line_or_field"
++          ]
++        },
++        "payload_identity_status": {
++          "const": "NOT_VERIFIED_BY_S01"
++        },
++        "evidence_status": {
++          "enum": [
++            "OBSERVED_METADATA",
++            "DECLARED_SIDECAR",
++            "INFERENCE_LABELED",
++            "UNKNOWN"
++          ]
++        }
++      },
++      "additionalProperties": false,
++      "required": [
++        "schema_version",
++        "evidence_id",
++        "provider",
++        "provider_object_id",
++        "drive_id",
++        "parent_object_ids",
++        "shortcut_target_id",
++        "relative_alias_paths",
++        "object_name",
++        "mime_type",
++        "reported_size_bytes",
++        "provider_revision",
++        "provider_version",
++        "modified_time",
++        "observation_start_utc",
++        "observation_end_utc",
++        "null_reasons",
++        "checksums",
++        "retrieval_status",
++        "local_sidecar_sha256",
++        "local_sidecar_bytes",
++        "source_locator",
++        "payload_identity_status",
++        "evidence_status"
++      ]
+     }
+   }
+ }
+--- a/S_SOURCE_PROVENANCE.json
++++ b/S_SOURCE_PROVENANCE.json
+@@ -1,5 +1,5 @@
+ {
+-  "schema_version": "1.0.0",
++  "schema_version": "1.1.0",
+   "authorizing_instruction": {
+     "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+     "ref": "refs/heads/POD-A-Saliency",
+@@ -202,5 +202,12 @@
+     "No-deadline policy retained; ten-minute setup limit not science limit",
+     "H3 previously examined test excluded by default until exact authorization and S04 prospective inclusion",
+     "S10 collaborator aggregate input only; pending disposition permits retain-only reporting"
+-  ]
++  ],
++  "proposed_amendment": {
++    "authority": "S02 direct chat permits preparation/review only",
++    "base_package_commit": "558592c1985ed180745599709595c543476644f7",
++    "published": false,
++    "future_publication_commit": null,
++    "changes": "Five documented prerequisite/evidence/recovery corrections; science objectives preserved"
++  }
+ }
+--- a/S_STAGE_MAP.json
++++ b/S_STAGE_MAP.json
+@@ -1,5 +1,5 @@
+ {
+-  "schema_version": "1.0.0",
++  "schema_version": "1.1.0",
+   "research_repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+   "research_branch": "POD_A_SALIENCY",
+   "research_base": "8c651c7ab3c3a2a47f5bbd0e464a69a197512c82",
+@@ -117,7 +117,7 @@
+       "required_inputs": [
+         "candidate_selection",
+         "payload_access",
+-        "private_backup_access"
++        "backup_route_identified"
+       ],
+       "candidate_scoped": false,
+       "required_candidate_gate": null,
+@@ -142,7 +142,12 @@
+         "No evaluation datasets or untouched tests were opened; no production forwards/fits or checkpoint training."
+       ],
+       "partial_rule": "Only explicitly eligible passing scopes; no global stage success inferred",
+-      "stop_before": "S04"
++      "stop_before": "S04",
++      "action_gates": {
++        "substantial_compute": [
++          "private_write_readback_verified"
++        ]
++      }
+     },
+     {
+       "id": "S04",
+@@ -153,7 +158,8 @@
+       ],
+       "required_inputs": [
+         "qualified_subset",
+-        "historical_protocol"
++        "historical_protocol",
++        "qualified_base_heads"
+       ],
+       "candidate_scoped": false,
+       "required_candidate_gate": null,
+@@ -176,7 +182,13 @@
+         "No scientific extraction/fitting is performed by this planning phase."
+       ],
+       "partial_rule": "Only explicitly eligible passing scopes; no global stage success inferred",
+-      "stop_before": "S05"
++      "stop_before": "S05",
++      "closure_required_inputs": [
++        "qualified_base_heads",
++        "frozen_audit_panel",
++        "frozen_H3_audit_subset",
++        "frozen_contrast_plan"
++      ]
+     },
+     {
+       "id": "S05",
+@@ -187,7 +199,11 @@
+       ],
+       "required_inputs": [
+         "frozen_protocol",
+-        "runtime_qualified"
++        "runtime_qualified",
++        "qualified_base_heads",
++        "frozen_audit_panel",
++        "frozen_H3_audit_subset",
++        "frozen_contrast_plan"
+       ],
+       "candidate_scoped": true,
+       "required_candidate_gate": null,
+@@ -280,6 +296,9 @@
+       ],
+       "required_inputs": [
+         "frozen_audit_panel",
++        "frozen_H3_audit_subset",
++        "frozen_contrast_plan",
++        "qualified_base_heads",
+         "producer_output_seals"
+       ],
+       "candidate_scoped": true,
+@@ -310,6 +329,7 @@
+       ],
+       "required_inputs": [
+         "released_unit_index",
++        "frozen_audit_panel",
+         "frozen_contrast_plan"
+       ],
+       "candidate_scoped": false,
+@@ -433,11 +453,6 @@
+       "eligibility_rule": "Must be evidence-backed RESOLVED before S03 entry; pending blocks only affected scope"
+     },
+     {
+-      "key": "private_backup_access",
+-      "resolve_in": "S02",
+-      "eligibility_rule": "Must be evidence-backed RESOLVED before S03 entry; pending blocks only affected scope"
+-    },
+-    {
+       "key": "qualified_subset",
+       "resolve_in": "S03",
+       "eligibility_rule": "Must be evidence-backed RESOLVED before S04 entry; pending blocks only affected scope"
+@@ -459,13 +474,13 @@
+     },
+     {
+       "key": "qualified_base_heads",
+-      "resolve_in": "S06",
+-      "eligibility_rule": "Must be evidence-backed RESOLVED before S07 entry; pending blocks only affected scope"
++      "resolve_in": "S03",
++      "eligibility_rule": "Recover/qualify exact original pretrained-base scaler/head identities and affected scope; S04 binds immutable reuse; S05 requires before applications"
+     },
+     {
+       "key": "frozen_audit_panel",
+-      "resolve_in": "S07",
+-      "eligibility_rule": "Must be evidence-backed RESOLVED before S08 entry; pending blocks only affected scope"
++      "resolve_in": "S04",
++      "eligibility_rule": "Initial exact panel and immutable seal before producer outcomes; S08 consumes original"
+     },
+     {
+       "key": "producer_output_seals",
+@@ -479,8 +494,8 @@
+     },
+     {
+       "key": "frozen_contrast_plan",
+-      "resolve_in": "S08",
+-      "eligibility_rule": "Must be evidence-backed RESOLVED before S09 entry; pending blocks only affected scope"
++      "resolve_in": "S04",
++      "eligibility_rule": "Initial exact comparison family/keys before outcomes; S08/S09 revalidate, never reselect"
+     },
+     {
+       "key": "verified_retain_contrasts",
+@@ -516,6 +531,22 @@
+       "key": "collaborator_forget_results",
+       "resolve_in": "S10",
+       "eligibility_rule": "External pending disposition permits retain-only S11"
++    },
++    {
++      "key": "backup_route_identified",
++      "resolve_in": "S02",
++      "eligibility_rule": "Destination/private-state/authentication metadata only; does not prove write access"
++    },
++    {
++      "key": "private_write_readback_verified",
++      "resolve_in": "S03",
++      "eligibility_rule": "Unique-prefix private upload, forced fresh download, full hash/privacy check required before substantial compute"
++    },
++    {
++      "key": "frozen_H3_audit_subset",
++      "resolve_in": "S04",
++      "eligibility_rule": "Exact H3 subset of original panel, bound in S04 receipt and required by S05"
+     }
+-  ]
++  ],
++  "amendment_status": "Review-only proposal; becomes authority only after separate publication, readback, binding migration and direct phase approval at actual new commit"
+ }
+--- a/S_START_HERE.md
++++ b/S_START_HERE.md
+@@ -13,3 +13,7 @@
+ Stage map: S00 pin/controller; S01 delivery metadata; S02 lineage/comparability; S03 payload/runtime recovery; S04 prospective protocol freeze; S05 H3 extraction/refit/audit gate; S06 other-five extraction/LM; S07 other-five refits/fixed-base; S08 independent release; S09 layerwise sweep analysis; S10 external aggregate forget integration or pending disposition; S11 report/private recovery/handoff. Links to each canonical prompt are in S_STAGE_MAP.json.
+ 
+ No R2 search, generation of interventions, checkpoint training, raw forget evaluation, new untouched test, Pod B relearning, background controller or collaborator contact. No-deadline amendment remains active; the ten-minute limit applied only to prior setup inspection. Publication and S00 do not authorize S01 or later science.
++
++## Prospective amendment1.1.0
++
++Version1.1.0 proposed migration: future use requires actual newly published commit/readback and explicitly migrated controller/schema bindings; old approved pins never silently change. Before S03 identify backup route separately from write/readback. Run --entry S03 --action enter for metadata entry; --action substantial_compute requires private_write_readback_verified. Before accepting S04 closure, seal its candidate receipt/artifacts and validate --entry S04 --action close. S05/S08/S09 verify original S04 artifact and receipt seals. Every S03+ entry requires concrete resume reconciliation; this checker never dispatches work.
+--- a/S_support/CONTROLLER_STATE.schema.json
++++ b/S_support/CONTROLLER_STATE.schema.json
+@@ -4,7 +4,7 @@
+   "additionalProperties": false,
+   "properties": {
+     "schema_version": {
+-      "const": "1.0.0"
++      "const": "1.1.0"
+     },
+     "run_id": {
+       "type": "string",
+@@ -211,6 +211,185 @@
+     },
+     "owned_processes": {
+       "type": "array"
++    },
++    "frozen_artifact_bindings": {
++      "type": "object",
++      "additionalProperties": {
++        "type": "object",
++        "additionalProperties": false,
++        "required": [
++          "path",
++          "sha256",
++          "sealed_by_phase",
++          "S04_receipt_sha256",
++          "scope_candidates",
++          "outcomes_exposed_at_freeze"
++        ],
++        "properties": {
++          "path": {
++            "type": "string"
++          },
++          "sha256": {
++            "type": "string",
++            "pattern": "^[0-9a-f]{64}$"
++          },
++          "sealed_by_phase": {
++            "const": "S04"
++          },
++          "S04_receipt_sha256": {
++            "type": "string",
++            "pattern": "^[0-9a-f]{64}$"
++          },
++          "scope_candidates": {
++            "type": "array",
++            "uniqueItems": true,
++            "items": {
++              "type": "string"
++            }
++          },
++          "outcomes_exposed_at_freeze": {
++            "const": false
++          }
++        }
++      }
++    },
++    "resume_binding": {
++      "type": "object",
++      "additionalProperties": false,
++      "required": [
++        "run_id",
++        "phase",
++        "attempt_id",
++        "package_commit",
++        "supplement_commit",
++        "completed_receipts",
++        "unfinished_units",
++        "transfer_totals",
++        "owned_processes",
++        "unresolved_decisions",
++        "next_action",
++        "prerequisites",
++        "reconciled_utc",
++        "single_writer_verified"
++      ],
++      "properties": {
++        "run_id": {
++          "type": "string"
++        },
++        "phase": {
++          "type": "string"
++        },
++        "attempt_id": {
++          "type": "string"
++        },
++        "package_commit": {
++          "type": "string",
++          "pattern": "^[0-9a-f]{40}$"
++        },
++        "supplement_commit": {
++          "type": [
++            "string",
++            "null"
++          ]
++        },
++        "completed_receipts": {
++          "type": "array",
++          "items": {
++            "type": "string"
++          }
++        },
++        "unfinished_units": {
++          "type": "array",
++          "items": {
++            "type": "string"
++          }
++        },
++        "transfer_totals": {
++          "type": "object",
++          "additionalProperties": {
++            "type": "integer",
++            "minimum": 0
++          }
++        },
++        "owned_processes": {
++          "type": "array",
++          "items": {
++            "type": "object",
++            "required": [
++              "pid",
++              "start_ticks",
++              "boot_id"
++            ],
++            "properties": {
++              "pid": {
++                "type": "integer",
++                "minimum": 1
++              },
++              "start_ticks": {
++                "type": "string"
++              },
++              "boot_id": {
++                "type": "string"
++              }
++            },
++            "additionalProperties": false
++          }
++        },
++        "unresolved_decisions": {
++          "type": "array",
++          "items": {
++            "type": "string"
++          }
++        },
++        "next_action": {
++          "type": "string",
++          "minLength": 1
++        },
++        "prerequisites": {
++          "type": "array",
++          "items": {
++            "type": "string"
++          }
++        },
++        "reconciled_utc": {
++          "type": "string"
++        },
++        "single_writer_verified": {
++          "const": true
++        }
++      }
++    },
++    "private_roundtrip_binding": {
++      "type": "object",
++      "additionalProperties": false,
++      "required": [
++        "path",
++        "sha256",
++        "route_id",
++        "immutable_revision",
++        "unique_prefix"
++      ],
++      "properties": {
++        "path": {
++          "type": "string"
++        },
++        "sha256": {
++          "type": "string",
++          "pattern": "^[0-9a-f]{64}$"
++        },
++        "route_id": {
++          "type": "string",
++          "minLength": 1
++        },
++        "immutable_revision": {
++          "type": "string",
++          "minLength": 1
++        },
++        "unique_prefix": {
++          "type": "string",
++          "minLength": 1
++        }
++      }
+     }
+   },
+   "required": [
+--- a/S_validate_package.py
++++ b/S_validate_package.py
+@@ -66,7 +66,7 @@
+         for name in s['outputs']:safe(name)
+ def validate(root):
+     root=Path(root).resolve();manifest=json_read(root/'S_PACKAGE_FILES.json')
+-    require(manifest.get('schema_version')=='1.0.0','manifest version')
++    require(manifest.get('schema_version')=='1.1.0','manifest version')
+     files=manifest['files'];require(isinstance(files,list),'manifest files must be array')
+     require(len(files)==len(set(files)),'duplicate manifest path')
+     for name in files:
+@@ -83,11 +83,11 @@
+     require(hashes==checks,'checksum mismatch')
+     engine=schema_engine();schemas=json_read(root/'S_RESULT_SCHEMAS.json')
+     engine.check_schema(schemas)
+-    require(set(schemas['$defs'])=={'evidence','candidate','unit','metric','phase_receipt'},'result schema definitions incomplete')
++    require(set(schemas['$defs'])=={'evidence','candidate','unit','metric','phase_receipt','remote_evidence'},'result schema definitions incomplete')
+     for name,s in schemas['$defs'].items():engine.check_schema(s)
+     controller_schema=json_read(root/'S_support/CONTROLLER_STATE.schema.json');engine.check_schema(controller_schema)
+     stage_map=json_read(root/'S_STAGE_MAP.json')
+-    require(stage_map.get('schema_version')=='1.0.0','stage-map version')
++    require(stage_map.get('schema_version')=='1.1.0','stage-map version')
+     require(stage_map['research_repository']==ORIGIN,'wrong research origin')
+     require(stage_map['research_branch']==BRANCH,'wrong research branch')
+     require(stage_map['research_base']==BASE,'wrong research base')
+@@ -123,6 +123,11 @@
+ def validate_record(root,kind,record):
+     schemas=json_read(Path(root)/'S_RESULT_SCHEMAS.json');require(kind in schemas['$defs'],'unknown record kind')
+     schema_engine()(schemas['$defs'][kind]).validate(record)
++    if kind=='remote_evidence':
++        for key in ['drive_id','shortcut_target_id','mime_type','reported_size_bytes','provider_revision','provider_version','modified_time','local_sidecar_sha256','local_sidecar_bytes']:
++            if record[key] is None:require(record['null_reasons'].get(key),'missing remote null reason '+key)
++        for checksum in record['checksums']:
++            require((checksum['origin']=='provider_declared' and checksum['verification_status']=='DECLARED_NOT_LOCALLY_VERIFIED') or (checksum['origin']=='locally_computed_sidecar' and record['retrieval_status']=='SIDECAR_DOWNLOADED' and checksum['digest']==record['local_sidecar_sha256']),'checksum origin/verification mismatch')
+     if kind=='unit':
+         if record['policy']=='LM':require(record['representation'] is None and record['cv_seed'] is None,'LM units cannot expand across layers/seeds')
+         else:require(record['representation'] in ['decoder.layers.'+str(i) for i in range(25)]+['decoder.final_norm'] and record['cv_seed'] in [42,17,1234],'invalid classifier representation/seed')
+@@ -139,10 +144,54 @@
+ def git(worktree,*args):
+     v=subprocess.run(['git',*args],cwd=worktree,capture_output=True,text=True,timeout=15,env={**__import__('os').environ,'GIT_NO_LAZY_FETCH':'1','GIT_TERMINAL_PROMPT':'0'})
+     require(v.returncode==0,'research Git guard failed: '+args[0]);return v.stdout.strip()
+-def entry(root,result,phase,state,worktree,candidate=None,_synthetic=False):
++def amendment_requirements(stage_map,phase,state,action=None,candidate=None):
++    spec=next(s for s in stage_map['stages'] if s['id']==phase)
++    needed=list(spec['required_inputs'])
++    if action=='close':needed+=spec.get('closure_required_inputs',[])
++    if action=='substantial_compute':needed+=spec.get('action_gates',{}).get(action,[])
++    for key in needed:
++        item=state['inputs'].get(key)
++        require(item and item['status']=='RESOLVED' and item['evidence'],'unresolved amended prerequisite '+key)
++    if phase=='S03' and action=='substantial_compute':
++        require(state.get('private_roundtrip_binding'),'sealed private roundtrip binding missing')
++    if phase>='S03':
++        resume=state.get('resume_binding')
++        require(resume and resume['run_id']==state['run_id'] and resume['phase']==phase and resume['package_commit']==state['package_commit'] and resume['single_writer_verified'],'missing/stale resume reconciliation')
++    keys=[]
++    if phase=='S04' and action=='close':keys=spec['closure_required_inputs']
++    if phase in ['S05','S08']:keys=['qualified_base_heads','frozen_audit_panel','frozen_H3_audit_subset','frozen_contrast_plan']
++    if phase=='S09':keys=['frozen_audit_panel','frozen_contrast_plan']
++    for key in keys:
++        b=state.get('frozen_artifact_bindings',{}).get(key)
++        require(b and b['sealed_by_phase']=='S04' and b['outcomes_exposed_at_freeze'] is False,'original S04 freeze binding missing '+key)
++        require(state['phase_receipts'].get('S04',{}).get('sha256')==b['S04_receipt_sha256'],'S04 receipt binding changed '+key)
++        if candidate:require(candidate in b['scope_candidates'],'candidate outside frozen reference/panel scope '+key)
++    return keys
++def check_private_roundtrip_seal(worktree,state):
++    binding=state['private_roundtrip_binding'];name=binding['path'];safe(name)
++    require(name.startswith(state['research_run_root']),'roundtrip receipt outside owned run')
++    raw=payload(Path(worktree),name);require(digest(raw)==binding['sha256'],'private roundtrip receipt bytes changed')
++    receipt=json.loads(raw)
++    require(receipt['status']=='PRIVATE_WRITE_READBACK_VERIFIED' and receipt['destination_private'] is True and receipt['fresh_download'] is True,'roundtrip status/privacy/fresh download not verified')
++    require(SHA.fullmatch(receipt['expected_sha256']) and receipt['expected_sha256']==receipt['download_sha256'],'private roundtrip hashes differ')
++    require(receipt['uploaded_bytes']==receipt['downloaded_bytes'] and receipt['uploaded_bytes']>0,'private roundtrip size mismatch')
++    require(receipt['remote_revision']==binding['immutable_revision'] and receipt['route_id']==binding['route_id'],'private roundtrip source binding changed')
++    require(receipt['upload_prefix']==binding['unique_prefix'] and receipt['upload_prefix'].startswith('POD_A_SALIENCY/'+state['run_id']+'/S03/'),'roundtrip unique prefix outside current run/phase')
++
++def check_freeze_seal(worktree,state,key):
++    b=state['frozen_artifact_bindings'][key];name=b['path'];safe(name)
++    require(name.startswith(state['research_run_root']),'freeze path outside owned run')
++    require(digest(payload(Path(worktree),name))==b['sha256'],'frozen artifact bytes changed '+key)
++    r=state['phase_receipts']['S04'];receipt=json.loads(payload(Path(worktree),r['path']))
++    require(digest(payload(Path(worktree),r['path']))==b['S04_receipt_sha256'],'S04 receipt bytes changed')
++    rel=Path(name).relative_to(Path(r['path']).parent).as_posix()
++    require(receipt['output_sha256'].get(rel)==b['sha256'],'freeze artifact absent from sealed S04 receipt '+key)
++
++def entry(root,result,phase,state,worktree,candidate=None,_synthetic=False,action=None):
+     engine=schema_engine();engine(json_read(Path(root)/'S_support/CONTROLLER_STATE.schema.json')).validate(state)
+     require(phase in [s['id'] for s in result['stage_map']['stages']],'unknown phase')
+     phase_spec=next(s for s in result['stage_map']['stages'] if s['id']==phase)
++    freeze_keys=amendment_requirements(result['stage_map'],phase,state,action,candidate)
+     require(state['research_base']==BASE and state['research_branch']==BRANCH,'wrong entry branch/base')
+     require(state['package_sha256']==result['package_sha256'],'entry package digest mismatch')
+     require(state['research_run_root']==ROOT_PREFIX+state['run_id']+'/','entry root mismatch')
+@@ -179,6 +228,8 @@
+         require(git(worktree,'branch','--show-current')==BRANCH,'actual research branch mismatch')
+         require(git(worktree,'remote','get-url','origin')==ORIGIN,'actual research origin mismatch')
+         git(worktree,'merge-base','--is-ancestor',BASE,'HEAD')
++        for key in freeze_keys:check_freeze_seal(worktree,state,key)
++        if phase=='S03' and action=='substantial_compute':check_private_roundtrip_seal(worktree,state)
+         # Mutation guard: all staged/unstaged/untracked changes must stay within this run.
+         for args in [('diff','--name-only'),('diff','--cached','--name-only'),('ls-files','--others','--exclude-standard')]:
+             changed=git(worktree,*args).splitlines()
+@@ -215,7 +266,7 @@
+         reject('dependency_cycle',lambda t:map_change(t,lambda m:m['stages'][0].update(depends_on=['S11'])),True)
+         # Synthetic identities exist only in these tests, never as published scientific inputs.
+         pin=digest(b'synthetic-only')[:40]
+-        state={'schema_version':'1.0.0','run_id':'20000101T000000Z-saliency','research_base':BASE,'research_branch':BRANCH,'research_run_root':ROOT_PREFIX+'20000101T000000Z-saliency/','package_commit':pin,'package_sha256':baseline['package_sha256'],'approvals':{'S01':{'approved':True,'package_commit':pin,'source':'direct_chat','message':'APPROVE S01 at '+pin,'observed_utc':'2000-01-01T00:00:00Z'}},'inputs':{'drive_listing_route':{'status':'PENDING','evidence':[],'resolve_in':'S01','eligibility_rule':'No inventory without a working route'}},'phase_receipts':{'S00':{'status':'COMPLETE','path':ROOT_PREFIX+'20000101T000000Z-saliency/S00/receipt.json','sha256':digest(b'synthetic-receipt'),'scope_candidates':[]}},'candidate_gates':{}}
++        state={'schema_version':'1.1.0','run_id':'20000101T000000Z-saliency','research_base':BASE,'research_branch':BRANCH,'research_run_root':ROOT_PREFIX+'20000101T000000Z-saliency/','package_commit':pin,'package_sha256':baseline['package_sha256'],'approvals':{'S01':{'approved':True,'package_commit':pin,'source':'direct_chat','message':'APPROVE S01 at '+pin,'observed_utc':'2000-01-01T00:00:00Z'}},'inputs':{'drive_listing_route':{'status':'PENDING','evidence':[],'resolve_in':'S01','eligibility_rule':'No inventory without a working route'}},'phase_receipts':{'S00':{'status':'COMPLETE','path':ROOT_PREFIX+'20000101T000000Z-saliency/S00/receipt.json','sha256':digest(b'synthetic-receipt'),'scope_candidates':[]}},'candidate_gates':{}}
+         try:entry(root,baseline,'S01',state,None,_synthetic=True)
+         except Invalid as e:tested.append({'case':'unresolved_phase_input','status':'REJECTED','reason':str(e)})
+         else:raise Invalid('unresolved input accepted')
+@@ -229,9 +280,9 @@
+ def main():
+     parser=argparse.ArgumentParser(description=__doc__)
+     parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parent)
+-    parser.add_argument('--self-test',action='store_true');parser.add_argument('--entry')
++    parser.add_argument('--self-test',action='store_true');parser.add_argument('--entry');parser.add_argument('--action',choices=['enter','close','substantial_compute'])
+     parser.add_argument('--state',type=Path);parser.add_argument('--research-worktree',type=Path);parser.add_argument('--candidate')
+-    parser.add_argument('--record',type=Path);parser.add_argument('--kind',choices=['evidence','candidate','unit','metric','phase_receipt'])
++    parser.add_argument('--record',type=Path);parser.add_argument('--kind',choices=['evidence','candidate','unit','metric','phase_receipt','remote_evidence'])
+     a=parser.parse_args()
+     try:
+         result=validate(a.root)
+@@ -240,7 +291,7 @@
+         if a.record:
+             require(a.kind is not None,'--record needs --kind');validate_record(a.root,a.kind,json_read(a.record));output['record']='PASS'
+         if a.entry:
+-            require(a.state is not None,'--entry needs --state');output['entry']=entry(a.root,result,a.entry,json_read(a.state),a.research_worktree,a.candidate)
++            require(a.state is not None,'--entry needs --state');output['entry']=entry(a.root,result,a.entry,json_read(a.state),a.research_worktree,a.candidate,action=a.action)
+         print(json.dumps(output,indent=2));return 0
+     except Exception as e:
+         print(json.dumps({'status':'FAIL','error_class':type(e).__name__,'reason':str(e)}));return 1
+--- a/S_PACKAGE_FILES.json
++++ b/S_PACKAGE_FILES.json
+@@ -1,5 +1,5 @@
+ {
+-  "schema_version": "1.0.0",
++  "schema_version": "1.1.0",
+   "files": [
+     "S00_SALIENCY_CONTROLLER.md",
+     "S01_DELIVERY_INVENTORY.md",
+--- a/S_SHA256SUMS
++++ b/S_SHA256SUMS
+@@ -1,22 +1,22 @@
+ 0118792ae14e6c262960717e4053c2c0179cbf8204e1fb6443c3575079308376  S00_SALIENCY_CONTROLLER.md
+ fd847b081e04cffc54db0954abe4a25460d1007c233b463641c39a24f0755ddf  S01_DELIVERY_INVENTORY.md
+ 0529be39f1033300b280ae49cca72c3be00e68a621c587e0b8fb813d767a2738  S02_LINEAGE_COMPARABILITY.md
+-b32a4468388a25ff4aea39d9d96e7894f132431a8b4baae1cde2d9d67a1f9926  S03_RECOVERY_RUNTIME_QUALIFICATION.md
+-84c39163e22394b5feb45d95afd4fdfff839f5144d93d6a70f00b2d0f2ef08c0  S04_PROTOCOL_COVERAGE_FREEZE.md
+-8762c43b2f3b70ac109a494f5720e795db7fc52b0f5cad187d9cf35a98a54549  S05_H3_EXTRACTION_PROBE_GATE.md
++d0d723f9733f9745e31961d3a64fe73470d8c834956e935604585c5de34d5be5  S03_RECOVERY_RUNTIME_QUALIFICATION.md
++9fb6f1930149e3aa4c64e2a3736d5a5df1ede542e8dbb9bc133cf789a4797ece  S04_PROTOCOL_COVERAGE_FREEZE.md
++760326a9647354cbf343ae376ee209743e043b017810316ae7720ab0c4599e2b  S05_H3_EXTRACTION_PROBE_GATE.md
+ 9fe456f2d5628916bba0402db3e84a36c720fae43d2a83a7eb53838c67aa3d0f  S06_REMAINING_EXTRACTION_LM.md
+-9833e7335db3e173573fa04ffa70137f0870ec7bc8e516ed634c7cdf0cf95aee  S07_REMAINING_PROBES_FIXED_BASE.md
+-d24804e9906b2b516cd44b3ad81b6f158e1fdb3d58266324e4c56c776ca22ee8  S08_INDEPENDENT_VERIFICATION.md
+-0e977afc3f4cb23e7ac75c1f073ae692c4e35364b25e60c395bd7dd42dfb1a7b  S09_LAYERWISE_SWEEP_ANALYSIS.md
++462345b1439622c5afd82a28ee2d5c2cdb31f3c13bc777f020306048875d219d  S07_REMAINING_PROBES_FIXED_BASE.md
++f8f305b2511388aa63c28785bbe6aa44d2f0a9e19d3f887c67b27c12aff64558  S08_INDEPENDENT_VERIFICATION.md
++8833abd289d3f6c27ad350b6088a2051a130236c43ba028a9edebb8feaf20050  S09_LAYERWISE_SWEEP_ANALYSIS.md
+ e283b4ecf80859b1082f1e92c0ec79aa91621fb919e25ad7893b674002d8cfdf  S10_COLLABORATOR_FORGET_INTEGRATION.md
+ bb8cdc31a16953c98fba8ca5e9548514ec3c015be8dd73ca94957c128f1d7dca  S11_REPORT_RECOVERY_HANDOFF.md
+-2d6f4338d573bf77f6b1cb8b22470e474dbd4a74100ca2af46a0f7283526d6b8  S_ARTIFACT_CONTRACT.md
++d155531966584a2e535057229db600cb3330293769f40db460f93a14aef2d153  S_ARTIFACT_CONTRACT.md
+ 5b51a2e5427179c1f7e713beffe8fee36fa83b4bcc8d049b5ed6224c4ac1eddc  S_GOALS_COVERAGE.md
+-00895b72e92f961682e8f8b32cfbc66e3c5affcdcaa894da4343689832f94b79  S_PACKAGE_FILES.json
+-b8af28bbaa84505471cfd3ea5564463bbf4757d0859ae700aea54bfd8d7b360c  S_RESULT_SCHEMAS.json
++ac3e6b5ed0c043fbfef6d99c196b5b863501f2fec72ce4fb723bfc469a3ac0b1  S_PACKAGE_FILES.json
++3b1780213d3541f23982c8d9c6cec1bdd642ca28ace271acbf19d8bbe83709ab  S_RESULT_SCHEMAS.json
+ dc21c34e0cfbd02271587124eda89797ec259f2251853c7ac3642f36636e0e3d  S_SCIENTIFIC_CONTRACT.md
+-12e9cd23e568ce2c37cf7b059a3a05202f3a63d4cf2c7f78cdfde8af9d4d530e  S_SOURCE_PROVENANCE.json
+-9f95636f8fd461c6350836484bcf0f9dfcea72698a33a723d2b49df6e4fafd60  S_STAGE_MAP.json
+-c51705f7bd09326ac636916e2cd5adacc6e53cd2c8946738829a8413c28f5e13  S_START_HERE.md
+-785aaaecc0194855b2f4e38479982a774de83c45137cea01cb1cf5b23eda819f  S_support/CONTROLLER_STATE.schema.json
+-1b08986e9f81598c52922203baa14a700781e3b4cc46d074e170e6254021477e  S_validate_package.py
++d3cfd26f534c830f9a0feea0286f5386cc5e348a0d8447c8786f77d79c87ee26  S_SOURCE_PROVENANCE.json
++e594699736ca909e2fc3bc43ecb73536ad283ca3038aa69d40cc5b31273ed8e2  S_STAGE_MAP.json
++ee6f2b4e18ed1d1379d35bf97405a50d931af095d12bc80a81217d9fb23ef5c5  S_START_HERE.md
++df1e518b8080f40b0078994b3918106542a89efdd72b0d982b7a9816c69f91de  S_support/CONTROLLER_STATE.schema.json
++1799d648d0c2b5f79d1d5a946e9fff3f1aeef1bc79e6a14c98aa5854069a04f2  S_validate_package.py

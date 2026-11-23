@@ -1,0 +1,77 @@
+{
+  "schema_version": "s02-resume-handoff-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "attempt_id": "attempt-001",
+  "pins": {
+    "package_commit": "558592c1985ed180745599709595c543476644f7",
+    "package_sha256": "9d3a27d7535e81d87c147eb0d373f87aac009ed65caad4f98f7f56f343a69042",
+    "canonical_S02_sha256": "0529be39f1033300b280ae49cca72c3be00e68a621c587e0b8fb813d767a2738",
+    "supplement_commit": "c9cc84a5ac198679a8e42a8990cb166aa2f0b10b",
+    "supplement_sha256": "3cbe041c81679bb7b614cd8cd4baae905deb360c31ad0143c053f9eb53b6962b",
+    "S01_commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+    "scientific_protocol_freeze": "Not performed; S04 prospective owner",
+    "proposed_patch_sha256": "0a9054f33ca257156352ef9422dc1d6d2512eac369f7258299bca89a15aa61f6",
+    "proposal_is_execution_authority": false
+  },
+  "completed_units": [
+    {
+      "unit": "S01_input_verification",
+      "receipt_sha256": "3939e626582a756f97e8c156da174d86aa483f1b102e53ab3bb76fa745ffd259"
+    },
+    {
+      "unit": "S02_entry_guard",
+      "receipt_sha256": "57c8c501ec5e6f7349b92d33d229fbcd74682014f9f8c59234560e2f2a8ec533"
+    },
+    {
+      "unit": "44_source_reuse_verification",
+      "receipt_sha256": "0333863039291eaad9c2b8a231bcc5d3f989978e7cf143c5671edeeb29171878"
+    },
+    {
+      "unit": "nine_candidate_adjudication",
+      "receipt_sha256": "2483f1d87e395b03fbd79c2a7d99050c349c7e0eac4a980f87649199b7c09b5f"
+    },
+    {
+      "unit": "review_only_amendment_tests",
+      "receipt_sha256": "84ae4296c5d36a23e09b98dc4e8c910348b7fd03a9a390ce61983f46b5a26cdc"
+    },
+    {
+      "unit": "S02_real_record_validation",
+      "receipt_sha256": "82ea7c109640971b99d8ed49411fdaa31ed1728475c71eed23c70d92baf36331"
+    }
+  ],
+  "unfinished_units": [
+    "Sanitized S02 Git delivery proof, recorded separately after commit/readback"
+  ],
+  "retrieval_queue": [],
+  "transfer_totals": {
+    "S02_new_source_payload_bytes": 0,
+    "S01_reused_source_bytes": 323809,
+    "S01_historical_conservative_transfer_bytes": 647618,
+    "S02_private_uploads": 0
+  },
+  "owned_processes": [],
+  "process_policy": "Exact ephemeral PID/start/boot and completed owner reconciliation in private resume and command ledger; no active background workers",
+  "writer_policy": "One serial metadata writer; acquire nonblocking private WRITER.lock before state mutations; reconcile stale PID/start/boot identity, never blindly remove locks",
+  "unresolved_decision_ids": [
+    "PARENT",
+    "ENDPOINT",
+    "OBJECTIVE",
+    "METHOD",
+    "REPLICATION",
+    "EXPOSURE",
+    "SHARDS",
+    "GUARD",
+    "COMPLETENESS",
+    "FORGET"
+  ],
+  "next_permitted_action": "Complete already authorized S02 publication only, then WAITING_FOR_STEERING: S02 for exact proposed amendment publication authorization",
+  "prerequisites_for_S03": [
+    "Separately authorized package amendment, regenerated checksums, real new immutable commit and all-file readback",
+    "Explicit controller/schema migration and direct scoped S03 approval at actual new pin",
+    "Within S03, proof of private write/fresh-readback before substantial compute and scope-qualified recovery/native runtime gates"
+  ],
+  "reuse_policy": "Reconcile actual files/seals/owner identities; reuse valid S01/S02 units without redownload/repetition; retain failures and scoped unknowns",
+  "stage_status": "LIMITED_SCOPE_COMPLETE",
+  "package_amendment_status": "PROPOSED_AND_TESTED_ONLY",
+  "actual_lock_state_at_checkpoint": "Nonblocking exclusive private WRITER.lock acquired for final state mutation, released on command exit; no background writer"
+}

@@ -1,7 +1,7 @@
-# S01 PARTIAL — observed subset ready for S02 approval
+# S02 LIMITED_SCOPE_COMPLETE — S03 guard amendment required
 
-2026-11-23T12:49:59.537952+00:00 Traversed43 observed folder pages,148 unique objects including root,9 provisional checkpoint bundles in8 labeled families. Retrieved44 allowed sidecars/323809 source bytes; conservatively647618 transferred bytes. Actual schema/source/seal validation PASS, including148 remote records,44 exact sidecars and189 declaration rows. All responses lack explicit exhaustion fields, so whole-delivery completeness remains unproven.
+2026-11-23T13:45:25.785369+00:00 Completed metadata adjudication of exactly nine S01 discovery IDs. S01 remains PARTIAL for whole-delivery coverage. All44 small sources reused;0 new metadata source payload bytes,0 models/datasets/inference/fits/private uploads. Canonical/rich schemas and source/selection/endpoint/contrast/recovery joins PASS.
 
-No model payloads downloaded/hashed, no datasets or event binaries opened, no inference/probes or later phases. Eight potentially mixed progress logs excluded. Private protection: local hash-verified only; no new upload/readback. Five corrections and safe implementation deadlines preserved in FUTURE_GATE_REVIEW.md and S02_HANDOFF.md.
+Both noise5 snapshots retained for conditional candidate-only recovery; primary parent comparisons pending. Dataset-provider/config labels do not establish objective or immediate parent. Independent intervention count and realized exposure remain unknown. Exact proposed guard amendment/isolated tests PASS, but it is unpublished and does not change the active approved package.
 
-S02-eligible scope: exactly the nine observed checkpoint-directory IDs in DELIVERY_INVENTORY.json/S01_RECEIPT.json, not the full delivery. S02 remains unapproved. Next permitted action after S01 Git publication/readback: direct scoped S02 approval and its entry guard.
+Next administrative action: separately authorize publication of the exact reviewed amendment, verify its real new package commit, migrate controller bindings and obtain direct scoped S03 approval. No S03 execution now. Source sidecars remain LOCAL_HASH_VERIFIED_ONLY; HF route identified but write/readback unverified. All owned metadata jobs drained at command completion; no watchers/services.

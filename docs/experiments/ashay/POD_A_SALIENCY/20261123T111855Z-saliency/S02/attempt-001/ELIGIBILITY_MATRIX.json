@@ -1,0 +1,1498 @@
+{
+  "schema_version": "s02-eligibility-v1",
+  "decision_vocabulary": [
+    "SUPPORTED_AT_METADATA_LEVEL",
+    "PENDING_EVIDENCE",
+    "CONDITIONALLY_PLANNED",
+    "EXCLUDED"
+  ],
+  "rows": [
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown; noise5 step2000/2151 is not a matched1500 endpoint",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown; noise5 step2000/2151 is not a matched1500 endpoint",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "metadata_identity",
+      "decision": "SUPPORTED_AT_METADATA_LEVEL",
+      "reason": "Exact S01 discovery/config/tokenizer sidecar identities and observed component IDs; payload uniqueness not established",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "endpoint_selection",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Primary endpoint and intervention timing unverified; latest save is not intended evaluation authority",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "candidate_parent_recovery_availability",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Candidate component IDs/sizes/access observations available; exact parent unknown; candidate-only recovery may proceed only after amended guard, S03 approval and integrity/loading gates",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "LOADING",
+      "resolution_phase": "S03",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "standalone_benign_measurement",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Potentially independently loadable candidate; must first pass S03 payload/runtime and S04 cohort/probe qualification; no parent-relative claim implied",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "parent_relative_descriptive",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Immediate unperturbed parent has no exact identity",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "within_method_strength",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Nominal strengths only; actual parents/masks/magnitude/timing unknown",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "between_method_matching",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Equal folder percentage does not match parameter-change magnitude or timing",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "PAIRING",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "saliency_specific_attribution",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Saliency implementation/mask provenance and random or magnitude controls not supplied in inspected evidence",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "independent_replicates",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Config seed1234 and same-family snapshots do not establish independent intervention runs",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S02",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "historical_reference_reuse",
+      "decision": "CONDITIONALLY_PLANNED",
+      "reason": "Historical base/head/control/R3/R5 evidence retained at exact domain only; new-model/runtime/cohort equivalence remains unqualified",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "MEASUREMENT",
+      "resolution_phase": "S04",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "dimension": "collaborator_forget_integration",
+      "decision": "PENDING_EVIDENCE",
+      "reason": "Aggregate input and exact checkpoint/parent/step/cohort/protocol join missing; no raw forget authorization",
+      "evidence_claim_ids": [
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ],
+      "blocking_domain": "INTERPRETATION",
+      "resolution_phase": "S10",
+      "deadline": "Before affected comparison/claim; candidate recovery does not require favorable outcomes",
+      "independent_work_possible": true
+    }
+  ],
+  "runtime_or_release_authorization": false,
+  "independently_loadable_subset": "Pending S03; unknown parents do not globally exclude standalone candidate recovery"
+}

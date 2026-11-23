@@ -1,0 +1,1204 @@
+{
+  "schema_version": "s02-exposure-v1",
+  "candidates": [
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 192000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 192000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 192000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 2151,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 2151,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 275328,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 2151,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 2151,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 275328,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 192000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 192000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 192000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "intended_config": {
+        "train.train_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "train.train_iters",
+          "line": 799,
+          "realized_execution_verified": false
+        },
+        "train.global_batch_size": {
+          "value": 128,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "train.global_batch_size",
+          "line": 788,
+          "realized_execution_verified": false
+        },
+        "train.micro_batch_size": {
+          "value": 16,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "train.micro_batch_size",
+          "line": 794,
+          "realized_execution_verified": false
+        },
+        "optimizer.lr": {
+          "value": 3e-05,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "optimizer.lr",
+          "line": 637,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_iters": {
+          "value": 1500,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "scheduler.lr_decay_iters",
+          "line": 718,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_steps": {
+          "value": 192000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "scheduler.lr_decay_steps",
+          "line": 720,
+          "realized_execution_verified": false
+        },
+        "scheduler.lr_decay_style": {
+          "value": "cosine",
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "scheduler.lr_decay_style",
+          "line": 721,
+          "realized_execution_verified": false
+        },
+        "dataset.seq_length": {
+          "value": 1000,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "dataset.seq_length",
+          "line": 80,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_config_paths": {
+          "value": [
+            "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "dataset.retain_dataset_config_paths",
+          "line": 76,
+          "realized_execution_verified": false
+        },
+        "dataset.retain_dataset_dirs": {
+          "value": [
+            "[private absolute path omitted; basename] preprocessed_emp_h3"
+          ],
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "dataset.retain_dataset_dirs",
+          "line": 78,
+          "realized_execution_verified": false
+        },
+        "rng.seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "rng.seed",
+          "line": 713,
+          "realized_execution_verified": false
+        },
+        "dataset.random_seed": {
+          "value": 1234,
+          "status": "CONFIG_DECLARATION",
+          "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "field": "dataset.random_seed",
+          "line": 74,
+          "realized_execution_verified": false
+        }
+      },
+      "declared_objective": null,
+      "dataset_provider_class_declared": "dual_dataset_provider.GradDiffDualDatasetProvider",
+      "actual_objective_version": null,
+      "actual_global_step": null,
+      "actual_optimizer_steps": null,
+      "counter_reset_semantics": null,
+      "gradient_accumulation_realized": null,
+      "valid_tokens_realized": null,
+      "unique_rows_realized": null,
+      "repeated_presentations_realized": null,
+      "sampler_and_source_versions_realized": null,
+      "evaluation_overlap_or_selection_influence": null,
+      "calculated_nominal_tokens": null,
+      "why_no_token_calculation": "Nominal steps\u00d7batch\u00d7length would require validated reset/packing/masking/sampling/consumption assumptions, which are absent",
+      "historical_priority_influence": "Layer16/final-norm and R4/R5 emphasis came from earlier outcomes; these are informed priorities, not fresh confirmatory replication",
+      "safe_data_boundary": "Config metadata only; no raw forget/evaluation/training datasets opened"
+    }
+  ],
+  "actual_consumption_calculated": false,
+  "source_scope": "Exact private S01 configuration bytes and committed linked declarations only"
+}

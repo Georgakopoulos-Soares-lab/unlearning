@@ -1,0 +1,15 @@
+{
+  "schema_version": "s02-schema-binding-v1",
+  "approved_package_commit": "558592c1985ed180745599709595c543476644f7",
+  "S02_schema": "S02_EVIDENCE_DECISIONS.schema.json",
+  "schema_sha256": "c7227c56362a227d062193961b29c6724cd50fbba0c29ee39fdc7b5264014a5b",
+  "canonical_candidate_binding": "CANDIDATE_REGISTRY.json.candidates[] uses S_RESULT_SCHEMAS.json $defs.candidate exactly; null payload/parent/strength fields retain explicit limits",
+  "canonical_receipt_binding": "S02_RECEIPT.json uses unmodified canonical $defs.phase_receipt",
+  "claim_binding": "LINEAGE_EVIDENCE.json.claims[] uses $defs.claim; exact committed S01 links and private source hashes/fields/lines; no invented future commit",
+  "eligibility_binding": "ELIGIBILITY_MATRIX.json.rows[] uses $defs.eligibility",
+  "contrast_binding": "CONTRAST_ELIGIBILITY.json.rows[] uses $defs.contrast",
+  "referenced_provider_observations": "Original S01_REMOTE_EVIDENCE.schema.json and S01_SCHEMA_BINDING.json at exact S01 commit; S02 did not relist Drive or fabricate revisions",
+  "backup_observation_binding": "S02_BACKUP_ROUTE metadata observed via HF; exact private locators/revision kept privately, source receipt SHA published; read route != verified write/recovery",
+  "other_envelopes": "Versioned s02-* identifiers, exact nine-ID joins and numeric/null/selection invariants validated by code/validate_s02.py; never interpreted as unqualified performance tables",
+  "proposal_binding": "PROPOSED_PACKAGE_AMENDMENT.patch targets the approved package only in an isolated review copy; no published future commit and no active schema migration"
+}

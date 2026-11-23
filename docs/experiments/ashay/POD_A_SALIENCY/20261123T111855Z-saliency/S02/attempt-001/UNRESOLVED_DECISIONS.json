@@ -1,0 +1,404 @@
+{
+  "schema_version": "s02-decisions-v1",
+  "rows": [
+    {
+      "decision_id": "PARENT",
+      "affected_scope": "All nine",
+      "status": "UNKNOWN",
+      "current_evidence": "Original initialization basename and self-family load path do not establish immediate parent; R4/R5 emphasis is not ancestry",
+      "alternative_interpretations": [
+        "Shared original base initialization with different intermediate parents",
+        "Direct initialization path declaration without evidence of actual loader input"
+      ],
+      "smallest_required_evidence": "Exact original and immediate parent object/config/tokenizer revision/hash or safe manifest",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING"
+      ],
+      "resolver": "S02/S03",
+      "latest_safe_resolution": "Before parent acquisition/reconstruction or any parent-relative comparison",
+      "independent_work": [
+        "Candidate-only recovery remains conditionally possible"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_original_initialization_reference",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::immediate_parent",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_original_initialization_reference",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::immediate_parent",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_original_initialization_reference",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::immediate_parent",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_original_initialization_reference",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::immediate_parent",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_original_initialization_reference",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::immediate_parent",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_original_initialization_reference",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::immediate_parent",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_original_initialization_reference",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::immediate_parent",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_original_initialization_reference",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::immediate_parent",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_original_initialization_reference",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::immediate_parent"
+      ]
+    },
+    {
+      "decision_id": "ENDPOINT",
+      "affected_scope": "All nine; noise5 both steps",
+      "status": "UNKNOWN",
+      "current_evidence": "Iteration counter semantics, perturbation time, repeated application and subsequent training not established",
+      "alternative_interpretations": [
+        "Same-run snapshots with shared perturbation",
+        "Different runs/procedures or counter resets; timing unknown"
+      ],
+      "smallest_required_evidence": "Provider endpoint-selection rule and step/counter/timing history",
+      "blocking_domains": [
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "resolver": "S02/S04",
+      "latest_safe_resolution": "Before primary matched comparisons",
+      "independent_work": [
+        "Retain all nine and both noise5 directories"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::temporal_endpoint",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::declared_iteration_and_schedule",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::temporal_endpoint",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::declared_iteration_and_schedule",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::temporal_endpoint",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::declared_iteration_and_schedule",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::temporal_endpoint",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::declared_iteration_and_schedule",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::temporal_endpoint",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::declared_iteration_and_schedule",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::temporal_endpoint",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::declared_iteration_and_schedule",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::temporal_endpoint",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::declared_iteration_and_schedule",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::temporal_endpoint",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::declared_iteration_and_schedule",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::temporal_endpoint",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::declared_iteration_and_schedule"
+      ]
+    },
+    {
+      "decision_id": "OBJECTIVE",
+      "affected_scope": "All nine",
+      "status": "APPARENT_LABEL_TENSION",
+      "current_evidence": "Folder maxent and dataset provider class GradDiff do not identify actual loss; local source module unavailable",
+      "alternative_interpretations": [
+        "MaxEnt training may share a provider class named GradDiff",
+        "Actual loss may differ from folder label; class name alone does not decide"
+      ],
+      "smallest_required_evidence": "Safe training launcher/loss definition/source revision, not raw examples",
+      "blocking_domains": [
+        "INTERPRETATION"
+      ],
+      "resolver": "S02",
+      "latest_safe_resolution": "Before objective-specific causal/attribution wording",
+      "independent_work": [
+        "Native candidate metadata/recovery planning continues"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::objective_label_tension",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::objective_label_tension",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::objective_label_tension",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::objective_label_tension",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::objective_label_tension",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::objective_label_tension",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::objective_label_tension",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::objective_label_tension",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::objective_label_tension"
+      ]
+    },
+    {
+      "decision_id": "METHOD",
+      "affected_scope": "Eight families",
+      "status": "UNKNOWN",
+      "current_evidence": "No scoring definition/tensor set/mask/tie/fraction denominator/noise or reinit law established",
+      "alternative_interpretations": [
+        "Observed metadata is incomplete; affected claims remain pending, not assumed false"
+      ],
+      "smallest_required_evidence": "One family-wide intervention specification plus exact per-run exceptions/mask IDs",
+      "blocking_domains": [
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "resolver": "S02/S04",
+      "latest_safe_resolution": "Before strength/method or saliency-selectivity claims",
+      "independent_work": [
+        "Standalone descriptive evaluation can later qualify"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::saliency_definition",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::mask_identity",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::fraction_denominator",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::noise_or_reinit_distribution",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::saliency_definition",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::mask_identity",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::fraction_denominator",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::noise_or_reinit_distribution",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::saliency_definition",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::mask_identity",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::fraction_denominator",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::noise_or_reinit_distribution",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::saliency_definition",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::mask_identity",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::fraction_denominator",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::noise_or_reinit_distribution",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::saliency_definition",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::mask_identity",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::fraction_denominator",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::noise_or_reinit_distribution",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::saliency_definition",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::mask_identity",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::fraction_denominator",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::noise_or_reinit_distribution",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::saliency_definition",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::mask_identity",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::fraction_denominator",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::noise_or_reinit_distribution",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::saliency_definition",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::mask_identity",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::fraction_denominator",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::noise_or_reinit_distribution",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::saliency_definition",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::mask_identity",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::fraction_denominator",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::noise_or_reinit_distribution"
+      ]
+    },
+    {
+      "decision_id": "REPLICATION",
+      "affected_scope": "All nine; possible noise5 snapshots",
+      "status": "UNKNOWN",
+      "current_evidence": "Same RNG1234 and identical config do not prove independent intervention runs or shared masks",
+      "alternative_interpretations": [
+        "Shared masks/noise/initialization or same-run snapshots",
+        "Distinct seed roles or runs not captured by config RNG/data seed"
+      ],
+      "smallest_required_evidence": "Run IDs, seed roles and shared/nested-mask/snapshot relationships",
+      "blocking_domains": [
+        "INTERPRETATION"
+      ],
+      "resolver": "S02/S04",
+      "latest_safe_resolution": "Before replication or uncertainty claims",
+      "independent_work": [
+        "Retain distinct discoveries without counting replicates"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::independent_intervention_seeds",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::independent_intervention_seeds",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::independent_intervention_seeds",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::independent_intervention_seeds",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::independent_intervention_seeds",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::independent_intervention_seeds",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::independent_intervention_seeds",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::independent_intervention_seeds",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::independent_intervention_seeds"
+      ]
+    },
+    {
+      "decision_id": "EXPOSURE",
+      "affected_scope": "All nine",
+      "status": "UNKNOWN",
+      "current_evidence": "Declared schedules/H3 inputs do not prove realized rows/tokens/source weights/overlap; no nominal multiplication",
+      "alternative_interpretations": [
+        "Intended schedule executed as declared",
+        "Resumption, skipped steps, packing/sampling or repeated presentations alter realized consumption"
+      ],
+      "smallest_required_evidence": "Safe consumption/overlap/selection records with source revisions",
+      "blocking_domains": [
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "resolver": "S02/S04",
+      "latest_safe_resolution": "Before causal matched-composition interpretation",
+      "independent_work": [
+        "Report total endpoint differences conditionally"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::realized_exposure",
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::evaluation_cohort_influence",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::realized_exposure",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::evaluation_cohort_influence",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::realized_exposure",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::evaluation_cohort_influence",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::realized_exposure",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::evaluation_cohort_influence",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::realized_exposure",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::evaluation_cohort_influence",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::realized_exposure",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::evaluation_cohort_influence",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::realized_exposure",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::evaluation_cohort_influence",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::realized_exposure",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::evaluation_cohort_influence",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::realized_exposure",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::evaluation_cohort_influence"
+      ]
+    },
+    {
+      "decision_id": "SHARDS",
+      "affected_scope": "All nine",
+      "status": "PENDING_S03",
+      "current_evidence": "One large shard and format sidecars observed; binary .metadata not opened",
+      "alternative_interpretations": [
+        "Observed metadata is incomplete; affected claims remain pending, not assumed false"
+      ],
+      "smallest_required_evidence": "Exact text membership/loader manifest or S03 safe native reconstruction and full integrity",
+      "blocking_domains": [
+        "LOADING"
+      ],
+      "resolver": "S03",
+      "latest_safe_resolution": "Before loadability acceptance",
+      "independent_work": [
+        "Candidate component access metadata already available"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw::model_provider_and_format",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq::model_provider_and_format",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER::model_provider_and_format",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9::model_provider_and_format",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo::model_provider_and_format",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC::model_provider_and_format",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE::model_provider_and_format",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx::model_provider_and_format",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz::model_provider_and_format"
+      ]
+    },
+    {
+      "decision_id": "GUARD",
+      "affected_scope": "All S03 entry and future affected stages",
+      "status": "KNOWN_AMBIGUITY",
+      "current_evidence": "Active package conflates backup route/write proof and resolves base-head/freeze inputs too late",
+      "alternative_interpretations": [
+        "Observed metadata is incomplete; affected claims remain pending, not assumed false"
+      ],
+      "smallest_required_evidence": "Review-only proposed amendment publication with updated checksums/new immutable pin; direct S03 approval at that pin",
+      "blocking_domains": [
+        "ADMINISTRATIVE"
+      ],
+      "resolver": "Authorized amendment before S03",
+      "latest_safe_resolution": "Backup guard before S03; base heads/audit freeze before S05 at S04 closure",
+      "independent_work": [
+        "Complete all safe S02 decisions now"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [],
+      "source_binding": {
+        "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+        "commit": "558592c1985ed180745599709595c543476644f7",
+        "path": "S_STAGE_MAP.json",
+        "sha256": "9f95636f8fd461c6350836484bcf0f9dfcea72698a33a723d2b49df6e4fafd60",
+        "fields": [
+          "unresolved_inputs",
+          "stages.S03.required_inputs",
+          "stages.S05.required_inputs"
+        ]
+      }
+    },
+    {
+      "decision_id": "COMPLETENESS",
+      "affected_scope": "Whole delivery beyond observed subset",
+      "status": "PARTIAL_OBSERVATION",
+      "current_evidence": "Connector does not expose explicit pagination exhaustion or provider revisions/checksums",
+      "alternative_interpretations": [
+        "Observed metadata is incomplete; affected claims remain pending, not assumed false"
+      ],
+      "smallest_required_evidence": "Authoritative delivery manifest or narrowly scoped provider raw pagination evidence",
+      "blocking_domains": [
+        "INTERPRETATION"
+      ],
+      "resolver": "S02/provider",
+      "latest_safe_resolution": "Before whole-delivery completeness claim",
+      "independent_work": [
+        "Nine observed IDs remain usable subset; no broad rescan"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [],
+      "source_binding": {
+        "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+        "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/LISTING_COVERAGE.json",
+        "sha256": "fbbf91a44ffce702c8ac1d6b0c1f0011dba6e9707144fa00a6c1574185b10218"
+      }
+    },
+    {
+      "decision_id": "FORGET",
+      "affected_scope": "Relevant future joins",
+      "status": "PENDING_EXTERNAL",
+      "current_evidence": "No collaborator aggregate input/identity join; no raw forget access",
+      "alternative_interpretations": [
+        "Observed metadata is incomplete; affected claims remain pending, not assumed false"
+      ],
+      "smallest_required_evidence": "Exact checkpoint/parent/step/cohort/protocol aggregate result references",
+      "blocking_domains": [
+        "INTERPRETATION"
+      ],
+      "resolver": "S10",
+      "latest_safe_resolution": "Before combined retain/forget interpretation",
+      "independent_work": [
+        "Retain-only reporting may proceed with explicit pending ledger"
+      ],
+      "evidence_refs": [
+        "S01 committed inventory/source links",
+        "S02 LINEAGE_EVIDENCE.json claim IDs and exact private source hashes"
+      ],
+      "source_outcome_exposure": false,
+      "claim_ids": [],
+      "source_binding": {
+        "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+        "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+        "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/UNRESOLVED_INPUTS.json",
+        "sha256": "b5cd9cc50eeff8a002fe5910d629ad06b0fe87c874f686f22e8b377b36bed086"
+      }
+    }
+  ],
+  "all_nine_adjudicated": true,
+  "remaining_accessible_work": [],
+  "wait_for_collaborator": false
+}

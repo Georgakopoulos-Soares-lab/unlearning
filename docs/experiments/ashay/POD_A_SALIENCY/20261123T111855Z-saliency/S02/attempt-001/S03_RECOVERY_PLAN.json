@@ -1,0 +1,1205 @@
+{
+  "schema_version": "s02-recovery-plan-v1",
+  "execution_authorized": false,
+  "active_package_guard_valid_for_S03": false,
+  "administrative_blocker": "Publish reviewed backup-route/future-gate amendment under separate authorization, regenerate/check hashes and bind a real new immutable package commit; then direct scoped S03 approval",
+  "selected_discovery_ids": [
+    "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+    "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+    "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+    "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+    "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+    "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+    "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+    "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+    "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+  ],
+  "primary_comparison_endpoint_designation": "PENDING_EVIDENCE; distinct from conditional recovery selection",
+  "candidate_dependencies": [
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "checkpoint_folder_id": "11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "1oVN1TSU16NS0KWHpF-qLmtjtiXgMtLHo",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24852,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1IRiobVobwmRoKMpcEB6z9nmOlUJUTvVT",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1vu6A_Snb4x_kLEZqAylTyHLkyXMXxvSi",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1XnC0R7878FreDHU-8sEqMA0nSByPzHxl",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1y8GBdwCkrFpovwQTDhNogVEBhtvLZ3Ny",
+          "name": ".metadata",
+          "reported_size_bytes": 188709,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "198OmUIE9zrW4riiTq37R_6QaRcvAKSh4",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1FvM9H0FgVNS6ZcIwFBhaBrVj_4uAAnwM",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "checkpoint_folder_id": "1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "1rfdUB593afx9LVdl6k6q_gM-VeUp04lz",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24852,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "13btXQGKarLN3tI8m-bQhfLPsvou5zIJr",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1I9-1Qo08nsesFWvniFfFctFfCwCHsJjr",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1SRnUiZ7K9dZD5cgmZ6ZderD5zH4Ltyry",
+          "name": ".metadata",
+          "reported_size_bytes": 188709,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1SWxWOfGSENKa8oDyo0xV86KYXmJyTBt1",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1niH1U9RCsIJQzxdn7YgrMx2iKn9edbGd",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "checkpoint_folder_id": "1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "1BQcnnN0Yn3tcsHRhNu4jFi9Suro9poAG",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24852,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "15D51BxYJERe5ZFC9smNUyAOrIpG02V6I",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1ZdbskCGlb3NNuSUHqCns3wbmUXPQXfYM",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1QeU7KmeT8ZlGr4-HT3_i9mhuMr6uyVAm",
+          "name": ".metadata",
+          "reported_size_bytes": 188709,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1viAmDV0Wz9RzAuH5BROsId7vevTv0vFZ",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "112VwU_9WiWkWSZIwc_C6_vBCOHJfu2_U",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "checkpoint_folder_id": "1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "1Frs1regFKVx5Z36FamXaiMc0L_DkOpaX",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24851,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "19B2G0bPxidW4qCaK2c8N5aNcZYiakXRJ",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1mXmHlILIqBT5fFsySTjnZ02ID4re6JL7",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1EOspCysbYyvkhy1FiO1t_oIrA0ylzlXy",
+          "name": ".metadata",
+          "reported_size_bytes": 188708,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "17a82cneDzI8Fo5U1LJQv1hMiFKjpmLWi",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1TA6jq4cSoGBxuXt8LVsAQ27EW0H-XTyI",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "checkpoint_folder_id": "1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "1BbafiS8j3YGOQneNJyL4E5Ci9WZTV88U",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24851,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1UICgt_sJt6xQjJd0F66UYlAr7JsjiGi5",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "15QEaZV5UY26n_aNk_gj5JcTfvHKpjK6C",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1j_Hx-mxH-YEusOaSrrsBS8ejDPI-cARW",
+          "name": ".metadata",
+          "reported_size_bytes": 188708,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1O2BZJmULuyvP8zAp0BlsBKHksHf_yPIX",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1xpp4F56nVCPs4bZfCrFSbqbx5jz89gjP",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "checkpoint_folder_id": "1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "13sSFz9f5Gz0wlPFpHcXquFB-ymyQc1tA",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24840,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1rLAQjDxomAPrdPgtP5V_5jMhJRizDVQ8",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1h9GR-0rW1042hmuM9JYUbW3c7sqjEAl8",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1FTz5R4qyAQ4LHkAY3aVUgd1KU6y350do",
+          "name": ".metadata",
+          "reported_size_bytes": 188706,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1WBCr5WCVD4rI5kPivIcCOBNdqR7kAlWV",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "13Qvuj67cV-od91o9wqJGXf-BpwUmnKvn",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "checkpoint_folder_id": "1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "15Fv5Q3k3kU3AwqIisFHbqmh636AtaEWq",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24840,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1nk3xoA2L8VTAXQ1ZM3c0C5XP-resO4hP",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "106TQFfpgVnj0zcdnu-m-_oUFrKpsPCT0",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1XE6r0TraLXdk6PCFfPj9aomVV2x7ZAM0",
+          "name": ".metadata",
+          "reported_size_bytes": 188706,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1V9tGri6QFc6KnQWS3d6_tw9GuqVKVwfU",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1dsOe6wVeRq7Wa6O4IU6IxG-dQdivlUfe",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "checkpoint_folder_id": "1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "1hHV7BGEGfa-3y8cWAySqhfGMSvmT4mG4",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24840,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1mLEoBD6KlK65H29YI8q8736POlZpYGl8",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "109eHLH77F__UnBq9UAdPsmSNwWUbztpo",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "18vWZwhiV2DZQLL81ZCqQNbqjUp4TvuE-",
+          "name": ".metadata",
+          "reported_size_bytes": 188706,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1OpsKuRdirCExlosW2E72_csug0Knq3CU",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1abd1uEt6qm19uwVnFWU-1oD5VC_AxpXw",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "checkpoint_folder_id": "1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "selection": "SELECTED_CONDITIONAL_CANDIDATE_ONLY",
+      "members": [
+        {
+          "object_id": "1tq8353RHV9KNa_0sVmvWEbJVspKXUJAC",
+          "name": "train_state.pt",
+          "reported_size_bytes": 3461,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+          "name": "run_config.yaml",
+          "reported_size_bytes": 24838,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "13MkPe8bVeryoNfiwQ9XOZPkPYdcqJKBl",
+          "name": "metadata.json",
+          "reported_size_bytes": 119,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1xUolayj8ZyY3hufEbHnwMCqWFH3qoYn4",
+          "name": "common.pt",
+          "reported_size_bytes": 1767,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+          "name": "__0_0.distcp",
+          "reported_size_bytes": 15516878934,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "19SYTAUt8h4p907sdbpTT2FWZwHuc1KmM",
+          "name": ".metadata",
+          "reported_size_bytes": 188705,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": null,
+          "acquisition_role": "PAYLOAD_OR_BINARY_FORMAT_DEPENDENCY_PENDING_S03_ALLOWLIST",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1EtCzw3Rm0zk_PZVk2L9z1-m13CZ993nj",
+          "name": "tokenizer_config.json",
+          "reported_size_bytes": 361,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        },
+        {
+          "object_id": "1WNEYw1UD8kRvFvmY97NcViMMVt9Btl5p",
+          "name": "tokenizer.json",
+          "reported_size_bytes": 10649,
+          "provider_revision": null,
+          "provider_revision_reason": "Not exposed by S01 route; re-establish during S03",
+          "provider_checksum": null,
+          "local_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+          "acquisition_role": "REUSE_SEALED_S01_SIDECAR",
+          "downloaded_in_S02": false
+        }
+      ],
+      "immediate_parent_dependency": null,
+      "parent_dependency_reason": "Exact immediate parent unresolved; do not invent a fetch path",
+      "native_loader_readiness": "Pending full shard integrity, source/runtime recipe, exact exceptions and training-only smoke qualification",
+      "shared_dependencies": [
+        "Original pretrained-base payload and exact compatible original-base scaler/head map",
+        "Historical cohorts/folds/draws/shared controls by exact identity",
+        "Pinned original Evo2 runtime recipe and native torch_dist conversion/loader dependencies"
+      ],
+      "allowed_next_scope_after_new_approval": "Candidate-only acquisition/qualification if independently reconstructable; parent-relative contrasts stay pending"
+    }
+  ],
+  "shared_historical_reference_index": "HISTORICAL_REUSE_REFERENCES.json",
+  "original_base_head_policy": "S03 recover/qualify exact original pretrained-base scaler/head identities; S04 bind scoped reuse; S05 requires them; S07 never replaces/retrains them",
+  "backup_route_status": "BACKUP_ROUTE_IDENTIFIED",
+  "PRIVATE_WRITE_READBACK_VERIFIED": false,
+  "batches": [
+    {
+      "id": "B0_ADMIN",
+      "scope": "New package pin/guard and direct S03 approval; reconcile resume/process/lock identities",
+      "acquire_now": false,
+      "blocker": "Current amendment unpublished; S03 unapproved"
+    },
+    {
+      "id": "B1_PRIVATE_ROUTE_TEST",
+      "scope": "S03 unique-prefix small private upload/fresh download/exact hash/privacy check",
+      "acquire_now": false,
+      "blocker": "No S02 upload authority; must pass before substantial computation"
+    },
+    {
+      "id": "B2_SHARED_MINIMUM",
+      "scope": "Recover minimum exact baseline/scaler/head/cohort/fold/draw/control/runtime dependencies from immutable catalogs, not all archives",
+      "acquire_now": false,
+      "blocker": "S03 member selection, safe restore/integrity and runtime qualification required"
+    },
+    {
+      "id": "B3_PILOT_CANDIDATE",
+      "scope": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "rule": "Lexicographic S01 family/endpoint order, no scores; priority for recovery mechanics only, not scientific selection",
+      "acquire_now": false,
+      "blocker": "Known IDs allow conditional plan; immutable source identity/shard membership/native conversion still must be verified"
+    },
+    {
+      "id": "B4_REMAINING_CANDIDATES",
+      "scope": [
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ],
+      "rule": "All retained; finite metadata-ordered batches with measured S03 RAM/disk limits; deduplicate only after exact identity proof",
+      "acquire_now": false,
+      "blocker": "Pilot and shared-route/runtime qualification; no automatic production queue"
+    },
+    {
+      "id": "B5_IMMEDIATE_PARENTS",
+      "scope": "Only exact parents later evidenced for affected comparisons",
+      "acquire_now": false,
+      "blocker": "No exact parent IDs; candidate-only work need not wait globally"
+    }
+  ],
+  "conditional_arithmetic": {
+    "assumptions": "All nine discoveries are distinct, admitted and compatible; no extra reference work/audit/retries; not an approved production queue",
+    "refitted_heads": 4212,
+    "fixed_base_applications": 4212,
+    "H3_each_policy": 702,
+    "remaining_five_each_policy": 3510,
+    "initial_CV_plus_final_solver_calls": 63180,
+    "LM_dev_units": 54,
+    "LM_hooks_or_seeds_multiplier": false,
+    "shared_control_heads": 36,
+    "observed_large_shard_bytes_sum_without_dedup": 139651910406,
+    "uncompressed_feature_matrix_bytes_per_candidate_if_float32_all_rows_all_hooks": 4222832640,
+    "nine_candidate_feature_matrix_bytes_if_same_assumptions": 38005493760,
+    "storage_exclusions": "Does not include raw payload auxiliary/parents, temporary conversion, checkpoints, heads/predictions/draws/archives, array-container overhead or runtime. Actual dtype/coverage and unique tensors qualified later."
+  },
+  "time_policy": "No deadline/cutoff/reserve/GPU cap inferred; provider quota/rate/rental start/cost unknown",
+  "protection": "S01 sidecars/S02 metadata local hash verified; public sanitized Git delivery is not private source recovery",
+  "private_locator_map": {
+    "control_relative_path": "S02/attempt-001/RECOVERY_LOCATOR_MAP.json",
+    "sha256": "b437d8ff9ec85207e630dd624b07ae4c2be2c6d76897f7081847943a56e49c50",
+    "meaning": "Exact historical private archive repository/revision/path identities; not a download-all queue"
+  },
+  "model_implementation_dependency": {
+    "declared_provider": "bionemo.evo2.models.evo2_provider.Hyena1bModelProvider",
+    "artifact_format": "torch_dist",
+    "required_qualification": "Source-bound native conversion/loading into pinned original Evo2-1B runtime and training-only same-model smoke; architecture declaration is insufficient",
+    "dataset_provider_source": "dual_dataset_provider.GradDiffDualDatasetProvider named in config but local exact module lookup unavailable; actual loss implementation unknown"
+  },
+  "first_payload_identity_metadata_requests": [
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "1XnC0R7878FreDHU-8sEqMA0nSByPzHxl",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "operation": "google_drive_get_file_metadata",
+      "arguments": {
+        "fileId": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+        "fields": "id,name,mimeType,size,version,headRevisionId,modifiedTime,md5Checksum,sha256Checksum,capabilities(canDownload)",
+        "supportsAllDrives": true
+      },
+      "expected_size_from_S01": 15516878934,
+      "run_now": false,
+      "prerequisites": [
+        "Actual amended package publication/readback/migration",
+        "Direct scoped S03 approval",
+        "Resume/writer/route reconciliation"
+      ],
+      "failure_rule": "If denied/changed, preserve observation and stop only affected acquisition; no blind retries/whole-Drive search"
+    }
+  ],
+  "transport_gate_for_future_payload_acquisition": {
+    "provider_route": "Recorded connected Google Drive authenticated route; metadata access observed, full payload transfer not tested",
+    "required_behavior": "Use stage-appropriate streaming/progress/free-space guards and exact declared-size identity checks. Never inline large base64, print/store signed URLs or deserialize checkpoint files before safe loader qualification. Route limitations must be reported, not bypassed.",
+    "S02_payload_download_authorized": false,
+    "source_revision_if_not_exposed": null,
+    "null_reason": "Provider route did not expose immutable file revision; S03 must pin achieved full content identity and observation context before admitting reuse"
+  },
+  "controller_migration_after_future_publication": {
+    "active_S02_package_commit": "558592c1985ed180745599709595c543476644f7",
+    "future_published_commit": null,
+    "required_action": "After separately authorized amendment publication/readback, migrate current controller to actual new package/schema with a source-bound migration receipt; preserve S00/S01/S02 original approvals/receipts and pins; record direct S03 scope at the new actual commit",
+    "execute_current_old_guard_for_S03": false
+  }
+}

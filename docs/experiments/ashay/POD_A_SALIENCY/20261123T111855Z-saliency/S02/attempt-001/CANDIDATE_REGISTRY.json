@@ -1,0 +1,469 @@
+{
+  "schema_version": "s02-registry-v1",
+  "canonical_schema": "S_RESULT_SCHEMAS.json $defs.candidate at approved package",
+  "discovery_scope": [
+    "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+    "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+    "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+    "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+    "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+    "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+    "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+    "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+    "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "payload_sha256": null,
+      "parent_id": null,
+      "config_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "temporal_endpoint": "UNKNOWN",
+      "fraction_selected": null,
+      "noise_scale": null,
+      "seed_identities": {
+        "training_rng_declared": 1234,
+        "data_rng_declared": 1234,
+        "saliency_seed": null,
+        "mask_seed": null,
+        "noise_seed": null,
+        "initialization_seed": null,
+        "independent_intervention_run": null,
+        "CV_protocol_seeds": [
+          42,
+          17,
+          1234
+        ],
+        "CV_seeds_are_intervention_replicates": false
+      },
+      "eligibility": "PENDING",
+      "blocking_domains": [
+        "LOADING",
+        "PAIRING",
+        "INTERPRETATION"
+      ],
+      "unresolved_reason": "Candidate-only recovery conditionally selected; exact payload/parent, timing, intervention specification and S03/S04 qualification remain unresolved",
+      "evidence": [
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/DELIVERY_INVENTORY.json",
+          "sha256": "29aa715a40f7a81ab1fc70e12e49e00f0a86d3bcd8f2585f399136c4bc0bc5f7",
+          "status": "DECLARED",
+          "interpretation_limit": "Only this discovery ID/config/tokenizer metadata, not unique model or immediate-parent proof"
+        },
+        {
+          "repository": "https://github.com/Georgakopoulos-Soares-lab/unlearning.git",
+          "commit": "3e3803a4326723b2fe711b4c33e1f3addfe81595",
+          "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/SOURCE_LINK_MAP.json",
+          "sha256": "3ec5b92e809887d58247bf6b8616ca1897bcb261221628dd7052bbac726b8dae",
+          "status": "DECLARED",
+          "interpretation_limit": "Connects committed sanitized fields to exact private source bytes; hash does not prove declaration truth"
+        }
+      ]
+    }
+  ],
+  "model_uniqueness_verified": false,
+  "scientific_ready_candidates": 0
+}

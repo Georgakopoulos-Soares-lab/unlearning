@@ -1,0 +1,18 @@
+# Prospective analysis design — no results produced
+
+| Question | Later evidence and display | Eligibility and non-claim |
+| --- | --- | --- |
+| Parent-relative benign effects | S03-qualified exact immediate parent; S04-frozen task/hook/policy paired effects | Unknown parent blocks these contrasts, not all standalone recovery. Total delivered endpoint difference is not isolated perturbation causation. |
+| Layer localization/profile | All decoder.layers.0–24 plus final_norm; emphasize zero-based16, the17th block | Probe profiles do not uniquely identify a causal mechanism; anchors do not discard other layers/adverse/null outcomes. |
+| Original readout versus refit | Original-base scaler/head unchanged on target AND reference; independent refits with TRAIN-only fold-local selection | Disagreement proves neither erasure nor a specific representation transformation. A policy-gap inferential family needs S04 prospective freeze. |
+| Strength sensitivity | Within-method curves only when actual parent, timing, fraction units/masks and exposures support them | Noise5 endpoints2000/2151 are explicit unmatched markers against1500, never an invented1500 checkpoint or isolated strength effect. |
+| Noise versus reinit | Explicitly matched nominal fraction or predeclared magnitude criterion plus matched endpoints | Equal percent labels do not equal noise/reinit damage or establish saliency specificity; missing random/magnitude controls constrain attribution. |
+| Simple DNA controls | Reuse exact matched composition/normalized forward4-mer predictions |36 shared control heads are not refit per layer/candidate; formal paired control contrasts at qualified anchors. |
+| LM/classifier agreement | Actual autoregressive output-head loss sums/valid-target counts, corpus NLL/PPL next to five classifier metrics | No hidden-layer PPL, mean per-sequence PPL, across-task loss average or duplicate layer/CV-seed LM units. |
+| Retain/forget trade-off | S10 exact candidate/parent/step/cohort/protocol collaborator aggregates | No raw forget data/model execution or invented joint uncertainty/success-of-unlearning claim; pending inputs permit retain-only reporting. |
+
+Preserve six tasks emp_H3, gue_tf_0, gue_prom_core_all, gue_prom_300_all, gue_splice_reconstructed, gue_mouse_0. Historical26 hooks/width1920 and CV seeds42/17/1234 are qualification targets, not a new-model runtime proof. CV seeds are protocol sensitivity records, not independent interventions. Primary dev cohorts and exact ordered identities/groups/classes/folds remain mandatory; no untouched tests, and previously examined H3 test excluded by default until exact authority and prospective S04 inclusion.
+
+S04 freezes actual candidate/task/representation/split/seed/policy/metric keys, parent and comparison families, original-base references, H3/full fresh-refit audit panel, technical failures and resampling/multiplicity policy before producer outcomes. Use inherited2000 paired group draws where compatible, exact rows/groups/common valid masks and within-draw differences. Pointwise exploratory95% CIs are conditional on fitted heads, unadjusted over the grid and exclude intervention-training variability. Do not subtract CI endpoints, claim equivalence from zero crossing, pool CV seeds as biological samples or invent collaborator intervals. Any confirmatory procedure/margin requires prospective justification. Numerical reconstruction tolerances are not scientific uncertainty.
+
+All62 policy-specific rows in CONTRAST_ELIGIBILITY.json are a finite design inventory (31 relations×2), not approved scientific units. S04 must admit and seal actual eligible comparisons; missing parents/matching remain visible. No outcomes, estimates, novelty or favorable-score selection in S02.

@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "package_sha256": "3b089d6b7d7ab16812272a500519db269050c855f0a0f29e3333752d9a62a5e9",
+  "content_files": 21,
+  "hashed_files": 22,
+  "synthetic_tests": [
+    {
+      "case": "corrupted_byte",
+      "status": "REJECTED",
+      "reason": "checksum mismatch"
+    },
+    {
+      "case": "missing_file",
+      "status": "REJECTED",
+      "reason": "missing file S02_LINEAGE_COMPARABILITY.md"
+    },
+    {
+      "case": "duplicate_path",
+      "status": "REJECTED",
+      "reason": "duplicate manifest path"
+    },
+    {
+      "case": "unsafe_path",
+      "status": "REJECTED",
+      "reason": "unsafe path ../escape"
+    },
+    {
+      "case": "wrong_research_branch",
+      "status": "REJECTED",
+      "reason": "wrong research branch"
+    },
+    {
+      "case": "dependency_cycle",
+      "status": "REJECTED",
+      "reason": "dependency cycle at S00"
+    },
+    {
+      "case": "unresolved_phase_input",
+      "status": "REJECTED",
+      "reason": "unresolved amended prerequisite drive_listing_route"
+    },
+    {
+      "case": "resolved_phase_input",
+      "status": "PASS"
+    },
+    {
+      "case": "unapproved_phase",
+      "status": "REJECTED",
+      "reason": "phase unapproved"
+    }
+  ],
+  "published": false,
+  "scope": "Isolated review copy only; active approved package unchanged"
+}

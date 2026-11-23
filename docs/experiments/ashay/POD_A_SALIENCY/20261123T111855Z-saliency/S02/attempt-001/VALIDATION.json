@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "exact_discovery_ids": 9,
+  "canonical_candidate_records": 9,
+  "typed_claim_records": 126,
+  "eligibility_dimensions_per_candidate": 11,
+  "eligibility_rows": 99,
+  "planned_policy_relation_rows": 62,
+  "both_noise5_endpoints_retained": true,
+  "conditional_recovery_not_primary_selection": true,
+  "no_payload_parent_fraction_or_replication_fabrication": true,
+  "new_source_payload_bytes": 0,
+  "new_model_payloads_or_scientific_units": 0,
+  "S01_whole_delivery_status": "PARTIAL_PRESERVED",
+  "S02_status": "LIMITED_SCOPE_COMPLETE",
+  "S03_guard_ready": false,
+  "active_package_unchanged": true,
+  "public_privacy_and_null_semantics": "PASS",
+  "synthetic_decision_checks": [
+    {
+      "case": "unknown_parent_allows_conditional_standalone",
+      "status": "PASS"
+    },
+    {
+      "case": "unknown_parent_blocks_parent_relative",
+      "status": "REJECTED"
+    },
+    {
+      "case": "unmatched_endpoint_cannot_be_strength_effect",
+      "status": "REJECTED"
+    },
+    {
+      "case": "CV_seeds_or_snapshots_cannot_be_independent_interventions",
+      "status": "REJECTED"
+    },
+    {
+      "case": "contradictory_claims_retained_unresolved",
+      "status": "PASS"
+    },
+    {
+      "case": "contradiction_cannot_silently_choose_source",
+      "status": "REJECTED"
+    },
+    {
+      "case": "completed_receipt_replay_is_idempotent",
+      "status": "PASS"
+    },
+    {
+      "case": "changed_seal_cannot_overwrite_completed_unit",
+      "status": "REJECTED"
+    }
+  ],
+  "proposed_amendment_checks": "PASS_REVIEW_ONLY: exact isolated patch application and receipt-bound guard tests",
+  "metadata_operation_timeouts": 0,
+  "whitespace_policy": "Plain Markdown/JSON/CSV/Python checked; unified diff patch context checked by exact git apply validation, not whitespace-stripped"
+}

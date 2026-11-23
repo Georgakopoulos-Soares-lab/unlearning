@@ -22,11 +22,22 @@
       "observed_utc": "2026-11-23T12:33:42.744847+00:00"
     },
     "S02": {
-      "approved": false,
+      "approved": true,
       "package_commit": "558592c1985ed180745599709595c543476644f7",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "source": "direct_chat",
+      "message": "APPROVE S02 at 558592c1985ed180745599709595c543476644f7",
+      "observed_utc": "2026-11-23T13:22:03.854781+00:00",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S03": {
       "approved": false,
@@ -127,22 +138,26 @@
       "eligibility_rule": "S02 may adjudicate only nine listed IDs after direct approval; no whole-delivery or science qualification"
     },
     "candidate_selection": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "S02 CHECKPOINT_SELECTION_FREEZE.json: all nine selected conditionally for candidate-only recovery before outcomes; primary parent-comparison endpoints remain pending"
+      ],
       "resolve_in": "S02",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S03 entry; pending blocks only affected scope"
+      "eligibility_rule": "Discovery/recovery selection only, not science admission or independent replication"
     },
     "payload_access": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "Exact nine component IDs/sizes and authenticated listing/small-sidecar route from verified S01, with S03 per-file metadata requests in S03_RECOVERY_PLAN.json"
+      ],
       "resolve_in": "S02",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S03 entry; pending blocks only affected scope"
+      "eligibility_rule": "Candidate-only route/location metadata, not payload download/load proof; S03 must recheck permission/revision/size and qualify exact bytes; unknown parent dependencies stay pending"
     },
     "private_backup_access": {
       "status": "PENDING",
       "evidence": [],
       "resolve_in": "S02",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S03 entry; pending blocks only affected scope"
+      "eligibility_rule": "Known ambiguous legacy entry key; do not pretend verified write or enter S03 before exact reviewed amendment is separately published and bound"
     },
     "qualified_subset": {
       "status": "PENDING",
@@ -241,6 +256,28 @@
       "evidence": [],
       "resolve_in": "S10",
       "eligibility_rule": "External pending disposition permits retain-only S11"
+    },
+    "backup_route_identified": {
+      "status": "RESOLVED",
+      "evidence": [
+        "S02 BACKUP_ROUTE_STATUS.json with exact private metadata receipt hash; private destination/authenticated metadata route observed"
+      ],
+      "resolve_in": "S02",
+      "eligibility_rule": "Route identity only; no verified write/recovery claim"
+    },
+    "private_write_readback_verified": {
+      "status": "PENDING",
+      "evidence": [],
+      "resolve_in": "S03",
+      "eligibility_rule": "Authorized unique-prefix private upload/fresh-download/hash/privacy receipt must pass before substantial computation"
+    },
+    "package_guard_amendment": {
+      "status": "PENDING",
+      "evidence": [
+        "S02 exact review-only PROPOSED_PACKAGE_AMENDMENT.patch and validation; active package untouched"
+      ],
+      "resolve_in": "S02",
+      "eligibility_rule": "Separate publication authorization, updated checksums, real immutable new pin/readback and explicit migration before S03 entry"
     }
   },
   "phase_receipts": {
@@ -254,6 +291,22 @@
       "status": "PARTIAL",
       "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/S01_RECEIPT.json",
       "sha256": "6f09821a0e8072ef4676b2c9bac34c67e1c1933a4864f03c6fb6804cfd094467",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    "S02": {
+      "status": "LIMITED_SCOPE_COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S02/attempt-001/S02_RECEIPT.json",
+      "sha256": "096f46fe2957284c696a700c8172aa2f4521626967a775ce5e7d77d0f9dd6b8a",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -280,8 +333,8 @@
       "inventory_scope": "Exactly nine observed candidate-directory IDs; delivery exhaustion unproven"
     },
     "S02": {
-      "status": "READY_FOR_APPROVAL_SCOPE_LIMITED",
-      "approved": false,
+      "status": "LIMITED_SCOPE_COMPLETE",
+      "approved": true,
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -292,11 +345,27 @@
         "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
         "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
         "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
-      ]
+      ],
+      "next_state": "WAITING_FOR_STEERING: S02",
+      "delivery": "Separate post-commit readback receipt"
     },
     "S03": {
-      "status": "NOT_STARTED",
-      "approved": false
+      "status": "NOT_READY_GUARD_AMENDMENT_REQUIRED",
+      "approved": false,
+      "conditional_candidate_recovery_scope": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ],
+      "administrative_blocker": "Separate exact amendment publication/readback, new real pin/schema migration and direct scoped S03 approval required",
+      "proposed_patch_sha256": "0a9054f33ca257156352ef9422dc1d6d2512eac369f7258299bca89a15aa61f6",
+      "future_package_commit": null
     },
     "S04": {
       "status": "NOT_STARTED",
@@ -342,7 +411,9 @@
     "candidate_count_scope": "Observed nine directories only, whole-delivery lower bound",
     "inventory_status": "PARTIAL",
     "sidecars": 44,
-    "sidecar_source_bytes": 323809
+    "sidecar_source_bytes": 323809,
+    "S02_metadata_status": "LIMITED_SCOPE_COMPLETE",
+    "S02_new_source_payload_bytes": 0
   },
   "backup_state": {
     "science_backup": "NOT_APPLICABLE_NO_NEW_SCIENCE",
@@ -352,21 +423,21 @@
   "external_dependencies": [
     {
       "key": "inventory_candidates",
-      "status": "PENDING",
+      "status": "RESOLVED_FOR_OBSERVED_NINE_ONLY",
       "resolve_in": "S01",
-      "evidence": "Only prior bounded supported listing; no complete inventory claimed",
+      "evidence": "S01/S02 exact scope, whole-delivery completeness still PARTIAL",
       "blocks": "Candidate discovery only, not S01 launch"
     },
     {
       "key": "lineage_and_exposure",
-      "status": "PENDING",
+      "status": "ADJUDICATED_WITH_SCOPED_UNKNOWNS",
       "resolve_in": "S02",
-      "evidence": null,
+      "evidence": "S02 LINEAGE_EVIDENCE.json and UNRESOLVED_DECISIONS.json; no parent/exposure invented",
       "blocks": "Affected candidate loading/pairing/interpretation, not a global blocker"
     },
     {
       "key": "runtime_payloads",
-      "status": "PENDING",
+      "status": "PENDING_S03_NOT_AUTHORIZED",
       "resolve_in": "S03",
       "evidence": "Historical runtime/payload/GUE ZIP/authentic ledger not locally restored per setup",
       "blocks": "Substantial computation until recovery/runtime/private-readback qualification"
@@ -384,6 +455,13 @@
       "resolve_in": "S10",
       "evidence": null,
       "blocks": "Combined retain/forget interpretation; retain-only S11 allowed after pending disposition"
+    },
+    {
+      "key": "package_guard_amendment",
+      "status": "REVIEW_ONLY_UNPUBLISHED",
+      "resolve_in": "S02",
+      "evidence": "Exact proposed patch SHA256 0a9054f33ca257156352ef9422dc1d6d2512eac369f7258299bca89a15aa61f6",
+      "blocks": "S03 entry until separate authorized publication/new immutable pin/migration and direct S03 approval"
     }
   ],
   "owned_processes": []

@@ -1,0 +1,11 @@
+# Unsent questions for Sayyed — S02 refined
+
+Draft only; nothing sent. Exact nine Drive folder IDs are in CANDIDATE_REGISTRY.json / ENDPOINT_AND_REPLICATION.csv, with original aliases in the verified S01 inventory.
+
+1. For each observed folder/step, provide the exact original training initialization and immediate unperturbed perturbation parent (native/config/tokenizer IDs/revisions/hashes). Is any genuinely R4/R5? The config basename evo2_1b_base_mbridge and self-family load path do not establish this.
+2. For noise5 iter2000 and2151, are they saves from one run or different procedures; what do the counters mean/reset, when/how often was perturbation applied, and which endpoints were intended for evaluation? Both share identical config bytes and latest points2151, but we retained both. If a matched1500 endpoint was intended, provide its exact reference; no broader search is being run. Explain any later training/relearning so Pod B scope stays separate.
+3. Supply one safe family-wide saliency/intervention specification with per-run exceptions: objective/source revision, ranking/normalization/tensor eligibility/ties, mask IDs and nested/shared relationships, percent denominator, noise scale/distribution or reinit law, seed roles/run IDs and unperturbed/random/magnitude controls. Equal folder percentages do not specify equal damage.
+4. Provide safe objective/launcher/version and realized consumption/overlap/selection metadata. Configs name GradDiffDualDatasetProvider but maxent folders; the provider class does not determine the loss. Declared H3/RNG1234/LR3e-5/cosine schedules are already recorded; do not resend them without actual execution/source evidence. No nominal batch×step token estimate is being claimed.
+5. Provide an authoritative delivery/text shard-membership manifest if available; connector exhaustion/revisions remain unexposed. Later collaborator aggregate forget inputs need exact checkpoint/parent/step/cohort/protocol joins only. No raw forget examples, event binaries, model scores or datasets are requested.
+
+Prior S01 questions remain traceable; source format/provider/config equality and route identity are now resolved as metadata facts, while exact parent/timing/mask/replication/exposure remain pending. These scoped questions do not undo the completed nine-ID adjudication.

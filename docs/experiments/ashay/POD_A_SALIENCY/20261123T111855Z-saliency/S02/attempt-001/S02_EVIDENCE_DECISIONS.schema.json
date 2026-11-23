@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pod-a-saliency:s02-decisions:v1",
+  "$defs": {
+    "source_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": [
+            "S01_COMMITTED_RECORD_WITH_PRIVATE_SOURCE_LINK",
+            "EXACT_LOCAL_SIDECAR",
+            "EXACT_LOCAL_CONFIG"
+          ]
+        },
+        "git_commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "git_path": {
+          "type": "string"
+        },
+        "git_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_object_id": {
+          "type": "string"
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "field": {
+          "type": "string",
+          "minLength": 1
+        },
+        "line": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        },
+        "source_status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "kind",
+        "source_object_id",
+        "source_sha256",
+        "field",
+        "line"
+      ]
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claim_id": {
+          "type": "string"
+        },
+        "candidate_id": {
+          "type": "string"
+        },
+        "field": {
+          "type": "string"
+        },
+        "value": {},
+        "status": {
+          "enum": [
+            "OBSERVED",
+            "DECLARED",
+            "INTENDED",
+            "INFERRED",
+            "CONFLICTING",
+            "UNKNOWN"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "enum": [
+                  "S01_COMMITTED_RECORD_WITH_PRIVATE_SOURCE_LINK",
+                  "EXACT_LOCAL_SIDECAR",
+                  "EXACT_LOCAL_CONFIG"
+                ]
+              },
+              "git_commit": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{40}$"
+              },
+              "git_path": {
+                "type": "string"
+              },
+              "git_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "source_object_id": {
+                "type": "string"
+              },
+              "source_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "field": {
+                "type": "string",
+                "minLength": 1
+              },
+              "line": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "source_status": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "kind",
+              "source_object_id",
+              "source_sha256",
+              "field",
+              "line"
+            ]
+          }
+        },
+        "blocking_domain": {
+          "enum": [
+            "LOADING",
+            "MEASUREMENT",
+            "PAIRING",
+            "INTERPRETATION",
+            "ADMINISTRATIVE"
+          ]
+        },
+        "resolution_phase": {
+          "enum": [
+            "S02",
+            "S03",
+            "S04",
+            "S10"
+          ]
+        },
+        "outcome_exposure": {
+          "const": false
+        }
+      },
+      "required": [
+        "claim_id",
+        "candidate_id",
+        "field",
+        "value",
+        "status",
+        "reason",
+        "evidence_refs",
+        "blocking_domain",
+        "resolution_phase",
+        "outcome_exposure"
+      ]
+    },
+    "eligibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "candidate_id": {
+          "type": "string"
+        },
+        "dimension": {
+          "type": "string"
+        },
+        "decision": {
+          "enum": [
+            "SUPPORTED_AT_METADATA_LEVEL",
+            "PENDING_EVIDENCE",
+            "CONDITIONALLY_PLANNED",
+            "EXCLUDED"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "evidence_claim_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "blocking_domain": {
+          "enum": [
+            "LOADING",
+            "MEASUREMENT",
+            "PAIRING",
+            "INTERPRETATION"
+          ]
+        },
+        "resolution_phase": {
+          "type": "string"
+        },
+        "deadline": {
+          "type": "string"
+        },
+        "independent_work_possible": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "candidate_id",
+        "dimension",
+        "decision",
+        "reason",
+        "evidence_claim_ids",
+        "blocking_domain",
+        "resolution_phase",
+        "deadline",
+        "independent_work_possible"
+      ]
+    },
+    "contrast": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "contrast_id": {
+          "type": "string"
+        },
+        "target_candidate_id": {
+          "type": "string"
+        },
+        "reference_candidate_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "reference_role": {
+          "enum": [
+            "IMMEDIATE_UNPERTURBED_PARENT",
+            "ORIGINAL_PRETRAINED_BASE_REFERENCE",
+            "WITHIN_METHOD_NOMINAL_STRENGTH",
+            "UNMATCHED_STRENGTH_ENDPOINT_MARKER",
+            "CROSS_METHOD_EQUAL_NOMINAL_LABEL",
+            "CROSS_METHOD_UNMATCHED_ENDPOINT_MARKER",
+            "POSSIBLE_REPEATED_SNAPSHOT_ENDPOINTS"
+          ]
+        },
+        "policy": {
+          "enum": [
+            "independent_refit",
+            "fixed_original_base"
+          ]
+        },
+        "decision": {
+          "enum": [
+            "PENDING_EVIDENCE",
+            "CONDITIONALLY_PLANNED"
+          ]
+        },
+        "intended_question": {
+          "type": "string"
+        },
+        "matching_fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "known_differences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "unresolved_prerequisites": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "permitted_interpretation": {
+          "type": "string"
+        },
+        "produced_estimate": {
+          "type": "null"
+        },
+        "scientific_execution_authorized": {
+          "const": false
+        }
+      },
+      "required": [
+        "contrast_id",
+        "target_candidate_id",
+        "reference_candidate_id",
+        "reference_role",
+        "policy",
+        "decision",
+        "intended_question",
+        "matching_fields",
+        "known_differences",
+        "unresolved_prerequisites",
+        "permitted_interpretation",
+        "produced_estimate",
+        "scientific_execution_authorized"
+      ]
+    }
+  }
+}
