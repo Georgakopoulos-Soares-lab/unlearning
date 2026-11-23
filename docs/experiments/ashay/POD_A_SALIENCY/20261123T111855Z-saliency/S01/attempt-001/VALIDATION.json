@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "remote_records_validated": 148,
+  "folders_pages_validated": 43,
+  "candidate_joins_validated": 9,
+  "exact_sidecars_rehashed": 44,
+  "source_declaration_rows_recomputed": 189,
+  "observed_grid_rows": 9,
+  "sidecar_source_bytes": 323809,
+  "conservative_transfer_bytes": 647618,
+  "coverage_status": "PARTIAL",
+  "S02_eligible_observed_subset": 9,
+  "science_units": 0,
+  "privacy_check": "PASS_FOR_PUBLIC_OUTPUTS",
+  "unknowns_and_provider_digests_preserved": true,
+  "helper_checks": {
+    "status": "PASS",
+    "tests": [
+      "empty page continuation retained",
+      "distinct empty continuation pages do not prematurely stop",
+      "explicit terminal page supported",
+      "same object ID aliases deduplicated",
+      "shortcut cycle does not requeue visited root",
+      "partial access error preserved without blocking independent objects",
+      "missing exhaustion field remains partial",
+      "sealed receipt replay is idempotent"
+    ],
+    "only_synthetic_files": true,
+    "observed_utc": "2026-11-23T12:45:23.894087+00:00"
+  },
+  "metadata_operation_timeouts": 0,
+  "new_scientific_work": false
+}

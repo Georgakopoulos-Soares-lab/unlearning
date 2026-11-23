@@ -1,0 +1,18 @@
+{
+  "schema_version": "s01-schema-binding-v1",
+  "canonical_package_commit": "558592c1985ed180745599709595c543476644f7",
+  "remote_evidence_schema": "S01_REMOTE_EVIDENCE.schema.json",
+  "remote_evidence_schema_sha256": "0c3398638ac833a59f930a3dadff247ffa228930c7f75b36b2863bb03ecf913a",
+  "bindings": {
+    "REMOTE_OBJECTS.jsonl": "s01-remote-evidence-v1 JSON Schema, one record per observed unique object",
+    "DELIVERY_INVENTORY.json": "s01-delivery-inventory-v1 envelope, candidate declarations and nulls; validate cross-file joins",
+    "LISTING_COVERAGE.json": "s01-listing-coverage-v1 envelope with observed scope/partial page semantics",
+    "ALIAS_MAP.json": "s01-alias-v1",
+    "SMALL_SIDECAR_INDEX.json": "s01-sidecar-index-v1",
+    "UNRESOLVED_INPUTS.json": "s01-unresolved-v1",
+    "SOURCE_LINK_MAP.json": "s01-source-link-v1",
+    "S01_RECEIPT.json": "Unmodified canonical S_RESULT_SCHEMAS.json $defs.phase_receipt at approved package commit"
+  },
+  "not_used_for_remote_evidence": "Canonical Git-evidence schema requires Git commit/repository; never fabricated for Drive observations",
+  "public_private": "Original sidecar and provider response bytes private; public selected declarations carry exact private source hashes/field/line refs; metadata hashes are not weight hashes"
+}

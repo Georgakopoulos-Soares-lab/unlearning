@@ -1,0 +1,95 @@
+{
+  "schema_version": "s01-unresolved-v1",
+  "issues": [
+    {
+      "issue_id": "S01-COVERAGE",
+      "affected_scope": "All observed folders",
+      "inspected_and_unknown": "Connector hides explicit exhaustion/revisions; rclone unconfigured",
+      "smallest_clarification": "Provider-delivered manifest or an authenticated route exposing raw pagination/terminal metadata",
+      "consequence": "PARTIAL listing; can adjudicate observed nine, cannot claim exhaustive delivery",
+      "resolution_owner_phase": "S01/S02",
+      "domain": "access/completeness",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    },
+    {
+      "issue_id": "S02-PARENT",
+      "affected_scope": "All nine candidates",
+      "inspected_and_unknown": "Config pretrained path declares base-model family and load path names same sweep; exact immediate perturbation parent unavailable",
+      "smallest_clarification": "For each exact folder/step, provide original training parent and immediate unperturbed parent with native/config/tokenizer identities/revisions; confirm whether any is R4 or R5",
+      "consequence": "Blocks parent-relative pairing and possibly reconstruction, not metadata adjudication",
+      "resolution_owner_phase": "S02",
+      "domain": "parent_pairing/loading",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    },
+    {
+      "issue_id": "S02-ENDPOINT",
+      "affected_scope": "All nine; especially noise5 step2000/2151",
+      "inspected_and_unknown": "Directory/pointer/config steps differ by family; no intervention timing/history provided",
+      "smallest_clarification": "Which steps are intended evaluation endpoints, when was perturbation applied, and what training occurred before/after? Preserve both noise5 steps; do not infer latest is intended",
+      "consequence": "Limits temporal comparison and checkpoint selection; no blanket exclusion",
+      "resolution_owner_phase": "S02",
+      "domain": "selection/interpretation",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    },
+    {
+      "issue_id": "S02-METHOD",
+      "affected_scope": "All eight families",
+      "inspected_and_unknown": "Only reinit/add_noise/top percent folder labels observed; no saliency algorithm/mask/noise-law declaration in inspected config fields",
+      "smallest_clarification": "Provide saliency objective/source revision/ranking/normalization/tensor set/tie handling/mask IDs, fraction denominator, noise scale/distribution or reinit law, independent seeds/nested masks and supplied controls",
+      "consequence": "Blocks saliency attribution; standalone benign measurement may later qualify separately",
+      "resolution_owner_phase": "S02",
+      "domain": "interpretation/pairing",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    },
+    {
+      "issue_id": "S02-EXPOSURE",
+      "affected_scope": "All nine",
+      "inspected_and_unknown": "Configs declare H3 retain inputs, seed1234 and training schedules; no realized tokens/rows/sampler consumption",
+      "smallest_clarification": "Provide safe metadata-only objective/step/token/source consumption and overlap/selection records; no examples or raw forget data",
+      "consequence": "Limits causal/comparability claims, not S01 completion of observed scope",
+      "resolution_owner_phase": "S02",
+      "domain": "interpretation",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    },
+    {
+      "issue_id": "S03-FORMAT",
+      "affected_scope": "All nine",
+      "inspected_and_unknown": "torch_dist backend declared; one shard listed; binary .metadata/train-state/common files unopened",
+      "smallest_clarification": "Provide safe text shard membership/format/version and exact parent/tokenizer/config dependencies; S03 verifies bytes/loading",
+      "consequence": "Blocks shard completeness/loadability certification until S03",
+      "resolution_owner_phase": "S02/S03",
+      "domain": "loading",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    },
+    {
+      "issue_id": "S03-RECOVERY",
+      "affected_scope": "Local sidecar inputs only",
+      "inspected_and_unknown": "Sidecars locally hash-verified; no new remote protection; backup route identified from prior evidence, no verified write roundtrip",
+      "smallest_clarification": "Preserve exact sidecars, listing receipts, manifest and paths; S03 proves authorized unique-prefix private write/fresh-readback before substantial compute",
+      "consequence": "Blocks recovery/substantial compute, not S02 metadata work",
+      "resolution_owner_phase": "S03",
+      "domain": "recovery",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    },
+    {
+      "issue_id": "S10-EXTERNAL",
+      "affected_scope": "Relevant candidate joins",
+      "inspected_and_unknown": "No collaborator aggregate forget result retrieved or joined",
+      "smallest_clarification": "When provided, require exact checkpoint/parent/step/cohort/protocol aggregate provenance; no raw forget data",
+      "consequence": "Combined interpretation pending; benign reporting can proceed at supported scope",
+      "resolution_owner_phase": "S10",
+      "domain": "external interpretation",
+      "independent_work_can_continue": true,
+      "evidence_status": "UNRESOLVED_FROM_INSPECTED_METADATA"
+    }
+  ],
+  "outcomes_inspected": false,
+  "forbidden_raw_data_accessed": false
+}

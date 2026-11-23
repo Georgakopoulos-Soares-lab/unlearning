@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "tests": [
+    "empty page continuation retained",
+    "distinct empty continuation pages do not prematurely stop",
+    "explicit terminal page supported",
+    "same object ID aliases deduplicated",
+    "shortcut cycle does not requeue visited root",
+    "partial access error preserved without blocking independent objects",
+    "missing exhaustion field remains partial",
+    "sealed receipt replay is idempotent"
+  ],
+  "only_synthetic_files": true,
+  "observed_utc": "2026-11-23T12:45:23.894087+00:00"
+}

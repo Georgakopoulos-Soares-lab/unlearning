@@ -1,0 +1,26 @@
+{
+  "status": "REPAIRED_BEFORE_COMMIT",
+  "observed_utc": "2026-11-23T12:52:34.561734+00:00",
+  "failed_command": "git diff --cached --check",
+  "exit_status": 2,
+  "diagnosis": "Python CSV writer emitted CRLF; Git whitespace gate flags CR at line end",
+  "changes": [
+    {
+      "file": "METADATA_AND_CONFOUNDERS.csv",
+      "old_sha256": "c71b9f8390f41e3cae879e95b2d20fcbdc4184310cef3a3d05e1b445bf6cb9ed",
+      "new_sha256": "9e2b4413c42ca73336fb7254f3948f9571a391a8525951ffbd862d824771f79e",
+      "change": "CRLF to LF only; parsed cells identical"
+    },
+    {
+      "file": "SWEEP_GRID_OBSERVED.csv",
+      "old_sha256": "c2dd126cefd199b22d75d5d310b32aa8e0327fe45c25481b20c2c965916709d6",
+      "new_sha256": "ee5841ba6bac61280b71c9333a6f857edcc14bbf10532f99e59ef985964ca5ef",
+      "change": "CRLF to LF only; parsed cells identical"
+    }
+  ],
+  "private_attempt_preserved": "publication-failure-001/",
+  "scientific_or_provider_source_bytes_changed": false,
+  "sidecars_redownloaded": 0,
+  "rows_reparsed_equal": true,
+  "checksums_and_receipt_seals_regenerated": true
+}

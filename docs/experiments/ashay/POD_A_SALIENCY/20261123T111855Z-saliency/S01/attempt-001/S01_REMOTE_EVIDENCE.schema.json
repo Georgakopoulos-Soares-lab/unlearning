@@ -1,0 +1,233 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pod-a-saliency:s01-remote-evidence:v1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "s01-remote-evidence-v1"
+    },
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provider": {
+      "const": "Google Drive"
+    },
+    "provider_object_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "drive_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_object_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "shortcut_target_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "relative_alias_paths": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "object_name": {
+      "type": "string"
+    },
+    "mime_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "reported_size_bytes": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "provider_revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provider_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "modified_time": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observation_start_utc": {
+      "type": "string"
+    },
+    "observation_end_utc": {
+      "type": "string"
+    },
+    "null_reasons": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "checksums": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "algorithm": {
+            "enum": [
+              "MD5",
+              "SHA1",
+              "SHA256",
+              "OTHER"
+            ]
+          },
+          "digest": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origin": {
+            "enum": [
+              "provider_declared",
+              "locally_computed_sidecar"
+            ]
+          },
+          "verification_status": {
+            "enum": [
+              "DECLARED_NOT_LOCALLY_VERIFIED",
+              "EXACT_SIDECAR_BYTES_HASHED"
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "algorithm",
+          "digest",
+          "origin",
+          "verification_status"
+        ]
+      }
+    },
+    "retrieval_status": {
+      "enum": [
+        "METADATA_ONLY",
+        "SIDECAR_DOWNLOADED",
+        "EXCLUDED",
+        "ACCESS_DENIED",
+        "UNSUPPORTED",
+        "PARTIAL"
+      ]
+    },
+    "local_sidecar_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "local_sidecar_bytes": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 1048576
+    },
+    "source_locator": {
+      "type": "object",
+      "properties": {
+        "route": {
+          "type": "string"
+        },
+        "provider_object_id": {
+          "type": "string"
+        },
+        "provider_revision": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metadata_field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sidecar_line_or_field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "route",
+        "provider_object_id",
+        "provider_revision",
+        "metadata_field",
+        "sidecar_line_or_field"
+      ]
+    },
+    "payload_identity_status": {
+      "const": "NOT_VERIFIED_BY_S01"
+    },
+    "evidence_status": {
+      "enum": [
+        "OBSERVED_METADATA",
+        "DECLARED_SIDECAR",
+        "INFERENCE_LABELED",
+        "UNKNOWN"
+      ]
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "provider",
+    "provider_object_id",
+    "drive_id",
+    "parent_object_ids",
+    "shortcut_target_id",
+    "relative_alias_paths",
+    "object_name",
+    "mime_type",
+    "reported_size_bytes",
+    "provider_revision",
+    "provider_version",
+    "modified_time",
+    "observation_start_utc",
+    "observation_end_utc",
+    "null_reasons",
+    "checksums",
+    "retrieval_status",
+    "local_sidecar_sha256",
+    "local_sidecar_bytes",
+    "source_locator",
+    "payload_identity_status",
+    "evidence_status"
+  ]
+}

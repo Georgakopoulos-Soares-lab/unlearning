@@ -15,11 +15,11 @@
       "observed_utc": "2026-11-23T11:18:55.253125+00:00"
     },
     "S01": {
-      "approved": false,
+      "approved": true,
       "package_commit": "558592c1985ed180745599709595c543476644f7",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "source": "direct_chat",
+      "message": "APPROVE S01 at 558592c1985ed180745599709595c543476644f7",
+      "observed_utc": "2026-11-23T12:33:42.744847+00:00"
     },
     "S02": {
       "approved": false,
@@ -118,10 +118,13 @@
       "eligibility_rule": "Evidence-backed prerequisite; no stage auto-dispatch"
     },
     "delivery_inventory": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "S01 PARTIAL receipt and exact nine IDs: docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/S01_RECEIPT.json",
+        "Only observed nine-candidate metadata subset is resolved; entire Drive delivery completeness remains PENDING and must not be inferred"
+      ],
       "resolve_in": "S01",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S02 entry; pending blocks only affected scope"
+      "eligibility_rule": "S02 may adjudicate only nine listed IDs after direct approval; no whole-delivery or science qualification"
     },
     "candidate_selection": {
       "status": "PENDING",
@@ -208,10 +211,12 @@
       "eligibility_rule": "Must be evidence-backed RESOLVED before S11 entry; pending blocks only affected scope"
     },
     "inventory_candidates": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "DELIVERY_INVENTORY.json: nine provisional checkpoint bundles in observed subset, lower bound overall"
+      ],
       "resolve_in": "S01",
-      "eligibility_rule": "Pending inventory is valid at S00; no fabricated candidate count"
+      "eligibility_rule": "Provisional remote-object identities only; no payload/scientific admission"
     },
     "lineage_and_exposure": {
       "status": "PENDING",
@@ -244,6 +249,22 @@
       "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S00/attempt-001/S00_RECEIPT.json",
       "sha256": "6279e36a5da15e065dba1eb4d1e8e13c176c33b484684acee81f360200db7170",
       "scope_candidates": []
+    },
+    "S01": {
+      "status": "PARTIAL",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S01/attempt-001/S01_RECEIPT.json",
+      "sha256": "6f09821a0e8072ef4676b2c9bac34c67e1c1933a4864f03c6fb6804cfd094467",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     }
   },
   "candidate_gates": {},
@@ -253,12 +274,25 @@
       "approved": true
     },
     "S01": {
-      "status": "NOT_STARTED",
-      "approved": false
+      "status": "PARTIAL",
+      "approved": true,
+      "delivery": "Separate post-commit receipt after remote readback",
+      "inventory_scope": "Exactly nine observed candidate-directory IDs; delivery exhaustion unproven"
     },
     "S02": {
-      "status": "NOT_STARTED",
-      "approved": false
+      "status": "READY_FOR_APPROVAL_SCOPE_LIMITED",
+      "approved": false,
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S03": {
       "status": "NOT_STARTED",
@@ -298,13 +332,17 @@
     }
   },
   "coverage": {
-    "candidate_count": null,
+    "candidate_count": 9,
     "expected_scientific_units": null,
     "new_scientific_units": 0,
     "verified_new_scientific_units": 0,
     "historical_heads_referenced": 2808,
     "historical_fixed_applications_referenced": 2808,
-    "historical_shared_controls_referenced": 36
+    "historical_shared_controls_referenced": 36,
+    "candidate_count_scope": "Observed nine directories only, whole-delivery lower bound",
+    "inventory_status": "PARTIAL",
+    "sidecars": 44,
+    "sidecar_source_bytes": 323809
   },
   "backup_state": {
     "science_backup": "NOT_APPLICABLE_NO_NEW_SCIENCE",

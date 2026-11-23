@@ -1,13 +1,11 @@
-# S00 saliency controller handoff
+# Current Pod A saliency handoff: S01 PARTIAL
 
-S00 administrative initialization complete locally; Git delivery is proven by the separate post-commit publication receipt, not this file's future hash. S01 is unapproved and NOT_STARTED. No scientific work or background service started.
+# S01 PARTIAL — observed subset ready for S02 approval
 
-Run `20261123T111855Z-saliency`; research branch POD_A_SALIENCY; preserved predecessor `8c651c7ab3c3a2a47f5bbd0e464a69a197512c82`. Prompt package `558592c1985ed180745599709595c543476644f7`, SHA256 `9d3a27d7535e81d87c147eb0d373f87aac009ed65caad4f98f7f56f343a69042`. Exact source binding, scope amendment, approval, dependencies, package validation and semantic review are in S00/attempt-001/. Controller at CONTROLLER_STATE.json. Package launcher: https://github.com/ashay-sriv-06/test-prompts-push/blob/558592c1985ed180745599709595c543476644f7/S_START_HERE.md.
+2026-11-23T12:49:59.537952+00:00 Traversed43 observed folder pages,148 unique objects including root,9 provisional checkpoint bundles in8 labeled families. Retrieved44 allowed sidecars/323809 source bytes; conservatively647618 transferred bytes. Actual schema/source/seal validation PASS, including148 remote records,44 exact sidecars and189 declaration rows. All responses lack explicit exhaustion fields, so whole-delivery completeness remains unproven.
 
-The actual new candidate count/parents/perturbations/exposure are unknown. S01 will inventory the supplied Drive root through the existing supported connected route, complete pagination/shortcut protection and size-bounded safe sidecar metadata only. Prior listing is not an exhaustive inventory. No current access blocker to launching S01 is evidenced; listing completeness remains S01 work. HF/GitHub access from completed setup is reused, not relabeled as new transfer qualification. Private recovery/runtime/write-readback and scientific protocol remain later gates. R2 excluded; R3 saved-output bridge and R5 release retained at exact inherited scope. Collaborator forget aggregates remain pending, with no raw forget access; Pod B separate. No-deadline amendment preserved.
+No model payloads downloaded/hashed, no datasets or event binaries opened, no inference/probes or later phases. Eight potentially mixed progress logs excluded. Private protection: local hash-verified only; no new upload/readback. Five corrections and safe implementation deadlines preserved in FUTURE_GATE_REVIEW.md and S02_HANDOFF.md.
 
-Next direct chat message:
+S02-eligible scope: exactly the nine observed checkpoint-directory IDs in DELIVERY_INVENTORY.json/S01_RECEIPT.json, not the full delivery. S02 remains unapproved. Next permitted action after S01 Git publication/readback: direct scoped S02 approval and its entry guard.
 
-`APPROVE S01 at 558592c1985ed180745599709595c543476644f7`
-
-Only after that actual direct approval: read S01_DELIVERY_INVENTORY.md at the exact package pin fully, record the approval, and run the non-dispatching entry guard on the sealed S00 state. S01 has not started. Model downloads, datasets, inference, probe fitting, perturbation generation/training and schedulers are outside this bootstrap.
+Read S01/attempt-001/INVENTORY_SUMMARY.md, S01_RECEIPT.json, S02_HANDOFF.md and RESUME_MANIFEST.json. Current source is package558592c1985ed180745599709595c543476644f7 plus supplemental execution instruction ae30ad093c3140767b5d63fe743549937535b42c and direct-chat corrections. S00 attempt bytes are preserved. Final Git delivery proof is a separate receipt to avoid self-reference.

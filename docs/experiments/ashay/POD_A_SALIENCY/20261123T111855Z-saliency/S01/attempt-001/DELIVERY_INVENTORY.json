@@ -1,0 +1,2336 @@
+{
+  "schema_version": "s01-delivery-inventory-v1",
+  "status": "PARTIAL",
+  "counts": {
+    "unique_objects_including_root": 148,
+    "unique_child_objects": 147,
+    "folders_including_root": 43,
+    "file_objects": 105,
+    "pages": 43,
+    "aliases": 0,
+    "provisional_candidate_bundles": 9,
+    "observed_family_folders": 8,
+    "source_sidecars": 44,
+    "source_sidecar_bytes": 323809,
+    "conservative_sidecar_transfer_bytes": 647618,
+    "new_model_payloads": 0,
+    "new_inference_units": 0,
+    "new_fit_units": 0,
+    "new_verified_scientific_measurements": 0
+  },
+  "count_semantics": "Observed lower bounds for delivery object/candidate/family scope; exact counts only for sealed observations and downloaded sidecars",
+  "root_object_id": "1axy9YloRhDgylh_PkKYHTYnZF6wMZaM9",
+  "candidates": [
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_add_noise_top10.0p",
+      "checkpoint_folder_id": "11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_add_noise_top10.0p/checkpoints/iter_0001500",
+      "declared_method_from_folder_name": "add_noise",
+      "declared_top_percent_from_folder_name": 10.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0001500",
+      "observed_iteration_number": 1500,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1uqpREEBw66q36zZ9PGAQq0sO7ptljJcd",
+        "exact_sidecar_sha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b",
+        "declared_value": "1500",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "1XnC0R7878FreDHU-8sEqMA0nSByPzHxl",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "1IRiobVobwmRoKMpcEB6z9nmOlUJUTvVT",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "198OmUIE9zrW4riiTq37R_6QaRcvAKSh4",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "1FvM9H0FgVNS6ZcIwFBhaBrVj_4uAAnwM",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 192000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+            "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_add_noise_top15.0p",
+      "checkpoint_folder_id": "1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_add_noise_top15.0p/checkpoints/iter_0001500",
+      "declared_method_from_folder_name": "add_noise",
+      "declared_top_percent_from_folder_name": 15.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0001500",
+      "observed_iteration_number": 1500,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1OM4iJ5rbKed-1L5hB-l3xyvFSXGh_S1I",
+        "exact_sidecar_sha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b",
+        "declared_value": "1500",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "13btXQGKarLN3tI8m-bQhfLPsvou5zIJr",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "1SWxWOfGSENKa8oDyo0xV86KYXmJyTBt1",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "1niH1U9RCsIJQzxdn7YgrMx2iKn9edbGd",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 192000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+            "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_add_noise_top20.0p",
+      "checkpoint_folder_id": "1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_add_noise_top20.0p/checkpoints/iter_0001500",
+      "declared_method_from_folder_name": "add_noise",
+      "declared_top_percent_from_folder_name": 20.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0001500",
+      "observed_iteration_number": 1500,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1FE2Hvb9_wD5cABzSDbIffjbJjjAEZiow",
+        "exact_sidecar_sha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b",
+        "declared_value": "1500",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "15D51BxYJERe5ZFC9smNUyAOrIpG02V6I",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "1viAmDV0Wz9RzAuH5BROsId7vevTv0vFZ",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "112VwU_9WiWkWSZIwc_C6_vBCOHJfu2_U",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 192000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+            "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "checkpoint_folder_id": "1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_add_noise_top5.0p/checkpoints/iter_0002000",
+      "declared_method_from_folder_name": "add_noise",
+      "declared_top_percent_from_folder_name": 5.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0002000",
+      "observed_iteration_number": 2000,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1ZGYv5VZidaW48-8vGI9QJKszLfuyhfdz",
+        "exact_sidecar_sha256": "ec2f62c81490e1293397a7997058b2325b2cbf48f88defa2df5f1c0b93fa0e81",
+        "declared_value": "2151",
+        "matches_this_directory_label": false,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "19B2G0bPxidW4qCaK2c8N5aNcZYiakXRJ",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "17a82cneDzI8Fo5U1LJQv1hMiFKjpmLWi",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "1TA6jq4cSoGBxuXt8LVsAQ27EW0H-XTyI",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 2151,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 275328,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 2151,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "checkpoint_folder_id": "1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_add_noise_top5.0p/checkpoints/iter_0002151",
+      "declared_method_from_folder_name": "add_noise",
+      "declared_top_percent_from_folder_name": 5.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0002151",
+      "observed_iteration_number": 2151,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1ZGYv5VZidaW48-8vGI9QJKszLfuyhfdz",
+        "exact_sidecar_sha256": "ec2f62c81490e1293397a7997058b2325b2cbf48f88defa2df5f1c0b93fa0e81",
+        "declared_value": "2151",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "1UICgt_sJt6xQjJd0F66UYlAr7JsjiGi5",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "1O2BZJmULuyvP8zAp0BlsBKHksHf_yPIX",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "1xpp4F56nVCPs4bZfCrFSbqbx5jz89gjP",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 2151,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 275328,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 2151,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+            "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_reinit_top10.0p",
+      "checkpoint_folder_id": "1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_reinit_top10.0p/checkpoints/iter_0001500",
+      "declared_method_from_folder_name": "reinit",
+      "declared_top_percent_from_folder_name": 10.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0001500",
+      "observed_iteration_number": 1500,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1_fgNymTF5LeP4mmQYxkIkyDf70aKJaa0",
+        "exact_sidecar_sha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b",
+        "declared_value": "1500",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "1rLAQjDxomAPrdPgtP5V_5jMhJRizDVQ8",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "1WBCr5WCVD4rI5kPivIcCOBNdqR7kAlWV",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "13Qvuj67cV-od91o9wqJGXf-BpwUmnKvn",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+        "sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 192000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+            "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_reinit_top15.0p",
+      "checkpoint_folder_id": "1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_reinit_top15.0p/checkpoints/iter_0001500",
+      "declared_method_from_folder_name": "reinit",
+      "declared_top_percent_from_folder_name": 15.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0001500",
+      "observed_iteration_number": 1500,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1llaE_OqNUlGDck-xZMYg5Dt8ZGkv_pmq",
+        "exact_sidecar_sha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b",
+        "declared_value": "1500",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "1nk3xoA2L8VTAXQ1ZM3c0C5XP-resO4hP",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "1V9tGri6QFc6KnQWS3d6_tw9GuqVKVwfU",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "1dsOe6wVeRq7Wa6O4IU6IxG-dQdivlUfe",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 192000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+            "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_reinit_top20.0p",
+      "checkpoint_folder_id": "1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_reinit_top20.0p/checkpoints/iter_0001500",
+      "declared_method_from_folder_name": "reinit",
+      "declared_top_percent_from_folder_name": 20.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0001500",
+      "observed_iteration_number": 1500,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1T4qkcrVvaNbQxsZnJpw2ll2Bp3CD3gmF",
+        "exact_sidecar_sha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b",
+        "declared_value": "1500",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "1mLEoBD6KlK65H29YI8q8736POlZpYGl8",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "1OpsKuRdirCExlosW2E72_csug0Knq3CU",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "1abd1uEt6qm19uwVnFWU-1oD5VC_AxpXw",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 192000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+            "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "discovery_identity": "Google Drive checkpoint-folder object ID; not a tensor/content identity",
+      "family_folder": "saliency_maxent_ht_emp_h3_reinit_top5.0p",
+      "checkpoint_folder_id": "1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "relative_alias_path": "saliency_maxent_ht_emp_h3_reinit_top5.0p/checkpoints/iter_0001500",
+      "declared_method_from_folder_name": "reinit",
+      "declared_top_percent_from_folder_name": 5.0,
+      "actual_fraction_selected": null,
+      "strength_units_status": "Folder label only; denominator, noise/reinitialization law and actual change unestablished",
+      "observed_iteration_label": "iter_0001500",
+      "observed_iteration_number": 1500,
+      "intended_evaluation_selection": null,
+      "selection_status": "No outcome-based or latest-pointer selection; all observed steps retained",
+      "latest_pointer": {
+        "object_id": "1PS0K2TM-d0Rn701el51-5gkYT-gabfT0",
+        "exact_sidecar_sha256": "9f69998560dcfd8016442e0a32e959191df095817a164ce844c64ec5a8b0cc1b",
+        "declared_value": "1500",
+        "matches_this_directory_label": true,
+        "meaning": "Explicit latest pointer declaration, not authority to discard earlier checkpoint"
+      },
+      "listed_weight_objects": [
+        {
+          "object_id": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+          "name": "__0_0.distcp",
+          "reported_bytes": 15516878934,
+          "payload_sha256": null,
+          "payload_verified": false
+        }
+      ],
+      "format_declaration": {
+        "value": {
+          "sharded_backend": "torch_dist",
+          "sharded_backend_version": 1,
+          "common_backend": "torch",
+          "common_backend_version": 1
+        },
+        "source_object_id": "13MkPe8bVeryoNfiwQ9XOZPkPYdcqJKBl",
+        "sha256": "9817072de14c715c70e8435a7fee90bac30abaf6885fc53ade6fe88babeef851"
+      },
+      "shard_manifest_status": "No text shard membership index observed; binary .metadata not opened. One listed shard is not proof of complete or loadable membership.",
+      "tokenizer": {
+        "config_object_id": "1EtCzw3Rm0zk_PZVk2L9z1-m13CZ993nj",
+        "config_sha256": "3fba526a891039b79f2f2b0aa95304d1d16a93af4e96e8c59ad72655d4b63914",
+        "tokenizer_object_id": "1WNEYw1UD8kRvFvmY97NcViMMVt9Btl5p",
+        "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+        "meaning": "Exact sidecar bytes, not loaded or runtime-qualified"
+      },
+      "config": {
+        "object_id": "13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+        "declarations": {
+          "checkpoint.pretrained_checkpoint": {
+            "value": "[private absolute path omitted; basename] evo2_1b_base_mbridge",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "checkpoint.pretrained_checkpoint",
+            "line": 41,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load": {
+            "value": "[private absolute path omitted; basename] checkpoints",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "checkpoint.load",
+            "line": 31,
+            "realized_execution_verified": false
+          },
+          "checkpoint.ckpt_step": {
+            "value": null,
+            "status": "UNKNOWN_OR_CONFIG_NULL",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "checkpoint.ckpt_step",
+            "line": 20,
+            "realized_execution_verified": false
+          },
+          "checkpoint.finetune": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "checkpoint.finetune",
+            "line": 28,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_optim": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "checkpoint.load_optim",
+            "line": 33,
+            "realized_execution_verified": false
+          },
+          "checkpoint.load_rng": {
+            "value": true,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "checkpoint.load_rng",
+            "line": 34,
+            "realized_execution_verified": false
+          },
+          "model.num_layers": {
+            "value": 25,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "model.num_layers",
+            "line": 499,
+            "realized_execution_verified": false
+          },
+          "model.hidden_size": {
+            "value": 1920,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "model.hidden_size",
+            "line": 369,
+            "realized_execution_verified": false
+          },
+          "model.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "model.seq_length",
+            "line": 551,
+            "realized_execution_verified": false
+          },
+          "dataset.seq_length": {
+            "value": 1000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "dataset.seq_length",
+            "line": 80,
+            "realized_execution_verified": false
+          },
+          "dataset.random_seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "dataset.random_seed",
+            "line": 74,
+            "realized_execution_verified": false
+          },
+          "rng.seed": {
+            "value": 1234,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "rng.seed",
+            "line": 713,
+            "realized_execution_verified": false
+          },
+          "optimizer.lr": {
+            "value": 3e-05,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "optimizer.lr",
+            "line": 637,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "scheduler.lr_decay_iters",
+            "line": 718,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_steps": {
+            "value": 192000,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "scheduler.lr_decay_steps",
+            "line": 720,
+            "realized_execution_verified": false
+          },
+          "scheduler.lr_decay_style": {
+            "value": "cosine",
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "scheduler.lr_decay_style",
+            "line": 721,
+            "realized_execution_verified": false
+          },
+          "train.global_batch_size": {
+            "value": 128,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "train.global_batch_size",
+            "line": 788,
+            "realized_execution_verified": false
+          },
+          "train.micro_batch_size": {
+            "value": 16,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "train.micro_batch_size",
+            "line": 794,
+            "realized_execution_verified": false
+          },
+          "train.train_iters": {
+            "value": 1500,
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "train.train_iters",
+            "line": 799,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_config_paths": {
+            "value": [
+              "[private absolute path omitted; basename] training_data_config_emp_h3.yaml"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "dataset.retain_dataset_config_paths",
+            "line": 76,
+            "realized_execution_verified": false
+          },
+          "dataset.retain_dataset_dirs": {
+            "value": [
+              "[private absolute path omitted; basename] preprocessed_emp_h3"
+            ],
+            "status": "CONFIG_DECLARATION",
+            "evidence_id": "drive-object:13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+            "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+            "field": "dataset.retain_dataset_dirs",
+            "line": 78,
+            "realized_execution_verified": false
+          }
+        }
+      },
+      "actual_immediate_parent": null,
+      "parent_status": "Unresolved; pretrained path is a declaration and load path is the same sweep family directory, not proof of perturbation parent",
+      "temporal_endpoint": "UNKNOWN",
+      "intervention_seeds": null,
+      "realized_exposure": null,
+      "scientific_qualification": "NOT_PERFORMED",
+      "S02_scope_eligibility": "ELIGIBLE_FOR_METADATA_ADJUDICATION_ONLY"
+    }
+  ],
+  "expected_grid": null,
+  "expected_grid_missing_reason": "No authoritative delivered sweep manifest or collaborator expected-grid statement inspected",
+  "relearning_artifacts_observed": false,
+  "relearning_limit": "Absence in observed scope is not proof none exist; temporal endpoint remains unresolved",
+  "external_forget_aggregates": "Pending external input; no result retrieval or raw dataset access",
+  "S02_ready_scope": [
+    "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+    "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+    "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+    "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+    "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+    "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+    "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+    "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+    "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+  ]
+}
