@@ -1,0 +1,151 @@
+{
+  "schema_version": "s03-finite-recovery-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "attempt_id": "attempt-001",
+  "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "supplement_commit": "ca827c4bfb3cd4121f8ceadcae6f25446e00857a",
+  "supplement_sha256": "e30b8a4475203e72025c3091cb9a880f16942ed30ec867ae93be5a854ea5a0a2",
+  "pilot_candidate": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+  "shared_dependencies": [
+    "private-route-roundtrip",
+    "minimum-original-backend-runtime",
+    "training-only-smoke-manifest",
+    "original-base-scalers-heads",
+    "cohort-fold-draw-control-identities"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "transport": "COMPLETE_LOCAL_BYTES",
+      "content_integrity": "SHA256_VERIFIED_PROVIDER_REVISION_UNAVAILABLE",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE",
+      "payload_sha256": "c8a192778f7ae900855dbdc3c63d2c98bc365fdc8f52618ae591ca7074df9c14",
+      "payload_bytes": 15516878934
+    },
+    {
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    },
+    {
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "transport": "NOT_STARTED",
+      "content_integrity": "NOT_STARTED",
+      "reconstruction": "NOT_STARTED",
+      "runtime_hooks_lm": "NOT_STARTED",
+      "base_reference_reuse": "PENDING",
+      "private_recovery": "NOT_STARTED",
+      "comparison_eligibility": "PENDING_EVIDENCE"
+    }
+  ],
+  "completed_units": [
+    "Approved package/controller migration reused",
+    "S02 seals and candidate scope reused",
+    "S03 actual entry guard passed",
+    "Small harmless private route fresh readback verified at 46150af230d4969617c9995f51210053ecf6c412",
+    "Pilot native shard: complete exact byte count/local SHA256; provider pre/post size/mtime match",
+    "Four exact inherited source files recovered",
+    "468 unique original-base reference metadata keys checked; no head qualification",
+    "All four selected archives exact SHA256 verified",
+    "Base archive14551 member hashes/exact set verified; selected original-base heads/manifests restored",
+    "Exact12-row training-only manifest independently joined to frozen parent training manifests",
+    "Native pilot metadata restricted-class inventory:254 model tensors,1.108B elements,1126 storage entries; no model load",
+    "135 original-base files exactly hash-verified; one HTTP503 retried once,134 units reused",
+    "Pinned native runtime sources/distributions and TE binding installed; link-free CUDA12.8.93 compile witness passed"
+  ],
+  "unfinished_units": [
+    "B2_SHARED_MINIMUM",
+    "B3_PILOT_CANDIDATE",
+    "B4_REMAINING_CANDIDATES",
+    "B5_EVIDENCED_PARENTS_ONLY"
+  ],
+  "owned_processes": [],
+  "transfer_totals": {
+    "model_bytes": 15516878934,
+    "private_upload_bytes": 244,
+    "private_readback_bytes": 244,
+    "model_probe_bytes": 1024,
+    "small_sidecar_source_bytes": 24852,
+    "small_sidecar_materialized_bytes": 24852,
+    "historical_archive_bytes": 10224848907,
+    "original_base_source_bytes": 2218893105,
+    "required_native_metadata_source_bytes": 188709
+  },
+  "listing_continuation": null,
+  "single_writer": "Exclusive phase/admin lock for scoped writes; no worker or service launched",
+  "next_action": "Seal S03 adapted qualification source; test minimal required private protection before GPU dispatch or remaining checkpoint expansion",
+  "unresolved_decisions": [
+    "Full15.5GB native private backup failed account storage quota; minimum contract-permitted weight-exclusion strategy prepared, not yet proved",
+    "Strict model reconstruction/runtime smoke, original-base head compatibility and per-candidate recovery remain unperformed",
+    "Actual lineage/intervention/exposure/replication questions remain scoped and unresolved"
+  ]
+}

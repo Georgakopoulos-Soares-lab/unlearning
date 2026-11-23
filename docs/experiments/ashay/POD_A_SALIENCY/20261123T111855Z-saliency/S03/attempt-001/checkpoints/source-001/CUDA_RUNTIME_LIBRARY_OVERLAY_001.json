@@ -1,0 +1,39 @@
+{
+  "status": "PINNED_NVRTC_LIBRARY_DISCOVERY_OVERLAY",
+  "observed_utc": "2026-11-23T20:02:55.262587+00:00",
+  "original_import_gate_exit": 1,
+  "diagnosis": "TE2.3 searches CUDA_HOME recursively for libnvrtc before an unguarded ldconfig grep; installed pinned NVRTC wheel lives in venv, not system linker cache",
+  "repair": "Regular byte-identical copies of existing pinned NVRTC shared libraries under owned CUDA_HOME; no symlinks, system linker changes, package/code changes or numerical tolerance changes",
+  "files": [
+    {
+      "name": "libnvrtc.so.12",
+      "bytes": 104487248,
+      "sha256": "43731e24cd89e3749826304f304e8aa11fbecf1188715271b1f5018d6212b5e6",
+      "source_distribution": "Archived exact nvidia-cuda-nvrtc-cu12==12.8.93 wheel already hash-verified by pip",
+      "destination": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/cuda-12.8-link-free/lib/libnvrtc.so.12"
+    },
+    {
+      "name": "libnvrtc.alt.so.12",
+      "bytes": 104966520,
+      "sha256": "d8260dbfdba5820d0e710dd00f4370285d5ebe18c7d98ba2a6737deedf48d3eb",
+      "source_distribution": "Archived exact nvidia-cuda-nvrtc-cu12==12.8.93 wheel already hash-verified by pip",
+      "destination": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/cuda-12.8-link-free/lib/libnvrtc.alt.so.12"
+    },
+    {
+      "name": "libnvrtc-builtins.so.12.8",
+      "bytes": 6338504,
+      "sha256": "eccaa824230ee7858a94a3055cb01f1cb634df05d313880d0bdcf195161fcb4e",
+      "source_distribution": "Archived exact nvidia-cuda-nvrtc-cu12==12.8.93 wheel already hash-verified by pip",
+      "destination": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/cuda-12.8-link-free/lib/libnvrtc-builtins.so.12.8"
+    },
+    {
+      "name": "libnvrtc-builtins.alt.so.12.8",
+      "bytes": 6309832,
+      "sha256": "9e971f2dcced2628f327ddb037d02c41b834f2c3dbfbff03c9d2c3177f1b9b6d",
+      "source_distribution": "Archived exact nvidia-cuda-nvrtc-cu12==12.8.93 wheel already hash-verified by pip",
+      "destination": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/cuda-12.8-link-free/lib/libnvrtc-builtins.alt.so.12.8"
+    }
+  ],
+  "prior_compiler_receipt_preserved": true,
+  "GPU_model_or_forward_before_repair": false
+}

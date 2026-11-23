@@ -1,0 +1,668 @@
+{
+  "status": "IMPORTS_PASS",
+  "observed_utc": "2026-11-23T20:03:43.252945+00:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime/bin/python",
+  "packages": {
+    "torch": "2.8.0+cu128",
+    "transformer-engine": "2.3.0",
+    "transformer-engine-torch": "2.3.0",
+    "bionemo-evo2": "2.4",
+    "megatron-bridge": "0.3.0rc0",
+    "megatron-core": "0.16.0rc0",
+    "tokenizers": "0.22.1",
+    "causal-conv1d": "1.5.4",
+    "flash-attn": "2.8.3.post2"
+  },
+  "all_installed_packages": [
+    {
+      "name": "absl-py",
+      "version": "2.5.1"
+    },
+    {
+      "name": "accelerate",
+      "version": "1.11.0"
+    },
+    {
+      "name": "aiohappyeyeballs",
+      "version": "2.7.1"
+    },
+    {
+      "name": "aiohttp",
+      "version": "3.14.5"
+    },
+    {
+      "name": "aiosignal",
+      "version": "1.4.0"
+    },
+    {
+      "name": "annotated-types",
+      "version": "0.8.0"
+    },
+    {
+      "name": "antlr4-python3-runtime",
+      "version": "4.9.3"
+    },
+    {
+      "name": "anyio",
+      "version": "4.15.1"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0"
+    },
+    {
+      "name": "autocommand",
+      "version": "2.2.2"
+    },
+    {
+      "name": "backports.tarfile",
+      "version": "1.2.0"
+    },
+    {
+      "name": "bionemo-evo2",
+      "version": "2.4"
+    },
+    {
+      "name": "causal-conv1d",
+      "version": "1.5.4"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2"
+    },
+    {
+      "name": "click",
+      "version": "8.5.1"
+    },
+    {
+      "name": "cpsat-logutils",
+      "version": "1.0.0"
+    },
+    {
+      "name": "cwevals",
+      "version": "0.0.1b1"
+    },
+    {
+      "name": "datasets",
+      "version": "5.0.1"
+    },
+    {
+      "name": "defusedxml",
+      "version": "0.7.1"
+    },
+    {
+      "name": "dill",
+      "version": "0.4.1"
+    },
+    {
+      "name": "distro",
+      "version": "1.9.0"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.2"
+    },
+    {
+      "name": "filelock",
+      "version": "4.0.7"
+    },
+    {
+      "name": "flash_attn",
+      "version": "2.8.3.post2"
+    },
+    {
+      "name": "frozenlist",
+      "version": "1.8.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.6.0"
+    },
+    {
+      "name": "googleapis-common-protos",
+      "version": "1.76.0"
+    },
+    {
+      "name": "grpcio",
+      "version": "1.85.1"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.8.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.0"
+    },
+    {
+      "name": "hydra-core",
+      "version": "1.3.2"
+    },
+    {
+      "name": "idna",
+      "version": "3.20"
+    },
+    {
+      "name": "importlib_metadata",
+      "version": "10.2.0"
+    },
+    {
+      "name": "importlib_metadata",
+      "version": "8.0.0"
+    },
+    {
+      "name": "inflect",
+      "version": "7.3.1"
+    },
+    {
+      "name": "jaraco.collections",
+      "version": "5.1.0"
+    },
+    {
+      "name": "jaraco.context",
+      "version": "5.3.0"
+    },
+    {
+      "name": "jaraco.functools",
+      "version": "4.0.1"
+    },
+    {
+      "name": "jaraco.text",
+      "version": "3.12.1"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "joblib",
+      "version": "1.5.2"
+    },
+    {
+      "name": "lazy-importer",
+      "version": "0.1.0"
+    },
+    {
+      "name": "Markdown",
+      "version": "3.11.3"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "megatron-bridge",
+      "version": "0.3.0rc0"
+    },
+    {
+      "name": "megatron-core",
+      "version": "0.16.0rc0"
+    },
+    {
+      "name": "more-itertools",
+      "version": "10.3.0"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "multidict",
+      "version": "7.2.1"
+    },
+    {
+      "name": "multiprocess",
+      "version": "0.70.19"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "ninja",
+      "version": "1.13.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.5.4"
+    },
+    {
+      "name": "nvidia-cublas-cu12",
+      "version": "12.8.4.1"
+    },
+    {
+      "name": "nvidia-cuda-cupti-cu12",
+      "version": "12.8.90"
+    },
+    {
+      "name": "nvidia-cuda-nvrtc-cu12",
+      "version": "12.8.93"
+    },
+    {
+      "name": "nvidia-cuda-runtime-cu12",
+      "version": "12.8.90"
+    },
+    {
+      "name": "nvidia-cudnn-cu12",
+      "version": "9.10.2.21"
+    },
+    {
+      "name": "nvidia-cufft-cu12",
+      "version": "11.3.3.83"
+    },
+    {
+      "name": "nvidia-cufile-cu12",
+      "version": "1.13.1.3"
+    },
+    {
+      "name": "nvidia-curand-cu12",
+      "version": "10.3.9.90"
+    },
+    {
+      "name": "nvidia-cusolver-cu12",
+      "version": "11.7.3.90"
+    },
+    {
+      "name": "nvidia-cusparse-cu12",
+      "version": "12.5.8.93"
+    },
+    {
+      "name": "nvidia-cusparselt-cu12",
+      "version": "0.7.1"
+    },
+    {
+      "name": "nvidia-ml-py",
+      "version": "13.615.71"
+    },
+    {
+      "name": "nvidia-modelopt",
+      "version": "0.37.0"
+    },
+    {
+      "name": "nvidia-nccl-cu12",
+      "version": "2.27.3"
+    },
+    {
+      "name": "nvidia-nvjitlink-cu12",
+      "version": "12.8.93"
+    },
+    {
+      "name": "nvidia-nvtx-cu12",
+      "version": "12.8.90"
+    },
+    {
+      "name": "nvidia-resiliency-ext",
+      "version": "0.4.1"
+    },
+    {
+      "name": "omegaconf",
+      "version": "2.3.0"
+    },
+    {
+      "name": "opentelemetry-api",
+      "version": "1.45.2"
+    },
+    {
+      "name": "opentelemetry-exporter-http-transport",
+      "version": "0.66b2"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-common",
+      "version": "0.66b2"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-common",
+      "version": "1.45.2"
+    },
+    {
+      "name": "opentelemetry-exporter-otlp-proto-http",
+      "version": "1.45.2"
+    },
+    {
+      "name": "opentelemetry-proto",
+      "version": "1.45.2"
+    },
+    {
+      "name": "opentelemetry-sdk",
+      "version": "1.45.2"
+    },
+    {
+      "name": "opentelemetry-semantic-conventions",
+      "version": "0.66b2"
+    },
+    {
+      "name": "orloge",
+      "version": "1.0.0"
+    },
+    {
+      "name": "packaging",
+      "version": "24.2"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pandas",
+      "version": "3.1.1"
+    },
+    {
+      "name": "pillow",
+      "version": "12.3.0"
+    },
+    {
+      "name": "pip",
+      "version": "24.0"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.12.2"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.2.2"
+    },
+    {
+      "name": "polars",
+      "version": "2.1.0"
+    },
+    {
+      "name": "polars-runtime-32",
+      "version": "2.1.0"
+    },
+    {
+      "name": "propcache",
+      "version": "0.5.4"
+    },
+    {
+      "name": "protobuf",
+      "version": "7.36.2"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "PuLP",
+      "version": "4.2.0"
+    },
+    {
+      "name": "pyarrow",
+      "version": "26.0.1"
+    },
+    {
+      "name": "pybind11",
+      "version": "3.1.0"
+    },
+    {
+      "name": "pydantic",
+      "version": "2.12.3"
+    },
+    {
+      "name": "pydantic_core",
+      "version": "2.41.4"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0"
+    },
+    {
+      "name": "pynvml",
+      "version": "13.0.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3"
+    },
+    {
+      "name": "regex",
+      "version": "2026.11.9"
+    },
+    {
+      "name": "requests",
+      "version": "2.34.2"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.6.2"
+    },
+    {
+      "name": "scipy",
+      "version": "1.18.1"
+    },
+    {
+      "name": "setuptools",
+      "version": "79.0.1"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "sniffio",
+      "version": "1.3.1"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "tensorboard",
+      "version": "2.21.0"
+    },
+    {
+      "name": "tensorboard-data-server",
+      "version": "0.7.2"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.22.1"
+    },
+    {
+      "name": "tomli",
+      "version": "2.0.1"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0+cu128"
+    },
+    {
+      "name": "torchprofile",
+      "version": "0.1.0"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1"
+    },
+    {
+      "name": "transformer_engine",
+      "version": "2.3.0"
+    },
+    {
+      "name": "transformer_engine_cu12",
+      "version": "2.3.0"
+    },
+    {
+      "name": "transformer_engine_torch",
+      "version": "2.3.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.57.1"
+    },
+    {
+      "name": "triton",
+      "version": "3.4.0"
+    },
+    {
+      "name": "typeguard",
+      "version": "4.3.0"
+    },
+    {
+      "name": "typing-inspection",
+      "version": "0.4.5"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.12.2"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    },
+    {
+      "name": "wandb",
+      "version": "0.31.0"
+    },
+    {
+      "name": "Werkzeug",
+      "version": "3.1.9"
+    },
+    {
+      "name": "wheel",
+      "version": "0.45.1"
+    },
+    {
+      "name": "wheel",
+      "version": "0.46.2"
+    },
+    {
+      "name": "xxhash",
+      "version": "4.1.0"
+    },
+    {
+      "name": "yarl",
+      "version": "1.25.1"
+    },
+    {
+      "name": "zipp",
+      "version": "3.19.2"
+    },
+    {
+      "name": "zipp",
+      "version": "4.1.2"
+    }
+  ],
+  "runtime_sources": [
+    {
+      "name": "bionemo",
+      "repository": "https://github.com/NVIDIA/bionemo-framework.git",
+      "commit": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+      "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime-sources/bionemo",
+      "clean": true,
+      "observed_utc": "2026-11-23T19:33:13.771035+00:00",
+      "tracked_source_unchanged": true
+    },
+    {
+      "name": "megatron-bridge",
+      "repository": "https://github.com/NVIDIA-NeMo/Megatron-Bridge.git",
+      "commit": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+      "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime-sources/megatron-bridge",
+      "clean": true,
+      "observed_utc": "2026-11-23T19:33:18.042253+00:00",
+      "tracked_source_unchanged": true
+    },
+    {
+      "name": "Megatron-LM",
+      "repository": "https://github.com/NVIDIA/Megatron-LM.git",
+      "commit": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13",
+      "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime-sources/Megatron-LM",
+      "clean": true,
+      "observed_utc": "2026-11-23T19:33:27.352961+00:00",
+      "tracked_source_unchanged": true
+    }
+  ],
+  "CUDA_build": "12.8",
+  "CXX11_ABI": true,
+  "CUDA_driver_available": true,
+  "GPU_metadata": "NVIDIA H200 NVL, GPU-0416a99e-6781-4cfb-5d3b-0d29c6aef8af, 143771 MiB, 0 MiB, 595.112.07",
+  "TE_binary_build": {
+    "status": "BUILT_AWAITING_NUMERICAL_QUALIFICATION",
+    "source_sdist_sha256": "2b0adb75d7a5bf590cc5452276db6badb0963de99e6c50c7fde6a3a8a7c504e9",
+    "wheel": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime-wheels/transformer_engine_torch-2.3.0-cp312-cp312-linux_x86_64.whl",
+    "wheel_bytes": 34299580,
+    "wheel_sha256": "a78dc89f5c4c2186272f847438506c40a0762c58a729420d3761abc2bc3edf63",
+    "compiler_receipt": "CUDA_TOOLKIT_RECONSTRUCTION.json",
+    "completed_utc": "2026-11-23T19:50:39.608118+00:00"
+  },
+  "CUDA_toolkit_receipt_sha256": "5b92e0f696884bde6df88764edd36edd22c385788d45ecec68f90c6888f6159a",
+  "source_install_report_sha256": "8fd8ba2e90e61746e105fac678520e62b0ba9dbffd7c2f4d21ba966af1be006c",
+  "inherited_wheel_receipts": {
+    "status": "EXACT_DISTRIBUTION_BYTES_VERIFIED",
+    "wheels": [
+      {
+        "name": "causal_conv1d-1.5.4+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl",
+        "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime-wheels/causal_conv1d-1.5.4+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl",
+        "bytes": 151361989,
+        "sha256": "c62338f9b3a914d79326e0f5c127361d6d7f8add87e896d01beb8291c95aa745",
+        "source_url": "https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.5.4/causal_conv1d-1.5.4%2Bcu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl",
+        "observed_utc": "2026-11-23T19:57:24.516668+00:00"
+      },
+      {
+        "name": "flash_attn-2.8.3.post2+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl",
+        "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime-wheels/flash_attn-2.8.3.post2+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl",
+        "bytes": 256235670,
+        "sha256": "61ab39b7038d6a05cb97664f3481a92ced300d11aa14529ae3b675300a99f5e6",
+        "source_url": "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3.post2/flash_attn-2.8.3.post2%2Bcu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl",
+        "observed_utc": "2026-11-23T19:57:25.531898+00:00"
+      }
+    ]
+  },
+  "required_backend_flags": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "deterministic_algorithms": false,
+    "float32_matmul_precision": "highest"
+  },
+  "import_gates_passed": [
+    "torch",
+    "transformer_engine.pytorch",
+    "causal_conv1d",
+    "flash_attn",
+    "tokenizers",
+    "Hyena1bModelProvider",
+    "megatron.core"
+  ],
+  "model_constructed": false,
+  "GPU_forward_executed": false,
+  "scientific_outcomes_evaluated": false,
+  "known_warnings": "Inherited flash-attn/TE and Bridge declaration mismatches retained; TE unfused required; ModelOpt optional warnings do not establish numerical qualification"
+}

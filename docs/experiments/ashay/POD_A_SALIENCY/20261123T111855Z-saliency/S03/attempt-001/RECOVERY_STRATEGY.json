@@ -1,0 +1,39 @@
+{
+  "status": "PREPARED_MINIMUM_REQUIRED_PROTECTION_ALTERNATIVE",
+  "observed_utc": "2026-11-23T19:55:01.197545+00:00",
+  "failed_full_native_private_copy": {
+    "status": "FAILED",
+    "error_class": "BadRequestError",
+    "reason": "(Request ID: Root=1-6b049916-23b14b822330179b2a2594fe;ea987583-4b37-4175-a81f-41a56ea5c9c5)\n\nBad request for commit endpoint:\nPrivate storage limit reached for user ashay-sriv, please upgrade your plan to increase your private storage limit",
+    "requested_payload_bytes": 15517103624,
+    "immutable_revision": null,
+    "revision_null_reason": "Upload failed before commit; no private native payload recovery claim"
+  },
+  "canonical_authority": {
+    "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+    "path": "S_ARTIFACT_CONTRACT.md",
+    "requirement": "Weights/runtime exclusions require exact reacquisition identities/hashes and recipe; recovery claims remain scoped to what was actually executed."
+  },
+  "minimum_private_bundle": [
+    "Versioned S03 qualification implementation and pinned package",
+    "Required native format metadata/config/tokenizer bytes",
+    "Exact weight reacquisition IDs/bytecounts/SHA256 and direct-provider recipe",
+    "Built TE binding wheel and source/compiler identity",
+    "Runtime/distribution install reports, private locator joins, current resume/progress",
+    "Later exact training-only qualification arrays and actual-logit witnesses, separately sealed after creation"
+  ],
+  "raw_weights_exclusion": {
+    "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+    "source_object_id": "1XnC0R7878FreDHU-8sEqMA0nSByPzHxl",
+    "bytes": 15516878934,
+    "sha256": "c8a192778f7ae900855dbdc3c63d2c98bc365fdc8f52618ae591ca7074df9c14",
+    "required_fresh_recovery_test": "Fresh direct source download into a separate consumer; require full SHA256/size, strict reconstruction and designated smoke replay in existing pinned runtime",
+    "provider_revision": null,
+    "provider_revision_null_reason": "Not exposed by source; no guarantee of future immutable source availability. A changed source must fail hash checking."
+  },
+  "no_claim_before_actual_test": "No fresh model recovery, model qualification or full clean-runtime recreation has passed yet",
+  "stop_if_minimum_protection_fails": "Do not expand remaining checkpoint queue; preserve current inputs, finish safe independent diagnostics, publish exact shared protection blocker",
+  "capacity_available_bytes": null,
+  "capacity_reason": "Hub upload reports private storage limit; whoami and exposed library methods provide no available-byte quota field; no purchases/deletion/visibility changes authorized",
+  "S04_approved": false
+}
