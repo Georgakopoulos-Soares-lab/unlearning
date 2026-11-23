@@ -1,0 +1,89 @@
+{
+  "status": "PASS_REVIEW_ONLY",
+  "observed_utc": "2026-11-23T14:34:48.584320+00:00",
+  "proposed_package_sha256": "3b089d6b7d7ab16812272a500519db269050c855f0a0f29e3333752d9a62a5e9",
+  "published": false,
+  "tests": [
+    {
+      "case": "S03_route_metadata_allows_entry_without_claiming_write",
+      "status": "PASS"
+    },
+    {
+      "case": "S03_substantial_compute_without_roundtrip",
+      "status": "REJECTED",
+      "reason": "unresolved amended prerequisite private_write_readback_verified"
+    },
+    {
+      "case": "S03_status_without_sealed_roundtrip_binding",
+      "status": "REJECTED",
+      "reason": "sealed private roundtrip binding missing"
+    },
+    {
+      "case": "S03_roundtrip_status_and_binding_required",
+      "status": "PASS_WITH_SYNTHETIC_EVIDENCE_ONLY"
+    },
+    {
+      "case": "S03_missing_resume_reconciliation",
+      "status": "REJECTED",
+      "reason": "missing/stale resume reconciliation"
+    },
+    {
+      "case": "sealed_fresh_private_roundtrip_proof_passes",
+      "status": "PASS"
+    },
+    {
+      "case": "tampered_roundtrip_receipt_rejected",
+      "status": "REJECTED",
+      "reason": "private roundtrip receipt bytes changed"
+    },
+    {
+      "case": "S05_exact_original_S04_bindings_and_seals",
+      "status": "PASS"
+    },
+    {
+      "case": "S05_missing_original_base_heads",
+      "status": "REJECTED",
+      "reason": "unresolved amended prerequisite qualified_base_heads"
+    },
+    {
+      "case": "S05_missing_H3_panel_subset",
+      "status": "REJECTED",
+      "reason": "unresolved amended prerequisite frozen_H3_audit_subset"
+    },
+    {
+      "case": "late_changed_comparison_family_binding",
+      "status": "REJECTED",
+      "reason": "S04 receipt binding changed frozen_contrast_plan"
+    },
+    {
+      "case": "late_panel_byte_replacement",
+      "status": "REJECTED",
+      "reason": "frozen artifact bytes changed frozen_audit_panel"
+    },
+    {
+      "case": "S04_closure_without_initial_panel",
+      "status": "REJECTED",
+      "reason": "unresolved amended prerequisite frozen_audit_panel"
+    },
+    {
+      "case": "missing_provider_revision_remains_null_with_reason",
+      "status": "PASS"
+    },
+    {
+      "case": "remote_revision_null_reason_missing",
+      "status": "REJECTED",
+      "reason": "missing remote null reason provider_revision"
+    },
+    {
+      "case": "provider_digest_cannot_claim_local_verification",
+      "status": "REJECTED",
+      "reason": "checksum origin/verification mismatch"
+    },
+    {
+      "case": "patch_applies_exactly_to_approved_package_copy",
+      "status": "PASS_ALL_CONTROLLED_FILES_EQUAL_DRAFT"
+    }
+  ],
+  "active_package_unchanged": true,
+  "no_scientific_or_stage_execution": true
+}

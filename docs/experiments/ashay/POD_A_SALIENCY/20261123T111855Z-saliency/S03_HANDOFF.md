@@ -1,18 +1,51 @@
+# Part A complete; S03 awaiting direct approval
+
+Canonical package: `7007ebd05bf59432bf69109e5f69baad31ec0d3a` (schema 1.1.0). SHA256 of exact `S_SHA256SUMS`: `3b089d6b7d7ab16812272a500519db269050c855f0a0f29e3333752d9a62a5e9`.
+
+Published only the reviewed 15-file amendment; all 23 package members verified against committed/index bytes, a fresh remote Git consumer and fresh GitHub raw readback. Reused the unchanged validation and 17 passing focused cases. Administrative migration passed the new controller schema and required denial checks.
+
+S00–S02 approvals and receipt bindings retain their original package pins. All S00–S02 attempt trees remain immutable. S02 is LIMITED_SCOPE_COMPLETE for exactly nine discoveries; S01 whole-delivery coverage remains PARTIAL. The formatting-only derivative preserves the sealed original handoff.
+
+S03 is unapproved and unstarted. No S03 attempt allocated; no model acquisition, private upload, installation, GPU checks, loading, qualification, dataset opening, inference or fits. BACKUP_ROUTE_IDENTIFIED remains metadata-only; PRIVATE_WRITE_READBACK_VERIFIED remains pending. Actual parents, intervention laws, exposure and replication remain unresolved at their affected scopes.
+
+Prepared scope: nine selected discovery IDs, minimum dependencies and training-only technical qualification under supplement `f0dfbe673cacef522e8559e696c8922db83fcb7d` / SHA256 `e30b8a4475203e72025c3091cb9a880f16942ed30ec867ae93be5a854ea5a0a2`. Stop before S04. No deadline amendment remains in force.
+
+Read [migration receipt](ADMIN/package-migration-001/MIGRATION_RECEIPT.json), [prepared scope](ADMIN/package-migration-001/S03_PREPARED_SCOPE.json), and immutable [S02 recovery plan](S02/attempt-001/S03_RECOVERY_PLAN.json).
+
+Exact next direct-chat command:
+
+```text
+APPROVE S03 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a
+```
+
+WAITING_FOR_APPROVAL: S03
+
+---
+
+# Labeled formatting-only derivative of sealed S02 handoff
+
+Source commit: 582f5cd131bc66f54e12b647c7cc1c1c9d36dd34
+Source: S02/attempt-001/S03_HANDOFF.md
+Source SHA256: 1956d861bde15dc6732b68ba6cf39bb9f13a5cee90414c111bafebda86269070
+
+Removed one literal leading `+` from exactly 17 lines. The sealed source is unchanged. This derivative does not grant publication or S03 approval.
+
+---
+
 # S03 handoff — not yet approved or administratively ready
-+
-+S02 is LIMITED_SCOPE_COMPLETE for the exact nine discovery IDs in CANDIDATE_REGISTRY.json and S02_RECEIPT.json. S01 whole-delivery status remains PARTIAL. All nine are selected conditionally for candidate-only recovery before outcomes, including both noise5 steps2000/2151; primary parent comparisons and independent-replicate interpretation remain pending. No scientific qualification or S03 execution is implied.
-+
-+Read S02_SUMMARY.md, LINEAGE_EVIDENCE.json, CHECKPOINT_SELECTION_FREEZE.json, ELIGIBILITY_MATRIX.json, CONTRAST_ELIGIBILITY.json and ANALYSIS_DESIGN.md through S02_SCHEMA_BINDING.json. S03_RECOVERY_PLAN.json names the exact candidate component IDs/sizes/sidecars, known shared dependency catalog and finite batch boundaries. Exact private historical archive locators remain in the control RECOVERY_LOCATOR_MAP.json; do not download all catalog entries. Current small sources are local hash-verified only, with0 new S02 source payload bytes and no private write/readback.
-+
-+The actual source basename/config provider does not identify the immediate perturbation parent. Metadata declares torch_dist/Hyena1b, peft:null and RNG/data1234; no strict native conversion/runtime equality, objective, realized exposure or mask/seed/magnitude proof. Candidate-only recovery may later proceed if independently reconstructable; unknown parents still block parent-relative claims/reconstruction dependencies. Do not infer R4/R5 ancestry from review priority or select noise5 latest2151 as the primary endpoint by default.
-+
-+Concrete administrative action before S03: separately authorize publication of PROPOSED_PACKAGE_AMENDMENT.patch against approved package558592c1985ed180745599709595c543476644f7. Patch SHA256: 0a9054f33ca257156352ef9422dc1d6d2512eac369f7258299bca89a15aa61f6. Proposed review-copy digest: 3b089d6b7d7ab16812272a500519db269050c855f0a0f29e3333752d9a62a5e9 (not a published commit). Validate/apply the exact patch in a separate publication worktree, preserve remote changes, regenerate checksums if changed, ordinary fast-forward publication, verify every blob at the real immutable new commit, then explicitly migrate schema/controller bindings and obtain direct scoped S03 approval at that real pin. No prompt mutation/publication is authorized or performed in S02; no future commit is invented.
-+
-+The five corrections remain mandatory: recover original-base heads in S03/bind S04/require before S05 and reuse unchanged in S07; initially seal full/H3 audit and contrast artifacts in S04 with original receipt-bound seals; use provider-specific nullable evidence/digest origins; distinguish BACKUP_ROUTE_IDENTIFIED from PRIVATE_WRITE_READBACK_VERIFIED; persist/reconcile complete resume and PID-start/boot/single-writer records. Backup guard clarification is due before S03, other scientific prerequisites before S05/S04 closure. Exact proposed files/cases/deadlines are in PACKAGE_AMENDMENT_PLAN.md.
-+
-+Read-only HF metadata identifies a private destination and authentication route. This is not verified write permission or recovery. S03 must pass a unique-prefix private upload/fresh-download/hash/privacy test before substantial compute, with a sealed proof receipt. Then acquire only needed source/runtime/base/scaler/head/cohort/fold/draw/control/candidate components, safely restore and qualify the original Evo2-1B backend using training-only smoke inputs. No automatic entry or production queue follows planning counts.
-+
-+On any resume, reconcile RESUME_MANIFEST.json/private RESUME_STATE.json, exact pins, completion seals, pending decisions/transfers and actual process/lock identities before scheduling. Reuse valid S01 sidecars and S02 metadata; preserve failures and never duplicate writers/work. Keep no-deadline policy, R2 exclusion, historical R3 bridge/R5 release scopes, Pod B relearning separation and collaborator aggregate-only forget dependency. No raw forget data, new tests, models, inference, fits, training, watchers or collaborator messages were authorized here.
-+
-+Next state is WAITING_FOR_STEERING: S02 for concrete amendment-publication authorization, not a vague science approval. S03 has not started.
-+
+
+S02 is LIMITED_SCOPE_COMPLETE for the exact nine discovery IDs in CANDIDATE_REGISTRY.json and S02_RECEIPT.json. S01 whole-delivery status remains PARTIAL. All nine are selected conditionally for candidate-only recovery before outcomes, including both noise5 steps2000/2151; primary parent comparisons and independent-replicate interpretation remain pending. No scientific qualification or S03 execution is implied.
+
+Read S02_SUMMARY.md, LINEAGE_EVIDENCE.json, CHECKPOINT_SELECTION_FREEZE.json, ELIGIBILITY_MATRIX.json, CONTRAST_ELIGIBILITY.json and ANALYSIS_DESIGN.md through S02_SCHEMA_BINDING.json. S03_RECOVERY_PLAN.json names the exact candidate component IDs/sizes/sidecars, known shared dependency catalog and finite batch boundaries. Exact private historical archive locators remain in the control RECOVERY_LOCATOR_MAP.json; do not download all catalog entries. Current small sources are local hash-verified only, with0 new S02 source payload bytes and no private write/readback.
+
+The actual source basename/config provider does not identify the immediate perturbation parent. Metadata declares torch_dist/Hyena1b, peft:null and RNG/data1234; no strict native conversion/runtime equality, objective, realized exposure or mask/seed/magnitude proof. Candidate-only recovery may later proceed if independently reconstructable; unknown parents still block parent-relative claims/reconstruction dependencies. Do not infer R4/R5 ancestry from review priority or select noise5 latest2151 as the primary endpoint by default.
+
+Concrete administrative action before S03: separately authorize publication of PROPOSED_PACKAGE_AMENDMENT.patch against approved package558592c1985ed180745599709595c543476644f7. Patch SHA256: 0a9054f33ca257156352ef9422dc1d6d2512eac369f7258299bca89a15aa61f6. Proposed review-copy digest: 3b089d6b7d7ab16812272a500519db269050c855f0a0f29e3333752d9a62a5e9 (not a published commit). Validate/apply the exact patch in a separate publication worktree, preserve remote changes, regenerate checksums if changed, ordinary fast-forward publication, verify every blob at the real immutable new commit, then explicitly migrate schema/controller bindings and obtain direct scoped S03 approval at that real pin. No prompt mutation/publication is authorized or performed in S02; no future commit is invented.
+
+The five corrections remain mandatory: recover original-base heads in S03/bind S04/require before S05 and reuse unchanged in S07; initially seal full/H3 audit and contrast artifacts in S04 with original receipt-bound seals; use provider-specific nullable evidence/digest origins; distinguish BACKUP_ROUTE_IDENTIFIED from PRIVATE_WRITE_READBACK_VERIFIED; persist/reconcile complete resume and PID-start/boot/single-writer records. Backup guard clarification is due before S03, other scientific prerequisites before S05/S04 closure. Exact proposed files/cases/deadlines are in PACKAGE_AMENDMENT_PLAN.md.
+
+Read-only HF metadata identifies a private destination and authentication route. This is not verified write permission or recovery. S03 must pass a unique-prefix private upload/fresh-download/hash/privacy test before substantial compute, with a sealed proof receipt. Then acquire only needed source/runtime/base/scaler/head/cohort/fold/draw/control/candidate components, safely restore and qualify the original Evo2-1B backend using training-only smoke inputs. No automatic entry or production queue follows planning counts.
+
+On any resume, reconcile RESUME_MANIFEST.json/private RESUME_STATE.json, exact pins, completion seals, pending decisions/transfers and actual process/lock identities before scheduling. Reuse valid S01 sidecars and S02 metadata; preserve failures and never duplicate writers/work. Keep no-deadline policy, R2 exclusion, historical R3 bridge/R5 release scopes, Pod B relearning separation and collaborator aggregate-only forget dependency. No raw forget data, new tests, models, inference, fits, training, watchers or collaborator messages were authorized here.
+
+Next state is WAITING_FOR_STEERING: S02 for concrete amendment-publication authorization, not a vague science approval. S03 has not started.
