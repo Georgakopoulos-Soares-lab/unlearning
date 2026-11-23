@@ -1,0 +1,28 @@
+{
+  "phase": "S00",
+  "approved": true,
+  "source": "direct_chat",
+  "observed_utc": "2026-11-23T11:18:55.211795+00:00",
+  "exact_user_message": "pull, read and execute with rigour, fervor, tenacity, extreme precision and just make it really really damn good - https://github.com/ashay-sriv-06/test-prompts-push/blob/POD-A-Saliency/POD_A_SALIENCY_BUILD_PACKAGE_AND_S00.md",
+  "authorizing_instruction": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push.git",
+    "ref": "refs/heads/POD-A-Saliency",
+    "commit": "cb65428836d62d3a0b8a7f58eb1d95b5c53df293",
+    "path": "POD_A_SALIENCY_BUILD_PACKAGE_AND_S00.md",
+    "sha256": "15e8552a4f9997e6c3d4260d83d213edc3449c7fe7149e485c3625822f945b8e",
+    "bytes": 23632,
+    "retrieved_utc": "2026-11-23T11:05:26.521576+00:00",
+    "source_url": "https://github.com/ashay-sriv-06/test-prompts-push/blob/POD-A-Saliency/POD_A_SALIENCY_BUILD_PACKAGE_AND_S00.md"
+  },
+  "authorized_actions": [
+    "Construct/validate/publish only canonical S package on prompt POD_A",
+    "Initialize/publish sanitized S00 on research POD_A_SALIENCY"
+  ],
+  "not_authorized": [
+    "S01\u2013S11 execution",
+    "Model payloads, evaluation datasets, GPU inference, probes, new perturbations or training",
+    "Watchers/schedulers, raw forget data/evaluation, collaborator messages, Pod B work"
+  ],
+  "package_commit": "558592c1985ed180745599709595c543476644f7",
+  "package_sha256": "9d3a27d7535e81d87c147eb0d373f87aac009ed65caad4f98f7f56f343a69042"
+}

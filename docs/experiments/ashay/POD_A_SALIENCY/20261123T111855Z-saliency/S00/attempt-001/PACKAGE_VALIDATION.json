@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "package_sha256": "9d3a27d7535e81d87c147eb0d373f87aac009ed65caad4f98f7f56f343a69042",
+  "content_files": 21,
+  "hashed_files": 22,
+  "synthetic_tests": [
+    {
+      "case": "corrupted_byte",
+      "status": "REJECTED",
+      "reason": "checksum mismatch"
+    },
+    {
+      "case": "missing_file",
+      "status": "REJECTED",
+      "reason": "missing file S02_LINEAGE_COMPARABILITY.md"
+    },
+    {
+      "case": "duplicate_path",
+      "status": "REJECTED",
+      "reason": "duplicate manifest path"
+    },
+    {
+      "case": "unsafe_path",
+      "status": "REJECTED",
+      "reason": "unsafe path ../escape"
+    },
+    {
+      "case": "wrong_research_branch",
+      "status": "REJECTED",
+      "reason": "wrong research branch"
+    },
+    {
+      "case": "dependency_cycle",
+      "status": "REJECTED",
+      "reason": "dependency cycle at S00"
+    },
+    {
+      "case": "unresolved_phase_input",
+      "status": "REJECTED",
+      "reason": "unresolved required input drive_listing_route"
+    },
+    {
+      "case": "resolved_phase_input",
+      "status": "PASS"
+    },
+    {
+      "case": "unapproved_phase",
+      "status": "REJECTED",
+      "reason": "phase unapproved"
+    }
+  ]
+}

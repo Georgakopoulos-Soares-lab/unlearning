@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0.0",
+  "effective_utc": "2026-11-23T11:18:55.216719+00:00",
+  "research_branch": "POD_A_SALIENCY",
+  "fixed_predecessor": "8c651c7ab3c3a2a47f5bbd0e464a69a197512c82",
+  "owned_root": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/",
+  "historical_A_series": "Immutable; old PARTIAL labels retained; no old audits rerun",
+  "R2": "Not produced; excluded prospectively, not searched or a blocker",
+  "review_priority": "R4/R5 hypothesis only, not actual sweep parent identity",
+  "retained_tasks": [
+    "emp_H3",
+    "gue_tf_0",
+    "gue_prom_core_all",
+    "gue_prom_300_all",
+    "gue_splice_reconstructed",
+    "gue_mouse_0"
+  ],
+  "representations": "decoder.layers.0\u201324 plus decoder.final_norm, width1920 subject to runtime qualification",
+  "anchors": [
+    "decoder.layers.16 (zero-based17th block)",
+    "decoder.final_norm"
+  ],
+  "policies": [
+    "independent_refit",
+    "fixed_original_base"
+  ],
+  "cv_seeds": [
+    42,
+    17,
+    1234
+  ],
+  "test_policy": "Established dev primary; examined H3 test excluded by default until exact historical authorization/membership and prospective S04 inclusion; no untouched tests",
+  "forget_policy": "Collaborator-generated aggregates only, pending external evidence; no raw forget data/model execution",
+  "Pod_B": "Separate relearning ownership",
+  "time_policy": {
+    "no_deadline": true,
+    "active_science_deadline": null,
+    "active_gpu_cap_seconds": null,
+    "setup_ten_minute_limit_applies_to_later_research": false,
+    "provider_rate": null,
+    "rental_start": null,
+    "provider_quota": null
+  },
+  "approved_scientific_phases": []
+}
