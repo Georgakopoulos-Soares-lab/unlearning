@@ -1,0 +1,3947 @@
+{
+  "schema_version": "s03-safe-restore-v1",
+  "historical_archives": [
+    {
+      "receipt": "historical-archive-005-SAFE_RESTORE.json",
+      "receipt_sha256": "896f84c9855966a607b8ee7698e45b967c2c65371b6509e8a9d84ecaa320a9d1",
+      "summary": {
+        "dependency_id": "historical-archive-005",
+        "status": "ALL_ARCHIVE_MEMBER_HASHES_AND_EXACT_SET_VERIFIED_SELECTED_CLOSURE_RESTORED",
+        "archive_sha256": "b2ca94959e0d28695817c2f811711429487d70fa9a6f0a58b64524df7f246d9b",
+        "archive_bytes": 21292878,
+        "all_regular_members_verified": 119,
+        "archive_uncompressed_bytes": 37197141,
+        "selected_members_restored": 20,
+        "restored_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/restored-minimum/historical-archive-005",
+        "training_smoke_manifest_rows_opened": false,
+        "evaluation_outcome_arrays_opened": false,
+        "observed_utc": "2026-11-23T19:31:30.546372+00:00"
+      }
+    },
+    {
+      "receipt": "historical-archive-006-SAFE_RESTORE.json",
+      "receipt_sha256": "ad2405be03e221946829335f9a0a34d2fba00eb53a5a9c98b2232c62bd0fa390",
+      "summary": {
+        "dependency_id": "historical-archive-006",
+        "status": "ALL_ARCHIVE_MEMBER_HASHES_AND_EXACT_SET_VERIFIED_SELECTED_CLOSURE_RESTORED",
+        "archive_sha256": "fcf6e74b99e5be0a19ab188d266fe09313690a2c6461a74a6967a30a04ca64cb",
+        "archive_bytes": 48326169,
+        "all_regular_members_verified": 491,
+        "archive_uncompressed_bytes": 65209375,
+        "selected_members_restored": 139,
+        "restored_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/restored-minimum/historical-archive-006",
+        "training_smoke_manifest_rows_opened": false,
+        "evaluation_outcome_arrays_opened": false,
+        "observed_utc": "2026-11-23T19:31:31.266987+00:00"
+      }
+    },
+    {
+      "receipt": "BASE_REFERENCE_SAFE_RESTORE.json",
+      "receipt_sha256": "e57a456efb69b13a6b53903d39ab02e28b6d410ea03ec7c2b87a6e53abee67be",
+      "summary": {
+        "status": "EXACT_COMPLETE_MEMBER_HASH_SET_VERIFIED_MINIMUM_BASE_REFERENCES_RESTORED",
+        "all_members_verified": 14551,
+        "uncompressed_bytes_verified": 11288882782,
+        "selected_members_restored": 504,
+        "restored_bytes": 81450970,
+        "elapsed_seconds": 61.106400800985284,
+        "completed_utc": "2026-11-23T19:37:27.257009+00:00",
+        "restored_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/restored-minimum/historical-archive-001",
+        "archive_sha256": "26db00fcaae93fae959ed225ff3b1775630f85644a188192e822182f002f319e",
+        "evaluation_arrays_opened": false,
+        "sequence_rows_opened": false
+      }
+    },
+    {
+      "receipt": "SHARED_CONTROL_SAFE_RESTORE.json",
+      "receipt_sha256": "3a1393cc00a20b4e266d49c12cdb23f3fbaad5d92d603b35e62a7dd27018e77d",
+      "summary": {
+        "status": "PASS_EXACT_ARCHIVE_MEMBERS_SELECTED_CONTROL_CLOSURE_RESTORED",
+        "archive_sha256": "16c9dd9e0feda4602d941716db749972c371ef23ad9a78cef0171e792706b304",
+        "regular_members_verified": 447,
+        "selected_members_restored": 76,
+        "control_units": 36,
+        "restored_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/restored-minimum/historical-archive-002",
+        "heldout_arrays_opened": false,
+        "new_fits": 0,
+        "verified_utc": "2026-11-23T20:38:43.988735+00:00"
+      }
+    }
+  ],
+  "rejected_member_types": [
+    "absolute/traversal paths",
+    "duplicate normalized names",
+    "symlinks/hardlinks/devices",
+    "unexpected members",
+    "decompression budget excess"
+  ],
+  "private_checkpoints": [
+    {
+      "status": "MINIMUM_ACTUAL_ARTIFACTS_PRIVATE_FRESH_RESTORE_VERIFIED",
+      "immutable_revision": "8ef16935e5057e1e6497aa2a0c83af828c77d82a",
+      "archive_sha256": "2250264064dc72337aadd20e1a0b6fb92e8d0a1012ba8ae3f971555bbcbbafd8",
+      "archive_bytes": 34746207,
+      "unique_prefix": "POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/minimum-checkpoint-592918ad8ed24ea4b32be54268466a21",
+      "destination_private": true,
+      "fresh_network_download": true,
+      "exact_member_hash_set_verified": 62,
+      "rebuilt_TE_wheel_protected": true,
+      "native_format_metadata_protected": true,
+      "raw_weights_excluded_with_exact_reacquisition_recipe": true,
+      "raw_weights_fresh_reacquisition_performed": false,
+      "model_reconstruction_performed": false,
+      "smoke_replay_performed": false,
+      "clean_runtime_recreation_performed": false,
+      "physical_network_bytes": null,
+      "private_locator_receipt_sha256": "29d27775a2f97c658eab4082a34286e3d0ce71e3543ab68bf1ea70dd8d9f809b",
+      "completed_utc": "2026-11-23T19:56:27.896420+00:00"
+    },
+    {
+      "status": "PRIVATE_EXACT_BYTES_FRESH_RESTORE_VERIFIED_AWAITING_CPU_REPLAY",
+      "immutable_revision": "af4cccd8477ea40f152e60f22dea0778512aa200",
+      "archive_sha256": "43ddbb323c7ab4f3d42f6c50baf90434008c93e9b4450ffafa636c0fe3255ba7",
+      "archive_bytes": 15985710,
+      "payload_members": 109,
+      "destination_private": true,
+      "fresh_network_read": true,
+      "exact_member_set_and_hashes": true,
+      "restored_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/fresh-consumers/qualification-checkpoint-001-restored",
+      "clean_runtime_recreation": false,
+      "physical_network_bytes": null,
+      "physical_network_bytes_null_reason": "API transport/LFS retries not exposed; exact logical upload/download bytes recorded",
+      "completed_utc": "2026-11-23T20:40:41.026944+00:00"
+    },
+    {
+      "status": "PRIVATE_EXACT_BYTES_FRESH_RESTORE_VERIFIED_AWAITING_CPU_REPLAY",
+      "immutable_revision": "023633fbfbe6512d7909a4bdf33beae1e2d37a82",
+      "archive_sha256": "106ce3c5639ed5077c14848be2958af00eee7d0a49e0f704113a3fc476166cc9",
+      "archive_bytes": 6983731,
+      "payload_members": 78,
+      "destination_private": true,
+      "fresh_network_read": true,
+      "exact_member_set_and_hashes": true,
+      "restored_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/fresh-consumers/qualification-checkpoint-002-restored",
+      "clean_runtime_recreation": false,
+      "physical_network_bytes": null,
+      "physical_network_bytes_null_reason": "API transport/LFS retries not exposed; exact logical upload/download bytes recorded",
+      "completed_utc": "2026-11-23T20:50:07.821566+00:00"
+    }
+  ],
+  "CPU_restore_replays": [
+    {
+      "status": "PASS_RESTORED_CPU_REPLAY",
+      "archive_sha256": "43ddbb323c7ab4f3d42f6c50baf90434008c93e9b4450ffafa636c0fe3255ba7",
+      "immutable_revision": "af4cccd8477ea40f152e60f22dea0778512aa200",
+      "verified_file_count": 109,
+      "comparisons": [
+        {
+          "comparison": "base/logical1-vs-logical8",
+          "status": "PASS",
+          "outputs": {
+            "decoder_layer_0": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000132758868859,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_1": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000249625882134,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_2": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000318155623973,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_3": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003214555792511,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_4": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001000006066684,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_5": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000055885313486,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_6": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010002895509824157,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_7": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010275518521667,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_8": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010014344735071064,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_9": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001872042939067,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_10": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010018106447532774,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_11": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010025281786918641,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_12": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010025494201108813,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_13": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010023615896701813,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_14": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010012187642045319,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_15": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001071140728891,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_16": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010001078243949452,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_17": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010035782068967819,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_18": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010011491236276925,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_19": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010020224103704095,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_20": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001819184422493,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_21": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001007001868635416,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_22": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00022760722160339357,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_23": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 63409206014.7713,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_24": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 63409206014.7713,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "final_norm": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010126236379146576,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "nll_sum": {
+              "status": "PASS",
+              "denominator": 12,
+              "violations": 0,
+              "max_abs_residual": 6.103515625e-05,
+              "max_scaled_residual": 0.011376650993813036,
+              "max_relative_residual_finite": 1.1592733813558467e-07,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                5
+              ],
+              "worst_allowed_abs_error": 0.005364949340820313,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            }
+          }
+        },
+        {
+          "comparison": "base/repeat8-vs-logical8",
+          "status": "PASS",
+          "outputs": {
+            "decoder_layer_0": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000132758868859,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_1": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000249625882134,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_2": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000318155623973,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_3": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003214555792511,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_4": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001000006066684,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_5": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000055885313486,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_6": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010002895509824157,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_7": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010275518521667,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_8": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010014344735071064,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_9": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001872042939067,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_10": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010018106447532774,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_11": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010025281786918641,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_12": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010025494201108813,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_13": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010023615896701813,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_14": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010012187642045319,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_15": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001071140728891,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_16": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010001078243949452,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_17": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010035782068967819,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_18": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010011491236276925,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_19": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010020224103704095,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_20": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001819184422493,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_21": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001007001868635416,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_22": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00022760722160339357,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_23": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 63409206014.7713,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_24": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 63409206014.7713,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "final_norm": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010126236379146576,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "nll_sum": {
+              "status": "PASS",
+              "denominator": 12,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0
+              ],
+              "worst_allowed_abs_error": 0.0034800106811523437,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            }
+          }
+        },
+        {
+          "comparison": "candidate_01/logical1-vs-logical8",
+          "status": "PASS",
+          "outputs": {
+            "decoder_layer_0": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000634044641629,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_1": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000020109373509,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_2": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000272461475106,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_3": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001000449160207063,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_4": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003972283564508,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_5": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010004649865906686,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_6": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010006722391117365,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_7": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010477553121745,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_8": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010008403185755015,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_9": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010984828695655,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_10": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010005786422174424,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_11": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010007510599680246,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_12": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010013712389394642,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_13": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010037177354097367,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_14": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010027886226773263,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_15": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001812144368887,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_16": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010029867658391595,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_17": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010024590959772468,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_18": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010029472192749382,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_19": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010041523478925228,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_20": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010002071288647131,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_21": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010001550292945467,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_22": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00013117897987365723,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_23": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15562181831.55722,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_24": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15562181831.55722,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "final_norm": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010043827589601279,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "nll_sum": {
+              "status": "PASS",
+              "denominator": 12,
+              "violations": 0,
+              "max_abs_residual": 6.103515625e-05,
+              "max_scaled_residual": 0.01073482219591952,
+              "max_relative_residual_finite": 1.0927005635493886e-07,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                5
+              ],
+              "worst_allowed_abs_error": 0.005685716552734376,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            }
+          }
+        },
+        {
+          "comparison": "candidate_01/repeat8-vs-logical8",
+          "status": "PASS",
+          "outputs": {
+            "decoder_layer_0": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000634044641629,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_1": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000020109373509,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_2": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000272461475106,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_3": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001000449160207063,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_4": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003972283564508,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_5": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010004649865906686,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_6": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010006722391117365,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_7": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010477553121745,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_8": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010008403185755015,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_9": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010984828695655,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_10": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010005786422174424,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_11": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010007510599680246,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_12": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010013712389394642,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_13": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010037177354097367,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_14": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010027886226773263,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_15": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001812144368887,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_16": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010029867658391595,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_17": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010024590959772468,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_18": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010029472192749382,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_19": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010041523478925228,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_20": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010002071288647131,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_21": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010001550292945467,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_22": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00013117897987365723,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_23": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15562181831.55722,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_24": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15562181831.55722,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "final_norm": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010043827589601279,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "nll_sum": {
+              "status": "PASS",
+              "denominator": 12,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0
+              ],
+              "worst_allowed_abs_error": 0.0018295095825195315,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            }
+          }
+        },
+        {
+          "comparison": "candidate_01/fresh-process-vs-producer",
+          "status": "PASS",
+          "outputs": {
+            "decoder_layer_0": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000634044641629,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_1": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000020109373509,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_2": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000272461475106,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_3": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001000449160207063,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_4": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003972283564508,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_5": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010004649865906686,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_6": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010006722391117365,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_7": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010477553121745,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_8": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010008403185755015,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_9": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010010984828695655,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_10": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010005786422174424,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_11": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010007510599680246,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_12": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010013712389394642,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_13": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010037177354097367,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_14": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010027886226773263,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_15": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.0001001812144368887,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_16": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010029867658391595,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_17": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010024590959772468,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_18": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010029472192749382,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_19": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010041523478925228,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_20": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010002071288647131,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_21": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010001550292945467,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_22": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00013117897987365723,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_23": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15562181831.55722,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_24": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15562181831.55722,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "final_norm": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010043827589601279,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "nll_sum": {
+              "status": "PASS",
+              "denominator": 12,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0
+              ],
+              "worst_allowed_abs_error": 0.0018295095825195315,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            }
+          }
+        }
+      ],
+      "scope": "Fresh immutable private network read + exact member bytes + all26/LM CPU comparison replay using restored code and arrays; actual fresh model replay recorded independently",
+      "clean_runtime_rebuild": false,
+      "verified_utc": "2026-11-23T20:41:40.046991+00:00"
+    },
+    {
+      "status": "PASS_RESTORED_CPU_REPLAY",
+      "archive_sha256": "106ce3c5639ed5077c14848be2958af00eee7d0a49e0f704113a3fc476166cc9",
+      "immutable_revision": "023633fbfbe6512d7909a4bdf33beae1e2d37a82",
+      "verified_file_count": 78,
+      "comparisons": [
+        {
+          "comparison": "candidate_02/logical1-vs-logical8",
+          "status": "PASS",
+          "outputs": {
+            "decoder_layer_0": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000491966027767,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_1": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000181886251085,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_2": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000243964692345,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_3": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010004093814641237,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_4": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003648494835944,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_5": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010004414440132679,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_6": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010006367098074406,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_7": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010008930377662183,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_8": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010005207035690547,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_9": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010008420852012933,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_10": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003027475206182,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_11": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010007941463030875,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_12": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010011944212019444,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_13": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010036825139075518,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_14": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010028219288215041,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_15": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010017760494723917,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_16": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010033497355878354,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_17": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010022258469834924,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_18": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010023630654439331,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_19": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010042117781937123,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_20": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000324722816003,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_21": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010006526236888021,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_22": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00012970942735671999,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_23": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15614545535.95914,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_24": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15614545535.95914,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "final_norm": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010052219692617655,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "nll_sum": {
+              "status": "PASS",
+              "denominator": 12,
+              "violations": 0,
+              "max_abs_residual": 3.0517578125e-05,
+              "max_scaled_residual": 0.01169537022396166,
+              "max_relative_residual_finite": 1.216143773489817e-07,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                1
+              ],
+              "worst_allowed_abs_error": 0.0026093725585937502,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            }
+          }
+        },
+        {
+          "comparison": "candidate_02/repeat8-vs-logical8",
+          "status": "PASS",
+          "outputs": {
+            "decoder_layer_0": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000491966027767,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_1": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000181886251085,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_2": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000243964692345,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_3": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010004093814641237,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_4": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003648494835944,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_5": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010004414440132679,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_6": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010006367098074406,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_7": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010008930377662183,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_8": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010005207035690547,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_9": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010008420852012933,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_10": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010003027475206182,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_11": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010007941463030875,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_12": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010011944212019444,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_13": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010036825139075518,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_14": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010028219288215041,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_15": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010017760494723917,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_16": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010033497355878354,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_17": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010022258469834924,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_18": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010023630654439331,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_19": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010042117781937123,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_20": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010000324722816003,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_21": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010006526236888021,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_22": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00012970942735671999,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_23": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15614545535.95914,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "decoder_layer_24": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 15614545535.95914,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "final_norm": {
+              "status": "PASS",
+              "denominator": 23040,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0,
+                0
+              ],
+              "worst_allowed_abs_error": 0.00010052219692617655,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            },
+            "nll_sum": {
+              "status": "PASS",
+              "denominator": 12,
+              "violations": 0,
+              "max_abs_residual": 0.0,
+              "max_scaled_residual": 0.0,
+              "max_relative_residual_finite": 0.0,
+              "relative_undefined_nonzero_at_reference_zero": 0,
+              "worst_index": [
+                0
+              ],
+              "worst_allowed_abs_error": 0.0016201745605468752,
+              "atol": 0.0001,
+              "rtol": 1e-05,
+              "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+            }
+          }
+        }
+      ],
+      "scope": "Fresh immutable private network read + exact member bytes + all26/LM CPU comparison replay using restored code and arrays; actual fresh model replay recorded independently",
+      "clean_runtime_rebuild": false,
+      "verified_utc": "2026-11-23T20:50:53.919434+00:00"
+    }
+  ],
+  "model_replay": {
+    "schema": "pod-a-s03-fresh-process-replay-v1",
+    "status": "PASS",
+    "completed_utc": "2026-11-23T20:39:30.899286+00:00",
+    "fresh_complete_receipt_sha256": "f6b3fe79364c93cb4dc3a8883ca639a27fe475850a40ed53b1e8c489a95e6afa",
+    "producer_complete_receipt_sha256": "94c99a5f537d3271c4aa0279c2fc2fac73c05d12c140de3794389b338f77b06c",
+    "source_identity_sha256": "deca2bc52950427f0810dfc657c8dfd4fb175241f9135438e71ba48c017e4c89",
+    "runtime_lock_sha256": "0fd4209ad3f22e7d81d3a3ff465c62c6c5b4bc489e4105b53b6302f7a9531b71",
+    "producer_fallback": false,
+    "raw_weights_fresh_reacquisition": true,
+    "metadata_restored_from_private_checkpoint": "8ef16935e5057e1e6497aa2a0c83af828c77d82a",
+    "model_reconstructed": true,
+    "designated_smoke_replayed": true,
+    "clean_runtime_rebuild": false,
+    "recovery_level": "Fresh process/model/smoke replay in existing pinned runtime, raw weights reacquired with exactSHA and small metadata restored from immutable private checkpoint",
+    "outputs": {
+      "decoder_layer_0": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010000634044641629,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_1": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010000020109373509,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_2": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010000272461475106,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_3": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.0001000449160207063,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_4": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010003972283564508,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_5": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010004649865906686,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_6": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010006722391117365,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_7": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010010477553121745,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_8": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010008403185755015,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_9": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010010984828695655,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_10": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010005786422174424,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_11": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010007510599680246,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_12": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010013712389394642,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_13": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010037177354097367,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_14": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010027886226773263,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_15": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.0001001812144368887,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_16": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010029867658391595,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_17": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010024590959772468,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_18": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010029472192749382,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_19": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010041523478925228,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_20": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010002071288647131,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_21": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010001550292945467,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_22": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00013117897987365723,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_23": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 15562181831.55722,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "decoder_layer_24": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 15562181831.55722,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "final_norm": {
+        "status": "PASS",
+        "denominator": 23040,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0,
+          0
+        ],
+        "worst_allowed_abs_error": 0.00010043827589601279,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      },
+      "nll_sum": {
+        "status": "PASS",
+        "denominator": 12,
+        "violations": 0,
+        "max_abs_residual": 0.0,
+        "max_scaled_residual": 0.0,
+        "max_relative_residual_finite": 0.0,
+        "relative_undefined_nonzero_at_reference_zero": 0,
+        "worst_index": [
+          0
+        ],
+        "worst_allowed_abs_error": 0.0018295095825195315,
+        "atol": 0.0001,
+        "rtol": 1e-05,
+        "comparison_direction": "observed versus reference; atol+rtol*abs(reference)"
+      }
+    },
+    "model_tensor_content_sha256": "ba02bd040b1be80ac2308a104cad20a7c802397b6ef3505590c5ecb844d99279"
+  },
+  "candidate02_failed_fresh_model_reacquisition": {
+    "status": "FAILED",
+    "owned_process": {
+      "pid": 28795,
+      "start_ticks": "59163834",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
+    },
+    "source_object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+    "expected_bytes": 15516878934,
+    "expected_sha256": "8f9997a04f912ba15c424c63e400f5ec8170e21d9a68f63f01c6d42af9446c12",
+    "fresh_consumer_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/fresh-consumers/drive-reacquired-candidate_02-001",
+    "metadata_restored_from_private_revision": "023633fbfbe6512d7909a4bdf33beae1e2d37a82",
+    "producer_fallback_allowed": false,
+    "force_new_provider_response": true,
+    "started_utc": "2026-11-23T20:50:54.091479+00:00",
+    "received_bytes": 0,
+    "error_class": "AssertionError",
+    "reason": ""
+  },
+  "candidate02_failure_diagnosis": {
+    "observed_utc": "2026-11-23T20:51:29.015000+00:00",
+    "source_object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+    "observations": [
+      {
+        "stage": "observed_confirm_page",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "length": "2459",
+        "range": null,
+        "bytes_read": 2459,
+        "html_title": [
+          "Google Drive - Virus scan warning"
+        ],
+        "form_action_host": "drive.usercontent.google.com",
+        "form_keys": [
+          "id",
+          "export",
+          "confirm",
+          "uuid"
+        ],
+        "form_id_matches": true,
+        "phrases": [
+          "Download anyway",
+          "Google Drive can't scan",
+          "Download"
+        ]
+      },
+      {
+        "stage": "confirmed_full_request_bounded_read",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "length": "2040",
+        "range": null,
+        "bytes_read": 2040,
+        "html_title": [
+          "Google Drive - Quota exceeded"
+        ],
+        "form_action_host": null,
+        "form_keys": [],
+        "form_id_matches": false,
+        "phrases": [
+          "Too many users"
+        ]
+      }
+    ],
+    "payload_dispatch": false
+  },
+  "full_clean_runtime_rebuild": false
+}

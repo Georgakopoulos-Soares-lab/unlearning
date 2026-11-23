@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pod-a-saliency:s03-evidence:1",
+  "title": "S03 detailed evidence; structural schemas plus source-bound semantic validator",
+  "file_schemas": {
+    "QUALIFICATION_MATRIX.json": {
+      "required": [
+        "schema_version",
+        "counts",
+        "candidates",
+        "numerical_comparisons",
+        "completed_units"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "s03-qualification-matrix-v1"
+        },
+        "candidates": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "completed_units": {
+          "type": "array",
+          "minItems": 10,
+          "maxItems": 10
+        }
+      },
+      "type": "object"
+    },
+    "BASE_HEAD_REUSE_MAP.json": {
+      "required": [
+        "schema_version",
+        "qualified_current_heads",
+        "references",
+        "cohort_fold_class_joins",
+        "shared_controls"
+      ],
+      "properties": {
+        "qualified_current_heads": {
+          "const": 468
+        },
+        "references": {
+          "type": "array",
+          "minItems": 468,
+          "maxItems": 468
+        }
+      },
+      "type": "object"
+    },
+    "PAYLOAD_IDENTITIES.json": {
+      "required": [
+        "schema_version",
+        "recovered_payloads",
+        "discovery_dispositions"
+      ],
+      "properties": {
+        "recovered_payloads": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3
+        }
+      },
+      "type": "object"
+    },
+    "RECOVERY_DEPENDENCIES.json": {
+      "required": [
+        "schema_version",
+        "minimum_historical_archives",
+        "historical_draw_member_identities"
+      ],
+      "properties": {
+        "minimum_historical_archives": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4
+        }
+      },
+      "type": "object"
+    },
+    "SAFE_RESTORE_REPORT.json": {
+      "required": [
+        "schema_version",
+        "historical_archives",
+        "private_checkpoints",
+        "CPU_restore_replays",
+        "model_replay",
+        "full_clean_runtime_rebuild"
+      ],
+      "properties": {
+        "full_clean_runtime_rebuild": {
+          "const": false
+        }
+      },
+      "type": "object"
+    },
+    "RUNTIME_LOCK.json": {
+      "required": [
+        "schema_version",
+        "sealed_GPU_import_gate_sha256",
+        "CPU_reference_runtime",
+        "snapshot_time_semantics"
+      ],
+      "type": "object"
+    },
+    "SOURCE_RUNTIME_IDENTITY.json": {
+      "required": [
+        "schema_version",
+        "actual_source",
+        "source_identity_sha256",
+        "runtime_lock_sha256",
+        "published_source_commit",
+        "parent_training_membership"
+      ],
+      "type": "object"
+    },
+    "LOADING_EXCEPTIONS.json": {
+      "required": [
+        "schema_version",
+        "loads",
+        "inherited_literal_provenance_correction",
+        "numerical_thresholds_changed"
+      ],
+      "properties": {
+        "loads": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "numerical_thresholds_changed": {
+          "const": false
+        }
+      },
+      "type": "object"
+    },
+    "RESOURCE_CALIBRATION.json": {
+      "required": [
+        "schema_version",
+        "actual_units",
+        "aggregate",
+        "accepted_research_input_body_bytes",
+        "all_physical_network_bytes",
+        "physical_network_bytes_null_reason",
+        "historical_accounting"
+      ],
+      "properties": {
+        "all_physical_network_bytes": {
+          "type": "null"
+        }
+      },
+      "type": "object"
+    }
+  }
+}

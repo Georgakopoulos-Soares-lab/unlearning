@@ -1,0 +1,145 @@
+{
+  "status": "BOUNDED_PROVIDER_QUOTA_DIAGNOSTICS",
+  "candidates": [
+    {
+      "alias": "candidate_03",
+      "observed_utc": "2026-11-23T20:46:03.226705+00:00",
+      "source_object_id": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+      "observations": [
+        {
+          "stage": "observed_confirm_page",
+          "status": 200,
+          "type": "text/html; charset=utf-8",
+          "length": "2459",
+          "range": null,
+          "bytes_read": 2459,
+          "html_title": [
+            "Google Drive - Virus scan warning"
+          ],
+          "form_action_host": "drive.usercontent.google.com",
+          "form_keys": [
+            "id",
+            "export",
+            "confirm",
+            "uuid"
+          ],
+          "form_id_matches": true,
+          "phrases": [
+            "Download anyway",
+            "Google Drive can't scan",
+            "Download"
+          ]
+        },
+        {
+          "stage": "confirmed_full_request_bounded_read",
+          "status": 200,
+          "type": "text/html; charset=utf-8",
+          "length": "2040",
+          "range": null,
+          "bytes_read": 2040,
+          "html_title": [
+            "Google Drive - Quota exceeded"
+          ],
+          "form_action_host": null,
+          "form_keys": [],
+          "form_id_matches": false,
+          "phrases": [
+            "Too many users"
+          ]
+        }
+      ],
+      "payload_dispatch": false
+    },
+    {
+      "alias": "candidate_04",
+      "source_object_id": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+      "observed_utc": "2026-11-23T20:47:00.331153+00:00",
+      "max_body_read_bytes_per_response": 65536,
+      "range_bypass_attempted": false,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes_read": 2040,
+      "html_titles": [
+        "Google Drive - Quota exceeded"
+      ],
+      "quota_exceeded": true,
+      "too_many_users": true
+    },
+    {
+      "alias": "candidate_05",
+      "source_object_id": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+      "observed_utc": "2026-11-23T20:47:01.146497+00:00",
+      "max_body_read_bytes_per_response": 65536,
+      "range_bypass_attempted": false,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes_read": 2040,
+      "html_titles": [
+        "Google Drive - Quota exceeded"
+      ],
+      "quota_exceeded": true,
+      "too_many_users": true
+    },
+    {
+      "alias": "candidate_06",
+      "source_object_id": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+      "observed_utc": "2026-11-23T20:47:01.934731+00:00",
+      "max_body_read_bytes_per_response": 65536,
+      "range_bypass_attempted": false,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes_read": 2040,
+      "html_titles": [
+        "Google Drive - Quota exceeded"
+      ],
+      "quota_exceeded": true,
+      "too_many_users": true
+    },
+    {
+      "alias": "candidate_07",
+      "source_object_id": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+      "observed_utc": "2026-11-23T20:47:02.761653+00:00",
+      "max_body_read_bytes_per_response": 65536,
+      "range_bypass_attempted": false,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes_read": 2040,
+      "html_titles": [
+        "Google Drive - Quota exceeded"
+      ],
+      "quota_exceeded": true,
+      "too_many_users": true
+    },
+    {
+      "alias": "candidate_08",
+      "source_object_id": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+      "observed_utc": "2026-11-23T20:47:03.686951+00:00",
+      "max_body_read_bytes_per_response": 65536,
+      "range_bypass_attempted": false,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes_read": 2040,
+      "html_titles": [
+        "Google Drive - Quota exceeded"
+      ],
+      "quota_exceeded": true,
+      "too_many_users": true
+    },
+    {
+      "alias": "candidate_09",
+      "source_object_id": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+      "observed_utc": "2026-11-23T20:47:04.505758+00:00",
+      "max_body_read_bytes_per_response": 65536,
+      "range_bypass_attempted": false,
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "body_bytes_read": 2040,
+      "html_titles": [
+        "Google Drive - Quota exceeded"
+      ],
+      "quota_exceeded": true,
+      "too_many_users": true
+    }
+  ],
+  "no_quota_bypass": true
+}

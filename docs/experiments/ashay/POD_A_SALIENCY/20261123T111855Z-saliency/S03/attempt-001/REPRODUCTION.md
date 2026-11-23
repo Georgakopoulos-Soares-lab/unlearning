@@ -1,0 +1,20 @@
+# S03 reproduction and resumption
+
+This is an execution record, not permission to repeat work. Reconcile the final receipt, immutable backup graph, actual files, process start identities and locks before resuming. Reuse valid completed units. S04 requires a new direct approval and permits planning only.
+
+The actual GPU implementation is the nine files under `checkpoints/source-002/code`, published before the first model dispatch at research commit `3c6bdaf6430277c4a3f9ebcdb7c5796f18514285`. `SOURCE_RUNTIME_IDENTITY.json` binds their exact bytes. The inherited loader is unchanged; the explicit S03 adapter patch and its tests are preserved. The first source checkpoint remains historical evidence. New CPU verification helpers are in `code/`; they never fit probes or dispatch a phase.
+
+The executed worker used the isolated Python at `/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime/bin/python`, with `code/run_qualification.py` in that artifact root. Its supported arguments were `--control /workspace/pod-a-saliency/control/20261123T111855Z-saliency/S03/attempt-001 --alias ALIAS --variant VARIANT --unit-attempt N --mode qualification`. The executed finite set was:
+
+- Original base, candidate_01 and candidate_02: logical1, logical8 and repeat8, each attempt 001.
+- Candidate_01: logical8 attempt 002, using independently reacquired exact weights and metadata restored from the private checkpoint; no producer fallback.
+
+These ten output identities already exist and must not be overwritten or dispatched again. Worker code rejects existing output roots, takes the owned GPU lock and checks the real direct approval, package bytes, private proof, source/runtime identities and TRAIN manifest. Worker environments were credential-minimal, offline, limited to four CPU threads and the pinned CUDA libraries. They applied the inherited precision flags before each forward. `RUNTIME_LOCK.json` records the import-time snapshot and its time semantics. CPU reference checks used a separate exact-version environment, leaving the sealed GPU runtime unchanged.
+
+Qualification used only the historical TRAIN manifest SHA256 `42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30`. Parent manifest metadata proves membership. Full loading receipts, tensor identities, arrays and actual-head LM witnesses are private. Public comparisons report tolerances, denominators and worst residuals, without publishing sequences, activations or task outcome scores.
+
+Private recovery dependency graphs contain exact locators for only four unchanged historical archives, the compiled TE wheel/runtime checkpoint, the approved package and the published source. They reference unchanged objects rather than repacking baseline archives. Qualification checkpoint 001 contains the base/pilot outputs; checkpoint 002 adds candidate_02 outputs and native metadata. Each was fetched with `force_download=True` into a distinct consumer, checked against its container SHA256 and exact regular-member hash set, then used for CPU comparison replay. The pilot additionally passed fresh source-weight reacquisition, strict model reconstruction and the designated smoke in a fresh process within the existing runtime. None proves full clean-runtime recreation.
+
+The final private metadata checkpoint is created after research publication and names the delivered commit, its verified GitHub bytes and the previous immutable recovery dependencies. Its receipt stays outside its own Git commit to avoid a self-referential hash cycle. See the separate delivery receipt for its actual revision.
+
+Seven native files and candidate_02 fresh recovery are blocked by normal Google Drive full-file quota responses. No range/chunk workaround, substitute checkpoint, repeated discovery or retry loop is permitted. Resume those units only after the normal route changes or an authorized exact-content mirror is evidenced. Preserve failed and empty partials. No scientific extraction, fitting, held-out evaluation, forget evaluation, training, Pod B work or scheduler is part of this record.

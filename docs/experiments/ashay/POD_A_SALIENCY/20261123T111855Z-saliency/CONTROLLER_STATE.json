@@ -171,16 +171,20 @@
       "eligibility_rule": "RETIRED_LEGACY_KEY: preserved PENDING for history. The 1.1.0 stage map uses backup_route_identified at entry and private_write_readback_verified before substantial compute; no private write is proved."
     },
     "qualified_subset": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/QUALIFICATION_MATRIX.json"
+      ],
       "resolve_in": "S03",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S04 entry; pending blocks only affected scope"
+      "eligibility_rule": "Only candidate01 released for S04; candidate02 locally passes but fresh recovery is blocked, seven native shards absent"
     },
     "historical_protocol": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/SOURCE_RUNTIME_IDENTITY.json"
+      ],
       "resolve_in": "S03",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S04 entry; pending blocks only affected scope"
+      "eligibility_rule": "Exact frozenTRAIN witness and source/runtime/references recovered; future scientific protocol/audit freeze remains S04"
     },
     "frozen_protocol": {
       "status": "PENDING",
@@ -189,16 +193,20 @@
       "eligibility_rule": "Must be evidence-backed RESOLVED before S05 entry; pending blocks only affected scope"
     },
     "runtime_qualified": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/RUNTIME_LOCK.json"
+      ],
       "resolve_in": "S04",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S05 entry; pending blocks only affected scope"
+      "eligibility_rule": "Pinned native runtime qualified for actual recovered base/candidates; no missing candidate runtime inference"
     },
     "qualified_base_heads": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/BASE_HEAD_REUSE_MAP.json"
+      ],
       "resolve_in": "S03",
-      "eligibility_rule": "Recover/qualify exact original pretrained-base scaler/head identities and affected scope; S04 binds immutable reuse; S05 requires before applications"
+      "eligibility_rule": "All468 original references structurally/TRAIN-qualified unchanged; S04 binds exact reuse, S05 requires, S07 consumes originals"
     },
     "frozen_audit_panel": {
       "status": "PENDING",
@@ -302,10 +310,10 @@
     "private_minimum_artifact_protection": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/MINIMUM_PRIVATE_CHECKPOINT_RECEIPT.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/SAFE_RESTORE_REPORT.json"
       ],
       "resolve_in": "S03",
-      "eligibility_rule": "Actual private compact artifact archive and exact fresh member restore passed; raw weights excluded with pinned source reacquisition. Actual model/smoke recovery still required before S04 admission."
+      "eligibility_rule": "Minimum actual runtime/output bytes privately restored and CPU replayed; pilot model replay pass only; no full native-private/clean-runtime claim"
     }
   },
   "phase_receipts": {
@@ -346,6 +354,14 @@
         "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
         "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ]
+    },
+    "S03": {
+      "status": "PARTIAL",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/S03_RECEIPT.json",
+      "sha256": "dd4400a2a398eb2f99caf9fd9c6fa06ccdd96d26c17b1e7909fd098af2fac0b9",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw"
+      ]
     }
   },
   "candidate_gates": {},
@@ -378,7 +394,7 @@
       "delivery": "Separate post-commit readback receipt"
     },
     "S03": {
-      "status": "RUNNING",
+      "status": "PARTIAL",
       "approved": true,
       "conditional_candidate_recovery_scope": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
@@ -396,12 +412,22 @@
       "supplement_sha256": "e30b8a4475203e72025c3091cb9a880f16942ed30ec867ae93be5a854ea5a0a2",
       "execution_started": true,
       "attempt_allocated": true,
-      "next_state": "WAITING_FOR_APPROVAL: S03",
+      "next_state": "WAITING_FOR_APPROVAL: S04",
       "attempt_id": "attempt-001",
-      "scope": "Technical recovery only; scientific outcomes remain stopped"
+      "scope": "Technical recovery only; scientific outcomes remain stopped",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw"
+      ],
+      "locally_qualified_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq"
+      ],
+      "native_quota_blocked": 7,
+      "fresh_recovery_quota_blocked": 1,
+      "S04_approved": false
     },
     "S04": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     },
     "S05": {
@@ -446,15 +472,31 @@
     "sidecars": 44,
     "sidecar_source_bytes": 323809,
     "S02_metadata_status": "LIMITED_SCOPE_COMPLETE",
-    "S02_new_source_payload_bytes": 0
+    "S02_new_source_payload_bytes": 0,
+    "S03": {
+      "requested_candidates": 9,
+      "locally_qualified": 2,
+      "S04_eligible": 1,
+      "native_payload_missing": 7,
+      "fresh_recovery_blocked": 1,
+      "all9_unique_model_count": null,
+      "new_probe_fits": 0,
+      "heldout_forward_rows": 0
+    }
   },
   "backup_state": {
     "science_backup": "NOT_APPLICABLE_NO_NEW_SCIENCE",
     "administrative_git_delivery": "Verify separate post-commit delivery receipt; no self-hash claim",
     "full_GPU_recreation": "NOT_PERFORMED",
-    "private_write_readback": "VERIFIED_SMALL_ROUTE_ARTIFACT_ONLY",
-    "runtime_recovery": "NOT_STARTED",
-    "part_a_publication_receipt": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/PACKAGE_PUBLICATION_RECEIPT.json"
+    "private_write_readback": "VERIFIED_SMALL_ROUTE_AND_MINIMUM_ACTUAL_ARTIFACT_OUTPUT_READBACK",
+    "runtime_recovery": "PILOT_FRESH_PROCESS_MODEL_REPLAY_EXISTING_RUNTIME",
+    "part_a_publication_receipt": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/PACKAGE_PUBLICATION_RECEIPT.json",
+    "native_private_weight_backup": "FAILED_QUOTA_CONTRACT_PERMITTED_EXCLUSION",
+    "candidate02_recovery": "FRESH_MODEL_SOURCE_QUOTA_BLOCKED",
+    "qualification_private_revisions": [
+      "af4cccd8477ea40f152e60f22dea0778512aa200",
+      "023633fbfbe6512d7909a4bdf33beae1e2d37a82"
+    ]
   },
   "external_dependencies": [
     {
@@ -511,13 +553,24 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/PACKAGE_PUBLICATION_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/MIGRATION_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S02/attempt-001/S02_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/PRIVATE_WRITE_READBACK.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/PRIVATE_WRITE_READBACK.json",
+      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/base/logical1/attempt-001/COMPLETE.json",
+      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/base/logical8/attempt-001/COMPLETE.json",
+      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/base/repeat8/attempt-001/COMPLETE.json",
+      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/candidate_01/logical1/attempt-001/COMPLETE.json",
+      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/candidate_01/logical8/attempt-001/COMPLETE.json",
+      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/candidate_01/repeat8/attempt-001/COMPLETE.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/S03_RECEIPT.json"
     ],
     "unfinished_units": [
-      "B2_SHARED_MINIMUM",
-      "B3_PILOT_CANDIDATE",
-      "B4_REMAINING_CANDIDATES",
-      "B5_EVIDENCED_PARENTS_ONLY"
+      "candidate_02: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
+      "candidate_03: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
+      "candidate_04: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
+      "candidate_05: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
+      "candidate_06: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
+      "candidate_07: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
+      "candidate_08: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
+      "candidate_09: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
     ],
     "transfer_totals": {
       "model_acquisition_bytes": 15516878934,
@@ -526,7 +579,10 @@
       "probe_fits": 0,
       "private_upload_bytes": 244,
       "private_readback_bytes": 244,
-      "model_probe_bytes": 1024
+      "model_probe_bytes": 1024,
+      "accepted_research_input_body_bytes": 58996077180,
+      "verified_full_shard_downloads": 3,
+      "native_shards_distinct_received": 2
     },
     "owned_processes": [],
     "unresolved_decisions": [
@@ -535,11 +591,11 @@
       "S01 full-delivery coverage remains PARTIAL",
       "Actual parents/intervention laws/exposure/replication remain scope-specific unknowns"
     ],
-    "next_action": "Publish sealed source/readiness checkpoint, then serial original-base and pilot TRAIN qualification only",
+    "next_action": "Stop. After separate direct APPROVE S04 at7007..., verify final delivery/backup/seals and live processes, then plan only the explicitly released pilot scope. Native quota blockers require changed source state or authorized exact mirror, no repeated scan/loop.",
     "prerequisites": [
       "Actual private destination and authenticated route remain available"
     ],
-    "reconciled_utc": "2026-11-23T20:13:36.582618+00:00",
+    "reconciled_utc": "2026-11-23T20:58:36.536855+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

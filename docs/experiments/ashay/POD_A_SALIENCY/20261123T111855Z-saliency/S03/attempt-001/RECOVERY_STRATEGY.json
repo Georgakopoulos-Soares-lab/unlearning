@@ -1,5 +1,5 @@
 {
-  "status": "PREPARED_MINIMUM_REQUIRED_PROTECTION_ALTERNATIVE",
+  "status": "PARTIAL_ACTUAL_PRIVATE_RECOVERY_VERIFIED_PILOT_ONLY",
   "observed_utc": "2026-11-23T19:55:01.197545+00:00",
   "failed_full_native_private_copy": {
     "status": "FAILED",
@@ -31,9 +31,17 @@
     "provider_revision": null,
     "provider_revision_null_reason": "Not exposed by source; no guarantee of future immutable source availability. A changed source must fail hash checking."
   },
-  "no_claim_before_actual_test": "No fresh model recovery, model qualification or full clean-runtime recreation has passed yet",
   "stop_if_minimum_protection_fails": "Do not expand remaining checkpoint queue; preserve current inputs, finish safe independent diagnostics, publish exact shared protection blocker",
   "capacity_available_bytes": null,
   "capacity_reason": "Hub upload reports private storage limit; whoami and exposed library methods provide no available-byte quota field; no purchases/deletion/visibility changes authorized",
-  "S04_approved": false
+  "S04_approved": false,
+  "historical_planning_statement_before_actual_tests": "No fresh model recovery, model qualification or full clean-runtime recreation has passed yet",
+  "actual_proofs": {
+    "pilot_fresh_model_replay": "PASS",
+    "checkpoint001": "af4cccd8477ea40f152e60f22dea0778512aa200",
+    "checkpoint002": "023633fbfbe6512d7909a4bdf33beae1e2d37a82",
+    "candidate02_fresh_weights": "BLOCKED_PROVIDER_QUOTA_NO_FALLBACK",
+    "private_full_native_weight_copy": "FAILED_QUOTA_NOT_CLAIMED",
+    "full_clean_runtime": "NOT_PERFORMED"
+  }
 }

@@ -1,0 +1,288 @@
+{
+  "schema_version": "s03-execution-failures-v1",
+  "command_failures": [
+    {
+      "operation": "install-pinned-runtime-source-packages",
+      "exit_status": 1,
+      "timed_out": false,
+      "pid": 22887,
+      "start_ticks": "58763407",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "started_utc": "2026-11-23T19:44:09.740488+00:00",
+      "ended_utc": "2026-11-23T19:44:11.560830+00:00",
+      "logs_preserved": true,
+      "source_ledger": "LONG_COMMAND_LEDGER.jsonl"
+    },
+    {
+      "operation": "pilot-native-private-recovery-001",
+      "exit_status": 1,
+      "timed_out": false,
+      "pid": 23324,
+      "start_ticks": "58798325",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "started_utc": "2026-11-23T19:49:58.921858+00:00",
+      "ended_utc": "2026-11-23T19:50:46.421325+00:00",
+      "logs_preserved": true,
+      "source_ledger": "LONG_COMMAND_LEDGER.jsonl"
+    },
+    {
+      "operation": "full-runtime-import-and-lock-001",
+      "exit_status": 1,
+      "timed_out": false,
+      "pid": 23822,
+      "start_ticks": "58864946",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "started_utc": "2026-11-23T20:01:05.134666+00:00",
+      "ended_utc": "2026-11-23T20:01:08.206038+00:00",
+      "logs_preserved": true,
+      "source_ledger": "LONG_COMMAND_LEDGER.jsonl"
+    },
+    {
+      "operation": "fresh-candidate-02-reacquisition-001",
+      "exit_status": 1,
+      "timed_out": false,
+      "pid": 28795,
+      "start_ticks": "59163834",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "started_utc": "2026-11-23T20:50:54.009902+00:00",
+      "ended_utc": "2026-11-23T20:50:54.983007+00:00",
+      "logs_preserved": true,
+      "source_ledger": "LONG_COMMAND_LEDGER.jsonl"
+    },
+    {
+      "operation": "Supplement ref-head-only comparison",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "Fetched current branch ca827...; exact requested file SHA still equals reviewed f0df...; reconciled content/source pins without refetch",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Minimum transfer requests import",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "requests absent in dedicated HF env; failed before payload bytes",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Minimum transfer httpx import",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "HF2.4 uses httpx2; standard-library exact transport succeeded",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Runtime metadata diagnostic",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "KeyError expected_bytes from two different record schemas; read-only diagnostic",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Original base initial plan",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "Nullable discovery hash was not actual delivered hash; joined immutable delivered record by exact sourceID",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Original base first batch",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "Single503 with0bytes;134 successes preserved and only failed file retried once",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Reference verifier global5fold assumption",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "Actual exact producer uses3forH3/5forothers; corrected against archived producer source",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Reference verifier classifier seed assumption",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "CVseed selects folds; exact saved classifier random_state42 confirmed against producer source",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Reference verifier global3fold assumption",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "Other five tasks source-bound5fold; corrected task mapping",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "Candidate02 aggregate invoked before logical8 sealed",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "Missing incomplete output; no completed work repeated; final comparison waits for COMPLETE receipts",
+      "evidence_preserved": true
+    },
+    {
+      "operation": "CPU runtime wrapper session92091 status readback",
+      "exit_status": null,
+      "timed_out": false,
+      "reason": "Tool session no longer addressable. Child create/install exits0 are preserved; wrapper exit remains unknown, no fabrication",
+      "evidence_preserved": true
+    }
+  ],
+  "caught_transfer_unit_failures": [
+    {
+      "alias": "candidate_02",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_03",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_04",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_05",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_06",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_07",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_08",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_09",
+      "name": ".metadata",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "URLError",
+      "diagnosis": "Incorrect file_uri object instead of download_url string; corrected stream receiptsv2",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_03",
+      "name": "__0_0.distcp",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "AssertionError",
+      "diagnosis": "Provider fullfile quota HTML confirmed by bounded diagnostic",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_04",
+      "name": "__0_0.distcp",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "AssertionError",
+      "diagnosis": "Provider fullfile quota HTML confirmed by bounded diagnostic",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_05",
+      "name": "__0_0.distcp",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "AssertionError",
+      "diagnosis": "Provider fullfile quota HTML confirmed by bounded diagnostic",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_06",
+      "name": "__0_0.distcp",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "AssertionError",
+      "diagnosis": "Provider fullfile quota HTML confirmed by bounded diagnostic",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_07",
+      "name": "__0_0.distcp",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "AssertionError",
+      "diagnosis": "Provider fullfile quota HTML confirmed by bounded diagnostic",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_08",
+      "name": "__0_0.distcp",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "AssertionError",
+      "diagnosis": "Provider fullfile quota HTML confirmed by bounded diagnostic",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    },
+    {
+      "alias": "candidate_09",
+      "name": "__0_0.distcp",
+      "status": "FAILED_PRESERVED_PARTIAL",
+      "body_bytes_written": 0,
+      "error_class": "AssertionError",
+      "diagnosis": "Provider fullfile quota HTML confirmed by bounded diagnostic",
+      "command_parent_exit": 0,
+      "caught_unit_failure_does_not_equal_success": true
+    }
+  ],
+  "supplemental_tool_failure": "Large Drive connector413 cap268435456. Direct supported normal provider route used, never range-download quota bypass.",
+  "all_failed_attempts_preserved": true,
+  "known_timeouts": 0,
+  "unknown_wrapper_exits_not_inferred": true,
+  "scientific_fit_failures": 0,
+  "no_GPUTRAIN_smoke_failure": true
+}

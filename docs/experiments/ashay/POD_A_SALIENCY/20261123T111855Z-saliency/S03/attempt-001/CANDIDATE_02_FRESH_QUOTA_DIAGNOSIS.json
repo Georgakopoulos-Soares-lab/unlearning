@@ -1,0 +1,48 @@
+{
+  "observed_utc": "2026-11-23T20:51:29.015000+00:00",
+  "source_object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+  "observations": [
+    {
+      "stage": "observed_confirm_page",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "length": "2459",
+      "range": null,
+      "bytes_read": 2459,
+      "html_title": [
+        "Google Drive - Virus scan warning"
+      ],
+      "form_action_host": "drive.usercontent.google.com",
+      "form_keys": [
+        "id",
+        "export",
+        "confirm",
+        "uuid"
+      ],
+      "form_id_matches": true,
+      "phrases": [
+        "Download anyway",
+        "Google Drive can't scan",
+        "Download"
+      ]
+    },
+    {
+      "stage": "confirmed_full_request_bounded_read",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "length": "2040",
+      "range": null,
+      "bytes_read": 2040,
+      "html_title": [
+        "Google Drive - Quota exceeded"
+      ],
+      "form_action_host": null,
+      "form_keys": [],
+      "form_id_matches": false,
+      "phrases": [
+        "Too many users"
+      ]
+    }
+  ],
+  "payload_dispatch": false
+}
