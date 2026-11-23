@@ -1,0 +1,355 @@
+{
+  "schema_version": "s03-resumption-availability-v1",
+  "requested_targets": 8,
+  "observations": [
+    {
+      "alias": "candidate_02",
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "source_object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": "8f9997a04f912ba15c424c63e400f5ec8170e21d9a68f63f01c6d42af9446c12",
+      "observed_start_utc": "2026-11-23T21:32:30.599077+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:30.734053+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:31.426384+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:31.426412+00:00"
+    },
+    {
+      "alias": "candidate_03",
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "source_object_id": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": null,
+      "observed_start_utc": "2026-11-23T21:32:31.436814+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:31.657767+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:32.337968+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:32.337992+00:00"
+    },
+    {
+      "alias": "candidate_04",
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "source_object_id": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": null,
+      "observed_start_utc": "2026-11-23T21:32:32.346445+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:32.454157+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:33.085376+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:33.085397+00:00"
+    },
+    {
+      "alias": "candidate_05",
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "source_object_id": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": null,
+      "observed_start_utc": "2026-11-23T21:32:33.095049+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:33.232227+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:33.965696+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:33.965718+00:00"
+    },
+    {
+      "alias": "candidate_06",
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "source_object_id": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": null,
+      "observed_start_utc": "2026-11-23T21:32:33.974166+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:34.144240+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:34.919035+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:34.919062+00:00"
+    },
+    {
+      "alias": "candidate_07",
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "source_object_id": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": null,
+      "observed_start_utc": "2026-11-23T21:32:34.930113+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:35.037523+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:35.741490+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:35.741525+00:00"
+    },
+    {
+      "alias": "candidate_08",
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "source_object_id": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": null,
+      "observed_start_utc": "2026-11-23T21:32:35.751631+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:35.858907+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:36.524207+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:36.524233+00:00"
+    },
+    {
+      "alias": "candidate_09",
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "source_object_id": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+      "expected_bytes": 15516878934,
+      "known_expected_sha256": null,
+      "observed_start_utc": "2026-11-23T21:32:36.537061+00:00",
+      "range_header_used": false,
+      "quota_bypass_attempted": false,
+      "observations": [
+        {
+          "step": 0,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2459",
+          "content_range": null,
+          "body_bytes_read": 2459,
+          "html_titles": [
+            "Google Drive - Virus scan warning"
+          ],
+          "quota_exceeded": false,
+          "too_many_users": false,
+          "observed_utc": "2026-11-23T21:32:36.649274+00:00"
+        },
+        {
+          "step": 1,
+          "HTTP_status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "declared_content_length": "2040",
+          "content_range": null,
+          "body_bytes_read": 2040,
+          "html_titles": [
+            "Google Drive - Quota exceeded"
+          ],
+          "quota_exceeded": true,
+          "too_many_users": true,
+          "observed_utc": "2026-11-23T21:32:37.402318+00:00"
+        }
+      ],
+      "status": "BLOCKED_GOOGLE_DRIVE_FULLFILE_QUOTA",
+      "observed_end_utc": "2026-11-23T21:32:37.402351+00:00"
+    }
+  ],
+  "owned_process": {
+    "pid": 30953,
+    "start_ticks": "59413486",
+    "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
+  },
+  "completed": 8,
+  "full_model_downloads": 0,
+  "full_model_loads": 0,
+  "inference": 0,
+  "new_probe_fits": 0,
+  "retry_loops": false,
+  "listing_scope": "Eight exact sealed native source IDs only; no folder discovery",
+  "elapsed_seconds": 6.807695618015714
+}

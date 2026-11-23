@@ -1,0 +1,129 @@
+{
+  "schema_version": "s03-resumption-audit-v1",
+  "record_type": "ADMINISTRATIVE_RESUMPTION_OF_SEALED_PARTIAL_ATTEMPT",
+  "run_id": "20261123T111855Z-saliency",
+  "resumption_id": "resume-002",
+  "active_qualification_attempt": "attempt-001",
+  "status": "PARTIAL",
+  "approved_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "package_sha256": "3b089d6b7d7ab16812272a500519db269050c855f0a0f29e3333752d9a62a5e9",
+  "prior_delivery_commit": "848dd06137753541c13838bb368298ceb3931f7d",
+  "prior_phase_receipt_path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/S03_RECEIPT.json",
+  "prior_phase_receipt_sha256": "dd4400a2a398eb2f99caf9fd9c6fa06ccdd96d26c17b1e7909fd098af2fac0b9",
+  "scope_candidates_released": [
+    "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw"
+  ],
+  "dispositions": [
+    {
+      "alias": "candidate_01",
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_add_noise_top10.0p",
+      "observed_step_label": 1500,
+      "disposition": "QUALIFIED_PROTECTED_ELIGIBLE_FOR_SCOPED_S04",
+      "S04_eligible": true,
+      "technical_blocker": null
+    },
+    {
+      "alias": "candidate_02",
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_add_noise_top15.0p",
+      "observed_step_label": 1500,
+      "disposition": "LOCALLY_QUALIFIED_OUTPUTS_PROTECTED_RECOVERY_BLOCKED",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    },
+    {
+      "alias": "candidate_03",
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_add_noise_top20.0p",
+      "observed_step_label": 1500,
+      "disposition": "NATIVE_PAYLOAD_BLOCKED_NO_MODEL_QUALIFICATION",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    },
+    {
+      "alias": "candidate_04",
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "observed_step_label": 2000,
+      "disposition": "NATIVE_PAYLOAD_BLOCKED_NO_MODEL_QUALIFICATION",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    },
+    {
+      "alias": "candidate_05",
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "observed_step_label": 2151,
+      "disposition": "NATIVE_PAYLOAD_BLOCKED_NO_MODEL_QUALIFICATION",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    },
+    {
+      "alias": "candidate_06",
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_reinit_top10.0p",
+      "observed_step_label": 1500,
+      "disposition": "NATIVE_PAYLOAD_BLOCKED_NO_MODEL_QUALIFICATION",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    },
+    {
+      "alias": "candidate_07",
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_reinit_top15.0p",
+      "observed_step_label": 1500,
+      "disposition": "NATIVE_PAYLOAD_BLOCKED_NO_MODEL_QUALIFICATION",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    },
+    {
+      "alias": "candidate_08",
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_reinit_top20.0p",
+      "observed_step_label": 1500,
+      "disposition": "NATIVE_PAYLOAD_BLOCKED_NO_MODEL_QUALIFICATION",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    },
+    {
+      "alias": "candidate_09",
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "observed_family_label": "saliency_maxent_ht_emp_h3_reinit_top5.0p",
+      "observed_step_label": 1500,
+      "disposition": "NATIVE_PAYLOAD_BLOCKED_NO_MODEL_QUALIFICATION",
+      "S04_eligible": false,
+      "technical_blocker": "Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+    }
+  ],
+  "new_route_checks": 8,
+  "quota_blocked_routes": 8,
+  "new_model_downloads": 0,
+  "new_GPU_units": 0,
+  "new_probe_fits": 0,
+  "new_heldout_forwards": 0,
+  "new_raw_forget_access": 0,
+  "prior_GPU_units_reused": 10,
+  "prior_base_head_checks_reused": 468,
+  "prior_shared_controls_reused": 36,
+  "large_payloads_rehashed": 0,
+  "metadata_body_bytes_read": 35992,
+  "total_physical_network_bytes": null,
+  "physical_network_bytes_null_reason": "HTTP/TLS/header/transport overhead not measured; exact bounded body reads recorded separately",
+  "failed_or_timed_out_commands": [],
+  "caught_provider_failures": "Eight full-file quota responses; the successful diagnostic process did not make these transfers successful",
+  "owned_processes": [],
+  "S04_approved": false,
+  "next_action": "No retry loop. Normal Drive full-file availability or an authorized exact-content immutable mirror is required for candidate02fresh recovery and03\u201309native acquisition. Existing protected pilot is eligible for separately approved S04 planning.",
+  "no_deadline_amendment_preserved": true,
+  "observed_utc": "2026-11-23T21:33:54.642013+00:00",
+  "evidence_sha256": {
+    "PROMPT_REFERENCE.json": "00b7922946894177fdc10fadde12317ed997acb7cca3abe16cb8a33cf5a52e2f",
+    "PROCESS_RECONCILIATION.json": "e97eaf932365f3cd4b2658db4ff2efc7695f48086566a38245d25752b67110f6",
+    "SOURCE_AVAILABILITY.json": "d39c252bc98b0608951c58fb69d4d88595187f939083eb9c492e6a86fbb41770",
+    "ENTRY_VALIDATION.json": "1f02650616f47ad0a0d742fdeb4b3ecfcbd4d1b163523bbf29d13ccd71359cee",
+    "REUSE_RECONCILIATION.json": "b6c2dc2b0864f5d46484229ee988c460ab1e8756b786cea578d72a310a8db6af",
+    "SUPPLEMENT_RECEIPT.json": "459c5d1b25b4a83b4ae5a1526f30097276e4f259e40edc16e4d3a8d8f31b45b5",
+    "REAPPROVAL_RECORD.json": "638d100f98a29ea89216d3ab21cfebd2a97c1d40ff365fc4bc93d5ba8884ecf7"
+  }
+}
