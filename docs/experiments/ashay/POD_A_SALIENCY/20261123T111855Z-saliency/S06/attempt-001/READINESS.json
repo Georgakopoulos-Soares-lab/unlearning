@@ -1,0 +1,104 @@
+{
+  "schema_version": "s06-readiness-v1",
+  "status": "PASS_METADATA_READY_FOR_APPROVED_PRODUCTION",
+  "gates": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "ENTRY_VALIDATION.json",
+          "sha256": "89bead38ff86f2763f3d3f757f1d82f00ac65b18ad8601056015ab9058e62098"
+        },
+        {
+          "path": "PROMPT_RECEIPT.json",
+          "sha256": "b5a47d518f01e090e88fd8011bae260ab20766075c796272844caba1c602f04e"
+        },
+        {
+          "path": "NATIVE_INPUT_BINDINGS.json",
+          "sha256": "99ed56b65ff7e4891e20082ecdf21256b3b95fbdc009de4a0e2ce3c1ba6b83bb"
+        }
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "INPUT_BINDINGS.json",
+          "sha256": "42055f2657cfaf765b802ab3e9eec6647b0f05be7c5010c308c3295e4e65d836"
+        },
+        {
+          "path": "CPU_ENVIRONMENT_LOCK.json",
+          "sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e"
+        },
+        {
+          "path": "ENVIRONMENT_LOCK.json",
+          "sha256": "0fd4209ad3f22e7d81d3a3ff465c62c6c5b4bc489e4105b53b6302f7a9531b71"
+        }
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "CAPACITY_ADMISSION.json",
+          "sha256": "a4f694aaae6176712b9031c60bd620b1ed40d83a4180239cce98bddb35b34e3d"
+        },
+        {
+          "path": "CURRENT_PROVIDER_ALLOCATION.json",
+          "sha256": "d312a37e14b1165a6b062795e94c5e923a0fd1377d30698f12856b0f08cf71bb"
+        },
+        {
+          "path": "CUMULATIVE_RESOURCE_RECONCILIATION.json",
+          "sha256": "870c4ed6cd03addbf7432d28bb8c9e8432e74ac0cb00670182fbde5df0b6a25f"
+        }
+      ]
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "FINITE_EXECUTION_MANIFEST.jsonl",
+          "sha256": "4ffcdd546d5b7c75df302f5313a87f945b0bf7bcf204f33b219fede00f6a23e8"
+        },
+        {
+          "path": "SOURCE_IDENTITY.json",
+          "sha256": "24861a41cfda67196d81cbc56bdb889b865d4daacd8e270359a69212c61c9d64"
+        }
+      ],
+      "focused_tests": [
+        {
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S06/attempt-001/synthetic-readiness-tests-001/TEST_REPORT.json",
+          "sha256": "520e901789a3cadfd930906139e2f5737cd36b45c63df03f95f9141d519ee021"
+        },
+        {
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S06/attempt-001/synthetic-readiness-tests-001/CAUSAL_CPU_TEST.json",
+          "sha256": "1cfbb52e99aaba2533845543608ec975d126b39571bf64a577886efc29daf967"
+        },
+        {
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S06/attempt-001/synthetic-S07-consumer-001/TEST_REPORT.json",
+          "sha256": "e92898b7b8aca90993e7329d684486b4273bc0f48793ca07a44569ffb75282c0"
+        }
+      ]
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "PRIVATE_RECOVERY_ROUTE_ADMISSION.json",
+          "sha256": "c08858fbd11e93875ea1f0575548f2cbeb40ae99dafab571b5a54c16d1b8e714"
+        },
+        {
+          "path": "RECOVERY_CONTRACT.json",
+          "sha256": "e6dd4ed3e799ec01a85c28cd46102de95db38cfa84717b517fe3d2e114012594"
+        }
+      ],
+      "operational_production_evidence": "First ordinary TRAIN context per task retained and must validate before its dev bundle; no extra forward"
+    }
+  },
+  "S05_receipt_sha256": "22ef7c0660afda2691503e7cc9d92701df419270a9aa21e340b31638bc1d0640",
+  "source_bundle_sha256": "24861a41cfda67196d81cbc56bdb889b865d4daacd8e270359a69212c61c9d64",
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "no_deadline": true,
+  "production_forwards_before_seal": 0,
+  "sealed_utc": "2026-11-24T14:55:36.356367+00:00"
+}

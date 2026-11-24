@@ -1,0 +1,153 @@
+{
+  "status": "PASS",
+  "tests": [
+    {
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "reject H3/test/unknown before filesystem or model access",
+          "status": "PASS"
+        },
+        {
+          "name": "reject unknown candidate and mutated geometry/precision",
+          "status": "PASS"
+        },
+        {
+          "name": "three-class array/row/mask contract",
+          "status": "PASS"
+        },
+        {
+          "name": "reject row permutation",
+          "status": "PASS"
+        },
+        {
+          "name": "reject duplicate IDs",
+          "status": "PASS"
+        },
+        {
+          "name": "reject missing hook",
+          "status": "PASS"
+        },
+        {
+          "name": "reject wrong causal mask",
+          "status": "PASS"
+        },
+        {
+          "name": "reject zero counts",
+          "status": "PASS"
+        },
+        {
+          "name": "reject filler leakage",
+          "status": "PASS"
+        },
+        {
+          "name": "reject class permutation",
+          "status": "PASS"
+        },
+        {
+          "name": "reject nonfinite features",
+          "status": "PASS"
+        },
+        {
+          "name": "valid completed seal reuse",
+          "status": "PASS"
+        },
+        {
+          "name": "stale source identity rejected",
+          "status": "PASS"
+        },
+        {
+          "name": "duplicate required member rejected",
+          "status": "PASS"
+        },
+        {
+          "name": "corrupt bytes rejected",
+          "status": "PASS"
+        },
+        {
+          "name": "interrupted write not reusable",
+          "status": "PASS"
+        },
+        {
+          "name": "single writer lock enforced",
+          "status": "PASS"
+        },
+        {
+          "name": "safe member rejects traversal absolute backslash",
+          "status": "PASS"
+        },
+        {
+          "name": "weighted token aggregate independent from sequence mean",
+          "status": "PASS"
+        },
+        {
+          "name": "independent group multiplicities and exp-after-ratio",
+          "status": "PASS"
+        },
+        {
+          "name": "PPL overflow preserves finite NLL",
+          "status": "PASS"
+        },
+        {
+          "name": "zero valid uncertainty draws explicitly unavailable",
+          "status": "PASS"
+        },
+        {
+          "name": "five frozen draw bytes/IDs/groups verified; splice512 rows511 groups",
+          "status": "PASS"
+        },
+        {
+          "name": "CPU consumer/producer no fitting/head/model call sites",
+          "status": "PASS"
+        }
+      ],
+      "count": 24,
+      "executed_source_sha256": {
+        "artifact_seals.py": "1facc3e1682d0efec30a0272e52c29487af5d0ea9acbde1914e06f86b8623d27",
+        "native_loader.py": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304",
+        "qualification_contract.py": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47",
+        "s06_contract.py": "6f0c60cf4936a8e9db5bd7c49e26c8a2e7f7f318660058c013f386fead0e86b3",
+        "s06_cpu.py": "b44612f005edeb8dcda302553ea112b2aea9c48d4b879831d362e67539a85f76",
+        "s06_gpu.py": "2df5d8846122dcd034d7c6af4feca407be857404877356be1896b7c9d2f2ae32",
+        "s06_verify.py": "bdf6c3c899b166385f952784f6b7233baf7e1d50ed8782b6cb4da6e00a1afb16"
+      },
+      "production_forwards": 0,
+      "classifier_fits": 0,
+      "fixture_path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S06/attempt-001/synthetic-readiness-tests-001"
+    },
+    {
+      "status": "PASS",
+      "checks": [
+        "actual causal t+1 shift",
+        "N retained as qualified target",
+        "right padding excluded",
+        "all6 filler losses/counts zero",
+        "physical8 shape retained",
+        "CUDA never initialized"
+      ],
+      "executed_source_sha256": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47",
+      "analytic_fixture_absolute_bound": 7.62939453125e-06,
+      "saved_statistics_metric_atol_unchanged": 1e-12,
+      "FP32_analytic_residual": 2.1584470259045085e-06,
+      "backbone_forwards": 0,
+      "classifier_fits": 0
+    },
+    {
+      "status": "PASS",
+      "checks": [
+        "exact ordered three-class metadata",
+        "all26 real matrix reader keys/dtypes/shapes/values",
+        "restored seal hashes without original stat fallback",
+        "only supplied synthetic inputs/case used"
+      ],
+      "matrices_read": 26,
+      "fitting_or_head_application_performed": false,
+      "source_sha256": {
+        "s06_contract.py": "6f0c60cf4936a8e9db5bd7c49e26c8a2e7f7f318660058c013f386fead0e86b3",
+        "artifact_seals.py": "1facc3e1682d0efec30a0272e52c29487af5d0ea9acbde1914e06f86b8623d27"
+      }
+    }
+  ],
+  "qualified_native_source_reused_unchanged": true,
+  "scientific_forwards_or_fits_during_tests": 0
+}

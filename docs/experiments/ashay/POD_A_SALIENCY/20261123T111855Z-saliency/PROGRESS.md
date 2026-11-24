@@ -1,9 +1,7 @@
-# S05 complete: all nine H3 gates and private recoveries passed
+S06 RUNNING — 2026-11-24T14:56:20.928722+00:00
 
-All18 extraction bundles,121212logical rows,702refitted heads,702unchanged-reference applications,1404dev probability paths,7020classifiermetric records,18LM units/36LM records and21exactfrozenfullCVaudits are complete. Every candidate has exhaustive independent saved-output verification and immutableprivate recovery with fullmemberbytechecks plus its prospective CPUreplaypanel. Fullcoverage, residuals, resource evidence, source-linked tables and interpretation limits are in S05/attempt-001/H3_REPORT.md and OUTPUT_VALIDATION.json.
+New scope: 0/90 extraction bundles; 0/69120 logical rows; 0/2340 representation matrices; 0/90 LM units; 0/360 sealed specification keys. Scientific verification and private protection remain separate: 0/9 candidates protected.
 
-Finalmetadata and Gitdelivery proof are recorded separately without selfreferential hashes. Reuse all H3 units; do not repeat valid work. S06_HANDOFF.json and S06_HANDOFF.md name exact eligible candidate/gate/recovery/source/protocol identities and prerequisites. No S06 or S09 comparisons executed. The no-deadline amendment remains active; Pod remains running.
+S05 reuse: 18 H3 bundles, 121212 logical rows, 468 matrices, 702 heads and 702 fixed applications, 21 audits. No S05 work replayed. S04 freeze and no-deadline amendment preserved.
 
-WAITING_FOR_APPROVAL: S06
-
-Final administrative recovery passed: immutable revision af7c897f8bca1dc27e21a98bfe86f167c2f41f04, archive SHA256 0bd69b4dd685f837fe89827fe7d45c8940ae3de557ee9ea2e896415fefdcc310, 445 exact members freshly byte-verified, including the final S05 receipt and S06 handoff. This proof is external to its own archive. Exact final Git delivery proof is recorded externally under control/S05/attempt-001/FINAL_DELIVERY_RECEIPT.json after publication; no future commit hash is fabricated.
+Readiness R1–R5 PASS. Current operation and exact unfinished keys are in RESUME_MANIFEST.json. Continue S06 only; stop before S07. Parent/intervention/exposure/replication/forget-evidence limitations remain unchanged. Billing unknown.
