@@ -816,7 +816,7 @@
         "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ],
       "scientific_release": "VERIFIED",
-      "delivery_status": "SCIENCE_AND_NINE_PRIVATE_RECOVERIES_PASS_FINAL_METADATA_GIT_PROOF_EXTERNAL"
+      "delivery_status": "INDEPENDENT_RELEASE_SCIENCE_RECOVERY_FINAL_METADATA_PASS_FINAL_GIT_PROOF_EXTERNAL"
     },
     "S09": {
       "status": "WAITING_FOR_APPROVAL",
@@ -1184,6 +1184,18 @@
         "candidate_09": "ad3080329aaa7c9f5118d35f023090cbf5181711"
       },
       "completed_cases": 9
+    },
+    "S08_final_metadata": {
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
+      "immutable_revision": "6ea438bb74c4d986d43f7cb82a8f441d8f208e4c",
+      "archive_sha256": "3932ddbb3506e55e7fafa196bb374f60bbdb9a59206462a4a5fba4dbe19a9a9f",
+      "archive_bytes": 95085059,
+      "exact_members": 888,
+      "administrative_mapping_regeneration_status": "PASS",
+      "receipt_path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/FINAL_METADATA_RECOVERY.json",
+      "receipt_sha256": "c3aff6aa10c61fd70cb8f5c2225168302aac2b61f8e6889fc651b834f5bdf9c6",
+      "scope": "Exact final administrative metadata/controller/S08receipt/S09handoff restored, plus8exact public mappings regenerated from restored saved metadata; candidate scientific archives referenced by immutable verified dependency graph; no extra replay or refits",
+      "self_reference": "New recovery and final Git proof are external to their own named immutable objects"
     }
   },
   "external_dependencies": [
@@ -1244,7 +1256,8 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S08_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S09_HANDOFF.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S09_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
     "unfinished_units": [],
     "transfer_totals": {
@@ -1256,18 +1269,20 @@
       "S07_final_metadata_upload_bytes": 54038275,
       "S07_final_metadata_HTTP_body_bytes": 54038275,
       "S08_unique_candidate_upload_bytes": 732317976,
-      "S08_candidate_fresh_HTTP_body_bytes": 732317976
+      "S08_candidate_fresh_HTTP_body_bytes": 732317976,
+      "S08_final_metadata_upload_bytes": 95085059,
+      "S08_final_metadata_HTTP_body_bytes": 95085059
     },
     "owned_processes": [],
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Complete onlyexternalfinalmetadata/Gitproof, thenSTOP. WAITING_FOR_APPROVAL: S09.",
+    "next_action": "Stop. WAITING_FOR_APPROVAL: S09. Reconcile external final Git proof; do not execute S09.",
     "prerequisites": [
       "S08 readiness PASS before full execution",
       "Original S04freeze/audit and exact S07producer identities"
     ],
-    "reconciled_utc": "2026-11-24T21:49:29.171357+00:00",
+    "reconciled_utc": "2026-11-24T21:52:26.028799+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
