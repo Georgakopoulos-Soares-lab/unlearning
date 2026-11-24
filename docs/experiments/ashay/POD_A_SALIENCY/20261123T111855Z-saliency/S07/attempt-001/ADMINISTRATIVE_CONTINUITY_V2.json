@@ -1,0 +1,24 @@
+{
+  "schema_version": "s07-compatible-administrative-continuity-v2",
+  "changes": [
+    {
+      "path": "run_task_group.py",
+      "old_sha256": "cb3f5da9399ab20f08e4d0ed18313fbd8277db71466f41ea984cb95eab373dd5",
+      "new_sha256": "ffae953b2790bf790821fd4f8518e713774d0200ef2704a7b66a7ca6b355bd35"
+    },
+    {
+      "path": "produce_candidate.py",
+      "old_sha256": "30d8961cb5941a4c75ead232146381e4acae1f2a4cc87a7df382df6678f4a1fc",
+      "new_sha256": "5eecca48324efee5d483da0ea6e725efe41f441d40ab5c49288ec4472e3b5dcc"
+    },
+    {
+      "path": "run_remaining_candidates.py",
+      "old_sha256": "80d6da44ca49295efabb6c95a7cd55940fb09f26c6aefa6767c34c8a39756e4d",
+      "new_sha256": "eec9a01dd6b481ab779e36f304648e1c4c9830d2884328f5180a760981645493"
+    }
+  ],
+  "reason": "Persist task checkpoint resume state and add server-local CPU stage/phase ownership guards. New numerical module, data, folds, fitting, metrics, recovery panel and tolerances unchanged.",
+  "currently_running_controller_executes_preserved_v1": true,
+  "original_sources_preserved_at": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S07/attempt-001/administrative-revisions/progress-and-stage-ownership-002",
+  "scientific_source_bundle_unchanged": "172a0f7ddc61cb6183cfe81a61f512aa27cb0534acafba39a471894802c070bf"
+}

@@ -264,10 +264,15 @@
       "eligibility_rule": "ExactS04receipt-bound frozen scope; consume original bytes, no reference replacement/audit orfamily reselection"
     },
     "producer_output_seals": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/UNIT_RECORD_INDEX.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/PRODUCER_COVERAGE.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S08_HANDOFF.json"
+      ],
       "resolve_in": "S07",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S08 entry; pending blocks only affected scope"
+      "eligibility_rule": "Exact producer-complete inputs, allnewscientificstatuses COMPLETE_UNVERIFIED. S08 requires newdirectapproval and original audit/freeze/source/row/runtime checks before independent release."
     },
     "released_unit_index": {
       "status": "PENDING",
@@ -465,6 +470,22 @@
       "status": "COMPLETE",
       "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
       "sha256": "930faab087eb41e2d8a48f51023b5713b939bff1146d5a9c9ec4fed0f3352e9d",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    "S07": {
+      "status": "COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
+      "sha256": "72c2d6c5fe78f13c66713ac6688d17f9303678eaf8be38655377381a0234e557",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -714,7 +735,7 @@
       "delivery_status": "PRIVATE_SCIENCE_AND_FINAL_METADATA_RECOVERY_PASS_GIT_PROOF_EXTERNAL"
     },
     "S07": {
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "approved": true,
       "attempt_id": "attempt-001",
       "scope_candidates": [
@@ -740,10 +761,12 @@
         "candidate_07",
         "candidate_08",
         "candidate_09"
-      ]
+      ],
+      "delivery_status": "PRODUCER_AND_NINE_CANDIDATE_RECOVERY_PASS_FINAL_ADMIN_GIT_PROOF_EXTERNAL",
+      "independent_release": "PENDING_S08"
     },
     "S08": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     },
     "S09": {
@@ -1070,6 +1093,21 @@
       "receipt_sha256": "08e77962fa612cae6385678f60f8f9abda5821e43875431eb6d975200e8f5daa",
       "scope": "Exact final administrative metadata/controller/S06receipt/S06handoff restored; candidate scientific archives referenced by immutable verified dependency graph; no extra replay or refits",
       "self_reference": "New proof and final Gitdelivery external to their own immutablemetadataarchive; scientificreceipt/handoff exactbytes restored."
+    },
+    "S07_candidates": {
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
+      "candidate_revisions": {
+        "candidate_01": "1c606487e45a2e5b81096085c66934a3b4f894e7",
+        "candidate_02": "ec7617f59546f36049c9468f8a33c29449d24535",
+        "candidate_03": "bfd5e2e45c7ce56dbfa33e91db82177f5dc129f5",
+        "candidate_04": "82a6a1f8c983d9adecc9341abe95a2c53b4feb30",
+        "candidate_05": "1153b0fd2b8f543efdc35fd86009aff25366f314",
+        "candidate_06": "7c62e749c82c271fbf6a0efe9f90c0830d7c048b",
+        "candidate_07": "f931b1ae74c2724bdacffee06b268ff6156ed612",
+        "candidate_08": "43a8dc3c01b91686b94feabffacdd35ef99f5cd1",
+        "candidate_09": "5f74601392d56136a122976731b4c2991f8e46b0"
+      },
+      "scope": "All new bytes plusprospective180path/900vector saved-artifact recovery; no independentnewrelease"
     }
   },
   "external_dependencies": [
@@ -1125,38 +1163,31 @@
     "supplement_commit": "a5f02875f73032f8824c1a6035ac5c5b65cf8e0c",
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S08_HANDOFF.json"
     ],
     "unfinished_units": [],
-    "transfer_totals": {},
-    "owned_processes": [
-      {
-        "pid": 93932,
-        "start_ticks": "67297288",
-        "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
-      },
-      {
-        "pid": 94189,
-        "start_ticks": "67346651",
-        "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
-      },
-      {
-        "pid": 80414,
-        "start_ticks": "66511272",
-        "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
-      }
-    ],
+    "transfer_totals": {
+      "S07_candidate_upload_bytes": 5542236321,
+      "S07_candidate_fresh_HTTP_body_bytes": 5542236321,
+      "S07_initial_optimizer_calls": 56160,
+      "S07_actual_optimizer_calls": 56295,
+      "S07_convergence_retries": 135
+    },
+    "owned_processes": [],
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Only remaining admitted S07 producer units, exact private sampled recovery and publication. Reconcile PID/start/boot and unit locks before scheduling missing work. Stop before S08.",
+    "next_action": "Stop. WAITING_FOR_APPROVAL: S08. Allnewresults remain COMPLETE_UNVERIFIED. Reconcile final delivery/recovery and original frozen audit before newdirectS08approval.",
     "prerequisites": [
-      "Pinned package/S04/source/runtime/S06 handoff",
-      "Own H3/S06 gates;R11firstbinary+multiclassPASS",
-      "Current48GiBhost/40GiBnextcase+64GiBstorage admission",
-      "No independent release/full-CV audit/backbone/LM/test/forget/contrasts"
+      "New direct APPROVE S08 at exact canonical pin",
+      "Reconcile S07 scientific/final metadata/Git proof, original S04 audit/contrast seals and all candidate private dependencies",
+      "Current source/runtime/host/storage/private route/locks and process-start identity admission",
+      "Preserve producer COMPLETE_UNVERIFIED rows; S08 adds source-bound release overlay only after its full checks",
+      "No audit panel or contrast family substitution; no raw forget/test/PodB work"
     ],
-    "reconciled_utc": "2026-11-24T19:34:49.656376+00:00",
+    "reconciled_utc": "2026-11-24T19:36:33.765089+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

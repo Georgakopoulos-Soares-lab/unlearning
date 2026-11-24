@@ -1,0 +1,76 @@
+{
+  "schema_version": "s07-capacity-accounting-v1",
+  "status": "PASS_NEXT_CANDIDATE_CAPACITY",
+  "method": "Complete boundedmetadata accounting of the current Pod export namespace: exactly8ownedroots; allentries counted, no symlinks followed or submounts crossed. Perentry max(apparentsize rounded4KiB,st_blocks*512), counting hardlinks repeatedly conservatively. Providerallocation uses conservative decimalGB. This is documented completeownedallocation accounting, not shared df substitution.",
+  "allocation_conservative_bytes": 1000000000000,
+  "complete_namespace": true,
+  "metadata_stat_entries": 210541,
+  "unique_inodes": 210541,
+  "regular_files": 172127,
+  "directories": 38388,
+  "symlinks_not_followed": 26,
+  "roots": [
+    {
+      "root": "/workspace/.cache",
+      "entry_count": 907,
+      "charged_upper_bound_bytes": 2451488768
+    },
+    {
+      "root": "/workspace/pod-a-saliency/artifacts",
+      "entry_count": 193683,
+      "charged_upper_bound_bytes": 392917852160
+    },
+    {
+      "root": "/workspace/pod-a-saliency/control",
+      "entry_count": 2535,
+      "charged_upper_bound_bytes": 217137152
+    },
+    {
+      "root": "/workspace/pod-a-saliency/prompts",
+      "entry_count": 174,
+      "charged_upper_bound_bytes": 20238336
+    },
+    {
+      "root": "/workspace/pod-a-saliency/prompts-publish",
+      "entry_count": 340,
+      "charged_upper_bound_bytes": 63324160
+    },
+    {
+      "root": "/workspace/pod-a-saliency/research",
+      "entry_count": 5608,
+      "charged_upper_bound_bytes": 2199240704
+    },
+    {
+      "root": "/workspace/pod-a-saliency/research-POD_A_SALIENCY",
+      "entry_count": 4839,
+      "charged_upper_bound_bytes": 2049335296
+    },
+    {
+      "root": "/workspace/pod-a-saliency/tools",
+      "entry_count": 2455,
+      "charged_upper_bound_bytes": 326815744
+    }
+  ],
+  "apparent_all_entries_bytes": 399740974268,
+  "reported_allocated_all_entries_bytes": 399789472768,
+  "conservative_account_charge_upper_bound_bytes": 400245432320,
+  "control_log_growth_allowance_bytes": 1073741824,
+  "usable_remaining_lower_bound_bytes": 598680825856,
+  "frozen_storage_headroom_bytes": 68719476736,
+  "next_candidate_budget_bytes": 42949672960,
+  "next_candidate_budget_components": {
+    "candidate_envelope_bytes": 42949672960,
+    "scope": "Producer CV+final estimators, traces, probabilities/draws, archive, fresh readback/consumer and bounded sampled S06dev anchor inputs; preserved failures. Forecast updated after actual first units. No new backbone/LM.",
+    "initial_calls_per_candidate": 6240,
+    "final_heads_per_candidate": 390
+  },
+  "shared_free_bytes_used_for_admission": false,
+  "payload_content_read": false,
+  "large_weights_rehashed": false,
+  "traversal_entry_limit": 250000,
+  "traversal_elapsed_seconds": 54.43428730906453,
+  "per_account_remaining_API_field": null,
+  "per_account_remaining_API_field_null_reason": "Provider GET exposes allocation, not measuredusedbytes; completeownedallocation alternative explicitlyauthorized. Conservative lowerbound used, not fabricated quotaAPI value.",
+  "updating_admission": "Charge all subsequent S07newfiles/staging/consumers and failedpartials against this baseline with exact ownedreceipts/statlisting; do not repeat wholeallocation walk aftereverychunk. No cleaning historical assets or quota-probe file.",
+  "completed_utc": "2026-11-24T16:37:38.289064+00:00"
+}

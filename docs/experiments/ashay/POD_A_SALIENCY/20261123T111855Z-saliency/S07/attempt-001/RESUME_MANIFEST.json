@@ -428,60 +428,18 @@
       "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
       "producer": "PASS",
       "private_recovery": "PASS",
-      "publication": "PENDING",
+      "publication": "PASS",
       "result_status": "COMPLETE_UNVERIFIED",
       "producer_validation_sha256": "247cd7376e976c9c0c71d5453c7f5f55fd23671e75a54b5cc384623985a4d18c",
       "recovery_revision": "5f74601392d56136a122976731b4c2991f8e46b0",
-      "recovery_receipt_sha256": "4a48d8b17074b5267ddc5032007f34269ee7099c7f533a12dddcf939d5b7054d"
+      "recovery_receipt_sha256": "4a48d8b17074b5267ddc5032007f34269ee7099c7f533a12dddcf939d5b7054d",
+      "publication_commit": "c6055156186fd2ddcfc0c6ede557e459e9b35876"
     }
   ],
   "unfinished_head_scopes": [],
   "unfinished_spec_resolution": "Each unfinished head scope has30exact frozen keys in FINITE_EXECUTION_MANIFEST.jsonl. Reconcile actual saved CVcall seals for partially completed heads and reuse every valid call; do not restart fitting. Worker queue progress files preserve continuation state.",
-  "owned_processes": [
-    {
-      "stage": "S07-candidate_09-full-finish-001",
-      "pid": 93932,
-      "start_ticks": "67297288",
-      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
-      "status": "RUNNING",
-      "exit_status": null,
-      "elapsed_seconds": 500.17413928708993,
-      "live_matching_identity": true
-    },
-    {
-      "stage": "S07-candidate_09-resume-001",
-      "pid": 94189,
-      "start_ticks": "67346651",
-      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
-      "status": "RUNNING",
-      "exit_status": null,
-      "elapsed_seconds": null,
-      "live_matching_identity": true
-    },
-    {
-      "pid": 80414,
-      "start_ticks": "66511272",
-      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
-      "script_source_sha256": "80d6da44ca49295efabb6c95a7cd55940fb09f26c6aefa6767c34c8a39756e4d",
-      "source_bundle_sha256": "172a0f7ddc61cb6183cfe81a61f512aa27cb0534acafba39a471894802c070bf",
-      "status": "RUNNING",
-      "finite_candidate_order": [
-        "candidate_01",
-        "candidate_02",
-        "candidate_03",
-        "candidate_04",
-        "candidate_05",
-        "candidate_06",
-        "candidate_07",
-        "candidate_08",
-        "candidate_09"
-      ],
-      "scope": "Only approved S07 producer/private recovery/publication; stop before S08",
-      "observed_utc": "2026-11-24T17:15:28.442172+00:00",
-      "live_matching_identity": true
-    }
-  ],
-  "next_permitted_action": "Only remaining admitted S07 producer units, exact private sampled recovery and publication. Reconcile PID/start/boot and unit locks before scheduling missing work. Stop before S08.",
+  "owned_processes": [],
+  "next_permitted_action": "Stop. Only reconcile final recovery/delivery proof; do not execute S08 without new direct approval.",
   "prerequisites": [
     "Pinned package/S04/source/runtime/S06 handoff",
     "Own H3/S06 gates;R11firstbinary+multiclassPASS",
@@ -489,9 +447,10 @@
     "No independent release/full-CV audit/backbone/LM/test/forget/contrasts"
   ],
   "no_deadline": true,
-  "updated_utc": "2026-11-24T19:34:49.607029+00:00",
+  "updated_utc": "2026-11-24T19:36:32.026185+00:00",
   "completed_heads": 3510,
   "producer_spec_records_under_completed_heads": 105300,
   "actual_solver_calls_in_completed_heads": 56295,
-  "convergence_retries_in_completed_heads": 135
+  "convergence_retries_in_completed_heads": 135,
+  "status": "S07_PRODUCER_COMPLETE_UNVERIFIED_WAITING_S08"
 }
