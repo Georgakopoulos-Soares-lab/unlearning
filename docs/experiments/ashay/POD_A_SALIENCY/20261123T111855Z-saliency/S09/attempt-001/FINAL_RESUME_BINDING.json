@@ -1,0 +1,71 @@
+{
+  "schema_version": "s09-pre-approval-resume-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "phase": "S09",
+  "attempt_id": "attempt-001",
+  "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "supplement_commit": "05187f14d66adb483758af7700deba081d27e371",
+  "supplement_sha256": "1755c956581847af62777f9382dbd1cfab5c7513ccdc850e617b5ecc07f91945",
+  "S08_delivery": "bb2da3953c3455b6375e8df09f0cb4004134fc1c",
+  "S09_handoff_sha256": "2d2655ae6ae88fb8f191fc8808396599b505673a75a745200e15a425ce069799",
+  "status": "S09_COMPLETE_FOR_FROZEN_ADMITTED_CONTRAST_SCOPE",
+  "completed_receipts": {
+    "PROMPT_RECEIPT.json": "9c5f598fe171f330548bedb0a0275a32f7e6907b5ccab76a0a05c12bfe8c306b",
+    "AUTHORIZATION_REVIEW.json": "2455ae772862f51e3f37c2d45fd0a825031ef3dd456ee4d169286abbcc1f2fdd",
+    "COMPLETED_INPUT_CHECKS_REUSED.json": "97bc507dbbe8564db8953fbedff4e06f39ff10fde66bdea8d9efdc48b8d85abd",
+    "PRE_APPROVAL_METADATA_CHECKS.json": "49baeb2accc4939f46dc976f50cd671dd2016a5fa9963873238ca0e93c0c15d8",
+    "FROZEN_COMPARISON_BINDING.json": "ae8ee367cd60389c1a7dba5309d467bbd91a141db9323e607458e23a273891ac",
+    "PRE_APPROVAL_ENTRY_GUARD.json": "4b1e402564ee964d7f5a82261902595c5cb217bfd406d730b770c7f2a402568a",
+    "CPU_RUNTIME_CURRENT.json": "04eb450a7a4f4660b2ac5d44c4fc6675c98e11b081079a9634dfe7b5521d34ef",
+    "GITHUB_ACCESS.json": "9194cc6d726691d4409d9ad1a8618f0e8780187e9c5346089c7362685a717023",
+    "HF_ACCESS.json": "e92a699116f1c1ef5788ab726dd736db7d5cc009af46ac11d015f338d57cb6e6",
+    "FIGURE_RUNTIME_DISCOVERY.json": "ce914889eeb6650d1d6421ef86b855790be27d2776c60b88aa6d68bf61a1590b",
+    "EXECUTION_FAILURES_CURRENT.json": "fecb544608c5324d1d916ae1653a045a40735f91f2cda26bc49aed219e6e3bbc",
+    "READINESS.json": "5b20ed5ac51e8191a79cac882140bbe21c8caa1059e1f4c31bedf8e696f47fba",
+    "REPORTING_SOURCE_IDENTITY.json": "65f3839c53ef420487845bda83a34cfecd3c5f2c8b978e7068e2ddf1ab71e0d7"
+  },
+  "frozen_metadata_manifests": {
+    "FROZEN_ADMITTED_KEYS.jsonl": "b237ed6adf108e95e4f813a33e8ec619c2520a1d1512b4c4db3865766d74d65b",
+    "FROZEN_DEFERRED_KEYS.jsonl": "b438e34849a89f5c0be5f67d61f416d22de3faba774737c4f375c9386c4fe24b"
+  },
+  "completed_scientific_contrasts": 48924,
+  "remaining_admitted_by_family": {
+    "base_reference": 42120,
+    "DNA_control": 6480,
+    "anchor_policy_gap": 324
+  },
+  "deferred_by_family": {
+    "immediate_parent": 42120,
+    "LM_base_reference": 108
+  },
+  "owned_processes": [],
+  "transfers": {
+    "scope": "S09only; historicalphasechargesnotreset",
+    "scientific_application_upload_bytes": 1297731113,
+    "scientific_fresh_HTTP_download_bytes": 1297731113,
+    "final_metadata_application_upload_bytes": 126701631,
+    "final_metadata_fresh_HTTP_download_bytes": 126701631,
+    "total_S09_application_upload_bytes": 1424432744,
+    "total_S09_fresh_HTTP_download_bytes": 1424432744,
+    "new_model_download_bytes": 0,
+    "provider_billed_network_bytes": null,
+    "billing_reason": "Applicationbodycountsnotproviderbilling/quotatelemetry"
+  },
+  "pending_implementation_dependencies": [],
+  "exact_next_required_chat": null,
+  "next_permitted_action": "WAITING_FOR_APPROVAL: S10; firstreconcileactualfinaldeliveryproof, exactprotocol/runtime/source/seals, livePIDs/locks; do notrepeatsuccessfulS09units.",
+  "do_not_repeat": [
+    "Do not rerun original failed preflight_metadata.py or successful continuation merely because a new chat turn arrives",
+    "No repeated package self-tests, S00-S08numerics/audits/fits, broad filesystem/allocation scans or native payload hashes",
+    "Preserve metadata failure/source/logs; d/q contrast IDs are metric endpoint keys, not prediction IDs"
+  ],
+  "updated_utc": "2026-11-24T23:18:39.263624+00:00",
+  "reference_prediction_members": 504,
+  "remaining_admitted_count": 0,
+  "last_verified_unit": "candidate_09|gue_mouse_0",
+  "completed_reporting_figures": 111,
+  "unfinished_units": [],
+  "final_metadata_revision": "1f4cb112b8d188cd842f1c770835a41a43a09275",
+  "scientific_commit": "e1694bf18ba599074ed0c9f13700dbc23349d553",
+  "next_direct_approval": "APPROVE S10 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a"
+}

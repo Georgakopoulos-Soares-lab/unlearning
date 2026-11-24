@@ -844,7 +844,7 @@
       "approved": false,
       "attempt_id": "attempt-001",
       "scientific_release": "VERIFIED_FROZEN_ADMITTED_SCOPE",
-      "delivery_status": "SCIENCE_AND_EXHAUSTIVE_PRIVATE_RECOVERY_PASS_FINAL_ADMIN_GIT_EXTERNAL"
+      "delivery_status": "SCIENCE_AND_FINAL_PRIVATE_METADATA_VERIFIED_FINAL_GIT_PROOF_EXTERNAL"
     },
     "S10": {
       "status": "WAITING_FOR_APPROVAL",
@@ -1285,9 +1285,7 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S10_HANDOFF.json"
     ],
-    "unfinished_units": [
-      "OnlyexternalS09finalmetadata/Gitdeliveryproof"
-    ],
+    "unfinished_units": [],
     "transfer_totals": {
       "S07_candidate_upload_bytes": 5542236321,
       "S07_candidate_fresh_HTTP_body_bytes": 5542236321,
@@ -1299,18 +1297,21 @@
       "S08_unique_candidate_upload_bytes": 732317976,
       "S08_candidate_fresh_HTTP_body_bytes": 732317976,
       "S08_final_metadata_upload_bytes": 95085059,
-      "S08_final_metadata_HTTP_body_bytes": 95085059
+      "S08_final_metadata_HTTP_body_bytes": 95085059,
+      "S09_application_upload_bytes": 1424432744,
+      "S09_fresh_HTTP_download_bytes": 1424432744,
+      "S09_new_model_download_bytes": 0
     },
     "owned_processes": [],
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "FinishS09externaldeliveryproof thenSTOP. WAITING_FOR_APPROVAL: S10.",
+    "next_action": "STOP: WAITING_FOR_APPROVAL S10 after external finalGitproof; require exactdirectAPPROVE S10 at canonicalpin beforeanyS10work.",
     "prerequisites": [
       "S09readinessPASS",
       "OriginalS04contrastfreezeand S08releaseidentity"
     ],
-    "reconciled_utc": "2026-11-24T23:15:25.379972+00:00",
+    "reconciled_utc": "2026-11-24T23:18:39.257988+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
