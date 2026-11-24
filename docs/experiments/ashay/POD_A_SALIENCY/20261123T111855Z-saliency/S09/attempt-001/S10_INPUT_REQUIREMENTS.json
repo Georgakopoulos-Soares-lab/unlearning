@@ -1,0 +1,34 @@
+{
+  "status": "PREPARED_NOT_EXECUTED",
+  "checkpoint_join": "Exact candidate/content SHA256 and source-bound checkpoint identity; labels/steps alone insufficient",
+  "required_fields": [
+    "checkpoint/content identity",
+    "collaborator source locator and immutable revision or exact aggregate sidecar SHA256 with nullreasons",
+    "forget task name/definition",
+    "split and evaluation protocol",
+    "metric name/definition/direction/units",
+    "estimate and explicit denominator (samples/targets/groups)",
+    "reference checkpoint/content identity and matching protocol",
+    "uncertainty method/level/conditioning, resampling/pairing identities if available",
+    "training/intervention/exposure identity evidence"
+  ],
+  "eligibility_checks": [
+    "Exactcheckpoint/contentjoin to CANDIDATES.json",
+    "Task/split/metric/direction/denominator/protocol definitionscompatible",
+    "Referenceidentityverified before reference-relative interpretation",
+    "Retain/forget outcomes remainseparated; no matchedsamplesorjointuncertaintyinventedfromaggregate-onlydata",
+    "Unmatched/incompatible/incompletelyidentified aggregatesexplicitlypending/rejected, nevermissing-to-zero"
+  ],
+  "forbidden": [
+    "rawforgetdataaccess",
+    "forgettaskevaluation",
+    "automaticcollaboratormessages",
+    "fabricatedmatchedsamples",
+    "aggregate-onlyjointuncertainty",
+    "unapprovedS10execution"
+  ],
+  "external_state": "MatchedcollaboratorforgetaggregatesnotavailableorqualifiedinS09",
+  "R2": "EXCLUDED",
+  "PodB": "SEPARATE",
+  "no_deadline": true
+}

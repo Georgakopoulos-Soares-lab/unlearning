@@ -1,0 +1,5 @@
+# Non-executable evidence needs
+
+Establish immediateparent/intervention/mask/saliencydefinition/realizeddose/exposure identities before any newcausal orparent-relativefamily. Bind exactLMbase per-exampleloss/targetendpoints beforeactivatingthe108deferredLMcomparisons. Independentinterventionreplicates, strongerbiologicalgrouping and any newinferentialfamily/margin requireprospectiveprotocolamendment andseparateauthorization.
+
+Qualify matchedcollaboratorforgetaggregates separatelyunderS10approval. PreserveC05historicalprivacyunknown,inventoryPARTIAL,R2excluded,PodBseparate. Thisregisterdoesnotactivatework.

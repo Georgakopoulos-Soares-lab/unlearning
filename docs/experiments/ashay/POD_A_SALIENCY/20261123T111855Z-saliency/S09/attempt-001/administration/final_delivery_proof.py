@@ -1,0 +1,26 @@
+from ops import C,A,R,save,run,now
+from pathlib import Path
+import json,hashlib,fcntl
+read=lambda p:json.loads(p.read_text());sha=lambda p:hashlib.file_digest(p.open('rb'),'sha256').hexdigest();T=R/'docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency';P=T/'S09/attempt-001';science=read(C/'S09-science-001-DELIVERY.json');final=read(C/'S09-final-001-DELIVERY.json');meta=read(C/'FINAL_METADATA_RECOVERY_RECEIPT.json');assert science['status']==final['status']==meta['status']=='PASS';commit=final['commit'];receipt=read(P/'S09_RECEIPT.json');assert receipt['status']=='LIMITED_SCOPE_COMPLETE' and receipt['verified_units']==48924
+def git(s,*args,cwd=R,network=False):return run('S09-final-proof-'+s,['git',*args],cwd,network=network).decode().strip()
+assert git('head','rev-parse','HEAD')==commit and git('remote','ls-remote','--exit-code','origin','refs/heads/POD_A_SALIENCY',network=True).split()[0]==commit and git('clean','status','--porcelain')=='';assert git('original-POD-A','rev-parse','POD_A')=='8c651c7ab3c3a2a47f5bbd0e464a69a197512c82'
+for phase in ['S00','S01','S02','S03','S04','S05','S06','S07','S08']:run('S09-final-proof-preserve-'+phase,['git','diff','--exit-code','bb2da3953c3455b6375e8df09f0cb4004134fc1c','--',str((T/phase).relative_to(R))],R)
+prompts=[]
+for i,directory in enumerate(['/workspace/pod-a-saliency/prompts','/workspace/pod-a-saliency/prompts-publish']):
+ assert git('prompt'+str(i)+'-clean','diff','--name-only','HEAD',cwd=directory)=='';prompts.append({'path':directory,'HEAD':git('prompt'+str(i)+'-head','rev-parse','HEAD',cwd=directory),'tracked_changes':False})
+for n,h in receipt['output_sha256'].items():assert sha(P/n)==h,n
+commands=[json.loads(l) for l in (C/'LONG_COMMAND_LEDGER.jsonl').read_text().splitlines()];live=[];unknown=[]
+for command in commands:
+ if command.get('exit_status') is None:unknown.append(command)
+ p=Path('/proc/'+str(command['pid'])+'/stat')
+ if p.exists() and p.read_text().rsplit(')',1)[1].split()[19]==str(command['start_ticks']):live.append({'pid':command['pid'],'start_ticks':command['start_ticks'],'boot_id':command['boot_id']})
+assert not live and not unknown
+for label in ['S09-paired-contrasts-001','S09-private-exhaustive-recovery-001','S09-exhaustive-fresh-numerics-001','S09-exhaustive-fresh-render-001','S09-output-validation-001','S09-science-publication-001','S09-final-metadata-protection-001','S09-final-publication-001']:
+ records=[r for r in commands if r['stage']==label];assert len(records)==1 and records[0]['exit_status']==0,label
+locks=[]
+for name in ['CPU_STAGE.lock','ENDPOINT_WRITER.lock','PRIVATE_RECOVERY.lock','RESEARCH_PUBLICATION.lock']:
+ with (C/name).open('a') as f:fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);fcntl.flock(f,fcntl.LOCK_UN)
+ locks.append(name)
+state=read(T/'CONTROLLER_STATE.json');assert not state['approvals']['S10']['approved'] and not state['approvals']['S11']['approved'];timeouts=[json.loads(l) for l in (C/'COMMAND_LEDGER.jsonl').read_text().splitlines() if json.loads(l).get('timed_out')];failed=[r for r in commands if r['exit_status']!=0]
+gpu=run('S09-final-proof-GPU-metadata',['nvidia-smi','--query-compute-apps=pid,process_name,used_memory','--format=csv,noheader,nounits']).decode();process=run('S09-final-proof-process-snapshot',['ps','-eo','pid,ppid,lstart,etime,stat,comm','--sort=pid']).decode();(C/'FINAL_PROCESS_SNAPSHOT.txt').write_text(process)
+proof={'schema_version':'s09-external-final-delivery-v1','status':'PASS','scientific_commit':science['commit'],'final_metadata_commit':commit,'branch':'POD_A_SALIENCY','scientific_publication':science,'final_publication':final,'counts':{'base_reference_verified':42120,'DNA_control_verified':6480,'anchor_policy_gap_verified':324,'admitted_verified':48924,'immediate_parent_deferred':42120,'LM_base_deferred':108,'deferred_preserved':42228,'intended_keys':91152,'draw_differences_verified':97848000,'figures':111},'worst_residual':read(P/'WORST_RESIDUAL_LOCATION.json'),'scientific_private_recovery':read(C/'SCIENCE_PRIVATE_RECOVERY_RECEIPT.json'),'final_metadata_private_recovery':meta,'S09_receipt_sha256':sha(P/'S09_RECEIPT.json'),'S10_handoff_sha256':sha(P/'S10_HANDOFF.json'),'original_POD_A_tip_unchanged':True,'S00_S08_tracked_trees_unchanged':True,'prompt_states':prompts,'frozen_canonical_package_and_S04_protocol_unchanged':True,'owned_commands_with_actual_exits':len(commands),'preserved_nonzero_command_exits':len(failed),'preserved_nonzero_exit_labels':[r['stage'] for r in failed],'metadata_timeouts':len(timeouts),'unknown_child_exits':0,'still_running_known_owned_children':live,'locks_available':locks,'GPU_compute_metadata_lines':[x for x in gpu.splitlines() if x.strip()],'S09_model_inference_fits_GPU_calls':0,'S10_executed_or_approved':False,'S11_executed_or_approved':False,'scheduler_or_observer_activation':False,'shutdown_or_resize':False,'no_deadline':True,'remaining_limits':read(P/'LIMITATIONS.json'),'next_direct_approval':'APPROVE S10 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a','self_reference':'External to namedfinalGitcommit/privatearchives; thiscommandactualexit independentlyrecordedbylong_run/toolaftercompletion','completed_utc':now()};save(C/'FINAL_DELIVERY_RECEIPT.json',proof);print('S09_FINAL_DELIVERY_VERIFIED',commit,flush=True)

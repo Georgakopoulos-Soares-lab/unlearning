@@ -1,0 +1,30 @@
+{
+  "schema_version": "s09-frozen-comparison-metadata-v1",
+  "status": "PASS_METADATA_ONLY",
+  "S04_contrast_plan_sha256": "f71e806f716d76990760b83812e6d662e5a30c38bf14688251466f6451d9b8b1",
+  "S04_original_expected_manifest_sha256": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+  "family_counts": {
+    "base_reference": 42120,
+    "immediate_parent": 42120,
+    "DNA_control": 6480,
+    "anchor_policy_gap": 324,
+    "LM_base_reference": 108
+  },
+  "admitted_count": 48924,
+  "deferred_count": 42228,
+  "intended_count": 91152,
+  "admitted_ids_sha256": "281ee09d8e70d8034c00424d52ddbb5e4792c2f789e18a0aa7acb900cf0dc6ba",
+  "deferred_ids_sha256": "ba30151e3a5efa0f9c26158170ce61ef432992f5f46479f080e743a07576389a",
+  "frozen_metadata_copies": {
+    "FROZEN_ADMITTED_KEYS.jsonl": "b237ed6adf108e95e4f813a33e8ec619c2520a1d1512b4c4db3865766d74d65b",
+    "FROZEN_DEFERRED_KEYS.jsonl": "b438e34849a89f5c0be5f67d61f416d22de3faba774737c4f375c9386c4fe24b"
+  },
+  "deferred_reasons": {
+    "UNKNOWN_PARENT_INTERVENTION_EXPOSURE": 42120,
+    "EXACT_BASE_PER_EXAMPLE_LOSS_TARGET_ENDPOINT_JOIN_NOT_BOUND": 108
+  },
+  "all42120planned_target_metric_keys_covered": true,
+  "underlying_prediction_paths": 8424,
+  "target_key_schema": "contrast.d is a classifier_metric specification ID; anchor_policy_gap.q is also a classifier_metric ID",
+  "paired_values_masks_or_contrasts_computed": false
+}

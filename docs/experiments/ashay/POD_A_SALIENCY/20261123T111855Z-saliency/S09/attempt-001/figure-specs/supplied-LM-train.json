@@ -1,0 +1,1018 @@
+{
+  "id": "supplied-LM-train",
+  "family": "sweep",
+  "title": "Supplied endpoints \u00b7 TRAIN LM diagnostics only",
+  "caption": "Each supplied checkpoint is a separate labeled endpoint with observed intervention label and checkpoint step. LM NLL and perplexity are distinct from classifier CE. DEV is primary; TRAIN is diagnostic in its separate figure. No verified common lineage, matched exposure, seed/layer replication or checkpoint-pair inference is implied.",
+  "panels": [
+    {
+      "title": "emp_H3 | LM_NLL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "dccc3a7452388da96cec8388308045f74af21520f3688c5f0bfa9436943e0708",
+            "4e6ad45ef851ef0f29a307559bd3216925dcf307ced84a4ae20475f79fd8abc9",
+            "37887d1a5ef66adee798536530af0e83902338d0e772ee1169fb6fd092b36cad",
+            "b063be75e9a375c2157d53d09b8dd130f38dc1130b2b98cac79dfb3ab201d212",
+            "550bb813b8e4147bf329ca4eb72a58e865785032522e0140a437c642bcea5880",
+            "f91b015440fd33ddd93a62e541c9f64a0d7fea6d3961e746a2a0ea7a3091861c",
+            "94850033ee62d864fb076c5006c47818402d7acac1e31440b58ce9c37321dc65",
+            "d3c8c205d5312801402aea2f0e7718a459165d051f12e4d3da2d31aa223eb8c9",
+            "f2ebf1c9b897cc95475ce94cd04e5f9d6fcd91c84d17c1b27a83ebc283cf42f8"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            0.7942020297199459,
+            0.7998044787390857,
+            0.7961252077585207,
+            0.5470483475136869,
+            0.5270971224536568,
+            0.7941372228777618,
+            0.7936185683376203,
+            0.7935987789391495,
+            0.7945258289188494
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_NLL (nats/target)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "emp_H3 | LM_PPL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "d3d64ba6c95c19ddf885ca13f157ab8366514a3e009e231d84128bbd040a04f6",
+            "4f2819da6dc1c6f4d09a75a19ba629410ab950843e459761e52b049c21edea36",
+            "18263165a999a13ec3bfebb2e0984a459d8f29f0cdb3da8414aa528c90224437",
+            "834a2cea8128bedc8c0bdc33556cccacc0eabcc5c4083e032a70bb26862dfe8a",
+            "9b4b3e2298c2f9fc4f32b64dd14d27e574466558e97ca2e0491352a12ca2abc9",
+            "836a806b86917880d5baf63edbb94db36cc0d47aabe17b815a2b3997bb4aeda6",
+            "2eaa32ed136bd6663ed963216da36a250dfc20ee5b3fbcfd08765c7e4534eb11",
+            "e227763c0e7301ecc654bddfb27e7ef19b4330dedc9c2c39186160c54234b693",
+            "374c88462deb11a03a741f9aa51aae2858a32c0a6eb060f9a3d718a64b5e3092"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            2.2126746435441222,
+            2.2251058304607563,
+            2.2169341053639697,
+            1.728144600133568,
+            1.6940076674404596,
+            2.2125312517341285,
+            2.2113840098920243,
+            2.211340248365689,
+            2.213391221828612
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_PPL (exp NLL)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_tf_0 | LM_NLL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "701ff70fcc32f371e0df255cb41906cb504f704debde20106c7a088a180744c1",
+            "b5c616769312e8aa74421ef187b35aaa312e39dc6486234987b9688ea369a554",
+            "56e1d81964dcfa4cb66238bd3f70c92e64b4e68ed04c7351ce390808b6ac076d",
+            "6eea847ca0b9f7a2d896c706c78eb93b042820b3535bd41455c173d4bc599387",
+            "e173da5cf70a0ded24783c395370576010e741beb918a02b9c070fcd5c31605b",
+            "6afed7fd3fed694333b9a757d42753f039dfdeecf2c68d14814f29d12ad9f2d3",
+            "13bbbfa2aa90a7bc75c95a84a547b7bb5d8e9c594d5b1148c87952d16477892c",
+            "ee81f1c584334f0c1d3977ef8b3f157996e7ece66f5612ceeb30ef3dd2647532",
+            "a6842fab86ed3be266d5207986b065b69a2d108ae294f0dcb5667c431af3e2ab"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            1.33087723210454,
+            1.3305075476691126,
+            1.3308741077408195,
+            1.3348816072568297,
+            1.335324382763356,
+            1.33098937086761,
+            1.330874343123287,
+            1.331422323230654,
+            1.3307616988755762
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_NLL (nats/target)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_tf_0 | LM_PPL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "10ad11633b161eb0de0f809dbd9be8257af93ae8ab70bc811d0691f903d7b02c",
+            "fe75bac185f3f9ccc649976299c0a4110951c06999fa83697bd848ecdffe4bf4",
+            "e8670d1ac7aeec771eec2ef453e17d3022be7add7d073a5b905c6355596a9647",
+            "59dc68011e1e3c87e4e06f8a058ec9dd8b69c36737942f30384432123bb465a5",
+            "b268d56e500fb89e7ce2a88e3f07a1ee683038e29062d758e1e299cf3cf2bf0c",
+            "5a4f41e35f5b503dd539a6ef69e0d10231d1e46cb63f298c543ab364563a81cc",
+            "60acc5c9ae804a0bc2fd795572812fb1a53a23b9ecaca30e414d41052fc0ca9f",
+            "52740094674c4fde4b167a3d49069918579622b7afda9c86a2203dfa61c223b9",
+            "97ef2d95d357cc41795e34ce49e1d6b1a2a016b91915d452f37a159ab1172640"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            3.7843616954673287,
+            3.782962934416512,
+            3.784349871763413,
+            3.799546081106057,
+            3.8012287995524536,
+            3.7847860929021246,
+            3.7843507625331285,
+            3.7864250797606775,
+            3.7839245011968035
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_PPL (exp NLL)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_prom_core_all | LM_NLL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "d403c9e4249a8857f2db49af58cf098916acb304f4638efcde44a555a425bf92",
+            "dcd68a1264799b0f2c8a6ebd6cb572e99ed831b7c996a5d74e2ac30bb700ca45",
+            "b6e1f8aaf5af7f8aab68aaa51992e880b27311417dab6df07d589c452edc533e",
+            "99d1a3332f2baba146f60613fa42541306c142ae1910c52f784e621c13a27c09",
+            "16a65ae7c341013dacdb3f533537905dedb8025f1f2f0b95545d20540dc1c00b",
+            "52406669a912a301e7f138684f4228dbd1cc650f57c3117feffda9252e4afbdb",
+            "804b1b83a1e92c777b37331cea17a3e6c65f4b868ff453c7e6b78b205243dcbb",
+            "f1fdd043f8bd67dbf26f56e731ead290a2404596ef356c15fc5ff2b41dfc66dc",
+            "f60ca6a5736dbe44139cabeaa3498b98aa4f1161908e2e104366526db0b40b53"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            1.3904802253928736,
+            1.3901874685956948,
+            1.3908673821799997,
+            1.3939614250608112,
+            1.394317468871241,
+            1.3905419517254485,
+            1.390595363749974,
+            1.3908221382053867,
+            1.3906293232263862
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_NLL (nats/target)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_prom_core_all | LM_PPL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "5cc0be078cea61a19fca0f681fd6b7a340b88c6a7808abea1bdda34e3204742f",
+            "13462d98c88c0060b3b98849993d2135e4c0b424a03446d976e4893a324e4ff6",
+            "8116377887f6b9d25991cbdc0b5108ec3a214218a90ee3c1ab4e3415d8b9d3b9",
+            "1a43156412cc881678bcdfce445568343b04ce0f3d3c6526864a9000e423a703",
+            "bea86975d5bd44f1f88194b74259cb33377c89d4052cda60424a3e47213884d4",
+            "1fcf866da6402ff5de77327bc434dfd0e8adadf8aef7993db1afc5bc9b1263bb",
+            "ad176cf46325f99b6aa5c632e0115d70b920ef18a0fe0fae26c9a1ea5a297be0",
+            "f55faad1333918105916edae2628749796dbb364925472c970c2cb48deff7ddb",
+            "db1b36965cb2d75b63d98e82e0d97d295bd37e76e3f86a4529605e0f43e8e307"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            4.016778548957534,
+            4.015602781849868,
+            4.018333973112226,
+            4.030786124545896,
+            4.032221516512756,
+            4.017026497618528,
+            4.017241060866416,
+            4.018152171824697,
+            4.017377486585925
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_PPL (exp NLL)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_prom_300_all | LM_NLL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "704425d5dcf794221e1afcf6e747dd9a1974fba572222e6a7347e8477d2f72d5",
+            "24a494548d48b6ad4f5d2cac6c44bb63ff1afb282027934a91ba1e3fd04f37b4",
+            "e821af364c03223c8826ec1f9c439ec84cbc872efb7e7d76dabb8b5360794bef",
+            "299729aa0b75ad5b41ceed22276f6b6c03b653f9d162d672047a0e9f8863dd51",
+            "4aadc7c4dfc3511df13e629e114fd453769660598ef108d6d5a8c260cc8ab41c",
+            "17d73c4669da44c22638a490733c35d0586f0c07f14e1b772bae77fb5ec97e35",
+            "61684ef0bb90cbf21712a509caaf32ca1d317a5c769fe3ea28c2018b6fe3f840",
+            "75e0c991b98dac4d0acf63f3af16815a7dbe8946aa92c689ebc2b98b58fb7110",
+            "e7fd345ae20a2843b400a2364981b94ec3da9bf862beeae0b8f8130b71a6b964"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            1.3867944072819873,
+            1.386744094782051,
+            1.388319404677404,
+            1.4274057379135718,
+            1.4394707836235645,
+            1.3865155009023322,
+            1.3877282479036612,
+            1.387986018655691,
+            1.387599462848842
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_NLL (nats/target)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_prom_300_all | LM_PPL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "0b27611a7c5be25fc8430c5f3f51e0077a4a7a79075ca6b225a37586af2777d2",
+            "e0536241286d7faec553670749fc31030a0450227b1e621ff50a1b26f251095e",
+            "c28eb1b88a7e09b63aff7dd43a6a02c490d79f45c27c9d0ee19f8d16d2d0825e",
+            "afb89beb997e7136b2861e5e243e1028ca870b10b4651d23c0601121db17d319",
+            "6f073083ccb0c30063343f8a8440f8839acc27b723d2c4e6c6cbc7a45fb00dae",
+            "191c83f344d566c03f095a96131781ade957c0fc12d86a200b59a12d2ba9f126",
+            "9b07660a13fa7d6ce5b76f141b27a77ee22f11ae0fb7ea298071fa3e45239c40",
+            "1931edfd7eeb4d6bcb0212d344b1f26e0d0df492d6b7cde9799eed9ed0da9e7f",
+            "80b47e29eac1e24ec1e0433d398118f1e50b90de5233dcabe0cf9c4d1644da09"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            4.002000684824082,
+            4.001799339230025,
+            4.008108381371877,
+            4.167872600618814,
+            4.218462746591078,
+            4.000884656942583,
+            4.005739661163815,
+            4.006772356782354,
+            4.005223814979313
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_PPL (exp NLL)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_splice_reconstructed | LM_NLL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "f4064cdc7dead033ed1d533546e114d75cd1e4e672a64a9c0d55fb3bdfb2d06d",
+            "ef67da84a532382a199b2f6769c809cac7a57631033b5e3ce0cda3efa428d214",
+            "76cd1a71cd004c1849635b8cc863047901311fd6810674b6e972af04c7a1260d",
+            "b0a1bfbd6b948f9090b7f4d0b0a3183fe8b4df68e873f447a9a50c91347ad4a3",
+            "7b059156efb65cc2fe5a06fcf9178276ef3f9ad5cebe9f5c87a86f4c3765c615",
+            "65d86c57615ce3e6b514566ce20c710b51da891854b21256cc2695452eac64b7",
+            "c08cbfb3d4d8caefe081c2d60d67688d38315d60d9cee176c98859aeeb764908",
+            "180d453851b4e5c1db2069d718a04bbd012e62701acb6a61837f6ade1b568b6d",
+            "fbf2660e47efd7c9cb32434ca02ef1730751c968b12b3439f6073f903c8dbe61"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            1.3004895771356453,
+            1.2991395855607246,
+            1.3007058585459428,
+            1.3350446769281437,
+            1.3435776530949395,
+            1.2999385866829027,
+            1.3004590533206934,
+            1.3003638608936678,
+            1.2998797649653036
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_NLL (nats/target)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_splice_reconstructed | LM_PPL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "3c0a62b99e7f2e5057190168f5a53d78e0473eb995b328b8f13030bee88b76f2",
+            "26f23b8c235bb4cc7a8ec79f7480d13f9238065dac90edb204029cbdf83e09a5",
+            "2183af0add18dea517d517197281a241653f2edb4c51ffe938f0fa4ae8b1b92e",
+            "099163e6a02504c4620dcf6464c8abb487414753c229f158a055f432e7d8df8b",
+            "a87b92fc3322538268efe1d98250243502590737b82a4716b6e33d3720d6cc07",
+            "7c675436e6dc928ef1f34ed9e864d5fb7f8d25b7931e9ce5aba90fa5f63353ae",
+            "1c33e448951ea257de8156af1fef4e93a0463597cc8bc2ade059ed65892ab35d",
+            "1928ab67ea2ac2cd01d739bc1d523437546aae6378330e9143c83093f7eb4125",
+            "3ef2ad80ee2a1c2c7aab483c9c6668c89cf8229aef5811a4ed164593a8933a3c"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            3.6710935111824825,
+            3.6661409096090063,
+            3.6718875863331664,
+            3.8001657223576193,
+            3.832731188474197,
+            3.6690713308588814,
+            3.670981457113644,
+            3.6706320241111268,
+            3.6688555161285654
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_PPL (exp NLL)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_mouse_0 | LM_NLL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "9ae0668099dff509eefae72c2e5b87e14a10ee23e3145ac402271bec29366ae7",
+            "4f54d141f4bd8e55a00bbe220835a48cf39ccbff33915551702155f5664ced8b",
+            "038d8f6171ccbf21f1834e5eb292df929101133f453d9542262b578b5a590bf0",
+            "fc854ab46137458bbf7ab30dccce3d7851cde8a33f1b83a1915a37924782a39d",
+            "76eb6c0317bbf7356a957a39a4ebb3a56c6fa2b7a48482950ca2594a4eae085d",
+            "1d70563714123c817ef1b286a3d5700d4c01ae5809fc0301bd3d0c0a75af1789",
+            "c0a5c9e9bc08aa95cf7b220e83b3da73af57f8dc541a4a5f77a3062a464da213",
+            "6a6053ace74c1e098150413ce83871e54b289944d534f9976950226304e1f738",
+            "433a556555d22f5ef07115db36b6b4c8f210b43dfa7325c498f377544485fc71"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            1.3882334657758475,
+            1.387823457568884,
+            1.38816215865314,
+            1.3953325733542443,
+            1.396364145502448,
+            1.3879949778318406,
+            1.3878771121799947,
+            1.3883416642248632,
+            1.3879297905415298
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_NLL (nats/target)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    },
+    {
+      "title": "gue_mouse_0 | LM_PPL",
+      "kind": "lines",
+      "lines": [
+        {
+          "row_ids": [
+            "290b403c2bd6fa1d7d036bd4dadd1ca3330501fc7e59e8964721b145980e40d0",
+            "de714d1acd31da21d997dc9553119a9e799b16252477f170d52725ad7280daee",
+            "1358b6316fcc74299a4af4e0958fa0837482c28add87b0a299e18ed213ba8e8a",
+            "d07c0ef2210dae95d2ffa1a981222fa6cd0d8f36a568ddbc2b52819f4dfe4321",
+            "215a059e1b0f705d9e30f67127a3cdce00cb7c32bf394ca2d2c41fb361bf604b",
+            "4a09f4b24b54a07e9a14e24f11b88d38dcab0c6913d551a459dd2e2262a34ce0",
+            "452ab4897d0d8f32f1e1b0a4c4514fea3fffd7f1b558ee6b52e9a891139e05a3",
+            "3cf5da49a35eceb526d3b6ec2b5f2dfa5ea07d46decd446f8a25842c38ef63a8",
+            "219184780f9f8c2d14bf6fffba3879b911b7ea0ab726c9863972d7f852e31bb1"
+          ],
+          "x": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "y": [
+            4.0077639437407715,
+            4.006121064452276,
+            4.007478171814361,
+            4.036316720829107,
+            4.040482621083555,
+            4.006808254322495,
+            4.0063360170866,
+            4.008197601043606,
+            4.0065470698626475
+          ],
+          "low": null,
+          "high": null,
+          "color": "#246b9e",
+          "label": "",
+          "horizontal": false,
+          "marker": "o",
+          "linestyle": "none"
+        }
+      ],
+      "xlabel": "Supplied endpoint: nominal label / observed step",
+      "ylabel": "LM_PPL (exp NLL)",
+      "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "xticklabels": [
+        "C01 add_noise_top10.0p / step1500",
+        "C02 add_noise_top15.0p / step1500",
+        "C03 add_noise_top20.0p / step1500",
+        "C04 add_noise_top5.0p / step2000",
+        "C05 add_noise_top5.0p / step2151",
+        "C06 reinit_top10.0p / step1500",
+        "C07 reinit_top15.0p / step1500",
+        "C08 reinit_top20.0p / step1500",
+        "C09 reinit_top5.0p / step1500"
+      ],
+      "rotate_labels": true
+    }
+  ],
+  "nrows": 6,
+  "ncols": 2,
+  "size_inches": [
+    22,
+    30
+  ],
+  "split": "train",
+  "uncertainty": "95% pointwise exploratory conditional where intervals shown; seed ranges are descriptive",
+  "dpi": 130,
+  "seed_convention": "All42/17/1234; seed42onlycompact marginalCI convention",
+  "representation_convention": "Layer16 iszero-based17thdecoderblock; FN=finalnormalization",
+  "candidate_labels": {
+    "candidate_01": "C01 add_noise_top10.0p / step1500",
+    "candidate_02": "C02 add_noise_top15.0p / step1500",
+    "candidate_03": "C03 add_noise_top20.0p / step1500",
+    "candidate_04": "C04 add_noise_top5.0p / step2000",
+    "candidate_05": "C05 add_noise_top5.0p / step2151",
+    "candidate_06": "C06 reinit_top10.0p / step1500",
+    "candidate_07": "C07 reinit_top15.0p / step1500",
+    "candidate_08": "C08 reinit_top20.0p / step1500",
+    "candidate_09": "C09 reinit_top5.0p / step1500"
+  },
+  "source_row_ids": [
+    "038d8f6171ccbf21f1834e5eb292df929101133f453d9542262b578b5a590bf0",
+    "099163e6a02504c4620dcf6464c8abb487414753c229f158a055f432e7d8df8b",
+    "0b27611a7c5be25fc8430c5f3f51e0077a4a7a79075ca6b225a37586af2777d2",
+    "10ad11633b161eb0de0f809dbd9be8257af93ae8ab70bc811d0691f903d7b02c",
+    "13462d98c88c0060b3b98849993d2135e4c0b424a03446d976e4893a324e4ff6",
+    "1358b6316fcc74299a4af4e0958fa0837482c28add87b0a299e18ed213ba8e8a",
+    "13bbbfa2aa90a7bc75c95a84a547b7bb5d8e9c594d5b1148c87952d16477892c",
+    "16a65ae7c341013dacdb3f533537905dedb8025f1f2f0b95545d20540dc1c00b",
+    "17d73c4669da44c22638a490733c35d0586f0c07f14e1b772bae77fb5ec97e35",
+    "180d453851b4e5c1db2069d718a04bbd012e62701acb6a61837f6ade1b568b6d",
+    "18263165a999a13ec3bfebb2e0984a459d8f29f0cdb3da8414aa528c90224437",
+    "191c83f344d566c03f095a96131781ade957c0fc12d86a200b59a12d2ba9f126",
+    "1928ab67ea2ac2cd01d739bc1d523437546aae6378330e9143c83093f7eb4125",
+    "1931edfd7eeb4d6bcb0212d344b1f26e0d0df492d6b7cde9799eed9ed0da9e7f",
+    "1a43156412cc881678bcdfce445568343b04ce0f3d3c6526864a9000e423a703",
+    "1c33e448951ea257de8156af1fef4e93a0463597cc8bc2ade059ed65892ab35d",
+    "1d70563714123c817ef1b286a3d5700d4c01ae5809fc0301bd3d0c0a75af1789",
+    "1fcf866da6402ff5de77327bc434dfd0e8adadf8aef7993db1afc5bc9b1263bb",
+    "215a059e1b0f705d9e30f67127a3cdce00cb7c32bf394ca2d2c41fb361bf604b",
+    "2183af0add18dea517d517197281a241653f2edb4c51ffe938f0fa4ae8b1b92e",
+    "219184780f9f8c2d14bf6fffba3879b911b7ea0ab726c9863972d7f852e31bb1",
+    "24a494548d48b6ad4f5d2cac6c44bb63ff1afb282027934a91ba1e3fd04f37b4",
+    "26f23b8c235bb4cc7a8ec79f7480d13f9238065dac90edb204029cbdf83e09a5",
+    "290b403c2bd6fa1d7d036bd4dadd1ca3330501fc7e59e8964721b145980e40d0",
+    "299729aa0b75ad5b41ceed22276f6b6c03b653f9d162d672047a0e9f8863dd51",
+    "2eaa32ed136bd6663ed963216da36a250dfc20ee5b3fbcfd08765c7e4534eb11",
+    "374c88462deb11a03a741f9aa51aae2858a32c0a6eb060f9a3d718a64b5e3092",
+    "37887d1a5ef66adee798536530af0e83902338d0e772ee1169fb6fd092b36cad",
+    "3c0a62b99e7f2e5057190168f5a53d78e0473eb995b328b8f13030bee88b76f2",
+    "3cf5da49a35eceb526d3b6ec2b5f2dfa5ea07d46decd446f8a25842c38ef63a8",
+    "3ef2ad80ee2a1c2c7aab483c9c6668c89cf8229aef5811a4ed164593a8933a3c",
+    "433a556555d22f5ef07115db36b6b4c8f210b43dfa7325c498f377544485fc71",
+    "452ab4897d0d8f32f1e1b0a4c4514fea3fffd7f1b558ee6b52e9a891139e05a3",
+    "4a09f4b24b54a07e9a14e24f11b88d38dcab0c6913d551a459dd2e2262a34ce0",
+    "4aadc7c4dfc3511df13e629e114fd453769660598ef108d6d5a8c260cc8ab41c",
+    "4e6ad45ef851ef0f29a307559bd3216925dcf307ced84a4ae20475f79fd8abc9",
+    "4f2819da6dc1c6f4d09a75a19ba629410ab950843e459761e52b049c21edea36",
+    "4f54d141f4bd8e55a00bbe220835a48cf39ccbff33915551702155f5664ced8b",
+    "52406669a912a301e7f138684f4228dbd1cc650f57c3117feffda9252e4afbdb",
+    "52740094674c4fde4b167a3d49069918579622b7afda9c86a2203dfa61c223b9",
+    "550bb813b8e4147bf329ca4eb72a58e865785032522e0140a437c642bcea5880",
+    "56e1d81964dcfa4cb66238bd3f70c92e64b4e68ed04c7351ce390808b6ac076d",
+    "59dc68011e1e3c87e4e06f8a058ec9dd8b69c36737942f30384432123bb465a5",
+    "5a4f41e35f5b503dd539a6ef69e0d10231d1e46cb63f298c543ab364563a81cc",
+    "5cc0be078cea61a19fca0f681fd6b7a340b88c6a7808abea1bdda34e3204742f",
+    "60acc5c9ae804a0bc2fd795572812fb1a53a23b9ecaca30e414d41052fc0ca9f",
+    "61684ef0bb90cbf21712a509caaf32ca1d317a5c769fe3ea28c2018b6fe3f840",
+    "65d86c57615ce3e6b514566ce20c710b51da891854b21256cc2695452eac64b7",
+    "6a6053ace74c1e098150413ce83871e54b289944d534f9976950226304e1f738",
+    "6afed7fd3fed694333b9a757d42753f039dfdeecf2c68d14814f29d12ad9f2d3",
+    "6eea847ca0b9f7a2d896c706c78eb93b042820b3535bd41455c173d4bc599387",
+    "6f073083ccb0c30063343f8a8440f8839acc27b723d2c4e6c6cbc7a45fb00dae",
+    "701ff70fcc32f371e0df255cb41906cb504f704debde20106c7a088a180744c1",
+    "704425d5dcf794221e1afcf6e747dd9a1974fba572222e6a7347e8477d2f72d5",
+    "75e0c991b98dac4d0acf63f3af16815a7dbe8946aa92c689ebc2b98b58fb7110",
+    "76cd1a71cd004c1849635b8cc863047901311fd6810674b6e972af04c7a1260d",
+    "76eb6c0317bbf7356a957a39a4ebb3a56c6fa2b7a48482950ca2594a4eae085d",
+    "7b059156efb65cc2fe5a06fcf9178276ef3f9ad5cebe9f5c87a86f4c3765c615",
+    "7c675436e6dc928ef1f34ed9e864d5fb7f8d25b7931e9ce5aba90fa5f63353ae",
+    "804b1b83a1e92c777b37331cea17a3e6c65f4b868ff453c7e6b78b205243dcbb",
+    "80b47e29eac1e24ec1e0433d398118f1e50b90de5233dcabe0cf9c4d1644da09",
+    "8116377887f6b9d25991cbdc0b5108ec3a214218a90ee3c1ab4e3415d8b9d3b9",
+    "834a2cea8128bedc8c0bdc33556cccacc0eabcc5c4083e032a70bb26862dfe8a",
+    "836a806b86917880d5baf63edbb94db36cc0d47aabe17b815a2b3997bb4aeda6",
+    "94850033ee62d864fb076c5006c47818402d7acac1e31440b58ce9c37321dc65",
+    "97ef2d95d357cc41795e34ce49e1d6b1a2a016b91915d452f37a159ab1172640",
+    "99d1a3332f2baba146f60613fa42541306c142ae1910c52f784e621c13a27c09",
+    "9ae0668099dff509eefae72c2e5b87e14a10ee23e3145ac402271bec29366ae7",
+    "9b07660a13fa7d6ce5b76f141b27a77ee22f11ae0fb7ea298071fa3e45239c40",
+    "9b4b3e2298c2f9fc4f32b64dd14d27e574466558e97ca2e0491352a12ca2abc9",
+    "a6842fab86ed3be266d5207986b065b69a2d108ae294f0dcb5667c431af3e2ab",
+    "a87b92fc3322538268efe1d98250243502590737b82a4716b6e33d3720d6cc07",
+    "ad176cf46325f99b6aa5c632e0115d70b920ef18a0fe0fae26c9a1ea5a297be0",
+    "afb89beb997e7136b2861e5e243e1028ca870b10b4651d23c0601121db17d319",
+    "b063be75e9a375c2157d53d09b8dd130f38dc1130b2b98cac79dfb3ab201d212",
+    "b0a1bfbd6b948f9090b7f4d0b0a3183fe8b4df68e873f447a9a50c91347ad4a3",
+    "b268d56e500fb89e7ce2a88e3f07a1ee683038e29062d758e1e299cf3cf2bf0c",
+    "b5c616769312e8aa74421ef187b35aaa312e39dc6486234987b9688ea369a554",
+    "b6e1f8aaf5af7f8aab68aaa51992e880b27311417dab6df07d589c452edc533e",
+    "bea86975d5bd44f1f88194b74259cb33377c89d4052cda60424a3e47213884d4",
+    "c08cbfb3d4d8caefe081c2d60d67688d38315d60d9cee176c98859aeeb764908",
+    "c0a5c9e9bc08aa95cf7b220e83b3da73af57f8dc541a4a5f77a3062a464da213",
+    "c28eb1b88a7e09b63aff7dd43a6a02c490d79f45c27c9d0ee19f8d16d2d0825e",
+    "d07c0ef2210dae95d2ffa1a981222fa6cd0d8f36a568ddbc2b52819f4dfe4321",
+    "d3c8c205d5312801402aea2f0e7718a459165d051f12e4d3da2d31aa223eb8c9",
+    "d3d64ba6c95c19ddf885ca13f157ab8366514a3e009e231d84128bbd040a04f6",
+    "d403c9e4249a8857f2db49af58cf098916acb304f4638efcde44a555a425bf92",
+    "db1b36965cb2d75b63d98e82e0d97d295bd37e76e3f86a4529605e0f43e8e307",
+    "dccc3a7452388da96cec8388308045f74af21520f3688c5f0bfa9436943e0708",
+    "dcd68a1264799b0f2c8a6ebd6cb572e99ed831b7c996a5d74e2ac30bb700ca45",
+    "de714d1acd31da21d997dc9553119a9e799b16252477f170d52725ad7280daee",
+    "e0536241286d7faec553670749fc31030a0450227b1e621ff50a1b26f251095e",
+    "e173da5cf70a0ded24783c395370576010e741beb918a02b9c070fcd5c31605b",
+    "e227763c0e7301ecc654bddfb27e7ef19b4330dedc9c2c39186160c54234b693",
+    "e7fd345ae20a2843b400a2364981b94ec3da9bf862beeae0b8f8130b71a6b964",
+    "e821af364c03223c8826ec1f9c439ec84cbc872efb7e7d76dabb8b5360794bef",
+    "e8670d1ac7aeec771eec2ef453e17d3022be7add7d073a5b905c6355596a9647",
+    "ee81f1c584334f0c1d3977ef8b3f157996e7ece66f5612ceeb30ef3dd2647532",
+    "ef67da84a532382a199b2f6769c809cac7a57631033b5e3ce0cda3efa428d214",
+    "f1fdd043f8bd67dbf26f56e731ead290a2404596ef356c15fc5ff2b41dfc66dc",
+    "f2ebf1c9b897cc95475ce94cd04e5f9d6fcd91c84d17c1b27a83ebc283cf42f8",
+    "f4064cdc7dead033ed1d533546e114d75cd1e4e672a64a9c0d55fb3bdfb2d06d",
+    "f55faad1333918105916edae2628749796dbb364925472c970c2cb48deff7ddb",
+    "f60ca6a5736dbe44139cabeaa3498b98aa4f1161908e2e104366526db0b40b53",
+    "f91b015440fd33ddd93a62e541c9f64a0d7fea6d3961e746a2a0ea7a3091861c",
+    "fbf2660e47efd7c9cb32434ca02ef1730751c968b12b3439f6073f903c8dbe61",
+    "fc854ab46137458bbf7ab30dccce3d7851cde8a33f1b83a1915a37924782a39d",
+    "fe75bac185f3f9ccc649976299c0a4110951c06999fa83697bd848ecdffe4bf4"
+  ],
+  "source_rows_sha256": "a7475b1f6ec9e0afc0ce15d552bfea04a3869a89135b0a6d713053ee94fe80c6",
+  "spec_sha256": "192d19b86884a969d08d540b4b9439c602aa58eaacf8faa318c8dd656b0306ac"
+}

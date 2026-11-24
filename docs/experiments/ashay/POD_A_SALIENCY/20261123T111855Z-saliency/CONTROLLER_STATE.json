@@ -148,11 +148,11 @@
       ]
     },
     "S09": {
-      "approved": false,
-      "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "approved": true,
+      "source": "direct_chat",
+      "message": "APPROVE S09 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "observed_utc": "2026-11-24T22:38:34.136316+00:00",
+      "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a"
     },
     "S10": {
       "approved": false,
@@ -305,10 +305,15 @@
       "eligibility_rule": "ExactS04receipt-bound frozen scope; consume original bytes, no reference replacement/audit orfamily reselection"
     },
     "verified_retain_contrasts": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/CONTRAST_VERIFICATION.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/COMPARISON_DISPOSITION.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S10_HANDOFF.json"
+      ],
       "resolve_in": "S09",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S10 entry; pending blocks only affected scope"
+      "eligibility_rule": "All48924frozenadmittedkeysverifiedwithcompleteoriginaldrawaccounting;42228deferredkeysremaininactive; no parent/LMbaseextrapolation; requirefreshdirectS10approval."
     },
     "external_dependency_disposition": {
       "status": "PENDING",
@@ -518,6 +523,22 @@
       "status": "COMPLETE",
       "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
       "sha256": "863252fa8ac7aaae06868ff40e0befeb4bc7208bd4a1574690595530b3dc389d",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    "S09": {
+      "status": "LIMITED_SCOPE_COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
+      "sha256": "d979a1dda8d0b161d64845941f9cc4599c14057b9d6c48d55896608949918c22",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -819,11 +840,14 @@
       "delivery_status": "INDEPENDENT_RELEASE_SCIENCE_RECOVERY_FINAL_METADATA_PASS_FINAL_GIT_PROOF_EXTERNAL"
     },
     "S09": {
-      "status": "WAITING_FOR_APPROVAL",
-      "approved": false
+      "status": "LIMITED_SCOPE_COMPLETE",
+      "approved": false,
+      "attempt_id": "attempt-001",
+      "scientific_release": "VERIFIED_FROZEN_ADMITTED_SCOPE",
+      "delivery_status": "SCIENCE_AND_EXHAUSTIVE_PRIVATE_RECOVERY_PASS_FINAL_ADMIN_GIT_EXTERNAL"
     },
     "S10": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     },
     "S11": {
@@ -1245,10 +1269,10 @@
   "owned_processes": [],
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
-    "phase": "S08",
+    "phase": "S09",
     "attempt_id": "attempt-001",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "50c1883fea005ad540328dd61ab259069d6aa072",
+    "supplement_commit": "05187f14d66adb483758af7700deba081d27e371",
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
@@ -1257,9 +1281,13 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S09_HANDOFF.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/FINAL_METADATA_RECOVERY.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/FINAL_METADATA_RECOVERY.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S10_HANDOFF.json"
     ],
-    "unfinished_units": [],
+    "unfinished_units": [
+      "OnlyexternalS09finalmetadata/Gitdeliveryproof"
+    ],
     "transfer_totals": {
       "S07_candidate_upload_bytes": 5542236321,
       "S07_candidate_fresh_HTTP_body_bytes": 5542236321,
@@ -1277,12 +1305,12 @@
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Stop. WAITING_FOR_APPROVAL: S09. Reconcile external final Git proof; do not execute S09.",
+    "next_action": "FinishS09externaldeliveryproof thenSTOP. WAITING_FOR_APPROVAL: S10.",
     "prerequisites": [
-      "S08 readiness PASS before full execution",
-      "Original S04freeze/audit and exact S07producer identities"
+      "S09readinessPASS",
+      "OriginalS04contrastfreezeand S08releaseidentity"
     ],
-    "reconciled_utc": "2026-11-24T21:52:26.028799+00:00",
+    "reconciled_utc": "2026-11-24T23:15:25.379972+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

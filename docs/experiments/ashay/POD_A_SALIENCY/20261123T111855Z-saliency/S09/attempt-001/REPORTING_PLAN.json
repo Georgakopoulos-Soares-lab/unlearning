@@ -1,0 +1,35 @@
+{
+  "status": "FIXED_BEFORE_S09_SCIENTIFIC_NARRATIVE",
+  "prior_outcome_exposure": "S05-S08 outcomes/diagnostics already visible; this reporting plan is not a preregistration",
+  "complete_profiles": "30 task x metric pages; 9 candidate rows x 2 policy columns, all26representations,3seeds. MarginalconditionalCI onseed42; allseedsdirectlyoverlaid. No seedselection.",
+  "anchor_forests": "30 task x metric pages,9candidate rows x 2anchor columns; allseeds andbothpolicies,3qualifiedreferences. Exactpairedconditionalintervals.",
+  "heatmaps": "30 task x metric pages,3seedrows x 2policycolumns,9candidate x26representation signedbaseeffectmatrices; allvalues includingzeros/missing.",
+  "policy_gap": "6task pages,9candidates x2anchors x3seeds =324values withpairedCIs",
+  "sweep_LM": "9separateendpoints; observedlabel andstep explicit; no assumedcommonlineageorconnectedtrajectory. DEVprimary; TRAINdiagnosticsseparate. LMnotexpandedlayers/seeds.",
+  "metric_disagreement": "6taskpages atbothanchors withall5classifiermetrics,allseeds/policies/candidates; LMshownseparatelynotaveraged. Full26representationmetriccoverageinprofiles/heatmaps.",
+  "seed_sensitivity": "6taskpages descriptive max-minus-min acrossseeds atall26representations,9candidates x2policies x5metrics. NoCIacrossseeds.",
+  "coverage": "91152 exactintendedkeys;48924admitted and42228deferred explicitlydifferent frommeasuredzero",
+  "units": {
+    "AUROC": "unitless ranking probability",
+    "AP": "unitless average precision",
+    "accuracy": "fraction",
+    "balanced_accuracy": "macro recall fraction",
+    "cross_entropy": "nats per example",
+    "LM_NLL": "nats per valid next-token target",
+    "LM_PPL": "exp(NLL)"
+  },
+  "rounding": "fullprecision sourceJSON; tick/captionformattingonly",
+  "anchors": [
+    "decoder.layers.16",
+    "decoder.final_norm"
+  ],
+  "index_convention": "Zero-based layer16 isseventeenthdecoderblock. final_normispostblocknormalization",
+  "confidence": "95% pointwise exploratory conditional intervals; nofamilywiseconfidence/nointerventionreplication",
+  "source_schema": "Eachfigure declares exact source-table SHA256 androwIDs; eachartistcoordinate/errorbar checkedagainst thesamefullprecisionrows; no silentlyclipped values",
+  "figure_outputs": [
+    "PNG",
+    "PDF",
+    "SVG"
+  ],
+  "layout_visual_inspection": "Eachuniquelayout visuallyinspected; all exports programmaticallychecked"
+}

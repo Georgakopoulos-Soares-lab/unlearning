@@ -1,0 +1,124 @@
+{
+  "schema_version": "s09-to-s10-frozen-admitted-scope-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "phase_completed": "S09",
+  "status": "S09_COMPLETE_FOR_FROZEN_ADMITTED_CONTRAST_SCOPE_S10_UNAPPROVED",
+  "canonical_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "S09_supplement_commit": "05187f14d66adb483758af7700deba081d27e371",
+  "S09_supplement_sha256": "1755c956581847af62777f9382dbd1cfab5c7513ccdc850e617b5ecc07f91945",
+  "S08_final_delivery": "bb2da3953c3455b6375e8df09f0cb4004134fc1c",
+  "protocol_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "frozen_contrast_plan_sha256": "f71e806f716d76990760b83812e6d662e5a30c38bf14688251466f6451d9b8b1",
+  "candidates": [
+    {
+      "alias": "candidate_01",
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top10.0p",
+      "step": 1500,
+      "content_sha256": "ba02bd040b1be80ac2308a104cad20a7c802397b6ef3505590c5ecb844d99279"
+    },
+    {
+      "alias": "candidate_02",
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top15.0p",
+      "step": 1500,
+      "content_sha256": "57cec2a1c2a0ed999beaa92f54c497e1697031bd2a456730bdab2b0ae5756b90"
+    },
+    {
+      "alias": "candidate_03",
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top20.0p",
+      "step": 1500,
+      "content_sha256": "54851a4d9f374f8775661e6bc78421d64d468a606ed5213998c2a8be1ab216d4"
+    },
+    {
+      "alias": "candidate_04",
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "step": 2000,
+      "content_sha256": "05b9573e0bd6f4fa7e00dcaedb70a31d2f73ac2d9edc01242ea81212a63a6af0"
+    },
+    {
+      "alias": "candidate_05",
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "step": 2151,
+      "content_sha256": "e0e9659ddb315428591abdcf9351dc282d1761e60229ea5318b1f3808f4fa844"
+    },
+    {
+      "alias": "candidate_06",
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top10.0p",
+      "step": 1500,
+      "content_sha256": "d3a66b9d3344dcaa4499841dd9661e008018c185c82b1d06d1040f87d38f4e70"
+    },
+    {
+      "alias": "candidate_07",
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top15.0p",
+      "step": 1500,
+      "content_sha256": "a9eff2a1312586e0baf72503840224df9c06a04a535b3a576ee85d6971c92cdd"
+    },
+    {
+      "alias": "candidate_08",
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top20.0p",
+      "step": 1500,
+      "content_sha256": "eb93bccc3d01d8648c2ca5640a85b22d35107e2937c8d55258647f0e5fdfc4f1"
+    },
+    {
+      "alias": "candidate_09",
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top5.0p",
+      "step": 1500,
+      "content_sha256": "d5658d3c621c318d752795015aebbc128c6d3a5026e8740e6b3a382a57563d29"
+    }
+  ],
+  "verified_comparison_counts": {
+    "base_reference": 42120,
+    "DNA_control": 6480,
+    "anchor_policy_gap": 324
+  },
+  "deferred_comparison_counts": {
+    "immediate_parent": 42120,
+    "LM_base_reference": 108
+  },
+  "all_admitted_keys": 48924,
+  "all_deferred_keys": 42228,
+  "all_intended_keys": 91152,
+  "draw_differences": 97848000,
+  "reused_classification_metrics": 42120,
+  "reused_LM_units": 108,
+  "reused_LM_metric_rows": 216,
+  "new_fits_or_inference": 0,
+  "figures": 111,
+  "report": "ANALYSIS.md",
+  "gallery": "FIGURE_GALLERY.md",
+  "full_precision_source_index": "PLOT_SOURCE_INDEX.json",
+  "comparison_verification_sha256": "a2fb68eb60619ded383dd37eeec0e74d39599af756c38499ee6369d2a3759016",
+  "exact_worst_component_sha256": "ff9565afb1b4800c47a30f96ca03cc85565e8e32b56189abeea4975659410882",
+  "comparison_disposition_sha256": "55d5fadece0e7d84ea9c831039e1d4b95af4149b073d695ccd86d72ee9450beb",
+  "private_recovery_proof_sha256": "c7e5948ef7fd306628a402eba283a680137fac1b0391004ee062454ed4a10509",
+  "S10_requirements_sha256": "5352dff16400fb5531c20c2c99edfb674a35ff9f62b7318a550ddb1c0bbc8034",
+  "limits_sha256": "10f127b9e4ecaf3d5f65fd9c7b8ea4e7b0b2ede746a2b8cb30d4bb0346c6e04d",
+  "whole_inventory": "PARTIAL",
+  "no_deadline": true,
+  "remaining_limits": {
+    "whole_delivery_inventory": "PARTIAL",
+    "immediate_parent": "Unknown for all nine candidates;42120contrasts deferred",
+    "saliency_masks_realized_dose_training_exposure": "Incomplete; observedlabelsandstepsarenotverifiedmatchedcausalinterventions",
+    "LM_base": "108exactreferenceper-exampleloss/targetjoinsnotbound; deferred",
+    "intervention_replication": "ThreeprobeCVseedsnotinterventiontrainingreplicates",
+    "grouping": "Exact/reverse-complementgroupsnotbiologicalindependence",
+    "candidate05_original_upload_privacy": "Unresolvedhistoricalstatus; currentprivatebackupverifiedseparately",
+    "collaborator_forget": "SeparateexternaldependencyforS10; no aggregatefabricationorrawforgetaccess",
+    "R2": "Excluded, notsearched",
+    "PodB": "Relearningseparate",
+    "no_deadline": true,
+    "interpretation": "Accessiblelinearlabelsnotcompleteinformation; weakreadoutnotproofabsence; originalbasecompatibilitynotimmediateparentidentity; exceedingDNAcontrolsnotbiologicalunderstanding; intervalcrossingzeroisnotequivalence; no success-of-forgetting/novelty/optimality/causalclaim"
+  },
+  "next_approval": "APPROVE S10 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "S10_approved": false,
+  "S10_executed": false,
+  "final_delivery_binding": "Actualscientificcommitandfinalmetadatarecovery/publication pinsrecordedlater inDELIVERY_CONTEXT.json andexternalcontrol FINAL_DELIVERY_RECEIPT.json toavoidselfhashcycles"
+}

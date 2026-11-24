@@ -1,0 +1,76 @@
+{
+  "status": "ALL_KNOWN_LOCAL_IMPLEMENTATION_FAILURES_PRESERVED_AND_RESOLVED",
+  "current_S09_records": [
+    {
+      "record": "administrative-revisions/plot-fixture-002/FAILURE.json",
+      "record_sha256": "3713e69b773255f5c84079706d8981ad078b9034a0cea03509ed487ded983e20",
+      "details": {
+        "actual_child_exit": 1,
+        "outer_shell_exit": 0,
+        "failed_assertion": "Synthetic errorbar roundtrip used exact byte equality for y-(y-low)",
+        "repair": "Artist coordinate comparison at explicit 1e-15 absolute,0relative; stricter thanunchanged1e-12scientific gate",
+        "scientific_outputs_affected": 0
+      },
+      "unresolved_release_impact": false
+    },
+    {
+      "record": "administrative-revisions/reference-prefix-repair-002/FAILURE.json",
+      "record_sha256": "acbb3b9525dfb8df86f1e539c3135bfc6130ee977e0ffce46c4de3c094ee1dac",
+      "details": {
+        "status": "PRESERVED_FAILED_REPAIRED",
+        "operation": "S09-reference-member-recovery-001",
+        "actual_exit": 1,
+        "failure": "No expected001membermatchedbecausephysicaltarpathscontainknownarchive-rootprefix",
+        "affected": "Reference recovery only; zero prediction members emitted, no scientific contrast computed",
+        "unchanged": "468 exact member logical paths, bytes and SHA256 bindings",
+        "repair": "Strip only exact multiretain-layers-v1-final-20261110T140836Z/ prefix for archive001; preserve physical path in recovery receipt; archive002 unchanged"
+      },
+      "unresolved_release_impact": false
+    },
+    {
+      "record": "administrative-revisions/render-geometry-003/FAILURE.json",
+      "record_sha256": "8df27d3c3604058aea4b944cee9d29c4eafd2ea751d47dae9e267d9bc61e118e",
+      "details": {
+        "operation": "S09-figure-rendering-002",
+        "exit": 1,
+        "expected": "Onlyactuallydisplayedtextwithinfigure",
+        "observed": "AutoLocatorincludes50000tickbeyondcoveragexmax; ticksoutsidelimitsnotrenderedbutget_xticklabelsreturnsit",
+        "repair": "Checkannotationgeometryforin-viewticksandallaxislabels; preserve1e-12scientificgate",
+        "affected": "No completed exports from002; no scientificdatachanges"
+      },
+      "unresolved_release_impact": false
+    },
+    {
+      "record": "administrative-revisions/reporting-context-repair-002/FAILURE.json",
+      "record_sha256": "0e7082b3d673c9f33b4f655453b3315b5118fb4cab851dd33eeb9ef114d6dd04",
+      "details": {
+        "status": "FAILED_PRESERVED_REPAIRED",
+        "command": "S09-figure-source-specs-001",
+        "exit": 1,
+        "failure": "Display lookup called qualified composition control comp; exact endpoint label is composition",
+        "secondary_unrendered_admission_issue": "H3 LM source metric rows inherit split/task/policy from enclosing savedunit; these reporting contexts were not flattened",
+        "repair": "Use exact composition label; flatten H3 task=emp_H3, split=u.split, policy=LM, cv_seed/representation=null; preserve exact metricrecord bytes by source_row_sha256 and source_unit_sha256",
+        "affected_outputs": "Only reporting code and LM context/index; all48924verified scientific contrasts unchanged; no figure was rendered"
+      },
+      "unresolved_release_impact": false
+    },
+    {
+      "record": "administrative-revisions/seal-admin-interpreter-002/FAILURE.json",
+      "record_sha256": "4d01265f9b5e3f62501711c608b4511859e3ae0c5a891405efde64c9551e2cd3",
+      "details": {
+        "operation": "S09-scientific-seal-001",
+        "exit": 1,
+        "failure": "Administrative canonical phase_receipt schema validation invoked in frozenCPUenvironmentwithoutjsonschema",
+        "repair": "Use existing /usr/local/bin/python3 with jsonschema for metadata-only schema/guard; no install orscientificruntimechange",
+        "completed_reused": "Resourceaccounting,111figures/exhaustiverecovery,preparedS10handoff/progress/sourcebodies retained; resumefromreceipt/schema step",
+        "scientific_recomputation": false
+      },
+      "unresolved_release_impact": false
+    }
+  ],
+  "preflight": "PRE_APPROVAL_METADATA_CHECKS andcompletedinputreuse preserve original wrongkeykind assertion; sourceadaptercorrectedwithoutrepeatingpassingchecks",
+  "scientific_contrast_failures": 0,
+  "numerical_tolerance_changed": false,
+  "prior_successful_render001_preserved": true,
+  "rerender_reason": "Visualreviewidentifiedcomparablescale/label/zero-range issues; rendergeometrygatefixedforout-of-viewAutoLocatorlabels; no scientificderivativeschanged"
+}

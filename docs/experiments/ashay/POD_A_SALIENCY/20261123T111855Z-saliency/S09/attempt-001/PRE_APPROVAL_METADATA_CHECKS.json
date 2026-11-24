@@ -1,0 +1,132 @@
+{
+  "schema_version": "s09-pre-approval-metadata-v1",
+  "status": "BOUNDED_METADATA_CHECKS_PASS_SCIENCE_NOT_ADMITTED",
+  "checks": {
+    "repository": {
+      "status": "PASS_COMPLETED_BEFORE_PRESERVED_ADAPTER_ASSERTION",
+      "HEAD_and_remote": "bb2da3953c3455b6375e8df09f0cb4004134fc1c",
+      "branch": "POD_A_SALIENCY",
+      "original_POD_A_preserved": true,
+      "tracked_changes": false
+    },
+    "prompt_preservation": {
+      "status": "PASS_COMPLETED_BEFORE_PRESERVED_ADAPTER_ASSERTION",
+      "states": [
+        {
+          "path": "/workspace/pod-a-saliency/prompts",
+          "HEAD": "2a837ba3a183caf72529b891d52ba08637cc8398",
+          "tracked_changes": false
+        },
+        {
+          "path": "/workspace/pod-a-saliency/prompts-publish",
+          "HEAD": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+          "tracked_changes": false
+        }
+      ]
+    },
+    "canonical_package": {
+      "status": "PASS_COMPLETED_BEFORE_PRESERVED_ADAPTER_ASSERTION",
+      "commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "digest": "3b089d6b7d7ab16812272a500519db269050c855f0a0f29e3333752d9a62a5e9",
+      "manifest_members": 22,
+      "unchanged_passing_package_self_tests_reused": true,
+      "self_tests_rerun": false
+    },
+    "S08_input_seals": {
+      "status": "PASS_COMPLETED_BEFORE_PRESERVED_ADAPTER_ASSERTION",
+      "scientific_commit": "d9667c3b104675df6077ca2b141978345bd34b71",
+      "delivery_commit": "bb2da3953c3455b6375e8df09f0cb4004134fc1c",
+      "receipt_sha256": "863252fa8ac7aaae06868ff40e0befeb4bc7208bd4a1574690595530b3dc389d",
+      "handoff_sha256": "2d2655ae6ae88fb8f191fc8808396599b505673a75a745200e15a425ce069799",
+      "metadata_revision": "6ea438bb74c4d986d43f7cb82a8f441d8f208e4c",
+      "sealed_metadata_files_verified": 260,
+      "sealed_metadata_bytes_verified": 404820218,
+      "metadata_hash_seconds": null,
+      "elapsed_reason": "Original check completed before later assertion; timing variable was not persisted and is not fabricated.",
+      "source_identity_sha256": "ffa65b77e3f60939932f7e4309746498508e6efff8cb5f155909939662cc363c",
+      "no_saved_probability_or_native_model_payload_opened": true
+    },
+    "S04_source_seals": {
+      "status": "PASS_COMPLETED_BEFORE_PRESERVED_ADAPTER_ASSERTION",
+      "contrast_plan_sha256": "f71e806f716d76990760b83812e6d662e5a30c38bf14688251466f6451d9b8b1",
+      "expected_manifest_sha256": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e"
+    },
+    "comparison_universe": {
+      "schema_version": "s09-frozen-comparison-metadata-v1",
+      "status": "PASS_METADATA_ONLY",
+      "S04_contrast_plan_sha256": "f71e806f716d76990760b83812e6d662e5a30c38bf14688251466f6451d9b8b1",
+      "S04_original_expected_manifest_sha256": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+      "family_counts": {
+        "base_reference": 42120,
+        "immediate_parent": 42120,
+        "DNA_control": 6480,
+        "anchor_policy_gap": 324,
+        "LM_base_reference": 108
+      },
+      "admitted_count": 48924,
+      "deferred_count": 42228,
+      "intended_count": 91152,
+      "admitted_ids_sha256": "281ee09d8e70d8034c00424d52ddbb5e4792c2f789e18a0aa7acb900cf0dc6ba",
+      "deferred_ids_sha256": "ba30151e3a5efa0f9c26158170ce61ef432992f5f46479f080e743a07576389a",
+      "frozen_metadata_copies": {
+        "FROZEN_ADMITTED_KEYS.jsonl": "b237ed6adf108e95e4f813a33e8ec619c2520a1d1512b4c4db3865766d74d65b",
+        "FROZEN_DEFERRED_KEYS.jsonl": "b438e34849a89f5c0be5f67d61f416d22de3faba774737c4f375c9386c4fe24b"
+      },
+      "deferred_reasons": {
+        "UNKNOWN_PARENT_INTERVENTION_EXPOSURE": 42120,
+        "EXACT_BASE_PER_EXAMPLE_LOSS_TARGET_ENDPOINT_JOIN_NOT_BOUND": 108
+      },
+      "all42120planned_target_metric_keys_covered": true,
+      "underlying_prediction_paths": 8424,
+      "target_key_schema": "contrast.d is a classifier_metric specification ID; anchor_policy_gap.q is also a classifier_metric ID",
+      "paired_values_masks_or_contrasts_computed": false
+    },
+    "capacity_and_process_metadata": {
+      "status": "OBSERVED_NO_SCIENTIFIC_ADMISSION",
+      "memory": {
+        "MemTotal_bytes": 2434616254464,
+        "MemAvailable_bytes": 2157233283072
+      },
+      "cgroups": {
+        "cpu.max": "1360000 100000",
+        "memory.max": "282999996416",
+        "memory.current": "222232616960",
+        "cpuset.cpus.effective": "0-127"
+      },
+      "CPU_affinity_count": 128,
+      "inherited_limits": {
+        "workers": 2,
+        "BLAS_threads_per_worker": 4,
+        "worker_RSS_bytes": 8589934592,
+        "stage_RSS_bytes": 25769803776,
+        "batch_host_headroom_bytes": 51539607552
+      },
+      "shared_filesystem_free_bytes_not_provider_quota": 130897391910912,
+      "last_S08_owned_allocation_lower_bound_bytes": 364742922240,
+      "provider_unused_quota": null,
+      "quota_reason": "No supported usage API evidence. Reuse precharged S08 baseline; S09 incremental budget still requires phase readiness. No broad allocation scan.",
+      "known_live_S08_owned_processes": [],
+      "locks_available": [
+        "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S08/attempt-001/WRITER.lock",
+        "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S08/attempt-001/CPU_STAGE.lock",
+        "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S08/attempt-001/RESEARCH_PUBLICATION.lock",
+        "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S08/attempt-001/CLOSEOUT.lock"
+      ],
+      "existing_admin_figure_distribution_metadata": {
+        "numpy": "2.5.4",
+        "matplotlib": null,
+        "Pillow": "13.0.0",
+        "cairosvg": null,
+        "reportlab": null
+      },
+      "plotting_or_font_cache_initialization_performed": false
+    },
+    "GPU_metadata_only": {
+      "observed": "NVIDIA H200 NVL, 143771, 0",
+      "new_GPU_work": false
+    }
+  },
+  "research_controller_sha256_before": "a6b83e44cd251fb300333f1136e27e599652306a66a15565c04efbcab48d6fc6",
+  "no_numerical_contrast_or_endpoint_execution": true,
+  "observed_utc": "2026-11-24T22:30:51.439452+00:00"
+}
