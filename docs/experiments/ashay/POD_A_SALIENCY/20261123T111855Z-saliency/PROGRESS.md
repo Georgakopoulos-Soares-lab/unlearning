@@ -1,3 +1,5 @@
 S06 scientific scope complete: all9 candidates,90bundles/69120logicalrows/2340matrices,90LMunits/180metricrecords;360exact frozen keys verified. All9 candidate payloads freshly privately recovered with all10bundles/260matrices,10LMpointpairs/5devuncertainty outputs and390+390future S07 identities each. All S05 work reused, S04 freeze/no-deadline preserved. Final administrative metadata/Git proof are separate delivery layers. Stop before S07.
 
 WAITING_FOR_APPROVAL: S07
+
+Final administrative recovery passed: immutable revision 5a1b3cdd9928a394eec393eaf563fa6c9d98b623, archive SHA256 e900f68e6eeb3d699594daf46022e7069e8402c7fdbbcd9b8cb8b9081f186195, 450 exact members freshly byte-verified, including the final S06 receipt and S07 handoff, and9exact public mappings regenerated from restored saved metadata. This proof is external to its own archive. Exact final Git delivery proof is recorded externally under control/S06/attempt-001/FINAL_DELIVERY_RECEIPT.json after publication; no future commit hash is fabricated.

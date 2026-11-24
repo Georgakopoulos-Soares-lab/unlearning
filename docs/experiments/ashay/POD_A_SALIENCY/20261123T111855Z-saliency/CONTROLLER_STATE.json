@@ -700,7 +700,7 @@
         "candidate_09"
       ],
       "unfinished_candidates": [],
-      "delivery_status": "ALL9_SCIENCE_AND_PRIVATE_RECOVERY_PASS_FINAL_ADMIN_GIT_PROOF_PENDING"
+      "delivery_status": "PRIVATE_SCIENCE_AND_FINAL_METADATA_RECOVERY_PASS_GIT_PROOF_EXTERNAL"
     },
     "S07": {
       "status": "WAITING_FOR_APPROVAL",
@@ -1023,6 +1023,17 @@
         "candidate_09": "ab111a486975ba0c2c9459969c99240784386f9a"
       },
       "scope": "All9 fullmembers/all10bundles260matrices/all10LMpointpairs5devuncertainty/all390+390future identities each; no fits/head applications/GPU/cleanruntime replay"
+    },
+    "S06_final_metadata": {
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
+      "immutable_revision": "5a1b3cdd9928a394eec393eaf563fa6c9d98b623",
+      "archive_sha256": "e900f68e6eeb3d699594daf46022e7069e8402c7fdbbcd9b8cb8b9081f186195",
+      "archive_bytes": 2623093,
+      "exact_members_verified": 450,
+      "receipt_path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/FINAL_METADATA_RECOVERY.json",
+      "receipt_sha256": "08e77962fa612cae6385678f60f8f9abda5821e43875431eb6d975200e8f5daa",
+      "scope": "Exact final administrative metadata/controller/S06receipt/S06handoff restored; candidate scientific archives referenced by immutable verified dependency graph; no extra replay or refits",
+      "self_reference": "New proof and final Gitdelivery external to their own immutablemetadataarchive; scientificreceipt/handoff exactbytes restored."
     }
   },
   "external_dependencies": [
@@ -1079,7 +1090,8 @@
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/S05_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
     "unfinished_units": [],
     "transfer_totals": {
@@ -1088,7 +1100,9 @@
       "S06_logical_rows": 69120,
       "S06_physical_rows": 69120,
       "S06_classifier_fits": 0,
-      "S06_head_applications": 0
+      "S06_head_applications": 0,
+      "final_metadata_upload_bytes": 2623093,
+      "final_metadata_explicit_HTTP_readback_bytes": 2623093
     },
     "owned_processes": [],
     "unresolved_decisions": [
@@ -1101,7 +1115,7 @@
       "Resolve all390+390 per candidate typed selectors and exact original-base scaler/head members from immutable dependencies; no refit/replacement of fixed references",
       "Current source/runtime/candidate entry, private route, memory/capacity admission; preserve all valid S05/S06 units"
     ],
-    "reconciled_utc": "2026-11-24T15:45:43.234217+00:00",
+    "reconciled_utc": "2026-11-24T15:50:02.058350+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
