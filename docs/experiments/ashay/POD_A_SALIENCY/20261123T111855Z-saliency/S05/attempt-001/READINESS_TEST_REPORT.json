@@ -1,0 +1,158 @@
+{
+  "schema_version": "s05-synthetic-tests-v1",
+  "status": "PASS",
+  "tests": [
+    {
+      "case": "test split rejected before data opening",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other task rejected before opening",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "unknown candidate",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "substituted candidate content scope",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong zero-based layer16 mapping",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "unsupported precision/backend",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "third readout policy",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "valid synthetic all26hook metadata",
+      "status": "PASS"
+    },
+    {
+      "case": "cohort roworder",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "label/class association",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "filler contamination",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "other-task array contamination",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "unsupported feature dtype",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "nonfinite required feature",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "wrong LMtarget mask",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "incomplete file is not completion",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "false completed receipt",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "valid complete unit reused without producer callback",
+      "status": "PASS"
+    },
+    {
+      "case": "changed source invalidates affected unit",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "unaffected valid unit remains reusable",
+      "status": "PASS"
+    },
+    {
+      "case": "same-size corrupt completed bytes rejected",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "conflicting writer rejected with actual OSlock",
+      "status": "PASS"
+    },
+    {
+      "case": "missing chunk denominator",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "duplicate noncontiguous chunk",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "altered draw identity before array opening",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "changed saved fold identity",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "unfrozen audit replacement",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "fixed original head replacement before features/predictions",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "case": "independent float32-preserving scaler/linear/logistic math",
+      "status": "PASS"
+    },
+    {
+      "case": "independent five-metric point/draw/linearCI math andmissingclass mask",
+      "status": "PASS"
+    },
+    {
+      "case": "separate producer/auditor fitting and completed optimizer reuse",
+      "status": "PASS"
+    },
+    {
+      "case": "convergence retry uses exact same TRAIN inputs C and2000then10000",
+      "status": "PASS"
+    },
+    {
+      "case": "persistent convergence preserves both attempts and cannot seal complete",
+      "status": "PASS"
+    },
+    {
+      "case": "adapter import graph excludes historical test-enabled main",
+      "status": "PASS"
+    }
+  ],
+  "count": 34,
+  "fixtures": "SYNTHETIC_only,36rows4features, manuallyspecifiedweightvectors; no production outcomes/model/GPU/drawgeneration",
+  "real_H3_fits_or_forwards": 0,
+  "executed_source_sha256": {
+    "test_s05_contracts.py": "28391f7cd6cfb6a1db9be1db75a1711d28672d94d6e4752b4349dfc7cc6b43b1",
+    "s05_verify.py": "b9f301fbb74f1fe2094a665883a98062ef55730f3f4999ca4c05cb644892cb11",
+    "s05_cpu.py": "f002b0633eda91fe012ac7c02803327f4d3cc57f018ec09aa6ee755181f82446",
+    "s05_gpu.py": "0c4d0898885771f7cc432622e5fb837764fa79d514f5ff2230cd87443803f08d",
+    "s05_contract.py": "b014ccb484fa738802cbc002e677724ba6a70ae919cda45ca397149f26964a04",
+    "inherited_fit.py": "780e5359cc352e6fb2eef9b24cc7b6109e1ea158b6e3eadd5e0f5bd2763b7183",
+    "historical_h3_followup_SOURCE_ONLY.py": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+    "inherited_independent.py": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+    "inherited_metrics.py": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+    "native_loader.py": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304",
+    "qualification_contract.py": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47"
+  }
+}

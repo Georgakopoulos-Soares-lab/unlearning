@@ -1,0 +1,59 @@
+{
+  "schema_version": "s05-execution-bindings-v1",
+  "finite_manifest_sha256": "b2af3067a6d658c8da31a9e7c6dea14cf0b142b43f1d0b47d16d4d73ecfa7104",
+  "required_spec_count": 17151,
+  "planned_spec_kinds": {
+    "extraction": 18,
+    "LM": 18,
+    "LM_metric": 36,
+    "final_head": 702,
+    "fixed_application": 702,
+    "optimizer_call": 7020,
+    "prediction": 1404,
+    "classifier_metric": 7020,
+    "audit_refit": 21,
+    "audit_optimizer_call": 210
+  },
+  "seal_schema": {
+    "required": [
+      "schema_version",
+      "status",
+      "identity",
+      "identity_sha256",
+      "files",
+      "counts",
+      "completion_written_last"
+    ],
+    "status": "COMPLETE_UNVERIFIED",
+    "identity_required": [
+      "planned_spec_id",
+      "source_identity_sha256"
+    ],
+    "files": [
+      "path",
+      "bytes",
+      "sha256",
+      "verified_stat"
+    ],
+    "atomic_policy": "fsync output; completion JSON written last; changed source/input invalidates affected scope"
+  },
+  "publication_index_schema": {
+    "required": [
+      "schema_version",
+      "status",
+      "protocol_semantic_sha256",
+      "source_bundle_sha256",
+      "records"
+    ],
+    "records_required": [
+      "planned_spec_id",
+      "candidate_alias",
+      "actual_identity_sha256",
+      "artifact_sha256",
+      "private_artifact_locator",
+      "verification_status",
+      "recovery_status"
+    ]
+  },
+  "canonical_fields": "Canonical metric fields retained within source-row wrappers; exact planned IDs unchanged. Final receipts use pinned S_RESULT_SCHEMAS and controller validator."
+}

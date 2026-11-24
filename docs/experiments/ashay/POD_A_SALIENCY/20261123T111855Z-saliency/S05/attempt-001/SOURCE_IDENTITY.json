@@ -1,0 +1,106 @@
+{
+  "schema_version": "s05-source-identity-v1",
+  "code_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S05/attempt-001/code",
+  "configuration_sha256": "0c9cd2fa6a7723dd0af0ace2c37bf449445f1ca5649280f826dd3eaf5065726c",
+  "files": [
+    {
+      "path": "historical_h3_followup_SOURCE_ONLY.py",
+      "sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b"
+    },
+    {
+      "path": "inherited_fit.py",
+      "sha256": "780e5359cc352e6fb2eef9b24cc7b6109e1ea158b6e3eadd5e0f5bd2763b7183"
+    },
+    {
+      "path": "inherited_independent.py",
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+    },
+    {
+      "path": "inherited_metrics.py",
+      "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a"
+    },
+    {
+      "path": "native_loader.py",
+      "sha256": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304"
+    },
+    {
+      "path": "qualification_contract.py",
+      "sha256": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47"
+    },
+    {
+      "path": "s05_contract.py",
+      "sha256": "b014ccb484fa738802cbc002e677724ba6a70ae919cda45ca397149f26964a04"
+    },
+    {
+      "path": "s05_cpu.py",
+      "sha256": "f002b0633eda91fe012ac7c02803327f4d3cc57f018ec09aa6ee755181f82446"
+    },
+    {
+      "path": "s05_gpu.py",
+      "sha256": "0c4d0898885771f7cc432622e5fb837764fa79d514f5ff2230cd87443803f08d"
+    },
+    {
+      "path": "s05_verify.py",
+      "sha256": "b9f301fbb74f1fe2094a665883a98062ef55730f3f4999ca4c05cb644892cb11"
+    },
+    {
+      "path": "test_s05_contracts.py",
+      "sha256": "28391f7cd6cfb6a1db9be1db75a1711d28672d94d6e4752b4349dfc7cc6b43b1"
+    }
+  ],
+  "roles": {
+    "GPU": {
+      "role": "GPU",
+      "files": {
+        "s05_gpu.py": "0c4d0898885771f7cc432622e5fb837764fa79d514f5ff2230cd87443803f08d",
+        "s05_contract.py": "b014ccb484fa738802cbc002e677724ba6a70ae919cda45ca397149f26964a04",
+        "qualification_contract.py": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47",
+        "native_loader.py": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304"
+      },
+      "runtime_lock_sha256": "0fd4209ad3f22e7d81d3a3ff465c62c6c5b4bc489e4105b53b6302f7a9531b71",
+      "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+      "source_identity_sha256": "3e360cec2319014df71a92468a265e867c03be4401c01e6d25f77dc9eb22bcda"
+    },
+    "producer": {
+      "role": "producer",
+      "files": {
+        "s05_cpu.py": "f002b0633eda91fe012ac7c02803327f4d3cc57f018ec09aa6ee755181f82446",
+        "s05_contract.py": "b014ccb484fa738802cbc002e677724ba6a70ae919cda45ca397149f26964a04",
+        "inherited_fit.py": "780e5359cc352e6fb2eef9b24cc7b6109e1ea158b6e3eadd5e0f5bd2763b7183",
+        "inherited_metrics.py": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+        "qualification_contract.py": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47"
+      },
+      "runtime_lock_sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e",
+      "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+      "source_identity_sha256": "0fbd00057d62cb4f042e5e384b1550549575ed1cfaffd3023ee8d7a478546dfe"
+    },
+    "auditor": {
+      "role": "auditor",
+      "files": {
+        "s05_cpu.py": "f002b0633eda91fe012ac7c02803327f4d3cc57f018ec09aa6ee755181f82446",
+        "s05_contract.py": "b014ccb484fa738802cbc002e677724ba6a70ae919cda45ca397149f26964a04",
+        "inherited_fit.py": "780e5359cc352e6fb2eef9b24cc7b6109e1ea158b6e3eadd5e0f5bd2763b7183"
+      },
+      "runtime_lock_sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e",
+      "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+      "source_identity_sha256": "097956608e80838c7bda3d42afbf68c902ce18fa2ce5b37ade1e98e7a7b5874c"
+    },
+    "verifier": {
+      "role": "verifier",
+      "files": {
+        "s05_verify.py": "b9f301fbb74f1fe2094a665883a98062ef55730f3f4999ca4c05cb644892cb11",
+        "s05_contract.py": "b014ccb484fa738802cbc002e677724ba6a70ae919cda45ca397149f26964a04",
+        "inherited_independent.py": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730"
+      },
+      "runtime_lock_sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e",
+      "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+      "source_identity_sha256": "8a1b4a73cc4fd01e7d67b67b04d1805df776bf9cd51bb6b0d083e3cb900ce58a"
+    }
+  },
+  "pinned_before_production_outcomes": true,
+  "role_invalidation": "Changed role source/runtime invalidates that role and its dependent units; unchanged upstream role seals remain reusable; never silently rebind completed units",
+  "administrative_recovery_recipe_sha256": "661b021d9827608caa6ed6889375bfb5edaee873987e0d1c712dfd96f2fd121e",
+  "recovery_contract_sha256": "0d14273748b661b0e191a8b27b6f5cd807c920c8edd0f38e63c8a0e6b19d1411",
+  "binding_schema_sha256": "88c5c7a5109d9d0ae805ecae8bef902b8828b4a0e1dbb493b0fee731ca7825ab",
+  "sealed_utc": "2026-11-24T06:28:00.928884+00:00"
+}

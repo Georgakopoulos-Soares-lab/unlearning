@@ -76,11 +76,22 @@
       ]
     },
     "S05": {
-      "approved": false,
+      "approved": true,
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "source": "direct_chat",
+      "message": "APPROVE S05 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "observed_utc": "2026-11-24T05:40:57.324784+00:00",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S06": {
       "approved": false,
@@ -526,8 +537,20 @@
       "S05_approved": false
     },
     "S05": {
-      "status": "WAITING_FOR_APPROVAL",
-      "approved": false
+      "status": "RUNNING",
+      "approved": true,
+      "attempt_id": "attempt-001",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S06": {
       "status": "NOT_STARTED",
@@ -862,40 +885,37 @@
   "owned_processes": [],
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
-    "phase": "S04",
+    "phase": "S05",
     "attempt_id": "attempt-001",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "146dcf5759ea9adfec8d66554e158b5487395679",
+    "supplement_commit": "a469fd5a30d1cad182a458ad07bac65aaeef1e6a",
     "completed_receipts": [
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/PROTOCOL_FREEZE.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/COVERAGE_PLAN.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/AUDIT_PANEL.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/H3_AUDIT_SUBSET.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/CONTRAST_PLAN.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/VALIDATION.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/S04_RECEIPT.json"
     ],
-    "unfinished_units": [],
-    "transfer_totals": {
-      "private_upload_bytes": 28776012,
-      "explicit_HTTP_readback_bytes": 28776012,
-      "new_scientific_forwards": 0,
-      "new_fits": 0,
-      "new_bootstrap_sampling": 0
-    },
+    "unfinished_units": [
+      "R1-H3-input-bindings",
+      "R2-capacity",
+      "R3-implementation-tests",
+      "R4-resume-and-recovery-contract",
+      "R5-TRAIN-calibration",
+      "nine-candidate-H3-production-verification-audits-private-recovery",
+      "publication"
+    ],
+    "transfer_totals": {},
     "owned_processes": [],
     "unresolved_decisions": [
-      "Deferred42120parent and108LMbase contrasts; no automatic activation",
-      "Current account unused quota and fullcohort throughput/cost unknown, later finite-batch admission must resolve capacity"
+      "Real usable remaining owned storage before substantial batch; no shared-df substitution",
+      "Implementation numerical/source gates before outcomes"
     ],
-    "next_action": "Stop. WAITING_FOR_APPROVAL: S05. After direct APPROVE S05 at7007ebd05bf59432bf69109e5f69baad31ec0d3a, reconcile finaldelivery/privatebackup/seals/liveprocesses; execute only exactfrozen H3scope under candidate-specific guard.",
+    "next_action": "Approved candidate_01 TRAIN calibration and H3 production, then independent checks/private recovery; no S06",
     "prerequisites": [
-      "Direct S05approval",
-      "Finalexternaldeliveryproof and originalS04artifact/receipt bindings",
-      "Current resource/account capacity admission",
-      "Pinned dev-onlyproducer/independent implementation source; no historicalmonolithic H3test execution"
+      "SameapprovedS05scope, no furtherapprovalrequired",
+      "All frozenS04bindings unchanged",
+      "No other tasks/test/S09contrasts"
     ],
-    "reconciled_utc": "2026-11-24T04:56:28.209215+00:00",
-    "single_writer_verified": true
+    "reconciled_utc": "2026-11-24T06:29:07.527208+00:00",
+    "single_writer_verified": true,
+    "source_bundle_sha256": "56fbc05675ebbbda589c1cb08f22e16230afcd65cbe8d910415354a335b85217"
   },
   "private_roundtrip_binding": {
     "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/PRIVATE_WRITE_READBACK.json",

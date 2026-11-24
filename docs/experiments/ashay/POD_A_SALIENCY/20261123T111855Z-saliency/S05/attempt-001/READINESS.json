@@ -1,0 +1,91 @@
+{
+  "schema_version": "s05-readiness-v1",
+  "status": "READY_FOR_APPROVED_TRAIN_CALIBRATION",
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "S04_receipt_sha256": "87ad007ab7198ab2261fdb2f956f5a46ddc4d63e0d3c538933617f5a6046cc5a",
+  "source_bundle_sha256": "56fbc05675ebbbda589c1cb08f22e16230afcd65cbe8d910415354a335b85217",
+  "gates": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "R1_INPUT_BINDINGS.json",
+          "sha256": "9f99a311dd9f9fc8cb6a51d14087bae6b8fbfb240d74f4f92ceb967ceb728e55"
+        },
+        {
+          "path": "H3_FOLD_CLASS_ADMISSION.json",
+          "sha256": "ed7f629f4a7bbcf490a73de25d99ba68a266e5941c1a23e736ba2fee135022c7"
+        },
+        {
+          "path": "RUNTIME_REUSE_CHECK.json",
+          "sha256": "3590aa93abca819a068e5ced9aff88a8a08d562deb840c3b9a0903d7e6f6e5f6"
+        },
+        {
+          "path": "CPU_ENVIRONMENT_LOCK.json",
+          "sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e"
+        },
+        {
+          "path": "NATIVE_INPUT_BINDINGS.json",
+          "sha256": "99ed56b65ff7e4891e20082ecdf21256b3b95fbdc009de4a0e2ce3c1ba6b83bb"
+        },
+        {
+          "path": "ENTRY_VALIDATION.json",
+          "sha256": "6956923f574c9dfbe9b11055845fd9cf9187a687ee7f85eb8d6e1b4fb51702ef"
+        }
+      ]
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "CAPACITY_ADMISSION.json",
+          "sha256": "7018e1bb9e22e17b2af1b21a67f0d35f2ff29fda768f0ddeedf75cd2ac18a258"
+        },
+        {
+          "path": "CURRENT_PROVIDER_ALLOCATION.json",
+          "sha256": "67aad04f5d78b778a760b2c04dac1b9c2788b2fced9f1b25ee161164aa361e25"
+        }
+      ]
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [],
+      "test_report_sha256": "42dbd19ebb131c92e0633f213dcaf8a62c8390c3c0a53daac1e0bcb7837bdd87",
+      "test_report_path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S05/attempt-001/synthetic-readiness-tests-005/TEST_REPORT.json",
+      "tests": 34,
+      "scope": "Synthetic/metadata only; exact tested source bytes sealed; real H3 production not yet executed"
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "RECOVERY_CONTRACT.json",
+          "sha256": "0d14273748b661b0e191a8b27b6f5cd807c920c8edd0f38e63c8a0e6b19d1411"
+        },
+        {
+          "path": "EXECUTION_BINDING_SCHEMA.json",
+          "sha256": "88c5c7a5109d9d0ae805ecae8bef902b8828b4a0e1dbb493b0fee731ca7825ab"
+        },
+        {
+          "path": "EXECUTION_MANIFEST_BINDING.json",
+          "sha256": "ec59931ce68915a12cfc9d7e9ac447f121c5d67ee22f67d9fe563503e7270752"
+        },
+        {
+          "path": "PRIVATE_RECOVERY_ROUTE_ADMISSION.json",
+          "sha256": "4bfc6a3eb922bc9cb9007802e3ce95e95638a523f4ee563c67fe5e8ccd61d7a1"
+        },
+        {
+          "path": "SOURCE_IDENTITY.json",
+          "sha256": "56fbc05675ebbbda589c1cb08f22e16230afcd65cbe8d910415354a335b85217"
+        }
+      ]
+    },
+    "R5": {
+      "status": "PENDING",
+      "next_action": "Approved first256 contiguous candidate_01 TRAIN rows, physical8, retain validated firstchunk as production; no dev calibration"
+    }
+  },
+  "no_deadline": true,
+  "scientific_units_before_this_seal": 0,
+  "sealed_utc": "2026-11-24T06:28:00.969240+00:00"
+}
