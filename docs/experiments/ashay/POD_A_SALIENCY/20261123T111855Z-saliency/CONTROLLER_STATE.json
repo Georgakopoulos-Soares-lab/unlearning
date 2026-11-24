@@ -789,7 +789,10 @@
         "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
         "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
         "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
-        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC"
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ]
     },
     "S09": {
@@ -1145,16 +1148,19 @@
       "self_reference": "New recovery and final Git proof are external to their own named immutable objects"
     },
     "S08_candidates": {
-      "status": "PARTIAL",
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
       "candidate_revisions": {
         "candidate_01": "8e0ea3329bb319c6121eb6b631d55d47d45c6a91",
         "candidate_02": "94a4c5356827b9402dbfed5f185324fd9d283491",
         "candidate_03": "870c6b92aecb6588cbf1dc31672a5a016653eb83",
         "candidate_04": "da6f40923d210b7364d9e9f165938e224d9858fc",
         "candidate_05": "3d7af65f039636a6c53e66ce2b93105911410fcb",
-        "candidate_06": "ec75119fe64ed54a19bd67dc65ca44a59ae05398"
+        "candidate_06": "ec75119fe64ed54a19bd67dc65ca44a59ae05398",
+        "candidate_07": "8acefbd880a9d70d10cee10d45e5fd7f42558bb8",
+        "candidate_08": "0e455aecabfd786319f7a9a557a363ee95ecd0a2",
+        "candidate_09": "ad3080329aaa7c9f5118d35f023090cbf5181711"
       },
-      "completed_cases": 6
+      "completed_cases": 9
     }
   },
   "external_dependencies": [
@@ -1216,7 +1222,7 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
     "unfinished_units": [
-      "3candidate recovery/releases; finalmetadata/Gitproof"
+      "0candidate recovery/releases; finalmetadata/Gitproof"
     ],
     "transfer_totals": {
       "S07_candidate_upload_bytes": 5542236321,
@@ -1226,8 +1232,8 @@
       "S07_convergence_retries": 135,
       "S07_final_metadata_upload_bytes": 54038275,
       "S07_final_metadata_HTTP_body_bytes": 54038275,
-      "S08_unique_candidate_upload_bytes": 488054431,
-      "S08_candidate_fresh_HTTP_body_bytes": 488054431
+      "S08_unique_candidate_upload_bytes": 732317976,
+      "S08_candidate_fresh_HTTP_body_bytes": 732317976
     },
     "owned_processes": [
       {
@@ -1244,7 +1250,7 @@
       "S08 readiness PASS before full execution",
       "Original S04freeze/audit and exact S07producer identities"
     ],
-    "reconciled_utc": "2026-11-24T21:40:06.306588+00:00",
+    "reconciled_utc": "2026-11-24T21:45:52.178415+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
