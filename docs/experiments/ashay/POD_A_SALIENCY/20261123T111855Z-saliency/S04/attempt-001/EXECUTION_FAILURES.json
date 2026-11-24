@@ -1,0 +1,18 @@
+{
+  "failures": [
+    {
+      "operation": "metadata-verification-001",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "HF transfer-only interpreter lacks NumPy; failure occurred before metadata reads or output creation.",
+      "repair": "Use unchanged S03 Python runtime with CUDA_VISIBLE_DEVICES empty and one BLAS thread; import NumPy only, no model/ML modules."
+    },
+    {
+      "operation": "initial controller inspection",
+      "exit_status": 1,
+      "timed_out": false,
+      "reason": "Absent optional frozen_artifact_bindings field accessed during read-only inspection; resumed with schema-aware optional handling, no mutation."
+    }
+  ],
+  "scientific_work": false
+}

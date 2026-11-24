@@ -1,0 +1,417 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pod-a-saliency:s04-planning:1",
+  "schema_version": "s04-planning-v1",
+  "$defs": {
+    "planned_unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "k",
+        "c",
+        "t"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "k": {
+          "enum": [
+            "extraction",
+            "LM",
+            "LM_metric",
+            "final_head",
+            "fixed_application",
+            "optimizer_call",
+            "prediction",
+            "classifier_metric",
+            "contrast",
+            "audit_refit",
+            "audit_optimizer_call"
+          ]
+        },
+        "c": {
+          "type": "string",
+          "pattern": "^candidate_0[1-9]$"
+        },
+        "t": {
+          "enum": [
+            "emp_H3",
+            "gue_tf_0",
+            "gue_prom_core_all",
+            "gue_prom_300_all",
+            "gue_splice_reconstructed",
+            "gue_mouse_0"
+          ]
+        },
+        "r": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "s": {
+          "enum": [
+            42,
+            17,
+            1234,
+            null
+          ]
+        },
+        "p": {
+          "enum": [
+            "independent_refit",
+            "fixed_original_base",
+            "LM"
+          ]
+        },
+        "split": {
+          "enum": [
+            "train",
+            "dev"
+          ]
+        },
+        "m": {
+          "enum": [
+            "AUROC",
+            "AP",
+            "accuracy",
+            "balanced_accuracy",
+            "cross_entropy",
+            "LM_NLL",
+            "LM_PPL"
+          ]
+        },
+        "f": {
+          "enum": [
+            "base_reference",
+            "DNA_control",
+            "anchor_policy_gap",
+            "LM_base_reference",
+            "immediate_parent"
+          ]
+        },
+        "ctrl": {
+          "enum": [
+            "composition",
+            "4mer"
+          ]
+        },
+        "j": {
+          "enum": [
+            0,
+            1,
+            2,
+            null
+          ]
+        },
+        "fold": {
+          "enum": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            null
+          ]
+        },
+        "d": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "q": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ref": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "why": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "k": {
+                "enum": [
+                  "LM",
+                  "LM_metric"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "r",
+              "s",
+              "p",
+              "split",
+              "d"
+            ],
+            "properties": {
+              "r": {
+                "type": "null"
+              },
+              "s": {
+                "type": "null"
+              },
+              "p": {
+                "const": "LM"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "k": {
+                "const": "contrast"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "f",
+              "r",
+              "s",
+              "p",
+              "split",
+              "m",
+              "q"
+            ],
+            "properties": {
+              "split": {
+                "const": "dev"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "k": {
+                "const": "fixed_application"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "ref",
+              "r",
+              "s",
+              "p",
+              "d"
+            ],
+            "properties": {
+              "p": {
+                "const": "fixed_original_base"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "k": {
+                "enum": [
+                  "prediction",
+                  "classifier_metric"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "r",
+              "s",
+              "p",
+              "split",
+              "d"
+            ],
+            "properties": {
+              "split": {
+                "const": "dev"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "future_signed_policy_gap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "planned_spec_id",
+        "quantity",
+        "target_policy",
+        "reference_policy",
+        "arithmetic",
+        "performance_direction",
+        "estimate",
+        "ci_low",
+        "ci_high",
+        "missing_reason",
+        "common_mask_sha256",
+        "draw_sha256",
+        "bootstrap_attempted",
+        "bootstrap_valid",
+        "bootstrap_invalid",
+        "uncertainty",
+        "independent_receipt_sha256"
+      ],
+      "properties": {
+        "planned_spec_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "quantity": {
+          "const": "signed_AUROC_policy_gap"
+        },
+        "target_policy": {
+          "const": "independent_refit"
+        },
+        "reference_policy": {
+          "const": "fixed_original_base"
+        },
+        "arithmetic": {
+          "const": "target_minus_reference"
+        },
+        "performance_direction": {
+          "type": "null"
+        },
+        "estimate": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ci_low": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "ci_high": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "missing_reason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "common_mask_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "draw_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "bootstrap_attempted": {
+          "const": 2000
+        },
+        "bootstrap_valid": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2000
+        },
+        "bootstrap_invalid": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2000
+        },
+        "uncertainty": {
+          "const": "pointwise_exploratory_conditional"
+        },
+        "independent_receipt_sha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "future_produced_artifact_join": {
+      "type": "object",
+      "required": [
+        "planned_spec_id",
+        "actual_input_identity_sha256",
+        "producer_output_sha256",
+        "producer_source_sha256",
+        "attempt",
+        "status"
+      ],
+      "properties": {
+        "planned_spec_id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "actual_input_identity_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "producer_source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "producer_output_sha256": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "attempt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "COMPLETE_UNVERIFIED",
+            "VERIFIED",
+            "FAILED",
+            "PARTIAL"
+          ]
+        }
+      }
+    }
+  },
+  "canonical_contract": "S_RESULT_SCHEMAS.json unchanged. Use canonical metric schema only for marginal endpoints, canonical phase_receipt for S04. Planned unit specs and signed-gap quantities use this explicitly versioned extension. S09 prospectively frozen gap provision applies; no new training policy or altered scientific procedure. Future numerical gap implementation and independent verifier must be source-bound before execution."
+}

@@ -1,0 +1,91 @@
+{
+  "admitted_spec": 48924,
+  "all_pairs_search": false,
+  "deferred": 42228,
+  "execution_status": "No scientific contrasts calculated. ADMITTED_SPEC means metadata-compatible prospective keys, requires later direct phase approval and producer/release prerequisite seals. Deferred keys are excluded from executable queue.",
+  "expected_keys_sha256": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+  "families": [
+    {
+      "admitted_spec": 42120,
+      "causal": false,
+      "compatibility": "Source/domain/cohort/classes/head/fold/draw metadata bound. Both future target path and restored reference require exact IDs/probability and independent saved-output verification before execution/release; no S04 values opened",
+      "deferred": 0,
+      "intended": 42120,
+      "name": "base_reference",
+      "quantity_direction": "metric direction is separate from signed arithmetic",
+      "reference": "Exact original-base content/head/prediction selector per task/layer/seed from REUSE_MAP",
+      "sign": "candidate minus originalbase under each corresponding readout policy"
+    },
+    {
+      "admitted_spec": 6480,
+      "causal": false,
+      "deferred": 0,
+      "intended": 6480,
+      "name": "DNA_control",
+      "reference": "36 unchanged composition/normalized-forward4mer heads and metadata-verified DEV predictions; anchorsonly",
+      "sign": "candidate metric minus control metric"
+    },
+    {
+      "admitted_spec": 324,
+      "causal": false,
+      "deferred": 0,
+      "direction_null_reason": "Signed policy difference, no universal higher-is-better interpretation",
+      "execution_requirement": "Source-pin producer and independent derivation before calculation; compare samecandidate/task/anchor/seed/cohort, draw-by-draw on AND masks; reconstruct each gap/CI at1e-12rtol0",
+      "intended": 324,
+      "name": "anchor_policy_gap",
+      "performance_direction": null,
+      "prospective_support": "Canonical S09 permits a prospectively frozen paired policy-gap family. Supporting schema uses signed quantity instead of changing canonical metric direction enums; exactly two existing policies, no amendment/new training policy",
+      "quantity": "signed_AUROC_policy_gap",
+      "sign": "AUROC(independent_refit)-AUROC(fixed_original_base)"
+    },
+    {
+      "admitted_spec": 0,
+      "deferred": 108,
+      "intended": 108,
+      "minimum_resolution": "Bind exact original-base per-example losses and validtargets, orderedIDs/cohort/tokenization/head/runtime source and saved recovery identities without re-evaluation. Before affected S09execution publish versioned eligibility decision/outcome-exposure record; do not silently activate",
+      "name": "LM_base_reference",
+      "reason": "DEFERRED_EXACT_PER_EXAMPLE_REFERENCE_STATS_JOIN_NOT_BOUND; existing aggregate/paired LM archives do not substitute for per-example base sufficient-statistic identity",
+      "reference": null,
+      "sign": "candidate minus exact compatible originalbase, per task/dev/NLLorPPL; no layer/seed expansion"
+    },
+    {
+      "admitted_spec": 0,
+      "deferred": 42120,
+      "intended": 42120,
+      "minimum_resolution": "Safe exact parent provenance/intervention/exposure metadata and prospective versioned eligible scope before execution",
+      "name": "immediate_parent",
+      "reason": "Exact immediate parents/intervention/exposure/control identity unresolved; no guessed parent edges",
+      "reference": null,
+      "sign": "target minus verified immediateparent only after new scope"
+    }
+  ],
+  "keys_locator": "EXPECTED_UNIT_KEYS.jsonl where k=contrast and f=family",
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "reporting": {
+    "adverse_flat": "Retained on identical rules",
+    "matched_method_strength": "Descriptive profiles only, all nine endpoints; no causal/matched-dose inferential family",
+    "policy_gap": "Signed family separately labeled and independently validated, not a higher-better metric or mechanism claim"
+  },
+  "schema_version": "s04-contrast-plan-v1",
+  "total_intended": 91152,
+  "uncertainty": {
+    "CV_seed_ranges": "Sensitivity only, never CI or independent replicates",
+    "LM_draw": "Recompute sum(loss)/sum(targets) in draw using group multiplicities; exponentiate ratio for PPL",
+    "classifier_validity": "Every required numeric class present in draw; endpoint finite checks also required. Marginal mask is class-complete AND finite for that quantity; paired mask is explicit intersection of both marginal masks on the exact same draw IDs",
+    "difference": "Compute target-minus-reference within each common valid draw, not subtract CI endpoints",
+    "draw_generation": "Reuse exact restored int32 group_draws. Never regenerate for favorable validity",
+    "draws": 2000,
+    "equivalence_noninferiority_preservation_success_enabled": false,
+    "excluded_variability": "Intervention training/seed variability, fitted-head training uncertainty and unknown homology/locus dependence not covered",
+    "group_order": "numpy.unique lexically sorted names; inherited inverse row-group order",
+    "groups": "Exact/reverse-complement groups; no claim of biological independence",
+    "interval": "numpy.quantile(valid differences,[.025,.975],method=linear), inherited default; independent atol1e-12 rtol0",
+    "label": "pointwise_exploratory_conditional",
+    "margin_null_reason": "No justified prospective margin authorized; interval crossing zero is inconclusive",
+    "missing": "null with explicit reason; attempted/valid/invalid and mask hashes; zero common valid draws => nullCI and affected inferential release blocked, retain valid point description separately",
+    "multiplicity": "Pointwise unadjusted exploratory conditional intervals. No full-grid/FWER claim. No new confirmatory test",
+    "nominal_coverage": 0.95,
+    "practical_margin": null,
+    "seed": 20261103
+  }
+}

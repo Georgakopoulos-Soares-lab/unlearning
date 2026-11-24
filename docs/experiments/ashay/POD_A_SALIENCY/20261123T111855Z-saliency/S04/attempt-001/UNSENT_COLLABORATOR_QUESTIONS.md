@@ -1,0 +1,9 @@
+# Consolidated clarification request — UNSENT
+
+1. For each exact discovery/content ID in this freeze, supply its immediate intervention-parent tensor/config/tokenizer/checkpoint identity and intended endpoint. State how the two noise-5% snapshots relate; both remain included without a preferred endpoint.
+2. Supply safe source revisions and definitions for saliency scoring/scoring-data provenance, ranking direction/normalization, global/layer-local eligibility, mask/tie/threshold identities and intervention timing. Specify denominator, selected/realized fraction, noise magnitude/distribution or reinitialization distribution and affected tensor families. Final tensor differences cannot reconstruct this history.
+3. Supply objective/version, optimization/sampling schedule, realized rows/tokens/duration, repeated presentations and checkpoint-selection exposure. Identify saliency/mask/noise/training seed roles and independently generated runs, nested masks and matched unperturbed/random-mask/magnitude/noise controls. Shared seed1234 and CVseeds42/17/1234 do not establish replication.
+4. Supply a complete outcome-independent delivery/run manifest and safe upstream immutable/revision evidence where available, broader locus/homology/exposure overlap metadata, and missing-sweep selection. Nine private mirrors resolve selected recovery, not exhaustive delivery. Candidate05 original-upload privacy remains unknown.
+5. For later S10 only, supply checkpoint/protocol/cohort/metric/step-matched aggregate forget results with uncertainty and selection provenance. No raw forget examples/data or model evaluation is requested. PodB relearning stays separate.
+
+These are interpretation/recovery dependencies, not a reason to repeat completedS03 or halt compatible standalone planning. No request was sent.

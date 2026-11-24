@@ -58,11 +58,22 @@
       ]
     },
     "S04": {
-      "approved": false,
+      "approved": true,
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "source": "direct_chat",
+      "message": "APPROVE S04 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "observed_utc": "2026-11-24T04:27:54.276496+00:00",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S05": {
       "approved": false,
@@ -187,10 +198,13 @@
       "eligibility_rule": "Frozen source/runtime/witness/reference foundation recovered; future scientific panels/contrasts/protocol freeze remains S04"
     },
     "frozen_protocol": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/PROTOCOL_FREEZE.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/VALIDATION.json"
+      ],
       "resolve_in": "S04",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S05 entry; pending blocks only affected scope"
+      "eligibility_rule": "Frozen nine-candidate protocol; S05entry requires separate direct approval, candidate gates and exact S04bindings"
     },
     "runtime_qualified": {
       "status": "RESOLVED",
@@ -203,16 +217,18 @@
     "qualified_base_heads": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/BASE_HEAD_REUSE_MAP.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/REUSE_MAP.json"
       ],
       "resolve_in": "S03",
-      "eligibility_rule": "Exact468original-base scaler/head pairs and36controls reused unchanged. S04binds immutable reuse; S05requires; S07consumes originals"
+      "eligibility_rule": "ExactS04receipt-bound frozen scope; consume original bytes, no reference replacement/audit orfamily reselection"
     },
     "frozen_audit_panel": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/AUDIT_PANEL.json"
+      ],
       "resolve_in": "S04",
-      "eligibility_rule": "Initial exact panel and immutable seal before producer outcomes; S08 consumes original"
+      "eligibility_rule": "ExactS04receipt-bound frozen scope; consume original bytes, no reference replacement/audit orfamily reselection"
     },
     "producer_output_seals": {
       "status": "PENDING",
@@ -227,10 +243,12 @@
       "eligibility_rule": "Must be evidence-backed RESOLVED before S09 entry; pending blocks only affected scope"
     },
     "frozen_contrast_plan": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/CONTRAST_PLAN.json"
+      ],
       "resolve_in": "S04",
-      "eligibility_rule": "Initial exact comparison family/keys before outcomes; S08/S09 revalidate, never reselect"
+      "eligibility_rule": "ExactS04receipt-bound frozen scope; consume original bytes, no reference replacement/audit orfamily reselection"
     },
     "verified_retain_contrasts": {
       "status": "PENDING",
@@ -267,10 +285,13 @@
       "eligibility_rule": "Exact9selected native mirrored payloads admitted; not proof of exhaustiveDrive delivery"
     },
     "protocol_and_audit": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/PROTOCOL_FREEZE.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/VALIDATION.json"
+      ],
       "resolve_in": "S04",
-      "eligibility_rule": "Freeze before scientific outcomes"
+      "eligibility_rule": "Frozen nine-candidate protocol; S05entry requires separate direct approval, candidate gates and exact S04bindings"
     },
     "collaborator_forget_results": {
       "status": "PENDING",
@@ -304,10 +325,12 @@
       "eligibility_rule": "Exact reviewed amendment published/read back and current controller explicitly migrated; phase approval still required"
     },
     "frozen_H3_audit_subset": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/H3_AUDIT_SUBSET.json"
+      ],
       "resolve_in": "S04",
-      "eligibility_rule": "Exact H3 subset of original panel, bound in S04 receipt and required by S05"
+      "eligibility_rule": "ExactS04receipt-bound frozen scope; consume original bytes, no reference replacement/audit orfamily reselection"
     },
     "private_minimum_artifact_protection": {
       "status": "RESOLVED",
@@ -361,6 +384,22 @@
       "status": "COMPLETE",
       "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/S03_RECEIPT.json",
       "sha256": "72a6a338906562f414b842e83f0fb1155812369fb6cd9c2040e9fd06db25e013",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    "S04": {
+      "status": "COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/S04_RECEIPT.json",
+      "sha256": "87ad007ab7198ab2261fdb2f956f5a46ddc4d63e0d3c538933617f5a6046cc5a",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -469,11 +508,25 @@
       "prior_Drive_quota_state": "Preserved historical failures; exactHFmirrors resolve selected native recovery. No new Drive query or claim that quota cleared."
     },
     "S04": {
-      "status": "WAITING_FOR_APPROVAL",
-      "approved": false
+      "status": "COMPLETE",
+      "approved": true,
+      "attempt_id": "attempt-001",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ],
+      "delivery_status": "PRIVATE_RESTORE_REGENERATION_PASS_AWAITING_GIT_PUBLICATION",
+      "S05_approved": false
     },
     "S05": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     },
     "S06": {
@@ -533,6 +586,206 @@
       "new_probe_fits": 0,
       "production_extraction_units": 0,
       "heldout_forward_rows": 0
+    },
+    "S04": {
+      "H3_final_heads": 702,
+      "S04_production_units_executed": 0,
+      "S05": {
+        "audit_initial_optimizer_calls": 210,
+        "audit_refits": 21,
+        "candidate_gate_count": 9,
+        "classifier_metric_records": 7020,
+        "dev_prediction_paths": 1404,
+        "diagnostic_TRAIN_LM_units": 9,
+        "extraction_bundles": 18,
+        "final_heads": 702,
+        "fixed_applications": 702,
+        "initial_optimizer_calls": 7020,
+        "logical_rows": 121212,
+        "primary_dev_LM_units": 9
+      },
+      "audit_optimizer_calls_excluding_retries": 1890,
+      "blocked": {
+        "LM_base_reference_contrasts": 108,
+        "immediate_parent_contrasts": 42120,
+        "matched_method_dose_edges": null,
+        "matched_method_dose_null_reason": "No exact eligible comparator/parent/exposure identities supplied; no guessed/all-pairs queue"
+      },
+      "by_phase": {
+        "S05": {
+          "admitted_spec": 17151,
+          "deferred": 0,
+          "new_required": 17151,
+          "requested": 17151,
+          "reused_production": 0
+        },
+        "S06": {
+          "admitted_spec": 360,
+          "deferred": 0,
+          "new_required": 360,
+          "requested": 360,
+          "reused_production": 0
+        },
+        "S07": {
+          "admitted_spec": 105300,
+          "deferred": 0,
+          "new_required": 105300,
+          "requested": 105300,
+          "reused_production": 0
+        },
+        "S08": {
+          "admitted_spec": 1785,
+          "deferred": 0,
+          "new_required": 1785,
+          "requested": 1785,
+          "reused_production": 0
+        },
+        "S09": {
+          "admitted_spec": 48924,
+          "deferred": 42228,
+          "new_required": 48924,
+          "requested": 91152,
+          "reused_production": 0
+        }
+      },
+      "compact_key_dictionary": {
+        "c": "candidate alias bound to exact discovery/content",
+        "ctrl": "shared DNAcontrol",
+        "d": "upstream plannedunit ID",
+        "f": "contrast family",
+        "fold": "zero-based CVfold, nullfinal fit",
+        "id": "planned specification SHA256, not produced artifact SHA",
+        "j": "Cgridindex0..2, nullfinal fit",
+        "k": "unit kind",
+        "m": "metric",
+        "p": "readout policy orLM",
+        "q": "other plannedunit ID or exact referenceendpoint specification digest; null deferred",
+        "r": "representation, null forLM",
+        "ref": "actual original-base fittedhead SHA256",
+        "s": "CVseed, null forLM",
+        "t": "task",
+        "why": "explicit deferral reason"
+      },
+      "contrast_families": {
+        "DNA_control": 6480,
+        "LM_base_reference": 108,
+        "anchor_policy_gap": 324,
+        "base_reference": 42120,
+        "immediate_parent": 42120
+      },
+      "dev_classifier_metric_records": 42120,
+      "dev_prediction_paths": 8424,
+      "diagnostic_TRAIN_LM_units": 54,
+      "eligible_by_kind": {
+        "LM": 108,
+        "LM_metric": 216,
+        "audit_optimizer_call": 1890,
+        "audit_refit": 126,
+        "classifier_metric": 42120,
+        "contrast": 48924,
+        "extraction": 108,
+        "final_head": 4212,
+        "fixed_application": 4212,
+        "optimizer_call": 63180,
+        "prediction": 8424
+      },
+      "expected_keys_sha256": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+      "future_artifact_join": "Every later producer receipt records planned_spec_id, exact actual input/scaler/head/source/output hashes and attempt; learned hashes are null/absent until produced. Exact specs do not imply completed or verified science",
+      "graph_dependencies": "Forward all26 hooks/LM shared; final heads needTRAIN bundle+fold; fixed applications needDEVbundle+exact reference; prediction needs fittedhead/application+DEVbundle; metric needsprobpath; contrasts need two exact endpoints+samecohort/draw/commonmask. Audit independent finalhead remains separate. Per-candidate H3gate and recovery required before S06/S07.",
+      "key_sets": {
+        "LM": {
+          "count": 108,
+          "ordered_id_set_sha256": "3924db0931614674da36ac76d118d6e804264e536ab1534209419149569f0ea7"
+        },
+        "LM_metric": {
+          "count": 216,
+          "ordered_id_set_sha256": "08e0cb230a66be76a4e650cd7622de4d5ba5521c4b11018a55ab932f6d7a95f2"
+        },
+        "audit_optimizer_call": {
+          "count": 1890,
+          "ordered_id_set_sha256": "8a02c0fac488a8ddf5f8664de495fa2279cd68b64230a0f20815e91bec16d994"
+        },
+        "audit_refit": {
+          "count": 126,
+          "ordered_id_set_sha256": "ac7f6b38762175021a27d6d893f65a30c6ec5665f85b0d6f4d0d4ac964afdb84"
+        },
+        "classifier_metric": {
+          "count": 42120,
+          "ordered_id_set_sha256": "4d76b33b0c765dfa54085ad5595bca945cf2f215a88f7a365fbffb606fb87725"
+        },
+        "contrast": {
+          "count": 91152,
+          "ordered_id_set_sha256": "3e8cc8f08ee13eb98568d5999187b04748860366406e48ee4aba3fc7256cbbd3"
+        },
+        "extraction": {
+          "count": 108,
+          "ordered_id_set_sha256": "ad9786451f742b4201669acc853ade62b4cc41182c0c526a2a3ea0b7c823ed14"
+        },
+        "final_head": {
+          "count": 4212,
+          "ordered_id_set_sha256": "d87be0cbcc79fb92a4d819ea0521cbf5d451db98c4aa1554fb3bcb2d5e69504b"
+        },
+        "fixed_application": {
+          "count": 4212,
+          "ordered_id_set_sha256": "14f479a4d41c5664f49219d311c30f5b522b8a00ef6e427e2ef10dfb7aa27d7f"
+        },
+        "optimizer_call": {
+          "count": 63180,
+          "ordered_id_set_sha256": "39663420ee34e5369ac9d31d090b69077d0f7e8457afbecbd4c56dbc98d9d894"
+        },
+        "prediction": {
+          "count": 8424,
+          "ordered_id_set_sha256": "37f6fb8c67c7ec1f686ffaa02e078d577dfc457d8a704c28a7f98dad5dbc4443"
+        }
+      },
+      "logical_rows_all_candidates": 190332,
+      "logical_rows_per_candidate": 21148,
+      "new_required": {
+        "LM": 108,
+        "LM_metric": 216,
+        "audit_optimizer_call": 1890,
+        "audit_refit": 126,
+        "classifier_metric": 42120,
+        "contrast": 48924,
+        "extraction": 108,
+        "final_head": 4212,
+        "fixed_application": 4212,
+        "optimizer_call": 63180,
+        "prediction": 8424
+      },
+      "other_final_heads": 3510,
+      "primary_dev_LM_units": 54,
+      "production_optimizer_calls_excluding_retries": 63180,
+      "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+      "requested": {
+        "LM": 108,
+        "LM_metric": 216,
+        "audit_optimizer_call": 1890,
+        "audit_refit": 126,
+        "classifier_metric": 42120,
+        "contrast": 91152,
+        "extraction": 108,
+        "final_head": 4212,
+        "fixed_application": 4212,
+        "optimizer_call": 63180,
+        "prediction": 8424
+      },
+      "reused": {
+        "S03_technical_units": 32,
+        "existing_dev_draw_files": 6,
+        "original_base_reference_heads": 468,
+        "production_extractions": 0,
+        "saliency_final_heads": 0,
+        "saliency_fixed_applications": 0,
+        "saliency_predictions": 0,
+        "shared_DNA_control_heads": 36
+      },
+      "schema_version": "s04-coverage-v1",
+      "state_counts": {
+        "ADMITTED_SPEC": 173520,
+        "DEFERRED": 42228
+      },
+      "unit_identity": "SHA256(domain LF + scope_input_digest LF + canonicaltyped spec), no timestamp/localpath/learned output hash. Scope basis binds model/cohort/fold/runtime/rules and applicable reference endpoint. Semantic freeze digest is separate from derived manifests; no self-hash cycle"
     }
   },
   "backup_state": {
@@ -550,7 +803,17 @@
     "prior_full_native_backup_failure": "Attempt001raw-private upload quota failure preserved; no retry or false historical success",
     "native_weight_protection": "9exactimmutableprivateHFmirrors verified; no newnative weight uploads",
     "technical_output_backup": "Allnewoutput archives verified via explicitnetwork freshmemberrestore+CPUreplay",
-    "final_metadata_backup": "Separate after publication; see external finaldeliveryproof"
+    "final_metadata_backup": "Separate after publication; see external finaldeliveryproof",
+    "S04_planning_metadata": {
+      "status": "PRIVATE_EXPLICIT_NETWORK_RESTORE_AND_ISOLATED_CPU_REGENERATION_PASS",
+      "route_id": "S02-private-backup-route-001",
+      "immutable_revision": "55d3be59be1348bc3afd6b28664832984c60f3fa",
+      "archive_sha256": "7600370759f3672385c71522351de65fcfe1b5e756bc969b735e6c57f90fa80e",
+      "archive_bytes": 28776012,
+      "members_verified": 156,
+      "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+      "scope": "Exact frozen S04planningpayload/private cohort-fold-draw-source metadata restored; deterministic regen and independentcounter passed. No newmodel audit or clean-runtime rebuild. Finalmutable rootcontrol state preserved by named Gitdelivery; externalproof avoids selfreference."
+    }
   },
   "external_dependencies": [
     {
@@ -599,54 +862,39 @@
   "owned_processes": [],
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
-    "phase": "S03",
-    "attempt_id": "attempt-003",
+    "phase": "S04",
+    "attempt_id": "attempt-001",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "5e521f9dc048cb22be03260da526676d6f4a3316",
+    "supplement_commit": "146dcf5759ea9adfec8d66554e158b5487395679",
     "completed_receipts": [
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/QUALIFICATION_MATRIX.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/PAYLOAD_IDENTITIES.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/SAFE_RESTORE_REPORT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/BASE_HEAD_REUSE_MAP.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/SOURCE_RUNTIME_IDENTITY.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/PROTOCOL_FREEZE.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/COVERAGE_PLAN.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/AUDIT_PANEL.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/H3_AUDIT_SUBSET.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/CONTRAST_PLAN.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/VALIDATION.json"
     ],
     "unfinished_units": [],
     "transfer_totals": {
-      "model_acquisition_bytes": 15516878934,
-      "private_uploads": 1,
-      "scientific_forwards": 0,
-      "probe_fits": 0,
-      "private_upload_bytes": 244,
-      "private_readback_bytes": 244,
-      "model_probe_bytes": 1024,
-      "accepted_research_input_body_bytes": 58996077180,
-      "verified_full_shard_downloads": 3,
-      "native_shards_distinct_received": 2,
-      "continuation_new_mirror_body_bytes": 124137100703,
-      "continuation_reused_native_bytes": 15516878934
+      "private_upload_bytes": 28776012,
+      "explicit_HTTP_readback_bytes": 28776012,
+      "new_scientific_forwards": 0,
+      "new_fits": 0,
+      "new_bootstrap_sampling": 0
     },
     "owned_processes": [],
     "unresolved_decisions": [
-      "immediate_parent_lineage: Supply exact immediate-parent tensor/config/tokenizer identity and provenance",
-      "saliency_algorithm_scoring_mask_timing: Supply safe implementation revision, scoring definition/data provenance, mask identities and intervention timing",
-      "strength_units_perturbation_law: Supply exact units, distributions, eligible parameters, realized affected fraction and magnitude",
-      "exposure_optimization: Supply safe objective/version, optimizer schedule, realized tokens/rows/duration, sampling and overlap metadata",
-      "two_noise5_endpoints: Outcome-independent endpoint policy and exact run/lineage/exposure relationship",
-      "seed_roles_replication: Supply role-specific seeds and independent intervention-run identifiers",
-      "controls: Supply exact unperturbed-parent and appropriate matched intervention controls",
-      "cohort_dependence_leakage: Supply safe overlap/exposure and broader biological dependence metadata",
-      "multiplicity_selection_prospectivity: Freeze contrast families, audit/refit panels, resampling, multiplicity and reporting before new producer outcomes; disclose earlier outcome inspection",
-      "forgetting_relearning: Later checkpoint/protocol-matched collaborator aggregates and separate authorized integration; no messages sent",
-      "delivery_upstream_privacy_completeness: Supply delivery manifest/exhaustion and safe upstream revision/history evidence if available; do not infer from nine records"
+      "Deferred42120parent and108LMbase contrasts; no automatic activation",
+      "Current account unused quota and fullcohort throughput/cost unknown, later finite-batch admission must resolve capacity"
     ],
-    "next_action": "Stop. After separate direct APPROVE S04 at7007ebd05bf59432bf69109e5f69baad31ec0d3a, reconcile exact finaldelivery/backup/seals/liveprocesses, then freeze standalone9candidate protocol/audit/contrast/reference scope before producer science. No S04now.",
+    "next_action": "Stop. WAITING_FOR_APPROVAL: S05. After direct APPROVE S05 at7007ebd05bf59432bf69109e5f69baad31ec0d3a, reconcile finaldelivery/privatebackup/seals/liveprocesses; execute only exactfrozen H3scope under candidate-specific guard.",
     "prerequisites": [
-      "Separate direct S04approval at verified package7007",
-      "Finaldelivery/privatebackup proof and outputseal reconciliation",
-      "No duplicate livewriter or stale source/runtime binding",
-      "Interpretation-only unknowns remain scoped; no assumed-parent contrasts"
+      "Direct S05approval",
+      "Finalexternaldeliveryproof and originalS04artifact/receipt bindings",
+      "Current resource/account capacity admission",
+      "Pinned dev-onlyproducer/independent implementation source; no historicalmonolithic H3test execution"
     ],
-    "reconciled_utc": "2026-11-24T03:36:58.098562+00:00",
+    "reconciled_utc": "2026-11-24T04:56:28.209215+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
@@ -655,5 +903,79 @@
     "route_id": "S02-private-backup-route-001",
     "immutable_revision": "46150af230d4969617c9995f51210053ecf6c412",
     "unique_prefix": "POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/route-proof-1d9250c058dd49189ed1e0a5b0750158"
+  },
+  "frozen_artifact_bindings": {
+    "qualified_base_heads": {
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/REUSE_MAP.json",
+      "sha256": "fe8d846f146483a3c7ae1fc6d199a766ae794802af11f9009363d814ecdf63d5",
+      "sealed_by_phase": "S04",
+      "S04_receipt_sha256": "87ad007ab7198ab2261fdb2f956f5a46ddc4d63e0d3c538933617f5a6046cc5a",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ],
+      "outcomes_exposed_at_freeze": false
+    },
+    "frozen_audit_panel": {
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/AUDIT_PANEL.json",
+      "sha256": "92aebdeaae8cd22ad445c47142870226ef9f78bbf87bd007c615537908baca8c",
+      "sealed_by_phase": "S04",
+      "S04_receipt_sha256": "87ad007ab7198ab2261fdb2f956f5a46ddc4d63e0d3c538933617f5a6046cc5a",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ],
+      "outcomes_exposed_at_freeze": false
+    },
+    "frozen_H3_audit_subset": {
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/H3_AUDIT_SUBSET.json",
+      "sha256": "01246b50104a09557fdfb77c27b6f4fe5de82aa3a91949168b4c82334fdf9ea4",
+      "sealed_by_phase": "S04",
+      "S04_receipt_sha256": "87ad007ab7198ab2261fdb2f956f5a46ddc4d63e0d3c538933617f5a6046cc5a",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ],
+      "outcomes_exposed_at_freeze": false
+    },
+    "frozen_contrast_plan": {
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/CONTRAST_PLAN.json",
+      "sha256": "f71e806f716d76990760b83812e6d662e5a30c38bf14688251466f6451d9b8b1",
+      "sealed_by_phase": "S04",
+      "S04_receipt_sha256": "87ad007ab7198ab2261fdb2f956f5a46ddc4d63e0d3c538933617f5a6046cc5a",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ],
+      "outcomes_exposed_at_freeze": false
+    }
   }
 }

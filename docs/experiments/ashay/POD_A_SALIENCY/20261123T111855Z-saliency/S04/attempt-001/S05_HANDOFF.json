@@ -1,0 +1,272 @@
+{
+  "schema_version": "s04-frozen-S05-handoff-v1",
+  "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "frozen_artifacts": {
+    "PROTOCOL_FREEZE.json": "e327630b04ba34d587df53dc22f102f822e047da6ebdf6a7cdbd8d664c1ef54f",
+    "COVERAGE_PLAN.json": "b112d08533a51f0f0fce4bf42fc0d3c6cd012d51517f620613bf6402bbab29eb",
+    "EXPECTED_UNIT_KEYS.jsonl": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+    "CONTRAST_PLAN.json": "f71e806f716d76990760b83812e6d662e5a30c38bf14688251466f6451d9b8b1",
+    "REUSE_MAP.json": "fe8d846f146483a3c7ae1fc6d199a766ae794802af11f9009363d814ecdf63d5",
+    "AUDIT_PANEL.json": "92aebdeaae8cd22ad445c47142870226ef9f78bbf87bd007c615537908baca8c",
+    "H3_AUDIT_SUBSET.json": "01246b50104a09557fdfb77c27b6f4fe5de82aa3a91949168b4c82334fdf9ea4",
+    "BOOTSTRAP_PLAN.json": "4de63949c8ce887ee42935cbee56d7a6659a6d0f640b1e5bf8ea360147b5c411",
+    "RESOURCE_PLAN.json": "55795a56591462d69ca3718445f57a20590f0c4257c2a84f4d00083cdc7bda03",
+    "COHORT_REFERENCE_BINDINGS.json": "3ab2fc2d32fd0c3b94ce37353eebad1af13dc793fb3d101b0631b3842afc7904",
+    "S04_PLANNING.schema.json": "f1adba1a4c08ec396f73831b2ad3194ff75e1e6152f46c073824d4b355cbc210"
+  },
+  "candidate_scopes": [
+    {
+      "alias": "candidate_01",
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "content_sha256": "ba02bd040b1be80ac2308a104cad20a7c802397b6ef3505590c5ecb844d99279",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 3,
+      "audit_planned_ids": [
+        "2cd212f0ae8e43217a7d4caefb3fa48afe01e0d9c50e6533a767cdee1adae2dc",
+        "13e02a0861bea58179cae0718ed4dd57a68d820ab53106641d0c159c20b699b3",
+        "f5badb741e89d7577990ad7ef87398aafb35b10910c095644978cd0e0d808c75"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_02",
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "content_sha256": "57cec2a1c2a0ed999beaa92f54c497e1697031bd2a456730bdab2b0ae5756b90",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 2,
+      "audit_planned_ids": [
+        "5180516349808e852444872a2084f2509bced9a3bf14143d5c127f53cb15929a",
+        "980d3357022918a23f95cdf883153982d2e643818aa662547617737347f0f6b0"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_03",
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "content_sha256": "54851a4d9f374f8775661e6bc78421d64d468a606ed5213998c2a8be1ab216d4",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 2,
+      "audit_planned_ids": [
+        "4844242fe45aa01ac733467ced1fb0f76d0d6ded6eb1da38dba73747db9aafec",
+        "40152e110f27d71fad041f31dae5e51e953cefb9f129f93cbbfe56dd51c5f798"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_04",
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "content_sha256": "05b9573e0bd6f4fa7e00dcaedb70a31d2f73ac2d9edc01242ea81212a63a6af0",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 3,
+      "audit_planned_ids": [
+        "4fa078a6295baf04fb3415f3314e09e1d76a4c159af7f1f5703fc28d3016ecb4",
+        "facb7304b5ebc36388abe6bfdf43614d11e6570d13ee1dcd98da34fad15c6870",
+        "4a7fd01720733c7c544d2ad5afe1b5c94abe3611534468baf238cd55a6c45384"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_05",
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "content_sha256": "e0e9659ddb315428591abdcf9351dc282d1761e60229ea5318b1f3808f4fa844",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 2,
+      "audit_planned_ids": [
+        "a9430788fa530a1fe689ae8c8344b05b6ce31c653fba7b27ae89f08c714ebacf",
+        "dc3f924a009415a1c227726d401b08169adfa5462fa58a57f0a308971e2feea6"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_06",
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "content_sha256": "d3a66b9d3344dcaa4499841dd9661e008018c185c82b1d06d1040f87d38f4e70",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 2,
+      "audit_planned_ids": [
+        "540f5baaba84f972bfd947a77e290320aee673d389fed403c2b3c2b9284e57d2",
+        "a9416f2c1b70ab9add38f074689082a9121b72d94e5a8bc0ea500bec81ec19a9"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_07",
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "content_sha256": "a9eff2a1312586e0baf72503840224df9c06a04a535b3a576ee85d6971c92cdd",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 3,
+      "audit_planned_ids": [
+        "c6146d5a4f2eac7b241ce052193fcc7ebed7eac9a6590bf0f3ea640cf6c1927c",
+        "ade1c8f66840375f3d69b092eb84e4463a22cf41bf497d9518cb1da276725371",
+        "6e3928f43fa58b1b7dd88a4d06c25736135c083484ec5202098e3c24e3ee45e3"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_08",
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "content_sha256": "eb93bccc3d01d8648c2ca5640a85b22d35107e2937c8d55258647f0e5fdfc4f1",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 2,
+      "audit_planned_ids": [
+        "ac8b64dc8bfdb2940e2c9ba48ad3e50ce8950ae477802518b5ef73815019d583",
+        "78a79ba4d844dfa0d189d56354a9ffbe48a04bb27e115c2a8efefc3ecad78f44"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    },
+    {
+      "alias": "candidate_09",
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "content_sha256": "d5658d3c621c318d752795015aebbc128c6d3a5026e8740e6b3a382a57563d29",
+      "H3_train_rows": 11971,
+      "H3_dev_rows": 1497,
+      "extraction_bundles": 2,
+      "final_heads": 78,
+      "fixed_base_applications": 78,
+      "dev_prediction_paths": 156,
+      "classifier_metric_records": 780,
+      "initial_production_optimizer_calls": 780,
+      "audit_refits": 2,
+      "audit_planned_ids": [
+        "0dd6351a25b0ffdebbab425b1c4e6e2d149bcc1615f4e8b65deb3f154b875323",
+        "21ac82893babaaaa219c3a66df76135f452edbd6334d272ed3384b237cab08c2"
+      ],
+      "LM_primary_dev_units": 1,
+      "LM_diagnostic_TRAIN_units": 1,
+      "gate": "Candidate-specific saved-output independentchecks + frozenaudit + private immutable freshrestore, never favorable-score selection",
+      "source_runtime_recovery": "Exact S03 candidate and existingruntime identities, no model download or recovered-unit replay by default"
+    }
+  ],
+  "counts": {
+    "audit_initial_optimizer_calls": 210,
+    "audit_refits": 21,
+    "candidate_gate_count": 9,
+    "classifier_metric_records": 7020,
+    "dev_prediction_paths": 1404,
+    "diagnostic_TRAIN_LM_units": 9,
+    "extraction_bundles": 18,
+    "final_heads": 702,
+    "fixed_applications": 702,
+    "initial_optimizer_calls": 7020,
+    "logical_rows": 121212,
+    "primary_dev_LM_units": 9
+  },
+  "expected_key_selector": {
+    "task": "emp_H3",
+    "phase": "S05",
+    "source": "EXPECTED_UNIT_KEYS.jsonl",
+    "metadata_query": "python code/plan_query.py --root <frozenS04root> --phase S05 --candidate candidate_01 --kind final_head --emit-keys",
+    "query_dispatches_jobs": false
+  },
+  "next_approval": "APPROVE S05 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "S05_approved": false,
+  "S05_executed": false,
+  "before_first_scientific_unit": [
+    "Direct S05approval with exact candidate scope",
+    "Reconcile final S04 delivery/privatebackup/artifact/receipt pins and current PIDs/locks",
+    "Run canonical --entry S05 --action enter with --candidate exact discoveryID and real state",
+    "Capacity admission per RESOURCE_PLAN, current account quota/headroom not shared df",
+    "Bind dev-only scientific producer and separate independent implementation source before outcomes; historical monolithicfit main implicitly includes H3test and must not be launched as-is",
+    "Verify exact H3cohort/folds/classcolumns/original78heads/runtime/model/witness bindings, original126panel/H3subset/contrast seals",
+    "Reuse existing exact devdraws; no replacement sampling/heldout selection"
+  ],
+  "sequence": [
+    "TRAIN-only first permitted finitechunk calibration, no scientificpolicy/precision changes",
+    "One H3TRAIN/dev extraction per candidate, all26hooks and LM, physical8/fillerexclusion; reuse sealed features acrossseeds/policies",
+    "78TRAIN-only refits and78unchanged-original-base applications, full convergence and exact input/outputreceipts",
+    "Independent reconstruction of every new probability/metric/draw/mask/CI; repeat exact frozen H3audit fullCV+finalfit without replacingproduction heads",
+    "Unique immutable private checkpoint; fresh restore and applicable numerical replay for thiscandidate; then seal actualH3_GATE and recoveryreceipt",
+    "Stop before S06; a passingdifferentcandidate cannot unlock thiscandidate"
+  ],
+  "release_rules": "Never pass a gate from score direction; failed/pending planned keys preserved. Sharedmaskedgroupdraws and numeric gates frozen; no test rows, recentering, fittedreference replacement or favorableaudit reselection",
+  "deferred_scopes": "42120parent and108LMbase-reference contrasts remain outsideexecutablequeue; later metadata requires explicitversion/outcomeexposure record before activation",
+  "later_phase_consumption": {
+    "S06": "Per-candidate H3gate+private recovery; otherfive extraction/LM only",
+    "S07": "Same original-base references and frozenpolicies, no H3refits",
+    "S08": "All new savedpaths independentlyverified; same126panel, exact passingS05H3audit seals reused",
+    "S09": "Same frozen contrast universe/auditbindings andpointwise uncertainty; no reselection",
+    "S10": "Matched collaboratoraggregateforget only or truthfulpendingretain-only disposition",
+    "S11": "Source-linked report and scopedprivate recovery, no cleanGPU recreationclaim"
+  }
+}

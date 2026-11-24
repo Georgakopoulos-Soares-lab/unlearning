@@ -1,0 +1,212 @@
+{
+  "schema_version": "s04-validation-v1",
+  "status": "PASS_FROZEN_NINE_CANDIDATE_PLANNING_SCOPE",
+  "independent_set_counter_identity_and_links": {
+    "status": "PASS",
+    "unit_records": 215748,
+    "counts": {
+      "extraction": 108,
+      "LM": 108,
+      "LM_metric": 216,
+      "final_head": 4212,
+      "fixed_application": 4212,
+      "optimizer_call": 63180,
+      "prediction": 8424,
+      "classifier_metric": 42120,
+      "contrast": 91152,
+      "audit_refit": 126,
+      "audit_optimizer_call": 1890
+    },
+    "contrast_counts": {
+      "base_reference": 42120,
+      "immediate_parent": 42120,
+      "DNA_control": 6480,
+      "anchor_policy_gap": 324,
+      "LM_base_reference": 108
+    },
+    "phase_owned_records": {
+      "S05": 17151,
+      "S09": 91152,
+      "S06": 360,
+      "S07": 105300,
+      "S08": 1785
+    },
+    "expected_keys_sha256": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+    "independent_expected_set_digest": "8444a3dbc512cd9732f67c74cae7bfb192102334a9f65eabb4c4850e962a014d",
+    "independent_audit_key_set_digest": "b40265cab4eb153e433f4de89c7a4ea44cc3599a3349618c7099d9e563340bf8",
+    "audits": 126,
+    "H3_audits": 21,
+    "dependent_links_verified": true,
+    "unit_identity_contract_verified": true
+  },
+  "focused_boundaries": {
+    "status": "PASS",
+    "focused_boundary_cases": [
+      {
+        "case": "duplicate planned key",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "missing planned key",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "extra candidate key",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "test split admitted",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "LM layer expansion",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "LM CVseed expansion",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "guessed parent promotion",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "missing original head substitution",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "swapped prediction/draw reference",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "wrong layer16 mapping",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "fabricated future parameter hash",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "unknown candidate",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "unknown task",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "extra third probe policy",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "unavailable LM reference promoted",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "mismatched fold identity",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "mismatched cohort identity",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "missing H3 audit key",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "audit key drift",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "CVseed-as-intervention-replication claim",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "false reused production counts",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "wrong metric direction",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "sample/group denominator confusion",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "unsafe metadata path traversal",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "unsafe absolute metadata path",
+        "status": "PASS_REJECTED"
+      },
+      {
+        "case": "broken semantic freeze foundation binding",
+        "status": "PASS_REJECTED"
+      }
+    ],
+    "count": 26,
+    "science_executed": false
+  },
+  "permuted_exact_regeneration": {
+    "status": "PERMUTED_INPUT_EXACT_REGENERATION_PASS",
+    "files": {
+      "PROTOCOL_FREEZE.json": "e327630b04ba34d587df53dc22f102f822e047da6ebdf6a7cdbd8d664c1ef54f",
+      "COVERAGE_PLAN.json": "b112d08533a51f0f0fce4bf42fc0d3c6cd012d51517f620613bf6402bbab29eb",
+      "EXPECTED_UNIT_KEYS.jsonl": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+      "CONTRAST_PLAN.json": "f71e806f716d76990760b83812e6d662e5a30c38bf14688251466f6451d9b8b1",
+      "REUSE_MAP.json": "fe8d846f146483a3c7ae1fc6d199a766ae794802af11f9009363d814ecdf63d5",
+      "AUDIT_PANEL.json": "92aebdeaae8cd22ad445c47142870226ef9f78bbf87bd007c615537908baca8c",
+      "H3_AUDIT_SUBSET.json": "01246b50104a09557fdfb77c27b6f4fe5de82aa3a91949168b4c82334fdf9ea4",
+      "BOOTSTRAP_PLAN.json": "4de63949c8ce887ee42935cbee56d7a6659a6d0f640b1e5bf8ea360147b5c411"
+    },
+    "counts": {
+      "extraction": 108,
+      "LM": 108,
+      "LM_metric": 216,
+      "final_head": 4212,
+      "fixed_application": 4212,
+      "optimizer_call": 63180,
+      "prediction": 8424,
+      "classifier_metric": 42120,
+      "contrast": 91152,
+      "audit_refit": 126,
+      "audit_optimizer_call": 1890
+    },
+    "semantic_protocol_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+    "producer_fallback": false,
+    "science_executed": false
+  },
+  "metadata_query_verified": {
+    "matching_planned_specs": 78,
+    "counts": {
+      "final_head": 78
+    },
+    "ordered_ids_sha256": "f87e320fdc101411211b9abb307c6f084bd4db63f1166c3658f113ec625c00cd",
+    "execution_performed": false,
+    "deferred_included": false
+  },
+  "source_files": {
+    "code/independent_validator.py": "3432af9069acb271bb4f2b52fede66e7bd10bc5d815cb19d58ed5e25d76ca763",
+    "code/plan_query.py": "4a1cd0fc54ca3ee082996477fa7351fca77f1ef91bc27f0aa733146dc2d88f45",
+    "code/planner.py": "6101e5b3364a9fdf28e961ac099009e0fefb4c01efe05fa6d2995069ab424f25",
+    "code/regenerate_check.py": "ee39b04bfdca9f8e821fa3eb76dbd575dfbf9b81af04bd693a8c915679b2c9d9",
+    "code/test_planning_boundaries.py": "43d429cc2c63c53474ca8087f7c2ec446595bc7e71001a68dceb4334319a2a85",
+    "code/verify_recovered_metadata.py": "4384cae7d5bfa023ed1c83851bad4e037fcbd1608646a1b2b7efbb226def6cc7"
+  },
+  "no_scientific_execution": {
+    "model_loads": 0,
+    "GPU_jobs": 0,
+    "feature_extractions": 0,
+    "probe_fits": 0,
+    "scientific_score_or_contrast_calculations": 0,
+    "new_bootstrap_sampling": 0,
+    "test_access": 0
+  },
+  "public_privacy_scan": "PASS",
+  "previous_S00_S03_preserved": true,
+  "private_recovery_acceptance": "Required fresh-consumer proof is external to its own archive/commit; do not accept completed delivery until that proof and Git readback PASS",
+  "validated_utc": "2026-11-24T04:52:51.377526+00:00"
+}

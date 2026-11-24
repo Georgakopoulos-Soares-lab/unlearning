@@ -1,0 +1,200 @@
+{
+  "H3_final_heads": 702,
+  "S04_production_units_executed": 0,
+  "S05": {
+    "audit_initial_optimizer_calls": 210,
+    "audit_refits": 21,
+    "candidate_gate_count": 9,
+    "classifier_metric_records": 7020,
+    "dev_prediction_paths": 1404,
+    "diagnostic_TRAIN_LM_units": 9,
+    "extraction_bundles": 18,
+    "final_heads": 702,
+    "fixed_applications": 702,
+    "initial_optimizer_calls": 7020,
+    "logical_rows": 121212,
+    "primary_dev_LM_units": 9
+  },
+  "audit_optimizer_calls_excluding_retries": 1890,
+  "blocked": {
+    "LM_base_reference_contrasts": 108,
+    "immediate_parent_contrasts": 42120,
+    "matched_method_dose_edges": null,
+    "matched_method_dose_null_reason": "No exact eligible comparator/parent/exposure identities supplied; no guessed/all-pairs queue"
+  },
+  "by_phase": {
+    "S05": {
+      "admitted_spec": 17151,
+      "deferred": 0,
+      "new_required": 17151,
+      "requested": 17151,
+      "reused_production": 0
+    },
+    "S06": {
+      "admitted_spec": 360,
+      "deferred": 0,
+      "new_required": 360,
+      "requested": 360,
+      "reused_production": 0
+    },
+    "S07": {
+      "admitted_spec": 105300,
+      "deferred": 0,
+      "new_required": 105300,
+      "requested": 105300,
+      "reused_production": 0
+    },
+    "S08": {
+      "admitted_spec": 1785,
+      "deferred": 0,
+      "new_required": 1785,
+      "requested": 1785,
+      "reused_production": 0
+    },
+    "S09": {
+      "admitted_spec": 48924,
+      "deferred": 42228,
+      "new_required": 48924,
+      "requested": 91152,
+      "reused_production": 0
+    }
+  },
+  "compact_key_dictionary": {
+    "c": "candidate alias bound to exact discovery/content",
+    "ctrl": "shared DNAcontrol",
+    "d": "upstream plannedunit ID",
+    "f": "contrast family",
+    "fold": "zero-based CVfold, nullfinal fit",
+    "id": "planned specification SHA256, not produced artifact SHA",
+    "j": "Cgridindex0..2, nullfinal fit",
+    "k": "unit kind",
+    "m": "metric",
+    "p": "readout policy orLM",
+    "q": "other plannedunit ID or exact referenceendpoint specification digest; null deferred",
+    "r": "representation, null forLM",
+    "ref": "actual original-base fittedhead SHA256",
+    "s": "CVseed, null forLM",
+    "t": "task",
+    "why": "explicit deferral reason"
+  },
+  "contrast_families": {
+    "DNA_control": 6480,
+    "LM_base_reference": 108,
+    "anchor_policy_gap": 324,
+    "base_reference": 42120,
+    "immediate_parent": 42120
+  },
+  "dev_classifier_metric_records": 42120,
+  "dev_prediction_paths": 8424,
+  "diagnostic_TRAIN_LM_units": 54,
+  "eligible_by_kind": {
+    "LM": 108,
+    "LM_metric": 216,
+    "audit_optimizer_call": 1890,
+    "audit_refit": 126,
+    "classifier_metric": 42120,
+    "contrast": 48924,
+    "extraction": 108,
+    "final_head": 4212,
+    "fixed_application": 4212,
+    "optimizer_call": 63180,
+    "prediction": 8424
+  },
+  "expected_keys_sha256": "86ce798430cc191d1075786400814812fea505e64a67095ecec2feb26cee270e",
+  "future_artifact_join": "Every later producer receipt records planned_spec_id, exact actual input/scaler/head/source/output hashes and attempt; learned hashes are null/absent until produced. Exact specs do not imply completed or verified science",
+  "graph_dependencies": "Forward all26 hooks/LM shared; final heads needTRAIN bundle+fold; fixed applications needDEVbundle+exact reference; prediction needs fittedhead/application+DEVbundle; metric needsprobpath; contrasts need two exact endpoints+samecohort/draw/commonmask. Audit independent finalhead remains separate. Per-candidate H3gate and recovery required before S06/S07.",
+  "key_sets": {
+    "LM": {
+      "count": 108,
+      "ordered_id_set_sha256": "3924db0931614674da36ac76d118d6e804264e536ab1534209419149569f0ea7"
+    },
+    "LM_metric": {
+      "count": 216,
+      "ordered_id_set_sha256": "08e0cb230a66be76a4e650cd7622de4d5ba5521c4b11018a55ab932f6d7a95f2"
+    },
+    "audit_optimizer_call": {
+      "count": 1890,
+      "ordered_id_set_sha256": "8a02c0fac488a8ddf5f8664de495fa2279cd68b64230a0f20815e91bec16d994"
+    },
+    "audit_refit": {
+      "count": 126,
+      "ordered_id_set_sha256": "ac7f6b38762175021a27d6d893f65a30c6ec5665f85b0d6f4d0d4ac964afdb84"
+    },
+    "classifier_metric": {
+      "count": 42120,
+      "ordered_id_set_sha256": "4d76b33b0c765dfa54085ad5595bca945cf2f215a88f7a365fbffb606fb87725"
+    },
+    "contrast": {
+      "count": 91152,
+      "ordered_id_set_sha256": "3e8cc8f08ee13eb98568d5999187b04748860366406e48ee4aba3fc7256cbbd3"
+    },
+    "extraction": {
+      "count": 108,
+      "ordered_id_set_sha256": "ad9786451f742b4201669acc853ade62b4cc41182c0c526a2a3ea0b7c823ed14"
+    },
+    "final_head": {
+      "count": 4212,
+      "ordered_id_set_sha256": "d87be0cbcc79fb92a4d819ea0521cbf5d451db98c4aa1554fb3bcb2d5e69504b"
+    },
+    "fixed_application": {
+      "count": 4212,
+      "ordered_id_set_sha256": "14f479a4d41c5664f49219d311c30f5b522b8a00ef6e427e2ef10dfb7aa27d7f"
+    },
+    "optimizer_call": {
+      "count": 63180,
+      "ordered_id_set_sha256": "39663420ee34e5369ac9d31d090b69077d0f7e8457afbecbd4c56dbc98d9d894"
+    },
+    "prediction": {
+      "count": 8424,
+      "ordered_id_set_sha256": "37f6fb8c67c7ec1f686ffaa02e078d577dfc457d8a704c28a7f98dad5dbc4443"
+    }
+  },
+  "logical_rows_all_candidates": 190332,
+  "logical_rows_per_candidate": 21148,
+  "new_required": {
+    "LM": 108,
+    "LM_metric": 216,
+    "audit_optimizer_call": 1890,
+    "audit_refit": 126,
+    "classifier_metric": 42120,
+    "contrast": 48924,
+    "extraction": 108,
+    "final_head": 4212,
+    "fixed_application": 4212,
+    "optimizer_call": 63180,
+    "prediction": 8424
+  },
+  "other_final_heads": 3510,
+  "primary_dev_LM_units": 54,
+  "production_optimizer_calls_excluding_retries": 63180,
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "requested": {
+    "LM": 108,
+    "LM_metric": 216,
+    "audit_optimizer_call": 1890,
+    "audit_refit": 126,
+    "classifier_metric": 42120,
+    "contrast": 91152,
+    "extraction": 108,
+    "final_head": 4212,
+    "fixed_application": 4212,
+    "optimizer_call": 63180,
+    "prediction": 8424
+  },
+  "reused": {
+    "S03_technical_units": 32,
+    "existing_dev_draw_files": 6,
+    "original_base_reference_heads": 468,
+    "production_extractions": 0,
+    "saliency_final_heads": 0,
+    "saliency_fixed_applications": 0,
+    "saliency_predictions": 0,
+    "shared_DNA_control_heads": 36
+  },
+  "schema_version": "s04-coverage-v1",
+  "state_counts": {
+    "ADMITTED_SPEC": 173520,
+    "DEFERRED": 42228
+  },
+  "unit_identity": "SHA256(domain LF + scope_input_digest LF + canonicaltyped spec), no timestamp/localpath/learned output hash. Scope basis binds model/cohort/fold/runtime/rules and applicable reference endpoint. Semantic freeze digest is separate from derived manifests; no self-hash cycle"
+}

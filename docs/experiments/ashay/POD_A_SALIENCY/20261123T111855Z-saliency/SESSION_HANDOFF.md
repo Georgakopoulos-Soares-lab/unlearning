@@ -1,25 +1,51 @@
-# S04 handoff from S03 COMPLETE
+# Current handoff: S04 complete, stop before S05
 
-S03 releases 9 of the nine original discovery IDs for **standalone protocol planning only**. Exact candidate/content IDs, per-unit source/runtime/witness pins and private restore joins are in QUALIFICATION_MATRIX.json, PAYLOAD_IDENTITIES.json, SOURCE_RUNTIME_IDENTITY.json and SAFE_RESTORE_REPORT.json. MODEL_CONTENT_IDENTITIES.json establishes 9 distinct reconstructed contents; these are not independent intervention replicates. Earlier failed attempts and the partial S01 whole-delivery qualification remain immutable.
+# Frozen S05 handoff
 
-Before resuming, reconcile final Git/private delivery proofs, exact output seals, actual PID/start/boot identities, unfinished manifests and locks. Reuse the 32 completed technical units, 468 unchanged original-base references, 36 controls and valid private CPU/model recovery proofs. Do not repeat model work merely because a new session starts. Private exact mirror locators and archive graphs are preserved in the approved control/backup destinations; public records use safe join keys. No parent is inferred from configuration labels or tensor differences.
+Read `S05_HANDOFF.json` first. It binds the exact protocol, coverage, unit manifest, contrast plan, reuse map, audit panel, H3 subset, bootstrap plan, resource plan and cohort/schema hashes. Reconcile these with the external final Git/private recovery proof and actual live processes before scheduling work. Separate direct S05 approval is required at package `7007ebd05bf59432bf69109e5f69baad31ec0d3a`.
 
-S04 must initially freeze the full independent audit/refit panel, its H3 subset and contrast families **before new producer scientific outcomes**. S08/S09 verify and consume the same frozen artifacts, with no favorable replacement. Bind the original-base scaler/head identities and reuse eligibility in S04; require them at S05 entry; S07 consumes the same unchanged references. Preserve both policies, `independent_refit` and `fixed_original_base`, without target recentering, calibration or parent-head substitution.
+Across nine candidates, the prospective H3 scope is:
 
-Freeze the six exact benign tasks, ordered cohorts/splits/labels/groups, exact/RC handling, class/probability order, all 26 representations and the predeclared layer16/final_norm anchors. Retain the historical fold identities and CV seeds 42/17/1234 (H3 three folds, others five); optimizer RNG42 is distinct. CV seeds do not measure intervention-training replication. LM units are per-model/task/split, not per hidden layer or CV seed. Derive the finite expected extraction/head/application/LM/metric matrix from actual eligible contents and valid reuse. Nine fully compatible distinct models imply nominal 4,212 refits and separately 4,212 fixed-base applications before valid reuse; this arithmetic grants no execution authority.
+- 18 TRAIN/dev extraction bundles and 121,212 logical row executions;
+- 702 final refits and 702 unchanged-original-base applications;
+- 7,020 initial production optimizer calls before convergence retries;
+- 1,404 dev prediction paths and 7,020 classifier metric records;
+- nine primary dev LM and nine diagnostic TRAIN LM units;
+- 21 full-CV audit refits and 210 initial audit optimizer calls.
 
-Preserve both noise-5% steps 2000 and 2151 and select any primary endpoint through an outcome-independent rule. Specify actual comparator identities and matched measurement eligibility for every contrast. Parent-relative/causal effects and matched-dose method/strength comparisons remain unavailable without exact parent, intervention and exposure evidence. Standalone profiles and fixed-original-base readout planning remain possible with those limits. Composition/4mer controls are simple-sequence baselines, not matched intervention controls.
+These are planned units, not completed measurements. Each candidate has 78 refits and 78 fixed-base applications. Candidates 01, 04 and 07 have three H3 audit units each; the others have two. The 21-unit subset is an exact filter of the frozen 126-unit panel and cannot be reselected.
 
-Freeze uncertainty/resampling, common valid-draw masks, group dependence, multiplicity/reporting, audit/refit sampling and source-linked figure/table plans before new outcomes. Existing TRAIN technical witness activations/LM quantities were inspected solely for numerical validation; no dev/test or production cohort outcomes were generated in S03. Historical A-series outcomes already exist. S04 must disclose applicable prior outcome inspection and must not call previously observed comparisons prospectively preregistered. Pointwise exploratory intervals are not familywise evidence, and numerical tolerances are not confidence intervals. Plan full layer/task/readout profiles and declared-strength plots with exposure caveats, not favorable summaries.
+## Before the first scientific unit
 
-Use CONFOUNDER_LEDGER.json and UNSENT_COLLABORATOR_QUESTIONS.md for exact-parent, saliency law/mask/timing, seed-role, exposure/objective/control, endpoint/replication and delivery-completeness questions. No messages were sent. Forget/retain trade-offs require later checkpoint/protocol-matched collaborator aggregate results; do not access raw forget data or run forget evaluation. Pod B relearning remains separate; R2 was not produced and is excluded. R3/R5 reuse remains confined to proven historical domains.
+1. Record direct S05 approval and its exact candidate scope. Reconcile final S04 delivery, private recovery, receipt and artifact seals, PID/start/boot identities, unfinished work and writer locks. Run the canonical candidate-specific S05 entry guard with the real controller and exact discovery ID.
+2. Admit the next finite batch using actual current RAM, jobs and account/mount storage evidence. Shared filesystem free space does not establish unused Pod quota. Apply `RESOURCE_PLAN.json`; resolve capacity before substantial work rather than allocating the full grid blindly.
+3. Bind a new fail-closed dev-only producer and separate independent reconstruction implementation to exact source hashes before outcomes. The historical monolithic fit script automatically includes H3 test and must not be launched unchanged. Its verified TRAIN fitting and metric functions are provenance, not authority to expand split scope.
+4. Verify the exact H3 cohorts, fold memberships, class/probability order, all 78 original-base references, candidate/runtime/source identities and inherited dev draws. Verify the original S04 audit, H3 subset and contrast receipt bindings. Missing references block affected applications; do not fit replacements.
 
-Native private mirror recovery resolves the old Drive-quota route blocker for the admitted scope; no further Drive quota scan/retry is needed. Candidate 05's original-upload privacy remains unknown. Native/model/process and CPU restore proofs do not establish clean-runtime rebuilding on a new machine. Use finite queues, measured resource guards, immutable checkpoints and real process exits; no research deadline, automatic shutdown, purchases, resizing or scheduler.
+## Per-candidate work and release gate
 
-The five approved dependency corrections are already in package 7007. No further substantive prompt-package amendment is established as necessary for standalone S04 planning by this continuation; if S04 proposes a new scientific policy, publish a separately authorized immutable amendment with new checksums before executing the affected scope. Do not amend prompts under this S03 authority.
+Capture all 26 hooks and actual-head LM in each H3 TRAIN/dev forward at physical batch eight, excluding fillers. Seal outputs and reuse features across seeds and both policies. Perform the separately approved first TRAIN-only finite-chunk calibration without changing scientific precision, batching or selection rules.
 
-Next direct approval, bound to the unchanged verified package, is:
+Fit 78 candidate readouts using exact TRAIN-only folds and the frozen selection/convergence procedure. Apply the 78 original-base scalers and heads unchanged. Preserve every planned unit, warning, retry and failure. Independently reconstruct all new saved probabilities, points, draw vectors, valid masks and intervals, and execute that candidate's exact frozen H3 audit refits. Audits never replace production heads. Preserve probability atol 1e-10 and point/draw/interval atol 1e-12, rtol zero.
 
-`APPROVE S04 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a`
+Protect actual features, heads, predictions, LM statistics, audits and exact dependencies in a unique immutable private checkpoint. Fresh restoration and applicable numerical replay must pass before that candidate's `H3_GATE=PASS`. Seal candidate-specific gate and recovery receipt paths/hashes. A different candidate's passing gate cannot unlock this one. Score direction or size never determines technical release.
 
-No S04 approval is present and no S04 execution occurred. S04 is planning only, then stop before S05 unless separately approved.
+On interruption, persist completed seals, unfinished exact keys and offsets, transfer totals, PID/start/boot identities, scoped decisions and the next permitted action. Resume only missing valid work after live reconciliation; preserve failed attempts and prevent duplicate writers.
+
+From this frozen S04 directory, inspect the 78 planned candidate-01 head specifications with:
+
+```bash
+python code/plan_query.py --root . --phase S05 --candidate candidate_01 --kind final_head --emit-keys
+```
+
+This command reads metadata and does not dispatch jobs. Later receipts join `planned_spec_id` to actual input, learned-parameter, source and output identities; those future hashes are not fabricated here.
+
+H3 test remains excluded. Both noise-5% endpoints remain separate descriptive records. The 42,120 parent and 108 LM reference contrasts stay deferred; standalone LM remains planned. No raw forget data/evaluation, Pod B relearning, R2 search, checkpoint training, new perturbations, scheduler or shutdown is authorized. Preserve the no-deadline amendment.
+
+After the H3 technical, audit and private-recovery gates, stop before S06. Completing S04 records no S05 approval.
+
+Next direct authorization:
+
+`APPROVE S05 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a`
+
+Private planning recovery revision 55d3be59be1348bc3afd6b28664832984c60f3fa; exact external finaldeliveryproof must be reconciled before resumption.

@@ -1,0 +1,84 @@
+{
+  "schema_version": "s04-resource-plan-v1",
+  "observation_utc": "2026-11-24T04:41:58.026713+00:00",
+  "source": "Current cgroup observation; S03 provider allocation snapshot explicitly dated, not shared df quota inference",
+  "actual_cgroups": {
+    "memory_max_bytes": 282999996416,
+    "memory_current_bytes": 189102796800,
+    "memory_anon_bytes": 321015808,
+    "memory_file_bytes": 188217876480,
+    "CPU_quota_period": "1360000 100000",
+    "CPU_quota_cores": 13.6
+  },
+  "provider_allocation_snapshot": {
+    "source_observed_utc": "2026-11-24T02:42:39.951999+00:00",
+    "private_receipt_sha256": "c05283546b848481f7c55797bf82fde208a7c425460b5824b6cc34b30e7a784c",
+    "persistent_workspace_GB": 1000,
+    "container_GB": 100,
+    "fresh_account_unused_quota_bytes": null,
+    "null_reason": "Provider allocation is evidenced, current per-account unused storage/quota consumption is not supplied. Shared filesystem df is not proof of Pod quota"
+  },
+  "shared_filesystem_free_observation_bytes": 132519547699200,
+  "shared_free_is_account_quota": false,
+  "future_workers": {
+    "GPU_concurrency": 1,
+    "GPU_lock": "Authentic same-server run GPU_EXECUTION.lock and established accounting reconciliation, preserve historical ledger",
+    "GPU_memory_soft_ceiling_bytes": 17179869184,
+    "GPU_worker_host_RSS_ceiling_bytes": 34359738368,
+    "CPU_worker_count": 2,
+    "BLAS_threads_per_worker": 4,
+    "total_BLAS_threads": 8,
+    "CPU_worker_RSS_ceiling_bytes": 8589934592,
+    "CPU_stage_RSS_budget_bytes": 25769803776,
+    "concurrent_CPU_fits_and_GPU_extraction": false,
+    "host_headroom_before_job_bytes": 51539607552,
+    "guard": "Check actual cgroup/current jobs before each finite batch; if remaining headroom below48GiB, pause dependent work and diagnose reclaimable cache/owned use. Never stop unrelated processes. Keep precision/batching fixed"
+  },
+  "storage_forecast": {
+    "all9_uncompressed_float32_feature_bytes": 38005493760,
+    "H3_all9_uncompressed_float32_feature_bytes": 24203612160,
+    "dev_probability_values_float64_bytes": 96887232,
+    "marginal_plus_admitted_contrast_draw_float64_bytes": 1456704000,
+    "draw_forecast_note": "91044vectors x2000x8; excludes marginalLM, masks, headers, retries and provisional copies; shared masks/content can be stored once with exact references",
+    "model_weights": "Already protected immutable native/S03runtime dependencies, referenced; no new model transfers or conversions in S04",
+    "budget_additional_owned_artifacts_bytes": 206158430208,
+    "account_safety_headroom_bytes": 68719476736,
+    "components": "One feature producer, one immutable backup staging archive and one fresh consumer can require about3xfeature bytes plus predictions/draws/head/scaler manifests, failed attempts and bounded temporary copies;192GiB envelope plus64GiBaccount reserve is a conservative planning budget, not measured usage",
+    "first_batch": "One candidate H3 TRAIN/dev, contiguous256logicalrow extraction chunks; protect and audit before another candidate. Native references are reused, not repacked",
+    "S05_entry_capacity_condition": "Verify current account/mount usable remaining bytes against the finite next candidate working/staging/readback budget plus64GiBreserve, using supported quota evidence or a documented complete owned-allocation accounting. Unknown remaining quota is not set to shared df; no blind full-grid allocation. If unavailable, preserve small metadata work and block only substantial batch admission with exact deficit/unknown."
+  },
+  "calibration": {
+    "reused_source": "S03/attempt-003/RESOURCE_CALIBRATION.json",
+    "S03_new_units": 22,
+    "observed_GPU_peak_allocated_bytes": 3222700032,
+    "observed_GPU_peak_reserved_bytes": 3997171712,
+    "observed_GPU_stage_wall_seconds": 193.28991650184616,
+    "full_cohort_throughput_rows_per_second": null,
+    "forecast_total_duration_seconds": null,
+    "null_reason": "12-row technical witnesses do not measure full-cohort throughput or CV runtime. Later S05 authorized first TRAIN-only256row chunk calibrates memory/throughput; no calibration in S04",
+    "fit_cost": "Record actual TRAIN-only first fullCV+final cost in approvedS05; never tune fromdev outcomes"
+  },
+  "execution": {
+    "finite_chunks": 256,
+    "GPU_serial": true,
+    "atomic_completion_seals_last": true,
+    "one_writer_per_specification": true,
+    "metadata_timeout_seconds": 45,
+    "local_metadata_timeout_seconds": 15,
+    "retry": "One diagnosed transient retry with Retry-After, preserve first exit/logs. Permanent errors block affected unit; no unlimited retries",
+    "long_jobs": "Finite keys,20second progress heartbeat, PID/start/boot, completedrow offsets/bytes/seals; diagnose no-progress vs finite long fit, no arbitrary science deadline",
+    "interruption": "Save exact completed seals and unfinished offsets; verify actual artifacts/PIDs/locks on resume before scheduling only missing units",
+    "no_deadline": true,
+    "science_time_cap": null,
+    "auto_shutdown": false,
+    "scheduler": false
+  },
+  "cost": {
+    "rental_start": null,
+    "rental_rate": null,
+    "billing_cost": null,
+    "network_overhead": null,
+    "reason": "Not inferable from job wall time, shared storage or model manifest totals"
+  },
+  "S04_GPU_or_fit_work": 0
+}

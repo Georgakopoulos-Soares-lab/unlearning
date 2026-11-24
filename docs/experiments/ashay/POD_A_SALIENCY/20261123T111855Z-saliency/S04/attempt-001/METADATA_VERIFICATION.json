@@ -1,0 +1,180 @@
+{
+  "status": "PASS",
+  "cohort_rows": 21148,
+  "folds_verified": 18,
+  "draw_files_restored": 6,
+  "source_files_verified": 5,
+  "raw_sequences_inspected": false,
+  "prediction_values_opened": false,
+  "test_metadata_materialized": false,
+  "new_draws_generated": false,
+  "projection_parser": "Exact sealed flat manifest; lexically project only id/task/split/label/exact_rc_group; exclude nonTRAIN/dev before materialization",
+  "safe_inputs_sha256": "3ab2fc2d32fd0c3b94ce37353eebad1af13dc793fb3d101b0631b3842afc7904",
+  "metadata_file_manifest": {
+    "draws/emp_H3-dev.npz": {
+      "sha256": "002ec27ac3749826429b1fce1f8859f84c621fe8a17ce057b4d7ad0722c152f4",
+      "bytes": 5648944
+    },
+    "draws/gue_mouse_0-dev.npz": {
+      "sha256": "20e88aa36d6c4b1f049a9d160e8b31eaa208a960c2d66567afd4305a5c509f1f",
+      "bytes": 1732839
+    },
+    "draws/gue_prom_300_all-dev.npz": {
+      "sha256": "b1497164cfba7ebef14109e86e82b519b9f2d9bf9ee568d45c9fc617d90a08a6",
+      "bytes": 1733178
+    },
+    "draws/gue_prom_core_all-dev.npz": {
+      "sha256": "85e88a65e6c304ff1a07dc2425f56c2293929db4348cf8ea2f025f83770a76da",
+      "bytes": 1733129
+    },
+    "draws/gue_splice_reconstructed-dev.npz": {
+      "sha256": "400821696863e19ab2f96831e21e2433a31e82882cb976d5e556a2a56bf1dcb1",
+      "bytes": 1729609
+    },
+    "draws/gue_tf_0-dev.npz": {
+      "sha256": "f02f731c6a7ed7162b81c75b4989cbe6629c8b40dca25f06246de09acce311b6",
+      "bytes": 1732863
+    },
+    "emp_H3-dev-metadata.json": {
+      "sha256": "b34f3d8568f5f003f73c0751f5667a86d741abc45f38d0b222b1291f5924d156",
+      "bytes": 326736
+    },
+    "emp_H3-train-metadata.json": {
+      "sha256": "4b11c380672730fa33c7e7c694f0c96491d21c235aa961cf5700f6e6cc89265e",
+      "bytes": 2646455
+    },
+    "folds/emp_H3/seed1234.json": {
+      "sha256": "00a1b8a590129d2118dbdbbe3561bad75a12ed2d7fa32480f0e2b17365c51b72",
+      "bytes": 4025030
+    },
+    "folds/emp_H3/seed17.json": {
+      "sha256": "f7ecc6ec878a00c8244b167da11a529b7582cfcbd8a62608afefd814c35fcf3f",
+      "bytes": 4025030
+    },
+    "folds/emp_H3/seed42.json": {
+      "sha256": "e5a0ccf33f3c31f971e09351fb2fb4c349251a24a736ad38de56b70eac4bc944",
+      "bytes": 4025030
+    },
+    "folds/gue_mouse_0/seed1234.json": {
+      "sha256": "f063ad15fb3a06f39138008a46ce7ef6f5bc20c36cf9be2f96fa9d59bb4a3f25",
+      "bytes": 183622
+    },
+    "folds/gue_mouse_0/seed17.json": {
+      "sha256": "95f1467de6f8797e5c2782aea0320ecdd1c69e98b9140e49e62bbd5f5a94ba4d",
+      "bytes": 183622
+    },
+    "folds/gue_mouse_0/seed42.json": {
+      "sha256": "a6f2e156a4cebb6e08c0cbcf20379dc3abff26c1f9fc5f7a105547768cb5e64a",
+      "bytes": 183622
+    },
+    "folds/gue_prom_300_all/seed1234.json": {
+      "sha256": "3dee726af6729130b88bf1b7c083166d93b59b148f456db3b185c29581516acb",
+      "bytes": 214192
+    },
+    "folds/gue_prom_300_all/seed17.json": {
+      "sha256": "f09b6b75586bb9ff27bddd40629926f421b541f7fb161089e3b6d4f55f41a155",
+      "bytes": 214192
+    },
+    "folds/gue_prom_300_all/seed42.json": {
+      "sha256": "63851c3468fc18d6df201da9f54232103f99bdabcced148fb81a855c14869fb0",
+      "bytes": 214192
+    },
+    "folds/gue_prom_core_all/seed1234.json": {
+      "sha256": "f51c3dc0bf2f090c2b7b538562b4df984c93fd5d99ac508b55cf54292da4481c",
+      "bytes": 219297
+    },
+    "folds/gue_prom_core_all/seed17.json": {
+      "sha256": "7c675ede1fc899b9dc1eca17b181f465d72094fbd6893beca43c332e1916fb55",
+      "bytes": 219297
+    },
+    "folds/gue_prom_core_all/seed42.json": {
+      "sha256": "2215c6d1dabfa14cd8f4a805965a2b467623b5f4d7ee56d7114a97ae9bdab985",
+      "bytes": 219297
+    },
+    "folds/gue_splice_reconstructed/seed1234.json": {
+      "sha256": "5aefc1a7806ddea84937cc016878c4100878321327bfb8df99021380395e5049",
+      "bytes": 254707
+    },
+    "folds/gue_splice_reconstructed/seed17.json": {
+      "sha256": "a4d2f8975eb1becf8d7a15c9dd9161167c3c05c777c7976dfd09ae83b67f964d",
+      "bytes": 254707
+    },
+    "folds/gue_splice_reconstructed/seed42.json": {
+      "sha256": "4675e4e6dd2af2abbbc149206c6ba39744d08cd90396ebf7ff97f66fd510ff50",
+      "bytes": 254707
+    },
+    "folds/gue_tf_0/seed1234.json": {
+      "sha256": "d4d6b459c222031e4d1791066cbb22e9d668e956366f5993b366d0abc7b4633c",
+      "bytes": 172672
+    },
+    "folds/gue_tf_0/seed17.json": {
+      "sha256": "376df6aa74287b05841af4512dd3617e44f17470b870f6cdb34798b6f76ed05b",
+      "bytes": 172672
+    },
+    "folds/gue_tf_0/seed42.json": {
+      "sha256": "8d2a1bbf96b2546fdcefe559684226e0d5cca8b7ac1aabe4cbafa17b769af783",
+      "bytes": 172672
+    },
+    "gue_mouse_0-dev-metadata.json": {
+      "sha256": "a794f65f0d67d887384551217621138684a1e9b39ed5f97e8f9ca6b3ba409d30",
+      "bytes": 72641
+    },
+    "gue_mouse_0-train-metadata.json": {
+      "sha256": "48609aad93048ade80ebd2f3ae2ffd243ddaaeae61148b31ebdb8eb7c43c45b3",
+      "bytes": 148280
+    },
+    "gue_prom_300_all-dev-metadata.json": {
+      "sha256": "04f3bf6d70bff88e9fdbac32ee1cb4dfc2c303f9892c547402b4948fcce52ff3",
+      "bytes": 75675
+    },
+    "gue_prom_300_all-train-metadata.json": {
+      "sha256": "2892cce943c2b7d5cac22ac9e004bf7d3dafa17f3fd43dee860b30446c8d3ceb",
+      "bytes": 154394
+    },
+    "gue_prom_core_all-dev-metadata.json": {
+      "sha256": "7659b6ea0ab05b51fe25100d367053f9554188ab0abf64d0c99ad06c6c71f619",
+      "bytes": 76193
+    },
+    "gue_prom_core_all-train-metadata.json": {
+      "sha256": "6cd8efd7e05bf1d843a7d3bf834c9b155a9d1bd47965ea102c7ce4b3ccddef1b",
+      "bytes": 155415
+    },
+    "gue_splice_reconstructed-dev-metadata.json": {
+      "sha256": "db3907e32f2373fed9050b04ccc784ba31be83bb353b027a4ab3302a6d142015",
+      "bytes": 79737
+    },
+    "gue_splice_reconstructed-train-metadata.json": {
+      "sha256": "f225f8f9eee016ac1bb1f9d88e2be52c5ecc9827687b49e4dcaa0496ea0c1368",
+      "bytes": 162497
+    },
+    "gue_tf_0-dev-metadata.json": {
+      "sha256": "ebfc23b2482b4f13dc66bfa41f7f3c62ae7502fe23a249a08bbb35e12c89b089",
+      "bytes": 71112
+    },
+    "gue_tf_0-train-metadata.json": {
+      "sha256": "56ed9c541e757c592f73586405d5129326e60190f69840a7f939431d408cabb6",
+      "bytes": 146090
+    },
+    "source/fit_maxent_extension.py": {
+      "sha256": "0a5d25572d5f2f3477ccabbf25599322117a2754d677d7bda59a332a87d36779",
+      "bytes": 7501
+    },
+    "source/fit_multiretain_layers.py": {
+      "sha256": "737bbbe38b9ced53e701eb0478a018a3c63b3102682f7903684795ed95cd04e4",
+      "bytes": 21098
+    },
+    "source/h3_followup.py": {
+      "sha256": "38292387a8fcff738c040751e82d50ab582896f567d84be3aea4e4be9cdf435b",
+      "bytes": 18362
+    },
+    "source/multiretain_independent.py": {
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+      "bytes": 3441
+    },
+    "source/multiretain_metrics.py": {
+      "sha256": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+      "bytes": 5016
+    }
+  },
+  "observed_utc": "2026-11-24T04:33:42.992328+00:00"
+}

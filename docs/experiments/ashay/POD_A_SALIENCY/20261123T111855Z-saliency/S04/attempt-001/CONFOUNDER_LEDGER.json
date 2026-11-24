@@ -1,0 +1,261 @@
+{
+  "schema_version": "s04-confounders-v1",
+  "issues": [
+    {
+      "issue": "immediate_parent_lineage",
+      "observed_fact": "Nine exact supplied candidate identities and native contents are bound; no exact immediate parents were established",
+      "unresolved_issue": "Parent-relative intervention effects",
+      "affected_comparison": "Parent-relative intervention effects",
+      "claim_currently_permitted": "Standalone candidate technical qualification only",
+      "minimal_resolution": "Supply exact immediate-parent tensor/config/tokenizer identity and provenance",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "saliency_algorithm_scoring_mask_timing",
+      "observed_fact": "Folder labels and supplied checkpoint configs are preserved; saliency implementation, scoring data, masks and intervention timing remain unresolved",
+      "unresolved_issue": "Causal saliency attribution and exposure-sensitive effects",
+      "affected_comparison": "Causal saliency attribution and exposure-sensitive effects",
+      "claim_currently_permitted": "Describe observed labels without inferring history from final tensors",
+      "minimal_resolution": "Supply safe implementation revision, scoring definition/data provenance, mask identities and intervention timing",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "strength_units_perturbation_law",
+      "observed_fact": "Observed top-k labels do not establish affected tensor families, denominator, noise scale, normalization or reinitialization law",
+      "unresolved_issue": "Dose-response, cross-method matched-strength claims",
+      "affected_comparison": "Dose-response, cross-method matched-strength claims",
+      "claim_currently_permitted": "Declared-label descriptive profiles with explicit caveats",
+      "minimal_resolution": "Supply exact units, distributions, eligible parameters, realized affected fraction and magnitude",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "exposure_optimization",
+      "observed_fact": "Observed steps1500/2000/2151 and declared training/data seed1234 do not establish objective, actual row/token exposure or equal duration",
+      "unresolved_issue": "Matched-exposure effects and unseen-task transfer",
+      "affected_comparison": "Matched-exposure effects and unseen-task transfer",
+      "claim_currently_permitted": "No exposure-matched or unseen-data inference",
+      "minimal_resolution": "Supply safe objective/version, optimizer schedule, realized tokens/rows/duration, sampling and overlap metadata",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "two_noise5_endpoints",
+      "observed_fact": "Both step2000 and2151 endpoints are retained, with distinct exact supplied provenance; neither was selected by smoke scores",
+      "unresolved_issue": "Independent replication and primary endpoint choice",
+      "affected_comparison": "Independent replication and primary endpoint choice",
+      "claim_currently_permitted": "Treat as supplied related/unknown-dependence snapshots",
+      "minimal_resolution": "Outcome-independent endpoint policy and exact run/lineage/exposure relationship",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "seed_roles_replication",
+      "observed_fact": "CVseeds42/17/1234 select probe folds; saved classifier RNG42 is distinct; training/data declaration1234 does not establish independent mask/noise/training runs",
+      "unresolved_issue": "Intervention variability and independent replicate confidence claims",
+      "affected_comparison": "Intervention variability and independent replicate confidence claims",
+      "claim_currently_permitted": "Report CV sensitivity as protocol sensitivity only",
+      "minimal_resolution": "Supply role-specific seeds and independent intervention-run identifiers",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "controls",
+      "observed_fact": "All36 exact composition/forward4mer controls are compatible and unchanged; they are not matched random-mask/noise controls or assumed parents",
+      "unresolved_issue": "Saliency-specific attribution",
+      "affected_comparison": "Saliency-specific attribution",
+      "claim_currently_permitted": "Simple-sequence baseline comparisons only after S04 planning",
+      "minimal_resolution": "Supply exact unperturbed-parent and appropriate matched intervention controls",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "cohort_dependence_leakage",
+      "observed_fact": "Frozen row/group/class/fold identities and exact/RC handling are preserved; broader locus/homology independence and saliency/training overlap remain unknown",
+      "unresolved_issue": "Generalization, leakage-free evaluation and biological independence",
+      "affected_comparison": "Generalization, leakage-free evaluation and biological independence",
+      "claim_currently_permitted": "Conditional results for the defined cohort/group protocol",
+      "minimal_resolution": "Supply safe overlap/exposure and broader biological dependence metadata",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "multiplicity_selection_prospectivity",
+      "observed_fact": "All26 hooks were qualified without ranking candidates; only12TRAIN technical witnesses were inspected. Historical A-series outcomes already exist",
+      "unresolved_issue": "Confirmatory significance, favorable-subset selection and retrospective preregistration",
+      "affected_comparison": "Confirmatory significance, favorable-subset selection and retrospective preregistration",
+      "claim_currently_permitted": "No confidence interval or confirmatory claim from technical tolerances",
+      "minimal_resolution": "Freeze contrast families, audit/refit panels, resampling, multiplicity and reporting before new producer outcomes; disclose earlier outcome inspection",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "forgetting_relearning",
+      "observed_fact": "No raw forget data or forget-task evaluation was accessed; collaborator aggregate forget evidence is pending and PodB relearning is separate",
+      "unresolved_issue": "Successful forgetting, erasure, retain/forget trade-offs and relearning trajectories",
+      "affected_comparison": "Successful forgetting, erasure, retain/forget trade-offs and relearning trajectories",
+      "claim_currently_permitted": "Retain-only technical readiness; no unlearning-success claim",
+      "minimal_resolution": "Later checkpoint/protocol-matched collaborator aggregates and separate authorized integration; no messages sent",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "delivery_upstream_privacy_completeness",
+      "observed_fact": "Nine observed supplied directories are recovered through exact mirrors; S01 whole-Drive delivery remains PARTIAL. Candidate05 original-upload privacy is unknown although recovery/readback privacy passed",
+      "unresolved_issue": "Sweep completeness, upstream immutable-source history and original privacy guarantee",
+      "affected_comparison": "Sweep completeness, upstream immutable-source history and original privacy guarantee",
+      "claim_currently_permitted": "Technical coverage of these nine only; preserve nulls and provenance limits",
+      "minimal_resolution": "Supply delivery manifest/exhaustion and safe upstream revision/history evidence if available; do not infer from nine records",
+      "evidence": [
+        "MIRROR_SOURCE_BINDING.json",
+        "QUALIFICATION_MATRIX.json",
+        "MODEL_CONTENT_IDENTITIES.json",
+        "BASE_HEAD_REUSE_MAP.json",
+        "Immutable S02 lineage/exposure/intervention records at582f5cd131bc66f54e12b647c7cc1c1c9d36dd34"
+      ],
+      "status": "PENDING_INTERPRETATION_EVIDENCE",
+      "source_locator": "S03/attempt-003/CONFOUNDER_LEDGER.json at28687da949b4a46bbf8c6015bb8721376e939b70",
+      "resolver": "Collaborator for safe provenance, PodA approved phase for protocol implementation",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "biological_dependence",
+      "observed_fact": "Exact/RC groups verified; locus/homology dependence unknown",
+      "status": "UNKNOWN",
+      "affected_scope": "Any biological/generalization interpretation",
+      "minimal_resolution": "Provide safe source/locus/homology overlap metadata",
+      "resolver": "Collaborator for safe provenance; PodA laterphase for exact recovery/versioned eligibility",
+      "source_locator": "S03 sealed confounder/provenance records plus exact approvedS04 supplement",
+      "claim_currently_permitted": "Standalone descriptive measurements with explicit limits",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "missing_sweep_selection",
+      "observed_fact": "Nine observed selected directories, S01PARTIAL; absent strengths/runs unknown",
+      "status": "UNKNOWN",
+      "affected_scope": "Scope/selection bias and delivery completeness",
+      "minimal_resolution": "Outcome-independent complete delivery/run manifest",
+      "resolver": "Collaborator for safe provenance; PodA laterphase for exact recovery/versioned eligibility",
+      "source_locator": "S03 sealed confounder/provenance records plus exact approvedS04 supplement",
+      "claim_currently_permitted": "Standalone descriptive measurements with explicit limits",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "formal_preservation_margin",
+      "observed_fact": "No justified authorized practical margin",
+      "status": "DECLARED",
+      "affected_scope": "Formal equivalence/noninferiority/success claims disabled",
+      "minimal_resolution": "Separately authorized prospective margin/family/procedure",
+      "resolver": "Collaborator for safe provenance; PodA laterphase for exact recovery/versioned eligibility",
+      "source_locator": "S03 sealed confounder/provenance records plus exact approvedS04 supplement",
+      "claim_currently_permitted": "Standalone descriptive measurements with explicit limits",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    },
+    {
+      "issue": "LM_reference_join",
+      "observed_fact": "Exact existing base per-example loss/target endpoint identity not bound in S04",
+      "status": "UNKNOWN",
+      "affected_scope": "108LMbase contrasts deferred; standaloneLM still planned",
+      "minimal_resolution": "Recover exact compatible per-example baseline stats and version eligibility before affectedexecution",
+      "resolver": "Collaborator for safe provenance; PodA laterphase for exact recovery/versioned eligibility",
+      "source_locator": "S03 sealed confounder/provenance records plus exact approvedS04 supplement",
+      "claim_currently_permitted": "Standalone descriptive measurements with explicit limits",
+      "measurement_pairing_interpretation_domains": "See named affected_scope/claims in this row; never infer unresolved parent/intervention/exposure from tensor differences"
+    }
+  ],
+  "no_messages_sent": true,
+  "resolved_endpoint_policy": "Both noise5steps remain descriptive endpoints, no primary winner or independent replication",
+  "operational_rules": "Unknown parents block causal contrasts, not standalone measurement. Unknown biological aliases stay numeric, no relabeling. Newmetadata versioned with outcomeexposure and exact affectedkeys."
+}
