@@ -1,0 +1,45 @@
+--- a/s03_entry_guard.py
++++ b/s03_entry_guard.py
+@@ -15,12 +15,19 @@
+  if set(checks)!=set(manifest['files'])|{'S_PACKAGE_FILES.json'}:raise ValueError('Approved package exact member closure differs')
+  return expected
+ 
++def validate_continuation_paths(control,cfg,state):
++ c=Path(control);run='20261123T111855Z-saliency';attempt='attempt-003'
++ checks=[(cfg['run_id']==state['run_id']==run,'Run identity changed'),(cfg['attempt_id']==attempt,'Wrong continuation attempt'),(c.resolve()==Path('/workspace/pod-a-saliency/control')/run/'S03'/attempt,'Wrong continuation control root'),(Path(cfg['artifacts']).resolve()==Path('/workspace/pod-a-saliency/artifacts')/run/'S03'/attempt,'Wrong continuation artifact root'),(Path(cfg['runtime_venv'])==Path('/workspace/pod-a-saliency/artifacts')/run/'S03/attempt-001/runtime','Pinned inherited runtime changed'),(cfg['mirror_prompt_sha256']=='883a1245a3baa22284aae1261d9f27080ba53bfbe1b2837397dfc633a34b103b','Wrong approved mirror prompt')]
++ for value,message in checks:
++  if not value:raise ValueError(message)
++ return True
++
+ def verify_approved_S03(control,alias):
+  c=Path(control);cfg=json.loads((c/'RUN_CONFIG.json').read_text());plan=json.loads((c/'PATHS.json').read_text());reg=json.loads((c/'ACCEPTED_CHECKPOINT_REGISTRY.json').read_text());require=lambda value,message: None if value else (_ for _ in ()).throw(ValueError(message))
+  require(alias in reg['selected_by_stage'],'Alias outside finite approved S03 scope')
+  a=Path(cfg['artifacts']);R=Path(cfg['research_worktree']);T=R/plan['run_root'];state=json.loads((T/'CONTROLLER_STATE.json').read_text())
+  require(state['package_commit']==cfg['package_commit']=='7007ebd05bf59432bf69109e5f69baad31ec0d3a','Immutable approved package changed')
+- require(cfg['run_id']==state['run_id'] and cfg['attempt_id']=='attempt-001','Run or attempt identity changed')
++ validate_continuation_paths(c,cfg,state)
+  require(c.resolve()==Path('/workspace/pod-a-saliency/control')/state['run_id']/'S03'/cfg['attempt_id'],'Unowned control root')
+  require(a.resolve()==Path('/workspace/pod-a-saliency/artifacts')/state['run_id']/'S03'/cfg['attempt_id'],'Unowned artifact root')
+  require(set(state['approvals']['S03']['scope_candidates'])==set(reg['experimental_candidate_ids']),'Experimental candidate scope changed')
+@@ -29,5 +36,10 @@
+  require(json.loads((c/'PARENT_TRAINING_MEMBERSHIP_VERIFICATION.json').read_text())['status']=='PASS_INDEPENDENT_FROZEN_PARENT_TRAIN_MEMBERSHIP','Training-only witness membership not qualified')
+  protection=json.loads((c/'MINIMUM_PRIVATE_CHECKPOINT_RECEIPT.json').read_text());require(protection['status']=='MINIMUM_ACTUAL_ARTIFACTS_PRIVATE_FRESH_RESTORE_VERIFIED' and protection['destination_private'] and protection['fresh_network_download'] and protection['rebuilt_TE_wheel_protected'],'Actual minimum private protection missing')
+  require(hashlib.sha256((c/'MINIMUM_PRIVATE_CHECKPOINT_RECEIPT.json').read_bytes()).hexdigest()==cfg['minimum_private_protection_receipt_sha256'],'Private protection receipt changed')
++ require(hashlib.sha256((c/'PROMPT.md').read_bytes()).hexdigest()==cfg['mirror_prompt_sha256'],'Checksum-pinned continuation prompt changed')
++ require(hashlib.sha256((c/'MIRROR_ADMISSION.json').read_bytes()).hexdigest()==cfg['mirror_admission_sha256'],'Exact remote mirror admission binding changed')
++ approved=next((v for v in json.loads((c/'MIRROR_ADMISSION.json').read_text())['records'] if v['alias']==alias),None);require(approved is not None and approved['candidate_id']==reg['selected_by_stage'][alias],'Alias lacks exact approved mirror')
++ local=next((v for v in json.loads((c/'MIRROR_LOCAL_ADMISSION.json').read_text())['records'] if v['alias']==alias),None);require(local is not None and local['status']=='LOCAL_NATIVE_SHA256_AND_MAPPING_PASS' and local['manifest_sha256']==approved['manifest_sha256'] and local['payload_revision']==approved['payload_revision'],'Actual immutable local native recovery not verified')
++ expected=next(v for v in approved['files'] if v['path']=='__0_0.distcp');require(local['native_sha256']==expected['sha256'],'Recovered native identity changed')
+  root=Path(plan['package_root']);verify_pinned_package(root);checked=subprocess.run([cfg['validator_python'],str(root/'S_validate_package.py'),'--root',str(root),'--entry','S03','--action','substantial_compute','--state',str(T/'CONTROLLER_STATE.json'),'--research-worktree',str(R)],capture_output=True,text=True,timeout=15);require(checked.returncode==0,'Actual S03 guard rejected entry: '+checked.stdout[:1000])
+  return {'package_commit':state['package_commit'],'alias':alias,'candidate_id':reg['selected_by_stage'][alias],'source_worktree':str(R),'dispatch':False}
+--- a/run_qualification.py
++++ b/run_qualification.py
+@@ -10,7 +10,7 @@
+ def abort(*args):raise RuntimeError('Owned S03 operation interrupted; stage does not advance')
+ 
+ def main(args):
+- c=Path(args.control).resolve();from s03_entry_guard import verify_approved_S03;verify_approved_S03(c,args.alias);cfg=read(c/'RUN_CONFIG.json');a=Path(cfg['artifacts']);plan=read(c/'QUALIFICATION_PLAN.json');require(plan['stage_scope'].startswith('S03 only'),'Wrong stage scope');reg=read(c/'ACCEPTED_CHECKPOINT_REGISTRY.json');candidate_id=reg['selected_by_stage'][args.alias];validate_alias(args.alias,candidate_id,reg['selected_by_stage']);require(args.mode=='qualification' and args.variant in VARIANTS,'Qualification mode/variant required');bundle=read(c/'INHERITED_TRAINING_BUNDLE_MANIFEST.json');fixture=Path(bundle['root'])/'training_smoke_manifest.jsonl';rows=validate_manifest(fixture);root=a/'qualification';root.mkdir(exist_ok=True);out=owned_path(root/args.alias/args.variant/f'attempt-{args.unit_attempt:03d}',root);require(not out.exists(),'Existing variant must be verified/reused or retained as failed; never overwrite');out.mkdir(parents=True)
++ c=Path(args.control).resolve();from s03_entry_guard import verify_approved_S03;verify_approved_S03(c,args.alias);cfg=read(c/'RUN_CONFIG.json');require(str(Path(sys.executable).absolute())==str(Path(cfg['runtime_venv'])/'bin/python'),'Wrong executed runtime interpreter');queue=read(c/'FINITE_QUALIFICATION_QUEUE.json');require(any(u['alias']==args.alias and u['variant']==args.variant and u['unit_attempt']==args.unit_attempt for u in queue['units']),'Unit outside approved finite continuation queue');a=Path(cfg['artifacts']);plan=read(c/'QUALIFICATION_PLAN.json');require(plan['stage_scope'].startswith('S03 only'),'Wrong stage scope');reg=read(c/'ACCEPTED_CHECKPOINT_REGISTRY.json');candidate_id=reg['selected_by_stage'][args.alias];validate_alias(args.alias,candidate_id,reg['selected_by_stage']);require(args.mode=='qualification' and args.variant in VARIANTS,'Qualification mode/variant required');bundle=read(c/'INHERITED_TRAINING_BUNDLE_MANIFEST.json');fixture=Path(bundle['root'])/'training_smoke_manifest.jsonl';rows=validate_manifest(fixture);root=a/'qualification';root.mkdir(exist_ok=True);out=owned_path(root/args.alias/args.variant/f'attempt-{args.unit_attempt:03d}',root);require(not out.exists(),'Existing variant must be verified/reused or retained as failed; never overwrite');out.mkdir(parents=True)
+  source=read(c/'SOURCE_IDENTITY.json');require(all(sha(a/'code'/e['path'])==e['sha256'] for e in source['owned_source_files']),'Executed source changed');env=read(c/'ENVIRONMENT_LOCK.json');require(env['status']=='IMPORTS_PASS','Runtime import gate not sealed');runtime_sha=sha(c/'ENVIRONMENT_LOCK.json');transfers=read(c/('DOWNLOAD_RECEIPTS.final.json' if (c/'DOWNLOAD_RECEIPTS.final.json').exists() else 'DOWNLOAD_RECEIPTS.json'));manifest=read(c/'ASSET_TRANSFER_MANIFEST.json');records={r['file_id']:r for r in transfers['records']};required=[r for r in manifest['items'] if r['alias']==args.alias and not r.get('optional_for_model_only_native_loading')];small=[r for r in manifest['small_assets'] if r['alias']==args.alias];weights=[];cachefile=c/'VERIFIED_FILE_STAT_CACHE.json';cache=read(cachefile) if cachefile.exists() else {}
+  for entry in required+[{**r,'target':r['path'],'expected_bytes':r['bytes'],'expected_historical_sha256':r['sha256']} for r in small]:
+   target=owned_path(entry['target'],Path(manifest['checkpoint_roots'][args.alias]));pstat=target.stat();record=records.get(entry['file_id']) if entry in required else entry;require(record is not None and record.get('status') in ['VERIFIED','VERIFIED_REUSED_LOCAL','REUSED_VERIFIED_SMALL_ASSET'],'Missing verified native payload');h=record['sha256'];require(pstat.st_size==entry['expected_bytes'],'Native asset size changed');statkey=[pstat.st_dev,pstat.st_ino,pstat.st_size,pstat.st_mtime_ns,pstat.st_ctime_ns]

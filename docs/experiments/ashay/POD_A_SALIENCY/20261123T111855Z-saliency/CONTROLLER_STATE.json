@@ -44,7 +44,7 @@
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
       "source": "direct_chat",
       "message": "APPROVE S03 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "observed_utc": "2026-11-23T19:16:58.118205+00:00",
+      "observed_utc": "2026-11-24T02:48:35.257803+00:00",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -159,10 +159,10 @@
     "payload_access": {
       "status": "RESOLVED",
       "evidence": [
-        "Exact nine component IDs/sizes and authenticated listing/small-sidecar route from verified S01, with S03 per-file metadata requests in S03_RECOVERY_PLAN.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/MIRROR_SOURCE_BINDING.json"
       ],
       "resolve_in": "S02",
-      "eligibility_rule": "Candidate-only route/location metadata, not payload download/load proof; S03 must recheck permission/revision/size and qualify exact bytes; unknown parent dependencies stay pending"
+      "eligibility_rule": "Exact9privateHFreceipt/manifest pins/provenance passed; actual local payload admission remains per-file whole SHA verified. No Drive quota retries."
     },
     "private_backup_access": {
       "status": "PENDING",
@@ -394,7 +394,7 @@
       "delivery": "Separate post-commit readback receipt"
     },
     "S03": {
-      "status": "PARTIAL",
+      "status": "RUNNING",
       "approved": true,
       "conditional_candidate_recovery_scope": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
@@ -413,8 +413,8 @@
       "execution_started": true,
       "attempt_allocated": true,
       "next_state": "WAITING_FOR_APPROVAL: S04",
-      "attempt_id": "attempt-001",
-      "scope": "Technical recovery only; scientific outcomes remain stopped",
+      "attempt_id": "attempt-003",
+      "scope": "S03 exact9privateHFmirror continuation: exactcontent acquisition, inherited12TRAIN technical qualification, scoped runtime repair/private recovery/sanitized publication; stop beforeS04. No deadline.",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw"
       ],
@@ -432,7 +432,9 @@
         "new_GPU_units": 0,
         "quota_blocked_routes": 8,
         "observed_utc": "2026-11-23T21:33:54.676312+00:00"
-      }
+      },
+      "mirror_continuation_prompt_commit": "5e521f9dc048cb22be03260da526676d6f4a3316",
+      "mirror_continuation_prompt_sha256": "883a1245a3baa22284aae1261d9f27080ba53bfbe1b2837397dfc633a34b103b"
     },
     "S04": {
       "status": "WAITING_FOR_APPROVAL",
@@ -554,9 +556,9 @@
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
     "phase": "S03",
-    "attempt_id": "attempt-001",
+    "attempt_id": "attempt-003",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "ca827c4bfb3cd4121f8ceadcae6f25446e00857a",
+    "supplement_commit": "5e521f9dc048cb22be03260da526676d6f4a3316",
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/PACKAGE_PUBLICATION_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/MIGRATION_RECEIPT.json",
@@ -571,14 +573,14 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/S03_RECEIPT.json"
     ],
     "unfinished_units": [
-      "candidate_02: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
-      "candidate_03: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
-      "candidate_04: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
-      "candidate_05: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
-      "candidate_06: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
-      "candidate_07: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
-      "candidate_08: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass.",
-      "candidate_09: Google Drive normal full-file quota exceeded; provide restored normal-route availability or authorized exact-content immutable mirror. No range quota bypass."
+      "HF_LOCAL_CANDIDATE02_FRESH_NATIVE_REPLAY",
+      "candidate_03:exact native recovery and logical1/logical8/repeat8 technical qualification",
+      "candidate_04:exact native recovery and logical1/logical8/repeat8 technical qualification",
+      "candidate_05:exact native recovery and logical1/logical8/repeat8 technical qualification",
+      "candidate_06:exact native recovery and logical1/logical8/repeat8 technical qualification",
+      "candidate_07:exact native recovery and logical1/logical8/repeat8 technical qualification",
+      "candidate_08:exact native recovery and logical1/logical8/repeat8 technical qualification",
+      "candidate_09:exact native recovery and logical1/logical8/repeat8 technical qualification"
     ],
     "transfer_totals": {
       "model_acquisition_bytes": 15516878934,
@@ -599,11 +601,13 @@
       "S01 full-delivery coverage remains PARTIAL",
       "Actual parents/intervention laws/exposure/replication remain scope-specific unknowns"
     ],
-    "next_action": "No retry loop. Normal Drive full-file availability or an authorized exact-content immutable mirror is required for candidate02fresh recovery and03\u201309native acquisition. Existing protected pilot is eligible for separately approved S04 planning.",
+    "next_action": "Acquire exact required immutable mirror files serially under350GiBowned ceiling and100GiBshared reserve; reuse matching prior inputs. No model load before actual substantial guard/source publication/local admission.",
     "prerequisites": [
-      "Actual private destination and authenticated route remain available"
+      "9mirror metadata admission passed",
+      "runtime/source/witness pins checked",
+      "real prior private roundtrip proof remains bound and current destination privacy/authenticated access verified"
     ],
-    "reconciled_utc": "2026-11-23T21:33:54.676339+00:00",
+    "reconciled_utc": "2026-11-24T02:48:35.329932+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
