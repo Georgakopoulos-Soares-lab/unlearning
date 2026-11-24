@@ -1,9 +1,11 @@
-S06 RUNNING — 2026-11-24T15:44:21.296763+00:00
+Current phase: S06 complete for frozen nine-candidate other-five scope; S07 is not approved.
 
-New scope: 90/90 extraction bundles; 69120/69120 logical rows; 2340/2340 representation matrices; 90/90 LM units; 360/360 sealed specification keys. Scientific verification and private protection remain separate: 9/9 candidates protected.
+Read S06_REPORT.md, OUTPUT_VALIDATION.json, S07_HANDOFF.json and individual candidate gates/recovery/bindings. Exact S07_HANDOFF SHA256: 1a1ed852cd7b4a3cdb406c9db63e39771a3d7cf4a7012119ee84f49a715a7a4f.
 
-S05 reuse: 18 H3 bundles, 121212 logical rows, 468 matrices, 702 heads and 702 fixed applications, 21 audits. No S05 work replayed. S04 freeze and no-deadline amendment preserved.
+Reconcile final administrative recovery FINAL_METADATA_RECOVERY.json (created after scientific seal) and external final delivery proof /workspace/pod-a-saliency/control/20261123T111855Z-saliency/S06/attempt-001/FINAL_DELIVERY_RECEIPT.json. The external proof records exact remote Git equality and bytes; do not infer its future commit from this handoff. Protected final metadata regenerates exact public unit/index/coverage mappings from saved metadata; candidate scientific recovery separately covers all260matrices and all required LM statistics.
 
-Readiness R1–R5 PASS. Current operation and exact unfinished keys are in RESUME_MANIFEST.json. Continue S06 only; stop before S07. Parent/intervention/exposure/replication/forget-evidence limitations remain unchanged. Billing unknown.
+Resume only after checking actual seals, source/runtime/protocol pins, immutable private dependencies, process start identities/locks and current capacity. Reuse every valid S05/S06 unit. Preserve failed attempts and original-base scaler/head policies. Parent/exposure/intervention/replication/forget limitations remain separate.
 
-Resume with the private control manifest and actual artifact/process reconciliation. Never repeat valid completed chunks or upload an already protected exact revision.
+Next direct approval: APPROVE S07 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a
+
+WAITING_FOR_APPROVAL: S07

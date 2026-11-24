@@ -29,6 +29,19 @@
       "production_forwards": 0,
       "reason": "FP32 cross-entropy fixture compared with FP64 analytic log expression at an unqualified 1e-6 fixture bound",
       "repair": "Preserved script/logs; fixture now uses explicit 64 FP32 epsilon absolute analytic bound. This does not alter production code or atol1e-12 saved-statistics verification."
+    },
+    {
+      "operation": "bounded GPU environment key inspection",
+      "exit_status": 1,
+      "reason": "Overbroad credential-key assertion matched the benign TOKENIZERS_PARALLELISM flag; no values disclosed and no worker affected",
+      "repair": "Explicit credential-key boundary check passed; pinned environment/source unchanged",
+      "scientific_units_affected": []
+    },
+    {
+      "operation": "administrative resume enhancement pre-use AST check",
+      "status": "FAILED_PRE_USE_PRESERVED",
+      "reason": "An added publication-state branch had incorrect indentation; detected before execution",
+      "repair": "Preserved draft; corrected indentation and all6 administrative scripts now parse. No numerical source, scientific unit or running worker changed."
     }
   ]
 }

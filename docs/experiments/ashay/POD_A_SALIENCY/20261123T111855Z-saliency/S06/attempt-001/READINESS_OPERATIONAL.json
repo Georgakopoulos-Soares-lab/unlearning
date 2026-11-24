@@ -1,0 +1,1289 @@
+{
+  "schema_version": "s06-observed-TRAIN-contexts-v1",
+  "status": "PASS",
+  "prospective_readiness_sha256": "90e3d5913aa52763d04d2e509a5e5eae0e4a0c1c200dc46504e82494cf0f92b6",
+  "contexts": {
+    "gue_tf_0": {
+      "status": "PASS_REUSED_AS_FIRST_PRODUCTION_CHUNK",
+      "alias": "candidate_01",
+      "split": "train",
+      "planned_spec_id": "0e899dab21ee596bf4338c39147d3646ef0696643e1fb12fde45aa6275aecab0",
+      "source_identity_sha256": "0193a13e31bb6288409b5399982716ecf137e1d1d76e44b8893f31cac8e0d8ca",
+      "chunk_seal_sha256": "3a53613a685356d223e1a758af40a5a1fdd2d1eb6acddd72cd333af442c8f556",
+      "measurement": {
+        "status": "CHUNK_VALIDATED",
+        "logical_rows": 256,
+        "physical_batches": 32,
+        "physical_rows": 256,
+        "fillers": 0,
+        "first": 0,
+        "stop": 256,
+        "forward_capture_seconds": 6.165821264265105,
+        "NPZ_write_seconds": 0.4509275039890781,
+        "chunk_wall_seconds_before_seal": 6.701105974032544,
+        "feature_file_bytes": 51814794,
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_host_RSS_bytes": 5891309568,
+        "batch_timings": [
+          {
+            "first_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 3.478618097025901
+          },
+          {
+            "first_row": 8,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.3532354210037738
+          },
+          {
+            "first_row": 16,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07757093594409525
+          },
+          {
+            "first_row": 24,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07764830393716693
+          },
+          {
+            "first_row": 32,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0776044869562611
+          },
+          {
+            "first_row": 40,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0813672780059278
+          },
+          {
+            "first_row": 48,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07775438495445997
+          },
+          {
+            "first_row": 56,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07764417701400816
+          },
+          {
+            "first_row": 64,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07762582902796566
+          },
+          {
+            "first_row": 72,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0775536100845784
+          },
+          {
+            "first_row": 80,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0775516569847241
+          },
+          {
+            "first_row": 88,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07754795101936907
+          },
+          {
+            "first_row": 96,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07784433104097843
+          },
+          {
+            "first_row": 104,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07774693402461708
+          },
+          {
+            "first_row": 112,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777586109470576
+          },
+          {
+            "first_row": 120,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07776006299536675
+          },
+          {
+            "first_row": 128,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07766423805151135
+          },
+          {
+            "first_row": 136,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07765659608412534
+          },
+          {
+            "first_row": 144,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07767616608180106
+          },
+          {
+            "first_row": 152,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07765437208581716
+          },
+          {
+            "first_row": 160,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07772050297353417
+          },
+          {
+            "first_row": 168,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07774543098639697
+          },
+          {
+            "first_row": 176,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07772490999195725
+          },
+          {
+            "first_row": 184,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07766537903808057
+          },
+          {
+            "first_row": 192,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07769630698021501
+          },
+          {
+            "first_row": 200,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07768445799592882
+          },
+          {
+            "first_row": 208,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07774556102231145
+          },
+          {
+            "first_row": 216,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07759996107779443
+          },
+          {
+            "first_row": 224,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07769230101257563
+          },
+          {
+            "first_row": 232,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777116899844259
+          },
+          {
+            "first_row": 240,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07767836900893599
+          },
+          {
+            "first_row": 248,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07767295092344284
+          }
+        ]
+      },
+      "model_only_CPU_load_seconds": 15.318208007025532,
+      "production_specification_identical": true,
+      "repeated_calibration_forwards": 0,
+      "forecast_remaining_forward_seconds": 178.80881666368805,
+      "forecast_scope": "Firstchunk extrapolation only, excludes modelsetup/IO/CV/audits/recovery; update with laterchunks. Not billing/GPUbusy time.",
+      "observed_utc": "2026-11-24T14:58:40.211406+00:00"
+    },
+    "gue_prom_core_all": {
+      "status": "PASS_REUSED_AS_FIRST_PRODUCTION_CHUNK",
+      "alias": "candidate_01",
+      "split": "train",
+      "planned_spec_id": "1f6ab6668768c3334afc455c99782da60e3a6f69e9a988a182ad8bfcbc3095e7",
+      "source_identity_sha256": "0193a13e31bb6288409b5399982716ecf137e1d1d76e44b8893f31cac8e0d8ca",
+      "chunk_seal_sha256": "a195058f3284a838026a8579f1d5bc2b86f6bc3be3080026d91ce53904273741",
+      "measurement": {
+        "status": "CHUNK_VALIDATED",
+        "logical_rows": 256,
+        "physical_batches": 32,
+        "physical_rows": 256,
+        "fillers": 0,
+        "first": 0,
+        "stop": 256,
+        "forward_capture_seconds": 2.478004692704417,
+        "NPZ_write_seconds": 0.28318685200065374,
+        "chunk_wall_seconds_before_seal": 2.796868422999978,
+        "feature_file_bytes": 51834250,
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_host_RSS_bytes": 5891309568,
+        "batch_timings": [
+          {
+            "first_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07773621694650501
+          },
+          {
+            "first_row": 8,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07725995394866914
+          },
+          {
+            "first_row": 16,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07754696893971413
+          },
+          {
+            "first_row": 24,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07741527003236115
+          },
+          {
+            "first_row": 32,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07738166896160692
+          },
+          {
+            "first_row": 40,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07735989603679627
+          },
+          {
+            "first_row": 48,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0803555129095912
+          },
+          {
+            "first_row": 56,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07731341500766575
+          },
+          {
+            "first_row": 64,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07731681095901877
+          },
+          {
+            "first_row": 72,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07740478403866291
+          },
+          {
+            "first_row": 80,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07731812295969576
+          },
+          {
+            "first_row": 88,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07724612299352884
+          },
+          {
+            "first_row": 96,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07734649500343949
+          },
+          {
+            "first_row": 104,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07728266902267933
+          },
+          {
+            "first_row": 112,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07731672993395478
+          },
+          {
+            "first_row": 120,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07736233004834503
+          },
+          {
+            "first_row": 128,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07731932401657104
+          },
+          {
+            "first_row": 136,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0773237009998411
+          },
+          {
+            "first_row": 144,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07732132694218308
+          },
+          {
+            "first_row": 152,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07726907799951732
+          },
+          {
+            "first_row": 160,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0772843511076644
+          },
+          {
+            "first_row": 168,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07728416100144386
+          },
+          {
+            "first_row": 176,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07732594397384673
+          },
+          {
+            "first_row": 184,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0773503320524469
+          },
+          {
+            "first_row": 192,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07728278799913824
+          },
+          {
+            "first_row": 200,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07733774301595986
+          },
+          {
+            "first_row": 208,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07732986996416003
+          },
+          {
+            "first_row": 216,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07733002095483243
+          },
+          {
+            "first_row": 224,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07731145201250911
+          },
+          {
+            "first_row": 232,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0772697189822793
+          },
+          {
+            "first_row": 240,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07740052696317434
+          },
+          {
+            "first_row": 248,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0773013869766146
+          }
+        ]
+      },
+      "model_only_CPU_load_seconds": 15.318208007025532,
+      "production_specification_identical": true,
+      "repeated_calibration_forwards": 0,
+      "forecast_remaining_forward_seconds": 71.86213608842809,
+      "forecast_scope": "Firstchunk extrapolation only, excludes modelsetup/IO/CV/audits/recovery; update with laterchunks. Not billing/GPUbusy time.",
+      "observed_utc": "2026-11-24T14:58:58.068662+00:00"
+    },
+    "gue_prom_300_all": {
+      "status": "PASS_REUSED_AS_FIRST_PRODUCTION_CHUNK",
+      "alias": "candidate_01",
+      "split": "train",
+      "planned_spec_id": "1af60bb4dc39ac2b398d98617af2ccc16726ed751db1ac7f884380d05adca5b9",
+      "source_identity_sha256": "0193a13e31bb6288409b5399982716ecf137e1d1d76e44b8893f31cac8e0d8ca",
+      "chunk_seal_sha256": "4ba4c1cb9a16ee3b0cd9787327fc818073d79b67ac5c480f28ffcc7e90a28629",
+      "measurement": {
+        "status": "CHUNK_VALIDATED",
+        "logical_rows": 256,
+        "physical_batches": 32,
+        "physical_rows": 256,
+        "fillers": 0,
+        "first": 0,
+        "stop": 256,
+        "forward_capture_seconds": 2.4926012095529586,
+        "NPZ_write_seconds": 0.22146523895207793,
+        "chunk_wall_seconds_before_seal": 2.755391404032707,
+        "feature_file_bytes": 51832202,
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_host_RSS_bytes": 5891309568,
+        "batch_timings": [
+          {
+            "first_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07843016996048391
+          },
+          {
+            "first_row": 8,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0778492990648374
+          },
+          {
+            "first_row": 16,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07788687595166266
+          },
+          {
+            "first_row": 24,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07776528201065958
+          },
+          {
+            "first_row": 32,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07781803200487047
+          },
+          {
+            "first_row": 40,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777684060158208
+          },
+          {
+            "first_row": 48,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07773666700813919
+          },
+          {
+            "first_row": 56,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07783140195533633
+          },
+          {
+            "first_row": 64,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07789091090671718
+          },
+          {
+            "first_row": 72,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07797415903769433
+          },
+          {
+            "first_row": 80,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07783182198181748
+          },
+          {
+            "first_row": 88,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07795388693921268
+          },
+          {
+            "first_row": 96,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07784330996219069
+          },
+          {
+            "first_row": 104,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07787076104432344
+          },
+          {
+            "first_row": 112,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777737139724195
+          },
+          {
+            "first_row": 120,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07784101495053619
+          },
+          {
+            "first_row": 128,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07791233493480831
+          },
+          {
+            "first_row": 136,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07781005895230919
+          },
+          {
+            "first_row": 144,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07784967892803252
+          },
+          {
+            "first_row": 152,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07777054898906499
+          },
+          {
+            "first_row": 160,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07785996503662318
+          },
+          {
+            "first_row": 168,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07781151100061834
+          },
+          {
+            "first_row": 176,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07781955401878804
+          },
+          {
+            "first_row": 184,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777916309889406
+          },
+          {
+            "first_row": 192,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0778238499769941
+          },
+          {
+            "first_row": 200,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777829079888761
+          },
+          {
+            "first_row": 208,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07782820693682879
+          },
+          {
+            "first_row": 216,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07788878900464624
+          },
+          {
+            "first_row": 224,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07781960302963853
+          },
+          {
+            "first_row": 232,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07773414393886924
+          },
+          {
+            "first_row": 240,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07810255303047597
+          },
+          {
+            "first_row": 248,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07893016003072262
+          }
+        ]
+      },
+      "model_only_CPU_load_seconds": 15.318208007025532,
+      "production_specification_identical": true,
+      "repeated_calibration_forwards": 0,
+      "forecast_remaining_forward_seconds": 72.2854350770358,
+      "forecast_scope": "Firstchunk extrapolation only, excludes modelsetup/IO/CV/audits/recovery; update with laterchunks. Not billing/GPUbusy time.",
+      "observed_utc": "2026-11-24T14:59:15.508938+00:00"
+    },
+    "gue_splice_reconstructed": {
+      "status": "PASS_REUSED_AS_FIRST_PRODUCTION_CHUNK",
+      "alias": "candidate_01",
+      "split": "train",
+      "planned_spec_id": "0fe2a52e691f25784d62611f60c3e59345c9dbce3784107dcad653bb53a02592",
+      "source_identity_sha256": "0193a13e31bb6288409b5399982716ecf137e1d1d76e44b8893f31cac8e0d8ca",
+      "chunk_seal_sha256": "d63e4d94b0cd627f6ecf72f1379d79f75e08c118ed9c8319a7e32c97dd52863f",
+      "measurement": {
+        "status": "CHUNK_VALIDATED",
+        "logical_rows": 256,
+        "physical_batches": 32,
+        "physical_rows": 256,
+        "fillers": 0,
+        "first": 0,
+        "stop": 256,
+        "forward_capture_seconds": 2.4903071499429643,
+        "NPZ_write_seconds": 0.246768289944157,
+        "chunk_wall_seconds_before_seal": 2.780732803978026,
+        "feature_file_bytes": 51847570,
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_host_RSS_bytes": 5891309568,
+        "batch_timings": [
+          {
+            "first_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0789811770664528
+          },
+          {
+            "first_row": 8,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07754679990466684
+          },
+          {
+            "first_row": 16,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07773346302565187
+          },
+          {
+            "first_row": 24,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07779176207259297
+          },
+          {
+            "first_row": 32,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07782627397682518
+          },
+          {
+            "first_row": 40,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07785766094457358
+          },
+          {
+            "first_row": 48,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07781945308670402
+          },
+          {
+            "first_row": 56,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07787756191100925
+          },
+          {
+            "first_row": 64,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07785497698932886
+          },
+          {
+            "first_row": 72,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07780792599078268
+          },
+          {
+            "first_row": 80,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07778646401129663
+          },
+          {
+            "first_row": 88,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07778003392741084
+          },
+          {
+            "first_row": 96,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07779313297942281
+          },
+          {
+            "first_row": 104,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777141930302605
+          },
+          {
+            "first_row": 112,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07773459400050342
+          },
+          {
+            "first_row": 120,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07778446096926928
+          },
+          {
+            "first_row": 128,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07773404405452311
+          },
+          {
+            "first_row": 136,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07790373102761805
+          },
+          {
+            "first_row": 144,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777979000704363
+          },
+          {
+            "first_row": 152,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07776292797643691
+          },
+          {
+            "first_row": 160,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07784041506238282
+          },
+          {
+            "first_row": 168,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0776626750594005
+          },
+          {
+            "first_row": 176,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07786027598194778
+          },
+          {
+            "first_row": 184,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07771145005244762
+          },
+          {
+            "first_row": 192,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07786145794671029
+          },
+          {
+            "first_row": 200,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07775839092209935
+          },
+          {
+            "first_row": 208,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07772724400274456
+          },
+          {
+            "first_row": 216,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07776505092624575
+          },
+          {
+            "first_row": 224,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07768844394013286
+          },
+          {
+            "first_row": 232,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07776578201446682
+          },
+          {
+            "first_row": 240,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07803043304011226
+          },
+          {
+            "first_row": 248,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07774699397850782
+          }
+        ]
+      },
+      "model_only_CPU_load_seconds": 15.318208007025532,
+      "production_specification_identical": true,
+      "repeated_calibration_forwards": 0,
+      "forecast_remaining_forward_seconds": 72.21890734834597,
+      "forecast_scope": "Firstchunk extrapolation only, excludes modelsetup/IO/CV/audits/recovery; update with laterchunks. Not billing/GPUbusy time.",
+      "observed_utc": "2026-11-24T14:59:33.224375+00:00"
+    },
+    "gue_mouse_0": {
+      "status": "PASS_REUSED_AS_FIRST_PRODUCTION_CHUNK",
+      "alias": "candidate_01",
+      "split": "train",
+      "planned_spec_id": "19680be35004129c1d2deb41e811676684dca76b66968c953f662ea5c95dd305",
+      "source_identity_sha256": "0193a13e31bb6288409b5399982716ecf137e1d1d76e44b8893f31cac8e0d8ca",
+      "chunk_seal_sha256": "d2a5ac2567681821ea4c89a7ae80f5a47d77e6f85e27d15d2c6fde7d0ad82106",
+      "measurement": {
+        "status": "CHUNK_VALIDATED",
+        "logical_rows": 256,
+        "physical_batches": 32,
+        "physical_rows": 256,
+        "fillers": 0,
+        "first": 0,
+        "stop": 256,
+        "forward_capture_seconds": 2.4835032992996275,
+        "NPZ_write_seconds": 0.26709907595068216,
+        "chunk_wall_seconds_before_seal": 2.800802994053811,
+        "feature_file_bytes": 51820938,
+        "peak_GPU_allocated_bytes": 3222700032,
+        "peak_GPU_reserved_bytes": 3997171712,
+        "peak_host_RSS_bytes": 5891309568,
+        "batch_timings": [
+          {
+            "first_row": 0,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07839105103630573
+          },
+          {
+            "first_row": 8,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07741855503991246
+          },
+          {
+            "first_row": 16,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07744767901021987
+          },
+          {
+            "first_row": 24,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07749786588829011
+          },
+          {
+            "first_row": 32,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07737396797165275
+          },
+          {
+            "first_row": 40,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07763760699890554
+          },
+          {
+            "first_row": 48,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07727768097538501
+          },
+          {
+            "first_row": 56,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07726185698993504
+          },
+          {
+            "first_row": 64,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07861756510101259
+          },
+          {
+            "first_row": 72,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07742822007276118
+          },
+          {
+            "first_row": 80,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07742997200693935
+          },
+          {
+            "first_row": 88,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0791020899778232
+          },
+          {
+            "first_row": 96,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07754294399637729
+          },
+          {
+            "first_row": 104,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07742134900763631
+          },
+          {
+            "first_row": 112,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07739093294367194
+          },
+          {
+            "first_row": 120,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07743096409831196
+          },
+          {
+            "first_row": 128,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0773865170776844
+          },
+          {
+            "first_row": 136,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0778878970304504
+          },
+          {
+            "first_row": 144,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07753289793618023
+          },
+          {
+            "first_row": 152,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07747923699207604
+          },
+          {
+            "first_row": 160,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0774154900573194
+          },
+          {
+            "first_row": 168,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07737087295390666
+          },
+          {
+            "first_row": 176,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07753742509521544
+          },
+          {
+            "first_row": 184,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07762112200725824
+          },
+          {
+            "first_row": 192,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07754730002488941
+          },
+          {
+            "first_row": 200,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07753957901149988
+          },
+          {
+            "first_row": 208,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07754846196621656
+          },
+          {
+            "first_row": 216,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07750285195652395
+          },
+          {
+            "first_row": 224,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0776657999958843
+          },
+          {
+            "first_row": 232,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07759662496391684
+          },
+          {
+            "first_row": 240,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.0777344040106982
+          },
+          {
+            "first_row": 248,
+            "logical_rows": 8,
+            "physical_rows": 8,
+            "fillers": 0,
+            "synchronized_forward_capture_seconds": 0.07746651710476726
+          }
+        ]
+      },
+      "model_only_CPU_load_seconds": 15.318208007025532,
+      "production_specification_identical": true,
+      "repeated_calibration_forwards": 0,
+      "forecast_remaining_forward_seconds": 72.0215956796892,
+      "forecast_scope": "Firstchunk extrapolation only, excludes modelsetup/IO/CV/audits/recovery; update with laterchunks. Not billing/GPUbusy time.",
+      "observed_utc": "2026-11-24T14:59:51.122850+00:00"
+    }
+  },
+  "additional_calibration_forwards": 0,
+  "changed_runtime_or_dev_based_selection": false
+}

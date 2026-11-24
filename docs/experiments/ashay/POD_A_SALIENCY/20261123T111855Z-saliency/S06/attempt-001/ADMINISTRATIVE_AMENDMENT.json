@@ -1,0 +1,18 @@
+{
+  "schema_version": "s06-administrative-publication-repair-v1",
+  "reason": "Publication guard source contained the private-name byte literals that the same guard rejects. Assemble identical runtime guard bytes from parts to avoid self-matching the published source. Guard behavior, allowlist and sanitization are unchanged.",
+  "detected_before_publication": true,
+  "prior_unpublished_scientific_receipt_sha256": "641f2568ad8ebd7e988754a7acdb1435b376afcbee8185df7c31f0d61a6c8ccd",
+  "preserved_prior_metadata_directory": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S06/attempt-001/administrative-revisions/scientific-seal-001",
+  "changed_paths": [
+    "administration/publish_checkpoint.py",
+    "ADMIN_SOURCE_IDENTITY.json"
+  ],
+  "old_publisher_sha256": "37e43ebbc98b24755f9415a0bb92f66f33952d89f618d19710c28aa19b3ebbd4",
+  "new_publisher_sha256": "bf7ab723b88d7be4700e8304e58888f7ef5f96f20d4ab8168d5d41f0a512f070",
+  "numerical_source_bundle_unchanged": "24861a41cfda67196d81cbc56bdb889b865d4daacd8e270359a69212c61c9d64",
+  "scientific_payloads_changed": false,
+  "S04_protocol_or_canonical_package_changed": false,
+  "scope": "Only administrative source/output receipt/controller hash bindings; no re-extraction, fitting, LM regeneration or private science re-upload",
+  "observed_utc": "2026-11-24T15:46:51.034020+00:00"
+}

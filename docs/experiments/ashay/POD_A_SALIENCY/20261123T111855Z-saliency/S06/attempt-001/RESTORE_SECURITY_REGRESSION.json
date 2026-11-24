@@ -1,0 +1,51 @@
+{
+  "schema_version": "s06-restore-security-regression-v1",
+  "status": "PASS",
+  "timing": "Supplemental post-entry regression; not misrepresented as preproduction evidence",
+  "executed_recovery_recipe_sha256": "6f39cad895385914d031b05fb1bd8f46c4ae9386f505c4bd9270699a5ff5218e",
+  "executed_exact_fragment_sha256": "8599f9eacca866308be5427063905d6bee09420bc89f74cf10719e36aea02818",
+  "checks": [
+    {
+      "fixture": "valid",
+      "status": "PASS_VALID"
+    },
+    {
+      "fixture": "duplicate",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "missing",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "extra",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "traversal",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "absolute",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "symlink",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "device",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "digest",
+      "status": "PASS_REJECTED"
+    },
+    {
+      "fixture": "declared-too-large",
+      "status": "PASS_REJECTED"
+    }
+  ],
+  "real_candidate_payload_read": false,
+  "model_or_classifier_execution": false
+}

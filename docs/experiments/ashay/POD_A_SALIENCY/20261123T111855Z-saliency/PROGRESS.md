@@ -1,7 +1,3 @@
-S06 RUNNING — 2026-11-24T15:44:21.296763+00:00
+S06 scientific scope complete: all9 candidates,90bundles/69120logicalrows/2340matrices,90LMunits/180metricrecords;360exact frozen keys verified. All9 candidate payloads freshly privately recovered with all10bundles/260matrices,10LMpointpairs/5devuncertainty outputs and390+390future S07 identities each. All S05 work reused, S04 freeze/no-deadline preserved. Final administrative metadata/Git proof are separate delivery layers. Stop before S07.
 
-New scope: 90/90 extraction bundles; 69120/69120 logical rows; 2340/2340 representation matrices; 90/90 LM units; 360/360 sealed specification keys. Scientific verification and private protection remain separate: 9/9 candidates protected.
-
-S05 reuse: 18 H3 bundles, 121212 logical rows, 468 matrices, 702 heads and 702 fixed applications, 21 audits. No S05 work replayed. S04 freeze and no-deadline amendment preserved.
-
-Readiness R1–R5 PASS. Current operation and exact unfinished keys are in RESUME_MANIFEST.json. Continue S06 only; stop before S07. Parent/intervention/exposure/replication/forget-evidence limitations remain unchanged. Billing unknown.
+WAITING_FOR_APPROVAL: S07

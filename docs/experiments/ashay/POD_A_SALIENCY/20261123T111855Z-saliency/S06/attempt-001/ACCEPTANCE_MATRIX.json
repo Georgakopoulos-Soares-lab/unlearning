@@ -1,0 +1,260 @@
+{
+  "schema_version": "s06-objective-acceptance-v1",
+  "status": "SCIENTIFIC_GATES_1_9_PASS_FINAL_DELIVERY_PENDING",
+  "gates": [
+    {
+      "gate": 1,
+      "status": "PASS",
+      "claim": "All9 exact approved candidate scopes and own unchanged H3/recovery predecessor gates pass",
+      "evidence": [
+        {
+          "path": "ENTRY_VALIDATION.json",
+          "sha256": "89bead38ff86f2763f3d3f757f1d82f00ac65b18ad8601056015ab9058e62098"
+        },
+        {
+          "path": "APPROVAL_RECORD.json",
+          "sha256": "101a25ade0b25b50144ee616a60d148c2c7319854f3f53d42901151ba7180474"
+        },
+        {
+          "path": "READINESS.json",
+          "sha256": "90e3d5913aa52763d04d2e509a5e5eae0e4a0c1c200dc46504e82494cf0f92b6"
+        }
+      ]
+    },
+    {
+      "gate": 2,
+      "status": "PASS",
+      "claim": "Exact equality with all360 frozen S06 keys, no omissions/unexpected replacements",
+      "evidence": [
+        {
+          "path": "COVERAGE_VALIDATION.json",
+          "sha256": "3fe5d60b9b2c6a84fd75d50e808e25284744a66f8484783e63cc37cc26035624"
+        },
+        {
+          "path": "FINITE_EXECUTION_MANIFEST.jsonl",
+          "sha256": "4ffcdd546d5b7c75df302f5313a87f945b0bf7bcf204f33b219fede00f6a23e8"
+        },
+        {
+          "path": "ALL_UNIT_RECEIPTS.jsonl",
+          "sha256": "a659a73619d2027e838ecc5723c305d4ab86f55d57b6dfc70f9d85296ab900e2"
+        }
+      ]
+    },
+    {
+      "gate": 3,
+      "status": "PASS",
+      "claim": "All90bundles/69120logicalrows/2340matrices satisfy exact row/shape/dtype/finite/mask contracts",
+      "evidence": [
+        {
+          "path": "OTHER_FIVE_FEATURE_INDEX.json",
+          "sha256": "a3c7b2508f8e7efb23443097815d210e023c861587c96b5e9b193900f6e3929a"
+        },
+        {
+          "path": "ROW_IDENTITY_VERIFICATION.json",
+          "sha256": "a9846abcf48ce95dbc8c8d14e4dfadf606f420e0448dc04f5cfd0c6182d1ee00"
+        },
+        {
+          "path": "COVERAGE_VALIDATION.json",
+          "sha256": "3fe5d60b9b2c6a84fd75d50e808e25284744a66f8484783e63cc37cc26035624"
+        }
+      ]
+    },
+    {
+      "gate": 4,
+      "status": "PASS",
+      "claim": "90LMunits/180metric records have numerical estimates or correctly represented explicit-null dispositions; numeric vs disposition availability separate",
+      "evidence": [
+        {
+          "path": "LM_SUFFICIENT_STATISTICS_INDEX.json",
+          "sha256": "4f8ccc50eaa8eac38bd76ff82626dd80e8bd3584c455a851f3ba0c2090350627"
+        },
+        {
+          "path": "LM_MARGINALS.jsonl",
+          "sha256": "d658e57f14b727c278128fdf6fe572871db560873f3d306c04511da2da629ca8"
+        },
+        {
+          "path": "COVERAGE_VALIDATION.json",
+          "sha256": "3fe5d60b9b2c6a84fd75d50e808e25284744a66f8484783e63cc37cc26035624"
+        }
+      ]
+    },
+    {
+      "gate": 5,
+      "status": "PASS",
+      "claim": "All required saved-statistics point/draw/mask/CI checks pass atol1e-12,rtol0; no GPU replay",
+      "evidence": [
+        {
+          "path": "COVERAGE_VALIDATION.json",
+          "sha256": "3fe5d60b9b2c6a84fd75d50e808e25284744a66f8484783e63cc37cc26035624"
+        },
+        {
+          "path": "candidates/candidate_01/VERIFICATION.json",
+          "sha256": "20864222379a0d0097f5b3ed5544eb3e6493307e29f29f30f219537253d317f9"
+        },
+        {
+          "path": "candidates/candidate_02/VERIFICATION.json",
+          "sha256": "4920fe5a09d50e79611d70632763ade34e26a336457aff07ecec9f0610666759"
+        },
+        {
+          "path": "candidates/candidate_03/VERIFICATION.json",
+          "sha256": "fa11cf973ed63ec966053d3ed2fdfc42212baa82b036a52e3a9705dee7e00da6"
+        },
+        {
+          "path": "candidates/candidate_04/VERIFICATION.json",
+          "sha256": "bdae6c3b0a04630a0e8215fde14a5221ad44d9c02bc33bdfa1dd69c434fe6d71"
+        },
+        {
+          "path": "candidates/candidate_05/VERIFICATION.json",
+          "sha256": "953fa414891a66aa1f334da9f1764242720e90de70d1adfffcf3493e055c5340"
+        },
+        {
+          "path": "candidates/candidate_06/VERIFICATION.json",
+          "sha256": "a67ce69820aa27b9ba1ee7a373166b548121170da453daaa88297f2e831b65de"
+        },
+        {
+          "path": "candidates/candidate_07/VERIFICATION.json",
+          "sha256": "9beea2ea21441be69174859e3d79f21ad815d487f622908a9bb739d68d5728c5"
+        },
+        {
+          "path": "candidates/candidate_08/VERIFICATION.json",
+          "sha256": "85c632cd0b981cc743520abcdd8862c4ae7bee03efb711480dfe883dead12591"
+        },
+        {
+          "path": "candidates/candidate_09/VERIFICATION.json",
+          "sha256": "a84827ad0b80634cc591ea1f71d0f09515fc102eb0456867b59aa7c7a103354a"
+        }
+      ]
+    },
+    {
+      "gate": 6,
+      "status": "PASS",
+      "claim": "Each new candidate payload privately immutable/fresh fullmembers restored and independent all10LM+all5dev replay passed",
+      "evidence": [
+        {
+          "path": "candidates/candidate_01/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "3a8ab0ff210e11a0444ce48c4c747d092dcaa6275c6e09be67d7927cd69fadf4"
+        },
+        {
+          "path": "candidates/candidate_02/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "4bc4a725e3b13a283c762913e4e1183d59824952d47d49d34e00ca2fe518dc5e"
+        },
+        {
+          "path": "candidates/candidate_03/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "1f3942d7f0cafcdfb500e9cb25f2452f717e6042b9994c80304ad332355021f6"
+        },
+        {
+          "path": "candidates/candidate_04/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "d3fb664d52860d23e7a98fda974ace4d31374f9c1a9fb2055e3fff47c45f9f69"
+        },
+        {
+          "path": "candidates/candidate_05/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "a206469e2c916fee820337266be535daa22286c21455dd33842ef738af8804c8"
+        },
+        {
+          "path": "candidates/candidate_06/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "a699b53b65572c75be50afebe4f1e6a73af7f2230ae289c9c0115b102be68ef0"
+        },
+        {
+          "path": "candidates/candidate_07/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "4129857ceecaf8b2f827b037b2db3c0b80052d93f8b9b1a72078cb79cda7d3cc"
+        },
+        {
+          "path": "candidates/candidate_08/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "836a27198b9692dd743ff2360871d555682e44c3442656f3ddef59e17a7a511c"
+        },
+        {
+          "path": "candidates/candidate_09/PRIVATE_RECOVERY_RECEIPT.json",
+          "sha256": "5ff7e08a8bc89e656962ed7a7edde1c2f4a60069f10a0d04ca883d4c477131e5"
+        }
+      ]
+    },
+    {
+      "gate": 7,
+      "status": "PASS",
+      "claim": "Real restored S07 reader all2340matrices;3510refit+3510fixed identities and immutable original-head members resolved without fitting/applying heads",
+      "evidence": [
+        {
+          "path": "S07_HANDOFF.json",
+          "sha256": "1a1ed852cd7b4a3cdb406c9db63e39771a3d7cf4a7012119ee84f49a715a7a4f"
+        },
+        {
+          "path": "candidates/candidate_01/S07_INPUT_BINDINGS.json",
+          "sha256": "e89d18004cf88278978bbf99bc17c86c6c5e0d492776dce26599f5dc478bea5d"
+        },
+        {
+          "path": "candidates/candidate_02/S07_INPUT_BINDINGS.json",
+          "sha256": "5d576fa84e37ad0d9e177a60b22416eba3dcb30485547098da7a5b1146484414"
+        },
+        {
+          "path": "candidates/candidate_03/S07_INPUT_BINDINGS.json",
+          "sha256": "550eb95504dde5f1df124b02f89255b9d3aff189a47685d2a897f9e4a1b14a17"
+        },
+        {
+          "path": "candidates/candidate_04/S07_INPUT_BINDINGS.json",
+          "sha256": "c50a4f60fb6cd02952577297be44e1236196c049ca64f53bf9a46ff8f96878db"
+        },
+        {
+          "path": "candidates/candidate_05/S07_INPUT_BINDINGS.json",
+          "sha256": "57a24c29cd766baad657ab55961c21594c2a3ae4bdc71357d6c090a41ac6dee4"
+        },
+        {
+          "path": "candidates/candidate_06/S07_INPUT_BINDINGS.json",
+          "sha256": "02a10b8233cfef98d75142c5021969811db0cce96927b817e7be3d8d3f1bce02"
+        },
+        {
+          "path": "candidates/candidate_07/S07_INPUT_BINDINGS.json",
+          "sha256": "9c1e240eb62225f8784930c296b6b73b00709a249e8b555ab280f7275a67d328"
+        },
+        {
+          "path": "candidates/candidate_08/S07_INPUT_BINDINGS.json",
+          "sha256": "d321f99ff2eaf9284a226f83ffaa233aad7db420b13776d144c2e2b1aa70bc9f"
+        },
+        {
+          "path": "candidates/candidate_09/S07_INPUT_BINDINGS.json",
+          "sha256": "e48120e2d28ac3004351d958d4437941ce8571c56a1852308247b48a97fe3045"
+        }
+      ]
+    },
+    {
+      "gate": 8,
+      "status": "PASS",
+      "claim": "Original S04 science/S05 historical evidence preserved; exact new/reused accounting; branch boundaries independently enforced by every publication",
+      "evidence": [
+        {
+          "path": "COVERAGE_VALIDATION.json",
+          "sha256": "3fe5d60b9b2c6a84fd75d50e808e25284744a66f8484783e63cc37cc26035624"
+        },
+        {
+          "path": "SOURCE_BINDINGS.json",
+          "sha256": "351dd46afbc93f10950915ef387d303ffefbf4a24791465f89135e2e0b529044"
+        }
+      ]
+    },
+    {
+      "gate": 9,
+      "status": "PASS",
+      "claim": "Nonempty typed public outputs, all360 canonicalunit wrappers/180metrics schema valid; exact full key statuses and source joins present",
+      "evidence": [
+        {
+          "path": "ALL_UNIT_RECEIPTS.jsonl",
+          "sha256": "a659a73619d2027e838ecc5723c305d4ab86f55d57b6dfc70f9d85296ab900e2"
+        },
+        {
+          "path": "LM_MARGINALS.jsonl",
+          "sha256": "d658e57f14b727c278128fdf6fe572871db560873f3d306c04511da2da629ca8"
+        },
+        {
+          "path": "SOURCE_IDENTITY.json",
+          "sha256": "24861a41cfda67196d81cbc56bdb889b865d4daacd8e270359a69212c61c9d64"
+        }
+      ]
+    },
+    {
+      "gate": 10,
+      "status": "PENDING",
+      "claim": "Final Git exact bytes, finalmetadata fullmember recovery+deterministic mapping regeneration, owned process/lock closure",
+      "evidence_policy": "Separate final administrative recovery and external FINAL_DELIVERY_RECEIPT; do not fabricate future commit/hash"
+    }
+  ],
+  "no_subjective_score": true
+}

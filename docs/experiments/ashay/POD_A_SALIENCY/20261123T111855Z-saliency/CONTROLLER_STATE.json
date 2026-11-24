@@ -449,6 +449,22 @@
         "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
         "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ]
+    },
+    "S06": {
+      "status": "COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
+      "sha256": "930faab087eb41e2d8a48f51023b5713b939bff1146d5a9c9ec4fed0f3352e9d",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     }
   },
   "candidate_gates": {
@@ -658,7 +674,7 @@
       "delivery_status": "PRIVATE_SCIENCE_AND_FINAL_METADATA_RECOVERY_PASS_GIT_PROOF_EXTERNAL"
     },
     "S06": {
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "approved": true,
       "attempt_id": "attempt-001",
       "scope_candidates": [
@@ -683,10 +699,11 @@
         "candidate_08",
         "candidate_09"
       ],
-      "unfinished_candidates": []
+      "unfinished_candidates": [],
+      "delivery_status": "ALL9_SCIENCE_AND_PRIVATE_RECOVERY_PASS_FINAL_ADMIN_GIT_PROOF_PENDING"
     },
     "S07": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     },
     "S08": {
@@ -991,6 +1008,21 @@
       "receipt_sha256": "5aafdc0478d28b2269a68472303c0625406bf76e2ba28a1eef13f9e064930d2c",
       "scope": "Exact final administrative metadata/controller/S05receipt/S06handoff restored; candidate scientific archives referenced by immutable verified dependency graph; no extra replay or refits",
       "self_reference": "New proof and final Gitdelivery external to their own immutablemetadataarchive; scientificreceipt/handoff exactbytes restored."
+    },
+    "S06_candidates": {
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
+      "candidate_revisions": {
+        "candidate_01": "f389ed573d034fd80180207bd517debdee81c5d2",
+        "candidate_02": "15736f312dff14361e822c4bd9a0fb24f6e5cb2a",
+        "candidate_03": "de07146b55e45daefacd6c9faa700641d9f9f957",
+        "candidate_04": "50d8589f087dcc4f68b311d3bd06980a9b454ec5",
+        "candidate_05": "3aa90b072b3361044c349d64ddf91d8d0a111c49",
+        "candidate_06": "7d15bcfb697fdbe7d4c0f3923d344e24473ade28",
+        "candidate_07": "6433bee39c118f055dc530e1cb5bec982beef4a9",
+        "candidate_08": "9d5b22fb198d2e10fe3f02a771a46e0b9d85b917",
+        "candidate_09": "ab111a486975ba0c2c9459969c99240784386f9a"
+      },
+      "scope": "All9 fullmembers/all10bundles260matrices/all10LMpointpairs5devuncertainty/all390+390future identities each; no fits/head applications/GPU/cleanruntime replay"
     }
   },
   "external_dependencies": [
@@ -1045,21 +1077,31 @@
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
     "supplement_commit": "e8a12e714ffebea55febec6df3072974912b0bf1",
     "completed_receipts": [
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/S05_RECEIPT.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/S05_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json"
     ],
     "unfinished_units": [],
-    "transfer_totals": {},
+    "transfer_totals": {
+      "S06_candidate_private_upload_bytes": 12189661123,
+      "S06_candidate_HTTP_readback_bytes": 12189661123,
+      "S06_logical_rows": 69120,
+      "S06_physical_rows": 69120,
+      "S06_classifier_fits": 0,
+      "S06_head_applications": 0
+    },
     "owned_processes": [],
     "unresolved_decisions": [
       "Current capacity and adapter/input/consumer qualification before outcomes"
     ],
-    "next_action": "Continue only remaining finite S06 candidate scope through private recovery and publication; stop before S07",
+    "next_action": "Stop. WAITING_FOR_APPROVAL: S07. Reconcile scientific/finalmetadata/exact Git proof and current resources before later direct S07 approval.",
     "prerequisites": [
-      "Passing source-bound readiness gates",
-      "Frozen S04/S05 unchanged",
-      "No probe fitting/applications, H3 repeats, tests, forget or S09contrasts"
+      "Direct APPROVE S07 at exact canonical package commit",
+      "Reconcile S06 scientific/final metadata/delivery proofs and owned process start identities",
+      "Resolve all390+390 per candidate typed selectors and exact original-base scaler/head members from immutable dependencies; no refit/replacement of fixed references",
+      "Current source/runtime/candidate entry, private route, memory/capacity admission; preserve all valid S05/S06 units"
     ],
-    "reconciled_utc": "2026-11-24T15:44:20.235718+00:00",
+    "reconciled_utc": "2026-11-24T15:45:43.234217+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
