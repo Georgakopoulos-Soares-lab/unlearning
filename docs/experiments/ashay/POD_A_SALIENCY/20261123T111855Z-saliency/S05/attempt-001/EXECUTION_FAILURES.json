@@ -1,0 +1,30 @@
+{
+  "schema_version": "s05-execution-failures-v1",
+  "prior_record": {
+    "failures": [
+      {
+        "operation": "read inherited GPU worker environment",
+        "exit_status": 1,
+        "timed_out": false,
+        "reason": "Relative Path parent traversal resolved against dot instead of absolute control root. Exact inherited fit functions were already extracted; no model/data/fit dispatch occurred.",
+        "repair": "Resolve control root before loading existing environment; reused completed function extraction without repetition."
+      }
+    ],
+    "scientific_failures": 0
+  },
+  "additional": [
+    {
+      "command": "S05-focused-synthetic-readiness-001",
+      "exit_status": 1,
+      "reason": "GPU interpreter has no sklearn; failed before fixture creation, no production forward/fit",
+      "resolution": "Bound existing qualified separate CPU runtime; 34 final source-bound tests PASS; no environment installation"
+    },
+    {
+      "command": "H3-candidate_01-publication-001",
+      "exit_status": 1,
+      "reason": "Administrative label regex omitted underscore; rejected before Git mutations",
+      "resolution": "Permit underscore in internal operation labels; retry publication only with new log identity002; science, verification and recovery seals reused",
+      "parent_finish_candidate_exit_status": 1
+    }
+  ]
+}

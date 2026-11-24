@@ -422,6 +422,22 @@
         "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
         "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ]
+    },
+    "S05": {
+      "status": "COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/S05_RECEIPT.json",
+      "sha256": "22ef7c0660afda2691503e7cc9d92701df419270a9aa21e340b31638bc1d0640",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     }
   },
   "candidate_gates": {
@@ -601,7 +617,7 @@
       "S05_approved": false
     },
     "S05": {
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "approved": true,
       "attempt_id": "attempt-001",
       "scope_candidates": [
@@ -627,10 +643,11 @@
         "candidate_08",
         "candidate_09"
       ],
-      "unfinished_candidates": []
+      "unfinished_candidates": [],
+      "delivery_status": "PRIVATE_SCIENCE_AND_FINAL_METADATA_RECOVERY_PASS_GIT_PROOF_EXTERNAL"
     },
     "S06": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     },
     "S07": {
@@ -913,6 +930,32 @@
       "members_verified": 156,
       "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
       "scope": "Exact frozen S04planningpayload/private cohort-fold-draw-source metadata restored; deterministic regen and independentcounter passed. No newmodel audit or clean-runtime rebuild. Finalmutable rootcontrol state preserved by named Gitdelivery; externalproof avoids selfreference."
+    },
+    "S05_H3_candidates": {
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
+      "candidate_revisions": {
+        "candidate_01": "8742e786c03eda6e668f88d28300b2f427afd0af",
+        "candidate_02": "c5171a943ae08378155c79bc9288554801cc8c6f",
+        "candidate_03": "ab803960f96af98ffbfd49039ad275bbcc6149fa",
+        "candidate_04": "9ceb6f097fbae4a341221bd603f000a134bb4ee4",
+        "candidate_05": "7d6b73475108f46ee8a744c791787b454b45a06d",
+        "candidate_06": "3fa6025ec2310e6be8304f857eed8f13545c41a3",
+        "candidate_07": "8d0759181ecd06990819509f6de9993110fed4c3",
+        "candidate_08": "fba68426eace1217215df502c4d147da9e6ce8ab",
+        "candidate_09": "2117446c049a5f7a4c8ad0a89df4555280daccb3"
+      },
+      "scope": "All archived member bytes plus frozen42path/18LM restored CPU panel; no cleanruntime/GPU/fullCV replay"
+    },
+    "S05_final_metadata": {
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
+      "immutable_revision": "af7c897f8bca1dc27e21a98bfe86f167c2f41f04",
+      "archive_sha256": "0bd69b4dd685f837fe89827fe7d45c8940ae3de557ee9ea2e896415fefdcc310",
+      "archive_bytes": 13676458,
+      "exact_members_verified": 445,
+      "receipt_path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/FINAL_METADATA_RECOVERY.json",
+      "receipt_sha256": "5aafdc0478d28b2269a68472303c0625406bf76e2ba28a1eef13f9e064930d2c",
+      "scope": "Exact final administrative metadata/controller/S05receipt/S06handoff restored; candidate scientific archives referenced by immutable verified dependency graph; no extra replay or refits",
+      "self_reference": "New proof and final Gitdelivery external to their own immutablemetadataarchive; scientificreceipt/handoff exactbytes restored."
     }
   },
   "external_dependencies": [
@@ -967,22 +1010,36 @@
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
     "supplement_commit": "a469fd5a30d1cad182a458ad07bac65aaeef1e6a",
     "completed_receipts": [
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/S04_RECEIPT.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/S04_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/S05_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/S06_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
     "unfinished_units": [],
-    "transfer_totals": {},
+    "transfer_totals": {
+      "candidate_private_upload_bytes": 23096672771,
+      "candidate_explicit_HTTP_readback_bytes": 23096672771,
+      "S05_logical_rows": 121212,
+      "S05_physical_rows": 121320,
+      "production_optimizer_calls": 7105,
+      "audit_optimizer_calls": 210,
+      "recovery_probability_paths": 42,
+      "final_metadata_upload_bytes": 13676458,
+      "final_metadata_explicit_HTTP_readback_bytes": 13676458
+    },
     "owned_processes": [],
     "unresolved_decisions": [
       "Real usable remaining owned storage before substantial batch; no shared-df substitution",
       "Implementation numerical/source gates before outcomes"
     ],
-    "next_action": "Continue remaining exact frozen S05 H3 candidates end-to-end; stop before S06",
+    "next_action": "Stop. WAITING_FOR_APPROVAL: S06. Reconcile exact final delivery/individual H3gates/private receipts/currentresources before new direct S06approval and candidate-specific enter guard.",
     "prerequisites": [
-      "SameapprovedS05scope, no furtherapprovalrequired",
-      "All frozenS04bindings unchanged",
-      "No other tasks/test/S09contrasts"
+      "Reconcile exact final Git/private metadata delivery proof, H3 gates/private recovery receipts and actual process/lock state",
+      "New direct S06 approval",
+      "Candidate-specific canonical S06 enter guard",
+      "Recheck actual next-batch storage/memory admission; qualified unchanged native/runtime/cohort bindings"
     ],
-    "reconciled_utc": "2026-11-24T09:52:23.798559+00:00",
+    "reconciled_utc": "2026-11-24T09:58:06.958032+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
