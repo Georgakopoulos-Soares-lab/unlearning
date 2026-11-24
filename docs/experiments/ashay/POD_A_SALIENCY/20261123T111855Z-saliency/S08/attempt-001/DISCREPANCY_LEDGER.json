@@ -1,0 +1,41 @@
+{
+  "schema_version": "s08-discrepancies-v1",
+  "unresolved_scientific_mismatches": [],
+  "scientific_failure_count": 0,
+  "preserved_administrative_history": {
+    "schema_version": "s08-preflight-inspection-events-v1",
+    "scientific_units_affected": 0,
+    "records": [
+      {
+        "operation": "bounded source query",
+        "exit_status": 2,
+        "reason": "Initial query used nonexistent S00_CONTROLLER.md; directory listing resolved actual canonical S00_SALIENCY_CONTROLLER.md, which was read.",
+        "resolved": true
+      },
+      {
+        "operation": "bounded source query",
+        "exit_status": 2,
+        "reason": "Initial queries for freeze_protocol.py and code/verify_h3.py did not match historical script locations; no payload scan or scientific work occurred.",
+        "resolved": "Source discovery deferred to actual declared paths after approval; no dependency replaced."
+      },
+      {
+        "operation": "S08-pre-approval-entry-guard",
+        "exit_status": 1,
+        "reason": "phase unapproved",
+        "resolved": false,
+        "required_action": "Receive exact direct-chat approval line; preserve active controller approval=false until then."
+      }
+    ],
+    "timeouts": [],
+    "current_resolution": {
+      "preapproval_guard": "Resolved by actual exact direct-chat approval and all9entryguardsPASS; originalrecord retained",
+      "scientific_numerical_failures": 0,
+      "metadata_inspection_corrections": [
+        "Schema lookup used schemas instead of actual $defs; actualschema read, no scientificunit affected."
+      ],
+      "source_protocol_or_tolerance_changes_after_full_pass_started": 0
+    }
+  },
+  "new_scientific_method_changes": 0,
+  "tolerances_widened": false
+}

@@ -1,3 +1,3 @@
-S08 approved at exact canonical7007ebd. All9entry/readiness gates passed; source-qualified adversarial checks passed. First2original binary/splice fullCVaudits and4savedpaths passed and retained. Remaining103audits/7016savedpaths are pending; allS07producerrows remain COMPLETE_UNVERIFIED and S08release has not been granted. Finite two-worker CPU queue next; no S09.
+All45S08numericgroups PASS:7020savedpaths/35100metricvectors and105originalfullCVaudits;1680initialauditcalls plus0retries. Producer135retriesreconciledseparately. Private recovery/release/publication pending. S07producerrows remain COMPLETE_UNVERIFIED; no S09.
 
-Resume control/S08/attempt-001/RESUME_MANIFEST.json with actual owned PID/start/boot/lock reconciliation. Do not refit valid completed audit cases or modify S07producer records. Original S04audit/contrast freezes remain binding. Scope ends before S09.
+Read control/S08/attempt-001/RESUME_MANIFEST.json and immutable source/readiness/approval records. Reuse allcompleted numericalunits and originalaudits; exact nextwork isprivate recovery/release andfinaldelivery. No S09 approval or execution.

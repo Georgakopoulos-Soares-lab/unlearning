@@ -777,9 +777,12 @@
       "independent_release": "PENDING_S08"
     },
     "S08": {
-      "status": "PINNED",
+      "status": "RUNNING",
       "approved": false,
-      "attempt_id": "attempt-001"
+      "attempt_id": "attempt-001",
+      "numerical_task_groups_complete": 45,
+      "numeric_verification_status": "PASS",
+      "private_recovery_status": "PENDING"
     },
     "S09": {
       "status": "NOT_STARTED",
@@ -1193,7 +1196,7 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
     "unfinished_units": [
-      "S08 readiness,7020savedpaths/35100vectors,105originalaudits,private recovery,release overlay and publication"
+      "Nineprivatecandidate recovery/release, finalmetadata andGitdelivery"
     ],
     "transfer_totals": {
       "S07_candidate_upload_bytes": 5542236321,
@@ -1208,12 +1211,12 @@
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Complete S08 readiness/source qualification and finite manifest, then independent verification; stop before S09.",
+    "next_action": "Prepare/protect originalpanel dependencies percase, freshrestore/replay/regen, then source-boundrelease/publication; no refitting completedunits or S09.",
     "prerequisites": [
       "S08 readiness PASS before full execution",
       "Original S04freeze/audit and exact S07producer identities"
     ],
-    "reconciled_utc": "2026-11-24T20:52:25.286703+00:00",
+    "reconciled_utc": "2026-11-24T21:29:42.330120+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
