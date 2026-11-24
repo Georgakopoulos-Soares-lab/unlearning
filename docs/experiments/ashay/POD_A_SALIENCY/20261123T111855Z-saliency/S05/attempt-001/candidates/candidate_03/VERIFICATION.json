@@ -1,0 +1,151 @@
+{
+  "status": "PASS",
+  "source_identity_sha256": "8a1b4a73cc4fd01e7d67b67b04d1805df776bf9cd51bb6b0d083e3cb900ce58a",
+  "probability_paths_verified": 156,
+  "classifier_metrics_verified": 780,
+  "LM_units_verified": 2,
+  "frozen_audit_refits_verified": 2,
+  "max_probability_abs_residual": 0.0,
+  "max_metric_draw_interval_abs_residual": 1.7763568394002505e-15,
+  "probability_atol": 1e-10,
+  "metric_draw_interval_atol": 1e-12,
+  "rtol": 0,
+  "CPU_wall_seconds": 26.615423434064724,
+  "peak_RSS_bytes": 632991744,
+  "verification_scope": "Every156newprobabilitypaths/780marginalmetrics/allvaliddraws/masks/CIs, bothLM units andexactfullCVauditrefits",
+  "S09_contrasts_executed": false,
+  "full_private_verification_sha256": "7476e213280d65470ba072b19a08287a464c44eddcc7bd404a0b5769a2c05a05",
+  "alias": "candidate_03",
+  "audit_records": [
+    {
+      "status": "PASS",
+      "planned_audit_spec_id": "4844242fe45aa01ac733467ced1fb0f76d0d6ded6eb1da38dba73747db9aafec",
+      "alias": "candidate_03",
+      "representation": "decoder.layers.16",
+      "cv_seed": 1234,
+      "selected_C": 0.1,
+      "audit_receipt_sha256": "1589989b9a655bde9da17948f6b7b76f2de574427e0337624e6b7219838bc122",
+      "production_receipt_sha256": "30d4affaf442970f10e6e883c728668fb289a5377dcc8a1cc8709a0d60ee18dd",
+      "audit_parameter_content_sha256": "ece687535c83c748650538355080e97f10b2ecba268110ac9446ddff67d511a6",
+      "production_parameter_content_sha256": "ece687535c83c748650538355080e97f10b2ecba268110ac9446ddff67d511a6",
+      "parameter_content_exactly_equal": true,
+      "checks": [
+        {
+          "label": "fullCV_AUROC",
+          "status": "PASS",
+          "atol": 1e-12,
+          "rtol": 0,
+          "coordinates": 3,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0
+          ]
+        },
+        {
+          "label": "fullCV_AUROC",
+          "status": "PASS",
+          "atol": 1e-12,
+          "rtol": 0,
+          "coordinates": 3,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0
+          ]
+        },
+        {
+          "label": "fullCV_AUROC",
+          "status": "PASS",
+          "atol": 1e-12,
+          "rtol": 0,
+          "coordinates": 3,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0
+          ]
+        },
+        {
+          "label": "audit_vs_production_probability",
+          "status": "PASS",
+          "atol": 1e-10,
+          "rtol": 0,
+          "coordinates": 2994,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0,
+            0
+          ]
+        }
+      ],
+      "audit_replaced_production": false
+    },
+    {
+      "status": "PASS",
+      "planned_audit_spec_id": "40152e110f27d71fad041f31dae5e51e953cefb9f129f93cbbfe56dd51c5f798",
+      "alias": "candidate_03",
+      "representation": "decoder.final_norm",
+      "cv_seed": 42,
+      "selected_C": 10,
+      "audit_receipt_sha256": "02a01fe24eb0a0453946c98520aa589ad23025e40fdace3ba3dd0537e09e3711",
+      "production_receipt_sha256": "03bcb16bea1153244323b6893c654f107bb5059ade878d588b5d8a6ae7a9a0ec",
+      "audit_parameter_content_sha256": "d46148d07199f4d5858573d49b1c93207184dca336587b0678c15298a3b7fd5e",
+      "production_parameter_content_sha256": "d46148d07199f4d5858573d49b1c93207184dca336587b0678c15298a3b7fd5e",
+      "parameter_content_exactly_equal": true,
+      "checks": [
+        {
+          "label": "fullCV_AUROC",
+          "status": "PASS",
+          "atol": 1e-12,
+          "rtol": 0,
+          "coordinates": 3,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0
+          ]
+        },
+        {
+          "label": "fullCV_AUROC",
+          "status": "PASS",
+          "atol": 1e-12,
+          "rtol": 0,
+          "coordinates": 3,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0
+          ]
+        },
+        {
+          "label": "fullCV_AUROC",
+          "status": "PASS",
+          "atol": 1e-12,
+          "rtol": 0,
+          "coordinates": 3,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0
+          ]
+        },
+        {
+          "label": "audit_vs_production_probability",
+          "status": "PASS",
+          "atol": 1e-10,
+          "rtol": 0,
+          "coordinates": 2994,
+          "max_abs_residual": 0.0,
+          "violations": 0,
+          "worst_index": [
+            0,
+            0
+          ]
+        }
+      ],
+      "audit_replaced_production": false
+    }
+  ]
+}
