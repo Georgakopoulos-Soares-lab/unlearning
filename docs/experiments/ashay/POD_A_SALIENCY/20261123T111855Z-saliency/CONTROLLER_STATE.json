@@ -762,7 +762,7 @@
         "candidate_08",
         "candidate_09"
       ],
-      "delivery_status": "PRODUCER_AND_NINE_CANDIDATE_RECOVERY_PASS_FINAL_ADMIN_GIT_PROOF_EXTERNAL",
+      "delivery_status": "PRODUCER_AND_SCIENCE_RECOVERY_FINAL_METADATA_PASS_FINAL_GIT_PROOF_EXTERNAL",
       "independent_release": "PENDING_S08"
     },
     "S08": {
@@ -1108,6 +1108,18 @@
         "candidate_09": "5f74601392d56136a122976731b4c2991f8e46b0"
       },
       "scope": "All new bytes plusprospective180path/900vector saved-artifact recovery; no independentnewrelease"
+    },
+    "S07_final_metadata": {
+      "status": "PRIVATE_WRITE_READBACK_VERIFIED",
+      "immutable_revision": "02912809d1245aebeb8a77145430fbfea0b81821",
+      "archive_sha256": "655336c8f1bab9bff7be49aa0331f64b670aecf97cff3450894ef58c81688733",
+      "archive_bytes": 54038275,
+      "exact_members": 1090,
+      "administrative_mapping_regeneration_status": "PASS",
+      "receipt_path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json",
+      "receipt_sha256": "d78e7c4064dd5a52f1112162a6792fb345dde000560b992e1fef184379289889",
+      "scope": "Exact final administrative metadata/controller/S07receipt/S08handoff restored, plus10exact public mappings regenerated from restored saved metadata; candidate scientific archives referenced by immutable verified dependency graph; no extra replay or refits",
+      "self_reference": "New recovery and final Git proof are external to their own named immutable objects"
     }
   },
   "external_dependencies": [
@@ -1165,7 +1177,8 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S08_HANDOFF.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S08_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
     "unfinished_units": [],
     "transfer_totals": {
@@ -1173,7 +1186,9 @@
       "S07_candidate_fresh_HTTP_body_bytes": 5542236321,
       "S07_initial_optimizer_calls": 56160,
       "S07_actual_optimizer_calls": 56295,
-      "S07_convergence_retries": 135
+      "S07_convergence_retries": 135,
+      "S07_final_metadata_upload_bytes": 54038275,
+      "S07_final_metadata_HTTP_body_bytes": 54038275
     },
     "owned_processes": [],
     "unresolved_decisions": [
@@ -1187,7 +1202,7 @@
       "Preserve producer COMPLETE_UNVERIFIED rows; S08 adds source-bound release overlay only after its full checks",
       "No audit panel or contrast family substitution; no raw forget/test/PodB work"
     ],
-    "reconciled_utc": "2026-11-24T19:36:33.765089+00:00",
+    "reconciled_utc": "2026-11-24T19:37:46.541021+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
