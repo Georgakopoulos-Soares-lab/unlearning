@@ -1,0 +1,37 @@
+"""Prospective S07 sampled saved-artifact CPU recovery only. No fitting, GPU, exhaustive S08 audit or release."""
+from pathlib import Path
+import json,hashlib,sys,argparse,time,resource
+import numpy as np,joblib
+from artifact_seals import *
+from s07_cpu import parameter_digest
+from inherited_independent import reconstruct,metrics as independent_metrics
+import inherited_s06_contract as s06
+from threadpoolctl import threadpool_limits
+MAP={'AUROC':'auroc','AP':'average_precision','accuracy':'accuracy','balanced_accuracy':'balanced_accuracy','cross_entropy':'classification_cross_entropy'}
+
+def run(root,alias):
+ root=Path(root);start=time.monotonic();cfg=load(root/'control/RUN_CONFIG.json');source=load(root/'control/SOURCE_IDENTITY.json');need(Path(__file__).resolve()==(root/'code/s07_recovery.py').resolve(),'Restored consumer source required');need(str(Path(sys.executable).absolute())==cfg['cpu_runtime_python'],'Wrong qualified CPU interpreter');need(sha(root/'control/RUN_CONFIG.json')==source['config_sha256'],'Restored configuration changed');need(sha(root/'control/CPU_ENVIRONMENT_LOCK.json')==cfg['cpu_runtime_lock_sha256'],'Restored CPU lock changed')
+ for f in source['files']:need(sha(root/'code'/f['path'])==f['sha256'],'Restored source changed')
+ contract=load(root/'control/RECOVERY_CONTRACT.json');panel=contract['panel'][alias];need(len(panel)==20,'Wrong prospective candidate panel');meta=root/'inputs/s06';baseheads=load(root/'inputs/ORIGINAL_BASE_HEADS.json');checks=[];records=[]
+ with threadpool_limits(limits=4):
+  for key in panel:
+   t=key['task'];rep=key['representation'];arraykey=s06.KEYS[s06.HOOKS.index(rep)];policy=key['policy'];seed=key['cv_seed'];need(rep in cfg['anchors'] and seed==42 and t in cfg['tasks'] and policy in cfg['policies'],'Recovery panel expanded');pr=root/'candidate/tasks'/t/'probabilities'/arraykey/'seed42'/policy;verify_seal(pr,restored=True,required=['predictions.npz','draws.npz','METRICS.json']);m=load(pr/'METRICS.json');ident=m['identity'];need(ident['planned_spec_id']==key['planned_prediction_spec_id'] and ident['source_identity_sha256']==source['producer_source_identity_sha256'] and ident['policy']==policy,'Restored scientific key/source mismatch');projection=root/'recovery-inputs'/(t+'-'+arraykey+'-dev.npz');binding=load(root/'recovery-inputs/PROJECTION_BINDINGS.json');b=next(x for x in binding['records'] if x['task']==t and x['representation']==rep);need(sha(projection)==b['projection_file_sha256'],'Frozen anchor projection changed');rows=s06.metadata(cfg['feature_config'],t,'dev',meta)
+   with np.load(projection,allow_pickle=False) as z:
+    need(z['ids'].tolist()==[r['id'] for r in rows] and z['labels'].tolist()==[r['label'] for r in rows] and z['groups'].tolist()==[r['group'] for r in rows] and z['classes'].tolist()==cfg['feature_config']['cohorts'][t]['dev']['class_order'],'Recovery feature metadata/class/group mismatch');x=z['features'];y=z['labels'];classes=z['classes'];need(x.dtype==np.float32 and x.shape==(512,1920) and np.isfinite(x).all() and hashlib.sha256(x.tobytes()).hexdigest()==b['typed_matrix_bytes_sha256'],'Recovery typed feature values changed')
+   if policy=='independent_refit':path=root/'candidate/tasks'/t/'production'/arraykey/'seed42/head.joblib'
+   else:
+    ref=next(r for r in baseheads if (r['task'],r['representation'],r['cv_seed'])==(t,rep,42));path=root/'inputs'/ref['relative_path'];need(sha(path)==ref['head_sha256'],'Original base head changed')
+   need(sha(path)==ident['head_sha256'],'Restored selected head bytes differ');pipe=joblib.load(path);need(pipe[-1].classes_.tolist()==classes.tolist() and parameter_digest(pipe)==ident['head_parameter_content_sha256'],'Head parameter/class identity changed');independent=reconstruct(pipe,x)
+   with np.load(pr/'predictions.npz',allow_pickle=False) as z:
+    need(z['ids'].tolist()==[r['id'] for r in rows] and z['labels'].tolist()==y.tolist() and z['groups'].tolist()==[r['group'] for r in rows] and z['classes'].tolist()==classes.tolist(),'Saved prediction row/group/classes changed');p=z['probabilities'];checks.append(strict_residual(independent,p,1e-10,'probability_'+key['planned_prediction_spec_id']))
+   # Metrics use the saved full-precision probability endpoint after its independent function check.
+   weights,drawsha=s06.draw_weights(cfg['feature_config'],t,meta);points,pvalid=independent_metrics(y,p,classes,np.ones((1,len(y)),np.float64));draws,valid=independent_metrics(y,p,classes,weights);need(pvalid[0] and len(m['metrics'])==5,'Invalid primary point or missing metric');savedids={r['planned_spec_id'] for r in m['metrics']};need(savedids==set(key['planned_metric_spec_ids']),'Recovery metric keys differ')
+   with np.load(pr/'draws.npz',allow_pickle=False) as z:
+    for row in m['metrics']:
+     cr=row['canonical_metric'];name=cr['metric'];arr=draws[MAP[name]];mask=valid&np.isfinite(arr);need(np.array_equal(mask,z[name+'_valid']) and hashlib.sha256(mask.tobytes()).hexdigest()==row['valid_mask_sha256'],'Marginal validity mask differs');need(cr['sample_count']==512 and cr['group_count']==cfg['feature_config']['cohorts'][t]['dev']['groups'] and cr['bootstrap_attempted']==2000 and cr['bootstrap_valid']==int(mask.sum()) and cr['bootstrap_invalid']==int((~mask).sum()) and cr['draw_sha256']==drawsha,'Marginal denominator/source differs');checks.append(strict_residual(points[MAP[name]],[cr['estimate']],1e-12,name+'_point'));need(np.isnan(z[name][~mask]).all() and np.isnan(arr[~mask]).all(),'Invalid draw disposition differs')
+     if mask.any():checks.append(strict_residual(arr[mask],z[name][mask],1e-12,name+'_draws'));checks.append(strict_residual(np.percentile(arr[mask],[2.5,97.5],method='linear'),[cr['ci_low'],cr['ci_high']],1e-12,name+'_CI'))
+     else:need(cr['ci_low'] is None and cr['ci_high'] is None and cr['missing_reason'],'Undefined interval not explicit')
+   records.append({'planned_prediction_spec_id':key['planned_prediction_spec_id'],'task':t,'representation':rep,'cv_seed':42,'policy':policy,'metric_records':5,'attempted_draw_values':10000})
+ out={'schema_version':'s07-sampled-private-recovery-replay-v1','status':'PASS','alias':alias,'prediction_paths':len(records),'new_refitted_heads_reconstructed':10,'original_base_applications_reconstructed':10,'metric_vectors':len(records)*5,'attempted_draw_values':len(records)*5*2000,'max_probability_abs_residual':max(x['max_abs_residual'] for x in checks if x['atol']==1e-10),'max_metric_draw_CI_abs_residual':max(x['max_abs_residual'] for x in checks if x['atol']==1e-12),'probability_atol':1e-10,'metric_atol':1e-12,'rtol':0,'records':records,'checks':checks,'producer_path_fallback':False,'fits':0,'backbone_or_LM_calls':0,'S08_independent_release':False,'runtime_scope':'Existing qualified CPU runtime; restored exact source/heads/devanchorfeatures/metadata/draws. No cleanruntime, fullCV or GPU recreation.','wall_seconds':time.monotonic()-start,'peak_RSS_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss*1024};need(out['peak_RSS_bytes']<=8*1024**3,'Recovery CPU8GiB limit exceeded');put(root/'RECOVERY_NUMERICAL_REPLAY.json',out);print('S07_SAMPLED_PRIVATE_REPLAY_PASS',alias,20,out['max_probability_abs_residual'],out['max_metric_draw_CI_abs_residual'],flush=True)
+if __name__=='__main__':
+ p=argparse.ArgumentParser();p.add_argument('--consumer',required=True);p.add_argument('--alias',required=True);a=p.parse_args();run(a.consumer,a.alias)

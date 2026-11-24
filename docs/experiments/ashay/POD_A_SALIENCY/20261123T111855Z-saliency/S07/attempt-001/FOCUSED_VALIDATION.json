@@ -1,0 +1,96 @@
+{
+  "schema_version": "s07-focused-validation-v1",
+  "status": "PASS",
+  "tests": [
+    {
+      "case": "unapproved selector rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "unapproved selector rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "unapproved selector rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "unknown candidate rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "exact 0.5 positive-class threshold",
+      "status": "PASS"
+    },
+    {
+      "case": "class-order permutation rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "scalar/vector probability rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "wrong multiclass column order rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "binary",
+      "status": "PASS"
+    },
+    {
+      "case": "multiclass tied ranking/multiplicities/extreme CE/missing-class masks independent fixture",
+      "status": "PASS"
+    },
+    {
+      "case": "exact C tie chooses smaller; near tie not collapsed",
+      "status": "PASS"
+    },
+    {
+      "case": "real synthetic fold scaler excludes validation outlier; serialization exact",
+      "status": "PASS"
+    },
+    {
+      "case": "only ConvergenceWarning admits fresh identical2000->10000 retry",
+      "status": "PASS"
+    },
+    {
+      "case": "persistent convergence preserves attempts and no completion",
+      "status": "PASS"
+    },
+    {
+      "case": "non-convergence-independent warning blocks without retry",
+      "status": "PASS"
+    },
+    {
+      "case": "stale source invalidates completed fit reuse",
+      "status": "PASS"
+    },
+    {
+      "case": "partial write is not completion",
+      "status": "PASS"
+    },
+    {
+      "case": "real duplicate writer rejected",
+      "status": "PASS"
+    },
+    {
+      "case": "actual selection call graph has TRAIN-only features/no dev fitting interface",
+      "status": "PASS"
+    }
+  ],
+  "count": 19,
+  "source_sha256": {
+    "artifact_seals.py": "c8c72c3ee5c80650a82199ef29bad47f687f8823d55d6bc7891810961d2ed513",
+    "inherited_fit.py": "780e5359cc352e6fb2eef9b24cc7b6109e1ea158b6e3eadd5e0f5bd2763b7183",
+    "inherited_independent.py": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+    "inherited_metrics.py": "f1aa82a5f76d8c426acba0a390b4e191b9f3c00fb8fad984051658eb55884d9a",
+    "inherited_s06_contract.py": "6f0c60cf4936a8e9db5bd7c49e26c8a2e7f7f318660058c013f386fead0e86b3",
+    "s07_contract.py": "dd2efee5640eb61f5cb8b831e00dce4778955ea475b04dd91c8fd86dca86921a",
+    "s07_cpu.py": "c6f5ef04ebf8d983420f418b4a219cf83cf2f7aebe55306c3adba6322f321c14",
+    "s07_recovery.py": "e99c00305092c7343864198463e14e291b433018bacd311604baf200a1ecde6e"
+  },
+  "synthetic_fit_only": true,
+  "research_fits_or_dev_data_opened": 0,
+  "observed_utc": "2026-11-24T16:45:01.768221+00:00"
+}

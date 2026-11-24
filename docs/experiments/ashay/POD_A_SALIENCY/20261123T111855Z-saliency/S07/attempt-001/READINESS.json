@@ -1,0 +1,155 @@
+{
+  "schema_version": "s07-readiness-v1",
+  "status": "METADATA_PASS_FIRST_ORDINARY_PRODUCTION_GATES_PERMITTED",
+  "gates": {
+    "R1": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "ENTRY_VALIDATION.json",
+          "sha256": "867ef6c780ee5207353cbea457f78a99cee18044a94ad4a2cd17ac906960527a"
+        },
+        {
+          "path": "PROMPT_RECEIPT.json",
+          "sha256": "4706f12f3008b008c7d55d325e9849a4a74aafeb58aad0e1a4f531c0b257afd6"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.962074+00:00"
+    },
+    "R2": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "FINITE_MANIFEST_BINDING.json",
+          "sha256": "b7e309f25e1a9e39666c06a35157190cc86083fe7f7474e796c2a6f43f6f16c5"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.963449+00:00"
+    },
+    "R3": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "ENTRY_VALIDATION.json",
+          "sha256": "867ef6c780ee5207353cbea457f78a99cee18044a94ad4a2cd17ac906960527a"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.964379+00:00"
+    },
+    "R4": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "INPUT_BINDINGS.json",
+          "sha256": "3b8d5e65b98e2c9ba09ee802141210dec8b861b37411f97e6b46349f2dcd2cf1"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.965748+00:00"
+    },
+    "R5": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "INPUT_BINDINGS.json",
+          "sha256": "3b8d5e65b98e2c9ba09ee802141210dec8b861b37411f97e6b46349f2dcd2cf1"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.966652+00:00"
+    },
+    "R6": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "INPUT_BINDINGS.json",
+          "sha256": "3b8d5e65b98e2c9ba09ee802141210dec8b861b37411f97e6b46349f2dcd2cf1"
+        },
+        {
+          "path": "CONTROL_REUSE_ADMISSION.json",
+          "sha256": "48813348a5151ce4a75d8a111586154fa4ca9baa3dae4f997435d1197f3d6d81"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.969354+00:00"
+    },
+    "R7": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "CPU_ENVIRONMENT_LOCK.json",
+          "sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e"
+        },
+        {
+          "path": "CPU_RUNTIME_CURRENT.json",
+          "sha256": "ee28a46fff72fd198d81552849212de9450758fa6a85bc0054d18930568f67b9"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.971301+00:00"
+    },
+    "R8": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "INPUT_BINDINGS.json",
+          "sha256": "3b8d5e65b98e2c9ba09ee802141210dec8b861b37411f97e6b46349f2dcd2cf1"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.972150+00:00"
+    },
+    "R9": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "CAPACITY_ADMISSION.json",
+          "sha256": "d932649a9cc4b6cb0ec2ec6aa89579e6b0a23c5d136bf67e7f7579570c9d9196"
+        },
+        {
+          "path": "CURRENT_PROVIDER_ALLOCATION.json",
+          "sha256": "69c74050813125c62f514c10b04a61dfb6ff875fa58697ab7f28abd369f49647"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.973816+00:00"
+    },
+    "R10": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "PRIVATE_RECOVERY_ROUTE_ADMISSION.json",
+          "sha256": "6379c05bfd3c3a52827792955ea5af24e222ce8633ace0c6c697878d976a0479"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.975515+00:00"
+    },
+    "R12": {
+      "status": "PASS",
+      "evidence": [
+        {
+          "path": "RECOVERY_CONTRACT.json",
+          "sha256": "d7f73b10716ddd7a2c88c2c0e9836f6a534914ce8f886a4e7ad09a73aa0e8c8c"
+        }
+      ],
+      "observed_utc": "2026-11-24T16:49:13.976403+00:00"
+    },
+    "R11": {
+      "status": "PENDING_ORDINARY_FIRST_BINARY_MULTICLASS_UNITS",
+      "synthetic_report_sha256": "6caca93537e785f757dc6059052dddb0f03da723b300696422d37cd636204db3",
+      "release_condition": "Both retained ordinary first units pass TRAIN cost/memory/source/class/fold/serialization/metric checks, then admit remaining finite queue; no dev-performance choice"
+    }
+  },
+  "first_operational_selectors": [
+    [
+      "candidate_01",
+      "gue_tf_0",
+      "decoder.layers.0",
+      42
+    ],
+    [
+      "candidate_01",
+      "gue_splice_reconstructed",
+      "decoder.layers.0",
+      42
+    ]
+  ],
+  "source_bundle_sha256": "172a0f7ddc61cb6183cfe81a61f512aa27cb0534acafba39a471894802c070bf",
+  "S06_receipt_sha256": "930faab087eb41e2d8a48f51023b5713b939bff1146d5a9c9ec4fed0f3352e9d",
+  "no_deadline": true,
+  "research_fits_before_seal": 0
+}

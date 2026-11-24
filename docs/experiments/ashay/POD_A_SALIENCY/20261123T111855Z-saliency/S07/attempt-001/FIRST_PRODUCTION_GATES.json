@@ -1,0 +1,73 @@
+{
+  "schema_version": "s07-first-ordinary-binary-multiclass-gates-v1",
+  "status": "PASS",
+  "records": [
+    {
+      "task": "gue_tf_0",
+      "receipt": {
+        "schema_version": "s07-producer-unit-completion-v1",
+        "status": "COMPLETE_UNVERIFIED",
+        "producer_status": "PASS",
+        "alias": "candidate_01",
+        "task": "gue_tf_0",
+        "representation": "decoder.layers.0",
+        "cv_seed": 42,
+        "initial_optimizer_calls": 16,
+        "actual_optimizer_calls": 16,
+        "retries": 0,
+        "source_identity_sha256": "246a59ccbe0e5cd9b0f82c10cc8b260441f17046b3a29f52aa32e657501a4607",
+        "head_receipt_sha256": "be2850793d596e1760a991c628426ca40b80ea53f60771e62f96ce732736456b",
+        "producer_serialization_roundtrip": "PASS",
+        "wall_seconds": 2.1085058390162885,
+        "CPU_process_seconds": 9.931859604,
+        "peak_RSS_bytes": 201277440,
+        "operational_gate": true,
+        "backbone_or_LM_calls": 0,
+        "independent_audits": 0,
+        "owned_process": {
+          "pid": 77786,
+          "start_ticks": "66359585",
+          "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
+        }
+      },
+      "actual_child_exit_status": 0,
+      "retained_as_production": true,
+      "repeated_calibration_fits": 0
+    },
+    {
+      "task": "gue_splice_reconstructed",
+      "receipt": {
+        "schema_version": "s07-producer-unit-completion-v1",
+        "status": "COMPLETE_UNVERIFIED",
+        "producer_status": "PASS",
+        "alias": "candidate_01",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.layers.0",
+        "cv_seed": 42,
+        "initial_optimizer_calls": 16,
+        "actual_optimizer_calls": 16,
+        "retries": 0,
+        "source_identity_sha256": "246a59ccbe0e5cd9b0f82c10cc8b260441f17046b3a29f52aa32e657501a4607",
+        "head_receipt_sha256": "50b3f14064a0ff1d2dcb23992719537183f17f59b0f0928e875be8403e88acbc",
+        "producer_serialization_roundtrip": "PASS",
+        "wall_seconds": 3.5648310959804803,
+        "CPU_process_seconds": 19.814191607,
+        "peak_RSS_bytes": 211353600,
+        "operational_gate": true,
+        "backbone_or_LM_calls": 0,
+        "independent_audits": 0,
+        "owned_process": {
+          "pid": 77793,
+          "start_ticks": "66360058",
+          "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
+        }
+      },
+      "actual_child_exit_status": 0,
+      "retained_as_production": true,
+      "repeated_calibration_fits": 0
+    }
+  ],
+  "runtime_forecast_policy": "Use actual observed wall/CPU/storage variability; no deadline or outcome-driven changes",
+  "source_bundle_sha256": "172a0f7ddc61cb6183cfe81a61f512aa27cb0534acafba39a471894802c070bf",
+  "observed_utc": "2026-11-24T16:50:22.446212+00:00"
+}

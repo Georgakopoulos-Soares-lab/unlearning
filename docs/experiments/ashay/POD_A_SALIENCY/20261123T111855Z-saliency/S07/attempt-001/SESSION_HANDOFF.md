@@ -1,0 +1,3 @@
+S07 active: approved at canonical7007; source/readiness sealed; first retained binary and multiclass production gates passed (32initial calls,0retries). Remaining finite two-worker CPU queue admitted. All new outputs COMPLETE_UNVERIFIED pending S08. No backbone/LM/test/forget work, later audits, schedulers or observers. No-deadline amendment remains active.
+
+Resume from /workspace/pod-a-saliency/control/20261123T111855Z-saliency/S07/attempt-001/RESUME_MANIFEST.json, reconcile actual PID/start/boot, locks, valid seals and immutable transfer states before scheduling missing units only. Preserve S00-S06 and original POD_A.

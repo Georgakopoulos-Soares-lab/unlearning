@@ -112,11 +112,22 @@
       ]
     },
     "S07": {
-      "approved": false,
+      "approved": true,
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "source": "direct_chat",
+      "message": "APPROVE S07 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "observed_utc": "2026-11-24T16:32:26.968993+00:00",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S08": {
       "approved": false,
@@ -703,8 +714,20 @@
       "delivery_status": "PRIVATE_SCIENCE_AND_FINAL_METADATA_RECOVERY_PASS_GIT_PROOF_EXTERNAL"
     },
     "S07": {
-      "status": "WAITING_FOR_APPROVAL",
-      "approved": false
+      "status": "RUNNING",
+      "approved": true,
+      "attempt_id": "attempt-001",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S08": {
       "status": "NOT_STARTED",
@@ -1083,39 +1106,32 @@
   "owned_processes": [],
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
-    "phase": "S06",
+    "phase": "S07",
     "attempt_id": "attempt-001",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "e8a12e714ffebea55febec6df3072974912b0bf1",
+    "supplement_commit": "a5f02875f73032f8824c1a6035ac5c5b65cf8e0c",
     "completed_receipts": [
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S05/attempt-001/S05_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/FINAL_METADATA_RECOVERY.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json"
     ],
-    "unfinished_units": [],
-    "transfer_totals": {
-      "S06_candidate_private_upload_bytes": 12189661123,
-      "S06_candidate_HTTP_readback_bytes": 12189661123,
-      "S06_logical_rows": 69120,
-      "S06_physical_rows": 69120,
-      "S06_classifier_fits": 0,
-      "S06_head_applications": 0,
-      "final_metadata_upload_bytes": 2623093,
-      "final_metadata_explicit_HTTP_readback_bytes": 2623093
-    },
+    "unfinished_units": [
+      "S07-readiness",
+      "105300-exact-S07-specifications",
+      "9-private-candidate-recoveries",
+      "final-metadata-recovery-publication-S08-handoff"
+    ],
+    "transfer_totals": {},
     "owned_processes": [],
     "unresolved_decisions": [
-      "Current capacity and adapter/input/consumer qualification before outcomes"
+      "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Stop. WAITING_FOR_APPROVAL: S07. Reconcile scientific/finalmetadata/exact Git proof and current resources before later direct S07 approval.",
+    "next_action": "Complete S07 readiness and approved finite CPU production/protection/publication. New results COMPLETE_UNVERIFIED; stop before S08.",
     "prerequisites": [
-      "Direct APPROVE S07 at exact canonical package commit",
-      "Reconcile S06 scientific/final metadata/delivery proofs and owned process start identities",
-      "Resolve all390+390 per candidate typed selectors and exact original-base scaler/head members from immutable dependencies; no refit/replacement of fixed references",
-      "Current source/runtime/candidate entry, private route, memory/capacity admission; preserve all valid S05/S06 units"
+      "Pinned CPU/source/protocol and current resource admission",
+      "Own S05/S06 gates and exact selectors",
+      "No backbone/LM work/test/forget/contrasts/S08 audits"
     ],
-    "reconciled_utc": "2026-11-24T15:50:02.058350+00:00",
+    "reconciled_utc": "2026-11-24T16:35:14.543208+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
