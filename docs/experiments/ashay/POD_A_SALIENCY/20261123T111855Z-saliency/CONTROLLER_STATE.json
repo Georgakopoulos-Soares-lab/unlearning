@@ -286,10 +286,15 @@
       "eligibility_rule": "Exact producer-complete inputs, allnewscientificstatuses COMPLETE_UNVERIFIED. S08 requires newdirectapproval and original audit/freeze/source/row/runtime checks before independent release."
     },
     "released_unit_index": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/RELEASE_OVERLAY.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/COVERAGE.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S09_HANDOFF.json"
+      ],
       "resolve_in": "S08",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S09 entry; pending blocks only affected scope"
+      "eligibility_rule": "SeparateS08verifiedoverlay exactnewscope, source/audit/recoverydependencies allPASS; preserveoriginalS04contrastfamily andpendingedges, originalS07producerrows unchanged. NewdirectS09approval required."
     },
     "frozen_contrast_plan": {
       "status": "RESOLVED",
@@ -497,6 +502,22 @@
       "status": "COMPLETE",
       "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
       "sha256": "72c2d6c5fe78f13c66713ac6688d17f9303678eaf8be38655377381a0234e557",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    "S08": {
+      "status": "COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
+      "sha256": "863252fa8ac7aaae06868ff40e0befeb4bc7208bd4a1574690595530b3dc389d",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -777,7 +798,7 @@
       "independent_release": "PENDING_S08"
     },
     "S08": {
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "approved": false,
       "attempt_id": "attempt-001",
       "numerical_task_groups_complete": 45,
@@ -793,10 +814,12 @@
         "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
         "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
         "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
-      ]
+      ],
+      "scientific_release": "VERIFIED",
+      "delivery_status": "SCIENCE_AND_NINE_PRIVATE_RECOVERIES_PASS_FINAL_METADATA_GIT_PROOF_EXTERNAL"
     },
     "S09": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     },
     "S10": {
@@ -1219,11 +1242,11 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S08_HANDOFF.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S09_HANDOFF.json"
     ],
-    "unfinished_units": [
-      "0candidate recovery/releases; finalmetadata/Gitproof"
-    ],
+    "unfinished_units": [],
     "transfer_totals": {
       "S07_candidate_upload_bytes": 5542236321,
       "S07_candidate_fresh_HTTP_body_bytes": 5542236321,
@@ -1235,22 +1258,16 @@
       "S08_unique_candidate_upload_bytes": 732317976,
       "S08_candidate_fresh_HTTP_body_bytes": 732317976
     },
-    "owned_processes": [
-      {
-        "pid": 101690,
-        "start_ticks": "68037749",
-        "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
-      }
-    ],
+    "owned_processes": [],
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Continue onlymissing S08 recovery/releases andfinalmetadata/Gitdelivery; noS09.",
+    "next_action": "Complete onlyexternalfinalmetadata/Gitproof, thenSTOP. WAITING_FOR_APPROVAL: S09.",
     "prerequisites": [
       "S08 readiness PASS before full execution",
       "Original S04freeze/audit and exact S07producer identities"
     ],
-    "reconciled_utc": "2026-11-24T21:45:52.178415+00:00",
+    "reconciled_utc": "2026-11-24T21:49:29.171357+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

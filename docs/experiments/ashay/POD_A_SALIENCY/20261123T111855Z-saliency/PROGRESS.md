@@ -1,1 +1,3 @@
-S08: all7020savedpaths/35100metricvectors and105originalfullCVaudits PASS. Private recovery andsource-boundrelease 9/9candidates (7020paths/35100vectors). Fullbyteverification anddeclaredreplay scope ineachreceipt. S07producerrows unchanged; finalmetadata/publication pending; stopbeforeS09.
+S08 scientific independent verification/release complete:7020savedpaths/35100metricvectors/70.2Mdrawvalues,105originalfullCVaudits plus21reusedH3audits. All9candidate private fullbyte/declarednumerical/mappingrecoveries PASS. Exact107085typedkey overlay VERIFIED; S07rows unchanged COMPLETE_UNVERIFIED. Finaladministrative/Gitproof external; S09 unapproved andunexecuted.
+
+WAITING_FOR_APPROVAL: S09

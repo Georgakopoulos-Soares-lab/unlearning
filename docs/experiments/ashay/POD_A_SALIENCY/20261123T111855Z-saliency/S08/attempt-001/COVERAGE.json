@@ -1,0 +1,189 @@
+{
+  "schema_version": "s08-independent-release-index-v1",
+  "status": "VERIFIED",
+  "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "verifier_source_identity_sha256": "ffa65b77e3f60939932f7e4309746498508e6efff8cb5f155909939662cc363c",
+  "runtime_lock_sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e",
+  "S07_producer_status_unchanged": "COMPLETE_UNVERIFIED",
+  "exact_evidence_keys": 107085,
+  "counts_by_kind": {
+    "classifier_metric": 35100,
+    "optimizer_call": 56160,
+    "fixed_application": 3510,
+    "prediction": 7020,
+    "final_head": 3510,
+    "audit_optimizer_call": 1680,
+    "audit_refit": 105
+  },
+  "missing_keys": [],
+  "unexpected_keys": [],
+  "unexplained_mismatches_affecting_release": 0,
+  "heads": 3510,
+  "fixed_applications": 3510,
+  "saved_prediction_paths": 7020,
+  "marginal_metric_vectors": 35100,
+  "attempted_bootstrap_metric_values": 70200000,
+  "valid_bootstrap_metric_values": 70200000,
+  "invalid_bootstrap_metric_values": 0,
+  "numeric_estimates": 35100,
+  "intervals_available": 35100,
+  "producer_initial_calls": 56160,
+  "producer_actual_calls": 56295,
+  "producer_retries_reconciled": 135,
+  "new_original_full_CV_audits": 105,
+  "new_audit_initial_calls": 1680,
+  "new_audit_actual_calls": 1680,
+  "new_audit_retries": 0,
+  "reused_H3": {
+    "heads": 702,
+    "applications": 702,
+    "prediction_paths": 1404,
+    "metric_records": 7020,
+    "audits": 21
+  },
+  "reused_S06": {
+    "feature_bundles": 90,
+    "rows": 69120,
+    "matrices": 2340,
+    "LM_units": 90,
+    "LM_metric_records": 180
+  },
+  "combined_six_task_scope": {
+    "heads": 4212,
+    "applications": 4212,
+    "prediction_paths": 8424,
+    "metric_records": 42120
+  },
+  "shared_DNA_controls": 36,
+  "unique_original_base_references": 468,
+  "new_backbone_LM_or_GPU_calls": 0,
+  "private_case_recoveries": 9,
+  "restored_saved_path_panel": 210,
+  "restored_metric_vector_panel": 1050,
+  "restored_attempted_draw_values": 2100000,
+  "restored_new_audit_heads": 105,
+  "fresh_CV_calls_in_recovery": 0,
+  "worst": {
+    "audit_CV": {
+      "label": "full_CV_C0",
+      "status": "PASS",
+      "atol": 1e-12,
+      "rtol": 0,
+      "coordinates": 5,
+      "max_abs_residual": 0.0,
+      "worst_index": [
+        0
+      ],
+      "unit": {
+        "alias": "candidate_01",
+        "task": "gue_mouse_0",
+        "representation": "decoder.layers.16",
+        "cv_seed": 1234,
+        "planned_spec_id": "53309af46b77588eecdb0cc64db0e0b50f64157689214411197da9cb326f1c63"
+      }
+    },
+    "audit_probability": {
+      "label": "fresh_audit_vs_saved_producer_probability",
+      "status": "PASS",
+      "atol": 1e-10,
+      "rtol": 0,
+      "coordinates": 1024,
+      "max_abs_residual": 0.0,
+      "worst_index": [
+        0,
+        0
+      ],
+      "unit": {
+        "alias": "candidate_01",
+        "task": "gue_mouse_0",
+        "representation": "decoder.layers.16",
+        "cv_seed": 1234,
+        "planned_spec_id": "53309af46b77588eecdb0cc64db0e0b50f64157689214411197da9cb326f1c63"
+      }
+    },
+    "saved_probability": {
+      "label": "e504a4316607deb946b1f3994e5b5983d0764dda59ebdd243f0c7084fedbba0b",
+      "status": "PASS",
+      "atol": 1e-10,
+      "rtol": 0,
+      "coordinates": 1024,
+      "max_abs_residual": 0.0,
+      "worst_index": [
+        0,
+        0
+      ],
+      "unit": {
+        "alias": "candidate_01",
+        "task": "gue_tf_0",
+        "representation": "decoder.layers.0",
+        "cv_seed": 1234,
+        "policy": "independent_refit",
+        "planned_spec_id": "e504a4316607deb946b1f3994e5b5983d0764dda59ebdd243f0c7084fedbba0b"
+      }
+    },
+    "metric_point": {
+      "label": "cross_entropy_point",
+      "status": "PASS",
+      "atol": 1e-12,
+      "rtol": 0,
+      "coordinates": 1,
+      "max_abs_residual": 3.552713678800501e-15,
+      "worst_index": [
+        0
+      ],
+      "unit": {
+        "alias": "candidate_04",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.layers.17",
+        "cv_seed": 1234,
+        "policy": "fixed_original_base",
+        "planned_spec_id": "6045acb1d8851e8ec69cbddc1db84474fcdfbce36e6fc366a4848ebb6411b72e",
+        "metric": "cross_entropy",
+        "planned_metric_spec_id": "d9a294cf3d40acf939d43a7dbdddb72596494580fb2349b2e5219ab1946c9ae2"
+      }
+    },
+    "metric_draw": {
+      "label": "cross_entropy_draw",
+      "status": "PASS",
+      "atol": 1e-12,
+      "rtol": 0,
+      "coordinates": 2000,
+      "max_abs_residual": 2.1316282072803006e-14,
+      "worst_index": [
+        1643
+      ],
+      "unit": {
+        "alias": "candidate_09",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.layers.0",
+        "cv_seed": 1234,
+        "policy": "fixed_original_base",
+        "planned_spec_id": "6e1f1453da0d8910337473e995033af01458763fa6a9b2ec0d2689c53c454d71",
+        "metric": "cross_entropy",
+        "planned_metric_spec_id": "35a7fc0b613b4f5cfbb8fa3e8e208946d31e5975a169b503c92ca109f5029383"
+      }
+    },
+    "metric_CI": {
+      "label": "cross_entropy_CI",
+      "status": "PASS",
+      "atol": 1e-12,
+      "rtol": 0,
+      "coordinates": 2,
+      "max_abs_residual": 8.881784197001252e-15,
+      "worst_index": [
+        1
+      ],
+      "unit": {
+        "alias": "candidate_05",
+        "task": "gue_splice_reconstructed",
+        "representation": "decoder.layers.14",
+        "cv_seed": 1234,
+        "policy": "fixed_original_base",
+        "planned_spec_id": "3a4f2261791f6ed92fb15d4c89873540b6b7edf406c63edf23fe12b1baa004dc",
+        "metric": "cross_entropy",
+        "planned_metric_spec_id": "9c1b5df29a260f5e27c2a3abb688239dd22a3234fc7cfb2ec5ed0e80e5697a59"
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": "s08-independent-release-index-v1",
+  "status": "VERIFIED",
+  "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "verifier_source_identity_sha256": "ffa65b77e3f60939932f7e4309746498508e6efff8cb5f155909939662cc363c",
+  "runtime_lock_sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e",
+  "S07_producer_status_unchanged": "COMPLETE_UNVERIFIED",
+  "original_remaining_audits": 105,
+  "new_fresh_refits": 105,
+  "initial_optimizer_calls": 1680,
+  "actual_optimizer_calls": 1680,
+  "retries": 0,
+  "records": [
+    {
+      "alias": "candidate_01",
+      "path": "candidates/candidate_01/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "2e868caa1fbfcbc4bda52c1e0e20de6474fb6ba490ef442c519a01ec39dcf529",
+      "typed_records": 187,
+      "fresh_refits": 11
+    },
+    {
+      "alias": "candidate_02",
+      "path": "candidates/candidate_02/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "dabdd6461a3657b4e1414627563fb431dc93a844712544d891cbc9e27971886e",
+      "typed_records": 204,
+      "fresh_refits": 12
+    },
+    {
+      "alias": "candidate_03",
+      "path": "candidates/candidate_03/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "4f4af9d3c9ee0ae5d661329a06a30ad0a9fd7ac9bbd3ecfe81d79c95338a1435",
+      "typed_records": 204,
+      "fresh_refits": 12
+    },
+    {
+      "alias": "candidate_04",
+      "path": "candidates/candidate_04/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "e9029ad8d4912755bd7be42a9b4f5717250ca26a1b481f9fea2b10e05f507ec8",
+      "typed_records": 187,
+      "fresh_refits": 11
+    },
+    {
+      "alias": "candidate_05",
+      "path": "candidates/candidate_05/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "f502b91702c26e9a60e92264dd8af102fdbba48aec8b5ebae9a8c07a11a84064",
+      "typed_records": 204,
+      "fresh_refits": 12
+    },
+    {
+      "alias": "candidate_06",
+      "path": "candidates/candidate_06/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "da987943dd78463a3f2b28b61ccf75ae780f9da4c110aee17a7254d0439f350c",
+      "typed_records": 204,
+      "fresh_refits": 12
+    },
+    {
+      "alias": "candidate_07",
+      "path": "candidates/candidate_07/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "daef7ec8ea21d98f1aaf2f1c33511ebeb2de9e2fd325cc775692187caee0f79b",
+      "typed_records": 187,
+      "fresh_refits": 11
+    },
+    {
+      "alias": "candidate_08",
+      "path": "candidates/candidate_08/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "cc7d5a566f1cef09a01bee29906e44d1634745f8295a0046430f04340fd190c6",
+      "typed_records": 204,
+      "fresh_refits": 12
+    },
+    {
+      "alias": "candidate_09",
+      "path": "candidates/candidate_09/AUDIT_RELEASE_OVERLAY.jsonl",
+      "sha256": "0d6390061a1892bfa19d96156c690d37b37320598e90f50af2f338f8581aaff5",
+      "typed_records": 204,
+      "fresh_refits": 12
+    }
+  ],
+  "reused_original_H3_audits": 21,
+  "reused_H3_audit_bindings_sha256": "9bc2a42843ccffbfe4e86b676805bf8af16bf186ac6eba69f86492b3641ca6a7",
+  "original_audit_keys_sha256": "4cf3f3383760b49e3d9efdfc3a0c9a304e4a7347f609908e55db7b735a5d76bb",
+  "worst": {
+    "audit_probability": {
+      "label": "fresh_audit_vs_saved_producer_probability",
+      "status": "PASS",
+      "atol": 1e-10,
+      "rtol": 0,
+      "coordinates": 1024,
+      "max_abs_residual": 0.0,
+      "worst_index": [
+        0,
+        0
+      ],
+      "unit": {
+        "alias": "candidate_01",
+        "task": "gue_mouse_0",
+        "representation": "decoder.layers.16",
+        "cv_seed": 1234,
+        "planned_spec_id": "53309af46b77588eecdb0cc64db0e0b50f64157689214411197da9cb326f1c63"
+      }
+    },
+    "audit_CV": {
+      "label": "full_CV_C0",
+      "status": "PASS",
+      "atol": 1e-12,
+      "rtol": 0,
+      "coordinates": 5,
+      "max_abs_residual": 0.0,
+      "worst_index": [
+        0
+      ],
+      "unit": {
+        "alias": "candidate_01",
+        "task": "gue_mouse_0",
+        "representation": "decoder.layers.16",
+        "cv_seed": 1234,
+        "planned_spec_id": "53309af46b77588eecdb0cc64db0e0b50f64157689214411197da9cb326f1c63"
+      }
+    }
+  },
+  "audit_panel_reselected": false,
+  "producer_heads_replaced": false,
+  "serialization_byte_equality_required": false
+}

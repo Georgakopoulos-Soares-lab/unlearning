@@ -1,0 +1,21 @@
+{
+  "schema_version": "s08-outcome-informed-diagnostics-v1",
+  "prior_outcomes_visible": true,
+  "not_claimed_preregistered_before_S07": true,
+  "predicted_class_and_confident_error_counts": {
+    "paths": 7020,
+    "binary_balanced_accuracy_exactly_half": 279,
+    "paths_with_confident_errors_p_above_0_99": 6359,
+    "paths_with_clipped_true_probabilities": 591,
+    "half_BA_single_predicted_class": 279
+  },
+  "seed_comparison_groups": 1170,
+  "selected_C_equal_across_3_seeds": 1104,
+  "refit_parameter_equal_across_3_seeds": 1104,
+  "refit_prediction_bytes_equal_across_3_seeds": 1104,
+  "refit_serialized_head_bytes_equal_across_3_seeds": 1104,
+  "producer_retries_fully_reconciled": 135,
+  "LM_identity_reuse_binding_sha256": "b3409335e134142dd9f3774f7e82728f20fbbd5604c03e8f33fee80ac70c9818",
+  "representation_names": "decoder.layers.16 is zero-based17thblock; decoder.final_norm is post-blocknormalization",
+  "scope": "Identity/implementation checks and descriptive saved-output diagnostics, no recalibration or new scientific contrasts; all seeds/layers/outcomes retained."
+}

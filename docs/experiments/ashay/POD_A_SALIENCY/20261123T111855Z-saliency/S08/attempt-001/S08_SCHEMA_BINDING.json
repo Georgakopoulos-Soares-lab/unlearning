@@ -1,0 +1,12 @@
+{
+  "schema_version": "s08-explicit-local-schema-binding-v1",
+  "canonical_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "canonical_unit_schema": "S_RESULT_SCHEMAS.json#/$defs/unit",
+  "wrapper_files": "45task RELEASE_OVERLAY.jsonl shards and9AUDIT_RELEASE_OVERLAY.jsonl shards; rootRELEASE_OVERLAY is their exact SHA index",
+  "unit_id_semantics": "canonical_unit.unit_id is the immutable S04 planned_spec_id. Original producer actual identity is preserved separately as producer_identity_sha256; no original unit or metric record is rewritten.",
+  "metric_join_semantics": "Original S07 canonical_metric.unit_id remains its actual prediction identity; source_row_id and original METRICS.json selector identify the metric. The frozen planned metric key maps through the explicit overlay, not a fabricated replacement producer identity.",
+  "identity_resolution": "For each overlay alias/task/representation/cv_seed/policy/split, use IDENTITY_JOIN_INDEX plus exact producer/verifier/audit/recovery receipt hashes. These bind checkpoint/cohort/class/fold/draw/source/runtime identities without publishing per-example data.",
+  "call_record_semantics": "56,160 S07 initial calls are verified provenance, not newly performed fits. Only105originalfull-CV audits/1680initialauditcalls were new; retries separately counted.",
+  "numeric_precision": "Full precision in original S07 marginal tables and S08verificationledgers. Per-example probabilities/tensors and unsanitized failure expected/observed values remain private.",
+  "status_semantics": "S07producer COMPLETE_UNVERIFIED unchanged; only separate S08source/audit/recovery-qualified overlay is VERIFIED."
+}

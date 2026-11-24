@@ -1,0 +1,22 @@
+"""Finite nine-case recovery/release/publication continuation; no S09 dispatch."""
+from pathlib import Path
+import os,json,fcntl,hashlib,sys
+from ops import C,A,R,save,now
+from long_run import execute
+read=lambda p:json.loads(p.read_text());cfg=read(C/'RUN_CONFIG.json');P=Path(cfg['public_root']);T=Path(cfg['research_run_root']);assert read(C/'FINITE_VERIFICATION_EXIT.json')['exit_status']==0 and read(C/'GLOBAL_AUDIT_GATE.json')['status']=='PASS';identity={'pid':os.getpid(),'start_ticks':Path('/proc/self/stat').read_text().rsplit(')',1)[1].split()[19],'boot_id':Path('/proc/sys/kernel/random/boot_id').read_text().strip()};process=C/'FINITE_RECOVERY_PROCESS.json'
+if process.exists():
+    prev=read(process);p=Path('/proc/'+str(prev['pid'])+'/stat');assert not p.exists() or p.read_text().rsplit(')',1)[1].split()[19]!=str(prev['start_ticks']),'Prior exact recovery queue still active'
+env={'PATH':str(Path(cfg['cpu_runtime_python']).parent)+':/usr/bin:/bin','CUDA_VISIBLE_DEVICES':'','OMP_NUM_THREADS':'4','OPENBLAS_NUM_THREADS':'4','MKL_NUM_THREADS':'4','PYTHONNOUSERSITE':'1','HF_HUB_OFFLINE':'1'};completed=[]
+with (C/'WRITER.lock').open('a') as f:
+    fcntl.flock(f,fcntl.LOCK_EX|fcntl.LOCK_NB);save(process,{**identity,'phase':'S08','scope':'Finite9candidate private recovery/release; selectedmilestonepublication; noS09','started_utc':now()})
+    for i,v in enumerate(cfg['candidates']):
+        a=v['alias'];gate=P/'candidates'/a/'RELEASE_GATE.json'
+        if not gate.exists():
+            execute('S08-'+a+'-recovery-prepare-001',[cfg['cpu_runtime_python'],str(C/'prepare_case_recovery.py'),a],env)
+            execute('S08-'+a+'-private-protection-001',['/workspace/pod-a-saliency/tools/hf/bin/python',str(C/'protect_case.py'),a,'1'])
+            execute('S08-'+a+'-release-records-001',['/usr/local/bin/python3',str(C/'publish_case_records.py'),a])
+        assert read(gate)['status']=='VERIFIED';execute('S08-'+a+'-closed-capacity-001',['/usr/local/bin/python3',str(C/'account_case.py'),a]);completed.append(a);recs={x:read(C/(x+'-PRIVATE_RECOVERY_RECEIPT.json')) for x in completed};n=len(completed);progress=f'S08: all7020savedpaths/35100metricvectors and105originalfullCVaudits PASS. Private recovery andsource-boundrelease {n}/9candidates ({n*780}paths/{n*3900}vectors). Fullbyteverification anddeclaredreplay scope ineachreceipt. S07producerrows unchanged; finalmetadata/publication pending; stopbeforeS09.\n';save(C/'PROGRESS.md',progress);save(P/'PROGRESS.md',progress);save(T/'PROGRESS.md',progress);state=read(T/'CONTROLLER_STATE.json');state['phase_state']['S08'].update(status='RUNNING',released_candidates=[cfg['candidates'][j]['candidate_id'] for j in range(n)]);state['backup_state']['S08_candidates']={'status':'PARTIAL' if n<9 else 'PRIVATE_WRITE_READBACK_VERIFIED','candidate_revisions':{x:y['immutable_revision'] for x,y in recs.items()},'completed_cases':n};state['resume_binding'].update(owned_processes=[identity],unfinished_units=[str(9-n)+'candidate recovery/releases; finalmetadata/Gitproof'],next_action='Continue onlymissing S08 recovery/releases andfinalmetadata/Gitdelivery; noS09.',reconciled_utc=now());state['resume_binding']['transfer_totals'].update(S08_unique_candidate_upload_bytes=sum(x['uploaded_application_bytes'] for x in recs.values()),S08_candidate_fresh_HTTP_body_bytes=sum(x['fresh_HTTP_body_bytes'] for x in recs.values()));save(T/'CONTROLLER_STATE.json',state);resume=read(C/'RESUME_MANIFEST.json');resume.update(status='S08_RECOVERY_RELEASE_RUNNING',completed_candidate_release_gates={x:hashlib.sha256((P/'candidates'/x/'RELEASE_GATE.json').read_bytes()).hexdigest() for x in completed},owned_processes=[identity],unfinished_scope={'candidate_recovery_release_cases':9-n,'final_metadata_and_Git_delivery':'PENDING'},transfer_totals=state['resume_binding']['transfer_totals'],updated_utc=now());save(C/'RESUME_MANIFEST.json',resume)
+        with (C/'EVENTS.jsonl').open('a') as event:event.write(json.dumps({'event':'S08_PRIVATE_RECOVERY_AND_RELEASE_PASS','alias':a,'completed_cases':n,'observed_utc':now()})+'\n')
+        if n in [3,6,9]:execute('S08-released-'+str(n)+'-publication-001',['/usr/local/bin/python3',str(C/'publish_checkpoint.py'),'S08-released-'+str(n)+'-001','Publish '+str(n)+' independently verified and privately recoverable S08 candidate scopes'])
+        print('S08_CANDIDATE_PRIVATE_RECOVERY_RELEASE_COMPLETE',a,flush=True)
+print('S08_FINITE_RECOVERY_RELEASE_QUEUE_DRAINED_FINAL_METADATA_AND_DELIVERY_PENDING',flush=True)
