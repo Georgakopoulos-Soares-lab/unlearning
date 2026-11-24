@@ -1,1 +1,1 @@
-All45S08numericgroups PASS:7020savedpaths/35100metricvectors and105originalfullCVaudits;1680initialauditcalls plus0retries. Producer135retriesreconciledseparately. Private recovery/release/publication pending. S07producerrows remain COMPLETE_UNVERIFIED; no S09.
+S08: all7020savedpaths/35100metricvectors and105originalfullCVaudits PASS. Private recovery andsource-boundrelease 3/9candidates (2340paths/11700vectors). Fullbyteverification anddeclaredreplay scope ineachreceipt. S07producerrows unchanged; finalmetadata/publication pending; stopbeforeS09.

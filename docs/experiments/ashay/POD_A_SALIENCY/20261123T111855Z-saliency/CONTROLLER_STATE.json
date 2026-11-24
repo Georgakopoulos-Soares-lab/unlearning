@@ -782,7 +782,12 @@
       "attempt_id": "attempt-001",
       "numerical_task_groups_complete": 45,
       "numeric_verification_status": "PASS",
-      "private_recovery_status": "PENDING"
+      "private_recovery_status": "PENDING",
+      "released_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER"
+      ]
     },
     "S09": {
       "status": "NOT_STARTED",
@@ -1135,6 +1140,15 @@
       "receipt_sha256": "d78e7c4064dd5a52f1112162a6792fb345dde000560b992e1fef184379289889",
       "scope": "Exact final administrative metadata/controller/S07receipt/S08handoff restored, plus10exact public mappings regenerated from restored saved metadata; candidate scientific archives referenced by immutable verified dependency graph; no extra replay or refits",
       "self_reference": "New recovery and final Git proof are external to their own named immutable objects"
+    },
+    "S08_candidates": {
+      "status": "PARTIAL",
+      "candidate_revisions": {
+        "candidate_01": "8e0ea3329bb319c6121eb6b631d55d47d45c6a91",
+        "candidate_02": "94a4c5356827b9402dbfed5f185324fd9d283491",
+        "candidate_03": "870c6b92aecb6588cbf1dc31672a5a016653eb83"
+      },
+      "completed_cases": 3
     }
   },
   "external_dependencies": [
@@ -1196,7 +1210,7 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
     "unfinished_units": [
-      "Nineprivatecandidate recovery/release, finalmetadata andGitdelivery"
+      "6candidate recovery/releases; finalmetadata/Gitproof"
     ],
     "transfer_totals": {
       "S07_candidate_upload_bytes": 5542236321,
@@ -1205,18 +1219,26 @@
       "S07_actual_optimizer_calls": 56295,
       "S07_convergence_retries": 135,
       "S07_final_metadata_upload_bytes": 54038275,
-      "S07_final_metadata_HTTP_body_bytes": 54038275
+      "S07_final_metadata_HTTP_body_bytes": 54038275,
+      "S08_unique_candidate_upload_bytes": 244135305,
+      "S08_candidate_fresh_HTTP_body_bytes": 244135305
     },
-    "owned_processes": [],
+    "owned_processes": [
+      {
+        "pid": 101690,
+        "start_ticks": "68037749",
+        "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002"
+      }
+    ],
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Prepare/protect originalpanel dependencies percase, freshrestore/replay/regen, then source-boundrelease/publication; no refitting completedunits or S09.",
+    "next_action": "Continue onlymissing S08 recovery/releases andfinalmetadata/Gitdelivery; noS09.",
     "prerequisites": [
       "S08 readiness PASS before full execution",
       "Original S04freeze/audit and exact S07producer identities"
     ],
-    "reconciled_utc": "2026-11-24T21:29:42.330120+00:00",
+    "reconciled_utc": "2026-11-24T21:34:07.012812+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
