@@ -1,0 +1,62 @@
+{
+  "schema_version": "s08-readiness-v1",
+  "status": "PASS",
+  "gates": {
+    "entry_and_approval": {
+      "status": "PASS",
+      "evidence": "APPROVED_ENTRY_VALIDATION.json"
+    },
+    "immutable_predecessor_and_frozen_scope": {
+      "status": "PASS",
+      "evidence": "PRE_APPROVAL_METADATA_CHECKS.json",
+      "reuse": "Sealed S07/S04 public metadata hashes verified once; no unchanged full scan repeated"
+    },
+    "actual_features_and_base_heads": {
+      "status": "PASS",
+      "feature_chunk_stat_bound_hash_witnesses_reused": 270,
+      "unique_original_base_heads_SHA256": 390,
+      "no_native_weights_read": true
+    },
+    "runtime_and_source": {
+      "status": "PASS",
+      "evidence": "SOURCE_IDENTITY.json",
+      "qualified_CPU_lock_sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e"
+    },
+    "adversarial_implementation_checks": {
+      "status": "PASS",
+      "evidence": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S08/attempt-001/focused-tests-001/TEST_REPORT.json"
+    },
+    "finite_keys_and_original_audits": {
+      "status": "PASS",
+      "evidence_keys": 107085,
+      "original_audit_refits": 105,
+      "initial_audit_calls": 1680,
+      "original_H3_audits_reused": 21
+    },
+    "prospective_recovery": {
+      "status": "PASS",
+      "evidence": "RECOVERY_CONTRACT.json",
+      "saved_path_panel": 210,
+      "fresh_audit_head_panel": 105,
+      "fresh_CV_in_recovery": 0
+    },
+    "capacity_and_owned_locks": {
+      "status": "PASS",
+      "evidence": "RESOURCE_ADMISSION.json",
+      "actual_cgroup_headroom_bytes": 65378795520
+    },
+    "publication_and_private_route": {
+      "status": "PASS",
+      "evidence": [
+        "GITHUB_ACCESS.json",
+        "HF_ACCESS.json"
+      ],
+      "current_write_readback_claim": "Inherited S07 completed immutable roundtrip; current preflight private read. Each S08 upload/readback rechecks actual privacy."
+    }
+  },
+  "verifier_source_identity_sha256": "ffa65b77e3f60939932f7e4309746498508e6efff8cb5f155909939662cc363c",
+  "first_actual_original_audit_cases": "Retain first binary/splice original cases as production checks before releasing remaining queue; no extra fits",
+  "observed_utc": "2026-11-24T21:05:44.825127+00:00",
+  "score": null,
+  "no_deadline": true
+}

@@ -1,0 +1,363 @@
+{
+  "schema_version": "s08-pre-approval-metadata-v1",
+  "status": "BOUNDED_METADATA_CHECKS_PASS_SCIENCE_NOT_ADMITTED",
+  "checks": {
+    "repository": {
+      "status": "PASS",
+      "branch": "POD_A_SALIENCY",
+      "HEAD_and_remote": "5057613a70865987ce0520e263e074c2fec6e4ae",
+      "tracked_changes": false,
+      "original_POD_A_tip_unchanged": true
+    },
+    "prompt_preservation": {
+      "status": "PASS",
+      "states": [
+        {
+          "path": "/workspace/pod-a-saliency/prompts",
+          "HEAD": "2a837ba3a183caf72529b891d52ba08637cc8398",
+          "tracked_changes": false
+        },
+        {
+          "path": "/workspace/pod-a-saliency/prompts-publish",
+          "HEAD": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+          "tracked_changes": false
+        }
+      ]
+    },
+    "canonical_package": {
+      "status": "PASS",
+      "commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "verified_manifest_members": 22,
+      "no_source_changes": true
+    },
+    "predecessor_and_freezes": {
+      "status": "PASS",
+      "sealed_metadata_files": 499,
+      "sealed_metadata_bytes": 274817204,
+      "elapsed_seconds": 1.4383160580182448,
+      "native_model_payloads_read": 0,
+      "S07_science_status": "COMPLETE_UNVERIFIED",
+      "S07_input_SHA256": "72c2d6c5fe78f13c66713ac6688d17f9303678eaf8be38655377381a0234e557",
+      "S08_handoff_SHA256": "20c364d3eb9621fb099c82a15255051cc9faa05636c8066a7a648d51b76d040e"
+    },
+    "finite_scope_metadata": {
+      "status": "PASS",
+      "candidate_task_groups": 45,
+      "frozen_remaining_audits": 105,
+      "initial_audit_calls": 1680,
+      "exact_frozen_audit_key_set_equal": true,
+      "reused_H3_audits_expected": 21,
+      "group_receipts": [
+        {
+          "alias": "candidate_01",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_01/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "27d7d6f501e0727332e59bddf06588e871ff829a2409fd0b383408f8cedc9d8e"
+        },
+        {
+          "alias": "candidate_01",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_01/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "12cf7039fef3034b895327a8b4f884693a0a5e9d005c60bddeb5d4dbcb9277d7"
+        },
+        {
+          "alias": "candidate_01",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_01/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "a99e4e0ec0086dcf122fa8295e901f1e2fb5ddf237201772aba90c3ce9c86b94"
+        },
+        {
+          "alias": "candidate_01",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_01/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "24c3c4372fb4ba171bc0906645bafdbfa9ae1f1c130a75844f3f1f00fdde3e10"
+        },
+        {
+          "alias": "candidate_01",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_01/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "7d3e6714d0f0bb2559735728abeec8041272378c02891cc6d8fbfab5dc9a3dbc"
+        },
+        {
+          "alias": "candidate_02",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_02/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "3c02134c60c1f1912e71b51f30af824a75dd4001ffa0b955cce1b056e32eb7c7"
+        },
+        {
+          "alias": "candidate_02",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_02/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "857d3ef49c413270273ab256c82f432e9f5e87c1cfa86f115338057ca1a08ab5"
+        },
+        {
+          "alias": "candidate_02",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_02/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "fd7b6deca0835449aa7eb22f33b42ce0bfe58d655480141f97e58e587dca17f9"
+        },
+        {
+          "alias": "candidate_02",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_02/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "190bbaa700e743fb11ba9c3a04d95eb4aedd6de82e18f2a62ff5d883aa2fdb69"
+        },
+        {
+          "alias": "candidate_02",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_02/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "ae2aa56e11225755ff2b6b7dbf8fe7ec1cd8d3874613674a3e6ea2fe52362b83"
+        },
+        {
+          "alias": "candidate_03",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_03/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "e7248d370ec2ce84c538d233f7acdff40b5d1dd4759c7793557b2e51b6060df7"
+        },
+        {
+          "alias": "candidate_03",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_03/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "1ec4102c1f6ea5090e669d99ebf0b5858f4ffba9bf6f1659b516e7a2d718cf2e"
+        },
+        {
+          "alias": "candidate_03",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_03/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "9399fa2e31e010edd867a57bf08761b97439f6ddd762c7b83e50949a4ed16f81"
+        },
+        {
+          "alias": "candidate_03",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_03/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "1efba71bb195805cc2be7555c1039c7800f4dce7be493bdc429960dbc90e0eea"
+        },
+        {
+          "alias": "candidate_03",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_03/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "da7bb20259fe4ccba6047e693bd6a5e7029893422e5a75a11679af335abdbfc5"
+        },
+        {
+          "alias": "candidate_04",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_04/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "8f8c8b85f0b420450143752269c4a1116a90756f165f5b015202dce722531d5d"
+        },
+        {
+          "alias": "candidate_04",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_04/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "9f68fe18687a2d441e5fff3b1be0c2984c02a7bceb6549c2d817e2d969cfc9b1"
+        },
+        {
+          "alias": "candidate_04",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_04/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "ac56b54af14ae8b9d77435a24fa57a6c456b23dc202acfd0fbc3da2839afee47"
+        },
+        {
+          "alias": "candidate_04",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_04/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "6d4150dbfd5c9f04c3daa0ee32ec4066c6a3ec0ee2f3a47e75d9fcaea68d9ae7"
+        },
+        {
+          "alias": "candidate_04",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_04/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "50def9203ff6552f02f0b52619dbd2731b0ebb381fc33d60ccdd9e884d6adf6e"
+        },
+        {
+          "alias": "candidate_05",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_05/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "c96932349b9fbefd9cd24d7f256051d74724d9d2eaf28d674311657ae1979094"
+        },
+        {
+          "alias": "candidate_05",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_05/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "9b000b277b5c26882ee90e319eafb7675799d3196ff517d65607f64e006d2e45"
+        },
+        {
+          "alias": "candidate_05",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_05/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "c92d75542eedf19e4b3b01c4d065b79a9c8438de56b3cf661d2a4ecd18f659cf"
+        },
+        {
+          "alias": "candidate_05",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_05/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "09afff9cc4a468c881814f16e19ade7ca23bf08bd06d54a4a836d164061c0a3e"
+        },
+        {
+          "alias": "candidate_05",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_05/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "a0f4fa86cc37af7d5390b1d9cba9efb719d616138c46ba16e8539f8a66a6644d"
+        },
+        {
+          "alias": "candidate_06",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_06/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "da2b3cd279e5146668dfa0e7f928b899a8aa559bafc2c7d35ac0895e38cac354"
+        },
+        {
+          "alias": "candidate_06",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_06/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "ce6dafe96ad67720c67f7b233dde6a36969a6eef40e5d8bed3fa369f728342b0"
+        },
+        {
+          "alias": "candidate_06",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_06/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "96a91ef10fc42a0cbd5316406644cf205c967860a557a1f4fb382e63713b0f7a"
+        },
+        {
+          "alias": "candidate_06",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_06/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "b2b38d53855d3d646c79643c527fc1b09b9d2186e39aa69d600daf60049486de"
+        },
+        {
+          "alias": "candidate_06",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_06/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "753c5aa1d1fd577cea092c4f1e46b20223be302a9149f3178f1c9d906430d5c6"
+        },
+        {
+          "alias": "candidate_07",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_07/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "888a3efb16475d67dc210275638b91d510dadbd1da35add89bb0315bcb4d8036"
+        },
+        {
+          "alias": "candidate_07",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_07/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "f74881990af32746e95f747c7b666de5d11da2a54447bb5d87555c9b933cc607"
+        },
+        {
+          "alias": "candidate_07",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_07/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "13f94016dd6bfaa670f181fdd7b5584183eed3686d23b5c4d31eab5bd68edb8e"
+        },
+        {
+          "alias": "candidate_07",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_07/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "8aa1afa3400f4e8ee6ce12fbf620c9241dd3270228cd60518b4458d90d4ed6a2"
+        },
+        {
+          "alias": "candidate_07",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_07/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "73254a36011f2837dda69711e2971a7f16c95b967436b57acf5aadefd9602387"
+        },
+        {
+          "alias": "candidate_08",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_08/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "0a7d2d210d1786da24cc9a86b4f03cae7967af404364a7c1a01a85d562b2d3f2"
+        },
+        {
+          "alias": "candidate_08",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_08/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "23ff306199453034370a43585eaf92d16c84bdb03cf9b2f478408130bccf469a"
+        },
+        {
+          "alias": "candidate_08",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_08/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "4358a71ed9c9f7297041977917fd2acb9d5ac903dc611bc7601ddc53a65c9a4c"
+        },
+        {
+          "alias": "candidate_08",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_08/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "1b5ef6c65c9809180805a66f601a7ba2333fc46e46ab4973567c316e5950032b"
+        },
+        {
+          "alias": "candidate_08",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_08/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "1688fe843fb567584146d72be9c104c005c50a8da0d4529f9546e86d318c777b"
+        },
+        {
+          "alias": "candidate_09",
+          "task": "gue_tf_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_09/tasks/gue_tf_0/GROUP_PRODUCTION.json",
+          "sha256": "3712fb5abd404163a7541f1bc30e4402956734be949bc1639423944d49b457e8"
+        },
+        {
+          "alias": "candidate_09",
+          "task": "gue_prom_core_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_09/tasks/gue_prom_core_all/GROUP_PRODUCTION.json",
+          "sha256": "3f66b594d9f282c8ad335b25af1d19d0ff9e14b6e38eb2e7223fea3aa41d24fc"
+        },
+        {
+          "alias": "candidate_09",
+          "task": "gue_prom_300_all",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_09/tasks/gue_prom_300_all/GROUP_PRODUCTION.json",
+          "sha256": "cc476301dc7b110e03b8774456b8a49c12d9eb9b202f47206e4908675cd6327a"
+        },
+        {
+          "alias": "candidate_09",
+          "task": "gue_splice_reconstructed",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_09/tasks/gue_splice_reconstructed/GROUP_PRODUCTION.json",
+          "sha256": "04ec3cb004080aa4e737443f3bded47aeb162c72673d1607fc06136af67859d4"
+        },
+        {
+          "alias": "candidate_09",
+          "task": "gue_mouse_0",
+          "path": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S07/attempt-001/candidates/candidate_09/tasks/gue_mouse_0/GROUP_PRODUCTION.json",
+          "sha256": "9a928a7a75e9870879ae9e22a219ddf5c45a579f61ec2a8407c07544455e0310"
+        }
+      ],
+      "payload_numeric_admission": "NOT_EXECUTED_PENDING_DIRECT_CHAT_APPROVAL"
+    },
+    "current_resources": {
+      "status": "PASS_FOR_PREFLIGHT_ONLY",
+      "memory": {
+        "MemTotal_bytes": 2434616254464,
+        "MemAvailable_bytes": 2149364482048
+      },
+      "cgroup": {
+        "cpu.max": "1360000 100000",
+        "memory.max": "282999996416",
+        "memory.current": "217436434432",
+        "cpuset.cpus.effective": "0-127"
+      },
+      "CPU_affinity_count": 128,
+      "inherited_limits": {
+        "max_workers": 2,
+        "BLAS_threads_per_worker": 4,
+        "worker_RSS_bytes": 8589934592,
+        "stage_RSS_bytes": 25769803776,
+        "minimum_batch_host_headroom_bytes": 51539607552
+      },
+      "shared_filesystem_free_bytes_not_provider_quota": 131709638803456,
+      "last_S07_owned_storage_lower_bound_bytes": 390042632192,
+      "current_provider_unused_quota": null,
+      "quota_reason": "No provider usage API evidence; S08-specific incremental budget still requires admission after approval. No repeated allocation scan.",
+      "matching_live_S07_owned_processes": [],
+      "owned_locks_free": [
+        "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S07/attempt-001/WRITER.lock",
+        "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S07/attempt-001/CPU_PRODUCTION_STAGE.lock",
+        "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/S07/attempt-001/RESEARCH_PUBLICATION.lock"
+      ]
+    },
+    "GPU_metadata_only": {
+      "status": "OBSERVED",
+      "value": "NVIDIA H200 NVL, 143771, 0",
+      "new_GPU_work": false
+    }
+  },
+  "observed_utc": "2026-11-24T20:22:14.923890+00:00",
+  "no_scientific_execution": true
+}

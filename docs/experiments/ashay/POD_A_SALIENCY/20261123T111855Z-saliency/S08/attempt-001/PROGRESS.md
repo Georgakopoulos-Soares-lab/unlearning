@@ -1,0 +1,1 @@
+S08 approved at exact canonical7007ebd. All9entry/readiness gates passed; source-qualified adversarial checks passed. First2original binary/splice fullCVaudits and4savedpaths passed and retained. Remaining103audits/7016savedpaths are pending; allS07producerrows remain COMPLETE_UNVERIFIED and S08release has not been granted. Finite two-worker CPU queue next; no S09.

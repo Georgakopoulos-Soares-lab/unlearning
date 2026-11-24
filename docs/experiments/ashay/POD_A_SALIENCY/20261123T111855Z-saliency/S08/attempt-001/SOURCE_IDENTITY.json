@@ -1,0 +1,73 @@
+{
+  "schema_version": "s08-numerical-source-identity-v1",
+  "phase": "S08",
+  "config_sha256": "f1b5073809e29de733d79ab483bfc3e09279219f75f103d4dc42706b635a18ae",
+  "files": [
+    {
+      "path": "artifact_seals.py",
+      "sha256": "c8c72c3ee5c80650a82199ef29bad47f687f8823d55d6bc7891810961d2ed513",
+      "bytes": 3981
+    },
+    {
+      "path": "inherited_fit.py",
+      "sha256": "780e5359cc352e6fb2eef9b24cc7b6109e1ea158b6e3eadd5e0f5bd2763b7183",
+      "bytes": 1116
+    },
+    {
+      "path": "inherited_independent.py",
+      "sha256": "d4ca3101125245f65faf015be3bfbc29baccfb71f6a55529ed93fe6ffa7ac730",
+      "bytes": 3441
+    },
+    {
+      "path": "s08_audit.py",
+      "sha256": "ce721ae398156b370a5145beabd721a56ff4642fbbf52598a16f32fa26a2183f",
+      "bytes": 7813
+    },
+    {
+      "path": "s08_index.py",
+      "sha256": "29569c4e212ffb566e700209ffa2a12affb568c4fbcc484a50b3803a5f2c89e8",
+      "bytes": 6841
+    },
+    {
+      "path": "s08_recovery.py",
+      "sha256": "c01922ae55cc009bfd72202c59823dfc9b2937666a2c85493bd9270306cb1a33",
+      "bytes": 9131
+    },
+    {
+      "path": "s08_shared.py",
+      "sha256": "90896f1482cec7696e539f4a71f3ef543c8cdaaa2efddb4388960f970e287ec0",
+      "bytes": 10253
+    },
+    {
+      "path": "s08_verify.py",
+      "sha256": "9f332de5d2df040043e759eab340321bceb94e774a57a23994cf229eb2ef49be",
+      "bytes": 15014
+    },
+    {
+      "path": "safe_archive.py",
+      "sha256": "b069a5ade167fadcd5c3f74e1c32da14f33eeb846484806a98107a5a8775616c",
+      "bytes": 1460
+    },
+    {
+      "path": "test_s08.py",
+      "sha256": "7086347abd6ec55e233f4554d6e07563a40ca786e87dac9d4b1d0efa94900a55",
+      "bytes": 10728
+    }
+  ],
+  "runtime_lock_sha256": "a517b72cc0b1d710a33cdd531ed21a9a30ff9ff00455aa41a4b2cf95c1a7186e",
+  "protocol_semantic_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "producer_source_identity_sha256": "246a59ccbe0e5cd9b0f82c10cc8b260441f17046b3a29f52aa32e657501a4607",
+  "finite_evidence_manifest_sha256": "eaaf6f346a3f3d2bd22410a79bcacd8b61615780e285ca6650fe6693d14c1fec",
+  "recovery_contract_sha256": "933e9fb8152b4f10c1a8dc217e4a968043404e688c60e4912cfdb64d666e0228",
+  "code_root": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S08/attempt-001/code",
+  "verifier_source_identity_sha256": "ffa65b77e3f60939932f7e4309746498508e6efff8cb5f155909939662cc363c",
+  "source_bound_before_full_pass": true,
+  "shared_components": {
+    "independent_math": "Exact inherited S05/S07 pairwise implementation, separate from S07 producer rank metrics and predict_proba",
+    "estimator": "Qualified inherited sklearn constructor; fresh independent fold/fitting orchestration shares sklearn/NumPy/SciPy/BLAS",
+    "input_adapters": "New S08 chunk/row/fold/group-weight adapters; source-bound unchanged S06 feature chunks and prior actual-content/stat witnesses",
+    "archive_seals": "Qualified inherited exact artifact checksums, stat-bound reuse and atomic completion-last mechanism",
+    "limits": "Implementation independence does not establish independent library/hardware/runtime recreation or biological independence"
+  },
+  "sealed_utc": "2026-11-24T21:05:43.689612+00:00"
+}

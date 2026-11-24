@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "retained_as_original_production": true,
+  "records": [
+    {
+      "selector": {
+        "c": "candidate_01",
+        "d": "851ae6aa77f50d5235fb0b94155794af65b3cb1b5b86c9467f3ae624c213dcf5",
+        "id": "a2c733fdec66b46342798cd0c2ab9e7da3fb4f80d9ff18d28a7e263417208fc2",
+        "k": "audit_refit",
+        "p": "independent_refit",
+        "r": "decoder.layers.16",
+        "s": 17,
+        "t": "gue_tf_0"
+      },
+      "status": "PASS",
+      "saved_prediction_paths": 2,
+      "initial_audit_calls": 16,
+      "actual_audit_calls": 16,
+      "max_probability_abs_residual": 0.0,
+      "max_metric_draw_CI_abs_residual": 3.552713678800501e-15,
+      "audit_max_probability_abs_residual": 0.0,
+      "peak_RSS_bytes": 174845952
+    },
+    {
+      "selector": {
+        "c": "candidate_01",
+        "d": "a92a94971b863a7b3e7f9a6c05f11be2bfa272935f91f02435cdfe1ee8d9ddb3",
+        "id": "777baa913e8d12c983d08f500a5fcbcc0fb8eecee3512f8c7bb16158e88f88ea",
+        "k": "audit_refit",
+        "p": "independent_refit",
+        "r": "decoder.layers.16",
+        "s": 17,
+        "t": "gue_splice_reconstructed"
+      },
+      "status": "PASS",
+      "saved_prediction_paths": 2,
+      "initial_audit_calls": 16,
+      "actual_audit_calls": 16,
+      "max_probability_abs_residual": 0.0,
+      "max_metric_draw_CI_abs_residual": 8.881784197001252e-15,
+      "audit_max_probability_abs_residual": 0.0,
+      "peak_RSS_bytes": 210153472
+    }
+  ],
+  "remaining_original_audits": 103,
+  "first_fixture_reruns_or_extra_fits": 0,
+  "observed_utc": "2026-11-24T21:07:26.640378+00:00"
+}

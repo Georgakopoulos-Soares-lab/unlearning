@@ -130,11 +130,22 @@
       ]
     },
     "S08": {
-      "approved": false,
+      "approved": true,
+      "source": "direct_chat",
+      "message": "APPROVE S08 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "observed_utc": "2026-11-24T20:52:25.245856+00:00",
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S09": {
       "approved": false,
@@ -766,8 +777,9 @@
       "independent_release": "PENDING_S08"
     },
     "S08": {
-      "status": "WAITING_FOR_APPROVAL",
-      "approved": false
+      "status": "PINNED",
+      "approved": false,
+      "attempt_id": "attempt-001"
     },
     "S09": {
       "status": "NOT_STARTED",
@@ -1169,10 +1181,10 @@
   "owned_processes": [],
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
-    "phase": "S07",
+    "phase": "S08",
     "attempt_id": "attempt-001",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "a5f02875f73032f8824c1a6035ac5c5b65cf8e0c",
+    "supplement_commit": "50c1883fea005ad540328dd61ab259069d6aa072",
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
@@ -1180,7 +1192,9 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S08_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/FINAL_METADATA_RECOVERY.json"
     ],
-    "unfinished_units": [],
+    "unfinished_units": [
+      "S08 readiness,7020savedpaths/35100vectors,105originalaudits,private recovery,release overlay and publication"
+    ],
     "transfer_totals": {
       "S07_candidate_upload_bytes": 5542236321,
       "S07_candidate_fresh_HTTP_body_bytes": 5542236321,
@@ -1194,15 +1208,12 @@
     "unresolved_decisions": [
       "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
     ],
-    "next_action": "Stop. WAITING_FOR_APPROVAL: S08. Allnewresults remain COMPLETE_UNVERIFIED. Reconcile final delivery/recovery and original frozen audit before newdirectS08approval.",
+    "next_action": "Complete S08 readiness/source qualification and finite manifest, then independent verification; stop before S09.",
     "prerequisites": [
-      "New direct APPROVE S08 at exact canonical pin",
-      "Reconcile S07 scientific/final metadata/Git proof, original S04 audit/contrast seals and all candidate private dependencies",
-      "Current source/runtime/host/storage/private route/locks and process-start identity admission",
-      "Preserve producer COMPLETE_UNVERIFIED rows; S08 adds source-bound release overlay only after its full checks",
-      "No audit panel or contrast family substitution; no raw forget/test/PodB work"
+      "S08 readiness PASS before full execution",
+      "Original S04freeze/audit and exact S07producer identities"
     ],
-    "reconciled_utc": "2026-11-24T19:37:46.541021+00:00",
+    "reconciled_utc": "2026-11-24T20:52:25.286703+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

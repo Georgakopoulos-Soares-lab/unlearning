@@ -1,0 +1,58 @@
+{
+  "schema_version": "s08-adversarial-fixtures-v1",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "binary analytic ranks/AP/ties/threshold and swapped columns",
+      "status": "PASS"
+    },
+    {
+      "case": "multiclass analytic macro metrics and missing-class masks",
+      "status": "PASS"
+    },
+    {
+      "case": "extreme probability clipping and exact half threshold",
+      "status": "PASS"
+    },
+    {
+      "case": "float32 scaler arithmetic and wrong precision/parameter detection",
+      "status": "PASS"
+    },
+    {
+      "case": "actual feature adapter catches row permutation/classes/task/split/dtype",
+      "status": "PASS"
+    },
+    {
+      "case": "checkpoint/task/layer/seed/source and exact-key failures",
+      "status": "PASS"
+    },
+    {
+      "case": "shared splice-group multiplicity and independent mask rejection",
+      "status": "PASS"
+    },
+    {
+      "case": "independent percentile endpoints and exact C tie behavior",
+      "status": "PASS"
+    },
+    {
+      "case": "partial writes, changed dependencies, corrupted bytes and competing writers",
+      "status": "PASS"
+    },
+    {
+      "case": "actual source checker rejects stale implementation",
+      "status": "PASS"
+    },
+    {
+      "case": "actual restoration rejects corrupt/extra/duplicate/traversal/link members",
+      "status": "PASS"
+    },
+    {
+      "case": "actual audit retry procedure permits only fresh convergence retry and preserves failures",
+      "status": "PASS"
+    }
+  ],
+  "scientific_fits": 0,
+  "synthetic_sklearn_fits": 0,
+  "warning_policy_exercised_with_fake_estimators": true,
+  "scope": "Actual input/identity/group/numerical/seal/restore/audit-call functions; analytic rational/log expected values and adversarial corruptions. No production-grid or package self-test rerun."
+}
