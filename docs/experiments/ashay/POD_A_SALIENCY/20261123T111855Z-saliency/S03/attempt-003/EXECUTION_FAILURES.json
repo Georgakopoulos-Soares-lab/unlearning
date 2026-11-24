@@ -1,0 +1,44 @@
+{
+  "schema_version": "s03-HF-execution-history-v1",
+  "recorded_process_failures": [],
+  "diagnosed_preflight_failures": [
+    {
+      "operation": "Initial provider allocation probe",
+      "exit_status": 1,
+      "reason": "Mistyped rest.runpod.io host failed DNS. Correct api.runpod.io/v2/pods route recovered from official SDK; current allocation then verified.",
+      "source_record": "RESOURCE_RECONCILIATION.json prior_resource_probe_failure"
+    },
+    {
+      "operation": "Initial mirror metadata admission",
+      "exit_status": 1,
+      "reason": "Assumed every old latest-pointer byte copy existed. Candidate06pointer was absent at expected path; original S01ID/name/size remained available. Joined those metadata, retained null prior localSHA, and recovered exact4bytes from pinned HF mirror.",
+      "preserved_source": "admit_mirror_metadata.failed-local-sidecar-assumption.py"
+    },
+    {
+      "operation": "Initial runtime metadata comparison",
+      "exit_status": 1,
+      "reason": "Compared125installed distributions to prior141metadata entries;16were setuptools-vendored entries exposed after framework imports. Explicit125+16 comparison matches exactly; no runtime mutation.",
+      "preserved_source": "check_current_runtime.failed-vendor-discovery-context.py"
+    },
+    {
+      "operation": "Dependent source-preparation attempt",
+      "exit_status": 1,
+      "reason": "Runtime reuse receipt absent after preceding preflight failure. No model executed; partial unsealed identical source files were reconciled and then sealed."
+    },
+    {
+      "operation": "Premature publication helper invocation",
+      "exit_status": 2,
+      "reason": "Helper had not yet been created after prerequisite failure. No commit/push from that invocation; actual later source publication fully verified."
+    }
+  ],
+  "tool_dispatch_failure": {
+    "kind": "TypeError",
+    "reason": "A nonexistent orchestration method was invoked; no process or agent was spawned"
+  },
+  "all_recorded_GPU_unit_exits": 0,
+  "GPU_qualification_failures": 0,
+  "final_candidate_failures": 0,
+  "known_timed_out_commands": 0,
+  "prior_attempt_failures": "Preserved immutably in priorattempt001/resumption002; no retroactive rewrite",
+  "SDK_freshness_correction": "APIforce_download materializations remain exact-byte proofs; installed Xet can use chunks. Additional explicit immutable HTTPS body readbacks and fresh-consumer CPU checks establish network freshness without new GPU work."
+}

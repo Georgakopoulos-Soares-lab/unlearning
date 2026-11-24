@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pod-a-saliency:s03-HF-continuation:1",
+  "file_schemas": {
+    "QUALIFICATION_MATRIX.json": {
+      "required": [
+        "schema_version",
+        "counts",
+        "candidates",
+        "units",
+        "actual_LM_checks"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "s03-HF-continuation-qualification-matrix-v1"
+        },
+        "candidates": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "units": {
+          "type": "array",
+          "minItems": 32,
+          "maxItems": 32
+        },
+        "S04_executed": {
+          "const": false
+        }
+      },
+      "type": "object"
+    },
+    "PAYLOAD_IDENTITIES.json": {
+      "required": [
+        "schema_version",
+        "payloads",
+        "mirror_handoff_exact_sha256"
+      ],
+      "properties": {
+        "payloads": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        }
+      },
+      "type": "object"
+    },
+    "RECOVERY_DEPENDENCIES.json": {
+      "required": [
+        "schema_version",
+        "minimum_historical_archives",
+        "native_weight_dependencies"
+      ],
+      "properties": {
+        "native_weight_dependencies": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        }
+      },
+      "type": "object"
+    },
+    "SAFE_RESTORE_REPORT.json": {
+      "required": [
+        "schema_version",
+        "explicit_network_readbacks",
+        "explicit_network_restored_CPU_replays",
+        "full_clean_runtime_rebuild"
+      ],
+      "properties": {
+        "explicit_network_readbacks": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "explicit_network_restored_CPU_replays": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "full_clean_runtime_rebuild": {
+          "const": false
+        }
+      },
+      "type": "object"
+    },
+    "RUNTIME_LOCK.json": {
+      "required": [
+        "schema_version",
+        "executed_GPU_runtime_lock_sha256",
+        "executed_GPU_runtime",
+        "current_reuse_check"
+      ],
+      "properties": {
+        "new_environment_installations": {
+          "const": 0
+        }
+      },
+      "type": "object"
+    },
+    "SOURCE_RUNTIME_IDENTITY.json": {
+      "required": [
+        "schema_version",
+        "current_source",
+        "current_source_identity_sha256",
+        "prior_source_commit",
+        "exact_numerical_source_reuse_compatibility"
+      ],
+      "type": "object"
+    },
+    "LOADING_EXCEPTIONS.json": {
+      "required": [
+        "schema_version",
+        "candidates",
+        "exception_policy",
+        "new_exception_classes"
+      ],
+      "properties": {
+        "candidates": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "new_exception_classes": {
+          "const": []
+        }
+      },
+      "type": "object"
+    },
+    "BASE_HEAD_REUSE_MAP.json": {
+      "required": [
+        "schema_version",
+        "immutable_full_map",
+        "qualified_heads",
+        "shared_controls"
+      ],
+      "properties": {
+        "qualified_heads": {
+          "const": 468
+        },
+        "shared_controls": {
+          "const": 36
+        },
+        "refits_executed": {
+          "const": 0
+        }
+      },
+      "type": "object"
+    },
+    "RESOURCE_CALIBRATION.json": {
+      "required": [
+        "schema_version",
+        "actual_new_verified_mirror_body_bytes",
+        "actual_reused_mirror_payload_bytes",
+        "new_units",
+        "reused_units",
+        "cumulative_technical_units",
+        "explicit_network_output_readback_body_bytes"
+      ],
+      "properties": {
+        "physical_total_network_bytes": {
+          "type": "null"
+        },
+        "provider_rate_start_cost": {
+          "type": "null"
+        }
+      },
+      "type": "object"
+    },
+    "MODEL_CONTENT_IDENTITIES.json": {
+      "required": [
+        "schema_version",
+        "native_tensor_content_digests",
+        "all9_same_tensor_layout_and_transform",
+        "only_injective_BF16toFP32_promotions",
+        "unique_reconstructed_parameter_contents"
+      ],
+      "properties": {
+        "unique_reconstructed_parameter_contents": {
+          "const": 9
+        }
+      },
+      "type": "object"
+    }
+  },
+  "semantics": "Cross-file source/revision/content/coverage/privateCPU and reconstructed-model identity contracts supplement structural validation; immutable shared package remains unchanged"
+}

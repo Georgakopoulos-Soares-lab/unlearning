@@ -1,0 +1,155 @@
+{
+  "schema_version": "s03-HF-source-runtime-identity-v1",
+  "current_source": {
+    "schema": "pod-a-s03-HF-continuation-source-v1",
+    "source_version": "S03-source-003-exact-HF-mirror",
+    "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+    "supplement_commit": "5e521f9dc048cb22be03260da526676d6f4a3316",
+    "mirror_prompt_sha256": "883a1245a3baa22284aae1261d9f27080ba53bfbe1b2837397dfc633a34b103b",
+    "owned_source_files": [
+      {
+        "path": "S03_HF_continuation_adapter.patch",
+        "bytes": 8672,
+        "sha256": "7a83d076ef2ce8986d12af9561aedbd2f32b348dd3382a386afee572b278fc39"
+      },
+      {
+        "path": "mirror_contract.py",
+        "bytes": 5194,
+        "sha256": "5f17abcc7221a5dea4151d608aa339d1ea8d5de646ba30f45935035e6ec455be"
+      },
+      {
+        "path": "native_loader.py",
+        "bytes": 7529,
+        "sha256": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304"
+      },
+      {
+        "path": "qualification_contract.py",
+        "bytes": 14482,
+        "sha256": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47"
+      },
+      {
+        "path": "run_qualification.py",
+        "bytes": 17160,
+        "sha256": "0bacc1fbbd1d131812912bb11cbb28042178aa8897763cef02a76b2b2aff10e6"
+      },
+      {
+        "path": "s03_entry_guard.py",
+        "bytes": 5702,
+        "sha256": "de1ec1b531a9270b7baecad0096e39cf72ffca9d120fe789395d26e52a89ba80"
+      },
+      {
+        "path": "test_continuation_guard.py",
+        "bytes": 1498,
+        "sha256": "125254cbba51739d00b8a1ab2d3072092ba998fd03d65ee1e8d9b54f9c9429d0"
+      },
+      {
+        "path": "test_mirror_contract.py",
+        "bytes": 2820,
+        "sha256": "175a0a5b213f193bf9bfc422bb0f1a1128ce9087578e5afefb52b643a2eb2e35"
+      },
+      {
+        "path": "test_package_source_boundary.py",
+        "bytes": 1580,
+        "sha256": "81c3ffbcd1c8c4948b2430773ec21dc295d9b4717300d606355d8c4d619333bb"
+      },
+      {
+        "path": "test_qualification_contract.py",
+        "bytes": 10874,
+        "sha256": "efdbe475ca17ad55581994de8f0213f6ff4b13f47c37dc5028227105783c9e7f"
+      },
+      {
+        "path": "test_s03_adapter.py",
+        "bytes": 2038,
+        "sha256": "eb01eba89c578d110deba78dd102a5dd136a19c0c80179f69ab7d189ea4ebf34"
+      },
+      {
+        "path": "test_tied_weight_contract.py",
+        "bytes": 1933,
+        "sha256": "c486fe4a4ebb2052a32daaaa566696b8778fe6b264d7dbf9b679f224b71adb29"
+      }
+    ],
+    "numerical_source_reuse": {
+      "status": "EXACT_NUMERICAL_IMPLEMENTATION_BYTES_UNCHANGED",
+      "native_loader_sha256": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304",
+      "qualification_contract_sha256": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47",
+      "GPU_execution_body_sha256": "271976ea187c9658f3201fb5f3e172c6a4472bf19cf88627b2a44bbfe4c3e6bb",
+      "prior_GPU_execution_body_sha256": "271976ea187c9658f3201fb5f3e172c6a4472bf19cf88627b2a44bbfe4c3e6bb",
+      "prior_source_identity_sha256": "deca2bc52950427f0810dfc657c8dfd4fb175241f9135438e71ba48c017e4c89",
+      "scope_changes": [
+        "Strict attempt003/mirror-content admission guard",
+        "Finite22unit manifest and actual inherited interpreter check",
+        "No numerical/preprocessing/tolerance/LM/hook/loading changes"
+      ],
+      "runtime_lock_sha256": "0fd4209ad3f22e7d81d3a3ff465c62c6c5b4bc489e4105b53b6302f7a9531b71",
+      "old_unit_reuse_requires_exact_content_config_runtime_witness_join": true,
+      "new_candidate02freshmirror_replay_will_validate_existing_runtime_continuity": true
+    },
+    "inherited_source_commit": "3c6bdaf6430277c4a3f9ebcdb7c5796f18514285",
+    "runtime_reuse": {
+      "status": "UNCHANGED_PINNED_RUNTIME_REUSED",
+      "executed_python": "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/runtime/bin/python",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "distribution_count": 125,
+      "vendored_metadata_count": 16,
+      "comparison_context": "Prior snapshot discovered16setuptools vendored distributions after framework imports; explicit actual+vendor comparison matches all141metadata entries without reimporting frameworks or mutating the environment",
+      "exact_distributions_equal_prior_lock": true,
+      "runtime_sources": [
+        {
+          "commit": "7dd1659f2103982562d7a23896fb2091200a1f1d",
+          "tracked_unchanged": true
+        },
+        {
+          "commit": "18ef1b61309dd45bc0535fb7c60064b9d8829a35",
+          "tracked_unchanged": true
+        },
+        {
+          "commit": "92c8482e6dcd11c3666c61bb8d1f7e8d0730ed13",
+          "tracked_unchanged": true
+        }
+      ],
+      "prior_runtime_lock_sha256": "0fd4209ad3f22e7d81d3a3ff465c62c6c5b4bc489e4105b53b6302f7a9531b71",
+      "import_or_model_forward_repeated": false,
+      "next_runtime_numeric_gate": "Candidate02freshHFmirror replay against already qualified identical content",
+      "no_global_environment_mutation": true
+    },
+    "mirror_admission_boundary_cases_pass": 11,
+    "continuation_guard_cases_pass": 7,
+    "prior_source_cases_reused": 36,
+    "prior_amendment_cases_reused": 17,
+    "numerical_thresholds_changed": false,
+    "training_smoke_population_changed": false,
+    "fits_or_later_stage_dispatch": false,
+    "observed_utc": "2026-11-24T02:54:35.982138+00:00"
+  },
+  "current_source_identity_sha256": "20e891327ffef66d8382c3af4e94babac1fd6915838ca6379dddaae929bf7b86",
+  "current_source_publication": {
+    "source_research_commit": "00a4cc06f4cedf8d24f5f82072ec869c8004029d",
+    "source_identity_sha256": "20e891327ffef66d8382c3af4e94babac1fd6915838ca6379dddaae929bf7b86",
+    "runtime_lock_sha256": "0fd4209ad3f22e7d81d3a3ff465c62c6c5b4bc489e4105b53b6302f7a9531b71",
+    "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+    "exact_remote_source_readback": true
+  },
+  "prior_source_commit": "3c6bdaf6430277c4a3f9ebcdb7c5796f18514285",
+  "actual_source_identity_per_unit": "QUALIFICATION_MATRIX.json units; prior units keep their original source identity",
+  "exact_numerical_source_reuse_compatibility": {
+    "status": "EXACT_NUMERICAL_IMPLEMENTATION_BYTES_UNCHANGED",
+    "native_loader_sha256": "174a4f57b6faa0c2a34923b3c46dd8fb787ba77dfc6ac5e3f7cfb7cfd860a304",
+    "qualification_contract_sha256": "fcfe2ffd72e33ed5e1eedb3e8364534aa7914cc8723204d4917c8349c9ad1a47",
+    "GPU_execution_body_sha256": "271976ea187c9658f3201fb5f3e172c6a4472bf19cf88627b2a44bbfe4c3e6bb",
+    "prior_GPU_execution_body_sha256": "271976ea187c9658f3201fb5f3e172c6a4472bf19cf88627b2a44bbfe4c3e6bb",
+    "prior_source_identity_sha256": "deca2bc52950427f0810dfc657c8dfd4fb175241f9135438e71ba48c017e4c89",
+    "scope_changes": [
+      "Strict attempt003/mirror-content admission guard",
+      "Finite22unit manifest and actual inherited interpreter check",
+      "No numerical/preprocessing/tolerance/LM/hook/loading changes"
+    ],
+    "runtime_lock_sha256": "0fd4209ad3f22e7d81d3a3ff465c62c6c5b4bc489e4105b53b6302f7a9531b71",
+    "old_unit_reuse_requires_exact_content_config_runtime_witness_join": true,
+    "new_candidate02freshmirror_replay_will_validate_existing_runtime_continuity": true
+  },
+  "TRAIN_witness_sha256": "42d64d32b77e946bc962c32d2b801e485d41a095221af49a492079ff0f76fd30",
+  "independent_frozen_parent_TRAIN_membership_sha256": "5cee3bb930483938da33ba25fc882cf3b765e08db0f0621e85dca4e11d4748a0",
+  "source_prompt_commit": "5e521f9dc048cb22be03260da526676d6f4a3316",
+  "source_prompt_sha256": "883a1245a3baa22284aae1261d9f27080ba53bfbe1b2837397dfc633a34b103b",
+  "canonical_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a"
+}

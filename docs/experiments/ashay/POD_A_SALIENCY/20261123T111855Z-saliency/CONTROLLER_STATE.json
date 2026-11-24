@@ -159,10 +159,10 @@
     "payload_access": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/MIRROR_SOURCE_BINDING.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/PAYLOAD_IDENTITIES.json"
       ],
       "resolve_in": "S02",
-      "eligibility_rule": "Exact9privateHFreceipt/manifest pins/provenance passed; actual local payload admission remains per-file whole SHA verified. No Drive quota retries."
+      "eligibility_rule": "Exactimmutable privateHFmirrors verified; no further repeatedDrivequota checks required"
     },
     "private_backup_access": {
       "status": "PENDING",
@@ -173,18 +173,18 @@
     "qualified_subset": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/QUALIFICATION_MATRIX.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/QUALIFICATION_MATRIX.json"
       ],
       "resolve_in": "S03",
-      "eligibility_rule": "Only candidate01 released for S04; candidate02 locally passes but fresh recovery is blocked, seven native shards absent"
+      "eligibility_rule": "Exact9selected candidates technically qualified and privately recovered; standalone planning only, not assumed-parent/causal claims"
     },
     "historical_protocol": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/SOURCE_RUNTIME_IDENTITY.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/SOURCE_RUNTIME_IDENTITY.json"
       ],
       "resolve_in": "S03",
-      "eligibility_rule": "Exact frozenTRAIN witness and source/runtime/references recovered; future scientific protocol/audit freeze remains S04"
+      "eligibility_rule": "Frozen source/runtime/witness/reference foundation recovered; future scientific panels/contrasts/protocol freeze remains S04"
     },
     "frozen_protocol": {
       "status": "PENDING",
@@ -195,18 +195,18 @@
     "runtime_qualified": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/RUNTIME_LOCK.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/RUNTIME_LOCK.json"
       ],
       "resolve_in": "S04",
-      "eligibility_rule": "Pinned native runtime qualified for actual recovered base/candidates; no missing candidate runtime inference"
+      "eligibility_rule": "Native Evo2-1B pinned runtime qualified on exact12TRAIN/all26hooks/actualLM; no fullcleanruntimeclaim"
     },
     "qualified_base_heads": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/BASE_HEAD_REUSE_MAP.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/BASE_HEAD_REUSE_MAP.json"
       ],
       "resolve_in": "S03",
-      "eligibility_rule": "All468 original references structurally/TRAIN-qualified unchanged; S04 binds exact reuse, S05 requires, S07 consumes originals"
+      "eligibility_rule": "Exact468original-base scaler/head pairs and36controls reused unchanged. S04binds immutable reuse; S05requires; S07consumes originals"
     },
     "frozen_audit_panel": {
       "status": "PENDING",
@@ -259,10 +259,12 @@
       "eligibility_rule": "Unknown blocks only affected loading/pairing/interpretation"
     },
     "runtime_payloads": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/PAYLOAD_IDENTITIES.json"
+      ],
       "resolve_in": "S03",
-      "eligibility_rule": "No compute admission without exact needed payloads and same-model qualification"
+      "eligibility_rule": "Exact9selected native mirrored payloads admitted; not proof of exhaustiveDrive delivery"
     },
     "protocol_and_audit": {
       "status": "PENDING",
@@ -310,10 +312,10 @@
     "private_minimum_artifact_protection": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/SAFE_RESTORE_REPORT.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/SAFE_RESTORE_REPORT.json"
       ],
       "resolve_in": "S03",
-      "eligibility_rule": "Minimum actual runtime/output bytes privately restored and CPU replayed; pilot model replay pass only; no full native-private/clean-runtime claim"
+      "eligibility_rule": "Allnewcostly outputs privately checkpointed, explicitnetwork memberrestore+CPUreplay passed; unchanged baseline/runtime dependencies referenced immutably"
     }
   },
   "phase_receipts": {
@@ -356,11 +358,19 @@
       ]
     },
     "S03": {
-      "status": "PARTIAL",
-      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/S03_RECEIPT.json",
-      "sha256": "dd4400a2a398eb2f99caf9fd9c6fa06ccdd96d26c17b1e7909fd098af2fac0b9",
+      "status": "COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/S03_RECEIPT.json",
+      "sha256": "72a6a338906562f414b842e83f0fb1155812369fb6cd9c2040e9fd06db25e013",
       "scope_candidates": [
-        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw"
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ]
     }
   },
@@ -394,7 +404,7 @@
       "delivery": "Separate post-commit readback receipt"
     },
     "S03": {
-      "status": "RUNNING",
+      "status": "COMPLETE",
       "approved": true,
       "conditional_candidate_recovery_scope": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
@@ -414,16 +424,22 @@
       "attempt_allocated": true,
       "next_state": "WAITING_FOR_APPROVAL: S04",
       "attempt_id": "attempt-003",
-      "scope": "S03 exact9privateHFmirror continuation: exactcontent acquisition, inherited12TRAIN technical qualification, scoped runtime repair/private recovery/sanitized publication; stop beforeS04. No deadline.",
+      "scope": "All9exact selected candidates technically recovered/qualified/protected for standalone S04planning. Parent/causal/exposure/replication/delivery-completeness limits remain.",
       "scope_candidates": [
-        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw"
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ],
       "locally_qualified_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq"
       ],
-      "native_quota_blocked": 7,
-      "fresh_recovery_quota_blocked": 1,
       "S04_approved": false,
       "last_resumption_audit": {
         "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/resumptions/resume-002/RESUMPTION_RECEIPT.json",
@@ -434,7 +450,23 @@
         "observed_utc": "2026-11-23T21:33:54.676312+00:00"
       },
       "mirror_continuation_prompt_commit": "5e521f9dc048cb22be03260da526676d6f4a3316",
-      "mirror_continuation_prompt_sha256": "883a1245a3baa22284aae1261d9f27080ba53bfbe1b2837397dfc633a34b103b"
+      "mirror_continuation_prompt_sha256": "883a1245a3baa22284aae1261d9f27080ba53bfbe1b2837397dfc633a34b103b",
+      "new_sealed_GPU_units": 22,
+      "new_private_restored_candidates": [
+        "candidate_02",
+        "candidate_03",
+        "candidate_04",
+        "candidate_05",
+        "candidate_06",
+        "candidate_07",
+        "candidate_08",
+        "candidate_09"
+      ],
+      "new_GPU_units": 22,
+      "reused_GPU_units": 10,
+      "local_native_admissions": 9,
+      "reconstructed_content_count": 9,
+      "prior_Drive_quota_state": "Preserved historical failures; exactHFmirrors resolve selected native recovery. No new Drive query or claim that quota cleared."
     },
     "S04": {
       "status": "WAITING_FOR_APPROVAL",
@@ -484,13 +516,22 @@
     "S02_metadata_status": "LIMITED_SCOPE_COMPLETE",
     "S02_new_source_payload_bytes": 0,
     "S03": {
-      "requested_candidates": 9,
-      "locally_qualified": 2,
-      "S04_eligible": 1,
-      "native_payload_missing": 7,
-      "fresh_recovery_blocked": 1,
-      "all9_unique_model_count": null,
+      "requested_discovery_records": 9,
+      "remote_mirror_receipt_manifest_pairs_verified": 9,
+      "local_native_admissions": 9,
+      "technically_qualified_candidates": 9,
+      "S04_eligible_candidates": 9,
+      "unique_serialized_native_shards": 9,
+      "unique_complete_native_tensor_contents": 9,
+      "unique_reconstructed_parameter_contents": 9,
+      "new_GPU_units": 22,
+      "reused_GPU_units": 10,
+      "cumulative_GPU_units": 32,
+      "original_base_shared_GPU_units_reused": 3,
+      "reference_scaler_heads_reused": 468,
+      "shared_controls_reused": 36,
       "new_probe_fits": 0,
+      "production_extraction_units": 0,
       "heldout_forward_rows": 0
     }
   },
@@ -499,14 +540,17 @@
     "administrative_git_delivery": "Verify separate post-commit delivery receipt; no self-hash claim",
     "full_GPU_recreation": "NOT_PERFORMED",
     "private_write_readback": "VERIFIED_SMALL_ROUTE_AND_MINIMUM_ACTUAL_ARTIFACT_OUTPUT_READBACK",
-    "runtime_recovery": "PILOT_FRESH_PROCESS_MODEL_REPLAY_EXISTING_RUNTIME",
+    "runtime_recovery": "ALL9NATIVE_RECONSTRUCTION_AND_PROCESS_QUALIFICATION_EXISTING_PINNED_RUNTIME",
     "part_a_publication_receipt": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/PACKAGE_PUBLICATION_RECEIPT.json",
-    "native_private_weight_backup": "FAILED_QUOTA_CONTRACT_PERMITTED_EXCLUSION",
-    "candidate02_recovery": "FRESH_MODEL_SOURCE_QUOTA_BLOCKED",
+    "candidate02_recovery": "PASS_FRESH_HF_NATIVE_MODEL_REPLAY_EXACT_PRIOR_OUTPUTS",
     "qualification_private_revisions": [
       "af4cccd8477ea40f152e60f22dea0778512aa200",
       "023633fbfbe6512d7909a4bdf33beae1e2d37a82"
-    ]
+    ],
+    "prior_full_native_backup_failure": "Attempt001raw-private upload quota failure preserved; no retry or false historical success",
+    "native_weight_protection": "9exactimmutableprivateHFmirrors verified; no newnative weight uploads",
+    "technical_output_backup": "Allnewoutput archives verified via explicitnetwork freshmemberrestore+CPUreplay",
+    "final_metadata_backup": "Separate after publication; see external finaldeliveryproof"
   },
   "external_dependencies": [
     {
@@ -560,28 +604,13 @@
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
     "supplement_commit": "5e521f9dc048cb22be03260da526676d6f4a3316",
     "completed_receipts": [
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/PACKAGE_PUBLICATION_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/ADMIN/package-migration-001/MIGRATION_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S02/attempt-001/S02_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/PRIVATE_WRITE_READBACK.json",
-      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/base/logical1/attempt-001/COMPLETE.json",
-      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/base/logical8/attempt-001/COMPLETE.json",
-      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/base/repeat8/attempt-001/COMPLETE.json",
-      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/candidate_01/logical1/attempt-001/COMPLETE.json",
-      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/candidate_01/logical8/attempt-001/COMPLETE.json",
-      "/workspace/pod-a-saliency/artifacts/20261123T111855Z-saliency/S03/attempt-001/qualification/candidate_01/repeat8/attempt-001/COMPLETE.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-001/S03_RECEIPT.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/QUALIFICATION_MATRIX.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/PAYLOAD_IDENTITIES.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/SAFE_RESTORE_REPORT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/BASE_HEAD_REUSE_MAP.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S03/attempt-003/SOURCE_RUNTIME_IDENTITY.json"
     ],
-    "unfinished_units": [
-      "HF_LOCAL_CANDIDATE02_FRESH_NATIVE_REPLAY",
-      "candidate_03:exact native recovery and logical1/logical8/repeat8 technical qualification",
-      "candidate_04:exact native recovery and logical1/logical8/repeat8 technical qualification",
-      "candidate_05:exact native recovery and logical1/logical8/repeat8 technical qualification",
-      "candidate_06:exact native recovery and logical1/logical8/repeat8 technical qualification",
-      "candidate_07:exact native recovery and logical1/logical8/repeat8 technical qualification",
-      "candidate_08:exact native recovery and logical1/logical8/repeat8 technical qualification",
-      "candidate_09:exact native recovery and logical1/logical8/repeat8 technical qualification"
-    ],
+    "unfinished_units": [],
     "transfer_totals": {
       "model_acquisition_bytes": 15516878934,
       "private_uploads": 1,
@@ -592,22 +621,32 @@
       "model_probe_bytes": 1024,
       "accepted_research_input_body_bytes": 58996077180,
       "verified_full_shard_downloads": 3,
-      "native_shards_distinct_received": 2
+      "native_shards_distinct_received": 2,
+      "continuation_new_mirror_body_bytes": 124137100703,
+      "continuation_reused_native_bytes": 15516878934
     },
     "owned_processes": [],
     "unresolved_decisions": [
-      "Direct S03 approval missing",
-      "Private write/readback, large transport, dependencies and runtime not yet qualified",
-      "S01 full-delivery coverage remains PARTIAL",
-      "Actual parents/intervention laws/exposure/replication remain scope-specific unknowns"
+      "immediate_parent_lineage: Supply exact immediate-parent tensor/config/tokenizer identity and provenance",
+      "saliency_algorithm_scoring_mask_timing: Supply safe implementation revision, scoring definition/data provenance, mask identities and intervention timing",
+      "strength_units_perturbation_law: Supply exact units, distributions, eligible parameters, realized affected fraction and magnitude",
+      "exposure_optimization: Supply safe objective/version, optimizer schedule, realized tokens/rows/duration, sampling and overlap metadata",
+      "two_noise5_endpoints: Outcome-independent endpoint policy and exact run/lineage/exposure relationship",
+      "seed_roles_replication: Supply role-specific seeds and independent intervention-run identifiers",
+      "controls: Supply exact unperturbed-parent and appropriate matched intervention controls",
+      "cohort_dependence_leakage: Supply safe overlap/exposure and broader biological dependence metadata",
+      "multiplicity_selection_prospectivity: Freeze contrast families, audit/refit panels, resampling, multiplicity and reporting before new producer outcomes; disclose earlier outcome inspection",
+      "forgetting_relearning: Later checkpoint/protocol-matched collaborator aggregates and separate authorized integration; no messages sent",
+      "delivery_upstream_privacy_completeness: Supply delivery manifest/exhaustion and safe upstream revision/history evidence if available; do not infer from nine records"
     ],
-    "next_action": "Acquire exact required immutable mirror files serially under350GiBowned ceiling and100GiBshared reserve; reuse matching prior inputs. No model load before actual substantial guard/source publication/local admission.",
+    "next_action": "Stop. After separate direct APPROVE S04 at7007ebd05bf59432bf69109e5f69baad31ec0d3a, reconcile exact finaldelivery/backup/seals/liveprocesses, then freeze standalone9candidate protocol/audit/contrast/reference scope before producer science. No S04now.",
     "prerequisites": [
-      "9mirror metadata admission passed",
-      "runtime/source/witness pins checked",
-      "real prior private roundtrip proof remains bound and current destination privacy/authenticated access verified"
+      "Separate direct S04approval at verified package7007",
+      "Finaldelivery/privatebackup proof and outputseal reconciliation",
+      "No duplicate livewriter or stale source/runtime binding",
+      "Interpretation-only unknowns remain scoped; no assumed-parent contrasts"
     ],
-    "reconciled_utc": "2026-11-24T02:48:35.329932+00:00",
+    "reconciled_utc": "2026-11-24T03:36:58.098562+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

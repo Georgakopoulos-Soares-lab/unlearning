@@ -1,0 +1,27 @@
+from pathlib import Path
+import os,sys,json,hashlib,fcntl
+from ops import C,A,R,save,now
+from long_run import execute
+alias=sys.argv[1];queue=json.loads((C/'FINITE_QUALIFICATION_QUEUE.json').read_text());units=[u for u in queue['units'] if u['alias']==alias];assert units and alias!='candidate_01';source=json.loads((C/'source-checkpoint-003-DELIVERY_RECEIPT.json').read_text());assert source['status']=='PUBLISHED_EXACT_BYTES_VERIFIED';identity=json.loads((C/'SOURCE_IDENTITY.json').read_text());assert all(hashlib.sha256((A/'code'/f['path']).read_bytes()).hexdigest()==f['sha256'] for f in identity['owned_source_files']);admission=json.loads((C/'MIRROR_LOCAL_ADMISSION.json').read_text());assert any(r['alias']==alias and r['status']=='LOCAL_NATIVE_SHA256_AND_MAPPING_PASS' for r in admission['records']);env=json.loads((C/'GPU_WORKER_ENVIRONMENT.json').read_text());cfg=json.loads((C/'RUN_CONFIG.json').read_text());save(C/'EXECUTION_SOURCE_PUBLICATION.json',{'source_research_commit':source['research_commit'],'source_identity_sha256':hashlib.sha256((C/'SOURCE_IDENTITY.json').read_bytes()).hexdigest(),'runtime_lock_sha256':hashlib.sha256((C/'ENVIRONMENT_LOCK.json').read_bytes()).hexdigest(),'package_commit':source['package_commit'],'exact_remote_source_readback':True});os.chdir(C)
+master={'pid':os.getpid(),'start_ticks':Path('/proc/self/stat').read_text().rsplit(')',1)[1].split()[19],'boot_id':Path('/proc/sys/kernel/random/boot_id').read_text().strip()};save(C/(alias+'-GPU_QUEUE.json'),{'status':'RUNNING','owned_process':master,'units':units,'started_utc':now(),'phase':'S03','no_later_stage_dispatch':True})
+for u in units:
+ root=A/'qualification'/alias/u['variant']/f"attempt-{u['unit_attempt']:03d}";seal=root/'COMPLETE.json'
+ if seal.exists():
+  r=json.loads(seal.read_text());assert r['status']=='PASS' and r['identity']['source_identity_sha256']==hashlib.sha256((C/'SOURCE_IDENTITY.json').read_bytes()).hexdigest() and r['identity']['runtime_lock_sha256']==hashlib.sha256((C/'ENVIRONMENT_LOCK.json').read_bytes()).hexdigest()
+  for f in r['files']:assert hashlib.sha256((root/f['path']).read_bytes()).hexdigest()==f['sha256']
+  print('REUSED_VALID_COMPLETED_UNIT',alias,u['variant'],flush=True);continue
+ assert not root.exists(),'Preserve incomplete/failed unit; do not overwrite or retry without diagnosis'
+ execute('qualify-'+alias+'-'+u['variant']+'-001',[str(Path(cfg['runtime_venv'])/'bin/python'),str(A/'code/run_qualification.py'),'--control',str(C),'--alias',alias,'--variant',u['variant'],'--unit-attempt',str(u['unit_attempt']),'--mode','qualification'],env)
+ record=json.loads(seal.read_text());assert record['status']=='PASS';ledger=C/'VERIFIED_GPU_UNIT_RECEIPTS.json';done=json.loads(ledger.read_text()) if ledger.exists() else {'units':[]};key=alias+'/'+u['variant']+'/attempt-001';assert key not in [x['key'] for x in done['units']]
+ for f in record['files']:assert hashlib.sha256((root/f['path']).read_bytes()).hexdigest()==f['sha256']
+ done['units'].append({'key':key,'alias':alias,'variant':u['variant'],'path':str(seal),'complete_sha256':hashlib.sha256(seal.read_bytes()).hexdigest(),'qualification_identity':record['qualification_identity'],'status':'PASS','source_identity_sha256':record['identity']['source_identity_sha256'],'runtime_lock_sha256':record['identity']['runtime_lock_sha256'],'files_verified':len(record['files']),'verified_utc':now()});save(ledger,done)
+ # Meaningful unit checkpoint persists dependencies and live-process references, with no duplicate transfer/GPU writers.
+ with (C/'RESUME_WRITER.lock').open('a') as resume_lock:
+  fcntl.flock(resume_lock,fcntl.LOCK_EX)
+  T=R/json.loads((C/'PATHS.json').read_text())['run_root'];P=T/'S03/attempt-003';resume=json.loads((C/'RESUME_STATE.json').read_text());resume['completed_new_GPU_units']=done['units'];resume['GPU_queue_master']=master;resume['transfer_progress_reference']='MIRROR_TRANSFER_PROGRESS.json';resume['next_action']='Continue only missing finite S03 units; preserve sealed units. Compare same-model outputs, privately restore new arrays and replay comparisons before candidate admission.';save(C/'RESUME_STATE.json',resume);save(P/'RESUME_MANIFEST.json',resume);state=json.loads((T/'CONTROLLER_STATE.json').read_text());state['resume_binding']['completed_receipts'].append(str(seal));state['resume_binding']['reconciled_utc']=now();state['resume_binding']['next_action']=resume['next_action'];state['phase_state']['S03']['new_sealed_GPU_units']=len(done['units']);save(T/'CONTROLLER_STATE.json',state)
+  event={'event':'S03_HF_TECHNICAL_UNIT_SEALED','alias':alias,'variant':u['variant'],'observed_utc':now(),'qualification_identity':record['qualification_identity'],'new_sealed_GPU_units':len(done['units']),'heldout_rows':0,'new_fits':0}
+  for target in [C/'EVENTS.jsonl',P/'EVENTS.jsonl',T/'EVENTS.jsonl']:
+   with target.open('a') as f:f.write(json.dumps(event)+'\n')
+  save(P/'PROGRESS.md',f"S03 exact-HF continuation: {len(done['units'])}/22maximum new TRAIN technical units sealed, prior10reused. {alias}/{u['variant']} exited0. Same-model comparison and private output restore remain separate gates. No S04.\n")
+ import subprocess;subprocess.run([sys.executable,str(C/'reconcile_current_checkpoint.py')],check=True)
+save(C/(alias+'-GPU_QUEUE.json'),{'status':'FINITE_CANDIDATE_QUEUE_DRAINED','owned_process':master,'units':units,'completed_utc':now(),'exit_status':0,'phase':'S03'});print('CANDIDATE_GPU_UNITS_DRAINED',alias,flush=True)
