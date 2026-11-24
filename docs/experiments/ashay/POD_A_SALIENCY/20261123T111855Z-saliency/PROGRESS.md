@@ -1,5 +1,5 @@
-# S05 readiness sealed; approved TRAIN calibration next
+# S05 H3 production in progress
 
-Readiness R1–R4 passed for all nine frozen H3 candidate scopes. The 34 synthetic contract tests bind the exact source bytes. The prospective fresh-consumer recovery panel contains 21 frozen head specifications under both policies (42 probability paths), plus TRAIN/dev LM for each candidate. All scientific outcomes remain pending.
+Verified and privately recoverable H3 gates: candidate_01. Pending: candidate_02, candidate_03, candidate_04, candidate_05, candidate_06, candidate_07, candidate_08, candidate_09. Every released candidate has2 exact TRAIN/dev bundles,78 refits,78 unchanged-base applications,156 dev paths/780 classifier metric records,2LM units and its frozen2/3full-CV audits. No S06 or S09 contrasts have executed.
 
-The approved first256 candidate_01 TRAIN rows are retained as the first production chunk after measured validation. One candidate proceeds end-to-end before expanding the queue. Only H3 TRAIN/dev are admitted; no S06 or S09 comparisons. No-deadline amendment remains active.
+Each candidate directory contains full-precision source-linked marginal records, exact spec joins, independent verification, immutable private recovery proof and its individual H3 gate. All26 representations/3seeds/2policies are retained. No-deadline amendment remains active.
