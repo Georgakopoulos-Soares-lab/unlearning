@@ -1,0 +1,24 @@
+{
+  "status": "RESOLVED_METADATA_ONLY",
+  "records": [
+    {
+      "operation": "S10-canonical-seal-001",
+      "actual_exit": 1,
+      "guard_operation": "S10-canonical-global-close-001",
+      "guard_exit": 1,
+      "failed_assertion": "CanonicalcontrollerinputsadditionalProperties=false rejects extra disposition property",
+      "affected_scope": "Controller metadata representation and metadata consumers only",
+      "repair": "Keep input.status RESOLVED meaningassessmentcompleted, retainactualexternal PENDING in canonicalphase_state object and alreadyfrozen PENDING_FORGET_INPUTS/S11handoff; collaborator_forget_results remainsPENDING",
+      "unaffected_reused": [
+        "11coreoutputs",
+        "9candidateassessments",
+        "29focusedfixtures",
+        "privateallmember/freshregeneration",
+        "canonicalphase_receipt"
+      ],
+      "scientific_method_or_package_change": false,
+      "resolved_without_new_approval": true
+    }
+  ],
+  "unresolved_release_affecting_failures": []
+}

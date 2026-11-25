@@ -155,11 +155,22 @@
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a"
     },
     "S10": {
-      "approved": false,
+      "approved": true,
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "source": "direct_chat",
+      "message": "APPROVE S10 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "observed_utc": "2026-11-24T23:49:58.597197+00:00",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     },
     "S11": {
       "approved": false,
@@ -316,10 +327,14 @@
       "eligibility_rule": "All48924frozenadmittedkeysverifiedwithcompleteoriginaldrawaccounting;42228deferredkeysremaininactive; no parent/LMbaseextrapolation; requirefreshdirectS10approval."
     },
     "external_dependency_disposition": {
-      "status": "PENDING",
-      "evidence": [],
+      "status": "RESOLVED",
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/PENDING_FORGET_INPUTS.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S10_RECEIPT.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S11_HANDOFF.json"
+      ],
       "resolve_in": "S10",
-      "eligibility_rule": "Must be evidence-backed RESOLVED before S11 entry; pending blocks only affected scope"
+      "eligibility_rule": "Assessment of dependency state is complete; actualcollaborator evidence remainsPENDING. S11 permittedonlyretain-only reporting undernewdirectapproval; no scientificintegration implied."
     },
     "inventory_candidates": {
       "status": "RESOLVED",
@@ -539,6 +554,22 @@
       "status": "LIMITED_SCOPE_COMPLETE",
       "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
       "sha256": "d979a1dda8d0b161d64845941f9cc4599c14057b9d6c48d55896608949918c22",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    "S10": {
+      "status": "LIMITED_SCOPE_COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S10_RECEIPT.json",
+      "sha256": "632122ea2d9deded49a38b6c37420b2a2d8ffa2e9c42ef2db8037976f53cd0e6",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -847,11 +878,15 @@
       "delivery_status": "SCIENCE_AND_FINAL_PRIVATE_METADATA_VERIFIED_FINAL_GIT_PROOF_EXTERNAL"
     },
     "S10": {
-      "status": "WAITING_FOR_APPROVAL",
-      "approved": false
+      "status": "LIMITED_SCOPE_COMPLETE",
+      "approved": true,
+      "attempt_id": "attempt-001",
+      "scientific_integration": "PENDING",
+      "delivery_status": "ASSESSMENT_RECOVERY_VERIFIED_FINAL_METADATA_GIT_EXTERNAL",
+      "external_dependency_disposition": "PENDING"
     },
     "S11": {
-      "status": "NOT_STARTED",
+      "status": "WAITING_FOR_APPROVAL",
       "approved": false
     }
   },
@@ -1269,10 +1304,10 @@
   "owned_processes": [],
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
-    "phase": "S09",
+    "phase": "S10",
     "attempt_id": "attempt-001",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "05187f14d66adb483758af7700deba081d27e371",
+    "supplement_commit": "dea058fb1ed5c7f475f8de5d25d93b6af23ec730",
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
@@ -1283,35 +1318,23 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S09_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/FINAL_METADATA_RECOVERY.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S10_HANDOFF.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S10_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S10_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S11_HANDOFF.json"
     ],
-    "unfinished_units": [],
-    "transfer_totals": {
-      "S07_candidate_upload_bytes": 5542236321,
-      "S07_candidate_fresh_HTTP_body_bytes": 5542236321,
-      "S07_initial_optimizer_calls": 56160,
-      "S07_actual_optimizer_calls": 56295,
-      "S07_convergence_retries": 135,
-      "S07_final_metadata_upload_bytes": 54038275,
-      "S07_final_metadata_HTTP_body_bytes": 54038275,
-      "S08_unique_candidate_upload_bytes": 732317976,
-      "S08_candidate_fresh_HTTP_body_bytes": 732317976,
-      "S08_final_metadata_upload_bytes": 95085059,
-      "S08_final_metadata_HTTP_body_bytes": 95085059,
-      "S09_application_upload_bytes": 1424432744,
-      "S09_fresh_HTTP_download_bytes": 1424432744,
-      "S09_new_model_download_bytes": 0
-    },
+    "unfinished_units": [
+      "OnlyexternalS10finalmetadata/Gitdeliveryproof"
+    ],
+    "transfer_totals": {},
     "owned_processes": [],
     "unresolved_decisions": [
-      "Operational first binary/multiclass producer gates before remaining queue; all interpretation dependencies unchanged"
+      "No collaborator aggregate supplied in bounded available scope; layerwise forget remains absent"
     ],
-    "next_action": "STOP: WAITING_FOR_APPROVAL S10 after external finalGitproof; require exactdirectAPPROVE S10 at canonicalpin beforeanyS10work.",
+    "next_action": "FinishS10externaldeliveryproof thenSTOP. WAITING_FOR_APPROVAL S11; retain-only scope withforgetintegrationpending.",
     "prerequisites": [
-      "S09readinessPASS",
-      "OriginalS04contrastfreezeand S08releaseidentity"
+      "Preserve S09 science, deferred contrasts and all canonical pins"
     ],
-    "reconciled_utc": "2026-11-24T23:18:39.257988+00:00",
+    "reconciled_utc": "2026-11-25T00:05:27.638939+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

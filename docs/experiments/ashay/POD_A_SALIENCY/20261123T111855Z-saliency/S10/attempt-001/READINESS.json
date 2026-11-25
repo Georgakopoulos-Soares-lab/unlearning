@@ -1,0 +1,30 @@
+{
+  "schema_version": "s10-readiness-v1",
+  "assessment_readiness": {
+    "status": "PASS",
+    "direct_approval_record_sha256": "4b24f44553e4fb068f7158f3e9fc0ed4502d09fd04ec9053acdb615b28f176cb",
+    "canonical_entry": "ENTRY_PASS",
+    "predecessor_reuse_sha256": "74c29a0c81ff52789ffb268f0f3cc9489b8cc35da9aa2f4c5538f4a147b7325e",
+    "frozen_discovery_sha256": "4adc5ebdf87ad6fa8bd322585b0712dae1399cee0f47ffd8515a42097f01669e",
+    "qualified_fixture_receipt_sha256": "03c4417b654414641632702c32c20c0094df9a8e9ad4440386865739a7f07da2",
+    "source_identity_sha256": "3aea490178c131f114fa2a1d3a92b2b5f56764b0a4350a9b0a50811927000f26",
+    "resource_admission_sha256": "aeffea1e22345fabd696869db6a908544b4e25f3622fdf7fb4aeb9a196565a8e",
+    "private_route_authenticated": true,
+    "prior_write_readback": "Verified S09 private recovery reused; currentS10freshwrite/readback stillmandatorybeforeclosure",
+    "writer_lock_policy": "Exclusivefcntlperfinitewriter, atomicoutput/checksum-last; allcommandsPID/start/boot/exits logged",
+    "recovery_contract_sha256": "4104726a5489b6d8dd5ffdc8acfbc113b496704b2a7bfffc50795592fcb0ddd8",
+    "frozen_input_manifest_sha256": "e54ad0c34b3facf914c4ba7cf6d38e1e504365ac2e1e978cc748977bdf6d36b9"
+  },
+  "record_integration_readiness": {
+    "status": "PENDING",
+    "reason": "NO_AGGREGATE_SUPPLIED_IN_BOUNDED_SCOPE",
+    "prevents": "Any measured retain-forgetview/reference-effect/forgetfinding"
+  },
+  "stronger_claim_readiness": {
+    "status": "NOT_ESTABLISHED",
+    "prevents": "Causal/selectiveunlearning,parent-relative,layerspecificforgettingoroptimalityclaims"
+  },
+  "no_numerical_score": true,
+  "no_deadline": true,
+  "observed_utc": "2026-11-24T23:54:39.213645+00:00"
+}

@@ -1,0 +1,30 @@
+{
+  "status": "ACTIVE_METADATA_REPAIR",
+  "reason": {
+    "operation": "S10-canonical-seal-001",
+    "actual_exit": 1,
+    "guard_operation": "S10-canonical-global-close-001",
+    "guard_exit": 1,
+    "failed_assertion": "CanonicalcontrollerinputsadditionalProperties=false rejects extra disposition property",
+    "affected_scope": "Controller metadata representation and metadata consumers only",
+    "repair": "Keep input.status RESOLVED meaningassessmentcompleted, retainactualexternal PENDING in canonicalphase_state object and alreadyfrozen PENDING_FORGET_INPUTS/S11handoff; collaborator_forget_results remainsPENDING",
+    "unaffected_reused": [
+      "11coreoutputs",
+      "9candidateassessments",
+      "29focusedfixtures",
+      "privateallmember/freshregeneration",
+      "canonicalphase_receipt"
+    ],
+    "scientific_method_or_package_change": false,
+    "resolved_without_new_approval": true
+  },
+  "new_recipes": {
+    "backup_metadata_002.py": "e04608f14eefb977884236e417326c2e78a0c68b55fe73ac6cc9dd3f5797689c",
+    "final_proof_002.py": "fc6f5efce227eee8e837c12e2939700de950f6054939056893417cb54d63eecf",
+    "resume_close_002.py": "49e1022f57651b1c1bbdd23b37d60186d4a6ffd4bf3962df1d5253215e683fe3"
+  },
+  "preserved_original_recipes": "Original administrative scripts inADMIN_SOURCE_IDENTITY staysealedasexecutedhistory; useversion002 forfinalmetadata/proof. No producer/numerical/assessment output/source changes.",
+  "canonical_package_unchanged": true,
+  "S11_handoff_unchanged_sha256": "ebb02158598ad6226659467f1d4f71e5e8567d7ece9d8b88e6e0a46a246faf13",
+  "failed_state_and_logs_privately_protected": "Final metadata recipe002 includes exactfailedcontrollerstate/source/receipt andfailed/resumedguardlogs"
+}

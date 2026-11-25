@@ -1,0 +1,255 @@
+{
+  "schema_version": "s10-pending-external-inputs-v1",
+  "status": "PENDING",
+  "external_dependency_disposition": "PENDING",
+  "scientific_integration": "PENDING",
+  "candidates": [
+    {
+      "alias": "candidate_01",
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "content_sha256": "ba02bd040b1be80ac2308a104cad20a7c802397b6ef3505590c5ecb844d99279",
+      "step": 1500,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_02",
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "content_sha256": "57cec2a1c2a0ed999beaa92f54c497e1697031bd2a456730bdab2b0ae5756b90",
+      "step": 1500,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_03",
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "content_sha256": "54851a4d9f374f8775661e6bc78421d64d468a606ed5213998c2a8be1ab216d4",
+      "step": 1500,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_04",
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "content_sha256": "05b9573e0bd6f4fa7e00dcaedb70a31d2f73ac2d9edc01242ea81212a63a6af0",
+      "step": 2000,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_05",
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "content_sha256": "e0e9659ddb315428591abdcf9351dc282d1761e60229ea5318b1f3808f4fa844",
+      "step": 2151,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_06",
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "content_sha256": "d3a66b9d3344dcaa4499841dd9661e008018c185c82b1d06d1040f87d38f4e70",
+      "step": 1500,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_07",
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "content_sha256": "a9eff2a1312586e0baf72503840224df9c06a04a535b3a576ee85d6971c92cdd",
+      "step": 1500,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_08",
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "content_sha256": "eb93bccc3d01d8648c2ca5640a85b22d35107e2937c8d55258647f0e5fdfc4f1",
+      "step": 1500,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    },
+    {
+      "alias": "candidate_09",
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "content_sha256": "d5658d3c621c318d752795015aebbc128c6d3a5026e8740e6b3a382a57563d29",
+      "step": 1500,
+      "required_items": [
+        "P01_ASSOCIATION",
+        "P02_REFERENCE",
+        "P03_UNCERTAINTY",
+        "P04_LAYERWISE",
+        "P05_INTERPRETATION"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "P01_ASSOCIATION",
+      "priority": "ESSENTIAL_FOR_EXACT_ASSOCIATION",
+      "missing": [
+        "Aggregate-only result file with source/version and allowed redistribution",
+        "Exact checkpoint/content and endpoint identity plus config/tokenizer or verified mapping",
+        "Task definition, split/cohort/version, protocol/implementation, readout/representation scope",
+        "Estimate with supplied precision, metric definition/direction/units and sample/target/group denominator as applicable"
+      ],
+      "already_reportable": "Complete verified benign S09 scope, with all policies/layers/seeds and original limitations.",
+      "blocked_conclusion": "Any measured forget point or retain-forget association.",
+      "minimum_resolving_evidence": "An aggregate-only table/report and provenance sufficient to bind each row to an exact evaluated checkpoint and evaluation definition.",
+      "resolver": "Sayyed / supplying collaborator; S10 qualifies any later approved delivery.",
+      "blocks_S11_retain_only": false,
+      "affected_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    {
+      "id": "P02_REFERENCE",
+      "priority": "ESSENTIAL_FOR_COMPARATIVE_CLAIMS",
+      "missing": [
+        "Exact evaluated reference content identity",
+        "Matching reference task/split/cohort/protocol/readout/metric/units/direction and denominator"
+      ],
+      "already_reportable": "Checkpoint-specific point description can be considered once P01 resolves, even if immediate parent remains unknown.",
+      "blocked_conclusion": "Reference-relative forgetting or parent-relative/selectivity claims.",
+      "minimum_resolving_evidence": "Compatible reference aggregate with exact identity/protocol; unknown immediate parent is never replaced by original base.",
+      "resolver": "Sayyed / supplying collaborator",
+      "blocks_S11_retain_only": false,
+      "affected_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    {
+      "id": "P03_UNCERTAINTY",
+      "priority": "COMPARATIVE_UNCERTAINTY_IF_AVAILABLE",
+      "missing": [
+        "Reported interval/dispersion kind, level, method, resampling unit and conditioning",
+        "Actual pairing/replicate/covariance provenance if a joint or paired claim is requested"
+      ],
+      "already_reportable": "A qualified point can remain descriptive with uncertainty explicitly unavailable.",
+      "blocked_conclusion": "An invented CI, paired effect uncertainty, joint confidence region or probability of dominance.",
+      "minimum_resolving_evidence": "Documented aggregate uncertainty or explicit statement not computed; no raw examples/per-example outputs requested.",
+      "resolver": "Sayyed / evaluation producer",
+      "blocks_S11_retain_only": false,
+      "affected_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    {
+      "id": "P04_LAYERWISE",
+      "priority": "ESSENTIAL_FOR_ORIGINAL_LAYERWISE_FORGET_REQUEST",
+      "missing": [
+        "Actual layerwise forget probe aggregates with exact hook/readout and index convention",
+        "Coverage or explicit unavailable disposition for decoder.layers.0\u201324 and decoder.final_norm"
+      ],
+      "already_reportable": "Layerwise benign results and explicit missing layerwise forget evidence. A future global forget score can only be annotated once per checkpoint/source measurement.",
+      "blocked_conclusion": "Layerwise forgetting profiles from a whole-model/global aggregate.",
+      "minimum_resolving_evidence": "Genuine qualified layerwise aggregate records, or confirmation that only global/output-head results exist. Block16 is the17thdecoder block; final norm is separate.",
+      "resolver": "Sayyed / collaborator evaluation producer",
+      "blocks_S11_retain_only": false,
+      "affected_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    },
+    {
+      "id": "P05_INTERPRETATION",
+      "priority": "NEEDED_ONLY_FOR_STRONGER_INTERPRETATION",
+      "missing": [
+        "Exact immediate parents",
+        "Intervention algorithm/timing, masks and realized dose",
+        "Realized training exposure and independent intervention replication"
+      ],
+      "already_reportable": "Supported benign descriptions; exactly identified future checkpoint descriptions without causal interpretation.",
+      "blocked_conclusion": "Causal/selective unlearning, optimal perturbation/dose, erased information or independent intervention replication.",
+      "minimum_resolving_evidence": "Source-bound parent/intervention/mask/exposure/replication metadata plus an approved prospective amendment for any new scientific comparisons.",
+      "resolver": "Checkpoint/intervention producer; collaborator supplies provenance",
+      "blocks_S11_retain_only": false,
+      "affected_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
+    }
+  ],
+  "S11_retain_only_permitted": true,
+  "S11_scope": "RETAIN_ONLY_WITH_EXTERNAL_FORGET_INTEGRATION_PENDING",
+  "current_aggregate_record_count": 0,
+  "layerwise_forget_measurements_available": 0,
+  "new_input_policy": "Later inputs get stable source IDs, exact versions/hashes/supersession, a new authorized attempt and precise downstream invalidation; no wait or polling loop."
+}

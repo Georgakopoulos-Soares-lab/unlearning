@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pod-a-saliency:s10-assessment:1",
+  "description": "Versioned supplementary administrative schema for this frozen no-aggregate attempt; canonical phase receipt schema is unchanged.",
+  "type": "object",
+  "required": [
+    "COLLABORATOR_FORGET_INPUTS.json",
+    "EXACT_JOIN_ELIGIBILITY.json",
+    "RETAIN_FORGET_VIEWS.json",
+    "PENDING_FORGET_INPUTS.json"
+  ],
+  "properties": {
+    "COLLABORATOR_FORGET_INPUTS.json": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "status",
+        "sources",
+        "normalized_records",
+        "partition",
+        "frozen_input_bindings"
+      ],
+      "properties": {
+        "status": {
+          "const": "NO_AGGREGATE_SUPPLIED_IN_BOUNDED_SCOPE"
+        },
+        "sources": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "normalized_records": {
+          "type": "array",
+          "maxItems": 0
+        }
+      }
+    },
+    "EXACT_JOIN_ELIGIBILITY.json": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "status",
+        "record_join_decisions",
+        "candidate_coverage",
+        "record_level_eligible_joins",
+        "candidate_missing_source_requirements"
+      ],
+      "properties": {
+        "record_join_decisions": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "candidate_coverage": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9,
+          "items": {
+            "type": "object",
+            "required": [
+              "candidate_id",
+              "content_sha256",
+              "step",
+              "assessment_status",
+              "forget_estimate",
+              "forget_ci",
+              "layerwise_forget_measurements"
+            ],
+            "properties": {
+              "forget_estimate": {
+                "type": "null"
+              },
+              "forget_ci": {
+                "type": "null"
+              },
+              "layerwise_forget_measurements": {
+                "const": 0
+              },
+              "assessment_status": {
+                "const": "VERIFIED_DEPENDENCY_DISPOSITION"
+              }
+            }
+          }
+        }
+      }
+    },
+    "RETAIN_FORGET_VIEWS.json": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "status",
+        "views",
+        "figures",
+        "unique_external_measurements",
+        "reason"
+      ],
+      "properties": {
+        "views": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "figures": {
+          "type": "array",
+          "maxItems": 0
+        },
+        "unique_external_measurements": {
+          "const": 0
+        }
+      }
+    },
+    "PENDING_FORGET_INPUTS.json": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "status",
+        "scientific_integration",
+        "items",
+        "candidates",
+        "S11_retain_only_permitted"
+      ],
+      "properties": {
+        "scientific_integration": {
+          "const": "PENDING"
+        },
+        "S11_retain_only_permitted": {
+          "const": true
+        },
+        "candidates": {
+          "type": "array",
+          "minItems": 9,
+          "maxItems": 9
+        }
+      }
+    }
+  }
+}

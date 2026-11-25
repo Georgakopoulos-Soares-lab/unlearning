@@ -1,0 +1,34 @@
+{
+  "schema_version": "s10-supported-views-v1",
+  "status": "PENDING_EXTERNAL_EVIDENCE",
+  "views": [],
+  "figures": [],
+  "unique_external_measurements": 0,
+  "reason": "No supplied/qualified external aggregate; no retain-forget point, joint uncertainty, layerwise forgetting or selective-unlearning conclusion can be added.",
+  "retained_benign_scope": {
+    "admitted_verified": 48924,
+    "deferred_unchanged": 42228,
+    "classifier_marginals": 42120,
+    "LM_units": 108,
+    "LM_metric_rows": 216,
+    "representations": 26,
+    "tasks": 6,
+    "CV_seeds": [
+      42,
+      17,
+      1234
+    ],
+    "readout_policies": [
+      "independent_refit",
+      "fixed_original_base"
+    ],
+    "anchors": [
+      "decoder.layers.16",
+      "decoder.final_norm"
+    ],
+    "source_commit": "3c39552d43c2e4c8aaf223ca97e3b8f6ee33d11c"
+  },
+  "uncertainty_policy": "S09 full-precision values and original conditional pointwise exploratory95% group-bootstrap uncertainty stay unchanged; no new internal computations. Missing forget values/CIs remain null, not zero. CV ranges are not CIs.",
+  "layerwise_forget": "No actual qualified layerwise forget evidence available. Global scores, if later supplied, cannot be copied into26 independent layerwise measurements.",
+  "external_evaluation_independently_reproduced": false
+}
