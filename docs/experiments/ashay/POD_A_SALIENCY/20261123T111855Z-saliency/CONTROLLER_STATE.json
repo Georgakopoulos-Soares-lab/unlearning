@@ -882,7 +882,7 @@
       "approved": true,
       "attempt_id": "attempt-001",
       "scientific_integration": "PENDING",
-      "delivery_status": "ASSESSMENT_RECOVERY_VERIFIED_FINAL_METADATA_GIT_EXTERNAL",
+      "delivery_status": "ASSESSMENT_AND_FINAL_PRIVATE_METADATA_VERIFIED_FINAL_GIT_PROOF_EXTERNAL",
       "external_dependency_disposition": "PENDING"
     },
     "S11": {
@@ -1322,19 +1322,21 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S10_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S11_HANDOFF.json"
     ],
-    "unfinished_units": [
-      "OnlyexternalS10finalmetadata/Gitdeliveryproof"
-    ],
-    "transfer_totals": {},
+    "unfinished_units": [],
+    "transfer_totals": {
+      "S10_HF_application_upload_bytes": 633398,
+      "S10_fresh_HTTP_download_bytes": 633398,
+      "S10_new_model_download_bytes": 0
+    },
     "owned_processes": [],
     "unresolved_decisions": [
       "No collaborator aggregate supplied in bounded available scope; layerwise forget remains absent"
     ],
-    "next_action": "FinishS10externaldeliveryproof thenSTOP. WAITING_FOR_APPROVAL S11; retain-only scope withforgetintegrationpending.",
+    "next_action": "STOP: WAITING_FOR_APPROVAL S11 after external finalGitproof. Retain-only reporting scope, forgetintegrationpending.",
     "prerequisites": [
       "Preserve S09 science, deferred contrasts and all canonical pins"
     ],
-    "reconciled_utc": "2026-11-25T00:05:27.638939+00:00",
+    "reconciled_utc": "2026-11-25T00:09:42.799140+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
