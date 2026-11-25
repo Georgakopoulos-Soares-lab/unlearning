@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "checks": {
+    "real_scalar_ingestion_independently_checked": 28456,
+    "AMBIGUOUS_CHECKPOINT_BINDING": 28456
+  },
+  "nonempty_real_data_ingestion": true,
+  "producer": "qualification_v2.py",
+  "independent_checker": "independent_v2.py",
+  "checker_calls_producer": false,
+  "all_validation_observations_adjudicated": true,
+  "source_fullscalar_digests": "Every source maintained reader digest exactly equals independent standalone wire decoder digest; all framing and record CRCs checked",
+  "independence_limits": "Shared immutable sources, common CRC32C primitive and serialization spec; separate event framing/decoder and separate Fraction-based qualifier. No reproduction of external training/evaluation."
+}

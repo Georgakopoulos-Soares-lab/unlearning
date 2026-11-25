@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "maintained_reader": "tensorboard LegacyEventFileLoader",
+  "independent_decoder": "strict TFRecord framing/compiled CRC32C and standalone protobuf wire decoder",
+  "fixtures": [
+    "two distinct values same tag/step",
+    "exact float32",
+    "CRC agreement with maintained CRC implementation",
+    "corrupt payload CRC rejected",
+    "truncation rejected"
+  ],
+  "failures_expected": [
+    "DATA_CRC at 0",
+    "TRUNCATED_PAYLOAD at 0"
+  ],
+  "CRC_acceleration": "Compiled google_crc32c supplies identical masked CRC algorithm to maintained reader; independent framing still checks every record",
+  "numerical_runtime_untouched": true
+}

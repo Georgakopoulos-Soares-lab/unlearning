@@ -1,0 +1,32 @@
+{
+  "failed_implementation_commands": [
+    {
+      "command": "initialize.py",
+      "actual_exit": 1,
+      "reason": "Import cache populated before helper file creation on network filesystem",
+      "repair": "initialize_002.py invalidated import caches"
+    },
+    {
+      "command": "S10-v2-canonical-entry-001",
+      "actual_exit": 1,
+      "reason": "Non-schema approval property",
+      "repair": "Pointer retained in separate amendment record; only standard approval fields used"
+    },
+    {
+      "command": "S10-v2-canonical-entry-002",
+      "actual_exit": 1,
+      "reason": "Non-schema completed_units resume field",
+      "repair": "Actual completed_receipts preserved; unsupported summary removed; canonical entry003 PASS"
+    }
+  ],
+  "scientific_source_units_failed": 0,
+  "timed_out_commands": 0,
+  "receipts_preserved": true,
+  "nonzero_exits_not_rewritten": true,
+  "setup_sessions_actual_exit_zero": [
+    "first file materialization PTY78651",
+    "remaining8 materialization PTY24266",
+    "isolated parser install PTY44313"
+  ],
+  "process_identity_missing_for_initial_tool_launched_setup_commands": "Exact child PIDs were not recorded before short commands exited; session IDs and observed exit0 retained rather than fabricated process-start identities"
+}

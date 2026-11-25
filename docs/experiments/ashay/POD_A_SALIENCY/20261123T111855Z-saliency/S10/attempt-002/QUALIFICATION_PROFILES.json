@@ -1,0 +1,32 @@
+{
+  "UNBOUND_LOG_SCALAR_V1": {
+    "exact_checkpoint_content_identity": null,
+    "exact_checkpoint_null_reason": "No immutable log/invocation-to-content receipt",
+    "task_definition": null,
+    "cohort_id": null,
+    "split_identity": null,
+    "split_null_reason": "Validation/training inferred only from original tag; not independently established split membership",
+    "metric_definition": null,
+    "metric_direction": null,
+    "units": null,
+    "aggregation": null,
+    "denominator": null,
+    "implementation_version": null,
+    "run_identity": "source-file SHA256; source files are not independent intervention runs",
+    "restart_identity": null,
+    "reference": null,
+    "uncertainty": null,
+    "metadata_null_reason": "Absent from scalar protobufs and source-bound supplied metadata; configuration declarations alone insufficient",
+    "allowed_uses": [
+      "quote original logged tag/value with exact source/axis/event order",
+      "inspect source-level traces with qualification warning"
+    ],
+    "prohibited_uses": [
+      "matched checkpoint tradeoff",
+      "successful or selective unlearning",
+      "loss interpreted as held-out biological performance",
+      "gradientnorm interpreted as layerwise performance",
+      "training/sample axes or duplicate calls as replicates"
+    ]
+  }
+}

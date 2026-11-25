@@ -1,0 +1,20 @@
+{
+  "schema_version": "s10-correction-recovery-v2",
+  "scope": "All9 original event sources, allscalar compressed tables, metadata/code, exact public corrective evidence; prior S09 and attempt001 are immutable dependency pointers",
+  "restore": "fresh uncached authenticated HTTP archive and separately committed manifest; reject nonregular/duplicate/unsafe/unexpected/missing/oversized members; verify exact SHA256 and bytes",
+  "regenerate": "Reparse all original sources with maintained+independent wire decoder; regenerate all9 fullscalar tables byte-equal, all29 derivative public files including validation/qualification/handoff byte-equal; independent check every emitted scalar CSV; regenerate all3 source-only figure exports byte-equal",
+  "producer_fallback": "Denied reads under producer data roots except fresh restored/regenerated roots and declared reused parser/plot software",
+  "software_recreation": "Not claimed; isolated parser and S09 plotting environment reused, exact distributions recorded",
+  "not_reproduced": [
+    "model execution",
+    "probe fitting",
+    "original collaborator evaluation",
+    "clean-runtime recreation"
+  ],
+  "limits": {
+    "members": 5000,
+    "expanded_bytes": 2147483648,
+    "member_bytes": 536870912
+  },
+  "no_deadline": true
+}

@@ -1,0 +1,31 @@
+{
+  "scientific_status": "EXTRACTION_ONLY_PENDING_QUALIFICATION",
+  "layerwise_forget": "PENDING",
+  "dependencies": [
+    {
+      "dependency": "Exact checkpoint/log invocation binding",
+      "affected_scope": "All nine delivered checkpoints; reinit5 has duplicate final validations and two source files",
+      "minimum_input": "Content-hash-bound checkpoint save/validation invocation receipt, exact run and counter semantics; resolve two reinit5 step1500 observations and noise5 endpoints separately",
+      "resolver": "Collaborator metadata only"
+    },
+    {
+      "dependency": "Evaluation semantics and comparability",
+      "affected_scope": "All source validation observations",
+      "minimum_input": "Exact training/evaluation source commit and loss/maxent/ppl implementation, cohort/split manifest identities, valid-target denominator, aggregation/masks/rank reduction and actual iteration execution; explain 702 versus1 evaluations",
+      "resolver": "Collaborator metadata/aggregates only"
+    },
+    {
+      "dependency": "Reference and uncertainty",
+      "affected_scope": "Any reference-relative or interval-bearing claim",
+      "minimum_input": "Compatible aggregate reference with exact checkpoint identity and protocol, plus uncertainty definition if available; missing uncertainty may remain explicit",
+      "resolver": "Collaborator metadata/aggregates only"
+    },
+    {
+      "dependency": "Layerwise forget performance",
+      "affected_scope": "All 234 candidate/representation slots and unspecified full protocol grid",
+      "minimum_input": "Actual qualified layerwise aggregate task/readout/hook/performance evidence; gradient norms cannot substitute",
+      "resolver": "Collaborator aggregates only; no Pod A raw evaluation"
+    }
+  ],
+  "messages_sent": 0
+}

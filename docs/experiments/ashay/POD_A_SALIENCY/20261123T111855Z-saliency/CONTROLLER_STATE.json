@@ -159,7 +159,7 @@
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
       "source": "direct_chat",
       "message": "APPROVE S10 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "observed_utc": "2026-11-24T23:49:58.597197+00:00",
+      "observed_utc": "2026-11-25T01:08:27.688060+00:00",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -329,12 +329,12 @@
     "external_dependency_disposition": {
       "status": "RESOLVED",
       "evidence": [
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/PENDING_FORGET_INPUTS.json",
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S10_RECEIPT.json",
-        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S11_HANDOFF.json"
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/PENDING_FORGET_INPUTS.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_RECEIPT.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S11_HANDOFF.json"
       ],
       "resolve_in": "S10",
-      "eligibility_rule": "Assessment of dependency state is complete; actualcollaborator evidence remainsPENDING. S11 permittedonlyretain-only reporting undernewdirectapproval; no scientificintegration implied."
+      "eligibility_rule": "Corrected assessment of actual source scalars complete; exact scientifically qualified aggregate integration and layerwise performance PENDING. Future S11 may report verified retain results plus explicitly unqualified log evidence under separate approval."
     },
     "inventory_candidates": {
       "status": "RESOLVED",
@@ -369,9 +369,12 @@
     },
     "collaborator_forget_results": {
       "status": "PENDING",
-      "evidence": [],
+      "evidence": [
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/SOURCE_LOG_INVENTORY.json",
+        "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/QUALIFICATION_LEDGER.csv"
+      ],
       "resolve_in": "S10",
-      "eligibility_rule": "External pending disposition permits retain-only S11"
+      "eligibility_rule": "Existing source measurements are present, exact checkpoint/protocol qualification remains pending. No fabricated joins or global-to-layerwise projection."
     },
     "backup_route_identified": {
       "status": "RESOLVED",
@@ -568,8 +571,8 @@
     },
     "S10": {
       "status": "LIMITED_SCOPE_COMPLETE",
-      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S10_RECEIPT.json",
-      "sha256": "632122ea2d9deded49a38b6c37420b2a2d8ffa2e9c42ef2db8037976f53cd0e6",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_RECEIPT.json",
+      "sha256": "8539d4b20da31410f4b7e6e725f6c0c65e119d6c1b9f74470e12823e195b5841",
       "scope_candidates": [
         "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
         "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
@@ -880,10 +883,11 @@
     "S10": {
       "status": "LIMITED_SCOPE_COMPLETE",
       "approved": true,
-      "attempt_id": "attempt-001",
-      "scientific_integration": "PENDING",
-      "delivery_status": "ASSESSMENT_AND_FINAL_PRIVATE_METADATA_VERIFIED_FINAL_GIT_PROOF_EXTERNAL",
-      "external_dependency_disposition": "PENDING"
+      "attempt_id": "attempt-002",
+      "scientific_integration": "EXTRACTION_ONLY_PENDING_QUALIFICATION",
+      "delivery_status": "CORRECTIVE_SOURCE_RECOVERY_VERIFIED_FINAL_GIT_EXTERNAL",
+      "external_dependency_disposition": "PENDING",
+      "corrective_scope": "EXISTING_AGGREGATE_EVENT_LOGS"
     },
     "S11": {
       "status": "WAITING_FOR_APPROVAL",
@@ -1305,9 +1309,9 @@
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
     "phase": "S10",
-    "attempt_id": "attempt-001",
+    "attempt_id": "attempt-002",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "dea058fb1ed5c7f475f8de5d25d93b6af23ec730",
+    "supplement_commit": "586afb0911a092e2fb7b020b65e0ee32057f71b6",
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
@@ -1320,23 +1324,30 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S10_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S10_RECEIPT.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S11_HANDOFF.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S11_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S11_HANDOFF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/PRIVATE_RECOVERY_PROOF.json"
     ],
-    "unfinished_units": [],
+    "unfinished_units": [
+      "S10 scientific publication",
+      "S10 final metadata protection/readback",
+      "S10 final publication/actual exit proof"
+    ],
     "transfer_totals": {
-      "S10_HF_application_upload_bytes": 633398,
-      "S10_fresh_HTTP_download_bytes": 633398,
-      "S10_new_model_download_bytes": 0
+      "source_payload_expected_bytes": 418914867
     },
     "owned_processes": [],
     "unresolved_decisions": [
-      "No collaborator aggregate supplied in bounded available scope; layerwise forget remains absent"
+      "exact checkpoint-log binding",
+      "metric/cohort/denominator/implementation semantics"
     ],
-    "next_action": "STOP: WAITING_FOR_APPROVAL S11 after external finalGitproof. Retain-only reporting scope, forgetintegrationpending.",
+    "next_action": "Finish only corrective S10 delivery; then HOLD_BEFORE_S11",
     "prerequisites": [
-      "Preserve S09 science, deferred contrasts and all canonical pins"
+      "direct corrective scope approval",
+      "unchanged S04 and S09 pins"
     ],
-    "reconciled_utc": "2026-11-25T00:09:42.799140+00:00",
+    "reconciled_utc": "2026-11-25T01:27:36.539855+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {
