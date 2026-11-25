@@ -885,7 +885,7 @@
       "approved": true,
       "attempt_id": "attempt-002",
       "scientific_integration": "EXTRACTION_ONLY_PENDING_QUALIFICATION",
-      "delivery_status": "CORRECTIVE_SOURCE_RECOVERY_VERIFIED_FINAL_GIT_EXTERNAL",
+      "delivery_status": "CORRECTION_SCIENCE_AND_FINAL_PRIVATE_METADATA_VERIFIED_FINAL_GIT_PROOF_EXTERNAL",
       "external_dependency_disposition": "PENDING",
       "corrective_scope": "EXISTING_AGGREGATE_EVENT_LOGS"
     },
@@ -1329,25 +1329,27 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S11_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/PRIVATE_RECOVERY_PROOF.json"
     ],
-    "unfinished_units": [
-      "S10 scientific publication",
-      "S10 final metadata protection/readback",
-      "S10 final publication/actual exit proof"
-    ],
+    "unfinished_units": [],
     "transfer_totals": {
-      "source_payload_expected_bytes": 418914867
+      "source_payload_bytes": 418914867,
+      "provider_stage_plus_materialization_bytes": 837829734,
+      "private_uploaded_application_bytes": 211580130,
+      "fresh_private_HTTP_body_bytes": 211580130,
+      "science_publication_fresh_raw_payload_bytes": 51832466,
+      "model_payload_bytes": 0
     },
     "owned_processes": [],
     "unresolved_decisions": [
       "exact checkpoint-log binding",
       "metric/cohort/denominator/implementation semantics"
     ],
-    "next_action": "Finish only corrective S10 delivery; then HOLD_BEFORE_S11",
+    "next_action": "Read external corrective FINAL_DELIVERY_RECEIPT.json and FINAL_ACTUAL_EXIT_WITNESS.json; both must PASS. Then HOLD_BEFORE_S11; new separate S11 direct approval required.",
     "prerequisites": [
-      "direct corrective scope approval",
-      "unchanged S04 and S09 pins"
+      "Exact final external delivery proof",
+      "S11 remains unapproved",
+      "Preserve S04/S09/old attempts and scientific pending limits"
     ],
-    "reconciled_utc": "2026-11-25T01:27:36.539855+00:00",
+    "reconciled_utc": "2026-11-25T01:33:02.851545+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

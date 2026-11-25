@@ -5,36 +5,38 @@
   "canonical_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
   "supplement_commit": "586afb0911a092e2fb7b020b65e0ee32057f71b6",
   "supplement_sha256": "b33fb24547156cdfed9c24796668120b43f9e4a3a7167e929c2ff4ef359de494",
-  "status": "CORRECTIVE_ASSESSMENT_AND_PRIVATE_SOURCE_RECOVERY_SEALED",
-  "next_permitted_action": "Complete scoped publication, final metadata protection/readback and actual final delivery proof; stop before S11.",
-  "updated_utc": "2026-11-25T01:27:35.731767+00:00",
+  "status": "HOLD_BEFORE_S11_FINAL_GIT_PROOF_EXTERNAL",
+  "next_permitted_action": "Finish only final corrective metadata publication and external actual-exit proof. After PASS stop before S11; no scheduler/observer/later phase.",
+  "updated_utc": "2026-11-25T01:33:02.817908+00:00",
   "completed_units": [
-    "all9sourcefiles",
-    "all4069382scalarchecks",
-    "47validatorcases",
-    "28456individualqualifications",
-    "freshsourceand29outputregeneration",
-    "3figurebytechecks"
+    "all9sourcesandallscalars",
+    "validation/qualification/semantics/impactreview",
+    "47focusedtests/independentrealchecks",
+    "sourceprivatefreshrecovery",
+    "29tablesand3figuresregenerated",
+    "scientificGitpublication",
+    "finalprivatemetadatarecovery"
   ],
   "unfinished_units": [
-    "verified scientific publication",
-    "private final metadata recovery",
-    "final publication/actual exit witness"
+    "finalGitmetadatareadbackandexternalactualexitproof"
   ],
   "owned_processes": [],
   "no_deadline": true,
   "transfer_totals": {
     "source_payload_bytes": 418914867,
-    "source_stage_and_materialization_bytes": 837829734,
-    "private_uploaded_bytes": 207024153,
-    "fresh_private_HTTP_bytes": 207024153,
+    "provider_stage_plus_materialization_bytes": 837829734,
+    "private_uploaded_application_bytes": 211580130,
+    "fresh_private_HTTP_body_bytes": 211580130,
+    "science_publication_fresh_raw_payload_bytes": 51832466,
+    "metadata_protocol_overhead_and_provider_billing": null,
+    "billing_not_inferred": true,
     "model_payload_bytes": 0
   },
   "applicable_protocol_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
   "unresolved_decisions": [
     "exact checkpoint/invocation binding",
-    "metric/cohort/denominator/implementation semantics",
-    "layerwise forget performance"
+    "metric/cohort/denominator/implementation/reference semantics",
+    "layerwise forget-performance evidence"
   ],
   "scientific_status": "EXTRACTION_ONLY_PENDING_QUALIFICATION",
   "layerwise_forget_status": "PENDING"
