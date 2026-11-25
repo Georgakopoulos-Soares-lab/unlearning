@@ -912,7 +912,7 @@
       "scientific_scope": "Verified retain plus scientifically unqualified forget source logs",
       "reporting_status": "COMPLETE_FOR_VERIFIED_RETAIN_AND_UNQUALIFIED_FORGET_LOG_SCOPE",
       "original_combined_request": "PARTIAL",
-      "delivery_status": "REPORT_AND_PRIVATE_RECOVERY_VERIFIED_GIT_PROOF_PENDING"
+      "delivery_status": "REPORT_GIT_AND_FINAL_PRIVATE_METADATA_VERIFIED_FINAL_GIT_PROOF_EXTERNAL"
     }
   },
   "coverage": {
@@ -1352,23 +1352,26 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/S11_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FRESH_CPU_RESTORE_CHECK.json"
     ],
-    "unfinished_units": [
-      "S11reportpublication",
-      "S11finalprivatemetadata",
-      "S11terminalGit/exitproof"
-    ],
-    "transfer_totals": {},
+    "unfinished_units": [],
+    "transfer_totals": {
+      "source_private_logical_application_upload_bytes": 877136061,
+      "final_metadata_logical_application_upload_bytes": 37530713,
+      "fresh_private_HTTP_body_bytes": 914666774,
+      "report_Git_raw_readback_body_bytes": 200680389,
+      "new_model_payload_download_bytes": 0,
+      "raw_forget_dataset_download_bytes": 0,
+      "new_backbone_forwards_fits_or_draws": 0
+    },
     "owned_processes": [],
     "unresolved_decisions": [
       "Qualified forget comparisons and layerwise performance remain pending; reporting is limited scope"
     ],
-    "next_action": "Complete only S11 administrative delivery proofs, then STOPPED: S11 REPORTING HANDOFF DELIVERED. No new workflow.",
+    "next_action": "Require external S11 FINAL_DELIVERY_RECEIPT.json and FINAL_ACTUAL_EXIT_WITNESS.json PASS; then STOPPED: S11 REPORTING HANDOFF DELIVERED. Original request PARTIAL. No new workflow without separate authorization.",
     "prerequisites": [
-      "Current direct S11 execution instruction",
-      "Verified corrected S10 delivery",
-      "Preserve S04/S09 science"
+      "Exact terminal delivery and actual-exit witnesses",
+      "Preserve prior science and all scoped pending limitations"
     ],
-    "reconciled_utc": "2026-11-25T02:47:48.884274+00:00",
+    "reconciled_utc": "2026-11-25T03:00:09.261824+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

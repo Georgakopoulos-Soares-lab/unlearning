@@ -5,27 +5,38 @@
   "canonical_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
   "supplement_commit": "a3bc0fd29c50c3bb9dac1adc0d13fca63c393ba5",
   "supplement_sha256": "2d6913bf94e1ab6cde6fb2ed86cb1133cf7b2926bee80f28d55977d3c4164c7c",
-  "status": "REPORTING_AND_FRESH_SAVED_ANALYSIS_RECOVERY_SEALED",
-  "next_permitted_action": "Publish report, protect/freshlyrestore final metadata, publish final receipt and verify actual terminal exit. Then stop; no new workflow.",
-  "updated_utc": "2026-11-25T02:47:47.863949+00:00",
+  "status": "TERMINAL_REPORTING_SCOPE_COMPLETE_FINAL_GIT_PROOF_EXTERNAL",
+  "next_permitted_action": "Finish only final metadata Git readback and actual exit witness, then STOPPED: S11 REPORTING HANDOFF DELIVERED. Original request remains PARTIAL; no next workflow.",
+  "updated_utc": "2026-11-25T03:00:09.226371+00:00",
   "completed_units": [
-    "authoritativefacts",
-    "source-linkedreviewer/report/atlas/tables",
-    "independentchecks",
-    "allprivatebytes",
-    "252savedpaths+108existingpaired",
-    "79reportfiles+42figureexportbytes+2PDFexact"
+    "allreportingcounts/claims/source-linkedfigures",
+    "4pagebriefing/12pagereport/fulltables/atlas",
+    "fresh1965memberrestore",
+    "252savedpaths/108pairedreconstruction",
+    "79reportfiles/42figureexportbytes/2PDFexact",
+    "reportGitpublication",
+    "finalprivatemetadatarecovery"
   ],
   "unfinished_units": [
-    "reportGitpublication",
-    "finalprivatemetadatarecovery",
-    "finalGit/actualexitproof"
+    "finalGitreadbackandactualexitproof"
   ],
   "owned_processes": [],
   "unresolved_decisions": [
     "External scientific forget qualification and layerwise performance remain pending"
   ],
   "applicable_protocol_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
-  "scientific_status": "OriginalcombinedrequestPARTIAL; forgetqualificationandlayerwiseperformancepending",
-  "no_deadline": true
+  "scientific_status": "EXTRACTION_ONLY_PENDING_QUALIFICATION",
+  "no_deadline": true,
+  "transfer_totals": {
+    "source_private_logical_application_upload_bytes": 877136061,
+    "final_metadata_logical_application_upload_bytes": 37530713,
+    "fresh_private_HTTP_body_bytes": 914666774,
+    "report_Git_raw_readback_body_bytes": 200680389,
+    "physical_transport_dedup_overhead_and_provider_billing": null,
+    "new_model_payload_download_bytes": 0,
+    "raw_forget_dataset_download_bytes": 0,
+    "new_backbone_forwards_fits_or_draws": 0
+  },
+  "layerwise_forget_status": "PENDING_QUALIFIED_LAYERWISE_PERFORMANCE",
+  "original_request": "PARTIAL"
 }

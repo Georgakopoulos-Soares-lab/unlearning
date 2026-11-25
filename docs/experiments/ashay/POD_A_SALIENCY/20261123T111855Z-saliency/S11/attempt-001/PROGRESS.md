@@ -1,10 +1,15 @@
-# S11 terminal reporting scope
+# S11 reporting delivered at its actual evidence scope
 
 S11_REPORTING_STATUS: COMPLETE_FOR_VERIFIED_RETAIN_AND_UNQUALIFIED_FORGET_LOG_SCOPE
 FORGET_SCIENTIFIC_STATUS: EXTRACTION_ONLY_PENDING_QUALIFICATION
 LAYERWISE_FORGET_STATUS: PENDING_QUALIFIED_LAYERWISE_PERFORMANCE
 ORIGINAL_RETAIN_AND_FORGET_REQUEST: PARTIAL
 
-Four-page reviewer briefing, twelve-page report, full-precision tables and complete atlas/gallery are source-linked and independently checked. Fresh private recovery verified1965members,252saved prediction paths/1260marginal vectors,108existing paired contrasts,79deterministic reporting files and42figure export bytes (39rerendered/3verifiedsourcecopies); bothPDFs byte-identical. Worst probability residual2.7422508708241367e-14, metric/draw/interval1.2434497875801753e-14; tolerances unchanged.
+The four-page reviewer briefing, twelve-page scientific report, complete tables and gallery use one source-bound facts dataset. All48,924 admitted/42,228 deferred retain specifications remain unchanged. Forget-related logs exist, but exact scientific matching and genuine layerwise forget performance remain pending.
 
-Report Git publication, final private metadata protection and actual terminal delivery proof remain administrative closeout units. Read S11/attempt-001/SESSION_HANDOFF.md and FINAL_RECEIPT.json plus external control final proof. Preserve all prior science and source versions. No new workflow, scheduler, observer, message, raw forget evaluation or Pod shutdown is authorized. No-deadline amendment remains active.
+Fresh private recovery verified all1965regularmembers and reconstructed252saved prediction paths/1260marginalvectors plus108existingpairedcontrasts using originaldraws. All79deterministic reporting files,42figureexportbytes(39rerender/3verifiedsourcecopies) andbothPDFs match exactly. Worst probability residual2.7422508708241367e-14; metric/draw/interval1.2434497875801753e-14, within unchangedtolerances. No backbone inference, fits, newdraws, raw forget evaluation, GPU/clean-runtime replay or collaborator messages.
+
+Report Git and final private metadata recovery are verified; actual subsequent final Git/exit proof is external in control S11/attempt-001/FINAL_DELIVERY_RECEIPT.json and FINAL_ACTUAL_EXIT_WITNESS.json. Read S11/attempt-001/FINAL_RECEIPT.json and SESSION_HANDOFF.md. Preserve all historical attempts, originalPOD_A, frozen methods and no-deadline amendment. No scheduler, observer, Pod shutdown, resizing or next workflow.
+
+STOPPED: S11 REPORTING HANDOFF DELIVERED
+ORIGINAL RETAIN-AND-FORGET REQUEST REMAINS PARTIAL

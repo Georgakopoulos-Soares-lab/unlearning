@@ -1,5 +1,7 @@
-# Latest Pod A handoff: S11 reporting scope
+# Latest handoff: completed S11 reporting scope
 
-The original retain-and-forget request remains PARTIAL: exact forget qualification and genuine layerwise forget performance are pending.
+The original retain-and-forget request remains **PARTIAL**. Forget-related logs are recovered; exact scientific integration and qualified layerwise performance remain pending.
 
-Read [S11 terminal handoff](S11/attempt-001/SESSION_HANDOFF.md), [reviewer PDF](S11/attempt-001/REVIEWER_SUMMARY.pdf), [report](S11/attempt-001/RESULTS.pdf), [gallery](S11/attempt-001/FIGURE_GALLERY.md) and [actual delivery receipt](S11/attempt-001/FINAL_RECEIPT.json). Verify external final delivery/exit witnesses before relying on closure. Preserve all historical records; S10attempt002 is authoritative corrected source scope. No new workflow starts automatically.
+[Reviewer briefing](S11/attempt-001/REVIEWER_SUMMARY.pdf) · [Scientific report](S11/attempt-001/RESULTS.pdf) · [Complete gallery](S11/attempt-001/FIGURE_GALLERY.md) · [Full-precision tables](S11/attempt-001/TABLE_INDEX.json) · [Actual receipt](S11/attempt-001/FINAL_RECEIPT.json).
+
+Read [terminal continuation instructions](S11/attempt-001/SESSION_HANDOFF.md), exact external control final delivery/exit witnesses and the fresh CPU proof before resuming. New evidence requires a separately authorized versioned S10 assessment; preserve unaffected retain work and all report editions. No next workflow, scheduler, observer, messages, resize or Pod shutdown. No-deadline amendment preserved.
