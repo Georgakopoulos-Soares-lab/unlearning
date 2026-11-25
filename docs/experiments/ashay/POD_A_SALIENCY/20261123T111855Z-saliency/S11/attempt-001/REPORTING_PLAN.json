@@ -1,0 +1,39 @@
+{
+  "schema_version": "s11-reporting-plan-v1",
+  "frozen_utc": "2026-11-25T01:57:08.736287+00:00",
+  "canonical_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "supplement_commit": "a3bc0fd29c50c3bb9dac1adc0d13fca63c393ba5",
+  "source_releases": {
+    "S09": "3c39552d43c2e4c8aaf223ca97e3b8f6ee33d11c",
+    "S10": "735c9de0ed56be285897b68f84db098ff7a32a6f"
+  },
+  "questions": [
+    "Checkpoint/task variation",
+    "all-layer context",
+    "zero-based block16 versus finalnorm",
+    "refit versus unchanged-base",
+    "classification versus LM descriptive alignment",
+    "CV partition sensitivity",
+    "source forget evidence and missing scientific qualification"
+  ],
+  "complete_atlas": "Reuse all111 verified S09 figures/333 exports by immutable paths plus S10 source-only traces. New study diagram, all-task anchor policy overview, fixed H3+multiclass-splice reference examples, six-task DEV LM figure. No numeric selection by favorable results.",
+  "main_example_tasks": [
+    "emp_H3",
+    "gue_splice_reconstructed"
+  ],
+  "example_selection_rationale": "H3 is established primary benign task; splice covers multiclass and nontrivial512row/511group semantics, fixed before reading report values",
+  "main_seed_display": 42,
+  "all_seeds": "42/17/1234 retained in complete tables and atlas; seed42 is display convention, not selected best seed",
+  "anchors": [
+    "decoder.layers.16",
+    "decoder.final_norm"
+  ],
+  "representation_order": "decoder.layers.0..24 then decoder.final_norm; layer16 is seventeenth decoder block",
+  "candidate_order": "registry alias order candidate_01..09; no ranking or connected dose response",
+  "rounding": "6decimals in prose/example tables; fullprecision machine values; CI notation never formed by subtracting marginal endpoints",
+  "claim_links": "Exact endpoint/contrast IDs, immutable source path/SHA, task/split/rep/policy/seed and metric direction for every displayed value or material comparison",
+  "recovery_panel_sha256": "39d52e02f374de856f1d2f36fafb08db800f45dd0dae7df2bb8b043fa260671a",
+  "recovery": "Saved heads/scalers and compact selected feature matrices, original group draws, saved probabilities/metrics/draws; fresh exact private restore; reconstruct panel with 1e-10 probabilities and1e-12 metric/draw/CI rtol0; no model forward/refit/new draws",
+  "outcome_exposure": "Prior reports visible; reporting plan is not prospective scientific preregistration",
+  "no_deadline": true
+}

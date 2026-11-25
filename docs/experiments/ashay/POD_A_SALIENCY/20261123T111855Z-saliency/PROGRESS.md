@@ -1,7 +1,10 @@
-# Corrective S10 delivery — hold before S11
+# S11 terminal reporting scope
 
-Nine supplied source logs,4,069,391 events and4,069,382 scalars verified.23 step-axis forget-validation values, including both reinit5 step1500 observations, preserved.28,456 individual forget/validation decisions and47 focused validator cases pass. Original logs and corrective outputs privately protected; fresh restore regenerated all9 fullscalar tables,29 public artifacts and3 figure exports exactly. Scientific Git publication and final private metadata recovery PASS; subsequent final Git readback and actual-exit witness are recorded externally in S10/attempt-002/FINAL_DELIVERY_RECEIPT.json and FINAL_ACTUAL_EXIT_WITNESS.json.
+S11_REPORTING_STATUS: COMPLETE_FOR_VERIFIED_RETAIN_AND_UNQUALIFIED_FORGET_LOG_SCOPE
+FORGET_SCIENTIFIC_STATUS: EXTRACTION_ONLY_PENDING_QUALIFICATION
+LAYERWISE_FORGET_STATUS: PENDING_QUALIFIED_LAYERWISE_PERFORMANCE
+ORIGINAL_RETAIN_AND_FORGET_REQUEST: PARTIAL
 
-FORGET_SCIENTIFIC_STATUS: EXTRACTION_ONLY_PENDING_QUALIFICATION. LAYERWISE_FORGET_STATUS: PENDING_QUALIFIED_LAYERWISE_PERFORMANCE. Existing source measurements are present;0scientifically qualified descriptive aggregates or exact checkpoint comparisons. All48,924 admitted and42,228 deferred retain specifications unchanged. Source evidence can be reported with explicit limitations; exact model/protocol/layerwise integration remains pending. Read S10/attempt-002/S11_HANDOFF.json and DELIVERY_CONTEXT.json; preserve historical attempt-001. No raw forget data/evaluation, new inference/fitting/resampling/messages or later phase. No-deadline amendment preserved.
+Four-page reviewer briefing, twelve-page report, full-precision tables and complete atlas/gallery are source-linked and independently checked. Fresh private recovery verified1965members,252saved prediction paths/1260marginal vectors,108existing paired contrasts,79deterministic reporting files and42figure export bytes (39rerendered/3verifiedsourcecopies); bothPDFs byte-identical. Worst probability residual2.7422508708241367e-14, metric/draw/interval1.2434497875801753e-14; tolerances unchanged.
 
-HOLD_BEFORE_S11. S11 is unapproved/unexecuted. Require the actual final external delivery proofs before resuming; then the next separate phase approval is APPROVE S11 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a.
+Report Git publication, final private metadata protection and actual terminal delivery proof remain administrative closeout units. Read S11/attempt-001/SESSION_HANDOFF.md and FINAL_RECEIPT.json plus external control final proof. Preserve all prior science and source versions. No new workflow, scheduler, observer, message, raw forget evaluation or Pod shutdown is authorized. No-deadline amendment remains active.

@@ -1,0 +1,7 @@
+# Limits and what remains valid
+
+Unknown immediate parents block intervention-parent effects; comparisons with the qualified original pretrained base remain valid at their actual descriptive reference scope. Unverified saliency masks, perturbation laws and realized doses block mechanistic or calibrated-strength comparisons; the supplied endpoint measurements remain valid. Endpoint-step/exposure differences block controlled dose-response or method attribution; both noise5 identities remain separate.
+
+Independent intervention replication is not established. Probe CV seeds and source files cannot fill that gap; conditional readout/cohort descriptions remain valid. Unqualified forget semantics and content binding block scientific retain/forget integration; source integrity, original-tag quotations and duplicate diagnostics remain usable. Missing layerwise forget performance blocks the original layerwise combined conclusion; it does not invalidate the verified layerwise benign measurements.
+
+Whole-delivery inventory remains PARTIAL, so nine selected endpoints are not an exhaustive sweep claim. Candidate 05 historical upload privacy remains unknown; current private protection is verified separately and cannot retroactively establish original visibility. Recovery verifies exact archived bytes and the declared sampled saved-analysis panel, not all model execution, biological truth, fresh GPU replay or a clean scientific-runtime rebuild. R2 was not produced and is excluded. Pod B relearning remains separate. No-deadline continuity is preserved.

@@ -1,0 +1,53 @@
+{
+  "schema_version": "s11-future-intake-v1",
+  "future_phase_execution_authorized": false,
+  "source_version_policy": "New immutable commit/bytes/checksums, preserve old attempts and report editions, new explicit authorization for a new scientific assessment",
+  "cases": [
+    {
+      "event": "Checkpoint/log invocation binding arrives",
+      "affected": [
+        "source_forget",
+        "any proposed exact-model join"
+      ],
+      "validation": "New immutable source version with content-hash/run/save/invocation binding; resolve duplicate roles and noise5 endpoints; do not accept folder/time/step alone",
+      "regenerate": "Separately authorized versioned S10 qualification/join ledger; only then affected report facts/claims/source figures; preserve existing S11 edition"
+    },
+    {
+      "event": "Evaluation implementation/cohort/aggregation metadata arrives",
+      "affected": [
+        "source_forget",
+        "cross-source comparability",
+        "metric direction and denominator"
+      ],
+      "validation": "Exact source commit, cohort/split manifest identities, loss/mask/aggregation/rank semantics and actual evaluation effort",
+      "regenerate": "Affected versioned S10 semantics/qualification/comparability decisions, then dependent reporting artifacts"
+    },
+    {
+      "event": "Compatible reference aggregates arrive",
+      "affected": [
+        "new reference-relative forget claims only"
+      ],
+      "validation": "Actual target/reference task/cohort/split/protocol/readout compatibility, immutable identities and explicit uncertainty meaning",
+      "regenerate": "Eligible reference-specific S10 joins/views and dependent report claims; no parent substitution or invented pairing"
+    },
+    {
+      "event": "Qualified layerwise forget aggregates arrive",
+      "affected": [
+        "layerwise forget scope",
+        "original combined request coverage"
+      ],
+      "validation": "Exact checkpoint/hook/representation/task/readout/split/metric/denominator/implementation and allowed uncertainty; gradientnorms/global replication prohibited",
+      "regenerate": "New source/claim-specific S10 integration and reporting; define actual grid before denominators"
+    },
+    {
+      "event": "A source result is corrected",
+      "affected": [
+        "Only claims/joins/figures dependent on its stable source ID/version"
+      ],
+      "validation": "Preserve original bytes/version; bind replacement bytes, immutable revision/checksums and supersession reason; reverify changed scope and scientific eligibility",
+      "regenerate": "Affected S10 records/report edition only; source-to-claim invalidation map. Upstream retain discrepancy blocks affected claims rather than silent scientific repair in reporting"
+    }
+  ],
+  "retain_recompute_default": false,
+  "messages_sent": 0
+}

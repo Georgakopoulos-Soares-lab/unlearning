@@ -1,0 +1,46 @@
+{
+  "preserved_failures": [
+    {
+      "command": "S11-stage-released-inputs-001",
+      "exit": 1,
+      "reason": "Control recovery-contract path cannot be represented as repository-relative Git evidence",
+      "affected": "Only final two small contract registrations; all released source files completed and revalidated by exact SHA256 without recopy",
+      "repair": "Nullable commit for control evidence, exact control locator and SHA256; continue only unfinished registration"
+    },
+    {
+      "failed_command": "S11-authoritative-reporting-dataset-001",
+      "exit": 1,
+      "cause": "H3 LM record schema lacks convenience actual_LM_unit_id field; authoritative canonical_metric.unit_id exists in both released schemas",
+      "repair": "Versioned report_data_v2.py uses canonical metric unit identity; valid completed classification/contrast tables reused only after exact generated-byte comparison",
+      "upstream_scientific_records_changed": false,
+      "tolerances_changed": false
+    },
+    {
+      "failed_command": "S11-report-prose-and-LaTeX-002",
+      "exit": 1,
+      "cause": "Generated Python string for the reviewer findings table had an unescaped newline; no scientific tables changed",
+      "repair": "Version3 stores literal table text with a correctly quoted string; preserves versions1/2 and original report draft",
+      "old_compile": "Compile001 used unchanged version1 LaTeX after generation002 failed; retained as draft and cannot serve as final version3 evidence"
+    },
+    {
+      "failed_command": "S11-private-reporting-capsule-001",
+      "exit": 1,
+      "diagnosis": "Legacy S10 backup helper expected RUNTIME_BINDING.json; S11 records the richer ENVIRONMENT_LOCK.json",
+      "affected_scope": "Private dependency metadata assembly only; no archive completed and no network upload began",
+      "repair": "Version002 uses actual S11 ENVIRONMENT_LOCK.json; frozen reporting/numerical inputs and validation unchanged",
+      "source_model_or_numerical_recompute": false,
+      "preserved_recipe": "protect_reporting.py"
+    }
+  ],
+  "scientific_upstream_changes": 0,
+  "tolerances_relaxed": false,
+  "layout_revision_history": "Draft001 PDF and figure exports protected privately; final readable PDFs separately inspected; only changed scopes regenerated",
+  "active_code_source_identity_sha256": "ed3e5737428d1527cb571cf322dfaebed724af92e8e5170d171ab08d83c65e0f",
+  "recovery_scope_label_clarification": {
+    "freshly_rerendered_exports": 39,
+    "unchanged_S10_overview_exports_copied_from_restored_verified_source": 3,
+    "all_42_exact_byte_equality": true,
+    "no_event_log_reextraction": true
+  },
+  "source_or_scientific_recomputation_for_repairs": false
+}

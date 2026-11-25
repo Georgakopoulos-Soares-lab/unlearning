@@ -1,0 +1,9 @@
+# Terminal reporting scope and continuation
+
+Verified retain results are reportable across9 supplied endpoints,6 tasks,26 representations,3 CV partitions and2 readout policies. Forget-related source logs were recovered; scientific matching, metric/cohort semantics and genuine layerwise performance remain pending. The original retain-and-forget request remains PARTIAL. No successful forgetting, causal selectivity, optimal checkpoint or project-completion percentage is established.
+
+Read REVIEWER_SUMMARY.pdf (four pages), RESULTS.md/RESULTS.pdf, FIGURE_GALLERY.md, TABLE_INDEX.json and CLAIM_LEDGER.jsonl. REPORTING_FACTS.json is their shared numerical source. Read the actual FINAL_RECEIPT.json and external control FINAL_DELIVERY_RECEIPT.json/FINAL_ACTUAL_EXIT_WITNESS.json before relying on delivery closure. FRESH_CPU_RESTORE_CHECK.json distinguishes all-byte restoration, the declared252 saved-head path panel plus108existing paired contrasts, report regeneration, and unperformed GPU/clean-runtime replay. Existing S04/S05-S10 science remains immutable.
+
+New evidence is not automatically admitted: follow FUTURE_EVIDENCE_INTAKE.json in a separately authorized versioned S10 assessment, then regenerate only affected reporting claims. Preserve all previous source versions and reports. Existing retain results do not need routine rerunning when forget metadata arrives. The collaborator request remains unsent. R2 remains excluded; Pod B remains separate; no-deadline continuity is preserved.
+
+On any resumption reconcile exact prompt/package/protocol/report/source pins, receipts, unfinished units, transfer totals and owned PID/start identities. Reuse valid completed work and prevent duplicate writers. No scheduler, observer or new workflow is authorized. No Pod shutdown or unrelated process termination.

@@ -173,11 +173,11 @@
       ]
     },
     "S11": {
-      "approved": false,
+      "approved": true,
       "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-      "source": null,
-      "message": null,
-      "observed_utc": null
+      "source": "direct_chat",
+      "message": "APPROVE S11 at 7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+      "observed_utc": "2026-11-25T01:57:06.881729+00:00"
     }
   },
   "inputs": {
@@ -584,6 +584,22 @@
         "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
         "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
       ]
+    },
+    "S11": {
+      "status": "COMPLETE",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/S11_RECEIPT.json",
+      "sha256": "a58b73fe780e71a3ab8075a1760e80246ad138a854bfb50241211777bba8b695",
+      "scope_candidates": [
+        "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+        "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+        "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+        "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+        "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+        "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+        "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+        "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+        "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz"
+      ]
     }
   },
   "candidate_gates": {
@@ -890,8 +906,13 @@
       "corrective_scope": "EXISTING_AGGREGATE_EVENT_LOGS"
     },
     "S11": {
-      "status": "WAITING_FOR_APPROVAL",
-      "approved": false
+      "status": "COMPLETE",
+      "approved": true,
+      "attempt_id": "attempt-001",
+      "scientific_scope": "Verified retain plus scientifically unqualified forget source logs",
+      "reporting_status": "COMPLETE_FOR_VERIFIED_RETAIN_AND_UNQUALIFIED_FORGET_LOG_SCOPE",
+      "original_combined_request": "PARTIAL",
+      "delivery_status": "REPORT_AND_PRIVATE_RECOVERY_VERIFIED_GIT_PROOF_PENDING"
     }
   },
   "coverage": {
@@ -1308,10 +1329,10 @@
   "owned_processes": [],
   "resume_binding": {
     "run_id": "20261123T111855Z-saliency",
-    "phase": "S10",
-    "attempt_id": "attempt-002",
+    "phase": "S11",
+    "attempt_id": "attempt-001",
     "package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
-    "supplement_commit": "586afb0911a092e2fb7b020b65e0ee32057f71b6",
+    "supplement_commit": "a3bc0fd29c50c3bb9dac1adc0d13fca63c393ba5",
     "completed_receipts": [
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S06_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S06/attempt-001/S07_HANDOFF.json",
@@ -1327,29 +1348,27 @@
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-001/S11_HANDOFF.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_RECEIPT.json",
       "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S11_HANDOFF.json",
-      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/PRIVATE_RECOVERY_PROOF.json"
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/PRIVATE_RECOVERY_PROOF.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/S11_RECEIPT.json",
+      "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FRESH_CPU_RESTORE_CHECK.json"
     ],
-    "unfinished_units": [],
-    "transfer_totals": {
-      "source_payload_bytes": 418914867,
-      "provider_stage_plus_materialization_bytes": 837829734,
-      "private_uploaded_application_bytes": 211580130,
-      "fresh_private_HTTP_body_bytes": 211580130,
-      "science_publication_fresh_raw_payload_bytes": 51832466,
-      "model_payload_bytes": 0
-    },
+    "unfinished_units": [
+      "S11reportpublication",
+      "S11finalprivatemetadata",
+      "S11terminalGit/exitproof"
+    ],
+    "transfer_totals": {},
     "owned_processes": [],
     "unresolved_decisions": [
-      "exact checkpoint-log binding",
-      "metric/cohort/denominator/implementation semantics"
+      "Qualified forget comparisons and layerwise performance remain pending; reporting is limited scope"
     ],
-    "next_action": "Read external corrective FINAL_DELIVERY_RECEIPT.json and FINAL_ACTUAL_EXIT_WITNESS.json; both must PASS. Then HOLD_BEFORE_S11; new separate S11 direct approval required.",
+    "next_action": "Complete only S11 administrative delivery proofs, then STOPPED: S11 REPORTING HANDOFF DELIVERED. No new workflow.",
     "prerequisites": [
-      "Exact final external delivery proof",
-      "S11 remains unapproved",
-      "Preserve S04/S09/old attempts and scientific pending limits"
+      "Current direct S11 execution instruction",
+      "Verified corrected S10 delivery",
+      "Preserve S04/S09 science"
     ],
-    "reconciled_utc": "2026-11-25T01:33:02.851545+00:00",
+    "reconciled_utc": "2026-11-25T02:47:48.884274+00:00",
     "single_writer_verified": true
   },
   "private_roundtrip_binding": {

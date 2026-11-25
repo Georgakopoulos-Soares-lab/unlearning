@@ -1,0 +1,349 @@
+{
+  "status": "SOURCE_VALUES_CHECKED",
+  "figures": [
+    {
+      "id": "STUDY_SCOPE",
+      "family": "design",
+      "caption": "Completed retain workflow and separate, scientifically unqualified forget-source evidence. CV seeds are not intervention replications.",
+      "exports": [
+        {
+          "path": "figures/STUDY_SCOPE.png",
+          "sha256": "49b1d51a583bd98e6a7aee755cdbac8bc8d100548ab8a237470b7d5dd3b6720d",
+          "bytes": 122956
+        },
+        {
+          "path": "figures/STUDY_SCOPE.pdf",
+          "sha256": "5f25b64f35ff32dca60d4d792d51c65318213bbe817658e602f500e58a619f8c",
+          "bytes": 25798
+        },
+        {
+          "path": "figures/STUDY_SCOPE.svg",
+          "sha256": "e194742cfc6a46fce85c1a942488ef904625e2c9a8045d37789142454194790f",
+          "bytes": 67536
+        }
+      ],
+      "source_records": 1,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json",
+      "no_new_inference": true
+    },
+    {
+      "id": "ANCHOR_READOUT_GAPS",
+      "family": "policy",
+      "caption": "Existing paired95% pointwise exploratory conditional intervals; target refit minus unchanged-base AUROC. All324 records; three intervals include zero. No causal or intervention-replication claim.",
+      "exports": [
+        {
+          "path": "figures/ANCHOR_READOUT_GAPS.png",
+          "sha256": "397bf777da99aa21b2e9802c5e3e3f7c0342020ff3e365e9d5478f6908d20b56",
+          "bytes": 177946
+        },
+        {
+          "path": "figures/ANCHOR_READOUT_GAPS.pdf",
+          "sha256": "30c5f7df9c704f296d658259000baf1ca31b9f296c90cdb28563ccaf798375e9",
+          "bytes": 71737
+        },
+        {
+          "path": "figures/ANCHOR_READOUT_GAPS.svg",
+          "sha256": "1ee126a28c1785eac0bb0e8cc534a7ca72e939ec52f4cc96a769b0a452129d8b",
+          "bytes": 419988
+        }
+      ],
+      "source_records": 324,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json",
+      "no_new_inference": true
+    },
+    {
+      "id": "ORIGINAL_BASE_EFFECTS",
+      "family": "reference",
+      "caption": "Existing paired95% pointwise conditional intervals. Original pretrained base is not a verified immediate parent. H3/splice selected by question and multiclass coverage, not effect sign; full atlas keeps every task/layer/seed/metric.",
+      "exports": [
+        {
+          "path": "figures/ORIGINAL_BASE_EFFECTS.png",
+          "sha256": "364c96ffda31e7dee9265260da35c9093a9063b0eab46d48753764d2cf4191e7",
+          "bytes": 145643
+        },
+        {
+          "path": "figures/ORIGINAL_BASE_EFFECTS.pdf",
+          "sha256": "21a9fe917bb8d185add46abca6d2fcc1304ca955260d225c75eeb25c1b0c0fe4",
+          "bytes": 37427
+        },
+        {
+          "path": "figures/ORIGINAL_BASE_EFFECTS.svg",
+          "sha256": "08c09abe7cbfe0c0f387a89024eac9a43c558312c412e521713eeced7b948259",
+          "bytes": 135761
+        }
+      ],
+      "source_records": 36,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json",
+      "no_new_inference": true
+    },
+    {
+      "id": "LM_DEV_RESULTS",
+      "family": "LM",
+      "caption": "Actual output-head LM NLL. Lower is better sequence prediction under each task protocol; different cohorts are not averaged. No layer/CV-seed expansion, paired LM-base inference or intervention dose-response line. TRAIN54units remain diagnostic.",
+      "exports": [
+        {
+          "path": "figures/LM_DEV_RESULTS.png",
+          "sha256": "32d7844a878d4cb89ee62a47d1d11715b8d5c9776e5b0060ef5f6275062614cd",
+          "bytes": 139476
+        },
+        {
+          "path": "figures/LM_DEV_RESULTS.pdf",
+          "sha256": "739d0ea34361797e5b2a8f02b7fabbab6aea918580c403d69f6085867b857d46",
+          "bytes": 38271
+        },
+        {
+          "path": "figures/LM_DEV_RESULTS.svg",
+          "sha256": "11613b4c03efc409ff715952a4fdbabcd3dea226a09c48e31c95a41b1b2efc6d",
+          "bytes": 147431
+        }
+      ],
+      "source_records": 54,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json",
+      "no_new_inference": true
+    },
+    {
+      "id": "FORGET_SOURCE_TRACES",
+      "family": "forget_source",
+      "caption": "Exact verified S10 unsmoothed traces and all validation calls, including two reinit5 step1500 values. Source-log evidence; scientifically unqualified. Not a retain/forget frontier.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_TRACES.png",
+          "sha256": "aec271108a1edb7066c4a0db3fedc9c6ca45915c8b03b2d9db8b8658ae601eeb",
+          "bytes": 510199
+        },
+        {
+          "path": "figures/FORGET_SOURCE_TRACES.pdf",
+          "sha256": "f58f55c54c420a3a65cb854795de19c24d19c8527eda8e833287d6dfa25d92be",
+          "bytes": 157223
+        },
+        {
+          "path": "figures/FORGET_SOURCE_TRACES.svg",
+          "sha256": "988947eb2adb73a625baea7195f554bb02c8ee0fdd3b4e4ca93bece9b5bfcb5f",
+          "bytes": 517520
+        }
+      ],
+      "source_records": 23,
+      "source_release": "S10/attempt-002; commit735c9de0ed56be285897b68f84db098ff7a32a6f",
+      "record_mapping_path": "tables/FORGET_VALIDATION_OBSERVATIONS.csv"
+    },
+    {
+      "id": "FORGET_SOURCE_REINIT10",
+      "family": "forget_source_detail",
+      "caption": "Original source 1cNq3E-78dXxUnJ39kcJYmsdhpBBUWpR6; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_REINIT10.png",
+          "sha256": "8178bfa9661e85ef2f0a942d0d733fab78c6a31d56e4f232f125096b2a825cd5",
+          "bytes": 97925
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT10.pdf",
+          "sha256": "afa7473f4c78c7bf59cd83dc7d782b2c9646684b8ad3c1ced2a3dc528f7df10d",
+          "bytes": 38441
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT10.svg",
+          "sha256": "9d401de4f6b09e92a7bd594b5b98c68bafe4b221f4abc35e0677896b2e27d26c",
+          "bytes": 100001
+        }
+      ],
+      "source_records": 1502,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_REINIT20",
+      "family": "forget_source_detail",
+      "caption": "Original source 1P-qfqEx_ay4KD_vTTA1jnzOqSbrOFsUN; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_REINIT20.png",
+          "sha256": "b9baa52d7712d363685647354d343daeadfe0d2da7f0adaa3b8b9ee50923322c",
+          "bytes": 107845
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT20.pdf",
+          "sha256": "ecb49c89d4cf327380083ac675209188bd7f866d503f2a47b588bf3b6e85f6af",
+          "bytes": 38862
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT20.svg",
+          "sha256": "b7e6e5e266a16761918d9422e5954c1d5591fbee0b4712350c0ca522c2699b53",
+          "bytes": 104509
+        }
+      ],
+      "source_records": 1502,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_NOISE10",
+      "family": "forget_source_detail",
+      "caption": "Original source 1vbF21RW1ejCQ9cfIZ2OhQlw4cyYO2y89; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_NOISE10.png",
+          "sha256": "4e64d84bf877cd159dcc6216b78282810d4ec7d110fd397b3913b6d69cb5869a",
+          "bytes": 112142
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE10.pdf",
+          "sha256": "cef96cf22ee87f1ba188c6b2b2dc16dc4de6f54266a4383d61b32822fedf17c9",
+          "bytes": 38799
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE10.svg",
+          "sha256": "edbb4a796ae4854662d88196a5acd39e040edb1e6cff0767326bf0470efbb558",
+          "bytes": 105258
+        }
+      ],
+      "source_records": 1502,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_NOISE5",
+      "family": "forget_source_detail",
+      "caption": "Original source 1NaDNI_wOe8y_p3pOP4vkFlsvTD2tBj-I; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_NOISE5.png",
+          "sha256": "dbc01af4bf43a126896ea6f610f921540282c931bf2e8eb5d43c654ad7b8746f",
+          "bytes": 99142
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE5.pdf",
+          "sha256": "72d1dbcb1447f305c314ee6f7d64c76ba8aa50874c1da80d3ee7a924a2175e2d",
+          "bytes": 43462
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE5.svg",
+          "sha256": "17e7ddccab1120fccc17f8ecb502ed5b41cb02af43f9946c712450406e52d721",
+          "bytes": 110190
+        }
+      ],
+      "source_records": 2156,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_NOISE15",
+      "family": "forget_source_detail",
+      "caption": "Original source 1s168EN9lcw38b3XBejPccLTtuEDRPMMe; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_NOISE15.png",
+          "sha256": "16a9df5812125f12f99a72613258bef46b06d2f2874116f26b19041718b42f75",
+          "bytes": 104414
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE15.pdf",
+          "sha256": "5fc2ac11fa7a34ed5803544c0c432ef5184e3897cb932f166da213a820aebe57",
+          "bytes": 38614
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE15.svg",
+          "sha256": "1aac9d9f541b3e0058841cdd7c2a4653f337b8a804ba49f795d026bdaa87bce4",
+          "bytes": 102028
+        }
+      ],
+      "source_records": 1502,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_REINIT5_A",
+      "family": "forget_source_detail",
+      "caption": "Original source 16ABtYkg71z8I2gyZvl48RSaRqYJ1mNXu; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_REINIT5_A.png",
+          "sha256": "f7facd671868a23016a17002844fe93887a00fca481c630e94bba4096252f5f5",
+          "bytes": 103369
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT5_A.pdf",
+          "sha256": "00db2a3b13a6d6fcd0a8822b3c8f456b87723be9d9751b4349f20ac10914e02f",
+          "bytes": 39489
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT5_A.svg",
+          "sha256": "135f48917250c9ce8487c090c9dceac0f5fb0bfb730e787486956a9a268e8614",
+          "bytes": 100803
+        }
+      ],
+      "source_records": 1504,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_REINIT5_B",
+      "family": "forget_source_detail",
+      "caption": "Original source 1Pu1spPUFdXd80fLxlf4_--g75kYGC4me; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_REINIT5_B.png",
+          "sha256": "d3267b49bd8a74915ec90023fd7d13ffb2b698d0cbd54a1332e89959a8cfaebf",
+          "bytes": 112283
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT5_B.pdf",
+          "sha256": "228e1e2defe07805b3d470841e38585f486a68092ad430a4ab6f8bf41e3cd9d8",
+          "bytes": 38504
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT5_B.svg",
+          "sha256": "456c4c0035e8330fef6ae898c8f148a9a6297f3e6f02d06406fc49a7f326ebd6",
+          "bytes": 103361
+        }
+      ],
+      "source_records": 1441,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_REINIT15",
+      "family": "forget_source_detail",
+      "caption": "Original source 1ABPNv3jEa89T6GLA26hQcoo9zOwvbeoR; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_REINIT15.png",
+          "sha256": "31b17f8b672ff0a1ff421facadb865198e1c45fc3941d4344a563fdbd7eadf26",
+          "bytes": 100752
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT15.pdf",
+          "sha256": "757bfbc9b008846476618df495c04c5426f18bc3fab488b84d6aa705c2c3501d",
+          "bytes": 38486
+        },
+        {
+          "path": "figures/FORGET_SOURCE_REINIT15.svg",
+          "sha256": "c2c6b6ad1ae8b16133e7d6435dab9c2a3d7089b550055d3d5020a39175cb50c9",
+          "bytes": 101054
+        }
+      ],
+      "source_records": 1502,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    },
+    {
+      "id": "FORGET_SOURCE_NOISE20",
+      "family": "forget_source_detail",
+      "caption": "Original source 1x_Q11ZlLWRBXpBFWL2rgLPaLfeFfK8YE; no smoothing or duplicate selection. Both training and validation labels are source labels, not independently qualified scientific metrics. Validation detail has a separate disclosed scale.",
+      "exports": [
+        {
+          "path": "figures/FORGET_SOURCE_NOISE20.png",
+          "sha256": "f8f40d7a52d259656096bc091fa30b4cd0163707f8d597ee33c961b6b93a037d",
+          "bytes": 96661
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE20.pdf",
+          "sha256": "1db80ca2d113eeafee7c8177de3c16c7a26ff8c69b1f23c9d0976d6eda15225e",
+          "bytes": 38466
+        },
+        {
+          "path": "figures/FORGET_SOURCE_NOISE20.svg",
+          "sha256": "91cf7b60dd0c95dc5fc0acc8574fea0b26dfb41bc8cc7fdeec4da00a3907e892",
+          "bytes": 99048
+        }
+      ],
+      "source_records": 1502,
+      "record_mapping_path": "FIGURE_SOURCE_MAP.json"
+    }
+  ],
+  "reused_complete_atlas_figures": 111,
+  "reused_complete_atlas_exports": 333,
+  "scientific_values_changed": false
+}

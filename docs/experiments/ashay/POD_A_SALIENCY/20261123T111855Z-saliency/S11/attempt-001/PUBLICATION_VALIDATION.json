@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "source_classifier_rows_checked": 42120,
+  "source_admitted_contrasts_checked": 48924,
+  "source_LM_rows_checked": 216,
+  "exact_report_counts_independently_derived": {
+    "classifier_metric_records": 42120,
+    "prediction_paths": 8424,
+    "refitted_heads": 4212,
+    "unchanged_base_applications": 4212,
+    "LM_units": 108,
+    "LM_metric_records": 216,
+    "LM_DEV_primary_units": 54,
+    "LM_TRAIN_diagnostic_units": 54,
+    "admitted_S09_contrasts": 48924,
+    "deferred_S09_specifications": 42228
+  },
+  "every_new_plotted_record_source_checked": 14528,
+  "unqualified_source_records_in_matched_comparisons": 0,
+  "forget_validation_duplicates_preserved": true,
+  "negative_fixtures_rejected": [
+    "swapped_candidate",
+    "wrong_layer_label",
+    "reversed_effect_sign",
+    "stale_S10_no_source_status",
+    "missing_figure_row",
+    "unqualified_forget_entering_matched_comparison"
+  ],
+  "claim_ledger_records_checked": 8,
+  "independence": "Reads authoritative source rows directly, does not call builder/renderer; independently reconstructs counts/signs/coverage/identities and source-coordinate mappings. Visual inspection and renderer checks cover physical layout; no independent biological replication claim."
+}
