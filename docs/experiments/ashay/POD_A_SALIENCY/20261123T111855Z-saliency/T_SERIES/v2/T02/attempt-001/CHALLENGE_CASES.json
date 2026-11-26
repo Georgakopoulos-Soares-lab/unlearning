@@ -1,0 +1,314 @@
+{
+  "schema_version": "t02-predeclared-challenges-v1",
+  "expected_outcomes_decided_before_execution": true,
+  "basis": "Invoked prompt AppendixA and section10; synthetic examples never scientific evidence",
+  "frozen_utc": "2026-11-25T10:27:36.335596+00:00",
+  "cases": [
+    {
+      "id": "A01",
+      "title": "Config path missing on current host",
+      "kind": "target",
+      "facts": {
+        "exists": false,
+        "intended_version_bound": false
+      },
+      "expected": {
+        "resolved": false
+      },
+      "source_basis": "AppendixA11.1",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A02",
+      "title": "Similarly named object is different version",
+      "kind": "target",
+      "facts": {
+        "exists": true,
+        "intended_version_bound": false
+      },
+      "expected": {
+        "resolved": false
+      },
+      "source_basis": "AppendixA11.2",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A03",
+      "title": "Authoritative manifest has missing shard",
+      "kind": "membership",
+      "facts": {
+        "authoritative_expected": true,
+        "all_required_present": false
+      },
+      "expected": {
+        "complete": false
+      },
+      "source_basis": "AppendixA11.3",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A04",
+      "title": "Two aliases of one bound content",
+      "kind": "aliases",
+      "facts": {
+        "stable_content_ids": [
+          "same-content",
+          "same-content"
+        ]
+      },
+      "expected": {
+        "distinct_datasets": 1
+      },
+      "source_basis": "AppendixA11.4",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A05",
+      "title": "Forget-related log is not dataset payload",
+      "kind": "artifact",
+      "facts": {
+        "artifact_type": "EVENT_LOG",
+        "documented_payload_binding": false
+      },
+      "expected": {
+        "is_dataset_payload": false
+      },
+      "source_basis": "AppendixA11.5",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A06",
+      "title": "Unopened container excluded without evidence",
+      "kind": "container",
+      "facts": {
+        "role_established": false,
+        "scope_exclusion_evidence": false
+      },
+      "expected": {
+        "excludable": false
+      },
+      "source_basis": "AppendixA11.6",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A07",
+      "title": "Metadata visibility is not bytes",
+      "kind": "byte_access",
+      "facts": {
+        "identity_bound_byte_receipt": false,
+        "temporal_scope_applies": false
+      },
+      "expected": {
+        "bytes_established": false
+      },
+      "source_basis": "AppendixA11.7",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A08",
+      "title": "Intended validation is not actual evaluated cohort",
+      "kind": "cohort",
+      "facts": {
+        "split_manifest_bound": false,
+        "invocation_bound": false
+      },
+      "expected": {
+        "actual_cohort_verified": false
+      },
+      "source_basis": "AppendixA11.8",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A09",
+      "title": "Newer source chosen without resolving conflict",
+      "kind": "conflict",
+      "facts": {
+        "unresolved_material_conflict": true
+      },
+      "expected": {
+        "claim_eligible": false
+      },
+      "source_basis": "AppendixA11.9",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "A10",
+      "title": "Metadata readiness is not scientific qualification",
+      "kind": "metadata",
+      "facts": {
+        "metadata_identity_bound": true,
+        "separate_scientific_release": false
+      },
+      "expected": {
+        "metadata_eligible": true,
+        "scientifically_qualified": false
+      },
+      "source_basis": "AppendixA11.10",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "E01",
+      "title": "Required use list emptied",
+      "kind": "uses",
+      "facts": {
+        "required_use_ids": [
+          "U01",
+          "U02"
+        ],
+        "observed_use_ids": [],
+        "all_required_satisfied": true
+      },
+      "expected": {
+        "readiness_valid": false
+      },
+      "source_basis": "Section10 additional1",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "E02",
+      "title": "All missing members administratively disposed",
+      "kind": "membership",
+      "facts": {
+        "authoritative_expected": true,
+        "all_required_present": false,
+        "all_missing_listed": true
+      },
+      "expected": {
+        "complete": false
+      },
+      "source_basis": "Section10 additional2",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "E03",
+      "title": "Opaque relevant container relabeled optional",
+      "kind": "container",
+      "facts": {
+        "role_established": false,
+        "scope_exclusion_evidence": false,
+        "declared_optional": true
+      },
+      "expected": {
+        "excludable": false
+      },
+      "source_basis": "Section10 additional3",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "E04",
+      "title": "Missing mandatory source marked NOT_APPLICABLE",
+      "kind": "exemption",
+      "facts": {
+        "inherently_mandatory": true,
+        "source_backed_reason": false
+      },
+      "expected": {
+        "exemption_valid": false
+      },
+      "source_basis": "Section10 additional4",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "E05",
+      "title": "Unavailable unrelated optional item",
+      "kind": "optional",
+      "facts": {
+        "required_inputs_valid": true,
+        "exclusion_source_backed": true,
+        "optional_available": false
+      },
+      "expected": {
+        "required_work_preserved": true
+      },
+      "source_basis": "Section10 additional5",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "E06",
+      "title": "Corrected source changes only dependent records",
+      "kind": "correction",
+      "facts": {
+        "bytes_changed": true,
+        "dependent_ids": [
+          "binding-A",
+          "claim-A"
+        ],
+        "unrelated_ids": [
+          "retain-B"
+        ]
+      },
+      "expected": {
+        "version_required": true,
+        "invalidate_scope": [
+          "binding-A",
+          "claim-A"
+        ]
+      },
+      "source_basis": "Section10 additional6",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "P01",
+      "title": "Properly bound available target",
+      "kind": "target",
+      "facts": {
+        "exists": true,
+        "intended_version_bound": true
+      },
+      "expected": {
+        "resolved": true
+      },
+      "source_basis": "Positive control",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "P02",
+      "title": "Authoritative complete member set",
+      "kind": "membership",
+      "facts": {
+        "authoritative_expected": true,
+        "all_required_present": true
+      },
+      "expected": {
+        "complete": true
+      },
+      "source_basis": "Positive control",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "P03",
+      "title": "Appropriate identity-bound byte receipt",
+      "kind": "byte_access",
+      "facts": {
+        "identity_bound_byte_receipt": true,
+        "temporal_scope_applies": true
+      },
+      "expected": {
+        "bytes_established": true
+      },
+      "source_basis": "Positive control",
+      "synthetic_not_real_evidence": true
+    },
+    {
+      "id": "P04",
+      "title": "All frozen uses genuinely satisfied",
+      "kind": "uses",
+      "facts": {
+        "required_use_ids": [
+          "U01",
+          "U02"
+        ],
+        "observed_use_ids": [
+          "U01",
+          "U02"
+        ],
+        "all_required_satisfied": true
+      },
+      "expected": {
+        "readiness_valid": true
+      },
+      "source_basis": "Positive control",
+      "synthetic_not_real_evidence": true
+    }
+  ]
+}

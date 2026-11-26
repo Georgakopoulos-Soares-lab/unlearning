@@ -1,0 +1,359 @@
+{
+  "schema_version": "t00-actual-contract-receipt-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "attempt_id": "T00/attempt-001",
+  "PLAN_VERSION": "v2_T00_T16",
+  "T00_EXECUTION_STATUS": "COMPLETE",
+  "CONTRACT_STATUS": "FROZEN_WITH_EXPLICIT_OPEN_ITEMS",
+  "REQUIRED_SCOPE_DEFINITION_COMPLETE": false,
+  "RETAIN_RELEASE": {
+    "release_commit": "3c39552d43c2e4c8aaf223ca97e3b8f6ee33d11c",
+    "status": "REUSABLE_VERIFIED_RELEASE_INHERITED",
+    "source_ids": [
+      "SRC05",
+      "SRC08",
+      "SRC09",
+      "SRC10",
+      "SRC11",
+      "SRC12"
+    ],
+    "verification_here": "Exact source-byte identity and reconciliation only; no retain computation repeated"
+  },
+  "FORGET_SCIENTIFIC_STATUS": "EXTRACTION_ONLY_PENDING_QUALIFICATION",
+  "LAYERWISE_FORGET_STATUS": "PENDING_QUALIFIED_LAYERWISE_PERFORMANCE",
+  "ORIGINAL_RETAIN_AND_FORGET_REQUEST": "PARTIAL",
+  "T01_THROUGH_T16_EXECUTED_IN_THIS_INVOCATION": false,
+  "EXTERNAL_MESSAGES_SENT_IN_THIS_INVOCATION": 0,
+  "NEXT_ELIGIBLE_ACTION": {
+    "stage_id": "T01",
+    "action": "Bounded requested-versus-observed endpoint inventory reconciliation; subject to later explicit authorization and required inputs.",
+    "inputs": [
+      "This checked register/snapshot",
+      "SRC13 exact nine-content roster",
+      "existing source-bound S01/S02 inventory records only as needed",
+      "authoritative requested delivery boundary if available"
+    ],
+    "entry_requirements": [
+      "Validate T00 receipt hashes and source pins",
+      "Reconcile owned attempt/process identity and any newer legitimate changes",
+      "Explicit T01 authorization and finite metadata-only scope"
+    ],
+    "boundary": "Account for known endpoints and requested membership/exhaustiveness; preserve unknown total. No model/payload downloads, source-wide crawl, scientific admission, raw evaluation or automatic T02.",
+    "other_future_eligibility": "T02/T03/T04 independent metadata components after initial inventory; T12 layout, T13 stable retain/methods and T15 preparation only under later authorization; never final forget values before qualification."
+  },
+  "prompt_receipt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+    "ref": "POD-A-Saliency",
+    "commit": "12ae36e2c966f122cbed6bd77b07dcc7139c9e0f",
+    "path": "T00_Completion_Contract_Prompt.md",
+    "sha256": "2a24edc4735ed9316ce7fd49cbf13c26a1de9132fed34e45eacbf9a520aa8d10",
+    "git_blob_id": "3639f32026277cc738a37be2a352f65bbd2c55f5",
+    "bytes": 43908,
+    "read_in_full": true,
+    "authorization": "Direct chat request to pull and execute this prompt; T00 local contract only",
+    "retrieved_utc": "2026-11-25T07:50:42.162004+00:00"
+  },
+  "research_anchor": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+  "source_pins": [
+    {
+      "id": "PROMPT",
+      "repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+      "path": "T00_Completion_Contract_Prompt.md",
+      "immutable_revision": "12ae36e2c966f122cbed6bd77b07dcc7139c9e0f",
+      "git_blob_id": "3639f32026277cc738a37be2a352f65bbd2c55f5",
+      "sha256": "2a24edc4735ed9316ce7fd49cbf13c26a1de9132fed34e45eacbf9a520aa8d10",
+      "access_state": "READ_IN_FULL"
+    },
+    {
+      "id": "SRC01",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/RESULTS.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "d98edf43efb50d585009c53ec17530a07aeb0350",
+      "sha256": "c049253fdee7725a17b9ef0d59313b8ce39ae14aae4bffe0719e4d477b297cd1",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC02",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FINAL_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "4a20057b25ae526e5f50015f6883175ad8046761",
+      "sha256": "04b029ff6a3c33a18b728e363c232cd4560eda724dae880b2ff1773af5b2677b",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC03",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/SESSION_HANDOFF.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "5918d6777773999270188747b6817bad15c5f54a",
+      "sha256": "82adeadd0130febd3f9983620bda66e91534048594d2c18511e9779a6f1580fe",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC04",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FUTURE_EVIDENCE_INTAKE.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "00f9cf39397ebfff6590480347b88d5c169fc866",
+      "sha256": "e268bdcaab0c2f3bf0128aa954a70566352e314f08c11752d32adfd2542d70f0",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC05",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/REPORTING_FACTS.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "e3892649c108a9b8e9d34789f706e5b102ebb95b",
+      "sha256": "ddc7e08005612033248d19d896547dfdfbbe951dc2884cad03cf1c6ac8ade23c",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC06",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_CORRECTION_REPORT.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "2c882604b4ac51b2da3cc20aebc90989b1ea27f5",
+      "sha256": "2d00f39d527eec2e2c8871fc86562998a9bb1a59cc86af49396daf44acc4494d",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC07",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/METRIC_SEMANTICS.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "827bf94d2060656885c8581f3bb419d1c0a5f77a",
+      "sha256": "b475796e408030ee2142b990f820c1530a6651bea1e30d96cab91c9b3d2173ae",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC08",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/PROTOCOL.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "c7fc799f13411f7e81dc01a05de4d4154654c65c",
+      "sha256": "f80dda6fa91e38f13678eac0a065fce0060b7a249fb2d5ba229b69339ffcc165",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC09",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/RELEASE_OVERLAY.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "c58af34398e15f31d05918578536c9821148a61c",
+      "sha256": "a0dee8c9064783d66d753c938c97ebb515130b45347f01c71a04a44d34c4c964",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC10",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "416b4dc2251bc66a912c84d8cd1e9a18115a2021",
+      "sha256": "863252fa8ac7aaae06868ff40e0befeb4bc7208bd4a1574690595530b3dc389d",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC11",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "b5b3ff1b815d3fcdab44df00df854ac9b2e30546",
+      "sha256": "d979a1dda8d0b161d64845941f9cc4599c14057b9d6c48d55896608949918c22",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC12",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/CONTRAST_VERIFICATION.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "aacc87b14fa7a0f3fc5ec8ee1209003165ebf513",
+      "sha256": "a2fb68eb60619ded383dd37eeec0e74d39599af756c38499ee6369d2a3759016",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC13",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/CANDIDATES.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "24664cf357ff0f9561c1c612595d335f95845411",
+      "sha256": "752d9b2181e4aaa24193f35f6d0b029a9a84761294dafd9a9d7a400623e2d5c7",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC14",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/INPUT_MANIFEST.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "a1a6a5b8eb47ac8214c98c4981fc1b2fc4672c6d",
+      "sha256": "a3b7440d3dc19a2d161f95fb291d1eff8e9fa1540b03b4784ba00dda19a6593c",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC15",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/UNSENT_COLLABORATOR_REQUEST.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "6f5fd9c691faf808b1a6cd5f74bd4baefff01922",
+      "sha256": "f0fea9c0613834d2d989e9fbf294883d4b7dc070557da119b7e0f0c13046920f",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC16",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "d00c8e2103f2e5af807ff34d2b9a6636239e1368",
+      "sha256": "72c2d6c5fe78f13c66713ac6688d17f9303678eaf8be38655377381a0234e557",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC17",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "384c758d5870eced5382f14d4f67e56f8f4b018f",
+      "sha256": "8539d4b20da31410f4b7e6e725f6c0c65e119d6c1b9f74470e12823e195b5841",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC18",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/S11_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "77899482213a357c0e22c88a2208d195de2af039",
+      "sha256": "a58b73fe780e71a3ab8075a1760e80246ad138a854bfb50241211777bba8b695",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "SRC19",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/CONTROLLER_STATE.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "084f5679be39dd63da70e3b5ce3d822918bc44dd",
+      "sha256": "7c61887ad2ffe29dcd38b77907a84148fdf924ed95b215ee5415ca9bae1ae575",
+      "access_state": "EXACT_GIT_BYTES_RESOLVED"
+    },
+    {
+      "id": "PLAN",
+      "provider": "ChatGPT Library",
+      "path": "POD_A_Saliency_Completion_Plan_v2_T00-T16.md",
+      "immutable_revision": null,
+      "sha256": null,
+      "access_state": "LOGIN_REQUIRED"
+    }
+  ],
+  "performed": [
+    "Read invoked43908byte prompt fully and recorded exact immutable bytes.",
+    "Read19pinned primary/support records, including full JSON parsing and targeted fact/identity projection of12MBreporting facts, not new scientific analysis.",
+    "Independently checked19primary/support path Git blobs, SHA256 and current bytes; all eight required predecessors resolved.",
+    "Reconciled scoped producer/release/corrected-source authority and inherited retain/forget count bookkeeping.",
+    "Created11question/13dependency/17stage-contract register with typed unknowns and separate qualification, coverage, report, recovery, delivery and feedback states.",
+    "Separate checker passed18consequential acceptance checks and8synthetic decision challenges; targeted17receipt/release bindings passed.",
+    "Verified readable tables, stable references, source history preservation and owned output paths."
+  ],
+  "not_performed": [
+    "No new numerical/scientific audit; predecessor release and recovery claims are inherited at their actual stated scope.",
+    "Full planning source behind login; self-contained prompt fallback used.",
+    "No new Drive inventory, raw datasets, model downloads, inference, fitting, tests of scientific hypotheses or archive recovery.",
+    "No repository publication/private upload/messages/collaborator access or acceptance established for this local contract."
+  ],
+  "verification": {
+    "acceptance_checks_passed": 18,
+    "synthetic_challenges_passed": 8,
+    "targeted_receipt_release_bindings_passed": 17,
+    "checker_actual_process": {
+      "label": "independent-contract-check-001",
+      "argv": [
+        "python3",
+        "/workspace/pod-a-saliency/research-POD_A_SALIENCY/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/T_SERIES/v2/T00/attempt-001/check_contract.py"
+      ],
+      "pid": 130248,
+      "start_ticks": "71819816",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "exit_status": 0,
+      "exited": true,
+      "elapsed_seconds": 1.8970256809843704,
+      "child_CPU_seconds": 0.6339589999999999,
+      "checked_utc": "2026-11-25T08:00:15.724350+00:00"
+    },
+    "synthetic_cases_are_production_scientific_validator": false,
+    "explanation": "Synthetic challenges exercise contract decision rules, not a complete external scientific-record implementation."
+  },
+  "issues": [
+    {
+      "id": "LIMIT_PLAN_ACCESS",
+      "kind": "NONBLOCKING_ACCESS",
+      "source_id": "PLAN",
+      "dependent_claim": "Independent agreement with full planning-document bytes unavailable; explicit self-contained prompt fallback used"
+    },
+    {
+      "id": "LIMIT_HISTORICAL_A",
+      "kind": "VERIFICATION_SCOPE",
+      "source_id": "PROMPT",
+      "dependent_claim": "Available A-series completion retained as reported historical background; original artifacts not re-audited in T00"
+    }
+  ],
+  "four_plain_language_sealing_answers": {
+    "next_action_without_chat": "Yes. SESSION_HANDOFF.md names later-authorized bounded T01, exact inputs, reconciliation and stop conditions.",
+    "completion_decisions_traceable": "Yes. Canonical question/dependency/source IDs, separate Git blob/SHA256, exact predecessor receipt bindings and conjunctive completion policy.",
+    "corrections_scoped": "Yes. Seven source-to-claim invalidation routes version affected decisions and preserve independent science and historical editions.",
+    "original_incompleteness_visible": "Yes. Original request PARTIAL, scope definition incomplete, zero qualified layerwise forget evidence and no scope-reduction amendment."
+  },
+  "output_sha256": {
+    "CONTINUATION_REGISTER.json": "f54867b32bd5ecb6070cdbe1a61384c1e2a02c39c5f95e4f613b432de0f2eb27",
+    "CONTINUATION_CONTRACT.md": "85bbf4a15040e8555d599e5ee2634b7827ebdf955dd2d8d8779509c4eb90e193",
+    "T00/attempt-001/SESSION_HANDOFF.md": "0ae86dfcd0378080ef6123fa17fc1fb1180f3f12ad36fc8f9b8a284a063d5601",
+    "T00/attempt-001/PROMPT.md": "2a24edc4735ed9316ce7fd49cbf13c26a1de9132fed34e45eacbf9a520aa8d10",
+    "T00/attempt-001/PROMPT_RECEIPT.json": "2e00c8dd4704ced398f9c05e4c74b02157b120ea8cb3254b41368e50f5249b9f",
+    "T00/attempt-001/check_contract.py": "b24a652531a0f84f0aa27484e99913714042c6c38d8542b2a59827062517abc9",
+    "T00/attempt-001/VERIFICATION.json": "c7a593f4cd2c701eea770df3194c340f2d742c5ae3f27774fbbe88ff74d47796",
+    "T00/attempt-001/RELEASE_BINDING_CHECK.json": "edab3a5e1091c1241a637ef67f4853e8b90b4f458d3652333577fca81459bc5c"
+  },
+  "output_bytes": {
+    "CONTINUATION_REGISTER.json": 128680,
+    "CONTINUATION_CONTRACT.md": 33117,
+    "T00/attempt-001/SESSION_HANDOFF.md": 2895,
+    "T00/attempt-001/PROMPT.md": 43908,
+    "T00/attempt-001/PROMPT_RECEIPT.json": 540,
+    "T00/attempt-001/check_contract.py": 15679,
+    "T00/attempt-001/VERIFICATION.json": 8578,
+    "T00/attempt-001/RELEASE_BINDING_CHECK.json": 3737
+  },
+  "local_builder_sha256": "1472f502c68d2787cf36914f6484bba1621911ae5e1b0fd0c97183861b7090f7",
+  "change_boundaries": {
+    "tracked_files_changed": false,
+    "original_POD_A_tip_changed": false,
+    "HEAD_changed": false,
+    "original_POD_A_tip": "8c651c7ab3c3a2a47f5bbd0e464a69a197512c82",
+    "new_research_paths_only": "/workspace/pod-a-saliency/research-POD_A_SALIENCY/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/T_SERIES/v2",
+    "historical_A_S_root_controller_edited": false,
+    "prompts_tracked_files_edited": false
+  },
+  "delivery": {
+    "state": "DRAFT",
+    "committed": false,
+    "pushed": false,
+    "uploaded": false,
+    "collaborator_sent": false,
+    "collaborator_acceptance": null,
+    "acceptance_null_reason": "No feedback or acceptance observed"
+  },
+  "resource_observations": {
+    "began_utc": "2026-11-25T07:50:42.212152+00:00",
+    "sealed_utc": "2026-11-25T08:02:49.067299+00:00",
+    "wall_elapsed_since_owned_attempt_creation_seconds": 726.855147,
+    "checker_child_CPU_seconds": 0.6339589999999999,
+    "whole_invocation_CPU_seconds": null,
+    "whole_invocation_CPU_null_reason": "Interactive and exploratory tool time not uniformly instrumented; checker measurement only",
+    "scientific_payload_transfer_bytes": 0,
+    "model_download_bytes": 0,
+    "private_upload_bytes": 0,
+    "billing_rental_start_cost": null,
+    "billing_null_reason": "Provider billing not available to metadata task"
+  },
+  "no_deadline_amendment_preserved": true,
+  "sealed_utc": "2026-11-25T08:02:49.067299+00:00",
+  "noncircularity": "This receipt hashes the exact register/output snapshot. The register does not hash this receipt. No own future commit assertion. Post-seal byte readback and actual exit are witnessed externally in control."
+}

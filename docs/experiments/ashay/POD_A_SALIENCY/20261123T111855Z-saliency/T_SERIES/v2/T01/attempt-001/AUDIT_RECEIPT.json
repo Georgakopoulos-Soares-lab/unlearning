@@ -1,0 +1,245 @@
+{
+  "schema_version": "t01-drive-inventory-audit-receipt-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "attempt_id": "T01/attempt-001",
+  "T01_EXECUTION_STATUS": "COMPLETE_FOR_INVENTORY_AND_METADATA_USE_SCOPE",
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+    "ref": "POD-A-Saliency",
+    "commit": "8c0982140e482f746d342828d00652988d6033f5",
+    "path": "T01_Drive_Inventory_And_Future_Use_Prompt.md",
+    "git_blob_id": "a83fed35048db289e32f4c02080feed0f011e655",
+    "sha256": "dcb1c48c229e99b56b6ab89753dc81543aed2ffc62c37de23e346b31590997b9",
+    "bytes": 23143,
+    "read_in_full": true,
+    "authorization": "Direct chat request to pull and execute this exact T01 prompt; read-only recursive supplied-Drive metadata and non-sequence evidence review, local outputs only"
+  },
+  "authorization_scope": "Invoked T01 read-only supplied-tree inventory, documentary/structural classification and local outputs only",
+  "plan_version": "v2_T00_T16",
+  "research_branch": "POD_A_SALIENCY",
+  "research_anchor": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+  "T00_register_sha256": "f54867b32bd5ecb6070cdbe1a61384c1e2a02c39c5f95e4f613b432de0f2eb27",
+  "T00_receipt_sha256": "f177f7100b782a3e161e096c313e472557a2e47edb75256099a0f0c2dc4b8759",
+  "source_route": "Connected Google Drive plugin: list_folder_page, root get_file_metadata and explicit bounded raw-base64 compatibility for nonsequence small files only",
+  "observation_window": {
+    "first_utc": "2026-11-25T08:24:46.263Z",
+    "last_utc": "2026-11-25T08:30:56.836Z",
+    "is_atomic_snapshot": false,
+    "reason": "Provider supplies no snapshot/revision mechanism; listings observed over a bounded time window."
+  },
+  "provider_observation_responses": 142,
+  "provider_calls": {
+    "list_folder_page_initial": 43,
+    "list_folder_page_end_recheck": 10,
+    "root_metadata": 2,
+    "bounded_small_raw_file_fetch": 87,
+    "write_calls": 0
+  },
+  "source_identity_contract": "Drive object IDs and nullable revisions remain provider identities; exact locally obtained bytes use separately labeled local SHA256. Provider checksum/version/revision absent, never fabricated.",
+  "source_evidence_index_sha256": "8fb57b8847747bed3e361486baf1b48526a942b027c5db8bcd4b0936417c139d",
+  "counts": {
+    "unique_objects_including_root": 148,
+    "folders_including_root": 43,
+    "files": 105,
+    "path_appearances_including_root": 148,
+    "known_checkpoint_endpoints": 9,
+    "event_logs": 9,
+    "configs_all_types": 27,
+    "run_configs_with_dataset_references": 9,
+    "model_storage_indexes": 9,
+    "training_state_containers": 26,
+    "tokenizer_models": 9,
+    "progress_or_pointer_documents": 16,
+    "standalone_aggregate_result_files_identified": 0,
+    "identified_forget_dataset_payload_objects": 0,
+    "identified_retain_dataset_payload_objects": 0,
+    "identified_unknown_dataset_payload_objects": 0,
+    "large_model_container_content_coverage_gaps": 9,
+    "config_reference_occurrences": 36,
+    "unique_dataset_or_config_target_paths": 4,
+    "small_files_exact_bytes_retrieved": 87,
+    "small_file_bytes_retrieved": 2099503,
+    "new_model_shard_bytes_retrieved": 0,
+    "new_raw_dataset_bytes_retrieved": 0,
+    "new_event_log_bytes_retrieved": 0,
+    "total_actual_dataset_payload_count": null,
+    "total_actual_dataset_payload_count_null_reason": "No raw dataset identified; nine opaque containers and hidden-account scope prevent a universal content absence claim"
+  },
+  "statuses": {
+    "DRIVE_ENUMERATION_STATUS": "ENUMERATION_COMPLETE_FOR_ACCESSIBLE_SCOPE",
+    "CONTENT_REVIEW_COVERAGE": "87small files exact-byte/documentary or inert structural review;9logs inherited-only;9large model containers uninspected",
+    "FORGET_PAYLOAD_PRESENCE": "NOT_FOUND_IN_REVIEWED_ACCESSIBLE_SCOPE",
+    "FORGET_ROLE_EVIDENCE": "DOCUMENTED_CONFIG_REFERENCES_ONLY",
+    "RETAIN_PAYLOAD_PRESENCE": "NOT_FOUND_IN_REVIEWED_ACCESSIBLE_SCOPE",
+    "DATASET_BYTE_ACCESS_STATUS": "NOT_TESTED_NO_DATASET_PAYLOAD_IDENTIFIED",
+    "DATASET_SCIENTIFIC_SUITABILITY": "NOT_ESTABLISHED_BY_THIS_AUDIT",
+    "FUTURE_METADATA_USE": "ELIGIBLE_FOR_METADATA_OR_PROVENANCE_REVIEW",
+    "FUTURE_AGGREGATE_USE": "EXISTING_RETAIN_RELEASE_REUSABLE; FORGET_SCIENTIFIC_QUALIFICATION_PENDING",
+    "ORIGINAL_RETAIN_AND_FORGET_REQUEST": "PARTIAL",
+    "SOURCE_FILES_MODIFIED": false,
+    "NEW_SCIENTIFIC_EVALUATION_PERFORMED": false,
+    "EXTERNAL_MESSAGES_SENT": 0
+  },
+  "dataset_presence_by_scope": [
+    {
+      "scope": "SUPPLIED_DRIVE_TREE",
+      "verdict": "NOT_FOUND_IN_REVIEWED_ACCESSIBLE_SCOPE",
+      "identified_forget_payload_objects": 0,
+      "identified_retain_payload_objects": 0,
+      "identified_unknown_data_payload_objects": 0,
+      "actual_all_content_payload_count": null,
+      "unknown_count_reason": "Nine large checkpoint containers not opened; hidden-account items and unspecified original inventory cannot be excluded",
+      "documented_role_evidence": "Nine run configs contain both forget/retain references, not authoritative uploaded-payload manifests"
+    },
+    {
+      "scope": "EXPLICITLY_LINKED_EXTERNAL_DRIVE_OR_REPOSITORY",
+      "verdict": "NOT_APPLICABLE",
+      "reason": "No dataset Drive IDs/URLs or external dataset repository target in the reviewed config dataset declarations; no external subtree crawled"
+    },
+    {
+      "scope": "REFERENCED_PRODUCER_FILESYSTEM_PATHS",
+      "verdict": "REFERENCED_OUTSIDE_SUPPLIED_FOLDER",
+      "target_presence_on_producer": "UNVERIFIED",
+      "current_Pod_exact_path_findings": "All four distinct referenced dataset/config paths absent here; no recursive host search",
+      "target_Drive_access": "REFERENCED_TARGET_ACCESS_UNRESOLVED; no concrete uploaded object identity supplied"
+    }
+  ],
+  "actual_checks": {
+    "independent_acceptance_checks_passed": 15,
+    "direct_high_consequence_decisions": 19,
+    "checker_route": "Direct raw provider responses, exact config text blocks and inert structural source checks; no import of build_audit.py",
+    "checker_actual_process_and_exit": {
+      "pid": 131674,
+      "start_ticks": "72052955",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "actual_exit": 0,
+      "exited": true,
+      "elapsed_seconds": 1.4845658720005304,
+      "child_CPU_seconds": 0.54533,
+      "ended_utc": "2026-11-25T08:39:06.704390+00:00"
+    },
+    "final_prose_review": {
+      "status": "PASS",
+      "scope": "Final direct reading of FINDINGS and separate evidence-level definitions/readability polish; source, catalog, references and classifications unchanged",
+      "findings_sha256": "0d39f5178eea6f4c105fb8ae767f32814d13a8563130e1b71ae7f5748a0e5869",
+      "checks": [
+        "Lead states references only/no actual payload identified",
+        "Large opaque-container limitation adjacent to verdict",
+        "Six evidence levels defined without confidence probabilities",
+        "Present/role/byte-access/suitability separate",
+        "Exact paths/currentPod absence not generalized to producer",
+        "T02\u2013T16 unexecuted/local-only boundary explicit"
+      ],
+      "observed_utc": "2026-11-25T08:40:29.430095+00:00"
+    },
+    "every_discovered_object_and_folder_accounted_for": true,
+    "all_returned_continuation_tokens_handled": true,
+    "CSV_matches_canonical_catalog": true,
+    "future_use_source_references_resolve": true,
+    "small_structures_parsed_without_executable_deserialization": true,
+    "provider_revisions_or_checksums_fabricated": false
+  },
+  "inherited_not_repeated": {
+    "S01_roster": "Same148stableIDs; historical PARTIAL receipt not rewritten",
+    "retain_release": "3c39552d43c2e4c8aaf223ca97e3b8f6ee33d11c",
+    "corrected_forget_source_release": "735c9de0ed56be285897b68f84db098ff7a32a6f; source-only extraction, no scientific promotion",
+    "S11_report": "1ea226cc1b4a0d64f693b4083c69732cc1097b1b; completed reporting and recovery not rerun"
+  },
+  "remaining_limitations": [
+    "Accessible provider enumeration is not an atomic snapshot or proof of hidden-account files/original requested inventory exhaustiveness.",
+    "Nine15.5GBmodel containers are index-bound model artifacts but their internal member sets/payload bytes were not read here.",
+    "Config paths establish documented training roles only, not delivered payloads or actual producer cohort identities.",
+    "Current-Pod absence of four exact paths does not establish absence on the producer machine.",
+    "Raw dataset readability, biology, metric/cohort/invocation qualification and scientific suitability remain unestablished.",
+    "Existing source logs contain observations; no new scientific forget points/comparisons/layerwise results were admitted.",
+    "Outputs and raw-source/response evidence are local only; no repository publication/private recovery or collaborator delivery performed."
+  ],
+  "preserved_operational_failures": {
+    "preserved_operational_failures": [
+      {
+        "action": "Persist growing traversal state",
+        "failure": "OS rejected oversized shell argv before creating a process; all successful API response files were already saved.",
+        "repair": "Chunked metadata writes and atomic rename; reused in-memory state.",
+        "repeated_Drive_calls": 0
+      },
+      {
+        "action": "Persist first small config response",
+        "failure": "Orchestration helper lacked its local shell-quoting function. The successful fetch result remained in session memory.",
+        "repair": "Defined the quoting function, saved exact source bytes and sanitized response, then reused the result.",
+        "repeated_Drive_calls": 0
+      }
+    ],
+    "Drive_API_errors": 0,
+    "scientific_failure_or_tolerance_change": false
+  },
+  "output_sha256": {
+    "DATASET_REFERENCE_MAP.csv": "69d595c1cda5afd2f57b183b42cae90f3fdd446f1fbeef38bb9d2991818a11e3",
+    "DOCUMENTARY_EVIDENCE.json": "4ef999817cf0d70fa6edd0febe56eb837a18db6d21949873f095c62035d774a1",
+    "DRIVE_CATALOG.csv": "278a2742f4d9df4b9710ee963be4a5789a56b5e5326f18d3d5c3127c73786c03",
+    "DRIVE_CATALOG.jsonl": "edfa8b5b6fd7b87b19731c57159863feb7f96c40141a6e96e7b724e16984d52c",
+    "ENDPOINT_CORRESPONDENCE.json": "59e102bcb2db3092b3f1804b6f7ca9052821df8c4933886973b58c12fd9d1f9b",
+    "FINDINGS.md": "0d39f5178eea6f4c105fb8ae767f32814d13a8563130e1b71ae7f5748a0e5869",
+    "FOLDER_COVERAGE.json": "80533e1ac12c94606ffd4af9305f097aeb2edf2cedb1e96176c8545beb9df967",
+    "FUTURE_USE_MATRIX.csv": "361e0b51529e679164184455faaf8891b81b868bc45297f29f404ce938ab4728",
+    "PROMPT.md": "dcb1c48c229e99b56b6ab89753dc81543aed2ffc62c37de23e346b31590997b9",
+    "PROMPT_RECEIPT.json": "fc4ac2614d3dc81106a9e60dbec70c642561d87c2eecbe33624c2feda6605014",
+    "SESSION_HANDOFF.md": "c58369cc998201cf8d2a502098312264d535b1708a835b0d4f74921a9856a5c0",
+    "T01_ADDITION.json": "8fb57b8847747bed3e361486baf1b48526a942b027c5db8bcd4b0936417c139d",
+    "VERIFICATION.json": "93dfa74ae1779b918d4dd47dd4be6b00605f485ff7c3efdcdb23469c20821328",
+    "verify_audit.py": "6ec5497c304619c045173802ad1b053a89c7d75e24fe1b16516fa90f83c75e83"
+  },
+  "output_bytes": {
+    "DATASET_REFERENCE_MAP.csv": 20198,
+    "DOCUMENTARY_EVIDENCE.json": 128369,
+    "DRIVE_CATALOG.csv": 249265,
+    "DRIVE_CATALOG.jsonl": 454182,
+    "ENDPOINT_CORRESPONDENCE.json": 6522,
+    "FINDINGS.md": 10881,
+    "FOLDER_COVERAGE.json": 63917,
+    "FUTURE_USE_MATRIX.csv": 153007,
+    "PROMPT.md": 23143,
+    "PROMPT_RECEIPT.json": 579,
+    "SESSION_HANDOFF.md": 2508,
+    "T01_ADDITION.json": 68468,
+    "VERIFICATION.json": 11486,
+    "verify_audit.py": 16018
+  },
+  "local_source_and_code": {
+    "analyse_sources.py": "eeb6d5086940f1fced0f1cdeba01de79c51a6c6123ae1e2bca2e03374c428535",
+    "build_audit.py": "72e3b1559b23d275841d519279d1b413fbc0c295c9f6e384d3003682635359cf",
+    "small_source_manifest": "DOCUMENTARY_EVIDENCE.json; exact source bytes under control T01/attempt-001/documents/<DriveID>",
+    "provider_observations": "T01_ADDITION.json observation_evidence hashes; sanitized responses in control, no temporary signed locators retained"
+  },
+  "resources": {
+    "Python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "PyYAML": "6.0.3",
+    "new_packages_installed": false,
+    "began_utc": "2026-11-25T08:24:37.134134+00:00",
+    "sealed_utc": "2026-11-25T08:42:11.390534+00:00",
+    "wall_elapsed_since_attempt_creation_seconds": 1054.2564,
+    "checker_child_CPU_seconds": 0.54533,
+    "whole_invocation_CPU_seconds": null,
+    "CPU_null_reason": "Only finite checker subprocess instrumented; interactive tool/agent CPU not uniformly measured",
+    "HTTP_transport_bytes_including_metadata_base64_overhead": null,
+    "transport_null_reason": "Exact decoded source bytes measured; connector transport accounting unavailable",
+    "provider_billing_rental_start_and_cost": null,
+    "billing_null_reason": "Unavailable to this metadata audit"
+  },
+  "publication": {
+    "state": "LOCAL_ONLY_DRAFT",
+    "committed": false,
+    "pushed": false,
+    "uploaded": false,
+    "collaborator_sent": false
+  },
+  "T02_through_T16_executed": false,
+  "Drive_source_files_modified_by_this_invocation": false,
+  "tracked_historical_research_and_T00_unchanged": true,
+  "original_POD_A_tip_unchanged": true,
+  "no_deadline_amendment_preserved": true,
+  "Pod_shutdown_or_resize": false,
+  "unrelated_processes_terminated": false,
+  "next_permitted_action": "Stop after inventory/classification/future-use handoff; T02 provenance review only under later explicit authorization. No automatic workflow, scientific evaluation or collaborator message.",
+  "sealed_utc": "2026-11-25T08:42:11.390534+00:00",
+  "noncircularity": "This receipt binds exact output bytes and source observations. No output requires this receipt hash or a future commit. Actual post-seal readback/exit witnessed externally under control."
+}

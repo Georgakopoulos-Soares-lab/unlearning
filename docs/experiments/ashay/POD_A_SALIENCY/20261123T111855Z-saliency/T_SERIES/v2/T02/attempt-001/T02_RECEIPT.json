@@ -1,0 +1,738 @@
+{
+  "schema_version": "t02-strict-dataset-assessment-receipt-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "attempt_id": "T02/attempt-001",
+  "T02_STATUS": "T02_BLOCKED_EXTERNAL",
+  "available_review_exhausted": true,
+  "requirements_met": false,
+  "internal_blockers_remaining": [],
+  "external_blockers": [
+    {
+      "id": "DEP_TARGETS",
+      "criteria": [
+        "C02",
+        "C04",
+        "C09"
+      ],
+      "missing": "Producer-bound exact dataset roots and definition-config objects/versions for both configured roles",
+      "minimum_response": "Stable source locators plus immutable revision or supported content digest, linked explicitly to the four literal producer paths and nine config contexts.",
+      "owner": "OWNER_UNASSIGNED; producing data/pipeline team proposed",
+      "owner_confirmed": false,
+      "coordinate_with": "Sayyed proposed coordinator, not confirmed",
+      "independent_work": "Use exact existing config/identifier metadata for U01/U03 and focused request U05."
+    },
+    {
+      "id": "DEP_MEMBERS",
+      "criteria": [
+        "C03",
+        "C04",
+        "C09"
+      ],
+      "missing": "Authoritative expected dataset membership and appropriate availability receipts",
+      "minimum_response": "Producer-origin manifest identifying exact required components, versions, sizes/checksums where available, intended completeness and existing identity-bound acquisition/access evidence; no raw sequences.",
+      "owner": "OWNER_UNASSIGNED; producing data team proposed",
+      "owner_confirmed": false,
+      "coordinate_with": "Sayyed proposed",
+      "independent_work": "Preserve T01observed inventory and known model exclusions; do not build expected membership from folder listing."
+    },
+    {
+      "id": "DEP_PROVENANCE",
+      "criteria": [
+        "C06",
+        "C07",
+        "C09"
+      ],
+      "missing": "Actual version/role and source\u2192preprocessing\u2192artifact provenance",
+      "minimum_response": "Exact producing dataset YAMLs, source release/revision, preprocessing implementation/config, inclusion/exclusion rules and produced-artifact identity; identify missing/nonexistent records explicitly.",
+      "owner": "OWNER_UNASSIGNED; producing pipeline/data team proposed",
+      "owner_confirmed": false,
+      "coordinate_with": "Sayyed proposed",
+      "independent_work": "Declared source roles remain documentary; unrelated verified retain results reusable."
+    },
+    {
+      "id": "DEP_SPLITS",
+      "criteria": [
+        "C06",
+        "C08",
+        "C09"
+      ],
+      "missing": "Required split/cohort identities and explicit test applicability",
+      "minimum_response": "Versioned train/validation membership manifest identities; test manifest only if applicable, otherwise attributed scope reason; existing overlap-check receipts and their limits. Actual invocation joins remain T03.",
+      "owner": "OWNER_UNASSIGNED; dataset/evaluation owner proposed",
+      "owner_confirmed": false,
+      "coordinate_with": "Sayyed proposed",
+      "independent_work": "U06container provenance and existing source-only log reporting remain usable; no new raw evaluation."
+    }
+  ],
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+    "ref": "POD-A-Saliency",
+    "commit": "136d3f984e1ba57a3223492fc6fb42e97c8bc9ee",
+    "path": "T02_Dataset_Provenance_And_Readiness_Prompt.md",
+    "git_blob_id": "d31cb39f90c78528af793f4af3659325783ecda4",
+    "sha256": "113f4b35a27721907ae2fbf72569cc023ae2974ccece63853b6c7449178632a7",
+    "bytes": 35319,
+    "read_in_full": true,
+    "authorization": "Direct chat invocation of T02; read-only documentary provenance and existing structural metadata, local outputs and validation only"
+  },
+  "research_anchor": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+  "branch": "POD_A_SALIENCY",
+  "T00_register_sha256": "f54867b32bd5ecb6070cdbe1a61384c1e2a02c39c5f95e4f613b432de0f2eb27",
+  "T01_receipt_sha256": "5c356b7f474f7eac726fc4c3c77263e41207a3c2d145870a971698c0f4961c10",
+  "acceptance_amendment": {
+    "source": "PROMPT",
+    "freeze_sha256": "d24ccb3b4c5a68754ce0cb09ccf92a7690da08139e88cc05cb30282149e2e9d3",
+    "basis": "Current direct invocation explicitly imposes stricter T02 acceptance; does not retroactively fail narrower T00/T01 stages",
+    "scope_reduced": false
+  },
+  "mandatory_criteria": [
+    {
+      "id": "C01",
+      "name": "required_reference_scope_established",
+      "appendix_A_condition": 1,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Every dataset reference within explicit T01 source scope has a disposition.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C01",
+      "status": "PASS",
+      "supporting_evidence": "All36direct dataset references within nine exact T01configs have recorded dispositions and source/key/context identities.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C01",
+      "blocker_kind": null
+    },
+    {
+      "id": "C02",
+      "name": "all_required_references_resolved",
+      "appendix_A_condition": 2,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Every required target resolves to an intended concrete object with content/version binding.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C02",
+      "status": "UNKNOWN",
+      "supporting_evidence": "Four exact producer-host paths lack an intended concrete target/version binding. ENOENT here does not settle producer-host presence.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C02",
+      "blocker_kind": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "id": "C03",
+      "name": "expected_dataset_membership_established",
+      "appendix_A_condition": 3,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Authoritative expected membership independent of the observed listing.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C03",
+      "status": "UNKNOWN",
+      "supporting_evidence": "No authoritative dataset expected-component manifest or equivalent producer inventory is available.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C03",
+      "blocker_kind": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "id": "C04",
+      "name": "all_required_components_present",
+      "appendix_A_condition": 3,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Every required component affirmatively present; merely recording missingness is insufficient.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C04",
+      "status": "UNKNOWN",
+      "supporting_evidence": "Expected member universe is unknown; no complete intended dataset bundle or required component presence can be affirmed.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C04",
+      "blocker_kind": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "id": "C05",
+      "name": "relevant_container_uncertainty_resolved",
+      "appendix_A_condition": 4,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Each nine-container disposition source-supported; no material unresolved container excluded.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C05",
+      "status": "PASS",
+      "supporting_evidence": "All nine exact checkpoint versions are source-bound model/optimizer/RNG artifacts, with1126index segments per file covering15516878934bytes contiguously and unchanged local stat bindings. No shard bodies opened.",
+      "source_ids": [
+        "S03_PAYLOADS",
+        "S03_LOCAL_ADMISSION",
+        "T01_CATALOG",
+        "IDX_18vWZwhiV2DZQLL81ZCqQNbqjUp4TvuE-",
+        "IDX_19SYTAUt8h4p907sdbpTT2FWZwHuc1KmM",
+        "IDX_1EOspCysbYyvkhy1FiO1t_oIrA0ylzlXy",
+        "IDX_1FTz5R4qyAQ4LHkAY3aVUgd1KU6y350do",
+        "IDX_1QeU7KmeT8ZlGr4-HT3_i9mhuMr6uyVAm",
+        "IDX_1SRnUiZ7K9dZD5cgmZ6ZderD5zH4Ltyry",
+        "IDX_1XE6r0TraLXdk6PCFfPj9aomVV2x7ZAM0",
+        "IDX_1j_Hx-mxH-YEusOaSrrsBS8ejDPI-cARW",
+        "IDX_1y8GBdwCkrFpovwQTDhNogVEBhtvLZ3Ny"
+      ],
+      "responsible_check": "Source-first independent C05",
+      "blocker_kind": null
+    },
+    {
+      "id": "C06",
+      "name": "required_role_assignments_supported",
+      "appendix_A_condition": 5,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Required version/split role assignments supported, beyond only a configured path.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C06",
+      "status": "UNKNOWN",
+      "supporting_evidence": "Configured forget/retain roles are documented for nine contexts, but actual required dataset-version/split membership roles are not bound.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C06",
+      "blocker_kind": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "id": "C07",
+      "name": "required_version_and_preprocessing_provenance_supported",
+      "appendix_A_condition": 6,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "All required dataset-release/preprocessing/output provenance links supported.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C07",
+      "status": "UNKNOWN",
+      "supporting_evidence": "Source release, producing preprocessing code/configuration, inclusion/exclusion rules and produced output identities remain unsupported.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C07",
+      "blocker_kind": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "id": "C08",
+      "name": "required_split_identities_supported",
+      "appendix_A_condition": 7,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Required split identities/documentary memberships established; actual invocation binding remains T03.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C08",
+      "status": "UNKNOWN",
+      "supporting_evidence": "Producer train/validation membership identities and test applicability are unresolved. Invocation association remains separately T03.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C08",
+      "blocker_kind": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "id": "C09",
+      "name": "required_use_availability_sufficient",
+      "appendix_A_condition": 8,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "All predeclared required downstream uses have sufficient identity/access evidence.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C09",
+      "status": "FAIL",
+      "supporting_evidence": "U02,U04,U07 lack mandatory dataset identity/provenance/membership/availability evidence; four other review uses are eligible.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C09",
+      "blocker_kind": "EXTERNAL_EVIDENCE"
+    },
+    {
+      "id": "C10",
+      "name": "no_unresolved_consequential_conflicts",
+      "appendix_A_condition": 9,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "No unresolved conflict affects accepted identities/roles/membership/provenance.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C10",
+      "status": "PASS",
+      "supporting_evidence": "Paired apparent conflicts are resolved by source scope/temporal distinction or explicit T02 amendment; no accepted provenance assertion masks a contradiction.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C10",
+      "blocker_kind": null
+    },
+    {
+      "id": "C11",
+      "name": "downstream_input_contract_verified",
+      "appendix_A_condition": 10,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "All relevant artifacts have traceable purpose-specific use/limits; no global readiness.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C11",
+      "status": "PASS",
+      "supporting_evidence": "Seven required use contracts remain frozen/nonvacuous, with exact sources, eligibility, unmet evidence and prohibited inferences.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C11",
+      "blocker_kind": null
+    },
+    {
+      "id": "C12",
+      "name": "independent_checks_passed",
+      "appendix_A_condition": 11,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Separate source-first route, ten minimum adversarial plus six added challenges and positive controls.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C12",
+      "status": "PASS",
+      "supporting_evidence": "Certified only by the separate source-first verifier and20predeclared challenges plus gate controls; receipt seals actual execution.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C12",
+      "blocker_kind": null
+    },
+    {
+      "id": "C13",
+      "name": "handoff_package_verified",
+      "appendix_A_condition": 12,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Canonical tables agree and package reads from a separate location with declared metadata inputs.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C13",
+      "status": "PASS",
+      "supporting_evidence": "Certified only after separate-directory metadata-input/package verification; source-byte restoration is not scientific reproduction.",
+      "source_ids": [
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP",
+        "T00_REGISTER",
+        "CFG_13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+        "CFG_177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+        "CFG_1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+        "CFG_1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+        "CFG_1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+        "CFG_1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+        "CFG_1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+        "CFG_1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+        "CFG_1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V"
+      ],
+      "responsible_check": "Source-first independent C13",
+      "blocker_kind": null
+    }
+  ],
+  "mandatory_counts": {
+    "PASS": 6,
+    "FAIL": 1,
+    "UNKNOWN": 6
+  },
+  "required_use_counts": {
+    "ELIGIBLE": 4,
+    "BLOCKED": 3,
+    "total": 7
+  },
+  "separate_statuses": {
+    "T02_STATUS": "T02_BLOCKED_EXTERNAL",
+    "AVAILABLE_REVIEW_EXHAUSTED": true,
+    "REQUIRED_REFERENCE_SCOPE": "ESTABLISHED_36REFERENCES_IN9CONFIGS",
+    "REQUIRED_DATASET_LOCATIONS": "UNRESOLVED_PRODUCER_TARGETS",
+    "EXPECTED_MEMBERSHIP_ESTABLISHED": false,
+    "REQUIRED_MEMBERS_PRESENT": "UNKNOWN_NO_AUTHORITATIVE_EXPECTED_UNIVERSE",
+    "RELEVANT_CONTAINER_UNCERTAINTY": "RESOLVED_FOR9BOUND_CHECKPOINT_MANIFEST_VERSIONS",
+    "DOCUMENTED_ROLE_AND_PROVENANCE": "CONFIGURED_ROLES_DOCUMENTED; REQUIRED_VERSION_PROVENANCE_UNRESOLVED",
+    "SPLIT_IDENTITY": "UNRESOLVED",
+    "BYTE_ACCESS_EVIDENCE_SCOPE": "CACHED_NONSEQUENCE_METADATA_ONLY; NO_DATASET_BYTE_ACCESS_ESTABLISHED",
+    "REQUIRED_DOWNSTREAM_USES_ELIGIBLE": false,
+    "MANDATORY_CRITERIA_PASS_FAIL_UNKNOWN": {
+      "PASS": 6,
+      "FAIL": 1,
+      "UNKNOWN": 6
+    },
+    "UNRESOLVED_CONSEQUENTIAL_CONFLICTS": 0,
+    "INDEPENDENT_VERIFICATION": "CHECKED_BY_T02_VERIFICATION_RECEIPT",
+    "PACKAGE_VERIFICATION": "CHECKED_BY_SEPARATE_DIRECTORY_METADATA_RECEIPT",
+    "T03_EXECUTED": false,
+    "NEW_SCIENTIFIC_EVALUATION": false,
+    "EXTERNAL_MESSAGES_SENT": 0,
+    "ORIGINAL_RETAIN_AND_FORGET_REQUEST": "PARTIAL"
+  },
+  "actual_performed_work": [
+    "Pinned/read35319byte invoked prompt and verified exact T00/T01 receipt/output identities without reopening science.",
+    "Froze13mandatory gates and7required documentary uses; retained strict AppendixAgoal and no scope reduction.",
+    "Read40declared small source snapshots, resolved all36dataset references/four producer-path targets, refreshed four exact lstat checks.",
+    "Bound all9prior opaque containers to existing S03manifest/local hash/stat evidence and exact cached indexes;1126segments perfile completely cover15516878934bytes in model/optimizer/RNG namespaces.",
+    "Created2configured-path declaration groups and16required evidence obligations; actual dataset version/member counts remainnull.",
+    "Recorded configured roles, missing preprocessing/split identities, paired apparent-conflict scope resolutions and deduplicated unsent producer request.",
+    "Separate source-first verification passed11checks,20predeclared challenges and5end-to-end verdict controls.",
+    "Separate local consumer repeated metadata decisions from40declared snapshots with original-tree access denied; no producer fallback.",
+    "Exact findings/hand-off review completed; no T02success claim, scientific promotion or downstream execution."
+  ],
+  "verification_summary": {
+    "status": "PASS_AT_DECLARED_METADATA_SCOPE",
+    "source_first_checks": 11,
+    "predeclared_cases": 20,
+    "Appendix_A_adversarial": 10,
+    "additional_adversarial_scope_cases": 6,
+    "positive_controls": 4,
+    "end_to_end_verdict_controls": 5,
+    "source_first_actual_process": {
+      "label": "source-first-check-001",
+      "pid": 132997,
+      "start_ticks": "72741297",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "actual_exit": 0,
+      "exited": true,
+      "elapsed_seconds": 0.5440994859673083,
+      "child_CPU_seconds": 0.383314,
+      "ended_utc": "2026-11-25T10:33:49.181522+00:00"
+    },
+    "fresh_consumer_actual_process": {
+      "label": "fresh-package-check-001",
+      "pid": 132999,
+      "start_ticks": "72741424",
+      "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+      "actual_exit": 0,
+      "exited": true,
+      "elapsed_seconds": 0.9234240249497816,
+      "child_CPU_seconds": 0.453451,
+      "ended_utc": "2026-11-25T10:33:50.834246+00:00"
+    },
+    "fresh_original_tree_denial": true,
+    "shared_component_limit": "Both routes share safe_index_fields.py/pickletools; distinct checker independently verifies source identity, namespaces, range coverage, use/criterion logic and tables. No independent scientific/model reproduction claimed."
+  },
+  "membership_units": {
+    "reference_occurrences": 36,
+    "distinct_literal_paths": 4,
+    "configured_declaration_groups": 2,
+    "established_actual_dataset_version_count": null,
+    "actual_version_count_null_reason": "Configured path names are not version identities",
+    "expected_dataset_file_count": null,
+    "expected_file_count_null_reason": "No authoritative producer dataset manifest",
+    "observed_intended_member_count": null,
+    "observed_count_null_reason": "Intended concrete roots/version identities unresolved",
+    "evidence_obligation_rows": 16,
+    "evidence_obligation_rows_are_expected_dataset_files": false
+  },
+  "container_scope": {
+    "bound_checkpoint_versions_disposed": 9,
+    "disposition": "MODEL_ONLY_ESTABLISHED_AT_BOUND_VERSIONS",
+    "declared_index_segments_per_file": 1126,
+    "complete_declared_byte_range_per_file": 15516878934,
+    "new_shard_payload_bytes_read": 0,
+    "new_shard_rehashes": 0,
+    "new_model_loads": 0,
+    "current_remote_Drive_checksum_reverification": false,
+    "inherited_vs_new": "Native full hashes and source manifests inherited; current local stat matches and small-index coverage are new metadata checks."
+  },
+  "limitations": [
+    "Intended forget/retain dataset versions, roots, producer definitions, expected component membership, preprocessing and split identities remain unresolved.",
+    "Current-Pod ENOENT does not establish absence on the producer host; no permission bypass or guessed host/credential.",
+    "Model-container exclusion applies at bound manifest/native versions, not an unperformed fresh remote-byte audit.",
+    "Source-first checker shares the declared inert opcode extractor/pickletools; it is not independent scientific/model/biological reproduction.",
+    "Metadata-package check verifies local declared inputs/decisions only, not present remote dataset access, scientific suitability or S11 recovery.",
+    "No raw sequences, label/split creation, preprocessing reconstruction, model execution, event decoding, training or new statistical/scientific evaluation.",
+    "Outputs and source snapshots are local only; no commit, push, private upload or message."
+  ],
+  "preserved_failures_and_repair": {
+    "preserved_failures": [
+      {
+        "operation": "inspect_index.py first bounded structural probe",
+        "actual_exit": 1,
+        "reason": "MetadataIndex offset geometry was initially conflated with _StorageInfo byte-offset fields; parser rejected tuple geometry before any model shard read",
+        "repair": "New preserved version inspect_index_v2.py reads byte fields only after relative_path; no objects/globals/reductions executed. Exact contiguous byte coverage now verified.",
+        "source_file": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/T_SERIES/v2/T01/attempt-001/documents/1FTz5R4qyAQ4LHkAY3aVUgd1KU6y350do",
+        "source_bytes_unchanged": true
+      }
+    ],
+    "metadata_discovery_warning": "rg returned2 because exact producer source directory evo2_unlearn_pipeline absent in checkout; bounded tracked-path discovery confirmed no matching exact config basename; unrelated benchmark-log paths not read.",
+    "scientific_work_or_tolerance_changes": false
+  },
+  "output_sha256": {
+    "CHALLENGE_CASES.json": "1d53fc9880761a861f5c6b1d044596b4e9a2bde886ecef5011889305e1362d60",
+    "DATASET_REFERENCE_MAP.csv": "11dd2b3a85e914f61558fb7fe8577f9d75a8400f8e27c6aa817fe3aea21744b4",
+    "DOWNSTREAM_USE_MATRIX.csv": "ea1f0b1b5d06dcda42d0a920ee4f4460dc295538ffbc8852fa099cc3c5740460",
+    "MEMBERSHIP_RECONCILIATION.csv": "ea5572162d80c1fc0107811f242bfefce0a0376c3b0ff51a97242a39513cd730",
+    "PROMPT.md": "113f4b35a27721907ae2fbf72569cc023ae2974ccece63853b6c7449178632a7",
+    "PROMPT_RECEIPT.json": "63a5b0920307fc0f9cf2594bef4dfb85be17eb77825e489b3cc881e890b941a7",
+    "REQUIREMENTS_FROZEN.json": "d24ccb3b4c5a68754ce0cb09ccf92a7690da08139e88cc05cb30282149e2e9d3",
+    "SESSION_HANDOFF.md": "01a73502b0ca01d2f408490abc09baf8be3cf25aacbff43cd84ef00db609c06e",
+    "T02_EVIDENCE.json": "e6522a893dcf79df84018d5a814944bffd5d16221d2d3de0b78c36d5c8bb0b54",
+    "T02_FINDINGS.md": "fd342d03c7181914687a503f53aa19fd42165a89868b88985817d4591ee1d76e",
+    "T02_VERIFICATION.json": "f0f89ed13aa98c6c1b421210460416cb784c7f37cac0748a4ccfa8b946d7d758",
+    "acceptance_rules.py": "9a62489be415472071a455af41f34fb478f245dd895eb21a471de7c329d815f6",
+    "safe_index_fields.py": "8f01a19e6df4cefaec4f24a879f6fea32b64660c3cf92f77950a3578abce6507",
+    "verify_metadata.py": "af708e767cd462656c006b1789b891b44a11ca24283601a935b9eea02f6fb1e1"
+  },
+  "output_bytes": {
+    "CHALLENGE_CASES.json": 8035,
+    "DATASET_REFERENCE_MAP.csv": 45775,
+    "DOWNSTREAM_USE_MATRIX.csv": 7142,
+    "MEMBERSHIP_RECONCILIATION.csv": 14908,
+    "PROMPT.md": 35319,
+    "PROMPT_RECEIPT.json": 553,
+    "REQUIREMENTS_FROZEN.json": 11375,
+    "SESSION_HANDOFF.md": 3149,
+    "T02_EVIDENCE.json": 218219,
+    "T02_FINDINGS.md": 15199,
+    "T02_VERIFICATION.json": 26914,
+    "acceptance_rules.py": 2736,
+    "safe_index_fields.py": 1679,
+    "verify_metadata.py": 12513
+  },
+  "declared_inputs": {
+    "source_snapshots": 40,
+    "bytes": 3308119,
+    "source_directory": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/T_SERIES/v2/T02/attempt-001/inputs",
+    "observation_receipts": [
+      "CONTAINER_REVIEW.json",
+      "TARGET_PATH_CHECKS.json"
+    ],
+    "source_identity_index": "T02_EVIDENCE.json/source_register"
+  },
+  "active_local_code_sha256": {
+    "prepare_evidence.py": "aabaf616c3bdf6c3e1e2c7b39e4d32a22f7b719e5034c940d6da25a37ab7ddd4",
+    "inspect_index_v2.py": "8f01a19e6df4cefaec4f24a879f6fea32b64660c3cf92f77950a3578abce6507",
+    "build_evidence.py": "aa2e487cb48f7223e81aa085614ac8e751e21ba4e6a4cff7f49737a8fc75adc3"
+  },
+  "resources": {
+    "Python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "new_packages_installed": false,
+    "began_utc": "2026-11-25T10:21:27.839518+00:00",
+    "sealed_utc": "2026-11-25T10:36:33.959022+00:00",
+    "wall_elapsed_since_attempt_creation_seconds": 906.119504,
+    "instrumented_verifier_child_CPU_seconds": 0.836765,
+    "whole_invocation_CPU_seconds": null,
+    "CPU_null_reason": "Exploratory tooling/agent time not uniformly instrumented; finite checker processes measured",
+    "Drive_recrawls_or_new_network_payload_transfers": 0,
+    "raw_dataset_bytes_read": 0,
+    "model_shard_bytes_read": 0,
+    "provider_billing_rental_start_cost": null,
+    "billing_null_reason": "Unavailable to metadata review"
+  },
+  "original_request": "PARTIAL",
+  "T03_executed": false,
+  "later_stages_executed": false,
+  "source_files_modified": false,
+  "historical_tracked_research_and_T00_T01_preserved": true,
+  "original_POD_A_tip_changed": false,
+  "publication": {
+    "state": "LOCAL_ONLY",
+    "commits": 0,
+    "pushes": 0,
+    "uploads": 0,
+    "messages_sent": 0
+  },
+  "no_deadline_amendment_preserved": true,
+  "next_action": "Producing team supplies precise documentary metadata listed in dependencies. Reopen affected units under new version/authorization; no automatic T03 or raw evaluation.",
+  "owner_status": "Sayyed proposed coordinator, unconfirmed; technical producing/data/pipeline owners unassigned.",
+  "sealed_utc": "2026-11-25T10:36:33.959022+00:00",
+  "noncircularity": "Receipt hashes exact payload outputs, not itself. External post-seal readback/actual-exit witness binds the receipt; no future commit assertion."
+}

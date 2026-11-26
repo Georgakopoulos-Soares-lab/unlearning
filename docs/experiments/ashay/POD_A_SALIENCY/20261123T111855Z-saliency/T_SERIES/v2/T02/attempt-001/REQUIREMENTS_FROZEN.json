@@ -1,0 +1,307 @@
+{
+  "schema_version": "t02-frozen-acceptance-amendment-v1",
+  "run_id": "20261123T111855Z-saliency",
+  "plan_version": "v2_T00_T16",
+  "prompt": {
+    "repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+    "ref": "POD-A-Saliency",
+    "commit": "136d3f984e1ba57a3223492fc6fb42e97c8bc9ee",
+    "path": "T02_Dataset_Provenance_And_Readiness_Prompt.md",
+    "git_blob_id": "d31cb39f90c78528af793f4af3659325783ecda4",
+    "sha256": "113f4b35a27721907ae2fbf72569cc023ae2974ccece63853b6c7449178632a7",
+    "bytes": 35319,
+    "read_in_full": true,
+    "authorization": "Direct chat invocation of T02; read-only documentary provenance and existing structural metadata, local outputs and validation only"
+  },
+  "frozen_utc": "2026-11-25T10:21:27.843577+00:00",
+  "status": "REQUIREMENTS_FROZEN_BEFORE_ELIGIBILITY_ADJUDICATION",
+  "scope": "Nine exact T01run_config.yaml dataset blocks,36direct references/four target paths, relevant T00/T01 and exact S03 container evidence; not every producing-team file",
+  "mandatory_criteria": [
+    {
+      "id": "C01",
+      "name": "required_reference_scope_established",
+      "appendix_A_condition": 1,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Every dataset reference within explicit T01 source scope has a disposition.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C01"
+    },
+    {
+      "id": "C02",
+      "name": "all_required_references_resolved",
+      "appendix_A_condition": 2,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Every required target resolves to an intended concrete object with content/version binding.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C02"
+    },
+    {
+      "id": "C03",
+      "name": "expected_dataset_membership_established",
+      "appendix_A_condition": 3,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Authoritative expected membership independent of the observed listing.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C03"
+    },
+    {
+      "id": "C04",
+      "name": "all_required_components_present",
+      "appendix_A_condition": 3,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Every required component affirmatively present; merely recording missingness is insufficient.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C04"
+    },
+    {
+      "id": "C05",
+      "name": "relevant_container_uncertainty_resolved",
+      "appendix_A_condition": 4,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Each nine-container disposition source-supported; no material unresolved container excluded.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C05"
+    },
+    {
+      "id": "C06",
+      "name": "required_role_assignments_supported",
+      "appendix_A_condition": 5,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Required version/split role assignments supported, beyond only a configured path.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C06"
+    },
+    {
+      "id": "C07",
+      "name": "required_version_and_preprocessing_provenance_supported",
+      "appendix_A_condition": 6,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "All required dataset-release/preprocessing/output provenance links supported.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C07"
+    },
+    {
+      "id": "C08",
+      "name": "required_split_identities_supported",
+      "appendix_A_condition": 7,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Required split identities/documentary memberships established; actual invocation binding remains T03.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C08"
+    },
+    {
+      "id": "C09",
+      "name": "required_use_availability_sufficient",
+      "appendix_A_condition": 8,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "All predeclared required downstream uses have sufficient identity/access evidence.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C09"
+    },
+    {
+      "id": "C10",
+      "name": "no_unresolved_consequential_conflicts",
+      "appendix_A_condition": 9,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "No unresolved conflict affects accepted identities/roles/membership/provenance.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C10"
+    },
+    {
+      "id": "C11",
+      "name": "downstream_input_contract_verified",
+      "appendix_A_condition": 10,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "All relevant artifacts have traceable purpose-specific use/limits; no global readiness.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C11"
+    },
+    {
+      "id": "C12",
+      "name": "independent_checks_passed",
+      "appendix_A_condition": 11,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Separate source-first route, ten minimum adversarial plus six added challenges and positive controls.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C12"
+    },
+    {
+      "id": "C13",
+      "name": "handoff_package_verified",
+      "appendix_A_condition": 12,
+      "classification": "MANDATORY",
+      "scope_basis": "Invoked T02 AppendixA and final success conjunction",
+      "expected_evidence": "Canonical tables agree and package reads from a separate location with declared metadata inputs.",
+      "source_dependencies": [
+        "PROMPT",
+        "T00_REGISTER",
+        "T01_RECEIPT",
+        "T01_CATALOG",
+        "T01_REFERENCE_MAP"
+      ],
+      "deciding_check": "Independent source-first C13"
+    }
+  ],
+  "required_downstream_uses": [
+    {
+      "id": "U01",
+      "stage": "T03",
+      "purpose": "Exact nine run configs as documentary proposed-association inputs",
+      "minimum_evidence": [
+        "Nine T01 source IDs, exact local SHA256 and referring candidate context"
+      ],
+      "classification": "MANDATORY"
+    },
+    {
+      "id": "U02",
+      "stage": "T03",
+      "purpose": "Dataset/version and cohort identities as concrete association-review inputs",
+      "minimum_evidence": [
+        "Producer-bound dataset identity/version",
+        "Split/cohort manifest identity"
+      ],
+      "classification": "MANDATORY"
+    },
+    {
+      "id": "U03",
+      "stage": "T04",
+      "purpose": "Declared dataset provider and validation settings as source assertions",
+      "minimum_evidence": [
+        "Exact config bytes/key locations",
+        "Explicit distinction between declarations and scientific semantics"
+      ],
+      "classification": "MANDATORY"
+    },
+    {
+      "id": "U04",
+      "stage": "T04",
+      "purpose": "Producing dataset definition/preprocessing and split records as semantics-review context",
+      "minimum_evidence": [
+        "Exact producing dataset YAML",
+        "Release/preprocessing implementation/config identities",
+        "Required split metadata"
+      ],
+      "classification": "MANDATORY"
+    },
+    {
+      "id": "U05",
+      "stage": "T05",
+      "purpose": "Focused deduplicated unsent producer dependency request",
+      "minimum_evidence": [
+        "Exact unresolved requirement IDs and locators",
+        "Minimum sufficient evidence/role/independent work"
+      ],
+      "classification": "MANDATORY"
+    },
+    {
+      "id": "U06",
+      "stage": "T03",
+      "purpose": "Container provenance/exclusion evidence as association-review input",
+      "minimum_evidence": [
+        "Nine exact T01 container IDs",
+        "Relevant existing S03 identity-bound receipts/indexes or explicitly unresolved dispositions"
+      ],
+      "classification": "MANDATORY"
+    },
+    {
+      "id": "U07",
+      "stage": "T03/T04",
+      "purpose": "Expected component and availability records as documentary review inputs",
+      "minimum_evidence": [
+        "Authoritative expected-member manifest",
+        "Supported observed identities/presence and appropriate existing byte-access receipts"
+      ],
+      "classification": "MANDATORY"
+    }
+  ],
+  "success_rule": "All13mandatory predicates PASS, all7required uses ELIGIBLE, no affecting conflict; UNKNOWN/FAIL cannot pass; no empty-use vacuity",
+  "amendment_basis": "Current direct invocation explicitly imposes stricter T02 acceptance; does not retroactively fail narrower T00/T01 stages",
+  "scope_reduction_amendments": [],
+  "new_raw_evaluation_required_or_authorized": false,
+  "future_scientific_qualification": "Outside T02; T03 bindings and T04 semantics not decided here",
+  "conditional_test_scope": "Require supported applicability decision; a test manifest only if relevant. Unknown applicability is not NOT_APPLICABLE."
+}

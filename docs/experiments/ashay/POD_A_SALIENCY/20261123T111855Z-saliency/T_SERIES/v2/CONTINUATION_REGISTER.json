@@ -1,0 +1,3110 @@
+{
+  "schema_version": "pod-a-completion-contract-v2.1",
+  "plan_version": "v2_T00_T16",
+  "prompt_version": "executable_v1",
+  "run_id": "20261123T111855Z-saliency",
+  "scope_version": "T_SERIES/v2/contract-001",
+  "created_utc": "2026-11-25T07:58:02.689278+00:00",
+  "contract_status": "FROZEN_WITH_EXPLICIT_OPEN_ITEMS",
+  "required_scope_definition_complete": false,
+  "authorization": {
+    "basis": "Direct chat invokes T00_Completion_Contract_Prompt.md for execution",
+    "verbatim_user_message": "https://github.com/ashay-sriv-06/test-prompts-push/blob/POD-A-Saliency/T00_Completion_Contract_Prompt.md - pull this and execute with the highest level of integrity, rigor, robustness, highest level of goals and ambitions and really knock this one out of the ballpark, make me proud...",
+    "prompt_source_id": "PROMPT",
+    "authorized_stage_ids": [
+      "T00"
+    ],
+    "local_only": true,
+    "research_branch": "POD_A_SALIENCY",
+    "commits_pushes_uploads_messages_authorized": false
+  },
+  "original_request": "Run the layerwise retain and forget set performance for the supplied saliency sweeps.",
+  "original_delivery_locator": "https://drive.google.com/drive/folders/1axy9YloRhDgylh_PkKYHTYnZF6wMZaM9",
+  "research_anchor": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+  "canonical_historical_package_commit": "7007ebd05bf59432bf69109e5f69baad31ec0d3a",
+  "scientific_protocol_sha256": "417707c70843eecf0183f367d503800baee3569db10626fa0362186505c89b22",
+  "source_register": [
+    {
+      "id": "PROMPT",
+      "repository": "https://github.com/ashay-sriv-06/test-prompts-push",
+      "path": "T00_Completion_Contract_Prompt.md",
+      "immutable_revision": "12ae36e2c966f122cbed6bd77b07dcc7139c9e0f",
+      "git_blob_id": "3639f32026277cc738a37be2a352f65bbd2c55f5",
+      "sha256": "2a24edc4735ed9316ce7fd49cbf13c26a1de9132fed34e45eacbf9a520aa8d10",
+      "bytes": 43908,
+      "role": "Current invoked T00 scope and self-contained v2 stage map",
+      "access_state": "READ_IN_FULL",
+      "supports_question_ids": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09",
+        "Q10",
+        "Q11"
+      ]
+    },
+    {
+      "id": "SRC01",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/RESULTS.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "d98edf43efb50d585009c53ec17530a07aeb0350",
+      "sha256": "c049253fdee7725a17b9ef0d59313b8ce39ae14aae4bffe0719e4d477b297cd1",
+      "bytes": 21749,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.288633+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/RESULTS.md",
+      "role": "Released report scope and interpretation",
+      "supports_question_ids": [
+        "Q02",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q09"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC02",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FINAL_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "4a20057b25ae526e5f50015f6883175ad8046761",
+      "sha256": "04b029ff6a3c33a18b728e363c232cd4560eda724dae880b2ff1773af5b2677b",
+      "bytes": 8499,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.354732+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FINAL_RECEIPT.json",
+      "role": "Actual S11 report/recovery/delivery identities",
+      "supports_question_ids": [
+        "Q02",
+        "Q09",
+        "Q10",
+        "Q11"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC03",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/SESSION_HANDOFF.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "5918d6777773999270188747b6817bad15c5f54a",
+      "sha256": "82adeadd0130febd3f9983620bda66e91534048594d2c18511e9779a6f1580fe",
+      "bytes": 1820,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.427778+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/SESSION_HANDOFF.md",
+      "role": "Terminal boundary and future resumption limits",
+      "supports_question_ids": [
+        "Q01",
+        "Q07",
+        "Q11"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC04",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FUTURE_EVIDENCE_INTAKE.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "00f9cf39397ebfff6590480347b88d5c169fc866",
+      "sha256": "e268bdcaab0c2f3bf0128aa954a70566352e314f08c11752d32adfd2542d70f0",
+      "bytes": 2833,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.494043+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/FUTURE_EVIDENCE_INTAKE.json",
+      "role": "Required future intake and local invalidation contract",
+      "supports_question_ids": [
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC05",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/REPORTING_FACTS.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "e3892649c108a9b8e9d34789f706e5b102ebb95b",
+      "sha256": "ddc7e08005612033248d19d896547dfdfbbe951dc2884cad03cf1c6ac8ade23c",
+      "bytes": 12023042,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.677788+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/REPORTING_FACTS.json",
+      "role": "Inherited numerical facts and endpoint tensor identities",
+      "supports_question_ids": [
+        "Q01",
+        "Q02",
+        "Q07"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC06",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_CORRECTION_REPORT.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "2c882604b4ac51b2da3cc20aebc90989b1ea27f5",
+      "sha256": "2d00f39d527eec2e2c8871fc86562998a9bb1a59cc86af49396daf44acc4494d",
+      "bytes": 8515,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.753031+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_CORRECTION_REPORT.md",
+      "role": "Corrective S10 source scope and supersession",
+      "supports_question_ids": [
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC07",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/METRIC_SEMANTICS.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "827bf94d2060656885c8581f3bb419d1c0a5f77a",
+      "sha256": "b475796e408030ee2142b990f820c1530a6651bea1e30d96cab91c9b3d2173ae",
+      "bytes": 3294,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.822636+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/METRIC_SEMANTICS.md",
+      "role": "Scientific versus source-only metric semantics",
+      "supports_question_ids": [
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC08",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/PROTOCOL.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "c7fc799f13411f7e81dc01a05de4d4154654c65c",
+      "sha256": "f80dda6fa91e38f13678eac0a065fce0060b7a249fb2d5ba229b69339ffcc165",
+      "bytes": 8106,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:50:42.890153+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S04/attempt-001/PROTOCOL.md",
+      "role": "Immutable scientific protocol and interpretation",
+      "supports_question_ids": [
+        "Q02",
+        "Q06",
+        "Q08"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC09",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/RELEASE_OVERLAY.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "c58af34398e15f31d05918578536c9821148a61c",
+      "sha256": "a0dee8c9064783d66d753c938c97ebb515130b45347f01c71a04a44d34c4c964",
+      "bytes": 15344,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:44.612629+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/RELEASE_OVERLAY.json",
+      "role": "Independent release overlay, distinct from S07 producer history",
+      "supports_question_ids": [
+        "Q02"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC10",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "416b4dc2251bc66a912c84d8cd1e9a18115a2021",
+      "sha256": "863252fa8ac7aaae06868ff40e0befeb4bc7208bd4a1574690595530b3dc389d",
+      "bytes": 34098,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:44.673581+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S08/attempt-001/S08_RECEIPT.json",
+      "role": "S08 executed verification scope",
+      "supports_question_ids": [
+        "Q02"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC11",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "b5b3ff1b815d3fcdab44df00df854ac9b2e30546",
+      "sha256": "d979a1dda8d0b161d64845941f9cc4599c14057b9d6c48d55896608949918c22",
+      "bytes": 98331,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:44.740701+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/S09_RECEIPT.json",
+      "role": "S09 admitted and deferred comparison release",
+      "supports_question_ids": [
+        "Q02",
+        "Q06"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC12",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/CONTRAST_VERIFICATION.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "aacc87b14fa7a0f3fc5ec8ee1209003165ebf513",
+      "sha256": "a2fb68eb60619ded383dd37eeec0e74d39599af756c38499ee6369d2a3759016",
+      "bytes": 52561,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:44.808171+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/CONTRAST_VERIFICATION.json",
+      "role": "S09 verification receipt, read without recomputation",
+      "supports_question_ids": [
+        "Q02",
+        "Q06"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC13",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/CANDIDATES.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "24664cf357ff0f9561c1c612595d335f95845411",
+      "sha256": "752d9b2181e4aaa24193f35f6d0b029a9a84761294dafd9a9d7a400623e2d5c7",
+      "bytes": 2652,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:44.873789+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S09/attempt-001/CANDIDATES.json",
+      "role": "Source-linked exact endpoint registry",
+      "supports_question_ids": [
+        "Q01",
+        "Q04"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC14",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/INPUT_MANIFEST.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "a1a6a5b8eb47ac8214c98c4981fc1b2fc4672c6d",
+      "sha256": "a3b7440d3dc19a2d161f95fb291d1eff8e9fa1540b03b4784ba00dda19a6593c",
+      "bytes": 36967,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:44.938991+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/INPUT_MANIFEST.json",
+      "role": "S11 upstream source bindings",
+      "supports_question_ids": [
+        "Q01",
+        "Q02"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC15",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/UNSENT_COLLABORATOR_REQUEST.md",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "6f5fd9c691faf808b1a6cd5f74bd4baefff01922",
+      "sha256": "f0fea9c0613834d2d989e9fbf294883d4b7dc070557da119b7e0f0c13046920f",
+      "bytes": 1722,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:45.007116+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/UNSENT_COLLABORATOR_REQUEST.md",
+      "role": "Preserved unsent collaborator request, not a sent message",
+      "supports_question_ids": [
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q07"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC16",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "d00c8e2103f2e5af807ff34d2b9a6636239e1368",
+      "sha256": "72c2d6c5fe78f13c66713ac6688d17f9303678eaf8be38655377381a0234e557",
+      "bytes": 62578,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:45.078142+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S07/attempt-001/S07_RECEIPT.json",
+      "role": "Immutable producer scope and unverified science state",
+      "supports_question_ids": [
+        "Q02"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC17",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "384c758d5870eced5382f14d4f67e56f8f4b018f",
+      "sha256": "8539d4b20da31410f4b7e6e725f6c0c65e119d6c1b9f74470e12823e195b5841",
+      "bytes": 10237,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:45.144768+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S10/attempt-002/S10_RECEIPT.json",
+      "role": "Corrected S10 extraction/qualification boundary",
+      "supports_question_ids": [
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC18",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/S11_RECEIPT.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "77899482213a357c0e22c88a2208d195de2af039",
+      "sha256": "a58b73fe780e71a3ab8075a1760e80246ad138a854bfb50241211777bba8b695",
+      "bytes": 15177,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:45.210225+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/S11/attempt-001/S11_RECEIPT.json",
+      "role": "S11 executed bounded reporting scope",
+      "supports_question_ids": [
+        "Q09",
+        "Q10",
+        "Q11"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "SRC19",
+      "repository": "Georgakopoulos-Soares-lab/unlearning",
+      "path": "docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/CONTROLLER_STATE.json",
+      "immutable_revision": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "git_blob_id": "084f5679be39dd63da70e3b5ce3d822918bc44dd",
+      "sha256": "7c61887ad2ffe29dcd38b77907a84148fdf924ed95b215ee5415ca9bae1ae575",
+      "bytes": 74815,
+      "access_state": "EXACT_GIT_BYTES_RESOLVED",
+      "observed_utc": "2026-11-25T07:51:45.272180+00:00",
+      "immutable_url": "https://github.com/Georgakopoulos-Soares-lab/unlearning/blob/a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/CONTROLLER_STATE.json",
+      "role": "Historical controller summaries, subordinate to scoped release evidence",
+      "supports_question_ids": [
+        "Q02",
+        "Q11"
+      ],
+      "verification_level": "T00 exact Git/blob/SHA256 resolution and local-byte equality; empirical execution inherited, not repeated"
+    },
+    {
+      "id": "PLAN",
+      "provider": "ChatGPT Library",
+      "path": "POD_A_Saliency_Completion_Plan_v2_T00-T16.md",
+      "locator": "https://chatgpt.com/library?file_id=libfile_fde3_f-a3f2bcc36130819188691b292d48fd2d_59e19e6fb1d081918d1d6e5ad38047b6&account_id=personal",
+      "immutable_revision": null,
+      "revision_null_reason": "Library document not accessible through unauthenticated route",
+      "sha256": null,
+      "sha256_null_reason": "Document bytes unavailable; login page is not the requested document",
+      "access_state": "LOGIN_REQUIRED",
+      "observed_utc": "2026-11-25T07:58:02.689091+00:00",
+      "role": "Nonessential planning source; explicit PROMPT fallback used",
+      "supports_question_ids": []
+    }
+  ],
+  "source_precedence": [
+    {
+      "id": "PRE01",
+      "source_ids": [
+        "SRC16",
+        "SRC09",
+        "SRC10"
+      ],
+      "decision": "S07 producer record remains COMPLETE_UNVERIFIED scientifically; S08 separate source-bound overlay supplies the independent release. No producer history rewritten."
+    },
+    {
+      "id": "PRE02",
+      "source_ids": [
+        "SRC06",
+        "SRC17",
+        "SRC02"
+      ],
+      "decision": "Corrected S10attempt002 supersedes attempt001 no-source interpretation for the nine known logs only. Does not promote scientific eligibility or prove exhaustive delivery."
+    },
+    {
+      "id": "PRE03",
+      "source_ids": [
+        "SRC19",
+        "SRC02",
+        "SRC03",
+        "SRC11"
+      ],
+      "decision": "Scoped later receipt/release controls actual empirical reuse over stale controller fields; controller retained unchanged. Timestamp alone is not authority."
+    },
+    {
+      "id": "PRE04",
+      "source_ids": [
+        "SRC04",
+        "PROMPT"
+      ],
+      "decision": "T00 permits bounded continuation metadata after historical S11 stop. T06\u2013T09 require separately authorized versioned S10-linked substantive qualification; old stop and receipts remain historical."
+    }
+  ],
+  "roles": [
+    {
+      "id": "ROLE_COORD",
+      "name": "Sayyed",
+      "role": "Proposed coordination contact for requested scope/team evidence",
+      "confirmed": false
+    },
+    {
+      "id": "ROLE_TEAM",
+      "name": "OWNER_UNASSIGNED",
+      "role": "Scientific producing team/evaluation owner proposed for technical evidence",
+      "confirmed": false
+    },
+    {
+      "id": "ROLE_EXEC",
+      "name": "Future explicitly authorized executor",
+      "role": "Metadata/reuse/reporting work",
+      "confirmed": false
+    },
+    {
+      "id": "ROLE_CHECK",
+      "name": "Future distinct checking route",
+      "role": "Independent source/qualification/publication/recovery checks; no additional agent implied",
+      "confirmed": false
+    }
+  ],
+  "inherited_releases": {
+    "retain": {
+      "release_commit": "3c39552d43c2e4c8aaf223ca97e3b8f6ee33d11c",
+      "status": "REUSABLE_VERIFIED_RELEASE_INHERITED",
+      "source_ids": [
+        "SRC05",
+        "SRC08",
+        "SRC09",
+        "SRC10",
+        "SRC11",
+        "SRC12"
+      ],
+      "verification_here": "Exact source-byte identity and reconciliation only; no retain computation repeated"
+    },
+    "corrected_forget_source": {
+      "release_commit": "735c9de0ed56be285897b68f84db098ff7a32a6f",
+      "attempt": "S10/attempt-002",
+      "source_ids": [
+        "SRC06",
+        "SRC07",
+        "SRC17"
+      ],
+      "source_integrity": "VERIFIED_EXTRACTION_INHERITED",
+      "scientific_status": "EXTRACTION_ONLY_PENDING_QUALIFICATION"
+    },
+    "report": {
+      "report_commit": "1ea226cc1b4a0d64f693b4083c69732cc1097b1b",
+      "final_delivery_commit": "a4bb5b0305591ccc0b57db752bf0d4f1f2f6f89e",
+      "source_ids": [
+        "SRC02",
+        "SRC18"
+      ],
+      "status": "COMPLETE_FOR_VERIFIED_RETAIN_AND_UNQUALIFIED_FORGET_LOG_SCOPE"
+    },
+    "A_series": {
+      "state": "Reported complete for available base/R1/R3/R4/R5/R6; not reopened",
+      "verification_level": "Expected historical background stated by PROMPT; original numerical artifacts not re-audited in T00",
+      "source_ids": [
+        "PROMPT"
+      ],
+      "R2": "Not produced; excluded; not searched"
+    }
+  },
+  "baseline_counts": {
+    "retain": {
+      "candidates": 9,
+      "tasks": 6,
+      "representations": 26,
+      "CV_seeds": 3,
+      "policies": 2,
+      "refitted_heads": 4212,
+      "unchanged_base_applications": 4212,
+      "prediction_paths": 8424,
+      "classifier_metric_records": 42120,
+      "LM_units": 108,
+      "LM_DEV_primary_units": 54,
+      "LM_TRAIN_diagnostic_units": 54,
+      "LM_metric_records": 216,
+      "admitted_S09_contrasts": 48924,
+      "deferred_S09_specifications": 42228,
+      "contrast_families": {
+        "base_reference": 42120,
+        "DNA_control": 6480,
+        "anchor_policy_gap": 324
+      },
+      "deferred_families": {
+        "immediate_parent": 42120,
+        "LM_base_reference": 108
+      }
+    },
+    "retain_population": "Nine exact known endpoints in the released benign grid; CV partitions/metric rows are dependent, not intervention replicates",
+    "forget": {
+      "sources": 9,
+      "source_bytes": 418914867,
+      "complete_events": 4069391,
+      "scalar_observations_all_tags_axes": 4069382,
+      "training_forget_step_observations": 14090,
+      "validation_forget_loss_step_observations": 23,
+      "validation_forget_loss_unique_source_steps": 22,
+      "forget_validation_loss_and_ppl_both_axes_records": 92,
+      "all_validation_scalar_records": 276,
+      "qualification_ledger_records": 28456,
+      "duplicate_scalar_observations_all_tags_axes": 12,
+      "duplicate_step_axis_forget_validation_observations": 1,
+      "restart_step_decreases": 0,
+      "qualified_descriptive_scientific_aggregates": 0,
+      "qualified_checkpoint_matched_comparisons": 0,
+      "source_descriptive_figures_eligible": true,
+      "invalid_source_or_validation_records": 0,
+      "transport_or_parse_excluded_sources": 0,
+      "missing_checkpoint_matched_aggregate_slots": 9,
+      "missing_unique_candidate_representation_forget_performance_slots": 234,
+      "layerwise_forget_performance_observations": 0,
+      "layerwise_scope_denominator": "234=9candidate x26representation placeholders for one unspecified forget task/metric; not a scientifically frozen full-cell denominator. Task/metric/split/policy/seed-specific layerwise total is unknown.",
+      "missing_full_layerwise_protocol_cells": null,
+      "missing_full_layerwise_protocol_cells_reason": "Forget task/cohort/readout/metric/seed protocol not supplied; no fabricated task or policy expansion",
+      "retained_admitted_specifications": 48924,
+      "retained_deferred_specifications": 42228,
+      "retained_classifier_metric_rows": 42120,
+      "retained_LM_units": 108
+    },
+    "forget_population": "Nine recovered event files only, not proof of exhaustive assignment inventory",
+    "verification_level": "Inherited release facts reconciled with exact source receipts; not fresh measurements",
+    "source_ids": [
+      "SRC05",
+      "SRC06",
+      "SRC10",
+      "SRC11",
+      "SRC17"
+    ]
+  },
+  "known_endpoint_roster": [
+    {
+      "alias": "candidate_01",
+      "candidate_id": "drive-checkpoint:11_zYtoYf9dBSTHuTb5F1o_One48l8Lrw",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top10.0p",
+      "step": 1500,
+      "content_sha256": "ba02bd040b1be80ac2308a104cad20a7c802397b6ef3505590c5ecb844d99279",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "c8a192778f7ae900855dbdc3c63d2c98bc365fdc8f52618ae591ca7074df9c14",
+      "config_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "8d194db4b4e1b3fe7bdb155898a67539be119ecabb4ddb34ca0b8ebb8d2c141a",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.1,
+      "supplied_method_label": "Add noise",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_02",
+      "candidate_id": "drive-checkpoint:1tfsU9XIyElB-QZfOCCDazam1l414Umtq",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top15.0p",
+      "step": 1500,
+      "content_sha256": "57cec2a1c2a0ed999beaa92f54c497e1697031bd2a456730bdab2b0ae5756b90",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "8f9997a04f912ba15c424c63e400f5ec8170e21d9a68f63f01c6d42af9446c12",
+      "config_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "cfdc9d1c5a96419e1ee714b72879a4e46e4a33d1e5f048da8832a6b010962a1e",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.15,
+      "supplied_method_label": "Add noise",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_03",
+      "candidate_id": "drive-checkpoint:1uPPC2c70a-SikMCr8IByy7wBEfw8dhER",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top20.0p",
+      "step": 1500,
+      "content_sha256": "54851a4d9f374f8775661e6bc78421d64d468a606ed5213998c2a8be1ab216d4",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "0d37cf4228cc25c944af08f7a0c01becf4656287545e9d5666dcd6e90f34f5bc",
+      "config_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "93536a8dfb519a8f0cfa2e0ed1ffe0a56373e8842a58bfe92fcce26e2b9865c7",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.2,
+      "supplied_method_label": "Add noise",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_04",
+      "candidate_id": "drive-checkpoint:1fcNF-qOLKxLthGWd1PnEH9k4oHZlv6w9",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "step": 2000,
+      "content_sha256": "05b9573e0bd6f4fa7e00dcaedb70a31d2f73ac2d9edc01242ea81212a63a6af0",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "fea5369e5afec0dd127401242806034378eb26d97e6901453117aebca752fb98",
+      "config_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "8cbb281f28f169488cc76b669a01006ef17015db02a346f97122bcb05e7ce569",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.05,
+      "supplied_method_label": "Add noise",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_05",
+      "candidate_id": "drive-checkpoint:1rNlVoYolCJb-ZKBnjK8Gi9rp7WxsGwUo",
+      "label": "saliency_maxent_ht_emp_h3_add_noise_top5.0p",
+      "step": 2151,
+      "content_sha256": "e0e9659ddb315428591abdcf9351dc282d1761e60229ea5318b1f3808f4fa844",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "9ab6de9d027ad45ac938a6f579e95a1c88d4fc8f0fab2772f50c2a2461d056b6",
+      "config_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "6344faf49f675fed914cc1478c775720dc67863084e688320c5363e2da9b18a6",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.05,
+      "supplied_method_label": "Add noise",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_06",
+      "candidate_id": "drive-checkpoint:1nv0wfiLlTU6GnjlcgtlCsSrzZNr__ahC",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top10.0p",
+      "step": 1500,
+      "content_sha256": "d3a66b9d3344dcaa4499841dd9661e008018c185c82b1d06d1040f87d38f4e70",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "6ee66eb6c031054cfa2c6cd8a2bdf68703c736343a4da74b2cd3b48d3662f2d3",
+      "config_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "ad0706d59f27c52ed3e0eca0cfb7d59001879494375b988332b708cbbd2cdb0f",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.1,
+      "supplied_method_label": "Reinitialize",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_07",
+      "candidate_id": "drive-checkpoint:1vMRvjLlmhHvFKsNCXwsYA43NU8FqwsEE",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top15.0p",
+      "step": 1500,
+      "content_sha256": "a9eff2a1312586e0baf72503840224df9c06a04a535b3a576ee85d6971c92cdd",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "7864d1f568113d13815d482391d56a30865c2056246602d56503897512b8879c",
+      "config_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "374f400686f4a6fda81034a397bf18ddcee67640a48b1ca6e75940040772dbb9",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.15,
+      "supplied_method_label": "Reinitialize",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_08",
+      "candidate_id": "drive-checkpoint:1cGUy8I7m_PQKvsqX3kXFqSTXiPK9RSFx",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top20.0p",
+      "step": 1500,
+      "content_sha256": "eb93bccc3d01d8648c2ca5640a85b22d35107e2937c8d55258647f0e5fdfc4f1",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "6966bdf46414c917a909c89f876991c88157462f640e06dbb4a8d102ba7f9acd",
+      "config_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "c1b342c31d03c17d13414c992bb43c9b386af6db725f38b307bdf74477e8166c",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.2,
+      "supplied_method_label": "Reinitialize",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    },
+    {
+      "alias": "candidate_09",
+      "candidate_id": "drive-checkpoint:1AV6c31UReG6hPar_BOU_Qj2TNldnnjDz",
+      "label": "saliency_maxent_ht_emp_h3_reinit_top5.0p",
+      "step": 1500,
+      "content_sha256": "d5658d3c621c318d752795015aebbc128c6d3a5026e8740e6b3a382a57563d29",
+      "identity_type": "logical_model_tensor_content_sha256",
+      "native_shard_sha256": "0462c321ceb3d2030bd865a7b9c8c427ad8e2286a827d33b486bad95846235da",
+      "config_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+      "tokenizer_sha256": "d8b5392d4795e3011b648b7e79a1e2f563cfa508200196d30d6dcbb0292d0803",
+      "payload_manifest_sha256": "5736a14764f6b740a97d6e1ffd2a9d43f2b71c107ed94200039ef02c58db551f",
+      "conversion_or_adapter_identity": null,
+      "conversion_null_reason": "No additional S10 conversion/adapter binding supplied; use established native S03 mapping only",
+      "immediate_parent_id": null,
+      "parent_null_reason": "Unresolved; does not block checkpoint-specific description, blocks parent-relative claims",
+      "nominal_fraction": 0.05,
+      "supplied_method_label": "Reinitialize",
+      "source_ids": [
+        "SRC05",
+        "SRC13"
+      ],
+      "status": "KNOWN_DELIVERED_ENDPOINT_INHERITED",
+      "nominal_fraction_is_realized_dose": false,
+      "independent_intervention_replication_established": false
+    }
+  ],
+  "inventory_completeness": {
+    "state": "UNRESOLVED",
+    "known_distinct_contents": 9,
+    "requested_endpoint_total": null,
+    "requested_endpoint_total_null_reason": "Authoritative full delivery boundary not established",
+    "dependency_id": "D01"
+  },
+  "duplicate_observations": {
+    "reinit5_A_step1500_original_values": [
+      "1.3953843116760254",
+      "1.3952388763427734"
+    ],
+    "roles": "UNRESOLVED",
+    "selection_or_average_permitted": false,
+    "reinit5_B_training_last_step": 1439,
+    "reinit5_B_validation_steps": [
+      500,
+      1000
+    ],
+    "source_ids": [
+      "SRC06",
+      "SRC07"
+    ],
+    "dependency_id": "D05"
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "wording": "Which supplied endpoints belong to the assignment, and is the inventory exhaustive?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Distinct delivered parameter/buffer content within the requested delivery",
+      "evidence_requirements": [
+        "Source-linked requested/observed roster",
+        "Justified inclusion/exclusion",
+        "An authoritative inventory boundary or explicit unresolved exhaustiveness"
+      ],
+      "current_answer_state": "NINE_KNOWN_EXHAUSTIVENESS_UNRESOLVED",
+      "source_ids": [
+        "SRC05",
+        "SRC13",
+        "SRC03"
+      ],
+      "dependency_ids": [
+        "D01",
+        "D02"
+      ],
+      "responsible_role": "ROLE_COORD",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T01"
+      ],
+      "permitted_conclusion": "Nine known endpoints are accounted for; not an exhaustive sweep claim.",
+      "completion_consequence": "Original completion unavailable until required inventory scope is established."
+    },
+    {
+      "id": "Q02",
+      "wording": "Which layerwise benign-retain results are released and reusable?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Checkpoint/task/DEV/representation/readout/CV partition/metric with exact frozen protocol",
+      "evidence_requirements": [
+        "Source-bound S08 release over S07 producer records",
+        "S09 verified admitted/deferred keys",
+        "S11 reporting facts and immutable S04 protocol"
+      ],
+      "current_answer_state": "QUALIFIED_RELEASE_INHERITED",
+      "source_ids": [
+        "SRC05",
+        "SRC08",
+        "SRC09",
+        "SRC10",
+        "SRC11",
+        "SRC12",
+        "SRC16"
+      ],
+      "dependency_ids": [],
+      "responsible_role": "ROLE_EXEC",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T00",
+        "T09"
+      ],
+      "permitted_conclusion": "Reuse released retain scope; no new independent audit or refitting in T00.",
+      "completion_consequence": "Retain reuse established at declared scope; lineage gaps do not negate original-base descriptive comparisons."
+    },
+    {
+      "id": "Q03",
+      "wording": "Which forget population, preprocessing and split do the measurements describe?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Cohort/version/preprocessing/split associated with an evaluation invocation",
+      "evidence_requirements": [
+        "Immutable aggregate cohort/manifest metadata",
+        "Membership/version/split and preprocessing definitions",
+        "No raw sequences required"
+      ],
+      "current_answer_state": "UNRESOLVED",
+      "source_ids": [
+        "SRC06",
+        "SRC07",
+        "SRC04"
+      ],
+      "dependency_ids": [
+        "D03"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T02"
+      ],
+      "permitted_conclusion": "Logged validation is only a source label until qualified.",
+      "completion_consequence": "Required scientific forget interpretation remains unavailable for affected cohorts."
+    },
+    {
+      "id": "Q04",
+      "wording": "Which exact model content produced each relevant observation?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "SourceSHA:event:value to evaluation invocation/run/save to logical model content",
+      "evidence_requirements": [
+        "Content-hash-bound run/save/invocation evidence",
+        "Explicit duplicate roles",
+        "Separate noise5 endpoints and reinit5 A/B histories"
+      ],
+      "current_answer_state": "UNRESOLVED",
+      "source_ids": [
+        "SRC05",
+        "SRC06",
+        "SRC07",
+        "SRC13"
+      ],
+      "dependency_ids": [
+        "D04",
+        "D05"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T03"
+      ],
+      "permitted_conclusion": "Original-tag source observations are valid quotations; step/folder/time alone is not an exact-model binding.",
+      "completion_consequence": "Unbound observations cannot answer checkpoint-specific required coverage."
+    },
+    {
+      "id": "Q05",
+      "wording": "What do the supplied metrics measure?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Metric implementation/cohort/split/mask/denominator/reduction and actual evaluation scope",
+      "evidence_requirements": [
+        "Producing implementation revision",
+        "Definition/direction/units and aggregation/masking/rank semantics",
+        "Actual denominators/effort and repeated exposure metadata"
+      ],
+      "current_answer_state": "UNRESOLVED",
+      "source_ids": [
+        "SRC06",
+        "SRC07",
+        "SRC04"
+      ],
+      "dependency_ids": [
+        "D06",
+        "D07",
+        "D08"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T04"
+      ],
+      "permitted_conclusion": "Finite source losses are not automatically NLL, biological performance or comparable evaluation effort.",
+      "completion_consequence": "Required forget point meanings remain unqualified until applicable fields resolve."
+    },
+    {
+      "id": "Q06",
+      "wording": "Which scientific points, intervals and reference-relative comparisons are eligible?",
+      "obligation_class": "REQUIRED_FOR_CLAIM",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Each proposed absolute point, interval, or comparison separately",
+      "evidence_requirements": [
+        "Qualified point identity and semantics",
+        "For intervals only: level/method/unit/conditioning/valid bounds",
+        "For contrasts only: actual compatible reference and justified pairing",
+        "Independent qualification route"
+      ],
+      "current_answer_state": "ZERO_QUALIFIED_FORGET_RECORDS_INHERITED",
+      "source_ids": [
+        "SRC06",
+        "SRC07",
+        "SRC17",
+        "SRC04"
+      ],
+      "dependency_ids": [
+        "D03",
+        "D04",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10"
+      ],
+      "responsible_role": "ROLE_CHECK",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T06",
+        "T07"
+      ],
+      "permitted_conclusion": "A valid point can survive an invalid/missing interval; absolute points do not require a reference.",
+      "completion_consequence": "Only applicable claim gates are mandatory; do not turn absent intervals into a scope reduction or fabricate them."
+    },
+    {
+      "id": "Q07",
+      "wording": "Does genuine qualified layerwise forget performance cover the agreed request?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Agreed checkpoint/cohort/split/hook/representation/readout/metric/invocation; fields only where applicable",
+      "evidence_requirements": [
+        "Explicit agreed layerwise coverage dimensions",
+        "Genuine collaborator-produced performance aggregates",
+        "T07 qualified records for required units with visible missingness"
+      ],
+      "current_answer_state": "PENDING_QUALIFIED_LAYERWISE_PERFORMANCE",
+      "source_ids": [
+        "SRC01",
+        "SRC05",
+        "SRC06",
+        "SRC07"
+      ],
+      "dependency_ids": [
+        "D02",
+        "D11"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T08"
+      ],
+      "permitted_conclusion": "Zero qualified layerwise observations; 234 candidate/representation positions are illustrative, not a frozen forget universe.",
+      "completion_consequence": "Original layerwise assignment remains partial without required measurements or an explicit scope amendment."
+    },
+    {
+      "id": "Q08",
+      "wording": "What joint statements are justified for retain and forget at the same endpoint?",
+      "obligation_class": "REQUIRED_FOR_CLAIM",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Exact endpoint-associated eligible records with separate task/readout/metric units",
+      "evidence_requirements": [
+        "Exact checkpoint association",
+        "Eligible scientific forget records",
+        "Compatibility for each proposed comparison",
+        "No pooled metric, causal or selectivity inference without supporting design"
+      ],
+      "current_answer_state": "PENDING_QUALIFIED_FORGET_INPUTS",
+      "source_ids": [
+        "SRC01",
+        "SRC04",
+        "SRC08"
+      ],
+      "dependency_ids": [
+        "D03",
+        "D04",
+        "D07",
+        "D09",
+        "D10"
+      ],
+      "responsible_role": "ROLE_CHECK",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T09",
+        "T10",
+        "T11"
+      ],
+      "permitted_conclusion": "Report coexistence only within qualified scope; no retain/forget frontier or combined capability score now.",
+      "completion_consequence": "Unavailable joint claims remain explicitly pending; do not erase independently valid retain findings."
+    },
+    {
+      "id": "Q09",
+      "wording": "Can a collaborator understand and inspect the complete answer?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "One edition with briefing, report, full tables, source-linked atlas and limitations",
+      "evidence_requirements": [
+        "One facts source",
+        "Exact claim/display-to-record links",
+        "Adverse/inconclusive/missing outcomes included",
+        "Independent publication review"
+      ],
+      "current_answer_state": "S11_BOUNDED_REPORT_INHERITED_NEW_EDITION_NOT_STARTED",
+      "source_ids": [
+        "SRC01",
+        "SRC02",
+        "SRC18"
+      ],
+      "dependency_ids": [
+        "D02",
+        "D11"
+      ],
+      "responsible_role": "ROLE_EXEC",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T12",
+        "T13",
+        "T14"
+      ],
+      "permitted_conclusion": "Existing S11 reporting scope is complete; polished partial reporting is not original scientific completion.",
+      "completion_consequence": "Full agreed scientific scope and appropriate review must support any final complete report."
+    },
+    {
+      "id": "Q10",
+      "wording": "Can the amended package be restored and declared outputs reproduced?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Declared input/output package and performed verification/reconstruction scope",
+      "evidence_requirements": [
+        "Exact member/byte verification",
+        "Decision/coverage/table regeneration",
+        "Declared rendering and mandatory inherited numerical reconstruction",
+        "Fresh location without hidden producer fallback"
+      ],
+      "current_answer_state": "S11_RECOVERY_RECEIPTS_INHERITED_T00_SMALL_PACKAGE_ONLY",
+      "source_ids": [
+        "SRC02",
+        "SRC03",
+        "SRC18"
+      ],
+      "dependency_ids": [],
+      "responsible_role": "ROLE_CHECK",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T15"
+      ],
+      "permitted_conclusion": "S11 sampled CPU recovery is historical evidence, not a new T00 reproduction or a clean-runtime/GPU replay.",
+      "completion_consequence": "T15 must verify the declared new edition; do not unnecessarily duplicate pinned large retain payloads."
+    },
+    {
+      "id": "Q11",
+      "wording": "Is the agreed assignment complete, and what was actually delivered?",
+      "obligation_class": "REQUIRED_ORIGINAL",
+      "scope_basis": "Original layerwise retain/forget request, with claim-specific restrictions from PROMPT sections5\u20137",
+      "scientific_unit": "Original/amended scope coverage verdict plus separate report/recovery/delivery/feedback states",
+      "evidence_requirements": [
+        "Established mandatory question/unit universe",
+        "Qualified answers and no affecting integrity defects",
+        "Reviewed report and required recovery",
+        "Observed delivery evidence only if sent; feedback independently observed"
+      ],
+      "current_answer_state": "ORIGINAL_REQUEST_PARTIAL",
+      "source_ids": [
+        "SRC02",
+        "SRC03",
+        "SRC06",
+        "SRC18"
+      ],
+      "dependency_ids": [
+        "D01",
+        "D02",
+        "D11"
+      ],
+      "responsible_role": "ROLE_COORD",
+      "ownership_confirmed": false,
+      "deciding_stages": [
+        "T16"
+      ],
+      "permitted_conclusion": "T00 completion, historical Git publication and unsent collaborator request are different states.",
+      "completion_consequence": "Original completion requires scientific coverage; any reduction requires explicit traceable amendment evidence."
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "D01",
+      "category": "unresolved_scope",
+      "missing": "Requested endpoint roster and authoritative exhaustiveness boundary",
+      "existing_source_ids_checked": [
+        "SRC03",
+        "SRC05",
+        "SRC13"
+      ],
+      "scientific_consequence": "Nine delivered contents do not prove the delivery was exhaustive.",
+      "minimum_sufficient_response": "Source-linked requested roster or attributed inventory confirmation defining inclusions, exclusions, revisions and known missing endpoints.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q01",
+        "Q11"
+      ],
+      "affected_claim_ids": [
+        "CL_SCOPE"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A01",
+        "A05",
+        "A08",
+        "A16"
+      ],
+      "affected_stage_ids": [
+        "T01",
+        "T05",
+        "T08",
+        "T16"
+      ],
+      "responsible_role": "ROLE_COORD",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689144+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Reuse all nine known retain endpoints; plan bounded inventory reconciliation.",
+      "conclusion_unavailable_if_never_resolved": "Exhaustive supplied-sweep completion.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D02",
+      "category": "unresolved_scope",
+      "missing": "Agreed genuine layerwise forget task/cohort/split/metric/readout/hook universe",
+      "existing_source_ids_checked": [
+        "SRC01",
+        "SRC05",
+        "SRC06"
+      ],
+      "scientific_consequence": "No justified denominator for required forget coverage exists.",
+      "minimum_sufficient_response": "Explicit attributed scientific scope decision specifying applicable dimensions and required units; omissions require separate scope amendment evidence.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q01",
+        "Q07",
+        "Q09",
+        "Q11"
+      ],
+      "affected_claim_ids": [
+        "CL_SCOPE",
+        "CL_LAYERWISE"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [
+        "FIG_LAYERWISE_FORGET"
+      ],
+      "affected_artifact_ids": [
+        "A01",
+        "A05",
+        "A08",
+        "A09",
+        "A16"
+      ],
+      "affected_stage_ids": [
+        "T01",
+        "T05",
+        "T08",
+        "T09",
+        "T16"
+      ],
+      "responsible_role": "ROLE_COORD",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689152+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Preserve full retain grid and report exact zero qualified layerwise observations.",
+      "conclusion_unavailable_if_never_resolved": "Original-scope coverage or a completion percentage.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D03",
+      "category": "external_evidence",
+      "missing": "Forget cohort/version/preprocessing/split identities",
+      "existing_source_ids_checked": [
+        "SRC06",
+        "SRC07",
+        "SRC04"
+      ],
+      "scientific_consequence": "Logged validation does not establish held-out population or comparable actual cohorts.",
+      "minimum_sufficient_response": "Aggregate manifest identities, version/preprocessing/split definitions and membership-policy metadata bound to producing invocations; no rows/sequences.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q03",
+        "Q06",
+        "Q08"
+      ],
+      "affected_claim_ids": [
+        "CL_POINT",
+        "CL_MATCHED"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A02",
+        "A04",
+        "A05",
+        "A07",
+        "A09"
+      ],
+      "affected_stage_ids": [
+        "T02",
+        "T04",
+        "T05",
+        "T07",
+        "T09"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689157+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Source quotations and released retain profiles remain usable.",
+      "conclusion_unavailable_if_never_resolved": "Population-specific scientific forget claims for unresolved cohorts.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D04",
+      "category": "external_evidence",
+      "missing": "Exact observation/invocation/run/save to tensor-content associations",
+      "existing_source_ids_checked": [
+        "SRC05",
+        "SRC06",
+        "SRC07",
+        "SRC13"
+      ],
+      "scientific_consequence": "Step/folder/time joins cannot bind forget values to evaluated retain endpoints.",
+      "minimum_sufficient_response": "Content-hash-bound receipt connecting original sourceSHA:event:value, evaluation invocation, run/save and exact tensor content; distinguish candidate04/05.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q04",
+        "Q06",
+        "Q08"
+      ],
+      "affected_claim_ids": [
+        "CL_POINT",
+        "CL_MATCHED"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [
+        "FIG_MATCHED"
+      ],
+      "affected_artifact_ids": [
+        "A03",
+        "A05",
+        "A06",
+        "A07",
+        "A09"
+      ],
+      "affected_stage_ids": [
+        "T03",
+        "T05",
+        "T06",
+        "T07",
+        "T09"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689163+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Read source-only traces and reuse checkpoint-specific retain release.",
+      "conclusion_unavailable_if_never_resolved": "Checkpoint-specific forget points and matched retain/forget statements.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D05",
+      "category": "external_evidence",
+      "missing": "Roles of both reinit5 A step1500 calls and reinit5 B history",
+      "existing_source_ids_checked": [
+        "SRC06",
+        "SRC07"
+      ],
+      "scientific_consequence": "Choosing last/mean or inferring a restart would invent roles or erase source observations.",
+      "minimum_sufficient_response": "Invocation/save evidence explaining each of the two distinct values and B history through1439, with explicit unresolved disposition if roles cannot be reconstructed.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q04",
+        "Q06"
+      ],
+      "affected_claim_ids": [
+        "CL_DUPLICATES",
+        "CL_POINT"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A03",
+        "A05",
+        "A06",
+        "A07"
+      ],
+      "affected_stage_ids": [
+        "T03",
+        "T05",
+        "T06",
+        "T07"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689166+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Keep both original values and all source order; unaffected endpoints may qualify separately.",
+      "conclusion_unavailable_if_never_resolved": "A unique selected candidate09 forget result from ambiguous calls.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D06",
+      "category": "external_evidence",
+      "missing": "Producing training/evaluation implementation identity",
+      "existing_source_ids_checked": [
+        "SRC06",
+        "SRC07"
+      ],
+      "scientific_consequence": "Current repository code and labels do not prove the source-producing loss or objective.",
+      "minimum_sufficient_response": "Immutable producing commit and relevant evaluation/loss source/config identities, including any applied local patch/version.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q05",
+        "Q06"
+      ],
+      "affected_claim_ids": [
+        "CL_POINT"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A04",
+        "A05",
+        "A06",
+        "A07"
+      ],
+      "affected_stage_ids": [
+        "T04",
+        "T05",
+        "T06",
+        "T07"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689169+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Source-byte integrity and retain runtime evidence remain valid.",
+      "conclusion_unavailable_if_never_resolved": "Verified scientific interpretation of unbound producing implementation.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D07",
+      "category": "external_evidence",
+      "missing": "Metric definition/direction/units/masking/denominator/reduction semantics",
+      "existing_source_ids_checked": [
+        "SRC06",
+        "SRC07"
+      ],
+      "scientific_consequence": "A logged loss/ppl is not automatically valid-target NLL or scientific forgetting.",
+      "minimum_sufficient_response": "Producing metric formula, units, masks, rank/batch aggregation, denominator definition and interpretation, bound to implementation and cohort.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q05",
+        "Q06",
+        "Q08"
+      ],
+      "affected_claim_ids": [
+        "CL_POINT",
+        "CL_MATCHED"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A09"
+      ],
+      "affected_stage_ids": [
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T09"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689173+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Quote original tags; keep classifier CE and benign LM NLL separate.",
+      "conclusion_unavailable_if_never_resolved": "Scientific direction, cross-source compatibility or loss-as-forgetting claims.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D08",
+      "category": "external_evidence",
+      "missing": "Actual evaluation extent, denominator and repeated-data exposure",
+      "existing_source_ids_checked": [
+        "SRC06",
+        "SRC07"
+      ],
+      "scientific_consequence": "Declared702 versus1 iterations cannot establish unique examples, valid tokens or equivalent effort.",
+      "minimum_sufficient_response": "Completed invocation counters, unique-example/valid-target counts and aggregation/repetition metadata; explicitly state unrecoverable fields.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q05",
+        "Q06"
+      ],
+      "affected_claim_ids": [
+        "CL_POINT"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A04",
+        "A05",
+        "A06",
+        "A07"
+      ],
+      "affected_stage_ids": [
+        "T04",
+        "T05",
+        "T06",
+        "T07"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689176+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Retain declared configuration discrepancies as source observations.",
+      "conclusion_unavailable_if_never_resolved": "Scientifically justified denominator and effort comparisons.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D09",
+      "category": "external_evidence",
+      "missing": "Compatible actual reference records for proposed reference-relative forget claims",
+      "existing_source_ids_checked": [
+        "SRC04",
+        "SRC07"
+      ],
+      "scientific_consequence": "Display-label agreement does not establish target/reference cohort/protocol/readout compatibility.",
+      "minimum_sufficient_response": "Reference content/aggregate identities and actual cohort/split/protocol/readout/method metadata compatible with the target; justified pairing if paired.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q06",
+        "Q08"
+      ],
+      "affected_claim_ids": [
+        "CL_REFERENCE",
+        "CL_MATCHED"
+      ],
+      "affected_comparison_ids": [
+        "CMP_REF"
+      ],
+      "affected_figure_ids": [
+        "FIG_MATCHED"
+      ],
+      "affected_artifact_ids": [
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A09"
+      ],
+      "affected_stage_ids": [
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T09"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "CONDITIONAL_ON_REFERENCE_CLAIM",
+      "last_material_update": "2026-11-25T07:58:02.689180+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Otherwise qualified absolute points remain reportable without references.",
+      "conclusion_unavailable_if_never_resolved": "Only the affected reference-relative claim.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D10",
+      "category": "external_evidence",
+      "missing": "Supported uncertainty meaning for proposed forget intervals",
+      "existing_source_ids_checked": [
+        "SRC04",
+        "SRC06",
+        "SRC07"
+      ],
+      "scientific_consequence": "Steps, duplicate calls and CV ranges are not valid confidence intervals.",
+      "minimum_sufficient_response": "Existing interval level, bounds, method, sampling unit, sample count and conditioning/pairing metadata; explicit absence is acceptable for a point-only claim.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q06",
+        "Q08"
+      ],
+      "affected_claim_ids": [
+        "CL_INTERVAL"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A04",
+        "A05",
+        "A06",
+        "A07",
+        "A09"
+      ],
+      "affected_stage_ids": [
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T09"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "CONDITIONAL_ON_INTERVAL_CLAIM",
+      "last_material_update": "2026-11-25T07:58:02.689183+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Otherwise qualified absolute points survive absent or invalid uncertainty.",
+      "conclusion_unavailable_if_never_resolved": "Only unsupported intervals/inferential claims.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D11",
+      "category": "external_evidence",
+      "missing": "Genuine collaborator-produced layerwise forget-performance aggregates",
+      "existing_source_ids_checked": [
+        "SRC01",
+        "SRC05",
+        "SRC06",
+        "SRC07"
+      ],
+      "scientific_consequence": "Global loss and gradient norms cannot answer required representation-specific performance.",
+      "minimum_sufficient_response": "Existing aggregate results with checkpoint/cohort/split/hook/readout/metric/denominator/implementation identities for agreed units; if none exist, explicit team confirmation and unresolved measurement requirement or separately approved scope amendment.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q07",
+        "Q09",
+        "Q11"
+      ],
+      "affected_claim_ids": [
+        "CL_LAYERWISE"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [
+        "FIG_LAYERWISE_FORGET"
+      ],
+      "affected_artifact_ids": [
+        "A05",
+        "A06",
+        "A07",
+        "A08",
+        "A09",
+        "A16"
+      ],
+      "affected_stage_ids": [
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T16"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPEN",
+      "last_material_update": "2026-11-25T07:58:02.689186+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Finish authorized metadata work, retain/methods report preparation and truthful partial reporting.",
+      "conclusion_unavailable_if_never_resolved": "Original layerwise retain-and-forget completion.",
+      "measurement_existence": "UNKNOWN_NOT_SUPPLIED",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D12",
+      "category": "optional_extension",
+      "missing": "Immediate parents and controlled perturbation/mask/dose/exposure/replicate evidence",
+      "existing_source_ids_checked": [
+        "SRC01",
+        "SRC05",
+        "SRC08"
+      ],
+      "scientific_consequence": "Current labels and CV partitions cannot support causal or controlled-dose/replication claims.",
+      "minimum_sufficient_response": "Only if such extension is explicitly added: content-bound parent, mask/law, realized perturbation, actual exposure and independent intervention design metadata.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [
+        "Q08"
+      ],
+      "affected_claim_ids": [
+        "CL_CAUSAL"
+      ],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A03",
+        "A04",
+        "A09",
+        "A11"
+      ],
+      "affected_stage_ids": [
+        "T03",
+        "T04",
+        "T09",
+        "T11"
+      ],
+      "responsible_role": "ROLE_TEAM",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "OPTIONAL_NOT_IN_ORIGINAL_COMPLETION",
+      "last_material_update": "2026-11-25T07:58:02.689189+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Qualified original-base descriptive comparisons and endpoint-specific measurements remain valid.",
+      "conclusion_unavailable_if_never_resolved": "Causal attribution, calibrated dose response, intervention replication or best-checkpoint conclusions.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    },
+    {
+      "id": "D13",
+      "category": "access",
+      "missing": "Nonessential full v2 planning document behind ChatGPT Library login",
+      "existing_source_ids_checked": [
+        "PROMPT"
+      ],
+      "scientific_consequence": "Cannot claim independent comparison against the inaccessible full planning file.",
+      "minimum_sufficient_response": "Accessible exact document/version if later required; the invoked prompt explicitly permits its self-contained stage map now.",
+      "acceptable_evidence_types": [
+        "Versioned signed/attributed team metadata or aggregate sidecar with exact source/content identities",
+        "Immutable producing source/config/manifest or invocation receipt where applicable; no raw data"
+      ],
+      "affected_question_ids": [],
+      "affected_claim_ids": [],
+      "affected_comparison_ids": [],
+      "affected_figure_ids": [],
+      "affected_artifact_ids": [
+        "A00"
+      ],
+      "affected_stage_ids": [
+        "T00"
+      ],
+      "responsible_role": "ROLE_EXEC",
+      "ownership_confirmed": false,
+      "coordination_role": "ROLE_COORD",
+      "state": "NONBLOCKING_ACCESS_LIMITATION",
+      "last_material_update": "2026-11-25T07:58:02.689193+00:00",
+      "next_useful_action": "Carry this structured item to authorized T05 consolidation; earlier deciding stage may resolve from exact existing metadata.",
+      "independent_work_possible": "Complete T00 from the self-contained approved prompt and all required primary predecessors.",
+      "conclusion_unavailable_if_never_resolved": "Agreement with unobserved full planning-document bytes.",
+      "measurement_existence": "NOT_APPLICABLE_TO_THIS_ITEM",
+      "required_now_for_T00": false
+    }
+  ],
+  "stages": [
+    {
+      "id": "T00",
+      "title": "Establish completion contract",
+      "status": "COMPLETE",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D13"
+      ],
+      "question_ids": [
+        "Q01",
+        "Q02",
+        "Q11"
+      ],
+      "required_predecessor_stages": [],
+      "input_source_ids": [
+        "PROMPT",
+        "SRC01",
+        "SRC02",
+        "SRC03",
+        "SRC04",
+        "SRC05",
+        "SRC06",
+        "SRC07",
+        "SRC08",
+        "SRC09",
+        "SRC10",
+        "SRC11",
+        "SRC12",
+        "SRC13"
+      ],
+      "prospective_input_artifact_ids": [],
+      "decisions": "Reconcile source authority, define scientific obligations and future gates.",
+      "output_artifact_ids": [
+        "A00"
+      ],
+      "acceptance_rule": "All required predecessors, questions, source pins, dependencies and completion rules checked.",
+      "blocked_case_behavior": "Localize missing required predecessor fields; do not certify unresolved integrity; nonessential plan access does not block.",
+      "handoff": "STOP before T01; explicit future authorization required.",
+      "execution_authorized_in_this_invocation": true,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T01",
+      "title": "Reconcile requested-versus-observed endpoints",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D01",
+        "D02"
+      ],
+      "question_ids": [
+        "Q01"
+      ],
+      "required_predecessor_stages": [
+        "T00"
+      ],
+      "input_source_ids": [
+        "SRC13",
+        "SRC05",
+        "SRC03"
+      ],
+      "prospective_input_artifact_ids": [
+        "A00"
+      ],
+      "decisions": "Account for each content identity, requested inclusion/exclusion and exhaustiveness.",
+      "output_artifact_ids": [
+        "A01"
+      ],
+      "acceptance_rule": "Every known endpoint accounted for; exhaustiveness resolved or explicitly outstanding.",
+      "blocked_case_behavior": "Complete known roster; retain OPEN inventory dependency and null total when exhaustiveness is unproved.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T02",
+      "title": "Assess dataset/cohort provenance",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D03"
+      ],
+      "question_ids": [
+        "Q03"
+      ],
+      "required_predecessor_stages": [
+        "T01"
+      ],
+      "input_source_ids": [
+        "SRC06",
+        "SRC07",
+        "SRC04"
+      ],
+      "prospective_input_artifact_ids": [
+        "A01"
+      ],
+      "decisions": "Classify population/split/preprocessing evidence for each intended measurement.",
+      "output_artifact_ids": [
+        "A02"
+      ],
+      "acceptance_rule": "Applicable fields supported or unknown with precise affected claims.",
+      "blocked_case_behavior": "Preserve source quotations; mark unresolved fields; no raw cohort inspection.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T03",
+      "title": "Adjudicate observation-to-checkpoint bindings",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D04",
+        "D05",
+        "D12"
+      ],
+      "question_ids": [
+        "Q04"
+      ],
+      "required_predecessor_stages": [
+        "T01"
+      ],
+      "input_source_ids": [
+        "SRC05",
+        "SRC06",
+        "SRC13"
+      ],
+      "prospective_input_artifact_ids": [
+        "A01"
+      ],
+      "decisions": "Assign supported/provisional/ambiguous/rejected exact-model join dispositions.",
+      "output_artifact_ids": [
+        "A03"
+      ],
+      "acceptance_rule": "Each proposed join has evidence and reasons; duplicates and endpoints remain distinct.",
+      "blocked_case_behavior": "Quarantine only unsupported joins; no folder/step fallback.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T04",
+      "title": "Define metric dictionary and compatibility",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D03",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D12"
+      ],
+      "question_ids": [
+        "Q05",
+        "Q06"
+      ],
+      "required_predecessor_stages": [
+        "T01"
+      ],
+      "input_source_ids": [
+        "SRC06",
+        "SRC07",
+        "SRC08"
+      ],
+      "prospective_input_artifact_ids": [
+        "A01"
+      ],
+      "decisions": "Review semantics independently where possible; final compatibility consumes applicable T02/T03 findings.",
+      "output_artifact_ids": [
+        "A04"
+      ],
+      "acceptance_rule": "Each proposed meaning/comparison compatible, incompatible or unresolved.",
+      "blocked_case_behavior": "Separate source description, valid point, interval and comparison; do not invent denominators.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": [
+        "T02",
+        "T03"
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "Consolidate one unsent dependency request",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11"
+      ],
+      "question_ids": [
+        "Q01",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q07"
+      ],
+      "required_predecessor_stages": [
+        "T01",
+        "T02",
+        "T03",
+        "T04"
+      ],
+      "input_source_ids": [
+        "SRC15"
+      ],
+      "prospective_input_artifact_ids": [
+        "A01",
+        "A02",
+        "A03",
+        "A04"
+      ],
+      "decisions": "Deduplicate unresolved dependency requests; preserve minimum sufficient responses.",
+      "output_artifact_ids": [
+        "A05"
+      ],
+      "acceptance_rule": "One unsent draft, roles and affected claims; no requests for already available logs/raw data.",
+      "blocked_case_behavior": "Use OWNER_UNASSIGNED for unconfirmed technical responsibility; never wait indefinitely or send automatically.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T06",
+      "title": "Intake new or corrected evidence",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11"
+      ],
+      "question_ids": [
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07"
+      ],
+      "required_predecessor_stages": [
+        "T00",
+        "T01"
+      ],
+      "input_source_ids": [
+        "SRC04",
+        "SRC17"
+      ],
+      "prospective_input_artifact_ids": [
+        "A00",
+        "A01"
+      ],
+      "decisions": "Version every item, provenance and intended use; cross-reference versioned S10 assessment.",
+      "output_artifact_ids": [
+        "A06"
+      ],
+      "acceptance_rule": "Every received item has identity, nullable provider fields, disposition and intended use.",
+      "blocked_case_behavior": "No arrival means an explicit empty intake and open dependencies, not fabricated qualified records.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T07",
+      "title": "Independently qualify evidence",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09",
+        "D10",
+        "D11"
+      ],
+      "question_ids": [
+        "Q06"
+      ],
+      "required_predecessor_stages": [
+        "T02",
+        "T03",
+        "T04",
+        "T06"
+      ],
+      "input_source_ids": [
+        "SRC04",
+        "SRC07",
+        "SRC17"
+      ],
+      "prospective_input_artifact_ids": [
+        "A02",
+        "A03",
+        "A04",
+        "A06"
+      ],
+      "decisions": "Separate source, point, interval and actual-reference comparison eligibility; preserve valid points.",
+      "output_artifact_ids": [
+        "A07"
+      ],
+      "acceptance_rule": "Applicable checks pass through a distinct checking route or affected records quarantined.",
+      "blocked_case_behavior": "Scope failed gates to records/claims; never relax semantics or uncertainty rules.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T08",
+      "title": "Assess genuine layerwise coverage",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D01",
+        "D02",
+        "D11"
+      ],
+      "question_ids": [
+        "Q07"
+      ],
+      "required_predecessor_stages": [
+        "T01",
+        "T07"
+      ],
+      "input_source_ids": [
+        "SRC01",
+        "SRC05",
+        "SRC07"
+      ],
+      "prospective_input_artifact_ids": [
+        "A01",
+        "A07"
+      ],
+      "decisions": "Use agreed scientific dimensions, not the retain grid, to count supported/missing required units.",
+      "output_artifact_ids": [
+        "A08"
+      ],
+      "acceptance_rule": "Supported and outstanding units explicit with original-scope implications.",
+      "blocked_case_behavior": "Unknown required universe stays null; global values/gradient norms cannot populate layers.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T09",
+      "title": "Freeze one evidence/reporting edition",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D02",
+        "D03",
+        "D04",
+        "D07",
+        "D09",
+        "D10",
+        "D11",
+        "D12"
+      ],
+      "question_ids": [
+        "Q02",
+        "Q06",
+        "Q07",
+        "Q08"
+      ],
+      "required_predecessor_stages": [
+        "T07",
+        "T08"
+      ],
+      "input_source_ids": [
+        "SRC04",
+        "SRC08",
+        "SRC11"
+      ],
+      "prospective_input_artifact_ids": [
+        "A07",
+        "A08"
+      ],
+      "decisions": "Freeze eligible inputs, transparent examples, display and admission rules with known outcomes declared.",
+      "output_artifact_ids": [
+        "A09"
+      ],
+      "acceptance_rule": "Eligible release, all required questions, exclusions and unresolved scope fixed for the edition.",
+      "blocked_case_behavior": "A partial edition retains all required unresolved questions; no retrospective preregistration.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T10",
+      "title": "Produce source-linked findings",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [],
+      "question_ids": [
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08"
+      ],
+      "required_predecessor_stages": [
+        "T09"
+      ],
+      "input_source_ids": [],
+      "prospective_input_artifact_ids": [
+        "A09"
+      ],
+      "decisions": "Answer each required question with eligible evidence or exact unresolved status.",
+      "output_artifact_ids": [
+        "A10"
+      ],
+      "acceptance_rule": "All material claims link eligible records, correct units and uncertainty meaning.",
+      "blocked_case_behavior": "Negative/inconclusive/missing findings retained; no favorable-subset selection.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T11",
+      "title": "Audit scientific interpretation",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D12"
+      ],
+      "question_ids": [
+        "Q06",
+        "Q08",
+        "Q11"
+      ],
+      "required_predecessor_stages": [
+        "T10"
+      ],
+      "input_source_ids": [
+        "SRC08"
+      ],
+      "prospective_input_artifact_ids": [
+        "A10"
+      ],
+      "decisions": "Retain, narrow, withdraw or defer every material claim against actual evidence.",
+      "output_artifact_ids": [
+        "A11"
+      ],
+      "acceptance_rule": "Documented claim-specific verdicts; no unsupported causal/selectivity/ranking conclusion.",
+      "blocked_case_behavior": "Invalidate dependent claims only; upstream discrepancies block affected claims rather than silent repair.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T12",
+      "title": "Build figures and complete atlas",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [],
+      "question_ids": [
+        "Q09"
+      ],
+      "required_predecessor_stages": [
+        "T09"
+      ],
+      "input_source_ids": [],
+      "prospective_input_artifact_ids": [
+        "A09"
+      ],
+      "decisions": "Plot all agreed coverage with source values, compatible scales and visible missingness.",
+      "output_artifact_ids": [
+        "A12"
+      ],
+      "acceptance_rule": "Every point/label/caption agrees with release and full indexed atlas.",
+      "blocked_case_behavior": "Layout preparation may precede final values under later authorization; no provisional forget values admitted.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T13",
+      "title": "Write briefing/report/appendix",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [],
+      "question_ids": [
+        "Q09"
+      ],
+      "required_predecessor_stages": [
+        "T11",
+        "T12"
+      ],
+      "input_source_ids": [],
+      "prospective_input_artifact_ids": [
+        "A11",
+        "A12"
+      ],
+      "decisions": "Use one facts source, methods-before-conclusions, editable source/PDF and complete tables.",
+      "output_artifact_ids": [
+        "A13"
+      ],
+      "acceptance_rule": "Briefing, report, figures, limitations and next actions agree.",
+      "blocked_case_behavior": "Stable retain/methods sections may be prepared earlier under later authorization; no false complete verdict.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T14",
+      "title": "Review publication independently",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [],
+      "question_ids": [
+        "Q09",
+        "Q11"
+      ],
+      "required_predecessor_stages": [
+        "T13"
+      ],
+      "input_source_ids": [],
+      "prospective_input_artifact_ids": [
+        "A13"
+      ],
+      "decisions": "Check sources and meaning independently of the document generator.",
+      "output_artifact_ids": [
+        "A14"
+      ],
+      "acceptance_rule": "No unresolved defect changes identity, scientific meaning or claimed completion.",
+      "blocked_case_behavior": "Repair only affected report/display dependencies and recheck; preserve old editions.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T15",
+      "title": "Recover declared release freshly",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [],
+      "question_ids": [
+        "Q10"
+      ],
+      "required_predecessor_stages": [
+        "T14"
+      ],
+      "input_source_ids": [
+        "SRC02",
+        "SRC04"
+      ],
+      "prospective_input_artifact_ids": [
+        "A14"
+      ],
+      "decisions": "Verify exact bytes/members, decisions, tables, declared rendering and mandatory saved-analysis scope.",
+      "output_artifact_ids": [
+        "A15"
+      ],
+      "acceptance_rule": "Fresh declared-input recovery passes with no producer-tree/hidden-cache fallback.",
+      "blocked_case_behavior": "Recovery preparation may start earlier under later authorization; failed mandatory scope blocks its release, not valid unrelated science.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    },
+    {
+      "id": "T16",
+      "title": "Package and record truthful closure",
+      "status": "NOT_STARTED",
+      "blocker_kind": null,
+      "known_prerequisite_dependency_ids": [
+        "D01",
+        "D02",
+        "D11"
+      ],
+      "question_ids": [
+        "Q11"
+      ],
+      "required_predecessor_stages": [
+        "T15"
+      ],
+      "input_source_ids": [],
+      "prospective_input_artifact_ids": [
+        "A15"
+      ],
+      "decisions": "Evaluate scientific scope predicate separately from report/recovery/delivery/feedback.",
+      "output_artifact_ids": [
+        "A16"
+      ],
+      "acceptance_rule": "Indexed package and separate factual states; actual delivery evidence only when sent.",
+      "blocked_case_behavior": "Use partial external dependency or blocked internal only when their exact conditions hold; no automatic messaging/publication.",
+      "handoff": "Seal actual decisions, source pins, unresolved dependencies, completed/unfinished units and exact next eligible boundary; no automatic stage launch.",
+      "execution_authorized_in_this_invocation": false,
+      "final_decision_dependencies": []
+    }
+  ],
+  "prospective_artifact_register": [
+    {
+      "id": "A00",
+      "description": "Checked completion contract and register",
+      "producing_stage_id": "T00",
+      "state": "LOCAL_CONTRACT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Receipt binds exact register snapshot externally; no circular hash"
+    },
+    {
+      "id": "A01",
+      "description": "Requested-versus-observed endpoint inventory",
+      "producing_stage_id": "T01",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A02",
+      "description": "Cohort provenance assessment",
+      "producing_stage_id": "T02",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A03",
+      "description": "Observation/checkpoint binding ledger",
+      "producing_stage_id": "T03",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A04",
+      "description": "Metric dictionary and compatibility assessment",
+      "producing_stage_id": "T04",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A05",
+      "description": "Consolidated unsent dependency request",
+      "producing_stage_id": "T05",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A06",
+      "description": "Versioned evidence intake",
+      "producing_stage_id": "T06",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A07",
+      "description": "Independent point/interval/comparison release",
+      "producing_stage_id": "T07",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A08",
+      "description": "Genuine layerwise coverage verdict",
+      "producing_stage_id": "T08",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A09",
+      "description": "Frozen evidence/reporting specification",
+      "producing_stage_id": "T09",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A10",
+      "description": "Source-linked findings",
+      "producing_stage_id": "T10",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A11",
+      "description": "Interpretation audit",
+      "producing_stage_id": "T11",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A12",
+      "description": "Figures and complete atlas",
+      "producing_stage_id": "T12",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A13",
+      "description": "Briefing/report/tables/appendix",
+      "producing_stage_id": "T13",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A14",
+      "description": "Independent publication review",
+      "producing_stage_id": "T14",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A15",
+      "description": "Fresh declared-input recovery receipt",
+      "producing_stage_id": "T15",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    },
+    {
+      "id": "A16",
+      "description": "Final package and separate closure/delivery states",
+      "producing_stage_id": "T16",
+      "state": "NOT_CREATED",
+      "sha256": null,
+      "sha256_null_reason": "Future artifact not produced"
+    }
+  ],
+  "coverage_policy": {
+    "retain_dimensions": {
+      "tasks": [
+        {
+          "id": "emp_H3",
+          "label": "EMP H3"
+        },
+        {
+          "id": "gue_tf_0",
+          "label": "GUE TF 0"
+        },
+        {
+          "id": "gue_prom_core_all",
+          "label": "GUE promoter core"
+        },
+        {
+          "id": "gue_prom_300_all",
+          "label": "GUE promoter 300"
+        },
+        {
+          "id": "gue_splice_reconstructed",
+          "label": "GUE splice reconstructed"
+        },
+        {
+          "id": "gue_mouse_0",
+          "label": "GUE mouse 0"
+        }
+      ],
+      "representations": [
+        "decoder.layers.0",
+        "decoder.layers.1",
+        "decoder.layers.2",
+        "decoder.layers.3",
+        "decoder.layers.4",
+        "decoder.layers.5",
+        "decoder.layers.6",
+        "decoder.layers.7",
+        "decoder.layers.8",
+        "decoder.layers.9",
+        "decoder.layers.10",
+        "decoder.layers.11",
+        "decoder.layers.12",
+        "decoder.layers.13",
+        "decoder.layers.14",
+        "decoder.layers.15",
+        "decoder.layers.16",
+        "decoder.layers.17",
+        "decoder.layers.18",
+        "decoder.layers.19",
+        "decoder.layers.20",
+        "decoder.layers.21",
+        "decoder.layers.22",
+        "decoder.layers.23",
+        "decoder.layers.24",
+        "decoder.final_norm"
+      ],
+      "seeds": [
+        42,
+        17,
+        1234
+      ],
+      "policies": [
+        "independent_refit",
+        "fixed_original_base"
+      ],
+      "metric_names": [
+        "AUROC",
+        "AP",
+        "accuracy",
+        "balanced_accuracy",
+        "cross_entropy"
+      ]
+    },
+    "required_forget_coverage_universe": null,
+    "required_forget_coverage_universe_null_reason": "Task/cohort/split/readout/hook/metric/protocol/invocation applicability not yet agreed",
+    "required_forget_cell_count": null,
+    "required_forget_cell_count_null_reason": "Cannot derive forget denominator from benign grid",
+    "illustrative_candidate_representation_positions": 234,
+    "illustration_is_required_forget_denominator": false,
+    "qualified_layerwise_forget_observations": 0,
+    "actual_unique_examples": null,
+    "actual_unique_examples_null_reason": "Not established by source configs or702/1 iteration declarations",
+    "actual_valid_target_count": null,
+    "actual_valid_target_count_null_reason": "Missing actual masks/denominator/aggregation metadata",
+    "missingness_reasons": [
+      "NOT_SUPPLIED",
+      "IDENTITY_UNRESOLVED",
+      "SEMANTICS_UNRESOLVED",
+      "REFERENCE_INCOMPATIBLE",
+      "UNCERTAINTY_UNQUALIFIED",
+      "OUT_OF_AGREED_SCOPE",
+      "NOT_APPLICABLE"
+    ],
+    "count_rule": "Every count names its unit/population. Unknown is null with reason; never zero. Only scientifically applicable identity fields are required.",
+    "progress_rule": "Resolved questions, qualified evidence and verified deliverables; workflow fraction is never scientific completion."
+  },
+  "completion_policy": {
+    "original_scope_all_required": [
+      "scope_definition_established",
+      "coverage_universe_justified",
+      "all_mandatory_questions_answered",
+      "all_required_units_qualified",
+      "no_affecting_integrity_defects",
+      "every_claimed_comparison_compatible",
+      "full_agreed_coverage_report_reviewed",
+      "mandatory_declared_recovery_passed"
+    ],
+    "revised_scope_rule": "Requires explicit attributed amendment evidence and satisfied amended requirements; omitted original scope remains visible. Missing evidence is not amendment.",
+    "scope_amendments": [],
+    "missingness_can_reduce_scope": false,
+    "closure_verdicts": {
+      "COMPLETE_ORIGINAL_SCOPE": "All original predicate requirements pass",
+      "COMPLETE_REVISED_SCOPE": "Explicit traceable amendment and all amended requirements pass; original omissions visible",
+      "PARTIAL_EXTERNAL_DEPENDENCY": "Declared available work actually complete but required external evidence/measurements unavailable",
+      "BLOCKED_INTERNAL": "Affecting unresolved internal integrity/qualification/reporting/recovery defect prevents claimed release"
+    },
+    "current_original_request": "PARTIAL",
+    "current_final_closure_verdict": null,
+    "current_final_closure_verdict_null_reason": "T00 establishes a route; remaining available work and scientific scope not completed",
+    "delivery_required_for_scientific_completion": false,
+    "feedback_acceptance_required_for_scientific_completion": false,
+    "delivery_states": [
+      "DRAFT",
+      "READY_FOR_DELIVERY",
+      "DELIVERED",
+      "ACCESS_VERIFIED"
+    ],
+    "delivery_rule": "A sent package and access verification require separate observed evidence; an unsent request or local package is DRAFT. Delivery is not acceptance or successful unlearning."
+  },
+  "qualification_policy": {
+    "source_verification": "Content identity/integrity only; not producer semantic truth.",
+    "point": "Applicable checkpoint/invocation, cohort/split, metric implementation/units/direction/mask/denominator/reduction/evaluation scope must qualify.",
+    "interval": "Point eligibility plus valid finite ordered bounds, supported level/method/sampling unit/conditioning; no fabricated uncertainty. Invalid interval does not automatically discard valid point.",
+    "comparison": "Eligible actual target/reference records with compatible scientific cohort/split/protocol/readout/metric and justified pairing; displayed metadata alone insufficient.",
+    "reference_required_for_absolute_point": false,
+    "interval_required_for_absolute_point": false,
+    "layerwise": "Genuine qualified task-performance measurement with applicable exact hook/representation/readout; global replication and gradient norms forbidden.",
+    "qualification_ledger": [],
+    "eligible_comparison_ledger": [],
+    "new_claim_ledger": [],
+    "claim_family_policies": [
+      {
+        "id": "CL_SCOPE",
+        "obligation_class": "REQUIRED_ORIGINAL",
+        "condition": "Inventory and original scope completeness",
+        "dependency_ids": [
+          "D01",
+          "D02"
+        ]
+      },
+      {
+        "id": "CL_POINT",
+        "obligation_class": "REQUIRED_ORIGINAL",
+        "condition": "Scientific absolute forget points at required units",
+        "dependency_ids": [
+          "D03",
+          "D04",
+          "D06",
+          "D07",
+          "D08"
+        ]
+      },
+      {
+        "id": "CL_DUPLICATES",
+        "obligation_class": "REQUIRED_ORIGINAL",
+        "condition": "Dispositions of ambiguous calls without erasure",
+        "dependency_ids": [
+          "D05"
+        ]
+      },
+      {
+        "id": "CL_INTERVAL",
+        "obligation_class": "REQUIRED_FOR_CLAIM",
+        "condition": "Only if an interval is reported",
+        "dependency_ids": [
+          "D10"
+        ]
+      },
+      {
+        "id": "CL_REFERENCE",
+        "obligation_class": "REQUIRED_FOR_CLAIM",
+        "condition": "Only if a reference-relative effect is reported",
+        "dependency_ids": [
+          "D09"
+        ]
+      },
+      {
+        "id": "CL_MATCHED",
+        "obligation_class": "REQUIRED_FOR_CLAIM",
+        "condition": "Only if joint exact-endpoint statements are reported",
+        "dependency_ids": [
+          "D03",
+          "D04",
+          "D07"
+        ]
+      },
+      {
+        "id": "CL_LAYERWISE",
+        "obligation_class": "REQUIRED_ORIGINAL",
+        "condition": "Genuine representation-specific forget coverage",
+        "dependency_ids": [
+          "D02",
+          "D11"
+        ]
+      },
+      {
+        "id": "CL_CAUSAL",
+        "obligation_class": "OPTIONAL_EXTENSION",
+        "condition": "No causal/dose/optimality/replication promise",
+        "dependency_ids": [
+          "D12"
+        ]
+      }
+    ],
+    "comparison_family_policies": [
+      {
+        "id": "CMP_REF",
+        "condition": "Only proposed eligible reference-relative forget comparisons; no new tests in T00",
+        "dependency_ids": [
+          "D09"
+        ]
+      }
+    ],
+    "evidence_chain": [
+      "source_version",
+      "interpretation_or_qualification_decision",
+      "eligible_record_or_comparison",
+      "claim",
+      "display_or_report_artifact"
+    ],
+    "immutable_edit_rule": "New source/version and scoped supersession; never edit sealed source facts or admit into sealed S11 edition."
+  },
+  "change_invalidation": [
+    {
+      "event": "New checkpoint/invocation binding",
+      "invalidate": [
+        "affected exact-model joins",
+        "dependent claim/display editions"
+      ],
+      "preserve": [
+        "unaffected source observations",
+        "all unaffected retain release"
+      ],
+      "route": "T06 intake \u2192 T03 binding update \u2192 T07 \u2192 T08/T09; cross-reference versioned S10"
+    },
+    {
+      "event": "New cohort/metric metadata",
+      "invalidate": [
+        "affected semantics/qualification/compatibility/denominators",
+        "dependent claims/displays"
+      ],
+      "preserve": [
+        "unrelated measurements and claims"
+      ],
+      "route": "T06 \u2192 relevant T02/T04 \u2192 T07 \u2192 T08/T09; S10-linked assessment"
+    },
+    {
+      "event": "New compatible reference",
+      "invalidate": [
+        "proposed reference-specific comparison decisions/displays only"
+      ],
+      "preserve": [
+        "qualified absolute points",
+        "unrelated reference claims"
+      ],
+      "route": "T06 \u2192 T04/T07 \u2192 T09 new edition"
+    },
+    {
+      "event": "New layerwise aggregate",
+      "invalidate": [
+        "affected layerwise coverage verdict/claims/displays"
+      ],
+      "preserve": [
+        "historical source-only status",
+        "prior report editions"
+      ],
+      "route": "T06 \u2192 T07 \u2192 T08 \u2192 T09; no automatic admission"
+    },
+    {
+      "event": "Corrected source result",
+      "invalidate": [
+        "transitive dependent decisions/records/claims/displays"
+      ],
+      "preserve": [
+        "old exact bytes and supersession reason",
+        "independent evidence"
+      ],
+      "route": "Preserve replacement identities \u2192 T06/S10-linked correction \u2192 affected qualification and new edition; upstream discrepancy blocks affected claims"
+    },
+    {
+      "event": "Internal reporting defect",
+      "invalidate": [
+        "affected join/label/table/figure/claim and dependent report checks"
+      ],
+      "preserve": [
+        "valid upstream measurements"
+      ],
+      "route": "Versioned local repair and targeted dependent rechecks; no default retain rerun"
+    },
+    {
+      "event": "Missing external response",
+      "invalidate": [],
+      "preserve": [
+        "open dependency",
+        "existing valid release",
+        "truthful partial status"
+      ],
+      "route": "Complete independent authorized scope; no idle wait, watcher or fabricated result"
+    }
+  ],
+  "interpretation_rules": [
+    "Refit measures label accessibility under frozen classifier/fitting; fixed-original-base measures unchanged exact scaler/head compatibility, without recentering/recalibration.",
+    "Actual-head whole-model LM NLL is separate from classifier cross-entropy; never copy model loss into layer slots.",
+    "25 decoder blocks0\u201324 plus finalnorm; block16 is seventeenth block; all26 retained.",
+    "CV seeds42/17/1234 are partition sensitivity, not independent intervention replication.",
+    "Preserve TRAIN-only selection/fold-local preprocessing/cohorts/held-out history; no new test access.",
+    "Existing intervals are pointwise exploratory conditional intervals, not simultaneous guarantees. Crossing zero is inconclusive, not equality/preservation.",
+    "Exact/RC grouping does not establish locus/homology independence. Paired intervals cannot be formed by subtracting marginal endpoints.",
+    "No log-derived uncertainty, seed-range-as-CI, dependent-row replication, parent substitution, composite retain/forget score or unsupported best-checkpoint ranking.",
+    "No retrospective preregistration: previous outcomes already visible; freeze future admission/display rules transparently.",
+    "Inherited saved-analysis atol1e-10 probabilities,1e-12 metrics/draws/intervals,rtol0 are numerical reconstruction gates, not equivalence margins or universal external-measurement tolerances."
+  ],
+  "limitations": [
+    {
+      "limitation": "Unknown immediate parent",
+      "consequence": "Prevents immediate-parent intervention effects",
+      "what_remains_valid": "Original-base descriptive comparisons remain valid",
+      "dependency_id": "D12"
+    },
+    {
+      "limitation": "Unknown masks/laws/realized dose/exposure",
+      "consequence": "Prevents mechanistic or controlled-dose attribution",
+      "what_remains_valid": "Exact delivered endpoint measurements remain valid",
+      "dependency_id": "D12"
+    },
+    {
+      "limitation": "Unknown cohort/metric/denominator/content joins",
+      "consequence": "Prevents scientific forget qualification and exact-model integration",
+      "what_remains_valid": "Original tags, byte integrity and duplicate diagnostics remain usable",
+      "dependency_id": "D03"
+    },
+    {
+      "limitation": "No qualified layerwise forget performance",
+      "consequence": "Prevents original layerwise combined completion",
+      "what_remains_valid": "Verified layerwise retain release remains reusable",
+      "dependency_id": "D11"
+    },
+    {
+      "limitation": "Whole-delivery exhaustiveness unresolved",
+      "consequence": "Prevents an exhaustive supplied-sweep claim",
+      "what_remains_valid": "Nine exact known endpoints remain valid",
+      "dependency_id": "D01"
+    },
+    {
+      "limitation": "No independent intervention replication established",
+      "consequence": "Prevents biological replication/causal uncertainty claims",
+      "what_remains_valid": "Conditional fixed-head/cohort descriptions and CV sensitivity remain valid",
+      "dependency_id": "D12"
+    },
+    {
+      "limitation": "Candidate05 original upload visibility unresolved",
+      "consequence": "Current private protection cannot establish historical privacy",
+      "what_remains_valid": "Exact content/release and current recovery claims remain at their verified scope",
+      "dependency_id": null
+    },
+    {
+      "limitation": "T00 metadata review only",
+      "consequence": "No new numerical, biological or full archive reproduction claimed",
+      "what_remains_valid": "Exact source integrity, bookkeeping and contract decisions are checked here",
+      "dependency_id": null
+    }
+  ],
+  "scope_boundaries": {
+    "R2": "Not produced; explicitly excluded; do not search",
+    "Pod_B": "Separate relearning workstream",
+    "no_deadline_amendment": true,
+    "optional_extensions": [
+      "causal attribution",
+      "controlled dose response",
+      "optimal-checkpoint selection",
+      "independent intervention replication",
+      "relearning conclusions"
+    ],
+    "authority_for_exclusions": [
+      "PROMPT",
+      "SRC03",
+      "SRC08"
+    ],
+    "raw_forget_evaluation": "Outside current and planned local aggregate-only authority; never substitute raw biological execution for missing supplied measurements"
+  },
+  "deliverable_contract": {
+    "connected_layers": [
+      "Approximately3\u20134page reviewer briefing adjusted for clarity",
+      "Scientific report with editable source andPDF, methods before conclusions and nearby limitations",
+      "Complete machine-readable tables and indexed figures/evidence appendix"
+    ],
+    "facts_rule": "One authoritative facts source per edition; repeated numbers/statuses derive from it.",
+    "claim_rule": "Every material claim exact eligible source IDs; every figure source values and interpretation rules; preserve adverse/inconclusive/missing coverage.",
+    "figure_families": [
+      {
+        "id": "FIG_SCOPE",
+        "purpose": "Study and coverage map",
+        "question_ids": [
+          "Q01",
+          "Q02",
+          "Q07"
+        ]
+      },
+      {
+        "id": "FIG_RETAIN",
+        "purpose": "All-layer retain profiles",
+        "question_ids": [
+          "Q02"
+        ]
+      },
+      {
+        "id": "FIG_LAYERWISE_FORGET",
+        "purpose": "Genuine qualified layerwise forget or explicit missingness",
+        "question_ids": [
+          "Q07"
+        ]
+      },
+      {
+        "id": "FIG_MATCHED",
+        "purpose": "Checkpoint-matched separate-unit evidence summary",
+        "question_ids": [
+          "Q04",
+          "Q08"
+        ]
+      },
+      {
+        "id": "FIG_REFERENCE",
+        "purpose": "References, uncertainty and metric disagreement",
+        "question_ids": [
+          "Q05",
+          "Q06"
+        ]
+      },
+      {
+        "id": "FIG_LIMITS",
+        "purpose": "Claims and limitations",
+        "question_ids": [
+          "Q09",
+          "Q11"
+        ]
+      }
+    ],
+    "selection_rule": "Transparent question/coverage-based examples, complete atlas; no favorable subset or connected unsupported dose-response; incompatible metrics keep separate scales.",
+    "missing_layerwise_rule": "Show explicit coverage gaps; no gradientnorm/global-value placeholder curves."
+  },
+  "recovery_contract": {
+    "T00_scope": "Exact small contract files, source identities, cross-references, bookkeeping and decision challenges only; no S11 numerical replay",
+    "T15_required_scopes": [
+      "source-byte and exact-member verification",
+      "qualification and coverage decision reproduction",
+      "deterministic reporting-table regeneration",
+      "declared rendering checks",
+      "inherited saved-analysis numerical reconstruction only where required by frozen scope"
+    ],
+    "not_implicitly_performed": [
+      "producer evaluation",
+      "raw-data measurement",
+      "model/GPU replay",
+      "independent biological replication",
+      "clean scientific-runtime rebuild"
+    ],
+    "freshness_rule": "New restore location, declared inputs only; no producer fallback/unrecorded cache. Reuse pinned protected retain dependencies rather than duplicate large payloads.",
+    "historical_private_recovery_revisions": {
+      "S11_source": "0912849f3f8e57375415902bd6e2c995a3bd8491",
+      "S11_final_metadata": "b456b3548a84a48a6b265df7a06c69f39b38a1ee"
+    },
+    "current_T00_remote_protection": "NOT_PERFORMED_NOT_AUTHORIZED"
+  },
+  "separate_states": {
+    "T00_execution": "COMPLETE",
+    "contract": "FROZEN_WITH_EXPLICIT_OPEN_ITEMS",
+    "source_verification": "EXACT_REQUIRED_SOURCE_BYTES_CHECKED",
+    "new_forget_point_qualification": "NOT_PERFORMED",
+    "new_forget_interval_qualification": "NOT_PERFORMED",
+    "new_forget_comparison_qualification": "NOT_PERFORMED",
+    "required_scientific_coverage": "UNRESOLVED",
+    "report_review_release": "S11_SCOPE_INHERITED_NEW_EDITION_NOT_STARTED",
+    "recovery": "S11_SCOPE_INHERITED_T00_SMALL_PACKAGE_CHECKED",
+    "delivery": "DRAFT",
+    "delivery_evidence": null,
+    "delivery_evidence_null_reason": "Local T00 only; no external package sent/published",
+    "collaborator_acceptance": null,
+    "collaborator_acceptance_null_reason": "No feedback/acceptance observed in this invocation"
+  },
+  "next_eligible_action": {
+    "stage_id": "T01",
+    "action": "Bounded requested-versus-observed endpoint inventory reconciliation; subject to later explicit authorization and required inputs.",
+    "inputs": [
+      "This checked register/snapshot",
+      "SRC13 exact nine-content roster",
+      "existing source-bound S01/S02 inventory records only as needed",
+      "authoritative requested delivery boundary if available"
+    ],
+    "entry_requirements": [
+      "Validate T00 receipt hashes and source pins",
+      "Reconcile owned attempt/process identity and any newer legitimate changes",
+      "Explicit T01 authorization and finite metadata-only scope"
+    ],
+    "boundary": "Account for known endpoints and requested membership/exhaustiveness; preserve unknown total. No model/payload downloads, source-wide crawl, scientific admission, raw evaluation or automatic T02.",
+    "other_future_eligibility": "T02/T03/T04 independent metadata components after initial inventory; T12 layout, T13 stable retain/methods and T15 preparation only under later authorization; never final forget values before qualification."
+  },
+  "interruption_recovery": {
+    "active_run": "20261123T111855Z-saliency",
+    "attempt": "T00/attempt-001",
+    "prompt_source_id": "PROMPT",
+    "completed_units": [
+      "pinned prompt/read in full",
+      "exact primary predecessor bytes",
+      "release overlay reconciliation",
+      "contract snapshot and independent acceptance checks"
+    ],
+    "unfinished_units": [],
+    "owned_processes": [],
+    "listing_continuation_state": null,
+    "listing_continuation_state_null_reason": "No Drive listing performed",
+    "scientific_transfer_bytes": 0,
+    "next_permitted_action": "Stop at T00 handoff; next stage requires separate authorization.",
+    "resume_rule": "Verify exact receipt/output/source pins and PID/start identity before scheduling; reuse valid completed units, preserve failures, one writer; corrections after completion require new version."
+  },
+  "verification_limits": [
+    "No new numerical/scientific audit; predecessor release and recovery claims are inherited at their actual stated scope.",
+    "Full planning source behind login; self-contained prompt fallback used.",
+    "No new Drive inventory, raw datasets, model downloads, inference, fitting, tests of scientific hypotheses or archive recovery.",
+    "No repository publication/private upload/messages/collaborator access or acceptance established for this local contract."
+  ]
+}

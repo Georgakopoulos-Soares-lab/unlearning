@@ -1,0 +1,240 @@
+{
+  "schema_version": "t01-independent-verification-v1",
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "01_unique_provider_objects",
+      "status": "PASS",
+      "detail": "Stable IDs deduplicate objects; names and payload checksums do not merge distinct objects"
+    },
+    {
+      "name": "02_exhausted_provider_pages",
+      "status": "PASS",
+      "detail": "43raw provider pages checked directly, terminal token state and exact parent/child association for every discovered object"
+    },
+    {
+      "name": "03_folder_and_shortcut_coverage",
+      "status": "PASS",
+      "detail": "All folders covered; no shortcuts/cycles/aliases observed; provider parent IDs kept separate from listing edges"
+    },
+    {
+      "name": "04_temporal_scope",
+      "status": "PASS",
+      "detail": "Root and nine material-reference/opaque endpoint folders rechecked; time-bounded observed inventory, no atomic snapshot claim"
+    },
+    {
+      "name": "05_independent_labels",
+      "status": "PASS",
+      "detail": "Artifact type, documented dataset role, relationship and evidence level are separate fields"
+    },
+    {
+      "name": "06_exact_small_sources",
+      "status": "PASS",
+      "detail": "87downloaded small-source files match exact local hashes and provider listing sizes; checksums explicitly local, not provider revisions"
+    },
+    {
+      "name": "07_every_config_role_reviewed",
+      "status": "PASS",
+      "detail": "Each of nine config dataset blocks inspected directly; four actual path targets and36source references, never converted into delivered payloads"
+    },
+    {
+      "name": "08_structural_containers",
+      "status": "PASS",
+      "detail": "All26small ZIP member lists/opcode schemas and9checkpoint indexes checked without object deserialization; every opaque shard explicitly retained as coverage gap"
+    },
+    {
+      "name": "09_no_false_dataset_presence",
+      "status": "PASS",
+      "detail": "No model/tokenizer/log/config promoted into actual data; identified-payload count0distinct from unknown all-content count"
+    },
+    {
+      "name": "10_review_and_evidence_references",
+      "status": "PASS",
+      "detail": "Every item has an explicit evidence-located agent decision; no human approval asserted; observation/source hashes resolve"
+    },
+    {
+      "name": "11_catalog_csv_matches",
+      "status": "PASS",
+      "detail": "Every exported CSV cell agrees with its canonical JSONL value"
+    },
+    {
+      "name": "12_future_use_scope",
+      "status": "PASS",
+      "detail": "All catalog objects and distinct inherited retain release have explicit purpose-specific eligibility; no generic READY or advance-stage admission"
+    },
+    {
+      "name": "13_historical_reconciliation",
+      "status": "PASS",
+      "detail": "Same148S01IDs;9endpoint aliases/config identities retained; distinct noise5 endpoints not collapsed despite identical config bytes"
+    },
+    {
+      "name": "14_preserved_sources_and_owned_paths",
+      "status": "PASS",
+      "detail": "Sealed T00 bytes, tracked historical research, originalPOD_A/HEAD/index unchanged; only new owned T01 files"
+    },
+    {
+      "name": "15_no_scope_promotion",
+      "status": "PASS",
+      "detail": "No T02\u2013T16, scientific admission/evaluation, raw-data byte access, publication or collaborator message; original request remains PARTIAL"
+    }
+  ],
+  "high_consequence_review": [
+    {
+      "object_id": "13GOXaZsCr1hbr6d5wCgb33XP5sLEpCys",
+      "source_sha256": "7ccb2953c00dd87cc9ec15df7f57748cee8ab1c4f2941884bc16f7e15c6e4714",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "177xFYrj7E-mFasbHYQUh6JJYmBzKvrvB",
+      "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1Fdkz67Q9l_tvUnf_SyfjIW4-wDbMqPpp",
+      "source_sha256": "2c502ce689cca1633eec8af52bfcb69320a5b22262d61a0f0e6806e6e7da792a",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1GscALsrkqV8T9fT2uZ-4ijBJC_TPM7J1",
+      "source_sha256": "c059c43a287a393b8cfd79f488cfa25222a29448fea4b4582f8abb2d8eae03b5",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1UqzaMQMZpgiWaFLs-7teepf81WACESEd",
+      "source_sha256": "444da35735034b2961aac74e0a34521b9431eea20ffda50083eaa64cf7499585",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1avuXDG-uq9v_SIoSWiyinU9iuOlaB-uv",
+      "source_sha256": "b9872f07de75d5d412b5cc90dc3b63472304cfe4f6cb7ecb285486f5ff8d082d",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1gE7BCJZxv849kPNTSTx0pKsvaZS9hrtC",
+      "source_sha256": "fb1eab375adb4fe7eff47d839c7d5d7e14c828efac577e368a97e3c7451cb340",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1iSMubmpz7V4Nt4ByCdTgHD70e66nQBEX",
+      "source_sha256": "25b56106305315c3781cdf2ff95e57ccb0296c56f88d0f534350a9e1ea7ed555",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1jlXGtSzAPA2yO0AopTo9T3tBPNJMA87V",
+      "source_sha256": "c35bec355e489e7d5888328697b02de02820587637d78a7a6ed042b2f1abd792",
+      "primary_location": "Exact literal dataset block",
+      "decision": "DOCUMENTED_FORGET_AND_RETAIN_REFERENCES_ONLY",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1FTz5R4qyAQ4LHkAY3aVUgd1KU6y350do",
+      "source_sha256": "6780e32acb3f6218ec61b882a686b41dd2c435cbdea9b99b78d3a5b09946413b",
+      "target_object_id": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "18vWZwhiV2DZQLL81ZCqQNbqjUp4TvuE-",
+      "source_sha256": "2c4889c99fc5420b0379b6fd08ef1712a2e2a588cab88f2776ac14bfb1f0e43b",
+      "target_object_id": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1y8GBdwCkrFpovwQTDhNogVEBhtvLZ3Ny",
+      "source_sha256": "800786224f1f3ba29d806bf53e284c29097ebb1e13088c85b23c00facec6c3fb",
+      "target_object_id": "1XnC0R7878FreDHU-8sEqMA0nSByPzHxl",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1j_Hx-mxH-YEusOaSrrsBS8ejDPI-cARW",
+      "source_sha256": "7349e2549c28d8164e0ffbc3a3e5a605551bf82c11fed1c3b3828ce783a0ed49",
+      "target_object_id": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1EOspCysbYyvkhy1FiO1t_oIrA0ylzlXy",
+      "source_sha256": "6231ec549b59a141f48adda779d3f9865db3e2c1bf86d44b0d63b5c81ff3a102",
+      "target_object_id": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1SRnUiZ7K9dZD5cgmZ6ZderD5zH4Ltyry",
+      "source_sha256": "f53e4c01326322e77d9fbf25cdb018a96375d3ff541e9427f2bf9a959c041699",
+      "target_object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "19SYTAUt8h4p907sdbpTT2FWZwHuc1KmM",
+      "source_sha256": "1a655e5086939015dbcafd6f2423dcfa959b71319c24b5c57fa8c42e0324a310",
+      "target_object_id": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1XE6r0TraLXdk6PCFfPj9aomVV2x7ZAM0",
+      "source_sha256": "85a675764b1a9e5733ee467397cc04db8dbff72b3d737153095ea20231886348",
+      "target_object_id": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "object_id": "1QeU7KmeT8ZlGr4-HT3_i9mhuMr6uyVAm",
+      "source_sha256": "a32b27c773f652b0035dc091c38a38583accaf143019018fb66c55c5c19ebe75",
+      "target_object_id": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+      "decision": "CHECKPOINT_STORAGE_INDEX_BINDS_NAME_AND_LISTED_ID_ONLY_NOT_DATASET_MANIFEST_OR_CURRENT_SHARD_BYTES",
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    },
+    {
+      "scope": "SUPPLIED_TREE",
+      "decision": "No actual forget/retain payload identified in reviewed accessible metadata/documentation; no universal absence claim",
+      "checks": [
+        "Every105file classified individually",
+        "Nine explicit source dataset blocks are references only",
+        "26state containers and9indexes inertly inspected",
+        "Nine large containers retained as uninspected coverage gaps"
+      ],
+      "not_inferred": [
+        "Dataset nonexistent globally",
+        "Byte access established by metadata",
+        "Payload scientifically suitable",
+        "Entire producer filesystem absent"
+      ],
+      "reviewer": "AGENT_DISTINCT_PRIMARY_SOURCE_ROUTE"
+    }
+  ],
+  "route": "Direct raw provider responses, exact config text blocks and inert structural source checks; no import of build_audit.py",
+  "catalog_rows": 148,
+  "future_use_rows": 167,
+  "documentation_and_structure_files": 87,
+  "source_bytes_checked": 2099503,
+  "register_sha256": "8fb57b8847747bed3e361486baf1b48526a942b027c5db8bcd4b0936417c139d",
+  "catalog_sha256": "edfa8b5b6fd7b87b19731c57159863feb7f96c40141a6e96e7b724e16984d52c",
+  "scientific_results_validated_or_admitted": 0,
+  "source_Drive_writes": 0,
+  "external_messages_sent": 0,
+  "pid": 131674,
+  "start_ticks": "72052955",
+  "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+  "verified_utc": "2026-11-25T08:39:06.674093+00:00"
+}

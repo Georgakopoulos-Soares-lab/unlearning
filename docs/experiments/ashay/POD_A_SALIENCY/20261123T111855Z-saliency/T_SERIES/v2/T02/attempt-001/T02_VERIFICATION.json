@@ -1,0 +1,870 @@
+{
+  "schema_version": "t02-actual-independent-verification-v1",
+  "status": "PASS",
+  "assessment_verdict": "T02_BLOCKED_EXTERNAL",
+  "source_first": {
+    "status": "PASS",
+    "route": "Separate source-first checker; direct source config text, receipt/index/stat joins, predicates and CSVs. Shared inert field decoder/pickletools explicitly acknowledged.",
+    "checks": [
+      {
+        "id": "V01_SOURCE_IDENTITIES",
+        "status": "PASS",
+        "detail": "40exact small declared inputs read; no original_path or native payload path opened"
+      },
+      {
+        "id": "V02_FROZEN_SCOPE",
+        "status": "PASS",
+        "detail": "All13mandatory gates and7required uses retained; test applicability not silently waived"
+      },
+      {
+        "id": "V03_REFERENCE_RECONCILIATION",
+        "status": "PASS",
+        "detail": "Source-first literal config blocks confirm36references/four targets; no source path substituted for an object"
+      },
+      {
+        "id": "V04_LOCATION_LIMITS",
+        "status": "PASS",
+        "detail": "Recorded ENOENThere is not a producer-host absence assertion or a live access proof during replay"
+      },
+      {
+        "id": "V05_MEMBERSHIP_ROLES_PROVENANCE",
+        "status": "PASS",
+        "detail": "Declaration groups are not proven dataset versions;16requirement rows are not a dataset-file denominator; required provenance/split gaps remain T02 blockers"
+      },
+      {
+        "id": "V06_ALL_CONTAINER_DISPOSITIONS",
+        "status": "PASS",
+        "detail": "All9T01IDs joined to exact S03 native manifest/index/stat identities; complete declared byte coverage, no model bodies or object deserialization"
+      },
+      {
+        "id": "V07_PURPOSE_SPECIFIC_USES",
+        "status": "PASS",
+        "detail": "Four documentary use types eligible; three mandatory identity/provenance/membership uses blocked; no vacuous or universal readiness"
+      },
+      {
+        "id": "V08_STRICT_VERDICT",
+        "status": "PASS",
+        "detail": "SixPASS/oneFAIL/sixUNKNOWN; unknown cannot pass; explicit T02 amendment never retroactively invalidates T00/T01"
+      },
+      {
+        "id": "V09_TABLES_AND_LINKS",
+        "status": "PASS",
+        "detail": "All three CSVs agree cell-for-cell with canonical model; source foreign keys and null reasons resolve"
+      },
+      {
+        "id": "V10_ADVERSARIAL_AND_POSITIVE_CONTROLS",
+        "status": "PASS",
+        "detail": "20predeclared cases including10Appendix/6added/4positive plus5end-to-end verdict controls passed"
+      },
+      {
+        "id": "V11_BOUNDARIES",
+        "status": "PASS",
+        "detail": "No future-stage execution, scientific promotion, publication, raw access authority or original-scope closure"
+      }
+    ],
+    "synthetic_challenges": [
+      {
+        "id": "A01",
+        "expected": {
+          "resolved": false
+        },
+        "observed": {
+          "resolved": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A02",
+        "expected": {
+          "resolved": false
+        },
+        "observed": {
+          "resolved": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A03",
+        "expected": {
+          "complete": false
+        },
+        "observed": {
+          "complete": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A04",
+        "expected": {
+          "distinct_datasets": 1
+        },
+        "observed": {
+          "distinct_datasets": 1
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A05",
+        "expected": {
+          "is_dataset_payload": false
+        },
+        "observed": {
+          "is_dataset_payload": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A06",
+        "expected": {
+          "excludable": false
+        },
+        "observed": {
+          "excludable": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A07",
+        "expected": {
+          "bytes_established": false
+        },
+        "observed": {
+          "bytes_established": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A08",
+        "expected": {
+          "actual_cohort_verified": false
+        },
+        "observed": {
+          "actual_cohort_verified": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A09",
+        "expected": {
+          "claim_eligible": false
+        },
+        "observed": {
+          "claim_eligible": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A10",
+        "expected": {
+          "metadata_eligible": true,
+          "scientifically_qualified": false
+        },
+        "observed": {
+          "metadata_eligible": true,
+          "scientifically_qualified": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E01",
+        "expected": {
+          "readiness_valid": false
+        },
+        "observed": {
+          "readiness_valid": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E02",
+        "expected": {
+          "complete": false
+        },
+        "observed": {
+          "complete": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E03",
+        "expected": {
+          "excludable": false
+        },
+        "observed": {
+          "excludable": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E04",
+        "expected": {
+          "exemption_valid": false
+        },
+        "observed": {
+          "exemption_valid": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E05",
+        "expected": {
+          "required_work_preserved": true
+        },
+        "observed": {
+          "required_work_preserved": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E06",
+        "expected": {
+          "version_required": true,
+          "invalidate_scope": [
+            "binding-A",
+            "claim-A"
+          ]
+        },
+        "observed": {
+          "version_required": true,
+          "invalidate_scope": [
+            "binding-A",
+            "claim-A"
+          ]
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P01",
+        "expected": {
+          "resolved": true
+        },
+        "observed": {
+          "resolved": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P02",
+        "expected": {
+          "complete": true
+        },
+        "observed": {
+          "complete": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P03",
+        "expected": {
+          "bytes_established": true
+        },
+        "observed": {
+          "bytes_established": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P04",
+        "expected": {
+          "readiness_valid": true
+        },
+        "observed": {
+          "readiness_valid": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      }
+    ],
+    "gate_controls": [
+      {
+        "id": "G01_ALL_REQUIRED_POSITIVE",
+        "expected": "T02_REQUIREMENTS_MET",
+        "observed": "T02_REQUIREMENTS_MET",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G02_DROPPED_USES",
+        "expected": "T02_BLOCKED_INTERNAL",
+        "observed": "T02_BLOCKED_INTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G03_ALL_BLOCKED_NOT_READY",
+        "expected": "T02_BLOCKED_EXTERNAL",
+        "observed": "T02_BLOCKED_EXTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G04_MANDATORY_EXEMPTION",
+        "expected": "T02_BLOCKED_INTERNAL",
+        "observed": "T02_BLOCKED_INTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G05_INTERNAL_PRECEDENCE",
+        "expected": "T02_BLOCKED_INTERNAL",
+        "observed": "T02_BLOCKED_INTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      }
+    ],
+    "container_source_reviews": [
+      {
+        "alias": "candidate_06",
+        "object_id": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+        "source_index_sha256": "6780e32acb3f6218ec61b882a686b41dd2c435cbdea9b99b78d3a5b09946413b",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_04",
+        "object_id": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+        "source_index_sha256": "6231ec549b59a141f48adda779d3f9865db3e2c1bf86d44b0d63b5c81ff3a102",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_02",
+        "object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+        "source_index_sha256": "f53e4c01326322e77d9fbf25cdb018a96375d3ff541e9427f2bf9a959c041699",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_05",
+        "object_id": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+        "source_index_sha256": "7349e2549c28d8164e0ffbc3a3e5a605551bf82c11fed1c3b3828ce783a0ed49",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_03",
+        "object_id": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+        "source_index_sha256": "a32b27c773f652b0035dc091c38a38583accaf143019018fb66c55c5c19ebe75",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_01",
+        "object_id": "1XnC0R7878FreDHU-8sEqMA0nSByPzHxl",
+        "source_index_sha256": "800786224f1f3ba29d806bf53e284c29097ebb1e13088c85b23c00facec6c3fb",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_08",
+        "object_id": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+        "source_index_sha256": "2c4889c99fc5420b0379b6fd08ef1712a2e2a588cab88f2776ac14bfb1f0e43b",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_07",
+        "object_id": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+        "source_index_sha256": "85a675764b1a9e5733ee467397cc04db8dbff72b3d737153095ea20231886348",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_09",
+        "object_id": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+        "source_index_sha256": "1a655e5086939015dbcafd6f2423dcfa959b71319c24b5c57fa8c42e0324a310",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      }
+    ],
+    "T02_assessment_verdict": "T02_BLOCKED_EXTERNAL",
+    "declared_sources_checked": 40,
+    "decoded_source_bytes_checked": 3308119,
+    "producer_tree_fallback": false,
+    "native_shard_or_raw_data_reads": 0,
+    "metadata_package_path": "/workspace/pod-a-saliency/research-POD_A_SALIENCY/docs/experiments/ashay/POD_A_SALIENCY/20261123T111855Z-saliency/T_SERIES/v2/T02/attempt-001",
+    "inputs_path": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/T_SERIES/v2/T02/attempt-001/inputs",
+    "evidence_sha256": "e6522a893dcf79df84018d5a814944bffd5d16221d2d3de0b78c36d5c8bb0b54"
+  },
+  "source_first_actual_process": {
+    "label": "source-first-check-001",
+    "pid": 132997,
+    "start_ticks": "72741297",
+    "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+    "actual_exit": 0,
+    "exited": true,
+    "elapsed_seconds": 0.5440994859673083,
+    "child_CPU_seconds": 0.383314,
+    "ended_utc": "2026-11-25T10:33:49.181522+00:00"
+  },
+  "fresh_metadata_package": {
+    "status": "PASS",
+    "route": "Separate source-first checker; direct source config text, receipt/index/stat joins, predicates and CSVs. Shared inert field decoder/pickletools explicitly acknowledged.",
+    "checks": [
+      {
+        "id": "V01_SOURCE_IDENTITIES",
+        "status": "PASS",
+        "detail": "40exact small declared inputs read; no original_path or native payload path opened"
+      },
+      {
+        "id": "V02_FROZEN_SCOPE",
+        "status": "PASS",
+        "detail": "All13mandatory gates and7required uses retained; test applicability not silently waived"
+      },
+      {
+        "id": "V03_REFERENCE_RECONCILIATION",
+        "status": "PASS",
+        "detail": "Source-first literal config blocks confirm36references/four targets; no source path substituted for an object"
+      },
+      {
+        "id": "V04_LOCATION_LIMITS",
+        "status": "PASS",
+        "detail": "Recorded ENOENThere is not a producer-host absence assertion or a live access proof during replay"
+      },
+      {
+        "id": "V05_MEMBERSHIP_ROLES_PROVENANCE",
+        "status": "PASS",
+        "detail": "Declaration groups are not proven dataset versions;16requirement rows are not a dataset-file denominator; required provenance/split gaps remain T02 blockers"
+      },
+      {
+        "id": "V06_ALL_CONTAINER_DISPOSITIONS",
+        "status": "PASS",
+        "detail": "All9T01IDs joined to exact S03 native manifest/index/stat identities; complete declared byte coverage, no model bodies or object deserialization"
+      },
+      {
+        "id": "V07_PURPOSE_SPECIFIC_USES",
+        "status": "PASS",
+        "detail": "Four documentary use types eligible; three mandatory identity/provenance/membership uses blocked; no vacuous or universal readiness"
+      },
+      {
+        "id": "V08_STRICT_VERDICT",
+        "status": "PASS",
+        "detail": "SixPASS/oneFAIL/sixUNKNOWN; unknown cannot pass; explicit T02 amendment never retroactively invalidates T00/T01"
+      },
+      {
+        "id": "V09_TABLES_AND_LINKS",
+        "status": "PASS",
+        "detail": "All three CSVs agree cell-for-cell with canonical model; source foreign keys and null reasons resolve"
+      },
+      {
+        "id": "V10_ADVERSARIAL_AND_POSITIVE_CONTROLS",
+        "status": "PASS",
+        "detail": "20predeclared cases including10Appendix/6added/4positive plus5end-to-end verdict controls passed"
+      },
+      {
+        "id": "V11_BOUNDARIES",
+        "status": "PASS",
+        "detail": "No future-stage execution, scientific promotion, publication, raw access authority or original-scope closure"
+      }
+    ],
+    "synthetic_challenges": [
+      {
+        "id": "A01",
+        "expected": {
+          "resolved": false
+        },
+        "observed": {
+          "resolved": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A02",
+        "expected": {
+          "resolved": false
+        },
+        "observed": {
+          "resolved": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A03",
+        "expected": {
+          "complete": false
+        },
+        "observed": {
+          "complete": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A04",
+        "expected": {
+          "distinct_datasets": 1
+        },
+        "observed": {
+          "distinct_datasets": 1
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A05",
+        "expected": {
+          "is_dataset_payload": false
+        },
+        "observed": {
+          "is_dataset_payload": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A06",
+        "expected": {
+          "excludable": false
+        },
+        "observed": {
+          "excludable": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A07",
+        "expected": {
+          "bytes_established": false
+        },
+        "observed": {
+          "bytes_established": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A08",
+        "expected": {
+          "actual_cohort_verified": false
+        },
+        "observed": {
+          "actual_cohort_verified": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A09",
+        "expected": {
+          "claim_eligible": false
+        },
+        "observed": {
+          "claim_eligible": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "A10",
+        "expected": {
+          "metadata_eligible": true,
+          "scientifically_qualified": false
+        },
+        "observed": {
+          "metadata_eligible": true,
+          "scientifically_qualified": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E01",
+        "expected": {
+          "readiness_valid": false
+        },
+        "observed": {
+          "readiness_valid": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E02",
+        "expected": {
+          "complete": false
+        },
+        "observed": {
+          "complete": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E03",
+        "expected": {
+          "excludable": false
+        },
+        "observed": {
+          "excludable": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E04",
+        "expected": {
+          "exemption_valid": false
+        },
+        "observed": {
+          "exemption_valid": false
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E05",
+        "expected": {
+          "required_work_preserved": true
+        },
+        "observed": {
+          "required_work_preserved": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "E06",
+        "expected": {
+          "version_required": true,
+          "invalidate_scope": [
+            "binding-A",
+            "claim-A"
+          ]
+        },
+        "observed": {
+          "version_required": true,
+          "invalidate_scope": [
+            "binding-A",
+            "claim-A"
+          ]
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P01",
+        "expected": {
+          "resolved": true
+        },
+        "observed": {
+          "resolved": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P02",
+        "expected": {
+          "complete": true
+        },
+        "observed": {
+          "complete": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P03",
+        "expected": {
+          "bytes_established": true
+        },
+        "observed": {
+          "bytes_established": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "P04",
+        "expected": {
+          "readiness_valid": true
+        },
+        "observed": {
+          "readiness_valid": true
+        },
+        "status": "PASS",
+        "synthetic": true
+      }
+    ],
+    "gate_controls": [
+      {
+        "id": "G01_ALL_REQUIRED_POSITIVE",
+        "expected": "T02_REQUIREMENTS_MET",
+        "observed": "T02_REQUIREMENTS_MET",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G02_DROPPED_USES",
+        "expected": "T02_BLOCKED_INTERNAL",
+        "observed": "T02_BLOCKED_INTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G03_ALL_BLOCKED_NOT_READY",
+        "expected": "T02_BLOCKED_EXTERNAL",
+        "observed": "T02_BLOCKED_EXTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G04_MANDATORY_EXEMPTION",
+        "expected": "T02_BLOCKED_INTERNAL",
+        "observed": "T02_BLOCKED_INTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      },
+      {
+        "id": "G05_INTERNAL_PRECEDENCE",
+        "expected": "T02_BLOCKED_INTERNAL",
+        "observed": "T02_BLOCKED_INTERNAL",
+        "status": "PASS",
+        "synthetic": true
+      }
+    ],
+    "container_source_reviews": [
+      {
+        "alias": "candidate_06",
+        "object_id": "13CcTIOJddLsqFofAgPclNiEdMQBzqjMc",
+        "source_index_sha256": "6780e32acb3f6218ec61b882a686b41dd2c435cbdea9b99b78d3a5b09946413b",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_04",
+        "object_id": "16iWRqR0FY7E53ZxQDSNpaFNRb-kf5DZN",
+        "source_index_sha256": "6231ec549b59a141f48adda779d3f9865db3e2c1bf86d44b0d63b5c81ff3a102",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_02",
+        "object_id": "1FQLKbttrWtvFAz24gw7Cm5altap8N8zs",
+        "source_index_sha256": "f53e4c01326322e77d9fbf25cdb018a96375d3ff541e9427f2bf9a959c041699",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_05",
+        "object_id": "1GrVgqmcJSkKuTmKyo16qKnElNCo7R-BA",
+        "source_index_sha256": "7349e2549c28d8164e0ffbc3a3e5a605551bf82c11fed1c3b3828ce783a0ed49",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_03",
+        "object_id": "1PboRcLdyJLUmMuVYASAl9He9_NSO49v-",
+        "source_index_sha256": "a32b27c773f652b0035dc091c38a38583accaf143019018fb66c55c5c19ebe75",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_01",
+        "object_id": "1XnC0R7878FreDHU-8sEqMA0nSByPzHxl",
+        "source_index_sha256": "800786224f1f3ba29d806bf53e284c29097ebb1e13088c85b23c00facec6c3fb",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_08",
+        "object_id": "1sV-lAtlGAW1HIfdIkc-nwLdxMjdh_UJM",
+        "source_index_sha256": "2c4889c99fc5420b0379b6fd08ef1712a2e2a588cab88f2776ac14bfb1f0e43b",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_07",
+        "object_id": "1sVeovPvaolpF9nRFftf3I8Dx_eB22C8V",
+        "source_index_sha256": "85a675764b1a9e5733ee467397cc04db8dbff72b3d737153095ea20231886348",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      },
+      {
+        "alias": "candidate_09",
+        "object_id": "1wM_z3sjetS0ijTAWSoEOdWPHwAC19N9a",
+        "source_index_sha256": "1a655e5086939015dbcafd6f2423dcfa959b71319c24b5c57fa8c42e0324a310",
+        "segments": 1126,
+        "complete_declared_byte_range": 15516878934,
+        "role": "model/optimizer/RNG checkpoint artifacts at bound versions"
+      }
+    ],
+    "T02_assessment_verdict": "T02_BLOCKED_EXTERNAL",
+    "declared_sources_checked": 40,
+    "decoded_source_bytes_checked": 3308119,
+    "producer_tree_fallback": false,
+    "native_shard_or_raw_data_reads": 0,
+    "metadata_package_path": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/T_SERIES/v2/T02/attempt-001/metadata-consumer-001/package",
+    "inputs_path": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/T_SERIES/v2/T02/attempt-001/metadata-consumer-001/inputs",
+    "evidence_sha256": "e6522a893dcf79df84018d5a814944bffd5d16221d2d3de0b78c36d5c8bb0b54"
+  },
+  "fresh_actual_process": {
+    "label": "fresh-package-check-001",
+    "pid": 132999,
+    "start_ticks": "72741424",
+    "boot_id": "2f76b11b-7408-4d6a-9105-f1539bef8002",
+    "actual_exit": 0,
+    "exited": true,
+    "elapsed_seconds": 0.9234240249497816,
+    "child_CPU_seconds": 0.453451,
+    "ended_utc": "2026-11-25T10:33:50.834246+00:00"
+  },
+  "fresh_original_tree_access_denied": true,
+  "source_inputs": 40,
+  "new_scientific_results": 0,
+  "shared_inert_parser_scope": "Both routes share safe_index_fields.py/pickletools; distinct checker independently verifies source identity, namespaces, range coverage, use/criterion logic and tables. No independent scientific/model reproduction claimed.",
+  "failure_history": {
+    "preserved_failures": [
+      {
+        "operation": "inspect_index.py first bounded structural probe",
+        "actual_exit": 1,
+        "reason": "MetadataIndex offset geometry was initially conflated with _StorageInfo byte-offset fields; parser rejected tuple geometry before any model shard read",
+        "repair": "New preserved version inspect_index_v2.py reads byte fields only after relative_path; no objects/globals/reductions executed. Exact contiguous byte coverage now verified.",
+        "source_file": "/workspace/pod-a-saliency/control/20261123T111855Z-saliency/T_SERIES/v2/T01/attempt-001/documents/1FTz5R4qyAQ4LHkAY3aVUgd1KU6y350do",
+        "source_bytes_unchanged": true
+      }
+    ],
+    "metadata_discovery_warning": "rg returned2 because exact producer source directory evo2_unlearn_pipeline absent in checkout; bounded tracked-path discovery confirmed no matching exact config basename; unrelated benchmark-log paths not read.",
+    "scientific_work_or_tolerance_changes": false
+  },
+  "completed_utc": "2026-11-25T10:33:50.844142+00:00"
+}
