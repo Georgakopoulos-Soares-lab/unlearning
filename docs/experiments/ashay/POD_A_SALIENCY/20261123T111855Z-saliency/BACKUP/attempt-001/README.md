@@ -12,7 +12,7 @@ This publication preserves the existing research and adds the completed T00–T0
 - [Frozen protocol](../../S04/attempt-001/PROTOCOL.md)
 - [Source-bound numerical facts](../../S11/attempt-001/REPORTING_FACTS.json)
 
-The retained release covers nine checkpoints, six benign tasks, 26 representations, three CV partitions and two distinct probe policies:42,120classifier metric records,108LM units and48,924admitted/42,228deferred specifications. Refitting accessibility and unchanged-base compatibility answer different questions. Forget-related logs exist, but qualified scientific forget comparisons and genuine layerwise performance remain pending. See the report for adverse/inconclusive findings and interpretation limits; no overall completion percentage is implied.
+The retained release covers nine checkpoints, six benign tasks, 26 representations, three CV partitions and two distinct probe policies: 42,120 classifier metric records, 108 LM units and 48,924 admitted / 42,228 deferred specifications. Refitting accessibility and unchanged-base compatibility answer different questions. Forget-related logs exist, but qualified scientific forget comparisons and genuine layerwise performance remain pending. See the report for adverse/inconclusive findings and interpretation limits; no overall completion percentage is implied.
 
 ## Continuation records
 
@@ -24,7 +24,11 @@ Original T00–T02 receipts accurately record that their execution originally pr
 
 ## Backup coverage and verification
 
-[PRIOR_PROTECTION.json](PRIOR_PROTECTION.json) records fresh immutable metadata/size/LFS-SHA256 checks for63existing private archives and nine native model payloads. Existing full-member/recovery receipts remain preserved. New backup payloads and exact final delivery identities are recorded separately after their actual upload/readback; no future commit or hash is asserted here.
+[BACKUP_COVERAGE.json](BACKUP_COVERAGE.json) classifies all **384,747 inventoried regular files** (270,178,796,344 logical bytes, including duplicate copies). [PRIOR_PROTECTION.json](PRIOR_PROTECTION.json) records fresh immutable metadata/size/LFS-SHA256 checks for **67 existing private archives and nine native model payloads**, with their prior full-byte recovery receipts retained.
+
+[PRIVATE_BACKUP_RECOVERY.json](PRIVATE_BACKUP_RECOVERY.json) records **14 new project archives**, protecting **39,903 files / 9,422,586,966 expanded bytes**, plus **2 closing metadata/history archives**. Every new archive and manifest was freshly downloaded over HTTP; every regular member and the complete member set passed exact SHA256 verification. Existing protected payloads were reused by immutable identity rather than re-uploaded. See [RESTORE_GUIDE.md](RESTORE_GUIDE.md) and [KEY_RESULT_HASHES.json](KEY_RESULT_HASHES.json).
+
+The private final witness additionally preserves the final GitHub delivery receipt and incremental Git bundle; its immutable identity is reported in the delivery message. No infinite self-containing commit/checksum is claimed.
 
 Public Git contains sanitized source, reports, figures, tables, continuation assessments and backup proofs. Private Hugging Face protection holds source/control evidence, payloads and restricted recovery locators. Git bundles preserve repository history without changing historical branches. Large already protected model/research payloads are referenced through exact immutable recovery identities. Software environments/caches and repeated recovery consumers are recorded as reconstructable/redundant boundaries; this is project-recovery protection, not a bitwise image of the running Pod.
 
